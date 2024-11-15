@@ -13,8 +13,8 @@ func000000000000000e:                   # @func000000000000000e
 	li	a0, 27
 	slli	a0, a0, 11
 	vadd.vx	v8, v8, a0
-	vsrl.vi	v8, v8, 7
 	lui	a0, 16
+	vsrl.vi	v8, v8, 7
 	addi	a0, a0, -2
 	vand.vx	v8, v8, a0
 	ret

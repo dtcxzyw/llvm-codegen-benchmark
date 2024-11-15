@@ -1,10 +1,10 @@
 func0000000000000010:                   # @func0000000000000010
 	slli	a2, a2, 48
-	srli	a3, a2, 48
-	lui	a2, 14
-	addiw	a4, a2, -1807
+	lui	a3, 14
+	srli	a4, a2, 48
+	addiw	a3, a3, -1807
 	li	a2, 24
-	beq	a3, a4, .LBB0_2
+	beq	a4, a3, .LBB0_2
 	li	a2, 16
 .LBB0_2:                                # %entry
 	add	a0, a0, a1
@@ -12,11 +12,11 @@ func0000000000000010:                   # @func0000000000000010
 	ret
 func000000000000001a:                   # @func000000000000001a
 	slli	a2, a2, 48
-	srli	a3, a2, 48
-	lui	a2, 14
-	addiw	a4, a2, -1807
+	lui	a3, 14
+	srli	a4, a2, 48
+	addiw	a3, a3, -1807
 	li	a2, 24
-	beq	a3, a4, .LBB1_2
+	beq	a4, a3, .LBB1_2
 	li	a2, 16
 .LBB1_2:                                # %entry
 	add	a0, a0, a1

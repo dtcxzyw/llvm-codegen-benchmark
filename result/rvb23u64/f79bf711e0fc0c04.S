@@ -1,7 +1,7 @@
 func00000000000000b0:                   # @func00000000000000b0
 	slli	a2, a2, 48
-	srai	a2, a2, 16
 	sext.w	a1, a1
+	srai	a2, a2, 16
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

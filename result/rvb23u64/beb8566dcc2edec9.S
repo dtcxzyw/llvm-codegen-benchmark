@@ -1,8 +1,8 @@
 func0000000000000034:                   # @func0000000000000034
 	srli	a0, a0, 32
-	snez	a0, a0
 	andi	a1, a1, 1
 	lui	a2, 2
+	snez	a0, a0
 	czero.nez	a1, a2, a1
 	ori	a1, a1, 560
 	bseti	a1, a1, 14

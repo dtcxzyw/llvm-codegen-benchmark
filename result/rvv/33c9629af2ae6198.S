@@ -11,8 +11,8 @@ func000000000000000f:                   # @func000000000000000f
 	srli	a0, a0, 13
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
-	vsub.vv	v8, v8, v10
 	lui	a0, 1048574
+	vsub.vv	v8, v8, v10
 	srli	a0, a0, 12
 	vadd.vx	v8, v8, a0
 	ret

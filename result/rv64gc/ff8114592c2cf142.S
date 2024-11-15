@@ -28,8 +28,8 @@ func000000000000000e:                   # @func000000000000000e
 	ret
 func000000000000001e:                   # @func000000000000001e
 	slli	a1, a1, 48
-	srli	a1, a1, 48
 	lui	a2, 1048574
+	srli	a1, a1, 48
 	addiw	a2, a2, 842
 	sub	a2, a2, a1
 	slli	a2, a2, 5

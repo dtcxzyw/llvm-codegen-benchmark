@@ -9,8 +9,8 @@ func0000000000000022:                   # @func0000000000000022
 	sext.w	a0, a0
 	andi	a1, a1, 31
 	addi	a1, a1, -20
-	seqz	a1, a1
 	addi	a0, a0, -27
+	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
@@ -105,8 +105,8 @@ func0000000000000118:                   # @func0000000000000118
 	and	a1, a1, a2
 	li	a2, 5
 	slli	a2, a2, 32
-	sltu	a1, a2, a1
 	addi	a0, a0, -1
+	sltu	a1, a2, a1
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
@@ -122,8 +122,8 @@ func0000000000000034:                   # @func0000000000000034
 	sext.w	a0, a0
 	lui	a2, 128
 	and	a1, a1, a2
-	seqz	a1, a1
 	slti	a0, a0, 7
+	seqz	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

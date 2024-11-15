@@ -20,8 +20,8 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func0000000000000021:                   # @func0000000000000021
 	sext.w	a1, a1
-	sltiu	a1, a1, 256
 	lui	a2, 2040
+	sltiu	a1, a1, 256
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret

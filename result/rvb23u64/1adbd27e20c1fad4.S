@@ -19,11 +19,11 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000004:                   # @func0000000000000004
 	lui	a1, %hi(.LCPI3_0)
 	fld	fa5, %lo(.LCPI3_0)(a1)
-	flt.d	a1, fa5, fa0
-	czero.nez	a0, a0, a1
-	li	a2, -1
-	srli	a2, a2, 1
-	czero.eqz	a1, a2, a1
+	li	a1, -1
+	srli	a1, a1, 1
+	flt.d	a2, fa5, fa0
+	czero.nez	a0, a0, a2
+	czero.eqz	a1, a1, a2
 	or	a0, a0, a1
 	ret
 .LCPI4_0:
@@ -31,10 +31,10 @@ func0000000000000004:                   # @func0000000000000004
 func0000000000000002:                   # @func0000000000000002
 	lui	a1, %hi(.LCPI4_0)
 	fld	fa5, %lo(.LCPI4_0)(a1)
-	flt.d	a1, fa0, fa5
-	czero.nez	a0, a0, a1
-	bseti	a2, zero, 63
-	czero.eqz	a1, a2, a1
+	bseti	a1, zero, 63
+	flt.d	a2, fa0, fa5
+	czero.nez	a0, a0, a2
+	czero.eqz	a1, a1, a2
 	or	a0, a0, a1
 	ret
 .LCPI5_0:

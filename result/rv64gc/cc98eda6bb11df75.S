@@ -18,10 +18,10 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func00000000000001aa:                   # @func00000000000001aa
 	li	a3, 298
-	mul	a2, a2, a3
 	add	a0, a0, a1
-	add	a0, a0, a2
 	lui	a1, 1048575
+	mul	a2, a2, a3
+	add	a0, a0, a2
 	addi	a1, a1, -544
 	add	a0, a0, a1
 	sraiw	a0, a0, 8

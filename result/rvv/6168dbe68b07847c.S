@@ -9,9 +9,9 @@ func00000000000000d8:                   # @func00000000000000d8
 	ret
 func0000000000000052:                   # @func0000000000000052
 	li	a0, 32
+	lui	a1, 508411
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vx	v12, v12, a0
-	lui	a1, 508411
 	slli	a1, a1, 1
 	addi	a1, a1, 778
 	vmacc.vx	v12, a1, v10
@@ -20,9 +20,9 @@ func0000000000000052:                   # @func0000000000000052
 	ret
 func0000000000000050:                   # @func0000000000000050
 	li	a0, 32
+	lui	a1, 508411
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vx	v12, v12, a0
-	lui	a1, 508411
 	slli	a1, a1, 1
 	addi	a1, a1, 778
 	vmacc.vx	v12, a1, v10

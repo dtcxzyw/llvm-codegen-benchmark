@@ -6,13 +6,13 @@
 	.quad	-8796714831421723037            # 0x85ebca77c2b2ae63
 func0000000000000000:                   # @func0000000000000000
 	lui	a2, %hi(.LCPI0_0)
+	lui	a3, %hi(.LCPI0_1)
 	ld	a2, %lo(.LCPI0_0)(a2)
+	lui	a4, %hi(.LCPI0_2)
+	ld	a3, %lo(.LCPI0_1)(a3)
+	ld	a4, %lo(.LCPI0_2)(a4)
 	mul	a1, a1, a2
 	srli	a2, a1, 33
-	lui	a3, %hi(.LCPI0_1)
-	ld	a3, %lo(.LCPI0_1)(a3)
-	lui	a4, %hi(.LCPI0_2)
-	ld	a4, %lo(.LCPI0_2)(a4)
 	slli	a1, a1, 31
 	or	a1, a1, a2
 	mul	a1, a1, a3
@@ -27,13 +27,13 @@ func0000000000000000:                   # @func0000000000000000
 	.quad	-8796714831421723037            # 0x85ebca77c2b2ae63
 func0000000000000010:                   # @func0000000000000010
 	lui	a2, %hi(.LCPI1_0)
+	lui	a3, %hi(.LCPI1_1)
 	ld	a2, %lo(.LCPI1_0)(a2)
+	lui	a4, %hi(.LCPI1_2)
+	ld	a3, %lo(.LCPI1_1)(a3)
+	ld	a4, %lo(.LCPI1_2)(a4)
 	mul	a1, a1, a2
 	srli	a2, a1, 33
-	lui	a3, %hi(.LCPI1_1)
-	ld	a3, %lo(.LCPI1_1)(a3)
-	lui	a4, %hi(.LCPI1_2)
-	ld	a4, %lo(.LCPI1_2)(a4)
 	slli	a1, a1, 31
 	or	a1, a1, a2
 	mul	a1, a1, a3

@@ -29,10 +29,10 @@ func0000000000000022:                   # @func0000000000000022
 func000000000000005d:                   # @func000000000000005d
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
-	vmfle.vv	v7, v24, v8
-	vmflt.vv	v24, v8, v16
-	vmnot.m	v8, v24
-	vmandn.mm	v0, v8, v7
+	vmflt.vv	v7, v8, v16
+	vmfle.vv	v16, v24, v8
+	vmnot.m	v8, v7
+	vmandn.mm	v0, v8, v16
 	ret
 func00000000000000cc:                   # @func00000000000000cc
 	vsetivli	zero, 16, e64, m8, ta, ma

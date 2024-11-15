@@ -70,8 +70,8 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000046:                   # @func0000000000000046
 	add	a0, a0, a1
-	addiw	a0, a0, 1
 	lui	a1, 2441
+	addiw	a0, a0, 1
 	addiw	a1, a1, 1664
 	slt	a0, a0, a1
 	ret

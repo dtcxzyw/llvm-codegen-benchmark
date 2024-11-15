@@ -1,8 +1,8 @@
 func0000000000000001:                   # @func0000000000000001
 	andi	a1, a1, 255
+	bseti	a2, zero, 35
 	addi	a1, a1, -109
 	czero.eqz	a0, a0, a1
-	bseti	a2, zero, 35
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret
@@ -18,9 +18,9 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func0000000000000008:                   # @func0000000000000008
 	andi	a1, a1, 255
+	li	a2, 6
 	sltiu	a1, a1, 2
 	czero.eqz	a0, a0, a1
-	li	a2, 6
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret

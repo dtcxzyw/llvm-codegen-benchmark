@@ -3,9 +3,9 @@ func0000000000000015:                   # @func0000000000000015
 	addiw	a0, a0, -496
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
+	lui	a0, 244141
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwadd.wv	v8, v8, v10
-	lui	a0, 244141
 	addiw	a0, a0, -1536
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
@@ -23,9 +23,9 @@ func0000000000000014:                   # @func0000000000000014
 	li	a0, 60
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
+	lui	a0, 244
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwadd.wv	v8, v8, v10
-	lui	a0, 244
 	addiw	a0, a0, 576
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0

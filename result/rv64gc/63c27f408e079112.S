@@ -1,10 +1,10 @@
 func000000000000000f:                   # @func000000000000000f
 	slli	a1, a1, 32
-	srli	a2, a1, 30
-	srli	a1, a1, 28
-	sub	a1, a1, a2
 	lui	a2, 699051
+	srli	a3, a1, 30
+	srli	a1, a1, 28
 	addiw	a2, a2, -1365
+	sub	a1, a1, a3
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mulhu	a2, a0, a2
@@ -17,11 +17,11 @@ func000000000000000f:                   # @func000000000000000f
 	ret
 func000000000000000d:                   # @func000000000000000d
 	slli	a1, a1, 32
-	srli	a2, a1, 30
-	srli	a1, a1, 28
-	sub	a1, a1, a2
 	lui	a2, 699051
+	srli	a3, a1, 30
+	srli	a1, a1, 28
 	addiw	a2, a2, -1365
+	sub	a1, a1, a3
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mulhu	a2, a0, a2

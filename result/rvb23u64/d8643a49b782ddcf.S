@@ -38,9 +38,9 @@ func00000000000000b6:                   # @func00000000000000b6
 func000000000000005a:                   # @func000000000000005a
 	lui	a0, %hi(.LCPI4_0)
 	fld	fa5, %lo(.LCPI4_0)(a0)
-	flt.d	a0, fa0, fa5
-	flt.d	a1, fa0, fa1
-	xori	a1, a1, 1
+	flt.d	a0, fa0, fa1
+	flt.d	a1, fa0, fa5
+	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 .LCPI5_0:

@@ -89,9 +89,9 @@ func000000000000004d:                   # @func000000000000004d
 func0000000000000028:                   # @func0000000000000028
 	lui	a0, %hi(.LCPI12_0)
 	fld	fa5, %lo(.LCPI12_0)(a0)
-	flt.d	a0, fa1, fa5
-	fclass.d	a1, fa0
-	srli	a1, a1, 7
+	fclass.d	a0, fa0
+	flt.d	a1, fa1, fa5
+	srli	a0, a0, 7
 	and	a0, a0, a1
 	ret
 .LCPI13_0:
@@ -111,9 +111,9 @@ func00000000000000bd:                   # @func00000000000000bd
 	.quad	0xc024000000000000              # double -10
 func0000000000000024:                   # @func0000000000000024
 	lui	a0, %hi(.LCPI14_0)
+	lui	a1, %hi(.LCPI14_1)
 	fld	fa5, %lo(.LCPI14_0)(a0)
-	lui	a0, %hi(.LCPI14_1)
-	fld	fa4, %lo(.LCPI14_1)(a0)
+	fld	fa4, %lo(.LCPI14_1)(a1)
 	flt.d	a0, fa1, fa5
 	flt.d	a1, fa4, fa0
 	and	a0, a0, a1
@@ -142,10 +142,10 @@ func0000000000000077:                   # @func0000000000000077
 func0000000000000047:                   # @func0000000000000047
 	lui	a0, %hi(.LCPI18_0)
 	fld	fa5, %lo(.LCPI18_0)(a0)
-	flt.d	a0, fa5, fa1
-	fmv.d.x	fa5, zero
-	feq.d	a1, fa0, fa5
-	not	a1, a1
+	fmv.d.x	fa4, zero
+	feq.d	a0, fa0, fa4
+	flt.d	a1, fa5, fa1
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 .LCPI19_0:
@@ -163,9 +163,9 @@ func0000000000000066:                   # @func0000000000000066
 	.quad	0xbddb7cdfd9d7bdbb              # double -1.0E-10
 func00000000000000ac:                   # @func00000000000000ac
 	lui	a0, %hi(.LCPI20_0)
+	lui	a1, %hi(.LCPI20_1)
 	fld	fa5, %lo(.LCPI20_0)(a0)
-	lui	a0, %hi(.LCPI20_1)
-	fld	fa4, %lo(.LCPI20_1)(a0)
+	fld	fa4, %lo(.LCPI20_1)(a1)
 	fle.d	a0, fa1, fa5
 	fle.d	a1, fa4, fa0
 	and	a0, a0, a1
@@ -202,8 +202,8 @@ func0000000000000034:                   # @func0000000000000034
 	lui	a0, %hi(.LCPI24_0)
 	fld	fa5, %lo(.LCPI24_0)(a0)
 	fle.d	a0, fa5, fa1
-	xori	a0, a0, 1
 	fmv.d.x	fa5, zero
+	xori	a0, a0, 1
 	flt.d	a1, fa5, fa0
 	and	a0, a0, a1
 	ret
@@ -273,9 +273,9 @@ func0000000000000064:                   # @func0000000000000064
 	.quad	0x3f847ae147ae147b              # double 0.01
 func000000000000004b:                   # @func000000000000004b
 	lui	a0, %hi(.LCPI32_0)
+	lui	a1, %hi(.LCPI32_1)
 	fld	fa5, %lo(.LCPI32_0)(a0)
-	lui	a0, %hi(.LCPI32_1)
-	fld	fa4, %lo(.LCPI32_1)(a0)
+	fld	fa4, %lo(.LCPI32_1)(a1)
 	flt.d	a0, fa5, fa1
 	flt.d	a1, fa4, fa0
 	not	a1, a1

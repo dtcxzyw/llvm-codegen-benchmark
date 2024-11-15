@@ -27,8 +27,8 @@ func00000000000000c8:                   # @func00000000000000c8
 	sext.w	a1, a1
 	srliw	a0, a0, 2
 	xor	a0, a0, a1
-	snez	a0, a0
 	sltiu	a1, a2, 4
+	snez	a0, a0
 	not	a1, a1
 	and	a0, a0, a1
 	ret

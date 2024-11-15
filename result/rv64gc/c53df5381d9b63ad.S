@@ -40,8 +40,8 @@ func0000000000000054:                   # @func0000000000000054
 	ret
 func00000000000000c6:                   # @func00000000000000c6
 	subw	a1, a1, a2
-	addiw	a1, a1, -8
 	li	a2, 3
+	addiw	a1, a1, -8
 	slli	a2, a2, 11
 	slt	a1, a1, a2
 	and	a0, a0, a1

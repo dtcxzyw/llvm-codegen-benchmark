@@ -28,8 +28,8 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func0000000000000031:                   # @func0000000000000031
 	slli	a1, a1, 48
-	srli	a1, a1, 48
 	lui	a3, 14
+	srli	a1, a1, 48
 	addiw	a3, a3, -1024
 	bne	a1, a3, .LBB4_2
 	addiw	a0, a2, 2
@@ -44,9 +44,9 @@ func0000000000000004:                   # @func0000000000000004
 .LBB5_2:                                # %entry
 	ret
 func0000000000000034:                   # @func0000000000000034
-	slli	a1, a1, 48
-	srli	a3, a1, 48
+	slli	a3, a1, 48
 	lui	a1, 8
+	srli	a3, a3, 48
 	addiw	a4, a1, -1
 	bgeu	a3, a4, .LBB6_2
 	addw	a0, a2, a1

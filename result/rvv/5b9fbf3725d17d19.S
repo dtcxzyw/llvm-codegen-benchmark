@@ -29,8 +29,8 @@ func0000000000000044:                   # @func0000000000000044
 	li	a0, 16
 	vsetivli	zero, 4, e8, mf4, ta, ma
 	vadd.vx	v10, v10, a0
-	vmsleu.vi	v10, v10, 4
 	li	a0, -76
+	vmsleu.vi	v10, v10, 4
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v11, v8, a0
 	vmand.mm	v0, v11, v10

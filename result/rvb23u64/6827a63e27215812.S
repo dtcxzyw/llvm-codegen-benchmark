@@ -1,11 +1,11 @@
 func0000000000000008:                   # @func0000000000000008
 	add	a1, a1, a2
+	lui	a2, 78125
 	zext.w	a1, a1
+	slli	a2, a2, 11
 	mul	a0, a0, a1
-	lui	a1, 78125
-	slli	a1, a1, 11
-	addi	a1, a1, -1
-	sltu	a0, a1, a0
+	addi	a2, a2, -1
+	sltu	a0, a2, a0
 	ret
 func00000000000001c1:                   # @func00000000000001c1
 	addw	a1, a1, a2
@@ -14,9 +14,9 @@ func00000000000001c1:                   # @func00000000000001c1
 	ret
 func0000000000000028:                   # @func0000000000000028
 	add	a1, a1, a2
+	li	a2, -1
 	zext.w	a1, a1
 	mul	a0, a0, a1
-	li	a1, -1
-	slli.uw	a1, a1, 16
+	slli.uw	a1, a2, 16
 	sltu	a0, a1, a0
 	ret

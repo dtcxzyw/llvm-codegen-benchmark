@@ -70,16 +70,16 @@ func000000000000000e:                   # @func000000000000000e
 	ret
 func0000000000000035:                   # @func0000000000000035
 	lui	a3, 10033
-	slli	a3, a3, 20
 	slli	a2, a2, 32
+	slli	a3, a3, 20
 	mulhu	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
 func0000000000000015:                   # @func0000000000000015
 	slli	a2, a2, 32
-	srli	a2, a2, 32
 	lui	a3, 1048572
+	srli	a2, a2, 32
 	addiw	a3, a3, 1460
 	mul	a2, a2, a3
 	add	a0, a0, a1

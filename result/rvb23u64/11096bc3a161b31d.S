@@ -33,10 +33,10 @@ func000000000000003f:                   # @func000000000000003f
 	ret
 func0000000000000007:                   # @func0000000000000007
 	add	a1, a1, a2
-	slli	a1, a1, 13
-	srli	a1, a1, 13
 	lui	a2, 1048538
+	slli	a1, a1, 13
 	srli	a2, a2, 12
+	srli	a1, a1, 13
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
@@ -54,11 +54,11 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func000000000000000f:                   # @func000000000000000f
 	add	a1, a1, a2
+	lui	a2, 16
 	zext.h	a1, a1
 	add	a0, a0, a1
-	lui	a1, 16
-	addiw	a1, a1, -1
-	add	a0, a0, a1
+	addiw	a2, a2, -1
+	add	a0, a0, a2
 	ret
 func0000000000000015:                   # @func0000000000000015
 	add	a1, a1, a2

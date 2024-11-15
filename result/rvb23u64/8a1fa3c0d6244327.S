@@ -4,10 +4,10 @@ func0000000000000002:                   # @func0000000000000002
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a0)
 	fabs.d	fa4, fa0
-	flt.d	a0, fa4, fa5
-	lui	a1, 1
-	addiw	a1, a1, -2
-	czero.nez	a0, a1, a0
+	lui	a0, 1
+	flt.d	a1, fa4, fa5
+	addiw	a0, a0, -2
+	czero.nez	a0, a0, a1
 	addi	a0, a0, 2
 	ret
 func0000000000000006:                   # @func0000000000000006

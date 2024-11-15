@@ -22,8 +22,8 @@ func0000000000000014:                   # @func0000000000000014
 	lui	a0, %hi(.LCPI1_1)
 	flw	fa4, %lo(.LCPI1_1)(a0)
 	fmadd.s	fa5, fa1, fa5, fa2
-	fmadd.s	fa5, fa0, fa4, fa5
 	lui	a0, 275360
+	fmadd.s	fa5, fa0, fa4, fa5
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	ret
@@ -62,11 +62,11 @@ func0000000000000005:                   # @func0000000000000005
 func0000000000000002:                   # @func0000000000000002
 	lui	a0, 268032
 	fmv.w.x	fa5, a0
-	fmadd.s	fa5, fa1, fa5, fa2
 	lui	a0, 263168
+	fmadd.s	fa5, fa1, fa5, fa2
 	fmv.w.x	fa4, a0
-	fmadd.s	fa5, fa0, fa4, fa5
 	lui	a0, 212992
+	fmadd.s	fa5, fa0, fa4, fa5
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	ret
@@ -90,17 +90,17 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func0000000000000018:                   # @func0000000000000018
 	fmv.w.x	fa5, zero
+	lui	a0, 260096
 	fmadd.s	fa4, fa1, fa5, fa2
 	fmadd.s	fa5, fa0, fa5, fa4
-	lui	a0, 260096
 	fmv.w.x	fa4, a0
 	feq.s	a0, fa5, fa4
 	ret
 func0000000000000008:                   # @func0000000000000008
 	lui	a0, 268032
 	fmv.w.x	fa5, a0
-	fmadd.s	fa5, fa1, fa5, fa2
 	lui	a0, 263168
+	fmadd.s	fa5, fa1, fa5, fa2
 	fmv.w.x	fa4, a0
 	fmadd.s	fa5, fa0, fa4, fa5
 	fmv.w.x	fa4, zero

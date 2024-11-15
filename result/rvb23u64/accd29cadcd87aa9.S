@@ -12,8 +12,8 @@ func000000000000003f:                   # @func000000000000003f
 	ret
 func0000000000000015:                   # @func0000000000000015
 	andi	a1, a1, 48
-	slli	a1, a1, 12
 	lui	a2, 1048560
+	slli	a1, a1, 12
 	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
@@ -63,8 +63,8 @@ func000000000000002e:                   # @func000000000000002e
 	ret
 func0000000000000037:                   # @func0000000000000037
 	slli	a1, a1, 61
-	srli	a1, a1, 43
 	lui	a2, 4096
+	srli	a1, a1, 43
 	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret

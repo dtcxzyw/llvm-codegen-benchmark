@@ -95,8 +95,8 @@ func00000000000001ac:                   # @func00000000000001ac
 func000000000000004a:                   # @func000000000000004a
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	vmsgt.vi	v12, v10, -1
 	lui	a0, 244141
+	vmsgt.vi	v12, v10, -1
 	addiw	a0, a0, -1536
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v12, v10

@@ -2,16 +2,16 @@
 	.quad	-8194354213138031507            # 0x8e47ce423a2e9c6d
 func0000000000000011:                   # @func0000000000000011
 	lui	a0, 281475
-	addiw	a1, a0, -95
-	lui	a2, %hi(.LCPI0_0)
-	ld	a2, %lo(.LCPI0_0)(a2)
-	slli	a1, a1, 12
-	addi	a1, a1, -2048
+	lui	a1, %hi(.LCPI0_0)
+	addiw	a2, a0, -95
+	ld	a1, %lo(.LCPI0_0)(a1)
+	slli	a2, a2, 12
+	addi	a2, a2, -2048
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmv.v.x	v10, a1
-	vmacc.vx	v10, a2, v8
-	vror.vi	v8, v10, 9
+	vmv.v.x	v10, a2
 	slli	a0, a0, 4
+	vmacc.vx	v10, a1, v8
+	vror.vi	v8, v10, 9
 	addi	a0, a0, -1528
 	vmsleu.vx	v0, v8, a0
 	ret

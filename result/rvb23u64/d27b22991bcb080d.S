@@ -1,8 +1,8 @@
 func0000000000000010:                   # @func0000000000000010
 	lui	a2, 16
+	lui	a3, 1048560
 	addiw	a2, a2, -16
 	sltu	a2, a2, a1
-	lui	a3, 1048560
 	addiw	a3, a3, 15
 	czero.eqz	a2, a3, a2
 	add	a1, a1, a2
@@ -10,9 +10,9 @@ func0000000000000010:                   # @func0000000000000010
 	ret
 func0000000000000030:                   # @func0000000000000030
 	lui	a2, 16
+	lui	a3, 1048560
 	addiw	a2, a2, -16
 	sltu	a2, a2, a1
-	lui	a3, 1048560
 	addiw	a3, a3, 15
 	czero.eqz	a2, a3, a2
 	add	a1, a1, a2

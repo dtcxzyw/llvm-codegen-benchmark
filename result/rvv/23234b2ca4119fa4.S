@@ -2,10 +2,10 @@ func0000000000000078:                   # @func0000000000000078
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfclass.v	v16, v16
 	li	a0, 894
+	fli.d	fa5, inf
 	vand.vx	v16, v16, a0
 	vmsne.vi	v24, v16, 0
 	vmor.mm	v16, v24, v0
-	fli.d	fa5, inf
 	vmfeq.vf	v17, v8, fa5
 	vmor.mm	v0, v16, v17
 	ret
@@ -13,10 +13,10 @@ func0000000000000088:                   # @func0000000000000088
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfclass.v	v16, v16
 	li	a0, 129
+	fli.d	fa5, inf
 	vand.vx	v16, v16, a0
 	vmsne.vi	v24, v16, 0
 	vmor.mm	v16, v24, v0
-	fli.d	fa5, inf
 	vmfeq.vf	v17, v8, fa5
 	vmor.mm	v0, v16, v17
 	ret
@@ -56,8 +56,8 @@ func000000000000002a:                   # @func000000000000002a
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfabs.v	v16, v16
 	vmflt.vf	v24, v16, fa5
-	vmor.mm	v16, v24, v0
 	fmv.d.x	fa5, zero
+	vmor.mm	v16, v24, v0
 	vmfle.vf	v17, v8, fa5
 	vmor.mm	v0, v16, v17
 	ret

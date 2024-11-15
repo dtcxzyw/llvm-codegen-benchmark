@@ -30,26 +30,26 @@ func00000000000000ca:                   # @func00000000000000ca
 	ret
 func00000000000000c8:                   # @func00000000000000c8
 	slli	a1, a1, 50
-	srli	a1, a1, 63
 	sltiu	a0, a0, 2
+	srli	a1, a1, 63
 	not	a0, a0
 	and	a0, a0, a1
 	ret
 func0000000000000018:                   # @func0000000000000018
 	lui	a2, 2
+	sltiu	a0, a0, 2
 	and	a1, a1, a2
 	seqz	a1, a1
-	sltiu	a0, a0, 2
 	not	a0, a0
 	and	a0, a0, a1
 	ret
 func000000000000001a:                   # @func000000000000001a
 	lui	a2, 16
+	slti	a0, a0, 2044
 	addiw	a2, a2, -2
 	and	a1, a1, a2
 	addi	a1, a1, -410
 	seqz	a1, a1
-	slti	a0, a0, 2044
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -60,10 +60,10 @@ func000000000000004c:                   # @func000000000000004c
 	ret
 func0000000000000081:                   # @func0000000000000081
 	slli	a1, a1, 48
+	srli	a0, a0, 28
 	srli	a1, a1, 61
 	addi	a1, a1, -3
 	seqz	a1, a1
-	srli	a0, a0, 28
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

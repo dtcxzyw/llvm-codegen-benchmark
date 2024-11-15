@@ -12,7 +12,7 @@ func0000000000000008:                   # @func0000000000000008
 	slli	a0, a0, 43
 	addi	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
-	vsrl.vi	v8, v8, 31
 	lui	a0, 5
+	vsrl.vi	v8, v8, 31
 	vmerge.vxm	v8, v8, a0, v0
 	ret

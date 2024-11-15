@@ -20,9 +20,9 @@ func0000000000000003:                   # @func0000000000000003
 func0000000000000001:                   # @func0000000000000001
 	vmv1r.v	v9, v0
 	li	a0, -65
+	lui	a1, 272
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v10, v10, a0
-	lui	a1, 272
 	addi	a1, a1, -65
 	vmv1r.v	v0, v8
 	vmerge.vxm	v10, v10, a1, v0

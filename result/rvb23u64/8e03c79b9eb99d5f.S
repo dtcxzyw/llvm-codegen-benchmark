@@ -11,9 +11,9 @@ func0000000000000844:                   # @func0000000000000844
 	sext.w	a1, a1
 	sext.w	a2, a2
 	sltiu	a2, a2, 10
-	xori	a2, a2, 1
 	sltiu	a1, a1, 100
 	sltiu	a0, a0, 10
+	xori	a2, a2, 1
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret

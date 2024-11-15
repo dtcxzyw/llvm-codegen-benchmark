@@ -16,9 +16,9 @@ func00000000000000a1:                   # @func00000000000000a1
 	ret
 func0000000000000008:                   # @func0000000000000008
 	mul	a1, a1, a2
+	li	a2, 63
 	add	a0, a0, a1
-	li	a1, 63
-	bseti	a1, a1, 63
+	bseti	a1, a2, 63
 	and	a0, a0, a1
 	bseti	a1, zero, 63
 	sltu	a0, a1, a0

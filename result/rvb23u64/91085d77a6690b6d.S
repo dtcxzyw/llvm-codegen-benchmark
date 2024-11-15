@@ -13,10 +13,10 @@ func00000000000002a4:                   # @func00000000000002a4
 	ret
 func00000000000002a1:                   # @func00000000000002a1
 	slli.uw	a2, a2, 3
+	sh1add	a1, a1, a1
 	sh1add	a2, a2, a2
 	add	a2, a2, a0
 	addi	a2, a2, 24
-	sh1add	a1, a1, a1
 	sh3add	a0, a1, a0
 	xor	a0, a0, a2
 	seqz	a0, a0

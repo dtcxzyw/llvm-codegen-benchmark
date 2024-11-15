@@ -23,8 +23,8 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func000000000000000a:                   # @func000000000000000a
 	bseti	a2, zero, 11
-	slt	a1, a1, a2
 	srliw	a0, a0, 3
+	slt	a1, a1, a2
 	slli	a0, a0, 3
 	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1

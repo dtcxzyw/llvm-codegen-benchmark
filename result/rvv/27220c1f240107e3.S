@@ -4,8 +4,8 @@ func0000000000000000:                   # @func0000000000000000
 	lui	a0, 91494
 	addi	a0, a0, 1969
 	vmadd.vx	v12, a0, v8
-	vror.vi	v8, v12, 21
 	lui	a0, 648056
+	vror.vi	v8, v12, 21
 	addi	a0, a0, -1615
 	vmul.vx	v8, v8, a0
 	ret

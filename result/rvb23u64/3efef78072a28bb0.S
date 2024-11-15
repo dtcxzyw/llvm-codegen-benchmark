@@ -30,8 +30,8 @@ func0000000000000741:                   # @func0000000000000741
 func0000000000000384:                   # @func0000000000000384
 	zext.w	a2, a2
 	addi	a1, a1, 1
-	sltu	a1, a1, a2
 	sltiu	a0, a0, 3
+	sltu	a1, a1, a2
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret

@@ -77,8 +77,8 @@ func00000000000000cc:                   # @func00000000000000cc
 func0000000000000488:                   # @func0000000000000488
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	vmsleu.vi	v12, v10, 7
 	li	a0, 32
+	vmsleu.vi	v12, v10, 7
 	vmsltu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v12
 	ret
@@ -128,8 +128,8 @@ func0000000000000182:                   # @func0000000000000182
 func0000000000000490:                   # @func0000000000000490
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	vmsleu.vi	v12, v10, 15
 	li	a0, 255
+	vmsleu.vi	v12, v10, 15
 	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v12
 	ret

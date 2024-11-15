@@ -1,8 +1,8 @@
 func0000000000000021:                   # @func0000000000000021
 	addi	a1, a1, 32
+	lui	a2, 1043919
 	xor	a0, a0, a1
-	lui	a1, 1043919
-	addi	a1, a1, -565
+	addi	a1, a2, -565
 	slli	a2, a1, 32
 	add.uw	a1, a1, a2
 	xor	a0, a0, a1
@@ -16,9 +16,9 @@ func0000000000000028:                   # @func0000000000000028
 	ret
 func000000000000002c:                   # @func000000000000002c
 	addi	a1, a1, 32
+	lui	a2, 1043919
 	xor	a0, a0, a1
-	lui	a1, 1043919
-	addi	a1, a1, -565
+	addi	a1, a2, -565
 	slli	a2, a1, 32
 	add.uw	a1, a1, a2
 	xor	a0, a0, a1

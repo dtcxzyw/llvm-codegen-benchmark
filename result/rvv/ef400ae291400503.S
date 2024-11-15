@@ -4,8 +4,8 @@ func0000000000000282:                   # @func0000000000000282
 	vadd.vx	v10, v10, a0
 	li	a0, 26
 	vmsltu.vx	v9, v10, a0
-	vmor.mm	v9, v9, v0
 	li	a0, 95
+	vmor.mm	v9, v9, v0
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmseq.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9

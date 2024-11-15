@@ -11,22 +11,22 @@ func0000000000000007:                   # @func0000000000000007
 	ret
 func000000000000000f:                   # @func000000000000000f
 	add	a0, a0, a1
-	slli	a0, a0, 32
 	lui	a1, 67592
+	slli	a0, a0, 32
 	addiw	a1, a1, 2
 	or	a0, a0, a1
 	ret
 func0000000000000005:                   # @func0000000000000005
 	add	a0, a0, a1
-	slli	a0, a0, 32
 	lui	a1, 67592
+	slli	a0, a0, 32
 	addiw	a1, a1, 2
 	or	a0, a0, a1
 	ret
 func000000000000003f:                   # @func000000000000003f
 	add	a0, a0, a1
-	slli	a0, a0, 32
 	lui	a1, 86600
+	slli	a0, a0, 32
 	addiw	a1, a1, 1
 	or	a0, a0, a1
 	ret

@@ -11,11 +11,11 @@ func0000000000000044:                   # @func0000000000000044
 	ret
 func00000000000001cc:                   # @func00000000000001cc
 	addi	a2, a0, 1
-	xor	a2, a2, a1
-	snez	a2, a2
 	xor	a0, a0, a1
+	xor	a1, a1, a2
+	snez	a1, a1
 	snez	a0, a0
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 func0000000000000358:                   # @func0000000000000358
 	addi	a2, a1, 9
@@ -53,8 +53,8 @@ func0000000000000089:                   # @func0000000000000089
 	ret
 func000000000000008c:                   # @func000000000000008c
 	addi	a2, a0, -1
-	sltu	a2, a1, a2
 	xor	a0, a0, a1
+	sltu	a1, a1, a2
 	snez	a0, a0
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret

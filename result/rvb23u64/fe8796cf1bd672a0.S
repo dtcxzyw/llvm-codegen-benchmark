@@ -7,8 +7,8 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 func0000000000000061:                   # @func0000000000000061
 	slti	a2, a2, 1
-	czero.nez	a1, a1, a2
 	li	a3, -1
+	czero.nez	a1, a1, a2
 	srli	a3, a3, 1
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
@@ -59,8 +59,8 @@ func000000000000001a:                   # @func000000000000001a
 func0000000000000085:                   # @func0000000000000085
 	bseti	a3, zero, 11
 	sltu	a2, a3, a2
-	czero.nez	a1, a1, a2
 	li	a3, 2047
+	czero.nez	a1, a1, a2
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
 	sltu	a0, a1, a0
@@ -68,8 +68,8 @@ func0000000000000085:                   # @func0000000000000085
 	ret
 func0000000000000019:                   # @func0000000000000019
 	addi	a2, a2, -1
-	czero.eqz	a1, a1, a2
 	li	a3, 1
+	czero.eqz	a1, a1, a2
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
 	sltu	a0, a0, a1
@@ -77,8 +77,8 @@ func0000000000000019:                   # @func0000000000000019
 	ret
 func00000000000000a6:                   # @func00000000000000a6
 	slti	a2, a2, 0
-	czero.eqz	a1, a1, a2
 	li	a3, 1
+	czero.eqz	a1, a1, a2
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
 	slt	a0, a0, a1
@@ -88,9 +88,9 @@ func00000000000000a1:                   # @func00000000000000a1
 	slli	a3, a3, 3
 	addi	a3, a3, -765
 	slt	a2, a3, a2
-	czero.nez	a1, a1, a2
 	li	a3, -1
 	srli	a3, a3, 1
+	czero.nez	a1, a1, a2
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
 	xor	a0, a0, a1
@@ -101,27 +101,27 @@ func0000000000000086:                   # @func0000000000000086
 	slli	a3, a3, 3
 	addi	a3, a3, -765
 	sltu	a2, a3, a2
-	czero.nez	a1, a1, a2
 	li	a3, -1
 	srli	a3, a3, 1
+	czero.nez	a1, a1, a2
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
 	slt	a0, a0, a1
 	ret
 func0000000000000044:                   # @func0000000000000044
 	srli	a2, a2, 34
-	sltiu	a2, a2, 63
-	czero.nez	a1, a1, a2
 	li	a3, 63
+	sltiu	a2, a2, 63
 	slli	a3, a3, 34
+	czero.nez	a1, a1, a2
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
 func0000000000000048:                   # @func0000000000000048
 	sltiu	a2, a2, 23
-	czero.nez	a1, a1, a2
 	li	a3, 32
+	czero.nez	a1, a1, a2
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
 	sltu	a0, a1, a0

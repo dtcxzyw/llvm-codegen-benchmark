@@ -7,10 +7,10 @@ func0000000000000108:                   # @func0000000000000108
 	ret
 func0000000000000198:                   # @func0000000000000198
 	addw	a1, a1, a2
+	lui	a2, 2
 	slli	a1, a1, 4
 	add	a0, a0, a1
-	lui	a1, 2
-	addiw	a1, a1, -368
+	addiw	a1, a2, -368
 	add	a0, a0, a1
 	ret
 func000000000000018a:                   # @func000000000000018a
@@ -62,10 +62,10 @@ func0000000000000118:                   # @func0000000000000118
 	ret
 func00000000000001f8:                   # @func00000000000001f8
 	addw	a1, a1, a2
+	lui	a2, 2
 	slli	a1, a1, 1
 	add	a0, a0, a1
-	lui	a1, 2
-	addiw	a1, a1, -1304
+	addiw	a1, a2, -1304
 	add	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008

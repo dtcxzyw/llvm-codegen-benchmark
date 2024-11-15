@@ -7,8 +7,8 @@ func0000000000000031:                   # @func0000000000000031
 func0000000000000011:                   # @func0000000000000011
 	not	a1, a1
 	binvi	a0, a0, 63
-	czero.eqz	a1, a1, a0
 	li	a2, 30
+	czero.eqz	a1, a1, a0
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	ret

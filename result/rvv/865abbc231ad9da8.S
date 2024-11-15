@@ -9,8 +9,8 @@ func000000000000004a:                   # @func000000000000004a
 func0000000000000158:                   # @func0000000000000158
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v10, v10, 3
-	vsub.vv	v8, v10, v8
 	li	a0, -1
+	vsub.vv	v8, v10, v8
 	slli	a0, a0, 60
 	addi	a1, a0, 1
 	vadd.vx	v8, v8, a1
@@ -37,8 +37,8 @@ func0000000000000191:                   # @func0000000000000191
 func0000000000000108:                   # @func0000000000000108
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v10, v10, 5
-	vsub.vv	v8, v10, v8
 	li	a0, -1
+	vsub.vv	v8, v10, v8
 	slli	a0, a0, 61
 	addi	a1, a0, 1
 	vadd.vx	v8, v8, a1

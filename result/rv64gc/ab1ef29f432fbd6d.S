@@ -48,8 +48,8 @@ func00000000000000c1:                   # @func00000000000000c1
 func0000000000000055:                   # @func0000000000000055
 	sext.w	a0, a0
 	lui	a3, 16
-	addiw	a3, a3, -10
 	sub	a2, a2, a1
+	addiw	a3, a3, -10
 	add	a2, a2, a3
 	addi	a3, a3, 9
 	and	a2, a2, a3

@@ -1,7 +1,7 @@
 func0000000000000051:                   # @func0000000000000051
 	sub	a1, a1, a2
-	srai	a1, a1, 3
 	lui	a2, 699051
+	srai	a1, a1, 3
 	addiw	a2, a2, -1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
@@ -13,24 +13,24 @@ func0000000000000051:                   # @func0000000000000051
 	ret
 func0000000000000054:                   # @func0000000000000054
 	sub	a1, a1, a2
-	srli	a1, a1, 2
 	lui	a2, 699051
 	addiw	a2, a2, -1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
+	li	a3, 1
+	srli	a1, a1, 2
+	slli	a3, a3, 32
+	addi	a3, a3, -2
 	mul	a1, a1, a2
-	li	a2, 1
-	slli	a2, a2, 32
-	addi	a2, a2, -2
-	add	a1, a1, a2
-	addi	a2, a2, 1
-	and	a1, a1, a2
+	add	a1, a1, a3
+	addi	a3, a3, 1
+	and	a1, a1, a3
 	sltu	a0, a0, a1
 	ret
 func0000000000000055:                   # @func0000000000000055
 	sub	a1, a1, a2
-	srli	a1, a1, 3
 	lui	a2, 699051
+	srli	a1, a1, 3
 	addi	a2, a2, -1365
 	slli	a3, a2, 32
 	add	a2, a2, a3

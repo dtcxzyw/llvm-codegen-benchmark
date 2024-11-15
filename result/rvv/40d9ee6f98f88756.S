@@ -10,9 +10,9 @@ func0000000000000088:                   # @func0000000000000088
 func0000000000000089:                   # @func0000000000000089
 	lui	a0, 4
 	addi	a1, a0, -190
+	addi	a0, a0, -185
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmseq.vx	v12, v10, a1
-	addi	a0, a0, -185
 	vmseq.vx	v13, v10, a0
 	vmor.mm	v0, v13, v12
 	li	a0, 256

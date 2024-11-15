@@ -1,8 +1,8 @@
 func0000000000000004:                   # @func0000000000000004
 	subw	a2, a2, a1
+	slli	a0, a0, 32
 	slli	a2, a2, 32
 	srli	a2, a2, 32
-	slli	a0, a0, 32
 	srli	a0, a0, 32
 	sltu	a0, a2, a0
 	ret

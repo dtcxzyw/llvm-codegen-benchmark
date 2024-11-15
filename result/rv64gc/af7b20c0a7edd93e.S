@@ -9,12 +9,12 @@ func00000000000001ea:                   # @func00000000000001ea
 	ret
 func00000000000000ca:                   # @func00000000000000ca
 	slli	a2, a2, 32
-	srli	a3, a2, 29
-	srli	a2, a2, 27
-	sub	a2, a2, a3
 	slli	a3, a1, 3
 	slli	a1, a1, 5
 	sub	a1, a1, a3
+	srli	a3, a2, 29
+	srli	a2, a2, 27
+	sub	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, -24

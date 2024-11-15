@@ -43,16 +43,16 @@ func0000000000000111:                   # @func0000000000000111
 	sext.w	a2, a0
 	addw	a0, a0, a1
 	addi	a0, a0, 1
-	seqz	a0, a0
 	addi	a2, a2, 1
+	seqz	a0, a0
 	seqz	a1, a2
 	or	a0, a0, a1
 	ret
 func0000000000000088:                   # @func0000000000000088
 	sext.w	a2, a0
 	addw	a0, a0, a1
-	maxu	a0, a2, a0
 	lui	a1, 524288
+	maxu	a0, a2, a0
 	addiw	a1, a1, -256
 	sltu	a0, a1, a0
 	ret

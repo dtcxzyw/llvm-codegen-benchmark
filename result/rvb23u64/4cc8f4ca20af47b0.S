@@ -1,7 +1,7 @@
 func000000000000003f:                   # @func000000000000003f
 	sext.b	a1, a1
-	sh2add	a1, a1, a1
 	sext.b	a0, a0
+	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
 	slli	a1, a0, 2
 	slli	a0, a0, 6
@@ -18,8 +18,8 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func0000000000000015:                   # @func0000000000000015
 	sext.b	a1, a1
-	sh2add	a1, a1, a1
 	sext.b	a0, a0
+	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
 	slli	a1, a0, 2
 	slli	a0, a0, 6

@@ -28,8 +28,8 @@ func0000000000000011:                   # @func0000000000000011
 	bseti	a0, zero, 11
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
-	vmseq.vi	v9, v10, 0
 	li	a0, 63
+	vmseq.vi	v9, v10, 0
 	vsetvli	zero, zero, e16, mf2, ta, ma
 	vmseq.vx	v8, v8, a0
 	vmor.mm	v0, v9, v8

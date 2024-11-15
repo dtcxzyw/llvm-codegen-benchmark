@@ -1,9 +1,9 @@
 func0000000000000003:                   # @func0000000000000003
 	fcvt.d.wu	fa5, a1
-	fmv.x.d	a1, fa5
-	lui	a2, 524288
-	addi	a2, a2, -1
-	slli	a2, a2, 32
+	lui	a1, 524288
+	fmv.x.d	a2, fa5
+	addi	a1, a1, -1
+	slli	a1, a1, 32
 	and	a1, a1, a2
 	li	a2, -31
 	slli	a2, a2, 52

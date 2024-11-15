@@ -1,16 +1,16 @@
 func00000000000000d1:                   # @func00000000000000d1
 	sltiu	a0, a0, 20
 	addi	a1, a1, 12
-	czero.nez	a1, a1, a0
 	li	a2, 31
+	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
 	or	a0, a0, a1
 	ret
 func0000000000000050:                   # @func0000000000000050
 	sltiu	a0, a0, 2
 	addi	a1, a1, -32
-	czero.nez	a1, a1, a0
 	li	a2, -16
+	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
 	or	a0, a0, a1
 	ret

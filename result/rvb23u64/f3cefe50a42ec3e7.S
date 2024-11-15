@@ -1,8 +1,8 @@
 func00000000000000d5:                   # @func00000000000000d5
 	andi	a2, a2, 255
 	li	a3, 298
-	mul	a2, a2, a3
 	add	a0, a0, a1
+	mul	a2, a2, a3
 	add	a0, a0, a2
 	li	a1, -1160
 	sh2add	a0, a1, a0
@@ -40,8 +40,8 @@ func00000000000001d7:                   # @func00000000000001d7
 func00000000000000fd:                   # @func00000000000000fd
 	andi	a2, a2, 255
 	li	a3, 188
-	mul	a2, a2, a3
 	add	a0, a0, a1
+	mul	a2, a2, a3
 	add	a0, a0, a2
 	li	a1, 1520
 	sh3add	a0, a1, a0

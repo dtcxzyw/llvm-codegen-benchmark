@@ -2,8 +2,8 @@ func0000000000000011:                   # @func0000000000000011
 	lui	a2, 15
 	and	a1, a1, a2
 	lui	a2, 10
-	xor	a1, a1, a2
 	srliw	a0, a0, 31
+	xor	a1, a1, a2
 	slli	a0, a0, 31
 	or	a0, a0, a1
 	seqz	a0, a0

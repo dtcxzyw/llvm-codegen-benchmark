@@ -2,8 +2,8 @@ func0000000000000001:                   # @func0000000000000001
 	lui	a0, 504102
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
-	vsrl.vi	v8, v8, 18
 	lui	a0, 1048276
+	vsrl.vi	v8, v8, 18
 	addiw	a0, a0, -655
 	vadd.vx	v8, v8, a0
 	ret

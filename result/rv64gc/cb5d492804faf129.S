@@ -1,11 +1,11 @@
 func0000000000000001:                   # @func0000000000000001
 	lui	a1, 4
+	li	a2, 1
 	addiw	a1, a1, 423
+	slli	a2, a2, 33
 	mul	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 33
-	addi	a1, a1, 5
-	mulhu	a1, a0, a1
+	addi	a2, a2, 5
+	mulhu	a1, a0, a2
 	sub	a2, a0, a1
 	srli	a2, a2, 1
 	add	a1, a1, a2
@@ -17,12 +17,12 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func000000000000000d:                   # @func000000000000000d
 	lui	a1, 4
+	li	a2, 1
 	addiw	a1, a1, 423
+	slli	a2, a2, 33
 	mul	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 33
-	addi	a1, a1, 5
-	mulhu	a1, a0, a1
+	addi	a2, a2, 5
+	mulhu	a1, a0, a2
 	sub	a2, a0, a1
 	srli	a2, a2, 1
 	add	a1, a1, a2
@@ -34,12 +34,12 @@ func000000000000000d:                   # @func000000000000000d
 	ret
 func0000000000000005:                   # @func0000000000000005
 	lui	a1, 12
+	li	a2, 1
 	addiw	a1, a1, -881
+	slli	a2, a2, 33
 	mul	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 33
-	addi	a1, a1, 5
-	mulhu	a1, a0, a1
+	addi	a2, a2, 5
+	mulhu	a1, a0, a2
 	sub	a2, a0, a1
 	srli	a2, a2, 1
 	add	a1, a1, a2

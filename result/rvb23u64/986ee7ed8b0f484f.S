@@ -24,11 +24,11 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func000000000000003c:                   # @func000000000000003c
 	lui	a3, 448
-	and	a2, a2, a3
 	or	a0, a0, a1
+	lui	a1, 272
+	and	a2, a2, a3
 	or	a0, a0, a2
 	sext.w	a0, a0
-	lui	a1, 272
 	addiw	a1, a1, 1
 	xor	a0, a0, a1
 	snez	a0, a0

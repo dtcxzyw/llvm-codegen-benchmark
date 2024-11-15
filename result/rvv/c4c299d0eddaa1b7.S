@@ -5,10 +5,10 @@ func0000000000000276:                   # @func0000000000000276
 	addiw	a0, a0, -585
 	slli	a1, a0, 33
 	add	a0, a0, a1
+	li	a1, 32
 	vmul.vx	v10, v10, a0
-	li	a0, 32
-	vsll.vx	v10, v10, a0
-	vsra.vx	v10, v10, a0
+	vsll.vx	v10, v10, a1
+	vsra.vx	v10, v10, a1
 	vadd.vi	v8, v8, 1
 	vmslt.vv	v0, v8, v10
 	ret
@@ -19,10 +19,10 @@ func0000000000000251:                   # @func0000000000000251
 	addiw	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
+	li	a1, 32
 	vmul.vx	v10, v10, a0
-	li	a0, 32
-	vsll.vx	v10, v10, a0
-	vsra.vx	v10, v10, a0
+	vsll.vx	v10, v10, a1
+	vsra.vx	v10, v10, a1
 	vadd.vi	v8, v8, 1
 	vmseq.vv	v0, v8, v10
 	ret
@@ -49,8 +49,8 @@ func0000000000000051:                   # @func0000000000000051
 	vmulh.vx	v10, v10, a0
 	li	a0, 63
 	vsrl.vx	v12, v10, a0
-	vadd.vv	v10, v10, v12
 	li	a0, 32
+	vadd.vv	v10, v10, v12
 	vsll.vx	v10, v10, a0
 	vsra.vx	v10, v10, a0
 	vadd.vi	v8, v8, 1
@@ -63,10 +63,10 @@ func0000000000000261:                   # @func0000000000000261
 	addiw	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
+	li	a1, 32
 	vmul.vx	v10, v10, a0
-	li	a0, 32
-	vsll.vx	v10, v10, a0
-	vsra.vx	v10, v10, a0
+	vsll.vx	v10, v10, a1
+	vsra.vx	v10, v10, a1
 	vadd.vi	v8, v8, 1
 	vmseq.vv	v0, v8, v10
 	ret

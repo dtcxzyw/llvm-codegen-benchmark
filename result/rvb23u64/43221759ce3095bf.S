@@ -10,8 +10,8 @@ func0000000000000007:                   # @func0000000000000007
 	ret
 func0000000000000001:                   # @func0000000000000001
 	addi	a0, a0, 7
-	andi	a0, a0, -8
 	lui	a1, 8
+	andi	a0, a0, -8
 	addiw	a1, a1, -40
 	maxu	a0, a0, a1
 	ret
@@ -40,8 +40,8 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func0000000000000000:                   # @func0000000000000000
 	addi	a0, a0, 7
-	andi	a0, a0, -8
 	lui	a1, 2
+	andi	a0, a0, -8
 	addiw	a1, a1, -176
 	maxu	a0, a0, a1
 	ret

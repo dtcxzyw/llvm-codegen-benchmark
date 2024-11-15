@@ -24,8 +24,8 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000028:                   # @func0000000000000028
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v10
-	vsrl.vv	v8, v8, v12
 	li	a0, 63
+	vsrl.vv	v8, v8, v12
 	vand.vx	v8, v8, a0
 	li	a0, 58
 	vmsgtu.vx	v0, v8, a0
@@ -33,8 +33,8 @@ func0000000000000028:                   # @func0000000000000028
 func0000000000000024:                   # @func0000000000000024
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v10
-	vsrl.vv	v8, v8, v12
 	li	a0, 63
+	vsrl.vv	v8, v8, v12
 	vand.vx	v8, v8, a0
 	li	a0, 59
 	vmsltu.vx	v0, v8, a0
@@ -42,8 +42,8 @@ func0000000000000024:                   # @func0000000000000024
 func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v10
-	vsrl.vv	v8, v8, v12
 	li	a0, -1
+	vsrl.vv	v8, v8, v12
 	srli	a0, a0, 32
 	vand.vx	v8, v8, a0
 	vmsne.vi	v0, v8, 0

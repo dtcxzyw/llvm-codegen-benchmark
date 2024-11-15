@@ -27,10 +27,10 @@ func0000000000000014:                   # @func0000000000000014
 	sext.w	a3, a0
 	sext.w	a1, a1
 	addw	a0, a0, a2
+	lui	a2, 5
 	xor	a0, a0, a1
+	addiw	a1, a2, -2017
 	seqz	a0, a0
-	lui	a1, 5
-	addiw	a1, a1, -2017
 	sltu	a1, a3, a1
 	and	a0, a0, a1
 	ret

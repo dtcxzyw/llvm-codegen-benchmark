@@ -11,8 +11,8 @@ func00000000000000a4:                   # @func00000000000000a4
 	andi	a1, a1, 255
 	sext.w	a2, a2
 	slti	a2, a2, 181
-	xori	a2, a2, 1
 	sltiu	a1, a1, 248
+	xori	a2, a2, 1
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1

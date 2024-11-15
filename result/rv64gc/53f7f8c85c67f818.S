@@ -1,7 +1,7 @@
 func000000000000000b:                   # @func000000000000000b
 	andi	a1, a1, 1
-	slli	a1, a1, 14
 	andi	a0, a0, 1
+	slli	a1, a1, 14
 	slli	a0, a0, 16
 	or	a0, a0, a1
 	lui	a1, 1

@@ -9,9 +9,9 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 .LBB0_3:                                # %entry
 	addi	a0, a1, -3
+	lui	a2, 1
 	seqz	a0, a0
 	addi	a0, a0, -1
-	lui	a2, 1
 	addiw	a2, a2, -1
 	or	a0, a0, a2
 	li	a2, 1

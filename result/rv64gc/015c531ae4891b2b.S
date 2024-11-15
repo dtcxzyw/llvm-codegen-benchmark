@@ -15,8 +15,8 @@ func0000000000000004:                   # @func0000000000000004
 	addi	a2, a2, -1143
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
-	srli	a1, a1, 57
 	lui	a2, 24414
+	srli	a1, a1, 57
 	addi	a2, a2, 256
 	mul	a1, a1, a2
 	subw	a0, a0, a1
@@ -27,8 +27,8 @@ func0000000000000005:                   # @func0000000000000005
 	addi	a2, a2, 1725
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
-	srli	a1, a1, 47
 	lui	a2, 36
+	srli	a1, a1, 47
 	addi	a2, a2, -1359
 	mul	a1, a1, a2
 	subw	a0, a0, a1

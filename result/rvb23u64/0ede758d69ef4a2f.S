@@ -6,8 +6,8 @@ func000000000000005a:                   # @func000000000000005a
 	ret
 func00000000000000fa:                   # @func00000000000000fa
 	slli	a2, a2, 2
-	addi	a2, a2, 7
 	li	a3, 1
+	addi	a2, a2, 7
 	slli	a3, a3, 34
 	addi	a3, a3, -8
 	and	a2, a2, a3
@@ -38,8 +38,8 @@ func0000000000000050:                   # @func0000000000000050
 	ret
 func00000000000000f0:                   # @func00000000000000f0
 	slli	a2, a2, 5
-	addi	a2, a2, 55
 	lui	a3, 256
+	addi	a2, a2, 55
 	addiw	a3, a3, -16
 	and	a2, a2, a3
 	add	a0, a0, a1

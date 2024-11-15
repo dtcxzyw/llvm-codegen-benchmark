@@ -17,8 +17,8 @@ func0000000000000007:                   # @func0000000000000007
 	addi	a0, a0, 2
 	vsetvli	zero, zero, e32, m2, ta, mu
 	vmv.v.x	v10, a0
-	vmerge.vim	v10, v10, 2, v0
 	li	a0, 1024
+	vmerge.vim	v10, v10, 2, v0
 	vmv1r.v	v0, v9
 	vor.vx	v10, v10, a0, v0.t
 	bseti	a0, zero, 11
@@ -30,9 +30,9 @@ func0000000000000013:                   # @func0000000000000013
 	vmsleu.vi	v0, v8, 1
 	vsetvli	zero, zero, e32, m2, ta, mu
 	vmv.v.i	v10, 0
+	li	a0, 64
 	vmerge.vim	v10, v10, 1, v0
 	vsll.vi	v10, v10, 3
-	li	a0, 64
 	vmv1r.v	v0, v9
 	vor.vx	v10, v10, a0, v0.t
 	li	a0, 32

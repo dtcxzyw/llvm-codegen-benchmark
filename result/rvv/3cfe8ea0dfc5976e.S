@@ -24,8 +24,8 @@ func0000000000000003:                   # @func0000000000000003
 	lui	a0, 335544
 	addi	a0, a0, 1311
 	vmulhu.vx	v8, v8, a0
-	vsrl.vi	v8, v8, 4
 	lui	a0, 65536
+	vsrl.vi	v8, v8, 4
 	addi	a0, a0, -2
 	vand.vx	v8, v8, a0
 	ret

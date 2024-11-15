@@ -1,7 +1,7 @@
 func0000000000000007:                   # @func0000000000000007
 	slli	a1, a0, 48
-	srli	a1, a1, 50
 	lui	a2, 1
+	srli	a1, a1, 50
 	addiw	a2, a2, 1147
 	mul	a1, a1, a2
 	srli	a1, a1, 17
@@ -11,8 +11,8 @@ func0000000000000007:                   # @func0000000000000007
 	ret
 func000000000000000b:                   # @func000000000000000b
 	slli	a1, a0, 48
-	srli	a1, a1, 50
 	lui	a2, 1
+	srli	a1, a1, 50
 	addiw	a2, a2, 1147
 	mul	a1, a1, a2
 	srli	a1, a1, 17
@@ -31,8 +31,8 @@ func000000000000000f:                   # @func000000000000000f
 	ret
 func000000000000000a:                   # @func000000000000000a
 	lui	a1, 32897
-	slli	a1, a1, 4
 	slli	a2, a0, 48
+	slli	a1, a1, 4
 	mulhu	a1, a2, a1
 	srli	a1, a1, 23
 	slli	a2, a1, 8
@@ -41,8 +41,8 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func0000000000000002:                   # @func0000000000000002
 	slli	a1, a0, 48
-	srli	a1, a1, 49
 	lui	a2, 8
+	srli	a1, a1, 49
 	addiw	a2, a2, 787
 	mul	a1, a1, a2
 	srli	a1, a1, 22

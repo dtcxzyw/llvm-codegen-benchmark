@@ -15,9 +15,9 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func00000000000000d6:                   # @func00000000000000d6
 	add	a1, a1, a2
+	lui	a2, 1048574
 	subw	a0, a0, a1
-	lui	a1, 1048574
-	addiw	a1, a1, -516
+	addiw	a1, a2, -516
 	slt	a0, a0, a1
 	li	a1, 255
 	czero.nez	a0, a1, a0

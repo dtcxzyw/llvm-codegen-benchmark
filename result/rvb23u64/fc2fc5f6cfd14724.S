@@ -97,9 +97,9 @@ func0000000000000044:                   # @func0000000000000044
 func0000000000000041:                   # @func0000000000000041
 	slli	a2, a2, 8
 	or	a0, a0, a1
+	lui	a1, 283893
 	or	a0, a0, a2
 	sext.w	a0, a0
-	lui	a1, 283893
 	addiw	a1, a1, -1723
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -136,9 +136,9 @@ func00000000000000b8:                   # @func00000000000000b8
 func00000000000000c8:                   # @func00000000000000c8
 	slli	a2, a2, 8
 	or	a0, a0, a1
+	lui	a1, 1
 	or	a0, a0, a2
 	sext.w	a0, a0
-	lui	a1, 1
 	addiw	a1, a1, -24
 	sltu	a0, a1, a0
 	ret

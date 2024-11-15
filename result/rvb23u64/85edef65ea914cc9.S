@@ -60,10 +60,10 @@ func00000000000000a1:                   # @func00000000000000a1
 	ret
 func0000000000000084:                   # @func0000000000000084
 	andi	a1, a1, 14
-	addi	a1, a1, -14
-	snez	a1, a1
 	srliw	a0, a0, 11
+	addi	a1, a1, -14
 	sltiu	a0, a0, 27
+	snez	a1, a1
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
@@ -112,8 +112,8 @@ func0000000000000081:                   # @func0000000000000081
 	sext.w	a0, a0
 	andi	a1, a1, 3
 	addi	a1, a1, -1
-	seqz	a1, a1
 	sltiu	a0, a0, 5
+	seqz	a1, a1
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret

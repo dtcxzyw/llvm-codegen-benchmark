@@ -24,10 +24,10 @@ func0000000000000040:                   # @func0000000000000040
 func0000000000000015:                   # @func0000000000000015
 	li	a0, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsra.vx	v12, v12, a0
 	vadd.vv	v8, v10, v8
-	vadd.vv	v8, v8, v12
+	vsra.vx	v10, v12, a0
 	lui	a0, 176
+	vadd.vv	v8, v8, v10
 	addiw	a0, a0, -1428
 	vadd.vx	v8, v8, a0
 	ret
@@ -73,8 +73,8 @@ func0000000000000000:                   # @func0000000000000000
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v12, v12, 2
 	vadd.vv	v8, v10, v8
-	vadd.vv	v8, v8, v12
 	lui	a0, 81007
+	vadd.vv	v8, v8, v12
 	slli	a0, a0, 3
 	addi	a0, a0, -1607
 	vadd.vx	v8, v8, a0

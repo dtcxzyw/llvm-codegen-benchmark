@@ -6,8 +6,8 @@ func000000000000000c:                   # @func000000000000000c
 func0000000000000005:                   # @func0000000000000005
 	lui	a1, 1048560
 	add	a0, a0, a1
-	srliw	a0, a0, 10
 	li	a1, 27
+	srliw	a0, a0, 10
 	slli	a1, a1, 11
 	or	a0, a0, a1
 	ret

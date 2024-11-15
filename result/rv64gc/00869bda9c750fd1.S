@@ -8,8 +8,8 @@ func0000000000000071:                   # @func0000000000000071
 	ret
 func0000000000000031:                   # @func0000000000000031
 	slli	a2, a2, 32
-	srli	a2, a2, 32
 	addi	a0, a0, 1
+	srli	a2, a2, 32
 	xor	a0, a0, a2
 	seqz	a0, a0
 	not	a1, a1

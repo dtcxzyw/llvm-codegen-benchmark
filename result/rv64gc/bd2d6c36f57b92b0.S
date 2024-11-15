@@ -9,8 +9,8 @@ func000000000000007f:                   # @func000000000000007f
 	ret
 func000000000000003f:                   # @func000000000000003f
 	slli	a1, a1, 32
-	srli	a1, a1, 32
 	li	a2, 19
+	srli	a1, a1, 32
 	mul	a0, a0, a2
 	add	a0, a0, a1
 	lui	a1, 8192

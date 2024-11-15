@@ -8,8 +8,8 @@ func0000000000000031:                   # @func0000000000000031
 	lui	a1, 349525
 	addi	a1, a1, 1372
 	mul	a0, a0, a1
-	srliw	a0, a0, 2
 	lui	a1, 17476
+	srliw	a0, a0, 2
 	addiw	a1, a1, 1093
 	sltu	a0, a0, a1
 	ret

@@ -1,8 +1,8 @@
 func0000000000000001:                   # @func0000000000000001
 	li	a0, 112
 	vsetivli	zero, 16, e8, m1, ta, ma
-	vand.vx	v9, v9, a0
 	vand.vi	v8, v8, 15
+	vand.vx	v9, v9, a0
 	vor.vv	v8, v9, v8
 	li	a0, -128
 	vor.vx	v8, v8, a0

@@ -1,10 +1,10 @@
 func0000000000000002:                   # @func0000000000000002
 	slli	a1, a1, 32
+	lui	a2, 699051
 	srli	a1, a1, 32
+	addiw	a2, a2, -1365
 	add	a0, a0, a1
-	lui	a1, 699051
-	addiw	a1, a1, -1365
-	slli	a2, a1, 32
+	slli	a1, a2, 32
 	add	a1, a1, a2
 	mulhu	a0, a0, a1
 	srli	a0, a0, 1

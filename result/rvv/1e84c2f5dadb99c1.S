@@ -3,20 +3,21 @@ func0000000000000044:                   # @func0000000000000044
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
 	li	a0, 20
-	vmv.v.x	v14, a0
 	vmsleu.vi	v12, v8, 5
-	vmerge.vvm	v8, v14, v10, v0
+	vmv.v.x	v8, a0
+	vmerge.vvm	v8, v8, v10, v0
 	vmv1r.v	v0, v12
 	vmerge.vim	v8, v8, 3, v0
 	ret
 func00000000000000a6:                   # @func00000000000000a6
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgt.vi	v0, v8, 1
-	vmv.v.i	v12, -1
-	vmerge.vvm	v10, v12, v10, v0
-	vmsgt.vi	v0, v8, 0
-	vmv.v.i	v8, 0
-	vmerge.vvm	v8, v8, v10, v0
+	vmv.v.i	v14, -1
+	vmsgt.vi	v12, v8, 0
+	vmerge.vvm	v8, v14, v10, v0
+	vmv.v.i	v10, 0
+	vmv1r.v	v0, v12
+	vmerge.vvm	v8, v10, v8, v0
 	ret
 func0000000000000066:                   # @func0000000000000066
 	lui	a0, 442368
@@ -33,8 +34,8 @@ func0000000000000066:                   # @func0000000000000066
 func0000000000000046:                   # @func0000000000000046
 	li	a0, 20
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsltu.vx	v0, v8, a0
 	vmv.v.i	v14, 10
+	vmsltu.vx	v0, v8, a0
 	vmsle.vi	v12, v8, 11
 	vmerge.vvm	v8, v14, v10, v0
 	vmv1r.v	v0, v12

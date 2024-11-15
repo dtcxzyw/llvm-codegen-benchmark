@@ -73,8 +73,8 @@ func0000000000000041:                   # @func0000000000000041
 func0000000000000048:                   # @func0000000000000048
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsext.vf2	v14, v12
-	vmadd.vv	v14, v10, v8
 	lui	a0, 524288
+	vmadd.vv	v14, v10, v8
 	addiw	a0, a0, -1
 	vmsgtu.vx	v0, v14, a0
 	ret

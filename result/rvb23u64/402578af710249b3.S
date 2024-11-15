@@ -27,8 +27,8 @@ func0000000000000010:                   # @func0000000000000010
 	ret
 func0000000000000011:                   # @func0000000000000011
 	sext.w	a1, a1
-	sltiu	a1, a1, 2
 	lui	a2, 2040
+	sltiu	a1, a1, 2
 	czero.eqz	a1, a2, a1
 	lui	a2, 8
 	subw	a0, a0, a2

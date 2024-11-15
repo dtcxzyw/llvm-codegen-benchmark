@@ -5,12 +5,12 @@ func0000000000000551:                   # @func0000000000000551
 	ld	a3, %lo(.LCPI0_0)(a3)
 	srai	a2, a2, 3
 	mul	a2, a2, a3
+	lui	a3, 36158
+	addiw	a3, a3, -848
 	sh1add	a1, a1, a2
+	slli	a2, a3, 28
 	add	a0, a0, a1
-	lui	a1, 36158
-	addiw	a1, a1, -848
-	slli	a2, a1, 28
-	add	a1, a1, a2
-	xor	a0, a0, a1
+	add	a2, a2, a3
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret

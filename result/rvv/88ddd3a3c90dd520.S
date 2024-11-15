@@ -7,8 +7,8 @@ func0000000000000051:                   # @func0000000000000051
 	lui	a0, 796918
 	addi	a0, a0, -983
 	vmacc.vx	v8, a0, v10
-	vror.vi	v8, v8, 4
 	lui	a0, 2621
+	vror.vi	v8, v8, 4
 	addi	a0, a0, 1802
 	vmsleu.vx	v0, v8, a0
 	ret
@@ -21,8 +21,8 @@ func0000000000000001:                   # @func0000000000000001
 	lui	a0, 838861
 	addi	a0, a0, -819
 	vmacc.vx	v8, a0, v10
-	vror.vi	v8, v8, 2
 	lui	a0, 52429
+	vror.vi	v8, v8, 2
 	addi	a0, a0, -820
 	vmsleu.vx	v0, v8, a0
 	ret

@@ -25,10 +25,10 @@ func0000000000000002:                   # @func0000000000000002
 func000000000000000a:                   # @func000000000000000a
 	mul	a1, a1, a2
 	mulhu	a3, a2, a0
-	add	a1, a1, a3
 	mul	a0, a0, a2
-	slli	a2, a1, 32
+	add	a1, a1, a3
 	srli	a0, a0, 32
+	slli	a2, a1, 32
 	or	a0, a0, a2
 	srli	a1, a1, 32
 	ret

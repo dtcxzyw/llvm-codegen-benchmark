@@ -39,11 +39,11 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func0000000000000004:                   # @func0000000000000004
 	lui	a2, 1048565
+	lui	a3, 599186
 	addi	a2, a2, 1024
+	addiw	a3, a3, 1171
 	addw	a1, a1, a2
-	lui	a2, 599186
-	addiw	a2, a2, 1171
-	mul	a2, a1, a2
+	mul	a2, a1, a3
 	srli	a2, a2, 32
 	add	a2, a2, a1
 	srliw	a3, a2, 31

@@ -1,8 +1,8 @@
 func00000000000000a1:                   # @func00000000000000a1
 	sext.w	a0, a0
 	sext.w	a2, a2
-	sgtz	a2, a2
 	li	a3, 15
+	sgtz	a2, a2
 	czero.nez	a3, a3, a2
 	czero.eqz	a1, a1, a2
 	or	a1, a1, a3
@@ -13,8 +13,8 @@ func00000000000000a1:                   # @func00000000000000a1
 func0000000000000016:                   # @func0000000000000016
 	sext.w	a0, a0
 	sext.w	a2, a2
-	addi	a2, a2, -3
 	li	a3, 16
+	addi	a2, a2, -3
 	czero.eqz	a3, a3, a2
 	czero.nez	a1, a1, a2
 	or	a1, a1, a3
@@ -62,8 +62,8 @@ func0000000000000068:                   # @func0000000000000068
 func000000000000008a:                   # @func000000000000008a
 	sext.w	a0, a0
 	srliw	a2, a2, 13
-	sltiu	a2, a2, 3
 	li	a3, 1
+	sltiu	a2, a2, 3
 	czero.eqz	a3, a3, a2
 	czero.nez	a1, a1, a2
 	or	a1, a1, a3
@@ -73,8 +73,8 @@ func000000000000008a:                   # @func000000000000008a
 func00000000000000a6:                   # @func00000000000000a6
 	sext.w	a0, a0
 	sext.w	a2, a2
-	slti	a2, a2, 3
 	li	a3, 1
+	slti	a2, a2, 3
 	czero.eqz	a3, a3, a2
 	czero.nez	a1, a1, a2
 	or	a1, a1, a3
@@ -84,8 +84,8 @@ func00000000000000a6:                   # @func00000000000000a6
 func00000000000000ac:                   # @func00000000000000ac
 	sext.w	a0, a0
 	sext.w	a2, a2
-	slti	a2, a2, 3
 	li	a3, 1
+	slti	a2, a2, 3
 	czero.eqz	a3, a3, a2
 	czero.nez	a1, a1, a2
 	or	a1, a1, a3
@@ -96,8 +96,8 @@ func00000000000000ac:                   # @func00000000000000ac
 func0000000000000081:                   # @func0000000000000081
 	sext.w	a0, a0
 	sext.w	a2, a2
-	sltiu	a2, a2, 7
 	li	a3, 1
+	sltiu	a2, a2, 7
 	czero.eqz	a3, a3, a2
 	czero.nez	a1, a1, a2
 	or	a1, a1, a3
@@ -108,8 +108,8 @@ func0000000000000081:                   # @func0000000000000081
 func00000000000000aa:                   # @func00000000000000aa
 	sext.w	a0, a0
 	sext.w	a2, a2
-	slti	a2, a2, 210
 	li	a3, 20
+	slti	a2, a2, 210
 	czero.eqz	a3, a3, a2
 	czero.nez	a1, a1, a2
 	or	a1, a1, a3
@@ -142,8 +142,8 @@ func0000000000000014:                   # @func0000000000000014
 func0000000000000018:                   # @func0000000000000018
 	sext.w	a0, a0
 	sext.w	a2, a2
-	addi	a2, a2, -512
 	li	a3, 128
+	addi	a2, a2, -512
 	czero.eqz	a3, a3, a2
 	czero.nez	a1, a1, a2
 	or	a1, a1, a3
@@ -153,9 +153,9 @@ func0000000000000018:                   # @func0000000000000018
 func00000000000000ab:                   # @func00000000000000ab
 	sext.w	a0, a0
 	sext.w	a2, a2
+	li	a3, 1
 	slti	a2, a2, 1
 	czero.nez	a1, a1, a2
-	li	a3, 1
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
 	sext.w	a1, a1
@@ -165,8 +165,8 @@ func00000000000000ab:                   # @func00000000000000ab
 func00000000000000c1:                   # @func00000000000000c1
 	sext.w	a0, a0
 	sext.w	a2, a2
-	czero.eqz	a1, a1, a2
 	li	a3, 1
+	czero.eqz	a1, a1, a2
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
 	sext.w	a1, a1
@@ -226,8 +226,8 @@ func0000000000000047:                   # @func0000000000000047
 func000000000000008b:                   # @func000000000000008b
 	sext.w	a0, a0
 	sext.w	a2, a2
-	sltiu	a2, a2, 2
 	li	a3, 1
+	sltiu	a2, a2, 2
 	czero.eqz	a3, a3, a2
 	czero.nez	a1, a1, a2
 	or	a1, a1, a3
@@ -260,8 +260,8 @@ func0000000000000017:                   # @func0000000000000017
 func0000000000000088:                   # @func0000000000000088
 	sext.w	a0, a0
 	sext.w	a2, a2
-	sltiu	a2, a2, 2
 	li	a3, 1
+	sltiu	a2, a2, 2
 	czero.eqz	a3, a3, a2
 	czero.nez	a1, a1, a2
 	or	a1, a1, a3

@@ -39,11 +39,11 @@ func00000000000000e4:                   # @func00000000000000e4
 	.quad	0x3fb999999999999a              # double 0.10000000000000001
 func0000000000000044:                   # @func0000000000000044
 	lui	a0, %hi(.LCPI3_0)
-	fld	fa4, %lo(.LCPI3_0)(a0)
-	fmv.d	fa5, fa0
-	fmax.d	fa0, fa1, fa4
-	flt.d	a0, fa5, fa0
+	fld	fa5, %lo(.LCPI3_0)(a0)
+	fmax.d	fa5, fa1, fa5
+	flt.d	a0, fa0, fa5
 	bnez	a0, .LBB3_2
-	fmv.d	fa0, fa5
+	fmv.d	fa5, fa0
 .LBB3_2:                                # %entry
+	fmv.d	fa0, fa5
 	ret

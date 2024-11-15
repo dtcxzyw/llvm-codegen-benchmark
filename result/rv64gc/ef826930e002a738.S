@@ -1,25 +1,25 @@
 func0000000000000006:                   # @func0000000000000006
-	andi	a5, a1, 1
+	andi	a1, a1, 1
 	lui	a4, 524288
 	addiw	a4, a4, -1
-	mv	a1, a0
 	mv	a3, a4
-	beqz	a5, .LBB0_4
-	sext.w	a0, a3
-	andi	a1, a1, 1
-	bgeu	a0, a4, .LBB0_5
+	beqz	a1, .LBB0_4
+	sext.w	a1, a3
+	andi	a0, a0, 1
+	bgeu	a1, a4, .LBB0_5
 .LBB0_2:                                # %entry
-	beqz	a1, .LBB0_6
+	beqz	a0, .LBB0_6
 .LBB0_3:                                # %entry
+	mv	a0, a1
 	ret
 .LBB0_4:                                # %entry
 	mv	a3, a2
-	sext.w	a0, a2
-	andi	a1, a1, 1
-	bltu	a0, a4, .LBB0_2
+	sext.w	a1, a2
+	andi	a0, a0, 1
+	bltu	a1, a4, .LBB0_2
 .LBB0_5:                                # %entry
-	mv	a0, a4
-	bnez	a1, .LBB0_3
+	mv	a1, a4
+	bnez	a0, .LBB0_3
 .LBB0_6:                                # %entry
 	mv	a0, a3
 	ret

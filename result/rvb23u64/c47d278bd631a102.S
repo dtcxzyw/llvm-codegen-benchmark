@@ -4,9 +4,9 @@ func00000000000000d6:                   # @func00000000000000d6
 	lui	a2, 335544
 	addiw	a2, a2, 1311
 	mul	a1, a1, a2
-	srli	a1, a1, 39
 	lui	a2, 1048540
 	addi	a2, a2, 1359
+	srli	a1, a1, 39
 	mul	a1, a1, a2
 	addw	a1, a1, a2
 	sgtz	a0, a0

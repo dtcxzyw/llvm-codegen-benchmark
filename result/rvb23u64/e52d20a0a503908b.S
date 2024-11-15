@@ -1,7 +1,7 @@
 func0000000000000007:                   # @func0000000000000007
 	seqz	a2, a2
-	slli	a2, a2, 14
 	andi	a1, a1, 1
+	slli	a2, a2, 14
 	slli	a1, a1, 13
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -9,8 +9,8 @@ func0000000000000007:                   # @func0000000000000007
 func0000000000000006:                   # @func0000000000000006
 	andi	a1, a1, 1
 	snez	a2, a2
-	slli	a2, a2, 12
 	lui	a3, 1
+	slli	a2, a2, 12
 	addiw	a3, a3, 1092
 	czero.nez	a1, a3, a1
 	or	a0, a0, a2
@@ -18,17 +18,17 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func0000000000000023:                   # @func0000000000000023
 	srli	a2, a2, 53
+	slli	a1, a1, 63
 	snez	a2, a2
 	slli	a2, a2, 52
-	slli	a1, a1, 63
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 func0000000000000004:                   # @func0000000000000004
 	andi	a1, a1, 1
 	snez	a2, a2
-	slli	a2, a2, 6
 	li	a3, 32
+	slli	a2, a2, 6
 	czero.nez	a1, a3, a1
 	or	a0, a0, a1
 	or	a0, a0, a2

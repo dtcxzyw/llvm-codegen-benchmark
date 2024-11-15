@@ -34,9 +34,9 @@ func0000000000000005:                   # @func0000000000000005
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
 	vmv.v.i	v8, 0
+	lui	a0, 176
 	vmerge.vim	v8, v8, 1, v0
 	vsub.vv	v8, v10, v8
-	lui	a0, 176
 	addi	a0, a0, -1428
 	vadd.vx	v8, v8, a0
 	ret

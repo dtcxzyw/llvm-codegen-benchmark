@@ -1,9 +1,9 @@
 func0000000000000044:                   # @func0000000000000044
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
+	bseti	a0, zero, 32
 	vadd.vi	v10, v12, 1
 	vmsleu.vi	v10, v10, 10
-	bseti	a0, zero, 32
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v11, v8, a0
 	vmand.mm	v0, v11, v10

@@ -15,16 +15,16 @@ func0000000000000008:                   # @func0000000000000008
 .LCPI2_0:
 	.quad	-9223372036854775               # 0xffdf3b645a1cac09
 func000000000000000a:                   # @func000000000000000a
+	vmv1r.v	v12, v0
 	lui	a0, %hi(.LCPI2_0)
 	ld	a0, %lo(.LCPI2_0)(a0)
-	vmv1r.v	v12, v0
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgt.vx	v0, v10, a0
 	bseti	a0, zero, 63
 	vmv.v.x	v10, a0
-	vmerge.vvm	v8, v10, v8, v0
 	li	a0, -1
 	srli	a0, a0, 1
+	vmerge.vvm	v8, v10, v8, v0
 	vmv.v.x	v10, a0
 	vmv1r.v	v0, v12
 	vmerge.vvm	v8, v10, v8, v0

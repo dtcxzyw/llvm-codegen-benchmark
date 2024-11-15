@@ -1,8 +1,8 @@
 func000000000000000a:                   # @func000000000000000a
 	mul	a1, a1, a2
+	lui	a2, 158
 	sh2add.uw	a0, a1, a0
-	lui	a1, 158
-	addiw	a1, a1, -816
+	addiw	a1, a2, -816
 	add	a0, a0, a1
 	ret
 func0000000000000100:                   # @func0000000000000100

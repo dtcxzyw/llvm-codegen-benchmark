@@ -22,8 +22,8 @@ func0000000000000002:                   # @func0000000000000002
 	fld	fa4, %lo(.LCPI1_1)(a0)
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vfmul.vf	v8, v8, fa5
-	vmflt.vf	v0, v8, fa4
 	li	a0, -1022
+	vmflt.vf	v0, v8, fa4
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.x	v8, a0
 	li	a0, -1322

@@ -2,9 +2,9 @@ func000000000000071c:                   # @func000000000000071c
 	sext.w	a0, a0
 	slli	a2, a2, 8
 	or	a1, a1, a2
-	sext.w	a1, a1
 	lui	a2, 16
 	addiw	a2, a2, -536
+	sext.w	a1, a1
 	xor	a1, a1, a2
 	seqz	a1, a1
 	snez	a0, a0
@@ -51,11 +51,11 @@ func0000000000000741:                   # @func0000000000000741
 	sext.w	a0, a0
 	slli	a2, a2, 18
 	or	a1, a1, a2
-	srliw	a1, a1, 16
-	sltiu	a1, a1, 17
 	lui	a2, 16
 	addiw	a2, a2, -2
+	srliw	a1, a1, 16
 	xor	a0, a0, a2
+	sltiu	a1, a1, 17
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

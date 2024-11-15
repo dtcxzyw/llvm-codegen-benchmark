@@ -75,8 +75,8 @@ func00000000000000bd:                   # @func00000000000000bd
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfgt.vf	v24, v16, fa5
-	vmorn.mm	v16, v0, v24
 	fli.d	fa5, 1.0
+	vmorn.mm	v16, v0, v24
 	vmflt.vf	v17, v8, fa5
 	vmorn.mm	v0, v16, v17
 	ret
@@ -87,8 +87,8 @@ func000000000000002a:                   # @func000000000000002a
 	fld	fa5, %lo(.LCPI9_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v24, v16, fa5
-	vmor.mm	v16, v24, v0
 	fmv.d.x	fa5, zero
+	vmor.mm	v16, v24, v0
 	vmfle.vf	v17, v8, fa5
 	vmor.mm	v0, v16, v17
 	ret

@@ -1,9 +1,9 @@
 func000000000000002a:                   # @func000000000000002a
 	lui	a3, 133
-	addiw	a3, a3, -2048
 	slli	a2, a2, 56
-	mulhu	a2, a2, a3
 	slli	a0, a0, 1
+	addiw	a3, a3, -2048
+	mulhu	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 48

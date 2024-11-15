@@ -5,8 +5,8 @@ func000000000000001a:                   # @func000000000000001a
 	ret
 func0000000000000023:                   # @func0000000000000023
 	sltiu	a2, a0, 256
-	czero.eqz	a1, a1, a2
 	li	a3, 4
+	czero.eqz	a1, a1, a2
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
 	add	a0, a0, a1
@@ -23,8 +23,8 @@ func0000000000000019:                   # @func0000000000000019
 	ret
 func0000000000000010:                   # @func0000000000000010
 	srli	a2, a0, 16
-	czero.eqz	a1, a1, a2
 	li	a3, 6
+	czero.eqz	a1, a1, a2
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
 	add	a0, a0, a1

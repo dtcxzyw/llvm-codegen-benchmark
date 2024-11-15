@@ -23,15 +23,15 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func000000000000001e:                   # @func000000000000001e
 	andi	a1, a1, 511
-	slli	a1, a1, 13
 	lui	a2, 523264
+	slli	a1, a1, 13
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func000000000000000e:                   # @func000000000000000e
 	andi	a1, a1, 1023
-	slli	a1, a1, 13
 	lui	a2, 522240
+	slli	a1, a1, 13
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret

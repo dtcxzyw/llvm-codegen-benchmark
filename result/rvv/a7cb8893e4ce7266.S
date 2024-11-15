@@ -13,11 +13,11 @@ func0000000000000441:                   # @func0000000000000441
 func0000000000000c11:                   # @func0000000000000c11
 	li	a0, 768
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsne.vx	v14, v12, a0
-	vmseq.vi	v12, v10, 0
+	vmseq.vi	v14, v10, 0
 	vmseq.vi	v10, v8, 0
-	vmandn.mm	v8, v14, v10
-	vmand.mm	v9, v12, v10
+	vmsne.vx	v8, v12, a0
+	vmandn.mm	v8, v8, v10
+	vmand.mm	v9, v14, v10
 	vmor.mm	v0, v9, v8
 	ret
 func0000000000000111:                   # @func0000000000000111

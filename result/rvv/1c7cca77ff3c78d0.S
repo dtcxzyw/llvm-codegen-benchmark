@@ -4,8 +4,8 @@ func0000000000000001:                   # @func0000000000000001
 	vmseq.vi	v0, v8, 0
 	lui	a0, 262144
 	vmv.v.x	v8, a0
-	vmerge.vim	v8, v8, 1, v0
 	lui	a0, 256
+	vmerge.vim	v8, v8, 1, v0
 	vmv.v.x	v12, a0
 	vmv1r.v	v0, v10
 	vmerge.vvm	v8, v12, v8, v0

@@ -12,8 +12,8 @@ func0000000000000016:                   # @func0000000000000016
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmseq.vi	v9, v9, 0
 	vmsle.vi	v8, v8, -1
-	vmor.mm	v0, v8, v9
 	li	a0, 20
+	vmor.mm	v0, v8, v9
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.x	v8, a0
 	vmerge.vim	v8, v8, 0, v0

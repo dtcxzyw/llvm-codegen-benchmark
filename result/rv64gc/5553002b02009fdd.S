@@ -13,9 +13,9 @@ func0000000000000048:                   # @func0000000000000048
 	ret
 func000000000000004a:                   # @func000000000000004a
 	fneg.s	fa5, fa1
-	flt.s	a0, fa0, fa5
-	fle.s	a1, fa0, fa1
-	xori	a1, a1, 1
+	fle.s	a0, fa0, fa1
+	flt.s	a1, fa0, fa5
+	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 func0000000000000084:                   # @func0000000000000084

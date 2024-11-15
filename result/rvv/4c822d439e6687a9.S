@@ -47,8 +47,8 @@ func000000000000003b:                   # @func000000000000003b
 	vwsll.vi	v12, v10, 20
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vsll.vi	v8, v8, 28
-	vor.vv	v8, v8, v12
 	lui	a0, 240
+	vor.vv	v8, v8, v12
 	addi	a0, a0, 1280
 	vor.vx	v8, v8, a0
 	ret

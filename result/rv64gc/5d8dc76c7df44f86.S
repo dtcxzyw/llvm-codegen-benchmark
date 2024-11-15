@@ -2,10 +2,10 @@
 	.quad	18040924479227903               # 0x4018200f0107ff
 func0000000000000000:                   # @func0000000000000000
 	andi	a2, a2, 1
-	addi	a2, a2, -1
 	li	a3, 1
-	slli	a3, a3, 56
 	lui	a4, %hi(.LCPI0_0)
+	addi	a2, a2, -1
+	slli	a3, a3, 56
 	ld	a4, %lo(.LCPI0_0)(a4)
 	and	a2, a2, a3
 	or	a0, a0, a1
@@ -22,8 +22,8 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func0000000000000007:                   # @func0000000000000007
 	andi	a2, a2, 1
-	addi	a2, a2, -1
 	li	a3, 1
+	addi	a2, a2, -1
 	slli	a3, a3, 51
 	and	a2, a2, a3
 	or	a0, a0, a1

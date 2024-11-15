@@ -20,17 +20,17 @@ func0000000000000038:                   # @func0000000000000038
 	ret
 func0000000000000014:                   # @func0000000000000014
 	li	a3, 15
-	sub	a3, a3, a2
 	slli	a1, a1, 63
+	sub	a3, a3, a2
 	srai	a1, a1, 63
 	and	a1, a1, a3
 	sltu	a0, a1, a0
 	ret
 func0000000000000034:                   # @func0000000000000034
 	lui	a3, 244
+	slli	a1, a1, 63
 	addiw	a3, a3, 576
 	sub	a3, a3, a2
-	slli	a1, a1, 63
 	srai	a1, a1, 63
 	and	a1, a1, a3
 	sltu	a0, a1, a0

@@ -27,8 +27,8 @@ func00000000000000db:                   # @func00000000000000db
 	vfadd.vv	v8, v8, v12
 	fli.s	fa5, 1.0
 	vmfgt.vf	v12, v8, fa5
-	vmnot.m	v12, v12
 	fmv.w.x	fa5, zero
+	vmnot.m	v12, v12
 	vmflt.vf	v13, v8, fa5
 	vmandn.mm	v0, v12, v13
 	ret
@@ -37,8 +37,8 @@ func0000000000000042:                   # @func0000000000000042
 	vfadd.vv	v8, v8, v12
 	lui	a0, 283576
 	fmv.w.x	fa5, a0
-	vmflt.vf	v12, v8, fa5
 	lui	a0, 281862
+	vmflt.vf	v12, v8, fa5
 	fmv.w.x	fa5, a0
 	vmfgt.vf	v13, v8, fa5
 	vmand.mm	v0, v12, v13

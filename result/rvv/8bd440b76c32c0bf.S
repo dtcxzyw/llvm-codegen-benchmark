@@ -5,8 +5,8 @@ func000000000000003d:                   # @func000000000000003d
 	ld	a0, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulhu.vx	v10, v10, a0
-	vsrl.vi	v10, v10, 15
 	li	a0, 100
+	vsrl.vi	v10, v10, 15
 	vmadd.vx	v10, a0, v8
 	lui	a0, 262144
 	addiw	a0, a0, -1225
@@ -32,12 +32,12 @@ func0000000000000028:                   # @func0000000000000028
 func0000000000000035:                   # @func0000000000000035
 	lui	a0, %hi(.LCPI2_0)
 	ld	a0, %lo(.LCPI2_0)(a0)
+	lui	a1, %hi(.LCPI2_1)
+	ld	a1, %lo(.LCPI2_1)(a1)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulhu.vx	v10, v10, a0
-	lui	a0, %hi(.LCPI2_1)
-	ld	a0, %lo(.LCPI2_1)(a0)
 	vsrl.vi	v10, v10, 15
-	li	a1, 100
-	vmadd.vx	v10, a1, v8
-	vadd.vx	v8, v10, a0
+	li	a0, 100
+	vmadd.vx	v10, a0, v8
+	vadd.vx	v8, v10, a1
 	ret

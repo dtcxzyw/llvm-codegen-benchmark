@@ -39,9 +39,9 @@ func0000000000000016:                   # @func0000000000000016
 	ret
 func0000000000000018:                   # @func0000000000000018
 	andi	a1, a1, 248
+	sltiu	a0, a0, 4
 	addi	a1, a1, -240
 	seqz	a1, a1
-	sltiu	a0, a0, 4
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -53,15 +53,15 @@ func000000000000008c:                   # @func000000000000008c
 	ret
 func00000000000000c8:                   # @func00000000000000c8
 	slli	a1, a1, 62
-	srli	a1, a1, 63
 	sltiu	a0, a0, 5
+	srli	a1, a1, 63
 	not	a0, a0
 	and	a0, a0, a1
 	ret
 func00000000000000ca:                   # @func00000000000000ca
 	slli	a1, a1, 60
-	srli	a1, a1, 63
 	slti	a0, a0, 0
+	srli	a1, a1, 63
 	not	a0, a0
 	and	a0, a0, a1
 	ret

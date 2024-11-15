@@ -22,8 +22,8 @@ func0000000000000008:                   # @func0000000000000008
 func0000000000000009:                   # @func0000000000000009
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmseq.vi	v10, v10, 0
-	vmor.mm	v0, v10, v0
 	lui	a0, 192607
+	vmor.mm	v0, v10, v0
 	slli	a0, a0, 2
 	addi	a0, a0, 512
 	vsetvli	zero, zero, e64, m2, ta, ma

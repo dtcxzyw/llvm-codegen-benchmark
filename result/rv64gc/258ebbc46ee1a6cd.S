@@ -21,8 +21,8 @@ func0000000000000044:                   # @func0000000000000044
 	mv	a0, a1
 .LBB2_2:                                # %entry
 	slli	a0, a0, 44
-	srli	a0, a0, 44
 	lui	a1, 58
+	srli	a0, a0, 44
 	addiw	a1, a1, -1905
 	sltu	a0, a0, a1
 	ret

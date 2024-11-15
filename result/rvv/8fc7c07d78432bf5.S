@@ -2,11 +2,11 @@
 	.word	0x40490fdb                      # float 3.14159274
 func0000000000000034:                   # @func0000000000000034
 	fmv.w.x	fa5, zero
+	lui	a0, %hi(.LCPI0_0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfge.vf	v20, v16, fa5
-	vmnot.m	v0, v20
-	lui	a0, %hi(.LCPI0_0)
 	flw	fa5, %lo(.LCPI0_0)(a0)
+	vmnot.m	v0, v20
 	li	a0, -1
 	vmerge.vxm	v12, v12, a0, v0
 	vfmul.vv	v8, v12, v8
@@ -19,8 +19,8 @@ func0000000000000032:                   # @func0000000000000032
 	vmnot.m	v0, v20
 	li	a0, -1
 	vmerge.vxm	v12, v12, a0, v0
-	vfmul.vv	v8, v12, v8
 	lui	a0, 798688
+	vfmul.vv	v8, v12, v8
 	fmv.w.x	fa5, a0
 	vmflt.vf	v0, v8, fa5
 	ret

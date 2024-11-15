@@ -1,10 +1,10 @@
 func00000000000001c4:                   # @func00000000000001c4
 	slli	a2, a1, 1
 	addw	a1, a1, a2
+	lui	a2, 64
 	add	a0, a0, a1
-	lui	a1, 64
-	addiw	a1, a1, -7
-	sltu	a0, a0, a1
+	addiw	a2, a2, -7
+	sltu	a0, a0, a2
 	ret
 func00000000000001ca:                   # @func00000000000001ca
 	slli	a2, a1, 2

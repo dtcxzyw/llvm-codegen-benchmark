@@ -11,8 +11,8 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func0000000000000032:                   # @func0000000000000032
 	bexti	a2, a2, 24
-	czero.nez	a1, a1, a2
 	lui	a3, 4
+	czero.nez	a1, a1, a2
 	addiw	a3, a3, -1764
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2

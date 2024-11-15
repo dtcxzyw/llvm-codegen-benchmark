@@ -26,9 +26,9 @@ func0000000000000018:                   # @func0000000000000018
 func0000000000000030:                   # @func0000000000000030
 	lui	a0, 8
 	addiw	a1, a0, 31
+	addiw	a0, a0, 3
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a1
-	addiw	a0, a0, 3
 	vmsne.vx	v9, v10, a0
 	vmor.mm	v8, v0, v8
 	vmor.mm	v0, v8, v9

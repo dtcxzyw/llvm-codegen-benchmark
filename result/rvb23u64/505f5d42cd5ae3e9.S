@@ -15,8 +15,8 @@ func000000000000000f:                   # @func000000000000000f
 func000000000000000d:                   # @func000000000000000d
 	srliw	a2, a2, 27
 	or	a1, a1, a2
-	slli	a1, a1, 2
 	lui	a2, 262144
+	slli	a1, a1, 2
 	addiw	a2, a2, -32
 	and	a1, a1, a2
 	or	a0, a0, a1

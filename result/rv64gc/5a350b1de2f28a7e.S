@@ -6,8 +6,8 @@ func000000000000011a:                   # @func000000000000011a
 func0000000000000101:                   # @func0000000000000101
 	slli	a2, a2, 9
 	sub	a1, a1, a0
-	add	a1, a1, a2
 	li	a0, -1
+	add	a1, a1, a2
 	srli	a0, a0, 1
 	xor	a0, a0, a1
 	seqz	a0, a0

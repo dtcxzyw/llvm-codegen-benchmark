@@ -15,9 +15,9 @@ func0000000000000015:                   # @func0000000000000015
 	addi	a3, a3, 965
 	slli	a3, a3, 32
 	mulhu	a2, a2, a3
-	srli	a2, a2, 59
 	lui	a3, 1048575
 	addi	a3, a3, 496
+	srli	a2, a2, 59
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	addw	a0, a0, a2

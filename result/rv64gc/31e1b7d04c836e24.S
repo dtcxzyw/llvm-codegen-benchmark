@@ -34,9 +34,9 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func00000000000000cc:                   # @func00000000000000cc
 	li	a3, 1
+	xor	a0, a0, a1
 	slli	a3, a3, 48
 	xor	a2, a2, a3
-	xor	a0, a0, a1
 	sext.w	a0, a0
 	or	a0, a0, a2
 	snez	a0, a0
@@ -141,8 +141,8 @@ func00000000000000ac:                   # @func00000000000000ac
 	sext.w	a0, a0
 	lui	a3, 64
 	addiw	a3, a3, -16
-	slt	a2, a3, a2
 	xor	a0, a0, a1
+	slt	a1, a3, a2
 	snez	a0, a0
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret

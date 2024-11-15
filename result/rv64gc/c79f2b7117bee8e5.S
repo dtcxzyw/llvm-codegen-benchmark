@@ -32,8 +32,8 @@ func000000000000003c:                   # @func000000000000003c
 	addi	a1, a1, -1
 	snez	a1, a1
 	and	a0, a0, a1
-	neg	a0, a0
 	lui	a1, 1048544
+	neg	a0, a0
 	addiw	a1, a1, -165
 	and	a0, a0, a1
 	ret

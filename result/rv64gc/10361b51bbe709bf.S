@@ -10,8 +10,8 @@ func0000000000000011:                   # @func0000000000000011
 	andi	a0, a0, 255
 	andi	a2, a2, 8
 	seqz	a2, a2
-	and	a1, a1, a2
 	addi	a0, a0, -22
+	and	a1, a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

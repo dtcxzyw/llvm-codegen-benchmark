@@ -30,10 +30,10 @@ func000000000000000a:                   # @func000000000000000a
 	li	a0, 63
 	vsrl.vx	v14, v12, a0
 	li	a0, 39
-	vsra.vx	v12, v12, a0
-	vadd.vv	v12, v12, v14
 	vadd.vv	v8, v10, v8
-	vadd.vv	v8, v12, v8
+	vsra.vx	v10, v12, a0
+	vadd.vv	v10, v10, v14
+	vadd.vv	v8, v10, v8
 	li	a0, 32
 	vsrl.vx	v8, v8, a0
 	ret

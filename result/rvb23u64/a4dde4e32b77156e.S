@@ -68,9 +68,9 @@ func000000000000004c:                   # @func000000000000004c
 	and	a2, a2, a3
 	lui	a3, 2
 	addiw	a3, a3, 12
+	sltiu	a1, a1, -5
 	xor	a2, a2, a3
 	snez	a2, a2
-	sltiu	a1, a1, -5
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret

@@ -25,10 +25,10 @@ func0000000000000174:                   # @func0000000000000174
 func000000000000015a:                   # @func000000000000015a
 	addw	a0, a0, a1
 	lui	a1, 1048400
-	addiw	a1, a1, 1427
-	slt	a1, a1, a0
 	lui	a2, 1048540
+	addiw	a1, a1, 1427
 	addi	a2, a2, 1360
+	slt	a1, a1, a0
 	czero.nez	a1, a2, a1
 	lui	a2, 176
 	addi	a2, a2, -1428

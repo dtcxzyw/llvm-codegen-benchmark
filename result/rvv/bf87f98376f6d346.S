@@ -7,12 +7,12 @@ func0000000000000026:                   # @func0000000000000026
 	vmv.v.v	v8, v10
 	ret
 func0000000000000024:                   # @func0000000000000024
-	li	a0, 16
-	vsetivli	zero, 8, e32, m2, ta, mu
-	vmv.v.x	v12, a0
 	li	a0, 28
+	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsltu.vx	v0, v8, a0
+	li	a0, 16
 	vmv.v.i	v10, 0
+	vmv.v.x	v12, a0
 	vsll.vv	v10, v12, v8, v0.t
 	vmv.v.v	v8, v10
 	ret

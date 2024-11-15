@@ -1,21 +1,21 @@
 func0000000000000024:                   # @func0000000000000024
 	slli	a1, a1, 2
-	addi	a1, a1, -4
 	slli	a0, a0, 32
+	addi	a1, a1, -4
 	srli	a0, a0, 32
 	mul	a0, a1, a0
 	ret
 func000000000000006f:                   # @func000000000000006f
 	slli	a1, a1, 1
-	addi	a1, a1, 2
 	slli	a0, a0, 32
+	addi	a1, a1, 2
 	srli	a0, a0, 32
 	mul	a0, a1, a0
 	ret
 func000000000000006c:                   # @func000000000000006c
 	slli	a1, a1, 1
-	addi	a1, a1, 2
 	slli	a0, a0, 32
+	addi	a1, a1, 2
 	srli	a0, a0, 32
 	mul	a0, a1, a0
 	ret

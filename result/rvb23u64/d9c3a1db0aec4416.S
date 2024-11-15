@@ -54,10 +54,10 @@ func000000000000001c:                   # @func000000000000001c
 func0000000000000061:                   # @func0000000000000061
 	slli	a1, a1, 40
 	or	a0, a0, a1
-	srli	a0, a0, 24
-	slli.uw	a0, a0, 24
 	lui	a1, 672
 	addiw	a1, a1, 413
+	srli	a0, a0, 24
+	slli.uw	a0, a0, 24
 	slli	a1, a1, 24
 	xor	a0, a0, a1
 	seqz	a0, a0

@@ -15,16 +15,16 @@ func0000000000000015:                   # @func0000000000000015
 func0000000000000037:                   # @func0000000000000037
 	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsra.vx	v10, v10, a0
 	vnot.v	v8, v8
+	vsra.vx	v10, v10, a0
 	vadd.vv	v8, v8, v12
 	vadd.vv	v8, v8, v10
 	ret
 func0000000000000057:                   # @func0000000000000057
 	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsra.vx	v12, v12, a0
 	vnot.v	v8, v8
+	vsra.vx	v12, v12, a0
 	vadd.vv	v8, v8, v10
 	vadd.vv	v8, v8, v12
 	ret

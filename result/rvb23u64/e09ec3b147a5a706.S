@@ -7,24 +7,24 @@ func0000000000000141:                   # @func0000000000000141
 func0000000000000048:                   # @func0000000000000048
 	andi	a1, a1, 255
 	add	a0, a0, a1
-	addiw	a0, a0, -29
 	lui	a1, 1
+	addiw	a0, a0, -29
 	addiw	a1, a1, -2
 	sltu	a0, a1, a0
 	ret
 func0000000000000078:                   # @func0000000000000078
 	andi	a1, a1, 255
 	add	a0, a0, a1
-	addiw	a0, a0, -161
 	lui	a1, 2
+	addiw	a0, a0, -161
 	addiw	a1, a1, -982
 	sltu	a0, a1, a0
 	ret
 func0000000000000058:                   # @func0000000000000058
 	andi	a1, a1, 255
 	add	a0, a0, a1
-	addiw	a0, a0, -65
 	lui	a1, 6
+	addiw	a0, a0, -65
 	addiw	a1, a1, -827
 	sltu	a0, a1, a0
 	ret

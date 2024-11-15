@@ -1,8 +1,8 @@
 func0000000000000002:                   # @func0000000000000002
 	fmv.d.x	fa5, zero
-	flt.d	a0, fa0, fa5
-	li	a1, -24
-	czero.nez	a0, a1, a0
+	li	a0, -24
+	flt.d	a1, fa0, fa5
+	czero.nez	a0, a0, a1
 	lui	a1, 285
 	addiw	a1, a1, 1441
 	add	a0, a0, a1

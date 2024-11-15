@@ -34,9 +34,9 @@ func00000000000000cc:                   # @func00000000000000cc
 	ret
 func00000000000000c8:                   # @func00000000000000c8
 	sext.w	a1, a1
+	sltiu	a0, a0, 8
 	addi	a1, a1, -3
 	snez	a1, a1
-	sltiu	a0, a0, 8
 	not	a0, a0
 	and	a0, a0, a1
 	ret

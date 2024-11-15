@@ -14,10 +14,10 @@ func00000000000000dd:                   # @func00000000000000dd
 	addi	a3, a3, 1359
 	mul	a2, a2, a3
 	add	a2, a2, a3
+	lui	a3, 1048400
+	addi	a3, a3, 1733
 	czero.eqz	a1, a2, a1
-	lui	a2, 1048400
-	addi	a2, a2, 1733
-	add	a0, a0, a2
+	add	a0, a0, a3
 	addw	a0, a0, a1
 	ret
 func00000000000000dc:                   # @func00000000000000dc
@@ -26,9 +26,9 @@ func00000000000000dc:                   # @func00000000000000dc
 	addi	a3, a3, 1359
 	mul	a2, a2, a3
 	add	a2, a2, a3
+	lui	a3, 1048400
+	addi	a3, a3, 1733
 	czero.eqz	a1, a2, a1
-	lui	a2, 1048400
-	addi	a2, a2, 1733
-	add	a0, a0, a2
+	add	a0, a0, a3
 	addw	a0, a0, a1
 	ret

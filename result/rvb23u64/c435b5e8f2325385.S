@@ -44,11 +44,11 @@ func0000000000000098:                   # @func0000000000000098
 	sext.w	a1, a1
 	lui	a3, 8
 	addw	a0, a0, a3
+	lui	a3, 1048568
+	addiw	a3, a3, -1
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
-	lui	a1, 1048568
-	addiw	a1, a1, -1
-	sltu	a1, a1, a2
+	sltu	a1, a3, a2
 	and	a0, a0, a1
 	ret
 func00000000000001aa:                   # @func00000000000001aa

@@ -1,17 +1,17 @@
 func0000000000000007:                   # @func0000000000000007
 	slli	a1, a1, 48
+	lui	a2, 8128
 	srli	a1, a1, 48
 	slli	a1, a1, 2
-	lui	a2, 8128
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func000000000000000f:                   # @func000000000000000f
 	slli	a1, a1, 48
-	srli	a1, a1, 48
-	slli	a1, a1, 32
 	lui	a2, 524272
+	srli	a1, a1, 48
 	addi	a2, a2, 1
+	slli	a1, a1, 32
 	slli	a2, a2, 32
 	addi	a2, a2, -1
 	and	a0, a0, a2

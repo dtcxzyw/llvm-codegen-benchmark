@@ -11,10 +11,10 @@ func000000000000000f:                   # @func000000000000000f
 	ret
 func000000000000000e:                   # @func000000000000000e
 	addw	a0, a0, a1
-	slli	a1, a0, 32
-	lui	a2, 3507
-	slli	a2, a2, 20
-	mulhu	a1, a1, a2
+	lui	a1, 3507
+	slli	a2, a0, 32
+	slli	a1, a1, 20
+	mulhu	a1, a2, a1
 	srli	a1, a1, 16
 	subw	a2, a0, a1
 	slli	a2, a2, 48
@@ -28,10 +28,10 @@ func000000000000000e:                   # @func000000000000000e
 	ret
 func000000000000000c:                   # @func000000000000000c
 	addw	a0, a0, a1
-	slli	a1, a0, 48
-	lui	a2, 33157
-	slli	a2, a2, 4
-	mulhu	a1, a1, a2
+	lui	a1, 33157
+	slli	a2, a0, 48
+	slli	a1, a1, 4
+	mulhu	a1, a2, a1
 	srli	a1, a1, 23
 	li	a2, 253
 	mul	a1, a1, a2

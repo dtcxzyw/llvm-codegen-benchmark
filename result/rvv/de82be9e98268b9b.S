@@ -10,8 +10,8 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000010:                   # @func0000000000000010
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vmsgtu.vi	v10, v10, 3
-	vmor.mm	v0, v10, v0
 	li	a0, 129
+	vmor.mm	v0, v10, v0
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.x	v10, a0
 	vmerge.vvm	v8, v10, v8, v0

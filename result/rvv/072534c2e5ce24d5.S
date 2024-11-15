@@ -11,11 +11,11 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func0000000000000001:                   # @func0000000000000001
 	vmv1r.v	v11, v0
+	vmv1r.v	v0, v10
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.i	v12, 0
-	vmv1r.v	v0, v10
-	vmerge.vim	v12, v12, 1, v0
 	li	a0, 57
+	vmerge.vim	v12, v12, 1, v0
 	vxor.vx	v12, v12, a0
 	li	a0, 32
 	vmv1r.v	v0, v11
@@ -45,11 +45,11 @@ func000000000000000c:                   # @func000000000000000c
 	ret
 func000000000000000a:                   # @func000000000000000a
 	vmv1r.v	v11, v0
+	vmv1r.v	v0, v10
 	li	a0, 112
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v12, a0
 	li	a0, 128
-	vmv1r.v	v0, v10
 	vmerge.vxm	v12, v12, a0, v0
 	li	a0, 96
 	vmv1r.v	v0, v11
@@ -58,13 +58,13 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func0000000000000008:                   # @func0000000000000008
 	vmv1r.v	v11, v0
+	vmv1r.v	v0, v10
 	lui	a0, 48
 	addi	a0, a0, -1
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v12, a0
 	lui	a0, 16
 	addi	a0, a0, -1
-	vmv1r.v	v0, v10
 	vmerge.vxm	v12, v12, a0, v0
 	li	a0, 255
 	vmv1r.v	v0, v11

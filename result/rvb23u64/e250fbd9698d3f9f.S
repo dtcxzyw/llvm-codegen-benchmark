@@ -16,10 +16,10 @@ func0000000000000003:                   # @func0000000000000003
 	lui	a2, %hi(.LCPI1_0)
 	ld	a2, %lo(.LCPI1_0)(a2)
 	or	a0, a0, a1
-	mulhu	a1, a0, a2
-	srli	a1, a1, 19
-	lui	a2, 488
-	addiw	a2, a2, 1152
+	lui	a1, 488
+	mulhu	a2, a0, a2
+	srli	a2, a2, 19
+	addiw	a1, a1, 1152
 	mul	a1, a1, a2
 	sub	a0, a0, a1
 	ret

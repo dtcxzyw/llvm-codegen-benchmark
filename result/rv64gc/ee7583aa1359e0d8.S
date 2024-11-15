@@ -14,10 +14,10 @@ func00000000000001aa:                   # @func00000000000001aa
 	sext.w	a1, a1
 	lui	a3, 524288
 	addi	a3, a3, -2
+	slti	a2, a2, 0
 	subw	a3, a3, a0
 	slt	a0, a3, a1
-	slti	a1, a2, 0
-	not	a1, a1
+	not	a1, a2
 	and	a0, a0, a1
 	ret
 func00000000000003aa:                   # @func00000000000003aa
@@ -57,8 +57,8 @@ func0000000000000118:                   # @func0000000000000118
 	sext.w	a1, a1
 	negw	a0, a0
 	xor	a0, a0, a1
-	seqz	a0, a0
 	sltiu	a1, a2, 52
+	seqz	a0, a0
 	not	a1, a1
 	and	a0, a0, a1
 	ret

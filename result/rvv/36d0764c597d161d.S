@@ -37,8 +37,8 @@ func0000000000000007:                   # @func0000000000000007
 func0000000000000002:                   # @func0000000000000002
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vv	v12, v12, v16
-	vfdiv.vv	v8, v12, v8
 	fli.s	fa5, 128.0
+	vfdiv.vv	v8, v12, v8
 	fneg.s	fa5, fa5
 	vmflt.vf	v0, v8, fa5
 	ret

@@ -9,15 +9,15 @@ func0000000000000014:                   # @func0000000000000014
 	vmor.mm	v0, v8, v9
 	ret
 func0000000000000084:                   # @func0000000000000084
+	li	a0, 96
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmsltu.vx	v11, v8, a0
 	lui	a0, 1
 	addi	a0, a0, -257
-	vsetivli	zero, 8, e16, m1, ta, ma
-	vmsgtu.vx	v10, v10, a0
-	li	a0, 96
-	vsetvli	zero, zero, e32, m2, ta, ma
-	vmsltu.vx	v11, v8, a0
-	vmand.mm	v8, v11, v10
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vmsgtu.vx	v8, v10, a0
 	vmand.mm	v9, v11, v0
-	vmandn.mm	v9, v9, v10
-	vmor.mm	v0, v8, v9
+	vmand.mm	v10, v11, v8
+	vmandn.mm	v8, v9, v8
+	vmor.mm	v0, v10, v8
 	ret

@@ -17,11 +17,11 @@ func000000000000001f:                   # @func000000000000001f
 	ret
 func000000000000001e:                   # @func000000000000001e
 	andi	a1, a1, 255
+	lui	a2, 16
 	slli	a1, a1, 8
+	addiw	a2, a2, 1
 	or	a0, a0, a1
-	lui	a1, 16
-	addiw	a1, a1, 1
-	slli	a2, a1, 32
+	slli	a1, a2, 32
 	add	a1, a1, a2
 	mul	a0, a0, a1
 	ret

@@ -40,8 +40,8 @@ func0000000000000006:                   # @func0000000000000006
 	vfclass.v	v16, v16
 	li	a0, 126
 	vand.vx	v16, v16, a0
-	vmsne.vi	v0, v16, 0
 	bseti	a0, zero, 63
+	vmsne.vi	v0, v16, 0
 	vmv.v.x	v16, a0
 	vmerge.vvm	v8, v16, v8, v0
 	ret

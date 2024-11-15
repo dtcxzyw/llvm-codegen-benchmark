@@ -33,12 +33,12 @@ func00000000000003c8:                   # @func00000000000003c8
 func0000000000000049:                   # @func0000000000000049
 	lui	a3, 65792
 	add	a2, a2, a3
+	li	a3, -49
+	slli	a3, a3, 28
 	sltu	a0, a0, a2
+	addi	a3, a3, 1
 	not	a0, a0
-	li	a2, -49
-	slli	a2, a2, 28
-	addi	a2, a2, 1
-	sltu	a1, a1, a2
+	sltu	a1, a1, a3
 	and	a0, a0, a1
 	ret
 func0000000000000111:                   # @func0000000000000111

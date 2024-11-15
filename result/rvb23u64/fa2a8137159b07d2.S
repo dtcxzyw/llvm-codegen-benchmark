@@ -19,8 +19,8 @@ func0000000000000006:                   # @func0000000000000006
 func0000000000000008:                   # @func0000000000000008
 	sext.w	a1, a1
 	sext.w	a2, a0
-	minu	a2, a2, a1
 	lui	a3, 524288
+	minu	a2, a2, a1
 	addiw	a3, a3, -2
 	sltu	a1, a3, a1
 	czero.nez	a2, a2, a1

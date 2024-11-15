@@ -9,14 +9,14 @@ func0000000000000182:                   # @func0000000000000182
 	ret
 func0000000000000028:                   # @func0000000000000028
 	lui	a1, 512
+	li	a2, 27
 	addiw	a1, a1, -2048
 	and	a1, a1, a0
-	li	a2, 27
+	srliw	a0, a0, 16
 	slli	a2, a2, 11
+	seqz	a0, a0
 	xor	a1, a1, a2
 	seqz	a1, a1
-	srliw	a0, a0, 16
-	seqz	a0, a0
 	or	a0, a0, a1
 	li	a1, 4
 	sub	a0, a1, a0
@@ -25,9 +25,9 @@ func0000000000000022:                   # @func0000000000000022
 	sext.w	a1, a0
 	andi	a0, a0, -3
 	sext.w	a0, a0
+	addi	a1, a1, -13
 	addi	a0, a0, -12
 	seqz	a0, a0
-	addi	a1, a1, -13
 	seqz	a1, a1
 	or	a0, a0, a1
 	addi	a0, a0, 2

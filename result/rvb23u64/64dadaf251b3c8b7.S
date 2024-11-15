@@ -37,13 +37,13 @@ func000000000000000b:                   # @func000000000000000b
 func0000000000000002:                   # @func0000000000000002
 	srliw	a0, a0, 1
 	lui	a1, 16513
+	lui	a2, 264216
 	slli	a1, a1, 5
 	addi	a1, a1, 1033
 	mul	a0, a0, a1
 	srli	a1, a0, 38
 	srli	a0, a0, 39
 	slli	a0, a0, 49
-	lui	a2, 264216
 	mulhu	a0, a0, a2
 	srli	a0, a0, 22
 	slli	a2, a0, 8

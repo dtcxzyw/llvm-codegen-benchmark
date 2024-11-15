@@ -1,11 +1,11 @@
 func000000000000006c:                   # @func000000000000006c
 	slli	a5, a4, 8
 	srli	a3, a3, 56
-	or	a3, a3, a5
 	srli	a4, a4, 56
+	or	a3, a3, a5
+	add	a2, a2, a4
 	add	a1, a1, a3
 	sltu	a3, a1, a3
-	add	a2, a2, a4
 	add	a2, a2, a3
 	slli	a2, a2, 8
 	srli	a1, a1, 56
@@ -15,11 +15,11 @@ func000000000000006c:                   # @func000000000000006c
 func000000000000006f:                   # @func000000000000006f
 	slli	a5, a4, 8
 	srli	a3, a3, 56
-	or	a3, a3, a5
 	srli	a4, a4, 56
+	or	a3, a3, a5
+	add	a2, a2, a4
 	add	a1, a1, a3
 	sltu	a3, a1, a3
-	add	a2, a2, a4
 	add	a2, a2, a3
 	slli	a2, a2, 8
 	srli	a1, a1, 56

@@ -2,8 +2,8 @@ func0000000000000016:                   # @func0000000000000016
 	sext.w	a0, a0
 	lui	a2, 1048540
 	addi	a2, a2, 1359
-	mulw	a1, a1, a2
 	sgtz	a0, a0
+	mulw	a1, a1, a2
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret

@@ -1,19 +1,19 @@
 func0000000000000001:                   # @func0000000000000001
 	slli	a2, a2, 9
 	or	a1, a1, a2
+	lui	a2, 2
 	slli	a1, a1, 51
 	srli	a1, a1, 51
-	lui	a2, 2
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func000000000000000b:                   # @func000000000000000b
 	slliw	a2, a2, 27
+	lui	a3, 992
+	and	a0, a0, a3
 	lui	a3, 1047584
 	addiw	a3, a3, -1
 	and	a1, a1, a3
-	lui	a3, 992
-	and	a0, a0, a3
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -40,11 +40,11 @@ func000000000000000d:                   # @func000000000000000d
 	ret
 func0000000000000003:                   # @func0000000000000003
 	slliw	a2, a2, 23
+	lui	a3, 2044
+	and	a0, a0, a3
 	lui	a3, 1046532
 	addiw	a3, a3, -1
 	and	a1, a1, a3
-	lui	a3, 2044
-	and	a0, a0, a3
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret

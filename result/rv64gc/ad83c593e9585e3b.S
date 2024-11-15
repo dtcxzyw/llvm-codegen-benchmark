@@ -20,10 +20,10 @@ func000000000000008c:                   # @func000000000000008c
 	ret
 func0000000000000184:                   # @func0000000000000184
 	sub	a1, a1, a2
+	srli	a0, a0, 3
 	srli	a1, a1, 3
 	sltiu	a1, a1, 375
 	xori	a1, a1, 1
-	srli	a0, a0, 3
 	sltiu	a0, a0, 375
 	and	a0, a0, a1
 	ret
@@ -58,8 +58,8 @@ func0000000000000011:                   # @func0000000000000011
 func0000000000000081:                   # @func0000000000000081
 	sub	a1, a1, a2
 	li	a2, 2047
-	sltu	a1, a2, a1
 	addi	a0, a0, -2048
+	sltu	a1, a2, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -157,8 +157,8 @@ func00000000000002ca:                   # @func00000000000002ca
 	ret
 func00000000000000a6:                   # @func00000000000000a6
 	sub	a1, a1, a2
-	slti	a1, a1, 1025
 	slti	a0, a0, 25
+	slti	a1, a1, 1025
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret

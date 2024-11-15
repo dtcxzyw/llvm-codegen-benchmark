@@ -5,9 +5,9 @@ func0000000000000015:                   # @func0000000000000015
 	ret
 func0000000000000000:                   # @func0000000000000000
 	add	a1, a1, a2
+	lui	a2, 2
 	add	a0, a0, a1
-	lui	a1, 2
-	addiw	a1, a1, 1392
+	addiw	a1, a2, 1392
 	add	a0, a0, a1
 	ret
 func0000000000000020:                   # @func0000000000000020
@@ -27,33 +27,33 @@ func0000000000000030:                   # @func0000000000000030
 	ret
 func0000000000000010:                   # @func0000000000000010
 	add	a1, a1, a2
+	lui	a2, 81007
 	add	a0, a0, a1
-	lui	a1, 81007
-	slli	a1, a1, 3
-	addi	a1, a1, -1607
+	slli	a2, a2, 3
+	addi	a1, a2, -1607
 	add	a0, a0, a1
 	ret
 func000000000000003c:                   # @func000000000000003c
 	add	a1, a1, a2
+	lui	a2, 81007
 	add	a0, a0, a1
-	lui	a1, 81007
-	slli	a1, a1, 3
-	addi	a1, a1, -1607
+	slli	a2, a2, 3
+	addi	a1, a2, -1607
 	add	a0, a0, a1
 	ret
 func0000000000000014:                   # @func0000000000000014
 	add	a1, a1, a2
+	lui	a2, 81007
 	add	a0, a0, a1
-	lui	a1, 81007
-	slli	a1, a1, 3
-	addi	a1, a1, -1607
+	slli	a2, a2, 3
+	addi	a1, a2, -1607
 	add	a0, a0, a1
 	ret
 func0000000000000035:                   # @func0000000000000035
 	add	a1, a1, a2
+	lui	a2, 262144
 	add	a0, a0, a1
-	lui	a1, 262144
-	addiw	a1, a1, -1225
+	addiw	a1, a2, -1225
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	ret
@@ -94,10 +94,10 @@ func000000000000000f:                   # @func000000000000000f
 	ret
 func000000000000000c:                   # @func000000000000000c
 	add	a1, a1, a2
+	li	a2, -1
 	add	a0, a0, a1
-	li	a1, -1
-	slli	a1, a1, 32
-	add	a0, a0, a1
+	slli	a2, a2, 32
+	add	a0, a0, a2
 	ret
 func0000000000000003:                   # @func0000000000000003
 	add	a1, a1, a2
@@ -141,10 +141,10 @@ func0000000000000037:                   # @func0000000000000037
 	ret
 func000000000000001f:                   # @func000000000000001f
 	add	a1, a1, a2
+	lui	a2, 81007
 	add	a0, a0, a1
-	lui	a1, 81007
-	slli	a1, a1, 3
-	addi	a1, a1, -1607
+	slli	a2, a2, 3
+	addi	a1, a2, -1607
 	add	a0, a0, a1
 	ret
 func0000000000000038:                   # @func0000000000000038

@@ -29,9 +29,9 @@ func000000000000000f:                   # @func000000000000000f
 func0000000000000007:                   # @func0000000000000007
 	lui	a0, 16
 	addi	a1, a0, -768
+	addi	a0, a0, -1
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vx	v8, v8, a1
-	addi	a0, a0, -1
 	vand.vx	v8, v8, a0
 	li	a0, 784
 	vadd.vx	v10, v8, a0

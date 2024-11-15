@@ -22,9 +22,9 @@ func0000000000000009:                   # @func0000000000000009
 	sub	a0, a0, a1
 	srli	a1, a0, 4
 	mulhu	a1, a1, a2
-	srli	a1, a1, 3
 	lui	a2, 1
 	addiw	a2, a2, -496
+	srli	a1, a1, 3
 	mul	a1, a1, a2
 	sub	a0, a0, a0
 	sub	a0, a0, a1
@@ -38,9 +38,9 @@ func0000000000000008:                   # @func0000000000000008
 	xor	a0, a0, a2
 	sub	a0, a0, a2
 	mulhu	a0, a0, a1
-	srli	a0, a0, 18
 	li	a1, 1
 	slli	a1, a1, 32
+	srli	a0, a0, 18
 	addi	a1, a1, -1000
 	mul	a0, a0, a1
 	ret
@@ -53,9 +53,9 @@ func000000000000000a:                   # @func000000000000000a
 	xor	a0, a0, a2
 	sub	a0, a0, a2
 	mulhu	a0, a0, a1
-	srli	a0, a0, 31
 	li	a1, 1
 	slli	a1, a1, 32
+	srli	a0, a0, 31
 	addi	a1, a1, -60
 	mul	a0, a0, a1
 	ret
@@ -68,9 +68,9 @@ func000000000000000b:                   # @func000000000000000b
 	xor	a0, a0, a2
 	sub	a0, a0, a2
 	mulhu	a0, a0, a1
-	srli	a0, a0, 34
 	li	a1, 1
 	slli	a1, a1, 32
+	srli	a0, a0, 34
 	addi	a1, a1, -24
 	mul	a0, a0, a1
 	ret

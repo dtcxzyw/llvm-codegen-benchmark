@@ -18,9 +18,9 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func0000000000000016:                   # @func0000000000000016
 	addi	a0, a0, 1
-	sext.h	a1, a0
-	lui	a2, 1048569
-	addi	a2, a2, -1911
+	lui	a1, 1048569
+	sext.h	a2, a0
+	addi	a1, a1, -1911
 	mul	a1, a1, a2
 	srli	a1, a1, 16
 	add	a1, a1, a0

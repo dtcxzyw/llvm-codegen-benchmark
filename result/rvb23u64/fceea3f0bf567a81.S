@@ -26,9 +26,9 @@ func000000000000000a:                   # @func000000000000000a
 	addi	a2, a2, -1
 	li	a3, 344
 	mul	a1, a1, a3
+	slli.uw	a2, a2, 3
 	add	a0, a0, a1
-	slli.uw	a1, a2, 3
-	sh1add	a1, a1, a1
+	sh1add	a1, a2, a2
 	add	a0, a0, a1
 	addi	a0, a0, 104
 	ret

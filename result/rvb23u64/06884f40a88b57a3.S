@@ -1,8 +1,8 @@
 func0000000000000041:                   # @func0000000000000041
 	sext.w	a2, a2
+	li	a3, 16
 	sltiu	a2, a2, 2
 	czero.nez	a1, a1, a2
-	li	a3, 16
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
 	xor	a0, a0, a1
@@ -72,18 +72,18 @@ func0000000000000047:                   # @func0000000000000047
 	ret
 func0000000000000014:                   # @func0000000000000014
 	sext.w	a2, a2
+	li	a3, 6
 	addi	a2, a2, -2
 	czero.eqz	a1, a1, a2
-	li	a3, 6
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
 func0000000000000046:                   # @func0000000000000046
 	sext.w	a2, a2
+	li	a3, 1
 	sltiu	a2, a2, 256
 	czero.nez	a1, a1, a2
-	li	a3, 1
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
 	slt	a0, a0, a1

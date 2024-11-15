@@ -44,8 +44,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	sext.w	a0, a0
 	sext.w	a1, a1
 	addi	a1, a1, -11
-	snez	a1, a1
 	seqz	a0, a0
+	snez	a1, a1
 	or	a0, a0, a1
 	lui	a1, 1048569
 	addiw	a1, a1, 1866
@@ -63,8 +63,8 @@ func00000000000000a1:                   # @func00000000000000a1
 	sext.w	a0, a0
 	sext.w	a1, a1
 	slti	a1, a1, 5
-	xori	a1, a1, 1
 	addi	a0, a0, -659
+	xori	a1, a1, 1
 	seqz	a0, a0
 	or	a0, a0, a1
 	li	a1, 16

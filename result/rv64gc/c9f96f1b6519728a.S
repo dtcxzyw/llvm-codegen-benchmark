@@ -1,8 +1,8 @@
 func0000000000000042:                   # @func0000000000000042
 	fsub.s	fa5, fa0, fa1
 	fmv.w.x	fa4, zero
-	fmax.s	fa5, fa5, fa4
 	lui	a0, 280480
+	fmax.s	fa5, fa5, fa4
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	ret
@@ -12,8 +12,8 @@ func0000000000000044:                   # @func0000000000000044
 	lui	a0, %hi(.LCPI1_0)
 	flw	fa5, %lo(.LCPI1_0)(a0)
 	fsub.s	fa4, fa0, fa1
-	fmax.s	fa5, fa4, fa5
 	lui	a0, 217088
+	fmax.s	fa5, fa4, fa5
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	ret

@@ -39,8 +39,8 @@ func0000000000000068:                   # @func0000000000000068
 	ret
 func00000000000001aa:                   # @func00000000000001aa
 	sraiw	a2, a2, 31
-	andi	a2, a2, -1024
 	slli	a0, a0, 5
+	andi	a2, a2, -1024
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 1048

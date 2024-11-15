@@ -1,7 +1,7 @@
 func0000000000000044:                   # @func0000000000000044
 	fsub.s	fa5, fa1, fa2
-	fmax.s	fa5, fa0, fa5
 	lui	a0, 280576
+	fmax.s	fa5, fa0, fa5
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	ret

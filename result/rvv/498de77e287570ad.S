@@ -19,9 +19,9 @@ func0000000000000007:                   # @func0000000000000007
 	ret
 func0000000000000002:                   # @func0000000000000002
 	fli.s	fa5, 0.25
+	lui	a0, 273536
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vf	v8, v8, fa5
-	lui	a0, 273536
 	fmv.w.x	fa5, a0
 	vfmin.vf	v8, v8, fa5
 	ret

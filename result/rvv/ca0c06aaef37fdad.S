@@ -3,8 +3,8 @@ func0000000000000056:                   # @func0000000000000056
 	vadd.vv	v10, v10, v12
 	lui	a0, 524288
 	addi	a1, a0, -9
-	vmslt.vx	v0, v10, a1
 	addi	a0, a0, -1
+	vmslt.vx	v0, v10, a1
 	vmv.v.x	v10, a0
 	vadd.vi	v10, v8, 8, v0.t
 	vmv.v.v	v8, v10

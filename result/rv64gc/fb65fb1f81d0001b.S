@@ -1,20 +1,20 @@
 func0000000000000035:                   # @func0000000000000035
-	lui	a3, 349525
-	addiw	a3, a3, 1365
-	slli	a4, a3, 32
-	add	a7, a3, a4
-	lui	a4, 209715
-	addiw	a5, a4, 819
+	lui	a6, 349525
+	lui	a7, 209715
+	lui	t0, 61681
+	lui	a3, 4112
+	addiw	a4, a6, 1365
+	addiw	a5, a7, 819
+	addiw	a6, t0, -241
+	addiw	a7, a3, 257
+	slli	a3, a4, 32
+	add	a3, a3, a4
 	slli	a4, a5, 32
 	add	a5, a5, a4
-	lui	a4, 61681
-	addiw	a6, a4, -241
 	slli	a4, a6, 32
 	add	a6, a6, a4
-	lui	a4, 4112
-	addiw	a3, a4, 257
-	slli	a4, a3, 32
-	add	a4, a4, a3
+	slli	a4, a7, 32
+	add	a4, a4, a7
 	bnez	a2, .LBB0_2
 	srli	a2, a1, 1
 	or	a1, a1, a2
@@ -30,7 +30,7 @@ func0000000000000035:                   # @func0000000000000035
 	or	a1, a1, a2
 	not	a1, a1
 	srli	a2, a1, 1
-	and	a2, a2, a7
+	and	a2, a2, a3
 	sub	a1, a1, a2
 	and	a2, a1, a5
 	srli	a1, a1, 2
@@ -63,7 +63,7 @@ func0000000000000035:                   # @func0000000000000035
 	or	a1, a1, a2
 	not	a1, a1
 	srli	a2, a1, 1
-	and	a2, a2, a7
+	and	a2, a2, a3
 	sub	a1, a1, a2
 	and	a2, a1, a5
 	srli	a1, a1, 2

@@ -38,9 +38,9 @@ func0000000000000190:                   # @func0000000000000190
 func0000000000000188:                   # @func0000000000000188
 	li	a0, -1
 	slli	a1, a0, 51
+	slli	a0, a0, 52
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v12, v12, a1
-	slli	a0, a0, 52
 	vmsltu.vx	v14, v12, a0
 	vmsne.vv	v12, v8, v10
 	vmor.mm	v0, v14, v12

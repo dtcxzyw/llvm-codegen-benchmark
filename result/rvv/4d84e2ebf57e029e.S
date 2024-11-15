@@ -12,10 +12,10 @@ func000000000000000c:                   # @func000000000000000c
 	vmv1r.v	v12, v0
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vmfge.vf	v0, v8, fa5
 	vmv.v.i	v16, 0
-	vmerge.vvm	v8, v16, v8, v0
+	vmfge.vf	v0, v8, fa5
 	lui	a0, 323584
+	vmerge.vvm	v8, v16, v8, v0
 	vmv.v.x	v16, a0
 	vmv1r.v	v0, v12
 	vmerge.vvm	v8, v16, v8, v0

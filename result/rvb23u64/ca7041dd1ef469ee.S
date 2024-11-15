@@ -15,15 +15,15 @@ func000000000000000b:                   # @func000000000000000b
 	ret
 func000000000000000a:                   # @func000000000000000a
 	mul	a0, a0, a1
-	srli	a0, a0, 63
 	li	a1, -1
+	srli	a0, a0, 63
 	srli	a1, a1, 1
 	add	a0, a0, a1
 	ret
 func000000000000001b:                   # @func000000000000001b
 	mul	a0, a0, a1
-	srli	a0, a0, 26
 	lui	a1, 25
+	srli	a0, a0, 26
 	addiw	a1, a1, -1890
 	add	a0, a0, a1
 	ret

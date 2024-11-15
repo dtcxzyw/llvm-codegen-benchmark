@@ -38,8 +38,8 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func000000000000000a:                   # @func000000000000000a
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	andi	a3, a1, 1
+	srai	a0, a0, 56
 	li	a1, 1
 	bnez	a3, .LBB4_2
 	mv	a1, a2
@@ -61,8 +61,8 @@ func000000000000000c:                   # @func000000000000000c
 	ret
 func0000000000000006:                   # @func0000000000000006
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	andi	a1, a1, 1
+	srai	a0, a0, 56
 	addi	a1, a1, -1
 	and	a1, a1, a2
 	slli	a1, a1, 56

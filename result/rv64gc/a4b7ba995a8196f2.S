@@ -10,15 +10,15 @@ func000000000000000a:                   # @func000000000000000a
 	slli	a3, a3, 33
 	addi	a3, a3, -8
 	addi	a4, a3, 4
-	and	a2, a2, a4
 	and	a1, a1, a3
+	and	a2, a2, a4
 	sub	a0, a0, a1
 	sub	a0, a0, a2
 	ret
 func0000000000000006:                   # @func0000000000000006
 	slli	a2, a2, 32
-	srli	a2, a2, 32
 	lui	a3, 1048575
+	srli	a2, a2, 32
 	and	a1, a1, a3
 	add	a1, a1, a2
 	sub	a0, a0, a1

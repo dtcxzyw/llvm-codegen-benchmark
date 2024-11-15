@@ -11,8 +11,8 @@ func000000000000006a:                   # @func000000000000006a
 func000000000000004a:                   # @func000000000000004a
 	sext.w	a2, a2
 	li	a3, 24
-	czero.eqz	a2, a3, a2
 	sh1add	a1, a1, a1
+	czero.eqz	a2, a3, a2
 	slli	a1, a1, 6
 	add	a0, a0, a1
 	add	a0, a0, a2

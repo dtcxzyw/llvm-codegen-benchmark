@@ -1,9 +1,9 @@
 func0000000000000002:                   # @func0000000000000002
 	lui	a2, 524064
 	add	a1, a1, a2
+	lui	a2, 524288
 	or	a0, a0, a1
-	lui	a1, 524288
-	addiw	a1, a1, -2048
+	addiw	a1, a2, -2048
 	and	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000

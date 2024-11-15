@@ -9,9 +9,9 @@ func00000000000001fe:                   # @func00000000000001fe
 func00000000000001d4:                   # @func00000000000001d4
 	slli	a3, a1, 7
 	slli	a1, a1, 15
-	add	a1, a1, a3
 	add	a0, a0, a2
 	lui	a2, 8
+	add	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	srliw	a0, a0, 16
@@ -38,30 +38,30 @@ func0000000000000060:                   # @func0000000000000060
 	ret
 func0000000000000180:                   # @func0000000000000180
 	lui	a3, 112
-	addi	a3, a3, 1572
-	mul	a2, a2, a3
 	add	a0, a0, a1
 	lui	a1, 32896
+	addi	a3, a3, 1572
+	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	srliw	a0, a0, 20
 	ret
 func00000000000001f4:                   # @func00000000000001f4
 	lui	a3, 1023
-	addi	a3, a3, 1712
-	mul	a2, a2, a3
 	add	a0, a0, a1
 	lui	a1, 514
+	addi	a3, a3, 1712
+	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	srliw	a0, a0, 14
 	ret
 func00000000000001fc:                   # @func00000000000001fc
 	lui	a3, 1023
-	addi	a3, a3, 1081
-	mul	a2, a2, a3
 	add	a0, a0, a1
 	lui	a1, 514
+	addi	a3, a3, 1081
+	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	srliw	a0, a0, 14
@@ -75,40 +75,40 @@ func0000000000000080:                   # @func0000000000000080
 	ret
 func0000000000000100:                   # @func0000000000000100
 	lui	a3, 2
-	addi	a3, a3, 1425
-	mul	a2, a2, a3
 	add	a0, a0, a1
 	lui	a1, 8
+	addi	a3, a3, 1425
+	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	srliw	a0, a0, 16
 	ret
 func00000000000000ae:                   # @func00000000000000ae
 	lui	a3, 1048571
-	addi	a3, a3, 1399
-	mul	a2, a2, a3
 	add	a0, a0, a1
 	lui	a1, 8224
+	addi	a3, a3, 1399
+	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	srliw	a0, a0, 18
 	ret
 func00000000000000ea:                   # @func00000000000000ea
 	lui	a3, 1048570
-	addi	a3, a3, 460
-	mul	a2, a2, a3
 	add	a0, a0, a1
 	lui	a1, 8224
+	addi	a3, a3, 460
+	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	srliw	a0, a0, 18
 	ret
 func00000000000001ba:                   # @func00000000000001ba
 	lui	a3, 28
-	addi	a3, a3, 512
-	mul	a2, a2, a3
 	add	a0, a0, a1
 	lui	a1, 8224
+	addi	a3, a3, 512
+	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	srliw	a0, a0, 18

@@ -1,11 +1,12 @@
 func000000000000030a:                   # @func000000000000030a
 	li	a0, 10
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmul.vx	v10, v10, a0
-	vsetvli	zero, zero, e16, m1, ta, ma
+	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v9, v8
-	vwaddu.wv	v10, v10, v9
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vmul.vx	v10, v10, a0
 	li	a0, -48
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vwaddu.wv	v10, v10, v9
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v8, v10, a0
 	lui	a0, 52429
@@ -14,12 +15,13 @@ func000000000000030a:                   # @func000000000000030a
 	ret
 func0000000000000754:                   # @func0000000000000754
 	li	a0, 10
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmul.vx	v10, v10, a0
-	vsetvli	zero, zero, e16, m1, ta, ma
+	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v9, v8
-	vwaddu.wv	v10, v10, v9
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vmul.vx	v10, v10, a0
 	li	a0, -48
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vwaddu.wv	v10, v10, v9
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v8, v10, a0
 	li	a0, 60
@@ -27,12 +29,13 @@ func0000000000000754:                   # @func0000000000000754
 	ret
 func0000000000000508:                   # @func0000000000000508
 	li	a0, 10
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmul.vx	v10, v10, a0
-	vsetvli	zero, zero, e16, m1, ta, ma
+	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v9, v8
-	vwaddu.wv	v10, v10, v9
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vmul.vx	v10, v10, a0
 	li	a0, -48
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vwaddu.wv	v10, v10, v9
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v8, v10, a0
 	lui	a0, 52429
@@ -41,12 +44,13 @@ func0000000000000508:                   # @func0000000000000508
 	ret
 func0000000000000758:                   # @func0000000000000758
 	li	a0, 10
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmul.vx	v10, v10, a0
-	vsetvli	zero, zero, e16, m1, ta, ma
+	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v9, v8
-	vwaddu.wv	v10, v10, v9
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vmul.vx	v10, v10, a0
 	li	a0, -48
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vwaddu.wv	v10, v10, v9
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v8, v10, a0
 	lui	a0, 16
@@ -55,12 +59,13 @@ func0000000000000758:                   # @func0000000000000758
 	ret
 func0000000000000018:                   # @func0000000000000018
 	li	a0, 10
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmul.vx	v10, v10, a0
-	vsetvli	zero, zero, e16, m1, ta, ma
+	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v9, v8
-	vwaddu.wv	v10, v10, v9
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vmul.vx	v10, v10, a0
 	li	a0, -48
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vwaddu.wv	v10, v10, v9
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v8, v10, a0
 	lui	a0, 16
@@ -72,9 +77,11 @@ func0000000000000011:                   # @func0000000000000011
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v12, a0
 	li	a0, 10
-	vmacc.vx	v12, a0, v10
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vzext.vf2	v9, v8
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vmacc.vx	v12, a0, v10
+	vsetvli	zero, zero, e16, m1, ta, ma
 	vmv.v.i	v8, 0
 	vwsubu.vv	v10, v8, v9
 	vsetvli	zero, zero, e32, m2, ta, ma
@@ -82,25 +89,27 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func0000000000000108:                   # @func0000000000000108
 	li	a0, 85
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmul.vx	v10, v10, a0
-	vsetvli	zero, zero, e16, m1, ta, ma
+	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v9, v8
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vmul.vx	v10, v10, a0
+	lui	a0, 12336
+	vsetvli	zero, zero, e16, m1, ta, ma
 	vwaddu.wv	v10, v10, v9
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vi	v8, v10, -1
-	lui	a0, 12336
 	addi	a0, a0, 771
 	vmsgtu.vx	v0, v8, a0
 	ret
 func0000000000000301:                   # @func0000000000000301
 	li	a0, 10
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmul.vx	v10, v10, a0
-	vsetvli	zero, zero, e16, m1, ta, ma
+	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v9, v8
-	vwaddu.wv	v10, v10, v9
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vmul.vx	v10, v10, a0
 	li	a0, -48
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vwaddu.wv	v10, v10, v9
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v8, v10, a0
 	lui	a0, 52429
@@ -112,9 +121,11 @@ func0000000000000101:                   # @func0000000000000101
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v12, a0
 	li	a0, 10
-	vmacc.vx	v12, a0, v10
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vzext.vf2	v9, v8
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vmacc.vx	v12, a0, v10
+	vsetvli	zero, zero, e16, m1, ta, ma
 	vmv.v.i	v8, 0
 	vwsubu.vv	v10, v8, v9
 	vsetvli	zero, zero, e32, m2, ta, ma
@@ -122,10 +133,11 @@ func0000000000000101:                   # @func0000000000000101
 	ret
 func0000000000000306:                   # @func0000000000000306
 	li	a0, 10
-	vsetivli	zero, 8, e32, m2, ta, ma
+	vsetivli	zero, 8, e16, m1, ta, ma
+	vzext.vf2	v9, v8
+	vsetvli	zero, zero, e32, m2, ta, ma
 	vmul.vx	v10, v10, a0
 	vsetvli	zero, zero, e16, m1, ta, ma
-	vzext.vf2	v9, v8
 	vwaddu.wv	v10, v10, v9
 	li	a0, -48
 	vsetvli	zero, zero, e32, m2, ta, ma
@@ -134,12 +146,13 @@ func0000000000000306:                   # @func0000000000000306
 	ret
 func0000000000000308:                   # @func0000000000000308
 	li	a0, 10
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmul.vx	v10, v10, a0
-	vsetvli	zero, zero, e16, m1, ta, ma
+	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v9, v8
-	vwaddu.wv	v10, v10, v9
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vmul.vx	v10, v10, a0
 	li	a0, -48
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vwaddu.wv	v10, v10, v9
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v8, v10, a0
 	li	a0, 99
@@ -147,12 +160,13 @@ func0000000000000308:                   # @func0000000000000308
 	ret
 func0000000000000304:                   # @func0000000000000304
 	li	a0, 10
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmul.vx	v10, v10, a0
-	vsetvli	zero, zero, e16, m1, ta, ma
+	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v9, v8
-	vwaddu.wv	v10, v10, v9
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vmul.vx	v10, v10, a0
 	li	a0, -48
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vwaddu.wv	v10, v10, v9
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v8, v10, a0
 	li	a0, 69

@@ -20,12 +20,12 @@ func0000000000000008:                   # @func0000000000000008
 	addi	a2, a2, -381
 	slli	a2, a2, 32
 	mulhu	a0, a0, a2
-	srli	a0, a0, 50
 	lui	a2, 244
 	addi	a2, a2, 576
+	srli	a0, a0, 50
 	mul	a0, a0, a2
+	lui	a2, 122
 	subw	a1, a1, a0
-	lui	a0, 122
-	addiw	a0, a0, 288
+	addiw	a0, a2, 288
 	sltu	a0, a0, a1
 	ret

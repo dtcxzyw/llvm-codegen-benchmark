@@ -24,8 +24,8 @@ func000000000000001a:                   # @func000000000000001a
 	lui	a2, 524288
 	addiw	a2, a2, -4
 	and	a1, a1, a2
-	slli	a1, a1, 2
 	lui	a2, 56
+	slli	a1, a1, 2
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
@@ -34,8 +34,8 @@ func0000000000000012:                   # @func0000000000000012
 	lui	a2, 524288
 	addiw	a2, a2, -4
 	and	a1, a1, a2
-	slli	a1, a1, 2
 	lui	a2, 48
+	slli	a1, a1, 2
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
@@ -57,10 +57,10 @@ func000000000000005a:                   # @func000000000000005a
 	ret
 func0000000000000010:                   # @func0000000000000010
 	add	a1, a1, a2
-	andi	a1, a1, 255
-	slli	a1, a1, 4
 	lui	a2, 1
+	andi	a1, a1, 255
 	addiw	a2, a2, 744
+	slli	a1, a1, 4
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

@@ -13,8 +13,8 @@ func0000000000000044:                   # @func0000000000000044
 	ret
 func0000000000000041:                   # @func0000000000000041
 	addiw	a1, a1, -100
-	sltiu	a1, a1, 900
 	addi	a0, a0, -1
+	sltiu	a1, a1, 900
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -26,8 +26,8 @@ func000000000000014c:                   # @func000000000000014c
 	ret
 func0000000000000181:                   # @func0000000000000181
 	addiw	a1, a1, -54
-	sltiu	a1, a1, -6
 	lui	a2, 104858
+	sltiu	a1, a1, -6
 	addiw	a2, a2, -1639
 	xor	a0, a0, a2
 	seqz	a0, a0

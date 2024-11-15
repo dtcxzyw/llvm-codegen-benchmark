@@ -30,9 +30,9 @@ func000000000000046a:                   # @func000000000000046a
 	fmv.d	fa1, fa2
 .LBB2_2:                                # %entry
 	lui	a0, %hi(.LCPI2_0)
+	lui	a1, %hi(.LCPI2_1)
 	fld	fa5, %lo(.LCPI2_0)(a0)
-	lui	a0, %hi(.LCPI2_1)
-	fld	fa4, %lo(.LCPI2_1)(a0)
+	fld	fa4, %lo(.LCPI2_1)(a1)
 	fle.d	a0, fa5, fa1
 	fle.d	a1, fa0, fa4
 	and	a0, a0, a1
@@ -48,9 +48,9 @@ func00000000000004ba:                   # @func00000000000004ba
 	fmv.d	fa1, fa2
 .LBB3_2:                                # %entry
 	lui	a0, %hi(.LCPI3_0)
+	lui	a1, %hi(.LCPI3_1)
 	fld	fa5, %lo(.LCPI3_0)(a0)
-	lui	a0, %hi(.LCPI3_1)
-	fld	fa4, %lo(.LCPI3_1)(a0)
+	fld	fa4, %lo(.LCPI3_1)(a1)
 	flt.d	a0, fa1, fa5
 	fle.d	a1, fa0, fa4
 	and	a0, a0, a1
@@ -66,9 +66,9 @@ func00000000000005aa:                   # @func00000000000005aa
 	fmv.d	fa1, fa2
 .LBB4_2:                                # %entry
 	lui	a0, %hi(.LCPI4_0)
+	lui	a1, %hi(.LCPI4_1)
 	fld	fa5, %lo(.LCPI4_0)(a0)
-	lui	a0, %hi(.LCPI4_1)
-	fld	fa4, %lo(.LCPI4_1)(a0)
+	fld	fa4, %lo(.LCPI4_1)(a1)
 	flt.d	a0, fa1, fa5
 	fle.d	a1, fa0, fa4
 	and	a0, a0, a1
@@ -84,9 +84,9 @@ func0000000000000488:                   # @func0000000000000488
 	fmv.d	fa1, fa2
 .LBB5_2:                                # %entry
 	lui	a0, %hi(.LCPI5_0)
+	lui	a1, %hi(.LCPI5_1)
 	fld	fa5, %lo(.LCPI5_0)(a0)
-	lui	a0, %hi(.LCPI5_1)
-	fld	fa4, %lo(.LCPI5_1)(a0)
+	fld	fa4, %lo(.LCPI5_1)(a1)
 	flt.d	a0, fa5, fa1
 	flt.d	a1, fa4, fa0
 	or	a0, a0, a1

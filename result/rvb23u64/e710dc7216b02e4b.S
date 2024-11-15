@@ -8,8 +8,8 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000000:                   # @func0000000000000000
 	lui	a1, 231424
 	or	a0, a0, a1
+	lui	a1, 755712
 	fmv.w.x	fa5, a0
-	lui	a0, 755712
-	fmv.w.x	fa4, a0
+	fmv.w.x	fa4, a1
 	fadd.s	fa0, fa5, fa4
 	ret

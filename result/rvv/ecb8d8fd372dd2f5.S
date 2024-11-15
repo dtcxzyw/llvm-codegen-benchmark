@@ -29,9 +29,9 @@ func0000000000000011:                   # @func0000000000000011
 	vmulh.vx	v12, v12, a0
 	li	a0, 63
 	vsrl.vx	v14, v12, a0
+	li	a0, 61
 	vsra.vi	v12, v12, 26
 	vadd.vv	v12, v12, v14
-	li	a0, 61
 	vsra.vx	v10, v10, a0
 	vadd.vv	v10, v10, v12
 	vmseq.vv	v0, v10, v8

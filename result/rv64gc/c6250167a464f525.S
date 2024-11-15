@@ -6,9 +6,9 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func000000000000003f:                   # @func000000000000003f
 	srliw	a1, a1, 24
-	slli	a1, a1, 24
 	slli	a0, a0, 12
 	lui	a2, 147456
+	slli	a1, a1, 24
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

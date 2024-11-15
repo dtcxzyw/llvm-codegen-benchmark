@@ -15,9 +15,9 @@ func0000000000000006:                   # @func0000000000000006
 	slti	a2, a2, 0
 	czero.nez	a1, a1, a2
 	czero.eqz	a2, a3, a2
+	lui	a3, 524288
 	or	a1, a1, a2
 	czero.nez	a1, a1, a0
-	lui	a2, 524288
-	czero.eqz	a0, a2, a0
+	czero.eqz	a0, a3, a0
 	or	a0, a0, a1
 	ret

@@ -1,26 +1,26 @@
 func0000000000000003:                   # @func0000000000000003
 	andi	a2, a2, 1
 	bseti	a3, zero, 60
-	czero.nez	a2, a3, a2
 	slli	a1, a1, 61
+	czero.nez	a2, a3, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 func000000000000000c:                   # @func000000000000000c
 	andi	a2, a2, 1
 	li	a3, -2
+	slli	a1, a1, 49
 	czero.nez	a2, a3, a2
 	addi	a2, a2, 3
-	slli	a1, a1, 49
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 func0000000000000000:                   # @func0000000000000000
 	andi	a2, a2, 1
 	li	a3, -2
+	slli	a1, a1, 49
 	czero.nez	a2, a3, a2
 	addi	a2, a2, 3
-	slli	a1, a1, 49
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -36,16 +36,16 @@ func0000000000000002:                   # @func0000000000000002
 func000000000000000f:                   # @func000000000000000f
 	andi	a2, a2, 1
 	bseti	a3, zero, 31
-	czero.nez	a2, a3, a2
 	slli	a1, a1, 37
+	czero.nez	a2, a3, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
 	bseti	a0, a0, 27
 	ret
 func000000000000000b:                   # @func000000000000000b
 	andi	a2, a2, 1
-	slli	a2, a2, 16
 	slli	a1, a1, 32
+	slli	a2, a2, 16
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

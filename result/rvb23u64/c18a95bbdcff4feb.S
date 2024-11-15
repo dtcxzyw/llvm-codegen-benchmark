@@ -17,8 +17,8 @@ func00000000000000f0:                   # @func00000000000000f0
 func00000000000000d0:                   # @func00000000000000d0
 	li	a3, 43
 	subw	a3, a3, a2
-	srlw	a1, a1, a3
 	addi	a2, a2, -11
+	srlw	a1, a1, a3
 	sllw	a0, a0, a2
 	or	a0, a0, a1
 	ret

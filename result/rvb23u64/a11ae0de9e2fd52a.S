@@ -37,9 +37,9 @@ func0000000000000028:                   # @func0000000000000028
 func0000000000000026:                   # @func0000000000000026
 	sext.w	a0, a0
 	bset	a1, zero, a1
+	li	a2, 1
 	slti	a0, a0, 6
 	czero.nez	a1, a1, a0
-	li	a2, 1
 	czero.eqz	a0, a2, a0
 	or	a0, a0, a1
 	ret
@@ -54,9 +54,9 @@ func0000000000000001:                   # @func0000000000000001
 	sext.w	a0, a0
 	li	a2, 8
 	sll	a1, a2, a1
+	li	a2, 6
 	addi	a0, a0, -2
 	czero.eqz	a1, a1, a0
-	li	a2, 6
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	ret

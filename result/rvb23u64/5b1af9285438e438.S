@@ -1,9 +1,9 @@
 func00000000000000ab:                   # @func00000000000000ab
 	fli.s	fa5, 1.0
 	fle.s	a1, fa1, fa5
+	fmv.w.x	fa5, zero
 	xori	a1, a1, 1
 	or	a0, a0, a1
-	fmv.w.x	fa5, zero
 	flt.s	a1, fa5, fa0
 	xori	a1, a1, 1
 	or	a0, a0, a1

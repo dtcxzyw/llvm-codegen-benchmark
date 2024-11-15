@@ -63,8 +63,8 @@ func0000000000000324:                   # @func0000000000000324
 	ret
 func0000000000000308:                   # @func0000000000000308
 	add	a0, a0, a2
-	addi	a0, a0, 16
 	lui	a2, 16
+	addi	a0, a0, 16
 	add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret

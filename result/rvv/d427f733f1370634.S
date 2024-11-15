@@ -25,8 +25,8 @@ func000000000000000e:                   # @func000000000000000e
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfeq.vv	v0, v8, v8
 	vmv.v.i	v24, 0
-	vmerge.vvm	v8, v24, v8, v0
 	fli.d	fa5, 1.0
+	vmerge.vvm	v8, v24, v8, v0
 	vfmv.v.f	v24, fa5
 	vmv1r.v	v0, v16
 	vmerge.vvm	v8, v24, v8, v0

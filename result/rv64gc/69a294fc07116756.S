@@ -7,9 +7,9 @@ func0000000000000023:                   # @func0000000000000023
 	andi	a1, a1, 511
 	lui	a2, 4
 	xor	a0, a0, a2
+	lui	a2, 8192
 	seqz	a0, a0
 	slliw	a0, a0, 31
-	lui	a2, 8192
 	or	a1, a1, a2
 	or	a0, a0, a1
 	ret

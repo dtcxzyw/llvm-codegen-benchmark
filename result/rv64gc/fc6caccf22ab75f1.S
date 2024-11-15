@@ -1,17 +1,17 @@
 func0000000000000001:                   # @func0000000000000001
 	addi	a0, a0, -27
+	lui	a2, 16
 	seqz	a0, a0
 	addi	a0, a0, -1
-	lui	a2, 16
 	and	a1, a1, a2
 	and	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
 	srli	a0, a0, 25
-	snez	a0, a0
-	addi	a0, a0, -1
 	lui	a2, 14336
+	snez	a0, a0
 	addiw	a2, a2, -1
+	addi	a0, a0, -1
 	and	a1, a1, a2
 	and	a0, a0, a1
 	ret

@@ -2,8 +2,8 @@ func0000000000000042:                   # @func0000000000000042
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfsub.vv	v8, v8, v12
 	fmv.w.x	fa5, zero
-	vfmax.vf	v8, v8, fa5
 	lui	a0, 280480
+	vfmax.vf	v8, v8, fa5
 	fmv.w.x	fa5, a0
 	vmflt.vf	v0, v8, fa5
 	ret
@@ -14,8 +14,8 @@ func0000000000000044:                   # @func0000000000000044
 	flw	fa5, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfsub.vv	v8, v8, v12
-	vfmax.vf	v8, v8, fa5
 	lui	a0, 217088
+	vfmax.vf	v8, v8, fa5
 	fmv.w.x	fa5, a0
 	vmfgt.vf	v0, v8, fa5
 	ret

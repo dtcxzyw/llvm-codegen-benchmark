@@ -1,8 +1,8 @@
 func000000000000005a:                   # @func000000000000005a
 	slli	a0, a0, 10
+	srliw	a2, a2, 23
 	add	a0, a0, a1
-	srliw	a1, a2, 23
-	sh1add	a0, a1, a0
+	sh1add	a0, a2, a0
 	li	a1, 1745
 	sh3add	a0, a1, a0
 	ret

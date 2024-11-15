@@ -150,10 +150,10 @@ func0000000000000024:                   # @func0000000000000024
 	ret
 func00000000000000f4:                   # @func00000000000000f4
 	subw	a1, a1, a0
-	addiw	a0, a1, 100
-	lui	a1, 262144
-	addiw	a1, a1, 1
-	sltu	a0, a0, a1
+	lui	a0, 262144
+	addiw	a1, a1, 100
+	addiw	a0, a0, 1
+	sltu	a0, a1, a0
 	ret
 func00000000000000d4:                   # @func00000000000000d4
 	subw	a1, a1, a0

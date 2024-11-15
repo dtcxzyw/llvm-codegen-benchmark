@@ -15,10 +15,10 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000002:                   # @func0000000000000002
 	lui	a1, %hi(.LCPI1_0)
 	ld	a1, %lo(.LCPI1_0)(a1)
+	lui	a2, 699051
+	addi	a2, a2, -1366
 	add	a0, a0, a1
-	lui	a1, 699051
-	addi	a1, a1, -1366
-	slli	a2, a1, 32
-	add.uw	a1, a1, a2
+	slli	a1, a2, 32
+	add.uw	a1, a2, a1
 	sltu	a0, a0, a1
 	ret

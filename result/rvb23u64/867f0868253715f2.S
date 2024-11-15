@@ -18,8 +18,8 @@ func00000000000007a1:                   # @func00000000000007a1
 	ret
 func00000000000000a1:                   # @func00000000000000a1
 	addi	a2, a2, 1
-	zext.w	a2, a2
 	li	a3, 88
+	zext.w	a2, a2
 	mul	a2, a2, a3
 	add	a1, a1, a2
 	addi	a0, a0, 88

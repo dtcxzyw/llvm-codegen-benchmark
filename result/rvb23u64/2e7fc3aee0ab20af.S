@@ -92,8 +92,8 @@ func00000000000003c1:                   # @func00000000000003c1
 	andi	a0, a0, 255
 	sext.w	a1, a1
 	addi	a1, a1, -2
-	snez	a1, a1
 	addi	a0, a0, -48
+	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

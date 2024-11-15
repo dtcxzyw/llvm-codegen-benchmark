@@ -44,8 +44,8 @@ func000000000000002c:                   # @func000000000000002c
 	ret
 func0000000000000028:                   # @func0000000000000028
 	andi	a1, a1, 255
-	addi	a1, a1, -1
 	li	a2, 9
+	addi	a1, a1, -1
 	slli	a2, a2, 36
 	slli	a1, a1, 32
 	mulhu	a1, a1, a2

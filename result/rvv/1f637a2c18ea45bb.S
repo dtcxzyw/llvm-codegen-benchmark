@@ -32,8 +32,8 @@ func000000000000000b:                   # @func000000000000000b
 func0000000000000001:                   # @func0000000000000001
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
-	vand.vi	v10, v12, 1
 	li	a0, -1023
+	vand.vi	v10, v12, 1
 	vand.vx	v9, v9, a0
 	vor.vv	v9, v9, v10
 	vor.vv	v8, v9, v8
@@ -41,8 +41,8 @@ func0000000000000001:                   # @func0000000000000001
 func000000000000000d:                   # @func000000000000000d
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
-	vand.vi	v10, v12, 1
 	li	a0, -1023
+	vand.vi	v10, v12, 1
 	vand.vx	v9, v9, a0
 	vor.vv	v9, v10, v9
 	vor.vv	v8, v9, v8

@@ -11,10 +11,10 @@ func00000000000000b4:                   # @func00000000000000b4
 	ret
 func00000000000000b8:                   # @func00000000000000b8
 	slli	a2, a2, 3
-	add	a1, a1, a2
 	srai	a0, a0, 4
-	lui	a2, 699051
-	addiw	a2, a2, -1365
+	lui	a3, 699051
+	add	a1, a1, a2
+	addiw	a2, a3, -1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a0, a0, a2

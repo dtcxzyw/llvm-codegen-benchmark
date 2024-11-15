@@ -33,8 +33,8 @@ func0000000000000007:                   # @func0000000000000007
 	ret
 func0000000000000002:                   # @func0000000000000002
 	fmul.s	fa5, fa1, fa2
-	fdiv.s	fa5, fa5, fa0
 	lui	a0, 798720
+	fdiv.s	fa5, fa5, fa0
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	ret

@@ -24,8 +24,8 @@ func0000000000000222:                   # @func0000000000000222
 func0000000000000110:                   # @func0000000000000110
 	sext.w	a0, a0
 	addw	a1, a1, a2
-	sltu	a0, a1, a0
 	lui	a2, 64
+	sltu	a0, a1, a0
 	sltu	a1, a2, a1
 	or	a0, a0, a1
 	ret

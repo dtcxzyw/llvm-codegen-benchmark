@@ -1,11 +1,11 @@
 func000000000000001b:                   # @func000000000000001b
 	slli	a4, a3, 8
 	srli	a2, a2, 56
-	or	a2, a2, a4
 	srli	a3, a3, 56
+	or	a2, a2, a4
+	add	a1, a1, a3
 	add	a0, a0, a2
 	sltu	a2, a0, a2
-	add	a1, a1, a3
 	add	a1, a1, a2
 	slli	a1, a1, 8
 	srli	a0, a0, 56

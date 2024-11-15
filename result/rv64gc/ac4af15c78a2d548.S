@@ -4,8 +4,8 @@
 	.quad	4244538978387573191             # 0x3ae7a1b65a1739c7
 func0000000000000002:                   # @func0000000000000002
 	lui	a2, %hi(.LCPI0_0)
-	ld	a2, %lo(.LCPI0_0)(a2)
 	lui	a3, %hi(.LCPI0_1)
+	ld	a2, %lo(.LCPI0_0)(a2)
 	ld	a3, %lo(.LCPI0_1)(a3)
 	xor	a1, a1, a2
 	xor	a0, a0, a3

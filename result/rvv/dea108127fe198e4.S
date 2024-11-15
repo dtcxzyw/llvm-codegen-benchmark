@@ -13,12 +13,12 @@ func0000000000000011:                   # @func0000000000000011
 func0000000000000014:                   # @func0000000000000014
 	li	a0, 499
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vx	v10, v8, a0
-	vmsne.vi	v12, v8, 0
+	vmsne.vi	v10, v8, 0
+	vadd.vx	v8, v8, a0
 	lui	a0, 64
 	addiw	a0, a0, 1
-	vmsltu.vx	v8, v10, a0
-	vmand.mm	v0, v12, v8
+	vmsltu.vx	v11, v8, a0
+	vmand.mm	v0, v10, v11
 	ret
 func0000000000000018:                   # @func0000000000000018
 	li	a0, -17

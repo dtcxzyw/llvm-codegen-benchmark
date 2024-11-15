@@ -6,9 +6,9 @@ func0000000000000098:                   # @func0000000000000098
 	ret
 func0000000000000382:                   # @func0000000000000382
 	addi	a2, a2, -1
+	addi	a1, a1, -7
 	xor	a0, a0, a2
 	seqz	a0, a0
-	addi	a1, a1, -7
 	snez	a1, a1
 	or	a0, a0, a1
 	ret
@@ -53,8 +53,8 @@ func0000000000000122:                   # @func0000000000000122
 	ret
 func0000000000000110:                   # @func0000000000000110
 	addi	a2, a2, -10
-	sltu	a1, a2, a1
 	sltiu	a0, a0, -2
+	sltu	a1, a2, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

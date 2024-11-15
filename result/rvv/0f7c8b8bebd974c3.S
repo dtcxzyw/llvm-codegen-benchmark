@@ -4,8 +4,8 @@ func0000000000000442:                   # @func0000000000000442
 	vmseq.vx	v12, v10, a0
 	li	a0, 31
 	vmseq.vx	v10, v8, a0
-	vmor.mm	v10, v10, v12
 	li	a0, 26
+	vmor.mm	v10, v10, v12
 	vmseq.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10
 	ret
@@ -38,9 +38,9 @@ func0000000000001050:                   # @func0000000000001050
 	vmsltu.vx	v12, v10, a0
 	li	a0, 127
 	vmseq.vx	v10, v8, a0
-	vmor.mm	v10, v10, v12
 	lui	a0, 16
 	addi	a0, a0, -1
+	vmor.mm	v10, v10, v12
 	vmsgtu.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10
 	ret
@@ -58,8 +58,8 @@ func0000000000001102:                   # @func0000000000001102
 	vmsltu.vx	v12, v10, a0
 	li	a0, 75
 	vmsltu.vx	v10, v8, a0
-	vmor.mm	v10, v10, v12
 	lui	a0, 2
+	vmor.mm	v10, v10, v12
 	vmseq.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10
 	ret
@@ -69,8 +69,8 @@ func0000000000001054:                   # @func0000000000001054
 	vmsltu.vx	v12, v10, a0
 	li	a0, 95
 	vmseq.vx	v10, v8, a0
-	vmor.mm	v10, v10, v12
 	li	a0, 127
+	vmor.mm	v10, v10, v12
 	vmsgt.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10
 	ret

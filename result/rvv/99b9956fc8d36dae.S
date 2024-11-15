@@ -3,8 +3,8 @@
 func0000000000000442:                   # @func0000000000000442
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vv	v0, v16, v12
-	vmerge.vvm	v12, v16, v12, v0
 	lui	a0, %hi(.LCPI0_0)
+	vmerge.vvm	v12, v16, v12, v0
 	flw	fa5, %lo(.LCPI0_0)(a0)
 	vmflt.vv	v0, v8, v12
 	vmerge.vvm	v8, v8, v12, v0
@@ -15,8 +15,8 @@ func0000000000000442:                   # @func0000000000000442
 func0000000000000222:                   # @func0000000000000222
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vv	v0, v12, v16
-	vmerge.vvm	v12, v16, v12, v0
 	lui	a0, %hi(.LCPI1_0)
+	vmerge.vvm	v12, v16, v12, v0
 	flw	fa5, %lo(.LCPI1_0)(a0)
 	vmflt.vv	v0, v12, v8
 	vmerge.vvm	v8, v8, v12, v0
@@ -27,8 +27,8 @@ func0000000000000222:                   # @func0000000000000222
 func000000000000022d:                   # @func000000000000022d
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vv	v0, v12, v16
-	vmerge.vvm	v12, v16, v12, v0
 	lui	a0, %hi(.LCPI2_0)
+	vmerge.vvm	v12, v16, v12, v0
 	flw	fa5, %lo(.LCPI2_0)(a0)
 	vmflt.vv	v0, v12, v8
 	vmerge.vvm	v8, v8, v12, v0
@@ -40,8 +40,8 @@ func000000000000022d:                   # @func000000000000022d
 func0000000000000224:                   # @func0000000000000224
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vv	v0, v12, v16
-	vmerge.vvm	v12, v16, v12, v0
 	lui	a0, %hi(.LCPI3_0)
+	vmerge.vvm	v12, v16, v12, v0
 	flw	fa5, %lo(.LCPI3_0)(a0)
 	vmflt.vv	v0, v12, v8
 	vmerge.vvm	v8, v8, v12, v0

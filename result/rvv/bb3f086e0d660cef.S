@@ -16,8 +16,8 @@ func000000000000000a:                   # @func000000000000000a
 func000000000000000b:                   # @func000000000000000b
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv.v.i	v12, 1
-	vsll.vv	v10, v12, v10
 	li	a0, 256
+	vsll.vv	v10, v12, v10
 	vmv.v.x	v12, a0
 	vsll.vv	v10, v12, v8, v0.t
 	vmv.v.v	v8, v10

@@ -3,9 +3,9 @@
 func000000000000003c:                   # @func000000000000003c
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a0)
+	li	a0, 179
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vmfge.vf	v10, v12, fa5
-	li	a0, 179
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsne.vx	v11, v8, a0
 	vmorn.mm	v0, v11, v10
@@ -42,9 +42,9 @@ func000000000000005c:                   # @func000000000000005c
 func0000000000000041:                   # @func0000000000000041
 	lui	a0, %hi(.LCPI4_0)
 	fld	fa5, %lo(.LCPI4_0)(a0)
+	li	a0, 34
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vmfgt.vf	v10, v12, fa5
-	li	a0, 34
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmseq.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10

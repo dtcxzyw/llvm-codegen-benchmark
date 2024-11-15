@@ -43,8 +43,8 @@ func000000000000011c:                   # @func000000000000011c
 func0000000000000d44:                   # @func0000000000000d44
 	sext.w	a0, a0
 	addw	a1, a1, a2
-	sltiu	a1, a1, 10
 	lui	a2, 24414
+	sltiu	a1, a1, 10
 	addiw	a2, a2, 256
 	sltu	a0, a0, a2
 	and	a0, a0, a1

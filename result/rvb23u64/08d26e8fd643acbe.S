@@ -17,8 +17,8 @@ func0000000000000024:                   # @func0000000000000024
 	ret
 func0000000000000084:                   # @func0000000000000084
 	andi	a1, a1, 255
-	sltiu	a1, a1, 5
 	li	a2, 2
+	sltiu	a1, a1, 5
 	czero.nez	a1, a2, a1
 	addi	a1, a1, 2
 	andi	a0, a0, 255
@@ -34,8 +34,8 @@ func0000000000000028:                   # @func0000000000000028
 	ret
 func0000000000000025:                   # @func0000000000000025
 	andi	a1, a1, 255
-	addi	a1, a1, -1
 	li	a2, -5
+	addi	a1, a1, -1
 	czero.eqz	a1, a2, a1
 	addi	a1, a1, 8
 	andi	a0, a0, 255
@@ -44,8 +44,8 @@ func0000000000000025:                   # @func0000000000000025
 	ret
 func0000000000000099:                   # @func0000000000000099
 	andi	a1, a1, 255
-	sltiu	a1, a1, 2
 	li	a2, -8
+	sltiu	a1, a1, 2
 	czero.nez	a1, a2, a1
 	addi	a1, a1, 19
 	andi	a0, a0, 255
@@ -54,8 +54,8 @@ func0000000000000099:                   # @func0000000000000099
 	ret
 func0000000000000031:                   # @func0000000000000031
 	andi	a1, a1, 255
-	addi	a1, a1, -91
 	li	a2, 32
+	addi	a1, a1, -91
 	czero.eqz	a1, a2, a1
 	addi	a1, a1, 93
 	andi	a0, a0, 255

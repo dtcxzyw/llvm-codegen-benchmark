@@ -16,8 +16,8 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func00000000000000a1:                   # @func00000000000000a1
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	sext.w	a1, a1
+	srai	a0, a0, 56
 	addi	a1, a1, -3
 	seqz	a1, a1
 	sgtz	a0, a0

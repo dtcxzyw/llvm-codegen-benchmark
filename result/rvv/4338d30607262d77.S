@@ -18,9 +18,9 @@ func0000000000000006:                   # @func0000000000000006
 	vor.vi	v8, v8, 1
 	ret
 func0000000000000007:                   # @func0000000000000007
+	lui	a0, 1040384
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vor.vi	v8, v8, 2, v0.t
-	lui	a0, 1040384
 	vand.vx	v10, v10, a0
 	vor.vv	v8, v8, v10
 	bseti	a0, zero, 11

@@ -4,9 +4,9 @@ func00000000000001bb:                   # @func00000000000001bb
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a0)
 	fabs.d	fa4, fa1
+	fabs.d	fa3, fa0
 	flt.d	a0, fa5, fa4
-	fabs.d	fa4, fa0
-	flt.d	a1, fa5, fa4
+	flt.d	a1, fa5, fa3
 	and	a0, a0, a1
 	xori	a0, a0, 1
 	ret
@@ -23,16 +23,16 @@ func0000000000000155:                   # @func0000000000000155
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
 	fabs.d	fa4, fa1
+	fabs.d	fa3, fa0
 	fle.d	a0, fa4, fa5
-	fabs.d	fa4, fa0
-	fle.d	a1, fa4, fa5
+	fle.d	a1, fa3, fa5
 	and	a0, a0, a1
 	xori	a0, a0, 1
 	ret
 func0000000000000087:                   # @func0000000000000087
 	fclass.d	a0, fa1
-	andi	a0, a0, 129
 	fclass.d	a1, fa0
+	andi	a0, a0, 129
 	andi	a1, a1, 894
 	or	a0, a0, a1
 	snez	a0, a0
@@ -65,9 +65,9 @@ func0000000000000055:                   # @func0000000000000055
 	lui	a0, %hi(.LCPI6_0)
 	fld	fa5, %lo(.LCPI6_0)(a0)
 	fabs.d	fa4, fa1
+	fabs.d	fa3, fa0
 	fle.d	a0, fa4, fa5
-	fabs.d	fa4, fa0
-	fle.d	a1, fa4, fa5
+	fle.d	a1, fa3, fa5
 	and	a0, a0, a1
 	xori	a0, a0, 1
 	ret

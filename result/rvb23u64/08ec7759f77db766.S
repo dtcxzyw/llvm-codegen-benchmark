@@ -7,8 +7,8 @@ func00000000000000c6:                   # @func00000000000000c6
 	ret
 func0000000000000086:                   # @func0000000000000086
 	addi	a2, a1, -1
-	zext.w	a2, a2
 	li	a3, 2
+	zext.w	a2, a2
 	czero.nez	a3, a3, a1
 	czero.eqz	a1, a2, a1
 	or	a1, a1, a3
@@ -16,9 +16,9 @@ func0000000000000086:                   # @func0000000000000086
 	ret
 func0000000000000092:                   # @func0000000000000092
 	addi	a2, a1, 15
-	andi	a2, a2, -8
 	sltiu	a1, a1, 23
 	li	a3, 32
+	andi	a2, a2, -8
 	czero.eqz	a3, a3, a1
 	czero.nez	a1, a2, a1
 	or	a1, a1, a3
@@ -26,9 +26,9 @@ func0000000000000092:                   # @func0000000000000092
 	ret
 func00000000000000d2:                   # @func00000000000000d2
 	addi	a2, a1, 15
-	andi	a2, a2, 504
 	sltiu	a1, a1, 23
 	li	a3, 32
+	andi	a2, a2, 504
 	czero.eqz	a3, a3, a1
 	czero.nez	a1, a2, a1
 	or	a1, a1, a3

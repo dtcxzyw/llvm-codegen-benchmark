@@ -55,8 +55,8 @@ func0000000000000005:                   # @func0000000000000005
 	ret
 func000000000000001e:                   # @func000000000000001e
 	add	a0, a0, a1
-	slli	a0, a0, 1
 	li	a1, -1
+	slli	a0, a0, 1
 	slli	a1, a1, 33
 	addi	a1, a1, 1
 	or	a0, a0, a1

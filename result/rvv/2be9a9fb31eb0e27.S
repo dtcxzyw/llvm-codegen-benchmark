@@ -90,8 +90,8 @@ func0000000000000028:                   # @func0000000000000028
 	lui	a0, 524288
 	addi	a0, a0, -1
 	vand.vx	v9, v9, a0
-	vadd.vv	v8, v9, v8
 	lui	a0, 262144
+	vadd.vv	v8, v9, v8
 	addi	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret

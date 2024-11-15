@@ -11,8 +11,8 @@ func00000000000000b8:                   # @func00000000000000b8
 	vsll.vi	v8, v8, 3
 	li	a0, -1
 	bclri	a1, a0, 61
-	vadd.vx	v8, v8, a1
 	slli	a0, a0, 61
+	vadd.vx	v8, v8, a1
 	addi	a0, a0, 7
 	vmsltu.vx	v0, v8, a0
 	ret

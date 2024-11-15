@@ -7,19 +7,19 @@ func0000000000000088:                   # @func0000000000000088
 	ret
 func000000000000008e:                   # @func000000000000008e
 	fdiv.d	fa5, fa1, fa2
-	feq.d	a0, fa5, fa5
-	fclass.d	a1, fa0
-	slli	a1, a1, 56
-	srli	a1, a1, 63
+	fclass.d	a0, fa0
+	feq.d	a1, fa5, fa5
+	slli	a0, a0, 56
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret
 func0000000000000087:                   # @func0000000000000087
 	fdiv.d	fa5, fa1, fa2
 	fmv.d.x	fa4, zero
-	feq.d	a0, fa5, fa4
-	not	a0, a0
-	fclass.d	a1, fa0
-	slli	a1, a1, 56
-	srli	a1, a1, 63
+	fclass.d	a0, fa0
+	feq.d	a1, fa5, fa4
+	slli	a0, a0, 56
+	not	a1, a1
+	srli	a0, a0, 63
 	and	a0, a0, a1
 	ret

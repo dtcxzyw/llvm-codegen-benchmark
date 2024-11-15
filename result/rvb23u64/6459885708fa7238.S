@@ -1,7 +1,7 @@
 func0000000000000010:                   # @func0000000000000010
 	zext.h	a2, a2
-	sltiu	a2, a2, 14
 	li	a3, 1
+	sltiu	a2, a2, 14
 	czero.eqz	a3, a3, a2
 	czero.nez	a1, a1, a2
 	or	a1, a1, a3

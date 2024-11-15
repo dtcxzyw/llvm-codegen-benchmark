@@ -1,9 +1,9 @@
 func000000000000011b:                   # @func000000000000011b
 	lui	a0, 8
-	addiw	a0, a0, -768
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsltu.vx	v0, v12, a0
 	vmv.v.i	v14, 4
+	addiw	a0, a0, -768
+	vmsltu.vx	v0, v12, a0
 	li	a0, 128
 	vmslt.vx	v12, v10, a0
 	li	a0, 16

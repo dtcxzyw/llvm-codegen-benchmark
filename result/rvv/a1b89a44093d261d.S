@@ -22,8 +22,8 @@ func0000000000000021:                   # @func0000000000000021
 	vmsgtu.vx	v0, v10, a0
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vmv.v.i	v9, 0
-	vmerge.vim	v9, v9, 1, v0
 	li	a0, 126
+	vmerge.vim	v9, v9, 1, v0
 	vand.vx	v8, v8, a0
 	vor.vv	v8, v8, v9
 	ret

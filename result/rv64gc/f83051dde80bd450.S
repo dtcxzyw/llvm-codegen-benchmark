@@ -17,8 +17,8 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func000000000000000c:                   # @func000000000000000c
 	li	a2, 16
-	subw	a2, a2, a1
 	slli	a0, a0, 34
+	subw	a2, a2, a1
 	srli	a0, a0, 34
 	sllw	a0, a0, a2
 	ret

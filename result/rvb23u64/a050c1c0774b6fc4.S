@@ -9,10 +9,10 @@ func0000000000000022:                   # @func0000000000000022
 func00000000000000a2:                   # @func00000000000000a2
 	zext.h	a0, a0
 	zext.h	a1, a1
-	sltu	a1, a1, a0
-	xori	a1, a1, 1
 	lui	a2, 16
+	sltu	a1, a1, a0
 	addiw	a2, a2, -2
+	xori	a1, a1, 1
 	xor	a0, a0, a2
 	seqz	a0, a0
 	or	a0, a0, a1
@@ -81,8 +81,8 @@ func0000000000000150:                   # @func0000000000000150
 func0000000000000082:                   # @func0000000000000082
 	zext.h	a1, a1
 	zext.h	a0, a0
-	sltu	a1, a0, a1
 	lui	a2, 16
+	sltu	a1, a0, a1
 	addiw	a2, a2, -512
 	xor	a0, a0, a2
 	seqz	a0, a0

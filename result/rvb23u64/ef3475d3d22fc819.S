@@ -85,8 +85,8 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func0000000000000013:                   # @func0000000000000013
 	add	a0, a0, a1
-	addi	a0, a0, -48
 	lui	a1, 1
+	addi	a0, a0, -48
 	addi	a1, a1, -496
 	mulw	a0, a0, a1
 	ret

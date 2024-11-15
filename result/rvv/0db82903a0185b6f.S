@@ -2,8 +2,8 @@
 	.quad	1537228672809129301             # 0x1555555555555555
 func0000000000000006:                   # @func0000000000000006
 	lui	a0, 349525
-	addiw	a0, a0, 1365
 	lui	a1, %hi(.LCPI0_0)
+	addiw	a0, a0, 1365
 	ld	a1, %lo(.LCPI0_0)(a1)
 	slli	a2, a0, 32
 	add	a0, a0, a2

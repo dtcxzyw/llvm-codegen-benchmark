@@ -40,10 +40,10 @@ func0000000000000004:                   # @func0000000000000004
 	srli	a2, a1, 63
 	srai	a1, a1, 34
 	add	a1, a1, a2
+	lui	a2, 1046001
+	addiw	a2, a2, 325
 	sub	a1, a1, a0
-	lui	a0, 1046001
-	addiw	a0, a0, 325
-	slli	a0, a0, 13
+	slli	a0, a2, 13
 	mul	a0, a0, a1
 	ret
 func0000000000000018:                   # @func0000000000000018

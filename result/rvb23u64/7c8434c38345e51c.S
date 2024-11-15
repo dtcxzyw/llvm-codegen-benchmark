@@ -19,8 +19,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	sext.w	a1, a1
 	andi	a2, a2, 1
 	xor	a1, a1, a2
-	snez	a1, a1
 	binvi	a0, a0, 17
+	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -38,9 +38,9 @@ func000000000000001a:                   # @func000000000000001a
 	sext.w	a1, a1
 	andi	a2, a2, 127
 	xor	a1, a1, a2
-	seqz	a1, a1
 	lui	a2, 8192
 	addiw	a2, a2, -1
+	seqz	a1, a1
 	slt	a0, a2, a0
 	and	a0, a0, a1
 	ret

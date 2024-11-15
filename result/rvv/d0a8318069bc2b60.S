@@ -42,8 +42,8 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000019:                   # @func0000000000000019
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsll.vi	v9, v9, 16
-	vor.vv	v8, v9, v8
 	lui	a0, 270336
+	vor.vv	v8, v9, v8
 	addi	a0, a0, 1
 	vor.vx	v10, v8, a0
 	vsetvli	zero, zero, e64, m2, ta, ma

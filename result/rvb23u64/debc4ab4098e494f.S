@@ -1,11 +1,11 @@
 func000000000000007b:                   # @func000000000000007b
 	li	a3, 10
-	mulhu	a3, a2, a3
-	sh2add	a2, a2, a2
-	slli	a4, a2, 1
-	add	a1, a1, a3
-	sh1add	a0, a2, a0
-	sltu	a0, a0, a4
+	sh2add	a4, a2, a2
+	mulhu	a2, a2, a3
+	slli	a3, a4, 1
+	sh1add	a0, a4, a0
+	add	a1, a1, a2
+	sltu	a0, a0, a3
 	add	a0, a0, a1
 	ret
 .LCPI1_0:

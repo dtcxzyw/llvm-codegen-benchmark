@@ -10,9 +10,9 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func00000000000000df:                   # @func00000000000000df
 	subw	a1, a1, a2
+	lui	a2, 1048568
 	add	a0, a0, a1
-	lui	a1, 1048568
-	addi	a1, a1, 150
+	addi	a1, a2, 150
 	addw	a0, a0, a1
 	ret
 func00000000000000d5:                   # @func00000000000000d5

@@ -22,23 +22,23 @@ func000000000000001f:                   # @func000000000000001f
 	ret
 func000000000000000a:                   # @func000000000000000a
 	mul	a1, a1, a2
-	slli	a1, a1, 32
 	slli	a0, a0, 32
+	lui	a2, 31250
+	slli	a1, a1, 32
 	mulhu	a0, a0, a1
-	lui	a1, 31250
-	addiw	a1, a1, -1
-	add	a0, a0, a1
+	addiw	a2, a2, -1
+	add	a0, a0, a2
 	ret
 func0000000000000008:                   # @func0000000000000008
 	mul	a1, a1, a2
-	slli	a1, a1, 32
 	slli	a0, a0, 32
+	lui	a2, 12875
+	slli	a1, a1, 32
+	addiw	a2, a2, -1625
 	mulhu	a0, a0, a1
-	lui	a1, 12875
-	addiw	a1, a1, -1625
-	slli	a1, a1, 13
-	addi	a1, a1, -1
-	add	a0, a0, a1
+	slli	a2, a2, 13
+	addi	a2, a2, -1
+	add	a0, a0, a2
 	ret
 func0000000000000048:                   # @func0000000000000048
 	mul	a1, a1, a2

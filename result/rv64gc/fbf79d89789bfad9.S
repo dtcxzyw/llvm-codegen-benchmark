@@ -9,8 +9,8 @@ func0000000000000088:                   # @func0000000000000088
 	sext.w	a1, a1
 	srli	a2, a2, 16
 	snez	a2, a2
-	or	a0, a0, a2
 	sltiu	a1, a1, 32
+	or	a0, a0, a2
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret

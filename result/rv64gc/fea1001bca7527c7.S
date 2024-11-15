@@ -1,8 +1,8 @@
 func0000000000000011:                   # @func0000000000000011
 	sext.w	a0, a0
 	srliw	a1, a1, 31
-	slli	a1, a1, 31
 	lui	a2, 10
+	slli	a1, a1, 31
 	xor	a0, a0, a2
 	or	a0, a0, a1
 	seqz	a0, a0

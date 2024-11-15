@@ -31,8 +31,8 @@ func0000000000000054:                   # @func0000000000000054
 	ret
 func0000000000000008:                   # @func0000000000000008
 	add	a1, a1, a2
-	addi	a1, a1, -1
 	li	a2, -1
+	addi	a1, a1, -1
 	bclri	a2, a2, 41
 	sltu	a1, a2, a1
 	and	a0, a0, a1

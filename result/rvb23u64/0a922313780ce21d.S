@@ -6,17 +6,17 @@ func00000000000000a9:                   # @func00000000000000a9
 	ret
 func000000000000008c:                   # @func000000000000008c
 	sltiu	a2, a2, 2
-	xori	a2, a2, 1
 	xor	a0, a0, a1
+	xori	a1, a2, 1
 	snez	a0, a0
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
 	addi	a2, a2, 1
-	seqz	a2, a2
 	xor	a0, a0, a1
+	seqz	a1, a2
 	seqz	a0, a0
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 func0000000000000018:                   # @func0000000000000018
 	seqz	a2, a2
@@ -25,19 +25,19 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 func000000000000001c:                   # @func000000000000001c
 	lui	a3, 560295
-	addiw	a3, a3, -1025
-	xor	a2, a2, a3
-	seqz	a2, a2
 	xor	a0, a0, a1
+	addiw	a1, a3, -1025
+	xor	a1, a1, a2
+	seqz	a1, a1
 	snez	a0, a0
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 func0000000000000081:                   # @func0000000000000081
 	srli	a2, a2, 16
-	snez	a2, a2
 	xor	a0, a0, a1
+	snez	a1, a2
 	seqz	a0, a0
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 func0000000000000041:                   # @func0000000000000041
 	sltiu	a2, a2, 16
@@ -80,17 +80,17 @@ func0000000000000068:                   # @func0000000000000068
 	ret
 func000000000000004c:                   # @func000000000000004c
 	srli	a2, a2, 32
-	seqz	a2, a2
 	xor	a0, a0, a1
+	seqz	a1, a2
 	snez	a0, a0
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 func0000000000000089:                   # @func0000000000000089
 	srli	a2, a2, 32
-	snez	a2, a2
 	sltu	a0, a0, a1
+	snez	a1, a2
 	xori	a0, a0, 1
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 func0000000000000014:                   # @func0000000000000014
 	seqz	a2, a2
@@ -105,9 +105,9 @@ func00000000000000c1:                   # @func00000000000000c1
 	ret
 func00000000000000a1:                   # @func00000000000000a1
 	lui	a3, 524288
-	addiw	a3, a3, -1
-	slt	a2, a3, a2
 	xor	a0, a0, a1
+	addiw	a3, a3, -1
+	slt	a1, a3, a2
 	seqz	a0, a0
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret

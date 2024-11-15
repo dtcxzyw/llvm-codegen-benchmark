@@ -2,10 +2,10 @@ func0000000000000018:                   # @func0000000000000018
 	sext.w	a0, a0
 	lui	a2, 2
 	addiw	a2, a2, -2046
-	and	a1, a1, a2
-	seqz	a1, a1
 	sltiu	a0, a0, 32
+	and	a1, a1, a2
 	xori	a0, a0, 1
+	seqz	a1, a1
 	or	a0, a0, a1
 	li	a1, 7
 	czero.nez	a0, a1, a0

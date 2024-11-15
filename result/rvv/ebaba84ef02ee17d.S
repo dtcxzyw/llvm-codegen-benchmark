@@ -6,15 +6,17 @@ func000000000000001a:                   # @func000000000000001a
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulh.vx	v8, v8, a0
 	li	a0, 63
-	vsrl.vx	v10, v8, a0
-	vsrl.vi	v8, v8, 13
-	vadd.vv	v8, v8, v10
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vnsrl.wi	v10, v8, 0
-	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
-	vsub.vv	v8, v10, v8
+	vmv.v.i	v10, 0
+	vmerge.vim	v10, v10, 1, v0
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vsrl.vx	v12, v8, a0
 	lui	a0, 1048400
+	vsrl.vi	v8, v8, 13
+	vadd.vv	v8, v8, v12
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vnsrl.wi	v11, v8, 0
+	vsub.vv	v8, v11, v10
 	addi	a0, a0, 1427
 	vmsgt.vx	v0, v8, a0
 	ret

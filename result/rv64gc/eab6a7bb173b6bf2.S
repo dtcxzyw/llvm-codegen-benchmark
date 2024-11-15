@@ -29,12 +29,12 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func0000000000000130:                   # @func0000000000000130
 	slli	a2, a2, 1
-	add	a1, a1, a2
 	slli	a0, a0, 11
+	add	a1, a1, a2
+	lui	a2, 32
 	add	a0, a0, a1
-	lui	a1, 32
-	addiw	a1, a1, 20
-	add	a0, a0, a1
+	addiw	a2, a2, 20
+	add	a0, a0, a2
 	ret
 func0000000000000188:                   # @func0000000000000188
 	slli	a2, a2, 5
@@ -59,11 +59,11 @@ func0000000000000012:                   # @func0000000000000012
 	ret
 func0000000000000310:                   # @func0000000000000310
 	slli	a2, a2, 10
-	add	a1, a1, a2
 	slli	a0, a0, 5
+	add	a1, a1, a2
+	lui	a2, 1
 	add	a0, a0, a1
-	lui	a1, 1
-	addiw	a1, a1, 1212
+	addiw	a1, a2, 1212
 	add	a0, a0, a1
 	ret
 func0000000000000332:                   # @func0000000000000332

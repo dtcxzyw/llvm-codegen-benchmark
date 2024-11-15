@@ -41,9 +41,9 @@ func000000000000004a:                   # @func000000000000004a
 	subw	a2, a2, a1
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
+	lui	a2, 2
 	or	a0, a0, a1
-	lui	a1, 2
-	addiw	a1, a1, 1807
+	addiw	a1, a2, 1807
 	slt	a0, a1, a0
 	ret
 func000000000000000a:                   # @func000000000000000a
@@ -52,10 +52,10 @@ func000000000000000a:                   # @func000000000000000a
 	negw	a2, a1
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
+	lui	a2, 524288
 	or	a0, a0, a1
-	lui	a1, 524288
-	addiw	a1, a1, -3
-	slt	a0, a1, a0
+	addiw	a2, a2, -3
+	slt	a0, a2, a0
 	ret
 func0000000000000001:                   # @func0000000000000001
 	andi	a0, a0, 1

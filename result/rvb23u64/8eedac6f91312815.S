@@ -31,34 +31,34 @@ func000000000000007f:                   # @func000000000000007f
 func0000000000000078:                   # @func0000000000000078
 	sext.w	a2, a2
 	mul	a1, a1, a2
+	li	a2, -1
 	add	a0, a0, a1
-	li	a1, -1
-	srli	a1, a1, 32
-	add	a0, a0, a1
+	srli	a2, a2, 32
+	add	a0, a0, a2
 	ret
 func0000000000000050:                   # @func0000000000000050
 	sext.w	a2, a2
 	mul	a1, a1, a2
+	li	a2, -1
 	add	a0, a0, a1
-	li	a1, -1
-	srli	a1, a1, 32
-	add	a0, a0, a1
+	srli	a2, a2, 32
+	add	a0, a0, a2
 	ret
 func0000000000000070:                   # @func0000000000000070
 	sext.w	a2, a2
 	mul	a1, a1, a2
+	li	a2, -2
 	add	a0, a0, a1
-	li	a1, -2
-	zext.w	a1, a1
-	add	a0, a0, a1
+	zext.w	a2, a2
+	add	a0, a0, a2
 	ret
 func0000000000000057:                   # @func0000000000000057
 	sext.w	a2, a2
 	mul	a1, a1, a2
+	li	a2, -1
 	add	a0, a0, a1
-	li	a1, -1
-	srli	a1, a1, 32
-	add	a0, a0, a1
+	srli	a2, a2, 32
+	add	a0, a0, a2
 	ret
 func0000000000000055:                   # @func0000000000000055
 	sext.w	a2, a2
@@ -107,8 +107,8 @@ func0000000000000040:                   # @func0000000000000040
 func0000000000000008:                   # @func0000000000000008
 	zext.w	a2, a2
 	mul	a1, a1, a2
+	lui	a2, 8
 	add	a0, a0, a1
-	lui	a1, 8
-	addiw	a1, a1, 448
+	addiw	a1, a2, 448
 	add	a0, a0, a1
 	ret

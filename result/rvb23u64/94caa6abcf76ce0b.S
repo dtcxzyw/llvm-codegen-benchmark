@@ -1,7 +1,7 @@
 func000000000000007f:                   # @func000000000000007f
 	subw	a2, a2, a0
-	add	a1, a1, a2
 	lui	a0, 1048568
+	add	a1, a1, a2
 	addi	a0, a0, 150
 	addw	a0, a0, a1
 	ret

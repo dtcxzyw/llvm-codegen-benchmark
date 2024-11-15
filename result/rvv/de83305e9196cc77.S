@@ -10,9 +10,9 @@ func0000000000000001:                   # @func0000000000000001
 	bseti	a0, zero, 59
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v8, a0
-	vmseq.vi	v0, v12, 0
 	lui	a0, 15864
 	addiw	a0, a0, 1983
+	vmseq.vi	v0, v12, 0
 	slli	a0, a0, 18
 	vor.vx	v10, v10, a0
 	vmerge.vvm	v8, v10, v8, v0

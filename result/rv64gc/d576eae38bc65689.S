@@ -9,8 +9,8 @@ func00000000000000cc:                   # @func00000000000000cc
 func000000000000004c:                   # @func000000000000004c
 	sext.w	a2, a1
 	srliw	a1, a1, 6
-	sltiu	a1, a1, 961
 	lui	a3, 15
+	sltiu	a1, a1, 961
 	addiw	a3, a3, -1217
 	xor	a2, a2, a3
 	snez	a2, a2

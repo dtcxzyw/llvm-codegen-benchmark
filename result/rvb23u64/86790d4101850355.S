@@ -8,9 +8,9 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000010:                   # @func0000000000000010
 	andi	a2, a2, 1
-	addi	a2, a2, -4
 	srliw	a1, a1, 11
 	li	a3, -2
+	addi	a2, a2, -4
 	czero.nez	a3, a3, a1
 	czero.eqz	a1, a2, a1
 	or	a1, a1, a3
@@ -19,8 +19,8 @@ func0000000000000010:                   # @func0000000000000010
 func0000000000000013:                   # @func0000000000000013
 	andi	a2, a2, 1
 	li	a3, 4
-	sub	a3, a3, a2
 	srliw	a1, a1, 11
+	sub	a3, a3, a2
 	li	a2, 2
 	czero.nez	a2, a2, a1
 	czero.eqz	a1, a3, a1
@@ -41,9 +41,9 @@ func0000000000000011:                   # @func0000000000000011
 	andi	a2, a2, 1
 	li	a3, 32
 	czero.nez	a2, a3, a2
-	addi	a2, a2, -87
-	sltiu	a1, a1, 10
 	li	a3, -48
+	sltiu	a1, a1, 10
+	addi	a2, a2, -87
 	czero.eqz	a3, a3, a1
 	czero.nez	a1, a2, a1
 	or	a1, a1, a3

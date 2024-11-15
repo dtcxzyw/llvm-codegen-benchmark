@@ -4,9 +4,9 @@ func000000000000001f:                   # @func000000000000001f
 	addi	a4, a4, 113
 	slli	a4, a4, 32
 	mulhu	a3, a3, a4
-	srli	a3, a3, 47
 	lui	a4, 16
 	addi	a4, a4, -15
+	srli	a3, a3, 47
 	mul	a3, a3, a4
 	subw	a2, a2, a3
 	sub	a0, a0, a1

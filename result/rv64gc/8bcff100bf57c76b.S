@@ -1,9 +1,9 @@
 func0000000000000210:                   # @func0000000000000210
 	addi	a1, a0, -160
-	srliw	a1, a1, 5
-	sltiu	a1, a1, 1723
 	srliw	a0, a0, 13
+	srliw	a1, a1, 5
 	sltiu	a0, a0, 7
+	sltiu	a1, a1, 1723
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

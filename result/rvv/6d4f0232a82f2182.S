@@ -32,9 +32,9 @@ func00000000000000f8:                   # @func00000000000000f8
 	vsll.vi	v12, v12, 12
 	lui	a0, 63
 	vand.vx	v12, v12, a0
+	lui	a0, 13
 	vor.vv	v10, v12, v10
 	vor.vv	v8, v10, v8
-	lui	a0, 13
 	addi	a0, a0, 2047
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -78,9 +78,9 @@ func0000000000000074:                   # @func0000000000000074
 	vsll.vi	v12, v12, 18
 	lui	a0, 448
 	vand.vx	v12, v12, a0
+	li	a0, 27
 	vor.vv	v10, v12, v10
 	vor.vv	v8, v10, v8
-	li	a0, 27
 	slli	a0, a0, 11
 	vmsltu.vx	v0, v8, a0
 	ret

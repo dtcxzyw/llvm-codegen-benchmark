@@ -1,7 +1,7 @@
 func000000000000003f:                   # @func000000000000003f
 	zext.h	a1, a1
-	slli	a2, a1, 7
 	slli	a0, a0, 7
+	slli	a2, a1, 7
 	subw	a1, a1, a0
 	subw	a0, a2, a1
 	ret

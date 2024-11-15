@@ -23,8 +23,8 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func000000000000001e:                   # @func000000000000001e
 	mul	a0, a0, a1
-	addi	a0, a0, 127
 	lui	a1, 526344
+	addi	a0, a0, 127
 	addiw	a1, a1, 129
 	slli	a2, a1, 32
 	add	a1, a1, a2
@@ -48,8 +48,8 @@ func0000000000000014:                   # @func0000000000000014
 func0000000000000010:                   # @func0000000000000010
 	mul	a0, a0, a1
 	lui	a1, 12875
-	addiw	a1, a1, -1625
 	lui	a2, %hi(.LCPI4_0)
+	addiw	a1, a1, -1625
 	ld	a2, %lo(.LCPI4_0)(a2)
 	slli	a1, a1, 13
 	addi	a1, a1, -1

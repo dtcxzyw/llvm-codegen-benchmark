@@ -1,9 +1,9 @@
 func0000000000000006:                   # @func0000000000000006
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vand.vi	v10, v10, 1
+	li	a0, 100
 	vmsne.vi	v10, v10, 0
 	vmor.mm	v10, v10, v0
-	li	a0, 100
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmslt.vx	v11, v8, a0
 	vmor.mm	v0, v10, v11
@@ -29,9 +29,9 @@ func000000000000002c:                   # @func000000000000002c
 func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vand.vi	v10, v10, 1
+	li	a0, 99
 	vmsne.vi	v10, v10, 0
 	vmor.mm	v10, v10, v0
-	li	a0, 99
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsgtu.vx	v11, v8, a0
 	vmor.mm	v0, v10, v11

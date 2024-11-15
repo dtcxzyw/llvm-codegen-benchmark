@@ -11,10 +11,10 @@ func0000000000000196:                   # @func0000000000000196
 func00000000000001b6:                   # @func00000000000001b6
 	sext.w	a0, a0
 	sh2add	a1, a1, a1
+	lui	a2, 2
 	sh2add	a1, a1, a1
 	slli	a1, a1, 4
 	addiw	a1, a1, 400
-	lui	a2, 2
 	slt	a0, a0, a2
 	czero.eqz	a0, a1, a0
 	ret

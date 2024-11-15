@@ -95,8 +95,8 @@ func0000000000000088:                   # @func0000000000000088
 func0000000000000006:                   # @func0000000000000006
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vadd.vv	v8, v8, v10
-	vmsle.vi	v0, v8, -1
 	lui	a0, 524288
+	vmsle.vi	v0, v8, -1
 	addi	a0, a0, 1
 	vadd.vx	v8, v8, a0, v0.t
 	ret

@@ -16,9 +16,9 @@ func0000000000000015:                   # @func0000000000000015
 	addiw	a2, a2, -1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
+	lui	a3, 4096
 	mul	a1, a1, a2
-	lui	a2, 4096
-	sub	a0, a0, a2
+	sub	a0, a0, a3
 	sub	a0, a1, a0
 	ret
 func0000000000000010:                   # @func0000000000000010

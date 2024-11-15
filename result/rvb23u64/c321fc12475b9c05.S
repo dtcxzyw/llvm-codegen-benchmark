@@ -19,19 +19,19 @@ func0000000000000122:                   # @func0000000000000122
 	ret
 func00000000000001aa:                   # @func00000000000001aa
 	sext.w	a2, a2
+	slli	a0, a0, 4
 	slli	a3, a2, 3
 	slli	a2, a2, 7
 	sub	a2, a2, a3
-	slli	a0, a0, 4
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 56
 	ret
 func000000000000010a:                   # @func000000000000010a
 	sext.w	a2, a2
+	slli	a0, a0, 4
 	sh3add	a2, a2, a2
 	slli	a2, a2, 4
-	slli	a0, a0, 4
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, -56

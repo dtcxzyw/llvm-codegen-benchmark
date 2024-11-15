@@ -20,8 +20,8 @@ func0000000000000448:                   # @func0000000000000448
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsltu.vx	v11, v11, a0
 	vmsltu.vx	v10, v10, a0
-	vmor.mm	v10, v10, v11
 	bseti	a0, zero, 32
+	vmor.mm	v10, v10, v11
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v11, v8, a0
 	vmor.mm	v0, v10, v11

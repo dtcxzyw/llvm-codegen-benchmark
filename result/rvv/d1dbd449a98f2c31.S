@@ -22,8 +22,8 @@ func0000000000000000:                   # @func0000000000000000
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a1, v10
 	vmulhu.vx	v10, v8, a0
-	vsrl.vi	v10, v10, 12
 	lui	a0, 12
+	vsrl.vi	v10, v10, 12
 	addiw	a0, a0, 1961
 	vnmsac.vx	v8, a0, v10
 	ret
@@ -37,8 +37,8 @@ func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a1, v10
 	vmulhu.vx	v10, v8, a0
-	vsrl.vi	v10, v10, 11
 	lui	a0, 4
+	vsrl.vi	v10, v10, 11
 	addiw	a0, a0, -1271
 	vnmsac.vx	v8, a0, v10
 	ret
@@ -52,8 +52,8 @@ func000000000000000f:                   # @func000000000000000f
 	vmacc.vx	v8, a1, v10
 	vsrl.vi	v10, v8, 6
 	vmulhu.vx	v10, v10, a0
-	vsrl.vi	v10, v10, 13
 	lui	a0, 6592
+	vsrl.vi	v10, v10, 13
 	addiw	a0, a0, -832
 	vnmsac.vx	v8, a0, v10
 	ret

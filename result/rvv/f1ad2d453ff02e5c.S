@@ -43,10 +43,9 @@ func0000000000000010:                   # @func0000000000000010
 	vmerge.vvm	v8, v9, v8, v0
 	ret
 func0000000000000007:                   # @func0000000000000007
-	vsetivli	zero, 16, e8, m1, ta, mu
-	vmseq.vi	v9, v9, 0
 	vmv1r.v	v10, v0
-	vmv.v.v	v0, v9
+	vsetivli	zero, 16, e8, m1, ta, mu
+	vmseq.vi	v0, v9, 0
 	vor.vi	v8, v8, 2, v0.t
 	vmv1r.v	v0, v10
 	vor.vi	v8, v8, 4, v0.t

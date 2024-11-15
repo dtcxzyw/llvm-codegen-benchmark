@@ -1,7 +1,7 @@
 func000000000000001f:                   # @func000000000000001f
 	andi	a1, a1, 255
-	slli	a1, a1, 16
 	andi	a0, a0, 255
+	slli	a1, a1, 16
 	slli	a0, a0, 8
 	or	a0, a0, a1
 	ret
@@ -13,8 +13,8 @@ func0000000000000017:                   # @func0000000000000017
 	ret
 func000000000000007f:                   # @func000000000000007f
 	andi	a1, a1, 255
-	slli	a1, a1, 12
 	andi	a0, a0, 255
+	slli	a1, a1, 12
 	slli	a0, a0, 6
 	or	a0, a0, a1
 	ret
@@ -38,8 +38,8 @@ func0000000000000007:                   # @func0000000000000007
 	ret
 func000000000000003f:                   # @func000000000000003f
 	andi	a1, a1, 255
-	slli	a1, a1, 3
 	andi	a0, a0, 255
+	slli	a1, a1, 3
 	slli	a0, a0, 7
 	or	a0, a0, a1
 	ret
@@ -51,8 +51,8 @@ func000000000000005d:                   # @func000000000000005d
 	ret
 func000000000000001e:                   # @func000000000000001e
 	andi	a1, a1, 255
-	slli	a1, a1, 8
 	andi	a0, a0, 255
+	slli	a1, a1, 8
 	slli	a0, a0, 4
 	or	a0, a0, a1
 	ret
@@ -69,8 +69,8 @@ func0000000000000077:                   # @func0000000000000077
 	ret
 func000000000000003e:                   # @func000000000000003e
 	andi	a1, a1, 255
-	slli	a1, a1, 3
 	andi	a0, a0, 255
+	slli	a1, a1, 3
 	slli	a0, a0, 5
 	or	a0, a0, a1
 	ret

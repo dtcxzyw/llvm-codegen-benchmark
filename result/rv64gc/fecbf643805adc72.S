@@ -1,7 +1,7 @@
 func000000000000000a:                   # @func000000000000000a
 	subw	a2, a2, a1
-	slli	a2, a2, 32
 	li	a1, 9
+	slli	a2, a2, 32
 	slli	a1, a1, 34
 	mulhu	a1, a2, a1
 	add	a0, a0, a1
@@ -16,8 +16,8 @@ func0000000000000100:                   # @func0000000000000100
 	ret
 func000000000000000b:                   # @func000000000000000b
 	subw	a2, a2, a1
-	slli	a2, a2, 32
 	li	a1, 11
+	slli	a2, a2, 32
 	slli	a1, a1, 36
 	mulhu	a1, a2, a1
 	add	a0, a0, a1
@@ -25,8 +25,8 @@ func000000000000000b:                   # @func000000000000000b
 	ret
 func000000000000014a:                   # @func000000000000014a
 	subw	a2, a2, a1
-	slli	a2, a2, 32
 	li	a1, 9
+	slli	a2, a2, 32
 	slli	a1, a1, 35
 	mulhu	a1, a2, a1
 	add	a0, a0, a1

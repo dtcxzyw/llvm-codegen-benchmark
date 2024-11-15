@@ -17,10 +17,10 @@ func0000000000000002:                   # @func0000000000000002
 	andi	a0, a0, 1
 	beqz	a0, .LBB1_2
 	sext.w	a2, a2
-	seqz	a0, a2
-	addi	a0, a0, -1
-	lui	a1, 524288
-	addiw	a1, a1, 64
+	lui	a0, 524288
+	seqz	a1, a2
+	addi	a1, a1, -1
+	addiw	a0, a0, 64
 	and	a1, a1, a0
 .LBB1_2:                                # %entry
 	lui	a0, 262144

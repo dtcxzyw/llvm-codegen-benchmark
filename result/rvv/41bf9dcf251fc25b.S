@@ -3,8 +3,8 @@ func0000000000000441:                   # @func0000000000000441
 	vmsleu.vi	v9, v12, 9
 	li	a0, 26
 	vmsltu.vx	v12, v10, a0
-	vmor.mm	v9, v12, v9
 	li	a0, 95
+	vmor.mm	v9, v12, v9
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmseq.vx	v8, v8, a0
 	vmor.mm	v0, v9, v8

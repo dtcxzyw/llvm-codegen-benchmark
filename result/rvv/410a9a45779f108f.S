@@ -3,8 +3,8 @@ func0000000000000084:                   # @func0000000000000084
 	addi	a0, a0, -496
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsltu.vx	v12, v10, a0
-	vmor.mm	v10, v12, v0
 	lui	a0, 272
+	vmor.mm	v10, v12, v0
 	vmsltu.vx	v11, v8, a0
 	vmandn.mm	v0, v11, v10
 	ret

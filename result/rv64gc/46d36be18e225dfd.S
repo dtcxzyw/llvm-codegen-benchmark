@@ -3,11 +3,11 @@
 func0000000000000010:                   # @func0000000000000010
 	lui	a3, %hi(.LCPI0_0)
 	ld	a3, %lo(.LCPI0_0)(a3)
+	slli	a0, a0, 3
 	mulh	a2, a2, a3
 	srli	a3, a2, 63
 	add	a2, a2, a3
 	slli	a2, a2, 4
-	slli	a0, a0, 3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

@@ -31,9 +31,9 @@ func0000000000000141:                   # @func0000000000000141
 func0000000000000044:                   # @func0000000000000044
 	addiw	a1, a1, -1
 	lui	a2, 262144
+	srliw	a0, a0, 30
 	addiw	a2, a2, -1
 	sltu	a1, a1, a2
-	srliw	a0, a0, 30
 	seqz	a0, a0
 	xor	a0, a0, a1
 	ret
@@ -41,8 +41,8 @@ func00000000000001c1:                   # @func00000000000001c1
 	sext.w	a0, a0
 	sext.w	a1, a1
 	addi	a1, a1, -68
-	snez	a1, a1
 	addi	a0, a0, -383
+	snez	a1, a1
 	seqz	a0, a0
 	xor	a0, a0, a1
 	ret

@@ -1,8 +1,8 @@
 func0000000000000004:                   # @func0000000000000004
 	vmv1r.v	v11, v0
+	vmv1r.v	v0, v10
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmv.v.i	v12, 0
-	vmv1r.v	v0, v10
 	vmerge.vim	v12, v12, 1, v0
 	vrsub.vi	v14, v12, -2
 	li	a0, -258

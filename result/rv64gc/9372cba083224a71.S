@@ -1,45 +1,45 @@
 func0000000000000000:                   # @func0000000000000000
 	srli	a1, a0, 5
-	lui	a2, 16
-	addiw	a2, a2, -256
-	and	a1, a1, a2
-	slli	a2, a0, 35
-	srli	a2, a2, 56
-	or	a1, a1, a2
 	slli	a2, a0, 11
 	lui	a3, 4080
 	and	a2, a2, a3
+	lui	a3, 16
+	addiw	a3, a3, -256
+	and	a1, a1, a3
+	slli	a3, a0, 35
 	slliw	a0, a0, 27
+	srli	a3, a3, 56
+	or	a1, a1, a3
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
 	srli	a1, a0, 4
-	lui	a2, 16
-	addiw	a2, a2, -256
-	and	a1, a1, a2
-	slli	a2, a0, 36
-	srli	a2, a2, 56
-	or	a1, a1, a2
 	slli	a2, a0, 12
 	lui	a3, 4080
 	and	a2, a2, a3
+	lui	a3, 16
+	addiw	a3, a3, -256
+	and	a1, a1, a3
+	slli	a3, a0, 36
 	slliw	a0, a0, 28
+	srli	a3, a3, 56
+	or	a1, a1, a3
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func0000000000000006:                   # @func0000000000000006
 	srli	a1, a0, 4
-	lui	a2, 16
-	addiw	a2, a2, -256
-	and	a1, a1, a2
-	slli	a2, a0, 36
-	srli	a2, a2, 56
-	or	a1, a1, a2
 	slli	a2, a0, 12
 	lui	a3, 4080
 	and	a2, a2, a3
+	lui	a3, 16
+	addiw	a3, a3, -256
+	and	a1, a1, a3
+	slli	a3, a0, 36
 	slliw	a0, a0, 28
+	srli	a3, a3, 56
+	or	a1, a1, a3
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret

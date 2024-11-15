@@ -8,11 +8,11 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func000000000000000c:                   # @func000000000000000c
 	slli	a1, a1, 48
-	srli	a2, a1, 48
-	li	a1, 11
-	slli	a1, a1, 11
-	xor	a2, a2, a1
-	snez	a2, a2
+	li	a2, 11
+	srli	a3, a1, 48
+	slli	a1, a2, 11
+	xor	a3, a3, a1
+	snez	a2, a3
 	and	a2, a2, a0
 	lui	a0, 5
 	bnez	a2, .LBB1_2

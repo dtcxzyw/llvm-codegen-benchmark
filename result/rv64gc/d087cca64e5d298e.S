@@ -40,15 +40,15 @@ func0000000000000016:                   # @func0000000000000016
 func0000000000000011:                   # @func0000000000000011
 	mul	a0, a0, a1
 	lui	a1, 699051
+	lui	a2, 174763
 	addi	a1, a1, -1365
 	mul	a0, a0, a1
-	lui	a1, 174763
-	addi	a2, a1, -1366
-	add	a0, a0, a2
-	slliw	a2, a0, 31
+	addi	a1, a2, -1366
+	add	a0, a0, a1
+	slliw	a1, a0, 31
 	srliw	a0, a0, 1
-	or	a0, a0, a2
-	addiw	a1, a1, -1365
+	or	a0, a0, a1
+	addiw	a1, a2, -1365
 	sltu	a0, a0, a1
 	ret
 func000000000000001c:                   # @func000000000000001c

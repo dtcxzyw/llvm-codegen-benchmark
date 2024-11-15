@@ -1,9 +1,9 @@
 func0000000000000008:                   # @func0000000000000008
 	slli	a1, a1, 48
-	srli	a2, a1, 48
-	lui	a3, 16
-	addiw	a3, a3, -4
-	bgeu	a3, a2, .LBB0_2
+	lui	a2, 16
+	srli	a3, a1, 48
+	addiw	a2, a2, -4
+	bgeu	a2, a3, .LBB0_2
 	srai	a0, a1, 48
 .LBB0_2:                                # %entry
 	ret

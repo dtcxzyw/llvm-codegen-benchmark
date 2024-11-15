@@ -51,9 +51,9 @@ func000000000000003f:                   # @func000000000000003f
 	li	a0, 512
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v12, a0
+	lui	a0, 1
 	vsll.vv	v10, v12, v10
 	vadd.vv	v8, v8, v10
-	lui	a0, 1
 	addi	a0, a0, 1864
 	vadd.vx	v8, v8, a0
 	ret

@@ -28,8 +28,8 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func0000000000000008:                   # @func0000000000000008
 	zext.h	a0, a0
-	sltiu	a0, a0, 53
 	li	a1, -128
+	sltiu	a0, a0, 53
 	czero.eqz	a0, a1, a0
 	lui	a1, 4
 	addiw	a1, a1, -10

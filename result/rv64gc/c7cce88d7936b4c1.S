@@ -11,8 +11,8 @@ func0000000000000198:                   # @func0000000000000198
 	or	a2, a2, a3
 	lui	a3, 17476
 	addiw	a3, a3, 1092
-	sltu	a2, a3, a2
 	addi	a1, a1, -5
+	sltu	a2, a3, a2
 	snez	a1, a1
 	or	a1, a1, a2
 	neg	a1, a1

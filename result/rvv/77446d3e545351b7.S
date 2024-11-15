@@ -15,8 +15,8 @@ func000000000000016c:                   # @func000000000000016c
 func0000000000000162:                   # @func0000000000000162
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsext.vf2	v12, v10
-	vmsle.vv	v10, v12, v8
 	li	a0, 50
+	vmsle.vv	v10, v12, v8
 	vmseq.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10
 	ret

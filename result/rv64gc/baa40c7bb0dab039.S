@@ -55,8 +55,8 @@ func0000000000000004:                   # @func0000000000000004
 func000000000000005d:                   # @func000000000000005d
 	andi	a2, a2, 255
 	subw	a0, a0, a1
-	subw	a0, a0, a2
 	lui	a1, 648056
+	subw	a0, a0, a2
 	addi	a1, a1, -1607
 	addw	a0, a0, a1
 	ret

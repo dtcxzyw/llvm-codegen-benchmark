@@ -11,8 +11,8 @@ func00000000000000a2:                   # @func00000000000000a2
 	ret
 func00000000000000a7:                   # @func00000000000000a7
 	sext.w	a0, a0
-	sgtz	a0, a0
 	fli.d	fa5, 1.0
+	sgtz	a0, a0
 	feq.d	a1, fa0, fa5
 	andn	a0, a0, a1
 	ret
@@ -35,18 +35,18 @@ func000000000000004c:                   # @func000000000000004c
 	ret
 func0000000000000044:                   # @func0000000000000044
 	srliw	a0, a0, 20
-	sltiu	a0, a0, 995
 	fli.d	fa5, 1.0
+	sltiu	a0, a0, 995
 	flt.d	a1, fa5, fa0
 	and	a0, a0, a1
 	ret
 func0000000000000012:                   # @func0000000000000012
 	sext.w	a0, a0
 	lui	a1, 312854
+	fli.d	fa5, 4.0
 	addiw	a1, a1, 544
 	xor	a0, a0, a1
 	seqz	a0, a0
-	fli.d	fa5, 4.0
 	flt.d	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
@@ -70,8 +70,8 @@ func00000000000000cc:                   # @func00000000000000cc
 	ret
 func00000000000000c4:                   # @func00000000000000c4
 	sext.w	a0, a0
-	snez	a0, a0
 	fmv.d.x	fa5, zero
+	snez	a0, a0
 	flt.d	a1, fa5, fa0
 	and	a0, a0, a1
 	ret
@@ -88,8 +88,8 @@ func0000000000000082:                   # @func0000000000000082
 	ret
 func00000000000000ad:                   # @func00000000000000ad
 	sext.w	a0, a0
-	sgtz	a0, a0
 	fmv.d.x	fa5, zero
+	sgtz	a0, a0
 	flt.d	a1, fa0, fa5
 	andn	a0, a0, a1
 	ret
@@ -109,8 +109,8 @@ func0000000000000026:                   # @func0000000000000026
 	ret
 func0000000000000067:                   # @func0000000000000067
 	sext.w	a0, a0
-	slti	a0, a0, 127
 	fli.d	fa5, 1.0
+	slti	a0, a0, 127
 	feq.d	a1, fa0, fa5
 	andn	a0, a0, a1
 	ret
@@ -123,9 +123,9 @@ func00000000000000aa:                   # @func00000000000000aa
 	ret
 func0000000000000014:                   # @func0000000000000014
 	sext.w	a0, a0
+	fmv.d.x	fa5, zero
 	addi	a0, a0, -4
 	seqz	a0, a0
-	fmv.d.x	fa5, zero
 	flt.d	a1, fa5, fa0
 	and	a0, a0, a1
 	ret
@@ -138,8 +138,8 @@ func0000000000000041:                   # @func0000000000000041
 	ret
 func0000000000000064:                   # @func0000000000000064
 	sext.w	a0, a0
-	slti	a0, a0, 1
 	fmv.d.x	fa5, zero
+	slti	a0, a0, 1
 	flt.d	a1, fa5, fa0
 	and	a0, a0, a1
 	ret
@@ -176,8 +176,8 @@ func0000000000000021:                   # @func0000000000000021
 	ret
 func00000000000000c6:                   # @func00000000000000c6
 	sext.w	a0, a0
-	sltiu	a0, a0, -1
 	fli.d	fa5, inf
+	sltiu	a0, a0, -1
 	flt.d	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
@@ -202,8 +202,8 @@ func0000000000000081:                   # @func0000000000000081
 	ret
 func00000000000000c3:                   # @func00000000000000c3
 	sext.w	a0, a0
-	snez	a0, a0
 	fmv.d.x	fa5, zero
+	snez	a0, a0
 	fle.d	a1, fa5, fa0
 	andn	a0, a0, a1
 	ret
@@ -213,8 +213,8 @@ func000000000000002c:                   # @func000000000000002c
 	lui	a1, %hi(.LCPI26_0)
 	fld	fa5, %lo(.LCPI26_0)(a1)
 	sext.w	a0, a0
-	flt.d	a1, fa0, fa5
 	addi	a0, a0, -1
+	flt.d	a1, fa0, fa5
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

@@ -14,10 +14,10 @@ func0000000000000165:                   # @func0000000000000165
 	li	a0, 10
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmacc.vx	v8, a0, v10
-	li	a0, 578
-	vmslt.vx	v0, v8, a0
 	li	a0, -528
 	vmv.v.x	v10, a0
+	li	a0, 578
+	vmslt.vx	v0, v8, a0
 	li	a0, -428
 	vmerge.vxm	v10, v10, a0, v0
 	vadd.vv	v8, v10, v8
@@ -27,8 +27,8 @@ func0000000000000161:                   # @func0000000000000161
 	addi	a0, a0, -576
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmacc.vx	v8, a0, v10
-	vmsle.vi	v0, v8, -1
 	lui	a0, 244
+	vmsle.vi	v0, v8, -1
 	addi	a0, a0, 576
 	vadd.vx	v8, v8, a0, v0.t
 	ret

@@ -8,12 +8,12 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000001:                   # @func0000000000000001
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
-	vand.vi	v8, v10, 2
-	vmv.v.i	v9, 0
-	vmerge.vim	v9, v9, 1, v0
+	vmv.v.i	v8, 0
+	vand.vi	v9, v10, 2
+	vmerge.vim	v8, v8, 1, v0
 	li	a0, 37
-	vxor.vx	v9, v9, a0
-	vor.vv	v8, v9, v8
+	vxor.vx	v8, v8, a0
+	vor.vv	v8, v8, v9
 	ret
 func0000000000000007:                   # @func0000000000000007
 	vsetivli	zero, 4, e32, m1, ta, mu

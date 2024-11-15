@@ -37,8 +37,8 @@ func0000000000000084:                   # @func0000000000000084
 func0000000000000088:                   # @func0000000000000088
 	slli.uw	a2, a2, 5
 	sub	a0, a0, a1
-	sub	a0, a0, a2
 	li	a1, -63
+	sub	a0, a0, a2
 	srli	a1, a1, 1
 	sltu	a0, a1, a0
 	ret

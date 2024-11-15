@@ -14,9 +14,9 @@ func00000000000001c4:                   # @func00000000000001c4
 	lui	a1, 16
 	addiw	a1, a1, -2
 	and	a1, a1, a2
-	snez	a1, a1
 	lui	a2, 256
 	addiw	a2, a2, 528
+	snez	a1, a1
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret

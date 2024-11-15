@@ -42,9 +42,9 @@ func000000000000000f:                   # @func000000000000000f
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v10, v10, 9
 	vmulhu.vx	v10, v10, a0
-	vsrl.vi	v10, v10, 11
 	lui	a0, 1571
 	addiw	a0, a0, 667
+	vsrl.vi	v10, v10, 11
 	slli	a0, a0, 9
 	vmadd.vx	v8, a0, v10
 	ret
@@ -56,8 +56,8 @@ func000000000000000a:                   # @func000000000000000a
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v10, v10, 8
 	vmulhu.vx	v10, v10, a0
-	vsrl.vi	v10, v10, 10
 	li	a0, -60
+	vsrl.vi	v10, v10, 10
 	zext.w	a0, a0
 	vmadd.vx	v8, a0, v10
 	ret

@@ -16,8 +16,8 @@ func000000000000001a:                   # @func000000000000001a
 	ret
 func00000000000000aa:                   # @func00000000000000aa
 	sext.w	a2, a2
-	slti	a2, a2, 3
 	li	a3, 1
+	slti	a2, a2, 3
 	czero.eqz	a3, a3, a2
 	czero.nez	a1, a1, a2
 	or	a1, a1, a3

@@ -11,11 +11,11 @@ func0000000000000024:                   # @func0000000000000024
 	sext.w	a0, a0
 	li	a2, 1
 	slli	a2, a2, 32
+	sltiu	a0, a0, 264
 	addi	a2, a2, -258
 	add	a1, a1, a2
 	addi	a2, a2, 257
 	and	a1, a1, a2
-	sltiu	a0, a0, 264
 	neg	a0, a0
 	and	a0, a0, a1
 	ret

@@ -7,8 +7,8 @@ func0000000000000071:                   # @func0000000000000071
 	ret
 func000000000000007f:                   # @func000000000000007f
 	sext.w	a1, a1
-	slli	a1, a1, 16
 	slli	a0, a0, 32
+	slli	a1, a1, 16
 	or	a0, a0, a1
 	lui	a1, 32769
 	slli	a1, a1, 12
@@ -51,8 +51,8 @@ func0000000000000079:                   # @func0000000000000079
 	ret
 func000000000000003a:                   # @func000000000000003a
 	slli	a1, a1, 32
-	srli	a1, a1, 3
 	slli	a0, a0, 63
+	srli	a1, a1, 3
 	or	a0, a0, a1
 	lui	a1, 4095
 	slli	a1, a1, 39

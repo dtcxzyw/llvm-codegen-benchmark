@@ -1,8 +1,8 @@
 func000000000000001f:                   # @func000000000000001f
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vor.vv	v8, v8, v9
-	vwsll.vi	v10, v8, 24
 	lui	a0, 4641
+	vwsll.vi	v10, v8, 24
 	slli	a0, a0, 36
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vor.vx	v8, v10, a0

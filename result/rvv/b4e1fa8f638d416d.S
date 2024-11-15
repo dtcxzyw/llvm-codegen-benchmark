@@ -19,8 +19,8 @@ func0000000000000114:                   # @func0000000000000114
 func00000000000001cc:                   # @func00000000000001cc
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vrsub.vi	v12, v12, 0
-	vmsne.vv	v9, v12, v10
 	li	a0, 23
+	vmsne.vv	v9, v12, v10
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vmsne.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9

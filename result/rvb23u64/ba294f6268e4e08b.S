@@ -18,8 +18,8 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func0000000000000028:                   # @func0000000000000028
 	or	a1, a1, a2
-	zext.h	a1, a1
 	lui	a2, 15
+	zext.h	a1, a1
 	addiw	a2, a2, -1439
 	sltu	a1, a1, a2
 	or	a0, a0, a1

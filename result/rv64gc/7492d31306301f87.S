@@ -10,9 +10,9 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func000000000000003a:                   # @func000000000000003a
 	lui	a3, 1
+	slli	a0, a0, 2
 	addiw	a3, a3, 224
 	mul	a2, a2, a3
-	slli	a0, a0, 2
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

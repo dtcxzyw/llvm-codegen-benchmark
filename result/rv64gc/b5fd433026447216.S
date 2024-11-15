@@ -47,8 +47,8 @@ func000000000000008a:                   # @func000000000000008a
 	sext.w	a1, a1
 	sext.w	a0, a0
 	slt	a0, a1, a0
-	addi	a0, a0, -1
 	lui	a1, 1
+	addi	a0, a0, -1
 	addiw	a1, a1, -28
 	or	a0, a0, a1
 	ret

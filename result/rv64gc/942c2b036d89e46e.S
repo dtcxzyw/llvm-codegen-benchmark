@@ -6,8 +6,8 @@ func0000000000000030:                   # @func0000000000000030
 	mv	a2, a1
 .LBB0_2:                                # %entry
 	sltu	a1, a1, a2
-	neg	a1, a1
 	lui	a3, 1048560
+	neg	a1, a1
 	addiw	a3, a3, 15
 	and	a1, a1, a3
 	add	a1, a1, a2

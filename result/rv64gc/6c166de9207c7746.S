@@ -20,8 +20,8 @@ func00000000000000cc:                   # @func00000000000000cc
 	andi	a1, a1, 255
 	andi	a2, a2, 7
 	addi	a2, a2, -3
-	snez	a2, a2
 	addi	a1, a1, -3
+	snez	a2, a2
 	snez	a1, a1
 	and	a1, a1, a2
 	and	a0, a0, a1
@@ -30,8 +30,8 @@ func000000000000004c:                   # @func000000000000004c
 	andi	a1, a1, 255
 	andi	a2, a2, 254
 	addi	a2, a2, -14
-	snez	a2, a2
 	sltiu	a1, a1, 253
+	snez	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret

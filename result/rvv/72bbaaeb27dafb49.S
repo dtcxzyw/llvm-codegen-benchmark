@@ -6,10 +6,10 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func000000000000000a:                   # @func000000000000000a
 	lui	a0, 4096
-	addi	a0, a0, -1
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vmv.v.x	v12, a0
 	vmsgt.vi	v0, v8, 1
+	addi	a0, a0, -1
+	vmv.v.x	v12, a0
 	vmv.v.i	v8, 0
 	vsrl.vv	v8, v12, v10, v0.t
 	ret

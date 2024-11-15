@@ -6,10 +6,10 @@ func000000000000000e:                   # @func000000000000000e
 	ret
 func000000000000000c:                   # @func000000000000000c
 	li	a3, 1
-	slli	a3, a3, 11
-	and	a2, a2, a3
 	or	a0, a0, a1
 	lui	a1, 257
+	slli	a3, a3, 11
+	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

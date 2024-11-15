@@ -23,8 +23,8 @@ func000000000000000a:                   # @func000000000000000a
 	slli	a0, a0, 16
 	lui	a2, 1048560
 	addi	a2, a2, -1
-	addw	a0, a0, a2
 	slti	a1, a1, 2
+	addw	a0, a0, a2
 	addi	a1, a1, -1
 	and	a0, a0, a1
 	ret

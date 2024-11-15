@@ -18,8 +18,8 @@ func0000000000000344:                   # @func0000000000000344
 	li	a2, -1
 	srli	a2, a2, 32
 	sub	a2, a2, a0
-	sltu	a1, a1, a2
 	srli	a0, a0, 32
+	sltu	a1, a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

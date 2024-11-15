@@ -8,8 +8,8 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func0000000000000003:                   # @func0000000000000003
 	andi	a1, a0, 2
-	seqz	a1, a1
 	lui	a2, 786432
+	seqz	a1, a1
 	addiw	a2, a2, 1025
 	xor	a1, a1, a2
 	or	a0, a0, a1

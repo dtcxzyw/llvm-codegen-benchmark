@@ -1,8 +1,8 @@
 func0000000000000022:                   # @func0000000000000022
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v12, v10, 0
-	vmand.mm	v10, v12, v0
 	lui	a0, 1
+	vmand.mm	v10, v12, v0
 	addi	a0, a0, -2032
 	vmseq.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10
@@ -10,8 +10,8 @@ func0000000000000022:                   # @func0000000000000022
 func0000000000000182:                   # @func0000000000000182
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsne.vi	v12, v10, 0
-	vmand.mm	v10, v12, v0
 	lui	a0, 1
+	vmand.mm	v10, v12, v0
 	addi	a0, a0, -2032
 	vmseq.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10
@@ -19,8 +19,8 @@ func0000000000000182:                   # @func0000000000000182
 func0000000000000190:                   # @func0000000000000190
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsne.vi	v12, v10, 5
-	vmand.mm	v10, v12, v0
 	lui	a0, 4096
+	vmand.mm	v10, v12, v0
 	addi	a0, a0, -1
 	vmsgtu.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10
@@ -71,8 +71,8 @@ func0000000000000030:                   # @func0000000000000030
 	li	a0, 58
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vx	v12, v10, a0
-	vmand.mm	v10, v12, v0
 	li	a0, 31
+	vmand.mm	v10, v12, v0
 	vmsgtu.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10
 	ret
@@ -95,19 +95,19 @@ func0000000000000088:                   # @func0000000000000088
 	addi	a0, a0, 1616
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsltu.vx	v12, v10, a0
-	vmand.mm	v10, v12, v0
 	lui	a0, 3
 	addi	a0, a0, -1116
+	vmand.mm	v10, v12, v0
 	vmsltu.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10
 	ret
 func0000000000000188:                   # @func0000000000000188
 	lui	a0, 3
 	addi	a1, a0, 63
+	addi	a0, a0, -1116
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsne.vx	v12, v10, a1
 	vmand.mm	v10, v12, v0
-	addi	a0, a0, -1116
 	vmsltu.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10
 	ret

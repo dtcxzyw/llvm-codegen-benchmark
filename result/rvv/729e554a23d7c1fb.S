@@ -18,8 +18,8 @@ func0000000000000034:                   # @func0000000000000034
 	vsrl.vi	v8, v8, 17
 	li	a0, 63
 	vand.vx	v8, v8, a0
-	vadd.vi	v8, v8, -1
 	li	a0, 255
+	vadd.vi	v8, v8, -1
 	vand.vx	v8, v8, a0
 	li	a0, 33
 	vmsltu.vx	v0, v8, a0

@@ -42,8 +42,8 @@ func0000000000000045:                   # @func0000000000000045
 	ret
 func0000000000000055:                   # @func0000000000000055
 	sub	a1, a1, a2
-	slli	a1, a1, 13
 	lui	a2, 32
+	slli	a1, a1, 13
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

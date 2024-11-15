@@ -1,9 +1,9 @@
 func000000000000009d:                   # @func000000000000009d
 	fmul.s	fa5, fa1, fa2
 	lui	a0, 798688
+	lui	a1, 522240
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
-	lui	a1, 522240
 	fmv.w.x	fa5, a1
 	flt.s	a1, fa0, fa5
 	flt.s	a2, fa5, fa0
@@ -21,10 +21,10 @@ func0000000000000024:                   # @func0000000000000024
 func00000000000000ac:                   # @func00000000000000ac
 	fmul.s	fa5, fa1, fa2
 	fmv.w.x	fa4, zero
-	fle.s	a0, fa4, fa5
-	lui	a1, 260096
-	fmv.w.x	fa5, a1
-	fle.s	a1, fa0, fa5
+	lui	a0, 260096
+	fle.s	a1, fa4, fa5
+	fmv.w.x	fa5, a0
+	fle.s	a0, fa0, fa5
 	and	a0, a0, a1
 	ret
 func0000000000000044:                   # @func0000000000000044
@@ -61,8 +61,8 @@ func000000000000008b:                   # @func000000000000008b
 	lui	a0, 273536
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
-	not	a0, a0
 	fmv.w.x	fa5, zero
+	not	a0, a0
 	feq.s	a1, fa0, fa5
 	and	a0, a0, a1
 	ret

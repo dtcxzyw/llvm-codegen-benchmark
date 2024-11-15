@@ -1,7 +1,7 @@
 func000000000000006c:                   # @func000000000000006c
 	li	a2, 5
-	slli	a2, a2, 33
 	slli	a1, a1, 32
+	slli	a2, a2, 33
 	mulhu	a1, a1, a2
 	slli	a0, a0, 32
 	add	a0, a0, a1

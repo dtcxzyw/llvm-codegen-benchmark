@@ -14,8 +14,8 @@ func000000000000004c:                   # @func000000000000004c
 	lui	a1, 34953
 	addi	a1, a1, -1912
 	add	a0, a0, a1
-	roriw	a0, a0, 2
 	lui	a1, 17476
+	roriw	a0, a0, 2
 	addiw	a1, a1, 1092
 	sltu	a0, a1, a0
 	ret

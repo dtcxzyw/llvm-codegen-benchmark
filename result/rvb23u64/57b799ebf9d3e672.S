@@ -41,9 +41,9 @@ func0000000000000044:                   # @func0000000000000044
 	lui	a3, 1048563
 	addi	a3, a3, -420
 	mul	a2, a2, a3
+	lui	a3, 10
 	add	a1, a1, a2
-	lui	a2, 10
-	addi	a2, a2, -946
+	addi	a2, a3, -946
 	mul	a1, a1, a2
 	addw	a0, a0, a1
 	ret

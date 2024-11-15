@@ -37,13 +37,13 @@ func000000000000000c:                   # @func000000000000000c
 	ret
 func0000000000000015:                   # @func0000000000000015
 	andi	a2, a2, 1
-	addi	a2, a2, -1
 	lui	a3, 1
-	addiw	a3, a3, -2017
-	and	a2, a2, a3
 	add	a0, a0, a1
 	lui	a1, 6
+	addi	a2, a2, -1
+	addiw	a3, a3, -2017
 	addiw	a1, a1, -810
+	and	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

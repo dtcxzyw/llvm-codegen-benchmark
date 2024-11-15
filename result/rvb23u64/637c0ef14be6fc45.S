@@ -28,20 +28,20 @@ func0000000000000010:                   # @func0000000000000010
 	ret
 func0000000000000055:                   # @func0000000000000055
 	li	a3, 365
-	mul	a2, a2, a3
 	add	a0, a0, a1
-	add	a0, a0, a2
 	lui	a1, 21
+	mul	a2, a2, a3
+	add	a0, a0, a2
 	addiw	a1, a1, 384
 	mul	a0, a0, a1
 	ret
 func0000000000000041:                   # @func0000000000000041
 	lui	a3, 21
+	add	a0, a0, a1
+	lui	a1, 244
 	addiw	a3, a3, 384
 	mul	a2, a2, a3
-	add	a0, a0, a1
 	add	a0, a0, a2
-	lui	a1, 244
 	addiw	a1, a1, 576
 	mul	a0, a0, a1
 	ret

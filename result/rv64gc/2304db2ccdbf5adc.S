@@ -8,20 +8,20 @@ func0000000000000066:                   # @func0000000000000066
 	ret
 func0000000000000042:                   # @func0000000000000042
 	fmul.s	fa5, fa1, fa2
-	feq.s	a0, fa5, fa5
-	xori	a0, a0, 1
-	lui	a1, 2048
-	fmv.w.x	fa5, a1
+	lui	a0, 2048
+	feq.s	a1, fa5, fa5
+	fmv.w.x	fa5, a0
+	xori	a0, a1, 1
 	flt.s	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
 func0000000000000084:                   # @func0000000000000084
 	fmul.s	fa5, fa1, fa2
 	fmv.w.x	fa4, zero
-	flt.s	a0, fa5, fa4
-	lui	a1, 260096
-	fmv.w.x	fa5, a1
-	flt.s	a1, fa5, fa0
+	lui	a0, 260096
+	flt.s	a1, fa5, fa4
+	fmv.w.x	fa5, a0
+	flt.s	a0, fa5, fa0
 	or	a0, a0, a1
 	ret
 func000000000000008e:                   # @func000000000000008e

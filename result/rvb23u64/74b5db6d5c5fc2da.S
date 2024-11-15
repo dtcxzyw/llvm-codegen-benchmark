@@ -7,8 +7,8 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func0000000000000002:                   # @func0000000000000002
 	andi	a1, a1, 3
-	addi	a1, a1, -2
 	lui	a2, 914960
+	addi	a1, a1, -2
 	addiw	a2, a2, 129
 	czero.nez	a1, a2, a1
 	lui	a2, 921600

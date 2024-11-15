@@ -11,8 +11,8 @@ func000000000000004c:                   # @func000000000000004c
 	vand.vv	v10, v12, v10
 	li	a0, 16
 	vand.vx	v10, v10, a0
-	vmsne.vi	v12, v10, 0
 	li	a0, 64
+	vmsne.vi	v12, v10, 0
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v12, v10
 	ret

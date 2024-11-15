@@ -14,31 +14,31 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func000000000000001c:                   # @func000000000000001c
 	andi	a2, a2, 255
-	seqz	a2, a2
 	xor	a0, a0, a1
+	seqz	a1, a2
 	snez	a0, a0
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 func00000000000000cc:                   # @func00000000000000cc
 	andi	a2, a2, 255
-	snez	a2, a2
 	xor	a0, a0, a1
+	snez	a1, a2
 	snez	a0, a0
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 func00000000000000c1:                   # @func00000000000000c1
 	andi	a2, a2, 255
-	snez	a2, a2
 	xor	a0, a0, a1
+	snez	a1, a2
 	seqz	a0, a0
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 func0000000000000045:                   # @func0000000000000045
 	andi	a2, a2, 255
-	sltiu	a2, a2, 10
 	sltu	a0, a1, a0
+	sltiu	a1, a2, 10
 	not	a0, a0
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 func00000000000000c4:                   # @func00000000000000c4
 	andi	a2, a2, 255

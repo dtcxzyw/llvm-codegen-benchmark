@@ -1,7 +1,7 @@
 func0000000000000104:                   # @func0000000000000104
 	srli	a2, a2, 62
-	snez	a2, a2
 	sltiu	a0, a0, 8
+	snez	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -19,17 +19,17 @@ func0000000000000084:                   # @func0000000000000084
 	ret
 func000000000000002c:                   # @func000000000000002c
 	lui	a3, 522240
+	sltiu	a0, a0, -1
 	xor	a2, a2, a3
 	seqz	a2, a2
-	sltiu	a0, a0, -1
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 func000000000000008c:                   # @func000000000000008c
 	li	a3, -1
+	sltiu	a0, a0, -1
 	slli	a3, a3, 32
 	sltu	a2, a2, a3
-	sltiu	a0, a0, -1
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

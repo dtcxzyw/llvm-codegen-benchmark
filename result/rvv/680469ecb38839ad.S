@@ -53,9 +53,9 @@ func000000000000006a:                   # @func000000000000006a
 func000000000000004c:                   # @func000000000000004c
 	lui	a0, 2
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsltu.vx	v14, v12, a0
-	vmsne.vi	v12, v10, 0
-	vmand.mm	v0, v12, v14
+	vmsne.vi	v14, v10, 0
+	vmsltu.vx	v10, v12, a0
+	vmand.mm	v0, v14, v10
 	vmv.v.i	v10, 0
 	vmerge.vvm	v8, v10, v8, v0
 	ret

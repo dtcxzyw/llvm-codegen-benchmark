@@ -33,13 +33,13 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000034:                   # @func0000000000000034
 	lui	a3, 1
-	addi	a3, a3, -64
-	and	a2, a2, a3
 	andi	a1, a1, 48
 	or	a0, a0, a1
+	lui	a1, 16
+	addi	a3, a3, -64
+	and	a2, a2, a3
 	or	a0, a0, a2
 	sext.w	a0, a0
-	lui	a1, 16
 	addiw	a1, a1, -528
 	sltu	a0, a0, a1
 	ret

@@ -32,11 +32,11 @@ func00000000000003ff:                   # @func00000000000003ff
 	ret
 func0000000000000155:                   # @func0000000000000155
 	lui	a3, 1048573
-	addiw	a3, a3, 702
-	mul	a1, a1, a3
 	slli	a0, a0, 13
 	add	a0, a0, a2
 	lui	a2, 32
+	addiw	a3, a3, 702
+	mul	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

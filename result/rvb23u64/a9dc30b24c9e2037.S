@@ -13,19 +13,19 @@ func0000000000000078:                   # @func0000000000000078
 	ret
 func0000000000000018:                   # @func0000000000000018
 	add	a1, a1, a2
-	slli	a1, a1, 51
-	srli	a1, a1, 51
 	lui	a2, 17
+	slli	a1, a1, 51
 	addiw	a2, a2, 1072
+	srli	a1, a1, 51
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 func0000000000000010:                   # @func0000000000000010
 	add	a1, a1, a2
-	slli	a1, a1, 51
-	srli	a1, a1, 51
 	lui	a2, 1048574
+	slli	a1, a1, 51
 	addiw	a2, a2, -20
+	srli	a1, a1, 51
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

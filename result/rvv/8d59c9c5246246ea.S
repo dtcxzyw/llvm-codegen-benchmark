@@ -20,8 +20,8 @@ func0000000000000048:                   # @func0000000000000048
 	vadd.vx	v10, v10, a0
 	li	a0, -31
 	vmsltu.vx	v12, v10, a0
-	vmor.mm	v10, v12, v0
 	li	a0, 59
+	vmor.mm	v10, v12, v0
 	vmsgtu.vx	v11, v8, a0
 	vmor.mm	v0, v10, v11
 	ret
@@ -30,11 +30,11 @@ func0000000000000088:                   # @func0000000000000088
 	addi	a1, a0, -1049
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v10, v10, a1
+	lui	a1, 16000
 	addi	a0, a0, -2048
+	addi	a1, a1, -1
 	vmsltu.vx	v12, v10, a0
 	vmor.mm	v10, v12, v0
-	lui	a0, 16000
-	addi	a0, a0, -1
-	vmsgtu.vx	v11, v8, a0
+	vmsgtu.vx	v11, v8, a1
 	vmor.mm	v0, v10, v11
 	ret

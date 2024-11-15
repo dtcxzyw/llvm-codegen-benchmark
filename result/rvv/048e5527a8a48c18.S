@@ -6,8 +6,8 @@ func0000000000000000:                   # @func0000000000000000
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a0)
 	vfrdiv.vf	v24, v24, fa5
-	vfmul.vv	v16, v24, v16
 	fmv.d.x	fa5, zero
+	vfmul.vv	v16, v24, v16
 	vfmul.vf	v8, v8, fa5
 	vfmul.vv	v8, v8, v16
 	ret

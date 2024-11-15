@@ -25,8 +25,8 @@ func0000000000000005:                   # @func0000000000000005
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfle.vf	v24, v16, fa5
-	vmnot.m	v0, v24
 	fli.d	fa5, inf
+	vmnot.m	v0, v24
 	vfmv.v.f	v16, fa5
 	vmerge.vvm	v8, v16, v8, v0
 	vfmul.vv	v8, v8, v8

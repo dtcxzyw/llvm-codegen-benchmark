@@ -7,8 +7,8 @@ func0000000000000156:                   # @func0000000000000156
 func000000000000010a:                   # @func000000000000010a
 	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
-	addiw	a0, a0, -48
 	lui	a1, 16
+	addiw	a0, a0, -48
 	addiw	a1, a1, -1
 	slt	a0, a1, a0
 	ret
@@ -35,19 +35,19 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000358:                   # @func0000000000000358
 	li	a2, 190
 	mul	a1, a1, a2
+	lui	a2, 1048570
 	add	a0, a0, a1
-	lui	a1, 1048570
-	addi	a1, a1, 66
-	addw	a0, a0, a1
 	lui	a1, 6
+	addi	a2, a2, 66
+	addw	a0, a0, a2
 	addiw	a1, a1, -827
 	sltu	a0, a1, a0
 	ret
 func0000000000000208:                   # @func0000000000000208
 	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
-	addiw	a0, a0, -48
 	lui	a1, 52429
+	addiw	a0, a0, -48
 	addiw	a1, a1, -821
 	sltu	a0, a1, a0
 	ret
@@ -69,8 +69,8 @@ func0000000000000011:                   # @func0000000000000011
 func0000000000000106:                   # @func0000000000000106
 	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
-	addiw	a0, a0, -48
 	lui	a1, 52429
+	addiw	a0, a0, -48
 	addiw	a1, a1, -820
 	slt	a0, a0, a1
 	ret

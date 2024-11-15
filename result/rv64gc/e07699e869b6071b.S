@@ -24,8 +24,8 @@ func0000000000000068:                   # @func0000000000000068
 	lui	a2, 976563
 	addi	a2, a2, -2048
 	and	a1, a1, a2
+	lui	a2, 976562
 	addw	a0, a0, a1
-	lui	a1, 976562
-	addiw	a1, a1, 2047
+	addiw	a1, a2, 2047
 	sltu	a0, a1, a0
 	ret

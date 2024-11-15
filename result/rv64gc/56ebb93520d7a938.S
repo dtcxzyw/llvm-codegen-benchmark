@@ -43,11 +43,11 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func00000000000000f0:                   # @func00000000000000f0
 	mul	a1, a1, a2
+	li	a2, 1
 	add	a0, a0, a1
 	slli	a0, a0, 36
-	li	a1, 1
-	slli	a1, a1, 36
-	add	a0, a0, a1
+	slli	a2, a2, 36
+	add	a0, a0, a2
 	ret
 func00000000000000a2:                   # @func00000000000000a2
 	mul	a1, a1, a2

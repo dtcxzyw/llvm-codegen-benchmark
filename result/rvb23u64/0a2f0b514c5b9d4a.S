@@ -2,8 +2,8 @@
 	.quad	0x3d719799812dea11              # double 9.9999999999999998E-13
 func0000000000000004:                   # @func0000000000000004
 	fli.d	fa5, 4.0
-	fneg.d	fa5, fa5
 	lui	a0, %hi(.LCPI0_0)
+	fneg.d	fa5, fa5
 	fld	fa4, %lo(.LCPI0_0)(a0)
 	fmul.d	fa5, fa1, fa5
 	fmul.d	fa5, fa5, fa2

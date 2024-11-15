@@ -2,12 +2,12 @@ func0000000000000244:                   # @func0000000000000244
 	sext.w	a3, a2
 	sext.w	a4, a1
 	sub	a2, a2, a1
-	sltu	a1, a4, a3
-	czero.eqz	a2, a2, a1
-	czero.nez	a0, a0, a1
+	lui	a1, 15
+	sltu	a3, a4, a3
+	czero.eqz	a2, a2, a3
+	czero.nez	a0, a0, a3
 	or	a0, a0, a2
 	sext.w	a0, a0
-	lui	a1, 15
 	addiw	a1, a1, -1439
 	sltu	a0, a0, a1
 	ret
@@ -38,12 +38,12 @@ func000000000000006a:                   # @func000000000000006a
 	sext.w	a3, a2
 	sext.w	a4, a1
 	sub	a2, a2, a1
-	slt	a1, a4, a3
-	czero.eqz	a2, a2, a1
-	czero.nez	a0, a0, a1
+	lui	a1, 4096
+	slt	a3, a4, a3
+	czero.eqz	a2, a2, a3
+	czero.nez	a0, a0, a3
 	or	a0, a0, a2
 	sext.w	a0, a0
-	lui	a1, 4096
 	addiw	a1, a1, -1
 	slt	a0, a1, a0
 	ret

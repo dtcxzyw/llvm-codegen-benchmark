@@ -82,8 +82,8 @@ func0000000000000110:                   # @func0000000000000110
 	andi	a0, a0, 255
 	andi	a1, a1, 14
 	addi	a1, a1, -14
-	seqz	a1, a1
 	sltiu	a0, a0, 224
+	seqz	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -99,8 +99,8 @@ func0000000000000158:                   # @func0000000000000158
 	sext.b	a0, a0
 	andi	a1, a1, 208
 	addi	a1, a1, -144
-	snez	a1, a1
 	slti	a0, a0, 0
+	snez	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -126,8 +126,8 @@ func0000000000000190:                   # @func0000000000000190
 	andi	a0, a0, 255
 	lui	a2, 51
 	and	a1, a1, a2
-	snez	a1, a1
 	sltiu	a0, a0, 3
+	snez	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

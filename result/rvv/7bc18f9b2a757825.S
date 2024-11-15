@@ -31,9 +31,9 @@ func0000000000000041:                   # @func0000000000000041
 func0000000000000058:                   # @func0000000000000058
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwsubu.vv	v12, v10, v11
+	li	a0, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vv	v8, v12, v8
-	li	a0, -1
 	srli	a0, a0, 4
 	vmsgtu.vx	v0, v8, a0
 	ret

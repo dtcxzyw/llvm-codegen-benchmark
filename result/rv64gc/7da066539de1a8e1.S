@@ -13,10 +13,10 @@ func000000000000008c:                   # @func000000000000008c
 	ret
 func0000000000000018:                   # @func0000000000000018
 	slli	a2, a2, 37
+	seqz	a1, a1
 	srli	a2, a2, 37
 	sltiu	a2, a2, 3
 	not	a2, a2
-	seqz	a1, a1
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret

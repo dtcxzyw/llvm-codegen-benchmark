@@ -25,8 +25,8 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 .LBB2_2:
 	andi	a0, a0, 1
-	addi	a0, a0, -1
 	lui	a1, 4
+	addi	a0, a0, -1
 	addiw	a1, a1, 3
 	and	a0, a0, a1
 	ret

@@ -1,9 +1,9 @@
 func000000000000000a:                   # @func000000000000000a
 	andi	a2, a2, 1
-	sh1add	a2, a2, a2
-	slli	a2, a2, 5
 	sh1add	a1, a1, a1
+	sh1add	a2, a2, a2
 	slli	a1, a1, 5
+	slli	a2, a2, 5
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 40

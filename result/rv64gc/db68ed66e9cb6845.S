@@ -117,10 +117,10 @@ func0000000000000411:                   # @func0000000000000411
 	lui	a2, 976562
 	addiw	a2, a2, 2047
 	sltu	a1, a2, a1
+	li	a2, -1
 	add	a0, a0, a1
-	li	a1, -1
-	slli	a1, a1, 63
-	xor	a0, a0, a1
+	slli	a2, a2, 63
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 func0000000000000618:                   # @func0000000000000618

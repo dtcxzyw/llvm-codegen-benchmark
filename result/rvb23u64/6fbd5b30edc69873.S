@@ -12,13 +12,13 @@ func0000000000000030:                   # @func0000000000000030
 func0000000000000015:                   # @func0000000000000015
 	slli	a2, a1, 32
 	lui	a3, 699051
+	subw	a1, a1, a1
 	addi	a3, a3, -1365
 	slli	a3, a3, 32
 	mulhu	a2, a2, a3
 	srli	a2, a2, 35
 	sh1add	a2, a2, a2
 	slli	a2, a2, 2
-	subw	a1, a1, a1
 	add	a0, a0, a1
 	subw	a0, a0, a2
 	addiw	a0, a0, -12
@@ -26,13 +26,13 @@ func0000000000000015:                   # @func0000000000000015
 func0000000000000004:                   # @func0000000000000004
 	slli	a2, a1, 32
 	lui	a3, 699051
+	subw	a1, a1, a1
 	addi	a3, a3, -1365
 	slli	a3, a3, 32
 	mulhu	a2, a2, a3
 	srli	a2, a2, 35
 	sh1add	a2, a2, a2
 	slli	a2, a2, 2
-	subw	a1, a1, a1
 	add	a0, a0, a1
 	subw	a0, a0, a2
 	addiw	a0, a0, -11

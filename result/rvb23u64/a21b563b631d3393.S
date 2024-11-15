@@ -30,21 +30,21 @@ func0000000000000070:                   # @func0000000000000070
 	ret
 func0000000000000014:                   # @func0000000000000014
 	slli	a2, a2, 1
+	slli	a3, a1, 7
 	addi	a2, a2, 1
+	sh3add	a1, a1, a3
 	slli	a3, a2, 7
 	sh3add	a2, a2, a3
-	slli	a3, a1, 7
-	sh3add	a1, a1, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
 func0000000000000034:                   # @func0000000000000034
 	slli	a2, a2, 1
+	slli	a3, a1, 7
 	addi	a2, a2, 1
+	sh3add	a1, a1, a3
 	slli	a3, a2, 7
 	sh3add	a2, a2, a3
-	slli	a3, a1, 7
-	sh3add	a1, a1, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

@@ -28,8 +28,8 @@ func0000000000000034:                   # @func0000000000000034
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vfsub.vv	v8, v8, v16
 	fmv.d.x	fa5, zero
-	vmfge.vf	v16, v8, fa5
 	lui	a0, %hi(.LCPI2_0)
+	vmfge.vf	v16, v8, fa5
 	fld	fa5, %lo(.LCPI2_0)(a0)
 	vmnot.m	v0, v16
 	vfneg.v	v8, v8, v0.t
@@ -41,8 +41,8 @@ func0000000000000032:                   # @func0000000000000032
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vfsub.vv	v8, v8, v16
 	fmv.d.x	fa5, zero
-	vmfge.vf	v16, v8, fa5
 	lui	a0, %hi(.LCPI3_0)
+	vmfge.vf	v16, v8, fa5
 	fld	fa5, %lo(.LCPI3_0)(a0)
 	vmnot.m	v0, v16
 	vfneg.v	v8, v8, v0.t
@@ -54,8 +54,8 @@ func0000000000000035:                   # @func0000000000000035
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vfsub.vv	v8, v8, v16
 	fmv.d.x	fa5, zero
-	vmfge.vf	v16, v8, fa5
 	lui	a0, %hi(.LCPI4_0)
+	vmfge.vf	v16, v8, fa5
 	fld	fa5, %lo(.LCPI4_0)(a0)
 	vmnot.m	v0, v16
 	vfneg.v	v8, v8, v0.t

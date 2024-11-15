@@ -27,8 +27,8 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func0000000000000009:                   # @func0000000000000009
 	sltu	a0, a0, a1
-	addi	a0, a0, -1
 	lui	a1, 3
+	addi	a0, a0, -1
 	addiw	a1, a1, 28
 	and	a0, a0, a1
 	ret

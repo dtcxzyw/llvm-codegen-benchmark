@@ -24,8 +24,8 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func0000000000000018:                   # @func0000000000000018
 	andi	a1, a1, 1536
-	addi	a1, a1, -512
 	lui	a2, 1048564
+	addi	a1, a1, -512
 	czero.eqz	a1, a2, a1
 	lui	a2, 16
 	addiw	a2, a2, -193

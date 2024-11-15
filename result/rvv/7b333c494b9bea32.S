@@ -35,8 +35,8 @@ func0000000000000034:                   # @func0000000000000034
 func0000000000000038:                   # @func0000000000000038
 	li	a0, 56
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vmsgtu.vx	v0, v8, a0
 	vmv.v.i	v10, 8
+	vmsgtu.vx	v0, v8, a0
 	li	a0, 64
 	vrsub.vx	v10, v8, a0, v0.t
 	vmv.v.v	v8, v10
@@ -51,8 +51,8 @@ func000000000000001a:                   # @func000000000000001a
 func0000000000000014:                   # @func0000000000000014
 	li	a0, 153
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vmsltu.vx	v0, v8, a0
 	vmv.v.i	v10, 0
+	vmsltu.vx	v0, v8, a0
 	li	a0, 152
 	vrsub.vx	v10, v8, a0, v0.t
 	vmv.v.v	v8, v10

@@ -28,10 +28,10 @@ func0000000000000030:                   # @func0000000000000030
 	ret
 func0000000000000018:                   # @func0000000000000018
 	andi	a2, a2, 1
-	addi	a2, a2, -1
-	andi	a2, a2, -56
 	li	a3, -224
+	addi	a2, a2, -1
 	mul	a1, a1, a3
+	andi	a2, a2, -56
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

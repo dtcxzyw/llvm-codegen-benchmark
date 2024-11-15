@@ -1,8 +1,8 @@
 func00000000000000f6:                   # @func00000000000000f6
 	li	a0, 32
+	li	a1, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vx	v10, v10, a0
-	li	a1, -1
 	slli	a1, a1, 32
 	vadd.vx	v10, v10, a1
 	vsra.vx	v10, v10, a0
@@ -11,9 +11,9 @@ func00000000000000f6:                   # @func00000000000000f6
 	ret
 func0000000000000051:                   # @func0000000000000051
 	li	a0, 32
+	li	a1, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vx	v10, v10, a0
-	li	a1, -1
 	slli	a1, a1, 32
 	vadd.vx	v10, v10, a1
 	vsra.vx	v10, v10, a0
@@ -43,9 +43,9 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func0000000000000056:                   # @func0000000000000056
 	li	a0, 32
+	li	a1, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vx	v10, v10, a0
-	li	a1, -1
 	slli	a1, a1, 32
 	vadd.vx	v10, v10, a1
 	vsra.vx	v10, v10, a0
@@ -54,9 +54,9 @@ func0000000000000056:                   # @func0000000000000056
 	ret
 func0000000000000076:                   # @func0000000000000076
 	li	a0, 32
+	li	a1, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vx	v10, v10, a0
-	li	a1, -1
 	slli	a1, a1, 32
 	vadd.vx	v10, v10, a1
 	vsra.vx	v10, v10, a0
@@ -65,9 +65,9 @@ func0000000000000076:                   # @func0000000000000076
 	ret
 func00000000000000d1:                   # @func00000000000000d1
 	li	a0, 32
+	li	a1, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vx	v10, v10, a0
-	li	a1, -1
 	slli	a1, a1, 32
 	vadd.vx	v10, v10, a1
 	vsra.vx	v10, v10, a0
@@ -86,9 +86,9 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func00000000000000fa:                   # @func00000000000000fa
 	li	a0, 32
+	li	a1, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vx	v10, v10, a0
-	li	a1, -1
 	slli	a1, a1, 34
 	vadd.vx	v10, v10, a1
 	vsra.vx	v10, v10, a0
@@ -97,9 +97,9 @@ func00000000000000fa:                   # @func00000000000000fa
 	ret
 func000000000000007a:                   # @func000000000000007a
 	li	a0, 32
+	li	a1, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vx	v10, v10, a0
-	li	a1, -1
 	slli	a1, a1, 33
 	vadd.vx	v10, v10, a1
 	vsra.vx	v10, v10, a0

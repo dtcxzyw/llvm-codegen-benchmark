@@ -36,8 +36,8 @@ func0000000000000161:                   # @func0000000000000161
 func000000000000006a:                   # @func000000000000006a
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vor.vv	v10, v10, v12
-	vmsgt.vi	v12, v10, -1
 	lui	a0, 24
+	vmsgt.vi	v12, v10, -1
 	addi	a0, a0, 1697
 	vmslt.vx	v10, v8, a0
 	vmand.mm	v0, v12, v10

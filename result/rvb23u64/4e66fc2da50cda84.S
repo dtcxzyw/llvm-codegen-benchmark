@@ -8,13 +8,13 @@ func0000000000000002:                   # @func0000000000000002
 	srliw	a2, a1, 31
 	sraiw	a1, a1, 8
 	add	a1, a1, a2
+	lui	a2, 3
+	addi	a2, a2, -637
 	sh2add	a1, a1, a1
 	sh3add	a1, a1, a1
 	slli	a1, a1, 3
 	subw	a0, a0, a1
-	lui	a1, 3
-	addi	a1, a1, -637
-	mul	a0, a0, a1
+	mul	a0, a0, a2
 	srliw	a1, a0, 31
 	srli	a0, a0, 16
 	slli	a0, a0, 48

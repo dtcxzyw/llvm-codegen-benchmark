@@ -10,8 +10,8 @@ func0000000000000003:                   # @func0000000000000003
 	vmul.vv	v10, v10, v12
 	li	a0, 31
 	vmv.v.x	v12, a0
-	vmacc.vv	v12, v8, v10
 	lui	a0, 524288
+	vmacc.vv	v12, v8, v10
 	addi	a0, a0, -32
 	vand.vx	v8, v12, a0
 	ret

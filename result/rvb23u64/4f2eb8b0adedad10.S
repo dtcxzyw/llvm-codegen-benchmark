@@ -8,8 +8,8 @@ func00000000000000cc:                   # @func00000000000000cc
 	ret
 func0000000000000011:                   # @func0000000000000011
 	not	a1, a1
-	bexti	a1, a1, 12
 	not	a0, a0
+	bexti	a1, a1, 12
 	bexti	a0, a0, 27
 	xor	a0, a0, a1
 	ret

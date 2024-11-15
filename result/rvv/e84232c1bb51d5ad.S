@@ -33,8 +33,8 @@ func00000000000000fc:                   # @func00000000000000fc
 	.quad	1844674407370955161             # 0x1999999999999999
 func0000000000000088:                   # @func0000000000000088
 	li	a0, -2
-	zext.w	a0, a0
 	lui	a1, %hi(.LCPI3_0)
+	zext.w	a0, a0
 	ld	a1, %lo(.LCPI3_0)(a1)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v8, v8, a0

@@ -2,8 +2,8 @@ func0000000000000028:                   # @func0000000000000028
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v12, v12, v14
 	li	a0, 22
-	vmsgtu.vx	v14, v12, a0
 	fli.d	fa5, 1.0
+	vmsgtu.vx	v14, v12, a0
 	vsetvli	zero, zero, e64, m4, ta, ma
 	vmflt.vf	v12, v8, fa5
 	vmand.mm	v0, v14, v12
@@ -12,8 +12,8 @@ func0000000000000128:                   # @func0000000000000128
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v12, v12, v14
 	li	a0, 22
-	vmsgtu.vx	v14, v12, a0
 	fli.d	fa5, 1.0
+	vmsgtu.vx	v14, v12, a0
 	vsetvli	zero, zero, e64, m4, ta, ma
 	vmflt.vf	v12, v8, fa5
 	vmand.mm	v0, v14, v12

@@ -50,9 +50,9 @@ func0000000000000044:                   # @func0000000000000044
 func0000000000000041:                   # @func0000000000000041
 	lui	a3, 16
 	addiw	a4, a3, -1
+	addiw	a3, a3, -2
 	and	a1, a1, a4
 	and	a2, a2, a4
-	addiw	a3, a3, -2
 	sltu	a2, a2, a3
 	addi	a1, a1, -128
 	seqz	a1, a1
@@ -62,9 +62,9 @@ func0000000000000041:                   # @func0000000000000041
 func000000000000004c:                   # @func000000000000004c
 	lui	a3, 16
 	addiw	a4, a3, -1
+	addiw	a3, a3, -10
 	and	a1, a1, a4
 	and	a2, a2, a4
-	addiw	a3, a3, -10
 	sltu	a2, a2, a3
 	addi	a1, a1, -45
 	snez	a1, a1

@@ -1,9 +1,9 @@
 func0000000000000001:                   # @func0000000000000001
 	li	a0, 16
+	li	a1, 20
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0
 	vmerge.vim	v10, v10, 12, v0
-	li	a1, 20
 	vmv.v.x	v12, a1
 	li	a1, 103
 	vsetvli	zero, zero, e32, m1, ta, ma

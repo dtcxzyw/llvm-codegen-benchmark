@@ -14,9 +14,9 @@ func0000000000000019:                   # @func0000000000000019
 	slti	a2, a1, 0
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
+	lui	a2, 1048332
 	or	a0, a0, a1
-	lui	a1, 1048332
-	addiw	a1, a1, -576
+	addiw	a1, a2, -576
 	add	a0, a0, a1
 	ret
 func0000000000000020:                   # @func0000000000000020
@@ -37,9 +37,9 @@ func0000000000000028:                   # @func0000000000000028
 	slt	a2, a2, a1
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
+	lui	a2, 1048332
 	or	a0, a0, a1
-	lui	a1, 1048332
-	addiw	a1, a1, -576
+	addiw	a1, a2, -576
 	add	a0, a0, a1
 	ret
 func0000000000000029:                   # @func0000000000000029
@@ -48,8 +48,8 @@ func0000000000000029:                   # @func0000000000000029
 	slt	a2, a2, a1
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
+	lui	a2, 243896
 	or	a0, a0, a1
-	lui	a1, 243896
-	addiw	a1, a1, 1984
+	addiw	a1, a2, 1984
 	add	a0, a0, a1
 	ret

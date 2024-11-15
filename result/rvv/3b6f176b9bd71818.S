@@ -12,10 +12,12 @@ func000000000000000f:                   # @func000000000000000f
 func000000000000000b:                   # @func000000000000000b
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vand.vi	v9, v9, 4
-	vmseq.vi	v0, v9, 0
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vzext.vf4	v10, v8
 	li	a0, 255
+	vsetvli	zero, zero, e8, mf2, ta, ma
+	vmseq.vi	v0, v9, 0
+	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v8, v10, a0
 	vmerge.vvm	v8, v8, v10, v0
 	ret

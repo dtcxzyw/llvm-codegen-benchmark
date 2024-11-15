@@ -21,10 +21,10 @@ func000000000000006a:                   # @func000000000000006a
 	vzext.vf2	v13, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vv	v8, v8, v10
+	lui	a0, 16
 	vsrl.vi	v8, v8, 16
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vwaddu.wv	v8, v8, v13
-	lui	a0, 16
 	addi	a0, a0, -1
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vand.vx	v8, v8, a0

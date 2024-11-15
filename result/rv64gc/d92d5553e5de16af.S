@@ -20,8 +20,8 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func000000000000000b:                   # @func000000000000000b
 	andi	a2, a2, 1
-	slli	a2, a2, 8
 	slli	a1, a1, 32
+	slli	a2, a2, 8
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -33,9 +33,9 @@ func000000000000000e:                   # @func000000000000000e
 	ret
 func000000000000000a:                   # @func000000000000000a
 	slli	a2, a2, 63
+	slli	a1, a1, 2
 	srai	a2, a2, 63
 	andi	a2, a2, 3
-	slli	a1, a1, 2
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

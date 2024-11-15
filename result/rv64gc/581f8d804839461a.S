@@ -107,10 +107,10 @@ func0000000000000019:                   # @func0000000000000019
 	ret
 func0000000000000022:                   # @func0000000000000022
 	slli	a1, a1, 48
+	lui	a2, 16
 	srli	a1, a1, 48
 	sltiu	a1, a1, 2
 	xori	a1, a1, 1
-	lui	a2, 16
 	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret

@@ -1,8 +1,8 @@
 func0000000000000218:                   # @func0000000000000218
 	addi	a2, a2, 1
+	sltiu	a0, a0, 18
 	xor	a1, a1, a2
 	seqz	a1, a1
-	sltiu	a0, a0, 18
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -36,9 +36,9 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func0000000000000018:                   # @func0000000000000018
 	addi	a2, a2, 4
+	sltiu	a0, a0, 4
 	xor	a1, a1, a2
 	seqz	a1, a1
-	sltiu	a0, a0, 4
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

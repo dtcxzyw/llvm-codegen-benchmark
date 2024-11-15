@@ -16,9 +16,9 @@ func00000000000003f1:                   # @func00000000000003f1
 	ret
 func0000000000000148:                   # @func0000000000000148
 	sh3add	a1, a2, a1
+	li	a2, 63
 	add	a0, a0, a1
-	li	a1, 63
-	bseti	a1, a1, 63
+	bseti	a1, a2, 63
 	and	a0, a0, a1
 	bseti	a1, zero, 63
 	sltu	a0, a1, a0
@@ -31,9 +31,9 @@ func0000000000000151:                   # @func0000000000000151
 	ret
 func0000000000000118:                   # @func0000000000000118
 	sh3add	a1, a2, a1
+	li	a2, 63
 	add	a0, a0, a1
-	li	a1, 63
-	bseti	a1, a1, 63
+	bseti	a1, a2, 63
 	and	a0, a0, a1
 	bseti	a1, zero, 63
 	sltu	a0, a1, a0

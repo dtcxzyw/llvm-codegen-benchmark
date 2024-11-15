@@ -1,8 +1,8 @@
 func0000000000000001:                   # @func0000000000000001
 	li	a0, 128
+	li	a1, 384
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vmseq.vx	v0, v8, a0
-	li	a1, 384
 	vmv.v.x	v8, a1
 	vmerge.vxm	v8, v8, a0, v0
 	ret
@@ -29,13 +29,13 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func0000000000000008:                   # @func0000000000000008
 	li	a0, 52
+	lui	a1, 4
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vmsgtu.vx	v0, v8, a0
-	lui	a0, 4
-	addi	a1, a0, -138
-	vmv.v.x	v8, a1
-	addi	a0, a0, -10
-	vmerge.vxm	v8, v8, a0, v0
+	addi	a0, a1, -138
+	vmv.v.x	v8, a0
+	addi	a1, a1, -10
+	vmerge.vxm	v8, v8, a1, v0
 	ret
 func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 16, e16, m2, ta, ma

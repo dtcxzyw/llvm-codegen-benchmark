@@ -28,10 +28,10 @@ func000000000000014c:                   # @func000000000000014c
 	lui	a3, 1048574
 	addi	a3, a3, -47
 	addw	a2, a2, a3
-	sltiu	a2, a2, -5
 	lui	a3, 2
 	addiw	a3, a3, 12
 	xor	a1, a1, a3
+	sltiu	a2, a2, -5
 	snez	a1, a1
 	and	a1, a1, a2
 	and	a0, a0, a1

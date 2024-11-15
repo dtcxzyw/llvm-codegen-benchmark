@@ -7,8 +7,8 @@ func0000000000000008:                   # @func0000000000000008
 	lui	a2, 131072
 	addiw	a2, a2, 361
 	add	a1, a1, a2
-	sltiu	a0, a0, 64
 	lui	a2, 262144
+	sltiu	a0, a0, 64
 	addiw	a2, a2, 369
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
@@ -21,8 +21,8 @@ func0000000000000004:                   # @func0000000000000004
 	czero.nez	a1, a2, a1
 	lui	a2, 53248
 	add	a1, a1, a2
-	sltiu	a0, a0, 81
 	lui	a2, 49152
+	sltiu	a0, a0, 81
 	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2
@@ -39,9 +39,9 @@ func000000000000000a:                   # @func000000000000000a
 	andi	a1, a1, 1
 	li	a2, 7
 	czero.nez	a1, a2, a1
-	addi	a1, a1, -55
-	slti	a0, a0, 97
 	li	a2, -87
+	slti	a0, a0, 97
+	addi	a1, a1, -55
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
@@ -51,9 +51,9 @@ func0000000000000006:                   # @func0000000000000006
 	andi	a1, a1, 1
 	li	a2, 42
 	czero.nez	a1, a2, a1
-	addi	a1, a1, 46
-	slti	a0, a0, 0
 	li	a2, 98
+	slti	a0, a0, 0
+	addi	a1, a1, 46
 	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2

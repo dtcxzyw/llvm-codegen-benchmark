@@ -7,8 +7,8 @@ func0000000000000045:                   # @func0000000000000045
 	ret
 func0000000000000010:                   # @func0000000000000010
 	andi	a2, a2, 255
-	addi	a2, a2, -1
 	li	a3, 22
+	addi	a2, a2, -1
 	czero.nez	a2, a3, a2
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -31,8 +31,8 @@ func00000000000000a5:                   # @func00000000000000a5
 	ret
 func0000000000000085:                   # @func0000000000000085
 	andi	a2, a2, 255
-	sltiu	a2, a2, 127
 	li	a3, -34
+	sltiu	a2, a2, 127
 	czero.nez	a2, a3, a2
 	add	a0, a0, a1
 	addw	a0, a0, a2

@@ -15,8 +15,8 @@ func000000000000002a:                   # @func000000000000002a
 	vfsub.vv	v8, v8, v12
 	fmv.w.x	fa5, zero
 	vmflt.vf	v0, v8, fa5
-	vfneg.v	v8, v8, v0.t
 	lui	a0, 14336
+	vfneg.v	v8, v8, v0.t
 	fmv.w.x	fa5, a0
 	vmfle.vf	v0, v8, fa5
 	ret

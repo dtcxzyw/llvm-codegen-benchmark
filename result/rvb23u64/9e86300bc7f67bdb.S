@@ -95,8 +95,8 @@ func0000000000000044:                   # @func0000000000000044
 	ret
 func0000000000000081:                   # @func0000000000000081
 	sltiu	a1, a1, 21
-	xori	a1, a1, 1
 	addi	a0, a0, -5
+	xori	a1, a1, 1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -165,8 +165,8 @@ func0000000000000048:                   # @func0000000000000048
 	ret
 func00000000000000a4:                   # @func00000000000000a4
 	slti	a1, a1, 8
-	xori	a1, a1, 1
 	lui	a2, 8
+	xori	a1, a1, 1
 	addiw	a2, a2, -767
 	sltu	a0, a0, a2
 	and	a0, a0, a1

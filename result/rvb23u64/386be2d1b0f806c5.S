@@ -2,10 +2,10 @@ func000000000000000b:                   # @func000000000000000b
 	sext.w	a2, a2
 	sext.w	a1, a1
 	slt	a1, a1, a2
+	lui	a2, 1048528
 	xori	a1, a1, 1
 	and	a0, a0, a1
-	lui	a1, 1048528
-	czero.nez	a0, a1, a0
+	czero.nez	a0, a2, a0
 	lui	a1, 524608
 	add	a0, a0, a1
 	ret

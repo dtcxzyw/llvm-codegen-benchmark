@@ -5,8 +5,8 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000007:                   # @func0000000000000007
 	mul	a0, a0, a1
-	srli	a0, a0, 15
 	li	a1, 31
+	srli	a0, a0, 15
 	slli	a1, a1, 10
 	and	a0, a0, a1
 	ret
@@ -27,8 +27,8 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func0000000000000000:                   # @func0000000000000000
 	mul	a0, a0, a1
-	srli	a0, a0, 8
 	lui	a1, 4080
+	srli	a0, a0, 8
 	addiw	a1, a1, 255
 	and	a0, a0, a1
 	ret

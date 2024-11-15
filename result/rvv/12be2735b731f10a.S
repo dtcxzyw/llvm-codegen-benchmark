@@ -25,9 +25,9 @@ func0000000000000003:                   # @func0000000000000003
 	li	a0, -128
 	vsetivli	zero, 4, e8, mf4, ta, ma
 	vxor.vx	v8, v8, a0
+	li	a0, -160
 	vsetvli	zero, zero, e16, mf2, ta, ma
 	vzext.vf2	v9, v8
-	li	a0, -160
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmv.v.x	v10, a0
 	vsetvli	zero, zero, e16, mf2, ta, ma

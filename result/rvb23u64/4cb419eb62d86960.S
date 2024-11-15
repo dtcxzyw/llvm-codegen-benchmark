@@ -8,12 +8,12 @@ func0000000000000003:                   # @func0000000000000003
 func0000000000000000:                   # @func0000000000000000
 	andi	a1, a1, 1
 	lui	a2, 28
-	czero.nez	a1, a2, a1
 	andi	a0, a0, 1
+	czero.nez	a1, a2, a1
+	lui	a2, 262148
 	slli	a0, a0, 15
 	or	a0, a0, a1
-	lui	a1, 262148
-	addiw	a1, a1, 128
+	addiw	a1, a2, 128
 	or	a0, a0, a1
 	ret
 func0000000000000002:                   # @func0000000000000002

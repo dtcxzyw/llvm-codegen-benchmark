@@ -11,8 +11,8 @@ func0000000000000003:                   # @func0000000000000003
 	vsll.vi	v10, v10, 6
 	li	a0, 1984
 	vand.vx	v10, v10, a0
-	vor.vv	v8, v10, v8
 	lui	a0, 16
+	vor.vv	v8, v10, v8
 	addi	a0, a0, -3
 	vmerge.vxm	v8, v8, a0, v0
 	ret

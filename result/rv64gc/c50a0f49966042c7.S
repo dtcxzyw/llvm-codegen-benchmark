@@ -5,8 +5,8 @@ func000000000000000d:                   # @func000000000000000d
 	ret
 func0000000000000001:                   # @func0000000000000001
 	slli	a1, a1, 32
-	srli	a1, a1, 32
 	slli	a0, a0, 32
+	srli	a1, a1, 32
 	srli	a0, a0, 32
 	sub	a0, a0, a1
 	ret
@@ -29,8 +29,8 @@ func000000000000000b:                   # @func000000000000000b
 	ret
 func0000000000000003:                   # @func0000000000000003
 	slli	a1, a1, 32
-	srli	a1, a1, 32
 	slli	a0, a0, 32
+	srli	a1, a1, 32
 	srli	a0, a0, 32
 	sub	a0, a0, a1
 	ret

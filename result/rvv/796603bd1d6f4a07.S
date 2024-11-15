@@ -11,12 +11,12 @@ func0000000000000015:                   # @func0000000000000015
 	ret
 func0000000000000010:                   # @func0000000000000010
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsub.vv	v8, v8, v10
-	vsrl.vi	v10, v8, 4
+	vsub.vv	v10, v8, v10
 	li	a0, -1
 	slli	a0, a0, 32
 	vmv.v.x	v8, a0
 	lui	a0, 427198
+	vsrl.vi	v10, v10, 4
 	addi	a0, a0, -1517
 	slli	a0, a0, 32
 	vmacc.vx	v8, a0, v10
@@ -34,11 +34,11 @@ func000000000000001d:                   # @func000000000000001d
 	ret
 func0000000000000012:                   # @func0000000000000012
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsub.vv	v8, v8, v10
-	vsrl.vi	v10, v8, 3
+	vsub.vv	v10, v8, v10
 	bseti	a0, zero, 32
 	vmv.v.x	v8, a0
 	lui	a0, 699051
+	vsrl.vi	v10, v10, 3
 	addi	a0, a0, -1365
 	slli	a0, a0, 32
 	vmacc.vx	v8, a0, v10

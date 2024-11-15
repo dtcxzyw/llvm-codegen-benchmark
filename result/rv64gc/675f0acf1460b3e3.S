@@ -37,8 +37,8 @@ func000000000000017c:                   # @func000000000000017c
 	ret
 func00000000000001d1:                   # @func00000000000001d1
 	andi	a1, a1, 255
-	slli	a1, a1, 8
 	slli	a0, a0, 48
+	slli	a1, a1, 8
 	srli	a0, a0, 48
 	or	a0, a0, a1
 	seqz	a0, a0

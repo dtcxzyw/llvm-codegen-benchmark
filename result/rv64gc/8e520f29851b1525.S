@@ -3,9 +3,9 @@ func0000000000000018:                   # @func0000000000000018
 	mv	a0, a1
 	bnez	a3, .LBB0_2
 	srliw	a0, a2, 7
+	lui	a1, 1048555
 	sltiu	a0, a0, 675
 	addi	a0, a0, -1
-	lui	a1, 1048555
 	addi	a1, a1, -384
 	and	a0, a0, a1
 	addw	a0, a0, a2

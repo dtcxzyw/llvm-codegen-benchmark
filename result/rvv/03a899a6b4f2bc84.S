@@ -2,9 +2,9 @@ func000000000000000c:                   # @func000000000000000c
 	li	a0, 32
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vor.vx	v10, v8, a0
-	vmerge.vvm	v8, v10, v8, v0
 	lui	a0, 33825
 	addi	a0, a0, 133
+	vmerge.vvm	v8, v10, v8, v0
 	vmulhu.vx	v10, v8, a0
 	vsub.vv	v12, v8, v10
 	vsrl.vi	v12, v12, 1

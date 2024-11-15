@@ -57,8 +57,8 @@ func00000000000000cc:                   # @func00000000000000cc
 	sext.w	a0, a0
 	srlw	a1, a1, a2
 	andi	a1, a1, 255
-	snez	a1, a1
 	addi	a0, a0, -3
+	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

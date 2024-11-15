@@ -3,8 +3,8 @@ func0000000000000011:                   # @func0000000000000011
 	vmseq.vi	v0, v12, 0
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmv.v.i	v9, 0
-	vmerge.vim	v9, v9, 1, v0
 	li	a0, 35
+	vmerge.vim	v9, v9, 1, v0
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmseq.vi	v0, v10, 0
 	vsetvli	zero, zero, e8, mf2, ta, ma
@@ -17,8 +17,8 @@ func0000000000000044:                   # @func0000000000000044
 	vmsltu.vx	v0, v12, a0
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmv.v.i	v9, 0
-	vmerge.vim	v9, v9, 1, v0
 	lui	a0, 4096
+	vmerge.vim	v9, v9, 1, v0
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsltu.vx	v0, v10, a0
 	vsetvli	zero, zero, e8, mf2, ta, ma

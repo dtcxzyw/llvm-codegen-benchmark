@@ -19,8 +19,8 @@ func0000000000000028:                   # @func0000000000000028
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v10, v10, 8
 	vmulhu.vx	v10, v10, a0
-	vsrl.vi	v10, v10, 10
 	li	a0, -60
+	vsrl.vi	v10, v10, 10
 	zext.w	a0, a0
 	vmacc.vx	v10, a0, v8
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -33,8 +33,8 @@ func000000000000003c:                   # @func000000000000003c
 	ld	a0, %lo(.LCPI2_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulhu.vx	v10, v10, a0
-	vsrl.vi	v10, v10, 31
 	li	a0, -24
+	vsrl.vi	v10, v10, 31
 	zext.w	a0, a0
 	vmacc.vx	v10, a0, v8
 	vsetvli	zero, zero, e32, m1, ta, ma

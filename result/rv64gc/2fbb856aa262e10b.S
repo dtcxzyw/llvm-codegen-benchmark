@@ -1,15 +1,15 @@
 func0000000000000002:                   # @func0000000000000002
 	add	a1, a1, a2
-	srli	a1, a1, 12
 	lui	a2, 1
+	srli	a1, a1, 12
 	addiw	a2, a2, -16
 	and	a1, a1, a2
 	add	a0, a0, a1
 	ret
 func000000000000000a:                   # @func000000000000000a
 	add	a1, a1, a2
-	srli	a1, a1, 12
 	lui	a2, 1
+	srli	a1, a1, 12
 	addiw	a2, a2, -16
 	and	a1, a1, a2
 	add	a0, a0, a1

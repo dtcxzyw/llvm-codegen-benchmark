@@ -4,11 +4,11 @@ func0000000000000008:                   # @func0000000000000008
 	li	a0, -125
 	slli	a0, a0, 26
 	addi	a1, a0, 127
+	addi	a0, a0, 125
 	slli	a1, a1, 12
 	addi	a1, a1, -193
 	vmv.v.x	v10, a1
 	vmacc.vv	v10, v8, v12
-	addi	a0, a0, 125
 	slli	a0, a0, 12
 	vmsltu.vx	v0, v10, a0
 	ret
@@ -18,11 +18,11 @@ func0000000000000058:                   # @func0000000000000058
 	li	a0, -125
 	slli	a0, a0, 26
 	addi	a1, a0, 127
+	addi	a0, a0, 125
 	slli	a1, a1, 12
 	addi	a1, a1, -193
 	vmv.v.x	v10, a1
 	vmacc.vv	v10, v8, v12
-	addi	a0, a0, 125
 	slli	a0, a0, 12
 	vmsltu.vx	v0, v10, a0
 	ret
@@ -31,8 +31,8 @@ func0000000000000054:                   # @func0000000000000054
 	vsext.vf2	v12, v10
 	lui	a0, 524288
 	vmv.v.x	v10, a0
-	vmacc.vv	v10, v8, v12
 	li	a0, -1
+	vmacc.vv	v10, v8, v12
 	slli	a0, a0, 32
 	vmsltu.vx	v0, v10, a0
 	ret

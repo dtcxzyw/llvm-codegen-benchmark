@@ -1,7 +1,7 @@
 func000000000000000f:                   # @func000000000000000f
 	slli	a1, a1, 44
-	srli	a1, a1, 44
 	slliw	a0, a0, 20
+	srli	a1, a1, 44
 	or	a0, a0, a1
 	lui	a1, 261888
 	xor	a0, a0, a1

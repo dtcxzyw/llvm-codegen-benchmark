@@ -1,7 +1,7 @@
 func000000000000000a:                   # @func000000000000000a
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	addi	a1, a1, -48
+	srai	a0, a0, 56
 	slli	a1, a1, 56
 	srai	a1, a1, 56
 	slt	a0, a0, a1
@@ -27,16 +27,16 @@ func0000000000000024:                   # @func0000000000000024
 	ret
 func000000000000003a:                   # @func000000000000003a
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	addi	a1, a1, 4
+	srai	a0, a0, 56
 	slli	a1, a1, 56
 	srai	a1, a1, 56
 	slt	a0, a0, a1
 	ret
 func0000000000000006:                   # @func0000000000000006
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	addi	a1, a1, 1
+	srai	a0, a0, 56
 	slli	a1, a1, 56
 	srai	a1, a1, 56
 	slt	a0, a1, a0
@@ -89,16 +89,16 @@ func000000000000000c:                   # @func000000000000000c
 	ret
 func000000000000001a:                   # @func000000000000001a
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	addi	a1, a1, -1
+	srai	a0, a0, 56
 	slli	a1, a1, 56
 	srai	a1, a1, 56
 	slt	a0, a0, a1
 	ret
 func0000000000000036:                   # @func0000000000000036
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	addi	a1, a1, 1
+	srai	a0, a0, 56
 	slli	a1, a1, 56
 	srai	a1, a1, 56
 	slt	a0, a1, a0

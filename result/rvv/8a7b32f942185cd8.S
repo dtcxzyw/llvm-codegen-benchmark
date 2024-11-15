@@ -28,8 +28,8 @@ func0000000000000001:                   # @func0000000000000001
 	vmv.v.x	v10, a0
 	lui	a0, 131072
 	vmerge.vxm	v10, v10, a0, v0
-	vor.vv	v8, v10, v8
 	li	a0, 9
+	vor.vv	v8, v10, v8
 	slli	a0, a0, 39
 	vor.vx	v8, v8, a0
 	ret

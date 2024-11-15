@@ -15,11 +15,11 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func0000000000000008:                   # @func0000000000000008
 	sub	a1, a1, a0
+	li	a0, 1
 	srli	a1, a1, 3
-	slli.uw	a0, a1, 3
-	li	a1, 1
-	slli	a1, a1, 35
-	addi	a1, a1, -8
+	slli	a0, a0, 35
+	slli.uw	a1, a1, 3
+	addi	a0, a0, -8
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

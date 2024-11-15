@@ -25,8 +25,8 @@ func000000000000001a:                   # @func000000000000001a
 	addw	a0, a0, a2
 	lui	a2, 349525
 	addiw	a2, a2, 1365
-	sltu	a0, a0, a2
 	slti	a1, a1, 4
+	sltu	a0, a0, a2
 	not	a1, a1
 	and	a0, a0, a1
 	ret

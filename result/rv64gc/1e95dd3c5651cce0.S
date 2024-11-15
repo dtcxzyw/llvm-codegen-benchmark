@@ -20,9 +20,9 @@ func000000000000002a:                   # @func000000000000002a
 func0000000000000022:                   # @func0000000000000022
 	fadd.s	fa5, fa1, fa2
 	fmv.w.x	fa4, zero
-	flt.s	a0, fa5, fa4
-	lui	a1, 260096
-	fmv.w.x	fa5, a1
-	flt.s	a1, fa0, fa5
+	lui	a0, 260096
+	flt.s	a1, fa5, fa4
+	fmv.w.x	fa5, a0
+	flt.s	a0, fa0, fa5
 	or	a0, a0, a1
 	ret

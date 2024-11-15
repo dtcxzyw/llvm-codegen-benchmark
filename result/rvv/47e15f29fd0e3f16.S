@@ -8,8 +8,8 @@ func00000000000000cc:                   # @func00000000000000cc
 func0000000000000044:                   # @func0000000000000044
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vadd.vi	v10, v10, -3
-	vmsleu.vi	v10, v10, 9
 	lui	a0, 1
+	vmsleu.vi	v10, v10, 9
 	addi	a0, a0, -2047
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsltu.vx	v11, v8, a0

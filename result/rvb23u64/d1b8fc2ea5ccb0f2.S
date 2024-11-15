@@ -93,8 +93,8 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func000000000000001a:                   # @func000000000000001a
 	slli	a1, a1, 3
-	addiw	a1, a1, -8
 	andi	a0, a0, -2041
+	addiw	a1, a1, -8
 	bclri	a0, a0, 11
 	or	a0, a0, a1
 	ret

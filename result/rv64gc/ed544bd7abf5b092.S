@@ -39,8 +39,8 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func0000000000000005:                   # @func0000000000000005
 	fmul.s	fa5, fa1, fa2
-	fsub.s	fa5, fa0, fa5
 	lui	a0, 260096
+	fsub.s	fa5, fa0, fa5
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa5, fa4
 	xori	a0, a0, 1
@@ -53,8 +53,8 @@ func000000000000000c:                   # @func000000000000000c
 	ret
 func000000000000000a:                   # @func000000000000000a
 	fmul.s	fa5, fa1, fa2
-	fsub.s	fa5, fa0, fa5
 	lui	a0, 260096
+	fsub.s	fa5, fa0, fa5
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa5, fa4
 	ret

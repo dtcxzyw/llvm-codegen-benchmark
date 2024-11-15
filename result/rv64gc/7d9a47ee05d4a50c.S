@@ -19,11 +19,11 @@ func0000000000000110:                   # @func0000000000000110
 	lui	a3, 1048573
 	addi	a4, a3, 287
 	addw	a2, a2, a4
+	lui	a4, 1048572
 	addiw	a3, a3, 303
+	addiw	a4, a4, 399
+	sltu	a1, a1, a4
 	sltu	a2, a2, a3
-	lui	a3, 1048572
-	addiw	a3, a3, 399
-	sltu	a1, a1, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -48,8 +48,8 @@ func0000000000000304:                   # @func0000000000000304
 	sext.w	a1, a1
 	sext.w	a2, a2
 	addi	a2, a2, -2
-	snez	a2, a2
 	seqz	a1, a1
+	snez	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

@@ -16,8 +16,8 @@ func000000000000001a:                   # @func000000000000001a
 	li	a0, 255
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v8, a0
-	vmseq.vi	v12, v10, 0
 	li	a0, 1023
+	vmseq.vi	v12, v10, 0
 	vmsgt.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	ret
@@ -92,8 +92,8 @@ func0000000000000016:                   # @func0000000000000016
 func00000000000000c6:                   # @func00000000000000c6
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v10, v8, -9
-	vmsne.vi	v12, v10, 4
 	li	a0, 18
+	vmsne.vi	v12, v10, 4
 	vmslt.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	ret

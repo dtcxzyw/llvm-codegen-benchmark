@@ -58,8 +58,8 @@ func0000000000000027:                   # @func0000000000000027
 	ret
 func00000000000000d2:                   # @func00000000000000d2
 	flt.s	a0, fa1, fa2
-	xori	a0, a0, 1
 	lui	a1, 2048
+	xori	a0, a0, 1
 	fmv.w.x	fa5, a1
 	flt.s	a1, fa0, fa5
 	and	a0, a0, a1

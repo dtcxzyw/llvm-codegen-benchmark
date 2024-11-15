@@ -2,8 +2,8 @@ func00000000000000ac:                   # @func00000000000000ac
 	sext.w	a1, a1
 	sext.w	a2, a2
 	slti	a2, a2, 4
-	xori	a2, a2, 1
 	addi	a1, a1, -772
+	xori	a2, a2, 1
 	snez	a1, a1
 	or	a1, a1, a2
 	and	a0, a0, a1
@@ -35,8 +35,8 @@ func000000000000001c:                   # @func000000000000001c
 	sext.w	a1, a1
 	sext.w	a2, a2
 	addi	a2, a2, -37
-	seqz	a2, a2
 	addi	a1, a1, -2
+	seqz	a2, a2
 	snez	a1, a1
 	or	a1, a1, a2
 	and	a0, a0, a1
@@ -45,8 +45,8 @@ func0000000000000011:                   # @func0000000000000011
 	sext.w	a1, a1
 	sext.w	a2, a2
 	addi	a2, a2, -38
-	seqz	a2, a2
 	addi	a1, a1, -41
+	seqz	a2, a2
 	seqz	a1, a1
 	or	a1, a1, a2
 	and	a0, a0, a1

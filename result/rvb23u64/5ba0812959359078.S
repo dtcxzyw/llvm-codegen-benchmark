@@ -18,8 +18,8 @@ func0000000000000038:                   # @func0000000000000038
 	ret
 func00000000000000f1:                   # @func00000000000000f1
 	slli	a2, a2, 61
-	srli	a2, a2, 43
 	or	a0, a0, a1
+	srli	a2, a2, 43
 	or	a0, a0, a2
 	sext.w	a0, a0
 	lui	a1, 272
@@ -28,11 +28,11 @@ func00000000000000f1:                   # @func00000000000000f1
 	ret
 func00000000000000fc:                   # @func00000000000000fc
 	slli	a2, a2, 61
-	srli	a2, a2, 43
 	or	a0, a0, a1
+	lui	a1, 272
+	srli	a2, a2, 43
 	or	a0, a0, a2
 	sext.w	a0, a0
-	lui	a1, 272
 	addiw	a1, a1, 1
 	xor	a0, a0, a1
 	snez	a0, a0

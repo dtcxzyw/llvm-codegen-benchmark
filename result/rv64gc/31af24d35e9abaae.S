@@ -1,9 +1,9 @@
 func0000000000000008:                   # @func0000000000000008
 	slli	a1, a1, 63
+	slli	a0, a0, 47
 	srai	a1, a1, 63
 	and	a1, a1, a2
 	sext.w	a1, a1
-	slli	a0, a0, 47
 	srli	a0, a0, 47
 	sltu	a0, a1, a0
 	ret

@@ -1,8 +1,8 @@
 func0000000000000088:                   # @func0000000000000088
 	fclass.d	a0, fa1
+	fli.d	fa5, inf
 	andi	a0, a0, 129
 	snez	a0, a0
-	fli.d	fa5, inf
 	feq.d	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
@@ -23,9 +23,9 @@ func00000000000000c4:                   # @func00000000000000c4
 	.quad	0x4062c00000000000              # double 150
 func00000000000000a4:                   # @func00000000000000a4
 	lui	a0, %hi(.LCPI2_0)
+	lui	a1, %hi(.LCPI2_1)
 	fld	fa5, %lo(.LCPI2_0)(a0)
-	lui	a0, %hi(.LCPI2_1)
-	fld	fa4, %lo(.LCPI2_1)(a0)
+	fld	fa4, %lo(.LCPI2_1)(a1)
 	fabs.d	fa3, fa1
 	fle.d	a0, fa3, fa5
 	flt.d	a1, fa4, fa0
@@ -44,9 +44,9 @@ func0000000000000022:                   # @func0000000000000022
 	ret
 func0000000000000077:                   # @func0000000000000077
 	fclass.d	a0, fa1
+	fli.d	fa5, inf
 	andi	a0, a0, 894
 	snez	a0, a0
-	fli.d	fa5, inf
 	feq.d	a1, fa0, fa5
 	andn	a0, a0, a1
 	ret
@@ -60,9 +60,9 @@ func0000000000000188:                   # @func0000000000000188
 	ret
 func0000000000000066:                   # @func0000000000000066
 	fclass.d	a0, fa1
+	fli.d	fa5, inf
 	andi	a0, a0, 126
 	snez	a0, a0
-	fli.d	fa5, inf
 	flt.d	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
@@ -79,25 +79,25 @@ func0000000000000122:                   # @func0000000000000122
 	ret
 func0000000000000098:                   # @func0000000000000098
 	fclass.d	a0, fa1
+	fli.d	fa5, 1.0
 	andi	a0, a0, 897
 	snez	a0, a0
-	fli.d	fa5, 1.0
 	feq.d	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
 func000000000000006a:                   # @func000000000000006a
 	fclass.d	a0, fa1
+	fli.d	fa5, 1.0
 	andi	a0, a0, 126
 	snez	a0, a0
-	fli.d	fa5, 1.0
 	fle.d	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
 func000000000000006c:                   # @func000000000000006c
 	fclass.d	a0, fa1
+	fli.d	fa5, 1.0
 	andi	a0, a0, 126
 	snez	a0, a0
-	fli.d	fa5, 1.0
 	fle.d	a1, fa5, fa0
 	and	a0, a0, a1
 	ret
@@ -114,9 +114,9 @@ func0000000000000084:                   # @func0000000000000084
 	ret
 func0000000000000087:                   # @func0000000000000087
 	fclass.d	a0, fa1
+	fmv.d.x	fa5, zero
 	andi	a0, a0, 129
 	snez	a0, a0
-	fmv.d.x	fa5, zero
 	feq.d	a1, fa0, fa5
 	andn	a0, a0, a1
 	ret
@@ -130,9 +130,9 @@ func0000000000000028:                   # @func0000000000000028
 	ret
 func0000000000000086:                   # @func0000000000000086
 	fclass.d	a0, fa1
+	fmv.d.x	fa5, zero
 	andi	a0, a0, 126
 	snez	a0, a0
-	fmv.d.x	fa5, zero
 	feq.d	a1, fa0, fa5
 	and	a0, a0, a1
 	ret

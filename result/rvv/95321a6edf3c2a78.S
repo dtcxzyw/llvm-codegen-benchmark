@@ -18,8 +18,8 @@ func0000000000000048:                   # @func0000000000000048
 	vsrl.vx	v12, v12, a0
 	vmul.vv	v10, v12, v10
 	vsll.vx	v10, v10, a0
-	vadd.vv	v8, v10, v8
 	li	a0, -1
+	vadd.vv	v8, v10, v8
 	slli	a0, a0, 32
 	vand.vx	v8, v8, a0
 	ret

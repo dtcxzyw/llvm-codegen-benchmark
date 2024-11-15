@@ -1,7 +1,7 @@
 func0000000000000030:                   # @func0000000000000030
 	lui	a3, 28
-	addiw	a3, a3, 512
 	slli	a2, a2, 59
+	addiw	a3, a3, 512
 	mulhu	a2, a2, a3
 	add	a0, a0, a1
 	addw	a0, a0, a2

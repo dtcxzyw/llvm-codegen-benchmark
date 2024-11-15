@@ -116,8 +116,8 @@ func00000000000000b8:                   # @func00000000000000b8
 	lui	a1, 273536
 	fmv.w.x	fa5, a1
 	flt.s	a1, fa5, fa1
-	andn	a0, a0, a1
 	fmv.w.x	fa5, zero
+	andn	a0, a0, a1
 	feq.s	a1, fa0, fa5
 	and	a0, a0, a1
 	ret

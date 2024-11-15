@@ -1,10 +1,10 @@
 func0000000000000023:                   # @func0000000000000023
 	sext.w	a1, a1
 	sext.w	a2, a2
-	snez	a2, a2
-	slli	a2, a2, 19
 	lui	a3, 2
+	snez	a2, a2
 	addiw	a3, a3, -945
+	slli	a2, a2, 19
 	xor	a1, a1, a3
 	seqz	a1, a1
 	addi	a1, a1, -1

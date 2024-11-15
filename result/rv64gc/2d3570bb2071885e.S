@@ -177,9 +177,9 @@ func000000000000006a:                   # @func000000000000006a
 func000000000000006d:                   # @func000000000000006d
 	lui	a0, %hi(.LCPI21_0)
 	fld	fa5, %lo(.LCPI21_0)(a0)
-	flt.d	a0, fa2, fa5
-	flt.d	a1, fa0, fa1
-	not	a1, a1
+	flt.d	a0, fa0, fa1
+	flt.d	a1, fa2, fa5
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 .LCPI22_0:

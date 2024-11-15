@@ -47,26 +47,26 @@ func0000000000000001:                   # @func0000000000000001
 func000000000000005a:                   # @func000000000000005a
 	li	a2, 1000
 	mul	a1, a1, a2
+	lui	a2, 490
 	addw	a0, a0, a1
-	lui	a1, 490
-	addiw	a1, a1, -1018
+	addiw	a1, a2, -1018
 	slt	a0, a1, a0
 	ret
 func000000000000000a:                   # @func000000000000000a
 	li	a2, 10
 	mul	a1, a1, a2
+	lui	a2, 16
 	addw	a0, a0, a1
-	lui	a1, 16
-	addiw	a1, a1, -1
-	slt	a0, a1, a0
+	addiw	a2, a2, -1
+	slt	a0, a2, a0
 	ret
 func00000000000000f8:                   # @func00000000000000f8
 	lui	a2, 244
 	addi	a2, a2, 576
 	mul	a1, a1, a2
+	lui	a2, 244141
 	addw	a0, a0, a1
-	lui	a1, 244141
-	addiw	a1, a1, -1537
+	addiw	a1, a2, -1537
 	sltu	a0, a1, a0
 	ret
 func000000000000004a:                   # @func000000000000004a

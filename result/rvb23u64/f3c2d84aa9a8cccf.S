@@ -17,10 +17,10 @@ func0000000000000010:                   # @func0000000000000010
 	ret
 func0000000000000022:                   # @func0000000000000022
 	addiw	a0, a0, -1
-	addi	a1, a0, -63
-	czero.eqz	a0, a0, a1
-	li	a2, 112
-	czero.nez	a1, a2, a1
+	li	a1, 112
+	addi	a2, a0, -63
+	czero.eqz	a0, a0, a2
+	czero.nez	a1, a1, a2
 	or	a0, a0, a1
 	zext.w	a0, a0
 	ret

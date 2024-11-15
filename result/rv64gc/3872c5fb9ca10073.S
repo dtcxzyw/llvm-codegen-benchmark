@@ -43,8 +43,8 @@ func0000000000000104:                   # @func0000000000000104
 	ret
 func0000000000000108:                   # @func0000000000000108
 	add	a1, a1, a0
-	addi	a1, a1, -1
 	neg	a0, a0
+	addi	a1, a1, -1
 	and	a0, a0, a1
 	li	a1, -17
 	srli	a1, a1, 2
@@ -59,8 +59,8 @@ func0000000000000174:                   # @func0000000000000174
 	ret
 func0000000000000154:                   # @func0000000000000154
 	add	a1, a1, a0
-	addi	a1, a1, -1
 	neg	a0, a0
+	addi	a1, a1, -1
 	and	a0, a0, a1
 	lui	a1, 1
 	addiw	a1, a1, 1
@@ -68,8 +68,8 @@ func0000000000000154:                   # @func0000000000000154
 	ret
 func0000000000000158:                   # @func0000000000000158
 	add	a1, a1, a0
-	addi	a1, a1, -1
 	neg	a0, a0
+	addi	a1, a1, -1
 	and	a0, a0, a1
 	li	a1, 7
 	slli	a1, a1, 60

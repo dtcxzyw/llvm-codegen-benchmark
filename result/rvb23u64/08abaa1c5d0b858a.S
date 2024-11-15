@@ -10,10 +10,10 @@ func0000000000000378:                   # @func0000000000000378
 	andi	a1, a1, 255
 	li	a2, 94
 	mul	a0, a0, a2
+	lui	a2, 2
 	add	a0, a0, a1
 	addiw	a0, a0, -161
-	lui	a1, 2
-	addiw	a1, a1, -982
+	addiw	a1, a2, -982
 	sltu	a0, a1, a0
 	ret
 func0000000000000766:                   # @func0000000000000766
@@ -33,8 +33,8 @@ func0000000000000356:                   # @func0000000000000356
 	ret
 func0000000000000541:                   # @func0000000000000541
 	andi	a1, a1, 255
-	addi	a1, a1, -48
 	li	a2, -10
+	addi	a1, a1, -48
 	mulw	a0, a0, a2
 	xor	a0, a0, a1
 	seqz	a0, a0

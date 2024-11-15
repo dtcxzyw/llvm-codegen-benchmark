@@ -17,9 +17,9 @@ func0000000000000062:                   # @func0000000000000062
 func0000000000000022:                   # @func0000000000000022
 	srli	a2, a1, 63
 	add	a1, a1, a2
-	srai	a1, a1, 1
 	li	a2, 63
 	bseti	a2, a2, 63
+	srai	a1, a1, 1
 	and	a1, a1, a2
 	bseti	a2, zero, 63
 	sltu	a1, a2, a1

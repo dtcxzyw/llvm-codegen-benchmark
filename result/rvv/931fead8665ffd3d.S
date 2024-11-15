@@ -11,8 +11,8 @@ func0000000000000116:                   # @func0000000000000116
 	vnsrl.wi	v12, v10, 0
 	li	a0, 25
 	vadd.vx	v9, v9, a0
-	vmseq.vv	v9, v9, v12
 	li	a0, 2024
+	vmseq.vv	v9, v9, v12
 	vmslt.vx	v8, v8, a0
 	vmand.mm	v0, v8, v9
 	ret
@@ -21,8 +21,8 @@ func000000000000011a:                   # @func000000000000011a
 	vnsrl.wi	v12, v10, 0
 	li	a0, 39
 	vadd.vx	v9, v9, a0
-	vmseq.vv	v9, v9, v12
 	li	a0, 2008
+	vmseq.vv	v9, v9, v12
 	vmsgt.vx	v8, v8, a0
 	vmand.mm	v0, v8, v9
 	ret

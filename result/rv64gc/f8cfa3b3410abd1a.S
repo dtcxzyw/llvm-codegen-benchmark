@@ -71,8 +71,8 @@ func000000000000001a:                   # @func000000000000001a
 	ret
 func0000000000000086:                   # @func0000000000000086
 	slli	a2, a2, 48
-	srli	a2, a2, 48
 	lui	a3, 16
+	srli	a2, a2, 48
 	addiw	a3, a3, -258
 	bltu	a3, a2, .LBB8_2
 	mv	a0, a1
@@ -82,8 +82,8 @@ func0000000000000086:                   # @func0000000000000086
 	ret
 func0000000000000081:                   # @func0000000000000081
 	slli	a2, a2, 48
-	srli	a2, a2, 48
 	lui	a3, 16
+	srli	a2, a2, 48
 	addiw	a3, a3, -258
 	bltu	a3, a2, .LBB9_2
 	mv	a0, a1
@@ -115,8 +115,8 @@ func0000000000000088:                   # @func0000000000000088
 	ret
 func000000000000004a:                   # @func000000000000004a
 	slli	a2, a2, 48
-	srli	a2, a2, 48
 	lui	a3, 8
+	srli	a2, a2, 48
 	addiw	a3, a3, 1
 	bltu	a2, a3, .LBB12_2
 	mv	a0, a1

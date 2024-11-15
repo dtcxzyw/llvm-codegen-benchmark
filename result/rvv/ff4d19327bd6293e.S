@@ -20,13 +20,13 @@ func0000000000000028:                   # @func0000000000000028
 	ret
 func0000000000000022:                   # @func0000000000000022
 	lui	a0, 276464
-	fmv.w.x	fa5, a0
+	fmv.w.x	fa5, zero
+	fmv.w.x	fa4, a0
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vfmul.vf	v8, v8, fa5
-	fmv.w.x	fa4, zero
-	vmflt.vf	v0, v8, fa4
-	vmerge.vim	v8, v8, 0, v0
+	vfmul.vf	v8, v8, fa4
 	vmflt.vf	v0, v8, fa5
+	vmerge.vim	v8, v8, 0, v0
+	vmflt.vf	v0, v8, fa4
 	ret
 .LCPI3_0:
 	.word	0x3dcccccd                      # float 0.100000001
@@ -47,14 +47,14 @@ func0000000000000024:                   # @func0000000000000024
 func000000000000002c:                   # @func000000000000002c
 	lui	a0, %hi(.LCPI4_0)
 	flw	fa5, %lo(.LCPI4_0)(a0)
+	fmv.w.x	fa4, zero
+	lui	a0, %hi(.LCPI4_1)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vf	v8, v8, fa5
-	fmv.w.x	fa5, zero
-	lui	a0, %hi(.LCPI4_1)
-	flw	fa4, %lo(.LCPI4_1)(a0)
-	vmflt.vf	v0, v8, fa5
+	flw	fa5, %lo(.LCPI4_1)(a0)
+	vmflt.vf	v0, v8, fa4
 	vmerge.vim	v8, v8, 0, v0
-	vmfge.vf	v0, v8, fa4
+	vmfge.vf	v0, v8, fa5
 	ret
 .LCPI5_0:
 	.word	0x3b808081                      # float 0.00392156886

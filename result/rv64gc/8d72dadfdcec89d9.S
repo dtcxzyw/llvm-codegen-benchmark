@@ -17,8 +17,8 @@ func00000000000000c2:                   # @func00000000000000c2
 	ret
 func00000000000000d0:                   # @func00000000000000d0
 	sext.w	a2, a1
-	slti	a2, a2, 0
 	andi	a1, a1, 15
+	slti	a2, a2, 0
 	sltiu	a1, a1, 11
 	or	a1, a1, a2
 	xori	a1, a1, 1

@@ -1,7 +1,7 @@
 func0000000000000020:                   # @func0000000000000020
 	bset	a2, zero, a2
-	slli	a2, a2, 6
 	slli	a0, a0, 6
+	slli	a2, a2, 6
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

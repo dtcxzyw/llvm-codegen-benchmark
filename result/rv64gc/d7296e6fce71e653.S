@@ -1,8 +1,8 @@
 func0000000000000011:                   # @func0000000000000011
 	andi	a1, a1, 255
 	or	a0, a0, a1
-	sext.w	a0, a0
 	lui	a1, 196384
+	sext.w	a0, a0
 	addiw	a1, a1, 274
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -11,10 +11,10 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func0000000000000014:                   # @func0000000000000014
 	andi	a1, a1, 255
+	lui	a2, 8
 	or	a0, a0, a1
 	sext.w	a1, a0
-	lui	a0, 8
-	addiw	a2, a0, 1132
+	addiw	a2, a2, 1132
 	li	a0, 1131
 	bltu	a1, a2, .LBB1_2
 	lui	a0, 8

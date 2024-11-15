@@ -39,8 +39,8 @@ func000000000000001b:                   # @func000000000000001b
 	ret
 func000000000000000c:                   # @func000000000000000c
 	slli	a2, a2, 32
-	srli	a2, a2, 8
 	slli	a1, a1, 32
+	srli	a2, a2, 8
 	srli	a1, a1, 32
 	or	a1, a1, a2
 	or	a0, a0, a1

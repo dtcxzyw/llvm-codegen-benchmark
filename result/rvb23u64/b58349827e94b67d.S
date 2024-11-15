@@ -1,8 +1,8 @@
 func000000000000001d:                   # @func000000000000001d
 	li	a2, 257
 	slli	a3, a2, 32
-	mul	a1, a1, a3
 	slli	a2, a2, 48
+	mul	a1, a1, a3
 	mul	a0, a0, a2
 	or	a0, a0, a1
 	ret

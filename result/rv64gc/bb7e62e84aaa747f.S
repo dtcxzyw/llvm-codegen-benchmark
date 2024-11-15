@@ -1,8 +1,8 @@
 func0000000000000000:                   # @func0000000000000000
 	add	a1, a1, a2
+	lui	a2, 21
 	subw	a1, a1, a0
-	lui	a0, 21
-	addi	a0, a0, 384
+	addi	a0, a2, 384
 	mulw	a0, a1, a0
 	ret
 func0000000000000008:                   # @func0000000000000008
@@ -31,8 +31,8 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000011:                   # @func0000000000000011
 	add	a1, a1, a2
+	lui	a2, 3
 	subw	a1, a1, a0
-	lui	a0, 3
-	addi	a0, a0, -703
+	addi	a0, a2, -703
 	mulw	a0, a1, a0
 	ret

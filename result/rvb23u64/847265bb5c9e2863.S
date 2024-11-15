@@ -25,9 +25,9 @@ func00000000000000bd:                   # @func00000000000000bd
 	ret
 func000000000000002c:                   # @func000000000000002c
 	lui	a1, 323584
+	lui	a2, 847872
 	fmv.w.x	fa5, a1
 	flt.s	a1, fa0, fa5
-	lui	a2, 847872
 	fmv.w.x	fa5, a2
 	fle.s	a2, fa5, fa0
 	and	a1, a1, a2

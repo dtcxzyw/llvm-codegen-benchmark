@@ -13,8 +13,8 @@ func0000000000000007:                   # @func0000000000000007
 	addi	a0, a0, 113
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmulhu.vx	v11, v10, a0
-	vsrl.vi	v11, v11, 15
 	lui	a0, 16
+	vsrl.vi	v11, v11, 15
 	addi	a0, a0, -15
 	vnmsub.vx	v11, a0, v10
 	vwaddu.wv	v8, v8, v11

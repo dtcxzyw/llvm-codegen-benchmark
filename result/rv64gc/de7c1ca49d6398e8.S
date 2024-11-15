@@ -29,8 +29,8 @@ func000000000000000a:                   # @func000000000000000a
 	fmv.w.x	fa5, a0
 	lui	a0, 258048
 	fmv.w.x	fa4, a0
-	fmadd.s	fa5, fa0, fa4, fa5
 	lui	a0, 262144
+	fmadd.s	fa5, fa0, fa4, fa5
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa5, fa4
 	ret
@@ -39,8 +39,8 @@ func000000000000000d:                   # @func000000000000000d
 	fmv.w.x	fa5, a0
 	lui	a0, 262144
 	fmv.w.x	fa4, a0
-	fmadd.s	fa5, fa0, fa4, fa5
 	lui	a0, 260096
+	fmadd.s	fa5, fa0, fa4, fa5
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	xori	a0, a0, 1
@@ -67,8 +67,8 @@ func0000000000000003:                   # @func0000000000000003
 	fmv.w.x	fa5, a0
 	lui	a0, 262144
 	fmv.w.x	fa4, a0
-	fmadd.s	fa5, fa0, fa4, fa5
 	lui	a0, 260096
+	fmadd.s	fa5, fa0, fa4, fa5
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa4, fa5
 	xori	a0, a0, 1

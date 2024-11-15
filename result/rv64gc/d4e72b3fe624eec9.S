@@ -10,8 +10,8 @@ func000000000000001f:                   # @func000000000000001f
 	sext.w	a0, a0
 	li	a1, 40
 	mul	a0, a0, a1
-	addi	a0, a0, 47
 	lui	a1, 917504
+	addi	a0, a0, 47
 	srli	a1, a1, 26
 	and	a0, a0, a1
 	ret

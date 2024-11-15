@@ -8,8 +8,8 @@ func0000000000000000:                   # @func0000000000000000
 func000000000000000d:                   # @func000000000000000d
 	li	a1, 103
 	mul	a0, a0, a1
-	srliw	a0, a0, 10
 	lui	a1, 3
+	srliw	a0, a0, 10
 	addiw	a1, a1, 48
 	or	a0, a0, a1
 	ret

@@ -30,8 +30,8 @@ func000000000000001f:                   # @func000000000000001f
 	ret
 func0000000000000080:                   # @func0000000000000080
 	sext.w	a1, a1
-	sltiu	a1, a1, 2
 	lui	a2, 1048402
+	sltiu	a1, a1, 2
 	addiw	a2, a2, -1728
 	czero.eqz	a1, a2, a1
 	lui	a2, 392
@@ -41,8 +41,8 @@ func0000000000000080:                   # @func0000000000000080
 	ret
 func0000000000000082:                   # @func0000000000000082
 	sext.w	a1, a1
-	sltiu	a1, a1, 2
 	lui	a2, 1048402
+	sltiu	a1, a1, 2
 	addiw	a2, a2, -1728
 	czero.eqz	a1, a2, a1
 	lui	a2, 378

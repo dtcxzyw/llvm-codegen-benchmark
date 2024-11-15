@@ -65,8 +65,8 @@ func0000000000000015:                   # @func0000000000000015
 func000000000000003e:                   # @func000000000000003e
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v13, v12
-	vwaddu.wv	v14, v10, v13
 	lui	a0, 1023
+	vwaddu.wv	v14, v10, v13
 	addi	a0, a0, 1712
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmacc.vx	v8, a0, v14

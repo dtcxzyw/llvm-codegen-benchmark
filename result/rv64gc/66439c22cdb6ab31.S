@@ -9,8 +9,8 @@ func000000000000000c:                   # @func000000000000000c
 	ret
 func000000000000000b:                   # @func000000000000000b
 	slli	a2, a2, 48
-	srai	a2, a2, 48
 	slli	a1, a1, 48
+	srai	a2, a2, 48
 	srai	a1, a1, 48
 	slt	a1, a1, a2
 	xor	a0, a0, a1
@@ -18,8 +18,8 @@ func000000000000000b:                   # @func000000000000000b
 	ret
 func0000000000000006:                   # @func0000000000000006
 	slli	a2, a2, 48
-	srai	a2, a2, 48
 	slli	a1, a1, 48
+	srai	a2, a2, 48
 	srai	a1, a1, 48
 	slt	a1, a1, a2
 	xor	a0, a0, a1
@@ -43,8 +43,8 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func000000000000000a:                   # @func000000000000000a
 	slli	a1, a1, 48
-	srai	a1, a1, 48
 	slli	a2, a2, 48
+	srai	a1, a1, 48
 	srai	a2, a2, 48
 	slt	a1, a2, a1
 	xor	a0, a0, a1

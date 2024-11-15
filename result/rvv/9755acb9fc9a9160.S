@@ -79,10 +79,10 @@ func0000000000000003:                   # @func0000000000000003
 func000000000000000d:                   # @func000000000000000d
 	lui	a0, %hi(.LCPI9_0)
 	flw	fa5, %lo(.LCPI9_0)(a0)
+	li	a0, 17
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmflt.vf	v10, v8, fa5
 	vmnot.m	v0, v10
-	li	a0, 17
 	vmv.v.x	v8, a0
 	vmerge.vim	v8, v8, 9, v0
 	ret

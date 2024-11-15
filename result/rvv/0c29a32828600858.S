@@ -78,8 +78,8 @@ func00000000000001b8:                   # @func00000000000001b8
 func000000000000019a:                   # @func000000000000019a
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v12, v12, v12
-	vor.vv	v8, v12, v8
 	li	a0, -32
+	vor.vv	v8, v12, v8
 	vadd.vx	v10, v10, a0
 	vmslt.vv	v0, v10, v8
 	ret

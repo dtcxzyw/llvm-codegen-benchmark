@@ -13,16 +13,16 @@ func000000000000001c:                   # @func000000000000001c
 	addiw	a2, a2, -1
 	and	a1, a1, a2
 	xor	a0, a0, a1
-	seqz	a0, a0
 	xor	a1, a1, a2
+	seqz	a0, a0
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
 func0000000000000044:                   # @func0000000000000044
 	sext.w	a0, a0
 	slli	a1, a1, 33
-	srli	a1, a1, 33
 	lui	a2, 5273
+	srli	a1, a1, 33
 	addiw	a2, a2, 1793
 	minu	a0, a0, a2
 	sltu	a0, a1, a0

@@ -37,8 +37,8 @@ func0000000000000011:                   # @func0000000000000011
 func0000000000000078:                   # @func0000000000000078
 	fli.d	fa5, inf
 	feq.d	a1, fa1, fa5
-	xori	a1, a1, 1
 	feq.d	a2, fa0, fa5
+	xori	a1, a1, 1
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -75,9 +75,9 @@ func00000000000000aa:                   # @func00000000000000aa
 func00000000000000bd:                   # @func00000000000000bd
 	fmv.d.x	fa5, zero
 	flt.d	a1, fa5, fa1
+	fli.d	fa5, 1.0
 	xori	a1, a1, 1
 	or	a0, a0, a1
-	fli.d	fa5, 1.0
 	flt.d	a1, fa0, fa5
 	xori	a1, a1, 1
 	or	a0, a0, a1
@@ -87,11 +87,11 @@ func00000000000000bd:                   # @func00000000000000bd
 func000000000000002a:                   # @func000000000000002a
 	lui	a1, %hi(.LCPI9_0)
 	fld	fa5, %lo(.LCPI9_0)(a1)
-	flt.d	a1, fa1, fa5
-	fmv.d.x	fa5, zero
-	fle.d	a2, fa0, fa5
-	or	a0, a0, a2
+	fmv.d.x	fa4, zero
+	fle.d	a1, fa0, fa4
+	flt.d	a2, fa1, fa5
 	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 func0000000000000044:                   # @func0000000000000044
 	fmv.d.x	fa5, zero

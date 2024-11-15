@@ -1,8 +1,8 @@
 func00000000000000f6:                   # @func00000000000000f6
 	sext.w	a0, a0
 	slli	a1, a0, 2
-	addi	a1, a1, 4
 	slti	a0, a0, -1
+	addi	a1, a1, 4
 	neg	a0, a0
 	or	a0, a0, a1
 	ret

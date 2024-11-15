@@ -19,8 +19,8 @@ func0000000000000002:                   # @func0000000000000002
 	slli	a0, a0, 52
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
-	vadd.vv	v10, v10, v8
 	li	a0, 511
+	vadd.vv	v10, v10, v8
 	slli	a0, a0, 53
 	vadd.vx	v10, v10, a0
 	vmerge.vvm	v8, v10, v8, v0

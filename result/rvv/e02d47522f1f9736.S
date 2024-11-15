@@ -41,8 +41,8 @@ func000000000000000c:                   # @func000000000000000c
 func000000000000000a:                   # @func000000000000000a
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
-	vadd.vi	v8, v10, 1
 	lui	a0, 524288
+	vadd.vi	v8, v10, 1
 	addi	a0, a0, 3
 	vand.vx	v8, v8, a0
 	vmsgt.vi	v0, v8, 0

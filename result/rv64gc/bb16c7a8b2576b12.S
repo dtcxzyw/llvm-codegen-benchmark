@@ -29,11 +29,11 @@ func000000000000004c:                   # @func000000000000004c
 	sext.w	a0, a0
 	addi	a2, a2, 2047
 	addi	a2, a2, 1
-	srli	a2, a2, 12
-	seqz	a2, a2
 	xor	a0, a0, a1
+	srli	a2, a2, 12
+	seqz	a1, a2
 	snez	a0, a0
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 func0000000000000316:                   # @func0000000000000316
 	sext.w	a1, a1

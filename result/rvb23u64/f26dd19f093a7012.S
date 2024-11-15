@@ -15,22 +15,22 @@ func0000000000000a90:                   # @func0000000000000a90
 func0000000000000888:                   # @func0000000000000888
 	add	a1, a1, a2
 	lui	a2, 1034740
+	srliw	a0, a0, 11
 	addi	a2, a2, 1024
 	add	a1, a1, a2
 	srliw	a1, a1, 4
 	sltiu	a1, a1, 477
-	srliw	a0, a0, 11
 	sltiu	a0, a0, 27
 	or	a0, a0, a1
 	ret
 func0000000000000a88:                   # @func0000000000000a88
 	add	a1, a1, a2
 	lui	a2, 1034754
+	srliw	a0, a0, 4
 	addi	a2, a2, 1024
 	add	a1, a1, a2
 	srliw	a1, a1, 11
 	sltiu	a1, a1, 27
-	srliw	a0, a0, 4
 	sltiu	a0, a0, 477
 	or	a0, a0, a1
 	ret
@@ -39,10 +39,10 @@ func0000000000000a28:                   # @func0000000000000a28
 	add	a1, a1, a2
 	lui	a2, 1034754
 	addi	a2, a2, 1024
+	binvi	a0, a0, 16
 	add	a1, a1, a2
 	srliw	a1, a1, 10
 	sltiu	a1, a1, 13
-	binvi	a0, a0, 16
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

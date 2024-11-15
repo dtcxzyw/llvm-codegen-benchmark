@@ -1,9 +1,9 @@
 func000000000000001a:                   # @func000000000000001a
 	xor	a1, a1, a2
+	lui	a2, 41
 	sext.w	a1, a1
 	sh1add	a0, a1, a0
-	lui	a1, 41
-	addiw	a1, a1, 682
+	addiw	a1, a2, 682
 	add	a0, a0, a1
 	ret
 func0000000000000018:                   # @func0000000000000018

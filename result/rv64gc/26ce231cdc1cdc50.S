@@ -1,7 +1,7 @@
 func0000000000000000:                   # @func0000000000000000
 	xori	a3, a2, 221
-	add	a1, a1, a3
 	srli	a2, a2, 51
+	add	a1, a1, a3
 	slli	a3, a3, 13
 	or	a2, a2, a3
 	xor	a1, a1, a2

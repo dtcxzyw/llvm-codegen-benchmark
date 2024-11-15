@@ -8,8 +8,8 @@ func0000000000000007:                   # @func0000000000000007
 	ret
 func0000000000000005:                   # @func0000000000000005
 	srliw	a2, a2, 31
-	slli	a2, a2, 31
 	andi	a1, a1, 2
+	slli	a2, a2, 31
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -17,8 +17,8 @@ func0000000000000003:                   # @func0000000000000003
 	li	a3, 1
 	slli	a3, a3, 11
 	addi	a4, a3, 1920
-	and	a2, a2, a4
 	and	a1, a1, a3
+	and	a2, a2, a4
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -31,8 +31,8 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func0000000000000004:                   # @func0000000000000004
 	srliw	a2, a2, 25
-	slli	a2, a2, 25
 	lui	a3, 248
+	slli	a2, a2, 25
 	and	a1, a1, a3
 	or	a1, a1, a2
 	or	a0, a0, a1

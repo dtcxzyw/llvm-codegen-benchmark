@@ -12,15 +12,15 @@ func0000000000000044:                   # @func0000000000000044
 	ret
 func0000000000000068:                   # @func0000000000000068
 	sub	a2, a2, a1
-	slti	a1, a2, 6
 	srli	a0, a0, 31
+	slti	a1, a2, 6
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
 func0000000000000241:                   # @func0000000000000241
 	sub	a2, a2, a1
-	sltiu	a1, a2, 32
 	addi	a0, a0, -32
+	sltiu	a1, a2, 32
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

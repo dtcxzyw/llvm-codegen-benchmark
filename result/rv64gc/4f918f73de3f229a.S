@@ -1,8 +1,8 @@
 func000000000000005d:                   # @func000000000000005d
 	li	a1, 292
+	lui	a2, 194192
 	subw	a1, a1, a0
 	slli	a0, a1, 48
-	lui	a2, 194192
 	mulhu	a0, a0, a2
 	srli	a0, a0, 16
 	subw	a1, a1, a0

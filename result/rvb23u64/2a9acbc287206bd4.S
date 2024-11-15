@@ -35,8 +35,8 @@ func0000000000000016:                   # @func0000000000000016
 	ret
 func000000000000001e:                   # @func000000000000001e
 	zext.h	a1, a1
-	slli	a1, a1, 4
 	zext.h	a0, a0
+	slli	a1, a1, 4
 	slli	a0, a0, 12
 	or	a0, a0, a1
 	ret

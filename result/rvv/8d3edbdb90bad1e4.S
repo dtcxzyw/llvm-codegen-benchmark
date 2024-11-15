@@ -1,8 +1,8 @@
 func0000000000000014:                   # @func0000000000000014
 	li	a0, -52
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vadd.vx	v10, v10, a0
 	vmv.v.i	v11, -2
+	vadd.vx	v10, v10, a0
 	vsll.vv	v10, v11, v10
 	vnsrl.wi	v11, v8, 0
 	vandn.vv	v8, v11, v10

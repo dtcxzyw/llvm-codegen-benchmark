@@ -1,8 +1,8 @@
 func00000000000000c1:                   # @func00000000000000c1
 	andi	a0, a0, 255
+	feq.d	a1, fa0, fa0
 	addi	a0, a0, -2
 	snez	a0, a0
-	feq.d	a1, fa0, fa0
 	not	a1, a1
 	and	a0, a0, a1
 	ret

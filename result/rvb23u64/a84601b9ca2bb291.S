@@ -26,8 +26,8 @@ func0000000000000034:                   # @func0000000000000034
 func0000000000000078:                   # @func0000000000000078
 	sext.w	a0, a0
 	sext.w	a1, a1
-	slli	a1, a1, 4
 	lui	a2, 524288
+	slli	a1, a1, 4
 	addiw	a2, a2, -2
 	sltu	a0, a2, a0
 	czero.nez	a0, a1, a0
@@ -38,9 +38,9 @@ func000000000000007a:                   # @func000000000000007a
 	lui	a2, 8
 	addiw	a2, a2, -2
 	slt	a0, a2, a0
-	czero.nez	a1, a1, a0
 	lui	a2, 32767
 	slli	a2, a2, 36
+	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
 	or	a0, a0, a1
 	ret

@@ -29,8 +29,8 @@ func00000000000000aa:                   # @func00000000000000aa
 	ret
 func0000000000000042:                   # @func0000000000000042
 	addi	a2, a2, 23
-	andi	a2, a2, -8
 	slli	a0, a0, 8
+	andi	a2, a2, -8
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 8
@@ -38,9 +38,9 @@ func0000000000000042:                   # @func0000000000000042
 func00000000000000ea:                   # @func00000000000000ea
 	addi	a2, a2, 387
 	lui	a3, 1048448
+	slli	a0, a0, 4
 	srli	a3, a3, 15
 	and	a2, a2, a3
-	slli	a0, a0, 4
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 4

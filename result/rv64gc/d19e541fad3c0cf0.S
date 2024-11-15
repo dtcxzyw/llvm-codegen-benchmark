@@ -1,7 +1,7 @@
 func0000000000000061:                   # @func0000000000000061
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	lui	a2, 240
+	srai	a0, a0, 56
 	and	a1, a1, a2
 	seqz	a1, a1
 	slti	a0, a0, 30

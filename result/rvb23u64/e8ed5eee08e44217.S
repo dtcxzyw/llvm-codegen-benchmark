@@ -6,8 +6,8 @@ func000000000000014a:                   # @func000000000000014a
 	ret
 func0000000000000010:                   # @func0000000000000010
 	add	a2, a2, a0
-	add	a0, a0, a2
 	sext.w	a1, a1
+	add	a0, a0, a2
 	add	a0, a0, a1
 	li	a1, 1490
 	sh2add	a0, a1, a0

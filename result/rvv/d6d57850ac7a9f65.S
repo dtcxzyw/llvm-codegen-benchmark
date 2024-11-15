@@ -19,8 +19,8 @@ func00000000000000c4:                   # @func00000000000000c4
 func0000000000000085:                   # @func0000000000000085
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vi	v12, v12, -16
-	vmsleu.vv	v14, v8, v12
 	li	a0, 95
+	vmsleu.vv	v14, v8, v12
 	vmsgtu.vx	v8, v10, a0
 	vmand.mm	v0, v14, v8
 	ret

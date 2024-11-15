@@ -46,9 +46,9 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func0000000000000036:                   # @func0000000000000036
 	sub	a1, a1, a2
+	lui	a2, 488
 	min	a0, a1, a0
-	lui	a1, 488
-	addiw	a1, a1, 1152
+	addiw	a1, a2, 1152
 	slt	a0, a0, a1
 	ret
 .LCPI10_0:

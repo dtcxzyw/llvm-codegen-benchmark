@@ -2,39 +2,39 @@
 	.quad	164703072086692425              # 0x249249249249249
 func0000000000000275:                   # @func0000000000000275
 	lui	a0, %hi(.LCPI0_0)
+	lui	a1, 299593
+	lui	a2, 748983
 	ld	a0, %lo(.LCPI0_0)(a0)
+	addiw	a1, a1, 585
+	addiw	a2, a2, -585
+	slli	a3, a1, 33
+	add	a1, a1, a3
+	slli	a3, a2, 33
+	add	a2, a2, a3
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsra.vi	v12, v12, 3
 	vmv.v.x	v14, a0
-	lui	a0, 299593
-	addiw	a0, a0, 585
-	slli	a1, a0, 33
-	add	a0, a0, a1
-	vmacc.vx	v14, a0, v12
+	vsra.vi	v12, v12, 3
 	vsub.vv	v8, v8, v10
 	vsra.vi	v8, v8, 3
-	lui	a0, 748983
-	addiw	a0, a0, -585
-	slli	a1, a0, 33
-	add	a0, a0, a1
-	vmul.vx	v8, v8, a0
+	vmacc.vx	v14, a1, v12
+	vmul.vx	v8, v8, a2
 	vmsleu.vv	v0, v8, v14
 	ret
 func0000000000000274:                   # @func0000000000000274
+	lui	a0, 349525
+	lui	a1, 699051
+	addiw	a0, a0, 1365
+	addiw	a1, a1, -1365
+	slli	a2, a0, 32
+	add	a0, a0, a2
+	slli	a2, a1, 32
+	add	a1, a1, a2
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v12, v12, 2
 	vmv.v.i	v14, 8
-	lui	a0, 349525
-	addiw	a0, a0, 1365
-	slli	a1, a0, 32
-	add	a0, a0, a1
-	vmacc.vx	v14, a0, v12
 	vsub.vv	v8, v8, v10
 	vsra.vi	v8, v8, 2
-	lui	a0, 699051
-	addiw	a0, a0, -1365
-	slli	a1, a0, 32
-	add	a0, a0, a1
-	vmul.vx	v8, v8, a0
+	vmacc.vx	v14, a0, v12
+	vmul.vx	v8, v8, a1
 	vmsltu.vv	v0, v8, v14
 	ret

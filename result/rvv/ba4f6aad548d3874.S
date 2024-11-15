@@ -7,11 +7,11 @@ func0000000000000011:                   # @func0000000000000011
 	vmulh.vx	v10, v8, a0
 	li	a0, 63
 	vsrl.vx	v12, v10, a0
+	li	a0, 7
 	vsra.vi	v10, v10, 1
 	vadd.vv	v10, v10, v12
-	li	a0, 7
-	vmul.vx	v10, v10, a0
 	vmv.v.i	v12, 0
+	vmul.vx	v10, v10, a0
 	vmerge.vim	v12, v12, 7, v0
 	vsub.vv	v8, v10, v8
 	vmseq.vv	v0, v12, v8
@@ -37,14 +37,14 @@ func000000000000001a:                   # @func000000000000001a
 func0000000000000018:                   # @func0000000000000018
 	lui	a0, %hi(.LCPI2_0)
 	ld	a0, %lo(.LCPI2_0)(a0)
+	li	a1, 63
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmulh.vx	v10, v8, a0
-	li	a0, 63
-	vsrl.vx	v12, v10, a0
+	lui	a0, 21
+	vsrl.vx	v12, v10, a1
+	addiw	a1, a0, 384
 	vsra.vi	v10, v10, 13
 	vadd.vv	v10, v10, v12
-	lui	a0, 21
-	addiw	a1, a0, 384
 	vnmsub.vx	v10, a1, v8
 	vadd.vx	v10, v10, a1, v0.t
 	addiw	a0, a0, 383

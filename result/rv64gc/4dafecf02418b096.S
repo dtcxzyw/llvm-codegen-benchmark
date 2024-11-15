@@ -7,8 +7,8 @@ func0000000000000058:                   # @func0000000000000058
 	ret
 func0000000000000054:                   # @func0000000000000054
 	slli	a1, a1, 32
-	srli	a1, a1, 32
 	srai	a0, a0, 4
+	srli	a1, a1, 32
 	not	a0, a0
 	sltu	a0, a0, a1
 	ret

@@ -13,14 +13,14 @@ func0000000000000018:                   # @func0000000000000018
 	lui	a3, 8216
 	addiw	a3, a3, 289
 	mul	a2, a2, a3
-	srli	a2, a2, 35
 	lui	a3, 8
 	addi	a3, a3, -96
+	srli	a2, a2, 35
 	mul	a2, a2, a3
+	lui	a3, 7
+	addiw	a3, a3, -101
 	subw	a1, a1, a2
-	lui	a2, 7
-	addiw	a2, a2, -101
-	sltu	a1, a2, a1
+	sltu	a1, a3, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

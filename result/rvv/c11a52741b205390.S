@@ -17,8 +17,8 @@ func0000000000000003:                   # @func0000000000000003
 func0000000000000053:                   # @func0000000000000053
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v12, 0
-	vmerge.vim	v12, v12, 1, v0
 	lui	a0, %hi(.LCPI1_0)
+	vmerge.vim	v12, v12, 1, v0
 	ld	a0, %lo(.LCPI1_0)(a0)
 	vsub.vv	v8, v8, v10
 	vsub.vv	v8, v8, v12

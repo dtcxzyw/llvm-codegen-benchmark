@@ -5,14 +5,14 @@ func000000000000046a:                   # @func000000000000046a
 	addiw	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
+	lui	a1, 5
 	vmul.vx	v10, v10, a0
+	addi	a0, a1, -481
+	addi	a1, a1, -480
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
-	lui	a0, 5
-	addi	a1, a0, -481
-	vmslt.vx	v9, v9, a1
-	addi	a0, a0, -480
-	vmsgt.vx	v8, v8, a0
+	vmslt.vx	v9, v9, a0
+	vmsgt.vx	v8, v8, a1
 	vmand.mm	v0, v8, v9
 	ret
 func00000000000004aa:                   # @func00000000000004aa

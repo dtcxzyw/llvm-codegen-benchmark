@@ -43,9 +43,9 @@ func0000000000000049:                   # @func0000000000000049
 	lui	a0, 1048320
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
-	vmsleu.vv	v14, v8, v12
 	li	a0, -49
 	slli	a0, a0, 28
+	vmsleu.vv	v14, v8, v12
 	addi	a0, a0, 1
 	vmsltu.vx	v8, v10, a0
 	vmand.mm	v0, v14, v8

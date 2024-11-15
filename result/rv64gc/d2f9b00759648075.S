@@ -37,8 +37,8 @@ func000000000000004a:                   # @func000000000000004a
 func0000000000000006:                   # @func0000000000000006
 	sext.w	a1, a1
 	lui	a2, 2575
-	addiw	a2, a2, -325
 	lui	a3, %hi(.LCPI4_0)
+	addiw	a2, a2, -325
 	ld	a3, %lo(.LCPI4_0)(a3)
 	slli	a2, a2, 13
 	mul	a1, a1, a2
@@ -62,10 +62,10 @@ func0000000000000048:                   # @func0000000000000048
 	lui	a2, 244
 	addiw	a2, a2, 576
 	mul	a1, a1, a2
+	lui	a2, 2575
+	addiw	a2, a2, -325
+	slli	a2, a2, 13
 	add	a0, a0, a1
-	lui	a1, 2575
-	addiw	a1, a1, -325
-	slli	a1, a1, 13
-	addi	a1, a1, -1
-	sltu	a0, a1, a0
+	addi	a2, a2, -1
+	sltu	a0, a2, a0
 	ret

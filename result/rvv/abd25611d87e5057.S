@@ -9,9 +9,9 @@ func000000000000006a:                   # @func000000000000006a
 	ret
 func0000000000000011:                   # @func0000000000000011
 	li	a0, -55
+	li	a1, -49
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v12, a0
-	li	a1, -49
 	vmseq.vx	v10, v8, a1
 	vmerge.vxm	v12, v12, a1, v0
 	vmv1r.v	v0, v10

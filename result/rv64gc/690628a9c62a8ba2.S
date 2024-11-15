@@ -8,10 +8,10 @@ func0000000000000007:                   # @func0000000000000007
 func000000000000000f:                   # @func000000000000000f
 	andi	a0, a0, 1
 	li	a3, 4
+	slli	a1, a1, 48
 	subw	a3, a3, a2
 	addi	a0, a0, -1
 	and	a0, a0, a3
-	slli	a1, a1, 48
 	srli	a1, a1, 48
 	addw	a0, a0, a1
 	ret

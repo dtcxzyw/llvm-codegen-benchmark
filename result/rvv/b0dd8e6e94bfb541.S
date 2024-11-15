@@ -16,11 +16,11 @@ func0000000000000003:                   # @func0000000000000003
 	addi	a0, a0, 183
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmulh.vx	v10, v8, a0
+	li	a0, 360
 	vadd.vv	v10, v10, v8
 	vsra.vi	v10, v10, 8
 	vsrl.vi	v12, v10, 31
 	vadd.vv	v10, v10, v12
-	li	a0, 360
 	vnmsac.vx	v8, a0, v10
 	li	a0, -360
 	vadd.vx	v8, v8, a0, v0.t

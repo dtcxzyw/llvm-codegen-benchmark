@@ -19,19 +19,19 @@ func000000000000007b:                   # @func000000000000007b
 	ret
 func0000000000000072:                   # @func0000000000000072
 	srli	a1, a1, 2
-	sh1add	a1, a1, a1
 	sh1add	a0, a0, a0
+	sh1add	a1, a1, a1
 	srli	a0, a0, 2
 	add	a0, a0, a1
 	ret
 func00000000000000cf:                   # @func00000000000000cf
 	lui	a2, 10486
+	srli	a0, a0, 32
 	addiw	a2, a2, -983
 	mul	a1, a1, a2
-	srli	a1, a1, 32
-	srli	a0, a0, 32
 	li	a2, -100
 	zext.w	a2, a2
+	srli	a1, a1, 32
 	mul	a0, a0, a2
 	add	a0, a0, a1
 	ret

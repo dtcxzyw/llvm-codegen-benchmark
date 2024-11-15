@@ -34,8 +34,8 @@ func0000000000000110:                   # @func0000000000000110
 	lui	a0, 1048568
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vmsgtu.vx	v10, v10, a0
-	vmand.mm	v10, v10, v0
 	lui	a0, 8
+	vmand.mm	v10, v10, v0
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsgtu.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10

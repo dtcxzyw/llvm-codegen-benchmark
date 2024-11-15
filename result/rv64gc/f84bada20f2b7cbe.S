@@ -52,8 +52,8 @@ func0000000000000016:                   # @func0000000000000016
 	ret
 func000000000000001b:                   # @func000000000000001b
 	slli	a1, a1, 63
-	srai	a1, a1, 63
 	lui	a3, 1048332
+	srai	a1, a1, 63
 	addiw	a3, a3, -576
 	and	a1, a1, a3
 	add	a1, a1, a2
@@ -62,8 +62,8 @@ func000000000000001b:                   # @func000000000000001b
 	ret
 func0000000000000011:                   # @func0000000000000011
 	slli	a1, a1, 63
-	srai	a1, a1, 63
 	lui	a3, 804435
+	srai	a1, a1, 63
 	addiw	a3, a3, 1536
 	and	a1, a1, a3
 	add	a1, a1, a2

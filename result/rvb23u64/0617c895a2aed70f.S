@@ -5,10 +5,10 @@ func000000000000001a:                   # @func000000000000001a
 	ret
 func000000000000005a:                   # @func000000000000005a
 	slli	a2, a2, 35
-	srli	a2, a2, 35
-	neg	a2, a2
 	neg	a1, a1
+	srli	a2, a2, 35
 	sh1add	a1, a1, a1
+	neg	a2, a2
 	sh2add	a0, a1, a0
 	sh1add	a1, a2, a2
 	sh2add	a0, a1, a0

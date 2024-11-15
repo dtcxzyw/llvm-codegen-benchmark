@@ -5,8 +5,8 @@ func0000000000000007:                   # @func0000000000000007
 	ret
 func0000000000000005:                   # @func0000000000000005
 	bseti	a1, a1, 0
-	bseti	a1, a1, 21
 	lui	a2, 131071
+	bseti	a1, a1, 21
 	slli	a2, a2, 3
 	addi	a2, a2, 509
 	and	a1, a1, a2

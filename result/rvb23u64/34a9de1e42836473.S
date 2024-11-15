@@ -8,10 +8,10 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 func0000000000000011:                   # @func0000000000000011
 	andi	a2, a2, 15
-	xori	a2, a2, 1
 	xor	a0, a0, a1
+	xori	a1, a2, 1
 	sext.w	a0, a0
-	or	a0, a0, a2
+	or	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000051:                   # @func0000000000000051

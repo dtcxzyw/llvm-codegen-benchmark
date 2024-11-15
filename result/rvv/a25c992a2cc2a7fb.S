@@ -1,9 +1,9 @@
 func00000000000000cc:                   # @func00000000000000cc
 	lui	a0, 1
 	addiw	a1, a0, -991
+	addiw	a0, a0, -1279
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vx	v10, v8, a1
-	addiw	a0, a0, -1279
 	vmsne.vx	v11, v8, a0
 	vmand.mm	v0, v11, v10
 	ret

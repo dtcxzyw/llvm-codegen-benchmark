@@ -4,8 +4,8 @@ func0000000000000155:                   # @func0000000000000155
 	vmul.vx	v12, v12, a0
 	li	a0, 1000
 	vmacc.vx	v12, a0, v10
-	vadd.vv	v8, v12, v8
 	lui	a0, 1048563
+	vadd.vv	v8, v12, v8
 	addiw	a0, a0, -80
 	vadd.vx	v8, v8, a0
 	ret

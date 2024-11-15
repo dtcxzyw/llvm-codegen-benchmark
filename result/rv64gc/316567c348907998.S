@@ -45,8 +45,8 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 func00000000000000c1:                   # @func00000000000000c1
 	andi	a1, a1, 48
-	seqz	a1, a1
 	addi	a0, a0, -3
+	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

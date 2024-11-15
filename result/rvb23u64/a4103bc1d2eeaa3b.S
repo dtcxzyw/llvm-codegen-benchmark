@@ -5,9 +5,9 @@ func0000000000000015:                   # @func0000000000000015
 	ret
 func0000000000000010:                   # @func0000000000000010
 	or	a1, a1, a2
+	lui	a2, 247535
 	subw	a0, a0, a1
-	lui	a1, 247535
-	addi	a1, a1, 883
+	addi	a1, a2, 883
 	addw	a0, a0, a1
 	ret
 func000000000000001d:                   # @func000000000000001d

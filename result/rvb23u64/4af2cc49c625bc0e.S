@@ -3,10 +3,10 @@ func0000000000000007:                   # @func0000000000000007
 	or	a1, a1, a2
 	li	a2, 32
 	czero.nez	a0, a2, a0
-	or	a0, a0, a1
-	zext.w	a1, a0
 	lui	a2, 33825
 	addiw	a2, a2, 133
+	or	a0, a0, a1
+	zext.w	a1, a0
 	mul	a1, a1, a2
 	srli	a1, a1, 32
 	subw	a2, a0, a1

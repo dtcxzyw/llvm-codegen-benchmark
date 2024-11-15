@@ -1,13 +1,13 @@
 func0000000000000001:                   # @func0000000000000001
 	lui	a0, 8
+	fli.d	fa5, min
 	addi	a0, a0, 64
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v8, v8, a0
+	li	a0, 1
 	vmseq.vi	v0, v8, 0
-	fli.d	fa5, min
 	vsetvli	zero, zero, e64, m4, ta, ma
 	vfmv.v.f	v8, fa5
-	li	a0, 1
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 .LCPI1_0:

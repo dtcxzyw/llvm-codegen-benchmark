@@ -30,8 +30,8 @@ func000000000000003e:                   # @func000000000000003e
 	vsll.vi	v12, v12, 19
 	vor.vv	v8, v12, v8
 	vzext.vf4	v12, v10
-	vor.vv	v8, v8, v12
 	lui	a0, 319554
+	vor.vv	v8, v8, v12
 	addi	a0, a0, -1024
 	vor.vx	v8, v8, a0
 	ret
@@ -40,8 +40,8 @@ func000000000000003a:                   # @func000000000000003a
 	vsll.vi	v12, v12, 13
 	vor.vv	v8, v12, v8
 	vzext.vf4	v12, v10
-	vor.vv	v8, v8, v12
 	lui	a0, 450624
+	vor.vv	v8, v8, v12
 	addi	a0, a0, 1024
 	vor.vx	v8, v8, a0
 	ret

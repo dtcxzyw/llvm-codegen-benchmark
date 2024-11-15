@@ -9,9 +9,9 @@ func000000000000001d:                   # @func000000000000001d
 	add	a1, a1, a2
 	lui	a2, 528384
 	addw	a1, a1, a2
+	lui	a2, 768
 	or	a0, a0, a1
-	lui	a1, 768
-	addiw	a1, a1, 48
+	addiw	a1, a2, 48
 	or	a0, a0, a1
 	ret
 func000000000000001c:                   # @func000000000000001c
@@ -48,10 +48,10 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func0000000000000000:                   # @func0000000000000000
 	lui	a3, 1048544
-	addw	a2, a2, a3
 	or	a0, a0, a1
-	or	a0, a0, a2
 	lui	a1, 45056
+	addw	a2, a2, a3
+	or	a0, a0, a2
 	addiw	a1, a1, 128
 	or	a0, a0, a1
 	ret

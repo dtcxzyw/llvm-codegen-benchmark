@@ -6,6 +6,7 @@ func000000000000006a:                   # @func000000000000006a
 func0000000000000048:                   # @func0000000000000048
 	srai	a2, a2, 2
 	lui	a3, 699051
+	slli	a0, a0, 1
 	addiw	a3, a3, -1365
 	slli	a4, a3, 32
 	add	a3, a3, a4
@@ -13,7 +14,6 @@ func0000000000000048:                   # @func0000000000000048
 	slli	a3, a2, 3
 	slli	a2, a2, 15
 	add	a2, a2, a3
-	slli	a0, a0, 1
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 8

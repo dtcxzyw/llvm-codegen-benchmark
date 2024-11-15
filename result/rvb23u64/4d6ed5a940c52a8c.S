@@ -1,9 +1,9 @@
 func000000000000004c:                   # @func000000000000004c
 	sub	a2, a0, a1
-	sltiu	a2, a2, 2
 	xor	a0, a0, a1
+	sltiu	a1, a2, 2
 	snez	a0, a0
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 func0000000000000068:                   # @func0000000000000068
 	sub	a2, a0, a1

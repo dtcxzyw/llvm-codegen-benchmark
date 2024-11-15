@@ -42,22 +42,22 @@ func0000000000000055:                   # @func0000000000000055
 func0000000000000024:                   # @func0000000000000024
 	lui	a0, 788992
 	fmv.w.x	fa5, a0
+	lui	a0, 264704
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vf	v16, v12, fa5
-	vmor.mm	v12, v0, v16
-	lui	a0, 264704
 	fmv.w.x	fa5, a0
+	vmor.mm	v12, v0, v16
 	vmfgt.vf	v13, v8, fa5
 	vmor.mm	v0, v12, v13
 	ret
 func0000000000000042:                   # @func0000000000000042
 	lui	a0, 264704
 	fmv.w.x	fa5, a0
+	lui	a0, 788992
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfgt.vf	v16, v12, fa5
-	vmor.mm	v12, v0, v16
-	lui	a0, 788992
 	fmv.w.x	fa5, a0
+	vmor.mm	v12, v0, v16
 	vmflt.vf	v13, v8, fa5
 	vmor.mm	v0, v12, v13
 	ret

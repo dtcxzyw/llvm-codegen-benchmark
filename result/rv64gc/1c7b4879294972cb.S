@@ -1,9 +1,8 @@
 func0000000000000002:                   # @func0000000000000002
-	mv	a3, a0
-	sub	a0, a1, a2
-	srai	a0, a0, 3
-	slli	a1, a3, 32
-	srli	a1, a1, 32
+	sub	a1, a1, a2
+	slli	a2, a0, 32
+	srai	a0, a1, 3
+	srli	a1, a2, 32
 	bltu	a1, a0, .LBB0_2
 	mv	a0, a1
 .LBB0_2:                                # %entry

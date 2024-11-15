@@ -3,8 +3,8 @@ func000000000000005d:                   # @func000000000000005d
 	sext.w	a2, a2
 	negw	a3, a2
 	max	a2, a2, a3
-	clzw	a2, a2
 	li	a3, 32
+	clzw	a2, a2
 	sub	a3, a3, a2
 	li	a2, 1
 	czero.nez	a2, a2, a1

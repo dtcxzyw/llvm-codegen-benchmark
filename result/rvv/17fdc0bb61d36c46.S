@@ -71,8 +71,8 @@ func0000000000000028:                   # @func0000000000000028
 func0000000000000029:                   # @func0000000000000029
 	li	a0, 264
 	vsetivli	zero, 4, e32, m1, ta, mu
-	vmsltu.vx	v0, v8, a0
 	vmv.v.i	v10, 0
+	vmsltu.vx	v0, v8, a0
 	li	a0, -258
 	vadd.vx	v10, v8, a0, v0.t
 	vsetvli	zero, zero, e64, m2, ta, ma

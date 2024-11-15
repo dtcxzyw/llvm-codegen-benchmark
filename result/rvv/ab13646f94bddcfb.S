@@ -20,11 +20,11 @@ func0000000000000181:                   # @func0000000000000181
 func000000000000009d:                   # @func000000000000009d
 	li	a0, -69
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vx	v12, v12, a0
-	vsrl.vi	v12, v12, 2
 	vadd.vv	v8, v10, v8
-	vadd.vv	v8, v8, v12
+	vadd.vx	v10, v12, a0
 	lui	a0, 1048570
+	vsrl.vi	v10, v10, 2
+	vadd.vv	v8, v8, v10
 	addi	a0, a0, -974
 	vadd.vx	v8, v8, a0
 	ret

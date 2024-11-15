@@ -20,13 +20,13 @@ func0000000000000011:                   # @func0000000000000011
 	ld	a0, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulh.vx	v12, v10, a0
-	vadd.vv	v10, v12, v10
 	li	a0, 63
+	vadd.vv	v10, v12, v10
 	vsrl.vx	v12, v10, a0
-	vsra.vi	v10, v10, 15
-	vadd.vv	v10, v10, v12
 	lui	a0, 1048573
 	addiw	a0, a0, 77
+	vsra.vi	v10, v10, 15
+	vadd.vv	v10, v10, v12
 	vmadd.vx	v10, a0, v8
 	lui	a0, 524288
 	addiw	a0, a0, -85

@@ -24,24 +24,24 @@ func000000000000004f:                   # @func000000000000004f
 	ret
 func000000000000006d:                   # @func000000000000006d
 	add	a1, a1, a2
+	li	a2, -1
 	srli	a1, a1, 44
 	add	a0, a0, a1
-	li	a1, -1
-	slli	a1, a1, 42
-	add	a0, a0, a1
+	slli	a2, a2, 42
+	add	a0, a0, a2
 	ret
 func000000000000006f:                   # @func000000000000006f
 	add	a1, a1, a2
+	lui	a2, 1048574
 	srli	a1, a1, 51
 	add	a0, a0, a1
-	lui	a1, 1048574
-	srli	a1, a1, 12
-	add	a0, a0, a1
+	srli	a2, a2, 12
+	add	a0, a0, a2
 	ret
 func0000000000000005:                   # @func0000000000000005
 	add	a1, a1, a2
-	srli	a1, a1, 1
 	lui	a2, 4096
+	srli	a1, a1, 1
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

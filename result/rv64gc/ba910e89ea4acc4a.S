@@ -6,11 +6,11 @@ func0000000000000424:                   # @func0000000000000424
 	fmv.s	fa5, fa0
 .LBB0_2:                                # %entry
 	lui	a0, 258048
+	lui	a1, 261120
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa0, fa4
-	not	a0, a0
-	lui	a1, 261120
 	fmv.w.x	fa4, a1
+	not	a0, a0
 	flt.s	a1, fa4, fa5
 	and	a0, a0, a1
 	ret
@@ -22,9 +22,9 @@ func0000000000000422:                   # @func0000000000000422
 	fmv.s	fa5, fa0
 .LBB1_2:                                # %entry
 	lui	a0, 258048
+	lui	a1, 273536
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa0, fa4
-	lui	a1, 273536
 	fmv.w.x	fa4, a1
 	flt.s	a1, fa5, fa4
 	or	a0, a0, a1
@@ -37,10 +37,10 @@ func000000000000042b:                   # @func000000000000042b
 	fmv.s	fa5, fa0
 .LBB2_2:                                # %entry
 	fmv.w.x	fa4, zero
-	flt.s	a0, fa0, fa4
-	lui	a1, 784384
-	fmv.w.x	fa4, a1
-	flt.s	a1, fa4, fa5
+	lui	a0, 784384
+	flt.s	a1, fa0, fa4
+	fmv.w.x	fa4, a0
+	flt.s	a0, fa4, fa5
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret
@@ -52,10 +52,10 @@ func000000000000042d:                   # @func000000000000042d
 	fmv.s	fa5, fa0
 .LBB3_2:                                # %entry
 	fmv.w.x	fa4, zero
-	flt.s	a0, fa0, fa4
-	lui	a1, 276480
-	fmv.w.x	fa4, a1
-	flt.s	a1, fa5, fa4
+	lui	a0, 276480
+	flt.s	a1, fa0, fa4
+	fmv.w.x	fa4, a0
+	flt.s	a0, fa5, fa4
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret
@@ -108,10 +108,10 @@ func0000000000000425:                   # @func0000000000000425
 	fmv.s	fa5, fa0
 .LBB7_2:                                # %entry
 	fmv.w.x	fa4, zero
-	flt.s	a0, fa0, fa4
-	lui	a1, 258048
-	fmv.w.x	fa4, a1
-	fle.s	a1, fa5, fa4
+	lui	a0, 258048
+	flt.s	a1, fa0, fa4
+	fmv.w.x	fa4, a0
+	fle.s	a0, fa5, fa4
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret

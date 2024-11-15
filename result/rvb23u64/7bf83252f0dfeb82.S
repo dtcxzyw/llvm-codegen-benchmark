@@ -81,9 +81,9 @@ func0000000000000010:                   # @func0000000000000010
 	sltiu	a2, a2, 3
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
+	lui	a2, 1047844
 	or	a0, a0, a1
-	lui	a1, 1047844
-	addi	a1, a1, -1728
+	addi	a1, a2, -1728
 	addw	a0, a0, a1
 	ret
 func0000000000000022:                   # @func0000000000000022
@@ -91,10 +91,10 @@ func0000000000000022:                   # @func0000000000000022
 	lui	a3, 1048544
 	addiw	a3, a3, -1
 	sltu	a2, a3, a2
+	lui	a3, 16
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1
-	lui	a1, 16
-	addi	a1, a1, 1
-	addw	a0, a0, a1
+	addi	a3, a3, 1
+	addw	a0, a0, a3
 	ret

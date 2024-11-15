@@ -1,9 +1,9 @@
 func00000000000002a4:                   # @func00000000000002a4
 	slli	a2, a2, 32
+	slli	a1, a1, 5
 	srli	a2, a2, 27
 	add	a2, a2, a0
 	addi	a2, a2, 32
-	slli	a1, a1, 5
 	add	a0, a0, a1
 	sltu	a0, a2, a0
 	ret
@@ -16,10 +16,10 @@ func0000000000000484:                   # @func0000000000000484
 	ret
 func00000000000002a1:                   # @func00000000000002a1
 	slli	a2, a2, 32
+	slli	a1, a1, 3
 	srli	a2, a2, 29
 	add	a2, a2, a0
 	addi	a2, a2, 8
-	slli	a1, a1, 3
 	add	a0, a0, a1
 	xor	a0, a0, a2
 	seqz	a0, a0

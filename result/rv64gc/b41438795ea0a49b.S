@@ -29,11 +29,11 @@ func0000000000000046:                   # @func0000000000000046
 	ret
 func0000000000000110:                   # @func0000000000000110
 	andi	a1, a1, 255
-	sltiu	a2, a1, 240
-	li	a3, 2
-	sub	a3, a3, a2
+	li	a2, 2
+	sltiu	a3, a1, 240
 	sltiu	a1, a1, 224
+	sub	a2, a2, a3
 	addi	a1, a1, -1
-	and	a1, a1, a3
+	and	a1, a1, a2
 	add	a0, a0, a1
 	ret

@@ -1,9 +1,9 @@
 func000000000000001e:                   # @func000000000000001e
 	slliw	a1, a1, 8
-	or	a0, a0, a1
-	zext.w	a1, a0
 	lui	a2, 1
-	addiw	a2, a2, -1981
+	or	a0, a0, a1
+	addiw	a1, a2, -1981
+	zext.w	a2, a0
 	mul	a1, a1, a2
 	srli	a1, a1, 16
 	subw	a2, a0, a1

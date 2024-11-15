@@ -27,8 +27,8 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func000000000000000c:                   # @func000000000000000c
 	slli	a1, a1, 32
-	srli	a1, a1, 32
 	li	a2, -1
+	srli	a1, a1, 32
 	srli	a2, a2, 4
 	add	a1, a1, a2
 	sext.w	a0, a0

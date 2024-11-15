@@ -18,9 +18,9 @@ func0000000000000031:                   # @func0000000000000031
 	ret
 func0000000000000018:                   # @func0000000000000018
 	slli	a1, a1, 32
-	srli	a1, a1, 32
 	srai	a0, a0, 3
 	lui	a2, 838861
+	srli	a1, a1, 32
 	addiw	a2, a2, -819
 	slli	a3, a2, 32
 	add	a2, a2, a3
@@ -29,9 +29,9 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 func0000000000000014:                   # @func0000000000000014
 	slli	a1, a1, 32
-	srli	a1, a1, 32
 	srai	a0, a0, 3
 	lui	a2, 838861
+	srli	a1, a1, 32
 	addiw	a2, a2, -819
 	slli	a3, a2, 32
 	add	a2, a2, a3
@@ -60,9 +60,9 @@ func0000000000000034:                   # @func0000000000000034
 	ret
 func0000000000000011:                   # @func0000000000000011
 	slli	a1, a1, 32
-	srli	a1, a1, 32
 	srai	a0, a0, 3
 	lui	a2, 618391
+	srli	a1, a1, 32
 	addiw	a2, a2, -105
 	slli	a3, a2, 36
 	add	a2, a2, a3
@@ -86,9 +86,9 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func000000000000001c:                   # @func000000000000001c
 	slli	a1, a1, 32
-	srli	a1, a1, 32
 	srai	a0, a0, 3
 	lui	a2, 699051
+	srli	a1, a1, 32
 	addiw	a2, a2, -1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
@@ -135,9 +135,9 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func000000000000001a:                   # @func000000000000001a
 	slli	a1, a1, 32
-	srli	a1, a1, 32
 	srai	a0, a0, 3
 	lui	a2, 838861
+	srli	a1, a1, 32
 	addiw	a2, a2, -819
 	slli	a3, a2, 32
 	add	a2, a2, a3
@@ -205,9 +205,9 @@ func0000000000000036:                   # @func0000000000000036
 	ret
 func0000000000000016:                   # @func0000000000000016
 	slli	a1, a1, 32
-	srli	a1, a1, 32
 	srai	a0, a0, 1
 	lui	a2, 699051
+	srli	a1, a1, 32
 	addiw	a2, a2, -1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
@@ -216,9 +216,9 @@ func0000000000000016:                   # @func0000000000000016
 	ret
 func0000000000000015:                   # @func0000000000000015
 	slli	a1, a1, 32
-	srli	a1, a1, 32
 	srai	a0, a0, 3
 	lui	a2, 699051
+	srli	a1, a1, 32
 	addiw	a2, a2, -1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
@@ -228,8 +228,8 @@ func0000000000000015:                   # @func0000000000000015
 	ret
 func0000000000000004:                   # @func0000000000000004
 	slli	a1, a1, 32
-	srli	a1, a1, 32
 	srai	a2, a0, 63
+	srli	a1, a1, 32
 	srli	a2, a2, 61
 	add	a0, a0, a2
 	srai	a0, a0, 3

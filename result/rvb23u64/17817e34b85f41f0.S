@@ -11,17 +11,17 @@ func00000000000003cb:                   # @func00000000000003cb
 	ret
 func00000000000003cd:                   # @func00000000000003cd
 	addi	a1, a1, 1
+	fmv.w.x	fa5, zero
 	xor	a0, a0, a1
 	snez	a0, a0
-	fmv.w.x	fa5, zero
 	flt.s	a1, fa0, fa5
 	andn	a0, a0, a1
 	ret
 func00000000000002c8:                   # @func00000000000002c8
 	addi	a1, a1, 1
+	fmv.w.x	fa5, zero
 	xor	a0, a0, a1
 	snez	a0, a0
-	fmv.w.x	fa5, zero
 	feq.s	a1, fa0, fa5
 	and	a0, a0, a1
 	ret

@@ -1,9 +1,10 @@
 func00000000000000ac:                   # @func00000000000000ac
 	li	a0, 64
-	vsetivli	zero, 4, e32, m1, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vand.vi	v8, v8, 1
+	vsetvli	zero, zero, e32, m1, ta, ma
 	vmslt.vx	v10, v10, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vand.vi	v8, v8, 1
 	vmsne.vi	v11, v8, 0
 	vmand.mm	v0, v10, v11
 	ret

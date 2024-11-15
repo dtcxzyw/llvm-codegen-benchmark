@@ -17,8 +17,8 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func0000000000000004:                   # @func0000000000000004
 	lui	a0, 244
-	addiw	a0, a0, 576
 	lui	a1, 1
+	addiw	a0, a0, 576
 	addiw	a1, a1, 904
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a1
@@ -27,8 +27,8 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000008:                   # @func0000000000000008
 	li	a0, -1
-	srli	a0, a0, 2
 	li	a1, -4
+	srli	a0, a0, 2
 	rori	a1, a1, 3
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vx	v0, v8, a1

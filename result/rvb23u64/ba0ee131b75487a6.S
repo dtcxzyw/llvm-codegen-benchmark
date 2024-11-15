@@ -12,8 +12,8 @@ func0000000000000006:                   # @func0000000000000006
 	li	a4, 7
 	czero.nez	a4, a4, a1
 	czero.eqz	a1, a2, a1
-	or	a1, a1, a4
 	slti	a2, a3, 0
+	or	a1, a1, a4
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1

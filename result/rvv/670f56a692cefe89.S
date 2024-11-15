@@ -1,9 +1,9 @@
 func0000000000000002:                   # @func0000000000000002
 	fmv.d.x	fa5, zero
+	bseti	a0, zero, 63
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v24, v16, fa5
 	vmand.mm	v0, v0, v24
-	bseti	a0, zero, 63
 	vmv.v.x	v16, a0
 	vmerge.vvm	v8, v16, v8, v0
 	ret

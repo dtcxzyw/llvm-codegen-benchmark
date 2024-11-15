@@ -17,9 +17,9 @@ func0000000000000038:                   # @func0000000000000038
 func0000000000000088:                   # @func0000000000000088
 	lui	a0, 131072
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsltu.vx	v14, v12, a0
-	vmsltu.vv	v12, v8, v10
-	vmand.mm	v0, v12, v14
+	vmsltu.vv	v14, v8, v10
+	vmsltu.vx	v8, v12, a0
+	vmand.mm	v0, v14, v8
 	vmv.v.i	v8, 0
 	vmerge.vim	v8, v8, 1, v0
 	ret

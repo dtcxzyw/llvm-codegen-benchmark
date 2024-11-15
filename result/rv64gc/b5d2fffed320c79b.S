@@ -1,8 +1,8 @@
 func000000000000001b:                   # @func000000000000001b
 	lui	a3, 128
+	slliw	a1, a1, 3
 	addiw	a3, a3, -8
 	and	a2, a2, a3
-	slliw	a1, a1, 3
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

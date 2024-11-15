@@ -15,9 +15,9 @@ func000000000000000a:                   # @func000000000000000a
 	lui	a1, %hi(.LCPI1_0)
 	ld	a1, %lo(.LCPI1_0)(a1)
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsra.vx	v12, v12, a0
 	vadd.vv	v8, v10, v8
-	vadd.vv	v8, v12, v8
+	vsra.vx	v10, v12, a0
+	vadd.vv	v8, v10, v8
 	vmulh.vx	v8, v8, a1
 	vsrl.vx	v10, v8, a0
 	vsra.vi	v8, v8, 10

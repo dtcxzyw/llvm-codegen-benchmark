@@ -35,8 +35,8 @@ func000000000000001f:                   # @func000000000000001f
 	ret
 func000000000000000a:                   # @func000000000000000a
 	slli	a1, a1, 1
-	addiw	a1, a1, -4
 	lui	a2, 1048568
+	addiw	a1, a1, -4
 	addiw	a3, a2, 254
 	and	a1, a1, a3
 	and	a0, a0, a2
@@ -44,18 +44,18 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func000000000000000b:                   # @func000000000000000b
 	lui	a2, 1
+	andi	a0, a0, -2048
 	addiw	a2, a2, -8
 	sh1add	a1, a1, a2
 	addi	a2, a2, 6
 	and	a1, a1, a2
-	andi	a0, a0, -2048
 	bclri	a0, a0, 11
 	or	a0, a0, a1
 	ret
 func0000000000000019:                   # @func0000000000000019
 	slli	a1, a1, 8
-	addi	a1, a1, 256
 	li	a2, 15
+	addi	a1, a1, 256
 	slli	a2, a2, 8
 	and	a1, a1, a2
 	andi	a0, a0, 240

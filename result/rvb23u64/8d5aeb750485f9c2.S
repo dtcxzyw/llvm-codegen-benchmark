@@ -1,10 +1,10 @@
 func0000000000000029:                   # @func0000000000000029
 	sh2add	a1, a1, a1
-	sh2add	a1, a1, a1
-	slli	a1, a1, 4
 	zext.w	a2, a0
 	lui	a3, 422303
+	sh2add	a1, a1, a1
 	addiw	a3, a3, 865
+	slli	a1, a1, 4
 	mul	a2, a2, a3
 	srli	a2, a2, 32
 	subw	a0, a0, a2
@@ -15,8 +15,8 @@ func0000000000000029:                   # @func0000000000000029
 	ret
 func0000000000000000:                   # @func0000000000000000
 	li	a2, 1000
-	mul	a1, a1, a2
 	zext.w	a0, a0
+	mul	a1, a1, a2
 	lui	a2, 67109
 	addiw	a2, a2, -557
 	mul	a0, a0, a2
@@ -25,8 +25,8 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func0000000000000065:                   # @func0000000000000065
 	li	a2, -100
-	mul	a1, a1, a2
 	slli	a0, a0, 32
+	mul	a1, a1, a2
 	lui	a2, 858993
 	addi	a2, a2, 1881
 	slli	a2, a2, 32

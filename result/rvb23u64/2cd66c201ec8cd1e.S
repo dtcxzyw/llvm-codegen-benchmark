@@ -12,8 +12,8 @@ func0000000000000022:                   # @func0000000000000022
 	ret
 func000000000000000a:                   # @func000000000000000a
 	sh3add	a2, a2, a2
-	slli	a2, a2, 4
 	slli	a0, a0, 4
+	slli	a2, a2, 4
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, -56

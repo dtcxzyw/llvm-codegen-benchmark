@@ -3,9 +3,9 @@ func0000000000000023:                   # @func0000000000000023
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v0, v10, 0
 	vor.vx	v10, v8, a0
-	vmerge.vvm	v8, v10, v8, v0
 	lui	a0, 33825
 	addi	a0, a0, 133
+	vmerge.vvm	v8, v10, v8, v0
 	vmulhu.vx	v10, v8, a0
 	vsub.vv	v12, v8, v10
 	vsrl.vi	v12, v12, 1

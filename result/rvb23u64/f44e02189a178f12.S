@@ -14,8 +14,8 @@ func0000000000000010:                   # @func0000000000000010
 	ret
 func000000000000000a:                   # @func000000000000000a
 	sh1add	a2, a2, a2
-	slliw	a2, a2, 2
 	sext.w	a1, a1
+	slliw	a2, a2, 2
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

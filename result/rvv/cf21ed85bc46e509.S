@@ -7,8 +7,8 @@ func0000000000000009:                   # @func0000000000000009
 	vsub.vv	v8, v8, v10
 	vsrl.vi	v10, v8, 9
 	vmulhu.vx	v10, v10, a0
-	vsrl.vi	v10, v10, 11
 	lui	a0, 244141
+	vsrl.vi	v10, v10, 11
 	addiw	a0, a0, -1536
 	vnmsub.vx	v10, a0, v8
 	vsub.vv	v8, v10, v8
@@ -21,8 +21,8 @@ func0000000000000002:                   # @func0000000000000002
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v8, v8, v10
 	vmulhu.vx	v8, v8, a0
-	vsrl.vi	v8, v8, 15
 	lui	a0, 31
+	vsrl.vi	v8, v8, 15
 	addiw	a0, a0, -1976
 	vmul.vx	v8, v8, a0
 	ret
@@ -35,8 +35,8 @@ func0000000000000008:                   # @func0000000000000008
 	vsub.vv	v8, v8, v10
 	vsrl.vi	v8, v8, 2
 	vmulhu.vx	v8, v8, a0
-	vsrl.vi	v8, v8, 2
 	li	a0, -100
+	vsrl.vi	v8, v8, 2
 	zext.w	a0, a0
 	vmul.vx	v8, v8, a0
 	ret

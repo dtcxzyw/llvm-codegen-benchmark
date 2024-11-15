@@ -15,10 +15,10 @@ func00000000000000f4:                   # @func00000000000000f4
 func0000000000000051:                   # @func0000000000000051
 	li	a2, 1000
 	mul	a1, a1, a2
+	li	a2, -1
 	add	a0, a0, a1
-	li	a1, -1
-	slli	a1, a1, 63
-	xor	a0, a0, a1
+	slli	a2, a2, 63
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 func00000000000000f8:                   # @func00000000000000f8
@@ -38,9 +38,9 @@ func0000000000000046:                   # @func0000000000000046
 func0000000000000004:                   # @func0000000000000004
 	li	a2, 1000
 	mul	a1, a1, a2
+	lui	a2, 1
 	add	a0, a0, a1
-	lui	a1, 1
-	addiw	a1, a1, 905
+	addiw	a1, a2, 905
 	sltu	a0, a0, a1
 	ret
 func000000000000005c:                   # @func000000000000005c
@@ -88,11 +88,11 @@ func0000000000000001:                   # @func0000000000000001
 	addiw	a2, a2, -761
 	slli	a2, a2, 10
 	mul	a1, a1, a2
+	lui	a2, 2384
+	addiw	a2, a2, 761
 	add	a0, a0, a1
-	lui	a1, 2384
-	addiw	a1, a1, 761
-	slli	a1, a1, 9
-	xor	a0, a0, a1
+	slli	a2, a2, 9
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 .LCPI12_0:
@@ -134,27 +134,27 @@ func00000000000000d6:                   # @func00000000000000d6
 	lui	a2, 21
 	addiw	a2, a2, 384
 	mul	a1, a1, a2
+	lui	a2, 100549
+	addiw	a2, a2, 521
 	add	a0, a0, a1
-	lui	a1, 100549
-	addiw	a1, a1, 521
-	slli	a1, a1, 9
-	slt	a0, a0, a1
+	slli	a2, a2, 9
+	slt	a0, a0, a2
 	ret
 func00000000000000da:                   # @func00000000000000da
 	li	a2, 1000
 	mul	a1, a1, a2
+	lui	a2, 244141
 	add	a0, a0, a1
-	lui	a1, 244141
-	addiw	a1, a1, -1537
+	addiw	a1, a2, -1537
 	slt	a0, a1, a0
 	ret
 func000000000000004a:                   # @func000000000000004a
 	lui	a2, 804435
 	addiw	a2, a2, 1536
 	mul	a1, a1, a2
+	lui	a2, 244141
 	add	a0, a0, a1
-	lui	a1, 244141
-	addiw	a1, a1, -1537
+	addiw	a1, a2, -1537
 	slt	a0, a1, a0
 	ret
 func0000000000000054:                   # @func0000000000000054
@@ -199,10 +199,10 @@ func000000000000000c:                   # @func000000000000000c
 func0000000000000018:                   # @func0000000000000018
 	li	a2, 10
 	mul	a1, a1, a2
+	lui	a2, 524288
 	add	a0, a0, a1
-	lui	a1, 524288
-	addiw	a1, a1, -2
-	sltu	a0, a1, a0
+	addiw	a2, a2, -2
+	sltu	a0, a2, a0
 	ret
 func000000000000000a:                   # @func000000000000000a
 	li	a2, 19
@@ -258,10 +258,10 @@ func00000000000000a4:                   # @func00000000000000a4
 func0000000000000034:                   # @func0000000000000034
 	li	a2, 10
 	mul	a1, a1, a2
+	lui	a2, 524288
 	add	a0, a0, a1
-	lui	a1, 524288
-	addiw	a1, a1, -1
-	sltu	a0, a0, a1
+	addiw	a2, a2, -1
+	sltu	a0, a0, a2
 	ret
 func00000000000000c8:                   # @func00000000000000c8
 	slli	a2, a1, 4
@@ -284,9 +284,9 @@ func00000000000000a8:                   # @func00000000000000a8
 func0000000000000038:                   # @func0000000000000038
 	li	a2, 10
 	mul	a1, a1, a2
+	lui	a2, 244
 	add	a0, a0, a1
-	lui	a1, 244
-	addiw	a1, a1, 575
+	addiw	a1, a2, 575
 	sltu	a0, a1, a0
 	ret
 func00000000000000e6:                   # @func00000000000000e6
@@ -300,10 +300,10 @@ func00000000000000e1:                   # @func00000000000000e1
 	slli	a2, a1, 1
 	slli	a1, a1, 5
 	sub	a1, a1, a2
+	li	a2, -1
 	add	a0, a0, a1
-	li	a1, -1
-	srli	a1, a1, 1
-	xor	a0, a0, a1
+	srli	a2, a2, 1
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 func000000000000004c:                   # @func000000000000004c

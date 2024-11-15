@@ -48,8 +48,8 @@ func000000000000002e:                   # @func000000000000002e
 	li	a0, -576
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vadd.vx	v10, v10, a0
-	vsrl.vi	v10, v10, 2
 	lui	a0, 1
+	vsrl.vi	v10, v10, 2
 	addi	a0, a0, -767
 	vmulhu.vx	v10, v10, a0
 	vsrl.vi	v10, v10, 4

@@ -2,8 +2,8 @@ func0000000000000011:                   # @func0000000000000011
 	sext.w	a1, a1
 	slli	a2, a2, 44
 	srli	a2, a2, 44
-	seqz	a2, a2
 	seqz	a1, a1
+	seqz	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
@@ -40,8 +40,8 @@ func000000000000008c:                   # @func000000000000008c
 	ret
 func0000000000000041:                   # @func0000000000000041
 	not	a2, a2
-	bexti	a2, a2, 20
 	srliw	a1, a1, 29
+	bexti	a2, a2, 20
 	seqz	a1, a1
 	and	a0, a0, a1
 	and	a0, a0, a2

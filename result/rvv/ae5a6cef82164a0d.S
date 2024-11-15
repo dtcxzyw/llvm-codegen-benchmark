@@ -22,9 +22,9 @@ func0000000000000012:                   # @func0000000000000012
 func0000000000000014:                   # @func0000000000000014
 	lui	a0, %hi(.LCPI2_0)
 	flw	fa5, %lo(.LCPI2_0)(a0)
+	lui	a0, 275360
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmadd.vf	v8, fa5, v12
-	lui	a0, 275360
 	fmv.w.x	fa5, a0
 	vmfgt.vf	v0, v8, fa5
 	ret
@@ -38,9 +38,9 @@ func000000000000000d:                   # @func000000000000000d
 	ret
 func0000000000000004:                   # @func0000000000000004
 	fli.s	fa5, 1.25
+	lui	a0, 266752
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmadd.vf	v8, fa5, v12
-	lui	a0, 266752
 	fmv.w.x	fa5, a0
 	vmfgt.vf	v0, v8, fa5
 	ret

@@ -9,8 +9,8 @@ func0000000000000011:                   # @func0000000000000011
 func0000000000000018:                   # @func0000000000000018
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsrl.vi	v10, v10, 4
-	vand.vi	v10, v10, 15
 	li	a0, 240
+	vand.vi	v10, v10, 15
 	vand.vx	v8, v8, a0
 	vor.vv	v8, v8, v10
 	li	a0, 70
@@ -20,8 +20,8 @@ func0000000000000014:                   # @func0000000000000014
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsrl.vi	v10, v10, 12
 	li	a0, 240
-	vand.vx	v10, v10, a0
 	vand.vi	v8, v8, 15
+	vand.vx	v10, v10, a0
 	vor.vv	v8, v8, v10
 	li	a0, 59
 	vmsltu.vx	v0, v8, a0

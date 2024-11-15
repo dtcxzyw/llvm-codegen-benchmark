@@ -18,8 +18,8 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000003:                   # @func0000000000000003
 	fmul.s	fa5, fa1, fa1
-	fdiv.s	fa5, fa0, fa5
 	lui	a0, 260096
+	fdiv.s	fa5, fa0, fa5
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa4, fa5
 	xori	a0, a0, 1

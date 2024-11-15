@@ -24,8 +24,8 @@ func0000000000000003:                   # @func0000000000000003
 	or	a1, a1, a2
 	li	a2, 127
 	czero.eqz	a0, a2, a0
+	lui	a2, 256
 	or	a0, a0, a1
-	lui	a1, 256
-	addiw	a1, a1, -128
+	addiw	a1, a2, -128
 	or	a0, a0, a1
 	ret

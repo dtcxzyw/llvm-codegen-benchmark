@@ -1,9 +1,9 @@
 func00000000000000f4:                   # @func00000000000000f4
 	slli	a2, a2, 48
-	srli	a2, a2, 48
 	add	a0, a0, a1
-	addw	a0, a0, a2
 	lui	a1, 1
+	srli	a2, a2, 48
+	addw	a0, a0, a2
 	addiw	a1, a1, 2003
 	sltu	a0, a0, a1
 	ret

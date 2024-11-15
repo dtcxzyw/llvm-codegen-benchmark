@@ -5,10 +5,10 @@ func000000000000001c:                   # @func000000000000001c
 	addiw	a0, a0, -585
 	slli	a1, a0, 33
 	add	a0, a0, a1
+	lui	a1, 524288
 	vmul.vx	v10, v10, a0
-	lui	a0, 524288
-	addiw	a0, a0, -1
-	vand.vx	v10, v10, a0
+	addiw	a1, a1, -1
+	vand.vx	v10, v10, a1
 	vmsne.vv	v12, v10, v8
 	vmand.mm	v0, v0, v12
 	ret
@@ -19,10 +19,10 @@ func0000000000000014:                   # @func0000000000000014
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
+	lui	a1, 524288
 	vmul.vx	v10, v10, a0
-	lui	a0, 524288
-	addiw	a0, a0, -1
-	vand.vx	v10, v10, a0
+	addiw	a1, a1, -1
+	vand.vx	v10, v10, a1
 	vmsltu.vv	v12, v8, v10
 	vmand.mm	v0, v0, v12
 	ret
@@ -32,9 +32,9 @@ func0000000000000004:                   # @func0000000000000004
 	vsra.vx	v12, v10, a0
 	li	a0, 51
 	vsrl.vx	v12, v12, a0
+	li	a0, -1
 	vadd.vv	v10, v10, v12
 	vsra.vi	v10, v10, 13
-	li	a0, -1
 	srli	a0, a0, 32
 	vand.vx	v10, v10, a0
 	vmsltu.vv	v12, v8, v10

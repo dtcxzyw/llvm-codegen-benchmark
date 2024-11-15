@@ -14,11 +14,11 @@ func00000000000001f0:                   # @func00000000000001f0
 	ret
 func0000000000000020:                   # @func0000000000000020
 	slli	a1, a1, 2
+	lui	a2, 5
 	addi	a1, a1, -4
+	addiw	a2, a2, 1536
 	slli	a1, a1, 32
 	srli	a1, a1, 32
-	lui	a2, 5
-	addiw	a2, a2, 1536
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

@@ -55,8 +55,8 @@ func0000000000000008:                   # @func0000000000000008
 func0000000000000074:                   # @func0000000000000074
 	add	a1, a1, a2
 	srliw	a0, a0, 7
-	sltiu	a0, a0, 23
 	lui	a2, 12
+	sltiu	a0, a0, 23
 	addi	a2, a2, 320
 	czero.eqz	a0, a2, a0
 	addw	a0, a0, a1

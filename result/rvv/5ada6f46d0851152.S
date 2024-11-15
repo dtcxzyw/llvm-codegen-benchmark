@@ -21,9 +21,9 @@ func000000000000000c:                   # @func000000000000000c
 func000000000000000e:                   # @func000000000000000e
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsll.vi	v12, v12, 10
+	lui	a0, 4096
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v14, v12
-	lui	a0, 4096
 	addiw	a0, a0, -1024
 	vand.vx	v12, v14, a0
 	vor.vv	v10, v12, v10

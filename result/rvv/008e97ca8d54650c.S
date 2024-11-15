@@ -17,10 +17,10 @@ func000000000000000c:                   # @func000000000000000c
 	vor.vx	v8, v12, a0, v0.t
 	ret
 func0000000000000004:                   # @func0000000000000004
-	li	a0, 512
-	lui	a1, 512
+	lui	a0, 512
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsltu.vx	v0, v10, a1
+	vmsltu.vx	v0, v10, a0
+	li	a0, 512
 	vor.vx	v10, v12, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret

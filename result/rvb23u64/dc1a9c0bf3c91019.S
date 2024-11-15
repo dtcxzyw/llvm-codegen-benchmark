@@ -26,8 +26,8 @@ func0000000000000003:                   # @func0000000000000003
 	andi	a1, a1, 32
 	li	a2, 160
 	czero.eqz	a1, a2, a1
+	lui	a2, 17
 	or	a0, a0, a1
-	lui	a1, 17
-	addiw	a1, a1, -2036
+	addiw	a1, a2, -2036
 	or	a0, a0, a1
 	ret

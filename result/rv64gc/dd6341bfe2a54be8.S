@@ -23,8 +23,8 @@ func000000000000000f:                   # @func000000000000000f
 	ret
 func000000000000000e:                   # @func000000000000000e
 	slli	a2, a2, 13
-	neg	a2, a2
 	lui	a3, 6
+	neg	a2, a2
 	and	a2, a2, a3
 	li	a3, 3
 	slli	a3, a3, 11

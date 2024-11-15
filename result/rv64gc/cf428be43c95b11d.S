@@ -7,8 +7,8 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000030:                   # @func0000000000000030
 	slli	a2, a2, 48
-	srli	a2, a2, 48
 	lui	a3, 11
+	srli	a2, a2, 48
 	addiw	a3, a3, -238
 	beq	a2, a3, .LBB1_2
 	mv	a1, a0
@@ -17,8 +17,8 @@ func0000000000000030:                   # @func0000000000000030
 	ret
 func0000000000000031:                   # @func0000000000000031
 	slli	a2, a2, 48
-	srli	a2, a2, 48
 	lui	a3, 11
+	srli	a2, a2, 48
 	addiw	a3, a3, -238
 	beq	a2, a3, .LBB2_2
 	mv	a1, a0
@@ -36,8 +36,8 @@ func0000000000000010:                   # @func0000000000000010
 	ret
 func0000000000000007:                   # @func0000000000000007
 	slli	a2, a2, 48
-	srli	a2, a2, 48
 	lui	a3, 16
+	srli	a2, a2, 48
 	addiw	a3, a3, -253
 	beq	a2, a3, .LBB4_2
 	mv	a0, a1

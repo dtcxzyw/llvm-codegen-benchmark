@@ -6,8 +6,8 @@ func0000000000000118:                   # @func0000000000000118
 .LBB0_2:                                # %entry
 	sext.w	a0, a0
 	xor	a1, a1, a0
-	snez	a1, a1
 	sltiu	a0, a0, 128
+	snez	a1, a1
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
@@ -21,8 +21,8 @@ func0000000000000111:                   # @func0000000000000111
 	ret
 func0000000000000411:                   # @func0000000000000411
 	sext.w	a1, a1
-	sltiu	a1, a1, 2
 	andi	a0, a0, -2
+	sltiu	a1, a1, 2
 	sext.w	a0, a0
 	addi	a0, a0, -2
 	seqz	a0, a0

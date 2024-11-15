@@ -101,8 +101,8 @@ func0000000000000081:                   # @func0000000000000081
 	andi	a0, a0, 255
 	srliw	a1, a1, 24
 	sltiu	a1, a1, 255
-	xori	a1, a1, 1
 	addi	a0, a0, -255
+	xori	a1, a1, 1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

@@ -33,8 +33,8 @@ func0000000000000041:                   # @func0000000000000041
 	ret
 func0000000000000018:                   # @func0000000000000018
 	andi	a2, a2, 255
-	seqz	a2, a2
 	srliw	a1, a1, 12
+	seqz	a2, a2
 	snez	a1, a1
 	and	a2, a2, a1
 	li	a1, 255
@@ -45,10 +45,10 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 func0000000000000084:                   # @func0000000000000084
 	lui	a3, 14
+	srliw	a1, a1, 11
 	and	a2, a2, a3
 	xor	a2, a2, a3
 	seqz	a2, a2
-	srliw	a1, a1, 11
 	sltiu	a1, a1, 27
 	or	a1, a1, a2
 	bnez	a1, .LBB4_2

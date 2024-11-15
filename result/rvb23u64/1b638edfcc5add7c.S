@@ -1,7 +1,7 @@
 func00000000000000d1:                   # @func00000000000000d1
 	sext.w	a2, a2
-	slti	a2, a2, 54
 	li	a3, 6
+	slti	a2, a2, 54
 	czero.nez	a3, a3, a2
 	czero.eqz	a1, a1, a2
 	or	a1, a1, a3
@@ -38,8 +38,8 @@ func0000000000000086:                   # @func0000000000000086
 	ret
 func0000000000000094:                   # @func0000000000000094
 	sext.w	a2, a2
-	sltiu	a2, a2, 3
 	li	a3, 3
+	sltiu	a2, a2, 3
 	czero.nez	a3, a3, a2
 	czero.eqz	a1, a1, a2
 	or	a1, a1, a3
@@ -48,8 +48,8 @@ func0000000000000094:                   # @func0000000000000094
 	ret
 func0000000000000151:                   # @func0000000000000151
 	sext.w	a2, a2
-	slti	a2, a2, 3
 	li	a3, 1
+	slti	a2, a2, 3
 	czero.eqz	a3, a3, a2
 	czero.nez	a1, a1, a2
 	or	a1, a1, a3
@@ -59,8 +59,8 @@ func0000000000000151:                   # @func0000000000000151
 	ret
 func0000000000000156:                   # @func0000000000000156
 	sext.w	a2, a2
-	slti	a2, a2, 3
 	li	a3, 1
+	slti	a2, a2, 3
 	czero.eqz	a3, a3, a2
 	czero.nez	a1, a1, a2
 	or	a1, a1, a3
@@ -69,8 +69,8 @@ func0000000000000156:                   # @func0000000000000156
 	ret
 func0000000000000111:                   # @func0000000000000111
 	sext.w	a2, a2
-	sltiu	a2, a2, 2
 	li	a3, 1
+	sltiu	a2, a2, 2
 	czero.eqz	a3, a3, a2
 	czero.nez	a1, a1, a2
 	or	a1, a1, a3
@@ -133,8 +133,8 @@ func0000000000000039:                   # @func0000000000000039
 	ret
 func0000000000000148:                   # @func0000000000000148
 	sext.w	a2, a2
-	slti	a2, a2, 0
 	lui	a3, 1
+	slti	a2, a2, 0
 	czero.eqz	a3, a3, a2
 	czero.nez	a1, a1, a2
 	or	a1, a1, a3
@@ -162,8 +162,8 @@ func0000000000000091:                   # @func0000000000000091
 	ret
 func0000000000000154:                   # @func0000000000000154
 	sext.w	a2, a2
-	slti	a2, a2, 86
 	li	a3, 128
+	slti	a2, a2, 86
 	czero.eqz	a3, a3, a2
 	czero.nez	a1, a1, a2
 	or	a1, a1, a3
@@ -172,8 +172,8 @@ func0000000000000154:                   # @func0000000000000154
 	ret
 func0000000000000158:                   # @func0000000000000158
 	sext.w	a2, a2
-	slti	a2, a2, 86
 	li	a3, 128
+	slti	a2, a2, 86
 	czero.eqz	a3, a3, a2
 	czero.nez	a1, a1, a2
 	or	a1, a1, a3

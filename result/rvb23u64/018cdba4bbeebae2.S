@@ -14,8 +14,8 @@ func0000000000000034:                   # @func0000000000000034
 	ret
 func0000000000000018:                   # @func0000000000000018
 	zext.w	a0, a0
-	addi	a0, a0, -1
 	li	a1, 63
+	addi	a0, a0, -1
 	bseti	a1, a1, 63
 	and	a0, a0, a1
 	bseti	a1, zero, 63
@@ -43,9 +43,9 @@ func0000000000000071:                   # @func0000000000000071
 	ret
 func0000000000000038:                   # @func0000000000000038
 	zext.w	a0, a0
+	lui	a1, 2
 	addi	a0, a0, 7
 	andi	a0, a0, -8
-	lui	a1, 2
 	addiw	a1, a1, -32
 	sltu	a0, a1, a0
 	ret

@@ -4,8 +4,8 @@ func0000000000000008:                   # @func0000000000000008
 	li	a0, -64
 	zext.w	a0, a0
 	vand.vx	v8, v8, a0
-	vadd.vv	v8, v8, v10
 	li	a0, -1
+	vadd.vv	v8, v8, v10
 	srli	a0, a0, 32
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -24,8 +24,8 @@ func00000000000000f8:                   # @func00000000000000f8
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vi	v10, v10, 15
 	vadd.vv	v8, v8, v8
-	vadd.vv	v8, v8, v10
 	lui	a0, 15
+	vadd.vv	v8, v8, v10
 	addiw	a0, a0, -1440
 	vmsgtu.vx	v0, v8, a0
 	ret

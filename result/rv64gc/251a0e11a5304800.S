@@ -44,10 +44,10 @@ func00000000000000c2:                   # @func00000000000000c2
 	ret
 func0000000000000130:                   # @func0000000000000130
 	fclass.d	a1, fa0
-	andi	a1, a1, 896
-	snez	a1, a1
 	li	a2, -7
+	andi	a1, a1, 896
 	slli	a2, a2, 48
+	snez	a1, a1
 	addi	a2, a2, -1
 	sltu	a0, a2, a0
 	or	a0, a0, a1

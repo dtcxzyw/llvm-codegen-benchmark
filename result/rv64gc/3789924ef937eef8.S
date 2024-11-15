@@ -27,10 +27,10 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 func000000000000001c:                   # @func000000000000001c
 	andi	a1, a1, 7
+	slli	a0, a0, 52
 	addi	a1, a1, -6
 	seqz	a1, a1
 	addi	a1, a1, 5
-	slli	a0, a0, 52
 	srli	a0, a0, 52
 	xor	a0, a0, a1
 	snez	a0, a0

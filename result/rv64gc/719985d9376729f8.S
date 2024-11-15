@@ -12,9 +12,9 @@ func0000000000000088:                   # @func0000000000000088
 	ret
 func0000000000000022:                   # @func0000000000000022
 	sub	a1, a1, a2
+	addi	a0, a0, 1
 	addi	a1, a1, 1
 	seqz	a1, a1
-	addi	a0, a0, 1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
@@ -70,16 +70,16 @@ func000000000000014c:                   # @func000000000000014c
 	ret
 func00000000000000d4:                   # @func00000000000000d4
 	sub	a1, a1, a2
-	slti	a1, a1, 8
 	slti	a0, a0, -7
+	slti	a1, a1, 8
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 func0000000000000038:                   # @func0000000000000038
 	sub	a1, a1, a2
+	addi	a0, a0, 1
 	addi	a1, a1, -112
 	snez	a1, a1
-	addi	a0, a0, 1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
@@ -92,8 +92,8 @@ func0000000000000188:                   # @func0000000000000188
 	ret
 func00000000000000d0:                   # @func00000000000000d0
 	sub	a1, a1, a2
-	slti	a1, a1, 8
 	sltiu	a0, a0, 16
+	slti	a1, a1, 8
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

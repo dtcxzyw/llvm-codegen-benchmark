@@ -49,8 +49,8 @@ func0000000000000661:                   # @func0000000000000661
 	ret
 func0000000000000ca1:                   # @func0000000000000ca1
 	sext.w	a0, a0
-	snez	a0, a0
 	slti	a1, a1, 2
+	snez	a0, a0
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret

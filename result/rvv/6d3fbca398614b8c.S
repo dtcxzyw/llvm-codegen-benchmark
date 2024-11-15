@@ -30,9 +30,9 @@ func0000000000000008:                   # @func0000000000000008
 	vsra.vx	v10, v8, a0
 	li	a0, 50
 	vsrl.vx	v10, v10, a0
+	li	a0, -1
 	vadd.vv	v8, v8, v10
 	vsll.vi	v8, v8, 18
-	li	a0, -1
 	slli	a0, a0, 32
 	vand.vx	v8, v8, a0
 	ret

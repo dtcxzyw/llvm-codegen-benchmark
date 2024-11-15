@@ -44,9 +44,9 @@ func0000000000000024:                   # @func0000000000000024
 	.quad	0x3f847ae147ae147b              # double 0.01
 func0000000000000034:                   # @func0000000000000034
 	fmv.d.x	fa5, zero
+	lui	a0, %hi(.LCPI4_0)
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vmfge.vf	v16, v8, fa5
-	lui	a0, %hi(.LCPI4_0)
 	fld	fa5, %lo(.LCPI4_0)(a0)
 	vmnot.m	v0, v16
 	vfneg.v	v8, v8, v0.t
@@ -56,9 +56,9 @@ func0000000000000034:                   # @func0000000000000034
 	.quad	0x3d719799812dea11              # double 9.9999999999999998E-13
 func0000000000000035:                   # @func0000000000000035
 	fmv.d.x	fa5, zero
+	lui	a0, %hi(.LCPI5_0)
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vmfge.vf	v16, v8, fa5
-	lui	a0, %hi(.LCPI5_0)
 	fld	fa5, %lo(.LCPI5_0)(a0)
 	vmnot.m	v0, v16
 	vfneg.v	v8, v8, v0.t
@@ -69,9 +69,9 @@ func0000000000000035:                   # @func0000000000000035
 	.quad	0x3d719799812dea11              # double 9.9999999999999998E-13
 func000000000000003a:                   # @func000000000000003a
 	fmv.d.x	fa5, zero
+	lui	a0, %hi(.LCPI6_0)
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vmfge.vf	v16, v8, fa5
-	lui	a0, %hi(.LCPI6_0)
 	fld	fa5, %lo(.LCPI6_0)(a0)
 	vmnot.m	v0, v16
 	vfneg.v	v8, v8, v0.t
@@ -81,9 +81,9 @@ func000000000000003a:                   # @func000000000000003a
 	.quad	0x73d658e3ab795204              # double 9.9999999999999992E+249
 func0000000000000032:                   # @func0000000000000032
 	fmv.d.x	fa5, zero
+	lui	a0, %hi(.LCPI7_0)
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vmfge.vf	v16, v8, fa5
-	lui	a0, %hi(.LCPI7_0)
 	fld	fa5, %lo(.LCPI7_0)(a0)
 	vmnot.m	v0, v16
 	vfneg.v	v8, v8, v0.t

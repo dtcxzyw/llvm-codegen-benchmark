@@ -26,11 +26,11 @@ func0000000000000000:                   # @func0000000000000000
 	lui	a2, 244
 	addiw	a2, a2, 576
 	mul	a1, a1, a2
+	lui	a2, 56542
+	addiw	a2, a2, -1231
+	slli	a2, a2, 13
 	add	a0, a0, a1
-	lui	a1, 56542
-	addiw	a1, a1, -1231
-	slli	a1, a1, 13
-	addi	a1, a1, -417
+	addi	a1, a2, -417
 	slli	a1, a1, 15
 	add	a0, a0, a1
 	srli	a0, a0, 8

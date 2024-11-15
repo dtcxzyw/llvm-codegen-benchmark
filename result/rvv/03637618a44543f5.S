@@ -10,8 +10,8 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000003:                   # @func0000000000000003
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsrl.vi	v10, v10, 20
-	vand.vi	v10, v10, 15
 	li	a0, 16
+	vand.vi	v10, v10, 15
 	vmv.v.x	v12, a0
 	vsll.vv	v10, v12, v10
 	vand.vv	v8, v10, v8

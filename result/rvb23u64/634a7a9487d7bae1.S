@@ -14,9 +14,9 @@ func00000000000005aa:                   # @func00000000000005aa
 	ret
 func00000000000004a8:                   # @func00000000000004a8
 	subw	a2, a2, a1
-	slti	a2, a2, 2
 	subw	a0, a0, a1
+	slti	a1, a2, 2
 	sltiu	a0, a0, 2
-	or	a0, a0, a2
+	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret

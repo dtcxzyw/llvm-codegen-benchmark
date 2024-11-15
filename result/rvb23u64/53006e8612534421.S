@@ -10,8 +10,8 @@ func0000000000000150:                   # @func0000000000000150
 func00000000000000d0:                   # @func00000000000000d0
 	sext.h	a2, a2
 	sext.h	a1, a1
-	slt	a1, a1, a2
 	srliw	a0, a0, 16
+	slt	a1, a1, a2
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
@@ -35,9 +35,9 @@ func0000000000000118:                   # @func0000000000000118
 	ret
 func0000000000000198:                   # @func0000000000000198
 	sext.w	a2, a2
-	xori	a2, a2, 4
 	xor	a0, a0, a1
+	xori	a1, a2, 4
 	zext.h	a0, a0
-	or	a0, a0, a2
+	or	a0, a0, a1
 	snez	a0, a0
 	ret

@@ -18,11 +18,11 @@ func0000000000000031:                   # @func0000000000000031
 	lui	a2, 1048573
 	addi	a2, a2, -1
 	mul	a1, a1, a2
+	lui	a2, 1
 	add	a0, a0, a1
-	lui	a1, 1
-	addi	a1, a1, -1366
-	mul	a0, a0, a1
 	lui	a1, 131051
+	addi	a2, a2, -1366
+	mul	a0, a0, a2
 	addi	a1, a1, -1376
 	addw	a0, a0, a1
 	ret
@@ -46,9 +46,9 @@ func00000000000000d5:                   # @func00000000000000d5
 func0000000000000013:                   # @func0000000000000013
 	li	a2, 10
 	mul	a1, a1, a2
+	lui	a2, 1
 	add	a0, a0, a1
 	addi	a0, a0, -48
-	lui	a1, 1
-	addi	a1, a1, -496
+	addi	a1, a2, -496
 	mulw	a0, a0, a1
 	ret

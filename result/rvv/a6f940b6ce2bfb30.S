@@ -1,8 +1,8 @@
 func000000000000000b:                   # @func000000000000000b
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v10, v10, 8
-	vmseq.vi	v0, v10, 0
 	lui	a0, 8
+	vmseq.vi	v0, v10, 0
 	addi	a0, a0, -1
 	vmv.v.x	v10, a0
 	lui	a0, 4

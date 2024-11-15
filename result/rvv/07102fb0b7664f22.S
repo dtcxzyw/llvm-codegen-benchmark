@@ -16,9 +16,9 @@ func0000000000000268:                   # @func0000000000000268
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfclass.v	v16, v8
 	li	a0, 897
+	fli.d	fa5, -1.0
 	vand.vx	v16, v16, a0
 	vmsne.vi	v24, v16, 0
-	fli.d	fa5, -1.0
 	vmfle.vf	v16, v8, fa5
 	vmor.mm	v8, v16, v24
 	vmor.mm	v0, v8, v0
@@ -27,9 +27,9 @@ func0000000000000208:                   # @func0000000000000208
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfclass.v	v16, v8
 	li	a0, 129
+	fli.d	fa5, 0.5
 	vand.vx	v16, v16, a0
 	vmsne.vi	v24, v16, 0
-	fli.d	fa5, 0.5
 	vmflt.vf	v16, v8, fa5
 	vmor.mm	v8, v16, v24
 	vmor.mm	v0, v8, v0

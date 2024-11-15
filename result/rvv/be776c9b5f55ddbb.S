@@ -1,8 +1,8 @@
 func000000000000006c:                   # @func000000000000006c
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsext.vf2	v12, v11
-	vmslt.vv	v11, v8, v12
 	lui	a0, 32
+	vmslt.vv	v11, v8, v12
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vand.vx	v8, v10, a0
 	vmsne.vi	v8, v8, 0
@@ -11,8 +11,8 @@ func000000000000006c:                   # @func000000000000006c
 func00000000000000ac:                   # @func00000000000000ac
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsext.vf2	v12, v11
-	vmslt.vv	v11, v12, v8
 	li	a0, 64
+	vmslt.vv	v11, v12, v8
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vand.vx	v8, v10, a0
 	vmsne.vi	v8, v8, 0
@@ -21,17 +21,19 @@ func00000000000000ac:                   # @func00000000000000ac
 func0000000000000061:                   # @func0000000000000061
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsext.vf2	v12, v11
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vand.vi	v10, v10, 1
+	vsetvli	zero, zero, e64, m2, ta, ma
 	vmslt.vv	v11, v8, v12
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vand.vi	v8, v10, 1
-	vmseq.vi	v8, v8, 0
+	vmseq.vi	v8, v10, 0
 	vmand.mm	v0, v8, v11
 	ret
 func00000000000000a1:                   # @func00000000000000a1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsext.vf2	v12, v11
-	vmslt.vv	v11, v12, v8
 	lui	a0, 524288
+	vmslt.vv	v11, v12, v8
 	addi	a0, a0, -2
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vand.vx	v8, v10, a0
@@ -41,17 +43,19 @@ func00000000000000a1:                   # @func00000000000000a1
 func000000000000004c:                   # @func000000000000004c
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsext.vf2	v12, v11
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vand.vi	v10, v10, 1
+	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vv	v11, v8, v12
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vand.vi	v8, v10, 1
-	vmsne.vi	v8, v8, 0
+	vmsne.vi	v8, v10, 0
 	vmand.mm	v0, v8, v11
 	ret
 func0000000000000041:                   # @func0000000000000041
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsext.vf2	v12, v11
-	vmsltu.vv	v11, v8, v12
 	li	a0, 240
+	vmsltu.vv	v11, v8, v12
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vand.vx	v8, v10, a0
 	li	a0, 176

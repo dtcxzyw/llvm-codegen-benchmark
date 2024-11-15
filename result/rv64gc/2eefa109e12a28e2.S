@@ -1,7 +1,7 @@
 func00000000000001a6:                   # @func00000000000001a6
 	slli	a0, a0, 48
-	srai	a0, a0, 48
 	andi	a2, a2, 255
+	srai	a0, a0, 48
 	or	a1, a1, a2
 	slli	a1, a1, 48
 	srai	a1, a1, 48
@@ -20,14 +20,14 @@ func0000000000000111:                   # @func0000000000000111
 	ret
 func0000000000000118:                   # @func0000000000000118
 	lui	a3, 16
-	addiw	a3, a3, -1
-	and	a0, a0, a3
 	andi	a2, a2, 255
+	addiw	a3, a3, -1
 	or	a1, a1, a2
+	and	a0, a0, a3
 	and	a1, a1, a3
 	addi	a1, a1, -3
-	seqz	a1, a1
 	sltiu	a0, a0, 4
+	seqz	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
 	ret

@@ -1,10 +1,10 @@
 func0000000000000001:                   # @func0000000000000001
 	vmv1r.v	v10, v0
+	vmv1r.v	v0, v9
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv.v.i	v12, 1
 	lui	a0, 4
 	addi	a0, a0, 1
-	vmv1r.v	v0, v9
 	vmerge.vxm	v12, v12, a0, v0
 	vmv1r.v	v0, v8
 	vmerge.vim	v8, v12, 2, v0

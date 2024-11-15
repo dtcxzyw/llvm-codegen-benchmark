@@ -34,20 +34,20 @@ func0000000000000022:                   # @func0000000000000022
 	andi	a0, a0, 255
 	or	a1, a1, a2
 	sext.w	a1, a1
-	seqz	a1, a1
 	addi	a0, a0, -6
+	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 func0000000000000318:                   # @func0000000000000318
 	andi	a0, a0, 255
 	or	a1, a1, a2
-	sext.w	a1, a1
 	lui	a2, 464631
+	sext.w	a1, a1
 	addiw	a2, a2, -1690
+	sltiu	a0, a0, 2
 	xor	a1, a1, a2
 	snez	a1, a1
-	sltiu	a0, a0, 2
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

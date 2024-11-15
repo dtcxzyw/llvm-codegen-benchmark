@@ -1,8 +1,8 @@
 func00000000000000e0:                   # @func00000000000000e0
 	li	a0, 772
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vmseq.vx	v11, v11, a0
 	vmsne.vi	v10, v10, 0
+	vmseq.vx	v11, v11, a0
 	vmand.mm	v0, v10, v11
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.i	v10, 0

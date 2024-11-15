@@ -48,9 +48,9 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func0000000000000004:                   # @func0000000000000004
 	li	a1, 8
+	lui	a2, 66052
 	subw	a1, a1, a0
-	lui	a0, 66052
-	addiw	a0, a0, 128
+	addiw	a0, a2, 128
 	slli	a2, a0, 28
 	add	a0, a0, a2
 	sll	a0, a0, a1

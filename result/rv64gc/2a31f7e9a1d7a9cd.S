@@ -14,10 +14,10 @@ func0000000000000050:                   # @func0000000000000050
 	ret
 func0000000000000005:                   # @func0000000000000005
 	li	a3, 1000
-	mul	a2, a2, a3
 	subw	a1, a1, a0
-	add	a1, a1, a2
 	lui	a0, 464
+	mul	a2, a2, a3
+	add	a1, a1, a2
 	addi	a0, a0, -544
 	addw	a0, a0, a1
 	ret

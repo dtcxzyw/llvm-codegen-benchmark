@@ -1,8 +1,8 @@
 func0000000000000012:                   # @func0000000000000012
 	li	a2, -15
+	slli	a0, a0, 3
 	srli	a2, a2, 1
 	sltu	a1, a1, a2
-	slli	a0, a0, 3
 	li	a2, -8
 	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1

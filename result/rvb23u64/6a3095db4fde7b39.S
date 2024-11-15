@@ -34,25 +34,25 @@ func000000000000002a:                   # @func000000000000002a
 	ret
 func0000000000000002:                   # @func0000000000000002
 	add	a1, a1, a2
+	lui	a2, 150
 	sh2add	a0, a1, a0
-	lui	a1, 150
-	addiw	a1, a1, 768
+	addiw	a1, a2, 768
 	add	a0, a0, a1
 	ret
 func000000000000001e:                   # @func000000000000001e
 	add	a1, a1, a2
+	lui	a2, 3
 	sh1add	a1, a1, a1
 	sh1add	a0, a1, a0
-	lui	a1, 3
-	addiw	a1, a1, -418
+	addiw	a1, a2, -418
 	add	a0, a0, a1
 	ret
 func000000000000003e:                   # @func000000000000003e
 	add	a1, a1, a2
+	lui	a2, 3
 	sh1add	a1, a1, a1
 	sh1add	a0, a1, a0
-	lui	a1, 3
-	addiw	a1, a1, -436
+	addiw	a1, a2, -436
 	add	a0, a0, a1
 	ret
 func000000000000000e:                   # @func000000000000000e

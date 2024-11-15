@@ -10,10 +10,10 @@ func0000000000000005:                   # @func0000000000000005
 	lui	a3, 21
 	addiw	a3, a3, 384
 	mul	a2, a2, a3
+	lui	a3, 1048540
+	addiw	a3, a3, 1360
 	sub	a1, a1, a2
 	srai	a1, a1, 63
-	lui	a2, 1048540
-	addiw	a2, a2, 1360
-	add	a0, a0, a2
+	add	a0, a0, a3
 	add	a0, a0, a1
 	ret

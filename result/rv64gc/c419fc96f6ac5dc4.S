@@ -9,15 +9,15 @@ func000000000000000f:                   # @func000000000000000f
 	ret
 func0000000000000000:                   # @func0000000000000000
 	andi	a2, a2, 1
-	slli	a2, a2, 2
 	andi	a1, a1, -8
+	slli	a2, a2, 2
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
 func000000000000000c:                   # @func000000000000000c
 	andi	a2, a2, 1
-	slli	a2, a2, 3
 	andi	a0, a0, -8
+	slli	a2, a2, 3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
@@ -33,8 +33,8 @@ func0000000000000005:                   # @func0000000000000005
 	ret
 func0000000000000007:                   # @func0000000000000007
 	andi	a2, a2, 1
-	add	a1, a1, a2
 	slli	a0, a0, 32
+	add	a1, a1, a2
 	srli	a0, a0, 32
 	add	a0, a0, a1
 	addi	a0, a0, 1

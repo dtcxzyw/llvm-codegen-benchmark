@@ -15,10 +15,10 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000015:                   # @func0000000000000015
 	mul	a1, a1, a2
+	lui	a2, 8
 	add	a0, a0, a1
-	lui	a1, 8
-	addi	a1, a1, -1
-	addw	a0, a0, a1
+	addi	a2, a2, -1
+	addw	a0, a0, a2
 	ret
 func0000000000000014:                   # @func0000000000000014
 	mul	a1, a1, a2
@@ -65,8 +65,8 @@ func0000000000000020:                   # @func0000000000000020
 	ret
 func0000000000000001:                   # @func0000000000000001
 	mul	a1, a1, a2
+	lui	a2, 804435
 	add	a0, a0, a1
-	lui	a1, 804435
-	addi	a1, a1, 1536
+	addi	a1, a2, 1536
 	addw	a0, a0, a1
 	ret

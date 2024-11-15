@@ -35,15 +35,15 @@ func0000000000000078:                   # @func0000000000000078
 	ret
 func0000000000000038:                   # @func0000000000000038
 	or	a1, a1, a2
+	li	a2, -9
 	add	a0, a0, a1
-	li	a1, -9
-	srli	a1, a1, 3
-	sltu	a0, a1, a0
+	srli	a2, a2, 3
+	sltu	a0, a2, a0
 	ret
 func0000000000000008:                   # @func0000000000000008
 	or	a1, a1, a2
+	li	a2, -9
 	add	a0, a0, a1
-	li	a1, -9
-	srli	a1, a1, 3
-	sltu	a0, a1, a0
+	srli	a2, a2, 3
+	sltu	a0, a2, a0
 	ret

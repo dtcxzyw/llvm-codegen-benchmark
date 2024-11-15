@@ -27,8 +27,8 @@ func000000000000000f:                   # @func000000000000000f
 func000000000000000d:                   # @func000000000000000d
 	andi	a0, a0, 1
 	andi	a2, a2, 1
-	addi	a2, a2, -1
 	li	a3, -4
+	addi	a2, a2, -1
 	zext.w	a3, a3
 	or	a2, a2, a3
 	czero.nez	a0, a2, a0

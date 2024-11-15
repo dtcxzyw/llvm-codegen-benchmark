@@ -1,9 +1,9 @@
 func000000000000000f:                   # @func000000000000000f
 	or	a1, a1, a2
+	lui	a2, 65535
 	add	a0, a0, a1
-	lui	a1, 65535
-	slli	a1, a1, 12
-	add	a0, a0, a1
+	slli	a2, a2, 12
+	add	a0, a0, a2
 	ret
 func0000000000000002:                   # @func0000000000000002
 	or	a1, a1, a2

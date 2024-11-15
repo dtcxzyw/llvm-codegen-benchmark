@@ -5,9 +5,9 @@ func0000000000000003:                   # @func0000000000000003
 	vmv.v.i	v10, 2
 	li	a0, 64
 	vmerge.vxm	v10, v10, a0, v0
+	li	a0, -75
 	vmv1r.v	v0, v12
 	vmerge.vim	v10, v10, 8, v0
-	li	a0, -75
 	vand.vx	v8, v8, a0
 	vor.vv	v8, v8, v10
 	ret

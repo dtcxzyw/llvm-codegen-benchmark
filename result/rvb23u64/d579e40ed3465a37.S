@@ -14,10 +14,10 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000001:                   # @func0000000000000001
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a0)
+	li	a0, 1
 	fmul.d	fa5, fa0, fa5
-	fcvt.w.d	a0, fa5, rtz
-	li	a1, 1
-	max	a0, a0, a1
+	fcvt.w.d	a1, fa5, rtz
+	max	a0, a1, a0
 	li	a1, 30
 	min	a0, a0, a1
 	ret

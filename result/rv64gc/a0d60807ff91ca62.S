@@ -34,8 +34,8 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func00000000000000c4:                   # @func00000000000000c4
 	mul	a0, a1, a0
-	slli	a0, a0, 2
 	li	a1, -1
+	slli	a0, a0, 2
 	srli	a1, a1, 1
 	sltu	a0, a0, a1
 	ret
@@ -68,8 +68,8 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func0000000000000004:                   # @func0000000000000004
 	mul	a0, a1, a0
-	slli	a0, a0, 3
 	lui	a1, 8
+	slli	a0, a0, 3
 	addiw	a1, a1, 1
 	sltu	a0, a0, a1
 	ret
@@ -86,8 +86,8 @@ func0000000000000056:                   # @func0000000000000056
 	ret
 func000000000000004a:                   # @func000000000000004a
 	mul	a0, a1, a0
-	slli	a0, a0, 2
 	lui	a1, 524288
+	slli	a0, a0, 2
 	addiw	a1, a1, -1
 	slt	a0, a1, a0
 	ret

@@ -20,8 +20,8 @@ func00000000000000a0:                   # @func00000000000000a0
 	.quad	4835703278458516699             # 0x431bde82d7b634db
 func0000000000000080:                   # @func0000000000000080
 	lui	a0, 609123
-	slli	a0, a0, 1
 	lui	a1, %hi(.LCPI1_0)
+	slli	a0, a0, 1
 	ld	a1, %lo(.LCPI1_0)(a1)
 	addi	a0, a0, -1024
 	vsetivli	zero, 4, e64, m2, ta, ma

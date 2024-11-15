@@ -6,11 +6,11 @@ func0000000000000003:                   # @func0000000000000003
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v8, v8, 1
 	vmulhu.vx	v10, v8, a0
+	lui	a0, 1015808
 	vsub.vv	v8, v8, v10
 	vsrl.vi	v8, v8, 1
 	vadd.vv	v8, v8, v10
 	vsrl.vi	v8, v8, 26
-	lui	a0, 1015808
 	srli	a0, a0, 26
 	vand.vx	v8, v8, a0
 	ret

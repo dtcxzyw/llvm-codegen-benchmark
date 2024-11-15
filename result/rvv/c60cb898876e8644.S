@@ -1,9 +1,9 @@
 func00000000000000d4:                   # @func00000000000000d4
 	lui	a0, 16
 	addi	a1, a0, -1000
+	addi	a0, a0, -8
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmacc.vx	v8, a1, v10
-	addi	a0, a0, -8
 	vand.vx	v8, v8, a0
 	li	a0, 1000
 	vmsltu.vx	v0, v8, a0
@@ -11,9 +11,9 @@ func00000000000000d4:                   # @func00000000000000d4
 func00000000000000e4:                   # @func00000000000000e4
 	lui	a0, 16
 	addi	a1, a0, -1000
+	addi	a0, a0, -8
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmacc.vx	v8, a1, v10
-	addi	a0, a0, -8
 	vand.vx	v8, v8, a0
 	li	a0, 1000
 	vmsltu.vx	v0, v8, a0
@@ -21,9 +21,9 @@ func00000000000000e4:                   # @func00000000000000e4
 func00000000000000f4:                   # @func00000000000000f4
 	lui	a0, 16
 	addi	a1, a0, -6
+	addi	a0, a0, -32
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmacc.vx	v8, a1, v10
-	addi	a0, a0, -32
 	vand.vx	v8, v8, a0
 	li	a0, 96
 	vmsltu.vx	v0, v8, a0

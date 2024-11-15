@@ -1,8 +1,8 @@
 func0000000000000c4c:                   # @func0000000000000c4c
 	sext.w	a1, a1
 	not	a2, a2
-	sltiu	a1, a1, 5
 	xori	a0, a0, 254
+	sltiu	a1, a1, 5
 	or	a0, a0, a2
 	andi	a0, a0, 255
 	snez	a0, a0
@@ -40,9 +40,9 @@ func0000000000000c44:                   # @func0000000000000c44
 	sext.w	a1, a1
 	andi	a2, a2, 255
 	addi	a2, a2, -4
-	snez	a2, a2
 	sltiu	a1, a1, 24
 	sltiu	a0, a0, 232
+	snez	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

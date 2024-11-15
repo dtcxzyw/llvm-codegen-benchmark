@@ -22,8 +22,8 @@ func000000000000000d:                   # @func000000000000000d
 	vsrl.vi	v12, v12, 1
 	bseti	a0, zero, 31
 	vand.vx	v12, v12, a0
-	vor.vv	v10, v12, v10
 	li	a0, 32
+	vor.vv	v10, v12, v10
 	vsll.vx	v8, v8, a0
 	vor.vv	v8, v8, v10
 	ret

@@ -3,8 +3,8 @@ func00000000000001f1:                   # @func00000000000001f1
 	li	a3, 1000
 	mul	a1, a1, a3
 	mulhu	a4, a0, a3
-	add	a1, a1, a4
 	mul	a0, a0, a3
+	add	a1, a1, a4
 	or	a0, a0, a2
 	or	a0, a0, a1
 	seqz	a0, a0
@@ -14,8 +14,8 @@ func00000000000000f8:                   # @func00000000000000f8
 	addiw	a3, a3, -1536
 	mul	a1, a1, a3
 	mulhu	a4, a0, a3
-	add	a1, a1, a4
 	mul	a0, a0, a3
+	add	a1, a1, a4
 	add.uw	a2, a2, a0
 	sltu	a0, a2, a0
 	add	a0, a0, a1
@@ -26,8 +26,8 @@ func00000000000001f8:                   # @func00000000000001f8
 	addiw	a3, a3, -1536
 	mul	a1, a1, a3
 	mulhu	a4, a0, a3
-	add	a1, a1, a4
 	mul	a0, a0, a3
+	add	a1, a1, a4
 	add.uw	a2, a2, a0
 	sltu	a0, a2, a0
 	add	a0, a0, a1
@@ -39,8 +39,8 @@ func00000000000000f4:                   # @func00000000000000f4
 	slli	a3, a3, 11
 	mul	a1, a1, a3
 	mulhu	a4, a0, a3
-	add	a1, a1, a4
 	mul	a0, a0, a3
+	add	a1, a1, a4
 	add.uw	a2, a2, a0
 	sltu	a0, a2, a0
 	add	a0, a0, a1
@@ -52,8 +52,8 @@ func00000000000000f1:                   # @func00000000000000f1
 	addiw	a3, a3, -1536
 	mul	a1, a1, a3
 	mulhu	a4, a0, a3
-	add	a1, a1, a4
 	mul	a0, a0, a3
+	add	a1, a1, a4
 	or	a0, a0, a2
 	or	a0, a0, a1
 	seqz	a0, a0
@@ -62,8 +62,8 @@ func00000000000001f4:                   # @func00000000000001f4
 	li	a3, 1000
 	mul	a1, a1, a3
 	mulhu	a4, a0, a3
-	add	a1, a1, a4
 	mul	a0, a0, a3
+	add	a1, a1, a4
 	add.uw	a2, a2, a0
 	sltu	a0, a2, a0
 	add	a0, a0, a1

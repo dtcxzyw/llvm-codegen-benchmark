@@ -31,10 +31,10 @@ func000000000000015a:                   # @func000000000000015a
 func000000000000011a:                   # @func000000000000011a
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsub.vv	v10, v10, v12
+	lui	a0, 23
 	vadd.vi	v10, v10, 15
 	vand.vi	v10, v10, -16
 	vadd.vv	v8, v10, v8
-	lui	a0, 23
 	addi	a0, a0, 1792
 	vmsgt.vx	v0, v8, a0
 	ret

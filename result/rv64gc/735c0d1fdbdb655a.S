@@ -14,8 +14,8 @@ func0000000000000010:                   # @func0000000000000010
 	li	a2, 14
 .LBB1_2:                                # %entry
 	add	a0, a0, a1
-	add	a0, a0, a2
 	lui	a1, 200
+	add	a0, a0, a2
 	addiw	a1, a1, -702
 	add	a0, a0, a1
 	ret

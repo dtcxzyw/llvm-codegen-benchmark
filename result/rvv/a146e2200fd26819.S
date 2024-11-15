@@ -31,11 +31,12 @@ func0000000000001102:                   # @func0000000000001102
 	ret
 func0000000000000514:                   # @func0000000000000514
 	li	a0, 128
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmseq.vx	v12, v10, a0
-	vsetvli	zero, zero, e8, mf2, ta, ma
+	vsetivli	zero, 8, e8, mf2, ta, ma
 	vmsleu.vi	v9, v9, 3
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vmseq.vx	v12, v10, a0
 	vmor.mm	v9, v9, v12
+	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmsgt.vi	v8, v8, -1
 	vmor.mm	v0, v8, v9
 	ret

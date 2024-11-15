@@ -1,11 +1,12 @@
 func0000000000000023:                   # @func0000000000000023
 	lui	a0, 16
-	addiw	a0, a0, -1
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsgtu.vx	v0, v10, a0
-	vsetvli	zero, zero, e32, m1, ta, mu
+	vsetivli	zero, 4, e32, m1, ta, ma
 	vor.vv	v8, v8, v9
+	addiw	a0, a0, -1
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vmsgtu.vx	v0, v10, a0
 	li	a0, 16
+	vsetvli	zero, zero, e32, m1, ta, mu
 	vor.vx	v8, v8, a0, v0.t
 	ret
 func0000000000000007:                   # @func0000000000000007

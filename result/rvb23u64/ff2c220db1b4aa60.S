@@ -224,10 +224,10 @@ func00000000000000a8:                   # @func00000000000000a8
 	slti	a2, a2, 0
 	czero.nez	a0, a0, a2
 	czero.eqz	a1, a1, a2
+	lui	a2, 158203
 	or	a0, a0, a1
 	sext.w	a0, a0
-	lui	a1, 158203
-	addiw	a1, a1, 512
+	addiw	a1, a2, 512
 	sltu	a0, a1, a0
 	ret
 func00000000000000c6:                   # @func00000000000000c6

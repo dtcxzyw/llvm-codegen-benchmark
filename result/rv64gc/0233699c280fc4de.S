@@ -9,11 +9,11 @@ func000000000000002a:                   # @func000000000000002a
 func000000000000002b:                   # @func000000000000002b
 	lui	a3, 5
 	addiw	a4, a3, 944
+	addiw	a3, a3, 912
 	mul	a2, a2, a4
-	add	a1, a1, a2
 	mul	a0, a0, a4
-	addiw	a2, a3, 912
-	add	a0, a0, a2
+	add	a1, a1, a2
+	add	a0, a0, a3
 	add	a0, a0, a1
 	ret
 func0000000000000002:                   # @func0000000000000002

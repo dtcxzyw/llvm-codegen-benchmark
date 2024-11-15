@@ -1,7 +1,7 @@
 func000000000000000c:                   # @func000000000000000c
 	addi	a1, a1, -128
-	not	a1, a1
 	li	a2, 255
+	not	a1, a1
 	slli	a2, a2, 32
 	or	a1, a1, a2
 	srli	a1, a1, 8

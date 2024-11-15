@@ -7,10 +7,10 @@ func0000000000000038:                   # @func0000000000000038
 	srli	a1, a1, 50
 	or	a1, a1, a2
 	lui	a2, 16
+	andi	a0, a0, 3
 	addiw	a2, a2, -1
 	and	a1, a1, a2
 	sltiu	a1, a1, 656
-	andi	a0, a0, 3
 	snez	a0, a0
 	or	a0, a0, a1
 	ret

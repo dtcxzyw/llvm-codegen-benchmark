@@ -1,7 +1,7 @@
 func0000000000000011:                   # @func0000000000000011
 	lui	a3, 1044480
-	xor	a2, a2, a3
 	xori	a1, a1, 24
+	xor	a2, a2, a3
 	or	a1, a1, a2
 	sext.w	a1, a1
 	seqz	a1, a1

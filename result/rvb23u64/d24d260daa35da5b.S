@@ -42,8 +42,8 @@ func0000000000000088:                   # @func0000000000000088
 	ret
 func0000000000000188:                   # @func0000000000000188
 	sext.w	a2, a2
-	snez	a2, a2
 	slli	a1, a1, 48
+	snez	a2, a2
 	srli	a1, a1, 62
 	sltiu	a1, a1, 3
 	and	a1, a1, a2
@@ -77,8 +77,8 @@ func0000000000000038:                   # @func0000000000000038
 func0000000000000094:                   # @func0000000000000094
 	sext.w	a1, a1
 	zext.h	a2, a2
-	sltiu	a2, a2, 12
 	lui	a3, 36
+	sltiu	a2, a2, 12
 	addiw	a3, a3, 1044
 	slt	a1, a3, a1
 	and	a1, a1, a2

@@ -17,8 +17,8 @@ func000000000000008c:                   # @func000000000000008c
 	ret
 func00000000000000ca:                   # @func00000000000000ca
 	sext.w	a1, a1
-	snez	a1, a1
 	sgtz	a0, a0
+	snez	a1, a1
 	and	a0, a0, a1
 	li	a1, -1
 	slli	a1, a1, 63
@@ -26,8 +26,8 @@ func00000000000000ca:                   # @func00000000000000ca
 	ret
 func0000000000000081:                   # @func0000000000000081
 	sext.w	a1, a1
-	sltiu	a1, a1, 4
 	addi	a0, a0, -6
+	sltiu	a1, a1, 4
 	snez	a0, a0
 	or	a1, a1, a0
 	li	a0, 224

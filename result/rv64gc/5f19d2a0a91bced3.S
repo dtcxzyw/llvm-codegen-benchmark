@@ -44,8 +44,8 @@ func000000000000002e:                   # @func000000000000002e
 	ret
 func000000000000001e:                   # @func000000000000001e
 	slli	a2, a2, 32
-	srli	a2, a2, 32
 	sext.w	a1, a1
+	srli	a2, a2, 32
 	mul	a0, a1, a0
 	mul	a0, a0, a2
 	ret

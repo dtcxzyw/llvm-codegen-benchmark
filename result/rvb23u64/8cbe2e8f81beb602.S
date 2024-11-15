@@ -3,13 +3,13 @@ func0000000000000015:                   # @func0000000000000015
 	lui	a4, 559241
 	addiw	a4, a4, -1911
 	mul	a3, a3, a4
+	li	a4, -60
 	srli	a3, a3, 32
 	add	a2, a2, a3
 	srliw	a3, a2, 31
 	sraiw	a2, a2, 5
 	add	a2, a2, a3
-	li	a3, -60
-	mul	a2, a2, a3
+	mul	a2, a2, a4
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

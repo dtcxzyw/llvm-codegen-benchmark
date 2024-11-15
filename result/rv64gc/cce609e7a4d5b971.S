@@ -1,10 +1,10 @@
 func0000000000000055:                   # @func0000000000000055
-	lui	a3, 1
-	addiw	a3, a3, -496
-	mul	a2, a2, a3
 	slli	a3, a1, 2
 	slli	a1, a1, 6
 	sub	a1, a1, a3
+	lui	a3, 1
+	addiw	a3, a3, -496
+	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
@@ -12,13 +12,13 @@ func0000000000000055:                   # @func0000000000000055
 	.quad	-4417276706812531889            # 0xc2b2ae3d27d4eb4f
 func0000000000000020:                   # @func0000000000000020
 	lui	a3, %hi(.LCPI1_0)
+	lui	a4, 195
 	ld	a3, %lo(.LCPI1_0)(a3)
+	addiw	a4, a4, -1237
+	slli	a4, a4, 12
+	addi	a4, a4, -451
+	mul	a1, a1, a4
 	mul	a2, a2, a3
-	lui	a3, 195
-	addiw	a3, a3, -1237
-	slli	a3, a3, 12
-	addi	a3, a3, -451
-	mul	a1, a1, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
@@ -28,8 +28,8 @@ func0000000000000020:                   # @func0000000000000020
 	.quad	-7046029288634856825            # 0x9e3779b185ebca87
 func0000000000000000:                   # @func0000000000000000
 	lui	a3, %hi(.LCPI2_0)
-	ld	a3, %lo(.LCPI2_0)(a3)
 	lui	a4, %hi(.LCPI2_1)
+	ld	a3, %lo(.LCPI2_0)(a3)
 	ld	a4, %lo(.LCPI2_1)(a4)
 	mul	a2, a2, a3
 	mul	a1, a1, a4
@@ -116,11 +116,11 @@ func00000000000000e0:                   # @func00000000000000e0
 	add	a0, a0, a1
 	ret
 func00000000000000fe:                   # @func00000000000000fe
+	li	a3, 100
+	mul	a1, a1, a3
 	lui	a3, 2
 	addiw	a3, a3, 1808
 	mul	a2, a2, a3
-	li	a3, 100
-	mul	a1, a1, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
@@ -128,8 +128,8 @@ func00000000000000fd:                   # @func00000000000000fd
 	lui	a3, 1
 	addiw	a3, a3, 337
 	addi	a4, a3, 1837
-	mul	a2, a2, a4
 	mul	a1, a1, a3
+	mul	a2, a2, a4
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

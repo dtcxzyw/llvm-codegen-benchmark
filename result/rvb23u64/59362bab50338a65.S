@@ -23,8 +23,8 @@ func0000000000000156:                   # @func0000000000000156
 	ret
 func0000000000000241:                   # @func0000000000000241
 	sext.b	a1, a1
-	addi	a1, a1, -48
 	li	a2, -10
+	addi	a1, a1, -48
 	mulw	a0, a0, a2
 	xor	a0, a0, a1
 	seqz	a0, a0

@@ -13,8 +13,8 @@ func0000000000000007:                   # @func0000000000000007
 func0000000000000001:                   # @func0000000000000001
 	andi	a0, a0, 1
 	slli	a1, a1, 4
-	addiw	a1, a1, 24
 	li	a2, 24
+	addiw	a1, a1, 24
 	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2
@@ -22,8 +22,8 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000004:                   # @func0000000000000004
 	andi	a0, a0, 1
 	slli	a1, a1, 2
-	addiw	a1, a1, 9
 	li	a2, 7
+	addiw	a1, a1, 9
 	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2
@@ -37,8 +37,8 @@ func0000000000000000:                   # @func0000000000000000
 func000000000000000a:                   # @func000000000000000a
 	andi	a0, a0, 1
 	slli	a1, a1, 1
-	addiw	a1, a1, 2
 	li	a2, 1
+	addiw	a1, a1, 2
 	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2
@@ -46,8 +46,8 @@ func000000000000000a:                   # @func000000000000000a
 func0000000000000005:                   # @func0000000000000005
 	andi	a0, a0, 1
 	slli	a1, a1, 1
-	addiw	a1, a1, 1000
 	li	a2, 16
+	addiw	a1, a1, 1000
 	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2

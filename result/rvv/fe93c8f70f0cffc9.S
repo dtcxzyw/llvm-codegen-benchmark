@@ -6,8 +6,8 @@ func0000000000000013:                   # @func0000000000000013
 	lui	a0, 524296
 	addi	a0, a0, 1
 	vmulhu.vx	v8, v8, a0
-	vsrl.vi	v8, v8, 12
 	lui	a0, 256
+	vsrl.vi	v8, v8, 12
 	addi	a0, a0, -8
 	vand.vx	v8, v8, a0
 	ret
@@ -65,8 +65,8 @@ func0000000000000003:                   # @func0000000000000003
 	lui	a0, 526344
 	addi	a0, a0, 129
 	vmulhu.vx	v8, v8, a0
-	vsrl.vi	v8, v8, 7
 	lui	a0, 8192
+	vsrl.vi	v8, v8, 7
 	addi	a0, a0, -2
 	vand.vx	v8, v8, a0
 	ret

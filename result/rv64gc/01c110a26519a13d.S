@@ -51,8 +51,8 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func000000000000001a:                   # @func000000000000001a
 	add	a0, a0, a1
-	addiw	a0, a0, 2
 	lui	a1, 512
+	addiw	a0, a0, 2
 	addiw	a1, a1, -1
 	slt	a0, a1, a0
 	ret

@@ -18,8 +18,8 @@ func0000000000000002:                   # @func0000000000000002
 	lui	a0, 220
 	addi	a0, a0, -1120
 	vmerge.vxm	v10, v10, a0, v0
-	vadd.vv	v8, v10, v8
 	lui	a0, 310689
+	vadd.vv	v8, v10, v8
 	addi	a0, a0, 759
 	vmulh.vx	v8, v8, a0
 	vsra.vi	v8, v8, 8

@@ -13,10 +13,10 @@ func0000000000000020:                   # @func0000000000000020
 	ret
 func0000000000000000:                   # @func0000000000000000
 	li	a0, -536
+	lui	a1, 790465
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
-	lui	a0, 790465
-	addiw	a0, a0, -63
+	addiw	a0, a1, -63
 	slli	a1, a0, 36
 	add	a0, a0, a1
 	vmulhu.vx	v8, v8, a0
@@ -56,10 +56,10 @@ func000000000000006f:                   # @func000000000000006f
 	ret
 func000000000000006b:                   # @func000000000000006b
 	li	a0, 59
+	lui	a1, 559241
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
-	lui	a0, 559241
-	addiw	a0, a0, -1911
+	addiw	a0, a1, -1911
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmulhu.vx	v8, v8, a0

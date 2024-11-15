@@ -51,8 +51,8 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 func0000000000000013:                   # @func0000000000000013
 	sext.w	a0, a0
-	seqz	a0, a0
 	fle.d	a1, fa1, fa0
+	seqz	a0, a0
 	not	a1, a1
 	and	a0, a0, a1
 	ret
@@ -95,8 +95,8 @@ func000000000000008a:                   # @func000000000000008a
 	ret
 func0000000000000015:                   # @func0000000000000015
 	sext.w	a0, a0
-	seqz	a0, a0
 	fle.d	a1, fa0, fa1
+	seqz	a0, a0
 	not	a1, a1
 	and	a0, a0, a1
 	ret
@@ -109,15 +109,15 @@ func0000000000000084:                   # @func0000000000000084
 	ret
 func000000000000006d:                   # @func000000000000006d
 	sext.w	a0, a0
-	slti	a0, a0, 301
 	flt.d	a1, fa0, fa1
+	slti	a0, a0, 301
 	not	a1, a1
 	and	a0, a0, a1
 	ret
 func0000000000000067:                   # @func0000000000000067
 	sext.w	a0, a0
-	slti	a0, a0, 5
 	feq.d	a1, fa0, fa1
+	slti	a0, a0, 5
 	not	a1, a1
 	and	a0, a0, a1
 	ret

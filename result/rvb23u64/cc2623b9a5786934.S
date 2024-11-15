@@ -44,9 +44,9 @@ func000000000000000c:                   # @func000000000000000c
 	andi	a0, a0, 1
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
+	lui	a1, 16
 	or	a0, a0, a2
 	zext.h	a0, a0
-	lui	a1, 16
 	addiw	a1, a1, -1
 	xor	a0, a0, a1
 	snez	a0, a0

@@ -1,8 +1,8 @@
 func000000000000006c:                   # @func000000000000006c
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
-	vmsne.vi	v8, v10, 0
 	li	a0, 768
+	vmsne.vi	v8, v10, 0
 	vmslt.vx	v9, v10, a0
 	vmand.mm	v0, v8, v9
 	ret
@@ -41,8 +41,8 @@ func00000000000000c8:                   # @func00000000000000c8
 func00000000000000c6:                   # @func00000000000000c6
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
-	vmsle.vi	v8, v10, -1
 	li	a0, -61
+	vmsle.vi	v8, v10, -1
 	vmsne.vx	v9, v10, a0
 	vmand.mm	v0, v8, v9
 	ret

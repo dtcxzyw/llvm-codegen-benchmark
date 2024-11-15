@@ -1,8 +1,8 @@
 func000000000000014c:                   # @func000000000000014c
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.i	v10, -1
-	vmerge.vvm	v8, v10, v8, v0
 	lui	a0, 1048573
+	vmerge.vvm	v8, v10, v8, v0
 	addi	a0, a0, 384
 	vadd.vx	v10, v8, a0
 	lui	a0, 7
@@ -16,10 +16,10 @@ func000000000000014c:                   # @func000000000000014c
 func000000000000004c:                   # @func000000000000004c
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.i	v10, 0
-	vmerge.vvm	v8, v10, v8, v0
-	vmsne.vi	v10, v8, 0
 	lui	a0, 1032192
+	vmerge.vvm	v8, v10, v8, v0
 	addi	a1, a0, -1
+	vmsne.vi	v10, v8, 0
 	vadd.vx	v8, v8, a1
 	addi	a0, a0, 511
 	vmsltu.vx	v11, v8, a0

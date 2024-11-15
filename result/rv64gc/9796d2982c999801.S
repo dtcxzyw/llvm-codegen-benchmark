@@ -28,8 +28,8 @@ func00000000000000aa:                   # @func00000000000000aa
 	ret
 func00000000000002cc:                   # @func00000000000002cc
 	xor	a1, a1, a2
-	snez	a1, a1
 	addi	a0, a0, -48
+	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -47,8 +47,8 @@ func0000000000000088:                   # @func0000000000000088
 	ret
 func00000000000000ca:                   # @func00000000000000ca
 	xor	a1, a1, a2
-	snez	a1, a1
 	slti	a0, a0, 0
+	snez	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -73,8 +73,8 @@ func00000000000000ac:                   # @func00000000000000ac
 	ret
 func0000000000000048:                   # @func0000000000000048
 	sub	a1, a1, a2
-	sltiu	a1, a1, -119
 	srli	a0, a0, 56
+	sltiu	a1, a1, -119
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -86,8 +86,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	ret
 func000000000000006a:                   # @func000000000000006a
 	sub	a1, a1, a2
-	slti	a1, a1, 0
 	slti	a0, a0, 0
+	slti	a1, a1, 0
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -117,8 +117,8 @@ func0000000000000111:                   # @func0000000000000111
 	ret
 func00000000000001a8:                   # @func00000000000001a8
 	sub	a1, a1, a2
-	slti	a1, a1, 151
 	srli	a0, a0, 3
+	slti	a1, a1, 151
 	sltiu	a0, a0, 301
 	or	a0, a0, a1
 	xori	a0, a0, 1

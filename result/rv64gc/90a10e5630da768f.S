@@ -12,8 +12,8 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func000000000000001c:                   # @func000000000000001c
 	or	a1, a1, a2
-	sext.w	a1, a1
 	lui	a2, 464631
+	sext.w	a1, a1
 	addiw	a2, a2, -1690
 	xor	a1, a1, a2
 	snez	a1, a1

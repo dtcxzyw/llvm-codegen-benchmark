@@ -118,9 +118,9 @@ func00000000000000c8:                   # @func00000000000000c8
 func00000000000003c1:                   # @func00000000000003c1
 	lui	a0, 586
 	addiw	a1, a0, -280
+	addiw	a0, a0, -256
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vx	v12, v10, a1
-	addiw	a0, a0, -256
 	vmsne.vx	v10, v8, a0
 	vmand.mm	v0, v12, v10
 	ret

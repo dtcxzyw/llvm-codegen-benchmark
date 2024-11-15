@@ -12,11 +12,11 @@ func0000000000000054:                   # @func0000000000000054
 	ret
 func0000000000000074:                   # @func0000000000000074
 	addiw	a1, a0, -33
-	sltiu	a1, a1, 63
 	lui	a2, 16
 	addi	a2, a2, -192
 	addw	a0, a0, a2
 	lui	a2, 512
+	sltiu	a1, a1, 63
 	addiw	a2, a2, -1
 	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1

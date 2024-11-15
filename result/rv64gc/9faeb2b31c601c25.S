@@ -1,7 +1,7 @@
 func000000000000001b:                   # @func000000000000001b
 	slli	a1, a1, 32
-	srli	a1, a1, 32
 	lui	a2, 16
+	srli	a1, a1, 32
 	sub	a0, a2, a0
 	bltu	a0, a1, .LBB0_2
 	mv	a0, a1
@@ -17,8 +17,8 @@ func0000000000000013:                   # @func0000000000000013
 	ret
 func0000000000000002:                   # @func0000000000000002
 	slli	a1, a1, 32
-	srli	a1, a1, 32
 	li	a2, 16
+	srli	a1, a1, 32
 	sub	a0, a2, a0
 	bltu	a0, a1, .LBB2_2
 	mv	a0, a1

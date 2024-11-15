@@ -6,10 +6,10 @@ func000000000000003d:                   # @func000000000000003d
 	ret
 func0000000000000008:                   # @func0000000000000008
 	sh1add	a1, a2, a1
+	li	a2, -5
 	or	a0, a0, a1
-	li	a1, -5
-	srli	a1, a1, 2
-	sub	a0, a1, a0
+	srli	a2, a2, 2
+	sub	a0, a2, a0
 	ret
 func000000000000003c:                   # @func000000000000003c
 	slli	a2, a2, 8

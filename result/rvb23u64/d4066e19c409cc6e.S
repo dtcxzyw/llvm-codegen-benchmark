@@ -6,10 +6,10 @@ func00000000000001f8:                   # @func00000000000001f8
 	ret
 func00000000000000aa:                   # @func00000000000000aa
 	add	a1, a1, a2
+	lui	a2, 7
 	addi	a1, a1, 1
 	sh3add.uw	a0, a1, a0
-	lui	a1, 7
-	addiw	a1, a1, -856
+	addiw	a1, a2, -856
 	add	a0, a0, a1
 	ret
 func000000000000000a:                   # @func000000000000000a

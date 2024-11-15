@@ -1,8 +1,8 @@
 func00000000000000ca:                   # @func00000000000000ca
 	sh1add	a2, a2, a2
+	sh3add	a0, a0, a0
 	slli	a2, a2, 4
 	add	a1, a1, a2
-	sh3add	a0, a0, a0
 	slli	a0, a0, 4
 	add	a0, a0, a1
 	addi	a0, a0, 240

@@ -11,8 +11,8 @@ func000000000000007c:                   # @func000000000000007c
 	slli	a1, a1, 61
 	srli	a1, a1, 43
 	or	a0, a0, a1
-	sext.w	a0, a0
 	lui	a1, 272
+	sext.w	a0, a0
 	addiw	a1, a1, 1
 	xor	a0, a0, a1
 	snez	a0, a0

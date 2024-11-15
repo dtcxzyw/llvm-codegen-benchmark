@@ -39,16 +39,16 @@ func00000000000000a0:                   # @func00000000000000a0
 	ret
 func00000000000000ba:                   # @func00000000000000ba
 	li	a3, 72
-	mul	a2, a2, a3
 	slli	a0, a0, 5
+	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 24
 	ret
 func00000000000000bb:                   # @func00000000000000bb
 	li	a3, 72
-	mul	a2, a2, a3
 	slli	a0, a0, 5
+	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 16

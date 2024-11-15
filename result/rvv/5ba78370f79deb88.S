@@ -15,8 +15,8 @@ func00000000000001ed:                   # @func00000000000001ed
 	.quad	6364136223846793005             # 0x5851f42d4c957f2d
 func000000000000000f:                   # @func000000000000000f
 	lui	a0, %hi(.LCPI1_0)
-	ld	a0, %lo(.LCPI1_0)(a0)
 	lui	a1, %hi(.LCPI1_1)
+	ld	a0, %lo(.LCPI1_0)(a0)
 	ld	a1, %lo(.LCPI1_1)(a1)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a0

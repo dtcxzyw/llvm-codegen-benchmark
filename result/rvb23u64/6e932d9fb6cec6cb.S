@@ -60,8 +60,8 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 func0000000000000014:                   # @func0000000000000014
 	add	a0, a0, a1
-	zext.h	a0, a0
 	lui	a1, 16
+	zext.h	a0, a0
 	addiw	a1, a1, -30
 	sltu	a0, a0, a1
 	ret

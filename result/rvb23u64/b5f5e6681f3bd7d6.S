@@ -10,8 +10,8 @@ func000000000000001c:                   # @func000000000000001c
 	andi	a0, a0, 255
 	sub	a1, a1, a2
 	addi	a1, a1, -3
-	snez	a1, a1
 	addi	a0, a0, -105
+	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -58,8 +58,8 @@ func00000000000000a1:                   # @func00000000000000a1
 	andi	a0, a0, 255
 	sub	a1, a1, a2
 	slti	a1, a1, 2
-	xori	a1, a1, 1
 	addi	a0, a0, -58
+	xori	a1, a1, 1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

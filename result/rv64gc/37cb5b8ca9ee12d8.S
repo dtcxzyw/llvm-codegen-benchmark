@@ -30,12 +30,12 @@ func00000000000001f5:                   # @func00000000000001f5
 func00000000000003fe:                   # @func00000000000003fe
 	add	a1, a1, a2
 	lui	a2, 1023
+	lui	a3, 514
 	addi	a2, a2, 1712
-	addi	a3, a2, 1172
-	mul	a1, a1, a3
 	mul	a0, a0, a2
-	lui	a2, 514
-	add	a0, a0, a2
+	addi	a2, a2, 1172
+	mul	a1, a1, a2
+	add	a0, a0, a3
 	addw	a0, a0, a1
 	ret
 func00000000000003ff:                   # @func00000000000003ff

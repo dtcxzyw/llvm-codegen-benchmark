@@ -7,8 +7,8 @@ func000000000000002c:                   # @func000000000000002c
 	vfadd.vf	v8, v8, fa5
 	fmv.w.x	fa5, zero
 	vmflt.vf	v0, v8, fa5
-	vmerge.vim	v8, v8, 0, v0
 	lui	a0, 278432
+	vmerge.vim	v8, v8, 0, v0
 	fmv.w.x	fa5, a0
 	vmfge.vf	v0, v8, fa5
 	ret
@@ -28,12 +28,12 @@ func0000000000000028:                   # @func0000000000000028
 	.word	0x477fff00                      # float 65535
 func0000000000000024:                   # @func0000000000000024
 	fli.s	fa5, 1.0
+	fmv.w.x	fa4, zero
+	lui	a0, %hi(.LCPI2_0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfadd.vf	v8, v8, fa5
-	fmv.w.x	fa5, zero
-	lui	a0, %hi(.LCPI2_0)
-	flw	fa4, %lo(.LCPI2_0)(a0)
-	vmflt.vf	v0, v8, fa5
+	flw	fa5, %lo(.LCPI2_0)(a0)
+	vmflt.vf	v0, v8, fa4
 	vmerge.vim	v8, v8, 0, v0
-	vmfgt.vf	v0, v8, fa4
+	vmfgt.vf	v0, v8, fa5
 	ret

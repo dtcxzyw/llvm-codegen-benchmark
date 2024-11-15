@@ -24,10 +24,10 @@ func0000000000000012:                   # @func0000000000000012
 	li	a3, -1023
 	slli	a3, a3, 51
 	add	a2, a2, a3
-	srli	a2, a2, 52
-	slli	a2, a2, 52
 	li	a3, 511
 	slli	a3, a3, 53
+	srli	a2, a2, 52
+	slli	a2, a2, 52
 	add	a2, a2, a3
 	addi	a1, a1, -1
 	and	a1, a1, a2

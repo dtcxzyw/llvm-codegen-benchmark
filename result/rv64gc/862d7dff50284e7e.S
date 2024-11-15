@@ -13,8 +13,8 @@ func0000000000000022:                   # @func0000000000000022
 	ret
 func0000000000000188:                   # @func0000000000000188
 	sext.w	a1, a1
-	snez	a1, a1
 	lui	a2, 8
+	snez	a1, a1
 	addiw	a2, a2, -1
 	sltu	a0, a0, a2
 	and	a0, a0, a1

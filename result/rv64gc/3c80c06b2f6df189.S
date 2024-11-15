@@ -59,12 +59,12 @@ func00000000000003fc:                   # @func00000000000003fc
 	slli	a3, a2, 2
 	slli	a2, a2, 6
 	subw	a2, a2, a3
+	lui	a3, 244
 	add	a1, a1, a2
 	slli	a2, a1, 2
 	slli	a1, a1, 6
 	subw	a1, a1, a2
 	add	a0, a0, a1
-	lui	a1, 244
-	addi	a1, a1, 576
+	addi	a1, a3, 576
 	mulw	a0, a0, a1
 	ret

@@ -33,17 +33,17 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func0000000000000014:                   # @func0000000000000014
 	sub	a1, a1, a2
+	lui	a2, 4
 	add	a0, a0, a1
-	lui	a1, 4
-	addiw	a1, a1, -1
-	add	a0, a0, a1
+	addiw	a2, a2, -1
+	add	a0, a0, a2
 	ret
 func000000000000003d:                   # @func000000000000003d
 	sub	a1, a1, a2
+	lui	a2, 1048544
 	add	a0, a0, a1
-	lui	a1, 1048544
-	addiw	a1, a1, 30
-	add	a0, a0, a1
+	addiw	a2, a2, 30
+	add	a0, a0, a2
 	ret
 func0000000000000011:                   # @func0000000000000011
 	sub	a1, a1, a2

@@ -1,50 +1,60 @@
 func0000000000000075:                   # @func0000000000000075
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v13, v12
-	vwsll.vi	v14, v13, 14
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vv	v8, v8, v10
-	vadd.vv	v8, v8, v14
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vwsll.vi	v10, v13, 14
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vadd.vv	v8, v8, v10
 	lui	a0, 1048572
 	vadd.vx	v8, v8, a0
 	ret
 func0000000000000044:                   # @func0000000000000044
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v13, v12
-	vwsll.vi	v14, v13, 28
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vv	v8, v8, v10
-	vadd.vv	v8, v8, v14
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vwsll.vi	v10, v13, 28
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vadd.vv	v8, v8, v10
 	lui	a0, 983040
 	vadd.vx	v8, v8, a0
 	ret
 func0000000000000030:                   # @func0000000000000030
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v13, v12
-	vwsll.vi	v14, v13, 14
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vv	v8, v8, v10
-	vadd.vv	v8, v8, v14
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vwsll.vi	v10, v13, 14
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vadd.vv	v8, v8, v10
 	lui	a0, 1048572
 	vadd.vx	v8, v8, a0
 	ret
 func0000000000000000:                   # @func0000000000000000
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v13, v12
-	vwsll.vi	v14, v13, 28
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vv	v8, v8, v10
-	vadd.vv	v8, v8, v14
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vwsll.vi	v10, v13, 28
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vadd.vv	v8, v8, v10
 	lui	a0, 983040
 	vadd.vx	v8, v8, a0
 	ret
 func0000000000000130:                   # @func0000000000000130
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v13, v12
-	vwsll.vi	v14, v13, 28
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vv	v8, v8, v10
-	vadd.vv	v8, v8, v14
+	vsetvli	zero, zero, e16, m1, ta, ma
+	vwsll.vi	v10, v13, 28
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vadd.vv	v8, v8, v10
 	lui	a0, 983040
 	vadd.vx	v8, v8, a0
 	ret

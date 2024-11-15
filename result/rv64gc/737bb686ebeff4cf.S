@@ -51,8 +51,8 @@ func000000000000008c:                   # @func000000000000008c
 	sext.w	a0, a0
 	andi	a1, a1, 253
 	addi	a1, a1, -93
-	snez	a1, a1
 	sltiu	a0, a0, 64
+	snez	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

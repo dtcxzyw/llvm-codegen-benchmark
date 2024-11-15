@@ -7,14 +7,14 @@ func000000000000022a:                   # @func000000000000022a
 	addi	a0, a0, 1
 	ret
 func000000000000006a:                   # @func000000000000006a
+	slli	a3, a1, 4
+	slli	a1, a1, 6
+	sub	a1, a1, a3
 	li	a3, -1
 	slli	a3, a3, 63
 	xor	a2, a2, a3
 	seqz	a2, a2
 	slli	a2, a2, 3
-	slli	a3, a1, 4
-	slli	a1, a1, 6
-	sub	a1, a1, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 16

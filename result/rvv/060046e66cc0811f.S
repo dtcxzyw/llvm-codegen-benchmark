@@ -19,10 +19,10 @@ func0000000000000011:                   # @func0000000000000011
 func0000000000000018:                   # @func0000000000000018
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsra.vi	v10, v8, 31
+	lui	a0, 1048560
 	vsrl.vi	v10, v10, 29
 	vadd.vv	v8, v8, v10
 	vsra.vi	v8, v8, 3
-	lui	a0, 1048560
 	addi	a1, a0, 1
 	vadd.vx	v8, v8, a1
 	vmsltu.vx	v0, v8, a0

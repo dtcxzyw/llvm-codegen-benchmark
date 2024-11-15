@@ -4,8 +4,8 @@ func0000000000000442:                   # @func0000000000000442
 	vmseq.vx	v10, v8, a0
 	li	a0, 22
 	vmseq.vx	v9, v9, a0
-	vmor.mm	v9, v9, v10
 	li	a0, 24
+	vmor.mm	v9, v9, v10
 	vmseq.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9
 	ret
@@ -45,8 +45,8 @@ func0000000000000444:                   # @func0000000000000444
 	vmseq.vi	v9, v9, 0
 	li	a0, 22
 	vmseq.vx	v10, v8, a0
-	vmor.mm	v9, v10, v9
 	li	a0, 16
+	vmor.mm	v9, v10, v9
 	vmseq.vx	v8, v8, a0
 	vmor.mm	v0, v9, v8
 	ret

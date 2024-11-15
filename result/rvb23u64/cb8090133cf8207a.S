@@ -22,8 +22,8 @@ func00000000000000d0:                   # @func00000000000000d0
 	ret
 func000000000000009a:                   # @func000000000000009a
 	sext.w	a2, a2
-	neg	a2, a2
 	slli.uw	a1, a1, 2
+	neg	a2, a2
 	sh2add	a1, a1, a1
 	add	a0, a0, a1
 	sh2add	a1, a2, a2

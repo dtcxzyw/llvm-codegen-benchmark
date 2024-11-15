@@ -8,10 +8,10 @@ func0000000000000066:                   # @func0000000000000066
 	ret
 func0000000000000042:                   # @func0000000000000042
 	fmul.s	fa5, fa1, fa2
+	fli.s	fa4, min
 	feq.s	a0, fa5, fa5
 	xori	a0, a0, 1
-	fli.s	fa5, min
-	flt.s	a1, fa0, fa5
+	flt.s	a1, fa0, fa4
 	or	a0, a0, a1
 	ret
 func0000000000000084:                   # @func0000000000000084

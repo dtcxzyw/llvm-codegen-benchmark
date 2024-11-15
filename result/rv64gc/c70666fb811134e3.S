@@ -35,12 +35,12 @@ func0000000000000055:                   # @func0000000000000055
 func00000000000000fd:                   # @func00000000000000fd
 	li	a2, 21
 	mul	a1, a1, a2
+	lui	a2, 1047932
 	add	a0, a0, a1
 	slli	a1, a0, 2
 	slli	a0, a0, 5
 	subw	a0, a0, a1
-	lui	a1, 1047932
-	addi	a1, a1, -1692
+	addi	a1, a2, -1692
 	addw	a0, a0, a1
 	ret
 func000000000000000d:                   # @func000000000000000d
@@ -54,11 +54,11 @@ func000000000000000d:                   # @func000000000000000d
 func00000000000000c0:                   # @func00000000000000c0
 	li	a2, 21
 	mul	a1, a1, a2
+	lui	a2, 1047932
 	add	a0, a0, a1
 	slli	a1, a0, 2
 	slli	a0, a0, 5
 	subw	a0, a0, a1
-	lui	a1, 1047932
-	addi	a1, a1, -1692
+	addi	a1, a2, -1692
 	addw	a0, a0, a1
 	ret

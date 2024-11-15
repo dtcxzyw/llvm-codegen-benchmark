@@ -9,8 +9,8 @@ func000000000000010a:                   # @func000000000000010a
 	sh2add	a1, a1, a1
 	sext.b	a0, a0
 	sh1add	a0, a1, a0
-	addiw	a0, a0, -48
 	lui	a1, 16
+	addiw	a0, a0, -48
 	addiw	a1, a1, -1
 	slt	a0, a1, a0
 	ret
@@ -26,8 +26,8 @@ func0000000000000106:                   # @func0000000000000106
 	sh2add	a1, a1, a1
 	sext.b	a0, a0
 	sh1add	a0, a1, a0
-	addiw	a0, a0, -48
 	lui	a1, 52429
+	addiw	a0, a0, -48
 	addiw	a1, a1, -820
 	slt	a0, a0, a1
 	ret

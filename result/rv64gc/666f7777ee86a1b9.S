@@ -1,8 +1,8 @@
 func0000000000000015:                   # @func0000000000000015
 	lui	a3, 32768
+	slli	a0, a0, 3
 	addi	a3, a3, -8
 	and	a2, a2, a3
-	slli	a0, a0, 3
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	andi	a0, a0, -8

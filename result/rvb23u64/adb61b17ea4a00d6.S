@@ -6,10 +6,10 @@ func00000000000000cc:                   # @func00000000000000cc
 	ret
 func0000000000000001:                   # @func0000000000000001
 	sll	a1, a1, a2
+	li	a2, -1
 	add	a0, a0, a1
-	li	a1, -1
-	slli	a1, a1, 56
-	addi	a1, a1, 511
+	slli	a2, a2, 56
+	addi	a1, a2, 511
 	and	a0, a0, a1
 	seqz	a0, a0
 	ret

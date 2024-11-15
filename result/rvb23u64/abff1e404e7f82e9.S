@@ -30,16 +30,16 @@ func0000000000000070:                   # @func0000000000000070
 	ret
 func0000000000000040:                   # @func0000000000000040
 	add	a1, a1, a2
+	lui	a2, 8
 	add	a0, a0, a1
-	lui	a1, 8
-	addiw	a1, a1, 1
-	add	a0, a0, a1
+	addiw	a2, a2, 1
+	add	a0, a0, a2
 	ret
 func0000000000000044:                   # @func0000000000000044
 	add	a1, a1, a2
+	lui	a2, 1
 	add	a0, a0, a1
-	lui	a1, 1
-	addiw	a1, a1, 619
+	addiw	a1, a2, 619
 	add	a0, a0, a1
 	ret
 func0000000000000050:                   # @func0000000000000050

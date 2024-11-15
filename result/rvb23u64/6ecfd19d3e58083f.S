@@ -22,11 +22,11 @@ func00000000000000c1:                   # @func00000000000000c1
 	ret
 func000000000000008c:                   # @func000000000000008c
 	sext.w	a0, a0
+	lui	a3, 20480
+	xor	a0, a0, a3
 	srli	a2, a2, 32
 	snez	a2, a2
 	and	a1, a1, a2
-	lui	a2, 20480
-	xor	a0, a0, a2
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

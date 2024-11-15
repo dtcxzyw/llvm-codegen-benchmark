@@ -27,8 +27,8 @@ func0000000000000034:                   # @func0000000000000034
 	ret
 func0000000000000004:                   # @func0000000000000004
 	li	a2, 64
-	minu	a1, a1, a2
 	addi	a0, a0, -2048
+	minu	a1, a1, a2
 	addi	a0, a0, -1664
 	sltu	a0, a0, a1
 	ret

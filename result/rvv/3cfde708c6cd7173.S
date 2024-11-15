@@ -42,9 +42,9 @@ func0000000000000054:                   # @func0000000000000054
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmin.vv	v14, v10, v12
 	vmax.vv	v10, v10, v12
+	lui	a0, 1048552
 	vsub.vv	v10, v10, v14
 	vadd.vv	v8, v8, v10
-	lui	a0, 1048552
 	addi	a0, a0, -8
 	vadd.vx	v8, v8, a0
 	ret

@@ -1,9 +1,9 @@
 func0000000000000000:                   # @func0000000000000000
 	addi	a0, a0, -127
-	fcvt.d.wu	fa5, a0
-	fli.d	fa4, 128.0
-	fmul.d	fa4, fa0, fa4
-	fdiv.d	fa0, fa4, fa5
+	fli.d	fa5, 128.0
+	fcvt.d.wu	fa4, a0
+	fmul.d	fa5, fa0, fa5
+	fdiv.d	fa0, fa5, fa4
 	ret
 .LCPI1_0:
 	.quad	0x40efffe000000000              # double 65535

@@ -3,9 +3,9 @@ func0000000000000081:                   # @func0000000000000081
 	lui	a2, 768
 	and	a1, a1, a2
 	lui	a2, 256
+	sltiu	a0, a0, 128
 	xor	a1, a1, a2
 	seqz	a1, a1
-	sltiu	a0, a0, 128
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret

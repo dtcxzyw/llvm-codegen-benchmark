@@ -9,8 +9,8 @@ func000000000000000e:                   # @func000000000000000e
 func0000000000000005:                   # @func0000000000000005
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
-	vfdiv.vv	v16, v16, v24
 	fli.d	fa5, 1.0
+	vfdiv.vv	v16, v16, v24
 	vmfle.vf	v24, v16, fa5
 	vmnot.m	v0, v24
 	vfmv.v.f	v16, fa5

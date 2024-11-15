@@ -13,9 +13,9 @@ func00000000000000f4:                   # @func00000000000000f4
 	vmsltu.vv	v0, v10, v8
 	ret
 func00000000000000f8:                   # @func00000000000000f8
+	li	a0, 46
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
-	li	a0, 46
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v10, v10, a0
 	vmsltu.vv	v0, v8, v10
@@ -42,9 +42,9 @@ func00000000000000ca:                   # @func00000000000000ca
 	vmslt.vv	v0, v8, v10
 	ret
 func00000000000000fc:                   # @func00000000000000fc
+	li	a0, 16
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
-	li	a0, 16
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v10, v10, a0
 	vmsne.vv	v0, v10, v8
@@ -92,26 +92,26 @@ func00000000000000da:                   # @func00000000000000da
 	vmslt.vv	v0, v8, v10
 	ret
 func0000000000000056:                   # @func0000000000000056
+	li	a0, -48
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
-	li	a0, -48
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v10, v10, a0
 	vmslt.vv	v0, v10, v8
 	ret
 func00000000000000d6:                   # @func00000000000000d6
+	lui	a0, 1034754
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
-	lui	a0, 1034754
 	addi	a0, a0, 1024
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v10, v10, a0
 	vmslt.vv	v0, v10, v8
 	ret
 func00000000000000db:                   # @func00000000000000db
+	lui	a0, 1034754
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
-	lui	a0, 1034754
 	addi	a0, a0, 1024
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v10, v10, a0

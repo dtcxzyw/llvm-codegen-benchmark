@@ -17,8 +17,8 @@ func0000000000000028:                   # @func0000000000000028
 	li	a0, 31
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgt.vx	v0, v12, a0
-	vmerge.vvm	v8, v10, v8, v0
 	lui	a0, 2
+	vmerge.vvm	v8, v10, v8, v0
 	vmv.v.x	v10, a0
 	vsll.vv	v8, v10, v8
 	ret

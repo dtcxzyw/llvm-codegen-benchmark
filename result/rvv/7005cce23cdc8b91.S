@@ -97,8 +97,8 @@ func0000000000000041:                   # @func0000000000000041
 	addi	a0, a0, 1808
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmul.vx	v12, v12, a0
-	vsub.vv	v10, v12, v10
 	li	a0, -100
+	vsub.vv	v10, v12, v10
 	vmul.vx	v8, v8, a0
 	vmseq.vv	v0, v8, v10
 	ret

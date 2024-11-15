@@ -7,9 +7,9 @@ func0000000000000218:                   # @func0000000000000218
 	ret
 func0000000000000281:                   # @func0000000000000281
 	addi	a2, a2, 24
+	sltiu	a1, a1, 4
 	xor	a0, a0, a2
 	seqz	a0, a0
-	sltiu	a1, a1, 4
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
@@ -24,8 +24,8 @@ func0000000000000211:                   # @func0000000000000211
 func0000000000000284:                   # @func0000000000000284
 	lui	a3, 1
 	add	a2, a2, a3
-	sltu	a1, a2, a1
 	addiw	a3, a3, 1
+	sltu	a1, a2, a1
 	sltu	a0, a0, a3
 	and	a0, a0, a1
 	ret

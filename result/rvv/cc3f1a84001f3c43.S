@@ -24,8 +24,8 @@ func000000000000007f:                   # @func000000000000007f
 	li	a0, 40
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vx	v12, v12, a0
-	vor.vv	v10, v12, v10
 	li	a0, 48
+	vor.vv	v10, v12, v10
 	vsll.vx	v8, v8, a0
 	vadd.vv	v8, v8, v10
 	ret

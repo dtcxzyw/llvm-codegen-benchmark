@@ -1,8 +1,8 @@
 func0000000000000011:                   # @func0000000000000011
 	andi	a1, a1, 255
 	or	a0, a0, a1
-	sext.w	a0, a0
 	lui	a1, 16
+	sext.w	a0, a0
 	addiw	a1, a1, -1
 	xor	a0, a0, a1
 	snez	a0, a0

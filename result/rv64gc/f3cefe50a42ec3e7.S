@@ -1,10 +1,10 @@
 func00000000000000d5:                   # @func00000000000000d5
 	andi	a2, a2, 255
 	li	a3, 298
-	mul	a2, a2, a3
 	add	a0, a0, a1
-	add	a0, a0, a2
 	lui	a1, 1048575
+	mul	a2, a2, a3
+	add	a0, a0, a2
 	addi	a1, a1, -544
 	addw	a0, a0, a1
 	ret
@@ -19,30 +19,30 @@ func00000000000000ff:                   # @func00000000000000ff
 func00000000000001d5:                   # @func00000000000001d5
 	andi	a2, a2, 255
 	li	a3, 100
-	mul	a2, a2, a3
 	add	a0, a0, a1
-	add	a0, a0, a2
 	lui	a1, 1048575
+	mul	a2, a2, a3
+	add	a0, a0, a2
 	addi	a1, a1, -1232
 	addw	a0, a0, a1
 	ret
 func00000000000001d7:                   # @func00000000000001d7
 	andi	a2, a2, 255
 	li	a3, 100
-	mul	a2, a2, a3
 	add	a0, a0, a1
-	add	a0, a0, a2
 	lui	a1, 1048575
+	mul	a2, a2, a3
+	add	a0, a0, a2
 	addi	a1, a1, -1232
 	addw	a0, a0, a1
 	ret
 func00000000000000fd:                   # @func00000000000000fd
 	andi	a2, a2, 255
 	li	a3, 188
-	mul	a2, a2, a3
 	add	a0, a0, a1
-	add	a0, a0, a2
 	lui	a1, 3
+	mul	a2, a2, a3
+	add	a0, a0, a2
 	addi	a1, a1, -128
 	addw	a0, a0, a1
 	ret

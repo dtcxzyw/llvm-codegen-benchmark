@@ -17,8 +17,8 @@ func00000000000000cc:                   # @func00000000000000cc
 	ret
 func00000000000000c1:                   # @func00000000000000c1
 	slli	a1, a1, 58
-	srli	a1, a1, 63
 	andi	a0, a0, 32
+	srli	a1, a1, 63
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

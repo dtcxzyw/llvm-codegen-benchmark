@@ -6,8 +6,8 @@ func0000000000000148:                   # @func0000000000000148
 	ret
 func0000000000000144:                   # @func0000000000000144
 	cpop	a1, a0
-	sltiu	a1, a1, 2
 	lui	a2, 524288
+	sltiu	a1, a1, 2
 	addiw	a2, a2, -1
 	sltu	a0, a0, a2
 	and	a0, a0, a1
@@ -20,8 +20,8 @@ func000000000000014a:                   # @func000000000000014a
 	ret
 func000000000000004c:                   # @func000000000000004c
 	cpop	a1, a0
-	sltiu	a1, a1, 2
 	addi	a0, a0, -1
+	sltiu	a1, a1, 2
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -33,8 +33,8 @@ func0000000000000044:                   # @func0000000000000044
 	ret
 func0000000000000114:                   # @func0000000000000114
 	cpop	a1, a0
-	sltiu	a1, a1, 2
 	srli	a0, a0, 32
+	sltiu	a1, a1, 2
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

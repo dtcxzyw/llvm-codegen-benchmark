@@ -1,16 +1,16 @@
 func0000000000000001:                   # @func0000000000000001
 	lui	a1, 262144
-	addiw	a1, a1, -4
-	and	a1, a1, a0
 	srli	a2, a0, 8
 	lui	a3, 16
+	addiw	a1, a1, -4
 	addiw	a3, a3, -256
+	and	a1, a1, a0
 	and	a2, a2, a3
-	srli	a4, a1, 24
-	or	a2, a2, a4
 	and	a0, a0, a3
+	srli	a3, a1, 24
 	slli	a0, a0, 8
 	slliw	a1, a1, 24
+	or	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

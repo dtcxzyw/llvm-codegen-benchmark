@@ -42,8 +42,8 @@ func00000000000000a1:                   # @func00000000000000a1
 	sext.w	a0, a0
 	srli	a1, a1, 2
 	sext.w	a1, a1
-	sgtz	a1, a1
 	addi	a0, a0, -9
+	sgtz	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

@@ -48,9 +48,9 @@ func0000000000000010:                   # @func0000000000000010
 	lui	a3, 244141
 	addiw	a3, a3, -1536
 	mul	a2, a2, a3
+	lui	a3, 488281
 	sub	a1, a1, a2
-	lui	a2, 488281
-	addiw	a2, a2, 1023
+	addiw	a2, a3, 1023
 	sltu	a1, a2, a1
 	or	a0, a0, a1
 	ret

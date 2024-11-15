@@ -1,8 +1,8 @@
 func0000000000000024:                   # @func0000000000000024
 	sh2add	a3, a1, a1
+	sltiu	a1, a1, 8
 	slli	a3, a3, 4
 	add	a2, a2, a3
-	sltiu	a1, a1, 8
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1

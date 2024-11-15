@@ -15,12 +15,12 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func0000000000000004:                   # @func0000000000000004
 	lui	a0, 276464
-	fmv.w.x	fa5, a0
+	fli.s	fa5, 0.5
+	fmv.w.x	fa4, a0
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vfmul.vf	v8, v8, fa5
-	fli.s	fa4, 0.5
-	vfadd.vf	v12, v8, fa4
-	vmfgt.vf	v8, v12, fa5
+	vfmul.vf	v8, v8, fa4
+	vfadd.vf	v12, v8, fa5
+	vmfgt.vf	v8, v12, fa4
 	vmv1r.v	v9, v0
 	vmv1r.v	v0, v8
 	vmerge.vxm	v12, v12, a0, v0

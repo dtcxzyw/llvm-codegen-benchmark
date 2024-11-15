@@ -6,9 +6,9 @@ func000000000000000f:                   # @func000000000000000f
 	ret
 func000000000000000e:                   # @func000000000000000e
 	andi	a0, a0, 255
+	lui	a1, 5
 	addi	a0, a0, -65
 	bset	a0, zero, a0
-	lui	a1, 5
 	addiw	a1, a1, -976
 	and	a0, a0, a1
 	ret

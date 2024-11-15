@@ -3,22 +3,22 @@ func0000000000000009:                   # @func0000000000000009
 	addiw	a3, a3, 273
 	slli	a4, a3, 32
 	add	a3, a3, a4
+	lui	a4, 838861
+	addi	a4, a4, -820
 	and	a2, a2, a3
+	slli	a3, a4, 32
 	or	a1, a1, a2
 	slli	a1, a1, 2
-	lui	a2, 838861
-	addi	a2, a2, -820
-	slli	a3, a2, 32
-	add.uw	a2, a2, a3
+	add.uw	a2, a4, a3
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret
 func000000000000000f:                   # @func000000000000000f
 	zext.h	a2, a2
+	lui	a3, 4080
 	or	a1, a1, a2
+	slli	a2, a3, 32
 	slli	a1, a1, 8
-	lui	a2, 4080
-	slli	a3, a2, 32
 	add	a2, a2, a3
 	and	a1, a1, a2
 	or	a0, a0, a1

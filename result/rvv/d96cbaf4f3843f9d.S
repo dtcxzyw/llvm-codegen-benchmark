@@ -1,9 +1,9 @@
 func000000000000015a:                   # @func000000000000015a
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vv	v8, v8, v10
+	lui	a0, 524288
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v12
-	lui	a0, 524288
 	addiw	a0, a0, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgt.vx	v0, v8, a0
@@ -53,9 +53,9 @@ func00000000000001f4:                   # @func00000000000001f4
 func00000000000000a8:                   # @func00000000000000a8
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vv	v8, v8, v10
+	li	a0, -1
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v12
-	li	a0, -1
 	srli	a0, a0, 32
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v0, v8, a0
@@ -63,9 +63,9 @@ func00000000000000a8:                   # @func00000000000000a8
 func00000000000000f8:                   # @func00000000000000f8
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vv	v8, v8, v10
+	li	a0, -1
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v12
-	li	a0, -1
 	srli	a0, a0, 32
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v0, v8, a0
@@ -73,9 +73,9 @@ func00000000000000f8:                   # @func00000000000000f8
 func000000000000005a:                   # @func000000000000005a
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vv	v8, v8, v10
+	lui	a0, 524288
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v12
-	lui	a0, 524288
 	addiw	a0, a0, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgt.vx	v0, v8, a0

@@ -5,8 +5,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	ret
 func0000000000000011:                   # @func0000000000000011
 	not	a1, a1
-	bexti	a1, a1, 23
 	not	a0, a0
+	bexti	a1, a1, 23
 	bexti	a0, a0, 15
 	or	a0, a0, a1
 	ret

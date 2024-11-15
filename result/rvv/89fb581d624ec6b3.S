@@ -24,12 +24,12 @@ func0000000000000019:                   # @func0000000000000019
 	ret
 func0000000000000015:                   # @func0000000000000015
 	li	a0, 48
+	lui	a1, 24
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgt.vx	v0, v8, a0
-	lui	a0, 24
-	addi	a1, a0, 280
-	vmv.v.x	v8, a1
-	addi	a0, a0, 408
+	addi	a0, a1, 280
+	vmv.v.x	v8, a0
+	addi	a0, a1, 408
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 func000000000000000d:                   # @func000000000000000d

@@ -84,8 +84,8 @@ func0000000000000088:                   # @func0000000000000088
 	ret
 func0000000000000076:                   # @func0000000000000076
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	slt	a1, a2, a1
+	srai	a0, a0, 56
 	xori	a1, a1, 1
 	slti	a0, a0, 0
 	or	a0, a0, a1
@@ -104,8 +104,8 @@ func00000000000000cc:                   # @func00000000000000cc
 	ret
 func000000000000001a:                   # @func000000000000001a
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	xor	a1, a1, a2
+	srai	a0, a0, 56
 	seqz	a1, a1
 	slti	a0, a0, 10
 	xori	a0, a0, 1
@@ -127,8 +127,8 @@ func000000000000009c:                   # @func000000000000009c
 	ret
 func0000000000000056:                   # @func0000000000000056
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	sltu	a1, a2, a1
+	srai	a0, a0, 56
 	xori	a1, a1, 1
 	slti	a0, a0, 0
 	or	a0, a0, a1

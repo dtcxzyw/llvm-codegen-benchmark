@@ -92,12 +92,12 @@ func000000000000006a:                   # @func000000000000006a
 	.quad	0x433fffffffffffff              # double 9007199254740991
 func000000000000007a:                   # @func000000000000007a
 	lui	a1, %hi(.LCPI6_0)
+	lui	a2, %hi(.LCPI6_1)
 	fld	fa5, %lo(.LCPI6_0)(a1)
-	lui	a1, %hi(.LCPI6_1)
-	fld	fa4, %lo(.LCPI6_1)(a1)
+	fld	fa4, %lo(.LCPI6_1)(a2)
 	feq.d	a1, fa0, fa5
-	xori	a1, a1, 1
 	fle.d	a2, fa0, fa4
+	xori	a1, a1, 1
 	and	a0, a0, a2
 	and	a0, a0, a1
 	ret

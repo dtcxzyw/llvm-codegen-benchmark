@@ -29,8 +29,8 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000014:                   # @func0000000000000014
 	li	a0, 688
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vrsub.vx	v10, v10, a0
 	vmsleu.vi	v0, v8, -14
+	vrsub.vx	v8, v10, a0
 	li	a0, 800
-	vmerge.vxm	v8, v10, a0, v0
+	vmerge.vxm	v8, v8, a0, v0
 	ret

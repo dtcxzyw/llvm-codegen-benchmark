@@ -2,9 +2,9 @@ func0000000000000204:                   # @func0000000000000204
 	sh2add	a1, a1, a1
 	sext.b	a0, a0
 	sh1add	a0, a1, a0
-	addi	a0, a0, -48
 	lui	a1, 227374
 	addiw	a1, a1, -1329
+	addi	a0, a0, -48
 	slli	a1, a1, 12
 	addi	a1, a1, -1575
 	slli	a1, a1, 18
@@ -23,9 +23,9 @@ func0000000000000208:                   # @func0000000000000208
 	ret
 func0000000000000001:                   # @func0000000000000001
 	sh2add	a1, a1, a1
+	sext.b	a0, a0
 	slli	a1, a1, 1
 	addi	a1, a1, -48
-	sext.b	a0, a0
 	neg	a0, a0
 	xor	a0, a0, a1
 	seqz	a0, a0

@@ -1,7 +1,7 @@
 func0000000000000001:                   # @func0000000000000001
+	li	a0, 22
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vzext.vf2	v8, v10, v0.t
-	li	a0, 22
 	vmseq.vx	v0, v8, a0
 	ret
 func0000000000000008:                   # @func0000000000000008

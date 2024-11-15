@@ -7,8 +7,8 @@ func000000000000003d:                   # @func000000000000003d
 	sub	a0, a0, a1
 	srli	a0, a0, 1
 	add	a0, a0, a1
-	srli	a0, a0, 2
 	li	a1, 5
+	srli	a0, a0, 2
 	maxu	a1, a0, a1
 	not	a0, a0
 	add	a0, a0, a1

@@ -16,8 +16,8 @@ func0000000000000006:                   # @func0000000000000006
 	vwsll.vi	v10, v9, 16
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v12, v8
-	vor.vv	v8, v10, v12
 	lui	a0, 65541
+	vor.vv	v8, v10, v12
 	addiw	a0, a0, 768
 	vxor.vx	v8, v8, a0
 	ret

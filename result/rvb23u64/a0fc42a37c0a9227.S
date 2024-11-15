@@ -8,11 +8,11 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func0000000000000011:                   # @func0000000000000011
 	slli	a2, a2, 17
+	srli	a1, a1, 47
 	srli	a2, a2, 17
 	xor	a0, a0, a2
-	srli	a1, a1, 47
-	slli	a1, a1, 47
 	li	a2, -5
+	slli	a1, a1, 47
 	slli	a2, a2, 47
 	xor	a1, a1, a2
 	or	a0, a0, a1

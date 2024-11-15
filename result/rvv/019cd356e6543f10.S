@@ -27,13 +27,13 @@ func0000000000000010:                   # @func0000000000000010
 	vmacc.vx	v8, a0, v12
 	ret
 func00000000000000c4:                   # @func00000000000000c4
+	li	a0, 32
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsra.vx	v10, v10, a0
 	lui	a0, 609123
 	slli	a0, a0, 1
 	addi	a0, a0, -1024
-	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v12
-	li	a0, 32
-	vsra.vx	v10, v10, a0
 	lui	a0, 1033928
 	addiw	a0, a0, -1792
 	vmacc.vx	v8, a0, v10

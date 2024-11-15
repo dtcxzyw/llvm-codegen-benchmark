@@ -46,10 +46,10 @@ func0000000000000040:                   # @func0000000000000040
 	ret
 func0000000000000015:                   # @func0000000000000015
 	sext.w	a1, a1
-	seqz	a1, a1
-	addi	a1, a1, -1
 	lui	a2, 1
+	seqz	a1, a1
 	addiw	a2, a2, -2017
+	addi	a1, a1, -1
 	and	a1, a1, a2
 	lui	a2, 6
 	addiw	a2, a2, -810

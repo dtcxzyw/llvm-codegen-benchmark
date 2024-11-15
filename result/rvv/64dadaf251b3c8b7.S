@@ -3,11 +3,11 @@ func000000000000000f:                   # @func000000000000000f
 	addi	a0, a0, 1881
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmulhu.vx	v8, v8, a0
+	lui	a0, 1
+	addi	a0, a0, 1147
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vnsrl.wi	v10, v8, 13
 	vsrl.vi	v8, v10, 2
-	lui	a0, 1
-	addi	a0, a0, 1147
 	vmulhu.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 1
 	li	a0, 100
@@ -19,11 +19,11 @@ func000000000000000b:                   # @func000000000000000b
 	addi	a0, a0, 1881
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmulhu.vx	v8, v8, a0
+	lui	a0, 1
+	addi	a0, a0, 1147
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vnsrl.wi	v10, v8, 13
 	vsrl.vi	v8, v10, 2
-	lui	a0, 1
-	addi	a0, a0, 1147
 	vmulhu.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 1
 	li	a0, 100
@@ -36,11 +36,11 @@ func0000000000000002:                   # @func0000000000000002
 	lui	a0, 528416
 	addi	a0, a0, 1033
 	vmulhu.vx	v8, v8, a0
+	lui	a0, 1048568
+	addi	a0, a0, 259
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vnsrl.wi	v10, v8, 6
 	vsrl.vi	v8, v10, 1
-	lui	a0, 1048568
-	addi	a0, a0, 259
 	vmulhu.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 5
 	li	a0, 2046

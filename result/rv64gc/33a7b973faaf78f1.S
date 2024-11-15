@@ -1,56 +1,49 @@
 func0000000000000001:                   # @func0000000000000001
-	andi	a3, a0, 1
-	bnez	a3, .LBB0_2
+	andi	a0, a0, 1
+	beqz	a0, .LBB0_2
+	addiw	a2, a1, -1
+.LBB0_2:                                # %entry
 	mv	a0, a2
-	ret
-.LBB0_2:
-	addiw	a0, a1, -1
 	ret
 func000000000000000f:                   # @func000000000000000f
-	andi	a3, a0, 1
-	bnez	a3, .LBB1_2
+	andi	a0, a0, 1
+	beqz	a0, .LBB1_2
+	addiw	a2, a1, 2
+.LBB1_2:                                # %entry
 	mv	a0, a2
-	ret
-.LBB1_2:
-	addiw	a0, a1, 2
 	ret
 func0000000000000000:                   # @func0000000000000000
-	andi	a3, a0, 1
-	bnez	a3, .LBB2_2
+	andi	a0, a0, 1
+	beqz	a0, .LBB2_2
+	addiw	a2, a1, -3
+.LBB2_2:                                # %entry
 	mv	a0, a2
-	ret
-.LBB2_2:
-	addiw	a0, a1, -3
 	ret
 func0000000000000008:                   # @func0000000000000008
-	andi	a3, a0, 1
-	bnez	a3, .LBB3_2
+	andi	a0, a0, 1
+	beqz	a0, .LBB3_2
+	addiw	a2, a1, 1
+.LBB3_2:                                # %entry
 	mv	a0, a2
-	ret
-.LBB3_2:
-	addiw	a0, a1, 1
 	ret
 func000000000000000d:                   # @func000000000000000d
-	andi	a3, a0, 1
-	bnez	a3, .LBB4_2
+	andi	a0, a0, 1
+	beqz	a0, .LBB4_2
+	addiw	a2, a1, -1
+.LBB4_2:                                # %entry
 	mv	a0, a2
-	ret
-.LBB4_2:
-	addiw	a0, a1, -1
 	ret
 func0000000000000005:                   # @func0000000000000005
-	andi	a3, a0, 1
-	bnez	a3, .LBB5_2
+	andi	a0, a0, 1
+	beqz	a0, .LBB5_2
+	addiw	a2, a1, -1
+.LBB5_2:                                # %entry
 	mv	a0, a2
-	ret
-.LBB5_2:
-	addiw	a0, a1, -1
 	ret
 func0000000000000003:                   # @func0000000000000003
-	andi	a3, a0, 1
-	bnez	a3, .LBB6_2
+	andi	a0, a0, 1
+	beqz	a0, .LBB6_2
+	addiw	a2, a1, 1
+.LBB6_2:                                # %entry
 	mv	a0, a2
-	ret
-.LBB6_2:
-	addiw	a0, a1, 1
 	ret

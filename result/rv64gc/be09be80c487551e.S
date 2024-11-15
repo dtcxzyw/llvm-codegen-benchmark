@@ -24,8 +24,8 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func0000000000000014:                   # @func0000000000000014
 	slli	a0, a0, 48
-	srai	a0, a0, 48
 	slli	a1, a1, 48
+	srai	a0, a0, 48
 	srai	a1, a1, 48
 	slt	a0, a1, a0
 	xori	a0, a0, 1
@@ -40,8 +40,8 @@ func0000000000000010:                   # @func0000000000000010
 	ret
 func000000000000000e:                   # @func000000000000000e
 	slli	a0, a0, 48
-	srai	a0, a0, 48
 	slli	a1, a1, 48
+	srai	a0, a0, 48
 	srai	a1, a1, 48
 	slt	a0, a1, a0
 	ret

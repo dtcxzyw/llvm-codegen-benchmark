@@ -23,8 +23,8 @@ func0000000000000040:                   # @func0000000000000040
 	ret
 func000000000000001d:                   # @func000000000000001d
 	li	a2, 5
-	slli	a2, a2, 35
 	slli	a1, a1, 32
+	slli	a2, a2, 35
 	mulhu	a1, a1, a2
 	li	a2, -40
 	mul	a0, a0, a2
@@ -32,8 +32,8 @@ func000000000000001d:                   # @func000000000000001d
 	ret
 func000000000000003f:                   # @func000000000000003f
 	li	a2, 1125
-	slli	a2, a2, 34
 	slli	a1, a1, 32
+	slli	a2, a2, 34
 	mulhu	a1, a1, a2
 	li	a2, 75
 	mul	a0, a0, a2
@@ -49,8 +49,8 @@ func000000000000007f:                   # @func000000000000007f
 	ret
 func0000000000000035:                   # @func0000000000000035
 	li	a2, 1223
-	slli	a2, a2, 33
 	slli	a1, a1, 32
+	slli	a2, a2, 33
 	mulhu	a1, a1, a2
 	lui	a2, 1048574
 	addiw	a2, a2, 819
@@ -59,8 +59,8 @@ func0000000000000035:                   # @func0000000000000035
 	ret
 func0000000000000015:                   # @func0000000000000015
 	slli	a1, a1, 32
-	srli	a1, a1, 32
 	li	a2, -637
+	srli	a1, a1, 32
 	mul	a1, a1, a2
 	lui	a2, 2
 	addiw	a2, a2, -969

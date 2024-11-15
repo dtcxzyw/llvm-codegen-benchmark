@@ -21,8 +21,8 @@ func000000000000003f:                   # @func000000000000003f
 	ret
 func000000000000003c:                   # @func000000000000003c
 	slli	a1, a1, 3
-	addi	a1, a1, 127
 	li	a2, 1
+	addi	a1, a1, 127
 	slli	a2, a2, 36
 	addi	a2, a2, -128
 	and	a1, a1, a2

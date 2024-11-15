@@ -1,7 +1,7 @@
 func00000000000000f8:                   # @func00000000000000f8
 	li	a2, 10
-	mul	a1, a1, a2
 	srliw	a0, a0, 1
+	mul	a1, a1, a2
 	slli	a0, a0, 1
 	add	a0, a0, a1
 	srli	a0, a0, 31
@@ -9,8 +9,8 @@ func00000000000000f8:                   # @func00000000000000f8
 	ret
 func00000000000000f4:                   # @func00000000000000f4
 	li	a2, 10
-	mul	a1, a1, a2
 	srliw	a0, a0, 1
+	mul	a1, a1, a2
 	slli	a0, a0, 1
 	add	a0, a0, a1
 	srli	a0, a0, 31
@@ -18,8 +18,8 @@ func00000000000000f4:                   # @func00000000000000f4
 	ret
 func00000000000000fc:                   # @func00000000000000fc
 	li	a2, 10
-	mul	a1, a1, a2
 	slli	a0, a0, 32
+	mul	a1, a1, a2
 	srli	a0, a0, 32
 	or	a0, a0, a1
 	snez	a0, a0

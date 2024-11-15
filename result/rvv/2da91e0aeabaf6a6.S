@@ -3,8 +3,8 @@ func0000000000000014:                   # @func0000000000000014
 	vzext.vf2	v12, v10
 	li	a0, 32
 	vsll.vx	v8, v8, a0
-	vor.vv	v8, v8, v12
 	li	a0, 1
+	vor.vv	v8, v8, v12
 	bseti	a0, a0, 62
 	vmsltu.vx	v0, v8, a0
 	ret
@@ -37,8 +37,8 @@ func0000000000000054:                   # @func0000000000000054
 	vzext.vf2	v12, v10
 	li	a0, 32
 	vsll.vx	v8, v8, a0
-	vor.vv	v8, v8, v12
 	li	a0, -11
+	vor.vv	v8, v8, v12
 	zext.w	a0, a0
 	vmsltu.vx	v0, v8, a0
 	ret

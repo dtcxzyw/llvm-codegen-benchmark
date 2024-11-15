@@ -73,9 +73,9 @@ func0000000000000068:                   # @func0000000000000068
 	slti	a2, a2, 0
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
+	lui	a2, 524288
 	or	a0, a0, a1
-	lui	a1, 524288
-	addiw	a1, a1, -512
+	addiw	a1, a2, -512
 	sltu	a0, a1, a0
 	ret
 func00000000000000a8:                   # @func00000000000000a8

@@ -37,8 +37,8 @@ func000000000000003a:                   # @func000000000000003a
 func0000000000000033:                   # @func0000000000000033
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
-	vsll.vi	v10, v12, 3
 	lui	a0, 128
+	vsll.vi	v10, v12, 3
 	addi	a0, a0, -8
 	vand.vx	v10, v10, a0
 	vor.vv	v9, v10, v9

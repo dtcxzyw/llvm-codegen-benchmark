@@ -55,8 +55,8 @@ func0000000000000000:                   # @func0000000000000000
 func000000000000000f:                   # @func000000000000000f
 	andi	a0, a0, 1
 	lui	a2, 16
-	subw	a2, a2, a1
 	lui	a3, 8
+	subw	a2, a2, a1
 	addw	a1, a1, a3
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0

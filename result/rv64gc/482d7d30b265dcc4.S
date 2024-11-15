@@ -8,9 +8,9 @@ func00000000000000f1:                   # @func00000000000000f1
 	neg	a3, a1
 	and	a1, a1, a3
 	mul	a1, a1, a2
-	srli	a1, a1, 58
 	lui	a2, %hi(.LCPI0_1)
 	addi	a2, a2, %lo(.LCPI0_1)
+	srli	a1, a1, 58
 	add	a1, a1, a2
 	lbu	a1, 0(a1)
 	or	a0, a0, a1

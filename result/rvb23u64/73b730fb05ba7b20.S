@@ -22,11 +22,11 @@ func00000000000000c1:                   # @func00000000000000c1
 	ret
 func0000000000000044:                   # @func0000000000000044
 	lui	a3, 1
+	srliw	a0, a0, 12
 	addiw	a3, a3, -1
 	and	a2, a2, a3
 	and	a1, a1, a3
 	sltu	a1, a1, a2
-	srliw	a0, a0, 12
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

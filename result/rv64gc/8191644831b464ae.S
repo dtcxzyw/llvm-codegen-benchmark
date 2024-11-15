@@ -37,9 +37,9 @@ func000000000000006b:                   # @func000000000000006b
 	.quad	0x47efffffe0000000              # double 3.4028234663852886E+38
 func00000000000000b7:                   # @func00000000000000b7
 	lui	a0, %hi(.LCPI3_0)
+	lui	a1, %hi(.LCPI3_1)
 	fld	fa5, %lo(.LCPI3_0)(a0)
-	lui	a0, %hi(.LCPI3_1)
-	fld	fa4, %lo(.LCPI3_1)(a0)
+	fld	fa4, %lo(.LCPI3_1)(a1)
 	fabs.d	fa3, fa0
 	flt.d	a0, fa5, fa3
 	feq.d	a1, fa0, fa4

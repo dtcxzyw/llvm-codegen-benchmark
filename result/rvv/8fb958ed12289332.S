@@ -1,11 +1,11 @@
 func000000000000000d:                   # @func000000000000000d
 	li	a0, 15
-	slli	a0, a0, 9
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vx	v12, v12, a0
 	vmsle.vi	v0, v10, -1
+	slli	a0, a0, 9
+	vand.vx	v10, v12, a0
 	li	a0, 512
-	vmerge.vxm	v10, v12, a0, v0
+	vmerge.vxm	v10, v10, a0, v0
 	vor.vv	v8, v10, v8
 	ret
 func0000000000000002:                   # @func0000000000000002
@@ -32,11 +32,11 @@ func0000000000000011:                   # @func0000000000000011
 	vor.vv	v8, v10, v8
 	ret
 func0000000000000015:                   # @func0000000000000015
-	li	a0, 511
-	lui	a1, 8
-	addi	a1, a1, -641
+	lui	a0, 8
+	addi	a0, a0, -641
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsgt.vx	v0, v10, a1
+	vmsgt.vx	v0, v10, a0
+	li	a0, 511
 	vand.vx	v10, v12, a0
 	vmerge.vim	v10, v10, 8, v0
 	vor.vv	v8, v10, v8

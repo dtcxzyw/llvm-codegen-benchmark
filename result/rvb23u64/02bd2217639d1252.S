@@ -1,8 +1,8 @@
 func0000000000000008:                   # @func0000000000000008
 	ori	a1, a0, 2047
-	bseti	a1, a1, 11
 	sltiu	a0, a0, 256
 	li	a2, 255
+	bseti	a1, a1, 11
 	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2

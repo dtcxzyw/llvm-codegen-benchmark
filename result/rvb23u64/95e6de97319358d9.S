@@ -27,9 +27,9 @@ func0000000000000031:                   # @func0000000000000031
 	sext.w	a2, a2
 	sext.w	a1, a1
 	min	a1, a1, a2
+	lui	a2, 244141
 	min	a0, a1, a0
-	lui	a1, 244141
-	addiw	a1, a1, -1536
+	addiw	a1, a2, -1536
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

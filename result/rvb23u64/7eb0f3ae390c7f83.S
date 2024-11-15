@@ -41,21 +41,21 @@ func0000000000000055:                   # @func0000000000000055
 	ret
 func0000000000000024:                   # @func0000000000000024
 	lui	a1, 788992
+	lui	a2, 264704
 	fmv.w.x	fa5, a1
 	flt.s	a1, fa1, fa5
+	fmv.w.x	fa5, a2
 	or	a0, a0, a1
-	lui	a1, 264704
-	fmv.w.x	fa5, a1
 	flt.s	a1, fa5, fa0
 	or	a0, a0, a1
 	ret
 func0000000000000042:                   # @func0000000000000042
 	lui	a1, 264704
+	lui	a2, 788992
 	fmv.w.x	fa5, a1
 	flt.s	a1, fa5, fa1
+	fmv.w.x	fa5, a2
 	or	a0, a0, a1
-	lui	a1, 788992
-	fmv.w.x	fa5, a1
 	flt.s	a1, fa0, fa5
 	or	a0, a0, a1
 	ret

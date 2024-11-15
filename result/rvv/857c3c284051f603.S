@@ -31,8 +31,8 @@ func0000000000000001:                   # @func0000000000000001
 	vsub.vv	v10, v8, v10
 	vsrl.vi	v8, v10, 4
 	vmulhu.vx	v8, v8, a0
-	vsrl.vi	v8, v8, 3
 	lui	a0, 1
+	vsrl.vi	v8, v8, 3
 	addiw	a0, a0, -496
 	vnmsub.vx	v8, a0, v10
 	ret

@@ -58,10 +58,10 @@ func0000000000000084:                   # @func0000000000000084
 func0000000000000188:                   # @func0000000000000188
 	sext.w	a2, a2
 	sh3add	a1, a2, a1
+	li	a2, -15
 	sub	a1, a1, a0
-	li	a0, -15
-	srli	a0, a0, 1
-	sltu	a0, a0, a1
+	srli	a2, a2, 1
+	sltu	a0, a2, a1
 	ret
 func000000000000000a:                   # @func000000000000000a
 	add.uw	a1, a2, a1

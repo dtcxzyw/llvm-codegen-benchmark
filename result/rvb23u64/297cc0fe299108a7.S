@@ -52,8 +52,8 @@ func0000000000000151:                   # @func0000000000000151
 	sext.w	a0, a0
 	addi	a2, a2, -1
 	sltu	a1, a1, a2
-	xori	a1, a1, 1
 	addi	a0, a0, -1
+	xori	a1, a1, 1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -256,9 +256,9 @@ func0000000000000394:                   # @func0000000000000394
 	sext.w	a0, a0
 	addi	a2, a2, 1
 	sltu	a1, a2, a1
-	xori	a1, a1, 1
 	lui	a2, 524288
 	addiw	a2, a2, -1
+	xori	a1, a1, 1
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret

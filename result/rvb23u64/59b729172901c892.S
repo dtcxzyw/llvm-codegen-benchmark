@@ -7,11 +7,11 @@ func0000000000000055:                   # @func0000000000000055
 	ret
 func0000000000000031:                   # @func0000000000000031
 	lui	a3, 1048573
-	addi	a3, a3, -1
-	mul	a2, a2, a3
 	subw	a0, a0, a1
 	lui	a1, 1048528
+	addi	a3, a3, -1
 	addi	a1, a1, -16
+	mul	a2, a2, a3
 	add	a0, a0, a1
 	subw	a0, a0, a2
 	ret

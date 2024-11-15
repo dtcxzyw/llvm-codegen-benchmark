@@ -7,52 +7,52 @@ func0000000000000005:                   # @func0000000000000005
 	ret
 func0000000000000034:                   # @func0000000000000034
 	fmadd.s	fa5, fa0, fa1, fa2
-	fabs.s	fa5, fa5
 	lui	a0, 212992
+	fabs.s	fa5, fa5
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	ret
 func0000000000000012:                   # @func0000000000000012
 	fmadd.s	fa5, fa0, fa1, fa2
-	fabs.s	fa5, fa5
 	lui	a0, 212992
+	fabs.s	fa5, fa5
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	ret
 func0000000000000032:                   # @func0000000000000032
 	fmadd.s	fa5, fa0, fa1, fa2
-	fabs.s	fa5, fa5
 	lui	a0, 212992
+	fabs.s	fa5, fa5
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	ret
 func000000000000002d:                   # @func000000000000002d
 	fmadd.s	fa5, fa0, fa1, fa2
-	fabs.s	fa5, fa5
 	lui	a0, 212992
+	fabs.s	fa5, fa5
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	xori	a0, a0, 1
 	ret
 func000000000000003d:                   # @func000000000000003d
 	fmadd.s	fa5, fa0, fa1, fa2
-	fabs.s	fa5, fa5
 	lui	a0, 212992
+	fabs.s	fa5, fa5
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	xori	a0, a0, 1
 	ret
 func0000000000000014:                   # @func0000000000000014
 	fmadd.s	fa5, fa0, fa1, fa2
-	fabs.s	fa5, fa5
 	lui	a0, 224384
+	fabs.s	fa5, fa5
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	ret
 func0000000000000022:                   # @func0000000000000022
 	fmadd.s	fa5, fa0, fa1, fa2
-	fabs.s	fa5, fa5
 	lui	a0, 212992
+	fabs.s	fa5, fa5
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	ret
@@ -101,8 +101,8 @@ func0000000000000009:                   # @func0000000000000009
 	ret
 func0000000000000003:                   # @func0000000000000003
 	fmadd.s	fa5, fa0, fa1, fa2
-	fabs.s	fa5, fa5
 	lui	a0, 212992
+	fabs.s	fa5, fa5
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa4, fa5
 	xori	a0, a0, 1

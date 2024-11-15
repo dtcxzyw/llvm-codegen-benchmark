@@ -32,8 +32,8 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func0000000000000024:                   # @func0000000000000024
 	bset	a0, zero, a0
-	andi	a0, a0, -2
 	lui	a1, 1
+	andi	a0, a0, -2
 	addiw	a1, a1, 1
 	sltu	a0, a0, a1
 	ret

@@ -106,10 +106,10 @@ func0000000000000042:                   # @func0000000000000042
 	ret
 func000000000000007e:                   # @func000000000000007e
 	lui	a1, 522240
+	feq.s	a2, fa0, fa0
 	fmv.w.x	fa5, a1
 	feq.s	a1, fa1, fa5
 	not	a1, a1
-	feq.s	a2, fa0, fa0
 	and	a0, a0, a2
 	and	a0, a0, a1
 	ret
@@ -121,11 +121,11 @@ func00000000000000ee:                   # @func00000000000000ee
 	ret
 func00000000000000b8:                   # @func00000000000000b8
 	lui	a1, 273536
+	fmv.w.x	fa5, zero
+	feq.s	a2, fa0, fa5
 	fmv.w.x	fa5, a1
 	flt.s	a1, fa5, fa1
 	not	a1, a1
-	fmv.w.x	fa5, zero
-	feq.s	a2, fa0, fa5
 	and	a0, a0, a2
 	and	a0, a0, a1
 	ret

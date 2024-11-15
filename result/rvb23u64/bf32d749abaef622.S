@@ -44,11 +44,11 @@ func0000000000000141:                   # @func0000000000000141
 	ret
 func0000000000000244:                   # @func0000000000000244
 	slli	a1, a1, 32
+	lui	a2, 1048332
 	add	a0, a0, a1
-	lui	a1, 1048332
-	addiw	a2, a1, -577
-	add	a0, a0, a2
-	addiw	a1, a1, -576
+	addiw	a1, a2, -577
+	add	a0, a0, a1
+	addiw	a1, a2, -576
 	sltu	a0, a0, a1
 	ret
 func000000000000000a:                   # @func000000000000000a

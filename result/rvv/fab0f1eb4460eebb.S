@@ -1,8 +1,8 @@
 func00000000000001d3:                   # @func00000000000001d3
 	li	a0, 87
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vadd.vx	v10, v8, a0
 	vmsleu.vi	v0, v8, 9
+	vadd.vx	v10, v8, a0
 	li	a0, 48
 	vor.vx	v10, v8, a0, v0.t
 	vsetvli	zero, zero, e16, m1, ta, ma
@@ -13,8 +13,8 @@ func00000000000001d3:                   # @func00000000000001d3
 func0000000000000150:                   # @func0000000000000150
 	li	a0, 87
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vadd.vx	v10, v8, a0
 	vmsleu.vi	v0, v8, 9
+	vadd.vx	v10, v8, a0
 	li	a0, 48
 	vor.vx	v10, v8, a0, v0.t
 	vsetvli	zero, zero, e16, m1, ta, ma

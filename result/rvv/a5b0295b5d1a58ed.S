@@ -23,9 +23,9 @@ func0000000000000044:                   # @func0000000000000044
 func0000000000000058:                   # @func0000000000000058
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsext.vf2	v12, v10
+	li	a0, -7
 	vsll.vi	v10, v12, 2
 	vsub.vv	v8, v8, v10
-	li	a0, -7
 	srli	a0, a0, 1
 	vmsgtu.vx	v0, v8, a0
 	ret

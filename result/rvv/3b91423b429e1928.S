@@ -10,10 +10,10 @@ func0000000000000003:                   # @func0000000000000003
 	addi	a1, a0, -2
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v10, v10, a1
+	lui	a1, 1015808
 	addi	a0, a0, -1
 	vand.vx	v10, v10, a0
-	lui	a0, 1015808
-	vand.vx	v8, v8, a0
+	vand.vx	v8, v8, a1
 	vor.vv	v8, v8, v10
 	ret
 func0000000000000005:                   # @func0000000000000005

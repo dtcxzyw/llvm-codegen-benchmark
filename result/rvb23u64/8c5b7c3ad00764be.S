@@ -33,8 +33,8 @@ func00000000000000ca:                   # @func00000000000000ca
 	ret
 func0000000000000082:                   # @func0000000000000082
 	sltiu	a0, a0, 11
-	xori	a0, a0, 1
 	fmv.w.x	fa5, zero
+	xori	a0, a0, 1
 	flt.s	a1, fa0, fa5
 	and	a0, a0, a1
 	ret

@@ -92,8 +92,8 @@ func0000000000000241:                   # @func0000000000000241
 	ret
 func0000000000000318:                   # @func0000000000000318
 	sext.w	a1, a1
-	snez	a1, a1
 	srlw	a0, a0, a2
+	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

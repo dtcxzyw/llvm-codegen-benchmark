@@ -10,10 +10,10 @@ func000000000000000a:                   # @func000000000000000a
 func0000000000000018:                   # @func0000000000000018
 	li	a0, 62
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vx	v10, v10, a0
 	vsra.vi	v8, v8, 3
-	lui	a0, 838861
-	addiw	a0, a0, -819
+	lui	a1, 838861
+	vsrl.vx	v10, v10, a0
+	addiw	a0, a1, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0

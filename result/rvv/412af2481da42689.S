@@ -21,8 +21,8 @@ func0000000000000344:                   # @func0000000000000344
 	vfabs.v	v12, v12
 	vfabs.v	v8, v8
 	vmflt.vv	v0, v12, v8
-	vmerge.vvm	v8, v12, v8, v0
 	lui	a0, 266752
+	vmerge.vvm	v8, v12, v8, v0
 	fmv.w.x	fa5, a0
 	vmfgt.vf	v0, v8, fa5
 	ret
@@ -31,8 +31,8 @@ func0000000000000322:                   # @func0000000000000322
 	vfabs.v	v12, v12
 	vfabs.v	v8, v8
 	vmflt.vv	v0, v8, v12
-	vmerge.vvm	v8, v12, v8, v0
 	lui	a0, 280480
+	vmerge.vvm	v8, v12, v8, v0
 	fmv.w.x	fa5, a0
 	vmflt.vf	v0, v8, fa5
 	ret
@@ -71,8 +71,8 @@ func0000000000000343:                   # @func0000000000000343
 	vfabs.v	v12, v12
 	vfabs.v	v8, v8
 	vmflt.vv	v0, v12, v8
-	vmerge.vvm	v8, v12, v8, v0
 	lui	a0, 364544
+	vmerge.vvm	v8, v12, v8, v0
 	fmv.w.x	fa5, a0
 	vmfge.vf	v12, v8, fa5
 	vmnot.m	v0, v12
@@ -82,8 +82,8 @@ func0000000000000345:                   # @func0000000000000345
 	vfabs.v	v12, v12
 	vfabs.v	v8, v8
 	vmflt.vv	v0, v12, v8
-	vmerge.vvm	v8, v12, v8, v0
 	lui	a0, 155648
+	vmerge.vvm	v8, v12, v8, v0
 	fmv.w.x	fa5, a0
 	vmfle.vf	v12, v8, fa5
 	vmnot.m	v0, v12
@@ -93,8 +93,8 @@ func0000000000000325:                   # @func0000000000000325
 	vfabs.v	v12, v12
 	vfabs.v	v8, v8
 	vmflt.vv	v0, v8, v12
-	vmerge.vvm	v8, v12, v8, v0
 	lui	a0, 174080
+	vmerge.vvm	v8, v12, v8, v0
 	fmv.w.x	fa5, a0
 	vmfle.vf	v12, v8, fa5
 	vmnot.m	v0, v12

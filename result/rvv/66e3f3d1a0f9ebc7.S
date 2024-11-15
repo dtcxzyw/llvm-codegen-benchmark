@@ -54,11 +54,11 @@ func00000000000001ff:                   # @func00000000000001ff
 	li	a0, 43
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vx	v12, v12, a0
+	lui	a0, 24578
+	bseti	a0, a0, 54
 	vadd.vv	v8, v12, v8
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
-	lui	a0, 24578
-	bseti	a0, a0, 54
 	bseti	a0, a0, 62
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0

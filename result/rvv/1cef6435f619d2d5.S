@@ -21,8 +21,8 @@ func00000000000000fc:                   # @func00000000000000fc
 	vsll.vi	v12, v12, 4
 	lui	a0, 786432
 	srli	a0, a0, 27
-	vand.vx	v10, v10, a0
 	vadd.vv	v8, v12, v8
+	vand.vx	v10, v10, a0
 	vadd.vv	v8, v8, v10
 	li	a0, 144
 	vadd.vx	v8, v8, a0

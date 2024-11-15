@@ -110,8 +110,8 @@ func0000000000000116:                   # @func0000000000000116
 	vmseq.vx	v10, v10, a0
 	li	a0, -30
 	vmseq.vx	v9, v9, a0
-	vmand.mm	v9, v9, v10
 	li	a0, -64
+	vmand.mm	v9, v9, v10
 	vmslt.vx	v8, v8, a0
 	vmand.mm	v0, v9, v8
 	ret

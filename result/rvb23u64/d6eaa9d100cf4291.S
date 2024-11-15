@@ -99,8 +99,8 @@ func0000000000000081:                   # @func0000000000000081
 	sext.w	a0, a0
 	andi	a1, a1, 255
 	sltiu	a1, a1, 32
-	xori	a1, a1, 1
 	addi	a0, a0, -32
+	xori	a1, a1, 1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
@@ -169,8 +169,8 @@ func0000000000000018:                   # @func0000000000000018
 	sext.w	a0, a0
 	andi	a1, a1, 255
 	addi	a1, a1, -2
-	seqz	a1, a1
 	sltiu	a0, a0, 20
+	seqz	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

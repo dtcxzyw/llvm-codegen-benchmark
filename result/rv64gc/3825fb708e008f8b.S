@@ -1,17 +1,17 @@
 func000000000000030a:                   # @func000000000000030a
 	addi	a1, a1, -48
-	andi	a1, a1, 255
 	li	a2, 10
 	mul	a0, a0, a2
+	lui	a2, 16
+	andi	a1, a1, 255
 	addw	a0, a0, a1
-	lui	a1, 16
-	addiw	a1, a1, -1
-	slt	a0, a1, a0
+	addiw	a2, a2, -1
+	slt	a0, a2, a0
 	ret
 func00000000000001f8:                   # @func00000000000001f8
 	addi	a1, a1, -48
-	andi	a1, a1, 255
 	li	a2, 10
+	andi	a1, a1, 255
 	mul	a0, a0, a2
 	addw	a0, a0, a1
 	sltiu	a0, a0, 256
@@ -19,27 +19,27 @@ func00000000000001f8:                   # @func00000000000001f8
 	ret
 func0000000000000301:                   # @func0000000000000301
 	addi	a1, a1, -48
-	andi	a1, a1, 255
 	li	a2, 10
 	mul	a0, a0, a2
+	lui	a2, 524288
+	andi	a1, a1, 255
 	addw	a0, a0, a1
-	lui	a1, 524288
-	addiw	a1, a1, -1
-	xor	a0, a0, a1
+	addiw	a2, a2, -1
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 func0000000000000304:                   # @func0000000000000304
 	addi	a1, a1, -48
-	andi	a1, a1, 255
 	li	a2, 10
+	andi	a1, a1, 255
 	mul	a0, a0, a2
 	addw	a0, a0, a1
 	sltiu	a0, a0, 32
 	ret
 func0000000000000308:                   # @func0000000000000308
 	addi	a1, a1, -48
-	andi	a1, a1, 255
 	li	a2, 10
+	andi	a1, a1, 255
 	mul	a0, a0, a2
 	addw	a0, a0, a1
 	sltiu	a0, a0, 64
@@ -47,8 +47,8 @@ func0000000000000308:                   # @func0000000000000308
 	ret
 func000000000000035c:                   # @func000000000000035c
 	addi	a1, a1, -48
-	andi	a1, a1, 255
 	li	a2, 10
+	andi	a1, a1, 255
 	mulw	a0, a0, a2
 	neg	a1, a1
 	xor	a0, a0, a1
@@ -56,8 +56,8 @@ func000000000000035c:                   # @func000000000000035c
 	ret
 func0000000000000008:                   # @func0000000000000008
 	addi	a1, a1, -48
-	andi	a1, a1, 255
 	li	a2, 10
+	andi	a1, a1, 255
 	mul	a0, a0, a2
 	addw	a0, a0, a1
 	sltiu	a0, a0, 128
@@ -65,8 +65,8 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func0000000000000338:                   # @func0000000000000338
 	addi	a1, a1, -48
-	andi	a1, a1, 255
 	li	a2, 10
+	andi	a1, a1, 255
 	mul	a0, a0, a2
 	add	a0, a0, a1
 	srliw	a0, a0, 16
@@ -74,8 +74,8 @@ func0000000000000338:                   # @func0000000000000338
 	ret
 func000000000000035a:                   # @func000000000000035a
 	addi	a1, a1, -48
-	andi	a1, a1, 255
 	li	a2, 10
+	andi	a1, a1, 255
 	mul	a0, a0, a2
 	addw	a0, a0, a1
 	slti	a0, a0, 1001
@@ -83,16 +83,16 @@ func000000000000035a:                   # @func000000000000035a
 	ret
 func0000000000000356:                   # @func0000000000000356
 	addi	a1, a1, -48
-	andi	a1, a1, 255
 	li	a2, 10
+	andi	a1, a1, 255
 	mul	a0, a0, a2
 	addw	a0, a0, a1
 	slti	a0, a0, 0
 	ret
 func000000000000030c:                   # @func000000000000030c
 	addi	a1, a1, -48
-	andi	a1, a1, 255
 	li	a2, 10
+	andi	a1, a1, 255
 	mulw	a0, a0, a2
 	neg	a1, a1
 	xor	a0, a0, a1

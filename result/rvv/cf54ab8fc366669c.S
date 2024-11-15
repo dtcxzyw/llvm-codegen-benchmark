@@ -25,8 +25,8 @@ func00000000000001a4:                   # @func00000000000001a4
 func0000000000000364:                   # @func0000000000000364
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vi	v11, v11, 1
-	vmslt.vv	v10, v11, v10
 	li	a0, 49
+	vmslt.vv	v10, v11, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v11, v8, a0
 	vmand.mm	v0, v11, v10

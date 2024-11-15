@@ -14,8 +14,8 @@ func000000000000000f:                   # @func000000000000000f
 	vsll.vi	v10, v10, 2
 	li	a0, 16
 	vand.vx	v10, v10, a0
-	vor.vv	v8, v10, v8
 	lui	a0, 524288
+	vor.vv	v8, v10, v8
 	addi	a0, a0, -128
 	vor.vx	v10, v8, a0
 	vmerge.vvm	v8, v10, v8, v0
@@ -25,8 +25,8 @@ func000000000000000e:                   # @func000000000000000e
 	vadd.vv	v10, v10, v10
 	li	a0, 512
 	vand.vx	v10, v10, a0
-	vor.vv	v8, v10, v8
 	lui	a0, 524288
+	vor.vv	v8, v10, v8
 	addi	a0, a0, -1024
 	vor.vx	v10, v8, a0
 	vmerge.vvm	v8, v10, v8, v0

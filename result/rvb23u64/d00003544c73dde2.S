@@ -1,8 +1,8 @@
 func0000000000000011:                   # @func0000000000000011
 	andi	a2, a2, 255
 	or	a1, a1, a2
-	zext.h	a1, a1
 	lui	a2, 2
+	zext.h	a1, a1
 	addiw	a2, a2, 2
 	xor	a1, a1, a2
 	seqz	a1, a1

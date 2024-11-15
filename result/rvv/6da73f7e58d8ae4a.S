@@ -38,8 +38,8 @@ func000000000000009b:                   # @func000000000000009b
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vv	v16, v8, v12
 	vmflt.vv	v17, v12, v8
-	vmor.mm	v12, v17, v16
 	fmv.w.x	fa5, zero
+	vmor.mm	v12, v17, v16
 	vmfgt.vf	v13, v8, fa5
 	vmnot.m	v8, v13
 	vmorn.mm	v0, v8, v12

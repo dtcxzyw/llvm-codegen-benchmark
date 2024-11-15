@@ -8,11 +8,11 @@ func000000000000006f:                   # @func000000000000006f
 func0000000000000065:                   # @func0000000000000065
 	andi	a1, a1, 255
 	li	a2, 190
-	mul	a1, a1, a2
 	andi	a0, a0, 255
+	mul	a1, a1, a2
+	lui	a2, 1048570
 	add	a0, a0, a1
-	lui	a1, 1048570
-	addiw	a1, a1, 66
+	addiw	a1, a2, 66
 	add	a0, a0, a1
 	ret
 func00000000000000fd:                   # @func00000000000000fd

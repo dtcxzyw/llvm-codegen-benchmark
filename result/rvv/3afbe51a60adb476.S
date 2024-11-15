@@ -6,8 +6,8 @@ func0000000000000003:                   # @func0000000000000003
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v10, v8, 9
 	vmulhu.vx	v10, v10, a0
-	vsrl.vi	v10, v10, 11
 	lui	a0, 244141
+	vsrl.vi	v10, v10, 11
 	addiw	a0, a0, -1536
 	vnmsub.vx	v10, a0, v8
 	vsetvli	zero, zero, e32, m1, ta, ma

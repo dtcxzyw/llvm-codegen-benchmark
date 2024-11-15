@@ -2,8 +2,8 @@
 	.quad	3317948294049201653             # 0x2e0bb864e9ea7df5
 func0000000000000003:                   # @func0000000000000003
 	lui	a3, 131
-	addiw	a3, a3, 253
 	lui	a4, %hi(.LCPI0_0)
+	addiw	a3, a3, 253
 	ld	a4, %lo(.LCPI0_0)(a4)
 	slli	a3, a3, 12
 	addi	a3, a3, -1351
@@ -19,8 +19,8 @@ func0000000000000003:                   # @func0000000000000003
 	.quad	-4417276706812531889            # 0xc2b2ae3d27d4eb4f
 func0000000000000002:                   # @func0000000000000002
 	lui	a3, %hi(.LCPI1_0)
-	ld	a3, %lo(.LCPI1_0)(a3)
 	lui	a4, %hi(.LCPI1_1)
+	ld	a3, %lo(.LCPI1_0)(a3)
 	ld	a4, %lo(.LCPI1_1)(a4)
 	add	a2, a2, a3
 	mulhu	a3, a2, a4

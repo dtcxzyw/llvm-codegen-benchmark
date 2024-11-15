@@ -1,11 +1,11 @@
 func000000000000014a:                   # @func000000000000014a
 	slli	a1, a1, 5
-	add	a1, a1, a2
 	zext.h	a0, a0
+	add	a1, a1, a2
+	lui	a2, 1048560
 	sh1add	a0, a0, a0
 	sh1add	a0, a0, a1
-	lui	a1, 1048560
-	addiw	a1, a1, -1504
+	addiw	a1, a2, -1504
 	add	a0, a0, a1
 	ret
 func0000000000000148:                   # @func0000000000000148

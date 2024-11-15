@@ -6,8 +6,8 @@ func0000000000000051:                   # @func0000000000000051
 	lui	a1, 20972
 	addi	a1, a1, -1968
 	add	a0, a0, a1
-	roriw	a0, a0, 4
 	lui	a1, 2621
+	roriw	a0, a0, 4
 	addiw	a1, a1, 1803
 	sltu	a0, a0, a1
 	ret
@@ -19,8 +19,8 @@ func0000000000000001:                   # @func0000000000000001
 	lui	a1, 104858
 	addi	a1, a1, -1640
 	add	a0, a0, a1
-	roriw	a0, a0, 2
 	lui	a1, 52429
+	roriw	a0, a0, 2
 	addiw	a1, a1, -819
 	sltu	a0, a0, a1
 	ret

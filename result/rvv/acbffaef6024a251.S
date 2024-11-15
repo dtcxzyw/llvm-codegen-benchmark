@@ -194,13 +194,13 @@ func00000000000000b7:                   # @func00000000000000b7
 func0000000000000036:                   # @func0000000000000036
 	lui	a0, %hi(.LCPI16_0)
 	fld	fa5, %lo(.LCPI16_0)(a0)
+	fli.d	fa4, inf
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vmfge.vf	v16, v8, fa5
-	fli.d	fa5, inf
-	vmflt.vf	v17, v8, fa5
-	vmfgt.vf	v18, v8, fa5
-	vmor.mm	v8, v18, v17
-	vmandn.mm	v0, v8, v16
+	vmflt.vf	v16, v8, fa4
+	vmfgt.vf	v17, v8, fa4
+	vmfge.vf	v18, v8, fa5
+	vmor.mm	v8, v17, v16
+	vmandn.mm	v0, v8, v18
 	ret
 func0000000000000077:                   # @func0000000000000077
 	fli.d	fa5, 1.0

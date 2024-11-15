@@ -139,8 +139,8 @@ func00000000000000ac:                   # @func00000000000000ac
 	sext.w	a0, a0
 	lui	a3, 64
 	addiw	a3, a3, -16
-	slt	a2, a3, a2
 	xor	a0, a0, a1
+	slt	a1, a3, a2
 	snez	a0, a0
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret

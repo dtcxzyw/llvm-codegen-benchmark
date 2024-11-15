@@ -11,13 +11,13 @@ func00000000000000a2:                   # @func00000000000000a2
 	sext.w	a2, a0
 	sext.w	a1, a1
 	lui	a3, 512
-	addiw	a3, a3, -2048
-	and	a0, a0, a3
-	li	a3, 27
-	slli	a3, a3, 11
-	xor	a0, a0, a3
-	seqz	a0, a0
 	sltu	a1, a1, a2
+	li	a2, 27
+	addiw	a3, a3, -2048
+	slli	a2, a2, 11
+	and	a0, a0, a3
+	xor	a0, a0, a2
+	seqz	a0, a0
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret

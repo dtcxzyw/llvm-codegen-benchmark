@@ -15,9 +15,9 @@ func00000000000003e0:                   # @func00000000000003e0
 func0000000000000350:                   # @func0000000000000350
 	addi	a2, a2, 1
 	mul	a1, a1, a2
+	li	a2, -1
 	add	a0, a0, a1
 	slli	a0, a0, 32
-	li	a1, -1
-	slli	a1, a1, 33
-	add	a0, a0, a1
+	slli	a2, a2, 33
+	add	a0, a0, a2
 	ret

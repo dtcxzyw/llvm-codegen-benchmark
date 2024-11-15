@@ -1,8 +1,8 @@
 func0000000000000028:                   # @func0000000000000028
 	andi	a2, a2, 255
 	sub	a0, a0, a1
-	sub	a0, a0, a2
 	li	a1, 1
+	sub	a0, a0, a2
 	slli	a1, a1, 32
 	addi	a1, a1, -2
 	sltu	a0, a1, a0
@@ -10,8 +10,8 @@ func0000000000000028:                   # @func0000000000000028
 func00000000000000c8:                   # @func00000000000000c8
 	andi	a2, a2, 255
 	sub	a0, a0, a1
-	sub	a0, a0, a2
 	li	a1, 1
+	sub	a0, a0, a2
 	slli	a1, a1, 32
 	addi	a1, a1, -2
 	sltu	a0, a1, a0

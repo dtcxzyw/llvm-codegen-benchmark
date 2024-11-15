@@ -1,15 +1,17 @@
 func0000000000000011:                   # @func0000000000000011
 	lui	a0, 32
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmv.v.x	v12, a0
-	lui	a0, 16
-	vmerge.vxm	v12, v12, a0, v0
-	vmseq.vi	v0, v10, 0
+	vmseq.vi	v12, v10, 0
+	vmv.v.x	v14, a0
 	lui	a0, 64
-	vmv.v.x	v10, a0
-	vmerge.vvm	v10, v10, v12, v0
-	vmseq.vi	v0, v8, 0
-	lui	a0, 256
+	vmseq.vi	v10, v8, 0
 	vmv.v.x	v8, a0
-	vmerge.vvm	v8, v8, v10, v0
+	lui	a0, 16
+	vmerge.vxm	v14, v14, a0, v0
+	lui	a0, 256
+	vmv1r.v	v0, v12
+	vmerge.vvm	v8, v8, v14, v0
+	vmv.v.x	v12, a0
+	vmv1r.v	v0, v10
+	vmerge.vvm	v8, v12, v8, v0
 	ret

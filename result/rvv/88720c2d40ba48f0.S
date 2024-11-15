@@ -2,11 +2,11 @@ func0000000000000012:                   # @func0000000000000012
 	li	a0, 255
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v8, v8, a0
+	li	a0, 119
 	vsra.vi	v10, v8, 31
 	vsrl.vi	v10, v10, 24
 	vadd.vv	v8, v8, v10
 	vsra.vi	v8, v8, 8
-	li	a0, 119
 	vadd.vx	v8, v8, a0
 	lui	a0, 559241
 	addi	a0, a0, -1911

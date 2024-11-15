@@ -27,8 +27,8 @@ func0000000000000082:                   # @func0000000000000082
 	add	a1, a1, a2
 	lui	a2, 142713
 	addiw	a2, a2, 1602
-	sltu	a1, a1, a2
 	addi	a0, a0, -2
+	sltu	a1, a1, a2
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
@@ -50,9 +50,9 @@ func0000000000000098:                   # @func0000000000000098
 	andi	a0, a0, 255
 	lui	a2, 524288
 	addiw	a3, a2, 64
+	addi	a0, a0, -159
 	add	a1, a1, a3
 	sltu	a1, a1, a2
-	addi	a0, a0, -159
 	snez	a0, a0
 	or	a0, a0, a1
 	ret

@@ -15,18 +15,18 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000006:                   # @func0000000000000006
 	sext.w	a1, a1
-	snez	a1, a1
-	slli	a1, a1, 10
 	lui	a2, 921600
+	snez	a1, a1
 	addiw	a2, a2, -1026
+	slli	a1, a1, 10
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func0000000000000010:                   # @func0000000000000010
 	srliw	a1, a1, 30
+	lui	a2, 524288
 	snez	a1, a1
 	slli	a1, a1, 30
-	lui	a2, 524288
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -80,10 +80,10 @@ func0000000000000023:                   # @func0000000000000023
 	ret
 func0000000000000012:                   # @func0000000000000012
 	sext.w	a1, a1
+	lui	a2, 8248
 	sltiu	a1, a1, 1501
 	xori	a1, a1, 1
 	slli	a1, a1, 5
-	lui	a2, 8248
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret

@@ -13,8 +13,8 @@ func000000000000001c:                   # @func000000000000001c
 func0000000000000015:                   # @func0000000000000015
 	andi	a2, a2, 255
 	add	a0, a0, a1
-	add	a0, a0, a2
 	lui	a1, 1048570
+	add	a0, a0, a2
 	addi	a1, a1, 66
 	addw	a0, a0, a1
 	ret
@@ -45,16 +45,16 @@ func000000000000007c:                   # @func000000000000007c
 func000000000000001d:                   # @func000000000000001d
 	andi	a2, a2, 255
 	add	a0, a0, a1
-	add	a0, a0, a2
 	lui	a1, 1046785
+	add	a0, a0, a2
 	addi	a1, a1, 96
 	addw	a0, a0, a1
 	ret
 func000000000000001f:                   # @func000000000000001f
 	andi	a2, a2, 255
 	add	a0, a0, a1
-	add	a0, a0, a2
 	lui	a1, 1045508
+	add	a0, a0, a2
 	addi	a1, a1, 128
 	addw	a0, a0, a1
 	ret
@@ -73,8 +73,8 @@ func000000000000007f:                   # @func000000000000007f
 func000000000000003d:                   # @func000000000000003d
 	andi	a2, a2, 255
 	add	a0, a0, a1
-	add	a0, a0, a2
 	lui	a1, 3
+	add	a0, a0, a2
 	addi	a1, a1, -128
 	addw	a0, a0, a1
 	ret

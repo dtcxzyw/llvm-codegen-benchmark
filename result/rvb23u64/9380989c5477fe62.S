@@ -43,9 +43,9 @@ func0000000000000166:                   # @func0000000000000166
 	slti	a2, a1, 0
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
+	lui	a2, 4
 	or	a0, a0, a1
-	lui	a1, 4
-	addiw	a1, a1, -1384
+	addiw	a1, a2, -1384
 	slt	a0, a0, a1
 	ret
 func000000000000016a:                   # @func000000000000016a

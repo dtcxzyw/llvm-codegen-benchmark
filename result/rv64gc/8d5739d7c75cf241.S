@@ -42,8 +42,8 @@ func000000000000001a:                   # @func000000000000001a
 	ret
 func0000000000000032:                   # @func0000000000000032
 	li	a2, 867
-	slli	a2, a2, 35
 	slli	a1, a1, 32
+	slli	a2, a2, 35
 	mulhu	a1, a1, a2
 	lui	a2, 2
 	addiw	a2, a2, -1264

@@ -16,9 +16,9 @@ func0000000000000021:                   # @func0000000000000021
 	ret
 func0000000000000004:                   # @func0000000000000004
 	add	a1, a1, a2
+	li	a2, 1
 	srl	a0, a1, a0
-	li	a1, 1
-	bseti	a1, a1, 41
+	bseti	a1, a2, 41
 	sltu	a0, a0, a1
 	ret
 func0000000000000024:                   # @func0000000000000024

@@ -16,9 +16,9 @@ func0000000000000108:                   # @func0000000000000108
 	ret
 func0000000000000204:                   # @func0000000000000204
 	fli.s	fa5, min
-	feq.s	a1, fa0, fa5
-	feq.s	a2, fa0, fa0
-	xori	a2, a2, 1
+	feq.s	a1, fa0, fa0
+	feq.s	a2, fa0, fa5
+	xori	a1, a1, 1
 	or	a1, a1, a2
 	or	a0, a0, a1
 	ret

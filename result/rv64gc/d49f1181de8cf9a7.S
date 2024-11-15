@@ -1,12 +1,12 @@
 func0000000000000054:                   # @func0000000000000054
 	lui	a3, 8
+	li	a4, 1
 	add	a2, a2, a3
-	li	a3, 1
-	slli	a4, a3, 31
-	add	a1, a1, a4
+	slli	a3, a4, 31
+	slli	a4, a4, 47
+	add	a1, a1, a3
 	or	a1, a1, a2
-	slli	a3, a3, 47
-	add	a0, a0, a3
+	add	a0, a0, a4
 	or	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000

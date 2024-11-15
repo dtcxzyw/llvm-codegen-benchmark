@@ -37,15 +37,15 @@ func000000000000011a:                   # @func000000000000011a
 	ret
 func000000000000019a:                   # @func000000000000019a
 	slt	a1, a1, a2
+	lui	a2, 1048400
 	subw	a0, a0, a1
-	lui	a1, 1048400
-	addiw	a1, a1, 1427
+	addiw	a1, a2, 1427
 	slt	a0, a1, a0
 	ret
 func000000000000029a:                   # @func000000000000029a
 	slt	a1, a2, a1
+	lui	a2, 1048400
 	subw	a0, a0, a1
-	lui	a1, 1048400
-	addiw	a1, a1, 1427
+	addiw	a1, a2, 1427
 	slt	a0, a1, a0
 	ret

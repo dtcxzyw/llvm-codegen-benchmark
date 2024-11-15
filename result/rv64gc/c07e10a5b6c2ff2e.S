@@ -1,14 +1,14 @@
 func000000000000007f:                   # @func000000000000007f
 	sext.w	a2, a2
-	slli	a2, a2, 17
 	slli	a1, a1, 1
+	slli	a2, a2, 17
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 func000000000000003f:                   # @func000000000000003f
 	slli	a2, a2, 32
-	srli	a2, a2, 27
 	slli	a1, a1, 37
+	srli	a2, a2, 27
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -20,8 +20,8 @@ func000000000000006f:                   # @func000000000000006f
 	ret
 func000000000000003b:                   # @func000000000000003b
 	slli	a2, a2, 32
-	srli	a2, a2, 16
 	slli	a1, a1, 56
+	srli	a2, a2, 16
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -45,8 +45,8 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func000000000000007c:                   # @func000000000000007c
 	sext.w	a2, a2
-	slli	a2, a2, 5
 	slli	a1, a1, 19
+	slli	a2, a2, 5
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -76,8 +76,8 @@ func000000000000000c:                   # @func000000000000000c
 	ret
 func000000000000003c:                   # @func000000000000003c
 	slli	a2, a2, 32
-	srli	a2, a2, 2
 	slli	a1, a1, 20
+	srli	a2, a2, 2
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

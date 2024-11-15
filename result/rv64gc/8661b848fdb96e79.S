@@ -1,14 +1,14 @@
 func0000000000000021:                   # @func0000000000000021
 	slli	a1, a1, 56
-	srai	a1, a1, 63
 	li	a2, 1
+	srai	a1, a1, 63
 	sllw	a0, a2, a0
 	and	a0, a0, a1
 	ret
 func0000000000000031:                   # @func0000000000000031
 	slli	a1, a1, 37
-	srai	a1, a1, 63
 	li	a2, 1
+	srai	a1, a1, 63
 	sllw	a0, a2, a0
 	and	a0, a0, a1
 	ret
@@ -32,15 +32,15 @@ func0000000000000024:                   # @func0000000000000024
 	ret
 func0000000000000011:                   # @func0000000000000011
 	slli	a1, a1, 63
-	srai	a1, a1, 63
 	li	a2, -1
+	srai	a1, a1, 63
 	sllw	a0, a2, a0
 	and	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
 	slli	a1, a1, 63
-	srai	a1, a1, 63
 	li	a2, 3
+	srai	a1, a1, 63
 	sllw	a0, a2, a0
 	and	a0, a0, a1
 	ret

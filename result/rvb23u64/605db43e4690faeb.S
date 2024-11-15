@@ -4,9 +4,9 @@ func000000000000002b:                   # @func000000000000002b
 	mv	a4, a2
 	mv	a1, a0
 	lui	a0, 1323
+	lui	a2, 1046322
 	addiw	a3, a0, 2002
-	lui	a0, 1046322
-	addi	a0, a0, 51
+	addi	a0, a2, 51
 	slli	a0, a0, 12
 	addi	a2, a0, 1209
 	slli	a2, a2, 26

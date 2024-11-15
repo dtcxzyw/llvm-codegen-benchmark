@@ -21,8 +21,8 @@ func00000000000000c4:                   # @func00000000000000c4
 	addi	a0, a0, -1423
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vmsne.vx	v10, v10, a0
-	vmor.mm	v10, v0, v10
 	li	a0, -80
+	vmor.mm	v10, v0, v10
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsltu.vx	v11, v8, a0
 	vmor.mm	v0, v10, v11

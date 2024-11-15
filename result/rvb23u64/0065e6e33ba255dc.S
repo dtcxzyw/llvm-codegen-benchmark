@@ -73,12 +73,12 @@ func00000000000000e8:                   # @func00000000000000e8
 func000000000000004a:                   # @func000000000000004a
 	mul	a0, a0, a1
 	lui	a1, 8
+	lui	a2, 524288
 	addiw	a1, a1, -1
 	slt	a1, a1, a0
 	slli	a0, a0, 16
-	czero.nez	a0, a0, a1
-	lui	a2, 524288
 	addiw	a2, a2, -1
+	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret

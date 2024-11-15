@@ -4,8 +4,8 @@ func0000000000000000:                   # @func0000000000000000
 	lui	a1, 352717
 	addi	a1, a1, -741
 	add	a0, a0, a1
-	sh2add	a0, a0, a0
 	lui	a1, 207556
+	sh2add	a0, a0, a0
 	addi	a1, a1, -1257
 	addw	a0, a0, a1
 	ret

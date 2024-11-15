@@ -4,12 +4,12 @@ func000000000000000b:                   # @func000000000000000b
 	lui	a0, 1
 	addi	a0, a0, 1147
 	vmulhu.vx	v8, v8, a0
+	li	a0, -51
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vnsrl.wi	v8, v8, 1
-	li	a0, -51
 	vmulhu.vx	v9, v8, a0
-	vsrl.vi	v9, v9, 3
 	li	a0, 10
+	vsrl.vi	v9, v9, 3
 	vnmsub.vx	v9, a0, v8
 	li	a0, 48
 	vor.vx	v10, v9, a0

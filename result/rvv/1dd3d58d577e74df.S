@@ -33,9 +33,9 @@ func000000000000000e:                   # @func000000000000000e
 	ret
 func000000000000000a:                   # @func000000000000000a
 	fmv.d.x	fa5, zero
+	bseti	a0, zero, 63
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vmfle.vf	v0, v8, fa5
-	bseti	a0, zero, 63
 	vmv.v.x	v16, a0
 	vfneg.v	v16, v8, v0.t
 	vmv.v.v	v8, v16

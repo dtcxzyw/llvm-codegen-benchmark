@@ -8,9 +8,9 @@ func0000000000000151:                   # @func0000000000000151
 func0000000000000154:                   # @func0000000000000154
 	li	a2, 188
 	mul	a1, a1, a2
+	lui	a2, 1048574
 	add	a0, a0, a1
-	lui	a1, 1048574
-	addi	a1, a1, -644
+	addi	a1, a2, -644
 	addw	a0, a0, a1
 	sltiu	a0, a0, 1880
 	ret

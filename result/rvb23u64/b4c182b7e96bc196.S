@@ -8,8 +8,8 @@ func0000000000000056:                   # @func0000000000000056
 func00000000000000f4:                   # @func00000000000000f4
 	sh2add	a2, a2, a2
 	sh1add	a1, a2, a1
-	sext.w	a1, a1
 	lui	a2, 52429
+	sext.w	a1, a1
 	addiw	a2, a2, -820
 	sltu	a1, a1, a2
 	and	a0, a0, a1

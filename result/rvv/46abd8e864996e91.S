@@ -1,24 +1,22 @@
 func0000000000000051:                   # @func0000000000000051
-	li	a0, -33
-	li	a1, 33
+	li	a0, 33
 	vsetivli	zero, 8, e8, mf2, ta, ma
-	vmseq.vx	v0, v8, a1
+	vmseq.vx	v0, v8, a0
+	li	a0, -33
 	vsetvli	zero, zero, e32, m2, ta, mu
 	vadd.vx	v8, v12, a0
 	vadd.vi	v8, v10, -1, v0.t
 	ret
 func00000000000000f8:                   # @func00000000000000f8
 	lui	a0, 16
-	addi	a1, a0, -48
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vadd.vx	v12, v12, a1
 	li	a1, 57
-	vsetvli	zero, zero, e8, mf2, ta, ma
+	vsetivli	zero, 8, e8, mf2, ta, ma
 	vmsgtu.vx	v0, v8, a1
-	addi	a0, a0, -55
+	addi	a1, a0, -48
 	vsetvli	zero, zero, e32, m2, ta, mu
-	vadd.vx	v12, v10, a0, v0.t
-	vmv.v.v	v8, v12
+	vadd.vx	v8, v12, a1
+	addi	a0, a0, -55
+	vadd.vx	v8, v10, a0, v0.t
 	ret
 func00000000000000d4:                   # @func00000000000000d4
 	vsetivli	zero, 8, e32, m2, ta, ma

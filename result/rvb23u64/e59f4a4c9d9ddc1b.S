@@ -40,8 +40,8 @@ func0000000000000029:                   # @func0000000000000029
 	.quad	3667970486771497111             # 0x32e73fb956a1b897
 func0000000000000021:                   # @func0000000000000021
 	lui	a3, 1009952
-	addiw	a3, a3, 779
 	lui	a4, %hi(.LCPI3_0)
+	addiw	a3, a3, 779
 	ld	a4, %lo(.LCPI3_0)(a4)
 	slli	a3, a3, 14
 	mul	a2, a2, a3

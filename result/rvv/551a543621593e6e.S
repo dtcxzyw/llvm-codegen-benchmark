@@ -3,8 +3,8 @@ func0000000000000023:                   # @func0000000000000023
 	vadd.vi	v10, v10, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmseq.vi	v0, v8, 7
-	vzext.vf2	v8, v10
 	li	a0, -1
+	vzext.vf2	v8, v10
 	srli	a0, a0, 32
 	vmerge.vxm	v8, v8, a0, v0
 	ret
@@ -30,7 +30,7 @@ func0000000000000069:                   # @func0000000000000069
 	bseti	a0, zero, 32
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
-	vzext.vf2	v8, v10
 	li	a0, 32
+	vzext.vf2	v8, v10
 	vmerge.vxm	v8, v8, a0, v0
 	ret

@@ -24,12 +24,12 @@ func0000000000000006:                   # @func0000000000000006
 func00000000000000f6:                   # @func00000000000000f6
 	sext.w	a1, a0
 	slli	a0, a0, 1
-	addi	a0, a0, 129
 	lui	a2, 524288
+	addi	a0, a0, 129
 	addiw	a2, a2, -128
 	and	a0, a0, a2
-	slti	a1, a1, 127
 	li	a2, 128
+	slti	a1, a1, 127
 	czero.eqz	a2, a2, a1
 	czero.nez	a0, a0, a1
 	or	a0, a0, a2

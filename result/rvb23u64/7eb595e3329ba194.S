@@ -1,7 +1,7 @@
 func0000000000000034:                   # @func0000000000000034
 	sub	a1, a1, a2
-	srai	a1, a1, 5
 	lui	a2, 838861
+	srai	a1, a1, 5
 	addiw	a2, a2, -819
 	slli	a3, a2, 32
 	add	a2, a2, a3
@@ -11,8 +11,8 @@ func0000000000000034:                   # @func0000000000000034
 	ret
 func0000000000000038:                   # @func0000000000000038
 	sub	a1, a1, a2
-	srai	a1, a1, 3
 	lui	a2, 699051
+	srai	a1, a1, 3
 	addiw	a2, a2, -1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
@@ -22,8 +22,8 @@ func0000000000000038:                   # @func0000000000000038
 	ret
 func0000000000000031:                   # @func0000000000000031
 	sub	a1, a1, a2
-	srai	a1, a1, 2
 	lui	a2, 699051
+	srai	a1, a1, 2
 	addiw	a2, a2, -1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
@@ -34,8 +34,8 @@ func0000000000000031:                   # @func0000000000000031
 	ret
 func0000000000000014:                   # @func0000000000000014
 	sub	a1, a1, a2
-	srai	a1, a1, 3
 	lui	a2, 699051
+	srai	a1, a1, 3
 	addiw	a2, a2, -1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
@@ -45,8 +45,8 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 func000000000000003c:                   # @func000000000000003c
 	sub	a1, a1, a2
-	srai	a1, a1, 5
 	lui	a2, 699051
+	srai	a1, a1, 5
 	addiw	a2, a2, -1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
@@ -69,8 +69,8 @@ func0000000000000035:                   # @func0000000000000035
 	ret
 func0000000000000011:                   # @func0000000000000011
 	sub	a1, a1, a2
-	srai	a1, a1, 3
 	lui	a2, 838861
+	srai	a1, a1, 3
 	addiw	a2, a2, -819
 	slli	a3, a2, 32
 	add	a2, a2, a3
@@ -81,8 +81,8 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func0000000000000036:                   # @func0000000000000036
 	sub	a1, a1, a2
-	srai	a1, a1, 4
 	lui	a2, 699051
+	srai	a1, a1, 4
 	addiw	a2, a2, -1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
@@ -101,8 +101,8 @@ func0000000000000028:                   # @func0000000000000028
 	ret
 func000000000000003b:                   # @func000000000000003b
 	sub	a1, a1, a2
-	srai	a1, a1, 5
 	lui	a2, 748983
+	srai	a1, a1, 5
 	addiw	a2, a2, -585
 	slli	a3, a2, 33
 	add	a2, a2, a3

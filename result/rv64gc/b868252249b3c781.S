@@ -7,8 +7,8 @@ func00000000000000cc:                   # @func00000000000000cc
 	ret
 func0000000000000011:                   # @func0000000000000011
 	andi	a1, a1, 16
-	seqz	a1, a1
 	andi	a0, a0, -3
+	seqz	a1, a1
 	sext.w	a0, a0
 	addi	a0, a0, -5
 	seqz	a0, a0
@@ -16,8 +16,8 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func00000000000000c1:                   # @func00000000000000c1
 	slli	a1, a1, 60
-	srli	a1, a1, 63
 	andi	a0, a0, -3
+	srli	a1, a1, 63
 	sext.w	a0, a0
 	addi	a0, a0, -240
 	seqz	a0, a0

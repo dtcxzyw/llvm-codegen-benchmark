@@ -1,10 +1,10 @@
 func0000000000000071:                   # @func0000000000000071
 	lui	a2, 15
-	and	a1, a1, a2
 	slliw	a0, a0, 6
+	and	a1, a1, a2
+	lui	a2, 14
 	or	a0, a0, a1
-	lui	a1, 14
-	addiw	a1, a1, -1024
+	addiw	a1, a2, -1024
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -75,16 +75,16 @@ func0000000000000061:                   # @func0000000000000061
 	ret
 func000000000000001c:                   # @func000000000000001c
 	and	a0, a0, a1
-	zext.h	a0, a0
 	lui	a1, 16
+	zext.h	a0, a0
 	addiw	a1, a1, -1
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
 func0000000000000051:                   # @func0000000000000051
 	and	a0, a0, a1
-	zext.h	a0, a0
 	lui	a1, 16
+	zext.h	a0, a0
 	addiw	a1, a1, -1
 	xor	a0, a0, a1
 	seqz	a0, a0

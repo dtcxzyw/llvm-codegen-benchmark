@@ -3,8 +3,8 @@ func00000000000000c4:                   # @func00000000000000c4
 	xori	a1, a1, 1
 	sext.w	a2, a2
 	addi	a2, a2, -16
-	seqz	a2, a2
 	sltiu	a0, a0, 2
+	seqz	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

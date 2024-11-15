@@ -18,8 +18,8 @@ func0000000000000033:                   # @func0000000000000033
 	ret
 func000000000000003c:                   # @func000000000000003c
 	sext.w	a2, a2
-	slli	a2, a2, 19
 	sext.w	a1, a1
+	slli	a2, a2, 19
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -49,8 +49,8 @@ func0000000000000037:                   # @func0000000000000037
 	ret
 func000000000000003a:                   # @func000000000000003a
 	sext.w	a2, a2
-	slli	a2, a2, 24
 	zext.w	a1, a1
+	slli	a2, a2, 24
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

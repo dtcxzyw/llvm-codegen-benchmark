@@ -12,10 +12,10 @@ func0000000000000051:                   # @func0000000000000051
 	ret
 func0000000000000064:                   # @func0000000000000064
 	add	a1, a1, a2
+	lui	a2, 16
 	add	a0, a0, a1
-	lui	a1, 16
-	addiw	a1, a1, -8
-	and	a0, a0, a1
+	addiw	a2, a2, -8
+	and	a0, a0, a2
 	sltiu	a0, a0, 1000
 	ret
 func00000000000000cc:                   # @func00000000000000cc
@@ -56,11 +56,11 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func00000000000000d1:                   # @func00000000000000d1
 	add	a1, a1, a2
+	li	a2, 31
 	add	a0, a0, a1
-	li	a1, 31
-	slli	a1, a1, 11
-	and	a0, a0, a1
 	li	a1, 27
+	slli	a2, a2, 11
+	and	a0, a0, a2
 	slli	a1, a1, 11
 	xor	a0, a0, a1
 	seqz	a0, a0

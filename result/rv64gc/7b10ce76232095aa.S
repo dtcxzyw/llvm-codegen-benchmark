@@ -17,19 +17,19 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 func00000000000000c8:                   # @func00000000000000c8
 	lui	a2, 4080
+	srli	a0, a0, 32
 	and	a1, a1, a2
 	snez	a1, a1
-	srli	a0, a0, 32
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
 func000000000000001c:                   # @func000000000000001c
 	lui	a2, 16
+	addi	a0, a0, -4
 	addiw	a2, a2, -256
 	and	a1, a1, a2
 	addi	a1, a1, -1280
 	snez	a1, a1
-	addi	a0, a0, -4
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

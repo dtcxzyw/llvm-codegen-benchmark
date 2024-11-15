@@ -1,9 +1,9 @@
 func0000000000000002:                   # @func0000000000000002
 	fmv.d.x	fa5, zero
+	slli	a0, a0, 63
 	flt.d	a1, fa0, fa5
 	neg	a1, a1
 	ori	a1, a1, 1
-	slli	a0, a0, 63
 	srai	a0, a0, 63
 	and	a0, a0, a1
 	ret

@@ -64,15 +64,15 @@ func00000000000000a1:                   # @func00000000000000a1
 	ret
 func0000000000000084:                   # @func0000000000000084
 	andi	a1, a1, 2
-	seqz	a1, a1
 	srli	a0, a0, 16
+	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
 func0000000000000081:                   # @func0000000000000081
 	andi	a1, a1, 3
-	seqz	a1, a1
 	sltiu	a0, a0, 256
+	seqz	a1, a1
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret

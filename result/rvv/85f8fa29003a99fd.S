@@ -26,10 +26,10 @@ func000000000000000c:                   # @func000000000000000c
 	addiw	a0, a0, -241
 	slli	a1, a0, 32
 	add	a0, a0, a1
+	lui	a1, 4112
+	addiw	a1, a1, 257
 	vand.vx	v8, v8, a0
-	lui	a0, 4112
-	addiw	a0, a0, 257
-	slli	a1, a0, 32
+	slli	a0, a1, 32
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0
 	ret

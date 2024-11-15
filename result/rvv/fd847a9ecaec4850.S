@@ -21,9 +21,9 @@ func0000000000000051:                   # @func0000000000000051
 func0000000000000055:                   # @func0000000000000055
 	lui	a0, 1
 	addi	a1, a0, -1879
+	addi	a0, a0, -961
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmul.vx	v8, v8, a1
-	addi	a0, a0, -961
 	vmacc.vx	v8, a0, v10
 	li	a0, 512
 	vadd.vx	v8, v8, a0
@@ -31,9 +31,9 @@ func0000000000000055:                   # @func0000000000000055
 func0000000000000054:                   # @func0000000000000054
 	lui	a0, 1
 	addi	a1, a0, -1879
+	addi	a0, a0, -961
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmul.vx	v8, v8, a1
-	addi	a0, a0, -961
 	vmacc.vx	v8, a0, v10
 	lui	a0, 4112
 	vadd.vx	v8, v8, a0

@@ -26,8 +26,8 @@ func000000000000001a:                   # @func000000000000001a
 	ret
 func000000000000001c:                   # @func000000000000001c
 	sub	a1, a1, a2
-	srli	a1, a1, 2
 	li	a2, -2
+	srli	a1, a1, 2
 	zext.w	a2, a2
 	add	a1, a1, a2
 	and	a1, a1, a2

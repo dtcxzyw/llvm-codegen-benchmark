@@ -15,16 +15,16 @@ func0000000000000030:                   # @func0000000000000030
 	.quad	1609587929392839161             # 0x165667b19e3779f9
 func0000000000000000:                   # @func0000000000000000
 	lui	a3, 235216
+	lui	a4, %hi(.LCPI1_0)
 	addiw	a3, a3, -328
+	ld	a4, %lo(.LCPI1_0)(a4)
 	add	a2, a2, a3
-	lui	a3, %hi(.LCPI1_0)
-	ld	a3, %lo(.LCPI1_0)(a3)
-	lui	a4, %hi(.LCPI1_1)
-	ld	a4, %lo(.LCPI1_1)(a4)
+	lui	a3, %hi(.LCPI1_1)
+	ld	a3, %lo(.LCPI1_1)(a3)
 	xor	a1, a1, a2
-	mul	a1, a1, a3
+	mul	a1, a1, a4
 	xor	a0, a0, a1
-	mul	a0, a0, a4
+	mul	a0, a0, a3
 	ret
 .LCPI2_0:
 	.quad	7109453100751455733             # 0x62a9d9ed799705f5

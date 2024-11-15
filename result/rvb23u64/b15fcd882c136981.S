@@ -50,8 +50,8 @@ func0000000000000044:                   # @func0000000000000044
 func00000000000000c8:                   # @func00000000000000c8
 	zext.h	a0, a0
 	zext.h	a1, a1
-	snez	a1, a1
 	lui	a2, 8
+	snez	a1, a1
 	sltu	a0, a2, a0
 	and	a0, a0, a1
 	ret
@@ -59,8 +59,8 @@ func0000000000000081:                   # @func0000000000000081
 	zext.h	a0, a0
 	zext.h	a1, a1
 	sltiu	a1, a1, 9
-	xori	a1, a1, 1
 	addi	a0, a0, -3
+	xori	a1, a1, 1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

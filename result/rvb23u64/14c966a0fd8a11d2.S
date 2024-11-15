@@ -36,24 +36,24 @@ func0000000000000014:                   # @func0000000000000014
 	sext.w	a0, a0
 	lui	a2, 5
 	addiw	a2, a2, 1028
-	add	a3, a1, a2
-	addiw	a3, a3, 96
-	or	a1, a1, a2
 	sltiu	a0, a0, 16
+	add	a3, a1, a2
+	or	a1, a1, a2
+	addiw	a2, a3, 96
 	czero.eqz	a1, a1, a0
-	czero.nez	a0, a3, a0
+	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	ret
 func0000000000000064:                   # @func0000000000000064
 	sext.w	a0, a0
 	lui	a2, 5
 	addiw	a2, a2, 1028
-	add	a3, a1, a2
-	addiw	a3, a3, 96
-	or	a1, a1, a2
 	sltiu	a0, a0, 16
+	add	a3, a1, a2
+	or	a1, a1, a2
+	addiw	a2, a3, 96
 	czero.eqz	a1, a1, a0
-	czero.nez	a0, a3, a0
+	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004

@@ -10,8 +10,8 @@ func0000000000000044:                   # @func0000000000000044
 	andi	a0, a0, 255
 	addi	a1, a1, 36
 	srliw	a1, a1, 2
-	sltiu	a1, a1, 521
 	addi	a0, a0, -65
+	sltiu	a1, a1, 521
 	sltiu	a0, a0, -63
 	or	a0, a0, a1
 	ret

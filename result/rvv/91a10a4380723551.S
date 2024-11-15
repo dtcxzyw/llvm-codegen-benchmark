@@ -17,9 +17,9 @@ func000000000000021c:                   # @func000000000000021c
 	lui	a0, 796918
 	addi	a0, a0, -983
 	vmul.vx	v10, v10, a0
-	vror.vi	v10, v10, 1
 	lui	a0, 20972
 	addi	a0, a0, -1967
+	vror.vi	v10, v10, 1
 	vmsleu.vx	v10, v10, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsne.vi	v11, v8, 0

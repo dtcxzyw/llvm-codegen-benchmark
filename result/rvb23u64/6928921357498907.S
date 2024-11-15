@@ -7,8 +7,8 @@ func0000000000000098:                   # @func0000000000000098
 func0000000000000190:                   # @func0000000000000190
 	zext.h	a1, a0
 	andi	a0, a0, 3
-	snez	a0, a0
 	lui	a2, 1
+	snez	a0, a0
 	addiw	a2, a2, 8
 	sltu	a1, a2, a1
 	or	a0, a0, a1
@@ -16,8 +16,8 @@ func0000000000000190:                   # @func0000000000000190
 func0000000000000022:                   # @func0000000000000022
 	zext.h	a1, a0
 	andi	a0, a0, 30
-	seqz	a0, a0
 	lui	a2, 16
+	seqz	a0, a0
 	addiw	a2, a2, -2
 	xor	a1, a1, a2
 	seqz	a1, a1

@@ -10,10 +10,10 @@ func000000000000010a:                   # @func000000000000010a
 	andi	a1, a1, 255
 	li	a2, 10
 	mul	a0, a0, a2
+	lui	a2, 16
 	addw	a0, a0, a1
-	lui	a1, 16
-	addiw	a1, a1, -1
-	slt	a0, a1, a0
+	addiw	a2, a2, -1
+	slt	a0, a2, a0
 	ret
 func00000000000000f4:                   # @func00000000000000f4
 	andi	a1, a1, 255
@@ -42,10 +42,10 @@ func0000000000000101:                   # @func0000000000000101
 	andi	a1, a1, 255
 	li	a2, 10
 	mul	a0, a0, a2
+	lui	a2, 524288
 	addw	a0, a0, a1
-	lui	a1, 524288
-	addiw	a1, a1, -1
-	xor	a0, a0, a1
+	addiw	a2, a2, -1
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 func0000000000000104:                   # @func0000000000000104

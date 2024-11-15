@@ -6,9 +6,9 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 func0000000000000014:                   # @func0000000000000014
 	addiw	a1, a1, -3
+	li	a2, 16
 	sltiu	a1, a1, 2
 	czero.nez	a0, a0, a1
-	li	a2, 16
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret
@@ -34,9 +34,9 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func0000000000000004:                   # @func0000000000000004
 	addiw	a1, a1, -401
+	li	a2, 4
 	sltiu	a1, a1, -400
 	czero.nez	a0, a0, a1
-	li	a2, 4
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret

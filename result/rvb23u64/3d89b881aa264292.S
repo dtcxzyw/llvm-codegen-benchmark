@@ -32,19 +32,19 @@ func00000000000000ca:                   # @func00000000000000ca
 	ret
 func0000000000000024:                   # @func0000000000000024
 	lui	a2, 323584
-	fmv.w.x	fa5, a2
-	flt.s	a2, fa0, fa5
 	srliw	a1, a1, 16
+	fmv.w.x	fa5, a2
 	seqz	a1, a1
+	flt.s	a2, fa0, fa5
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
 func00000000000000c4:                   # @func00000000000000c4
 	lui	a2, 847872
-	fmv.w.x	fa5, a2
-	fle.s	a2, fa5, fa0
 	srliw	a1, a1, 16
+	fmv.w.x	fa5, a2
 	seqz	a1, a1
+	fle.s	a2, fa5, fa0
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret

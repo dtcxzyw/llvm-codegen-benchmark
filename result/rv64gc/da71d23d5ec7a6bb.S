@@ -10,8 +10,8 @@ func0000000000000041:                   # @func0000000000000041
 	ret
 func0000000000000046:                   # @func0000000000000046
 	sub	a1, a1, a0
-	srli	a1, a1, 5
 	lui	a0, 699051
+	srli	a1, a1, 5
 	addi	a0, a0, -1365
 	slli	a2, a0, 32
 	add	a0, a0, a2
@@ -20,8 +20,8 @@ func0000000000000046:                   # @func0000000000000046
 	ret
 func0000000000000058:                   # @func0000000000000058
 	sub	a1, a1, a0
-	srai	a1, a1, 4
 	lui	a0, 675749
+	srai	a1, a1, 4
 	addiw	a0, a0, -91
 	slli	a2, a0, 36
 	add	a0, a0, a2
@@ -31,8 +31,8 @@ func0000000000000058:                   # @func0000000000000058
 	ret
 func000000000000004c:                   # @func000000000000004c
 	sub	a1, a1, a0
-	srli	a1, a1, 2
 	lui	a0, 838861
+	srli	a1, a1, 2
 	addi	a0, a0, -819
 	slli	a2, a0, 32
 	add	a0, a0, a2

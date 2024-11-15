@@ -89,15 +89,15 @@ func000000000000000b:                   # @func000000000000000b
 	ret
 func000000000000001c:                   # @func000000000000001c
 	fsub.s	fa5, fa0, fa1
-	fabs.s	fa5, fa5
 	lui	a0, 275264
+	fabs.s	fa5, fa5
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa4, fa5
 	ret
 func0000000000000013:                   # @func0000000000000013
 	fsub.s	fa5, fa0, fa1
-	fabs.s	fa5, fa5
 	lui	a0, 275264
+	fabs.s	fa5, fa5
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa4, fa5
 	xori	a0, a0, 1
@@ -126,8 +126,8 @@ func0000000000000007:                   # @func0000000000000007
 	ret
 func000000000000001a:                   # @func000000000000001a
 	fsub.s	fa5, fa0, fa1
-	fabs.s	fa5, fa5
 	lui	a0, 212992
+	fabs.s	fa5, fa5
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa5, fa4
 	ret

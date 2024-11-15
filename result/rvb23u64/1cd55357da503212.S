@@ -2,8 +2,8 @@ func0000000000000002:                   # @func0000000000000002
 	lui	a3, 1
 	addiw	a3, a3, -2046
 	and	a2, a2, a3
-	addi	a2, a2, -2
 	li	a3, 10
+	addi	a2, a2, -2
 	czero.nez	a2, a3, a2
 	or	a0, a0, a1
 	or	a0, a0, a2

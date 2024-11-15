@@ -13,8 +13,8 @@ func0000000000000180:                   # @func0000000000000180
 func000000000000018f:                   # @func000000000000018f
 	snez	a1, a1
 	add	a0, a0, a1
-	addi	a0, a0, 63
 	li	a1, -505
+	addi	a0, a0, 63
 	srli	a1, a1, 3
 	and	a0, a0, a1
 	ret

@@ -24,9 +24,9 @@ func000000000000000f:                   # @func000000000000000f
 	ret
 func000000000000000b:                   # @func000000000000000b
 	lui	a3, 16
+	andi	a1, a1, 255
 	addiw	a3, a3, -256
 	and	a2, a2, a3
-	andi	a1, a1, 255
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

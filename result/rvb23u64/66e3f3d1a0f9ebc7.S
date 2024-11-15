@@ -32,11 +32,11 @@ func00000000000001f7:                   # @func00000000000001f7
 	ret
 func00000000000001ff:                   # @func00000000000001ff
 	slli	a2, a2, 43
-	add	a0, a0, a2
 	sext.w	a1, a1
+	add	a0, a0, a2
+	lui	a2, 24578
+	bseti	a2, a2, 54
 	add	a0, a0, a1
-	lui	a1, 24578
-	bseti	a1, a1, 54
-	bseti	a1, a1, 62
+	bseti	a1, a2, 62
 	add	a0, a0, a1
 	ret

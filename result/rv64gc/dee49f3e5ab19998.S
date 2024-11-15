@@ -5,9 +5,9 @@ func0000000000000000:                   # @func0000000000000000
 	srliw	a3, a1, 17
 	slli	a1, a1, 15
 	or	a1, a1, a3
-	addw	a1, a1, a2
-	srliw	a2, a0, 22
+	srliw	a3, a0, 22
 	slliw	a0, a0, 10
-	or	a0, a0, a2
+	addw	a1, a1, a2
+	or	a0, a0, a3
 	xor	a0, a0, a1
 	ret

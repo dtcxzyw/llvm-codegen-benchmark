@@ -42,9 +42,9 @@ func00000000000000c1:                   # @func00000000000000c1
 	ret
 func00000000000000c8:                   # @func00000000000000c8
 	slli	a1, a1, 48
+	sltiu	a0, a0, 16
 	srli	a1, a1, 48
 	snez	a1, a1
-	sltiu	a0, a0, 16
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

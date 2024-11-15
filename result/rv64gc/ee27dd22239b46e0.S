@@ -1,8 +1,8 @@
 func00000000000000ca:                   # @func00000000000000ca
 	slli	a1, a1, 49
+	slti	a0, a0, 0
 	srli	a1, a1, 49
 	snez	a1, a1
-	slti	a0, a0, 0
 	not	a0, a0
 	and	a0, a0, a1
 	ret

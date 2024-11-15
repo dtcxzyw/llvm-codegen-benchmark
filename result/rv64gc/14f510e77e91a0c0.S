@@ -55,10 +55,10 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func0000000000000000:                   # @func0000000000000000
 	sub	a1, a1, a0
-	slli	a0, a1, 3
-	li	a1, 1
-	slli	a1, a1, 35
-	addi	a1, a1, -16
+	li	a0, 1
+	slli	a1, a1, 3
+	slli	a0, a0, 35
+	addi	a0, a0, -16
 	add	a0, a0, a1
 	ret
 func0000000000000034:                   # @func0000000000000034

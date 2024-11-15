@@ -7,8 +7,8 @@ func00000000000000c1:                   # @func00000000000000c1
 func00000000000000c4:                   # @func00000000000000c4
 	zext.w	a1, a1
 	mul	a0, a0, a1
-	slli	a0, a0, 2
 	li	a1, -1
+	slli	a0, a0, 2
 	srli	a1, a1, 1
 	sltu	a0, a0, a1
 	ret

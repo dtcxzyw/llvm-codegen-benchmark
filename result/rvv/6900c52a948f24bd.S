@@ -27,9 +27,9 @@ func0000000000000108:                   # @func0000000000000108
 	li	a0, 50
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
+	li	a0, -1
 	vmerge.vim	v10, v10, 10, v0
 	vadd.vv	v8, v10, v8
-	li	a0, -1
 	srli	a0, a0, 3
 	vmsgtu.vx	v0, v8, a0
 	ret

@@ -41,8 +41,8 @@ func0000000000000070:                   # @func0000000000000070
 func000000000000007a:                   # @func000000000000007a
 	li	a2, 1
 	subw	a2, a2, a1
-	slli	a2, a2, 32
 	li	a1, 5
+	slli	a2, a2, 32
 	slli	a1, a1, 36
 	mulhu	a1, a2, a1
 	add	a0, a0, a1

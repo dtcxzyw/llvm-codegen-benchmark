@@ -14,13 +14,13 @@ func0000000000000011:                   # @func0000000000000011
 func0000000000000019:                   # @func0000000000000019
 	lui	a2, %hi(.LCPI2_0)
 	ld	a2, %lo(.LCPI2_0)(a2)
-	slt	a1, a1, a2
-	bseti	a2, zero, 63
-	sub	a2, a2, a0
-	czero.eqz	a0, a2, a1
-	li	a2, 1
-	czero.nez	a1, a2, a1
-	or	a0, a0, a1
+	bseti	a3, zero, 63
+	sub	a3, a3, a0
+	slt	a0, a1, a2
+	li	a1, 1
+	czero.eqz	a2, a3, a0
+	czero.nez	a0, a1, a0
+	or	a0, a0, a2
 	ret
 .LCPI3_0:
 	.quad	9223372036854775                # 0x20c49ba5e353f7

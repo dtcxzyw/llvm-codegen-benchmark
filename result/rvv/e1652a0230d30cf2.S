@@ -16,9 +16,9 @@ func0000000000000041:                   # @func0000000000000041
 	addi	a0, a0, -585
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vmul.vx	v10, v10, a0
-	vror.vi	v10, v10, 2
 	lui	a0, 1
 	addi	a0, a0, -1756
+	vror.vi	v10, v10, 2
 	vmsleu.vx	v10, v10, a0
 	li	a0, 28
 	vsetvli	zero, zero, e32, m2, ta, ma

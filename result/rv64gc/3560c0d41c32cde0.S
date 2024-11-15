@@ -1,8 +1,8 @@
 func000000000000000a:                   # @func000000000000000a
 	lui	a1, 281862
 	fmv.w.x	fa5, a1
-	fadd.s	fa5, fa0, fa5
 	lui	a1, 284576
+	fadd.s	fa5, fa0, fa5
 	fmv.w.x	fa4, a1
 	fle.s	a1, fa5, fa4
 	and	a0, a0, a1
@@ -17,8 +17,8 @@ func000000000000000c:                   # @func000000000000000c
 func0000000000000004:                   # @func0000000000000004
 	lui	a1, 281862
 	fmv.w.x	fa5, a1
-	fadd.s	fa5, fa0, fa5
 	lui	a1, 282798
+	fadd.s	fa5, fa0, fa5
 	fmv.w.x	fa4, a1
 	flt.s	a1, fa4, fa5
 	and	a0, a0, a1
@@ -28,8 +28,8 @@ func0000000000000004:                   # @func0000000000000004
 func0000000000000002:                   # @func0000000000000002
 	lui	a1, %hi(.LCPI3_0)
 	flw	fa5, %lo(.LCPI3_0)(a1)
-	fadd.s	fa5, fa0, fa5
 	lui	a1, 260096
+	fadd.s	fa5, fa0, fa5
 	fmv.w.x	fa4, a1
 	flt.s	a1, fa5, fa4
 	and	a0, a0, a1

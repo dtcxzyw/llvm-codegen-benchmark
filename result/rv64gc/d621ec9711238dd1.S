@@ -1,9 +1,9 @@
 func0000000000000015:                   # @func0000000000000015
 	slli	a2, a2, 48
-	srai	a2, a2, 48
 	add	a0, a0, a1
-	add	a0, a0, a2
 	lui	a1, 1048575
+	srai	a2, a2, 48
+	add	a0, a0, a2
 	addi	a1, a1, -296
 	addw	a0, a0, a1
 	ret

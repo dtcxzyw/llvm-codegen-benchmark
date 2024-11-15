@@ -34,9 +34,9 @@ func0000000000000005:                   # @func0000000000000005
 	vmv.v.x	v10, a0
 	li	a0, 1040
 	vmerge.vxm	v10, v10, a0, v0
+	vmv.v.i	v11, 4
 	vor.vv	v8, v10, v8
-	vmv.v.i	v10, 4
 	vmv1r.v	v0, v9
-	vmerge.vim	v9, v10, 8, v0
+	vmerge.vim	v9, v11, 8, v0
 	vor.vv	v8, v9, v8
 	ret

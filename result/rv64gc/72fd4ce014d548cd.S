@@ -3,8 +3,8 @@
 func0000000000000008:                   # @func0000000000000008
 	srli	a1, a1, 32
 	lui	a2, 195
-	addiw	a2, a2, -1237
 	lui	a3, %hi(.LCPI0_0)
+	addiw	a2, a2, -1237
 	ld	a3, %lo(.LCPI0_0)(a3)
 	slli	a2, a2, 12
 	addi	a2, a2, -451

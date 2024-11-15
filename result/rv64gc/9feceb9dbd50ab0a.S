@@ -6,9 +6,9 @@ func000000000000003f:                   # @func000000000000003f
 	ret
 func0000000000000015:                   # @func0000000000000015
 	lui	a3, 32768
+	slli	a0, a0, 3
 	addi	a3, a3, -8
 	and	a2, a2, a3
-	slli	a0, a0, 3
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
@@ -20,8 +20,8 @@ func0000000000000030:                   # @func0000000000000030
 	ret
 func000000000000002f:                   # @func000000000000002f
 	lui	a3, 4080
-	and	a2, a2, a3
 	slli	a1, a1, 24
+	and	a2, a2, a3
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
@@ -33,9 +33,9 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func000000000000000c:                   # @func000000000000000c
 	lui	a3, 1
+	slli	a1, a1, 2
 	addi	a3, a3, -16
 	and	a2, a2, a3
-	slli	a1, a1, 2
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret

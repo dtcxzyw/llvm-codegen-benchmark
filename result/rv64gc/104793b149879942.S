@@ -62,8 +62,8 @@ func0000000000000014:                   # @func0000000000000014
 func000000000000001c:                   # @func000000000000001c
 	sext.w	a0, a0
 	slli	a1, a1, 63
-	srai	a1, a1, 63
 	lui	a3, 1048560
+	srai	a1, a1, 63
 	addi	a3, a3, 288
 	and	a1, a1, a3
 	addw	a1, a1, a2

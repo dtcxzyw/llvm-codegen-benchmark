@@ -13,8 +13,8 @@ func0000000000000015:                   # @func0000000000000015
 	vmsgt.vi	v0, v8, 15
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmv.v.i	v8, 4
-	vmerge.vim	v8, v8, 12, v0
 	li	a0, -48
+	vmerge.vim	v8, v8, 12, v0
 	vmv.v.x	v9, a0
 	vmv1r.v	v0, v10
 	vmerge.vim	v9, v9, -16, v0

@@ -22,8 +22,8 @@ func0000000000000002:                   # @func0000000000000002
 	addi	a2, a2, -1
 	seqz	a2, a2
 	or	a1, a1, a2
-	andi	a1, a1, 1
 	lui	a2, 8
+	andi	a1, a1, 1
 	addiw	a2, a2, 652
 	czero.eqz	a1, a2, a1
 	addi	a1, a1, 128

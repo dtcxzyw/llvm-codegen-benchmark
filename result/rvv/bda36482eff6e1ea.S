@@ -63,12 +63,11 @@ func000000000000320c:                   # @func000000000000320c
 	ret
 func0000000000001308:                   # @func0000000000001308
 	li	a0, 50
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsltu.vx	v11, v12, a0
-	vsetvli	zero, zero, e8, mf2, ta, ma
+	vsetivli	zero, 8, e8, mf2, ta, ma
 	vmsne.vi	v10, v10, 0
-	li	a0, 139
 	vsetvli	zero, zero, e32, m2, ta, ma
+	vmsltu.vx	v11, v12, a0
+	li	a0, 139
 	vmsltu.vx	v12, v8, a0
 	vmor.mm	v8, v11, v12
 	vmor.mm	v0, v8, v10

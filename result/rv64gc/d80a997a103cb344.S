@@ -29,9 +29,9 @@ func000000000000007f:                   # @func000000000000007f
 	ret
 func0000000000000027:                   # @func0000000000000027
 	add	a1, a1, a2
+	slli	a0, a0, 32
 	slli	a1, a1, 32
 	srli	a1, a1, 32
-	slli	a0, a0, 32
 	srli	a0, a0, 30
 	or	a0, a0, a1
 	ret
@@ -47,9 +47,9 @@ func000000000000006d:                   # @func000000000000006d
 	ret
 func0000000000000006:                   # @func0000000000000006
 	add	a1, a1, a2
+	slli	a0, a0, 32
 	slli	a1, a1, 32
 	srli	a1, a1, 32
-	slli	a0, a0, 32
 	srli	a0, a0, 16
 	or	a0, a0, a1
 	ret

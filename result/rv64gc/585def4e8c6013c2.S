@@ -1,47 +1,47 @@
 func0000000000000002:                   # @func0000000000000002
-	addi	a2, a2, -1
-	srli	a3, a2, 1
-	or	a2, a2, a3
-	srli	a3, a2, 2
-	or	a2, a2, a3
-	srli	a3, a2, 4
-	or	a2, a2, a3
-	srli	a3, a2, 8
-	or	a2, a2, a3
-	srli	a3, a2, 16
-	or	a2, a2, a3
-	srli	a3, a2, 32
-	or	a2, a2, a3
-	not	a2, a2
-	srli	a3, a2, 1
-	lui	a4, 349525
-	addiw	a4, a4, 1365
+	addi	t2, a2, -1
+	lui	a6, 349525
+	lui	a7, 209715
+	lui	t0, 61681
+	lui	t1, 4112
+	srli	t3, t2, 1
+	addiw	a2, a6, 1365
+	addiw	a3, a7, 819
+	addiw	a4, t0, -241
+	addiw	a7, t1, 257
+	or	a6, t2, t3
+	slli	a5, a2, 32
+	add	a2, a2, a5
+	slli	a5, a3, 32
+	add	a3, a3, a5
 	slli	a5, a4, 32
-	add	a4, a4, a5
+	add	t0, a4, a5
+	slli	a5, a7, 32
+	add	a7, a7, a5
+	srli	a4, a6, 2
+	or	a5, a6, a4
+	srli	a4, a5, 4
+	or	a4, a4, a5
+	srli	a5, a4, 8
+	or	a4, a4, a5
+	srli	a5, a4, 16
+	or	a4, a4, a5
+	srli	a5, a4, 32
+	or	a4, a4, a5
+	not	a4, a4
+	srli	a5, a4, 1
+	and	a2, a2, a5
+	sub	a4, a4, a2
+	and	a2, a4, a3
+	srli	a4, a4, 2
 	and	a3, a3, a4
-	sub	a2, a2, a3
-	lui	a3, 209715
-	addiw	a3, a3, 819
-	slli	a4, a3, 32
-	add	a3, a3, a4
-	and	a4, a2, a3
-	srli	a2, a2, 2
-	and	a2, a2, a3
-	add	a2, a2, a4
+	add	a2, a2, a3
 	srli	a3, a2, 4
 	add	a2, a2, a3
-	lui	a3, 61681
-	addiw	a3, a3, -241
-	slli	a4, a3, 32
-	add	a3, a3, a4
-	and	a2, a2, a3
-	lui	a3, 4112
-	addiw	a3, a3, 257
-	slli	a4, a3, 32
-	add	a3, a3, a4
-	mul	a2, a2, a3
-	srli	a2, a2, 56
 	li	a3, -1
+	and	a2, a2, t0
+	mul	a2, a2, a7
+	srli	a2, a2, 56
 	srl	a2, a3, a2
 	xor	a0, a0, a1
 	and	a0, a0, a2

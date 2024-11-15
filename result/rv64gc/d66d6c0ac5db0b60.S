@@ -43,10 +43,10 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000008:                   # @func0000000000000008
 	li	a2, 32
 	sll	a1, a2, a1
+	li	a2, 1
 	add	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 32
-	sltu	a0, a1, a0
+	slli	a2, a2, 32
+	sltu	a0, a2, a0
 	ret
 func00000000000000c4:                   # @func00000000000000c4
 	li	a2, 1

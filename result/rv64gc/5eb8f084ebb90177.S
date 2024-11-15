@@ -14,8 +14,8 @@ func000000000000001f:                   # @func000000000000001f
 	ret
 func0000000000000019:                   # @func0000000000000019
 	andi	a1, a1, 255
-	slli	a1, a1, 7
 	andi	a0, a0, 255
+	slli	a1, a1, 7
 	or	a0, a0, a1
 	lui	a1, 1048574
 	add	a0, a0, a1

@@ -17,8 +17,8 @@ func000000000000004d:                   # @func000000000000004d
 	fld	fa5, %lo(.LCPI1_0)(a0)
 	fabs.d	fa4, fa0
 	flt.d	a0, fa4, fa5
-	not	a0, a0
 	fmv.d.x	fa5, zero
+	not	a0, a0
 	flt.d	a1, fa5, fa0
 	and	a0, a0, a1
 	ret

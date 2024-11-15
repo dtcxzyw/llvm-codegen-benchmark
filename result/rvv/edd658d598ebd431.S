@@ -3,8 +3,8 @@ func0000000000000071:                   # @func0000000000000071
 	vsll.vi	v10, v10, 12
 	lui	a0, 15
 	vand.vx	v10, v10, a0
-	vor.vv	v8, v10, v8
 	lui	a0, 14
+	vor.vv	v8, v10, v8
 	addi	a0, a0, -1024
 	vmseq.vx	v0, v8, a0
 	ret
@@ -56,8 +56,8 @@ func0000000000000078:                   # @func0000000000000078
 	vsll.vi	v10, v10, 12
 	lui	a0, 15
 	vand.vx	v10, v10, a0
-	vor.vv	v8, v10, v8
 	lui	a0, 13
+	vor.vv	v8, v10, v8
 	addi	a0, a0, 2047
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -66,8 +66,8 @@ func0000000000000038:                   # @func0000000000000038
 	vsll.vi	v10, v10, 6
 	bseti	a0, zero, 11
 	vand.vx	v10, v10, a0
-	vor.vv	v8, v10, v8
 	lui	a0, 13
+	vor.vv	v8, v10, v8
 	addi	a0, a0, 2047
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -99,8 +99,8 @@ func0000000000000058:                   # @func0000000000000058
 	lui	a0, 16
 	addi	a0, a0, -256
 	vand.vx	v10, v10, a0
-	vor.vv	v8, v10, v8
 	lui	a0, 8192
+	vor.vv	v8, v10, v8
 	addi	a0, a0, -2
 	vmsgtu.vx	v0, v8, a0
 	ret

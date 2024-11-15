@@ -1,23 +1,23 @@
 func000000000000002a:                   # @func000000000000002a
 	andi	a2, a2, 255
+	slli	a1, a1, 32
 	addi	a2, a2, -103
+	srli	a1, a1, 27
 	snez	a2, a2
 	addi	a2, a2, -1
 	andi	a2, a2, -32
-	slli	a1, a1, 32
-	srli	a1, a1, 27
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
 func000000000000003a:                   # @func000000000000003a
 	andi	a2, a2, 255
+	sext.w	a1, a1
+	li	a3, 36
 	addi	a2, a2, -137
+	mul	a1, a1, a3
 	snez	a2, a2
 	addi	a2, a2, -1
 	andi	a2, a2, -36
-	sext.w	a1, a1
-	li	a3, 36
-	mul	a1, a1, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

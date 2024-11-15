@@ -1,8 +1,8 @@
 func000000000000026b:                   # @func000000000000026b
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmul.vv	v12, v8, v10
-	vmsle.vi	v14, v12, -1
 	lui	a0, 524288
+	vmsle.vi	v14, v12, -1
 	addi	a0, a0, -1
 	vmv.v.x	v12, a0
 	vdivu.vv	v10, v12, v10

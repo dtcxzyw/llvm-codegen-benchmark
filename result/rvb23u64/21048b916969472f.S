@@ -2,8 +2,8 @@ func0000000000000018:                   # @func0000000000000018
 	lui	a2, 978671
 	addi	a2, a2, -273
 	mul	a1, a1, a2
-	roriw	a1, a1, 2
 	lui	a2, 17476
+	roriw	a1, a1, 2
 	addiw	a2, a2, 1092
 	sltu	a1, a2, a1
 	or	a0, a0, a1
@@ -12,8 +12,8 @@ func0000000000000002:                   # @func0000000000000002
 	lui	a2, 838861
 	addi	a2, a2, -819
 	mul	a1, a1, a2
-	roriw	a1, a1, 1
 	lui	a2, 104858
+	roriw	a1, a1, 1
 	addiw	a2, a2, -1638
 	sltu	a1, a1, a2
 	or	a0, a0, a1
@@ -23,8 +23,8 @@ func0000000000000010:                   # @func0000000000000010
 	lui	a3, 8216
 	addiw	a3, a3, 289
 	mul	a2, a2, a3
-	srli	a2, a2, 35
 	lui	a3, 8
+	srli	a2, a2, 35
 	addi	a3, a3, -96
 	mul	a2, a2, a3
 	subw	a1, a1, a2

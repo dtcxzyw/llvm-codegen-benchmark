@@ -1,7 +1,7 @@
 func0000000000000011:                   # @func0000000000000011
 	andi	a1, a1, 255
-	sltiu	a1, a1, 2
 	li	a2, 3
+	sltiu	a1, a1, 2
 	czero.nez	a1, a2, a1
 	andi	a0, a0, 1
 	sh2add	a0, a0, a1
@@ -16,8 +16,8 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func0000000000000009:                   # @func0000000000000009
 	andi	a1, a1, 255
-	sltiu	a1, a1, 2
 	andi	a0, a0, 1
+	sltiu	a1, a1, 2
 	slli	a0, a0, 6
 	sh3add	a0, a1, a0
 	ret

@@ -13,9 +13,9 @@ func000000000000001e:                   # @func000000000000001e
 	ret
 func000000000000000e:                   # @func000000000000000e
 	addi	a1, a1, -109
-	zext.w	a2, a1
-	lui	a3, 8257
-	addiw	a3, a3, -2031
+	lui	a2, 8257
+	zext.w	a3, a1
+	addiw	a2, a2, -2031
 	mul	a2, a2, a3
 	srli	a2, a2, 32
 	subw	a3, a1, a2
@@ -31,15 +31,15 @@ func0000000000000004:                   # @func0000000000000004
 	addi	a1, a1, -28
 	lui	a2, 672164
 	addi	a2, a2, 421
-	slli	a2, a2, 32
 	slli	a3, a1, 32
+	slli	a2, a2, 32
 	mulhu	a2, a3, a2
 	srli	a2, a2, 32
 	subw	a3, a1, a2
 	srliw	a3, a3, 1
 	add	a2, a2, a3
-	srliw	a2, a2, 5
 	li	a3, 39
+	srliw	a2, a2, 5
 	mul	a2, a2, a3
 	subw	a1, a1, a2
 	zext.w	a1, a1

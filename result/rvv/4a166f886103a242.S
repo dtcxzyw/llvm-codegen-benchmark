@@ -15,9 +15,9 @@ func0000000000000004:                   # @func0000000000000004
 func0000000000000002:                   # @func0000000000000002
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfwcvt.f.f.v	v24, v16
+	fli.d	fa5, 3.0
 	vsetvli	zero, zero, e64, m8, ta, ma
 	vfsub.vv	v8, v24, v8
-	fli.d	fa5, 3.0
 	fneg.d	fa5, fa5
 	vmflt.vf	v0, v8, fa5
 	ret

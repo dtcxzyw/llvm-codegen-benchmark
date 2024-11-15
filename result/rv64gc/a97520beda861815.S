@@ -1,7 +1,7 @@
 func000000000000000b:                   # @func000000000000000b
 	sext.w	a1, a1
-	seqz	a1, a1
 	slli	a0, a0, 63
+	seqz	a1, a1
 	srai	a0, a0, 63
 	andi	a0, a0, 3
 	add	a0, a0, a1

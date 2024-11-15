@@ -11,8 +11,8 @@ func000000000000000f:                   # @func000000000000000f
 	ret
 func000000000000000b:                   # @func000000000000000b
 	lui	a3, 15
-	and	a2, a2, a3
 	slli	a1, a1, 48
+	and	a2, a2, a3
 	srli	a1, a1, 48
 	or	a1, a1, a2
 	slli	a0, a0, 16
@@ -20,11 +20,11 @@ func000000000000000b:                   # @func000000000000000b
 	ret
 func000000000000000d:                   # @func000000000000000d
 	li	a3, 63
-	slli	a3, a3, 57
-	and	a2, a2, a3
 	slli	a1, a1, 1
-	srli	a1, a1, 1
 	slli	a0, a0, 63
+	slli	a3, a3, 57
+	srli	a1, a1, 1
+	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

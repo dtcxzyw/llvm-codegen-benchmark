@@ -10,12 +10,12 @@ func0000000000000098:                   # @func0000000000000098
 func0000000000000090:                   # @func0000000000000090
 	sext.w	a1, a1
 	lui	a3, 1048552
+	lui	a4, 2
+	sltu	a1, a4, a1
 	addi	a4, a3, -1697
-	addw	a2, a2, a4
 	addiw	a3, a3, -1696
+	addw	a2, a2, a4
 	sltu	a2, a2, a3
-	lui	a3, 2
-	sltu	a1, a3, a1
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

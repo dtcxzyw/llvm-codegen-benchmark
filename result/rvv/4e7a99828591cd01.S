@@ -1,8 +1,8 @@
 func0000000000000000:                   # @func0000000000000000
 	vmv1r.v	v10, v0
+	vmv1r.v	v0, v8
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v9
-	vmv1r.v	v0, v8
 	vmerge.vim	v8, v12, 0, v0
 	li	a0, 359
 	vmv1r.v	v0, v10

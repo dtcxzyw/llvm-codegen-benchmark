@@ -1,8 +1,8 @@
 func0000000000000034:                   # @func0000000000000034
-	li	a0, 16
-	lui	a1, 4096
+	lui	a0, 4096
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsltu.vx	v11, v8, a1
+	vmsltu.vx	v11, v8, a0
+	li	a0, 16
 	vsetvli	zero, zero, e8, mf2, ta, mu
 	vor.vx	v10, v10, a0, v0.t
 	vmv1r.v	v0, v11

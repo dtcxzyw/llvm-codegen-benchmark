@@ -17,10 +17,10 @@ func0000000000000048:                   # @func0000000000000048
 	sext.w	a1, a1
 	li	a2, 16
 	max	a1, a1, a2
+	lui	a2, 917504
 	subw	a0, a0, a1
-	lui	a1, 917504
-	addi	a1, a1, -4
-	add	a0, a0, a1
+	addi	a2, a2, -4
+	add	a0, a0, a2
 	srliw	a0, a0, 29
 	sltiu	a0, a0, 7
 	ret

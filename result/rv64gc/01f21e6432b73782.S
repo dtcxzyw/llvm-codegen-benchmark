@@ -44,8 +44,8 @@ func00000000000007a4:                   # @func00000000000007a4
 func0000000000000708:                   # @func0000000000000708
 	sext.w	a2, a2
 	add	a0, a0, a2
-	addi	a0, a0, 3
 	lui	a2, 16
+	addi	a0, a0, 3
 	add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret

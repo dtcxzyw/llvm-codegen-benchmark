@@ -18,8 +18,8 @@ func0000000000000221:                   # @func0000000000000221
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v14, v12, 0
 	vmseq.vi	v12, v10, 0
-	vmor.mm	v10, v12, v14
 	li	a0, 32
+	vmor.mm	v10, v12, v14
 	vmseq.vx	v11, v8, a0
 	vmand.mm	v0, v11, v10
 	ret

@@ -11,20 +11,20 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func0000000000000035:                   # @func0000000000000035
 	lui	a2, 21
+	sext.w	a0, a0
 	addiw	a2, a2, 384
 	mul	a1, a1, a2
-	sext.w	a0, a0
+	lui	a2, 981163
+	slli	a2, a2, 3
 	add	a0, a0, a1
-	lui	a1, 981163
-	slli	a1, a1, 3
-	addi	a1, a1, 384
+	addi	a1, a2, 384
 	add	a0, a0, a1
 	ret
 func000000000000007f:                   # @func000000000000007f
 	lui	a2, 21
+	sext.w	a0, a0
 	addiw	a2, a2, 384
 	mul	a1, a1, a2
-	sext.w	a0, a0
 	lui	a2, 15398
 	addiw	a2, a2, 1792
 	add	a0, a0, a2
@@ -34,11 +34,11 @@ func0000000000000025:                   # @func0000000000000025
 	lui	a2, 21
 	addiw	a2, a2, 384
 	mul	a1, a1, a2
+	lui	a2, 930062
+	addiw	a2, a2, -1681
 	add.uw	a0, a0, a1
-	lui	a1, 930062
-	addiw	a1, a1, -1681
-	slli	a1, a1, 7
-	add	a0, a0, a1
+	slli	a2, a2, 7
+	add	a0, a0, a2
 	ret
 func0000000000000030:                   # @func0000000000000030
 	sh2add	a1, a1, a1

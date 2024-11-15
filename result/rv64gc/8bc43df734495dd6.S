@@ -3,9 +3,9 @@ func000000000000002b:                   # @func000000000000002b
 	sd	ra, 8(sp)                       # 8-byte Folded Spill
 	or	a1, a1, a2
 	lui	a2, 1323
+	lui	a4, 1046322
 	addiw	a3, a2, 2002
-	lui	a2, 1046322
-	addi	a2, a2, 51
+	addi	a2, a4, 51
 	slli	a2, a2, 12
 	addi	a2, a2, 1209
 	slli	a2, a2, 26

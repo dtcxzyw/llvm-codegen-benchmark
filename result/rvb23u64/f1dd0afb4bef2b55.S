@@ -1,8 +1,8 @@
 func000000000000003d:                   # @func000000000000003d
 	add	a0, a0, a1
 	lui	a1, 256
-	add	a1, a1, a0
 	lui	a2, 1024
+	add	a1, a1, a0
 	addiw	a2, a2, -1
 	slli	a2, a2, 21
 	and	a1, a1, a2

@@ -20,8 +20,8 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func000000000000000a:                   # @func000000000000000a
 	slli	a0, a0, 3
-	addiw	a0, a0, 39
 	lui	a1, 8
+	addiw	a0, a0, 39
 	addiw	a1, a1, 7
 	slt	a0, a1, a0
 	ret
@@ -103,8 +103,8 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func000000000000000c:                   # @func000000000000000c
 	slli	a0, a0, 35
-	srli	a0, a0, 35
 	lui	a1, 131072
+	srli	a0, a0, 35
 	addiw	a1, a1, -5
 	xor	a0, a0, a1
 	snez	a0, a0

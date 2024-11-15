@@ -28,8 +28,8 @@ func0000000000000004:                   # @func0000000000000004
 func0000000000000002:                   # @func0000000000000002
 	sext.w	a2, a2
 	sext.w	a1, a1
-	slt	a1, a1, a2
 	slli	a0, a0, 63
+	slt	a1, a1, a2
 	srai	a0, a0, 63
 	or	a0, a0, a1
 	ret

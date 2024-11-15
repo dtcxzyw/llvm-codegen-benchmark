@@ -1,9 +1,9 @@
 func0000000000000000:                   # @func0000000000000000
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
+	li	a0, 112
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vnsrl.wi	v8, v10, 0
-	li	a0, 112
 	vadd.vx	v8, v8, a0
 	li	a0, -21
 	vmerge.vxm	v8, v8, a0, v0
@@ -11,9 +11,9 @@ func0000000000000000:                   # @func0000000000000000
 func000000000000000f:                   # @func000000000000000f
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
+	li	a0, 32
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vnsrl.wi	v8, v10, 0
-	li	a0, 32
 	vadd.vx	v8, v8, a0
 	li	a0, 96
 	vmerge.vxm	v8, v8, a0, v0
@@ -29,9 +29,9 @@ func000000000000000d:                   # @func000000000000000d
 func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
+	li	a0, -70
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vnsrl.wi	v8, v10, 0
-	li	a0, -70
 	vadd.vx	v8, v8, a0
 	li	a0, 116
 	vmerge.vxm	v8, v8, a0, v0
@@ -39,9 +39,9 @@ func0000000000000008:                   # @func0000000000000008
 func0000000000000005:                   # @func0000000000000005
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
+	li	a0, 48
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vnsrl.wi	v8, v10, 0
-	li	a0, 48
 	vadd.vx	v8, v8, a0
 	li	a0, 55
 	vmerge.vxm	v8, v8, a0, v0

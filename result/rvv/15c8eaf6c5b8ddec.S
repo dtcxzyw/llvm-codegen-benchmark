@@ -8,9 +8,9 @@ func0000000000000002:                   # @func0000000000000002
 	vmflt.vf	v0, v8, fa5
 	ret
 func0000000000000018:                   # @func0000000000000018
+	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vfabs.v	v8, v16, v0.t
-	fmv.d.x	fa5, zero
 	vmfeq.vf	v0, v8, fa5
 	ret
 .LCPI2_0:
@@ -43,33 +43,33 @@ func0000000000000013:                   # @func0000000000000013
 	vmnot.m	v0, v16
 	ret
 func0000000000000004:                   # @func0000000000000004
+	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vfabs.v	v8, v16, v0.t
-	fmv.d.x	fa5, zero
 	vmfgt.vf	v0, v8, fa5
 	ret
 func0000000000000017:                   # @func0000000000000017
+	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vfabs.v	v8, v16, v0.t
-	fmv.d.x	fa5, zero
 	vmfne.vf	v0, v8, fa5
 	ret
 func0000000000000014:                   # @func0000000000000014
+	fli.d	fa5, 2.0
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vfabs.v	v8, v16, v0.t
-	fli.d	fa5, 2.0
 	vmfgt.vf	v0, v8, fa5
 	ret
 func0000000000000008:                   # @func0000000000000008
+	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vfabs.v	v8, v16, v0.t
-	fmv.d.x	fa5, zero
 	vmfeq.vf	v0, v8, fa5
 	ret
 func0000000000000019:                   # @func0000000000000019
+	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vfabs.v	v8, v16, v0.t
-	fmv.d.x	fa5, zero
 	vmflt.vf	v16, v8, fa5
 	vmfgt.vf	v17, v8, fa5
 	vmnor.mm	v0, v17, v16

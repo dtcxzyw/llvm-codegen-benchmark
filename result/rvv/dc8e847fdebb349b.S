@@ -21,9 +21,9 @@ func0000000000000004:                   # @func0000000000000004
 	.word	0x3ea2f983                      # float 0.318309873
 func0000000000000003:                   # @func0000000000000003
 	fmv.w.x	fa5, zero
+	lui	a0, %hi(.LCPI2_0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfge.vf	v20, v16, fa5
-	lui	a0, %hi(.LCPI2_0)
 	flw	fa5, %lo(.LCPI2_0)(a0)
 	vmnot.m	v0, v20
 	vmerge.vvm	v8, v12, v8, v0
@@ -33,9 +33,9 @@ func0000000000000003:                   # @func0000000000000003
 	.word	0x3f99999a                      # float 1.20000005
 func000000000000000d:                   # @func000000000000000d
 	fli.s	fa5, 0.5
+	lui	a0, %hi(.LCPI3_0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vf	v20, v16, fa5
-	lui	a0, %hi(.LCPI3_0)
 	flw	fa5, %lo(.LCPI3_0)(a0)
 	vmnot.m	v0, v20
 	vmerge.vvm	v8, v12, v8, v0
@@ -67,9 +67,9 @@ func0000000000000008:                   # @func0000000000000008
 func0000000000000005:                   # @func0000000000000005
 	lui	a0, %hi(.LCPI6_0)
 	flw	fa5, %lo(.LCPI6_0)(a0)
+	lui	a0, %hi(.LCPI6_1)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfle.vf	v20, v16, fa5
-	lui	a0, %hi(.LCPI6_1)
 	flw	fa5, %lo(.LCPI6_1)(a0)
 	vmnot.m	v0, v20
 	vmerge.vvm	v8, v12, v8, v0

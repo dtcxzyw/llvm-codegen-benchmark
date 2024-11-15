@@ -13,8 +13,8 @@ func0000000000000042:                   # @func0000000000000042
 	ret
 func000000000000012a:                   # @func000000000000012a
 	slli	a0, a0, 3
-	add	a0, a0, a2
 	srai	a1, a1, 32
+	add	a0, a0, a2
 	slli	a1, a1, 3
 	add	a0, a0, a1
 	addi	a0, a0, 24

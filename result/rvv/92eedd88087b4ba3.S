@@ -4,8 +4,8 @@ func000000000000000d:                   # @func000000000000000d
 	lui	a0, 798688
 	fmv.w.x	fa5, a0
 	vmflt.vf	v16, v12, fa5
-	vmnot.m	v0, v16
 	fli.s	fa5, 1.0
+	vmnot.m	v0, v16
 	vfmv.v.f	v12, fa5
 	vmerge.vvm	v8, v12, v8, v0
 	ret
@@ -14,8 +14,8 @@ func000000000000000b:                   # @func000000000000000b
 	vfmul.vv	v12, v12, v16
 	fmv.w.x	fa5, zero
 	vmfgt.vf	v16, v12, fa5
-	vmnot.m	v0, v16
 	fli.s	fa5, 1.0
+	vmnot.m	v0, v16
 	vfmv.v.f	v12, fa5
 	vmerge.vvm	v8, v12, v8, v0
 	ret

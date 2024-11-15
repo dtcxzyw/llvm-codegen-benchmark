@@ -2,10 +2,10 @@ func0000000000000006:                   # @func0000000000000006
 	andi	a1, a1, 1
 	li	a3, 1
 	sub	a3, a3, a2
-	czero.nez	a2, a3, a1
-	li	a3, -6
-	czero.eqz	a1, a3, a1
-	or	a1, a1, a2
+	li	a2, -6
+	czero.nez	a3, a3, a1
+	czero.eqz	a1, a2, a1
+	or	a1, a1, a3
 	addw	a0, a0, a1
 	slti	a0, a0, 7
 	ret
@@ -13,10 +13,10 @@ func00000000000000d6:                   # @func00000000000000d6
 	andi	a1, a1, 1
 	li	a3, 3
 	sub	a3, a3, a2
-	czero.nez	a2, a3, a1
-	li	a3, 1
-	czero.eqz	a1, a3, a1
-	or	a1, a1, a2
+	li	a2, 1
+	czero.nez	a3, a3, a1
+	czero.eqz	a1, a2, a1
+	or	a1, a1, a3
 	addw	a0, a0, a1
 	slti	a0, a0, 3
 	ret
@@ -39,10 +39,10 @@ func0000000000000056:                   # @func0000000000000056
 	andi	a1, a1, 1
 	li	a3, 3
 	sub	a3, a3, a2
-	czero.nez	a2, a3, a1
-	li	a3, 1
-	czero.eqz	a1, a3, a1
-	or	a1, a1, a2
+	li	a2, 1
+	czero.nez	a3, a3, a1
+	czero.eqz	a1, a2, a1
+	or	a1, a1, a3
 	addw	a0, a0, a1
 	slti	a0, a0, 3
 	ret
@@ -76,10 +76,10 @@ func000000000000000a:                   # @func000000000000000a
 	andi	a1, a1, 1
 	li	a3, 1
 	sub	a3, a3, a2
-	czero.nez	a2, a3, a1
-	li	a3, -6
-	czero.eqz	a1, a3, a1
-	or	a1, a1, a2
+	li	a2, -6
+	czero.nez	a3, a3, a1
+	czero.eqz	a1, a2, a1
+	or	a1, a1, a3
 	addw	a0, a0, a1
 	slti	a0, a0, 7
 	xori	a0, a0, 1

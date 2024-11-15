@@ -11,11 +11,11 @@ func000000000000001a:                   # @func000000000000001a
 	srli	a4, a4, 32
 	add	a2, a2, a4
 	sltu	a4, a2, a4
-	add	a3, a3, a4
 	srli	a2, a2, 32
+	add	a3, a3, a4
 	slli	a4, a3, 32
-	or	a2, a2, a4
 	srli	a3, a3, 32
+	or	a2, a2, a4
 	add	a0, a0, a2
 	sltu	a2, a0, a2
 	add	a1, a1, a3
@@ -34,11 +34,11 @@ func000000000000001b:                   # @func000000000000001b
 	srli	a4, a4, 13
 	add	a2, a2, a4
 	sltu	a4, a2, a4
-	add	a3, a3, a4
 	srli	a2, a2, 51
+	add	a3, a3, a4
 	slli	a4, a3, 13
-	or	a2, a2, a4
 	srli	a3, a3, 51
+	or	a2, a2, a4
 	add	a0, a0, a2
 	sltu	a2, a0, a2
 	add	a1, a1, a3

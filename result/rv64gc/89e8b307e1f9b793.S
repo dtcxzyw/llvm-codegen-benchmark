@@ -28,15 +28,15 @@ func0000000000000005:                   # @func0000000000000005
 	.quad	9187201950435737470             # 0x7f7f7f7f7f7f7f7e
 func000000000000000a:                   # @func000000000000000a
 	lui	a1, 152146
-	addiw	a1, a1, 1317
 	lui	a2, %hi(.LCPI4_0)
+	addiw	a1, a1, 1317
 	ld	a2, %lo(.LCPI4_0)(a2)
 	add	a0, a0, a1
 	slli	a1, a1, 32
 	add	a0, a0, a1
-	and	a0, a0, a2
 	lui	a1, 106914
 	addiw	a1, a1, -1510
+	and	a0, a0, a2
 	slli	a2, a1, 32
 	add	a1, a1, a2
 	add	a0, a0, a1

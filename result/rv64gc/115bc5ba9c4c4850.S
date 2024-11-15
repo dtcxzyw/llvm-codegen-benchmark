@@ -58,8 +58,8 @@ func000000000000001e:                   # @func000000000000001e
 	ret
 func0000000000000000:                   # @func0000000000000000
 	slli	a1, a1, 6
-	srli	a1, a1, 62
 	li	a2, 1216
+	srli	a1, a1, 62
 	mul	a1, a1, a2
 	lui	a2, 1048573
 	addiw	a2, a2, -1152

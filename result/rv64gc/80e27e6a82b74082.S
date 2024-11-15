@@ -1,8 +1,8 @@
 func0000000000000020:                   # @func0000000000000020
 	sext.w	a2, a2
 	sub	a0, a0, a1
-	sub	a0, a0, a2
 	lui	a1, 1048559
+	sub	a0, a0, a2
 	addiw	a1, a1, -1072
 	add	a0, a0, a1
 	ret

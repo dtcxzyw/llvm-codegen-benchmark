@@ -2,8 +2,8 @@ func0000000000000001:                   # @func0000000000000001
 	andi	a1, a1, -2048
 	bclri	a1, a1, 11
 	sub	a1, a1, a0
-	srli	a1, a1, 9
 	lui	a0, 4096
+	srli	a1, a1, 9
 	addiw	a0, a0, -32
 	and	a0, a0, a1
 	ret

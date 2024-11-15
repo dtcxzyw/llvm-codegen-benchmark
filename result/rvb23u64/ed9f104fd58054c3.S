@@ -37,8 +37,8 @@ func000000000000006b:                   # @func000000000000006b
 	ret
 func0000000000000040:                   # @func0000000000000040
 	subw	a1, a1, a2
+	lui	a2, 18
 	sh2add	a0, a1, a0
-	lui	a1, 18
-	addiw	a1, a1, 788
+	addiw	a1, a2, 788
 	add	a0, a0, a1
 	ret

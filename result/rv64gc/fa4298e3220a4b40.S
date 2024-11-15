@@ -2,8 +2,8 @@ func0000000000000081:                   # @func0000000000000081
 	sext.w	a0, a0
 	fclass.d	a1, fa0
 	slli	a1, a1, 56
-	srli	a1, a1, 63
 	addi	a0, a0, -34
+	srli	a1, a1, 63
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -35,8 +35,8 @@ func0000000000000028:                   # @func0000000000000028
 	lui	a1, %hi(.LCPI4_0)
 	fld	fa5, %lo(.LCPI4_0)(a1)
 	sext.w	a0, a0
-	flt.d	a1, fa0, fa5
 	sltiu	a0, a0, 23
+	flt.d	a1, fa0, fa5
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -53,9 +53,9 @@ func0000000000000031:                   # @func0000000000000031
 	lui	a1, %hi(.LCPI6_0)
 	fld	fa5, %lo(.LCPI6_0)(a1)
 	sext.w	a0, a0
+	addi	a0, a0, -1
 	fle.d	a1, fa5, fa0
 	xori	a1, a1, 1
-	addi	a0, a0, -1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -65,9 +65,9 @@ func0000000000000051:                   # @func0000000000000051
 	lui	a1, %hi(.LCPI7_0)
 	fld	fa5, %lo(.LCPI7_0)(a1)
 	sext.w	a0, a0
+	addi	a0, a0, 1
 	fle.d	a1, fa0, fa5
 	xori	a1, a1, 1
-	addi	a0, a0, 1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -94,8 +94,8 @@ func000000000000006c:                   # @func000000000000006c
 	lui	a1, %hi(.LCPI10_0)
 	fld	fa5, %lo(.LCPI10_0)(a1)
 	sext.w	a0, a0
-	flt.d	a1, fa0, fa5
 	addi	a0, a0, -10
+	flt.d	a1, fa0, fa5
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -147,8 +147,8 @@ func0000000000000071:                   # @func0000000000000071
 	sext.w	a0, a0
 	fmv.d.x	fa5, zero
 	feq.d	a1, fa0, fa5
-	xori	a1, a1, 1
 	addi	a0, a0, -1
+	xori	a1, a1, 1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

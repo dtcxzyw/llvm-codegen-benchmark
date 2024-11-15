@@ -7,10 +7,10 @@ func0000000000000061:                   # @func0000000000000061
 	ret
 func0000000000000011:                   # @func0000000000000011
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmin.vv	v12, v8, v10
 	vmseq.vi	v0, v10, 0
-	vmin.vv	v10, v8, v10
-	vmerge.vvm	v8, v10, v8, v0
 	lui	a0, 244141
+	vmerge.vvm	v8, v12, v8, v0
 	addi	a0, a0, -1536
 	vmseq.vx	v0, v8, a0
 	ret

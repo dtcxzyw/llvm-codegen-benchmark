@@ -41,8 +41,8 @@ func000000000000000a:                   # @func000000000000000a
 func0000000000000000:                   # @func0000000000000000
 	li	a2, 1
 	subw	a2, a2, a1
-	slli	a2, a2, 32
 	li	a1, 41
+	slli	a2, a2, 32
 	slli	a1, a1, 38
 	mulhu	a1, a2, a1
 	add	a0, a0, a1

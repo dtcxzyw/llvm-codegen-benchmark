@@ -8,10 +8,10 @@ func000000000000007a:                   # @func000000000000007a
 func0000000000000088:                   # @func0000000000000088
 	andi	a2, a2, 255
 	add	a1, a1, a2
-	slli	a1, a1, 32
-	srli	a1, a1, 32
 	lui	a2, 8
 	addiw	a2, a2, 1704
+	slli	a1, a1, 32
+	srli	a1, a1, 32
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

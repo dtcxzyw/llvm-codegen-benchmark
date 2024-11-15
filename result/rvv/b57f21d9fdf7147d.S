@@ -44,8 +44,8 @@ func0000000000000118:                   # @func0000000000000118
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v10, a0
 	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
 	li	a0, -127
+	vmerge.vim	v10, v10, 1, v0
 	vxor.vx	v10, v10, a0
 	vadd.vv	v8, v10, v8
 	li	a0, 252
@@ -56,8 +56,8 @@ func000000000000011c:                   # @func000000000000011c
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v10, a0
 	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
 	li	a0, -127
+	vmerge.vim	v10, v10, 1, v0
 	vxor.vx	v10, v10, a0
 	vadd.vv	v8, v10, v8
 	li	a0, 253
@@ -75,9 +75,9 @@ func0000000000000188:                   # @func0000000000000188
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsle.vi	v0, v10, 8
 	vmv.v.i	v10, 6
+	li	a0, -1
 	vmerge.vim	v10, v10, 3, v0
 	vadd.vv	v8, v10, v8
-	li	a0, -1
 	srli	a0, a0, 4
 	vmsgtu.vx	v0, v8, a0
 	ret

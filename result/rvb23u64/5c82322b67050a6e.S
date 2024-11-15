@@ -1,16 +1,16 @@
 func0000000000000001:                   # @func0000000000000001
 	or	a1, a1, a2
+	lui	a2, 62
 	or	a0, a0, a1
-	lui	a1, 62
-	addiw	a1, a1, 1
-	and	a0, a0, a1
+	addiw	a2, a2, 1
+	and	a0, a0, a2
 	seqz	a0, a0
 	ret
 func0000000000000021:                   # @func0000000000000021
 	or	a1, a1, a2
+	lui	a2, 524296
 	or	a0, a0, a1
-	lui	a1, 524296
-	addi	a1, a1, 110
+	addi	a1, a2, 110
 	and	a0, a0, a1
 	sext.w	a0, a0
 	seqz	a0, a0
@@ -23,9 +23,9 @@ func000000000000002c:                   # @func000000000000002c
 	ret
 func0000000000000031:                   # @func0000000000000031
 	or	a1, a1, a2
+	lui	a2, 4080
 	or	a0, a0, a1
-	lui	a1, 4080
-	addiw	a1, a1, 511
+	addiw	a1, a2, 511
 	and	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -42,9 +42,9 @@ func0000000000000024:                   # @func0000000000000024
 	ret
 func0000000000000028:                   # @func0000000000000028
 	or	a1, a1, a2
+	li	a2, 31
 	or	a0, a0, a1
-	li	a1, 31
-	slli	a1, a1, 11
-	and	a0, a0, a1
+	slli	a2, a2, 11
+	and	a0, a0, a2
 	snez	a0, a0
 	ret

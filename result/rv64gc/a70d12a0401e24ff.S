@@ -19,18 +19,18 @@ func00000000000000c2:                   # @func00000000000000c2
 	addiw	a1, a1, -1
 	li	a2, 272
 	mul	a1, a1, a2
+	lui	a2, 3
 	add	a0, a0, a1
-	lui	a1, 3
-	addiw	a1, a1, 72
+	addiw	a1, a2, 72
 	add	a0, a0, a1
 	ret
 func00000000000000e2:                   # @func00000000000000e2
 	addiw	a1, a1, -1
 	li	a2, 272
 	mul	a1, a1, a2
+	lui	a2, 3
 	add	a0, a0, a1
-	lui	a1, 3
-	addiw	a1, a1, 216
+	addiw	a1, a2, 216
 	add	a0, a0, a1
 	ret
 func00000000000001e2:                   # @func00000000000001e2

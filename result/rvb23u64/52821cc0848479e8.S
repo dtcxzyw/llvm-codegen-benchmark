@@ -26,8 +26,8 @@ func0000000000000048:                   # @func0000000000000048
 func0000000000000129:                   # @func0000000000000129
 	sltiu	a2, a2, 23
 	addi	a1, a1, 8
-	czero.nez	a1, a1, a2
 	li	a3, 40
+	czero.nez	a1, a1, a2
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
 	sltu	a0, a0, a1

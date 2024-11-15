@@ -48,17 +48,17 @@ func0000000000000198:                   # @func0000000000000198
 	sext.w	a1, a1
 	lui	a3, 7176
 	and	a2, a2, a3
-	snez	a2, a2
 	addi	a1, a1, -256
+	snez	a2, a2
 	snez	a1, a1
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret
 func0000000000000098:                   # @func0000000000000098
 	andi	a2, a2, 224
+	srliw	a1, a1, 11
 	addi	a2, a2, -192
 	snez	a2, a2
-	srliw	a1, a1, 11
 	seqz	a1, a1
 	and	a1, a1, a2
 	or	a0, a0, a1
@@ -74,10 +74,10 @@ func0000000000000082:                   # @func0000000000000082
 func0000000000000142:                   # @func0000000000000142
 	sext.w	a1, a1
 	andi	a2, a2, 7
-	addi	a2, a2, -3
-	seqz	a2, a2
 	lui	a3, 16
+	addi	a2, a2, -3
 	addiw	a3, a3, -2
+	seqz	a2, a2
 	slt	a1, a3, a1
 	and	a1, a1, a2
 	or	a0, a0, a1

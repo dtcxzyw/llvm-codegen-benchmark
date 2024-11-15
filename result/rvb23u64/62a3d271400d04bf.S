@@ -32,8 +32,8 @@ func000000000000000c:                   # @func000000000000000c
 func0000000000000014:                   # @func0000000000000014
 	andi	a1, a1, 63
 	or	a0, a0, a1
-	sext.w	a0, a0
 	lui	a1, 16
+	sext.w	a0, a0
 	addiw	a1, a1, -1
 	sltu	a0, a0, a1
 	ret

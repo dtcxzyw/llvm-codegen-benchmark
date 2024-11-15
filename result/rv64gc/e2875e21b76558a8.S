@@ -1,7 +1,7 @@
 func000000000000000c:                   # @func000000000000000c
 	slli	a1, a1, 24
-	srli	a1, a1, 24
 	li	a2, 1
+	srli	a1, a1, 24
 	slli	a2, a2, 39
 	xor	a1, a1, a2
 	snez	a1, a1

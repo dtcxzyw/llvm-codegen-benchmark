@@ -2,8 +2,8 @@ func00000000000000cc:                   # @func00000000000000cc
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vi	v12, v10, 0
 	vmsne.vi	v10, v8, 0
-	vmxor.mm	v0, v10, v12
 	lui	a0, 2
+	vmxor.mm	v0, v10, v12
 	vmv.v.x	v8, a0
 	vmerge.vim	v8, v8, 0, v0
 	ret

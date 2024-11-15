@@ -10,9 +10,9 @@ func000000000000006e:                   # @func000000000000006e
 	li	a0, 103
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmul.vx	v10, v10, a0
+	lui	a0, 3
 	vsrl.vi	v10, v10, 10
 	vadd.vv	v8, v10, v8
-	lui	a0, 3
 	addi	a0, a0, 48
 	vadd.vx	v8, v8, a0
 	ret

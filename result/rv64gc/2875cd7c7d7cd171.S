@@ -27,10 +27,10 @@ func0000000000000018:                   # @func0000000000000018
 	sext.w	a1, a1
 	lui	a3, 1040384
 	addi	a3, a3, -1
+	sltiu	a1, a1, 4
 	and	a2, a2, a3
 	sext.w	a2, a2
 	seqz	a2, a2
-	sltiu	a1, a1, 4
 	not	a1, a1
 	and	a1, a1, a2
 	or	a0, a0, a1

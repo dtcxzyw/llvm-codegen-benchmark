@@ -1,8 +1,8 @@
 func0000000000000000:                   # @func0000000000000000
 	and	a1, a1, a2
+	lui	a2, 272547
 	add	a0, a0, a1
-	lui	a1, 272547
-	addi	a1, a1, -104
+	addi	a1, a2, -104
 	addw	a0, a0, a1
 	ret
 func0000000000000005:                   # @func0000000000000005

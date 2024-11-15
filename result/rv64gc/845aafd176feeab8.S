@@ -8,10 +8,10 @@ func0000000000000015:                   # @func0000000000000015
 	ret
 func0000000000000003:                   # @func0000000000000003
 	sext.w	a1, a1
-	seqz	a1, a1
-	slli	a1, a1, 9
 	lui	a2, 1048575
+	seqz	a1, a1
 	addiw	a2, a2, 496
+	slli	a1, a1, 9
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -32,18 +32,18 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func0000000000000019:                   # @func0000000000000019
 	sext.w	a1, a1
-	snez	a1, a1
-	slli	a1, a1, 14
 	lui	a2, 1048572
+	snez	a1, a1
 	addiw	a2, a2, -1
+	slli	a1, a1, 14
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func000000000000000d:                   # @func000000000000000d
 	sext.w	a1, a1
+	slli	a0, a0, 49
 	sgtz	a1, a1
 	slli	a1, a1, 15
-	slli	a0, a0, 49
 	srli	a0, a0, 49
 	or	a0, a0, a1
 	ret

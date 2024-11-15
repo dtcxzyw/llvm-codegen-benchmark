@@ -1,7 +1,7 @@
 func0000000000000022:                   # @func0000000000000022
 	not	a1, a1
-	bexti	a1, a1, 15
 	seqz	a0, a0
+	bexti	a1, a1, 15
 	or	a0, a0, a1
 	li	a1, -80
 	czero.nez	a0, a1, a0

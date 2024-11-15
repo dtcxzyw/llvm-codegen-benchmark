@@ -1,10 +1,10 @@
 func0000000000001102:                   # @func0000000000001102
 	li	a0, 26
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsltu.vx	v9, v12, a0
-	vmsleu.vi	v12, v10, 9
-	vmor.mm	v9, v12, v9
+	vmsleu.vi	v9, v10, 9
+	vmsltu.vx	v10, v12, a0
 	li	a0, 95
+	vmor.mm	v9, v9, v10
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmseq.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9

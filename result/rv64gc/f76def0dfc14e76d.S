@@ -1,11 +1,11 @@
 func0000000000000002:                   # @func0000000000000002
 	li	a3, 37
 	mul	a2, a2, a3
+	li	a3, 5
 	and	a1, a1, a2
 	slli	a1, a1, 32
-	li	a2, 5
-	slli	a2, a2, 35
-	mulhu	a1, a1, a2
+	slli	a3, a3, 35
+	mulhu	a1, a1, a3
 	add	a0, a0, a1
 	ret
 func0000000000000062:                   # @func0000000000000062

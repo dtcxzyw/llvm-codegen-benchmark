@@ -1,7 +1,7 @@
 func0000000000000014:                   # @func0000000000000014
 	fcvt.w.d	a1, fa0, rtz
-	seqz	a1, a1
 	srliw	a0, a0, 22
+	seqz	a1, a1
 	sltiu	a0, a0, 249
 	and	a0, a0, a1
 	ret

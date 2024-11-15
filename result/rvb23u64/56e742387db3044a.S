@@ -22,11 +22,11 @@ func000000000000015a:                   # @func000000000000015a
 	ret
 func000000000000011a:                   # @func000000000000011a
 	subw	a1, a1, a2
+	lui	a2, 23
 	addi	a1, a1, 15
 	andi	a1, a1, -16
 	addw	a0, a0, a1
-	lui	a1, 23
-	addiw	a1, a1, 1792
+	addiw	a1, a2, 1792
 	slt	a0, a1, a0
 	ret
 func000000000000016a:                   # @func000000000000016a

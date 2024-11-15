@@ -8,10 +8,10 @@ func0000000000000015:                   # @func0000000000000015
 	subw	a3, a0, a2
 	srliw	a3, a3, 1
 	add	a2, a2, a3
-	srli	a2, a2, 4
 	li	a3, 27
-	mul	a2, a2, a3
 	subw	a0, a0, a0
+	srli	a2, a2, 4
+	mul	a2, a2, a3
 	add	a0, a0, a1
 	subw	a0, a0, a2
 	addiw	a0, a0, -27
@@ -22,10 +22,10 @@ func0000000000000010:                   # @func0000000000000010
 	addi	a3, a3, -945
 	slli	a3, a3, 32
 	mulhu	a2, a2, a3
-	srli	a2, a2, 34
 	li	a3, 13
-	mul	a2, a2, a3
 	subw	a0, a0, a0
+	srli	a2, a2, 34
+	mul	a2, a2, a3
 	add	a0, a0, a1
 	subw	a0, a0, a2
 	addiw	a0, a0, -13
@@ -36,10 +36,10 @@ func0000000000000000:                   # @func0000000000000000
 	addi	a3, a3, 1311
 	slli	a3, a3, 32
 	mulhu	a2, a2, a3
-	srli	a2, a2, 39
 	li	a3, 400
-	mul	a2, a2, a3
 	subw	a0, a0, a0
+	srli	a2, a2, 39
+	mul	a2, a2, a3
 	add	a0, a0, a1
 	subw	a0, a0, a2
 	addiw	a0, a0, -400

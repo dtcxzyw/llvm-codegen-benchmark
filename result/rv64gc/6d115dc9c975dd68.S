@@ -19,10 +19,10 @@ func0000000000000094:                   # @func0000000000000094
 	lui	a2, 1048564
 	addi	a2, a2, -4
 	mul	a1, a1, a2
+	lui	a2, 12
 	addw	a0, a0, a1
-	lui	a1, 12
-	addiw	a1, a1, 3
-	slt	a0, a1, a0
+	addiw	a2, a2, 3
+	slt	a0, a2, a0
 	ret
 func0000000000000018:                   # @func0000000000000018
 	slli	a2, a1, 1

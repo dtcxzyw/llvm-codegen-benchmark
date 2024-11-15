@@ -4,44 +4,44 @@ func00000000000001aa:                   # @func00000000000001aa
 	lui	a0, %hi(.LCPI0_0)
 	flw	fa5, %lo(.LCPI0_0)(a0)
 	fabs.s	fa4, fa1
+	fabs.s	fa3, fa0
 	fle.s	a0, fa4, fa5
-	fabs.s	fa4, fa0
-	fle.s	a1, fa4, fa5
+	fle.s	a1, fa3, fa5
 	and	a0, a0, a1
 	ret
 func0000000000000122:                   # @func0000000000000122
 	fabs.s	fa5, fa1
 	lui	a0, 212992
-	fmv.w.x	fa4, a0
-	flt.s	a0, fa5, fa4
-	fabs.s	fa5, fa0
-	flt.s	a1, fa5, fa4
+	fabs.s	fa4, fa0
+	fmv.w.x	fa3, a0
+	flt.s	a0, fa5, fa3
+	flt.s	a1, fa4, fa3
 	and	a0, a0, a1
 	ret
 func0000000000000099:                   # @func0000000000000099
 	fclass.s	a0, fa1
-	andi	a0, a0, 897
-	snez	a0, a0
 	fclass.s	a1, fa0
+	andi	a0, a0, 897
 	andi	a1, a1, 897
+	snez	a0, a0
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
 func0000000000000066:                   # @func0000000000000066
 	fclass.s	a0, fa1
-	andi	a0, a0, 126
-	snez	a0, a0
 	fclass.s	a1, fa0
+	andi	a0, a0, 126
 	andi	a1, a1, 126
+	snez	a0, a0
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
 func0000000000000166:                   # @func0000000000000166
 	fclass.s	a0, fa1
-	andi	a0, a0, 126
-	snez	a0, a0
 	fclass.s	a1, fa0
+	andi	a0, a0, 126
 	andi	a1, a1, 126
+	snez	a0, a0
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
@@ -51,9 +51,9 @@ func0000000000000022:                   # @func0000000000000022
 	lui	a0, %hi(.LCPI5_0)
 	flw	fa5, %lo(.LCPI5_0)(a0)
 	fabs.s	fa4, fa1
+	fabs.s	fa3, fa0
 	flt.s	a0, fa4, fa5
-	fabs.s	fa4, fa0
-	flt.s	a1, fa4, fa5
+	flt.s	a1, fa3, fa5
 	and	a0, a0, a1
 	ret
 .LCPI6_0:

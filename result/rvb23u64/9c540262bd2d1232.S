@@ -1,8 +1,8 @@
 func0000000000000015:                   # @func0000000000000015
 	sext.w	a0, a0
 	andi	a2, a2, 15
-	seqz	a2, a2
 	sext.w	a1, a1
+	seqz	a2, a2
 	sltu	a0, a1, a0
 	andn	a0, a2, a0
 	ret

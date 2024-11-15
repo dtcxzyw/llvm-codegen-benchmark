@@ -2,15 +2,15 @@
 	.quad	-4417276706812531889            # 0xc2b2ae3d27d4eb4f
 func0000000000000020:                   # @func0000000000000020
 	li	a0, 32
+	lui	a1, 797483
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vx	v12, v12, a0
-	lui	a0, 797483
-	lui	a1, %hi(.LCPI0_0)
-	ld	a1, %lo(.LCPI0_0)(a1)
-	addi	a0, a0, -451
-	zext.w	a0, a0
-	vmul.vx	v12, v12, a0
-	vmacc.vx	v12, a1, v10
+	lui	a0, %hi(.LCPI0_0)
+	ld	a0, %lo(.LCPI0_0)(a0)
+	addi	a1, a1, -451
+	zext.w	a1, a1
+	vmul.vx	v12, v12, a1
+	vmacc.vx	v12, a0, v10
 	vadd.vv	v8, v12, v8
 	ret
 func00000000000000d0:                   # @func00000000000000d0

@@ -45,8 +45,8 @@ func0000000000000018:                   # @func0000000000000018
 	li	a0, 1792
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vand.vx	v10, v10, a0
-	vmseq.vi	v10, v10, 0
 	li	a0, 29
+	vmseq.vi	v10, v10, 0
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsgtu.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10

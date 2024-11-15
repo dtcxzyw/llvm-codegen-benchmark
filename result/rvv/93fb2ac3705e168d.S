@@ -1,9 +1,9 @@
 func0000000000000007:                   # @func0000000000000007
 	lui	a0, 1048575
-	addi	a0, a0, -1025
 	vsetivli	zero, 16, e16, m2, ta, ma
-	vand.vx	v10, v10, a0
 	vsll.vi	v8, v8, 10
+	addi	a0, a0, -1025
+	vand.vx	v10, v10, a0
 	li	a0, 27
 	slli	a0, a0, 10
 	vand.vx	v8, v8, a0

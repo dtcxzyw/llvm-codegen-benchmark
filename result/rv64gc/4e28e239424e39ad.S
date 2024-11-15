@@ -1,9 +1,9 @@
 func000000000000002d:                   # @func000000000000002d
 	addi	a0, a0, -1
-	sraiw	a1, a0, 31
-	xor	a0, a0, a1
-	subw	a0, a0, a1
 	li	a1, 205
+	sraiw	a2, a0, 31
+	xor	a0, a0, a2
+	subw	a0, a0, a2
 	mul	a1, a0, a1
 	slli	a1, a1, 48
 	srli	a1, a1, 59

@@ -1,13 +1,13 @@
 func0000000000000010:                   # @func0000000000000010
 	slli	a2, a2, 32
 	lui	a3, 838861
+	add	a0, a0, a1
+	lui	a1, 1048400
 	addi	a3, a3, -819
+	addi	a1, a1, 1427
 	slli	a3, a3, 32
 	mulhu	a2, a2, a3
 	srli	a2, a2, 34
-	add	a0, a0, a1
-	lui	a1, 1048400
-	addi	a1, a1, 1427
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret

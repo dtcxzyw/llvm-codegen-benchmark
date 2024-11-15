@@ -63,10 +63,10 @@ func000000000000007a:                   # @func000000000000007a
 	ret
 func00000000000000c5:                   # @func00000000000000c5
 	xor	a2, a2, a1
-	snez	a2, a2
 	sltu	a0, a1, a0
+	snez	a1, a2
 	not	a0, a0
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 func0000000000000048:                   # @func0000000000000048
 	sltu	a2, a2, a1
@@ -131,10 +131,10 @@ func00000000000000b7:                   # @func00000000000000b7
 	ret
 func000000000000001c:                   # @func000000000000001c
 	xor	a2, a2, a1
-	seqz	a2, a2
 	xor	a0, a0, a1
+	seqz	a1, a2
 	snez	a0, a0
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 func0000000000000045:                   # @func0000000000000045
 	sltu	a2, a2, a1

@@ -13,8 +13,8 @@ func000000000000000b:                   # @func000000000000000b
 	ret
 func000000000000000a:                   # @func000000000000000a
 	divuw	a1, a1, a2
-	slli	a1, a1, 32
 	li	a2, 5
+	slli	a1, a1, 32
 	slli	a2, a2, 35
 	mulhu	a1, a1, a2
 	add	a0, a0, a1

@@ -16,15 +16,15 @@ func0000000000000019:                   # @func0000000000000019
 	ret
 func0000000000000059:                   # @func0000000000000059
 	lui	a1, 596
+	lui	a2, 599186
 	addi	a1, a1, -627
+	addiw	a2, a2, 1171
 	addw	a0, a0, a1
-	lui	a1, 599186
-	addiw	a1, a1, 1171
-	mul	a1, a1, a0
-	srli	a1, a1, 32
-	add	a1, a1, a0
-	srliw	a2, a1, 31
-	sraiw	a1, a1, 2
+	mul	a2, a2, a0
+	srli	a2, a2, 32
+	add	a2, a2, a0
+	srliw	a1, a2, 31
+	sraiw	a2, a2, 2
 	add	a1, a1, a2
 	slli	a2, a1, 3
 	subw	a1, a1, a2

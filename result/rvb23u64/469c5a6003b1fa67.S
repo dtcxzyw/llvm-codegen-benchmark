@@ -7,8 +7,8 @@ func000000000000000d:                   # @func000000000000000d
 	ret
 func0000000000000008:                   # @func0000000000000008
 	sext.w	a2, a1
-	czero.eqz	a1, a1, a2
 	lui	a3, 1
+	czero.eqz	a1, a1, a2
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
 	add.uw	a0, a1, a0

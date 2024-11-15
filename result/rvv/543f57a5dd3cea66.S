@@ -11,9 +11,9 @@ func000000000000001a:                   # @func000000000000001a
 	li	a0, 45
 	vsetivli	zero, 4, e8, mf4, ta, ma
 	vmseq.vx	v0, v10, a0
+	lui	a0, 262144
 	vsetvli	zero, zero, e64, m2, ta, mu
 	vadd.vi	v8, v12, 1, v0.t
-	lui	a0, 262144
 	addiw	a0, a0, -1
 	vmsgt.vx	v0, v8, a0
 	ret

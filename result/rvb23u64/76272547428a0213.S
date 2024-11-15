@@ -1,8 +1,8 @@
 func000000000000001a:                   # @func000000000000001a
 	andi	a1, a1, 1
 	sext.w	a2, a2
-	czero.nez	a2, a2, a1
 	lui	a3, 262144
+	czero.nez	a2, a2, a1
 	addiw	a3, a3, -1
 	czero.eqz	a1, a3, a1
 	or	a1, a1, a2

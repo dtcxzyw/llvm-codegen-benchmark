@@ -12,15 +12,15 @@ func0000000000000044:                   # @func0000000000000044
 	ret
 func00000000000000e2:                   # @func00000000000000e2
 	feq.d	a0, fa0, fa1
-	xori	a0, a0, 1
 	flt.d	a1, fa0, fa1
+	xori	a0, a0, 1
 	neg	a1, a1
 	or	a0, a0, a1
 	ret
 func00000000000000e4:                   # @func00000000000000e4
 	feq.d	a0, fa0, fa1
-	xori	a0, a0, 1
 	flt.d	a1, fa1, fa0
+	xori	a0, a0, 1
 	neg	a1, a1
 	or	a0, a0, a1
 	ret

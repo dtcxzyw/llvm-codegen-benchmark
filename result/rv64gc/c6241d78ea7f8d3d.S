@@ -47,8 +47,8 @@ func0000000000000088:                   # @func0000000000000088
 	and	a1, a1, a4
 	and	a2, a2, a4
 	addiw	a4, a3, -49
-	sltu	a2, a2, a4
 	addiw	a3, a3, -7
+	sltu	a2, a2, a4
 	sltu	a1, a1, a3
 	and	a1, a1, a2
 	or	a0, a0, a1
@@ -56,10 +56,10 @@ func0000000000000088:                   # @func0000000000000088
 func0000000000000188:                   # @func0000000000000188
 	lui	a3, 16
 	addiw	a4, a3, -1
+	addiw	a3, a3, -2
 	and	a1, a1, a4
 	and	a2, a2, a4
 	snez	a2, a2
-	addiw	a3, a3, -2
 	sltu	a1, a1, a3
 	and	a1, a1, a2
 	or	a0, a0, a1
@@ -70,8 +70,8 @@ func0000000000000030:                   # @func0000000000000030
 	and	a1, a1, a3
 	and	a2, a2, a3
 	addi	a2, a2, -3
-	seqz	a2, a2
 	sltiu	a1, a1, 1024
+	seqz	a2, a2
 	not	a1, a1
 	and	a1, a1, a2
 	or	a0, a0, a1

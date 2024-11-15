@@ -31,8 +31,8 @@ func000000000000003c:                   # @func000000000000003c
 func0000000000000070:                   # @func0000000000000070
 	andi	a2, a2, 255
 	add	a0, a0, a1
-	add	a0, a0, a2
 	lui	a1, 81007
+	add	a0, a0, a2
 	slli	a1, a1, 3
 	addi	a1, a1, -1607
 	add	a0, a0, a1

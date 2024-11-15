@@ -25,8 +25,8 @@ func000000000000012a:                   # @func000000000000012a
 func000000000000017a:                   # @func000000000000017a
 	not	a3, a1
 	add	a0, a0, a1
-	andi	a3, a3, -8
 	slli	a2, a2, 3
+	andi	a3, a3, -8
 	add	a0, a0, a2
 	add	a0, a0, a3
 	ret

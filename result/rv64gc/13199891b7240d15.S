@@ -1,8 +1,8 @@
 func0000000000000308:                   # @func0000000000000308
 	sext.w	a0, a0
 	addiw	a1, a1, -4
-	sltu	a1, a1, a0
 	lui	a2, 1
+	sltu	a1, a1, a0
 	sltu	a0, a2, a0
 	or	a0, a0, a1
 	ret

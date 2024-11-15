@@ -36,8 +36,8 @@ func0000000000000005:                   # @func0000000000000005
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfle.vf	v12, v8, fa5
-	vmnot.m	v0, v12
 	fli.s	fa5, 1.0
+	vmnot.m	v0, v12
 	vfmv.v.f	v12, fa5
 	vmerge.vvm	v8, v12, v8, v0
 	ret
@@ -50,10 +50,10 @@ func000000000000000a:                   # @func000000000000000a
 func0000000000000003:                   # @func0000000000000003
 	lui	a0, 275264
 	fmv.w.x	fa5, a0
+	lui	a0, 274176
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfge.vf	v12, v8, fa5
 	vmnot.m	v0, v12
-	lui	a0, 274176
 	vmv.v.x	v12, a0
 	vmerge.vvm	v8, v12, v8, v0
 	ret

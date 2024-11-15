@@ -3,19 +3,19 @@
 .LCPI0_1:
 	.quad	-329406144173384851             # 0xfb6db6db6db6db6d
 func0000000000000058:                   # @func0000000000000058
-	lui	a0, %hi(.LCPI0_0)
-	ld	a0, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v8, v8, v10
-	vmv.v.x	v10, a0
-	lui	a0, 748983
-	addiw	a0, a0, -585
-	slli	a1, a0, 33
+	lui	a0, %hi(.LCPI0_0)
+	lui	a1, 748983
+	ld	a0, %lo(.LCPI0_0)(a0)
+	addiw	a1, a1, -585
+	slli	a2, a1, 33
+	add	a1, a1, a2
 	lui	a2, %hi(.LCPI0_1)
 	ld	a2, %lo(.LCPI0_1)(a2)
-	add	a0, a0, a1
+	vmv.v.x	v10, a0
 	vsra.vi	v8, v8, 3
-	vmacc.vx	v10, a0, v8
+	vmacc.vx	v10, a1, v8
 	vmsltu.vx	v0, v10, a2
 	ret
 func0000000000000051:                   # @func0000000000000051
@@ -27,9 +27,9 @@ func0000000000000051:                   # @func0000000000000051
 func0000000000000054:                   # @func0000000000000054
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v8, v8, v10
-	vsra.vi	v8, v8, 3
 	vmv.v.i	v10, -13
 	lui	a0, 699051
+	vsra.vi	v8, v8, 3
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1

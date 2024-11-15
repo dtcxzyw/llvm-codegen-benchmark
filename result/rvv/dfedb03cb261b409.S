@@ -21,8 +21,8 @@ func0000000000000108:                   # @func0000000000000108
 	fli.d	fa5, 2.0
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfgt.vf	v24, v16, fa5
-	vmor.mm	v16, v24, v0
 	fli.d	fa5, 0.5
+	vmor.mm	v16, v24, v0
 	vmfgt.vf	v17, v8, fa5
 	vmor.mm	v0, v17, v16
 	ret
@@ -61,8 +61,8 @@ func0000000000000090:                   # @func0000000000000090
 	fld	fa5, %lo(.LCPI6_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v24, v16, fa5
-	vmor.mm	v16, v24, v0
 	fli.d	fa5, 1.0
+	vmor.mm	v16, v24, v0
 	vmfeq.vf	v17, v8, fa5
 	vmor.mm	v0, v17, v16
 	ret
@@ -70,8 +70,8 @@ func0000000000000104:                   # @func0000000000000104
 	fli.d	fa5, 1.0
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfgt.vf	v24, v16, fa5
-	vmor.mm	v16, v24, v0
 	fmv.d.x	fa5, zero
+	vmor.mm	v16, v24, v0
 	vmflt.vf	v17, v8, fa5
 	vmor.mm	v0, v17, v16
 	ret
@@ -79,8 +79,8 @@ func0000000000000214:                   # @func0000000000000214
 	fli.d	fa5, inf
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfeq.vf	v24, v16, fa5
-	vmor.mm	v16, v24, v0
 	fmv.d.x	fa5, zero
+	vmor.mm	v16, v24, v0
 	vmfle.vf	v17, v8, fa5
 	vmor.mm	v0, v17, v16
 	ret
@@ -97,12 +97,12 @@ func0000000000000264:                   # @func0000000000000264
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v24, v16, fa5
 	vmfgt.vf	v25, v16, fa5
-	vmor.mm	v16, v25, v24
-	vmorn.mm	v16, v0, v16
-	vmflt.vf	v17, v8, fa5
-	vmfgt.vf	v18, v8, fa5
-	vmor.mm	v8, v18, v17
-	vmorn.mm	v0, v16, v8
+	vmflt.vf	v16, v8, fa5
+	vmfgt.vf	v17, v8, fa5
+	vmor.mm	v8, v25, v24
+	vmorn.mm	v8, v0, v8
+	vmor.mm	v9, v17, v16
+	vmorn.mm	v0, v8, v9
 	ret
 func0000000000000142:                   # @func0000000000000142
 	fli.d	fa5, 1.0
@@ -153,9 +153,9 @@ func0000000000000258:                   # @func0000000000000258
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v24, v16, fa5
 	vmfgt.vf	v25, v16, fa5
+	fli.d	fa5, 256.0
 	vmor.mm	v16, v25, v24
 	vmorn.mm	v16, v0, v16
-	fli.d	fa5, 256.0
 	vmfge.vf	v17, v8, fa5
 	vmor.mm	v0, v17, v16
 	ret
@@ -195,12 +195,12 @@ func0000000000000224:                   # @func0000000000000224
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfeq.vf	v24, v16, fa5
-	vmor.mm	v16, v24, v0
 	fli.d	fa5, inf
-	vmflt.vf	v17, v8, fa5
-	vmfgt.vf	v18, v8, fa5
-	vmor.mm	v8, v18, v17
-	vmorn.mm	v0, v16, v8
+	vmflt.vf	v16, v8, fa5
+	vmfgt.vf	v17, v8, fa5
+	vmor.mm	v8, v24, v0
+	vmor.mm	v9, v17, v16
+	vmorn.mm	v0, v8, v9
 	ret
 .LCPI22_0:
 	.quad	0x3ffe666772d5e071              # double 1.9000009999999998

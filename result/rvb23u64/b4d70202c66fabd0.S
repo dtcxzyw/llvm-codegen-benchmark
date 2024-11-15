@@ -15,22 +15,22 @@ func00000000000000fa:                   # @func00000000000000fa
 	ret
 func0000000000000012:                   # @func0000000000000012
 	add	a1, a1, a2
+	lui	a2, 12
 	sh2add	a0, a1, a0
-	lui	a1, 12
-	addiw	a1, a1, 128
+	addiw	a1, a2, 128
 	add	a0, a0, a1
 	ret
 func0000000000000032:                   # @func0000000000000032
 	add	a1, a1, a2
+	lui	a2, 12
 	sh2add	a0, a1, a0
-	lui	a1, 12
-	addiw	a1, a1, 1920
+	addiw	a1, a2, 1920
 	add	a0, a0, a1
 	ret
 func0000000000000018:                   # @func0000000000000018
 	add	a1, a1, a2
+	lui	a2, 74
 	sh3add	a0, a1, a0
-	lui	a1, 74
-	addiw	a1, a1, -96
+	addiw	a1, a2, -96
 	add	a0, a0, a1
 	ret

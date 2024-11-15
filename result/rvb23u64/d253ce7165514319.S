@@ -15,8 +15,8 @@ func00000000000000cc:                   # @func00000000000000cc
 	andi	a0, a0, 255
 	andi	a1, a1, 255
 	addi	a1, a1, -20
-	snez	a1, a1
 	addi	a0, a0, -21
+	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

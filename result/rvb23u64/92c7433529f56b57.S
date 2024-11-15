@@ -35,8 +35,8 @@ func0000000000000006:                   # @func0000000000000006
 func000000000000000d:                   # @func000000000000000d
 	zext.h	a2, a2
 	or	a0, a0, a1
-	or	a0, a0, a2
 	lui	a1, 768
+	or	a0, a0, a2
 	addiw	a1, a1, 48
 	or	a0, a0, a1
 	ret

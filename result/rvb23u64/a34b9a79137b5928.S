@@ -50,9 +50,9 @@ func0000000000000016:                   # @func0000000000000016
 	srli	a2, a1, 63
 	srai	a1, a1, 18
 	add	a1, a1, a2
+	lui	a2, 2
 	sub	a1, a1, a0
-	lui	a0, 2
-	addiw	a0, a0, 1808
+	addiw	a0, a2, 1808
 	slt	a0, a1, a0
 	ret
 .LCPI5_0:

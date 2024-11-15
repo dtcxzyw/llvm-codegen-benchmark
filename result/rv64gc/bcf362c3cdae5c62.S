@@ -40,10 +40,10 @@ func0000000000000015:                   # @func0000000000000015
 	ret
 func0000000000000019:                   # @func0000000000000019
 	sext.w	a1, a1
-	snez	a1, a1
-	slli	a1, a1, 11
 	lui	a2, 1048575
+	snez	a1, a1
 	addiw	a2, a2, 2047
+	slli	a1, a1, 11
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -70,9 +70,9 @@ func000000000000000d:                   # @func000000000000000d
 	lui	a2, 73
 	addiw	a2, a2, 992
 	slt	a1, a1, a2
-	slli	a1, a1, 11
 	lui	a2, 1048575
 	addiw	a2, a2, 2047
+	slli	a1, a1, 11
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret

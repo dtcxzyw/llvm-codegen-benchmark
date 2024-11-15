@@ -16,8 +16,8 @@ func0000000000000108:                   # @func0000000000000108
 	li	a0, 117
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vrsub.vx	v12, v12, a0
-	vmsltu.vv	v14, v12, v10
 	lui	a0, 4096
+	vmsltu.vv	v14, v12, v10
 	vmsltu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v14
 	ret
@@ -31,8 +31,8 @@ func0000000000000118:                   # @func0000000000000118
 func0000000000000098:                   # @func0000000000000098
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vrsub.vi	v12, v12, 4
-	vmsne.vv	v14, v12, v8
 	li	a0, 48
+	vmsne.vv	v14, v12, v8
 	vmsltu.vx	v8, v10, a0
 	vmor.mm	v0, v14, v8
 	ret

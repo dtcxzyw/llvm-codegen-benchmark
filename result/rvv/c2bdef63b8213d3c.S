@@ -41,13 +41,13 @@ func0000000000000007:                   # @func0000000000000007
 	ret
 func0000000000000002:                   # @func0000000000000002
 	li	a0, 32
+	lui	a1, 16
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vx	v8, v8, a0
-	lui	a0, 16
-	addiw	a1, a0, -1
-	vand.vx	v8, v8, a1
-	addiw	a0, a0, 1
-	bseti	a0, a0, 32
+	addiw	a0, a1, -1
+	addiw	a1, a1, 1
+	vand.vx	v8, v8, a0
+	bseti	a0, a1, 32
 	bseti	a0, a0, 48
 	vmul.vx	v8, v8, a0
 	ret

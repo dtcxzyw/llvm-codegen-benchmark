@@ -61,8 +61,8 @@ func000000000000018b:                   # @func000000000000018b
 	ret
 func000000000000000b:                   # @func000000000000000b
 	add	a1, a1, a2
-	slli	a1, a1, 32
 	li	a2, 11
+	slli	a1, a1, 32
 	slli	a2, a2, 36
 	mulhu	a1, a1, a2
 	add	a0, a0, a1
@@ -70,8 +70,8 @@ func000000000000000b:                   # @func000000000000000b
 	ret
 func000000000000012b:                   # @func000000000000012b
 	add	a1, a1, a2
-	slli	a1, a1, 32
 	li	a2, 5
+	slli	a1, a1, 32
 	slli	a2, a2, 36
 	mulhu	a1, a1, a2
 	add	a0, a0, a1

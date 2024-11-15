@@ -35,8 +35,8 @@ func0000000000000002:                   # @func0000000000000002
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v9, v8
 	vmv.v.i	v8, 1
-	vwsll.vv	v10, v8, v9
 	lui	a0, 1
+	vwsll.vv	v10, v8, v9
 	addi	a0, a0, -57
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vand.vx	v8, v10, a0

@@ -1,10 +1,10 @@
 func0000000000000014:                   # @func0000000000000014
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf4	v11, v10
-	li	a0, 23
-	li	a1, 24
+	li	a0, 24
 	vsetvli	zero, zero, e8, mf4, ta, ma
-	vmsltu.vx	v0, v10, a1
+	vmsltu.vx	v0, v10, a0
+	li	a0, 23
 	vsetvli	zero, zero, e32, m1, ta, mu
 	vmv.v.x	v10, a0
 	vwsubu.vv	v8, v10, v11, v0.t

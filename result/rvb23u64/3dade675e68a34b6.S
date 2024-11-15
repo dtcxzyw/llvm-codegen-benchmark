@@ -5,8 +5,8 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func0000000000000001:                   # @func0000000000000001
 	slli	a1, a1, 52
-	srli	a1, a1, 52
 	andi	a0, a0, -2048
+	srli	a1, a1, 52
 	bclri	a0, a0, 11
 	or	a0, a0, a1
 	ret

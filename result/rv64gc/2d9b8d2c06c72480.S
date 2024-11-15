@@ -1,7 +1,7 @@
 func0000000000000022:                   # @func0000000000000022
 	add	a1, a1, a2
-	slli	a1, a1, 32
 	li	a2, 5
+	slli	a1, a1, 32
 	slli	a2, a2, 38
 	mulhu	a1, a1, a2
 	add	a0, a0, a1
@@ -10,10 +10,10 @@ func0000000000000022:                   # @func0000000000000022
 	ret
 func0000000000000062:                   # @func0000000000000062
 	addw	a1, a1, a2
+	lui	a2, 2
 	slli	a1, a1, 4
 	add	a0, a0, a1
-	lui	a1, 2
-	addiw	a1, a1, -104
+	addiw	a1, a2, -104
 	add	a0, a0, a1
 	ret
 func000000000000002a:                   # @func000000000000002a

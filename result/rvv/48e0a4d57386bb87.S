@@ -9,12 +9,12 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func0000000000000002:                   # @func0000000000000002
 	lui	a0, 2
-	addi	a0, a0, 783
 	vsetivli	zero, 16, e16, m2, ta, ma
-	vand.vx	v12, v12, a0
 	vor.vv	v8, v8, v10
+	addi	a0, a0, 783
+	vand.vx	v10, v12, a0
 	lui	a0, 7
 	addi	a0, a0, 991
 	vand.vx	v8, v8, a0
-	vor.vv	v8, v8, v12
+	vor.vv	v8, v8, v10
 	ret

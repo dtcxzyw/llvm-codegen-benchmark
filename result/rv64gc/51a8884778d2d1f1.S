@@ -16,8 +16,8 @@ func00000000000000f1:                   # @func00000000000000f1
 	andi	a1, a1, 255
 	slli	a1, a1, 6
 	or	a0, a0, a1
-	sext.w	a0, a0
 	lui	a1, 14
+	sext.w	a0, a0
 	addiw	a1, a1, -1024
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -110,8 +110,8 @@ func0000000000000061:                   # @func0000000000000061
 	andi	a1, a1, 255
 	slli	a1, a1, 8
 	or	a0, a0, a1
-	sext.w	a0, a0
 	lui	a1, 8
+	sext.w	a0, a0
 	addiw	a1, a1, 109
 	xor	a0, a0, a1
 	seqz	a0, a0

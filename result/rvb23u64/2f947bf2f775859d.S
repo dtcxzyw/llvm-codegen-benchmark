@@ -20,8 +20,8 @@ func0000000000000020:                   # @func0000000000000020
 	neg	a3, a1
 	max	a1, a1, a3
 	mulhu	a1, a1, a2
-	srli	a1, a1, 18
 	li	a2, -1000
+	srli	a1, a1, 18
 	zext.w	a2, a2
 	mul	a1, a1, a2
 	add	a0, a0, a1
@@ -34,8 +34,8 @@ func000000000000002a:                   # @func000000000000002a
 	neg	a3, a1
 	max	a1, a1, a3
 	mulhu	a1, a1, a2
-	srli	a1, a1, 31
 	li	a2, -60
+	srli	a1, a1, 31
 	zext.w	a2, a2
 	mul	a1, a1, a2
 	add	a0, a0, a1
@@ -48,8 +48,8 @@ func000000000000002f:                   # @func000000000000002f
 	neg	a3, a1
 	max	a1, a1, a3
 	mulhu	a1, a1, a2
-	srli	a1, a1, 34
 	li	a2, -24
+	srli	a1, a1, 34
 	zext.w	a2, a2
 	mul	a1, a1, a2
 	add	a0, a0, a1

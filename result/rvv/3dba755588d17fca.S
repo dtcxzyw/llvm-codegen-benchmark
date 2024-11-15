@@ -15,9 +15,9 @@ func0000000000000088:                   # @func0000000000000088
 	srli	a0, a0, 1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v8, a0
-	vmsleu.vi	v12, v10, 2
 	li	a0, 3
 	bseti	a0, a0, 63
+	vmsleu.vi	v12, v10, 2
 	vmsltu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v12
 	ret

@@ -25,9 +25,9 @@ func0000000000000104:                   # @func0000000000000104
 	ret
 func0000000000000051:                   # @func0000000000000051
 	add	a1, a1, a2
+	lui	a2, 1048112
 	subw	a1, a1, a0
-	lui	a0, 1048112
-	addiw	a0, a0, 543
+	addiw	a0, a2, 543
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

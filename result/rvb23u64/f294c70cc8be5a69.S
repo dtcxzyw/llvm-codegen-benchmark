@@ -24,9 +24,9 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000010:                   # @func0000000000000010
 	add	a0, a0, a1
+	li	a1, 31
 	slli	a0, a0, 3
 	addi	a0, a0, 1024
-	li	a1, 31
 	slli	a1, a1, 11
 	and	a0, a0, a1
 	ret

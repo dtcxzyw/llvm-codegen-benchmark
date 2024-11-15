@@ -2,9 +2,9 @@ func0000000000000011:                   # @func0000000000000011
 	slli	a1, a1, 14
 	lui	a2, 1048480
 	addw	a1, a1, a2
+	lui	a2, 2
 	or	a0, a0, a1
-	lui	a1, 2
-	addiw	a1, a1, 181
+	addiw	a1, a2, 181
 	or	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
@@ -27,8 +27,8 @@ func0000000000000010:                   # @func0000000000000010
 	slli	a1, a1, 14
 	lui	a2, 4
 	addw	a1, a1, a2
+	lui	a2, 102400
 	or	a0, a0, a1
-	lui	a1, 102400
-	addiw	a1, a1, 34
+	addiw	a1, a2, 34
 	or	a0, a0, a1
 	ret

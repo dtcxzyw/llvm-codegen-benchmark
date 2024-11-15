@@ -13,8 +13,8 @@ func0000000000000004:                   # @func0000000000000004
 func0000000000000018:                   # @func0000000000000018
 	or	a1, a1, a2
 	srli	a0, a0, 51
-	sltiu	a0, a0, 25
 	bseti	a2, zero, 47
+	sltiu	a0, a0, 25
 	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2

@@ -2,15 +2,15 @@
 	.quad	164703072086692425              # 0x249249249249249
 func0000000000000075:                   # @func0000000000000075
 	lui	a0, %hi(.LCPI0_0)
+	lui	a1, 748983
 	ld	a0, %lo(.LCPI0_0)(a0)
+	addiw	a1, a1, -585
+	slli	a2, a1, 33
+	add	a1, a1, a2
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vrsub.vx	v10, v10, a0
 	vsra.vi	v8, v8, 3
-	lui	a0, 748983
-	addiw	a0, a0, -585
-	slli	a1, a0, 33
-	add	a0, a0, a1
-	vmul.vx	v8, v8, a0
+	vrsub.vx	v10, v10, a0
+	vmul.vx	v8, v8, a1
 	vmsleu.vv	v0, v8, v10
 	ret
 func0000000000000011:                   # @func0000000000000011

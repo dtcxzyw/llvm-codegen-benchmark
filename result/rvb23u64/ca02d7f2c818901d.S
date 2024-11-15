@@ -45,9 +45,9 @@ func0000000000000038:                   # @func0000000000000038
 	slli	a1, a1, 16
 	lui	a2, 524128
 	add	a1, a1, a2
+	lui	a2, 533248
 	or	a0, a0, a1
-	lui	a1, 533248
-	addiw	a1, a1, 48
+	addiw	a1, a2, 48
 	or	a0, a0, a1
 	ret
 func000000000000003f:                   # @func000000000000003f

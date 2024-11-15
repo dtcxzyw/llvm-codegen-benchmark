@@ -2,8 +2,8 @@ func0000000000000111:                   # @func0000000000000111
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v0, v10, 0
 	li	a0, -55
-	vmv.v.x	v12, a0
 	li	a1, -49
+	vmv.v.x	v12, a0
 	vmseq.vx	v10, v8, a1
 	vmerge.vxm	v12, v12, a1, v0
 	vmv1r.v	v0, v10
@@ -30,14 +30,14 @@ func0000000000000611:                   # @func0000000000000611
 	vmor.mm	v0, v9, v8
 	ret
 func0000000000000811:                   # @func0000000000000811
-	li	a0, 99
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsgtu.vx	v12, v10, a0
-	vmseq.vi	v10, v8, 4
-	vmseq.vi	v11, v8, 5
-	vmandn.mm	v8, v11, v10
-	vmand.mm	v9, v12, v10
-	vmor.mm	v0, v9, v8
+	vmseq.vi	v12, v8, 4
+	vmseq.vi	v13, v8, 5
+	li	a0, 99
+	vmsgtu.vx	v8, v10, a0
+	vmandn.mm	v9, v13, v12
+	vmand.mm	v8, v8, v12
+	vmor.mm	v0, v8, v9
 	ret
 func0000000000000161:                   # @func0000000000000161
 	vsetivli	zero, 8, e32, m2, ta, ma

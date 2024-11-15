@@ -2,8 +2,8 @@ func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v14, v12
 	vadd.vv	v8, v8, v10
-	vsrl.vv	v8, v8, v14
 	li	a0, -1
+	vsrl.vv	v8, v8, v14
 	srli	a0, a0, 32
 	vand.vx	v8, v8, a0
 	ret
@@ -11,8 +11,8 @@ func000000000000000a:                   # @func000000000000000a
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v14, v12
 	vadd.vv	v8, v8, v10
-	vsrl.vv	v8, v8, v14
 	li	a0, -1
+	vsrl.vv	v8, v8, v14
 	srli	a0, a0, 32
 	vand.vx	v8, v8, a0
 	ret

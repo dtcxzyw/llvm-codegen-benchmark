@@ -21,17 +21,17 @@ func0000000000000064:                   # @func0000000000000064
 	ret
 func00000000000002ac:                   # @func00000000000002ac
 	addi	a2, a2, 952
+	slti	a1, a1, 25
 	xor	a0, a0, a2
 	snez	a0, a0
-	slti	a1, a1, 25
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
 func00000000000002cc:                   # @func00000000000002cc
 	addi	a2, a2, 72
+	addi	a1, a1, -12
 	xor	a0, a0, a2
 	snez	a0, a0
-	addi	a1, a1, -12
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
@@ -58,9 +58,9 @@ func00000000000002c1:                   # @func00000000000002c1
 	ret
 func000000000000028c:                   # @func000000000000028c
 	addi	a2, a2, 4
+	sltiu	a1, a1, 33
 	xor	a0, a0, a2
 	snez	a0, a0
-	sltiu	a1, a1, 33
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret

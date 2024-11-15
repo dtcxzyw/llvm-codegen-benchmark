@@ -32,10 +32,10 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func000000000000000a:                   # @func000000000000000a
 	slli	a0, a0, 48
+	li	a1, -1
 	srai	a0, a0, 48
 	slti	a0, a0, 0
 	xori	a0, a0, 1
-	li	a1, -1
 	slli	a1, a1, 63
 	sub	a0, a1, a0
 	ret

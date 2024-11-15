@@ -22,16 +22,16 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000004:                   # @func0000000000000004
 	sext.w	a0, a0
 	lui	a1, 429497
+	lui	a2, 335544
 	addiw	a1, a1, -1107
+	addiw	a2, a2, 1311
 	mul	a0, a0, a1
 	srli	a1, a0, 63
 	srai	a0, a0, 44
 	add	a0, a0, a1
-	lui	a1, 335544
-	addiw	a1, a1, 1311
-	mul	a1, a1, a0
-	srli	a2, a1, 63
-	srai	a1, a1, 37
+	mul	a2, a2, a0
+	srli	a1, a2, 63
+	srai	a2, a2, 37
 	add	a1, a1, a2
 	sh2add	a1, a1, a1
 	sh2add	a1, a1, a1

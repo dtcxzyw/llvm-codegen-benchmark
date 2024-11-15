@@ -1,8 +1,8 @@
 func0000000000000010:                   # @func0000000000000010
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vand.vi	v12, v12, 1
-	vmsne.vi	v12, v12, 0
 	fli.s	fa5, inf
+	vmsne.vi	v12, v12, 0
 	vsetvli	zero, zero, e32, m4, ta, ma
 	vmfeq.vf	v13, v8, fa5
 	vmor.mm	v0, v13, v12
@@ -26,8 +26,8 @@ func000000000000001c:                   # @func000000000000001c
 func0000000000000018:                   # @func0000000000000018
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vand.vi	v12, v12, 1
-	vmsne.vi	v12, v12, 0
 	lui	a0, 389120
+	vmsne.vi	v12, v12, 0
 	fmv.w.x	fa5, a0
 	vsetvli	zero, zero, e32, m4, ta, ma
 	vmfge.vf	v13, v8, fa5

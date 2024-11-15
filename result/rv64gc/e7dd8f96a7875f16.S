@@ -24,9 +24,9 @@ func00000000000001aa:                   # @func00000000000001aa
 	mul	a1, a1, a2
 	li	a2, 409
 	mul	a0, a0, a2
+	lui	a2, 1048575
 	add	a0, a0, a1
-	lui	a1, 1048575
-	addi	a1, a1, -544
+	addi	a1, a2, -544
 	add	a0, a0, a1
 	sraiw	a0, a0, 8
 	ret

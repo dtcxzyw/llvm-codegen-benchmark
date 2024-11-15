@@ -23,8 +23,8 @@ func000000000000000e:                   # @func000000000000000e
 	vwaddu.wv	v8, v8, v9
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmv.v.i	v9, 1
-	vwsll.vv	v10, v9, v8
 	lui	a0, 5
+	vwsll.vv	v10, v9, v8
 	addiw	a0, a0, -976
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vand.vx	v8, v10, a0

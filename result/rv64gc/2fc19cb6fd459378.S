@@ -37,8 +37,8 @@ func0000000000000015:                   # @func0000000000000015
 	srai	a2, a2, 39
 	add	a2, a2, a3
 	li	a3, 400
-	mul	a2, a2, a3
 	subw	a1, a1, a1
+	mul	a2, a2, a3
 	add	a0, a0, a1
 	subw	a0, a0, a2
 	addiw	a0, a0, -1

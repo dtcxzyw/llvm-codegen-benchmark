@@ -16,12 +16,12 @@ func000000000000001d:                   # @func000000000000001d
 	ret
 func0000000000000019:                   # @func0000000000000019
 	srli	a4, a2, 61
-	sh3add	a3, a3, a4
 	slli	a2, a2, 3
+	sh3add	a3, a3, a4
 	srli	a4, a0, 54
 	slli	a1, a1, 10
-	or	a1, a1, a4
 	slli	a0, a0, 10
+	or	a1, a1, a4
 	or	a1, a1, a3
 	or	a0, a0, a2
 	ret

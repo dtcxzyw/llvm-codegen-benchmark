@@ -7,8 +7,8 @@ func000000000000000e:                   # @func000000000000000e
 	sub	a3, a1, a2
 	srli	a3, a3, 1
 	add	a2, a2, a3
-	srli	a2, a2, 15
 	lui	a3, 16
+	srli	a2, a2, 15
 	addiw	a3, a3, -15
 	mul	a2, a2, a3
 	sub	a1, a1, a2

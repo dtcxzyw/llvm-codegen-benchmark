@@ -5,8 +5,8 @@ func0000000000000002:                   # @func0000000000000002
 	lui	a2, 20972
 	addi	a2, a2, -1968
 	add	a1, a1, a2
-	roriw	a1, a1, 2
 	lui	a2, 10486
+	roriw	a1, a1, 2
 	addiw	a2, a2, -983
 	sltu	a1, a1, a2
 	or	a0, a0, a1

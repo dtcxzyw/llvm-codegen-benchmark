@@ -65,8 +65,8 @@ func000000000000000a:                   # @func000000000000000a
 	sext.w	a0, a0
 	slli	a1, a1, 63
 	srai	a1, a1, 63
-	ori	a1, a1, 1
 	sgtz	a0, a0
+	ori	a1, a1, 1
 	neg	a0, a0
 	and	a0, a0, a1
 	ret

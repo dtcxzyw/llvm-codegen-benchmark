@@ -7,19 +7,19 @@ func0000000000000140:                   # @func0000000000000140
 	ret
 func0000000000000150:                   # @func0000000000000150
 	slli	a2, a2, 63
-	add	a0, a0, a2
 	slli	a1, a1, 52
+	add	a0, a0, a2
+	li	a2, 63
 	add	a0, a0, a1
-	li	a1, 63
-	slli	a1, a1, 56
-	add	a0, a0, a1
+	slli	a2, a2, 56
+	add	a0, a0, a2
 	ret
 func0000000000000170:                   # @func0000000000000170
 	slli	a2, a2, 48
+	slli	a1, a1, 52
 	add	a0, a0, a2
-	slli	a1, a1, 52
+	li	a2, 1023
 	add	a0, a0, a1
-	li	a1, 1023
-	slli	a1, a1, 52
-	add	a0, a0, a1
+	slli	a2, a2, 52
+	add	a0, a0, a2
 	ret

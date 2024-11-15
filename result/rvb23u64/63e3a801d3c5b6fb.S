@@ -21,11 +21,11 @@ func0000000000000004:                   # @func0000000000000004
 func0000000000000006:                   # @func0000000000000006
 	andi	a2, a2, 1
 	lui	a3, 24
-	czero.nez	a2, a3, a2
 	or	a0, a0, a1
-	or	a0, a0, a2
 	li	a1, 3
+	czero.nez	a2, a3, a2
 	slli	a1, a1, 32
+	or	a0, a0, a2
 	addi	a1, a1, 64
 	or	a0, a0, a1
 	ret

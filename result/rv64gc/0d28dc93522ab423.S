@@ -20,14 +20,14 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func0000000000000002:                   # @func0000000000000002
 	addi	a3, a2, -64
+	li	a4, 1
 	slti	a3, a3, 0
+	sll	a2, a4, a2
 	neg	a4, a3
-	li	a5, 1
-	sll	a2, a5, a2
 	addi	a3, a3, -1
 	and	a0, a0, a2
-	and	a0, a0, a4
 	and	a1, a1, a2
+	and	a0, a0, a4
 	and	a1, a1, a3
 	ret
 func0000000000000000:                   # @func0000000000000000

@@ -68,9 +68,9 @@ func0000000000000015:                   # @func0000000000000015
 	ret
 func00000000000000c1:                   # @func00000000000000c1
 	li	a0, 39
+	li	a1, 34
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vmseq.vx	v0, v10, a0
-	li	a1, 34
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.x	v10, a1
 	vmerge.vxm	v10, v10, a0, v0

@@ -2,8 +2,8 @@ func00000000000000ca:                   # @func00000000000000ca
 	sext.w	a1, a1
 	andi	a2, a2, 127
 	snez	a2, a2
-	and	a0, a0, a2
 	slti	a1, a1, 0
+	and	a0, a0, a2
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
@@ -11,11 +11,11 @@ func00000000000000c1:                   # @func00000000000000c1
 	sext.w	a0, a0
 	li	a3, 99
 	slli	a3, a3, 27
+	addi	a0, a0, -13
 	and	a2, a2, a3
+	seqz	a0, a0
 	xor	a2, a2, a3
 	snez	a2, a2
-	addi	a0, a0, -13
-	seqz	a0, a0
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret

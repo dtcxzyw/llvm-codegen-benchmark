@@ -7,10 +7,10 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 func0000000000000008:                   # @func0000000000000008
 	add.uw	a1, a2, a1
+	li	a2, 100
 	srli	a1, a1, 7
 	sltiu	a1, a1, 425
 	czero.eqz	a0, a0, a1
-	li	a2, 100
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret

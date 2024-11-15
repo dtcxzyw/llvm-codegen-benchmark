@@ -12,30 +12,30 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func0000000000000034:                   # @func0000000000000034
 	li	a2, 8
-	subw	a2, a2, a1
 	sltiu	a0, a0, 8
+	subw	a2, a2, a1
 	neg	a0, a0
 	and	a0, a0, a2
 	ret
 func000000000000001c:                   # @func000000000000001c
 	li	a2, 2
-	subw	a2, a2, a1
 	seqz	a0, a0
+	subw	a2, a2, a1
 	addi	a0, a0, -1
 	and	a0, a0, a2
 	ret
 func0000000000000038:                   # @func0000000000000038
 	li	a2, 8
-	subw	a2, a2, a1
 	srli	a0, a0, 56
+	subw	a2, a2, a1
 	seqz	a0, a0
 	addi	a0, a0, -1
 	and	a0, a0, a2
 	ret
 func0000000000000018:                   # @func0000000000000018
 	li	a2, 29
-	subw	a2, a2, a1
 	sltiu	a0, a0, 9
+	subw	a2, a2, a1
 	addi	a0, a0, -1
 	and	a0, a0, a2
 	ret

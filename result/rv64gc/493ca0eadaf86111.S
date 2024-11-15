@@ -2,8 +2,8 @@ func000000000000000f:                   # @func000000000000000f
 	slli	a1, a1, 48
 	srli	a1, a1, 48
 	add	a0, a0, a1
-	addi	a0, a0, 41
 	lui	a1, 64
+	addi	a0, a0, 41
 	addiw	a1, a1, -4
 	and	a0, a0, a1
 	ret

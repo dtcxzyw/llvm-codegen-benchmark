@@ -8,9 +8,9 @@ func000000000000007a:                   # @func000000000000007a
 	addw	a1, a1, a2
 	li	a2, 34
 	mul	a1, a1, a2
+	lui	a2, 5
 	add	a0, a0, a1
-	lui	a1, 5
-	addiw	a1, a1, 606
+	addiw	a1, a2, 606
 	add	a0, a0, a1
 	ret
 func000000000000007b:                   # @func000000000000007b

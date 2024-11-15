@@ -25,9 +25,9 @@ func000000000000001c:                   # @func000000000000001c
 	li	a0, 16
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
-	vmsne.vi	v12, v10, 0
 	li	a0, 65
 	slli	a0, a0, 35
+	vmsne.vi	v12, v10, 0
 	vmseq.vx	v10, v8, a0
 	vmand.mm	v0, v12, v10
 	ret

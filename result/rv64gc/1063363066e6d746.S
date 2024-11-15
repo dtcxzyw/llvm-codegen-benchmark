@@ -7,9 +7,9 @@ func0000000000000011:                   # @func0000000000000011
 func0000000000000048:                   # @func0000000000000048
 	sext.w	a2, a2
 	lui	a3, 15
+	sltiu	a1, a1, 4
 	addiw	a3, a3, 2047
 	sltu	a2, a2, a3
-	sltiu	a1, a1, 4
 	not	a1, a1
 	and	a1, a1, a2
 	or	a0, a0, a1

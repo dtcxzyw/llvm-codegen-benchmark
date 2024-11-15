@@ -3,9 +3,9 @@ func0000000000000007:                   # @func0000000000000007
 	or	a0, a0, a2
 	lui	a2, 1008
 	and	a1, a1, a2
+	lui	a2, 2056
 	or	a0, a0, a1
-	lui	a1, 2056
-	addiw	a1, a1, 224
+	addiw	a1, a2, 224
 	or	a0, a0, a1
 	ret
 func0000000000000006:                   # @func0000000000000006

@@ -79,8 +79,8 @@ func000000000000006a:                   # @func000000000000006a
 	li	a2, -1
 	slli	a2, a2, 63
 	addi	a3, a2, 7
-	slt	a1, a1, a3
 	addi	a2, a2, 6
+	slt	a1, a1, a3
 	slt	a0, a2, a0
 	and	a0, a0, a1
 	ret

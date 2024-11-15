@@ -3,12 +3,12 @@ func0000000000000011:                   # @func0000000000000011
 	lui	a2, 8
 	addi	a2, a2, -1057
 	mul	a1, a1, a2
-	slli	a1, a1, 48
-	srli	a1, a1, 48
 	lui	a2, 1
 	addiw	a2, a2, -1981
-	sltu	a1, a1, a2
 	addi	a0, a0, -2048
+	slli	a1, a1, 48
+	srli	a1, a1, 48
+	sltu	a1, a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

@@ -2,27 +2,27 @@
 	.quad	0x7fefffffffffffff              # double 1.7976931348623157E+308
 func0000000000000488:                   # @func0000000000000488
 	lui	a0, %hi(.LCPI0_0)
+	fclass.d	a1, fa0
 	fld	fa5, %lo(.LCPI0_0)(a0)
 	fmv.d.x	fa4, zero
 	flt.d	a0, fa4, fa2
-	feq.d	a1, fa1, fa5
-	fclass.d	a2, fa0
-	srli	a2, a2, 7
-	and	a0, a0, a2
+	srli	a1, a1, 7
+	feq.d	a2, fa1, fa5
 	and	a0, a0, a1
+	and	a0, a0, a2
 	ret
 .LCPI1_0:
 	.quad	0xffefffffffffffff              # double -1.7976931348623157E+308
 func0000000000000288:                   # @func0000000000000288
 	lui	a0, %hi(.LCPI1_0)
+	fclass.d	a1, fa0
 	fld	fa5, %lo(.LCPI1_0)(a0)
 	fmv.d.x	fa4, zero
 	flt.d	a0, fa2, fa4
-	feq.d	a1, fa1, fa5
-	fclass.d	a2, fa0
-	srli	a2, a2, 7
-	and	a0, a0, a2
+	srli	a1, a1, 7
+	feq.d	a2, fa1, fa5
 	and	a0, a0, a1
+	and	a0, a0, a2
 	ret
 func0000000000000aca:                   # @func0000000000000aca
 	fmv.d.x	fa5, zero
@@ -55,8 +55,8 @@ func0000000000000877:                   # @func0000000000000877
 	fmv.d.x	fa5, zero
 	feq.d	a0, fa2, fa5
 	feq.d	a1, fa1, fa5
-	not	a1, a1
 	feq.d	a2, fa0, fa5
+	not	a1, a1
 	not	a2, a2
 	and	a1, a1, a2
 	and	a0, a0, a1

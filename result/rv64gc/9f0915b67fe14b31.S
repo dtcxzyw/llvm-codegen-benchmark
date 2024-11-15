@@ -10,8 +10,8 @@ func00000000000001a1:                   # @func00000000000001a1
 	andi	a0, a0, 255
 	addw	a1, a1, a2
 	slti	a1, a1, 2
-	xori	a1, a1, 1
 	addi	a0, a0, -10
+	xori	a1, a1, 1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -26,13 +26,13 @@ func00000000000000cc:                   # @func00000000000000cc
 	ret
 func00000000000000a1:                   # @func00000000000000a1
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	addw	a1, a1, a2
 	lui	a2, 52429
+	srai	a0, a0, 56
 	addiw	a2, a2, -820
 	xor	a1, a1, a2
-	seqz	a1, a1
 	slti	a0, a0, 56
+	seqz	a1, a1
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
@@ -57,9 +57,9 @@ func000000000000008c:                   # @func000000000000008c
 	addw	a1, a1, a2
 	lui	a2, 524288
 	addiw	a2, a2, -1
+	sltiu	a0, a0, 5
 	xor	a1, a1, a2
 	snez	a1, a1
-	sltiu	a0, a0, 5
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret

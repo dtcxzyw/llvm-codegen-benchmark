@@ -1,11 +1,11 @@
 func00000000000000e0:                   # @func00000000000000e0
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
-	vsll.vi	v9, v9, 16
 	lui	a0, 4080
+	vsll.vi	v9, v9, 16
 	vand.vx	v9, v9, a0
-	vadd.vv	v8, v8, v9
 	lui	a0, 648056
+	vadd.vv	v8, v8, v9
 	addi	a0, a0, -1607
 	vadd.vx	v8, v8, a0
 	ret

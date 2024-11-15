@@ -35,10 +35,10 @@ func0000000000000154:                   # @func0000000000000154
 	ret
 func000000000000000c:                   # @func000000000000000c
 	subw	a1, a1, a2
+	lui	a2, 524288
 	addw	a0, a0, a1
-	lui	a1, 524288
-	addiw	a1, a1, -2
-	xor	a0, a0, a1
+	addiw	a2, a2, -2
+	xor	a0, a0, a2
 	snez	a0, a0
 	ret
 func0000000000000016:                   # @func0000000000000016

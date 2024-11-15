@@ -151,8 +151,8 @@ func000000000000009a:                   # @func000000000000009a
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vzext.vf4	v12, v10
 	vsll.vi	v8, v8, 6
-	vor.vv	v8, v8, v12
 	lui	a0, 272
+	vor.vv	v8, v8, v12
 	addi	a0, a0, -1
 	vmsgt.vx	v0, v8, a0
 	ret

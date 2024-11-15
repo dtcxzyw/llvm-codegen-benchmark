@@ -1,8 +1,8 @@
 func0000000000000081:                   # @func0000000000000081
 	lui	a1, 524032
+	fmv.d.x	fa5, zero
 	and	a0, a0, a1
 	seqz	a0, a0
-	fmv.d.x	fa5, zero
 	feq.d	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
@@ -28,8 +28,8 @@ func000000000000002c:                   # @func000000000000002c
 	ret
 func0000000000000021:                   # @func0000000000000021
 	andi	a0, a0, 511
-	seqz	a0, a0
 	fli.d	fa5, 1.0
+	seqz	a0, a0
 	flt.d	a1, fa0, fa5
 	and	a0, a0, a1
 	ret

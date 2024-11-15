@@ -103,9 +103,9 @@ func000000000000004c:                   # @func000000000000004c
 func00000000000000c4:                   # @func00000000000000c4
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v8, v8, v10
+	lui	a0, 524288
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
-	lui	a0, 524288
 	addi	a0, a0, -1
 	vmsltu.vx	v0, v10, a0
 	ret

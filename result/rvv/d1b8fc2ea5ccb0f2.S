@@ -114,8 +114,8 @@ func0000000000000003:                   # @func0000000000000003
 func000000000000001a:                   # @func000000000000001a
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 3
-	vadd.vi	v10, v10, -8
 	lui	a0, 1048575
+	vadd.vi	v10, v10, -8
 	addi	a0, a0, 7
 	vand.vx	v8, v8, a0
 	vor.vv	v8, v8, v10

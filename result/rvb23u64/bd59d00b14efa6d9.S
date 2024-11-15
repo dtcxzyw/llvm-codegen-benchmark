@@ -1,16 +1,16 @@
 func000000000000001c:                   # @func000000000000001c
 	not	a1, a0
-	bexti	a1, a1, 11
 	andi	a0, a0, 897
+	bexti	a1, a1, 11
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
 func00000000000000c1:                   # @func00000000000000c1
 	lui	a1, 3584
 	and	a1, a1, a0
-	snez	a1, a1
 	andi	a0, a0, 7
 	addi	a0, a0, -2
+	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -22,41 +22,41 @@ func000000000000004c:                   # @func000000000000004c
 	ret
 func00000000000000cc:                   # @func00000000000000cc
 	andi	a1, a0, 3
-	addi	a1, a1, -3
-	snez	a1, a1
 	andi	a0, a0, 5
+	addi	a1, a1, -3
 	addi	a0, a0, -5
+	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
 func0000000000000081:                   # @func0000000000000081
 	lui	a1, 520192
 	and	a1, a1, a0
-	snez	a1, a1
 	slli	a0, a0, 41
 	srli	a0, a0, 41
+	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 func0000000000000041:                   # @func0000000000000041
 	andi	a1, a0, 240
-	sltiu	a1, a1, 113
 	andi	a0, a0, 15
+	sltiu	a1, a1, 113
 	addi	a0, a0, -8
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 func0000000000000018:                   # @func0000000000000018
 	not	a1, a0
-	bexti	a1, a1, 15
 	andi	a0, a0, 255
+	bexti	a1, a1, 15
 	sltiu	a0, a0, 3
 	andn	a0, a1, a0
 	ret
 func0000000000000014:                   # @func0000000000000014
 	not	a1, a0
-	bexti	a1, a1, 15
 	andi	a0, a0, 255
+	bexti	a1, a1, 15
 	sltiu	a0, a0, 3
 	and	a0, a0, a1
 	ret

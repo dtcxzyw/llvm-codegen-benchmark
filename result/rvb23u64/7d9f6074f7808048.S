@@ -3,11 +3,11 @@ func0000000000000001:                   # @func0000000000000001
 	andi	a2, a2, 1
 	li	a3, 62
 	czero.eqz	a2, a3, a2
-	addi	a2, a2, 2
 	li	a3, 8
-	czero.eqz	a3, a3, a1
-	czero.nez	a1, a2, a1
 	andi	a0, a0, -75
+	czero.eqz	a3, a3, a1
+	addi	a2, a2, 2
+	czero.nez	a1, a2, a1
 	or	a0, a0, a3
 	or	a0, a0, a1
 	ret

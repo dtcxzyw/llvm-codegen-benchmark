@@ -6,15 +6,15 @@ func0000000000000054:                   # @func0000000000000054
 	addiw	a2, a2, -1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
+	li	a3, 1
 	mul	a1, a1, a2
-	li	a2, 1
-	maxu	a2, a1, a2
-	lui	a3, %hi(.LCPI0_0)
-	ld	a3, %lo(.LCPI0_0)(a3)
+	lui	a2, %hi(.LCPI0_0)
+	ld	a2, %lo(.LCPI0_0)(a2)
+	maxu	a3, a1, a3
 	not	a1, a1
-	sltu	a1, a1, a2
+	sltu	a1, a1, a3
 	czero.nez	a0, a0, a1
-	czero.eqz	a1, a3, a1
+	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret
 .LCPI1_0:
@@ -25,14 +25,14 @@ func0000000000000044:                   # @func0000000000000044
 	addiw	a2, a2, -1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
+	li	a3, 1
 	mul	a1, a1, a2
-	li	a2, 1
-	maxu	a2, a1, a2
-	lui	a3, %hi(.LCPI1_0)
-	ld	a3, %lo(.LCPI1_0)(a3)
+	lui	a2, %hi(.LCPI1_0)
+	ld	a2, %lo(.LCPI1_0)(a2)
+	maxu	a3, a1, a3
 	not	a1, a1
-	sltu	a1, a1, a2
+	sltu	a1, a1, a3
 	czero.nez	a0, a0, a1
-	czero.eqz	a1, a3, a1
+	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret

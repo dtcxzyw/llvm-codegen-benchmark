@@ -1,8 +1,8 @@
 func000000000000014c:                   # @func000000000000014c
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v10, v10, -14
-	vmsleu.vi	v9, v10, -6
 	li	a0, 32
+	vmsleu.vi	v9, v10, -6
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmsne.vx	v8, v8, a0
 	vmand.mm	v0, v8, v9
@@ -18,8 +18,8 @@ func0000000000000144:                   # @func0000000000000144
 	li	a0, -48
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v10, v10, a0
-	vmsleu.vi	v9, v10, 9
 	li	a0, 58
+	vmsleu.vi	v9, v10, 9
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmsltu.vx	v8, v8, a0
 	vmand.mm	v0, v8, v9
@@ -49,8 +49,8 @@ func0000000000000111:                   # @func0000000000000111
 func0000000000000014:                   # @func0000000000000014
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v10, v10, -1
-	vmsleu.vi	v9, v10, 1
 	li	a0, -124
+	vmsleu.vi	v9, v10, 1
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmseq.vx	v8, v8, a0
 	vmand.mm	v0, v9, v8
@@ -73,8 +73,8 @@ func00000000000001c1:                   # @func00000000000001c1
 func0000000000000041:                   # @func0000000000000041
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v10, v10, -3
-	vmsleu.vi	v9, v10, 1
 	li	a0, 63
+	vmsleu.vi	v9, v10, 1
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmseq.vx	v8, v8, a0
 	vmand.mm	v0, v8, v9
@@ -82,8 +82,8 @@ func0000000000000041:                   # @func0000000000000041
 func000000000000001a:                   # @func000000000000001a
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v10, v10, -1
-	vmsgt.vi	v9, v10, -1
 	li	a0, 62
+	vmsgt.vi	v9, v10, -1
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmseq.vx	v8, v8, a0
 	vmand.mm	v0, v9, v8
@@ -92,8 +92,8 @@ func0000000000000141:                   # @func0000000000000141
 	li	a0, -19
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v10, v10, a0
-	vmsleu.vi	v9, v10, -3
 	li	a0, 17
+	vmsleu.vi	v9, v10, -3
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmseq.vx	v8, v8, a0
 	vmand.mm	v0, v8, v9
@@ -208,8 +208,8 @@ func000000000000014a:                   # @func000000000000014a
 	li	a0, -97
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v10, v10, a0
-	vmsleu.vi	v9, v10, 5
 	li	a0, 86
+	vmsleu.vi	v9, v10, 5
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmsgt.vx	v8, v8, a0
 	vmand.mm	v0, v8, v9

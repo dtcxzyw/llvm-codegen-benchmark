@@ -63,9 +63,9 @@ func000000000000007f:                   # @func000000000000007f
 	andi	a1, a1, 255
 	li	a2, 52
 	mul	a1, a1, a2
+	lui	a2, 8
 	add	a0, a0, a1
-	lui	a1, 8
-	addi	a1, a1, 76
+	addi	a1, a2, 76
 	addw	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000

@@ -30,9 +30,9 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func0000000000000044:                   # @func0000000000000044
 	li	a0, 513
+	li	a1, -64
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v10, a0
-	li	a1, -64
 	vmv.v.x	v10, a1
 	vmerge.vim	v10, v10, -8, v0
 	vand.vv	v8, v10, v8
@@ -50,9 +50,9 @@ func0000000000000081:                   # @func0000000000000081
 	ret
 func0000000000000084:                   # @func0000000000000084
 	lui	a0, 128
+	lui	a1, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vx	v0, v10, a0
-	lui	a1, 32
 	addiw	a1, a1, -1
 	vmv.v.x	v10, a1
 	addiw	a0, a0, -1

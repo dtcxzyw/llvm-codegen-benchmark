@@ -31,16 +31,16 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func0000000000000020:                   # @func0000000000000020
 	add	a0, a0, a1
-	slli	a0, a0, 16
 	li	a1, 1
+	slli	a0, a0, 16
 	slli	a1, a1, 47
 	add	a0, a0, a1
 	srai	a0, a0, 48
 	ret
 func000000000000002a:                   # @func000000000000002a
 	add	a0, a0, a1
-	slli	a0, a0, 16
 	li	a1, 1
+	slli	a0, a0, 16
 	slli	a1, a1, 37
 	add	a0, a0, a1
 	srai	a0, a0, 32

@@ -13,8 +13,8 @@ func000000000000003a:                   # @func000000000000003a
 func0000000000000008:                   # @func0000000000000008
 	andi	a2, a2, 1
 	addw	a1, a1, a2
+	lui	a2, 65
 	sh3add	a0, a1, a0
-	lui	a1, 65
-	addiw	a1, a1, 1616
+	addiw	a1, a2, 1616
 	add	a0, a0, a1
 	ret

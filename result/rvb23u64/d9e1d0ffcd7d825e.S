@@ -1,10 +1,10 @@
 func000000000000000a:                   # @func000000000000000a
 	li	a2, 47
+	lui	a3, 838861
 	bseti	a2, a2, 63
+	addiw	a3, a3, -819
 	sub	a2, a2, a1
-	lui	a1, 838861
-	addiw	a1, a1, -819
-	slli	a3, a1, 32
+	slli	a1, a3, 32
 	add	a1, a1, a3
 	mulhu	a1, a2, a1
 	srli	a1, a1, 3
@@ -34,11 +34,11 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000028:                   # @func0000000000000028
 	li	a2, 47
+	lui	a3, 838861
 	bseti	a2, a2, 32
+	addiw	a3, a3, -819
 	sub	a2, a2, a1
-	lui	a1, 838861
-	addiw	a1, a1, -819
-	slli	a3, a1, 32
+	slli	a1, a3, 32
 	add	a1, a1, a3
 	mulhu	a1, a2, a1
 	srli	a1, a1, 3

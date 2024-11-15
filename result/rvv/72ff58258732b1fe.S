@@ -21,10 +21,10 @@ func0000000000000035:                   # @func0000000000000035
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 8
 	li	a0, 15
-	slli	a0, a0, 8
-	vand.vx	v10, v10, a0
 	vzext.vf4	v12, v8
-	vor.vv	v8, v10, v12
+	slli	a0, a0, 8
+	vand.vx	v8, v10, a0
+	vor.vv	v8, v8, v12
 	li	a0, -2048
 	vadd.vx	v8, v8, a0
 	ret

@@ -29,10 +29,10 @@ func0000000000000034:                   # @func0000000000000034
 	li	a0, 63
 	vsrl.vx	v14, v12, a0
 	li	a0, 39
-	vsra.vx	v12, v12, a0
-	vadd.vv	v12, v12, v14
 	vadd.vv	v8, v8, v10
-	vadd.vv	v8, v8, v12
+	vsra.vx	v10, v12, a0
+	vadd.vv	v10, v10, v14
+	vadd.vv	v8, v8, v10
 	li	a0, 32
 	vsll.vx	v8, v8, a0
 	ret

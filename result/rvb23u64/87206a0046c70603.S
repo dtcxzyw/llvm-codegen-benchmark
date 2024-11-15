@@ -1,7 +1,7 @@
 func0000000000000007:                   # @func0000000000000007
 	sext.w	a2, a2
-	addi	a2, a2, 233
 	li	a3, 1
+	addi	a2, a2, 233
 	czero.eqz	a3, a3, a2
 	czero.nez	a1, a1, a2
 	or	a1, a1, a3
@@ -21,16 +21,16 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000030:                   # @func0000000000000030
 	sext.w	a2, a2
-	czero.eqz	a1, a1, a2
 	li	a3, 1
+	czero.eqz	a1, a1, a2
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
 	mul	a0, a0, a1
 	ret
 func0000000000000031:                   # @func0000000000000031
 	sext.w	a2, a2
-	czero.eqz	a1, a1, a2
 	li	a3, 1
+	czero.eqz	a1, a1, a2
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
 	mul	a0, a0, a1

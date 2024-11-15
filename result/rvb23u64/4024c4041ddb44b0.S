@@ -1,7 +1,7 @@
 func0000000000000093:                   # @func0000000000000093
 	add	a1, a1, a2
-	sltu	a2, a1, a2
 	li	a3, -1
+	sltu	a2, a1, a2
 	srli	a3, a3, 3
 	minu	a1, a1, a3
 	czero.nez	a1, a1, a2

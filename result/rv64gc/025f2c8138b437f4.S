@@ -14,8 +14,8 @@ func000000000000001c:                   # @func000000000000001c
 func0000000000000094:                   # @func0000000000000094
 	addi	a1, a1, -1
 	sltu	a1, a1, a0
-	xori	a1, a1, 1
 	srli	a0, a0, 61
+	xori	a1, a1, 1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

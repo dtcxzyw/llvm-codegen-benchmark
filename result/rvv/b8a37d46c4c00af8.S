@@ -10,14 +10,14 @@ func000000000000011c:                   # @func000000000000011c
 	ret
 func000000000000041c:                   # @func000000000000041c
 	lui	a0, 24
-	addi	a0, a0, 1695
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsgtu.vx	v14, v12, a0
-	vmsne.vi	v12, v10, 0
+	vmsne.vi	v14, v10, 0
 	vmseq.vi	v10, v8, 0
-	vmand.mm	v8, v10, v12
-	vmandn.mm	v8, v8, v14
-	vmand.mm	v9, v10, v14
+	addi	a0, a0, 1695
+	vmand.mm	v8, v10, v14
+	vmsgtu.vx	v9, v12, a0
+	vmandn.mm	v8, v8, v9
+	vmand.mm	v9, v10, v9
 	vmor.mm	v0, v9, v8
 	ret
 func0000000000000611:                   # @func0000000000000611

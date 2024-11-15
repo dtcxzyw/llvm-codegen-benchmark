@@ -12,9 +12,9 @@ func0000000000000000:                   # @func0000000000000000
 func000000000000000a:                   # @func000000000000000a
 	li	a1, 11
 	mul	a0, a0, a1
-	addiw	a0, a0, 2
 	lui	a1, 419430
 	addiw	a1, a1, 1639
+	addiw	a0, a0, 2
 	mul	a0, a0, a1
 	srli	a1, a0, 63
 	srai	a0, a0, 33

@@ -32,10 +32,10 @@ func000000000000000c:                   # @func000000000000000c
 	ret
 func0000000000000002:                   # @func0000000000000002
 	lui	a0, 277312
-	fmv.w.x	fa5, a0
+	fmv.w.x	fa5, zero
+	fmv.w.x	fa4, a0
 	vsetivli	zero, 16, e32, m4, ta, mu
-	vfadd.vf	v8, v8, fa5, v0.t
-	fmv.w.x	fa4, zero
-	vmflt.vf	v0, v8, fa4
-	vfadd.vf	v8, v8, fa5, v0.t
+	vfadd.vf	v8, v8, fa4, v0.t
+	vmflt.vf	v0, v8, fa5
+	vfadd.vf	v8, v8, fa4, v0.t
 	ret

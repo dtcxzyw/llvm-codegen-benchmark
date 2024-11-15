@@ -46,9 +46,9 @@ func0000000000000001:                   # @func0000000000000001
 func000000000000000c:                   # @func000000000000000c
 	andi	a2, a2, 1
 	lui	a3, 51
-	czero.nez	a2, a3, a2
 	add	a0, a0, a1
 	lui	a1, 95
+	czero.nez	a2, a3, a2
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret

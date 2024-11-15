@@ -4,9 +4,9 @@ func0000000000000144:                   # @func0000000000000144
 	li	a0, -255
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.x	v12, a0
+	li	a0, -94
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vwaddu.wv	v12, v12, v10
-	li	a0, -94
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsltu.vx	v9, v12, a0
 	vsetvli	zero, zero, e8, mf2, ta, ma
@@ -18,9 +18,9 @@ func0000000000000544:                   # @func0000000000000544
 	vzext.vf2	v10, v9
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.i	v12, -5
+	li	a0, 68
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vwaddu.wv	v12, v12, v10
-	li	a0, 68
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsltu.vx	v9, v12, a0
 	vsetvli	zero, zero, e8, mf2, ta, ma

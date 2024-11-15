@@ -8,8 +8,8 @@ func00000000000001ff:                   # @func00000000000001ff
 	ret
 func00000000000000d5:                   # @func00000000000000d5
 	slli.uw	a1, a1, 3
-	sh1add	a1, a1, a1
 	li	a2, -24
+	sh1add	a1, a1, a1
 	mul	a0, a0, a2
 	add	a0, a0, a1
 	addi	a0, a0, -24

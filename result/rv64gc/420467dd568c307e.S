@@ -1,8 +1,8 @@
 func0000000000000108:                   # @func0000000000000108
 	sext.w	a0, a0
 	sub	a1, a1, a2
-	srli	a1, a1, 3
 	lui	a2, 618391
+	srli	a1, a1, 3
 	addi	a2, a2, -105
 	mul	a1, a1, a2
 	addiw	a1, a1, -1
@@ -11,8 +11,8 @@ func0000000000000108:                   # @func0000000000000108
 func0000000000000101:                   # @func0000000000000101
 	sext.w	a0, a0
 	sub	a1, a1, a2
-	srli	a1, a1, 4
 	lui	a2, 699051
+	srli	a1, a1, 4
 	addi	a2, a2, -1365
 	mul	a1, a1, a2
 	addiw	a1, a1, -1
@@ -22,8 +22,8 @@ func0000000000000101:                   # @func0000000000000101
 func0000000000000111:                   # @func0000000000000111
 	sext.w	a0, a0
 	sub	a1, a1, a2
-	srli	a1, a1, 3
 	lui	a2, 699051
+	srli	a1, a1, 3
 	addi	a2, a2, -1365
 	mul	a1, a1, a2
 	addiw	a1, a1, -1
@@ -33,8 +33,8 @@ func0000000000000111:                   # @func0000000000000111
 func0000000000000104:                   # @func0000000000000104
 	sext.w	a0, a0
 	sub	a1, a1, a2
-	srli	a1, a1, 3
 	lui	a2, 748983
+	srli	a1, a1, 3
 	addi	a2, a2, -585
 	mul	a1, a1, a2
 	addiw	a1, a1, -1
@@ -43,8 +43,8 @@ func0000000000000104:                   # @func0000000000000104
 func000000000000010a:                   # @func000000000000010a
 	sext.w	a0, a0
 	sub	a1, a1, a2
-	srli	a1, a1, 3
 	lui	a2, 699051
+	srli	a1, a1, 3
 	addi	a2, a2, -1365
 	mul	a1, a1, a2
 	addiw	a1, a1, -1
@@ -53,8 +53,8 @@ func000000000000010a:                   # @func000000000000010a
 func0000000000000106:                   # @func0000000000000106
 	sext.w	a0, a0
 	sub	a1, a1, a2
-	srli	a1, a1, 3
 	lui	a2, 699051
+	srli	a1, a1, 3
 	addi	a2, a2, -1365
 	mul	a1, a1, a2
 	addiw	a1, a1, -1
@@ -63,8 +63,8 @@ func0000000000000106:                   # @func0000000000000106
 func000000000000010c:                   # @func000000000000010c
 	sext.w	a0, a0
 	sub	a1, a1, a2
-	srli	a1, a1, 2
 	lui	a2, 699051
+	srli	a1, a1, 2
 	addi	a2, a2, -1365
 	mul	a1, a1, a2
 	addiw	a1, a1, -1

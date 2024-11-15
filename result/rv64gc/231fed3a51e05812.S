@@ -1,20 +1,20 @@
 func0000000000000003:                   # @func0000000000000003
-	lui	a2, 349525
-	addiw	a5, a2, 1365
-	slli	a2, a5, 32
-	add	a5, a5, a2
-	lui	a2, 209715
-	addiw	a4, a2, 819
+	lui	a4, 349525
+	lui	a3, 209715
+	lui	a5, 61681
+	lui	a2, 4112
+	addiw	a4, a4, 1365
+	addiw	a3, a3, 819
+	addiw	a5, a5, -241
+	addiw	a6, a2, 257
 	slli	a2, a4, 32
-	add	a4, a4, a2
-	lui	a2, 61681
-	addiw	a2, a2, -241
-	slli	a3, a2, 32
-	add	a6, a2, a3
-	lui	a3, 4112
-	addiw	a2, a3, 257
-	slli	a3, a2, 32
-	add	a3, a3, a2
+	add	a2, a2, a4
+	slli	a4, a3, 32
+	add	a3, a3, a4
+	slli	a4, a5, 32
+	add	a5, a5, a4
+	slli	a4, a6, 32
+	add	a4, a4, a6
 	bnez	a1, .LBB0_2
 	srli	a1, a0, 1
 	or	a0, a0, a1
@@ -30,16 +30,16 @@ func0000000000000003:                   # @func0000000000000003
 	or	a0, a0, a1
 	not	a0, a0
 	srli	a1, a0, 1
-	and	a1, a1, a5
+	and	a1, a1, a2
 	sub	a0, a0, a1
-	and	a1, a0, a4
+	and	a1, a0, a3
 	srli	a0, a0, 2
-	and	a0, a0, a4
+	and	a0, a0, a3
 	add	a0, a0, a1
 	srli	a1, a0, 4
 	add	a0, a0, a1
-	and	a0, a0, a6
-	mul	a0, a0, a3
+	and	a0, a0, a5
+	mul	a0, a0, a4
 	srli	a0, a0, 56
 	addi	a0, a0, 64
 	ret
@@ -58,15 +58,15 @@ func0000000000000003:                   # @func0000000000000003
 	or	a0, a0, a1
 	not	a0, a0
 	srli	a1, a0, 1
-	and	a1, a1, a5
+	and	a1, a1, a2
 	sub	a0, a0, a1
-	and	a1, a0, a4
+	and	a1, a0, a3
 	srli	a0, a0, 2
-	and	a0, a0, a4
+	and	a0, a0, a3
 	add	a0, a0, a1
 	srli	a1, a0, 4
 	add	a0, a0, a1
-	and	a0, a0, a6
-	mul	a0, a0, a3
+	and	a0, a0, a5
+	mul	a0, a0, a4
 	srli	a0, a0, 56
 	ret

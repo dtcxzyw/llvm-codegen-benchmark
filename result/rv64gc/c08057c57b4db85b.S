@@ -31,8 +31,8 @@ func00000000000000f4:                   # @func00000000000000f4
 	ret
 func00000000000000c5:                   # @func00000000000000c5
 	slli	a1, a1, 32
-	srli	a1, a1, 12
 	lui	a2, 1
+	srli	a1, a1, 12
 	addiw	a2, a2, 192
 	add	a0, a0, a2
 	sltu	a0, a1, a0

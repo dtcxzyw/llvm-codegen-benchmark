@@ -1,12 +1,12 @@
 func0000000000000081:                   # @func0000000000000081
 	li	a0, 127
+	lui	a1, 256
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgtu.vx	v0, v10, a0
-	lui	a0, 256
-	vmv.v.x	v12, a0
-	lui	a1, 512
-	vmseq.vx	v10, v8, a0
-	vmerge.vxm	v12, v12, a1, v0
+	lui	a0, 512
+	vmv.v.x	v12, a1
+	vmseq.vx	v10, v8, a1
+	vmerge.vxm	v12, v12, a0, v0
 	vmv1r.v	v0, v10
 	vmerge.vvm	v8, v8, v12, v0
 	ret

@@ -28,12 +28,12 @@ func0000000000000005:                   # @func0000000000000005
 func000000000000000e:                   # @func000000000000000e
 	mul	a0, a0, a1
 	lui	a1, 522248
-	addiw	a1, a1, -128
 	lui	a2, %hi(.LCPI4_0)
+	addiw	a1, a1, -128
 	ld	a2, %lo(.LCPI4_0)(a2)
-	slli	a3, a1, 32
 	add	a0, a0, a1
-	add	a0, a0, a3
+	slli	a1, a1, 32
+	add	a0, a0, a1
 	and	a0, a0, a2
 	ret
 func0000000000000003:                   # @func0000000000000003

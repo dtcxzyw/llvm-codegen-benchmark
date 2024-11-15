@@ -1,8 +1,8 @@
 func0000000000000011:                   # @func0000000000000011
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	vsra.vi	v10, v10, 3
 	lui	a0, 748983
+	vsra.vi	v10, v10, 3
 	addiw	a0, a0, -585
 	slli	a1, a0, 33
 	add	a0, a0, a1
@@ -12,8 +12,8 @@ func0000000000000011:                   # @func0000000000000011
 func0000000000000014:                   # @func0000000000000014
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	vsra.vi	v10, v10, 3
 	lui	a0, 699051
+	vsra.vi	v10, v10, 3
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
@@ -23,8 +23,8 @@ func0000000000000014:                   # @func0000000000000014
 func0000000000000016:                   # @func0000000000000016
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	vsra.vi	v10, v10, 3
 	lui	a0, 748983
+	vsra.vi	v10, v10, 3
 	addiw	a0, a0, -585
 	slli	a1, a0, 33
 	add	a0, a0, a1
@@ -34,8 +34,8 @@ func0000000000000016:                   # @func0000000000000016
 func0000000000000018:                   # @func0000000000000018
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	vsra.vi	v10, v10, 3
 	lui	a0, 699051
+	vsra.vi	v10, v10, 3
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
@@ -73,8 +73,8 @@ func0000000000000026:                   # @func0000000000000026
 func0000000000000019:                   # @func0000000000000019
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	vsra.vi	v10, v10, 3
 	lui	a0, 618391
+	vsra.vi	v10, v10, 3
 	addiw	a0, a0, -105
 	slli	a1, a0, 36
 	add	a0, a0, a1
@@ -143,8 +143,8 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000015:                   # @func0000000000000015
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	vsra.vi	v10, v10, 3
 	lui	a0, 986895
+	vsra.vi	v10, v10, 3
 	addiw	a0, a0, 241
 	slli	a1, a0, 32
 	add	a0, a0, a1
@@ -163,8 +163,8 @@ func0000000000000021:                   # @func0000000000000021
 func000000000000001a:                   # @func000000000000001a
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	vsra.vi	v10, v10, 4
 	lui	a0, 699051
+	vsra.vi	v10, v10, 4
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1

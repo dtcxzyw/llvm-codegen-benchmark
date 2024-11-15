@@ -3,9 +3,9 @@ func00000000000000c1:                   # @func00000000000000c1
 	slli	a0, a0, 10
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
-	vmsne.vi	v9, v10, 0
 	li	a0, 11
 	slli	a0, a0, 9
+	vmsne.vi	v9, v10, 0
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vmseq.vx	v8, v8, a0
 	vmand.mm	v8, v8, v9

@@ -11,8 +11,8 @@ func000000000000003f:                   # @func000000000000003f
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a0
 	li	a0, 32
-	vmerge.vxm	v12, v12, a0, v0
 	vsll.vi	v10, v10, 4
+	vmerge.vxm	v12, v12, a0, v0
 	vadd.vv	v8, v8, v10
 	vadd.vv	v8, v12, v8
 	ret
@@ -21,8 +21,8 @@ func0000000000000015:                   # @func0000000000000015
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a0
 	li	a0, 128
-	vmerge.vxm	v12, v12, a0, v0
 	vsll.vi	v8, v8, 4
+	vmerge.vxm	v12, v12, a0, v0
 	vadd.vv	v8, v8, v10
 	vadd.vv	v8, v8, v12
 	ret

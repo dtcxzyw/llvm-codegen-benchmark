@@ -22,9 +22,9 @@ func000000000000000e:                   # @func000000000000000e
 	sext.b	a1, a1
 	li	a2, 44
 	mul	a1, a1, a2
+	lui	a2, 6
 	add	a0, a0, a1
-	lui	a1, 6
-	addiw	a1, a1, 256
+	addiw	a1, a2, 256
 	add	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008

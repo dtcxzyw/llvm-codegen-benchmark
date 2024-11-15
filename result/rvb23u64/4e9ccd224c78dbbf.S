@@ -1,12 +1,12 @@
 func0000000000000264:                   # @func0000000000000264
-	fclass.d	a1, fa1
-	andi	a1, a1, 897
-	snez	a1, a1
-	or	a0, a0, a1
 	fli.d	fa5, inf
 	flt.d	a1, fa0, fa5
 	flt.d	a2, fa5, fa0
 	or	a1, a1, a2
+	fclass.d	a2, fa1
+	andi	a2, a2, 897
+	snez	a2, a2
+	or	a0, a0, a2
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
@@ -27,19 +27,19 @@ func0000000000000084:                   # @func0000000000000084
 	ret
 func00000000000001d0:                   # @func00000000000001d0
 	fclass.d	a1, fa1
-	andi	a1, a1, 894
-	snez	a1, a1
 	fli.d	fa5, inf
+	andi	a1, a1, 894
 	feq.d	a2, fa0, fa5
+	snez	a1, a1
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func0000000000000210:                   # @func0000000000000210
 	fclass.d	a1, fa1
-	andi	a1, a1, 129
-	snez	a1, a1
 	fli.d	fa5, inf
+	andi	a1, a1, 129
 	feq.d	a2, fa0, fa5
+	snez	a1, a1
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret

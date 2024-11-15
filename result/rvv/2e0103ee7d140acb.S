@@ -10,9 +10,9 @@ func000000000000002d:                   # @func000000000000002d
 	lui	a0, 1048560
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v10, v10, a0
+	lui	a0, 1
 	vsrl.vi	v10, v10, 11
 	vsub.vv	v8, v8, v10
-	lui	a0, 1
 	addi	a0, a0, -1984
 	vsub.vx	v8, v8, a0
 	ret

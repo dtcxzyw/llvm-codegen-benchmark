@@ -36,13 +36,12 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func0000000000000018:                   # @func0000000000000018
 	lui	a0, 524288
-	addi	a0, a0, -4
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vx	v10, v10, a0
-	vsetvli	zero, zero, e64, m2, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vi	v11, v8, 0
-	li	a0, 99
+	addi	a0, a0, -4
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vmsgtu.vx	v8, v10, a0
+	vand.vx	v8, v10, a0
+	li	a0, 99
+	vmsgtu.vx	v8, v8, a0
 	vmand.mm	v0, v11, v8
 	ret

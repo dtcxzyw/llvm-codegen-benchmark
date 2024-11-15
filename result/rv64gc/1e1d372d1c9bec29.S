@@ -36,14 +36,14 @@ func0000000000000111:                   # @func0000000000000111
 .LCPI4_0:
 	.quad	0x7ff0000000000000              # double +Inf
 func0000000000000878:                   # @func0000000000000878
-	lui	a0, %hi(.LCPI4_0)
-	fld	fa5, %lo(.LCPI4_0)(a0)
 	fclass.d	a0, fa2
+	lui	a1, %hi(.LCPI4_0)
+	fld	fa5, %lo(.LCPI4_0)(a1)
 	fclass.d	a1, fa0
 	or	a0, a0, a1
+	slli	a0, a0, 56
 	feq.d	a1, fa1, fa5
 	xori	a1, a1, 1
-	slli	a0, a0, 56
 	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
@@ -96,10 +96,10 @@ func0000000000000bbd:                   # @func0000000000000bbd
 func0000000000000a2a:                   # @func0000000000000a2a
 	lui	a0, %hi(.LCPI9_0)
 	fld	fa5, %lo(.LCPI9_0)(a0)
+	fmin.d	fa4, fa2, fa0
+	fmv.d.x	fa3, zero
 	flt.d	a0, fa1, fa5
-	fmin.d	fa5, fa2, fa0
-	fmv.d.x	fa4, zero
-	fle.d	a1, fa5, fa4
+	fle.d	a1, fa4, fa3
 	or	a0, a0, a1
 	ret
 func0000000000000444:                   # @func0000000000000444

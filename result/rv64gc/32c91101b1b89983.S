@@ -42,9 +42,9 @@ func0000000000000020:                   # @func0000000000000020
 	add	a0, a0, a2
 	lui	a2, 1048575
 	and	a1, a1, a2
+	lui	a2, 6
 	add	a0, a0, a1
-	lui	a1, 6
-	addi	a1, a1, 1211
+	addi	a1, a2, 1211
 	addw	a0, a0, a1
 	ret
 func0000000000000014:                   # @func0000000000000014

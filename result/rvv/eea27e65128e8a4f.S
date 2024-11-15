@@ -28,8 +28,8 @@ func000000000000005a:                   # @func000000000000005a
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vx	v10, v10, a0
 	vsra.vx	v10, v10, a0
-	vadd.vv	v8, v10, v8
 	lui	a0, 8
+	vadd.vv	v8, v10, v8
 	addiw	a0, a0, -1
 	vmsgt.vx	v0, v8, a0
 	ret

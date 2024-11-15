@@ -10,8 +10,8 @@ func00000000000001ba:                   # @func00000000000001ba
 func00000000000001cc:                   # @func00000000000001cc
 	sext.w	a1, a1
 	sext.w	a2, a0
-	snez	a2, a2
 	addiw	a0, a0, -1
+	snez	a2, a2
 	xor	a0, a0, a1
 	snez	a0, a0
 	and	a0, a0, a2
@@ -28,8 +28,8 @@ func000000000000037a:                   # @func000000000000037a
 func000000000000011c:                   # @func000000000000011c
 	sext.w	a1, a1
 	sext.w	a2, a0
-	snez	a2, a2
 	addiw	a0, a0, -1
+	snez	a2, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	and	a0, a0, a2
@@ -54,8 +54,8 @@ func0000000000000148:                   # @func0000000000000148
 func00000000000000ac:                   # @func00000000000000ac
 	sext.w	a1, a1
 	sext.w	a2, a0
-	snez	a2, a2
 	addiw	a0, a0, -1
+	snez	a2, a2
 	slt	a0, a0, a1
 	and	a0, a0, a2
 	ret

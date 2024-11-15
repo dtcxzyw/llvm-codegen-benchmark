@@ -13,11 +13,11 @@ func0000000000000000:                   # @func0000000000000000
 	addiw	a0, a0, -8
 	ret
 func0000000000000030:                   # @func0000000000000030
+	lui	a3, 1048512
+	and	a1, a1, a3
 	lui	a3, 64
 	addi	a3, a3, -4
 	and	a2, a2, a3
-	lui	a3, 1048512
-	and	a1, a1, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addiw	a0, a0, 4
@@ -46,11 +46,11 @@ func000000000000001d:                   # @func000000000000001d
 func0000000000000020:                   # @func0000000000000020
 	lui	a3, 1048575
 	and	a2, a2, a3
-	add	a0, a0, a2
 	and	a1, a1, a3
-	lui	a2, 6
-	addi	a2, a2, 1211
-	add	a1, a1, a2
+	lui	a3, 6
+	addi	a3, a3, 1211
+	add	a0, a0, a2
+	add	a1, a1, a3
 	addw	a0, a0, a1
 	ret
 func0000000000000014:                   # @func0000000000000014

@@ -1,7 +1,7 @@
 func0000000000000002:                   # @func0000000000000002
 	lui	a2, 522240
-	and	a2, a2, a1
 	lui	a3, 2048
+	and	a2, a2, a1
 	addiw	a3, a3, -2
 	and	a1, a1, a3
 	czero.nez	a1, a1, a2

@@ -1,10 +1,10 @@
 func0000000000000002:                   # @func0000000000000002
 	sext.w	a0, a0
 	li	a1, 53
+	lui	a2, 194181
 	maxu	a0, a0, a1
 	addi	a0, a0, -27
 	zext.w	a1, a0
-	lui	a2, 194181
 	addiw	a2, a2, -1061
 	mul	a1, a1, a2
 	srli	a1, a1, 32

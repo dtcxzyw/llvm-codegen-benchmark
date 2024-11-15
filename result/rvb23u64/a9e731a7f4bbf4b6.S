@@ -1,7 +1,7 @@
 func0000000000000004:                   # @func0000000000000004
 	andi	a2, a2, -2048
-	bclri	a2, a2, 11
 	lui	a3, 1048320
+	bclri	a2, a2, 11
 	sub	a1, a1, a3
 	sub	a2, a2, a1
 	sltu	a0, a2, a0

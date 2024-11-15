@@ -89,10 +89,10 @@ func000000000000005c:                   # @func000000000000005c
 func0000000000000071:                   # @func0000000000000071
 	srli	a6, a4, 63
 	slli	a5, a5, 1
-	or	a5, a5, a6
 	slli	a4, a4, 1
-	or	a3, a3, a5
+	or	a5, a5, a6
 	or	a2, a2, a4
+	or	a3, a3, a5
 	xor	a0, a0, a2
 	xor	a1, a1, a3
 	or	a0, a0, a1

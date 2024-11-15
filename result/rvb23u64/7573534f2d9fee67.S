@@ -6,8 +6,8 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func0000000000000009:                   # @func0000000000000009
 	fsub.d	fa5, fa1, fa2
-	fdiv.d	fa5, fa0, fa5
 	fmv.d.x	fa4, zero
+	fdiv.d	fa5, fa0, fa5
 	flt.d	a0, fa5, fa4
 	flt.d	a1, fa4, fa5
 	or	a0, a0, a1

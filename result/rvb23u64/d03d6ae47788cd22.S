@@ -9,9 +9,9 @@ func0000000000000446:                   # @func0000000000000446
 	lui	a3, 1048563
 	addiw	a3, a3, -420
 	mul	a2, a2, a3
+	lui	a3, 10
 	add	a1, a1, a2
-	lui	a2, 10
-	addiw	a2, a2, -946
+	addiw	a2, a3, -946
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	srli	a0, a0, 63
@@ -61,13 +61,13 @@ func0000000000000fa8:                   # @func0000000000000fa8
 func000000000000055a:                   # @func000000000000055a
 	li	a3, -1000
 	mul	a2, a2, a3
+	lui	a3, 244
 	add	a1, a1, a2
-	lui	a2, 244
-	addiw	a2, a2, 576
-	mul	a1, a1, a2
+	lui	a2, 244141
+	addiw	a3, a3, 576
+	mul	a1, a1, a3
 	add	a0, a0, a1
-	lui	a1, 244141
-	addiw	a1, a1, -1537
+	addiw	a1, a2, -1537
 	slt	a0, a1, a0
 	ret
 func0000000000000551:                   # @func0000000000000551

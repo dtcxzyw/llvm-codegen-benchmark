@@ -8,8 +8,8 @@ func0000000000000003:                   # @func0000000000000003
 	slli	a2, a2, 30
 	addi	a2, a2, -2
 	and	a1, a1, a2
-	srli	a1, a1, 1
 	lui	a2, 131072
+	srli	a1, a1, 1
 	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret

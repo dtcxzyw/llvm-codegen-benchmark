@@ -9,8 +9,8 @@ func0000000000000002:                   # @func0000000000000002
 	zext.h	a1, a1
 	slli	a0, a0, 16
 	or	a0, a0, a1
-	srli	a0, a0, 1
 	lui	a1, 349525
+	srli	a0, a0, 1
 	addiw	a1, a1, 1365
 	and	a0, a0, a1
 	ret

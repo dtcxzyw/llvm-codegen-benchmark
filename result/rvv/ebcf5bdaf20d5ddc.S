@@ -34,12 +34,12 @@ func0000000000000444:                   # @func0000000000000444
 func00000000000001c1:                   # @func00000000000001c1
 	li	a0, 49
 	vsetivli	zero, 16, e16, m2, ta, ma
-	vmseq.vx	v14, v12, a0
-	vmsne.vi	v12, v10, 0
+	vmsne.vi	v14, v10, 0
+	vmseq.vx	v10, v12, a0
 	li	a0, 37
-	vmseq.vx	v10, v8, a0
-	vmand.mm	v8, v14, v10
-	vmand.mm	v0, v8, v12
+	vmseq.vx	v11, v8, a0
+	vmand.mm	v8, v10, v11
+	vmand.mm	v0, v8, v14
 	ret
 func00000000000004c4:                   # @func00000000000004c4
 	vsetivli	zero, 16, e16, m2, ta, ma

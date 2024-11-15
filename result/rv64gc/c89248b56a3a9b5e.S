@@ -14,8 +14,8 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func000000000000004a:                   # @func000000000000004a
 	srli	a1, a1, 4
-	sext.w	a1, a1
 	lui	a2, 81
+	sext.w	a1, a1
 	addiw	a2, a2, 1556
 	bge	a2, a1, .LBB2_2
 	lui	a0, 244

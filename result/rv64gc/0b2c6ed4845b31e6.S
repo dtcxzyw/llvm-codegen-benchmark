@@ -1,7 +1,7 @@
 func00000000000000fa:                   # @func00000000000000fa
 	slli	a1, a1, 3
-	addi	a1, a1, 23
 	li	a2, 1
+	addi	a1, a1, 23
 	slli	a2, a2, 36
 	addi	a2, a2, -16
 	and	a1, a1, a2
@@ -49,8 +49,8 @@ func0000000000000058:                   # @func0000000000000058
 	ret
 func00000000000000f0:                   # @func00000000000000f0
 	slli	a1, a1, 3
-	addi	a1, a1, 15
 	lui	a2, 1
+	addi	a1, a1, 15
 	addiw	a2, a2, -8
 	and	a1, a1, a2
 	add	a0, a0, a1

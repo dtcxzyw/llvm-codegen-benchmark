@@ -14,8 +14,8 @@ func0000000000000010:                   # @func0000000000000010
 	srli	a2, a2, 32
 	li	a3, 8
 	czero.eqz	a2, a3, a2
-	addi	a2, a2, 8
 	li	a3, 4
+	addi	a2, a2, 8
 	czero.eqz	a3, a3, a1
 	czero.nez	a1, a2, a1
 	or	a1, a1, a3
@@ -28,8 +28,8 @@ func0000000000000013:                   # @func0000000000000013
 	sltu	a2, a2, a3
 	li	a3, 126
 	czero.nez	a2, a3, a2
-	addi	a2, a2, 58
 	li	a3, 2
+	addi	a2, a2, 58
 	czero.eqz	a3, a3, a1
 	czero.nez	a1, a2, a1
 	or	a1, a1, a3

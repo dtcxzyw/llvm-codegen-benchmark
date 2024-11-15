@@ -29,9 +29,9 @@ func00000000000000aa:                   # @func00000000000000aa
 	ret
 func0000000000000087:                   # @func0000000000000087
 	fmv.d.x	fa5, zero
-	feq.d	a0, fa2, fa5
-	feq.d	a1, fa0, fa1
-	xori	a1, a1, 1
+	feq.d	a0, fa0, fa1
+	feq.d	a1, fa2, fa5
+	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 func0000000000000024:                   # @func0000000000000024

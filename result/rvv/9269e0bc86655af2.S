@@ -98,8 +98,8 @@ func0000000000000064:                   # @func0000000000000064
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v24, v16, fa5
 	vmfgt.vf	v25, v16, fa5
-	vmor.mm	v16, v25, v24
 	fli.d	fa5, -1.0
+	vmor.mm	v16, v25, v24
 	vmfgt.vf	v17, v8, fa5
 	vmand.mm	v0, v17, v16
 	ret
@@ -265,11 +265,11 @@ func0000000000000066:                   # @func0000000000000066
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v24, v16, fa5
 	vmfgt.vf	v25, v16, fa5
-	vmor.mm	v16, v25, v24
-	vmflt.vf	v17, v8, fa5
-	vmfgt.vf	v18, v8, fa5
-	vmor.mm	v8, v18, v17
-	vmand.mm	v0, v8, v16
+	vmflt.vf	v16, v8, fa5
+	vmfgt.vf	v17, v8, fa5
+	vmor.mm	v8, v25, v24
+	vmor.mm	v9, v17, v16
+	vmand.mm	v0, v9, v8
 	ret
 .LCPI28_0:
 	.quad	0xc1e0000000000000              # double -2147483648
@@ -289,12 +289,12 @@ func000000000000006d:                   # @func000000000000006d
 func00000000000000db:                   # @func00000000000000db
 	lui	a0, %hi(.LCPI29_0)
 	fld	fa5, %lo(.LCPI29_0)(a0)
+	fli.d	fa4, 1.0
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vmflt.vf	v24, v16, fa5
-	fli.d	fa5, 1.0
-	vmfgt.vf	v16, v8, fa5
-	vmnot.m	v8, v16
-	vmandn.mm	v0, v8, v24
+	vmfgt.vf	v24, v8, fa4
+	vmflt.vf	v8, v16, fa5
+	vmnot.m	v9, v24
+	vmandn.mm	v0, v9, v8
 	ret
 .LCPI30_0:
 	.quad	0xc3e0000000000000              # double -9.2233720368547758E+18
@@ -314,8 +314,8 @@ func0000000000000098:                   # @func0000000000000098
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v24, v16, fa5
 	vmfgt.vf	v25, v16, fa5
-	vmor.mm	v16, v25, v24
 	fli.d	fa5, 1.0
+	vmor.mm	v16, v25, v24
 	vmfeq.vf	v17, v8, fa5
 	vmandn.mm	v0, v17, v16
 	ret
@@ -352,8 +352,8 @@ func000000000000006a:                   # @func000000000000006a
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v24, v16, fa5
 	vmfgt.vf	v25, v16, fa5
-	vmor.mm	v16, v25, v24
 	fli.d	fa5, 1.0
+	vmor.mm	v16, v25, v24
 	vmfle.vf	v17, v8, fa5
 	vmand.mm	v0, v17, v16
 	ret
@@ -362,8 +362,8 @@ func000000000000006c:                   # @func000000000000006c
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v24, v16, fa5
 	vmfgt.vf	v25, v16, fa5
-	vmor.mm	v16, v25, v24
 	fli.d	fa5, 1.0
+	vmor.mm	v16, v25, v24
 	vmfge.vf	v17, v8, fa5
 	vmand.mm	v0, v17, v16
 	ret

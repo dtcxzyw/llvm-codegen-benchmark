@@ -10,10 +10,10 @@ func0000000000000256:                   # @func0000000000000256
 func0000000000000044:                   # @func0000000000000044
 	fmadd.s	fa5, fa1, fa1, fa2
 	fmv.w.x	fa4, zero
-	flt.s	a0, fa5, fa4
-	lui	a1, 212992
-	fmv.w.x	fa5, a1
-	flt.s	a1, fa0, fa5
+	lui	a0, 212992
+	flt.s	a1, fa5, fa4
+	fmv.w.x	fa5, a0
+	flt.s	a0, fa0, fa5
 	or	a0, a0, a1
 	ret
 func0000000000000244:                   # @func0000000000000244

@@ -23,12 +23,12 @@ func0000000000000004:                   # @func0000000000000004
 	vmv1r.v	v12, v0
 	lui	a0, 271168
 	fmv.w.x	fa5, a0
+	lui	a0, 797504
 	vsetivli	zero, 16, e32, m4, ta, mu
 	vmfgt.vf	v0, v8, fa5
-	lui	a0, 797504
 	fmv.w.x	fa5, a0
-	vfadd.vf	v8, v8, fa5, v0.t
 	lui	a0, 273216
+	vfadd.vf	v8, v8, fa5, v0.t
 	fmv.w.x	fa5, a0
 	vmv1r.v	v0, v12
 	vfadd.vf	v8, v8, fa5, v0.t

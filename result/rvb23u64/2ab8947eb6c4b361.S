@@ -10,9 +10,9 @@ func0000000000000011:                   # @func0000000000000011
 func0000000000000044:                   # @func0000000000000044
 	sext.w	a0, a0
 	zext.h	a2, a2
+	li	a3, 1
 	sltiu	a2, a2, 25
 	czero.nez	a1, a1, a2
-	li	a3, 1
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
 	sext.w	a1, a1

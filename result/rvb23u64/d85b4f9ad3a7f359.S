@@ -1,10 +1,10 @@
 func0000000000000088:                   # @func0000000000000088
 	mul	a1, a1, a2
 	lui	a2, 78125
+	srliw	a0, a0, 12
 	slli	a2, a2, 11
 	addi	a2, a2, -1
 	sltu	a1, a2, a1
-	srliw	a0, a0, 12
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
@@ -36,8 +36,8 @@ func000000000000004a:                   # @func000000000000004a
 	sext.w	a0, a0
 	mul	a1, a1, a2
 	srli	a1, a1, 16
-	seqz	a1, a1
 	slti	a0, a0, 5
+	seqz	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

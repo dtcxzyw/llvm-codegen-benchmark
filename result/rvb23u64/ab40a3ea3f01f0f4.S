@@ -44,8 +44,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	sext.w	a0, a0
 	sext.w	a1, a1
 	addi	a1, a1, -18
-	seqz	a1, a1
 	addi	a0, a0, -17
+	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -53,8 +53,8 @@ func000000000000001c:                   # @func000000000000001c
 	sext.w	a0, a0
 	sext.w	a1, a1
 	addi	a1, a1, -18
-	snez	a1, a1
 	addi	a0, a0, -17
+	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

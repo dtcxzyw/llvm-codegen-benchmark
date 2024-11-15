@@ -45,8 +45,8 @@ func00000000000000c5:                   # @func00000000000000c5
 	ret
 func00000000000000a5:                   # @func00000000000000a5
 	sext.w	a2, a2
-	sgtz	a2, a2
 	lui	a3, 16
+	sgtz	a2, a2
 	addi	a3, a3, -1
 	czero.eqz	a2, a3, a2
 	add	a0, a0, a1
@@ -67,8 +67,8 @@ func0000000000000060:                   # @func0000000000000060
 	ret
 func0000000000000041:                   # @func0000000000000041
 	sext.w	a2, a2
-	sltiu	a2, a2, 4
 	li	a3, 4
+	sltiu	a2, a2, 4
 	czero.nez	a2, a3, a2
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -76,8 +76,8 @@ func0000000000000041:                   # @func0000000000000041
 	ret
 func000000000000004f:                   # @func000000000000004f
 	sext.w	a2, a2
-	sltiu	a2, a2, 96
 	li	a3, -100
+	sltiu	a2, a2, 96
 	czero.nez	a2, a3, a2
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -85,8 +85,8 @@ func000000000000004f:                   # @func000000000000004f
 	ret
 func0000000000000040:                   # @func0000000000000040
 	sext.w	a2, a2
-	sltiu	a2, a2, 254
 	li	a3, 4
+	sltiu	a2, a2, 254
 	czero.nez	a2, a3, a2
 	add	a0, a0, a1
 	add	a0, a0, a2

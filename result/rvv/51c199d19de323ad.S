@@ -12,10 +12,10 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func0000000000000004:                   # @func0000000000000004
 	lui	a0, 163151
+	lui	a1, 797483
 	addi	a0, a0, -1233
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmul.vx	v8, v8, a0
-	lui	a1, 797483
 	addi	a1, a1, -451
 	vmacc.vx	v8, a1, v10
 	vror.vi	v8, v8, 15

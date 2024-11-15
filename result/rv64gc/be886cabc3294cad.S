@@ -28,8 +28,8 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 func000000000000002f:                   # @func000000000000002f
 	slli	a1, a1, 32
-	srli	a1, a1, 32
 	slli	a0, a0, 1
+	srli	a1, a1, 32
 	add	a0, a0, a1
 	lui	a1, 16
 	addiw	a1, a1, -2
@@ -37,8 +37,8 @@ func000000000000002f:                   # @func000000000000002f
 	ret
 func0000000000000024:                   # @func0000000000000024
 	slli	a1, a1, 32
-	srli	a1, a1, 32
 	slli	a0, a0, 32
+	srli	a1, a1, 32
 	or	a0, a0, a1
 	lui	a1, 1048332
 	addiw	a1, a1, -577
@@ -46,8 +46,8 @@ func0000000000000024:                   # @func0000000000000024
 	ret
 func000000000000003f:                   # @func000000000000003f
 	slli	a1, a1, 32
-	srli	a1, a1, 32
 	slli	a0, a0, 4
+	srli	a1, a1, 32
 	add	a0, a0, a1
 	li	a1, -1
 	srli	a1, a1, 32

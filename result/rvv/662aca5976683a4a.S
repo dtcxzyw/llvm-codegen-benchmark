@@ -41,10 +41,10 @@ func0000000000000148:                   # @func0000000000000148
 	addiw	a0, a0, -585
 	slli	a1, a0, 33
 	add	a0, a0, a1
+	li	a1, -2
 	vmadd.vx	v10, a0, v8
-	li	a0, -2
-	zext.w	a0, a0
-	vand.vx	v8, v10, a0
+	zext.w	a1, a1
+	vand.vx	v8, v10, a1
 	vmsne.vi	v0, v8, 0
 	ret
 func0000000000000144:                   # @func0000000000000144
@@ -54,9 +54,9 @@ func0000000000000144:                   # @func0000000000000144
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
+	li	a1, -4
 	vmadd.vx	v10, a0, v8
-	li	a0, -4
-	zext.w	a0, a0
-	vand.vx	v8, v10, a0
+	zext.w	a1, a1
+	vand.vx	v8, v10, a1
 	vmseq.vi	v0, v8, 0
 	ret

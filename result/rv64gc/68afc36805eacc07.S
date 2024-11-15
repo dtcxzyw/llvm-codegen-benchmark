@@ -30,9 +30,9 @@ func000000000000008c:                   # @func000000000000008c
 func0000000000000081:                   # @func0000000000000081
 	sext.w	a0, a0
 	andi	a1, a1, 192
+	li	a2, 2047
 	addi	a1, a1, -128
 	seqz	a1, a1
-	li	a2, 2047
 	sltu	a0, a2, a0
 	and	a0, a0, a1
 	ret

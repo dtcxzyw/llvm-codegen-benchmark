@@ -41,18 +41,18 @@ func0000000000000066:                   # @func0000000000000066
 	ret
 func0000000000000081:                   # @func0000000000000081
 	lui	a3, 49
+	seqz	a1, a1
 	addiw	a3, a3, -1495
 	sltu	a2, a3, a2
-	seqz	a1, a1
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 func00000000000000a6:                   # @func00000000000000a6
+	lui	a3, 1048568
+	slt	a1, a1, a3
 	lui	a3, 8
 	addiw	a3, a3, -1
 	slt	a2, a3, a2
-	lui	a3, 1048568
-	slt	a1, a1, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

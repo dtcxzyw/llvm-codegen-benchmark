@@ -8,8 +8,8 @@ func0000000000000008:                   # @func0000000000000008
 func0000000000000018:                   # @func0000000000000018
 	li	a2, 1
 	maxu	a1, a1, a2
+	lui	a2, 244
 	add	a0, a0, a1
-	lui	a1, 244
-	addiw	a1, a1, 576
+	addiw	a1, a2, 576
 	sltu	a0, a1, a0
 	ret

@@ -5,11 +5,11 @@ func00000000000000b6:                   # @func00000000000000b6
 	vle64.v	v24, (a0)
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a0)
-	vfadd.vf	v24, v24, fa5
-	vmfle.vv	v7, v8, v24
-	vmflt.vv	v24, v16, v8
-	vmnot.m	v8, v24
-	vmorn.mm	v0, v8, v7
+	vmflt.vv	v7, v16, v8
+	vfadd.vf	v16, v24, fa5
+	vmfle.vv	v24, v8, v16
+	vmnot.m	v8, v7
+	vmorn.mm	v0, v8, v24
 	ret
 .LCPI1_0:
 	.quad	0x3ddb7cdfd9d7bdbb              # double 1.0E-10

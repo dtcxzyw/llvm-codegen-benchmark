@@ -2,9 +2,9 @@ func000000000000018d:                   # @func000000000000018d
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsne.vi	v0, v10, 0
 	vmv.v.i	v10, 0
+	lui	a0, 2
 	vmerge.vim	v10, v10, 1, v0
 	vadd.vv	v8, v10, v8
-	lui	a0, 2
 	addi	a0, a0, -1
 	vrsub.vx	v8, v8, a0
 	ret

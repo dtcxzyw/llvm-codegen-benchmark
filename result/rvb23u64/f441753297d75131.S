@@ -1,10 +1,10 @@
 func0000000000000151:                   # @func0000000000000151
 	lui	a3, 1
+	slli	a0, a0, 13
 	addi	a3, a3, 337
 	addi	a4, a3, 1837
-	mul	a2, a2, a4
 	mul	a1, a1, a3
-	slli	a0, a0, 13
+	mul	a2, a2, a4
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
@@ -39,8 +39,8 @@ func000000000000015d:                   # @func000000000000015d
 	ret
 func0000000000000155:                   # @func0000000000000155
 	sh2add	a2, a2, a2
-	sh2add	a2, a2, a2
 	sh2add	a1, a1, a1
+	sh2add	a2, a2, a2
 	sh2add	a1, a1, a1
 	sh2add	a1, a2, a1
 	slli	a0, a0, 2

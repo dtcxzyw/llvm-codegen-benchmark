@@ -17,9 +17,9 @@ func0000000000000001:                   # @func0000000000000001
 	ld	a1, %lo(.LCPI1_0)(a1)
 	srli	a0, a0, 9
 	mulhu	a0, a0, a1
+	lui	a1, 804435
 	slli	a0, a0, 21
 	srli	a0, a0, 32
-	lui	a1, 804435
 	addiw	a1, a1, 1536
 	mul	a0, a0, a1
 	ret

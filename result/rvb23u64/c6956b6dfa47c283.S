@@ -19,12 +19,12 @@ func0000000000000077:                   # @func0000000000000077
 	ret
 func000000000000009d:                   # @func000000000000009d
 	fli.s	fa5, inf
-	flt.s	a0, fa1, fa5
-	flt.s	a1, fa5, fa1
-	or	a0, a0, a1
-	lui	a1, 798688
-	fmv.w.x	fa5, a1
-	flt.s	a1, fa0, fa5
+	lui	a0, 798688
+	flt.s	a1, fa1, fa5
+	flt.s	a2, fa5, fa1
+	fmv.w.x	fa5, a0
+	or	a1, a1, a2
+	flt.s	a0, fa0, fa5
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret
@@ -116,9 +116,9 @@ func0000000000000047:                   # @func0000000000000047
 	ret
 func00000000000000c4:                   # @func00000000000000c4
 	lui	a0, 277312
+	lui	a1, 275264
 	fmv.w.x	fa5, a0
 	fle.s	a0, fa5, fa1
-	lui	a1, 275264
 	fmv.w.x	fa5, a1
 	flt.s	a1, fa5, fa0
 	and	a0, a0, a1
@@ -169,9 +169,9 @@ func00000000000000ca:                   # @func00000000000000ca
 	ret
 func000000000000008b:                   # @func000000000000008b
 	fmv.w.x	fa5, zero
-	feq.s	a0, fa1, fa5
-	lui	a1, 273536
-	fmv.w.x	fa5, a1
-	flt.s	a1, fa5, fa0
-	andn	a0, a0, a1
+	lui	a0, 273536
+	feq.s	a1, fa1, fa5
+	fmv.w.x	fa5, a0
+	flt.s	a0, fa5, fa0
+	andn	a0, a1, a0
 	ret

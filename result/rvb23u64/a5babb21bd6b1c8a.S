@@ -1,7 +1,7 @@
 func0000000000000154:                   # @func0000000000000154
 	andi	a1, a1, 48
-	slli	a1, a1, 12
 	lui	a2, 1048560
+	slli	a1, a1, 12
 	add	a0, a0, a2
 	add	a0, a0, a1
 	srliw	a0, a0, 20
@@ -16,8 +16,8 @@ func0000000000000254:                   # @func0000000000000254
 	ret
 func0000000000000354:                   # @func0000000000000354
 	andi	a1, a1, 48
-	slli	a1, a1, 12
 	lui	a2, 1048304
+	slli	a1, a1, 12
 	add	a0, a0, a2
 	addw	a0, a0, a1
 	lui	a1, 1048320

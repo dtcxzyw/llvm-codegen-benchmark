@@ -15,8 +15,8 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func000000000000001f:                   # @func000000000000001f
 	subw	a2, a2, a1
-	add	a0, a0, a2
 	lui	a1, 1048568
+	add	a0, a0, a2
 	addi	a1, a1, 150
 	addw	a0, a0, a1
 	ret
@@ -72,8 +72,8 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func000000000000003d:                   # @func000000000000003d
 	subw	a2, a2, a1
-	add	a0, a0, a2
 	lui	a1, 648056
+	add	a0, a0, a2
 	addi	a1, a1, -1607
 	addw	a0, a0, a1
 	ret

@@ -36,9 +36,9 @@ func0000000000000001:                   # @func0000000000000001
 	li	a0, -1
 	srli	a0, a0, 32
 	vand.vx	v8, v8, a0
-	vor.vv	v8, v10, v8
 	lui	a0, 524288
 	addi	a0, a0, -1
+	vor.vv	v8, v10, v8
 	slli	a0, a0, 32
 	vadd.vx	v8, v8, a0
 	ret
@@ -48,21 +48,21 @@ func0000000000000007:                   # @func0000000000000007
 	lui	a0, 1040384
 	addiw	a0, a0, 511
 	vand.vx	v8, v8, a0
-	vadd.vv	v8, v10, v8
 	li	a0, 9
+	vadd.vv	v8, v10, v8
 	slli	a0, a0, 11
 	vadd.vx	v8, v8, a0
 	ret
 func000000000000001b:                   # @func000000000000001b
 	li	a0, 32
+	li	a1, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vx	v10, v10, a0
-	li	a0, -1
-	srli	a1, a0, 32
-	vand.vx	v8, v8, a1
+	srli	a0, a1, 32
+	vand.vx	v8, v8, a0
 	vor.vv	v8, v10, v8
-	slli	a0, a0, 32
-	vadd.vx	v8, v8, a0
+	slli	a1, a1, 32
+	vadd.vx	v8, v8, a1
 	ret
 func000000000000001f:                   # @func000000000000001f
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -77,8 +77,8 @@ func000000000000000b:                   # @func000000000000000b
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v10
 	vand.vi	v8, v8, 1
-	vor.vv	v8, v10, v8
 	lui	a0, 16
+	vor.vv	v8, v10, v8
 	addiw	a0, a0, -2
 	vadd.vx	v8, v8, a0
 	ret

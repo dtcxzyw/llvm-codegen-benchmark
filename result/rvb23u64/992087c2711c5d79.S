@@ -3,9 +3,9 @@ func0000000000000020:                   # @func0000000000000020
 	and	a1, a1, a2
 	lui	a2, 1044480
 	and	a0, a0, a2
+	lui	a2, 648056
 	or	a0, a0, a1
-	lui	a1, 648056
-	addi	a1, a1, -1607
+	addi	a1, a2, -1607
 	addw	a0, a0, a1
 	ret
 func0000000000000007:                   # @func0000000000000007

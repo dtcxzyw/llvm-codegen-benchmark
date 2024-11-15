@@ -3,8 +3,8 @@ func0000000000000007:                   # @func0000000000000007
 	vnsrl.wi	v10, v8, 0
 	li	a0, -51
 	vmulhu.vx	v8, v10, a0
-	vsrl.vi	v8, v8, 3
 	li	a0, 10
+	vsrl.vi	v8, v8, 3
 	vnmsub.vx	v8, a0, v10
 	li	a0, 48
 	vor.vx	v8, v8, a0
@@ -14,8 +14,8 @@ func0000000000000005:                   # @func0000000000000005
 	vnsrl.wi	v10, v8, 0
 	li	a0, -51
 	vmulhu.vx	v8, v10, a0
-	vsrl.vi	v8, v8, 3
 	li	a0, 10
+	vsrl.vi	v8, v8, 3
 	vnmsub.vx	v8, a0, v10
 	li	a0, 48
 	vor.vx	v8, v8, a0
@@ -25,8 +25,8 @@ func0000000000000001:                   # @func0000000000000001
 	vnsrl.wi	v10, v8, 0
 	li	a0, -51
 	vmulhu.vx	v8, v10, a0
-	vsrl.vi	v8, v8, 3
 	li	a0, 10
+	vsrl.vi	v8, v8, 3
 	vnmsub.vx	v8, a0, v10
 	li	a0, 48
 	vor.vx	v8, v8, a0

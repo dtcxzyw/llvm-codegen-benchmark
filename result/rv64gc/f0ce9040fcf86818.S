@@ -27,8 +27,8 @@ func00000000000000cc:                   # @func00000000000000cc
 	ret
 func000000000000008c:                   # @func000000000000008c
 	slli	a1, a1, 57
-	srli	a1, a1, 63
 	sltiu	a0, a0, 9
+	srli	a1, a1, 63
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -64,9 +64,9 @@ func000000000000004c:                   # @func000000000000004c
 	ret
 func00000000000000ac:                   # @func00000000000000ac
 	andi	a1, a1, 5
+	slti	a0, a0, 0
 	addi	a1, a1, -5
 	snez	a1, a1
-	slti	a0, a0, 0
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

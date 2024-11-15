@@ -25,8 +25,8 @@ func0000000000000015:                   # @func0000000000000015
 	li	a0, 255
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v12, v12, a0
-	vadd.vv	v8, v12, v8
 	lui	a0, 36
+	vadd.vv	v8, v12, v8
 	addi	a0, a0, -1359
 	vmacc.vx	v8, a0, v10
 	ret

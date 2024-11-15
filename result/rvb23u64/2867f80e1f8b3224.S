@@ -28,9 +28,9 @@ func000000000000004c:                   # @func000000000000004c
 	ret
 func000000000000001c:                   # @func000000000000001c
 	add	a1, a1, a0
+	addi	a0, a0, -1024
 	addi	a1, a1, -1024
 	seqz	a1, a1
-	addi	a0, a0, -1024
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

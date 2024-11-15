@@ -15,13 +15,13 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func0000000000000044:                   # @func0000000000000044
 	sext.w	a2, a2
-	sltiu	a2, a2, 64
 	and	a1, a1, a0
+	sltiu	a2, a2, 64
 	czero.nez	a0, a0, a2
+	lui	a2, 524288
 	or	a0, a0, a1
-	lui	a1, 524288
-	addiw	a1, a1, -1
-	sltu	a0, a0, a1
+	addiw	a2, a2, -1
+	sltu	a0, a0, a2
 	ret
 func000000000000004c:                   # @func000000000000004c
 	sext.w	a2, a2

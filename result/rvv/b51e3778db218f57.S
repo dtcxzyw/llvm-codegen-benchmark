@@ -1,10 +1,10 @@
 func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vrsub.vi	v12, v10, 1
 	vmseq.vi	v0, v10, 0
-	vrsub.vi	v10, v10, 1
-	vmerge.vim	v10, v10, -6, v0
-	vadd.vv	v8, v10, v8
 	lui	a0, 599186
+	vmerge.vim	v10, v12, -6, v0
+	vadd.vv	v8, v10, v8
 	addi	a0, a0, 1171
 	vmulh.vx	v10, v8, a0
 	vadd.vv	v8, v10, v8

@@ -2,10 +2,10 @@ func0000000000000016:                   # @func0000000000000016
 	sext.w	a0, a0
 	sext.w	a1, a1
 	andi	a2, a2, 1
+	li	a3, 4
 	slli	a2, a2, 4
 	addi	a1, a1, -1
 	czero.eqz	a2, a2, a1
-	li	a3, 4
 	czero.nez	a1, a3, a1
 	or	a1, a1, a2
 	slt	a0, a0, a1
@@ -34,10 +34,10 @@ func000000000000001c:                   # @func000000000000001c
 	sext.w	a0, a0
 	sext.w	a1, a1
 	andi	a2, a2, 1
+	li	a3, 1
 	slli	a2, a2, 1
 	addi	a1, a1, -35
 	czero.eqz	a2, a2, a1
-	li	a3, 1
 	czero.nez	a1, a3, a1
 	or	a1, a1, a2
 	xor	a0, a0, a1
@@ -49,9 +49,9 @@ func000000000000001a:                   # @func000000000000001a
 	andi	a2, a2, 1
 	li	a3, -16
 	czero.nez	a2, a3, a2
-	addi	a2, a2, 128
-	addi	a1, a1, -1
 	li	a3, 96
+	addi	a1, a1, -1
+	addi	a2, a2, 128
 	czero.nez	a3, a3, a1
 	czero.eqz	a1, a2, a1
 	or	a1, a1, a3

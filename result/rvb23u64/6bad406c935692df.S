@@ -9,10 +9,10 @@ func0000000000000144:                   # @func0000000000000144
 func0000000000000164:                   # @func0000000000000164
 	sext.w	a0, a0
 	sext.b	a1, a1
-	addi	a1, a1, -48
-	sltiu	a1, a1, 10
 	lui	a2, 52429
+	addi	a1, a1, -48
 	addiw	a2, a2, -820
+	sltiu	a1, a1, 10
 	slt	a0, a0, a2
 	and	a0, a0, a1
 	ret

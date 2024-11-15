@@ -8,8 +8,8 @@ func0000000000000004:                   # @func0000000000000004
 func000000000000000a:                   # @func000000000000000a
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmv.v.i	v12, 0
-	vmerge.vvm	v8, v12, v8, v0
 	lui	a0, 323584
+	vmerge.vvm	v8, v12, v8, v0
 	fmv.w.x	fa5, a0
 	vfmin.vf	v8, v8, fa5
 	ret

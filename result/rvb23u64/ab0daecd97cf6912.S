@@ -23,19 +23,19 @@ func000000000000003f:                   # @func000000000000003f
 	lui	a2, 1024162
 	addi	a2, a2, -256
 	mul	a1, a1, a2
+	lui	a2, 26844
 	add	a0, a0, a1
 	zext.w	a0, a0
-	lui	a1, 26844
-	addiw	a1, a1, -1861
+	addiw	a1, a2, -1861
 	mul	a0, a0, a1
 	ret
 func0000000000000003:                   # @func0000000000000003
 	lui	a2, 1024162
 	addi	a2, a2, -256
 	mul	a1, a1, a2
+	lui	a2, 26844
 	add	a0, a0, a1
 	zext.w	a0, a0
-	lui	a1, 26844
-	addiw	a1, a1, -1861
+	addiw	a1, a2, -1861
 	mul	a0, a0, a1
 	ret

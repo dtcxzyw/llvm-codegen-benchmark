@@ -30,8 +30,8 @@ func0000000000000069:                   # @func0000000000000069
 func0000000000000054:                   # @func0000000000000054
 	sext.w	a0, a0
 	addi	a1, a1, 2
-	slti	a0, a0, 0
 	li	a2, -1
+	slti	a0, a0, 0
 	srli	a2, a2, 32
 	czero.eqz	a0, a2, a0
 	zext.w	a1, a1
@@ -51,8 +51,8 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000014:                   # @func0000000000000014
 	sext.w	a0, a0
 	addi	a1, a1, 856
-	slti	a0, a0, 2
 	li	a2, 968
+	slti	a0, a0, 2
 	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2

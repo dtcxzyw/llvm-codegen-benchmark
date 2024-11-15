@@ -20,8 +20,8 @@ func0000000000000038:                   # @func0000000000000038
 	li	a0, 64
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vand.vx	v10, v10, a0
-	vmseq.vi	v10, v10, 0
 	li	a0, 1792
+	vmseq.vi	v10, v10, 0
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsne.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10
@@ -30,8 +30,8 @@ func0000000000000188:                   # @func0000000000000188
 	bseti	a0, zero, 11
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vand.vx	v10, v10, a0
-	vmsne.vi	v10, v10, 0
 	li	a0, -94
+	vmsne.vi	v10, v10, 0
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsltu.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10
@@ -101,8 +101,8 @@ func0000000000000030:                   # @func0000000000000030
 	li	a0, 31
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vand.vx	v10, v10, a0
-	vmseq.vi	v10, v10, 4
 	li	a0, 127
+	vmseq.vi	v10, v10, 4
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsgtu.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10
@@ -111,8 +111,8 @@ func0000000000000190:                   # @func0000000000000190
 	li	a0, 256
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vand.vx	v10, v10, a0
-	vmsne.vi	v10, v10, 0
 	li	a0, 16
+	vmsne.vi	v10, v10, 0
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsgtu.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10

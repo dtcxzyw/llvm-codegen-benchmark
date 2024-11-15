@@ -22,9 +22,9 @@ func000000000000000e:                   # @func000000000000000e
 	ret
 func0000000000000008:                   # @func0000000000000008
 	add	a0, a0, a1
+	lui	a1, 16
 	addi	a0, a0, 128
 	srli	a0, a0, 3
-	lui	a1, 16
 	addiw	a1, a1, -32
 	and	a0, a0, a1
 	ret

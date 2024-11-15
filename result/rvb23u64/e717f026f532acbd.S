@@ -2,8 +2,8 @@ func00000000000000ac:                   # @func00000000000000ac
 	andi	a1, a0, 255
 	sext.b	a0, a0
 	slti	a0, a0, 0
-	xori	a0, a0, 1
 	addi	a1, a1, -95
+	xori	a0, a0, 1
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
@@ -53,8 +53,8 @@ func000000000000006c:                   # @func000000000000006c
 func000000000000008c:                   # @func000000000000008c
 	andi	a0, a0, 255
 	sltiu	a1, a0, 29
-	xori	a1, a1, 1
 	addi	a0, a0, -63
+	xori	a1, a1, 1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

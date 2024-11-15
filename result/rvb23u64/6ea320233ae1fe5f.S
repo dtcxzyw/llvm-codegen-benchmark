@@ -1,10 +1,10 @@
 func0000000000000018:                   # @func0000000000000018
 	andi	a0, a0, 1
 	lui	a3, 1048560
-	addiw	a3, a3, 15
-	add	a3, a3, a2
 	lui	a4, 16
+	addiw	a3, a3, 15
 	addiw	a4, a4, -16
+	add	a3, a3, a2
 	sltu	a2, a4, a2
 	czero.eqz	a3, a3, a2
 	czero.nez	a2, a4, a2

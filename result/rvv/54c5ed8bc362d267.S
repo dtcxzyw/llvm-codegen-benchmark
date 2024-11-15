@@ -3,9 +3,9 @@ func000000000000001f:                   # @func000000000000001f
 	vzext.vf2	v12, v10
 	lui	a0, 256
 	vmv.v.x	v10, a0
-	vmacc.vv	v10, v8, v12
 	lui	a0, 262144
 	addiw	a0, a0, -1
+	vmacc.vv	v10, v8, v12
 	slli	a0, a0, 21
 	vand.vx	v8, v10, a0
 	ret
@@ -30,11 +30,11 @@ func000000000000001e:                   # @func000000000000001e
 	addiw	a0, a0, -128
 	slli	a1, a0, 32
 	add	a0, a0, a1
+	lui	a1, 524296
 	vmv.v.x	v10, a0
+	slli	a0, a1, 32
 	vmacc.vv	v10, v8, v12
-	lui	a0, 524296
-	slli	a1, a0, 32
-	add.uw	a0, a0, a1
+	add.uw	a0, a1, a0
 	vand.vx	v8, v10, a0
 	ret
 func0000000000000015:                   # @func0000000000000015

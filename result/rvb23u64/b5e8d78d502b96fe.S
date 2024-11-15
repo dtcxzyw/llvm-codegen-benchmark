@@ -20,9 +20,9 @@ func0000000000000008:                   # @func0000000000000008
 	sext.w	a2, a2
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
+	lui	a2, 524288
 	or	a0, a0, a1
-	lui	a1, 524288
-	addiw	a1, a1, -512
+	addiw	a1, a2, -512
 	sltu	a0, a1, a0
 	ret
 func000000000000000c:                   # @func000000000000000c

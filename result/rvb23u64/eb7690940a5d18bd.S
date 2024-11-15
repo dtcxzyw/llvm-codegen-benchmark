@@ -1,7 +1,7 @@
 func0000000000000009:                   # @func0000000000000009
 	sh1add	a1, a1, a1
-	sext.w	a1, a1
 	lui	a2, 67109
+	sext.w	a1, a1
 	addiw	a2, a2, -557
 	mul	a1, a1, a2
 	srli	a2, a1, 63
@@ -22,8 +22,8 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func0000000000000001:                   # @func0000000000000001
 	sh1add	a1, a1, a1
-	sext.w	a1, a1
 	lui	a2, 67109
+	sext.w	a1, a1
 	addiw	a2, a2, -557
 	mul	a1, a1, a2
 	srli	a2, a1, 63

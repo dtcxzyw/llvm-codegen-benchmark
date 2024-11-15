@@ -59,14 +59,13 @@ func0000000000000141:                   # @func0000000000000141
 	ret
 func00000000000008c8:                   # @func00000000000008c8
 	li	a0, -1
-	srli	a0, a0, 32
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsgtu.vx	v11, v12, a0
-	vsetvli	zero, zero, e32, m1, ta, ma
+	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsne.vi	v10, v10, 0
+	srli	a0, a0, 32
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vmsgtu.vx	v11, v12, a0
 	lui	a0, 16
 	addiw	a0, a0, -1
-	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v12, v8, a0
 	vmor.mm	v8, v11, v12
 	vmor.mm	v0, v8, v10

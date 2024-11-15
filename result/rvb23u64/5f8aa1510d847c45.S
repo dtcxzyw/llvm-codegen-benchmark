@@ -50,9 +50,9 @@ func00000000000001b6:                   # @func00000000000001b6
 	ret
 func00000000000000c2:                   # @func00000000000000c2
 	fli.d	fa5, inf
-	flt.d	a1, fa1, fa5
-	feq.d	a2, fa0, fa0
-	xori	a2, a2, 1
+	feq.d	a1, fa0, fa0
+	flt.d	a2, fa1, fa5
+	xori	a1, a1, 1
 	or	a1, a1, a2
 	and	a0, a0, a1
 	ret

@@ -9,8 +9,8 @@ func0000000000000054:                   # @func0000000000000054
 func0000000000000158:                   # @func0000000000000158
 	sext.w	a2, a2
 	add	a0, a0, a1
-	sub	a0, a0, a2
 	li	a1, 1
+	sub	a0, a0, a2
 	slli	a1, a1, 32
 	addi	a1, a1, -2
 	sltu	a0, a1, a0
@@ -51,8 +51,8 @@ func000000000000014a:                   # @func000000000000014a
 func0000000000000104:                   # @func0000000000000104
 	sext.w	a2, a2
 	add	a0, a0, a1
-	sub	a0, a0, a2
 	li	a1, -1
+	sub	a0, a0, a2
 	srli	a1, a1, 32
 	sltu	a0, a0, a1
 	ret

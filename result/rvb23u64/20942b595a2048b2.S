@@ -1,8 +1,8 @@
 func000000000000001b:                   # @func000000000000001b
 	andi	a0, a0, 1
 	andi	a1, a1, 2047
-	addi	a1, a1, -1075
 	li	a2, -1074
+	addi	a1, a1, -1075
 	zext.w	a2, a2
 	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0

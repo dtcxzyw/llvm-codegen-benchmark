@@ -4,8 +4,8 @@ func0000000000000014:                   # @func0000000000000014
 	andi	a2, a2, 1
 	li	a3, 2
 	sub	a3, a3, a2
-	sltu	a0, a0, a3
 	addi	a1, a1, 2
+	sltu	a0, a0, a3
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret

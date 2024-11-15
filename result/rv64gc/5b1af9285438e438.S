@@ -1,11 +1,11 @@
 func00000000000000ab:                   # @func00000000000000ab
 	lui	a1, 260096
-	fmv.w.x	fa5, a1
-	fle.s	a1, fa1, fa5
-	xori	a1, a1, 1
 	fmv.w.x	fa5, zero
 	flt.s	a2, fa5, fa0
+	fmv.w.x	fa5, a1
+	fle.s	a1, fa1, fa5
 	xori	a2, a2, 1
+	xori	a1, a1, 1
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret

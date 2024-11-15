@@ -45,8 +45,8 @@ func0000000000000008:                   # @func0000000000000008
 	addi	a2, a2, -381
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
-	srli	a1, a1, 50
 	lui	a2, 244
+	srli	a1, a1, 50
 	addi	a2, a2, 576
 	mul	a1, a1, a2
 	subw	a0, a0, a1
@@ -63,8 +63,8 @@ func0000000000000004:                   # @func0000000000000004
 	addi	a2, a2, -381
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
-	srli	a1, a1, 50
 	lui	a2, 244
+	srli	a1, a1, 50
 	addi	a2, a2, 576
 	mul	a1, a1, a2
 	subw	a0, a0, a1

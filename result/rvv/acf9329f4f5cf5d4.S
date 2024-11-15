@@ -11,8 +11,8 @@ func0000000000000024:                   # @func0000000000000024
 	vfadd.vv	v12, v12, v16
 	lui	a0, 277312
 	fmv.w.x	fa5, a0
-	vmflt.vf	v16, v12, fa5
 	lui	a0, 275264
+	vmflt.vf	v16, v12, fa5
 	fmv.w.x	fa5, a0
 	vmfgt.vf	v12, v8, fa5
 	vmand.mm	v0, v12, v16
@@ -22,8 +22,8 @@ func00000000000000c4:                   # @func00000000000000c4
 	vfadd.vv	v12, v12, v16
 	lui	a0, 277312
 	fmv.w.x	fa5, a0
-	vmfge.vf	v16, v12, fa5
 	lui	a0, 275264
+	vmfge.vf	v16, v12, fa5
 	fmv.w.x	fa5, a0
 	vmfgt.vf	v12, v8, fa5
 	vmand.mm	v0, v12, v16

@@ -31,27 +31,27 @@ func0000000000000006:                   # @func0000000000000006
 func0000000000000026:                   # @func0000000000000026
 	sext.w	a0, a0
 	bset	a1, zero, a1
+	li	a2, 1
 	slti	a0, a0, 7
 	czero.nez	a1, a1, a0
-	li	a2, 1
 	czero.eqz	a0, a2, a0
 	or	a0, a0, a1
 	ret
 func0000000000000024:                   # @func0000000000000024
 	bset	a1, zero, a1
 	srliw	a0, a0, 24
+	li	a2, 1
 	sltiu	a0, a0, 7
 	czero.nez	a1, a1, a0
-	li	a2, 1
 	czero.eqz	a0, a2, a0
 	or	a0, a0, a1
 	ret
 func0000000000000034:                   # @func0000000000000034
 	sext.w	a0, a0
 	bset	a1, zero, a1
+	li	a2, 1
 	sltiu	a0, a0, 6
 	czero.nez	a1, a1, a0
-	li	a2, 1
 	czero.eqz	a0, a2, a0
 	or	a0, a0, a1
 	ret
@@ -64,16 +64,16 @@ func0000000000000011:                   # @func0000000000000011
 func0000000000000036:                   # @func0000000000000036
 	sext.w	a0, a0
 	bset	a1, zero, a1
+	li	a2, 4
 	slti	a0, a0, 7
 	czero.nez	a1, a1, a0
-	li	a2, 4
 	czero.eqz	a0, a2, a0
 	or	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004
 	li	a2, 3
-	sllw	a1, a2, a1
 	srliw	a0, a0, 27
+	sllw	a1, a2, a1
 	sltiu	a0, a0, 3
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0

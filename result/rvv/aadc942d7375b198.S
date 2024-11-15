@@ -1,10 +1,10 @@
 func000000000000000c:                   # @func000000000000000c
 	vmv1r.v	v11, v0
+	vmv1r.v	v0, v10
 	li	a0, 16
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v12, a0
 	li	a0, 40
-	vmv1r.v	v0, v10
 	vmerge.vxm	v12, v12, a0, v0
 	li	a0, 20
 	vmv.v.x	v14, a0
@@ -16,11 +16,11 @@ func000000000000000c:                   # @func000000000000000c
 	ret
 func000000000000000f:                   # @func000000000000000f
 	vmv1r.v	v11, v0
+	vmv1r.v	v0, v10
 	li	a0, 60
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v12, a0
 	li	a0, 62
-	vmv1r.v	v0, v10
 	vmerge.vxm	v12, v12, a0, v0
 	vmv.v.i	v14, 0
 	vmv1r.v	v0, v11

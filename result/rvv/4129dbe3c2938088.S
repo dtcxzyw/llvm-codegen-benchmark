@@ -10,11 +10,11 @@ func0000000000000002:                   # @func0000000000000002
 	vmflt.vf	v0, v8, fa5
 	ret
 func0000000000000007:                   # @func0000000000000007
+	li	a0, 894
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfwadd.wv	v8, v8, v16
 	vsetvli	zero, zero, e64, m8, ta, ma
 	vfclass.v	v8, v8
-	li	a0, 894
 	vand.vx	v8, v8, a0
 	vmsne.vi	v0, v8, 0
 	ret

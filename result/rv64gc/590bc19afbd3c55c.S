@@ -21,10 +21,10 @@ func000000000000014e:                   # @func000000000000014e
 	ret
 func000000000000002e:                   # @func000000000000002e
 	sext.w	a2, a2
+	slli	a1, a1, 3
 	addi	a2, a2, -10
 	seqz	a2, a2
 	slli	a2, a2, 3
-	slli	a1, a1, 3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

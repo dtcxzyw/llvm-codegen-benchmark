@@ -1,9 +1,9 @@
 func000000000000004c:                   # @func000000000000004c
 	lui	a0, 1048064
 	addiw	a1, a0, -1
+	addiw	a0, a0, 511
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v8, a1
-	addiw	a0, a0, 511
 	vmsltu.vx	v12, v10, a0
 	vmsne.vi	v10, v8, 0
 	vmand.mm	v0, v10, v12

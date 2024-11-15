@@ -1,7 +1,7 @@
 func0000000000000061:                   # @func0000000000000061
 	sext.w	a1, a0
-	sltiu	a1, a1, 32
 	li	a2, -32
+	sltiu	a1, a1, 32
 	czero.nez	a1, a2, a1
 	negw	a0, a0
 	subw	a0, a0, a1
@@ -21,17 +21,17 @@ func0000000000000060:                   # @func0000000000000060
 	ret
 func000000000000005b:                   # @func000000000000005b
 	sext.w	a1, a0
+	li	a2, 6
 	slli	a1, a1, 30
 	srli	a1, a1, 61
-	li	a2, 6
 	subw	a0, a2, a0
 	subw	a0, a0, a1
 	ret
 func0000000000000059:                   # @func0000000000000059
 	sext.w	a1, a0
+	li	a2, 7
 	slli	a1, a1, 30
 	srli	a1, a1, 61
-	li	a2, 7
 	subw	a0, a2, a0
 	subw	a0, a0, a1
 	ret

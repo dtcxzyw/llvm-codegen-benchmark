@@ -24,20 +24,20 @@ func00000000000000c5:                   # @func00000000000000c5
 func0000000000000060:                   # @func0000000000000060
 	li	a0, 50
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vmslt.vx	v0, v10, a0
 	vadd.vv	v8, v8, v10
+	vmslt.vx	v0, v10, a0
 	li	a0, 100
 	vadd.vx	v8, v8, a0, v0.t
 	ret
 func0000000000000085:                   # @func0000000000000085
 	li	a0, 160
+	lui	a1, 16
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgtu.vx	v0, v10, a0
-	lui	a0, 16
-	addi	a1, a0, -64
-	vmv.v.x	v12, a1
-	addi	a0, a0, -98
-	vmerge.vxm	v12, v12, a0, v0
+	addi	a0, a1, -64
+	addi	a1, a1, -98
+	vmv.v.x	v12, a0
+	vmerge.vxm	v12, v12, a1, v0
 	vadd.vv	v8, v8, v10
 	vadd.vv	v8, v8, v12
 	ret

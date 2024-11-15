@@ -6,15 +6,15 @@ func0000000000000045:                   # @func0000000000000045
 	ret
 func00000000000000c2:                   # @func00000000000000c2
 	xor	a0, a0, a1
-	snez	a0, a0
 	fli.d	fa5, min
+	snez	a0, a0
 	flt.d	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
 func00000000000000cd:                   # @func00000000000000cd
 	xor	a0, a0, a1
-	snez	a0, a0
 	fmv.d.x	fa5, zero
+	snez	a0, a0
 	flt.d	a1, fa0, fa5
 	andn	a0, a0, a1
 	ret
@@ -36,8 +36,8 @@ func00000000000000a5:                   # @func00000000000000a5
 	ret
 func00000000000000c8:                   # @func00000000000000c8
 	xor	a0, a0, a1
-	snez	a0, a0
 	fmv.d.x	fa5, zero
+	snez	a0, a0
 	feq.d	a1, fa0, fa5
 	and	a0, a0, a1
 	ret

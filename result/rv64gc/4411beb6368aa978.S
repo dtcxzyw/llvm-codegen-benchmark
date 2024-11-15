@@ -1,7 +1,7 @@
 func0000000000000004:                   # @func0000000000000004
 	fdiv.d	fa5, fa0, fa1
-	fcvt.s.d	fa5, fa5
 	lui	a0, 260096
+	fcvt.s.d	fa5, fa5
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	ret
@@ -25,8 +25,8 @@ func000000000000000c:                   # @func000000000000000c
 	ret
 func000000000000000a:                   # @func000000000000000a
 	fdiv.d	fa5, fa0, fa1
-	fcvt.s.d	fa5, fa5
 	lui	a0, 260096
+	fcvt.s.d	fa5, fa5
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa5, fa4
 	ret

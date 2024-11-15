@@ -8,9 +8,9 @@ func0000000000000000:                   # @func0000000000000000
 	lui	a0, %hi(.LCPI0_1)
 	fld	fa4, %lo(.LCPI0_1)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vfmul.vv	v24, v8, v8
-	vfmv.v.f	v0, fa5
-	vfmacc.vv	v0, v24, v16
+	vfmv.v.f	v24, fa5
+	vfmul.vv	v0, v8, v8
+	vfmacc.vv	v24, v0, v16
 	vfmv.v.f	v8, fa4
-	vfmacc.vv	v8, v24, v0
+	vfmacc.vv	v8, v0, v24
 	ret

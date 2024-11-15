@@ -1,7 +1,7 @@
 func00000000000000c7:                   # @func00000000000000c7
 	sext.w	a0, a0
-	snez	a0, a0
 	fmv.d.x	fa5, zero
+	snez	a0, a0
 	feq.d	a1, fa0, fa5
 	xori	a1, a1, 1
 	or	a0, a0, a1
@@ -39,16 +39,16 @@ func0000000000000012:                   # @func0000000000000012
 	ret
 func0000000000000017:                   # @func0000000000000017
 	sext.w	a0, a0
-	seqz	a0, a0
 	fmv.d.x	fa5, zero
+	seqz	a0, a0
 	feq.d	a1, fa0, fa5
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
 func00000000000000a4:                   # @func00000000000000a4
 	sext.w	a0, a0
-	sgtz	a0, a0
 	fli.d	fa5, 1.0
+	sgtz	a0, a0
 	flt.d	a1, fa5, fa0
 	or	a0, a0, a1
 	ret
@@ -76,9 +76,9 @@ func0000000000000013:                   # @func0000000000000013
 	ret
 func0000000000000018:                   # @func0000000000000018
 	sext.w	a0, a0
+	fmv.d.x	fa5, zero
 	addi	a0, a0, -5
 	seqz	a0, a0
-	fmv.d.x	fa5, zero
 	feq.d	a1, fa0, fa5
 	or	a0, a0, a1
 	ret

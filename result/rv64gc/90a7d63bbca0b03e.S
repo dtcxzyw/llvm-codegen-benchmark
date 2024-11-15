@@ -11,8 +11,8 @@ func0000000000000321:                   # @func0000000000000321
 	ret
 func00000000000003a1:                   # @func00000000000003a1
 	slli	a2, a2, 48
-	srli	a2, a2, 48
 	li	a3, 40
+	srli	a2, a2, 48
 	mul	a2, a2, a3
 	add	a1, a1, a2
 	addi	a0, a0, 40

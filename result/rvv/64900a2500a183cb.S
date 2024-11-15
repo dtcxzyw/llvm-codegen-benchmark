@@ -11,8 +11,8 @@ func0000000000000008:                   # @func0000000000000008
 	zext.w	a0, a0
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
-	vadd.vv	v8, v12, v8
 	li	a0, -256
+	vadd.vv	v8, v12, v8
 	vadd.vx	v10, v10, a0
 	vmsltu.vv	v0, v10, v8
 	ret

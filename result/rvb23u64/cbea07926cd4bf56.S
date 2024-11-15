@@ -49,8 +49,8 @@ func0000000000002210:                   # @func0000000000002210
 	.quad	8789745728267363600             # 0x79fb732b77622510
 func0000000000003330:                   # @func0000000000003330
 	lui	a3, %hi(.LCPI6_0)
-	ld	a3, %lo(.LCPI6_0)(a3)
 	lui	a4, %hi(.LCPI6_1)
+	ld	a3, %lo(.LCPI6_0)(a3)
 	ld	a4, %lo(.LCPI6_1)(a4)
 	lui	a5, %hi(.LCPI6_2)
 	ld	a5, %lo(.LCPI6_2)(a5)
@@ -71,8 +71,8 @@ func0000000000002208:                   # @func0000000000002208
 	ret
 func0000000000003050:                   # @func0000000000003050
 	srli	a0, a0, 19
-	or	a0, a0, a2
 	addi	a1, a1, -2
+	or	a0, a0, a2
 	seqz	a1, a1
 	snez	a0, a0
 	or	a0, a0, a1
@@ -80,8 +80,8 @@ func0000000000003050:                   # @func0000000000003050
 func0000000000000450:                   # @func0000000000000450
 	seqz	a2, a2
 	seqz	a1, a1
-	or	a1, a1, a2
 	srli	a0, a0, 3
+	or	a1, a1, a2
 	sltiu	a0, a0, 625
 	or	a0, a0, a1
 	ret
@@ -99,13 +99,13 @@ func0000000000001108:                   # @func0000000000001108
 	ret
 func0000000000000702:                   # @func0000000000000702
 	lui	a3, 131072
+	snez	a1, a1
 	addiw	a3, a3, -1
 	xor	a2, a2, a3
-	seqz	a2, a2
-	snez	a1, a1
 	lui	a3, 262144
 	bseti	a3, a3, 62
 	xor	a0, a0, a3
+	seqz	a2, a2
 	seqz	a0, a0
 	or	a0, a0, a2
 	or	a0, a0, a1
@@ -127,11 +127,11 @@ func0000000000002220:                   # @func0000000000002220
 	ret
 func0000000000000470:                   # @func0000000000000470
 	addi	a2, a2, -14
-	seqz	a2, a2
 	addi	a1, a1, -16
+	addi	a0, a0, -16
+	seqz	a2, a2
 	seqz	a1, a1
 	or	a1, a1, a2
-	addi	a0, a0, -16
 	snez	a0, a0
 	or	a0, a0, a1
 	ret

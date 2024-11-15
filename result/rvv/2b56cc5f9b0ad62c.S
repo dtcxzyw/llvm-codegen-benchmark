@@ -173,8 +173,8 @@ func00000000000003f8:                   # @func00000000000003f8
 	li	a0, 20
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmacc.vx	v8, a0, v10
-	vadd.vi	v8, v8, 4
 	lui	a0, 2
+	vadd.vi	v8, v8, 4
 	addi	a0, a0, -1025
 	vmsgtu.vx	v0, v8, a0
 	ret

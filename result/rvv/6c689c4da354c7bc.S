@@ -28,8 +28,8 @@ func0000000000000059:                   # @func0000000000000059
 	vadd.vv	v12, v10, v10
 	li	a0, 512
 	vmslt.vx	v0, v10, a0
-	vadd.vi	v10, v12, -1
 	li	a0, 1023
+	vadd.vi	v10, v12, -1
 	vmerge.vxm	v10, v10, a0, v0
 	vand.vv	v8, v10, v8
 	ret

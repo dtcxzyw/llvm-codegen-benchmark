@@ -16,8 +16,8 @@ func0000000000000064:                   # @func0000000000000064
 	ret
 func00000000000000c4:                   # @func00000000000000c4
 	addi	a2, a2, 1
-	czero.eqz	a1, a1, a2
 	lui	a3, 131072
+	czero.eqz	a1, a1, a2
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
 	sltu	a0, a0, a1
@@ -37,8 +37,8 @@ func0000000000000011:                   # @func0000000000000011
 func0000000000000048:                   # @func0000000000000048
 	lui	a3, 4
 	addiw	a4, a3, 332
-	sltu	a2, a2, a4
 	addiw	a3, a3, 333
+	sltu	a2, a2, a4
 	czero.nez	a3, a3, a2
 	czero.eqz	a1, a1, a2
 	or	a1, a1, a3

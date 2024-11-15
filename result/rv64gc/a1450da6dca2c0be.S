@@ -2,8 +2,8 @@ func0000000000000038:                   # @func0000000000000038
 	sext.w	a0, a0
 	slli	a1, a1, 63
 	srai	a1, a1, 63
-	andi	a1, a1, 165
 	sltiu	a0, a0, 701
+	andi	a1, a1, 165
 	addi	a0, a0, -1
 	andi	a0, a0, 317
 	add	a0, a0, a1

@@ -32,8 +32,8 @@ func0000000000000041:                   # @func0000000000000041
 	ret
 func000000000000004a:                   # @func000000000000004a
 	add	a0, a0, a1
-	addiw	a0, a0, 1
 	lui	a1, 1
+	addiw	a0, a0, 1
 	addiw	a1, a1, -1
 	slt	a0, a1, a0
 	ret
@@ -45,8 +45,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	ret
 func0000000000000048:                   # @func0000000000000048
 	add	a0, a0, a1
-	addiw	a0, a0, -29
 	lui	a1, 1
+	addiw	a0, a0, -29
 	addiw	a1, a1, -2
 	sltu	a0, a1, a0
 	ret
@@ -67,8 +67,8 @@ func0000000000000051:                   # @func0000000000000051
 	ret
 func0000000000000058:                   # @func0000000000000058
 	add	a0, a0, a1
-	addiw	a0, a0, 5
 	lui	a1, 8
+	addiw	a0, a0, 5
 	addiw	a1, a1, -9
 	sltu	a0, a1, a0
 	ret
@@ -90,8 +90,8 @@ func0000000000000054:                   # @func0000000000000054
 	ret
 func0000000000000078:                   # @func0000000000000078
 	add	a0, a0, a1
-	addiw	a0, a0, -161
 	lui	a1, 2
+	addiw	a0, a0, -161
 	addiw	a1, a1, -982
 	sltu	a0, a1, a0
 	ret

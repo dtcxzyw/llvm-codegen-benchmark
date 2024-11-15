@@ -12,8 +12,8 @@ func000000000000024c:                   # @func000000000000024c
 	ret
 func000000000000006a:                   # @func000000000000006a
 	sub	a1, a1, a2
-	slt	a1, a0, a1
-	slti	a0, a0, 0
-	not	a0, a0
+	slti	a2, a0, 0
+	slt	a0, a0, a1
+	not	a1, a2
 	and	a0, a0, a1
 	ret

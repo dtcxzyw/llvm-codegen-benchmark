@@ -6,10 +6,10 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func0000000000000054:                   # @func0000000000000054
 	add	a1, a1, a2
+	li	a2, 3
 	addiw	a1, a1, 1
 	sltiu	a1, a1, 3
 	czero.nez	a0, a0, a1
-	li	a2, 3
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret
@@ -27,10 +27,10 @@ func0000000000000056:                   # @func0000000000000056
 	ret
 func000000000000005a:                   # @func000000000000005a
 	add	a1, a1, a2
+	li	a2, 2
 	addiw	a1, a1, 6
 	slti	a1, a1, 1024
 	czero.eqz	a0, a0, a1
-	li	a2, 2
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret

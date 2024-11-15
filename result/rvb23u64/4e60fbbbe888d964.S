@@ -2,8 +2,8 @@ func00000000000000cc:                   # @func00000000000000cc
 	andi	a1, a1, 1
 	sext.w	a0, a0
 	addi	a2, a0, -2
-	seqz	a2, a2
 	snez	a0, a0
+	seqz	a2, a2
 	czero.nez	a1, a0, a1
 	and	a0, a0, a2
 	or	a0, a0, a1
@@ -33,8 +33,8 @@ func0000000000000061:                   # @func0000000000000061
 	andi	a1, a1, 1
 	sext.w	a0, a0
 	slti	a2, a0, 3
-	xori	a2, a2, 1
 	addi	a0, a0, -8
+	xori	a2, a2, 1
 	seqz	a0, a0
 	czero.nez	a1, a0, a1
 	and	a0, a0, a2

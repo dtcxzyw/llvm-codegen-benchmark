@@ -97,16 +97,16 @@ func000000000000003a:                   # @func000000000000003a
 func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vzext.vf4	v12, v10
-	vor.vv	v8, v12, v8
 	lui	a0, 1
+	vor.vv	v8, v12, v8
 	addi	a0, a0, -24
 	vmsgtu.vx	v0, v8, a0
 	ret
 func0000000000000021:                   # @func0000000000000021
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vzext.vf4	v12, v10
-	vor.vv	v8, v12, v8
 	lui	a0, 444103
+	vor.vv	v8, v12, v8
 	addi	a0, a0, 1390
 	vmseq.vx	v0, v8, a0
 	ret

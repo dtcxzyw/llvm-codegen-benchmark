@@ -11,9 +11,9 @@ func00000000000002f4:                   # @func00000000000002f4
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v0, v12, 0
 	vmv.v.i	v12, 0
-	vmerge.vim	v12, v12, 1, v0
 	vadd.vv	v8, v10, v8
-	vadd.vv	v8, v12, v8
+	vmerge.vim	v10, v12, 1, v0
+	vadd.vv	v8, v10, v8
 	lui	a0, 65536
 	vmsltu.vx	v0, v8, a0
 	ret
@@ -21,9 +21,9 @@ func0000000000000851:                   # @func0000000000000851
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsleu.vi	v0, v12, 2
 	vmv.v.i	v12, 0
-	vmerge.vim	v12, v12, 1, v0
 	vadd.vv	v8, v10, v8
-	vadd.vv	v8, v12, v8
+	vmerge.vim	v10, v12, 1, v0
+	vadd.vv	v8, v10, v8
 	lui	a0, 1048568
 	vmseq.vx	v0, v8, a0
 	ret

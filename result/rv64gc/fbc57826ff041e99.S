@@ -6,10 +6,10 @@ func0000000000000012:                   # @func0000000000000012
 	lui	a0, 699051
 	addiw	a0, a0, -1365
 	slli	a3, a0, 32
-	add	a0, a0, a3
-	mul	a1, a1, a0
+	add	a3, a3, a0
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
+	mul	a1, a1, a3
 	seqz	a3, a1
 	add	a1, a1, a1
 	add	a1, a1, a3
@@ -32,10 +32,10 @@ func0000000000000010:                   # @func0000000000000010
 	lui	a0, 699051
 	addiw	a0, a0, -1365
 	slli	a3, a0, 32
-	add	a0, a0, a3
-	mul	a1, a1, a0
+	add	a3, a3, a0
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
+	mul	a1, a1, a3
 	seqz	a3, a1
 	add	a1, a1, a1
 	add	a1, a1, a3

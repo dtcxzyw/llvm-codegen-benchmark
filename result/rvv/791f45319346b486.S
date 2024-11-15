@@ -30,8 +30,8 @@ func00000000000000ec:                   # @func00000000000000ec
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfeq.vv	v0, v8, v8
 	vmv.v.i	v16, 0
-	vmerge.vvm	v8, v16, v8, v0
 	fmv.d.x	fa5, zero
+	vmerge.vvm	v8, v16, v8, v0
 	vmfge.vf	v0, v8, fa5
 	vmerge.vvm	v8, v16, v8, v0
 	ret

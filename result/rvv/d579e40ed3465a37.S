@@ -16,11 +16,11 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000001:                   # @func0000000000000001
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a0)
+	li	a0, 1
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vfmul.vf	v8, v8, fa5
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vfncvt.rtz.x.f.w	v12, v8
-	li	a0, 1
 	vmax.vx	v8, v12, a0
 	li	a0, 30
 	vmin.vx	v8, v8, a0

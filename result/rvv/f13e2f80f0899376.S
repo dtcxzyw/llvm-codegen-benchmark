@@ -5,10 +5,10 @@ func0000000000000044:                   # @func0000000000000044
 	addiw	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
+	lui	a1, 16
 	vmul.vx	v8, v8, a0
-	lui	a0, 16
-	addiw	a0, a0, -2
-	vand.vx	v8, v8, a0
+	addiw	a1, a1, -2
+	vand.vx	v8, v8, a1
 	vmseq.vi	v0, v8, 0
 	ret
 func0000000000000041:                   # @func0000000000000041
@@ -18,10 +18,10 @@ func0000000000000041:                   # @func0000000000000041
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
+	lui	a1, 131072
 	vmul.vx	v8, v8, a0
-	lui	a0, 131072
-	addiw	a0, a0, -1
-	vand.vx	v8, v8, a0
+	addiw	a1, a1, -1
+	vand.vx	v8, v8, a1
 	vmseq.vi	v0, v8, 0
 	ret
 .LCPI2_0:

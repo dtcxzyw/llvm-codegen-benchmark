@@ -84,8 +84,8 @@ func0000000000000066:                   # @func0000000000000066
 func0000000000000074:                   # @func0000000000000074
 	fmv.w.x	fa5, zero
 	feq.s	a1, fa1, fa5
-	not	a1, a1
 	flt.s	a2, fa5, fa0
+	not	a1, a1
 	and	a0, a0, a2
 	and	a0, a0, a1
 	ret
@@ -104,18 +104,18 @@ func00000000000000bb:                   # @func00000000000000bb
 func00000000000000a8:                   # @func00000000000000a8
 	lui	a1, %hi(.LCPI11_0)
 	flw	fa5, %lo(.LCPI11_0)(a1)
-	fle.s	a1, fa1, fa5
-	lui	a2, 260096
-	fmv.w.x	fa5, a2
-	feq.s	a2, fa0, fa5
-	and	a0, a0, a2
+	lui	a1, 260096
+	fmv.w.x	fa4, a1
+	feq.s	a1, fa0, fa4
+	fle.s	a2, fa1, fa5
 	and	a0, a0, a1
+	and	a0, a0, a2
 	ret
 func000000000000007c:                   # @func000000000000007c
 	fmv.w.x	fa5, zero
 	feq.s	a1, fa1, fa5
-	not	a1, a1
 	fle.s	a2, fa5, fa0
+	not	a1, a1
 	and	a0, a0, a2
 	and	a0, a0, a1
 	ret
@@ -148,10 +148,10 @@ func00000000000000ee:                   # @func00000000000000ee
 	ret
 func000000000000007e:                   # @func000000000000007e
 	lui	a1, 522240
+	feq.s	a2, fa0, fa0
 	fmv.w.x	fa5, a1
 	feq.s	a1, fa1, fa5
 	not	a1, a1
-	feq.s	a2, fa0, fa0
 	and	a0, a0, a2
 	and	a0, a0, a1
 	ret

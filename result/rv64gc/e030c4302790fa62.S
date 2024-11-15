@@ -75,9 +75,9 @@ func0000000000000190:                   # @func0000000000000190
 	lui	a3, 8216
 	addiw	a3, a3, 289
 	mul	a2, a2, a3
-	srli	a2, a2, 35
 	lui	a3, 8
 	addi	a3, a3, -96
+	srli	a2, a2, 35
 	mul	a2, a2, a3
 	subw	a1, a1, a2
 	sltiu	a1, a1, 4

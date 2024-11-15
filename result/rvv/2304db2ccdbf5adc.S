@@ -10,8 +10,8 @@ func0000000000000066:                   # @func0000000000000066
 func0000000000000042:                   # @func0000000000000042
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vv	v12, v12, v16
-	vmfne.vv	v16, v12, v12
 	fli.s	fa5, min
+	vmfne.vv	v16, v12, v12
 	vmflt.vf	v12, v8, fa5
 	vmor.mm	v0, v16, v12
 	ret

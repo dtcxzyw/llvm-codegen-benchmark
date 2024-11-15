@@ -21,8 +21,8 @@ func00000000000000ea:                   # @func00000000000000ea
 	ret
 func000000000000005e:                   # @func000000000000005e
 	add	a1, a1, a2
-	addiw	a1, a1, -3
 	li	a2, 34
+	addiw	a1, a1, -3
 	mul	a1, a1, a2
 	lui	a2, 5
 	addiw	a2, a2, 574

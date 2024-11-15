@@ -26,9 +26,9 @@ func0000000000000012:                   # @func0000000000000012
 	vmv2r.v	v8, v10
 	ret
 func0000000000000002:                   # @func0000000000000002
+	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, mu
 	vadd.vi	v8, v9, -2, v0.t
-	li	a0, 32
 	vwsll.vx	v10, v8, a0
 	vmv2r.v	v8, v10
 	ret

@@ -19,8 +19,8 @@ func0000000000000018:                   # @func0000000000000018
 func0000000000000030:                   # @func0000000000000030
 	lui	a3, 8
 	addiw	a4, a3, 31
-	and	a2, a2, a4
 	addiw	a3, a3, 3
+	and	a2, a2, a4
 	xor	a2, a2, a3
 	snez	a2, a2
 	or	a0, a0, a1

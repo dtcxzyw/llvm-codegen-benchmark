@@ -6,8 +6,8 @@ func0000000000000000:                   # @func0000000000000000
 	subw	a1, a1, a2
 .LBB0_2:                                # %entry
 	add	a0, a0, a1
-	addiw	a0, a0, 7
 	lui	a1, 599186
+	addiw	a0, a0, 7
 	addiw	a1, a1, 1171
 	mul	a1, a0, a1
 	srli	a1, a1, 32
@@ -24,8 +24,8 @@ func0000000000000008:                   # @func0000000000000008
 	subw	a1, a1, a2
 .LBB1_2:                                # %entry
 	add	a0, a0, a1
-	addiw	a0, a0, 7
 	lui	a1, 599186
+	addiw	a0, a0, 7
 	addiw	a1, a1, 1171
 	mul	a1, a0, a1
 	srli	a1, a1, 32

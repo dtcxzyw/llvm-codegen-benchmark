@@ -9,9 +9,9 @@ func000000000000002a:                   # @func000000000000002a
 func0000000000000020:                   # @func0000000000000020
 	andi	a2, a2, 1
 	li	a3, 600
+	sh2add	a0, a0, a0
 	czero.nez	a2, a3, a2
 	add	a1, a1, a2
-	sh2add	a0, a0, a0
 	sh3add	a0, a0, a1
 	li	a1, 1098
 	sh2add	a0, a1, a0
@@ -27,11 +27,11 @@ func0000000000000028:                   # @func0000000000000028
 func0000000000000000:                   # @func0000000000000000
 	andi	a2, a2, 1
 	lui	a3, 1048387
-	addiw	a3, a3, 176
-	czero.nez	a2, a3, a2
 	add	a0, a0, a1
 	lui	a1, 378
+	addiw	a3, a3, 176
 	addiw	a1, a1, -357
+	czero.nez	a2, a3, a2
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

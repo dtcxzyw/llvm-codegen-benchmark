@@ -1,7 +1,7 @@
 func0000000000000013:                   # @func0000000000000013
 	fcvt.s.wu	fa5, a0
-	fmul.s	fa5, fa5, fa0
 	lui	a0, 260096
+	fmul.s	fa5, fa5, fa0
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa4, fa5
 	xori	a0, a0, 1
@@ -20,15 +20,15 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func000000000000001a:                   # @func000000000000001a
 	fcvt.s.wu	fa5, a0
-	fmul.s	fa5, fa5, fa0
 	lui	a0, 274432
+	fmul.s	fa5, fa5, fa0
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa5, fa4
 	ret
 func0000000000000004:                   # @func0000000000000004
 	fcvt.s.wu	fa5, a0
-	fmul.s	fa5, fa5, fa0
 	lui	a0, 260096
+	fmul.s	fa5, fa5, fa0
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	ret

@@ -143,8 +143,8 @@ func000000000000000a:                   # @func000000000000000a
 func00000000000003d6:                   # @func00000000000003d6
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v12, v12, 10
-	vadd.vv	v10, v10, v12
 	lui	a0, 1034754
+	vadd.vv	v10, v10, v12
 	addi	a0, a0, 1024
 	vadd.vx	v10, v10, a0
 	vmslt.vv	v0, v10, v8
@@ -152,8 +152,8 @@ func00000000000003d6:                   # @func00000000000003d6
 func00000000000003db:                   # @func00000000000003db
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v12, v12, 10
-	vadd.vv	v10, v10, v12
 	lui	a0, 1034754
+	vadd.vv	v10, v10, v12
 	addi	a0, a0, 1024
 	vadd.vx	v10, v10, a0
 	vmsle.vv	v0, v8, v10

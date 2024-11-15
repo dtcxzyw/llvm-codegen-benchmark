@@ -1,8 +1,8 @@
 func0000000000000039:                   # @func0000000000000039
 	slliw	a2, a2, 18
 	slliw	a1, a1, 16
-	or	a1, a1, a2
 	slli	a0, a0, 48
+	or	a1, a1, a2
 	srli	a0, a0, 48
 	or	a0, a0, a1
 	ret

@@ -23,9 +23,9 @@ func0000000000000009:                   # @func0000000000000009
 	sext.w	a2, a2
 	seqz	a2, a2
 	or	a1, a1, a2
-	andi	a1, a1, 1
 	lui	a2, 1048555
 	addiw	a2, a2, -384
+	andi	a1, a1, 1
 	czero.nez	a1, a2, a1
 	lui	a2, 6019
 	addiw	a2, a2, 551

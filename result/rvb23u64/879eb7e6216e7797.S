@@ -1,12 +1,12 @@
 func0000000000000005:                   # @func0000000000000005
 	andi	a1, a1, 1
 	lui	a2, 211
+	sh2add	a0, a0, a0
 	addi	a2, a2, -256
 	czero.eqz	a1, a2, a1
-	sh2add	a0, a0, a0
+	lui	a2, 9
 	sh1add	a0, a0, a1
-	lui	a1, 9
-	addi	a1, a1, -864
+	addi	a1, a2, -864
 	addw	a0, a0, a1
 	ret
 func000000000000000d:                   # @func000000000000000d
@@ -15,9 +15,9 @@ func000000000000000d:                   # @func000000000000000d
 	czero.nez	a1, a2, a1
 	li	a2, 157
 	mul	a0, a0, a2
+	lui	a2, 1048571
 	add	a0, a0, a1
-	lui	a1, 1048571
-	addi	a1, a1, 227
+	addi	a1, a2, 227
 	addw	a0, a0, a1
 	ret
 func000000000000000f:                   # @func000000000000000f

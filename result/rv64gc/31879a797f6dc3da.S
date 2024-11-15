@@ -3,8 +3,8 @@ func0000000000000001:                   # @func0000000000000001
 	li	a0, 1
 	bnez	a2, .LBB0_2
 	andi	a0, a1, -1025
-	sext.w	a0, a0
 	lui	a1, 1
+	sext.w	a0, a0
 	addiw	a1, a1, -2032
 	xor	a0, a0, a1
 	seqz	a0, a0

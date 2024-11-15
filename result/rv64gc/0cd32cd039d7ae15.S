@@ -80,8 +80,8 @@ func0000000000000041:                   # @func0000000000000041
 	ret
 func0000000000000044:                   # @func0000000000000044
 	slli	a2, a2, 40
-	srli	a2, a2, 40
 	lui	a3, 3503
+	srli	a2, a2, 40
 	addiw	a3, a3, 619
 	bltu	a2, a3, .LBB9_2
 	mv	a0, a1

@@ -16,8 +16,8 @@ func0000000000000008:                   # @func0000000000000008
 	li	a2, 17
 .LBB1_2:                                # %entry
 	add	a0, a0, a1
-	sub	a0, a0, a2
 	lui	a1, 524288
+	sub	a0, a0, a2
 	addiw	a1, a1, -16
 	and	a0, a0, a1
 	sltiu	a0, a0, 309
@@ -41,8 +41,8 @@ func0000000000000058:                   # @func0000000000000058
 	li	a2, 17
 .LBB3_2:                                # %entry
 	add	a0, a0, a1
-	sub	a0, a0, a2
 	lui	a1, 524288
+	sub	a0, a0, a2
 	addiw	a1, a1, -16
 	and	a0, a0, a1
 	sltiu	a0, a0, 309

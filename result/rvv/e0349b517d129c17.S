@@ -4,12 +4,12 @@ func00000000000001c4:                   # @func00000000000001c4
 	li	a0, -48
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmv.v.x	v10, a0
+	lui	a0, 524288
+	addiw	a0, a0, -1
 	vsetvli	zero, zero, e16, mf2, ta, ma
 	vwaddu.wv	v10, v10, v11
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsleu.vi	v10, v10, 9
-	lui	a0, 524288
-	addiw	a0, a0, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsne.vx	v11, v8, a0
 	vmand.mm	v0, v10, v11

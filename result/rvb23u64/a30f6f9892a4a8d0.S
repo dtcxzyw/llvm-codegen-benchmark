@@ -17,8 +17,8 @@ func0000000000000141:                   # @func0000000000000141
 	sext.w	a0, a0
 	andi	a1, a1, 7
 	addi	a1, a1, -1
-	sltiu	a1, a1, 4
 	addi	a0, a0, -80
+	sltiu	a1, a1, 4
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

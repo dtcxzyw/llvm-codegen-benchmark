@@ -2,11 +2,11 @@ func0000000000000003:                   # @func0000000000000003
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfge.vf	v16, v12, fa5
-	vmnot.m	v0, v16
 	fli.s	fa5, 2.5
-	fneg.s	fa5, fa5
-	vfrsub.vf	v8, v8, fa5
 	li	a0, -1
+	fneg.s	fa5, fa5
+	vmnot.m	v0, v16
+	vfrsub.vf	v8, v8, fa5
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 func0000000000000008:                   # @func0000000000000008

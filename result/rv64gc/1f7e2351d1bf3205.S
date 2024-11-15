@@ -28,8 +28,8 @@ func00000000000001ea:                   # @func00000000000001ea
 	ret
 func00000000000000e0:                   # @func00000000000000e0
 	slli	a2, a2, 32
-	srli	a2, a2, 29
 	slli	a0, a0, 3
+	srli	a2, a2, 29
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, -8

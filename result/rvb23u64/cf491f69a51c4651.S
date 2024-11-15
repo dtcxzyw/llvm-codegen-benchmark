@@ -4,8 +4,8 @@ func0000000000000044:                   # @func0000000000000044
 	lui	a3, 32768
 	addiw	a3, a3, 57
 	xor	a2, a2, a3
-	seqz	a2, a2
 	xor	a1, a1, a3
+	seqz	a2, a2
 	seqz	a1, a1
 	or	a1, a1, a2
 	slli	a1, a1, 27
@@ -15,8 +15,8 @@ func0000000000000304:                   # @func0000000000000304
 	sext.w	a1, a1
 	sext.w	a2, a2
 	addi	a2, a2, -7
-	snez	a2, a2
 	seqz	a1, a1
+	snez	a2, a2
 	or	a1, a1, a2
 	lui	a2, 524288
 	czero.nez	a1, a2, a1

@@ -24,8 +24,8 @@ func0000000000000008:                   # @func0000000000000008
 func0000000000000004:                   # @func0000000000000004
 	lui	a0, %hi(.LCPI2_0)
 	flw	fa5, %lo(.LCPI2_0)(a0)
-	fmul.s	fa5, fa1, fa5
 	lui	a0, 278532
+	fmul.s	fa5, fa1, fa5
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	fli.s	fa5, 256.0

@@ -4,9 +4,9 @@ func000000000000004a:                   # @func000000000000004a
 	ret
 func000000000000005a:                   # @func000000000000005a
 	neg	a2, a2
+	neg	a1, a1
 	sh1add	a2, a2, a2
 	sh2add	a0, a2, a0
-	neg	a1, a1
 	sh1add	a1, a1, a1
 	sh2add	a0, a1, a0
 	ret

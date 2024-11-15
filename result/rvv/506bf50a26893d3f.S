@@ -100,8 +100,8 @@ func0000000000000028:                   # @func0000000000000028
 	.quad	8784043285714375740             # 0x79e730d418a9143c
 func0000000000000198:                   # @func0000000000000198
 	lui	a0, %hi(.LCPI14_0)
-	ld	a0, %lo(.LCPI14_0)(a0)
 	lui	a1, %hi(.LCPI14_1)
+	ld	a0, %lo(.LCPI14_0)(a0)
 	ld	a1, %lo(.LCPI14_1)(a1)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vx	v12, v10, a0

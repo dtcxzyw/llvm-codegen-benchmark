@@ -24,10 +24,10 @@ func00000000000000f0:                   # @func00000000000000f0
 	ret
 func00000000000000c8:                   # @func00000000000000c8
 	lui	a0, 2
+	fmv.w.x	fa5, zero
 	addiw	a0, a0, 1809
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmslt.vx	v9, v10, a0
-	fmv.w.x	fa5, zero
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmfgt.vf	v8, v8, fa5
 	vmor.mm	v0, v8, v9

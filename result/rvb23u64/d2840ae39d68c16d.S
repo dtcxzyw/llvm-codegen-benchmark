@@ -9,8 +9,8 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func0000000000000041:                   # @func0000000000000041
 	andi	a1, a1, 255
-	sltiu	a1, a1, 2
 	lui	a2, 28
+	sltiu	a1, a1, 2
 	addi	a2, a2, -17
 	czero.nez	a1, a2, a1
 	lui	a2, 1048560

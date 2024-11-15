@@ -1,10 +1,10 @@
 func00000000000000fc:                   # @func00000000000000fc
 	slli	a2, a2, 3
 	lui	a3, 1048561
+	slli	a1, a1, 2
 	add	a2, a2, a3
 	srliw	a2, a2, 5
 	slli	a2, a2, 7
-	slli	a1, a1, 2
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

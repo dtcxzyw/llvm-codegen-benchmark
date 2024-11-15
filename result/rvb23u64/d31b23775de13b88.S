@@ -1,7 +1,7 @@
 func0000000000000002:                   # @func0000000000000002
 	srliw	a1, a1, 8
-	slli	a1, a1, 8
 	li	a2, -1
+	slli	a1, a1, 8
 	srli	a2, a2, 1
 	divu	a1, a2, a1
 	zext.w	a0, a0

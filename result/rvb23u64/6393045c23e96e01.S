@@ -9,8 +9,8 @@ func0000000000000022:                   # @func0000000000000022
 	zext.h	a1, a0
 	andi	a0, a0, 509
 	addi	a0, a0, -5
-	seqz	a0, a0
 	addi	a1, a1, -9
+	seqz	a0, a0
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
@@ -18,9 +18,9 @@ func0000000000000034:                   # @func0000000000000034
 	sext.h	a1, a0
 	lui	a2, 8
 	addiw	a2, a2, -2
+	slti	a1, a1, 0
 	and	a0, a0, a2
 	seqz	a0, a0
-	slti	a1, a1, 0
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret

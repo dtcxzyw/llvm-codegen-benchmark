@@ -66,8 +66,8 @@ func0000000000000056:                   # @func0000000000000056
 	ret
 func0000000000000054:                   # @func0000000000000054
 	add.uw	a0, a1, a0
-	addi	a0, a0, -11
 	li	a1, -1
+	addi	a0, a0, -11
 	srli	a1, a1, 32
 	sltu	a0, a0, a1
 	ret

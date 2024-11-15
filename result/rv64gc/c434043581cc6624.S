@@ -66,8 +66,8 @@ func00000000000000c2:                   # @func00000000000000c2
 func0000000000000040:                   # @func0000000000000040
 	slli	a2, a2, 2
 	add	a0, a0, a1
-	add	a0, a0, a2
 	lui	a1, 313
+	add	a0, a0, a2
 	addiw	a1, a1, -768
 	add	a0, a0, a1
 	ret

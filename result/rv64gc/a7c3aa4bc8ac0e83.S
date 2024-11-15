@@ -44,10 +44,10 @@ func0000000000000198:                   # @func0000000000000198
 func0000000000000038:                   # @func0000000000000038
 	sext.w	a0, a0
 	sext.w	a1, a1
-	addi	a1, a1, -3
-	seqz	a1, a1
 	lui	a2, 16
+	addi	a1, a1, -3
 	addiw	a2, a2, -3
+	seqz	a1, a1
 	xor	a0, a0, a2
 	snez	a0, a0
 	or	a0, a0, a1
@@ -56,8 +56,8 @@ func0000000000000022:                   # @func0000000000000022
 	sext.w	a0, a0
 	sext.w	a1, a1
 	addi	a1, a1, -1
-	seqz	a1, a1
 	addi	a0, a0, -1
+	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

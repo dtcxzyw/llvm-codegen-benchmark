@@ -8,8 +8,8 @@ func0000000000000441:                   # @func0000000000000441
 func0000000000000311:                   # @func0000000000000311
 	sext.w	a2, a0
 	slli	a0, a0, 32
-	srli	a0, a0, 32
 	addi	a1, a1, 1
+	srli	a0, a0, 32
 	xor	a0, a0, a1
 	seqz	a0, a0
 	seqz	a1, a2
@@ -18,8 +18,8 @@ func0000000000000311:                   # @func0000000000000311
 func0000000000000111:                   # @func0000000000000111
 	sext.w	a2, a0
 	slli	a0, a0, 32
-	srli	a0, a0, 32
 	addi	a1, a1, -2
+	srli	a0, a0, 32
 	xor	a0, a0, a1
 	seqz	a0, a0
 	seqz	a1, a2

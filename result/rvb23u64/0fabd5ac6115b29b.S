@@ -6,8 +6,8 @@ func000000000000024c:                   # @func000000000000024c
 	ret
 func000000000000036c:                   # @func000000000000036c
 	addi	a2, a0, 1
-	slt	a1, a2, a1
 	addi	a0, a0, -9
+	slt	a1, a2, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

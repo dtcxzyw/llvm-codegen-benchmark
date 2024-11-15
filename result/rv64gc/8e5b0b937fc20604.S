@@ -13,9 +13,9 @@ func0000000000000011:                   # @func0000000000000011
 	lui	a2, 244141
 	addiw	a2, a2, -1536
 	xor	a1, a1, a2
-	snez	a1, a1
 	lui	a2, 804435
 	addiw	a2, a2, 1537
+	snez	a1, a1
 	add	a0, a0, a2
 	addi	a1, a1, -1
 	and	a0, a0, a1

@@ -1,11 +1,11 @@
 func000000000000001f:                   # @func000000000000001f
 	lui	a3, 917506
+	slli	a1, a1, 32
+	sext.w	a0, a0
 	addiw	a3, a3, -1
 	slli	a3, a3, 19
 	addi	a3, a3, 7
 	and	a2, a2, a3
-	slli	a1, a1, 32
-	sext.w	a0, a0
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -27,17 +27,17 @@ func0000000000000013:                   # @func0000000000000013
 func0000000000000012:                   # @func0000000000000012
 	slli	a2, a2, 48
 	lui	a3, 65535
+	zext.w	a0, a0
 	slli	a3, a3, 12
 	and	a1, a1, a3
-	zext.w	a0, a0
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func0000000000000017:                   # @func0000000000000017
 	srliw	a2, a2, 16
-	slli	a2, a2, 16
 	slli	a1, a1, 32
 	sext.w	a0, a0
+	slli	a2, a2, 16
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

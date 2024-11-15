@@ -24,16 +24,16 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func000000000000000e:                   # @func000000000000000e
 	lui	a0, 2032
+	lui	a1, 522248
 	addiw	a0, a0, 127
-	slli	a1, a0, 32
-	add	a0, a0, a1
+	addiw	a1, a1, -128
+	slli	a2, a0, 32
+	add	a0, a0, a2
+	slli	a2, a1, 32
+	add	a1, a1, a2
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
-	lui	a0, 522248
-	addiw	a0, a0, -128
-	slli	a1, a0, 32
-	add	a0, a0, a1
-	vmv.v.x	v12, a0
+	vmv.v.x	v12, a1
 	vmadd.vv	v8, v10, v12
 	ret
 func0000000000000005:                   # @func0000000000000005

@@ -3,8 +3,8 @@ func0000000000000002:                   # @func0000000000000002
 	andi	a2, a2, 1
 	li	a3, 16
 	czero.nez	a2, a3, a2
-	addi	a2, a2, 105
 	li	a3, 105
+	addi	a2, a2, 105
 	czero.nez	a3, a3, a1
 	czero.eqz	a1, a2, a1
 	or	a1, a1, a3
@@ -15,8 +15,8 @@ func0000000000000000:                   # @func0000000000000000
 	andi	a2, a2, 1
 	li	a3, 4
 	czero.nez	a2, a3, a2
-	addi	a2, a2, 8
 	li	a3, 16
+	addi	a2, a2, 8
 	czero.nez	a3, a3, a1
 	czero.eqz	a1, a2, a1
 	or	a1, a1, a3

@@ -48,8 +48,8 @@ func000000000000001a:                   # @func000000000000001a
 func0000000000000016:                   # @func0000000000000016
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	vmsle.vi	v0, v10, 9
 	lui	a0, 2441
+	vmsle.vi	v0, v10, 9
 	addiw	a0, a0, 1664
 	vmv.v.x	v10, a0
 	vmerge.vvm	v8, v10, v8, v0

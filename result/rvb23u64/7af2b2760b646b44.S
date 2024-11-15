@@ -110,9 +110,9 @@ func0000000000000074:                   # @func0000000000000074
 	sext.w	a1, a1
 	sext.w	a2, a2
 	slt	a1, a2, a1
-	xori	a1, a1, 1
 	lui	a2, 16
 	addiw	a2, a2, -2
+	xori	a1, a1, 1
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret
@@ -127,9 +127,9 @@ func00000000000000bc:                   # @func00000000000000bc
 	sext.w	a2, a2
 	sext.w	a1, a1
 	slt	a1, a1, a2
-	xori	a1, a1, 1
 	li	a2, -7
 	slli.uw	a2, a2, 29
+	xori	a1, a1, 1
 	addi	a2, a2, -1
 	xor	a0, a0, a2
 	snez	a0, a0

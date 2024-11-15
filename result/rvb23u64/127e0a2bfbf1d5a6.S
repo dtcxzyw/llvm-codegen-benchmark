@@ -18,9 +18,9 @@ func000000000000003c:                   # @func000000000000003c
 	ret
 func0000000000000068:                   # @func0000000000000068
 	srli	a0, a0, 1
+	li	a1, -31
 	addi	a0, a0, 15
 	andi	a0, a0, -8
-	li	a1, -31
 	srli	a1, a1, 1
 	sltu	a0, a1, a0
 	ret

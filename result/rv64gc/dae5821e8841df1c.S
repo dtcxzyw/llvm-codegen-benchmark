@@ -1,6 +1,7 @@
 func0000000000000011:                   # @func0000000000000011
 	addiw	a1, a1, 30
 	lui	a2, 559241
+	slli	a0, a0, 63
 	addiw	a2, a2, -1911
 	mul	a3, a1, a2
 	srli	a3, a3, 32
@@ -19,7 +20,6 @@ func0000000000000011:                   # @func0000000000000011
 	slli	a1, a1, 2
 	sub	a1, a1, a2
 	addw	a1, a1, a4
-	slli	a0, a0, 63
 	srai	a0, a0, 63
 	and	a0, a0, a1
 	ret

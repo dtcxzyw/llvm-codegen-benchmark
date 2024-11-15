@@ -9,8 +9,8 @@ func000000000000002a:                   # @func000000000000002a
 	ret
 func0000000000000022:                   # @func0000000000000022
 	slli	a1, a1, 58
-	srli	a1, a1, 61
 	li	a2, 144
+	srli	a1, a1, 61
 	mul	a1, a1, a2
 	lui	a2, 3
 	addiw	a2, a2, 720
@@ -19,8 +19,8 @@ func0000000000000022:                   # @func0000000000000022
 	ret
 func0000000000000020:                   # @func0000000000000020
 	slli	a1, a1, 58
-	srli	a1, a1, 61
 	li	a2, 144
+	srli	a1, a1, 61
 	mul	a1, a1, a2
 	lui	a2, 3
 	addiw	a2, a2, 724

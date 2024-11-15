@@ -22,11 +22,11 @@ func0000000000000041:                   # @func0000000000000041
 func0000000000000021:                   # @func0000000000000021
 	li	a2, -4
 	sllw	a1, a2, a1
+	lui	a2, 524288
 	or	a0, a0, a1
-	lui	a1, 524288
-	addiw	a1, a1, -4
-	and	a0, a0, a1
-	xor	a0, a0, a1
+	addiw	a2, a2, -4
+	and	a0, a0, a2
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 func000000000000004c:                   # @func000000000000004c

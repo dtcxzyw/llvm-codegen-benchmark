@@ -4,9 +4,9 @@ func000000000000000e:                   # @func000000000000000e
 	li	a0, -1
 	srli	a0, a0, 32
 	vand.vx	v8, v8, a0
+	li	a0, -64
 	vmul.vv	v8, v8, v12
 	vsrl.vi	v8, v8, 26
-	li	a0, -64
 	zext.w	a0, a0
 	vand.vx	v8, v8, a0
 	ret

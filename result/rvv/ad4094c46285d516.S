@@ -12,8 +12,8 @@ func0000000000000002:                   # @func0000000000000002
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vor.vv	v10, v10, v12
 	lui	a0, 135168
-	addi	a0, a0, -2048
 	vmseq.vi	v0, v8, 0
+	addi	a0, a0, -2048
 	vor.vx	v8, v10, a0
 	vmerge.vvm	v8, v8, v10, v0
 	li	a0, 256
@@ -23,8 +23,8 @@ func0000000000000022:                   # @func0000000000000022
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vor.vv	v10, v10, v12
 	lui	a0, 397312
-	addi	a0, a0, -1026
 	vmseq.vi	v0, v8, 0
+	addi	a0, a0, -1026
 	vor.vx	v8, v10, a0
 	vmerge.vvm	v8, v8, v10, v0
 	lui	a0, 524288

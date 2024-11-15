@@ -51,8 +51,8 @@ func00000000000000a1:                   # @func00000000000000a1
 func0000000000000081:                   # @func0000000000000081
 	sext.w	a0, a0
 	sext.w	a1, a1
-	sltiu	a1, a1, 4
 	lui	a2, 1015873
+	sltiu	a1, a1, 4
 	addiw	a2, a2, -925
 	czero.eqz	a1, a2, a1
 	lui	a2, 452770
@@ -128,8 +128,8 @@ func00000000000000a4:                   # @func00000000000000a4
 func000000000000001a:                   # @func000000000000001a
 	sext.w	a0, a0
 	sext.w	a1, a1
-	addi	a1, a1, -12
 	li	a2, -15
+	addi	a1, a1, -12
 	slli	a2, a2, 8
 	czero.eqz	a1, a2, a1
 	lui	a2, 1

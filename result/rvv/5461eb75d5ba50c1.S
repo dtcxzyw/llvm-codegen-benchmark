@@ -6,8 +6,8 @@ func0000000000000022:                   # @func0000000000000022
 	vmseq.vx	v10, v8, a0
 	lui	a0, 2
 	vmseq.vx	v11, v8, a0
-	vmor.mm	v0, v10, v11
 	li	a0, 32
+	vmor.mm	v0, v10, v11
 	vmv.v.x	v8, a0
 	vmerge.vim	v8, v8, 0, v0
 	ret

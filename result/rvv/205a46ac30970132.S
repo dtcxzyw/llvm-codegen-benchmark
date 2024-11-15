@@ -21,8 +21,8 @@ func00000000000000f8:                   # @func00000000000000f8
 	li	a0, 10
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwmulu.vx	v10, v9, a0
-	vwaddu.wv	v10, v10, v8
 	lui	a0, 524288
+	vwaddu.wv	v10, v10, v8
 	addiw	a0, a0, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v0, v10, a0
@@ -41,9 +41,9 @@ func00000000000003f8:                   # @func00000000000003f8
 	addi	a0, a0, 576
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwmulu.vx	v10, v9, a0
-	vwaddu.wv	v10, v10, v8
 	lui	a0, 2575
 	addiw	a0, a0, -325
+	vwaddu.wv	v10, v10, v8
 	slli	a0, a0, 13
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v0, v10, a0

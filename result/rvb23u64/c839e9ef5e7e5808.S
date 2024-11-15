@@ -23,8 +23,8 @@ func0000000000000041:                   # @func0000000000000041
 	sext.w	a0, a0
 	li	a2, -2
 	zext.w	a2, a2
-	sltu	a1, a2, a1
 	addi	a0, a0, 1
+	sltu	a1, a2, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

@@ -114,8 +114,8 @@ func0000000000000388:                   # @func0000000000000388
 func000000000000016a:                   # @func000000000000016a
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	vmsgt.vi	v12, v10, 2
 	li	a0, 25
+	vmsgt.vi	v12, v10, 2
 	vmslt.vx	v10, v8, a0
 	vmand.mm	v0, v12, v10
 	ret

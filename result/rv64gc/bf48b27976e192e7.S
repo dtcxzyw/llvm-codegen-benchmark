@@ -1,17 +1,17 @@
 func00000000000003c4:                   # @func00000000000003c4
 	slli	a1, a1, 48
-	srli	a1, a1, 48
 	sext.w	a0, a0
 	addiw	a2, a2, 4
+	srli	a1, a1, 48
 	sltu	a0, a2, a0
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
 func0000000000000015:                   # @func0000000000000015
 	slli	a1, a1, 48
-	srli	a1, a1, 48
 	sext.w	a0, a0
 	addiw	a2, a2, 8
+	srli	a1, a1, 48
 	sltu	a0, a0, a2
 	not	a0, a0
 	seqz	a1, a1
@@ -19,9 +19,9 @@ func0000000000000015:                   # @func0000000000000015
 	ret
 func0000000000000085:                   # @func0000000000000085
 	slli	a1, a1, 48
-	srli	a1, a1, 48
 	sext.w	a0, a0
 	addiw	a2, a2, 8
+	srli	a1, a1, 48
 	sltu	a0, a0, a2
 	sltiu	a1, a1, 8
 	or	a0, a0, a1
@@ -29,11 +29,11 @@ func0000000000000085:                   # @func0000000000000085
 	ret
 func0000000000000016:                   # @func0000000000000016
 	slli	a1, a1, 48
-	srli	a1, a1, 48
 	sext.w	a0, a0
 	addiw	a2, a2, 1
 	slt	a0, a2, a0
 	li	a2, 27
+	srli	a1, a1, 48
 	slli	a2, a2, 11
 	xor	a1, a1, a2
 	seqz	a1, a1
@@ -41,11 +41,11 @@ func0000000000000016:                   # @func0000000000000016
 	ret
 func000000000000011a:                   # @func000000000000011a
 	slli	a1, a1, 48
-	srli	a1, a1, 48
 	sext.w	a0, a0
 	addiw	a2, a2, -1
 	slt	a0, a0, a2
 	lui	a2, 14
+	srli	a1, a1, 48
 	addiw	a2, a2, -1024
 	xor	a1, a1, a2
 	seqz	a1, a1
@@ -53,18 +53,18 @@ func000000000000011a:                   # @func000000000000011a
 	ret
 func0000000000000144:                   # @func0000000000000144
 	slli	a1, a1, 48
-	srli	a1, a1, 48
 	sext.w	a0, a0
 	addiw	a2, a2, 1
+	srli	a1, a1, 48
 	sltu	a0, a2, a0
 	sltiu	a1, a1, 3
 	and	a0, a0, a1
 	ret
 func0000000000000381:                   # @func0000000000000381
 	slli	a1, a1, 48
-	srli	a1, a1, 48
 	sext.w	a0, a0
 	addiw	a2, a2, 1
+	srli	a1, a1, 48
 	xor	a0, a0, a2
 	seqz	a0, a0
 	sltiu	a1, a1, 2
@@ -73,9 +73,9 @@ func0000000000000381:                   # @func0000000000000381
 	ret
 func0000000000000318:                   # @func0000000000000318
 	slli	a0, a0, 48
-	srli	a0, a0, 48
 	sext.w	a1, a1
 	addiw	a2, a2, 1
+	srli	a0, a0, 48
 	xor	a1, a1, a2
 	seqz	a1, a1
 	sltiu	a0, a0, 2

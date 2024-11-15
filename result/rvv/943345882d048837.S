@@ -5,10 +5,10 @@ func0000000000000011:                   # @func0000000000000011
 	vor.vx	v8, v8, a0, v0.t
 	ret
 func000000000000000c:                   # @func000000000000000c
-	lui	a0, 8
-	li	a1, 27
+	li	a0, 27
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmseq.vx	v0, v10, a1
+	vmseq.vx	v0, v10, a0
+	lui	a0, 8
 	vor.vx	v10, v8, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret

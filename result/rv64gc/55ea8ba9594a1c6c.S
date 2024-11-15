@@ -41,8 +41,8 @@ func0000000000000012:                   # @func0000000000000012
 	fcvt.s.wu	fa5, a0
 	lui	a0, 267264
 	fmv.w.x	fa4, a0
-	fdiv.s	fa5, fa5, fa4
 	lui	a0, 260096
+	fdiv.s	fa5, fa5, fa4
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	ret

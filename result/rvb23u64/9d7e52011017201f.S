@@ -35,10 +35,10 @@ func0000000000000003:                   # @func0000000000000003
 	li	a2, -3
 	zext.w	a2, a2
 	czero.nez	a0, a2, a0
+	lui	a2, 917321
+	slli	a2, a2, 2
 	add	a0, a0, a1
-	lui	a1, 917321
-	slli	a1, a1, 2
-	addi	a1, a1, -1729
+	addi	a1, a2, -1729
 	addw	a0, a0, a1
 	ret
 func0000000000000013:                   # @func0000000000000013

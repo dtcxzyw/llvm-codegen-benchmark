@@ -25,10 +25,10 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func0000000000000005:                   # @func0000000000000005
 	andi	a2, a2, -2
-	sext.w	a2, a2
-	addi	a2, a2, -2
 	lui	a3, 262144
+	sext.w	a2, a2
 	addiw	a3, a3, -2
+	addi	a2, a2, -2
 	czero.nez	a2, a3, a2
 	addi	a2, a2, 2
 	or	a0, a0, a1
@@ -36,8 +36,8 @@ func0000000000000005:                   # @func0000000000000005
 	ret
 func0000000000000022:                   # @func0000000000000022
 	andi	a2, a2, 240
-	sltiu	a2, a2, 144
 	lui	a3, 8
+	sltiu	a2, a2, 144
 	addiw	a3, a3, -1
 	czero.nez	a2, a3, a2
 	or	a0, a0, a1

@@ -13,8 +13,8 @@ func0000000000000006:                   # @func0000000000000006
 	vrsub.vx	v10, v10, a0
 	lui	a0, 2048
 	vor.vx	v8, v8, a0
-	vsrl.vv	v8, v8, v10
 	lui	a0, 4
+	vsrl.vv	v8, v8, v10
 	addi	a0, a0, -1
 	vand.vx	v8, v8, a0
 	ret

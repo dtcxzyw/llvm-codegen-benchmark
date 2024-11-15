@@ -9,17 +9,17 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func00000000000000a1:                   # @func00000000000000a1
 	sext.w	a1, a1
-	slti	a1, a1, 0
-	not	a1, a1
 	lui	a2, 262144
+	slti	a1, a1, 0
 	and	a0, a0, a2
+	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 func00000000000000ac:                   # @func00000000000000ac
 	sext.w	a1, a1
-	slti	a1, a1, 0
 	slli	a0, a0, 51
+	slti	a1, a1, 0
 	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret

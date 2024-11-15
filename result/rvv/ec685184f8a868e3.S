@@ -3,8 +3,8 @@ func000000000000001e:                   # @func000000000000001e
 	addi	a0, a0, -1911
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmulhu.vx	v12, v10, a0
-	vsrl.vi	v12, v12, 5
 	li	a0, 60
+	vsrl.vi	v12, v12, 5
 	vnmsub.vx	v12, a0, v10
 	vadd.vv	v8, v12, v8
 	vsetvli	zero, zero, e16, m1, ta, ma

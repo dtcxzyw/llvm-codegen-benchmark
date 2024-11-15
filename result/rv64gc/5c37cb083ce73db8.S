@@ -8,9 +8,9 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func0000000000000011:                   # @func0000000000000011
 	sext.w	a0, a0
+	lui	a2, 4080
 	sltiu	a0, a0, 256
 	neg	a0, a0
-	lui	a2, 4080
 	and	a1, a1, a2
 	and	a0, a0, a1
 	ret

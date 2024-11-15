@@ -7,9 +7,9 @@ func0000000000000096:                   # @func0000000000000096
 	ret
 func0000000000000094:                   # @func0000000000000094
 	sext.w	a2, a2
+	li	a3, 11
 	sltiu	a2, a2, 2
 	czero.nez	a1, a1, a2
-	li	a3, 11
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
 	sext.w	a1, a1

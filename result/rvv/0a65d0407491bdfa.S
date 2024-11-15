@@ -136,8 +136,8 @@ func0000000000000090:                   # @func0000000000000090
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a1
 	addiw	a1, a0, -161
-	vmsgtu.vx	v9, v10, a1
 	addi	a0, a0, -512
+	vmsgtu.vx	v9, v10, a1
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsltu.vx	v8, v8, a0
 	vmor.mm	v0, v9, v8
@@ -156,8 +156,8 @@ func000000000000018c:                   # @func000000000000018c
 func0000000000000190:                   # @func0000000000000190
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vi	v10, v10, 3
-	vmsne.vi	v9, v10, 0
 	lui	a0, 64
+	vmsne.vi	v9, v10, 0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsgtu.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9

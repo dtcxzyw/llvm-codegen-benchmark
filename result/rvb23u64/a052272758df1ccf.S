@@ -12,8 +12,8 @@ func000000000000003c:                   # @func000000000000003c
 	ret
 func0000000000000024:                   # @func0000000000000024
 	bset	a1, zero, a1
-	andi	a1, a1, -2
 	lui	a2, 1
+	andi	a1, a1, -2
 	addiw	a2, a2, 1
 	sltu	a1, a1, a2
 	and	a0, a0, a1

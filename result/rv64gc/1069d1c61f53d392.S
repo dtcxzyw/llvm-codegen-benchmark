@@ -24,8 +24,8 @@ func00000000000000cc:                   # @func00000000000000cc
 	andi	a0, a0, 255
 	andi	a1, a1, 255
 	addi	a1, a1, -255
-	snez	a1, a1
 	addi	a0, a0, -255
+	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -78,15 +78,15 @@ func0000000000000018:                   # @func0000000000000018
 	andi	a0, a0, 255
 	andi	a1, a1, 255
 	addi	a1, a1, -14
-	seqz	a1, a1
 	sltiu	a0, a0, 4
+	seqz	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
 	ret
 func00000000000000c6:                   # @func00000000000000c6
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	andi	a1, a1, 255
+	srai	a0, a0, 56
 	snez	a1, a1
 	slti	a0, a0, 0
 	and	a0, a0, a1
@@ -118,15 +118,15 @@ func0000000000000081:                   # @func0000000000000081
 	andi	a0, a0, 255
 	andi	a1, a1, 255
 	sltiu	a1, a1, 144
-	xori	a1, a1, 1
 	addi	a0, a0, -244
+	xori	a1, a1, 1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 func000000000000004a:                   # @func000000000000004a
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	andi	a1, a1, 255
+	srai	a0, a0, 56
 	sltiu	a1, a1, 254
 	slti	a0, a0, 0
 	not	a0, a0
@@ -134,8 +134,8 @@ func000000000000004a:                   # @func000000000000004a
 	ret
 func000000000000006a:                   # @func000000000000006a
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	slli	a1, a1, 56
+	srai	a0, a0, 56
 	srai	a1, a1, 56
 	slti	a1, a1, 0
 	slti	a0, a0, 0
@@ -144,8 +144,8 @@ func000000000000006a:                   # @func000000000000006a
 	ret
 func0000000000000066:                   # @func0000000000000066
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	slli	a1, a1, 56
+	srai	a0, a0, 56
 	srai	a1, a1, 56
 	slti	a1, a1, 2
 	slti	a0, a0, 2
@@ -153,8 +153,8 @@ func0000000000000066:                   # @func0000000000000066
 	ret
 func00000000000000ca:                   # @func00000000000000ca
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	andi	a1, a1, 255
+	srai	a0, a0, 56
 	addi	a1, a1, -5
 	snez	a1, a1
 	slti	a0, a0, 0
@@ -187,8 +187,8 @@ func0000000000000088:                   # @func0000000000000088
 	ret
 func0000000000000086:                   # @func0000000000000086
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	andi	a1, a1, 255
+	srai	a0, a0, 56
 	sltiu	a1, a1, 5
 	xori	a1, a1, 1
 	slti	a0, a0, 5
@@ -198,15 +198,15 @@ func0000000000000068:                   # @func0000000000000068
 	andi	a0, a0, 255
 	slli	a1, a1, 56
 	srai	a1, a1, 56
-	slti	a1, a1, 5
 	sltiu	a0, a0, 5
+	slti	a1, a1, 5
 	not	a0, a0
 	and	a0, a0, a1
 	ret
 func000000000000001a:                   # @func000000000000001a
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	andi	a1, a1, 255
+	srai	a0, a0, 56
 	seqz	a1, a1
 	slti	a0, a0, 0
 	not	a0, a0
@@ -222,8 +222,8 @@ func000000000000008c:                   # @func000000000000008c
 	ret
 func00000000000000aa:                   # @func00000000000000aa
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	slli	a1, a1, 56
+	srai	a0, a0, 56
 	srai	a1, a1, 56
 	slti	a1, a1, 65
 	slti	a0, a0, 65
@@ -232,8 +232,8 @@ func00000000000000aa:                   # @func00000000000000aa
 	ret
 func00000000000000a6:                   # @func00000000000000a6
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	slli	a1, a1, 56
+	srai	a0, a0, 56
 	srai	a1, a1, 56
 	slti	a1, a1, 2
 	xori	a1, a1, 1

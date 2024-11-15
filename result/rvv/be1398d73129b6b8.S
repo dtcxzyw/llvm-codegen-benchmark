@@ -1,14 +1,14 @@
 func00000000000000da:                   # @func00000000000000da
 	vsetivli	zero, 4, e64, m2, ta, ma
+	vsext.vf2	v14, v10
 	vmadd.vv	v8, v12, v8
-	vsext.vf2	v12, v10
-	vmslt.vv	v0, v12, v8
+	vmslt.vv	v0, v14, v8
 	ret
 func00000000000000d6:                   # @func00000000000000d6
 	vsetivli	zero, 4, e64, m2, ta, ma
+	vsext.vf2	v14, v10
 	vmadd.vv	v8, v12, v8
-	vsext.vf2	v12, v10
-	vmslt.vv	v0, v8, v12
+	vmslt.vv	v0, v8, v14
 	ret
 func0000000000000056:                   # @func0000000000000056
 	vsetivli	zero, 4, e64, m2, ta, ma

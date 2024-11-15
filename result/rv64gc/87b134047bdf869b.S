@@ -49,9 +49,9 @@ func0000000000000081:                   # @func0000000000000081
 	ret
 func0000000000000018:                   # @func0000000000000018
 	slli	a1, a1, 44
+	srliw	a0, a0, 20
 	srli	a1, a1, 44
 	seqz	a1, a1
-	srliw	a0, a0, 20
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -87,10 +87,10 @@ func00000000000000a1:                   # @func00000000000000a1
 func00000000000000c4:                   # @func00000000000000c4
 	sext.w	a0, a0
 	andi	a1, a1, 7
-	addi	a1, a1, -7
-	snez	a1, a1
 	lui	a2, 524288
+	addi	a1, a1, -7
 	addiw	a2, a2, -2
+	snez	a1, a1
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret

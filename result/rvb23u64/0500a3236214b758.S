@@ -7,9 +7,9 @@ func000000000000000c:                   # @func000000000000000c
 	ret
 func000000000000000f:                   # @func000000000000000f
 	srli	a0, a0, 13
+	lui	a1, 2
 	addi	a0, a0, -1
 	zext.w	a0, a0
-	lui	a1, 2
 	addiw	a1, a1, -24
 	mul	a0, a0, a1
 	ret

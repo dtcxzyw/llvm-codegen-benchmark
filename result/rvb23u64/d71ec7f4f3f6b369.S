@@ -1,14 +1,14 @@
 func0000000000000007:                   # @func0000000000000007
 	slli	a1, a1, 40
-	srli	a1, a1, 40
 	lui	a2, 4096
+	srli	a1, a1, 40
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func0000000000000006:                   # @func0000000000000006
 	lui	a2, 31
-	and	a1, a1, a2
 	srliw	a0, a0, 17
+	and	a1, a1, a2
 	slli	a0, a0, 17
 	or	a0, a0, a1
 	ret

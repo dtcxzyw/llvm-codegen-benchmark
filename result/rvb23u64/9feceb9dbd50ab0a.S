@@ -20,8 +20,8 @@ func0000000000000030:                   # @func0000000000000030
 	ret
 func000000000000002f:                   # @func000000000000002f
 	lui	a3, 4080
-	and	a2, a2, a3
 	slli	a1, a1, 24
+	and	a2, a2, a3
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret

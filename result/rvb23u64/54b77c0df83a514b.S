@@ -1,7 +1,7 @@
 func0000000000000004:                   # @func0000000000000004
 	sext.w	a2, a1
-	czero.eqz	a1, a1, a2
 	lui	a3, 768
+	czero.eqz	a1, a1, a2
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
 	zext.w	a1, a1

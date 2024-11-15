@@ -107,8 +107,8 @@ func00000000000001c4:                   # @func00000000000001c4
 	sext.w	a0, a0
 	li	a2, -1
 	slli	a3, a2, 53
-	add	a1, a1, a3
 	slli	a2, a2, 54
+	add	a1, a1, a3
 	addi	a2, a2, 1
 	sltu	a1, a1, a2
 	snez	a0, a0

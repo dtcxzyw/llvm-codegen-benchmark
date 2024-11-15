@@ -1,8 +1,8 @@
 func0000000000000011:                   # @func0000000000000011
 	lui	a3, 16
+	li	a4, 1
 	addiw	a3, a3, -1
 	and	a1, a1, a3
-	li	a4, 1
 	slli	a4, a4, 11
 	beq	a1, a4, .LBB0_2
 	and	a2, a2, a3

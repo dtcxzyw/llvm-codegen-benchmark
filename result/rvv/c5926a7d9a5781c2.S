@@ -1,8 +1,8 @@
 func0000000000000054:                   # @func0000000000000054
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsrl.vv	v10, v10, v12
-	vmseq.vi	v12, v10, 0
 	lui	a0, 1048574
+	vmseq.vi	v12, v10, 0
 	addi	a0, a0, -809
 	vadd.vx	v8, v8, a0
 	vmsleu.vi	v10, v8, 1
@@ -11,8 +11,8 @@ func0000000000000054:                   # @func0000000000000054
 func0000000000000044:                   # @func0000000000000044
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsrl.vv	v10, v10, v12
-	vmseq.vi	v12, v10, 0
 	lui	a0, 1048574
+	vmseq.vi	v12, v10, 0
 	addi	a0, a0, -809
 	vadd.vx	v8, v8, a0
 	vmsleu.vi	v10, v8, 1

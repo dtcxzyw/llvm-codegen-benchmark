@@ -9,8 +9,8 @@ func0000000000000007:                   # @func0000000000000007
 	ret
 func0000000000000000:                   # @func0000000000000000
 	slli	a0, a0, 63
-	srai	a0, a0, 63
 	lui	a2, 1048332
+	srai	a0, a0, 63
 	addi	a2, a2, -576
 	and	a0, a0, a2
 	add	a0, a0, a1

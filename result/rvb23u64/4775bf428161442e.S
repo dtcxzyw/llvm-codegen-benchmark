@@ -26,9 +26,9 @@ func0000000000001198:                   # @func0000000000001198
 	ret
 func0000000000001190:                   # @func0000000000001190
 	addi	a2, a2, 48
+	addi	a1, a1, -127
 	xor	a0, a0, a2
 	snez	a0, a0
-	addi	a1, a1, -127
 	sltiu	a1, a1, -128
 	or	a0, a0, a1
 	ret

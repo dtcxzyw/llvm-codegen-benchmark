@@ -36,8 +36,8 @@ func000000000000002c:                   # @func000000000000002c
 	fld	fa5, %lo(.LCPI3_0)(a1)
 	sext.w	a0, a0
 	fabs.d	fa4, fa0
-	flt.d	a1, fa4, fa5
 	addi	a0, a0, -1
+	flt.d	a1, fa4, fa5
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

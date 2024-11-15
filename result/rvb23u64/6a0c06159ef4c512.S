@@ -1,8 +1,8 @@
 func0000000000000142:                   # @func0000000000000142
 	sext.w	a2, a2
 	slti	a3, a2, 2
-	xori	a3, a3, 1
 	addi	a2, a2, 1
+	xori	a3, a3, 1
 	seqz	a2, a2
 	or	a2, a2, a3
 	czero.nez	a1, a1, a2

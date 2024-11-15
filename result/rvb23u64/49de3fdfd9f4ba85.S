@@ -25,17 +25,17 @@ func0000000000000000:                   # @func0000000000000000
 	addiw	a1, a1, 257
 	slli	a2, a1, 32
 	add	a1, a1, a2
+	lui	a2, 526344
+	addi	a2, a2, 128
 	mul	a0, a0, a1
-	lui	a1, 526344
-	addi	a1, a1, 128
-	slli	a2, a1, 32
-	add.uw	a1, a1, a2
+	slli	a1, a2, 32
+	add.uw	a1, a2, a1
 	or	a0, a0, a1
 	ret
 func0000000000000006:                   # @func0000000000000006
 	sh2add	a0, a0, a0
-	slli	a0, a0, 3
 	li	a1, 25
+	slli	a0, a0, 3
 	slli	a1, a1, 35
 	or	a0, a0, a1
 	ret

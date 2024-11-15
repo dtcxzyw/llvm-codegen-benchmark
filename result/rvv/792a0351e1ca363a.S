@@ -105,8 +105,8 @@ func00000000000002d0:                   # @func00000000000002d0
 func0000000000000102:                   # @func0000000000000102
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vrsub.vi	v12, v12, 0
-	vmseq.vv	v14, v12, v10
 	lui	a0, 1
+	vmseq.vv	v14, v12, v10
 	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v0, v14, v10
 	ret

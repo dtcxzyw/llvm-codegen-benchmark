@@ -52,10 +52,10 @@ func000000000000004c:                   # @func000000000000004c
 	ret
 func0000000000000081:                   # @func0000000000000081
 	slli	a1, a1, 48
+	srli	a0, a0, 28
 	srli	a1, a1, 61
 	addi	a1, a1, -3
 	seqz	a1, a1
-	srli	a0, a0, 28
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

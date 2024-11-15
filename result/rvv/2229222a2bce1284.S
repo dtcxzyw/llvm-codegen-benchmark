@@ -87,8 +87,8 @@ func0000000000000006:                   # @func0000000000000006
 func0000000000000012:                   # @func0000000000000012
 	li	a0, 128
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsltu.vx	v0, v10, a0
 	vadd.vv	v8, v8, v8
+	vmsltu.vx	v0, v10, a0
 	li	a0, 256
 	vmerge.vxm	v8, v8, a0, v0
 	ret

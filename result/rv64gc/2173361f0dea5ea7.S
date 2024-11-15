@@ -51,8 +51,8 @@ func000000000000002e:                   # @func000000000000002e
 func000000000000009b:                   # @func000000000000009b
 	flt.d	a0, fa0, fa1
 	flt.d	a1, fa1, fa0
-	or	a0, a0, a1
 	fmv.d.x	fa5, zero
+	or	a0, a0, a1
 	flt.d	a1, fa5, fa0
 	and	a0, a0, a1
 	xori	a0, a0, 1

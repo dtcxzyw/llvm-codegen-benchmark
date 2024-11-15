@@ -87,8 +87,8 @@ func00000000000000a7:                   # @func00000000000000a7
 	ret
 func00000000000000d2:                   # @func00000000000000d2
 	flt.d	a0, fa1, fa2
-	xori	a0, a0, 1
 	fli.d	fa5, min
+	xori	a0, a0, 1
 	flt.d	a1, fa0, fa5
 	and	a0, a0, a1
 	ret

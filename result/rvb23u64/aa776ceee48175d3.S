@@ -7,8 +7,8 @@ func000000000000004c:                   # @func000000000000004c
 	ret
 func0000000000000011:                   # @func0000000000000011
 	andi	a2, a2, 254
-	xori	a2, a2, 14
 	lui	a3, 16
+	xori	a2, a2, 14
 	addi	a3, a3, -256
 	xor	a1, a1, a3
 	or	a1, a1, a2

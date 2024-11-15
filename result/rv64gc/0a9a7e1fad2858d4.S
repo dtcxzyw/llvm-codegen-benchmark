@@ -1,8 +1,8 @@
 func00000000000000d4:                   # @func00000000000000d4
 	add	a1, a1, a2
+	lui	a2, 262144
 	add	a0, a0, a1
-	lui	a1, 262144
-	addiw	a1, a1, -1225
+	addiw	a1, a2, -1225
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	ret
@@ -63,9 +63,9 @@ func0000000000000050:                   # @func0000000000000050
 	ret
 func0000000000000014:                   # @func0000000000000014
 	add	a1, a1, a2
+	li	a2, 1
 	add	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 32
-	addi	a1, a1, -32
-	add	a0, a0, a1
+	slli	a2, a2, 32
+	addi	a2, a2, -32
+	add	a0, a0, a2
 	ret

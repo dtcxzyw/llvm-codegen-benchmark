@@ -5,8 +5,8 @@ func0000000000000022:                   # @func0000000000000022
 	vand.vx	v10, v10, a1
 	lui	a1, 32
 	addi	a1, a1, 1024
-	vmseq.vx	v12, v10, a1
 	addi	a0, a0, 512
+	vmseq.vx	v12, v10, a1
 	vmseq.vx	v10, v8, a0
 	vmor.mm	v8, v10, v12
 	vmor.mm	v0, v0, v8

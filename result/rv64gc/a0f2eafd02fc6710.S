@@ -62,10 +62,10 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 func0000000000000017:                   # @func0000000000000017
 	andi	a2, a2, 255
-	seqz	a2, a2
 	slt	a0, a1, a0
+	seqz	a1, a2
 	not	a0, a0
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 func0000000000000046:                   # @func0000000000000046
 	andi	a2, a2, 255
@@ -151,11 +151,11 @@ func000000000000004a:                   # @func000000000000004a
 	ret
 func0000000000000061:                   # @func0000000000000061
 	slli	a2, a2, 56
-	srai	a2, a2, 56
-	slti	a2, a2, 0
 	xor	a0, a0, a1
+	srai	a2, a2, 56
+	slti	a1, a2, 0
 	seqz	a0, a0
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 func00000000000000c1:                   # @func00000000000000c1
 	andi	a0, a0, 255
@@ -166,12 +166,12 @@ func00000000000000c1:                   # @func00000000000000c1
 	ret
 func00000000000000ac:                   # @func00000000000000ac
 	slli	a2, a2, 56
-	srai	a2, a2, 56
-	slti	a2, a2, 0
-	xori	a2, a2, 1
 	xor	a0, a0, a1
+	srai	a2, a2, 56
+	slti	a1, a2, 0
+	xori	a1, a1, 1
 	snez	a0, a0
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 func00000000000000bc:                   # @func00000000000000bc
 	andi	a0, a0, 255

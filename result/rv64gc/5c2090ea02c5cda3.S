@@ -19,8 +19,8 @@ func00000000000003f1:                   # @func00000000000003f1
 func0000000000000148:                   # @func0000000000000148
 	slli	a2, a2, 3
 	add	a0, a0, a1
-	add	a0, a0, a2
 	li	a1, -1
+	add	a0, a0, a2
 	slli	a1, a1, 63
 	addi	a2, a1, 63
 	and	a0, a0, a2
@@ -35,8 +35,8 @@ func0000000000000151:                   # @func0000000000000151
 func0000000000000118:                   # @func0000000000000118
 	slli	a2, a2, 3
 	add	a0, a0, a1
-	add	a0, a0, a2
 	li	a1, -1
+	add	a0, a0, a2
 	slli	a1, a1, 63
 	addi	a2, a1, 63
 	and	a0, a0, a2

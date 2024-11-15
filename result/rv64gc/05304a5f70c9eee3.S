@@ -65,10 +65,10 @@ func00000000000001ca:                   # @func00000000000001ca
 	andi	a2, a2, 255
 	slli	a2, a2, 8
 	or	a1, a1, a2
+	li	a2, 19
 	addw	a0, a0, a1
-	li	a1, 19
-	slli	a1, a1, 11
-	slt	a0, a1, a0
+	slli	a2, a2, 11
+	slt	a0, a2, a0
 	ret
 func00000000000001b8:                   # @func00000000000001b8
 	andi	a2, a2, 255

@@ -7,9 +7,9 @@ func0000000000000011:                   # @func0000000000000011
 	vmulh.vx	v12, v10, a0
 	li	a0, 63
 	vsrl.vx	v14, v12, a0
+	li	a0, 7
 	vsra.vi	v12, v12, 1
 	vadd.vv	v12, v12, v14
-	li	a0, 7
 	vnmsub.vx	v12, a0, v10
 	vrsub.vi	v8, v8, 0
 	vmseq.vv	v0, v12, v8
@@ -51,14 +51,14 @@ func0000000000000016:                   # @func0000000000000016
 func0000000000000018:                   # @func0000000000000018
 	lui	a0, %hi(.LCPI3_0)
 	ld	a0, %lo(.LCPI3_0)(a0)
+	li	a1, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulh.vx	v12, v10, a0
-	li	a0, 63
-	vsrl.vx	v14, v12, a0
+	lui	a0, 21
+	vsrl.vx	v14, v12, a1
+	addiw	a1, a0, 384
 	vsra.vi	v12, v12, 13
 	vadd.vv	v12, v12, v14
-	lui	a0, 21
-	addiw	a1, a0, 384
 	vnmsub.vx	v12, a1, v10
 	vadd.vv	v8, v12, v8
 	addiw	a0, a0, 383
@@ -73,9 +73,9 @@ func0000000000000014:                   # @func0000000000000014
 	vmulh.vx	v12, v10, a0
 	li	a0, 63
 	vsrl.vx	v14, v12, a0
+	lui	a0, 244141
 	vsra.vi	v12, v12, 26
 	vadd.vv	v12, v12, v14
-	lui	a0, 244141
 	addiw	a0, a0, -1536
 	vnmsub.vx	v12, a0, v10
 	vadd.vv	v8, v12, v8
@@ -90,9 +90,9 @@ func0000000000000006:                   # @func0000000000000006
 	vmulh.vx	v12, v10, a0
 	li	a0, 63
 	vsrl.vx	v14, v12, a0
+	lui	a0, 21
 	vsra.vi	v12, v12, 13
 	vadd.vv	v12, v12, v14
-	lui	a0, 21
 	addiw	a0, a0, 384
 	vnmsub.vx	v12, a0, v10
 	vadd.vv	v8, v12, v8

@@ -39,8 +39,8 @@ func000000000000006a:                   # @func000000000000006a
 	sext.w	a1, a1
 	sext.w	a2, a2
 	slti	a2, a2, 0
-	xori	a2, a2, 1
 	slti	a1, a1, 0
+	xori	a2, a2, 1
 	xori	a1, a1, 1
 	or	a0, a0, a2
 	or	a0, a0, a1

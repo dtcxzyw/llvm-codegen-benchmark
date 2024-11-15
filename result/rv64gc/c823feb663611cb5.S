@@ -3,8 +3,8 @@
 func0000000000000000:                   # @func0000000000000000
 	add	a2, a2, a1
 	negw	a3, a1
-	sll	a3, a2, a3
 	lui	a4, %hi(.LCPI0_0)
+	sll	a3, a2, a3
 	ld	a4, %lo(.LCPI0_0)(a4)
 	srl	a1, a2, a1
 	or	a1, a1, a3
@@ -16,8 +16,8 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000004:                   # @func0000000000000004
 	add	a2, a2, a1
 	negw	a3, a1
-	sll	a3, a2, a3
 	lui	a4, %hi(.LCPI1_0)
+	sll	a3, a2, a3
 	ld	a4, %lo(.LCPI1_0)(a4)
 	srl	a1, a2, a1
 	or	a1, a1, a3

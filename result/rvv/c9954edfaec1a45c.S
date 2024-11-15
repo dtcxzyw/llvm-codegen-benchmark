@@ -1,11 +1,11 @@
 func0000000000000108:                   # @func0000000000000108
 	lui	a0, 2575
+	lui	a1, 244
 	addiw	a0, a0, -325
+	addiw	a1, a1, 576
 	slli	a0, a0, 13
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v12
-	lui	a1, 244
-	addiw	a1, a1, 576
 	vmacc.vx	v8, a1, v10
 	addi	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0

@@ -12,8 +12,8 @@ func0000000000000031:                   # @func0000000000000031
 	lui	a0, 262144
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vor.vx	v12, v10, a0
-	vmerge.vvm	v10, v12, v10, v0
 	lui	a0, 131072
+	vmerge.vvm	v10, v12, v10, v0
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vmseq.vi	v0, v8, 0
 	vsetvli	zero, zero, e32, m2, ta, ma

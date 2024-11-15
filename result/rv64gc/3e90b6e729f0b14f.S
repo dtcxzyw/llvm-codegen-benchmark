@@ -16,8 +16,8 @@ func0000000000000031:                   # @func0000000000000031
 	ret
 func000000000000003a:                   # @func000000000000003a
 	sext.w	a0, a0
-	slti	a0, a0, 101
 	andi	a2, a1, 1
+	slti	a0, a0, 101
 	li	a1, 8
 	bnez	a2, .LBB1_2
 	li	a1, 1

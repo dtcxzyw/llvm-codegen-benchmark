@@ -1,13 +1,13 @@
 func0000000000000088:                   # @func0000000000000088
 	lui	a0, 1
-	addi	a0, a0, 352
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsltu.vx	v12, v10, a0
-	vmsleu.vi	v10, v8, 1
-	vmandn.mm	v8, v10, v0
-	vmor.mm	v9, v10, v12
-	vmand.mm	v9, v9, v0
-	vmor.mm	v0, v9, v8
+	vmsleu.vi	v12, v8, 1
+	addi	a0, a0, 352
+	vmsltu.vx	v8, v10, a0
+	vmandn.mm	v9, v12, v0
+	vmor.mm	v8, v12, v8
+	vmand.mm	v8, v8, v0
+	vmor.mm	v0, v8, v9
 	ret
 func0000000000000022:                   # @func0000000000000022
 	vsetivli	zero, 8, e32, m2, ta, ma

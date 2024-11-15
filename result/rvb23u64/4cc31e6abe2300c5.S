@@ -18,8 +18,8 @@ func0000000000000004:                   # @func0000000000000004
 func0000000000000002:                   # @func0000000000000002
 	andi	a1, a1, 1
 	srliw	a2, a2, 3
-	slli	a2, a2, 3
 	lui	a3, 16
+	slli	a2, a2, 3
 	addiw	a3, a3, -1
 	czero.eqz	a3, a3, a1
 	czero.nez	a1, a2, a1

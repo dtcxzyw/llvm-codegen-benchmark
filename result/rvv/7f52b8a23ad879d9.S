@@ -50,8 +50,8 @@ func0000000000000005:                   # @func0000000000000005
 func0000000000000019:                   # @func0000000000000019
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfabs.v	v16, v16
-	vfadd.vv	v8, v16, v8
 	fmv.d.x	fa5, zero
+	vfadd.vv	v8, v16, v8
 	vmflt.vf	v16, v8, fa5
 	vmfgt.vf	v17, v8, fa5
 	vmnor.mm	v0, v17, v16

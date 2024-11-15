@@ -11,9 +11,9 @@ func0000000000000044:                   # @func0000000000000044
 func000000000000000c:                   # @func000000000000000c
 	lui	a0, 131072
 	addi	a1, a0, -1
+	addi	a0, a0, -5
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v8, v8, a1
-	addi	a0, a0, -5
 	vmseq.vx	v0, v8, a0
 	vmv.v.i	v8, 8
 	vmerge.vim	v8, v8, 0, v0

@@ -1,8 +1,8 @@
 func0000000000000044:                   # @func0000000000000044
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v14, v12
-	vmsltu.vv	v12, v10, v14
 	li	a0, 126
+	vmsltu.vv	v12, v10, v14
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	ret
@@ -23,16 +23,16 @@ func0000000000000111:                   # @func0000000000000111
 func0000000000000149:                   # @func0000000000000149
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v14, v12
-	vmsleu.vv	v12, v14, v8
 	li	a0, 25
+	vmsleu.vv	v12, v14, v8
 	vmsltu.vx	v8, v10, a0
 	vmand.mm	v0, v12, v8
 	ret
 func000000000000004c:                   # @func000000000000004c
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v14, v12
-	vmsne.vv	v12, v14, v8
 	li	a0, 1024
+	vmsne.vv	v12, v14, v8
 	vmsltu.vx	v8, v10, a0
 	vmand.mm	v0, v12, v8
 	ret
@@ -46,8 +46,8 @@ func00000000000000c9:                   # @func00000000000000c9
 func0000000000000045:                   # @func0000000000000045
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v14, v12
-	vmsleu.vv	v12, v8, v14
 	lui	a0, 16
+	vmsleu.vv	v12, v8, v14
 	vmsltu.vx	v8, v10, a0
 	vmand.mm	v0, v12, v8
 	ret
@@ -61,8 +61,8 @@ func000000000000001c:                   # @func000000000000001c
 func0000000000000014:                   # @func0000000000000014
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v14, v12
-	vmseq.vv	v12, v14, v10
 	lui	a0, 1
+	vmseq.vv	v12, v14, v10
 	addiw	a0, a0, 1
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
@@ -84,8 +84,8 @@ func00000000000001c4:                   # @func00000000000001c4
 func0000000000000164:                   # @func0000000000000164
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v14, v12
-	vmslt.vv	v12, v10, v14
 	li	a0, 126
+	vmslt.vv	v12, v10, v14
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	ret
@@ -155,8 +155,8 @@ func0000000000000084:                   # @func0000000000000084
 func0000000000000144:                   # @func0000000000000144
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v14, v12
-	vmsltu.vv	v12, v10, v14
 	lui	a0, 16
+	vmsltu.vv	v12, v10, v14
 	addiw	a0, a0, -1
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12

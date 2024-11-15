@@ -13,11 +13,11 @@ func0000000000000031:                   # @func0000000000000031
 	ret
 func0000000000000034:                   # @func0000000000000034
 	lui	a2, 8
+	slli	a0, a0, 48
 	addiw	a2, a2, -456
 	addi	a3, a2, 455
 	and	a1, a1, a3
 	add	a1, a1, a2
-	slli	a0, a0, 48
 	srli	a0, a0, 48
 	sltu	a0, a0, a1
 	ret

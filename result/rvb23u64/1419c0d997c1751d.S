@@ -7,8 +7,8 @@ func000000000000000c:                   # @func000000000000000c
 func0000000000000014:                   # @func0000000000000014
 	slli	a0, a0, 3
 	add.uw	a0, a1, a0
-	addi	a0, a0, -1
 	li	a1, 63
+	addi	a0, a0, -1
 	bseti	a1, a1, 63
 	and	a0, a0, a1
 	ret

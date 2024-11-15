@@ -53,8 +53,8 @@ func0000000000000018:                   # @func0000000000000018
 func0000000000000016:                   # @func0000000000000016
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v8, v8, v10
-	vmsle.vi	v0, v8, 0
 	lui	a0, 524288
+	vmsle.vi	v0, v8, 0
 	addi	a0, a0, -1
 	vmerge.vxm	v8, v8, a0, v0
 	ret

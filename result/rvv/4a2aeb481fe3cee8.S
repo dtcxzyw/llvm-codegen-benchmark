@@ -2,8 +2,8 @@ func0000000000000084:                   # @func0000000000000084
 	li	a0, 127
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgtu.vx	v12, v10, a0
-	vmorn.mm	v10, v12, v0
 	li	a0, -95
+	vmorn.mm	v10, v12, v0
 	vmsltu.vx	v11, v8, a0
 	vmor.mm	v0, v10, v11
 	ret
@@ -32,8 +32,8 @@ func0000000000000088:                   # @func0000000000000088
 	li	a0, 511
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgtu.vx	v12, v10, a0
-	vmorn.mm	v10, v12, v0
 	li	a0, 256
+	vmorn.mm	v10, v12, v0
 	vmsgtu.vx	v11, v8, a0
 	vmor.mm	v0, v10, v11
 	ret

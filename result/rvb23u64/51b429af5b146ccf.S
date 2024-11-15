@@ -1,8 +1,8 @@
 func0000000000000018:                   # @func0000000000000018
 	li	a3, 8
 	subw	a3, a3, a2
-	srlw	a1, a1, a3
 	lui	a2, 4096
+	srlw	a1, a1, a3
 	addi	a2, a2, -512
 	and	a1, a1, a2
 	subw	a0, a1, a0
@@ -10,8 +10,8 @@ func0000000000000018:                   # @func0000000000000018
 func0000000000000008:                   # @func0000000000000008
 	li	a3, 16
 	subw	a3, a3, a2
-	srlw	a1, a1, a3
 	lui	a2, 16
+	srlw	a1, a1, a3
 	addi	a2, a2, -2
 	and	a1, a1, a2
 	subw	a0, a1, a0

@@ -13,8 +13,8 @@ func0000000000000015:                   # @func0000000000000015
 	ret
 func0000000000000000:                   # @func0000000000000000
 	add	a0, a0, a1
-	slli	a0, a0, 32
 	bseti	a1, zero, 32
+	slli	a0, a0, 32
 	add	a0, a0, a1
 	li	a1, 7
 	slli	a1, a1, 32

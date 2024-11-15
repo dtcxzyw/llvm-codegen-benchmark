@@ -26,8 +26,8 @@ func0000000000000148:                   # @func0000000000000148
 	li	a2, 1
 	maxu	a2, a1, a2
 	not	a1, a1
-	sltu	a1, a1, a2
 	sltiu	a0, a0, 769
+	sltu	a1, a1, a2
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

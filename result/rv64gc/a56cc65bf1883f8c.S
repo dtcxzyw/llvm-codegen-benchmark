@@ -1,10 +1,10 @@
 func0000000000000010:                   # @func0000000000000010
 	andi	a1, a1, 255
+	lui	a2, 1
 	addi	a1, a1, -3
+	addiw	a2, a2, 24
 	seqz	a1, a1
 	xori	a1, a1, 5
-	lui	a2, 1
-	addiw	a2, a2, 24
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

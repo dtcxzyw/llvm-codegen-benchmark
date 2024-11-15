@@ -14,8 +14,8 @@ func000000000000001a:                   # @func000000000000001a
 	ret
 func0000000000000014:                   # @func0000000000000014
 	lui	a0, 13
-	addi	a0, a0, 1288
 	li	a1, 32
+	addi	a0, a0, 1288
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsltu.vx	v0, v8, a1
 	vmv.v.x	v8, a0

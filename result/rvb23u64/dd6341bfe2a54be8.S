@@ -22,10 +22,10 @@ func000000000000000f:                   # @func000000000000000f
 	ret
 func000000000000000e:                   # @func000000000000000e
 	sh1add	a2, a2, a2
-	slli	a2, a2, 62
-	srli	a2, a2, 49
 	li	a3, 3
+	slli	a2, a2, 62
 	slli	a3, a3, 11
+	srli	a2, a2, 49
 	and	a1, a1, a3
 	or	a1, a1, a2
 	or	a0, a0, a1

@@ -2,8 +2,8 @@ func0000000000000000:                   # @func0000000000000000
 	li	a0, 31
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a0
-	vmacc.vv	v12, v10, v8
 	li	a0, -32
+	vmacc.vv	v12, v10, v8
 	zext.w	a0, a0
 	vand.vx	v8, v12, a0
 	ret
@@ -11,9 +11,9 @@ func000000000000000f:                   # @func000000000000000f
 	lui	a0, 256
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a0
-	vmacc.vv	v12, v10, v8
 	lui	a0, 262144
 	addiw	a0, a0, -1
+	vmacc.vv	v12, v10, v8
 	slli	a0, a0, 21
 	vand.vx	v8, v12, a0
 	ret
@@ -34,12 +34,12 @@ func000000000000000e:                   # @func000000000000000e
 	addiw	a0, a0, -128
 	slli	a1, a0, 32
 	add	a0, a0, a1
+	lui	a1, 524296
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a0
+	slli	a0, a1, 32
 	vmacc.vv	v12, v10, v8
-	lui	a0, 524296
-	slli	a1, a0, 32
-	add.uw	a0, a0, a1
+	add.uw	a0, a1, a0
 	vand.vx	v8, v12, a0
 	ret
 func0000000000000003:                   # @func0000000000000003

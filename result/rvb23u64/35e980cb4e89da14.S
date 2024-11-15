@@ -3,11 +3,11 @@ func0000000000000018:                   # @func0000000000000018
 	lui	a3, 524288
 	addi	a3, a3, -1
 	xor	a2, a2, a3
+	li	a3, -208
 	sext.w	a2, a2
 	sltu	a1, a2, a1
 	czero.nez	a0, a0, a1
-	li	a2, -208
-	czero.eqz	a1, a2, a1
+	czero.eqz	a1, a3, a1
 	or	a0, a0, a1
 	ret
 func000000000000001c:                   # @func000000000000001c

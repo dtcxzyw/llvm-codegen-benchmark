@@ -13,9 +13,9 @@ func0000000000000000:                   # @func0000000000000000
 	vmulh.vx	v8, v10, a0
 	li	a0, 63
 	vsrl.vx	v12, v8, a0
+	lui	a0, 244
 	vsra.vi	v8, v8, 18
 	vadd.vv	v8, v8, v12
-	lui	a0, 244
 	addiw	a0, a0, 576
 	vnmsub.vx	v8, a0, v10
 	ret

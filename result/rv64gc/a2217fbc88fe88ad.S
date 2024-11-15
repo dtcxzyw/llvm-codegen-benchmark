@@ -2,9 +2,9 @@ func00000000000000cc:                   # @func00000000000000cc
 	andi	a1, a1, 255
 	andi	a2, a2, 255
 	addi	a2, a2, -86
+	addi	a1, a1, -76
 	snez	a2, a2
 	or	a0, a0, a2
-	addi	a1, a1, -76
 	snez	a1, a1
 	or	a0, a0, a1
 	ret
@@ -28,8 +28,8 @@ func0000000000000064:                   # @func0000000000000064
 	andi	a1, a1, 255
 	slli	a2, a2, 56
 	srai	a2, a2, 56
-	slti	a2, a2, 0
 	sltiu	a1, a1, 26
+	slti	a2, a2, 0
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -43,20 +43,20 @@ func00000000000000c1:                   # @func00000000000000c1
 	ret
 func00000000000000aa:                   # @func00000000000000aa
 	slli	a1, a1, 56
-	srai	a1, a1, 56
 	slli	a2, a2, 56
+	srai	a1, a1, 56
 	srai	a2, a2, 56
 	slti	a2, a2, -112
+	slti	a1, a1, -64
 	xori	a2, a2, 1
 	or	a0, a0, a2
-	slti	a1, a1, -64
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
 func000000000000004a:                   # @func000000000000004a
 	slli	a1, a1, 56
-	srai	a1, a1, 56
 	andi	a2, a2, 255
+	srai	a1, a1, 56
 	sltiu	a2, a2, 208
 	or	a0, a0, a2
 	slti	a1, a1, -64
@@ -67,9 +67,9 @@ func0000000000000088:                   # @func0000000000000088
 	andi	a1, a1, 255
 	andi	a2, a2, 255
 	sltiu	a2, a2, 24
+	sltiu	a1, a1, 60
 	xori	a2, a2, 1
 	or	a0, a0, a2
-	sltiu	a1, a1, 60
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
@@ -85,8 +85,8 @@ func000000000000004c:                   # @func000000000000004c
 	andi	a1, a1, 255
 	andi	a2, a2, 255
 	sltiu	a2, a2, 32
-	or	a0, a0, a2
 	addi	a1, a1, -10
+	or	a0, a0, a2
 	snez	a1, a1
 	or	a0, a0, a1
 	ret
@@ -100,8 +100,8 @@ func0000000000000044:                   # @func0000000000000044
 	ret
 func0000000000000066:                   # @func0000000000000066
 	slli	a1, a1, 56
-	srai	a1, a1, 56
 	slli	a2, a2, 56
+	srai	a1, a1, 56
 	srai	a2, a2, 56
 	slti	a2, a2, 0
 	or	a0, a0, a2

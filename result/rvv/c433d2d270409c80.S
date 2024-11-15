@@ -17,11 +17,11 @@ func0000000000000001:                   # @func0000000000000001
 .LCPI2_1:
 	.quad	0x412e848000000000              # double 1.0E+6
 func0000000000000004:                   # @func0000000000000004
+	lui	a0, %hi(.LCPI2_0)
+	fld	fa5, %lo(.LCPI2_0)(a0)
+	lui	a0, %hi(.LCPI2_1)
+	fld	fa4, %lo(.LCPI2_1)(a0)
 	lui	a0, 390625
-	lui	a1, %hi(.LCPI2_0)
-	fld	fa5, %lo(.LCPI2_0)(a1)
-	lui	a1, %hi(.LCPI2_1)
-	fld	fa4, %lo(.LCPI2_1)(a1)
 	sh2add	a0, a0, a0
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a0

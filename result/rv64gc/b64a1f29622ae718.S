@@ -34,11 +34,11 @@ func000000000000000c:                   # @func000000000000000c
 	ret
 func000000000000000b:                   # @func000000000000000b
 	sext.w	a2, a2
-	snez	a2, a2
-	slli	a2, a2, 14
 	or	a0, a0, a1
 	li	a1, 1
+	snez	a2, a2
 	slli	a1, a1, 11
+	slli	a2, a2, 14
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

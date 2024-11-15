@@ -7,9 +7,9 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func0000000000000000:                   # @func0000000000000000
 	divw	a1, a1, a2
+	lui	a2, 335544
 	mulw	a0, a1, a0
-	lui	a1, 335544
-	addiw	a1, a1, 1311
+	addiw	a1, a2, 1311
 	mul	a0, a0, a1
 	srli	a1, a0, 63
 	srai	a0, a0, 37

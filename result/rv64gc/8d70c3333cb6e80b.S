@@ -4,9 +4,9 @@ func000000000000000a:                   # @func000000000000000a
 	addi	a1, a1, -255
 	slli	a1, a1, 32
 	mulhu	a0, a0, a1
-	srli	a0, a0, 40
 	lui	a1, 16
 	addi	a1, a1, -255
+	srli	a0, a0, 40
 	mul	a0, a0, a1
 	lui	a1, 2048
 	addw	a0, a0, a1
@@ -29,8 +29,8 @@ func0000000000000004:                   # @func0000000000000004
 	addi	a1, a1, 1311
 	slli	a1, a1, 32
 	mulhu	a0, a0, a1
-	srli	a0, a0, 39
 	lui	a1, 1048540
+	srli	a0, a0, 39
 	addi	a1, a1, 1359
 	mul	a0, a0, a1
 	addw	a0, a0, a1

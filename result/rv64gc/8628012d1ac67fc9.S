@@ -1,18 +1,18 @@
 .LCPI0_0:
 	.quad	768614336404564650              # 0xaaaaaaaaaaaaaaa
 func0000000000000002:                   # @func0000000000000002
-	lui	a2, %hi(.LCPI0_0)
-	ld	a2, %lo(.LCPI0_0)(a2)
+	mv	a2, a0
+	lui	a0, %hi(.LCPI0_0)
+	ld	a0, %lo(.LCPI0_0)(a0)
 	slli	a1, a1, 1
-	andi	a0, a0, 1
-	bgeu	a1, a2, .LBB0_3
-	beqz	a0, .LBB0_4
+	andi	a2, a2, 1
+	bgeu	a1, a0, .LBB0_3
+	beqz	a2, .LBB0_4
 .LBB0_2:                                # %entry
-	mv	a0, a2
 	ret
 .LBB0_3:                                # %entry
-	mv	a1, a2
-	bnez	a0, .LBB0_2
+	mv	a1, a0
+	bnez	a2, .LBB0_2
 .LBB0_4:                                # %entry
 	mv	a0, a1
 	ret

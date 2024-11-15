@@ -84,8 +84,8 @@ func000000000000005c:                   # @func000000000000005c
 	ret
 func000000000000005d:                   # @func000000000000005d
 	addi	a0, a0, -1
-	clzw	a0, a0
 	li	a1, 30
+	clzw	a0, a0
 	subw	a1, a1, a0
 	li	a0, -1
 	sllw	a0, a0, a1

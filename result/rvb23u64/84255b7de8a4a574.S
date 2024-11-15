@@ -90,8 +90,8 @@ func0000000000000170:                   # @func0000000000000170
 	lui	a0, %hi(.LCPI13_0)
 	flw	fa5, %lo(.LCPI13_0)(a0)
 	flt.s	a0, fa5, fa1
-	xori	a0, a0, 1
 	fmv.w.x	fa5, zero
+	xori	a0, a0, 1
 	feq.s	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
@@ -107,12 +107,12 @@ func00000000000001ba:                   # @func00000000000001ba
 	ret
 func0000000000000124:                   # @func0000000000000124
 	fli.s	fa5, inf
-	flt.s	a0, fa1, fa5
-	flt.s	a1, fa5, fa1
-	or	a0, a0, a1
-	xori	a0, a0, 1
-	lui	a1, 913408
-	fmv.w.x	fa5, a1
+	lui	a0, 913408
+	flt.s	a1, fa1, fa5
+	flt.s	a2, fa5, fa1
+	fmv.w.x	fa5, a0
+	or	a1, a1, a2
+	xori	a0, a1, 1
 	flt.s	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
@@ -135,9 +135,9 @@ func0000000000000032:                   # @func0000000000000032
 	ret
 func0000000000000042:                   # @func0000000000000042
 	fli.s	fa5, min
-	flt.s	a0, fa1, fa5
-	feq.s	a1, fa0, fa0
-	xori	a1, a1, 1
+	feq.s	a0, fa0, fa0
+	flt.s	a1, fa1, fa5
+	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 func0000000000000154:                   # @func0000000000000154
@@ -147,20 +147,20 @@ func0000000000000154:                   # @func0000000000000154
 	ret
 func0000000000000108:                   # @func0000000000000108
 	fli.s	fa5, inf
-	feq.s	a0, fa1, fa5
-	lui	a1, 325632
-	fmv.w.x	fa5, a1
-	flt.s	a1, fa5, fa0
+	lui	a0, 325632
+	feq.s	a1, fa1, fa5
+	fmv.w.x	fa5, a0
+	flt.s	a0, fa5, fa0
 	or	a0, a0, a1
 	ret
 func0000000000000134:                   # @func0000000000000134
 	fli.s	fa5, inf
-	flt.s	a0, fa1, fa5
-	flt.s	a1, fa5, fa1
-	or	a0, a0, a1
-	xori	a0, a0, 1
-	lui	a1, 798736
-	fmv.w.x	fa5, a1
+	lui	a0, 798736
+	flt.s	a1, fa1, fa5
+	flt.s	a2, fa5, fa1
+	fmv.w.x	fa5, a0
+	or	a1, a1, a2
+	xori	a0, a1, 1
 	fle.s	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
@@ -201,9 +201,9 @@ func00000000000000e2:                   # @func00000000000000e2
 	ret
 func0000000000000084:                   # @func0000000000000084
 	lui	a0, 277312
+	lui	a1, 799552
 	fmv.w.x	fa5, a0
 	flt.s	a0, fa5, fa1
-	lui	a1, 799552
 	fmv.w.x	fa5, a1
 	flt.s	a1, fa0, fa5
 	or	a0, a0, a1

@@ -5,8 +5,8 @@ func000000000000004c:                   # @func000000000000004c
 	fld	fa5, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfgt.vf	v0, v16, fa5
-	vmerge.vvm	v8, v16, v8, v0
 	fmv.d.x	fa5, zero
+	vmerge.vvm	v8, v16, v8, v0
 	vmfge.vf	v0, v8, fa5
 	vmv.v.i	v16, 0
 	vmerge.vvm	v8, v16, v8, v0
@@ -15,9 +15,9 @@ func000000000000004c:                   # @func000000000000004c
 	.quad	0x4056800000000000              # double 90
 func0000000000000032:                   # @func0000000000000032
 	fmv.d.x	fa5, zero
+	lui	a0, %hi(.LCPI1_0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfge.vf	v24, v16, fa5
-	lui	a0, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a0)
 	vmnot.m	v0, v24
 	vmerge.vvm	v8, v16, v8, v0

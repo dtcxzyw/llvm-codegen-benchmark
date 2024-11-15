@@ -18,8 +18,8 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func00000000000000a6:                   # @func00000000000000a6
 	and	a1, a1, a2
-	slti	a1, a1, 0
 	slti	a0, a0, 0
+	slti	a1, a1, 0
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret

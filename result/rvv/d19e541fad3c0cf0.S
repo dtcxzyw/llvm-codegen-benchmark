@@ -2,8 +2,8 @@ func0000000000000061:                   # @func0000000000000061
 	lui	a0, 240
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
-	vmseq.vi	v9, v10, 0
 	li	a0, 30
+	vmseq.vi	v9, v10, 0
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vmslt.vx	v8, v8, a0
 	vmand.mm	v0, v9, v8
@@ -12,8 +12,8 @@ func0000000000000041:                   # @func0000000000000041
 	lui	a0, 240
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
-	vmseq.vi	v9, v10, 0
 	li	a0, 30
+	vmseq.vi	v9, v10, 0
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vmsltu.vx	v8, v8, a0
 	vmand.mm	v0, v9, v8

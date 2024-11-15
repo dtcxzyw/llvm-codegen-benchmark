@@ -1,7 +1,7 @@
 func0000000000000000:                   # @func0000000000000000
 	xor	a1, a1, a2
+	lui	a2, 1044188
 	add	a0, a0, a1
-	lui	a1, 1044188
-	addi	a1, a1, -265
+	addi	a1, a2, -265
 	subw	a0, a1, a0
 	ret

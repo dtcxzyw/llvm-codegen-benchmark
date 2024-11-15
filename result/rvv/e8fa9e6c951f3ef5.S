@@ -84,8 +84,8 @@ func0000000000000129:                   # @func0000000000000129
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfabs.v	v16, v16
 	vmflt.vv	v0, v8, v16
-	vmerge.vvm	v8, v8, v16, v0
 	fmv.d.x	fa5, zero
+	vmerge.vvm	v8, v8, v16, v0
 	vmflt.vf	v16, v8, fa5
 	vmfgt.vf	v17, v8, fa5
 	vmnor.mm	v0, v17, v16

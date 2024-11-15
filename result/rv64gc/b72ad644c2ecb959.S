@@ -1,9 +1,9 @@
 func0000000000000038:                   # @func0000000000000038
 	lui	a2, 16
-	addiw	a2, a2, -1
-	and	a0, a0, a2
 	lui	a3, 6
+	addiw	a2, a2, -1
 	addiw	a3, a3, -983
+	and	a0, a0, a2
 	mul	a1, a1, a3
 	slli	a3, a1, 12
 	slli	a1, a1, 48

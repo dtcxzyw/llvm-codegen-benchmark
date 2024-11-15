@@ -40,8 +40,8 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func000000000000001a:                   # @func000000000000001a
 	or	a1, a1, a2
-	sext.w	a1, a1
 	lui	a2, 8
+	sext.w	a1, a1
 	addiw	a2, a2, 1131
 	bge	a2, a1, .LBB6_2
 	lui	a0, 8

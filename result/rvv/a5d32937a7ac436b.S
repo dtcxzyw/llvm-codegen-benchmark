@@ -12,8 +12,8 @@ func0000000000000022:                   # @func0000000000000022
 	vfmul.vv	v8, v8, v12
 	fmv.w.x	fa5, zero
 	vmflt.vf	v0, v8, fa5
-	vmerge.vim	v8, v8, 0, v0
 	lui	a0, 273536
+	vmerge.vim	v8, v8, 0, v0
 	fmv.w.x	fa5, a0
 	vmflt.vf	v0, v8, fa5
 	ret

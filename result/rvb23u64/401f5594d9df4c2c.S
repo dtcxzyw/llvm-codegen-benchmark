@@ -1,7 +1,7 @@
 func0000000000000014:                   # @func0000000000000014
 	andi	a1, a1, 1
-	slli	a1, a1, 4
 	srliw	a0, a0, 24
+	slli	a1, a1, 4
 	seqz	a0, a0
 	sh3add	a0, a0, a1
 	ret
@@ -17,9 +17,9 @@ func000000000000001a:                   # @func000000000000001a
 	andi	a1, a1, 1
 	li	a2, -128
 	czero.nez	a1, a2, a1
-	addi	a1, a1, 408
-	slti	a0, a0, 51
 	lui	a2, 24
+	slti	a0, a0, 51
+	addi	a1, a1, 408
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	ret

@@ -155,9 +155,9 @@ func0000000000000064:                   # @func0000000000000064
 	slti	a2, a2, 0
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
+	lui	a2, 524288
 	or	a0, a0, a1
 	sext.w	a0, a0
-	lui	a1, 524288
-	addiw	a1, a1, -10
-	sltu	a0, a0, a1
+	addiw	a2, a2, -10
+	sltu	a0, a0, a2
 	ret

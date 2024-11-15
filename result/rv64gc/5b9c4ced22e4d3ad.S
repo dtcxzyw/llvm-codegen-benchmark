@@ -1,17 +1,17 @@
 func000000000000008a:                   # @func000000000000008a
 	sub	a1, a1, a2
+	srliw	a0, a0, 16
 	slti	a1, a1, 5
 	xori	a1, a1, 1
-	srliw	a0, a0, 16
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
 func0000000000000081:                   # @func0000000000000081
 	sext.w	a0, a0
 	sub	a1, a1, a2
+	lui	a2, 16
 	addi	a1, a1, 1
 	seqz	a1, a1
-	lui	a2, 16
 	sltu	a0, a2, a0
 	or	a0, a0, a1
 	ret
@@ -47,8 +47,8 @@ func00000000000001aa:                   # @func00000000000001aa
 	sub	a1, a1, a2
 	lui	a2, 37
 	addiw	a2, a2, -1552
-	slt	a1, a2, a1
 	slti	a0, a0, 4
+	slt	a1, a2, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

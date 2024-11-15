@@ -51,11 +51,11 @@ func00000000000000c1:                   # @func00000000000000c1
 func0000000000000019:                   # @func0000000000000019
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vi	v11, v11, -1
+	lui	a0, 16
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v12, v11
-	vmsleu.vv	v11, v12, v8
-	lui	a0, 16
 	addi	a0, a0, -1
+	vmsleu.vv	v11, v12, v8
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmseq.vx	v8, v10, a0
 	vmand.mm	v0, v11, v8

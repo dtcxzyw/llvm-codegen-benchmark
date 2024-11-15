@@ -9,9 +9,9 @@ func0000000000000198:                   # @func0000000000000198
 	sext.w	a1, a1
 	lui	a3, 2
 	addiw	a3, a3, 1808
+	snez	a1, a1
 	xor	a2, a2, a3
 	snez	a2, a2
-	snez	a1, a1
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -64,9 +64,9 @@ func00000000000000c2:                   # @func00000000000000c2
 	sext.w	a1, a1
 	lui	a3, 24
 	addiw	a3, a3, 1697
+	addi	a1, a1, -1
 	slt	a2, a2, a3
 	or	a0, a0, a2
-	addi	a1, a1, -1
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret

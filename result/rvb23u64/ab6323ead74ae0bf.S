@@ -15,8 +15,8 @@ func0000000000000015:                   # @func0000000000000015
 	ret
 func0000000000000040:                   # @func0000000000000040
 	sext.w	a1, a1
-	sltiu	a1, a1, 10
 	li	a2, -39
+	sltiu	a1, a1, 10
 	czero.nez	a1, a2, a1
 	slli	a0, a0, 4
 	add	a0, a0, a1
@@ -47,8 +47,8 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func000000000000004f:                   # @func000000000000004f
 	sext.w	a1, a1
-	sltiu	a1, a1, 4
 	li	a2, 24
+	sltiu	a1, a1, 4
 	czero.nez	a1, a2, a1
 	slli	a0, a0, 4
 	add	a0, a0, a1

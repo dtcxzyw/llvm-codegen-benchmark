@@ -9,9 +9,9 @@ func00000000000002a4:                   # @func00000000000002a4
 	ret
 func00000000000002a8:                   # @func00000000000002a8
 	sh1add	a2, a2, a2
+	sltiu	a0, a0, 2
 	slli	a2, a2, 4
 	add	a1, a1, a2
-	sltiu	a0, a0, 2
 	li	a2, 24
 	czero.eqz	a0, a2, a0
 	add	a0, a0, a1

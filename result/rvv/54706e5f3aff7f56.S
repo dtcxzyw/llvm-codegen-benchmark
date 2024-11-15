@@ -29,8 +29,8 @@ func0000000000000002:                   # @func0000000000000002
 	vfmv.v.f	v12, fa5
 	fneg.s	fa5, fa5
 	vfmerge.vfm	v12, v12, fa5, v0
-	vfadd.vv	v8, v12, v8
 	fli.s	fa5, 128.0
+	vfadd.vv	v8, v12, v8
 	fneg.s	fa5, fa5
 	vmflt.vf	v0, v8, fa5
 	ret

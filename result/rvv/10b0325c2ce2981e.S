@@ -49,8 +49,8 @@ func000000000000006c:                   # @func000000000000006c
 	vadd.vv	v10, v10, v12
 	li	a0, 44
 	vsll.vx	v8, v8, a0
-	vadd.vv	v8, v10, v8
 	li	a0, -1
+	vadd.vv	v8, v10, v8
 	slli	a0, a0, 44
 	vand.vx	v8, v8, a0
 	ret
@@ -59,8 +59,8 @@ func0000000000000048:                   # @func0000000000000048
 	vadd.vv	v10, v10, v12
 	li	a0, 32
 	vsll.vx	v8, v8, a0
-	vadd.vv	v8, v10, v8
 	li	a0, -1
+	vadd.vv	v8, v10, v8
 	slli	a0, a0, 32
 	vand.vx	v8, v8, a0
 	ret

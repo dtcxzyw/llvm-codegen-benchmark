@@ -1,7 +1,7 @@
 func0000000000000007:                   # @func0000000000000007
 	bseti	a1, a1, 25
-	sext.w	a1, a1
 	lui	a2, 1040272
+	sext.w	a1, a1
 	addiw	a2, a2, -1
 	and	a0, a0, a2
 	or	a0, a0, a1
@@ -21,9 +21,9 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000004:                   # @func0000000000000004
 	lui	a2, 60166
 	or	a1, a1, a2
-	zext.w	a1, a1
 	lui	a2, 983039
 	slli	a2, a2, 16
+	zext.w	a1, a1
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret

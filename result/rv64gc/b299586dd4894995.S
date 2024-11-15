@@ -3,8 +3,8 @@ func000000000000007b:                   # @func000000000000007b
 	mulhu	a2, a2, a3
 	slli	a3, a2, 48
 	srli	a4, a4, 16
-	or	a3, a3, a4
 	srli	a2, a2, 16
+	or	a3, a3, a4
 	add	a0, a0, a3
 	sltu	a3, a0, a3
 	add	a1, a1, a2
@@ -15,8 +15,8 @@ func0000000000000010:                   # @func0000000000000010
 	mulhu	a2, a2, a3
 	slli	a3, a2, 48
 	srli	a4, a4, 16
-	or	a3, a3, a4
 	srli	a2, a2, 16
+	or	a3, a3, a4
 	add	a0, a0, a3
 	sltu	a3, a0, a3
 	add	a1, a1, a2

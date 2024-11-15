@@ -8,8 +8,8 @@ func0000000000000007:                   # @func0000000000000007
 	ret
 func000000000000001d:                   # @func000000000000001d
 	lui	a2, 448
-	and	a1, a1, a2
 	slli	a0, a0, 12
+	and	a1, a1, a2
 	or	a0, a0, a1
 	lui	a1, 1048304
 	addw	a0, a0, a1
@@ -30,8 +30,8 @@ func000000000000001b:                   # @func000000000000001b
 	ret
 func0000000000000019:                   # @func0000000000000019
 	slli	a1, a1, 48
-	srli	a1, a1, 48
 	slli	a0, a0, 8
+	srli	a1, a1, 48
 	or	a0, a0, a1
 	lui	a1, 1048568
 	addw	a0, a0, a1

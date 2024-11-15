@@ -10,8 +10,8 @@ func00000000000000c4:                   # @func00000000000000c4
 	andi	a0, a0, 255
 	andi	a1, a1, 255
 	addi	a1, a1, -1
-	sltiu	a1, a1, 2
 	addi	a0, a0, -3
+	sltiu	a1, a1, 2
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

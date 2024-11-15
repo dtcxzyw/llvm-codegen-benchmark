@@ -8,9 +8,9 @@ func0000000000000029:                   # @func0000000000000029
 func0000000000000019:                   # @func0000000000000019
 	lui	a0, 524288
 	addi	a1, a0, -9
+	addi	a0, a0, -1
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmslt.vx	v0, v12, a1
-	addi	a0, a0, -1
 	vmv.v.x	v12, a0
 	vmerge.vvm	v10, v12, v10, v0
 	vsub.vv	v8, v10, v8

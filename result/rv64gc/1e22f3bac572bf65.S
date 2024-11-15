@@ -35,8 +35,8 @@ func0000000000000008:                   # @func0000000000000008
 	ld	a1, %lo(.LCPI3_0)(a1)
 	srli	a0, a0, 9
 	mulhu	a0, a0, a1
-	srli	a0, a0, 11
 	lui	a1, 804435
+	srli	a0, a0, 11
 	addi	a1, a1, 1536
 	mulw	a0, a0, a1
 	ret
@@ -47,8 +47,8 @@ func000000000000000c:                   # @func000000000000000c
 	ld	a1, %lo(.LCPI4_0)(a1)
 	srli	a0, a0, 9
 	mulhu	a0, a0, a1
-	srli	a0, a0, 11
 	lui	a1, 804435
+	srli	a0, a0, 11
 	addi	a1, a1, 1536
 	mulw	a0, a0, a1
 	ret

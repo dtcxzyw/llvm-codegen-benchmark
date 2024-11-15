@@ -9,8 +9,8 @@ func0000000000000050:                   # @func0000000000000050
 func000000000000005a:                   # @func000000000000005a
 	sext.w	a2, a2
 	li	a3, 1680
-	mul	a2, a2, a3
 	sext.w	a0, a0
+	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	li	a1, 1682

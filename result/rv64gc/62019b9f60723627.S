@@ -21,11 +21,11 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func0000000000000002:                   # @func0000000000000002
 	li	a2, -1
+	li	a3, -257
 	slli	a2, a2, 55
+	srli	a3, a3, 1
 	add	a2, a2, a0
 	sltu	a0, a2, a0
-	li	a3, -257
-	srli	a3, a3, 1
 	add	a1, a1, a3
 	add	a1, a1, a0
 	mv	a0, a2

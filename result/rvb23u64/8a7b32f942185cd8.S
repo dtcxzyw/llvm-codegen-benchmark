@@ -24,8 +24,8 @@ func0000000000000001:                   # @func0000000000000001
 	andi	a1, a1, 1
 	bseti	a2, zero, 35
 	czero.nez	a1, a2, a1
+	lui	a2, 9217
 	or	a0, a0, a1
-	lui	a1, 9217
-	slli	a1, a1, 17
-	or	a0, a0, a1
+	slli	a2, a2, 17
+	or	a0, a0, a2
 	ret

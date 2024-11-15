@@ -39,8 +39,8 @@ func0000000000000048:                   # @func0000000000000048
 	ret
 func0000000000000106:                   # @func0000000000000106
 	srliw	a1, a1, 2
-	sltiu	a1, a1, 625
 	li	a2, -17
+	sltiu	a1, a1, 625
 	srli	a2, a2, 2
 	czero.eqz	a1, a2, a1
 	add	a0, a0, a1

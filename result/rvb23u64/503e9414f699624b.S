@@ -1,21 +1,21 @@
 func0000000000000544:                   # @func0000000000000544
 	addiw	a1, a1, -71
-	sltiu	a1, a1, -6
 	addiw	a0, a0, -58
+	sltiu	a1, a1, -6
 	sltiu	a0, a0, -10
 	and	a0, a0, a1
 	ret
 func0000000000000444:                   # @func0000000000000444
 	addiw	a1, a1, -91
-	sltiu	a1, a1, -26
 	addiw	a0, a0, -58
+	sltiu	a1, a1, -26
 	sltiu	a0, a0, -10
 	and	a0, a0, a1
 	ret
 func0000000000000044:                   # @func0000000000000044
 	addiw	a1, a1, -71
-	sltiu	a1, a1, -6
 	addiw	a0, a0, -58
+	sltiu	a1, a1, -6
 	sltiu	a0, a0, -10
 	and	a0, a0, a1
 	ret
@@ -30,8 +30,8 @@ func00000000000005cc:                   # @func00000000000005cc
 	sext.w	a0, a0
 	sext.w	a1, a1
 	addi	a1, a1, -42
-	snez	a1, a1
 	addi	a0, a0, -42
+	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -47,8 +47,8 @@ func000000000000051c:                   # @func000000000000051c
 	sext.w	a0, a0
 	sext.w	a1, a1
 	addi	a1, a1, -42
-	seqz	a1, a1
 	addi	a0, a0, -54
+	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

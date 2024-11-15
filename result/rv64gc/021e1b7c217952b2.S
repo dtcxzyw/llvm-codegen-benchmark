@@ -1,8 +1,8 @@
 func0000000000000020:                   # @func0000000000000020
 	or	a1, a1, a2
+	lui	a2, 648056
 	subw	a1, a1, a0
-	lui	a0, 648056
-	addi	a0, a0, -1607
+	addi	a0, a2, -1607
 	add	a0, a0, a1
 	srliw	a0, a0, 8
 	ret

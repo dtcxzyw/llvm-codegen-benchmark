@@ -71,8 +71,8 @@ func0000000000000666:                   # @func0000000000000666
 	ret
 func0000000000000bbb:                   # @func0000000000000bbb
 	fmax.s	fa5, fa1, fa2
-	fmax.s	fa5, fa5, fa0
 	lui	a0, 277312
+	fmax.s	fa5, fa5, fa0
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	xori	a0, a0, 1
@@ -99,9 +99,9 @@ func0000000000000cca:                   # @func0000000000000cca
 	.word	0x3dcccccd                      # float 0.100000001
 func0000000000000242:                   # @func0000000000000242
 	lui	a0, %hi(.LCPI11_0)
+	lui	a1, %hi(.LCPI11_1)
 	flw	fa5, %lo(.LCPI11_0)(a0)
-	lui	a0, %hi(.LCPI11_1)
-	flw	fa4, %lo(.LCPI11_1)(a0)
+	flw	fa4, %lo(.LCPI11_1)(a1)
 	flt.s	a0, fa2, fa5
 	flt.s	a1, fa4, fa1
 	flt.s	a2, fa0, fa5
@@ -126,12 +126,12 @@ func0000000000000eee:                   # @func0000000000000eee
 	ret
 func00000000000008b8:                   # @func00000000000008b8
 	fmv.w.x	fa5, zero
-	feq.s	a0, fa2, fa5
-	lui	a1, 273536
-	fmv.w.x	fa4, a1
-	flt.s	a1, fa4, fa1
-	xori	a1, a1, 1
-	feq.s	a2, fa0, fa5
-	and	a0, a0, a2
+	lui	a0, 273536
+	feq.s	a1, fa2, fa5
+	fmv.w.x	fa4, a0
+	feq.s	a0, fa0, fa5
+	flt.s	a2, fa4, fa1
+	xori	a2, a2, 1
 	and	a0, a0, a1
+	and	a0, a0, a2
 	ret

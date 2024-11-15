@@ -12,10 +12,10 @@ func000000000000006a:                   # @func000000000000006a
 	slti	a2, a1, 0
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
+	lui	a2, 10
 	or	a0, a0, a1
 	sext.w	a0, a0
-	lui	a1, 10
-	addiw	a1, a1, -963
+	addiw	a1, a2, -963
 	slt	a0, a1, a0
 	ret
 func0000000000000161:                   # @func0000000000000161

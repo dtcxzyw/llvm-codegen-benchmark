@@ -71,15 +71,15 @@ func000000000000008c:                   # @func000000000000008c
 	ret
 func0000000000000058:                   # @func0000000000000058
 	fle.d	a0, fa1, fa2
-	xori	a0, a0, 1
 	fmv.d.x	fa5, zero
+	xori	a0, a0, 1
 	feq.d	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
 func0000000000000038:                   # @func0000000000000038
 	fle.d	a0, fa2, fa1
-	xori	a0, a0, 1
 	fmv.d.x	fa5, zero
+	xori	a0, a0, 1
 	feq.d	a1, fa0, fa5
 	or	a0, a0, a1
 	ret

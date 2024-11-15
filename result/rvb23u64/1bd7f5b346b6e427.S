@@ -15,8 +15,8 @@ func00000000000001c4:                   # @func00000000000001c4
 func0000000000000144:                   # @func0000000000000144
 	zext.h	a0, a0
 	addiw	a1, a1, -512
-	sltiu	a1, a1, -1023
 	lui	a2, 16
+	sltiu	a1, a1, -1023
 	addiw	a2, a2, -255
 	sltu	a0, a0, a2
 	and	a0, a0, a1

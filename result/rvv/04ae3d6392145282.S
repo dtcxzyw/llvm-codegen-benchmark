@@ -42,13 +42,13 @@ func000000000000002d:                   # @func000000000000002d
 func0000000000000023:                   # @func0000000000000023
 	lui	a0, %hi(.LCPI4_0)
 	flw	fa5, %lo(.LCPI4_0)(a0)
+	fmv.w.x	fa4, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vmfge.vf	v12, v8, fa5
-	fmv.w.x	fa5, zero
-	vmflt.vf	v13, v8, fa5
+	vmflt.vf	v12, v8, fa4
+	vmfge.vf	v13, v8, fa5
 	vmnot.m	v8, v0
-	vmandn.mm	v8, v8, v12
-	vmor.mm	v0, v13, v8
+	vmandn.mm	v8, v8, v13
+	vmor.mm	v0, v12, v8
 	ret
 func0000000000000028:                   # @func0000000000000028
 	fmv.w.x	fa5, zero

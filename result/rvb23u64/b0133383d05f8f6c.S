@@ -7,10 +7,10 @@ func000000000000001a:                   # @func000000000000001a
 	srli	a2, a1, 63
 	srai	a1, a1, 37
 	add	a1, a1, a2
+	lui	a2, 16
 	max	a0, a0, a1
-	lui	a1, 16
-	addiw	a1, a1, -1
-	slt	a0, a1, a0
+	addiw	a2, a2, -1
+	slt	a0, a2, a0
 	ret
 func000000000000000a:                   # @func000000000000000a
 	sext.w	a0, a0

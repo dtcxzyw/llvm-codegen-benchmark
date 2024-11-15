@@ -10,9 +10,9 @@ func00000000000000c3:                   # @func00000000000000c3
 	ret
 func00000000000000c7:                   # @func00000000000000c7
 	binvi	a1, a1, 63
-	snez	a1, a1
 	srli	a0, a0, 3
 	lui	a2, 699051
+	snez	a1, a1
 	addiw	a2, a2, -1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
@@ -34,12 +34,12 @@ func0000000000000043:                   # @func0000000000000043
 	ret
 func00000000000000a7:                   # @func00000000000000a7
 	li	a2, 1
-	bseti	a2, a2, 63
-	slt	a1, a2, a1
 	srli	a0, a0, 3
-	lui	a2, 699051
-	addiw	a2, a2, -1365
-	slli	a3, a2, 32
+	lui	a3, 699051
+	bseti	a2, a2, 63
+	addiw	a3, a3, -1365
+	slt	a1, a2, a1
+	slli	a2, a3, 32
 	add	a2, a2, a3
 	mul	a0, a0, a2
 	add	a0, a0, a1

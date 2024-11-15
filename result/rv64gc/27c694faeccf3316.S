@@ -27,9 +27,9 @@ func0000000000000030:                   # @func0000000000000030
 	slli	a1, a1, 48
 	lui	a2, 7856
 	mulhu	a1, a1, a2
+	lui	a2, 1
 	add	a0, a0, a1
-	lui	a1, 1
-	addiw	a1, a1, 1372
+	addiw	a1, a2, 1372
 	add	a0, a0, a1
 	ret
 func0000000000000032:                   # @func0000000000000032

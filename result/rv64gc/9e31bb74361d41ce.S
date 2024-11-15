@@ -46,8 +46,8 @@ func0000000000000c42:                   # @func0000000000000c42
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
 	fmv.d.x	fa4, zero
-	fle.d	a0, fa4, fa0
-	flt.d	a1, fa4, fa1
+	flt.d	a0, fa4, fa1
+	fle.d	a1, fa4, fa0
 	flt.d	a2, fa0, fa5
 	and	a0, a0, a1
 	and	a0, a0, a2

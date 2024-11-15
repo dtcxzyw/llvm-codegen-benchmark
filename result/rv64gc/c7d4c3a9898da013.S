@@ -9,9 +9,9 @@ func000000000000000f:                   # @func000000000000000f
 	lui	a1, 24
 	addi	a1, a1, 1696
 	mulw	a0, a0, a1
-	slli	a0, a0, 2
 	lui	a1, 1048166
 	addiw	a1, a1, 737
+	slli	a0, a0, 2
 	slli	a1, a1, 11
 	add	a0, a0, a1
 	ret

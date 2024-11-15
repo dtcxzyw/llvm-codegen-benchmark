@@ -1,9 +1,9 @@
 func000000000000000f:                   # @func000000000000000f
 	lui	a0, 256
-	addi	a0, a0, -1
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vx	v9, v9, a0
 	vsll.vi	v8, v8, 20
+	addi	a0, a0, -1
+	vand.vx	v9, v9, a0
 	vor.vv	v8, v8, v9
 	lui	a0, 261888
 	vxor.vx	v10, v8, a0

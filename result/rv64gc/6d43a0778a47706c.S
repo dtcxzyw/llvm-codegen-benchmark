@@ -5,8 +5,8 @@
 func0000000000000000:                   # @func0000000000000000
 	srli	a2, a1, 33
 	lui	a3, %hi(.LCPI0_0)
-	ld	a3, %lo(.LCPI0_0)(a3)
 	lui	a4, %hi(.LCPI0_1)
+	ld	a3, %lo(.LCPI0_0)(a3)
 	ld	a4, %lo(.LCPI0_1)(a4)
 	slli	a1, a1, 31
 	or	a1, a1, a2
@@ -21,8 +21,8 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000010:                   # @func0000000000000010
 	srli	a2, a1, 33
 	lui	a3, %hi(.LCPI1_0)
-	ld	a3, %lo(.LCPI1_0)(a3)
 	lui	a4, %hi(.LCPI1_1)
+	ld	a3, %lo(.LCPI1_0)(a3)
 	ld	a4, %lo(.LCPI1_1)(a4)
 	slli	a1, a1, 31
 	or	a1, a1, a2

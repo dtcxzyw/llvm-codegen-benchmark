@@ -8,9 +8,10 @@ func0000000000000000:                   # @func0000000000000000
 	lui	a0, %hi(.LCPI0_1)
 	fld	fa4, %lo(.LCPI0_1)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vfabs.v	v16, v8
-	vfmv.v.f	v8, fa5
-	vfmacc.vf	v8, fa4, v16
+	vfmv.v.f	v16, fa5
+	vfabs.v	v8, v8
+	vfmacc.vf	v16, fa4, v8
+	vmv.v.v	v8, v16
 	ret
 .LCPI1_0:
 	.quad	0x0010000000000001              # double 2.2250738585072019E-308
@@ -22,7 +23,8 @@ func0000000000000002:                   # @func0000000000000002
 	lui	a0, %hi(.LCPI1_1)
 	fld	fa4, %lo(.LCPI1_1)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vfabs.v	v16, v8
-	vfmv.v.f	v8, fa5
-	vfmacc.vf	v8, fa4, v16
+	vfmv.v.f	v16, fa5
+	vfabs.v	v8, v8
+	vfmacc.vf	v16, fa4, v8
+	vmv.v.v	v8, v16
 	ret

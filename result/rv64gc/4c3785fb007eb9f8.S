@@ -20,24 +20,24 @@ func000000000000002a:                   # @func000000000000002a
 	ret
 func000000000000006a:                   # @func000000000000006a
 	slli	a2, a2, 1
-	add	a0, a0, a2
 	slli	a1, a1, 32
+	add	a0, a0, a2
 	srli	a1, a1, 31
 	add	a0, a0, a1
 	addi	a0, a0, 2
 	ret
 func000000000000003a:                   # @func000000000000003a
 	slli	a2, a2, 1
-	add	a0, a0, a2
 	sext.w	a1, a1
+	add	a0, a0, a2
 	slli	a1, a1, 1
 	add	a0, a0, a1
 	addi	a0, a0, -2
 	ret
 func000000000000007a:                   # @func000000000000007a
 	slli	a2, a2, 1
-	add	a0, a0, a2
 	sext.w	a1, a1
+	add	a0, a0, a2
 	slli	a1, a1, 1
 	add	a0, a0, a1
 	addi	a0, a0, 2

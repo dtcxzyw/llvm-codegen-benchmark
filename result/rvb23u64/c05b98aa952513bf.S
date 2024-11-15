@@ -5,8 +5,8 @@ func0000000000000182:                   # @func0000000000000182
 	ret
 func0000000000000038:                   # @func0000000000000038
 	andi	a1, a1, 1039
-	seqz	a1, a1
 	addi	a0, a0, -92
+	seqz	a1, a1
 	snez	a0, a0
 	or	a0, a0, a1
 	ret

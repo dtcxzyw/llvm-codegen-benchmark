@@ -24,22 +24,22 @@ func000000000000000f:                   # @func000000000000000f
 	ret
 func0000000000000005:                   # @func0000000000000005
 	li	a2, -1
-	slli	a2, a2, 32
-	addi	a2, a2, -1
-	mulhsu	a2, a2, a3
 	slli	a4, a3, 32
-	add	a3, a3, a4
-	neg	a4, a3
-	sub	a0, a0, a3
+	slli	a2, a2, 32
+	add	a4, a4, a3
+	addi	a2, a2, -1
+	sub	a0, a0, a4
+	neg	a4, a4
+	mulhsu	a2, a2, a3
 	sltu	a3, a0, a4
 	add	a1, a1, a2
 	add	a1, a1, a3
 	ret
 func000000000000000e:                   # @func000000000000000e
 	li	a2, -1
-	mulhu	a2, a3, a2
 	neg	a4, a3
 	sub	a0, a0, a3
+	mulhu	a2, a3, a2
 	sltu	a3, a0, a4
 	add	a1, a1, a2
 	add	a1, a1, a3

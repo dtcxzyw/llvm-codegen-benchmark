@@ -14,15 +14,15 @@ func000000000000001d:                   # @func000000000000001d
 	ret
 func000000000000000d:                   # @func000000000000000d
 	slli	a1, a1, 32
-	srli	a1, a1, 32
 	lui	a2, 16
+	srli	a1, a1, 32
 	sub	a0, a2, a0
 	sub	a0, a0, a1
 	ret
 func0000000000000007:                   # @func0000000000000007
 	slli	a1, a1, 32
-	srli	a1, a1, 32
 	li	a2, 3
+	srli	a1, a1, 32
 	sub	a0, a2, a0
 	sub	a0, a0, a1
 	ret

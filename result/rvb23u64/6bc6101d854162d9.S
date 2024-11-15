@@ -36,8 +36,8 @@ func0000000000001988:                   # @func0000000000001988
 func0000000000000822:                   # @func0000000000000822
 	sext.w	a0, a0
 	sext.w	a2, a2
-	sltiu	a2, a2, -6
 	seqz	a1, a1
+	sltiu	a2, a2, -6
 	seqz	a0, a0
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -45,8 +45,8 @@ func0000000000000822:                   # @func0000000000000822
 func0000000000000828:                   # @func0000000000000828
 	sext.w	a0, a0
 	sext.w	a2, a2
-	sltiu	a2, a2, -3
 	seqz	a1, a1
+	sltiu	a2, a2, -3
 	sltiu	a0, a0, 2
 	or	a0, a0, a2
 	or	a0, a0, a1

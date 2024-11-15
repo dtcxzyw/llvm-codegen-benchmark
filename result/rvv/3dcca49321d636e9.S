@@ -7,8 +7,8 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsext.vf2	v12, v10
-	vmul.vv	v8, v12, v8
 	li	a0, -1
+	vmul.vv	v8, v12, v8
 	srli	a0, a0, 2
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -41,8 +41,8 @@ func0000000000000016:                   # @func0000000000000016
 func000000000000001a:                   # @func000000000000001a
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsext.vf2	v12, v10
-	vmul.vv	v8, v12, v8
 	lui	a0, 6
+	vmul.vv	v8, v12, v8
 	addiw	a0, a0, 973
 	vmsgt.vx	v0, v8, a0
 	ret

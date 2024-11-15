@@ -1,10 +1,10 @@
 func0000000000000008:                   # @func0000000000000008
 	lui	a1, 838861
+	lui	a2, 104858
 	addi	a1, a1, -819
+	addiw	a2, a2, -1638
 	mul	a1, a1, a0
 	roriw	a1, a1, 1
-	lui	a2, 104858
-	addiw	a2, a2, -1638
 	sltu	a2, a1, a2
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2
@@ -13,11 +13,11 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func0000000000000009:                   # @func0000000000000009
 	lui	a1, 838861
+	lui	a2, 104858
 	addi	a1, a1, -819
+	addiw	a2, a2, -1638
 	mul	a1, a1, a0
 	roriw	a1, a1, 1
-	lui	a2, 104858
-	addiw	a2, a2, -1638
 	sltu	a2, a1, a2
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2

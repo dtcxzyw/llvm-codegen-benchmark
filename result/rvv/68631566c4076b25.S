@@ -1,8 +1,8 @@
 func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	vsub.vv	v8, v8, v10
 	li	a0, -2
+	vsub.vv	v8, v8, v10
 	zext.w	a0, a0
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -135,8 +135,8 @@ func0000000000000041:                   # @func0000000000000041
 func0000000000000028:                   # @func0000000000000028
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	vsub.vv	v8, v8, v10
 	li	a0, -2
+	vsub.vv	v8, v8, v10
 	zext.w	a0, a0
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -149,8 +149,8 @@ func00000000000000e8:                   # @func00000000000000e8
 func00000000000000d8:                   # @func00000000000000d8
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	vsub.vv	v8, v8, v10
 	li	a0, -1
+	vsub.vv	v8, v8, v10
 	srli	a0, a0, 4
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -168,8 +168,8 @@ func00000000000000cc:                   # @func00000000000000cc
 func00000000000000c8:                   # @func00000000000000c8
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
-	vsub.vv	v8, v8, v10
 	li	a0, -2
+	vsub.vv	v8, v8, v10
 	zext.w	a0, a0
 	vmsgtu.vx	v0, v8, a0
 	ret

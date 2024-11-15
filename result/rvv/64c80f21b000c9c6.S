@@ -23,11 +23,11 @@ func0000000000000023:                   # @func0000000000000023
 	ret
 func0000000000000006:                   # @func0000000000000006
 	lui	a0, 1015808
-	addiw	a0, a0, -512
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v12, v12, a0
-	vor.vv	v8, v12, v8
 	vmseq.vi	v0, v10, 0
+	addiw	a0, a0, -512
+	vand.vx	v10, v12, a0
+	vor.vv	v8, v10, v8
 	bseti	a0, zero, 31
 	vor.vx	v10, v8, a0
 	vmerge.vvm	v8, v10, v8, v0

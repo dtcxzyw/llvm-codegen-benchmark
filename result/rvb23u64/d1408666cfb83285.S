@@ -38,8 +38,8 @@ func00000000000003cc:                   # @func00000000000003cc
 	zext.w	a2, a2
 	addi	a1, a1, 1
 	xor	a1, a1, a2
-	snez	a1, a1
 	addi	a0, a0, -16
+	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

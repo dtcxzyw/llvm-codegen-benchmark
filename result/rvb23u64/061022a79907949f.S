@@ -70,8 +70,8 @@ func00000000000000a8:                   # @func00000000000000a8
 	ret
 func0000000000000086:                   # @func0000000000000086
 	sext.w	a1, a1
-	sltiu	a1, a1, 507
 	lui	a2, 1
+	sltiu	a1, a1, 507
 	addiw	a2, a2, 903
 	czero.eqz	a1, a2, a1
 	addi	a1, a1, 1

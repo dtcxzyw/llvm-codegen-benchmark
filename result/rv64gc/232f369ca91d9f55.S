@@ -17,10 +17,10 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func000000000000000c:                   # @func000000000000000c
 	li	a2, 1
+	addi	a0, a0, 7
 	slli	a2, a2, 35
 	addi	a2, a2, -8
 	and	a1, a1, a2
-	addi	a0, a0, 7
 	andi	a0, a0, -8
 	add	a0, a0, a1
 	addi	a0, a0, 16

@@ -3,8 +3,8 @@
 func0000000000000022:                   # @func0000000000000022
 	lui	a0, 273536
 	fmv.w.x	fa5, a0
-	fmin.s	fa4, fa0, fa5
 	lui	a0, 797824
+	fmin.s	fa4, fa0, fa5
 	fmv.w.x	fa5, a0
 	flt.s	a0, fa4, fa5
 	bnez	a0, .LBB0_2
@@ -39,8 +39,8 @@ func00000000000000c4:                   # @func00000000000000c4
 func00000000000000aa:                   # @func00000000000000aa
 	lui	a0, 273216
 	fmv.w.x	fa5, a0
-	fmin.s	fa4, fa0, fa5
 	lui	a0, 797504
+	fmin.s	fa4, fa0, fa5
 	fmv.w.x	fa5, a0
 	fle.s	a0, fa4, fa5
 	bnez	a0, .LBB2_2

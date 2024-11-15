@@ -98,11 +98,11 @@ func00000000000000bb:                   # @func00000000000000bb
 func00000000000000a8:                   # @func00000000000000a8
 	lui	a1, %hi(.LCPI11_0)
 	flw	fa5, %lo(.LCPI11_0)(a1)
-	fle.s	a1, fa1, fa5
-	fli.s	fa5, 1.0
-	feq.s	a2, fa0, fa5
-	and	a0, a0, a2
+	fli.s	fa4, 1.0
+	feq.s	a1, fa0, fa4
+	fle.s	a2, fa1, fa5
 	and	a0, a0, a1
+	and	a0, a0, a2
 	ret
 func000000000000007c:                   # @func000000000000007c
 	fmv.w.x	fa5, zero

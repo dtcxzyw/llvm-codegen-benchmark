@@ -6,9 +6,9 @@ func0000000000000006:                   # @func0000000000000006
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v8, v8, 9
 	vmulhu.vx	v8, v8, a0
-	vsrl.vi	v8, v8, 11
 	lui	a0, 244141
 	addiw	a0, a0, -1537
+	vsrl.vi	v8, v8, 11
 	vadd.vx	v8, v8, a0
 	lui	a0, 4398
 	addiw	a0, a0, 191
@@ -24,15 +24,15 @@ func0000000000000006:                   # @func0000000000000006
 func0000000000000002:                   # @func0000000000000002
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
+	lui	a1, 1048557
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulhu.vx	v8, v8, a0
+	lui	a0, %hi(.LCPI1_1)
+	ld	a0, %lo(.LCPI1_1)(a0)
 	vsrl.vi	v8, v8, 11
-	lui	a0, 1048557
-	lui	a1, %hi(.LCPI1_1)
-	ld	a1, %lo(.LCPI1_1)(a1)
-	addiw	a0, a0, -818
-	vadd.vx	v8, v8, a0
+	addiw	a1, a1, -818
+	vadd.vx	v8, v8, a1
 	vsrl.vi	v8, v8, 5
-	vmulhu.vx	v8, v8, a1
+	vmulhu.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 7
 	ret

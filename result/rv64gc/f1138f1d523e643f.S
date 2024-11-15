@@ -8,8 +8,8 @@ func00000000000001a6:                   # @func00000000000001a6
 	ret
 func00000000000001aa:                   # @func00000000000001aa
 	addi	a2, a0, 1
-	slt	a1, a2, a1
 	slti	a0, a0, -1
+	slt	a1, a2, a1
 	not	a0, a0
 	and	a0, a0, a1
 	ret

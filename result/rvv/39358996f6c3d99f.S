@@ -3,15 +3,15 @@
 func0000000000000191:                   # @func0000000000000191
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
+	li	a1, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulh.vx	v10, v8, a0
-	li	a0, 63
-	vsrl.vx	v12, v10, a0
+	li	a0, 7
+	vsrl.vx	v12, v10, a1
 	vsra.vi	v10, v10, 1
 	vadd.vv	v10, v10, v12
-	li	a1, 7
-	vnmsub.vx	v10, a1, v8
-	vsra.vx	v8, v10, a0
+	vnmsub.vx	v10, a0, v8
+	vsra.vx	v8, v10, a1
 	vand.vi	v8, v8, 7
 	vrsub.vi	v10, v10, 0
 	vmseq.vv	v0, v8, v10
@@ -25,9 +25,9 @@ func000000000000019a:                   # @func000000000000019a
 	vmulh.vx	v10, v8, a0
 	li	a0, 63
 	vsrl.vx	v12, v10, a0
+	li	a0, 7
 	vsra.vi	v10, v10, 1
 	vadd.vv	v10, v10, v12
-	li	a0, 7
 	vnmsub.vx	v10, a0, v8
 	vmsle.vi	v0, v10, -1
 	vadd.vi	v10, v10, 7, v0.t
@@ -38,14 +38,14 @@ func000000000000019a:                   # @func000000000000019a
 func0000000000000198:                   # @func0000000000000198
 	lui	a0, %hi(.LCPI2_0)
 	ld	a0, %lo(.LCPI2_0)(a0)
+	li	a1, 63
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmulh.vx	v10, v8, a0
-	li	a0, 63
-	vsrl.vx	v12, v10, a0
+	lui	a0, 21
+	vsrl.vx	v12, v10, a1
+	addiw	a1, a0, 384
 	vsra.vi	v10, v10, 13
 	vadd.vv	v10, v10, v12
-	lui	a0, 21
-	addiw	a1, a0, 384
 	vnmsub.vx	v10, a1, v8
 	vmsle.vi	v0, v10, -1
 	vadd.vx	v10, v10, a1, v0.t
@@ -61,10 +61,10 @@ func0000000000000194:                   # @func0000000000000194
 	vmulh.vx	v10, v8, a0
 	li	a0, 63
 	vsrl.vx	v12, v10, a0
-	vsra.vi	v10, v10, 26
-	vadd.vv	v10, v10, v12
 	lui	a0, 244141
 	addiw	a0, a0, -1536
+	vsra.vi	v10, v10, 26
+	vadd.vv	v10, v10, v12
 	vnmsub.vx	v10, a0, v8
 	vmsle.vi	v0, v10, -1
 	vadd.vx	v10, v10, a0, v0.t

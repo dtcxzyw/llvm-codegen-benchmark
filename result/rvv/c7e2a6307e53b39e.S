@@ -8,9 +8,9 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000014:                   # @func0000000000000014
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
-	vadd.vi	v8, v10, 1
-	vmsleu.vi	v0, v10, 14
 	li	a0, 16
+	vmsleu.vi	v0, v10, 14
+	vadd.vi	v8, v10, 1
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 func0000000000000004:                   # @func0000000000000004

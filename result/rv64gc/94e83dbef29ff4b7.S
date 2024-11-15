@@ -58,10 +58,10 @@ func00000000000000bb:                   # @func00000000000000bb
 	ret
 func00000000000000a2:                   # @func00000000000000a2
 	fmv.w.x	fa5, zero
-	fle.s	a1, fa1, fa5
-	or	a0, a0, a1
 	lui	a1, 260096
+	fle.s	a2, fa1, fa5
 	fmv.w.x	fa5, a1
+	or	a0, a0, a2
 	flt.s	a1, fa0, fa5
 	or	a0, a0, a1
 	ret

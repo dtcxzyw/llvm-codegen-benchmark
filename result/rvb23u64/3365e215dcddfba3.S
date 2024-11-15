@@ -47,8 +47,8 @@ func0000000000000018:                   # @func0000000000000018
 	andi	a0, a0, 255
 	srliw	a1, a1, 14
 	slli	a1, a1, 14
-	snez	a1, a1
 	addi	a0, a0, -112
+	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

@@ -21,8 +21,8 @@ func0000000000000040:                   # @func0000000000000040
 	ret
 func000000000000001d:                   # @func000000000000001d
 	slli.uw	a1, a1, 3
-	sh2add	a1, a1, a1
 	li	a2, -40
+	sh2add	a1, a1, a1
 	mul	a0, a0, a2
 	add	a0, a0, a1
 	ret

@@ -1,13 +1,13 @@
 .LCPI0_0:
 	.quad	128102389400760775              # 0x1c71c71c71c71c7
 func0000000000000151:                   # @func0000000000000151
-	slli	a3, a2, 3
-	lui	a4, %hi(.LCPI0_0)
-	ld	a4, %lo(.LCPI0_0)(a4)
+	sub	a1, a2, a1
+	lui	a3, %hi(.LCPI0_0)
+	ld	a3, %lo(.LCPI0_0)(a3)
+	slli	a2, a2, 3
 	sub	a2, a2, a1
-	sub	a3, a3, a2
-	add	a0, a0, a3
-	xor	a0, a0, a4
+	add	a0, a0, a2
+	xor	a0, a0, a3
 	seqz	a0, a0
 	ret
 func000000000000015a:                   # @func000000000000015a
@@ -57,10 +57,10 @@ func00000000000002a1:                   # @func00000000000002a1
 	ret
 func000000000000030a:                   # @func000000000000030a
 	li	a3, 1000
-	mul	a2, a2, a3
 	add	a0, a0, a1
-	add	a0, a0, a2
 	lui	a1, 244141
+	mul	a2, a2, a3
+	add	a0, a0, a2
 	addiw	a1, a1, -1537
 	slt	a0, a1, a0
 	ret
@@ -87,13 +87,13 @@ func00000000000003f1:                   # @func00000000000003f1
 	ret
 func0000000000000008:                   # @func0000000000000008
 	lui	a3, 2575
-	addiw	a3, a3, -325
-	slli	a3, a3, 13
-	mul	a2, a2, a3
 	add	a0, a0, a1
+	addiw	a1, a3, -325
+	slli	a1, a1, 13
+	mul	a2, a2, a1
 	add	a0, a0, a2
-	addi	a3, a3, -1
-	sltu	a0, a3, a0
+	addi	a1, a1, -1
+	sltu	a0, a1, a0
 	ret
 func0000000000000146:                   # @func0000000000000146
 	lui	a3, 244

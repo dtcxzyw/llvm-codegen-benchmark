@@ -27,9 +27,9 @@ func0000000000000031:                   # @func0000000000000031
 	li	a0, 255
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v8, v8, a0
-	vmseq.vi	v0, v8, 2
 	lui	a0, 16
 	addi	a0, a0, 1100
+	vmseq.vi	v0, v8, 2
 	vmv.v.x	v8, a0
 	lui	a0, 144
 	addi	a0, a0, 1100

@@ -20,8 +20,8 @@ func0000000000000025:                   # @func0000000000000025
 	vnsrl.wi	v9, v10, 0
 	lui	a0, 4080
 	vand.vx	v9, v9, a0
-	vadd.vv	v8, v8, v9
 	lui	a0, 648056
+	vadd.vv	v8, v8, v9
 	addi	a0, a0, -1607
 	vadd.vx	v8, v8, a0
 	ret
@@ -30,8 +30,8 @@ func0000000000000020:                   # @func0000000000000020
 	vnsrl.wi	v9, v10, 0
 	lui	a0, 4080
 	vand.vx	v9, v9, a0
-	vadd.vv	v8, v8, v9
 	lui	a0, 648056
+	vadd.vv	v8, v8, v9
 	addi	a0, a0, -1607
 	vadd.vx	v8, v8, a0
 	ret

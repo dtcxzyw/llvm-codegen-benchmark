@@ -7,9 +7,9 @@ func0000000000000040:                   # @func0000000000000040
 	ret
 func000000000000004a:                   # @func000000000000004a
 	andi	a2, a2, 255
+	andi	a0, a0, 255
 	sh2add	a2, a2, a2
 	sh3add	a1, a2, a1
-	andi	a0, a0, 255
 	sh2add	a0, a0, a0
 	sh3add	a0, a0, a1
 	addi	a0, a0, 16

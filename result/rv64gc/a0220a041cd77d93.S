@@ -18,13 +18,13 @@ func0000000000000007:                   # @func0000000000000007
 	addi	a3, a3, -256
 	and	a2, a2, a3
 	srliw	a3, a1, 24
-	or	a2, a2, a3
 	andi	a1, a1, -256
-	slliw	a2, a2, 8
+	or	a2, a2, a3
+	lui	a3, 983040
 	slliw	a1, a1, 16
+	addiw	a3, a3, 255
+	slliw	a2, a2, 8
 	or	a1, a1, a2
-	lui	a2, 983040
-	addiw	a2, a2, 255
-	and	a0, a0, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	ret

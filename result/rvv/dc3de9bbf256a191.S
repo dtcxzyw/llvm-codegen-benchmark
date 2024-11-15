@@ -11,9 +11,9 @@ func0000000000000005:                   # @func0000000000000005
 	lui	a0, 1048568
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vand.vx	v8, v8, a0
+	li	a0, 48
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vzext.vf2	v9, v8
-	li	a0, 48
 	vwsll.vx	v10, v9, a0
 	li	a0, 1023
 	slli	a0, a0, 52

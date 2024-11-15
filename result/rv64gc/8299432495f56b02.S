@@ -19,8 +19,8 @@ func000000000000003f:                   # @func000000000000003f
 func0000000000000024:                   # @func0000000000000024
 	slli	a2, a2, 58
 	srli	a1, a1, 58
-	slli	a1, a1, 58
 	slli	a0, a0, 1
+	slli	a1, a1, 58
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -44,8 +44,8 @@ func000000000000000d:                   # @func000000000000000d
 	ret
 func0000000000000004:                   # @func0000000000000004
 	lui	a3, 1048575
-	and	a1, a1, a3
 	or	a0, a0, a2
+	and	a1, a1, a3
 	slli	a0, a0, 32
 	or	a0, a0, a1
 	ret

@@ -1,9 +1,9 @@
 func0000000000000001:                   # @func0000000000000001
 	lui	a1, 768
+	lui	a2, 512
 	and	a0, a0, a1
 	binvi	a1, a0, 20
 	czero.eqz	a0, a0, a1
-	lui	a2, 512
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret

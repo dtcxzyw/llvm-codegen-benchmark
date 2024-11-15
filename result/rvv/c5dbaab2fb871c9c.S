@@ -6,12 +6,12 @@
 	.quad	0x3fd34413509f79fb              # double 0.30102999566398098
 func0000000000000002:                   # @func0000000000000002
 	fli.d	fa5, 1.5
-	fneg.d	fa5, fa5
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa4, %lo(.LCPI0_0)(a0)
 	lui	a0, %hi(.LCPI0_1)
 	fld	fa3, %lo(.LCPI0_1)(a0)
 	lui	a0, %hi(.LCPI0_2)
+	fneg.d	fa5, fa5
 	fld	fa2, %lo(.LCPI0_2)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfadd.vf	v16, v16, fa5

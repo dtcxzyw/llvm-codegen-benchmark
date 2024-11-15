@@ -1,8 +1,8 @@
 func0000000000000144:                   # @func0000000000000144
 	sext.w	a0, a0
 	cpopw	a1, a1
-	sltiu	a1, a1, 2
 	lui	a2, 4096
+	sltiu	a1, a1, 2
 	addiw	a2, a2, -32
 	sltu	a0, a0, a2
 	and	a0, a0, a1

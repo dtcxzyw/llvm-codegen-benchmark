@@ -53,8 +53,8 @@ func0000000000000084:                   # @func0000000000000084
 	sext.w	a0, a0
 	srli	a1, a1, 3
 	slli.uw	a1, a1, 3
-	sltiu	a1, a1, 312
 	sltiu	a0, a0, 385
+	sltiu	a1, a1, 312
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

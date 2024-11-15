@@ -4,8 +4,8 @@ func0000000000000020:                   # @func0000000000000020
 	li	a1, -6
 .LBB0_2:                                # %entry
 	add	a0, a0, a1
-	addiw	a0, a0, 7
 	lui	a1, 599186
+	addiw	a0, a0, 7
 	addiw	a1, a1, 1171
 	mul	a1, a0, a1
 	srli	a1, a1, 32
@@ -20,8 +20,8 @@ func0000000000000028:                   # @func0000000000000028
 	li	a1, -6
 .LBB1_2:                                # %entry
 	add	a0, a0, a1
-	addiw	a0, a0, 7
 	lui	a1, 599186
+	addiw	a0, a0, 7
 	addiw	a1, a1, 1171
 	mul	a1, a0, a1
 	srli	a1, a1, 32

@@ -16,9 +16,9 @@ func0000000000000018:                   # @func0000000000000018
 	lui	a0, 8216
 	addi	a0, a0, 289
 	vmulhu.vx	v11, v11, a0
-	vsrl.vi	v11, v11, 3
 	lui	a0, 8
 	addi	a0, a0, -96
+	vsrl.vi	v11, v11, 3
 	vnmsub.vx	v11, a0, v10
 	lui	a0, 7
 	addi	a0, a0, -101

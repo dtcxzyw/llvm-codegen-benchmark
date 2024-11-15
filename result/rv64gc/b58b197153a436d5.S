@@ -14,11 +14,11 @@ func0000000000000003:                   # @func0000000000000003
 	srli	a2, a0, 43
 	slli	a0, a0, 21
 	or	a0, a0, a2
+	li	a2, 1
+	slli	a2, a2, 59
 	xor	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 59
-	xor	a1, a1, a0
+	xor	a2, a2, a0
 	slli	a0, a0, 16
-	srli	a1, a1, 48
-	or	a0, a0, a1
+	srli	a2, a2, 48
+	or	a0, a0, a2
 	ret

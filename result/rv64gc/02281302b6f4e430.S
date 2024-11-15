@@ -8,8 +8,8 @@ func000000000000000e:                   # @func000000000000000e
 	ret
 func000000000000010e:                   # @func000000000000010e
 	add	a1, a1, a2
-	slli	a1, a1, 32
 	li	a2, 5
+	slli	a1, a1, 32
 	slli	a2, a2, 34
 	mulhu	a1, a1, a2
 	add	a0, a0, a1

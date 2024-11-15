@@ -28,9 +28,9 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func000000000000000b:                   # @func000000000000000b
 	subw	a1, a1, a2
+	slli	a0, a0, 63
 	slli	a1, a1, 32
 	srli	a1, a1, 30
-	slli	a0, a0, 63
 	srai	a0, a0, 63
 	or	a0, a0, a1
 	ret

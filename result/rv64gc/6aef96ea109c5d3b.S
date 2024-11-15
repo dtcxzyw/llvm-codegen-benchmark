@@ -11,8 +11,8 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000000:                   # @func0000000000000000
 	lui	a2, 15
 	and	a1, a1, a2
+	lui	a2, 16
 	or	a0, a0, a1
-	lui	a1, 16
-	addiw	a1, a1, -64
+	addiw	a1, a2, -64
 	xor	a0, a0, a1
 	ret

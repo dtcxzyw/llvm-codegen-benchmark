@@ -27,8 +27,8 @@ func0000000000000354:                   # @func0000000000000354
 func0000000000000058:                   # @func0000000000000058
 	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
-	addi	a0, a0, -48
 	lui	a1, 524288
+	addi	a0, a0, -48
 	addiw	a1, a1, -2
 	sltu	a0, a1, a0
 	ret

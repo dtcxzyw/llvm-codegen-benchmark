@@ -1,9 +1,9 @@
 func0000000000000008:                   # @func0000000000000008
 	lui	a3, 4080
 	and	a2, a2, a3
+	lui	a3, 1044480
 	mul	a0, a0, a2
-	lui	a2, 1044480
-	and	a1, a1, a2
+	and	a1, a1, a3
 	addw	a0, a0, a1
 	ret
 func000000000000000a:                   # @func000000000000000a

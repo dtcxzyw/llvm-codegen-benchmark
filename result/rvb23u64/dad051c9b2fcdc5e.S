@@ -24,8 +24,8 @@ func0000000000000038:                   # @func0000000000000038
 	fabs.d	fa5, fa1
 	fli.d	fa4, 2.0
 	fle.d	a0, fa4, fa5
-	xori	a0, a0, 1
 	fmv.d.x	fa5, zero
+	xori	a0, a0, 1
 	feq.d	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
@@ -48,18 +48,18 @@ func0000000000000055:                   # @func0000000000000055
 	ret
 func0000000000000087:                   # @func0000000000000087
 	fclass.d	a0, fa1
-	andi	a0, a0, 129
-	snez	a0, a0
 	fli.d	fa5, inf
+	andi	a0, a0, 129
 	feq.d	a1, fa0, fa5
+	snez	a0, a0
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
 func0000000000000088:                   # @func0000000000000088
 	fclass.d	a0, fa1
+	fli.d	fa5, inf
 	andi	a0, a0, 129
 	snez	a0, a0
-	fli.d	fa5, inf
 	feq.d	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
@@ -74,11 +74,11 @@ func0000000000000022:                   # @func0000000000000022
 	ret
 func0000000000000099:                   # @func0000000000000099
 	fclass.d	a0, fa1
-	andi	a0, a0, 897
-	snez	a0, a0
 	fli.d	fa5, inf
+	andi	a0, a0, 897
 	flt.d	a1, fa0, fa5
 	flt.d	a2, fa5, fa0
+	snez	a0, a0
 	or	a1, a1, a2
 	xori	a1, a1, 1
 	or	a0, a0, a1

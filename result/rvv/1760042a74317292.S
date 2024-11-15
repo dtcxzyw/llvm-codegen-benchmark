@@ -15,8 +15,8 @@ func0000000000000041:                   # @func0000000000000041
 func0000000000000081:                   # @func0000000000000081
 	vsetivli	zero, 4, e32, m1, ta, mu
 	vnsrl.wi	v9, v10, 0
-	vadd.vv	v9, v9, v8, v0.t
 	lui	a0, 16
+	vadd.vv	v9, v9, v8, v0.t
 	addi	a0, a0, -1
 	vmseq.vx	v0, v9, a0
 	ret

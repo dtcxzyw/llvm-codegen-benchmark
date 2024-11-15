@@ -53,13 +53,13 @@ func000000000000000a:                   # @func000000000000000a
 	lui	a0, 1
 	addi	a1, a0, -2007
 	vmv.v.x	v10, a1
+	lui	a1, 3
 	addi	a0, a0, -1448
 	vmerge.vxm	v10, v10, a0, v0
-	lui	a0, 3
-	addi	a1, a0, 1544
+	addi	a0, a1, 1544
 	vmv1r.v	v0, v8
-	vmerge.vxm	v10, v10, a1, v0
-	addi	a0, a0, 1533
+	vmerge.vxm	v10, v10, a0, v0
+	addi	a0, a1, 1533
 	vmv1r.v	v0, v9
 	vmerge.vxm	v8, v10, a0, v0
 	ret

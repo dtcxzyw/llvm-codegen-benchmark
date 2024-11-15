@@ -3,8 +3,8 @@ func0000000000000003:                   # @func0000000000000003
 	lui	a3, 322639
 	addiw	a3, a3, -945
 	mul	a2, a2, a3
-	srli	a2, a2, 35
 	li	a3, 26
+	srli	a2, a2, 35
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	subw	a0, a0, a2
@@ -26,9 +26,9 @@ func0000000000000002:                   # @func0000000000000002
 	lui	a3, 42950
 	addiw	a3, a3, -1339
 	mul	a2, a2, a3
-	srli	a2, a2, 39
 	lui	a3, 12
 	addi	a3, a3, 848
+	srli	a2, a2, 39
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	subw	a0, a0, a2

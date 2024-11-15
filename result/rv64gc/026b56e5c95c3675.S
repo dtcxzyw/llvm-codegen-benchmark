@@ -30,8 +30,8 @@ func0000000000000055:                   # @func0000000000000055
 	ret
 func0000000000000050:                   # @func0000000000000050
 	add	a1, a1, a2
-	slli	a1, a1, 12
 	lui	a2, 4112
+	slli	a1, a1, 12
 	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
@@ -55,18 +55,18 @@ func00000000000000cc:                   # @func00000000000000cc
 	ret
 func0000000000000030:                   # @func0000000000000030
 	add	a1, a1, a2
+	lui	a2, 3
 	slli	a1, a1, 8
 	add	a0, a0, a1
-	lui	a1, 3
-	addi	a1, a1, 48
+	addi	a1, a2, 48
 	addw	a0, a0, a1
 	ret
 func00000000000000fa:                   # @func00000000000000fa
 	add	a1, a1, a2
+	lui	a2, 3
 	slli	a1, a1, 8
 	add	a0, a0, a1
-	lui	a1, 3
-	addi	a1, a1, 48
+	addi	a1, a2, 48
 	addw	a0, a0, a1
 	ret
 func00000000000000ff:                   # @func00000000000000ff

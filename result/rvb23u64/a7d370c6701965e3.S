@@ -1,24 +1,24 @@
 func00000000000000aa:                   # @func00000000000000aa
 	sh1add	a2, a2, a2
-	slli	a2, a2, 5
 	slli	a0, a0, 4
+	slli	a2, a2, 5
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 56
 	ret
 func0000000000000020:                   # @func0000000000000020
 	li	a3, 568
-	mul	a2, a2, a3
 	slli	a0, a0, 5
+	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 56
 	ret
 func00000000000000bb:                   # @func00000000000000bb
 	lui	a3, 1
+	slli	a0, a0, 5
 	addiw	a3, a3, -1488
 	mul	a2, a2, a3
-	slli	a0, a0, 5
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 56

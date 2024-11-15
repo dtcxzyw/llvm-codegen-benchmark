@@ -23,11 +23,11 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func000000000000007e:                   # @func000000000000007e
 	addi	a1, a1, 7
+	lui	a2, 97
 	slli	a1, a1, 48
+	addiw	a2, a2, -440
 	srli	a1, a1, 48
 	slli	a1, a1, 3
-	lui	a2, 97
-	addiw	a2, a2, -440
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

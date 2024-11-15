@@ -64,8 +64,8 @@ func00000000000000c2:                   # @func00000000000000c2
 	fli.s	fa5, 1.0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfge.vf	v0, v16, fa5
-	vmerge.vvm	v8, v12, v8, v0
 	lui	a0, 264704
+	vmerge.vvm	v8, v12, v8, v0
 	fmv.w.x	fa5, a0
 	vmflt.vf	v0, v8, fa5
 	ret

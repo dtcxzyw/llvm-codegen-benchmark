@@ -1,13 +1,13 @@
 func0000000000000050:                   # @func0000000000000050
 	slli	a3, a0, 3
 	slli	a0, a0, 6
-	sub	a0, a0, a3
-	add	a0, a0, a2
 	sext.w	a1, a1
+	sub	a0, a0, a3
+	lui	a3, 33
 	slli	a1, a1, 4
-	lui	a2, 33
-	addiw	a2, a2, -1968
-	add	a1, a1, a2
+	addiw	a3, a3, -1968
+	add	a0, a0, a2
+	add	a1, a1, a3
 	add	a0, a0, a1
 	ret
 func0000000000000040:                   # @func0000000000000040
@@ -31,9 +31,9 @@ func000000000000005a:                   # @func000000000000005a
 	ret
 func000000000000007a:                   # @func000000000000007a
 	sh2add	a0, a0, a0
+	sext.w	a1, a1
 	slli	a0, a0, 5
 	add	a0, a0, a2
-	sext.w	a1, a1
 	slli	a1, a1, 4
 	add	a0, a0, a1
 	addi	a0, a0, 200

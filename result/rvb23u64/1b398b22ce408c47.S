@@ -10,9 +10,9 @@ func000000000000002c:                   # @func000000000000002c
 	.quad	0x3eb0c6f7a0000000              # double 9.9999999747524271E-7
 func0000000000000022:                   # @func0000000000000022
 	lui	a0, %hi(.LCPI1_0)
+	lui	a1, %hi(.LCPI1_1)
 	fld	fa5, %lo(.LCPI1_0)(a0)
-	lui	a0, %hi(.LCPI1_1)
-	fld	fa4, %lo(.LCPI1_1)(a0)
+	fld	fa4, %lo(.LCPI1_1)(a1)
 	fsub.d	fa3, fa1, fa2
 	flt.d	a0, fa3, fa5
 	flt.d	a1, fa0, fa4
@@ -50,9 +50,9 @@ func0000000000000088:                   # @func0000000000000088
 	.quad	0x4076700000000000              # double 359
 func0000000000000044:                   # @func0000000000000044
 	lui	a0, %hi(.LCPI5_0)
+	lui	a1, %hi(.LCPI5_1)
 	fld	fa5, %lo(.LCPI5_0)(a0)
-	lui	a0, %hi(.LCPI5_1)
-	fld	fa4, %lo(.LCPI5_1)(a0)
+	fld	fa4, %lo(.LCPI5_1)(a1)
 	fsub.d	fa3, fa1, fa2
 	flt.d	a0, fa5, fa3
 	flt.d	a1, fa4, fa0

@@ -1,9 +1,9 @@
 func000000000000001d:                   # @func000000000000001d
 	li	a0, 257
 	slli	a1, a0, 32
+	slli	a0, a0, 48
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v10, v10, a1
-	slli	a0, a0, 48
 	vmul.vx	v8, v8, a0
 	vor.vv	v8, v8, v10
 	ret

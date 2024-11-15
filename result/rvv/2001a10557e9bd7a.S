@@ -40,10 +40,10 @@ func000000000000001a:                   # @func000000000000001a
 	vmerge.vvm	v8, v10, v8, v0
 	ret
 func0000000000000004:                   # @func0000000000000004
-	li	a0, 32
-	bseti	a1, zero, 32
+	bseti	a0, zero, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsltu.vx	v0, v10, a1
+	vmsltu.vx	v0, v10, a0
+	li	a0, 32
 	vsll.vx	v10, v10, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret

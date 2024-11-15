@@ -33,9 +33,9 @@ func0000000000000aaa:                   # @func0000000000000aaa
 	.quad	0xbfb999999999999a              # double -0.10000000000000001
 func0000000000000224:                   # @func0000000000000224
 	lui	a0, %hi(.LCPI3_0)
+	lui	a1, %hi(.LCPI3_1)
 	fld	fa5, %lo(.LCPI3_0)(a0)
-	lui	a0, %hi(.LCPI3_1)
-	fld	fa4, %lo(.LCPI3_1)(a0)
+	fld	fa4, %lo(.LCPI3_1)(a1)
 	lui	a0, %hi(.LCPI3_2)
 	fld	fa3, %lo(.LCPI3_2)(a0)
 	flt.d	a0, fa2, fa5
@@ -60,9 +60,9 @@ func0000000000000777:                   # @func0000000000000777
 	.quad	0x406573fae561f647              # double 171.62437695630271
 func0000000000000222:                   # @func0000000000000222
 	lui	a0, %hi(.LCPI5_0)
+	lui	a1, %hi(.LCPI5_1)
 	fld	fa5, %lo(.LCPI5_0)(a0)
-	lui	a0, %hi(.LCPI5_1)
-	fld	fa4, %lo(.LCPI5_1)(a0)
+	fld	fa4, %lo(.LCPI5_1)(a1)
 	flt.d	a0, fa2, fa5
 	flt.d	a1, fa1, fa4
 	and	a0, a0, a1
@@ -84,9 +84,9 @@ func0000000000000111:                   # @func0000000000000111
 	.quad	0x4009220092718f51              # double 3.1416026535897932
 func00000000000004a4:                   # @func00000000000004a4
 	lui	a0, %hi(.LCPI7_0)
+	lui	a1, %hi(.LCPI7_1)
 	fld	fa5, %lo(.LCPI7_0)(a0)
-	lui	a0, %hi(.LCPI7_1)
-	fld	fa4, %lo(.LCPI7_1)(a0)
+	fld	fa4, %lo(.LCPI7_1)(a1)
 	flt.d	a0, fa5, fa2
 	fle.d	a1, fa1, fa4
 	flt.d	a2, fa5, fa0

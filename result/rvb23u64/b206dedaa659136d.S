@@ -1,8 +1,8 @@
 func0000000000000006:                   # @func0000000000000006
 	andi	a0, a0, 1
 	slti	a3, a2, 0
-	czero.nez	a2, a2, a3
 	li	a4, -34
+	czero.nez	a2, a2, a3
 	czero.eqz	a3, a4, a3
 	or	a2, a2, a3
 	czero.nez	a2, a2, a0
@@ -12,11 +12,11 @@ func0000000000000006:                   # @func0000000000000006
 func0000000000000008:                   # @func0000000000000008
 	andi	a0, a0, 1
 	li	a3, -17
+	li	a4, -2
 	srli	a3, a3, 2
+	bclri	a4, a4, 62
 	sltu	a3, a3, a2
 	czero.nez	a2, a2, a3
-	li	a4, -2
-	bclri	a4, a4, 62
 	czero.eqz	a3, a4, a3
 	or	a2, a2, a3
 	czero.nez	a2, a2, a0
@@ -26,8 +26,8 @@ func0000000000000008:                   # @func0000000000000008
 func000000000000000a:                   # @func000000000000000a
 	andi	a0, a0, 1
 	sgtz	a3, a2
-	czero.nez	a2, a2, a3
 	li	a4, 25
+	czero.nez	a2, a2, a3
 	czero.eqz	a3, a4, a3
 	or	a2, a2, a3
 	czero.nez	a2, a2, a0

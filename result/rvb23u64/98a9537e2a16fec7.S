@@ -21,8 +21,8 @@ func000000000000002a:                   # @func000000000000002a
 	srliw	a2, a2, 31
 	lui	a3, 524288
 	addi	a3, a3, -1
-	addw	a2, a2, a3
 	slti	a1, a1, 0
+	addw	a2, a2, a3
 	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2
@@ -32,8 +32,8 @@ func0000000000000026:                   # @func0000000000000026
 	srliw	a2, a2, 31
 	lui	a3, 524288
 	addi	a3, a3, -1
-	addw	a2, a2, a3
 	slti	a1, a1, 0
+	addw	a2, a2, a3
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1

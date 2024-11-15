@@ -9,8 +9,8 @@ func0000000000000007:                   # @func0000000000000007
 func0000000000000004:                   # @func0000000000000004
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfneg.v	v12, v12
-	vfdiv.vv	v8, v12, v8
 	lui	a0, 219648
+	vfdiv.vv	v8, v12, v8
 	fmv.w.x	fa5, a0
 	vmfgt.vf	v12, v8, fa5
 	vmand.mm	v0, v12, v0

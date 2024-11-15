@@ -62,19 +62,19 @@ func00000000000000ac:                   # @func00000000000000ac
 	zext.h	a0, a0
 	sext.h	a2, a2
 	slti	a2, a2, 0
-	xori	a2, a2, 1
 	xor	a0, a0, a1
+	xori	a1, a2, 1
 	snez	a0, a0
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 func000000000000009c:                   # @func000000000000009c
 	zext.h	a0, a0
 	zext.h	a2, a2
 	zext.h	a1, a1
 	sltu	a1, a1, a2
-	xori	a1, a1, 1
 	lui	a2, 16
 	addiw	a2, a2, -1024
+	xori	a1, a1, 1
 	xor	a0, a0, a2
 	snez	a0, a0
 	and	a0, a0, a1

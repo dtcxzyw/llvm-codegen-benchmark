@@ -1,9 +1,9 @@
 func0000000000000011:                   # @func0000000000000011
 	andi	a0, a0, 1
 	andi	a1, a1, 958
+	lui	a2, 786432
 	snez	a1, a1
 	addi	a0, a0, -1
-	lui	a2, 786432
 	addiw	a2, a2, 64
 	and	a0, a0, a2
 	slli	a1, a1, 4

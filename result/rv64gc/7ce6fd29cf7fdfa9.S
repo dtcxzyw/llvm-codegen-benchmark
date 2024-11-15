@@ -3,16 +3,16 @@
 .LCPI0_1:
 	.quad	46116860184273880               # 0xa3d70a3d70a3d8
 func0000000000000021:                   # @func0000000000000021
+	slli	a0, a0, 48
 	lui	a1, %hi(.LCPI0_0)
 	ld	a1, %lo(.LCPI0_0)(a1)
-	slli	a0, a0, 48
+	lui	a2, %hi(.LCPI0_1)
 	srli	a0, a0, 48
+	ld	a2, %lo(.LCPI0_1)(a2)
 	mul	a0, a0, a1
-	lui	a1, %hi(.LCPI0_1)
-	ld	a1, %lo(.LCPI0_1)(a1)
-	slli	a2, a0, 60
+	slli	a1, a0, 60
 	srli	a0, a0, 4
-	or	a0, a0, a2
-	sltu	a0, a0, a1
+	or	a0, a0, a1
+	sltu	a0, a0, a2
 	addi	a0, a0, 28
 	ret

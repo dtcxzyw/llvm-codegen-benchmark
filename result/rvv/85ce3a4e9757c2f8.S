@@ -3,10 +3,10 @@
 func0000000000000035:                   # @func0000000000000035
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v12, 0
-	vmerge.vim	v12, v12, 1, v0
-	vsub.vv	v10, v10, v12
 	lui	a0, %hi(.LCPI0_0)
+	vmerge.vim	v12, v12, 1, v0
 	ld	a0, %lo(.LCPI0_0)(a0)
+	vsub.vv	v10, v10, v12
 	li	a1, 7
 	vmul.vx	v10, v10, a1
 	vsra.vi	v8, v8, 3
@@ -17,10 +17,10 @@ func0000000000000035:                   # @func0000000000000035
 func0000000000000030:                   # @func0000000000000030
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v12, 0
-	vmerge.vim	v12, v12, 1, v0
-	vsub.vv	v10, v10, v12
 	lui	a0, %hi(.LCPI1_0)
+	vmerge.vim	v12, v12, 1, v0
 	ld	a0, %lo(.LCPI1_0)(a0)
+	vsub.vv	v10, v10, v12
 	li	a1, 7
 	vmul.vx	v10, v10, a1
 	vsra.vi	v8, v8, 3

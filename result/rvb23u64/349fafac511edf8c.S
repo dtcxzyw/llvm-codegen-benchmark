@@ -57,8 +57,8 @@ func00000000000000d8:                   # @func00000000000000d8
 	ret
 func00000000000000fa:                   # @func00000000000000fa
 	sh3add	a2, a2, a2
-	slli	a2, a2, 8
 	slli	a1, a1, 4
+	slli	a2, a2, 8
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
@@ -74,8 +74,8 @@ func000000000000001a:                   # @func000000000000001a
 	ret
 func00000000000000ca:                   # @func00000000000000ca
 	sh3add	a2, a2, a2
-	slli	a2, a2, 6
 	slli	a1, a1, 6
+	slli	a2, a2, 6
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

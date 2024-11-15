@@ -1,8 +1,8 @@
 func0000000000000050:                   # @func0000000000000050
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
-	vmflt.vv	v7, v16, v24
 	fmv.d.x	fa5, zero
+	vmflt.vv	v7, v16, v24
 	vmfeq.vf	v16, v8, fa5
 	vmor.mm	v0, v16, v7
 	ret
@@ -43,8 +43,8 @@ func0000000000000104:                   # @func0000000000000104
 func0000000000000190:                   # @func0000000000000190
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
-	vmfle.vv	v7, v24, v16
 	fmv.d.x	fa5, zero
+	vmfle.vv	v7, v24, v16
 	vmfeq.vf	v16, v8, fa5
 	vmor.mm	v0, v16, v7
 	ret
@@ -62,8 +62,8 @@ func0000000000000044:                   # @func0000000000000044
 func00000000000000ae:                   # @func00000000000000ae
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
-	vmfle.vv	v7, v16, v24
 	fmv.d.x	fa5, zero
+	vmfle.vv	v7, v16, v24
 	vmfne.vf	v16, v8, fa5
 	vmorn.mm	v0, v16, v7
 	ret
@@ -81,12 +81,12 @@ func0000000000000154:                   # @func0000000000000154
 func00000000000000f2:                   # @func00000000000000f2
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
-	vmfne.vv	v7, v16, v24
 	fli.d	fa5, inf
-	vmflt.vf	v16, v8, fa5
-	vmfgt.vf	v17, v8, fa5
-	vmor.mm	v8, v17, v16
-	vmorn.mm	v0, v7, v8
+	vmflt.vf	v7, v8, fa5
+	vmfgt.vf	v6, v8, fa5
+	vmfne.vv	v8, v16, v24
+	vmor.mm	v9, v6, v7
+	vmorn.mm	v0, v8, v9
 	ret
 func0000000000000042:                   # @func0000000000000042
 	vsetivli	zero, 16, e64, m8, ta, ma
@@ -99,10 +99,10 @@ func000000000000007a:                   # @func000000000000007a
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	fmv.d.x	fa5, zero
-	vmfge.vf	v7, v24, fa5
-	vmflt.vv	v24, v8, v16
-	vmnot.m	v8, v24
-	vmorn.mm	v0, v8, v7
+	vmflt.vv	v7, v8, v16
+	vmfge.vf	v8, v24, fa5
+	vmnot.m	v9, v7
+	vmorn.mm	v0, v9, v8
 	ret
 .LCPI11_0:
 	.quad	0x3eb0c6f7a0b5ed8d              # double 9.9999999999999995E-7
@@ -118,11 +118,11 @@ func0000000000000150:                   # @func0000000000000150
 func00000000000000ba:                   # @func00000000000000ba
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
-	vmfle.vv	v7, v16, v24
 	fmv.d.x	fa5, zero
-	vmflt.vf	v16, v8, fa5
-	vmnot.m	v8, v16
-	vmorn.mm	v0, v8, v7
+	vmflt.vf	v7, v8, fa5
+	vmfle.vv	v8, v16, v24
+	vmnot.m	v9, v7
+	vmorn.mm	v0, v9, v8
 	ret
 func0000000000000108:                   # @func0000000000000108
 	vsetivli	zero, 16, e64, m8, ta, ma

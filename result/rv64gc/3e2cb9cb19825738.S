@@ -1,7 +1,7 @@
 func0000000000000074:                   # @func0000000000000074
 	feq.d	a0, fa0, fa1
-	xori	a0, a0, 1
 	fmv.d.x	fa5, zero
+	xori	a0, a0, 1
 	flt.d	a1, fa5, fa0
 	and	a0, a0, a1
 	ret

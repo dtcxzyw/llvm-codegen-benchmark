@@ -32,12 +32,12 @@ func0000000000000040:                   # @func0000000000000040
 	ret
 func0000000000000060:                   # @func0000000000000060
 	li	a3, 1
+	slli	a0, a0, 3
 	slli	a3, a3, 32
 	addi	a3, a3, -2
 	add	a2, a2, a3
 	addi	a3, a3, 1
 	and	a2, a2, a3
-	slli	a0, a0, 3
 	add	a0, a0, a1
 	slli	a2, a2, 3
 	add	a0, a0, a2

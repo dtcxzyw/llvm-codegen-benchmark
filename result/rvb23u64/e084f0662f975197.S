@@ -21,27 +21,27 @@ func0000000000000055:                   # @func0000000000000055
 	lui	a0, %hi(.LCPI2_0)
 	flw	fa5, %lo(.LCPI2_0)(a0)
 	fabs.s	fa4, fa1
+	fabs.s	fa3, fa0
 	fle.s	a0, fa4, fa5
-	fabs.s	fa4, fa0
-	fle.s	a1, fa4, fa5
+	fle.s	a1, fa3, fa5
 	and	a0, a0, a1
 	xori	a0, a0, 1
 	ret
 func00000000000001dd:                   # @func00000000000001dd
 	fabs.s	fa5, fa1
 	lui	a0, 212992
-	fmv.w.x	fa4, a0
-	flt.s	a0, fa5, fa4
-	fabs.s	fa5, fa0
-	flt.s	a1, fa5, fa4
+	fabs.s	fa4, fa0
+	fmv.w.x	fa3, a0
+	flt.s	a0, fa5, fa3
+	flt.s	a1, fa4, fa3
 	and	a0, a0, a1
 	xori	a0, a0, 1
 	ret
 func0000000000000122:                   # @func0000000000000122
 	fabs.s	fa5, fa1
 	fabs.s	fa4, fa0
-	fmin.s	fa5, fa4, fa5
 	lui	a0, 212992
+	fmin.s	fa5, fa4, fa5
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	ret
@@ -51,9 +51,9 @@ func0000000000000155:                   # @func0000000000000155
 	lui	a0, %hi(.LCPI5_0)
 	flw	fa5, %lo(.LCPI5_0)(a0)
 	fabs.s	fa4, fa1
+	fabs.s	fa3, fa0
 	fle.s	a0, fa4, fa5
-	fabs.s	fa4, fa0
-	fle.s	a1, fa4, fa5
+	fle.s	a1, fa3, fa5
 	and	a0, a0, a1
 	xori	a0, a0, 1
 	ret
@@ -70,9 +70,9 @@ func00000000000000dd:                   # @func00000000000000dd
 	lui	a0, %hi(.LCPI7_0)
 	flw	fa5, %lo(.LCPI7_0)(a0)
 	fabs.s	fa4, fa1
+	fabs.s	fa3, fa0
 	flt.s	a0, fa4, fa5
-	fabs.s	fa4, fa0
-	flt.s	a1, fa4, fa5
+	flt.s	a1, fa3, fa5
 	and	a0, a0, a1
 	xori	a0, a0, 1
 	ret

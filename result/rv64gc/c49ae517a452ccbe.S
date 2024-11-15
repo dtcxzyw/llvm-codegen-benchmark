@@ -17,9 +17,9 @@ func0000000000000318:                   # @func0000000000000318
 	mv	a1, a2
 .LBB1_2:                                # %entry
 	sext.w	a1, a1
+	addi	a0, a0, -3
 	sltiu	a1, a1, 3
 	xori	a1, a1, 1
-	addi	a0, a0, -3
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
@@ -30,8 +30,8 @@ func0000000000000290:                   # @func0000000000000290
 	mv	a1, a2
 .LBB2_2:                                # %entry
 	sext.w	a1, a1
-	sltiu	a1, a1, 64
 	sltiu	a0, a0, 65
+	sltiu	a1, a1, 64
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -42,9 +42,9 @@ func0000000000000358:                   # @func0000000000000358
 	mv	a1, a2
 .LBB3_2:                                # %entry
 	sext.w	a1, a1
+	addi	a0, a0, -3
 	slti	a1, a1, 3
 	xori	a1, a1, 1
-	addi	a0, a0, -3
 	snez	a0, a0
 	or	a0, a0, a1
 	ret

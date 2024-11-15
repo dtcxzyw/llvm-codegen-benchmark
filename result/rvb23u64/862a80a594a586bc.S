@@ -20,16 +20,16 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000016:                   # @func0000000000000016
 	srliw	a1, a1, 29
 	or	a0, a0, a1
-	sext.w	a0, a0
 	lui	a1, 524288
+	sext.w	a0, a0
 	addiw	a1, a1, 513
 	slt	a0, a0, a1
 	ret
 func000000000000001a:                   # @func000000000000001a
 	srliw	a1, a1, 29
 	or	a0, a0, a1
-	sext.w	a0, a0
 	lui	a1, 524288
+	sext.w	a0, a0
 	addiw	a1, a1, -513
 	slt	a0, a1, a0
 	ret

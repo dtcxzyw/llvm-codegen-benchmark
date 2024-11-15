@@ -32,9 +32,9 @@ func0000000000000061:                   # @func0000000000000061
 	sext.w	a0, a0
 	slli	a1, a1, 56
 	srai	a1, a1, 56
+	addi	a0, a0, -2
 	slti	a1, a1, 0
 	not	a1, a1
-	addi	a0, a0, -2
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -103,8 +103,8 @@ func00000000000000a1:                   # @func00000000000000a1
 	sext.w	a0, a0
 	slli	a1, a1, 56
 	srai	a1, a1, 56
-	slti	a1, a1, 1
 	addi	a0, a0, 1
+	slti	a1, a1, 1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

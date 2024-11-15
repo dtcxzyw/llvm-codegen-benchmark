@@ -25,9 +25,9 @@ func0000000000000044:                   # @func0000000000000044
 func000000000000006a:                   # @func000000000000006a
 	lui	a3, %hi(.LCPI2_0)
 	ld	a3, %lo(.LCPI2_0)(a3)
-	slt	a3, a2, a3
 	lui	a4, %hi(.LCPI2_1)
 	ld	a4, %lo(.LCPI2_1)(a4)
+	slt	a3, a2, a3
 	czero.nez	a2, a2, a3
 	czero.eqz	a1, a1, a3
 	or	a1, a1, a2

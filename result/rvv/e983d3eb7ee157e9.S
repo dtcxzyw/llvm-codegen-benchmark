@@ -9,8 +9,8 @@ func0000000000000068:                   # @func0000000000000068
 func0000000000000064:                   # @func0000000000000064
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v10, v10, 1
-	vmaxu.vv	v8, v10, v8
 	li	a0, 50
+	vmaxu.vv	v8, v10, v8
 	vmsltu.vx	v0, v8, a0
 	vmv.v.i	v8, 8
 	vmerge.vim	v8, v8, 0, v0

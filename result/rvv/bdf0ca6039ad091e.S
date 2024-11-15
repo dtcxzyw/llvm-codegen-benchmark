@@ -1,12 +1,12 @@
 func0000000000000014:                   # @func0000000000000014
 	li	a0, -1
-	srli	a0, a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v10, v10, a0
 	vsra.vi	v8, v8, 3
-	lui	a0, 748983
-	addiw	a0, a0, -585
-	slli	a1, a0, 33
+	lui	a1, 748983
+	srli	a0, a0, 32
+	addiw	a1, a1, -585
+	vand.vx	v10, v10, a0
+	slli	a0, a1, 33
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0
 	vmsltu.vv	v0, v8, v10
@@ -26,26 +26,26 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 func0000000000000011:                   # @func0000000000000011
 	li	a0, -1
-	srli	a0, a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v10, v10, a0
 	vsra.vi	v8, v8, 3
-	lui	a0, 748983
-	addiw	a0, a0, -585
-	slli	a1, a0, 33
+	lui	a1, 748983
+	srli	a0, a0, 32
+	addiw	a1, a1, -585
+	vand.vx	v10, v10, a0
+	slli	a0, a1, 33
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0
 	vmseq.vv	v0, v8, v10
 	ret
 func0000000000000015:                   # @func0000000000000015
 	li	a0, -1
-	srli	a0, a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v10, v10, a0
 	vsra.vi	v8, v8, 3
-	lui	a0, 699051
-	addiw	a0, a0, -1365
-	slli	a1, a0, 32
+	lui	a1, 699051
+	srli	a0, a0, 32
+	addiw	a1, a1, -1365
+	vand.vx	v10, v10, a0
+	slli	a0, a1, 32
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0
 	vmsleu.vv	v0, v8, v10

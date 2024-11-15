@@ -24,8 +24,8 @@ func00000000000006a6:                   # @func00000000000006a6
 	sext.w	a2, a2
 	slti	a2, a2, 0
 	slti	a3, a0, 0
-	xori	a3, a3, 1
 	slt	a0, a0, a1
+	xori	a1, a3, 1
 	and	a0, a0, a2
-	and	a0, a0, a3
+	and	a0, a0, a1
 	ret

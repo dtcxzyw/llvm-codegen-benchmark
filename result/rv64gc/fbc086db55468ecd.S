@@ -109,8 +109,8 @@ func000000000000006a:                   # @func000000000000006a
 	ret
 func00000000000000ca:                   # @func00000000000000ca
 	xor	a1, a1, a2
-	snez	a1, a1
 	slti	a0, a0, 0
+	snez	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -199,8 +199,8 @@ func000000000000007c:                   # @func000000000000007c
 	ret
 func00000000000000c8:                   # @func00000000000000c8
 	xor	a1, a1, a2
-	snez	a1, a1
 	sltiu	a0, a0, 8
+	snez	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -212,8 +212,8 @@ func000000000000009c:                   # @func000000000000009c
 	ret
 func0000000000000018:                   # @func0000000000000018
 	xor	a1, a1, a2
-	seqz	a1, a1
 	sltiu	a0, a0, 4
+	seqz	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
 	ret

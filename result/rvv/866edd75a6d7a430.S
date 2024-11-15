@@ -5,10 +5,10 @@ func0000000000000011:                   # @func0000000000000011
 	addiw	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
+	li	a1, -1
 	vmul.vx	v8, v8, a0
-	li	a0, -1
-	srli	a0, a0, 32
-	vand.vx	v8, v8, a0
+	srli	a1, a1, 32
+	vand.vx	v8, v8, a1
 	vmseq.vi	v0, v8, 11
 	ret
 func0000000000000014:                   # @func0000000000000014
@@ -18,10 +18,10 @@ func0000000000000014:                   # @func0000000000000014
 	addiw	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
+	li	a1, -1
+	srli	a1, a1, 32
 	vmul.vx	v8, v8, a0
-	li	a0, -1
-	srli	a0, a0, 32
-	vand.vx	v8, v8, a0
+	vand.vx	v8, v8, a1
 	li	a0, 29
 	vmsltu.vx	v0, v8, a0
 	ret
@@ -31,9 +31,9 @@ func0000000000000001:                   # @func0000000000000001
 	vsra.vx	v10, v8, a0
 	li	a0, 58
 	vsrl.vx	v10, v10, a0
+	li	a0, -1
 	vadd.vv	v8, v8, v10
 	vsra.vi	v8, v8, 6
-	li	a0, -1
 	srli	a0, a0, 3
 	vand.vx	v8, v8, a0
 	vmseq.vi	v0, v8, 0
@@ -56,9 +56,9 @@ func000000000000000c:                   # @func000000000000000c
 	li	a0, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vx	v10, v8, a0
+	lui	a0, 524288
 	vadd.vv	v8, v8, v10
 	vsrl.vi	v8, v8, 1
-	lui	a0, 524288
 	addiw	a0, a0, -2
 	vand.vx	v8, v8, a0
 	vmsne.vi	v0, v8, 0
@@ -70,10 +70,10 @@ func000000000000001c:                   # @func000000000000001c
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
+	li	a1, -1
 	vmul.vx	v8, v8, a0
-	li	a0, -1
-	srli	a0, a0, 32
-	vand.vx	v8, v8, a0
+	srli	a1, a1, 32
+	vand.vx	v8, v8, a1
 	vmsne.vi	v0, v8, 0
 	ret
 .LCPI6_0:
@@ -85,10 +85,10 @@ func0000000000000008:                   # @func0000000000000008
 	vmulh.vx	v8, v8, a0
 	li	a0, 63
 	vsrl.vx	v10, v8, a0
-	vsra.vi	v8, v8, 18
-	vadd.vv	v8, v8, v10
 	li	a0, -32
 	zext.w	a0, a0
+	vsra.vi	v8, v8, 18
+	vadd.vv	v8, v8, v10
 	vand.vx	v8, v8, a0
 	lui	a0, 15
 	addiw	a0, a0, -1441

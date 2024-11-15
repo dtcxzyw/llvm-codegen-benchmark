@@ -23,9 +23,9 @@ func0000000000000000:                   # @func0000000000000000
 	andi	a2, a2, 1
 	lui	a3, 16
 	czero.nez	a2, a3, a2
+	lui	a3, 524944
 	addw	a1, a1, a2
-	lui	a2, 524944
-	czero.eqz	a2, a2, a0
+	czero.eqz	a2, a3, a0
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2
 	ret

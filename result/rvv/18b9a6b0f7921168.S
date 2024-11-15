@@ -4,15 +4,15 @@ func000000000000000f:                   # @func000000000000000f
 	lui	a0, 1
 	addi	a0, a0, 1147
 	vmulhu.vx	v9, v9, a0
-	vsrl.vi	v9, v9, 1
 	li	a0, 100
+	vsrl.vi	v9, v9, 1
 	vnmsub.vx	v9, a0, v8
+	li	a0, 103
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vnsrl.wi	v8, v9, 0
-	li	a0, 103
 	vmulhu.vx	v9, v8, a0
-	vsrl.vi	v9, v9, 2
 	li	a0, 10
+	vsrl.vi	v9, v9, 2
 	vnmsub.vx	v9, a0, v8
 	li	a0, 48
 	vor.vx	v10, v9, a0

@@ -1,7 +1,7 @@
 func0000000000000022:                   # @func0000000000000022
 	slli	a0, a0, 48
-	srli	a2, a0, 48
 	sext.w	a1, a1
+	srli	a2, a0, 48
 	srai	a0, a0, 48
 	xor	a0, a0, a1
 	seqz	a0, a0

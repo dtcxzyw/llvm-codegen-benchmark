@@ -3,8 +3,8 @@ func0000000000000082:                   # @func0000000000000082
 	vnsrl.wi	v11, v12, 0
 	li	a0, 63
 	vand.vx	v11, v11, a0
-	vmsltu.vv	v10, v11, v10
 	li	a0, 128
+	vmsltu.vv	v10, v11, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmseq.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10
@@ -26,10 +26,10 @@ func00000000000004c2:                   # @func00000000000004c2
 	lui	a0, 131072
 	addi	a0, a0, -1
 	vand.vx	v11, v11, a0
-	vmslt.vv	v10, v11, v10
 	li	a0, -7
 	slli.uw	a0, a0, 29
 	addi	a0, a0, -1
+	vmslt.vv	v10, v11, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmseq.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10
@@ -51,10 +51,10 @@ func0000000000000562:                   # @func0000000000000562
 	lui	a0, 131072
 	addi	a0, a0, -1
 	vand.vx	v11, v11, a0
-	vmsle.vv	v10, v10, v11
 	li	a0, -7
 	slli.uw	a0, a0, 29
 	addi	a0, a0, -1
+	vmsle.vv	v10, v10, v11
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmseq.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10

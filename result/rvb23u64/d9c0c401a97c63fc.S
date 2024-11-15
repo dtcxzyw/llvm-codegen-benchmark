@@ -19,8 +19,8 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func0000000000000014:                   # @func0000000000000014
 	andi	a2, a2, 255
-	addi	a2, a2, -255
 	li	a3, 31
+	addi	a2, a2, -255
 	czero.eqz	a3, a3, a2
 	czero.nez	a1, a1, a2
 	or	a1, a1, a3
@@ -28,8 +28,8 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 func0000000000000068:                   # @func0000000000000068
 	sext.b	a2, a2
-	slti	a2, a2, 0
 	li	a3, 23
+	slti	a2, a2, 0
 	czero.nez	a3, a3, a2
 	czero.eqz	a1, a1, a2
 	or	a1, a1, a3
@@ -37,8 +37,8 @@ func0000000000000068:                   # @func0000000000000068
 	ret
 func0000000000000061:                   # @func0000000000000061
 	sext.b	a2, a2
-	slti	a2, a2, 0
 	li	a3, 23
+	slti	a2, a2, 0
 	czero.nez	a3, a3, a2
 	czero.eqz	a1, a1, a2
 	or	a1, a1, a3
@@ -47,8 +47,8 @@ func0000000000000061:                   # @func0000000000000061
 	ret
 func000000000000006c:                   # @func000000000000006c
 	sext.b	a2, a2
-	slti	a2, a2, 0
 	li	a3, 23
+	slti	a2, a2, 0
 	czero.nez	a3, a3, a2
 	czero.eqz	a1, a1, a2
 	or	a1, a1, a3

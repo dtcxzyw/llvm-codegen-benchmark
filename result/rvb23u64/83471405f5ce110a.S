@@ -1,8 +1,8 @@
 func0000000000000014:                   # @func0000000000000014
 	slli	a1, a1, 29
-	srai	a1, a1, 32
 	srai	a0, a0, 3
 	lui	a2, 699051
+	srai	a1, a1, 32
 	addiw	a2, a2, -1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
@@ -21,9 +21,9 @@ func0000000000000034:                   # @func0000000000000034
 	ret
 func0000000000000011:                   # @func0000000000000011
 	slli	a1, a1, 26
-	srai	a1, a1, 32
 	srai	a0, a0, 3
 	lui	a2, 838861
+	srai	a1, a1, 32
 	addiw	a2, a2, -819
 	slli	a3, a2, 32
 	add	a2, a2, a3

@@ -221,13 +221,13 @@ func0000000000000158:                   # @func0000000000000158
 func0000000000000092:                   # @func0000000000000092
 	lui	a0, %hi(.LCPI20_0)
 	fld	fa5, %lo(.LCPI20_0)(a0)
+	fli.d	fa4, inf
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vmfgt.vf	v16, v8, fa5
-	fli.d	fa5, inf
-	vmflt.vf	v17, v8, fa5
+	vmflt.vf	v16, v8, fa4
+	vmfgt.vf	v17, v8, fa4
 	vmfgt.vf	v18, v8, fa5
-	vmor.mm	v8, v18, v17
-	vmorn.mm	v0, v16, v8
+	vmor.mm	v8, v17, v16
+	vmorn.mm	v0, v18, v8
 	ret
 .LCPI21_0:
 	.quad	0x41dfffffffc00000              # double 2147483647

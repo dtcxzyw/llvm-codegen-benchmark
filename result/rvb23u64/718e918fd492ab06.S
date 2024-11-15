@@ -1,7 +1,7 @@
 func0000000000000034:                   # @func0000000000000034
 	sext.w	a1, a1
-	addi	a1, a1, -24
 	li	a2, 60
+	addi	a1, a1, -24
 	czero.eqz	a1, a2, a1
 	zext.h	a0, a0
 	sltu	a0, a1, a0
@@ -34,8 +34,8 @@ func0000000000000021:                   # @func0000000000000021
 	ret
 func0000000000000024:                   # @func0000000000000024
 	sext.w	a1, a1
-	addi	a1, a1, -1
 	lui	a2, 1
+	addi	a1, a1, -1
 	czero.eqz	a1, a2, a1
 	add	a1, a1, a2
 	zext.h	a0, a0

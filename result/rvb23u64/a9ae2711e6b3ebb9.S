@@ -4,8 +4,8 @@ func0000000000000005:                   # @func0000000000000005
 	ret
 func000000000000000e:                   # @func000000000000000e
 	sext.w	a1, a1
-	slli	a1, a1, 12
 	lui	a2, 1048575
+	slli	a1, a1, 12
 	zext.w	a2, a2
 	not	a2, a2
 	and	a0, a0, a2

@@ -1,25 +1,25 @@
 func000000000000000f:                   # @func000000000000000f
 	or	a1, a1, a2
+	lui	a2, 244
 	or	a0, a0, a1
-	lui	a1, 244
-	addiw	a1, a1, 576
+	addiw	a1, a2, 576
 	mul	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c
 	or	a1, a1, a2
+	lui	a2, 196615
 	or	a0, a0, a1
-	lui	a1, 196615
-	slli	a1, a1, 12
-	addi	a1, a1, 5
-	slli	a1, a1, 16
-	addi	a1, a1, 11
-	mul	a0, a0, a1
+	slli	a2, a2, 12
+	addi	a2, a2, 5
+	slli	a2, a2, 16
+	addi	a2, a2, 11
+	mul	a0, a0, a2
 	ret
 func0000000000000008:                   # @func0000000000000008
 	or	a1, a1, a2
+	lui	a2, 123738
 	or	a0, a0, a1
-	lui	a1, 123738
-	addiw	a1, a1, 1981
+	addiw	a1, a2, 1981
 	slli	a1, a1, 24
 	mul	a0, a0, a1
 	ret

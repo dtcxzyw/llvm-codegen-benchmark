@@ -8,8 +8,8 @@ func000000000000016a:                   # @func000000000000016a
 	ret
 func0000000000000064:                   # @func0000000000000064
 	addw	a1, a1, a2
-	slti	a1, a1, 0
 	srliw	a0, a0, 16
+	slti	a1, a1, 0
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
@@ -31,8 +31,8 @@ func0000000000000168:                   # @func0000000000000168
 	ret
 func0000000000000164:                   # @func0000000000000164
 	addw	a1, a1, a2
-	slti	a1, a1, 0
 	srliw	a0, a0, 16
+	slti	a1, a1, 0
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

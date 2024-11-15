@@ -40,12 +40,12 @@ func0000000000000081:                   # @func0000000000000081
 	andi	a0, a0, 255
 	andi	a1, a1, 255
 	sltiu	a1, a1, 15
-	xori	a1, a1, 1
 	addi	a0, a0, -2
+	xori	a1, a1, 1
 	seqz	a0, a0
 	and	a0, a0, a1
-	addi	a0, a0, -1
 	lui	a1, 2
+	addi	a0, a0, -1
 	addiw	a1, a1, 1808
 	and	a0, a0, a1
 	ret

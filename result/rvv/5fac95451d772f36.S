@@ -8,14 +8,13 @@ func0000000000000066:                   # @func0000000000000066
 	vmor.mm	v0, v10, v13
 	ret
 func0000000000000068:                   # @func0000000000000068
+	vmv1r.v	v12, v0
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsle.vi	v12, v10, -1
-	vmv1r.v	v13, v0
-	vmv1r.v	v0, v12
+	vmsle.vi	v0, v10, -1
 	vmerge.vvm	v8, v10, v8, v0
 	li	a0, 24
 	vmsgtu.vx	v10, v8, a0
-	vmor.mm	v0, v10, v13
+	vmor.mm	v0, v10, v12
 	ret
 func000000000000006c:                   # @func000000000000006c
 	vsetivli	zero, 8, e32, m2, ta, ma

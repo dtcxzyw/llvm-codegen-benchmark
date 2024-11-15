@@ -29,10 +29,10 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func0000000000000004:                   # @func0000000000000004
 	li	a1, 1396
-	subw	a1, a1, a0
-	zext.w	a0, a1
 	lui	a2, 31301
-	addiw	a2, a2, -917
+	subw	a1, a1, a0
+	addiw	a0, a2, -917
+	zext.w	a2, a1
 	mul	a0, a0, a2
 	srli	a0, a0, 33
 	sh1add	a2, a0, a0

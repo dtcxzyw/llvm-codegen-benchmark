@@ -7,8 +7,8 @@ func0000000000000031:                   # @func0000000000000031
 func0000000000000011:                   # @func0000000000000011
 	sext.w	a0, a0
 	sh1add	a1, a1, a1
-	slli	a1, a1, 3
 	li	a2, 24
+	slli	a1, a1, 3
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
@@ -16,9 +16,9 @@ func0000000000000011:                   # @func0000000000000011
 func0000000000000001:                   # @func0000000000000001
 	sext.w	a0, a0
 	sh2add	a1, a1, a1
+	li	a2, 100
 	sh2add	a1, a1, a1
 	slli	a1, a1, 2
-	li	a2, 100
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2

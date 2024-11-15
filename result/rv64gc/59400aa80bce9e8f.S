@@ -61,8 +61,8 @@ func00000000000003c4:                   # @func00000000000003c4
 	ret
 func00000000000003ca:                   # @func00000000000003ca
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	addi	a2, a2, 1
+	srai	a0, a0, 56
 	xor	a1, a1, a2
 	snez	a1, a1
 	slti	a0, a0, 0
@@ -97,8 +97,8 @@ func00000000000002cc:                   # @func00000000000002cc
 	andi	a0, a0, 255
 	addi	a2, a2, 1
 	xor	a1, a1, a2
-	snez	a1, a1
 	addi	a0, a0, -1
+	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -112,8 +112,8 @@ func00000000000002c1:                   # @func00000000000002c1
 	ret
 func0000000000000246:                   # @func0000000000000246
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	addi	a2, a2, 1
+	srai	a0, a0, 56
 	sltu	a1, a2, a1
 	slti	a0, a0, 0
 	and	a0, a0, a1

@@ -7,17 +7,17 @@ func0000000000000075:                   # @func0000000000000075
 func0000000000000070:                   # @func0000000000000070
 	slli	a2, a2, 8
 	or	a1, a1, a2
+	lui	a2, 247535
 	subw	a0, a0, a1
-	lui	a1, 247535
-	addi	a1, a1, 883
+	addi	a1, a2, 883
 	addw	a0, a0, a1
 	ret
 func0000000000000010:                   # @func0000000000000010
 	slli	a2, a2, 8
 	or	a1, a1, a2
+	lui	a2, 495070
 	subw	a0, a0, a1
-	lui	a1, 495070
-	addi	a1, a1, 1766
+	addi	a1, a2, 1766
 	addw	a0, a0, a1
 	ret
 func000000000000007d:                   # @func000000000000007d

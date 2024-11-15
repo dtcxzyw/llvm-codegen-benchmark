@@ -1,9 +1,9 @@
 func0000000000000071:                   # @func0000000000000071
 	andi	a2, a2, -32
+	li	a3, 1
 	sext.w	a2, a2
 	addi	a2, a2, -32
 	czero.eqz	a1, a1, a2
-	li	a3, 1
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
 	sext.w	a1, a1

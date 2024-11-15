@@ -21,9 +21,9 @@ func0000000000000006:                   # @func0000000000000006
 	sext.w	a2, a1
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2
+	lui	a2, 4112
 	or	a0, a0, a1
-	lui	a1, 4112
-	addi	a1, a1, 257
+	addi	a1, a2, 257
 	mulw	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004
@@ -40,8 +40,8 @@ func0000000000000010:                   # @func0000000000000010
 	sltiu	a2, a2, 3
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
+	lui	a2, 75
 	or	a0, a0, a1
-	lui	a1, 75
-	addi	a1, a1, -1199
+	addi	a1, a2, -1199
 	mulw	a0, a0, a1
 	ret

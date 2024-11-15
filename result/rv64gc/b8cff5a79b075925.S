@@ -16,8 +16,8 @@ func000000000000003b:                   # @func000000000000003b
 func0000000000000010:                   # @func0000000000000010
 	mul	a1, a2, a1
 	mulhu	a3, a2, a0
-	add	a1, a1, a3
 	mul	a0, a2, a0
+	add	a1, a1, a3
 	slli	a1, a1, 1
 	srli	a0, a0, 63
 	or	a0, a0, a1
@@ -30,8 +30,8 @@ func000000000000000a:                   # @func000000000000000a
 func0000000000000018:                   # @func0000000000000018
 	mul	a1, a2, a1
 	mulhu	a3, a2, a0
-	add	a1, a1, a3
 	mul	a0, a2, a0
+	add	a1, a1, a3
 	slli	a1, a1, 3
 	srli	a0, a0, 61
 	or	a0, a0, a1
@@ -44,8 +44,8 @@ func0000000000000002:                   # @func0000000000000002
 func000000000000001a:                   # @func000000000000001a
 	mul	a1, a2, a1
 	mulhu	a3, a2, a0
-	add	a1, a1, a3
 	mul	a0, a2, a0
+	add	a1, a1, a3
 	slli	a1, a1, 32
 	srli	a0, a0, 32
 	or	a0, a0, a1

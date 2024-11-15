@@ -27,8 +27,8 @@ func0000000000000122:                   # @func0000000000000122
 func00000000000000a8:                   # @func00000000000000a8
 	zext.h	a0, a0
 	sltu	a1, a2, a1
-	xori	a1, a1, 1
 	lui	a2, 16
+	xori	a1, a1, 1
 	addiw	a2, a2, -120
 	sltu	a0, a0, a2
 	or	a0, a0, a1

@@ -15,8 +15,8 @@ func0000000000000042:                   # @func0000000000000042
 func0000000000000082:                   # @func0000000000000082
 	srli	a2, a2, 5
 	subw	a2, a2, a1
-	slli	a2, a2, 32
 	li	a1, 9
+	slli	a2, a2, 32
 	slli	a1, a1, 34
 	mulhu	a1, a2, a1
 	add	a0, a0, a1

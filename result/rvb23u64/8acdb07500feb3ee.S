@@ -20,8 +20,8 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func0000000000000006:                   # @func0000000000000006
 	sext.b	a0, a0
-	slti	a0, a0, 0
 	lui	a1, 1048320
+	slti	a0, a0, 0
 	czero.nez	a0, a1, a0
 	lui	a1, 512
 	add	a0, a0, a1
@@ -33,8 +33,8 @@ func000000000000000c:                   # @func000000000000000c
 	ret
 func0000000000000008:                   # @func0000000000000008
 	andi	a0, a0, 255
-	sltiu	a0, a0, 32
 	lui	a1, 983040
+	sltiu	a0, a0, 32
 	addiw	a1, a1, -8
 	czero.eqz	a0, a1, a0
 	lui	a1, 131072

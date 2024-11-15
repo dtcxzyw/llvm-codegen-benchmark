@@ -63,8 +63,8 @@ func00000000000000a8:                   # @func00000000000000a8
 	ret
 func00000000000000c1:                   # @func00000000000000c1
 	addi	a2, a2, 1
-	czero.eqz	a1, a1, a2
 	lui	a3, 131072
+	czero.eqz	a1, a1, a2
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
 	xor	a0, a0, a1

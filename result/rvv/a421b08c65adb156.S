@@ -39,10 +39,10 @@ func0000000000000314:                   # @func0000000000000314
 	vmsltu.vv	v0, v10, v8
 	ret
 func0000000000000166:                   # @func0000000000000166
-	li	a0, -64
-	li	a1, 64
+	li	a0, 64
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmslt.vx	v0, v10, a1
+	vmslt.vx	v0, v10, a0
+	li	a0, -64
 	vadd.vx	v10, v10, a0
 	vmerge.vim	v10, v10, 0, v0
 	vmslt.vv	v0, v10, v8

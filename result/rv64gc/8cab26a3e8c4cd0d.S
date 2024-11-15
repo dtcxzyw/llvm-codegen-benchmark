@@ -44,8 +44,8 @@ func0000000000000018:                   # @func0000000000000018
 	or	a0, a0, a2
 	lui	a2, 20972
 	addiw	a2, a2, -1966
-	sltu	a0, a0, a2
 	sltiu	a1, a1, 501
+	sltu	a0, a0, a2
 	not	a1, a1
 	and	a0, a0, a1
 	ret

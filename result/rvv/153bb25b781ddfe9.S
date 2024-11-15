@@ -12,9 +12,9 @@ func000000000000000d:                   # @func000000000000000d
 	slli	a0, a0, 12
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
-	vadd.vv	v10, v12, v10
 	lui	a0, 1024
 	addiw	a0, a0, -1
+	vadd.vv	v10, v12, v10
 	slli	a0, a0, 12
 	vand.vx	v10, v10, a0
 	vadd.vv	v8, v10, v8
@@ -24,12 +24,12 @@ func000000000000000d:                   # @func000000000000000d
 func000000000000000b:                   # @func000000000000000b
 	lui	a0, %hi(.LCPI2_0)
 	ld	a0, %lo(.LCPI2_0)(a0)
+	lui	a1, 209715
+	addiw	a1, a1, 819
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
+	slli	a0, a1, 32
 	vadd.vv	v10, v12, v10
-	lui	a0, 209715
-	addiw	a0, a0, 819
-	slli	a1, a0, 32
 	add	a0, a0, a1
 	vand.vx	v10, v10, a0
 	vadd.vv	v8, v10, v8

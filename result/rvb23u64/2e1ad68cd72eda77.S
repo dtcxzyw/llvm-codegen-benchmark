@@ -3,8 +3,8 @@ func000000000000002a:                   # @func000000000000002a
 	lui	a2, 8
 	addi	a2, a2, -769
 	subw	a2, a2, a1
-	min	a0, a0, a2
 	lui	a1, 1048568
+	min	a0, a0, a2
 	addiw	a1, a1, 1261
 	slt	a0, a1, a0
 	ret

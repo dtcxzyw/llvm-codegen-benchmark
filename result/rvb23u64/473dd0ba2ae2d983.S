@@ -17,8 +17,8 @@ func00000000000000c4:                   # @func00000000000000c4
 	ret
 func00000000000000c1:                   # @func00000000000000c1
 	andi	a2, a2, 15
-	seqz	a2, a2
 	xor	a0, a0, a1
+	seqz	a1, a2
 	snez	a0, a0
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret

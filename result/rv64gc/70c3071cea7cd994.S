@@ -14,8 +14,8 @@ func000000000000001f:                   # @func000000000000001f
 func0000000000000003:                   # @func0000000000000003
 	andi	a1, a1, 1
 	add	a0, a0, a1
-	slli	a0, a0, 32
 	li	a1, 9
+	slli	a0, a0, 32
 	slli	a1, a1, 35
 	mulhu	a0, a0, a1
 	ret

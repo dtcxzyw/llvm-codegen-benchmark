@@ -1,7 +1,7 @@
 func0000000000000075:                   # @func0000000000000075
 	li	a2, 1223
-	slli	a2, a2, 33
 	slli	a1, a1, 32
+	slli	a2, a2, 33
 	mulhu	a1, a1, a2
 	lui	a2, 1048574
 	addiw	a2, a2, 819
@@ -11,8 +11,8 @@ func0000000000000075:                   # @func0000000000000075
 	ret
 func00000000000000ff:                   # @func00000000000000ff
 	lui	a2, 46871
-	slli	a2, a2, 20
 	slli	a1, a1, 32
+	slli	a2, a2, 20
 	mulhu	a1, a1, a2
 	lui	a2, 3
 	addiw	a2, a2, 1645

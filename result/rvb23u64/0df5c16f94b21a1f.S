@@ -13,8 +13,8 @@ func0000000000000040:                   # @func0000000000000040
 func0000000000000000:                   # @func0000000000000000
 	slli	a2, a2, 24
 	subw	a1, a1, a0
-	subw	a2, a2, a1
 	lui	a0, 652444
+	subw	a2, a2, a1
 	addi	a0, a0, -1342
 	addw	a0, a0, a2
 	ret

@@ -1,12 +1,12 @@
 func0000000000000020:                   # @func0000000000000020
 	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vx	v12, v12, a0
 	vadd.vv	v8, v8, v10
+	vsrl.vx	v10, v12, a0
 	lui	a0, 81007
 	slli	a0, a0, 3
 	addi	a0, a0, -1615
-	vmacc.vx	v8, a0, v12
+	vmacc.vx	v8, a0, v10
 	ret
 func000000000000001d:                   # @func000000000000001d
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -41,9 +41,9 @@ func0000000000000030:                   # @func0000000000000030
 func000000000000000c:                   # @func000000000000000c
 	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vx	v12, v12, a0
 	vadd.vv	v8, v8, v10
+	vsrl.vx	v10, v12, a0
 	li	a0, 5
 	slli	a0, a0, 33
-	vmacc.vx	v8, a0, v12
+	vmacc.vx	v8, a0, v10
 	ret

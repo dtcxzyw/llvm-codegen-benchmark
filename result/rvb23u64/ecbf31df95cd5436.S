@@ -7,10 +7,10 @@ func0000000000000007:                   # @func0000000000000007
 	ret
 func0000000000000004:                   # @func0000000000000004
 	slli	a2, a2, 48
-	srli	a2, a2, 16
 	or	a0, a0, a1
-	or	a0, a0, a2
 	li	a1, 1639
+	srli	a2, a2, 16
+	or	a0, a0, a2
 	slli	a1, a1, 52
 	or	a0, a0, a1
 	ret
@@ -24,9 +24,9 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func0000000000000001:                   # @func0000000000000001
 	slli	a2, a2, 59
-	srli	a2, a2, 49
 	or	a0, a0, a1
 	lui	a1, 496
+	srli	a2, a2, 49
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

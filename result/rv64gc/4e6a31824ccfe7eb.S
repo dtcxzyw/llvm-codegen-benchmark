@@ -27,23 +27,22 @@ func0000000000000002:                   # @func0000000000000002
 .LCPI1_2:
 	.quad	0xc01921fb54442d18              # double -6.2831853071795862
 func0000000000000004:                   # @func0000000000000004
+	fmv.d	fa5, fa0
 	lui	a1, %hi(.LCPI1_0)
 	fld	fa4, %lo(.LCPI1_0)(a1)
 	lui	a1, %hi(.LCPI1_1)
-	fld	fa5, %lo(.LCPI1_1)(a1)
-	fmul.d	fa4, fa0, fa4
-	flt.d	a1, fa5, fa4
+	fld	fa0, %lo(.LCPI1_1)(a1)
+	fmul.d	fa5, fa5, fa4
+	flt.d	a1, fa0, fa5
 	andi	a0, a0, 1
 	beqz	a1, .LBB1_3
 	bnez	a0, .LBB1_4
 .LBB1_2:                                # %entry
-	fmv.d	fa0, fa5
 	ret
 .LBB1_3:                                # %entry
-	fmv.d	fa5, fa4
+	fmv.d	fa0, fa5
 	beqz	a0, .LBB1_2
 .LBB1_4:
 	lui	a0, %hi(.LCPI1_2)
-	fld	fa5, %lo(.LCPI1_2)(a0)
-	fmv.d	fa0, fa5
+	fld	fa0, %lo(.LCPI1_2)(a0)
 	ret

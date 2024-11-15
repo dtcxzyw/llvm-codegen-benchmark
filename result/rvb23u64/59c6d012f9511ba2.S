@@ -3,9 +3,9 @@ func0000000000000038:                   # @func0000000000000038
 	sext.w	a1, a1
 	lui	a2, 1
 	addiw	a2, a2, -2032
+	snez	a0, a0
 	xor	a1, a1, a2
 	seqz	a1, a1
-	snez	a0, a0
 	or	a0, a0, a1
 	li	a1, -2
 	czero.nez	a0, a1, a0
@@ -26,8 +26,8 @@ func0000000000000022:                   # @func0000000000000022
 	lui	a2, 32768
 	addiw	a2, a2, 57
 	xor	a1, a1, a2
-	seqz	a1, a1
 	xor	a0, a0, a2
+	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	slli	a0, a0, 27
@@ -45,11 +45,11 @@ func00000000000000d8:                   # @func00000000000000d8
 func0000000000000028:                   # @func0000000000000028
 	sext.w	a1, a1
 	li	a2, 27
+	srliw	a0, a0, 16
 	slli	a2, a2, 11
+	seqz	a0, a0
 	xor	a1, a1, a2
 	seqz	a1, a1
-	srliw	a0, a0, 16
-	seqz	a0, a0
 	or	a0, a0, a1
 	li	a1, 4
 	sub	a0, a1, a0

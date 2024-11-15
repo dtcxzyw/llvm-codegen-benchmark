@@ -18,8 +18,8 @@ func0000000000000040:                   # @func0000000000000040
 	vadd.vv	v10, v10, v12
 	li	a0, 32
 	vsll.vx	v10, v10, a0
-	vadd.vv	v8, v10, v8
 	li	a0, 7
+	vadd.vv	v8, v10, v8
 	slli	a0, a0, 35
 	vadd.vx	v8, v8, a0
 	ret

@@ -8,8 +8,8 @@ func0000000000000021:                   # @func0000000000000021
 	srliw	a3, a2, 31
 	srli	a2, a2, 4
 	add	a2, a2, a3
-	slli	a2, a2, 2
 	li	a3, 28
+	slli	a2, a2, 2
 	subw	a3, a3, a1
 	subw	a3, a3, a2
 	srlw	a0, a0, a3

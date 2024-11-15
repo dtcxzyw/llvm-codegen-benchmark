@@ -21,8 +21,8 @@ func000000000000000c:                   # @func000000000000000c
 	ret
 func0000000000000008:                   # @func0000000000000008
 	fcvt.s.w	fa5, a0
-	fmul.s	fa5, fa5, fa0
 	lui	a0, 275264
+	fmul.s	fa5, fa5, fa0
 	fmv.w.x	fa4, a0
 	feq.s	a0, fa5, fa4
 	ret

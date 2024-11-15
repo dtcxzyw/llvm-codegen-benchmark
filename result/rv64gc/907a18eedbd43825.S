@@ -12,16 +12,16 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func00000000000000a1:                   # @func00000000000000a1
 	sext.w	a1, a1
+	addi	a0, a0, -1
 	slti	a1, a1, 0
 	xori	a1, a1, 1
-	addi	a0, a0, -1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
 	sext.w	a1, a1
-	seqz	a1, a1
 	addi	a0, a0, -4
+	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
@@ -33,8 +33,8 @@ func000000000000006c:                   # @func000000000000006c
 	ret
 func000000000000008a:                   # @func000000000000008a
 	srliw	a1, a1, 16
-	snez	a1, a1
 	slti	a0, a0, 5
+	snez	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -57,24 +57,24 @@ func00000000000000aa:                   # @func00000000000000aa
 	ret
 func0000000000000018:                   # @func0000000000000018
 	sext.w	a1, a1
+	srli	a0, a0, 31
 	addi	a1, a1, 1
 	seqz	a1, a1
-	srli	a0, a0, 31
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
 func0000000000000081:                   # @func0000000000000081
 	sext.w	a1, a1
 	lui	a2, 16
-	sltu	a1, a2, a1
 	addi	a0, a0, 1
+	sltu	a1, a2, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 func000000000000004c:                   # @func000000000000004c
 	sext.w	a1, a1
-	sltiu	a1, a1, 8
 	li	a2, -1
+	sltiu	a1, a1, 8
 	srli	a2, a2, 32
 	xor	a0, a0, a2
 	snez	a0, a0
@@ -117,8 +117,8 @@ func00000000000000a8:                   # @func00000000000000a8
 	ret
 func00000000000000ca:                   # @func00000000000000ca
 	sext.w	a1, a1
-	snez	a1, a1
 	slti	a0, a0, 2
+	snez	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -130,8 +130,8 @@ func0000000000000064:                   # @func0000000000000064
 	ret
 func00000000000000c4:                   # @func00000000000000c4
 	sext.w	a1, a1
-	snez	a1, a1
 	srli	a0, a0, 32
+	snez	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
@@ -151,23 +151,23 @@ func0000000000000084:                   # @func0000000000000084
 	ret
 func00000000000000c8:                   # @func00000000000000c8
 	sext.w	a1, a1
-	snez	a1, a1
 	sltiu	a0, a0, 8
+	snez	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 func0000000000000048:                   # @func0000000000000048
 	sext.w	a1, a1
-	sltiu	a1, a1, 4
 	sltiu	a0, a0, 128
+	sltiu	a1, a1, 4
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 func000000000000001a:                   # @func000000000000001a
 	sext.w	a1, a1
+	slti	a0, a0, 0
 	addi	a1, a1, -1
 	seqz	a1, a1
-	slti	a0, a0, 0
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -184,10 +184,10 @@ func00000000000000c6:                   # @func00000000000000c6
 	ret
 func0000000000000014:                   # @func0000000000000014
 	sext.w	a1, a1
-	addi	a1, a1, -100
-	seqz	a1, a1
 	lui	a2, 1048512
+	addi	a1, a1, -100
 	addiw	a2, a2, -1
+	seqz	a1, a1
 	sltu	a0, a0, a2
 	or	a0, a0, a1
 	ret

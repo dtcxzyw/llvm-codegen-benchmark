@@ -8,10 +8,10 @@ func000000000000005a:                   # @func000000000000005a
 func0000000000000218:                   # @func0000000000000218
 	li	a0, 64
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsgtu.vx	v14, v12, a0
 	vsub.vv	v8, v8, v10
-	vmsgtu.vx	v10, v8, a0
-	vmand.mm	v0, v14, v10
+	vmsgtu.vx	v10, v12, a0
+	vmsgtu.vx	v11, v8, a0
+	vmand.mm	v0, v10, v11
 	ret
 func0000000000000211:                   # @func0000000000000211
 	li	a0, 65
@@ -23,8 +23,8 @@ func0000000000000211:                   # @func0000000000000211
 func0000000000000208:                   # @func0000000000000208
 	li	a0, 64
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsgtu.vx	v14, v12, a0
 	vsub.vv	v8, v8, v10
-	vmsgtu.vx	v10, v8, a0
-	vmand.mm	v0, v14, v10
+	vmsgtu.vx	v10, v12, a0
+	vmsgtu.vx	v11, v8, a0
+	vmand.mm	v0, v10, v11
 	ret

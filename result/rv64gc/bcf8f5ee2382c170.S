@@ -43,8 +43,8 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 func0000000000000038:                   # @func0000000000000038
 	slli	a1, a1, 1
-	addi	a1, a1, 1032
 	li	a2, 1
+	addi	a1, a1, 1032
 	slli	a2, a2, 33
 	addi	a2, a2, -248
 	and	a1, a1, a2

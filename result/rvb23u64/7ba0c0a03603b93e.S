@@ -54,13 +54,13 @@ func000000000000010c:                   # @func000000000000010c
 func0000000000000034:                   # @func0000000000000034
 	sext.w	a0, a0
 	sub	a2, a2, a1
-	slti	a1, a2, 509
-	xori	a1, a1, 1
-	lui	a2, 4
-	addiw	a2, a2, -1
-	xor	a0, a0, a2
+	lui	a1, 4
+	slti	a2, a2, 509
+	addiw	a1, a1, -1
+	xori	a2, a2, 1
+	xor	a0, a0, a1
 	seqz	a0, a0
-	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 func0000000000000198:                   # @func0000000000000198
 	sext.w	a0, a0

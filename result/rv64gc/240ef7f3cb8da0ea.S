@@ -1,7 +1,7 @@
 func000000000000004c:                   # @func000000000000004c
 	mul	a1, a2, a1
-	slli	a1, a1, 3
 	lui	a2, 8
+	slli	a1, a1, 3
 	addiw	a2, a2, 1
 	sltu	a1, a1, a2
 	snez	a0, a0

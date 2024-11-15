@@ -1,7 +1,7 @@
 func0000000000000040:                   # @func0000000000000040
 	zext.w	a2, a2
-	neg	a2, a2
 	li	a3, 376
+	neg	a2, a2
 	mul	a2, a2, a3
 	sub	a0, a0, a1
 	add	a0, a0, a2

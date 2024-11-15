@@ -16,9 +16,9 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func0000000000000008:                   # @func0000000000000008
 	fli.d	fa5, 0.5
+	fli.d	fa4, 2.0
 	fmul.d	fa5, fa0, fa5
 	fround.d	fa5, fa5, rtz
-	fli.d	fa4, 2.0
 	fnmsub.d	fa5, fa4, fa5, fa0
 	fsgnj.d	fa5, fa5, fa0
 	fmv.d.x	fa4, zero

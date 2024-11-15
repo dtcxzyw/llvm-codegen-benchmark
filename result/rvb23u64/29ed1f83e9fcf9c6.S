@@ -1,7 +1,7 @@
 func000000000000001a:                   # @func000000000000001a
 	andi	a2, a2, 252
-	addi	a2, a2, -216
 	li	a3, -2
+	addi	a2, a2, -216
 	czero.nez	a2, a3, a2
 	add	a0, a0, a1
 	add	a0, a0, a2

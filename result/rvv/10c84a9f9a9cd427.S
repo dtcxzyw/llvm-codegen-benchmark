@@ -1,9 +1,9 @@
 func0000000000000006:                   # @func0000000000000006
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsra.vi	v12, v10, 31
+	li	a0, 54
 	vsrl.vi	v12, v12, 23
 	vadd.vv	v10, v10, v12
-	li	a0, 54
 	vmslt.vx	v0, v8, a0
 	vsra.vi	v8, v10, 9
 	vmerge.vim	v8, v8, 0, v0

@@ -1,8 +1,8 @@
 func00000000000000d9:                   # @func00000000000000d9
 	sext.w	a2, a2
 	lui	a3, 2
-	slt	a2, a2, a3
 	sh2add	a1, a1, a1
+	slt	a2, a2, a3
 	sh2add	a1, a1, a1
 	slli	a1, a1, 4
 	czero.eqz	a1, a1, a2

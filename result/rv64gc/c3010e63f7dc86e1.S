@@ -14,8 +14,8 @@ func00000000000000dd:                   # @func00000000000000dd
 	lui	a1, 212992
 	fmv.w.x	fa4, a1
 	flt.s	a1, fa5, fa4
-	xori	a1, a1, 1
 	flt.s	a2, fa0, fa4
+	xori	a1, a1, 1
 	xori	a2, a2, 1
 	or	a0, a0, a2
 	or	a0, a0, a1

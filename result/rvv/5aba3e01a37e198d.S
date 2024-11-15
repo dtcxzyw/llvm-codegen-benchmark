@@ -30,8 +30,8 @@ func0000000000000044:                   # @func0000000000000044
 func00000000000000c1:                   # @func00000000000000c1
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vmsne.vi	v12, v10, 0
-	vmand.mm	v10, v12, v0
 	li	a0, 37
+	vmand.mm	v10, v12, v0
 	vmseq.vx	v11, v8, a0
 	vmand.mm	v0, v10, v11
 	ret
@@ -39,8 +39,8 @@ func00000000000000c4:                   # @func00000000000000c4
 	li	a0, 45
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vmsne.vx	v12, v10, a0
-	vmand.mm	v10, v12, v0
 	li	a0, -26
+	vmand.mm	v10, v12, v0
 	vmsltu.vx	v11, v8, a0
 	vmand.mm	v0, v10, v11
 	ret

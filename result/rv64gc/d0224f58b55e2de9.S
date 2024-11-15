@@ -6,8 +6,8 @@ func00000000000003c8:                   # @func00000000000003c8
 	ret
 func00000000000003c3:                   # @func00000000000003c3
 	addi	a0, a0, -2
-	snez	a0, a0
 	fle.s	a1, fa1, fa0
+	snez	a0, a0
 	not	a1, a1
 	and	a0, a0, a1
 	ret

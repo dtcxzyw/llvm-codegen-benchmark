@@ -21,8 +21,8 @@ func0000000000000041:                   # @func0000000000000041
 	ret
 func00000000000000f1:                   # @func00000000000000f1
 	sub	a2, a2, a1
-	addi	a2, a2, 1
 	li	a1, -97
+	addi	a2, a2, 1
 	srli	a1, a1, 5
 	and	a1, a1, a2
 	xor	a0, a0, a1

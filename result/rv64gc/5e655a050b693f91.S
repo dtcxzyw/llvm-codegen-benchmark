@@ -1,24 +1,24 @@
 func0000000000000017:                   # @func0000000000000017
 	slli	a1, a1, 48
+	slli	a0, a0, 32
 	srli	a1, a1, 48
 	slli	a1, a1, 20
-	slli	a0, a0, 32
 	srli	a0, a0, 32
 	or	a0, a0, a1
 	ret
 func0000000000000007:                   # @func0000000000000007
 	slli	a1, a1, 48
+	slli	a0, a0, 32
 	srli	a1, a1, 48
 	slli	a1, a1, 40
-	slli	a0, a0, 32
 	srli	a0, a0, 32
 	or	a0, a0, a1
 	ret
 func0000000000000006:                   # @func0000000000000006
 	slli	a1, a1, 48
+	slli	a0, a0, 32
 	srli	a1, a1, 48
 	slli	a1, a1, 16
-	slli	a0, a0, 32
 	srli	a0, a0, 32
 	or	a0, a0, a1
 	ret

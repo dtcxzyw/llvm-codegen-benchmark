@@ -6,15 +6,14 @@ func0000000000000061:                   # @func0000000000000061
 	vmand.mm	v0, v8, v0
 	ret
 func0000000000000041:                   # @func0000000000000041
+	vmv1r.v	v12, v0
 	li	a0, 128
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsltu.vx	v12, v8, a0
-	vmv1r.v	v13, v0
-	vmv1r.v	v0, v12
+	vmsltu.vx	v0, v8, a0
 	vmerge.vvm	v8, v10, v8, v0
 	li	a0, 102
 	vmseq.vx	v10, v8, a0
-	vmand.mm	v0, v10, v13
+	vmand.mm	v0, v10, v12
 	ret
 func00000000000000a1:                   # @func00000000000000a1
 	vsetivli	zero, 8, e32, m2, ta, ma

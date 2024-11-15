@@ -18,9 +18,9 @@ func00000000000000aa:                   # @func00000000000000aa
 	sext.w	a1, a1
 	sext.w	a2, a2
 	slti	a2, a2, 3
+	slti	a1, a1, 3
 	not	a2, a2
 	and	a0, a0, a2
-	slti	a1, a1, 3
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret

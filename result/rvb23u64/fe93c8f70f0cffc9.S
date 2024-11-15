@@ -2,9 +2,9 @@ func0000000000000013:                   # @func0000000000000013
 	lui	a1, 16
 	addi	a1, a1, -2
 	add	a0, a0, a1
-	slli	a0, a0, 32
 	lui	a1, 524296
 	addi	a1, a1, 1
+	slli	a0, a0, 32
 	slli	a1, a1, 32
 	mulhu	a0, a0, a1
 	srli	a0, a0, 44
@@ -25,8 +25,8 @@ func0000000000000018:                   # @func0000000000000018
 	addi	a0, a0, 127
 	lui	a1, 526344
 	addi	a1, a1, 129
-	slli	a1, a1, 32
 	slli	a0, a0, 32
+	slli	a1, a1, 32
 	mulhu	a0, a0, a1
 	srli	a0, a0, 15
 	sext.w	a0, a0
@@ -37,8 +37,8 @@ func000000000000001b:                   # @func000000000000001b
 	addi	a0, a0, 128
 	lui	a1, 1044496
 	addi	a1, a1, -255
-	slli	a1, a1, 32
 	slli	a0, a0, 32
+	slli	a1, a1, 32
 	mulhu	a0, a0, a1
 	srli	a0, a0, 24
 	sext.w	a0, a0
@@ -77,9 +77,9 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func0000000000000008:                   # @func0000000000000008
 	addi	a0, a0, -1260
-	zext.w	a1, a0
-	lui	a2, 149797
-	addiw	a2, a2, -1755
+	lui	a1, 149797
+	zext.w	a2, a0
+	addiw	a1, a1, -1755
 	mul	a1, a1, a2
 	srli	a1, a1, 32
 	sub	a0, a0, a1

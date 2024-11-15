@@ -18,8 +18,8 @@ func0000000000000000:                   # @func0000000000000000
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vor.vv	v10, v8, v10
 	vmulhu.vx	v8, v10, a0
-	vsrl.vi	v8, v8, 19
 	lui	a0, 488
+	vsrl.vi	v8, v8, 19
 	addiw	a0, a0, 1152
 	vnmsub.vx	v8, a0, v10
 	ret

@@ -51,8 +51,8 @@ func000000000000001b:                   # @func000000000000001b
 	sext.w	a1, a1
 	lui	a3, 367
 	addi	a3, a3, -1024
-	add	a2, a2, a3
 	slti	a1, a1, 3
+	add	a2, a2, a3
 	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2

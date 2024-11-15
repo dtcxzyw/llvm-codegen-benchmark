@@ -33,10 +33,10 @@ func0000000000000050:                   # @func0000000000000050
 func0000000000000044:                   # @func0000000000000044
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwsll.vi	v14, v12, 16
+	lui	a0, 912092
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vor.vv	v8, v14, v8
 	vadd.vv	v8, v10, v8
-	lui	a0, 912092
 	addi	a0, a0, -261
 	vadd.vx	v8, v8, a0
 	ret

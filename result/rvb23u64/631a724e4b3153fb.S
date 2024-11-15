@@ -6,8 +6,8 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func0000000000000001:                   # @func0000000000000001
 	andi	a0, a0, 1
-	czero.nez	a1, a1, a0
 	lui	a2, 1
+	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
 	or	a0, a0, a1
 	neg	a0, a0

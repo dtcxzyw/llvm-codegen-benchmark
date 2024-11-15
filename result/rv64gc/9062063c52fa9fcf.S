@@ -29,8 +29,8 @@ func000000000000000b:                   # @func000000000000000b
 func000000000000000e:                   # @func000000000000000e
 	slli	a2, a2, 8
 	or	a0, a0, a1
-	or	a0, a0, a2
 	lui	a1, 16
+	or	a0, a0, a2
 	addiw	a1, a1, -1024
 	and	a0, a0, a1
 	ret

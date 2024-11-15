@@ -32,16 +32,16 @@ func000000000000000c:                   # @func000000000000000c
 func000000000000000f:                   # @func000000000000000f
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v10
-	vor.vv	v8, v12, v8
 	lui	a0, 3
+	vor.vv	v8, v12, v8
 	addiw	a0, a0, -1802
 	vmul.vx	v8, v8, a0
 	ret
 func000000000000000e:                   # @func000000000000000e
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v10
-	vor.vv	v8, v12, v8
 	lui	a0, 16
+	vor.vv	v8, v12, v8
 	addiw	a0, a0, 1
 	bseti	a0, a0, 32
 	bseti	a0, a0, 48

@@ -10,8 +10,8 @@ func0000000000000010:                   # @func0000000000000010
 	ret
 func000000000000004a:                   # @func000000000000004a
 	andi	a2, a2, 255
-	sltiu	a2, a2, 2
 	li	a3, -2
+	sltiu	a2, a2, 2
 	czero.nez	a2, a3, a2
 	add	a0, a0, a1
 	add	a0, a0, a2

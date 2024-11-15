@@ -12,9 +12,9 @@ func0000000000000014:                   # @func0000000000000014
 	sext.w	a2, a2
 	sext.w	a1, a1
 	max	a1, a1, a2
+	li	a2, 16
 	sltiu	a0, a0, 15
 	czero.nez	a1, a1, a0
-	li	a2, 16
 	czero.eqz	a0, a2, a0
 	or	a0, a0, a1
 	ret

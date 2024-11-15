@@ -3,8 +3,8 @@ func0000000000000044:                   # @func0000000000000044
 	vmsleu.vi	v14, v12, 1
 	li	a0, 193
 	vmsltu.vx	v12, v10, a0
-	vmand.mm	v0, v12, v14
 	li	a0, 64
+	vmand.mm	v0, v12, v14
 	vmv.v.x	v10, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret
@@ -19,8 +19,8 @@ func00000000000000cc:                   # @func00000000000000cc
 func0000000000000011:                   # @func0000000000000011
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vor.vv	v10, v10, v12
-	vmseq.vi	v0, v10, 0
 	lui	a0, 262144
+	vmseq.vi	v0, v10, 0
 	vmv.v.x	v10, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret

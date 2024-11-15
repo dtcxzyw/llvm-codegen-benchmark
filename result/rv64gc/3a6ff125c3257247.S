@@ -15,8 +15,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	sext.w	a0, a0
 	and	a1, a1, a2
 	slli	a1, a1, 54
-	srli	a1, a1, 63
 	addi	a0, a0, -2
+	srli	a1, a1, 63
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

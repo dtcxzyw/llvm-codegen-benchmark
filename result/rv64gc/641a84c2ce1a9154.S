@@ -58,10 +58,10 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 func000000000000004a:                   # @func000000000000004a
 	lui	a3, 244
-	addiw	a3, a3, 576
-	sltu	a2, a2, a3
 	slti	a1, a1, 0
+	addiw	a3, a3, 576
 	not	a1, a1
+	sltu	a2, a2, a3
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret

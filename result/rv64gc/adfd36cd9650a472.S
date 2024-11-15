@@ -23,8 +23,8 @@ func00000000000000cc:                   # @func00000000000000cc
 	ret
 func000000000000004c:                   # @func000000000000004c
 	sub	a1, a1, a2
-	sltiu	a1, a1, 8
 	addi	a0, a0, -26
+	sltiu	a1, a1, 8
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
@@ -42,15 +42,15 @@ func0000000000000211:                   # @func0000000000000211
 	ret
 func0000000000000068:                   # @func0000000000000068
 	sub	a1, a1, a2
-	slti	a1, a1, 6
 	srli	a0, a0, 31
+	slti	a1, a1, 6
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
 func0000000000000241:                   # @func0000000000000241
 	sub	a1, a1, a2
-	sltiu	a1, a1, 32
 	addi	a0, a0, -32
+	sltiu	a1, a1, 32
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

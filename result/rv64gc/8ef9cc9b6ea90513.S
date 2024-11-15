@@ -19,8 +19,8 @@ func000000000000003f:                   # @func000000000000003f
 	ret
 func0000000000000017:                   # @func0000000000000017
 	mul	a0, a0, a1
-	addi	a0, a0, 1
 	li	a1, -3
+	addi	a0, a0, 1
 	srli	a1, a1, 1
 	and	a0, a0, a1
 	addi	a0, a0, 2

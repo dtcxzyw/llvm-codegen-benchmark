@@ -12,8 +12,8 @@ func000000000000004c:                   # @func000000000000004c
 func0000000000000045:                   # @func0000000000000045
 	sext.w	a1, a1
 	sext.w	a0, a0
-	sltu	a0, a0, a1
 	fmv.d.x	fa5, zero
+	sltu	a0, a0, a1
 	fle.d	a1, fa0, fa5
 	not	a1, a1
 	and	a0, a0, a1

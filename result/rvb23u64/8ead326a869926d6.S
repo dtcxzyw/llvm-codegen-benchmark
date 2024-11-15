@@ -1,8 +1,8 @@
 func0000000000000034:                   # @func0000000000000034
 	andi	a1, a1, 1
 	andi	a2, a2, 1
-	xori	a2, a2, 3
 	li	a3, 4
+	xori	a2, a2, 3
 	czero.eqz	a3, a3, a1
 	czero.nez	a1, a2, a1
 	or	a1, a1, a3
@@ -13,8 +13,8 @@ func0000000000000034:                   # @func0000000000000034
 func0000000000000038:                   # @func0000000000000038
 	andi	a1, a1, 1
 	andi	a2, a2, 1
-	xori	a2, a2, 3
 	li	a3, 4
+	xori	a2, a2, 3
 	czero.eqz	a3, a3, a1
 	czero.nez	a1, a2, a1
 	or	a1, a1, a3
@@ -46,8 +46,8 @@ func0000000000000004:                   # @func0000000000000004
 	andi	a2, a2, 1
 	li	a3, 24
 	czero.nez	a2, a3, a2
-	addi	a2, a2, 8
 	li	a3, 1
+	addi	a2, a2, 8
 	czero.eqz	a3, a3, a1
 	czero.nez	a1, a2, a1
 	or	a1, a1, a3
@@ -60,8 +60,8 @@ func0000000000000008:                   # @func0000000000000008
 	andi	a2, a2, 1
 	li	a3, -3
 	czero.nez	a2, a3, a2
-	addi	a2, a2, 4
 	li	a3, 2
+	addi	a2, a2, 4
 	czero.eqz	a3, a3, a1
 	czero.nez	a1, a2, a1
 	or	a1, a1, a3
@@ -74,9 +74,9 @@ func0000000000000011:                   # @func0000000000000011
 	andi	a2, a2, 1
 	li	a3, 32
 	czero.nez	a2, a3, a2
-	addi	a2, a2, -87
 	li	a3, -48
 	czero.eqz	a3, a3, a1
+	addi	a2, a2, -87
 	czero.nez	a1, a2, a1
 	or	a1, a1, a3
 	neg	a0, a0

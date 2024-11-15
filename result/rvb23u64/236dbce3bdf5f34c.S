@@ -11,9 +11,9 @@ func000000000000015a:                   # @func000000000000015a
 	add	a1, a1, a2
 	li	a2, 1000
 	mul	a1, a1, a2
+	lui	a2, 490
 	addw	a0, a0, a1
-	lui	a1, 490
-	addiw	a1, a1, -1018
+	addiw	a1, a2, -1018
 	slt	a0, a1, a0
 	ret
 func0000000000000046:                   # @func0000000000000046
@@ -62,10 +62,10 @@ func00000000000003f1:                   # @func00000000000003f1
 	ret
 func00000000000003f8:                   # @func00000000000003f8
 	add	a1, a1, a2
+	lui	a2, 104858
 	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
 	sext.w	a0, a0
-	lui	a1, 104858
-	addiw	a1, a1, -1639
+	addiw	a1, a2, -1639
 	sltu	a0, a1, a0
 	ret

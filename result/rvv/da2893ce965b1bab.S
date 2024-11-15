@@ -2,25 +2,25 @@ func0000000000000054:                   # @func0000000000000054
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf4	v10, v9
 	li	a0, -36
-	vsetvli	zero, zero, e64, m2, ta, ma
-	vmv.v.x	v12, a0
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vwaddu.wv	v12, v12, v10
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vmsleu.vi	v0, v8, 6
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmv.v.i	v8, 0
-	vmerge.vvm	v8, v8, v12, v0
+	vmv.v.x	v8, a0
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vwaddu.wv	v8, v8, v10
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vmv.v.i	v10, 0
+	vmerge.vvm	v8, v10, v8, v0
 	ret
 func0000000000000051:                   # @func0000000000000051
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf4	v10, v9
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.i	v12, -3
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vwaddu.wv	v12, v12, v10
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vmseq.vi	v0, v8, 4
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vwaddu.wv	v12, v12, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.i	v8, 0
 	vmerge.vvm	v8, v8, v12, v0

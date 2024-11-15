@@ -1,7 +1,7 @@
 func0000000000000012:                   # @func0000000000000012
 	sub	a0, a0, a1
-	srai	a0, a0, 3
 	li	a1, 1
+	srai	a0, a0, 3
 	maxu	a1, a0, a1
 	add	a0, a0, a1
 	li	a1, -1
@@ -10,8 +10,8 @@ func0000000000000012:                   # @func0000000000000012
 	ret
 func0000000000000010:                   # @func0000000000000010
 	sub	a0, a0, a1
-	srai	a0, a0, 1
 	li	a1, 1
+	srai	a0, a0, 1
 	maxu	a1, a0, a1
 	add	a0, a0, a1
 	li	a1, -1
@@ -20,8 +20,8 @@ func0000000000000010:                   # @func0000000000000010
 	ret
 func0000000000000016:                   # @func0000000000000016
 	sub	a0, a0, a1
-	srai	a0, a0, 3
 	li	a1, 1
+	srai	a0, a0, 3
 	maxu	a1, a0, a1
 	add	a0, a0, a1
 	li	a1, -1

@@ -3,8 +3,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	sext.w	a1, a1
 	lui	a2, 10
 	xor	a1, a1, a2
-	snez	a1, a1
 	xor	a0, a0, a2
+	snez	a1, a1
 	seqz	a2, a0
 	li	a0, -5
 	bne	a2, a1, .LBB0_2

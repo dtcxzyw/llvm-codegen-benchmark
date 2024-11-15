@@ -6,8 +6,8 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000005:                   # @func0000000000000005
 	andi	a1, a1, 255
-	addi	a1, a1, -10
 	bseti	a2, zero, 31
+	addi	a1, a1, -10
 	bseti	a2, a2, 63
 	czero.eqz	a1, a2, a1
 	lui	a2, 524288

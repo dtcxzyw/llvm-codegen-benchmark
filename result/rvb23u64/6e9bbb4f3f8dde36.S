@@ -1,7 +1,7 @@
 func0000000000000023:                   # @func0000000000000023
 	sext.w	a0, a0
-	snez	a0, a0
 	lui	a2, 4096
+	snez	a0, a0
 	addiw	a2, a2, -2
 	and	a1, a1, a2
 	slli	a0, a0, 24
@@ -10,8 +10,8 @@ func0000000000000023:                   # @func0000000000000023
 	ret
 func0000000000000022:                   # @func0000000000000022
 	sext.w	a0, a0
-	snez	a0, a0
 	lui	a2, 2048
+	snez	a0, a0
 	addiw	a2, a2, -2
 	and	a1, a1, a2
 	slli	a0, a0, 23

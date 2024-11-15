@@ -7,10 +7,10 @@ func0000000000000022:                   # @func0000000000000022
 	ret
 func0000000000000039:                   # @func0000000000000039
 	sext.w	a1, a1
+	lui	a2, 8
 	addi	a1, a1, 1
 	seqz	a1, a1
 	slli	a1, a1, 5
-	lui	a2, 8
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -37,9 +37,9 @@ func0000000000000029:                   # @func0000000000000029
 	ret
 func0000000000000003:                   # @func0000000000000003
 	sext.w	a1, a1
+	lui	a2, 786432
 	seqz	a1, a1
 	addi	a1, a1, -1
-	lui	a2, 786432
 	addiw	a2, a2, 64
 	and	a1, a1, a2
 	or	a0, a0, a1

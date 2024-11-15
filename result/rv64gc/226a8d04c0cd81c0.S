@@ -1,8 +1,8 @@
 func000000000000014c:                   # @func000000000000014c
 	andi	a0, a0, 255
 	addi	a1, a0, -14
-	sltiu	a1, a1, -5
 	addi	a0, a0, -32
+	sltiu	a1, a1, -5
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

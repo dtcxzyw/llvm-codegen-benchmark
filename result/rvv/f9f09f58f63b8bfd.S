@@ -7,10 +7,10 @@ func0000000000000000:                   # @func0000000000000000
 	vmulh.vx	v10, v8, a0
 	li	a0, 63
 	vsrl.vx	v12, v10, a0
-	vsra.vi	v10, v10, 13
-	vadd.vv	v10, v10, v12
 	lui	a0, 8192
 	addiw	a0, a0, -675
+	vsra.vi	v10, v10, 13
+	vadd.vv	v10, v10, v12
 	slli	a0, a0, 7
 	vmadd.vx	v10, a0, v8
 	vsetvli	zero, zero, e32, m1, ta, ma

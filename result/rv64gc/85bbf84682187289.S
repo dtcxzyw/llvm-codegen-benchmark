@@ -1,8 +1,8 @@
 func0000000000000001:                   # @func0000000000000001
 	subw	a1, a1, a2
 	slli	a0, a0, 63
-	srai	a0, a0, 63
 	lui	a2, 1048555
+	srai	a0, a0, 63
 	addi	a2, a2, -384
 	and	a0, a0, a2
 	addw	a0, a0, a1
@@ -10,8 +10,8 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000005:                   # @func0000000000000005
 	subw	a1, a1, a2
 	slli	a0, a0, 63
-	srai	a0, a0, 63
 	lui	a2, 21
+	srai	a0, a0, 63
 	addi	a2, a2, 384
 	and	a0, a0, a2
 	addw	a0, a0, a1
@@ -19,8 +19,8 @@ func0000000000000005:                   # @func0000000000000005
 func0000000000000004:                   # @func0000000000000004
 	subw	a1, a1, a2
 	slli	a0, a0, 63
-	srai	a0, a0, 63
 	lui	a2, 524288
+	srai	a0, a0, 63
 	addi	a2, a2, -85
 	and	a0, a0, a2
 	addw	a0, a0, a1

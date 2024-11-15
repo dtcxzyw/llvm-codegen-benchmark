@@ -2,8 +2,8 @@ func0000000000000001:                   # @func0000000000000001
 	li	a0, 2047
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v12, v12, a0
-	vmseq.vi	v0, v12, 0
 	li	a0, 54
+	vmseq.vi	v0, v12, 0
 	vrsub.vx	v10, v10, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret
@@ -11,8 +11,8 @@ func0000000000000011:                   # @func0000000000000011
 	li	a0, 2047
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v12, v12, a0
-	vmseq.vi	v0, v12, 0
 	li	a0, 54
+	vmseq.vi	v0, v12, 0
 	vrsub.vx	v10, v10, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret
@@ -28,8 +28,8 @@ func0000000000000034:                   # @func0000000000000034
 	addi	a0, a0, -2048
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v12, v12, a0
-	vmseq.vi	v0, v12, 0
 	li	a0, 276
+	vmseq.vi	v0, v12, 0
 	vrsub.vx	v10, v10, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret

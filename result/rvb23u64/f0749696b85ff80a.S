@@ -7,10 +7,10 @@ func0000000000000180:                   # @func0000000000000180
 	ret
 func0000000000000000:                   # @func0000000000000000
 	lui	a3, 648056
-	addi	a3, a3, -1607
-	add	a2, a2, a3
+	add	a0, a0, a1
+	addi	a1, a3, -1607
+	add	a2, a2, a1
 	srliw	a2, a2, 2
 	add	a0, a0, a1
-	add	a0, a0, a3
 	addw	a0, a0, a2
 	ret

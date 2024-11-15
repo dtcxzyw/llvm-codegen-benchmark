@@ -1,10 +1,10 @@
 func000000000000003b:                   # @func000000000000003b
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vmfge.vf	v20, v16, fa5
-	vmflt.vv	v16, v12, v8
-	vmnot.m	v8, v16
-	vmorn.mm	v0, v8, v20
+	vmflt.vv	v20, v12, v8
+	vmfge.vf	v8, v16, fa5
+	vmnot.m	v9, v20
+	vmorn.mm	v0, v9, v8
 	ret
 func000000000000002c:                   # @func000000000000002c
 	fmv.w.x	fa5, zero

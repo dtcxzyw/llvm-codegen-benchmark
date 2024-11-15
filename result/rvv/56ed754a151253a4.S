@@ -32,9 +32,9 @@ func0000000000000004:                   # @func0000000000000004
 func0000000000000040:                   # @func0000000000000040
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
+	lui	a0, 1
 	vsll.vi	v10, v10, 2
 	vadd.vv	v8, v8, v10
-	lui	a0, 1
 	addiw	a0, a0, -352
 	vadd.vx	v8, v8, a0
 	ret

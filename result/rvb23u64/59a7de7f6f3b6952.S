@@ -1,9 +1,9 @@
 func000000000000001f:                   # @func000000000000001f
 	sext.w	a1, a1
 	add	a0, a0, a1
-	addi	a0, a0, 21
 	li	a1, 1
 	slli	a1, a1, 33
+	addi	a0, a0, 21
 	addi	a1, a1, -128
 	and	a0, a0, a1
 	ret
@@ -29,8 +29,8 @@ func000000000000001d:                   # @func000000000000001d
 	ret
 func0000000000000004:                   # @func0000000000000004
 	add.uw	a0, a1, a0
-	addi	a0, a0, -1
 	li	a1, 63
+	addi	a0, a0, -1
 	bseti	a1, a1, 63
 	and	a0, a0, a1
 	ret

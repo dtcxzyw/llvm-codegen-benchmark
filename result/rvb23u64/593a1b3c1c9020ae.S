@@ -1,7 +1,7 @@
 func0000000000000042:                   # @func0000000000000042
 	zext.w	a2, a2
-	neg	a2, a2
 	li	a3, 376
+	neg	a2, a2
 	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -33,8 +33,8 @@ func000000000000016a:                   # @func000000000000016a
 	ret
 func000000000000016b:                   # @func000000000000016b
 	sext.w	a2, a2
-	slli	a2, a2, 5
 	slli	a0, a0, 5
+	slli	a2, a2, 5
 	add	a0, a0, a1
 	sub	a0, a0, a2
 	addi	a0, a0, 8

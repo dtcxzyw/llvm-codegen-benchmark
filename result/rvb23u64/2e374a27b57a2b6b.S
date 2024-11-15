@@ -11,9 +11,9 @@ func000000000000001d:                   # @func000000000000001d
 func000000000000001f:                   # @func000000000000001f
 	lui	a1, 254
 	and	a0, a0, a1
-	slli	a0, a0, 43
 	lui	a1, 24578
 	bseti	a1, a1, 54
+	slli	a0, a0, 43
 	bseti	a1, a1, 62
 	add	a0, a0, a1
 	ret

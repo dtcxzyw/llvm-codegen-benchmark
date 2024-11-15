@@ -8,10 +8,10 @@ func0000000000000004:                   # @func0000000000000004
 	lui	a2, 139810
 	addi	a2, a2, 546
 	and	a1, a1, a2
+	lui	a2, 838861
 	or	a0, a0, a1
 	slliw	a0, a0, 2
-	lui	a1, 838861
-	addiw	a1, a1, -820
+	addiw	a1, a2, -820
 	and	a0, a0, a1
 	ret
 func000000000000001f:                   # @func000000000000001f
@@ -24,8 +24,8 @@ func0000000000000006:                   # @func0000000000000006
 	slli	a1, a1, 2
 	andi	a1, a1, -32
 	or	a0, a0, a1
-	slli	a0, a0, 2
 	lui	a1, 262144
+	slli	a0, a0, 2
 	addiw	a1, a1, -32
 	and	a0, a0, a1
 	ret
@@ -33,8 +33,8 @@ func0000000000000016:                   # @func0000000000000016
 	slli	a1, a1, 2
 	andi	a1, a1, -32
 	or	a0, a0, a1
-	slli	a0, a0, 2
 	lui	a1, 262144
+	slli	a0, a0, 2
 	addiw	a1, a1, -32
 	and	a0, a0, a1
 	ret

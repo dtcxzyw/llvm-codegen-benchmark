@@ -38,9 +38,9 @@ func0000000000000013:                   # @func0000000000000013
 	ret
 func00000000000000e2:                   # @func00000000000000e2
 	addi	a2, a2, 8
+	li	a3, -72
 	sltu	a1, a1, a2
 	czero.nez	a2, a2, a1
-	li	a3, -72
 	czero.eqz	a1, a3, a1
 	or	a1, a1, a2
 	add	a0, a0, a1

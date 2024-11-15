@@ -81,9 +81,9 @@ func0000000000000104:                   # @func0000000000000104
 func0000000000000144:                   # @func0000000000000144
 	lui	a0, %hi(.LCPI10_0)
 	fld	fa5, %lo(.LCPI10_0)(a0)
+	bseti	a0, zero, 50
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfle.vf	v24, v16, fa5
-	bseti	a0, zero, 50
 	fmv.d.x	fa5, a0
 	vmflt.vf	v16, v8, fa5
 	vmor.mm	v0, v16, v24
@@ -155,13 +155,13 @@ func0000000000000084:                   # @func0000000000000084
 func0000000000000072:                   # @func0000000000000072
 	lui	a0, %hi(.LCPI16_0)
 	fld	fa5, %lo(.LCPI16_0)(a0)
+	fli.d	fa4, inf
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vmfge.vf	v24, v16, fa5
-	fli.d	fa5, inf
-	vmflt.vf	v16, v8, fa5
-	vmfgt.vf	v17, v8, fa5
-	vmnor.mm	v8, v17, v16
-	vmorn.mm	v0, v8, v24
+	vmflt.vf	v24, v8, fa4
+	vmfgt.vf	v25, v8, fa4
+	vmfge.vf	v8, v16, fa5
+	vmnor.mm	v9, v25, v24
+	vmorn.mm	v0, v9, v8
 	ret
 .LCPI17_0:
 	.quad	0x38aa95a5c0000000              # double 1.0000000180025095E-35
@@ -199,11 +199,11 @@ func0000000000000132:                   # @func0000000000000132
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v24, v16, fa5
 	vmfgt.vf	v25, v16, fa5
-	vmor.mm	v16, v25, v24
-	vmflt.vf	v17, v8, fa5
-	vmfgt.vf	v18, v8, fa5
-	vmnor.mm	v8, v18, v17
-	vmorn.mm	v0, v8, v16
+	vmflt.vf	v16, v8, fa5
+	vmfgt.vf	v17, v8, fa5
+	vmor.mm	v8, v25, v24
+	vmnor.mm	v9, v17, v16
+	vmorn.mm	v0, v9, v8
 	ret
 .LCPI22_0:
 	.quad	0xc3e0000000000000              # double -9.2233720368547758E+18
@@ -263,8 +263,8 @@ func0000000000000134:                   # @func0000000000000134
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v24, v16, fa5
 	vmfgt.vf	v25, v16, fa5
-	vmor.mm	v16, v25, v24
 	fli.d	fa5, -1.0
+	vmor.mm	v16, v25, v24
 	vmfle.vf	v17, v8, fa5
 	vmorn.mm	v0, v17, v16
 	ret
@@ -280,12 +280,12 @@ func0000000000000054:                   # @func0000000000000054
 func00000000000000ba:                   # @func00000000000000ba
 	lui	a0, %hi(.LCPI29_0)
 	fld	fa5, %lo(.LCPI29_0)(a0)
+	fli.d	fa4, 1.0
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vmfle.vf	v24, v16, fa5
-	fli.d	fa5, 1.0
-	vmflt.vf	v16, v8, fa5
-	vmnot.m	v8, v16
-	vmorn.mm	v0, v8, v24
+	vmflt.vf	v24, v8, fa4
+	vmfle.vf	v8, v16, fa5
+	vmnot.m	v9, v24
+	vmorn.mm	v0, v9, v8
 	ret
 .LCPI30_0:
 	.quad	0x3ff3333333333333              # double 1.2

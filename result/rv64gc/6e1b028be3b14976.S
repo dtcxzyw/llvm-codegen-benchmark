@@ -44,8 +44,8 @@ func0000000000000005:                   # @func0000000000000005
 func000000000000000b:                   # @func000000000000000b
 	lui	a0, 276464
 	fmv.w.x	fa5, a0
-	fmul.s	fa5, fa0, fa5
 	lui	a0, 784384
+	fmul.s	fa5, fa0, fa5
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	xori	a0, a0, 1
@@ -53,8 +53,8 @@ func000000000000000b:                   # @func000000000000000b
 func000000000000000d:                   # @func000000000000000d
 	lui	a0, 276464
 	fmv.w.x	fa5, a0
-	fmul.s	fa5, fa0, fa5
 	lui	a0, 276480
+	fmul.s	fa5, fa0, fa5
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	xori	a0, a0, 1
@@ -79,8 +79,8 @@ func000000000000000e:                   # @func000000000000000e
 func0000000000000009:                   # @func0000000000000009
 	lui	a0, %hi(.LCPI10_0)
 	flw	fa5, %lo(.LCPI10_0)(a0)
-	fmul.s	fa5, fa0, fa5
 	lui	a0, 522240
+	fmul.s	fa5, fa0, fa5
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	flt.s	a1, fa4, fa5

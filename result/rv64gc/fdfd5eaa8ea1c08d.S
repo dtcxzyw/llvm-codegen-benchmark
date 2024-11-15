@@ -25,10 +25,10 @@ func0000000000000008:                   # @func0000000000000008
 func000000000000002e:                   # @func000000000000002e
 	li	a2, 1
 	sll	a1, a2, a1
+	li	a2, -1
 	add	a0, a0, a1
-	li	a1, -1
-	srli	a1, a1, 3
-	add	a0, a0, a1
+	srli	a2, a2, 3
+	add	a0, a0, a2
 	ret
 func0000000000000022:                   # @func0000000000000022
 	li	a2, 1
@@ -39,9 +39,9 @@ func0000000000000022:                   # @func0000000000000022
 func0000000000000000:                   # @func0000000000000000
 	li	a2, 4
 	sll	a1, a2, a1
+	lui	a2, 4
 	add	a0, a0, a1
-	lui	a1, 4
-	addiw	a1, a1, -1472
+	addiw	a1, a2, -1472
 	add	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004

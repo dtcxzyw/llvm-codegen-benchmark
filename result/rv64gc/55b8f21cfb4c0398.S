@@ -9,8 +9,8 @@ func0000000000000001:                   # @func0000000000000001
 func00000000000002a1:                   # @func00000000000002a1
 	andi	a3, a0, 255
 	slli	a0, a2, 4
-	add	a0, a0, a1
 	li	a2, 92
+	add	a0, a0, a1
 	li	a1, 8
 	beq	a3, a2, .LBB1_2
 	li	a1, 12

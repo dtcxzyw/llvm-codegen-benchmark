@@ -42,8 +42,8 @@ func000000000000002a:                   # @func000000000000002a
 	ret
 func0000000000000026:                   # @func0000000000000026
 	sh1add	a0, a0, a0
-	slliw	a0, a0, 1
 	lui	a1, 524288
+	slliw	a0, a0, 1
 	addiw	a1, a1, -6
 	slt	a0, a0, a1
 	ret

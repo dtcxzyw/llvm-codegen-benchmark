@@ -10,10 +10,10 @@ func0000000000000044:                   # @func0000000000000044
 	ret
 func0000000000000099:                   # @func0000000000000099
 	fsub.d	fa5, fa1, fa2
-	fclass.d	a0, fa5
-	andi	a0, a0, 897
-	fclass.d	a1, fa0
-	andi	a1, a1, 896
+	fclass.d	a0, fa0
+	fclass.d	a1, fa5
+	andi	a1, a1, 897
+	andi	a0, a0, 896
 	or	a0, a0, a1
 	snez	a0, a0
 	ret

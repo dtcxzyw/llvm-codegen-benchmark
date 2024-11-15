@@ -1,8 +1,8 @@
 func00000000000001f1:                   # @func00000000000001f1
 	li	a2, 1000
+	slli	a0, a0, 32
 	mulhu	a3, a1, a2
 	mul	a1, a1, a2
-	slli	a0, a0, 32
 	srli	a0, a0, 32
 	or	a0, a0, a1
 	or	a0, a0, a3
@@ -10,10 +10,10 @@ func00000000000001f1:                   # @func00000000000001f1
 	ret
 func00000000000000f8:                   # @func00000000000000f8
 	lui	a2, 244141
+	slli	a0, a0, 32
 	addiw	a2, a2, -1536
 	mulhu	a3, a1, a2
 	mul	a1, a1, a2
-	slli	a0, a0, 32
 	srli	a0, a0, 32
 	add	a0, a0, a1
 	sltu	a0, a0, a1
@@ -22,10 +22,10 @@ func00000000000000f8:                   # @func00000000000000f8
 	ret
 func00000000000001f8:                   # @func00000000000001f8
 	lui	a2, 244141
+	slli	a0, a0, 32
 	addiw	a2, a2, -1536
 	mulhu	a3, a1, a2
 	mul	a1, a1, a2
-	slli	a0, a0, 32
 	srli	a0, a0, 32
 	add	a0, a0, a1
 	sltu	a0, a0, a1
@@ -34,11 +34,11 @@ func00000000000001f8:                   # @func00000000000001f8
 	ret
 func00000000000000f4:                   # @func00000000000000f4
 	lui	a2, 477
+	slli	a0, a0, 32
 	addiw	a2, a2, -667
 	slli	a2, a2, 11
 	mulhu	a3, a1, a2
 	mul	a1, a1, a2
-	slli	a0, a0, 32
 	srli	a0, a0, 32
 	add	a0, a0, a1
 	sltu	a0, a0, a1
@@ -47,10 +47,10 @@ func00000000000000f4:                   # @func00000000000000f4
 	ret
 func00000000000000f1:                   # @func00000000000000f1
 	lui	a2, 244141
+	slli	a0, a0, 32
 	addiw	a2, a2, -1536
 	mulhu	a3, a1, a2
 	mul	a1, a1, a2
-	slli	a0, a0, 32
 	srli	a0, a0, 32
 	or	a0, a0, a1
 	or	a0, a0, a3
@@ -58,9 +58,9 @@ func00000000000000f1:                   # @func00000000000000f1
 	ret
 func00000000000001f4:                   # @func00000000000001f4
 	li	a2, 1000
+	slli	a0, a0, 32
 	mulhu	a3, a1, a2
 	mul	a1, a1, a2
-	slli	a0, a0, 32
 	srli	a0, a0, 32
 	add	a0, a0, a1
 	sltu	a0, a0, a1

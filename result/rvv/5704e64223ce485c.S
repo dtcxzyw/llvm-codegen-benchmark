@@ -4,8 +4,8 @@ func0000000000000011:                   # @func0000000000000011
 	vmsne.vx	v9, v9, a0
 	vmseq.vx	v8, v8, a0
 	vmand.mm	v9, v8, v9
-	vmandn.mm	v9, v9, v0
 	vmand.mm	v8, v8, v0
+	vmandn.mm	v9, v9, v0
 	vmor.mm	v0, v8, v9
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.i	v8, 0

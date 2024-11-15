@@ -29,8 +29,8 @@ func000000000000001a:                   # @func000000000000001a
 	ret
 func0000000000000008:                   # @func0000000000000008
 	lui	a2, 1040384
-	and	a1, a1, a2
 	srli	a0, a0, 16
+	and	a1, a1, a2
 	sh2add	a0, a0, a0
 	slli	a0, a0, 4
 	add	a0, a0, a1

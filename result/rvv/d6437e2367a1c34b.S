@@ -26,9 +26,9 @@ func0000000000000022:                   # @func0000000000000022
 func0000000000000034:                   # @func0000000000000034
 	vmv1r.v	v12, v0
 	li	a0, 64
+	li	a1, 32
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vx	v0, v10, a0
-	li	a1, 32
 	vmv.v.x	v10, a1
 	vmerge.vxm	v10, v10, a0, v0
 	vmslt.vv	v13, v10, v8

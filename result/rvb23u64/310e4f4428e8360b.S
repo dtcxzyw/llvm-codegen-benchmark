@@ -7,8 +7,8 @@ func0000000000000000:                   # @func0000000000000000
 func00000000000000f0:                   # @func00000000000000f0
 	slli	a2, a2, 6
 	add	a0, a0, a1
-	add	a0, a0, a2
 	lui	a1, 10126
+	add	a0, a0, a2
 	addiw	a1, a1, -537
 	slli	a1, a1, 12
 	addi	a1, a1, -448
@@ -17,8 +17,8 @@ func00000000000000f0:                   # @func00000000000000f0
 func000000000000007f:                   # @func000000000000007f
 	slli	a2, a2, 6
 	add	a0, a0, a1
-	add	a0, a0, a2
 	lui	a1, 10126
+	add	a0, a0, a2
 	addiw	a1, a1, -537
 	slli	a1, a1, 12
 	addi	a1, a1, -448

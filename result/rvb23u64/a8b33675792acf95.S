@@ -52,8 +52,8 @@ func00000000000001a8:                   # @func00000000000001a8
 	ret
 func0000000000000338:                   # @func0000000000000338
 	addi	a1, a1, -48
-	andi	a1, a1, 255
 	sh2add	a0, a0, a0
+	andi	a1, a1, 255
 	sh1add	a0, a0, a1
 	lui	a1, 244
 	addiw	a1, a1, 575

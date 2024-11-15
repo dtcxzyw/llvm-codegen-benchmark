@@ -10,10 +10,10 @@ func000000000000000d:                   # @func000000000000000d
 	sext.w	a2, a2
 	sext.w	a1, a1
 	slt	a1, a1, a2
-	xori	a1, a1, 1
-	slli	a1, a1, 26
 	lui	a2, 1032192
 	addiw	a2, a2, -1
+	xori	a1, a1, 1
+	slli	a1, a1, 26
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret

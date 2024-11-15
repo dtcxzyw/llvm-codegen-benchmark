@@ -2,8 +2,8 @@ func00000000000000f1:                   # @func00000000000000f1
 	li	a4, 1000
 	mul	a3, a3, a4
 	mulhu	a5, a2, a4
-	add	a3, a3, a5
 	mul	a2, a2, a4
+	add	a3, a3, a5
 	or	a1, a1, a3
 	or	a0, a0, a2
 	or	a0, a0, a1
@@ -14,8 +14,8 @@ func00000000000000f8:                   # @func00000000000000f8
 	addiw	a4, a4, -1536
 	mul	a3, a3, a4
 	mulhu	a5, a2, a4
-	add	a3, a3, a5
 	mul	a2, a2, a4
+	add	a3, a3, a5
 	add	a0, a0, a2
 	sltu	a0, a0, a2
 	add	a1, a1, a3
@@ -28,8 +28,8 @@ func00000000000000f4:                   # @func00000000000000f4
 	slli	a4, a4, 11
 	mul	a3, a3, a4
 	mulhu	a5, a2, a4
-	add	a3, a3, a5
 	mul	a2, a2, a4
+	add	a3, a3, a5
 	add	a0, a0, a2
 	sltu	a0, a0, a2
 	add	a1, a1, a3

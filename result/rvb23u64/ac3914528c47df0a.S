@@ -24,8 +24,8 @@ func00000000000001ac:                   # @func00000000000001ac
 	sext.w	a1, a1
 	sext.w	a2, a2
 	xor	a0, a0, a2
-	snez	a0, a0
 	slti	a1, a1, 64
+	snez	a0, a0
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
@@ -41,8 +41,8 @@ func000000000000001c:                   # @func000000000000001c
 	sext.w	a1, a1
 	zext.w	a2, a2
 	xor	a0, a0, a2
-	snez	a0, a0
 	addi	a1, a1, -5
+	snez	a0, a0
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret

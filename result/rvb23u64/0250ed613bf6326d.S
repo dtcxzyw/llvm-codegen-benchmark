@@ -26,8 +26,8 @@ func0000000000000010:                   # @func0000000000000010
 	slli	a1, a1, 14
 	lui	a2, 4
 	addw	a1, a1, a2
+	lui	a2, 102400
 	or	a0, a0, a1
-	lui	a1, 102400
-	addiw	a1, a1, 34
+	addiw	a1, a2, 34
 	or	a0, a0, a1
 	ret

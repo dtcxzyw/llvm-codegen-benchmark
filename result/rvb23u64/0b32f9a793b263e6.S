@@ -24,15 +24,15 @@ func000000000000006c:                   # @func000000000000006c
 	ret
 func0000000000000064:                   # @func0000000000000064
 	bset	a0, zero, a0
-	andi	a0, a0, -2
 	lui	a1, 1
+	andi	a0, a0, -2
 	addiw	a1, a1, 1
 	sltu	a0, a0, a1
 	ret
 func0000000000000068:                   # @func0000000000000068
 	bset	a0, zero, a0
-	andi	a0, a0, -2
 	li	a1, 7
+	andi	a0, a0, -2
 	slli	a1, a1, 60
 	sltu	a0, a1, a0
 	ret

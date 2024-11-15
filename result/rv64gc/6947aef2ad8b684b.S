@@ -142,15 +142,15 @@ func000000000000001b:                   # @func000000000000001b
 	ret
 func0000000000000012:                   # @func0000000000000012
 	sext.w	a1, a1
-	sltiu	a1, a1, -3
 	lui	a2, 16
+	sltiu	a1, a1, -3
 	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
 func000000000000002a:                   # @func000000000000002a
 	not	a1, a1
-	srliw	a1, a1, 31
 	lui	a2, 16
+	srliw	a1, a1, 31
 	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret

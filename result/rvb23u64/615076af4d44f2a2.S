@@ -20,9 +20,9 @@ func000000000000000e:                   # @func000000000000000e
 	ret
 func0000000000000046:                   # @func0000000000000046
 	sext.w	a2, a2
+	li	a3, 6
 	sltiu	a2, a2, 1000
 	czero.eqz	a1, a1, a2
-	li	a3, 6
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
 	sext.w	a1, a1
@@ -50,9 +50,9 @@ func0000000000000034:                   # @func0000000000000034
 	ret
 func000000000000000c:                   # @func000000000000000c
 	sext.w	a2, a2
+	li	a3, 2
 	addi	a2, a2, -3
 	czero.eqz	a1, a1, a2
-	li	a3, 2
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
 	sext.w	a1, a1

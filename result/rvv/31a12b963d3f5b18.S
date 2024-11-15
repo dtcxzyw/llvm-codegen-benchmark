@@ -9,9 +9,9 @@ func0000000000000194:                   # @func0000000000000194
 	vmulh.vx	v10, v8, a0
 	li	a0, 63
 	vsrl.vx	v12, v10, a0
+	lui	a0, 244141
 	vsra.vi	v10, v10, 26
 	vadd.vv	v10, v10, v12
-	lui	a0, 244141
 	addiw	a0, a0, -1536
 	vnmsac.vx	v8, a0, v10
 	ret
@@ -27,9 +27,9 @@ func0000000000000094:                   # @func0000000000000094
 	vmulh.vx	v10, v8, a0
 	li	a0, 63
 	vsrl.vx	v12, v10, a0
+	lui	a0, 244141
 	vsra.vi	v10, v10, 26
 	vadd.vv	v10, v10, v12
-	lui	a0, 244141
 	addiw	a0, a0, -1536
 	vnmsac.vx	v8, a0, v10
 	ret
@@ -45,9 +45,9 @@ func0000000000000084:                   # @func0000000000000084
 	vmulh.vx	v10, v8, a0
 	li	a0, 63
 	vsrl.vx	v12, v10, a0
+	lui	a0, 879
 	vsra.vi	v10, v10, 20
 	vadd.vv	v10, v10, v12
-	lui	a0, 879
 	addiw	a0, a0, -384
 	vnmsac.vx	v8, a0, v10
 	ret
@@ -63,9 +63,9 @@ func0000000000000080:                   # @func0000000000000080
 	vmulh.vx	v10, v8, a0
 	li	a0, 63
 	vsrl.vx	v12, v10, a0
+	lui	a0, 16
 	vsra.vi	v10, v10, 7
 	vadd.vv	v10, v10, v12
-	lui	a0, 16
 	addiw	a0, a0, -1000
 	vmacc.vx	v8, a0, v10
 	ret
@@ -80,12 +80,12 @@ func0000000000000195:                   # @func0000000000000195
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
 	vmulh.vx	v10, v8, a1
-	vadd.vv	v10, v10, v8
 	li	a0, 63
+	vadd.vv	v10, v10, v8
 	vsrl.vx	v12, v10, a0
+	lui	a0, 14648
 	vsra.vi	v10, v10, 25
 	vadd.vv	v10, v10, v12
-	lui	a0, 14648
 	addiw	a0, a0, 1792
 	vnmsac.vx	v8, a0, v10
 	ret
@@ -101,9 +101,9 @@ func0000000000000095:                   # @func0000000000000095
 	vmulh.vx	v10, v8, a0
 	li	a0, 63
 	vsrl.vx	v12, v10, a0
+	lui	a0, 244
 	vsra.vi	v10, v10, 18
 	vadd.vv	v10, v10, v12
-	lui	a0, 244
 	addiw	a0, a0, 576
 	vnmsac.vx	v8, a0, v10
 	ret

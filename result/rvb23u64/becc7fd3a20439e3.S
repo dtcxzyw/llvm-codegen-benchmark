@@ -1,8 +1,8 @@
 func0000000000000026:                   # @func0000000000000026
 	andi	a0, a0, 1
 	srai	a2, a2, 32
-	czero.nez	a1, a1, a0
 	li	a3, 16
+	czero.nez	a1, a1, a0
 	czero.eqz	a0, a3, a0
 	or	a0, a0, a1
 	sext.w	a0, a0
@@ -11,9 +11,9 @@ func0000000000000026:                   # @func0000000000000026
 func0000000000000046:                   # @func0000000000000046
 	andi	a0, a0, 1
 	srli	a2, a2, 4
+	lui	a3, 244
 	sext.w	a2, a2
 	czero.nez	a1, a1, a0
-	lui	a3, 244
 	addi	a3, a3, 576
 	czero.eqz	a0, a3, a0
 	or	a0, a0, a1

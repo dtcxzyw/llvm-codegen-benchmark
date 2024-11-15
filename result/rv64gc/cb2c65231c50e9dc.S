@@ -41,8 +41,8 @@ func0000000000000024:                   # @func0000000000000024
 func0000000000000044:                   # @func0000000000000044
 	fadd.s	fa5, fa0, fa1
 	fmv.w.x	fa4, zero
-	fmax.s	fa5, fa5, fa4
 	lui	a0, 260096
+	fmax.s	fa5, fa5, fa4
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	ret

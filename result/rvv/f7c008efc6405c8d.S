@@ -25,8 +25,8 @@ func000000000000006d:                   # @func000000000000006d
 	srli	a1, a0, 20
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a1
-	vadd.vv	v10, v12, v10
 	li	a1, 44
+	vadd.vv	v10, v12, v10
 	vsrl.vx	v10, v10, a1
 	vadd.vv	v8, v10, v8
 	slli	a0, a0, 42

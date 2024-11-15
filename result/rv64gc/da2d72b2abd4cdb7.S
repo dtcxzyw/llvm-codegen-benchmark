@@ -1,7 +1,7 @@
 func00000000000000c5:                   # @func00000000000000c5
 	sext.w	a0, a0
-	snez	a0, a0
 	li	a2, 31
+	snez	a0, a0
 	subw	a2, a2, a1
 	addi	a0, a0, -1
 	or	a0, a0, a2

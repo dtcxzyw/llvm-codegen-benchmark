@@ -16,17 +16,17 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func00000000000000c1:                   # @func00000000000000c1
 	slli	a1, a1, 41
-	srli	a1, a1, 41
-	snez	a1, a1
 	andi	a0, a0, 255
+	srli	a1, a1, 41
 	addi	a0, a0, -255
+	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 func0000000000000014:                   # @func0000000000000014
 	andi	a1, a1, 4
-	seqz	a1, a1
 	andi	a0, a0, 7
+	seqz	a1, a1
 	sltiu	a0, a0, 5
 	and	a0, a0, a1
 	ret

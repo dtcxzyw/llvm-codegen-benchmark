@@ -15,8 +15,8 @@ func0000000000000044:                   # @func0000000000000044
 	vadd.vx	v10, v10, a0
 	li	a0, -256
 	vmsltu.vx	v12, v10, a0
-	vmor.mm	v10, v0, v12
 	li	a0, -64
+	vmor.mm	v10, v0, v12
 	vmsltu.vx	v11, v8, a0
 	vmor.mm	v0, v10, v11
 	ret

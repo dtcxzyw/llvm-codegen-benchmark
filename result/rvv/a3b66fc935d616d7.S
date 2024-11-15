@@ -1,20 +1,20 @@
 func000000000000001f:                   # @func000000000000001f
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwsll.vi	v12, v10, 4
+	lui	a0, 786432
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vv	v8, v8, v12
 	vadd.vi	v8, v8, 4
-	lui	a0, 786432
 	srli	a0, a0, 27
 	vand.vx	v8, v8, a0
 	ret
 func000000000000003f:                   # @func000000000000003f
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwsll.vi	v12, v10, 5
+	lui	a0, 786432
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vv	v8, v8, v12
 	vadd.vi	v8, v8, 4
-	lui	a0, 786432
 	srli	a0, a0, 27
 	vand.vx	v8, v8, a0
 	ret

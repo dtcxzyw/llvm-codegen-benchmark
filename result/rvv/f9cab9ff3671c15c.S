@@ -1,11 +1,10 @@
 func0000000000000022:                   # @func0000000000000022
+	vmv1r.v	v24, v0
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vmflt.vv	v24, v8, v16
-	vmv1r.v	v25, v0
-	vmv1r.v	v0, v24
+	vmflt.vv	v0, v8, v16
 	vmerge.vvm	v8, v16, v8, v0
 	vmv.v.i	v16, 0
-	vmv1r.v	v0, v25
+	vmv1r.v	v0, v24
 	vmerge.vvm	v8, v16, v8, v0
 	fli.d	fa5, 1.0
 	vfmin.vf	v8, v8, fa5
@@ -13,17 +12,16 @@ func0000000000000022:                   # @func0000000000000022
 .LCPI1_0:
 	.quad	0x40dfffc000000000              # double 32767
 func0000000000000044:                   # @func0000000000000044
+	vmv1r.v	v24, v0
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vmflt.vv	v24, v8, v16
-	vmv1r.v	v25, v0
-	vmv1r.v	v0, v24
+	vmflt.vv	v0, v8, v16
 	vmerge.vvm	v8, v16, v8, v0
 	vfmv.v.f	v16, fa5
-	vmv1r.v	v0, v25
-	vmerge.vvm	v8, v16, v8, v0
 	fmv.d.x	fa5, zero
+	vmv1r.v	v0, v24
+	vmerge.vvm	v8, v16, v8, v0
 	vmfgt.vf	v0, v8, fa5
 	fli.d	fa5, 1.0
 	vfmv.v.f	v16, fa5

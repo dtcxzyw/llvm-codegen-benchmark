@@ -32,9 +32,9 @@ func00000000000000a4:                   # @func00000000000000a4
 func0000000000000008:                   # @func0000000000000008
 	li	a3, 10
 	mul	a2, a2, a3
+	li	a3, -1
 	add	a1, a1, a2
-	li	a2, -1
-	slli	a2, a2, 63
-	sltu	a1, a2, a1
+	slli	a3, a3, 63
+	sltu	a1, a3, a1
 	and	a0, a0, a1
 	ret

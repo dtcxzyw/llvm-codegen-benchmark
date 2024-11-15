@@ -12,9 +12,9 @@ func00000000000000c8:                   # @func00000000000000c8
 	ret
 func00000000000000cd:                   # @func00000000000000cd
 	sext.w	a0, a0
+	flt.s	a1, fa0, fa1
 	addi	a0, a0, -3
 	snez	a0, a0
-	flt.s	a1, fa0, fa1
 	not	a1, a1
 	and	a0, a0, a1
 	ret
@@ -47,22 +47,22 @@ func00000000000000a4:                   # @func00000000000000a4
 	ret
 func000000000000004d:                   # @func000000000000004d
 	sext.w	a0, a0
-	sltiu	a0, a0, 2
 	flt.s	a1, fa0, fa1
+	sltiu	a0, a0, 2
 	not	a1, a1
 	and	a0, a0, a1
 	ret
 func0000000000000083:                   # @func0000000000000083
 	srliw	a0, a0, 24
-	snez	a0, a0
 	fle.s	a1, fa1, fa0
+	snez	a0, a0
 	not	a1, a1
 	and	a0, a0, a1
 	ret
 func000000000000006b:                   # @func000000000000006b
 	sext.w	a0, a0
-	slti	a0, a0, 48
 	flt.s	a1, fa1, fa0
+	slti	a0, a0, 48
 	not	a1, a1
 	and	a0, a0, a1
 	ret

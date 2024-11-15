@@ -61,8 +61,8 @@ func0000000000000006:                   # @func0000000000000006
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a1
 	vmulh.vx	v10, v8, a0
-	vadd.vv	v10, v10, v8
 	li	a0, 63
+	vadd.vv	v10, v10, v8
 	vsrl.vx	v12, v10, a0
 	vsra.vi	v10, v10, 6
 	vadd.vv	v10, v10, v12

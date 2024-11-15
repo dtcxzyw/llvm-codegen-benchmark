@@ -47,8 +47,8 @@ func00000000000000c1:                   # @func00000000000000c1
 func0000000000000008:                   # @func0000000000000008
 	li	a1, -1504
 	sh2add	a0, a1, a0
-	sext.w	a0, a0
 	lui	a1, 1048575
+	sext.w	a0, a0
 	addiw	a1, a1, -1456
 	sltu	a0, a0, a1
 	ret

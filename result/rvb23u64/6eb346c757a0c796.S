@@ -5,9 +5,9 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func0000000000000014:                   # @func0000000000000014
 	mul	a1, a1, a2
+	lui	a2, 61
 	mul	a0, a0, a1
-	lui	a1, 61
-	addi	a1, a1, 143
+	addi	a1, a2, 143
 	addw	a0, a0, a1
 	ret
 func0000000000000015:                   # @func0000000000000015

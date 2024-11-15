@@ -19,18 +19,18 @@ func0000000000000031:                   # @func0000000000000031
 func000000000000007d:                   # @func000000000000007d
 	add	a0, a0, a2
 	srai	a1, a1, 4
+	lui	a2, 81007
 	add	a0, a0, a1
-	lui	a1, 81007
-	slli	a1, a1, 3
-	addi	a1, a1, -1607
+	slli	a2, a2, 3
+	addi	a1, a2, -1607
 	add	a0, a0, a1
 	ret
 func0000000000000005:                   # @func0000000000000005
 	add	a1, a1, a2
 	srai	a0, a0, 32
+	lui	a2, 420
 	add	a0, a0, a1
-	lui	a1, 420
-	addiw	a1, a1, 1103
+	addiw	a1, a2, 1103
 	add	a0, a0, a1
 	ret
 func0000000000000010:                   # @func0000000000000010

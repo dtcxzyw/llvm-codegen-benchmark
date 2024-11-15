@@ -23,10 +23,10 @@ func000000000000001a:                   # @func000000000000001a
 	ret
 func0000000000000118:                   # @func0000000000000118
 	sh2add	a1, a2, a1
+	lui	a2, 1
 	sub	a0, a0, a1
-	lui	a1, 1
-	addiw	a1, a1, -4
-	sltu	a0, a1, a0
+	addiw	a2, a2, -4
+	sltu	a0, a2, a0
 	ret
 func000000000000000a:                   # @func000000000000000a
 	add	a1, a1, a2

@@ -79,9 +79,9 @@ func00000000000000da:                   # @func00000000000000da
 	lui	a2, 524288
 	addi	a2, a2, -16
 	and	a1, a1, a2
+	lui	a2, 23
 	addw	a0, a0, a1
-	lui	a1, 23
-	addiw	a1, a1, 1792
+	addiw	a1, a2, 1792
 	slt	a0, a1, a0
 	ret
 func0000000000000021:                   # @func0000000000000021
@@ -96,10 +96,10 @@ func00000000000000c6:                   # @func00000000000000c6
 	lui	a2, 64
 	addi	a2, a2, -4
 	and	a1, a1, a2
+	lui	a2, 2
 	addw	a0, a0, a1
-	lui	a1, 2
-	addiw	a1, a1, 1
-	slt	a0, a0, a1
+	addiw	a2, a2, 1
+	slt	a0, a0, a2
 	ret
 func0000000000000048:                   # @func0000000000000048
 	addi	a1, a1, 30

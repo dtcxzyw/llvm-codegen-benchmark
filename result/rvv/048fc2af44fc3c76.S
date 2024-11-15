@@ -1,21 +1,21 @@
 func000000000000000c:                   # @func000000000000000c
+	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfwsub.wv	v8, v8, v16
-	fmv.d.x	fa5, zero
 	vsetvli	zero, zero, e64, m8, ta, ma
 	vmfge.vf	v0, v8, fa5
 	ret
 func000000000000000a:                   # @func000000000000000a
+	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfwsub.wv	v8, v8, v16
-	fmv.d.x	fa5, zero
 	vsetvli	zero, zero, e64, m8, ta, ma
 	vmfle.vf	v0, v8, fa5
 	ret
 func0000000000000007:                   # @func0000000000000007
+	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfwsub.wv	v8, v8, v16
-	fmv.d.x	fa5, zero
 	vsetvli	zero, zero, e64, m8, ta, ma
 	vmfne.vf	v0, v8, fa5
 	ret

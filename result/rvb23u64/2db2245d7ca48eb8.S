@@ -29,8 +29,8 @@ func0000000000000010:                   # @func0000000000000010
 	ret
 func0000000000000023:                   # @func0000000000000023
 	andi	a1, a1, 255
-	sltiu	a1, a1, 72
 	li	a2, 13
+	sltiu	a1, a1, 72
 	czero.eqz	a1, a2, a1
 	li	a2, -72
 	zext.w	a2, a2
@@ -39,8 +39,8 @@ func0000000000000023:                   # @func0000000000000023
 	ret
 func0000000000000013:                   # @func0000000000000013
 	andi	a1, a1, 255
-	sltiu	a1, a1, 46
 	li	a2, -13
+	sltiu	a1, a1, 46
 	czero.nez	a1, a2, a1
 	li	a2, -33
 	zext.w	a2, a2

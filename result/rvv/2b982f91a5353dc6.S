@@ -82,8 +82,8 @@ func0000000000000084:                   # @func0000000000000084
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	vmflt.vv	v0, v16, v24
-	vmerge.vvm	v16, v24, v16, v0
 	fli.d	fa5, 0.25
+	vmerge.vvm	v16, v24, v16, v0
 	vfmul.vf	v16, v16, fa5
 	vfabs.v	v8, v8
 	vmflt.vv	v0, v16, v8
@@ -92,8 +92,8 @@ func0000000000000085:                   # @func0000000000000085
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	vmflt.vv	v0, v16, v24
-	vmerge.vvm	v16, v24, v16, v0
 	fli.d	fa5, 0.5
+	vmerge.vvm	v16, v24, v16, v0
 	vfmul.vf	v16, v16, fa5
 	vfabs.v	v8, v8
 	vmfle.vv	v24, v8, v16

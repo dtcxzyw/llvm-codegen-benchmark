@@ -44,8 +44,8 @@ func00000000000000cc:                   # @func00000000000000cc
 func000000000000004c:                   # @func000000000000004c
 	sext.w	a0, a0
 	slli	a1, a1, 48
-	srli	a1, a1, 50
 	lui	a2, 1
+	srli	a1, a1, 50
 	addiw	a2, a2, -2045
 	xor	a1, a1, a2
 	snez	a1, a1

@@ -15,8 +15,8 @@ func0000000000000001:                   # @func0000000000000001
 	lui	a0, 786432
 	addi	a0, a0, -1
 	vand.vx	v8, v8, a0
-	vor.vv	v8, v10, v8
 	lui	a0, 262144
+	vor.vv	v8, v10, v8
 	addi	a0, a0, 2047
 	vxor.vx	v8, v8, a0
 	ret

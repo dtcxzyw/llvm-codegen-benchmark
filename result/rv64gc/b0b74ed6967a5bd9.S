@@ -18,8 +18,8 @@ func000000000000003c:                   # @func000000000000003c
 	ret
 func0000000000000029:                   # @func0000000000000029
 	slli	a1, a1, 3
-	srli	a1, a1, 35
 	slli	a0, a0, 35
+	srli	a1, a1, 35
 	srli	a0, a0, 35
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
@@ -33,8 +33,8 @@ func000000000000002c:                   # @func000000000000002c
 	ret
 func0000000000000028:                   # @func0000000000000028
 	slli	a1, a1, 8
-	srli	a1, a1, 40
 	slli	a0, a0, 40
+	srli	a1, a1, 40
 	srli	a0, a0, 40
 	sltu	a0, a1, a0
 	ret
@@ -52,15 +52,15 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func0000000000000038:                   # @func0000000000000038
 	slli	a1, a1, 10
-	srli	a1, a1, 48
 	slli	a0, a0, 48
+	srli	a1, a1, 48
 	srli	a0, a0, 48
 	sltu	a0, a1, a0
 	ret
 func0000000000000039:                   # @func0000000000000039
 	slli	a1, a1, 10
-	srli	a1, a1, 48
 	slli	a0, a0, 48
+	srli	a1, a1, 48
 	srli	a0, a0, 48
 	sltu	a0, a0, a1
 	xori	a0, a0, 1

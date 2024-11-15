@@ -5,9 +5,9 @@ func000000000000000f:                   # @func000000000000000f
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.x	v12, a0
 	li	a0, 41
-	vmerge.vxm	v12, v12, a0, v0
 	vor.vv	v8, v8, v10
-	vor.vv	v8, v8, v12
+	vmerge.vxm	v10, v12, a0, v0
+	vor.vv	v8, v8, v10
 	li	a0, 256
 	vor.vx	v8, v8, a0
 	ret

@@ -15,12 +15,12 @@ func000000000000000f:                   # @func000000000000000f
 func000000000000000b:                   # @func000000000000000b
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
-	vsrl.vi	v8, v10, 2
 	lui	a0, 5
+	vsrl.vi	v8, v10, 2
 	addi	a0, a0, -1755
 	vmulhu.vx	v8, v8, a0
-	vsrl.vi	v8, v8, 1
 	li	a0, 28
+	vsrl.vi	v8, v8, 1
 	vnmsub.vx	v8, a0, v10
 	lui	a0, 1
 	addi	a0, a0, 423

@@ -6,11 +6,11 @@ func000000000000000a:                   # @func000000000000000a
 	vmerge.vvm	v8, v10, v8, v0
 	ret
 func0000000000000006:                   # @func0000000000000006
+	lui	a0, 8
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmslt.vx	v0, v10, a0
 	lui	a0, 1048544
 	addi	a0, a0, 44
-	lui	a1, 8
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmslt.vx	v0, v10, a1
 	vadd.vx	v10, v12, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret
@@ -27,10 +27,10 @@ func0000000000000031:                   # @func0000000000000031
 	vmerge.vvm	v8, v10, v8, v0
 	ret
 func0000000000000014:                   # @func0000000000000014
-	li	a0, 64
-	li	a1, 26
+	li	a0, 26
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsltu.vx	v0, v10, a1
+	vmsltu.vx	v0, v10, a0
+	li	a0, 64
 	vadd.vx	v10, v12, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret
@@ -71,10 +71,10 @@ func0000000000000004:                   # @func0000000000000004
 	vmerge.vvm	v8, v10, v8, v0
 	ret
 func0000000000000034:                   # @func0000000000000034
-	li	a0, 256
-	li	a1, 257
+	li	a0, 257
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsltu.vx	v0, v10, a1
+	vmsltu.vx	v0, v10, a0
+	li	a0, 256
 	vadd.vx	v10, v12, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret

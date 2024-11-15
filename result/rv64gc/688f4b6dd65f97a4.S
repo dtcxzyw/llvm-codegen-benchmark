@@ -6,8 +6,8 @@ func000000000000026a:                   # @func000000000000026a
 	ret
 func000000000000004a:                   # @func000000000000004a
 	sub	a1, a1, a2
-	sltu	a1, a0, a1
-	slti	a0, a0, 0
-	not	a0, a0
+	slti	a2, a0, 0
+	sltu	a0, a0, a1
+	not	a1, a2
 	and	a0, a0, a1
 	ret

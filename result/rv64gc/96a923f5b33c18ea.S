@@ -13,8 +13,8 @@ func0000000000000003:                   # @func0000000000000003
 func0000000000000001:                   # @func0000000000000001
 	add	a1, a1, a2
 	andi	a0, a0, 1
-	addi	a0, a0, -1
 	li	a2, -1
+	addi	a0, a0, -1
 	srli	a2, a2, 24
 	or	a0, a0, a2
 	and	a0, a0, a1

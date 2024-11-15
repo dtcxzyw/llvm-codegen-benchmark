@@ -63,9 +63,9 @@ func000000000000003d:                   # @func000000000000003d
 	li	a0, 94
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmul.vx	v8, v8, a0
+	lui	a0, 1048575
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vwaddu.wv	v8, v8, v11
-	lui	a0, 1048575
 	addi	a0, a0, 961
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v8, v8, a0

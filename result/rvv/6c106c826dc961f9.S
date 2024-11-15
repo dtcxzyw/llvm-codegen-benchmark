@@ -30,9 +30,9 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000018:                   # @func0000000000000018
 	li	a0, -1
 	srli	a1, a0, 32
+	slli.uw	a0, a0, 12
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v8, v8, a1
-	slli.uw	a0, a0, 12
 	addi	a0, a0, 33
 	vadd.vx	v10, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma

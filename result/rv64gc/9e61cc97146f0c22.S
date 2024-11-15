@@ -18,8 +18,8 @@ func0000000000000007:                   # @func0000000000000007
 	ret
 func0000000000000003:                   # @func0000000000000003
 	slliw	a1, a1, 3
-	addi	a1, a1, 2
 	slli	a0, a0, 63
+	addi	a1, a1, 2
 	srai	a0, a0, 63
 	and	a0, a0, a1
 	ret
@@ -36,15 +36,15 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000006:                   # @func0000000000000006
 	slliw	a1, a1, 16
 	lui	a2, 65536
-	or	a1, a1, a2
 	slli	a0, a0, 63
+	or	a1, a1, a2
 	srai	a0, a0, 63
 	and	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000
 	ori	a1, a1, -8
-	slli	a1, a1, 28
 	slli	a0, a0, 63
+	slli	a1, a1, 28
 	srai	a0, a0, 63
 	and	a0, a0, a1
 	ret

@@ -11,9 +11,9 @@ func0000000000000011:                   # @func0000000000000011
 	sext.w	a0, a0
 	lui	a3, 15
 	and	a2, a2, a3
+	li	a3, 2
 	binvi	a2, a2, 14
 	czero.eqz	a1, a1, a2
-	li	a3, 2
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
 	sext.w	a1, a1
@@ -31,9 +31,9 @@ func0000000000000018:                   # @func0000000000000018
 func000000000000001c:                   # @func000000000000001c
 	sext.w	a0, a0
 	andi	a2, a2, 127
+	li	a3, 1
 	addi	a2, a2, -35
 	czero.eqz	a1, a1, a2
-	li	a3, 1
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
 	sext.w	a1, a1
@@ -43,8 +43,8 @@ func000000000000001c:                   # @func000000000000001c
 func0000000000000015:                   # @func0000000000000015
 	sext.w	a0, a0
 	andi	a2, a2, 1
-	czero.eqz	a1, a1, a2
 	li	a3, 5
+	czero.eqz	a1, a1, a2
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
 	sext.w	a1, a1

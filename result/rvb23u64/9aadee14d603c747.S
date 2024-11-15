@@ -2,8 +2,8 @@ func000000000000001c:                   # @func000000000000001c
 	andi	a0, a0, 1
 	sext.w	a1, a1
 	addi	a2, a1, -151
-	seqz	a2, a2
 	addi	a1, a1, -152
+	seqz	a2, a2
 	snez	a1, a1
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
@@ -51,8 +51,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	andi	a0, a0, 1
 	sext.w	a1, a1
 	addi	a2, a1, -2
-	snez	a2, a2
 	addi	a1, a1, -1
+	snez	a2, a2
 	seqz	a1, a1
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0

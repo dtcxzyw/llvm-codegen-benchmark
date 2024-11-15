@@ -1,9 +1,9 @@
 func000000000000003f:                   # @func000000000000003f
 	zext.h	a2, a2
 	sub	a1, a1, a0
-	add	a0, a1, a2
-	lui	a1, 16
-	addiw	a1, a1, -15
+	lui	a0, 16
+	add	a1, a1, a2
+	addiw	a0, a0, -15
 	add	a0, a0, a1
 	ret
 func000000000000003d:                   # @func000000000000003d

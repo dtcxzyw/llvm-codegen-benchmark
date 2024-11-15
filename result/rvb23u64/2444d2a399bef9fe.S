@@ -2,9 +2,9 @@ func0000000000000011:                   # @func0000000000000011
 	andi	a1, a1, 1
 	andi	a3, a0, 255
 	addi	a3, a3, -47
+	czero.nez	a1, a2, a1
 	czero.eqz	a0, a0, a3
 	andi	a0, a0, 255
-	czero.nez	a1, a2, a1
 	andi	a1, a1, 255
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -22,9 +22,9 @@ func0000000000000016:                   # @func0000000000000016
 	andi	a1, a1, 1
 	andi	a3, a0, 255
 	addi	a3, a3, -47
+	czero.nez	a1, a2, a1
 	czero.eqz	a0, a0, a3
 	sext.b	a0, a0
-	czero.nez	a1, a2, a1
 	sext.b	a1, a1
 	slt	a0, a0, a1
 	ret
@@ -32,9 +32,9 @@ func000000000000001a:                   # @func000000000000001a
 	andi	a1, a1, 1
 	andi	a3, a0, 255
 	addi	a3, a3, -47
+	czero.nez	a1, a2, a1
 	czero.eqz	a0, a0, a3
 	sext.b	a0, a0
-	czero.nez	a1, a2, a1
 	sext.b	a1, a1
 	slt	a0, a1, a0
 	ret

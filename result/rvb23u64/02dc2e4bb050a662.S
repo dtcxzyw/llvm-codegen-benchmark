@@ -8,9 +8,9 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000002:                   # @func0000000000000002
 	slli	a2, a2, 2
 	lui	a3, 13
+	zext.h	a1, a1
 	addiw	a3, a3, -820
 	and	a2, a2, a3
-	zext.h	a1, a1
 	xor	a0, a0, a1
 	xor	a0, a0, a2
 	ret

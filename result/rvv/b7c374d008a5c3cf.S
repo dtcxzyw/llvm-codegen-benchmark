@@ -13,8 +13,8 @@ func000000000000007b:                   # @func000000000000007b
 	srli	a0, a0, 20
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
-	vadd.vi	v12, v12, 5
 	li	a0, 44
+	vadd.vi	v12, v12, 5
 	vsrl.vx	v12, v12, a0
 	vadd.vv	v8, v8, v10
 	vadd.vv	v8, v12, v8

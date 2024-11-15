@@ -16,8 +16,8 @@ func0000000000000000:                   # @func0000000000000000
 	li	a0, 5
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmacc.vx	v10, a0, v12
-	vadd.vv	v8, v8, v10
 	lui	a0, 943431
+	vadd.vv	v8, v8, v10
 	addi	a0, a0, -1180
 	vadd.vx	v8, v8, a0
 	ret
@@ -25,8 +25,8 @@ func0000000000000004:                   # @func0000000000000004
 	li	a0, 1619
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmacc.vx	v8, a0, v12
-	vadd.vv	v8, v10, v8
 	lui	a0, 13
+	vadd.vv	v8, v10, v8
 	addi	a0, a0, -657
 	vadd.vx	v8, v8, a0
 	ret
@@ -51,8 +51,8 @@ func0000000000000055:                   # @func0000000000000055
 	addi	a0, a0, -524
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmacc.vx	v10, a0, v12
-	vadd.vv	v8, v8, v10
 	lui	a0, 1043808
+	vadd.vv	v8, v8, v10
 	addi	a0, a0, 1056
 	vadd.vx	v8, v8, a0
 	ret

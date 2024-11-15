@@ -5,8 +5,8 @@ func0000000000000005:                   # @func0000000000000005
 	ld	a0, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulhu.vx	v10, v8, a0
-	vsrl.vi	v10, v10, 18
 	lui	a0, 244
+	vsrl.vi	v10, v10, 18
 	addiw	a0, a0, 576
 	vnmsac.vx	v8, a0, v10
 	ret
@@ -40,8 +40,8 @@ func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v10, v8, 11
 	vmulhu.vx	v10, v10, a0
-	vsrl.vi	v10, v10, 9
 	lui	a0, 72014
+	vsrl.vi	v10, v10, 9
 	addiw	a0, a0, -2048
 	vmacc.vx	v8, a0, v10
 	ret
@@ -53,9 +53,9 @@ func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v10, v8, 9
 	vmulhu.vx	v10, v10, a0
-	vsrl.vi	v10, v10, 11
 	lui	a0, 1571
 	addiw	a0, a0, 667
+	vsrl.vi	v10, v10, 11
 	slli	a0, a0, 9
 	vmacc.vx	v8, a0, v10
 	ret

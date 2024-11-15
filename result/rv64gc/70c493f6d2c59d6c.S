@@ -71,8 +71,8 @@ func00000000000000a8:                   # @func00000000000000a8
 	ret
 func00000000000000c7:                   # @func00000000000000c7
 	sext.w	a0, a0
-	snez	a0, a0
 	feq.s	a1, fa0, fa1
+	snez	a0, a0
 	not	a1, a1
 	and	a0, a0, a1
 	ret

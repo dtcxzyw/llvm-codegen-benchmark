@@ -7,10 +7,10 @@ func0000000000000007:                   # @func0000000000000007
 	fld	fa5, %lo(.LCPI0_0)(a0)
 	lui	a0, %hi(.LCPI0_1)
 	fld	fa4, %lo(.LCPI0_1)(a0)
+	fmv.d.x	fa3, zero
 	vsetivli	zero, 16, e64, m8, ta, mu
+	vmfne.vf	v0, v8, fa3
 	vfmul.vf	v24, v16, fa5
-	fmv.d.x	fa5, zero
-	vmfne.vf	v0, v8, fa5
 	vfmv.v.f	v16, fa4
 	vfdiv.vv	v16, v24, v8, v0.t
 	vmv.v.v	v8, v16
@@ -20,10 +20,10 @@ func0000000000000007:                   # @func0000000000000007
 func0000000000000004:                   # @func0000000000000004
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a0)
+	fmv.d.x	fa4, zero
 	vsetivli	zero, 16, e64, m8, ta, mu
+	vmfgt.vf	v0, v8, fa4
 	vfmul.vf	v24, v16, fa5
-	fmv.d.x	fa5, zero
-	vmfgt.vf	v0, v8, fa5
 	vmv.v.i	v16, 0
 	vfdiv.vv	v16, v24, v8, v0.t
 	vmv.v.v	v8, v16

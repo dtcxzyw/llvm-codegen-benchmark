@@ -6,16 +6,16 @@ func000000000000000e:                   # @func000000000000000e
 	ret
 func0000000000000000:                   # @func0000000000000000
 	or	a1, a1, a2
+	lui	a2, 269413
 	or	a0, a0, a1
-	lui	a1, 269413
-	addi	a1, a1, -403
+	addi	a1, a2, -403
 	mulw	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c
 	or	a1, a1, a2
+	lui	a2, 838115
 	or	a0, a0, a1
-	lui	a1, 838115
-	addi	a1, a1, -687
+	addi	a1, a2, -687
 	mulw	a0, a0, a1
 	ret
 func000000000000000f:                   # @func000000000000000f

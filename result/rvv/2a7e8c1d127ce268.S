@@ -16,18 +16,18 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func0000000000000004:                   # @func0000000000000004
 	fmv.d.x	fa5, zero
+	bseti	a0, zero, 63
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vmfgt.vf	v0, v16, fa5
-	bseti	a0, zero, 63
 	vmv.v.x	v16, a0
 	vfneg.v	v16, v8, v0.t
 	vmv.v.v	v8, v16
 	ret
 func0000000000000007:                   # @func0000000000000007
 	fmv.d.x	fa5, zero
+	bseti	a0, zero, 63
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vmfne.vf	v0, v16, fa5
-	bseti	a0, zero, 63
 	vmv.v.x	v16, a0
 	vfneg.v	v16, v8, v0.t
 	vmv.v.v	v8, v16
@@ -36,8 +36,8 @@ func0000000000000005:                   # @func0000000000000005
 	fli.d	fa5, 1.0
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vmfle.vf	v24, v16, fa5
-	vmnot.m	v0, v24
 	fli.d	fa5, -1.0
+	vmnot.m	v0, v24
 	vfmv.v.f	v16, fa5
 	vfneg.v	v16, v8, v0.t
 	vmv.v.v	v8, v16

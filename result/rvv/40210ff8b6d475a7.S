@@ -10,8 +10,8 @@ func0000000000000005:                   # @func0000000000000005
 	vzext.vf8	v12, v10
 	li	a0, 32
 	vsll.vx	v8, v8, a0
-	vor.vv	v8, v8, v12
 	lui	a0, 16
+	vor.vv	v8, v8, v12
 	addiw	a0, a0, -1
 	vxor.vx	v8, v8, a0
 	ret

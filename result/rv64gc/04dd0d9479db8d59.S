@@ -1,7 +1,7 @@
 func0000000000000022:                   # @func0000000000000022
 	addi	a1, a0, -148
-	seqz	a1, a1
 	lui	a2, 1
+	seqz	a1, a1
 	addiw	a2, a2, -591
 	xor	a0, a0, a2
 	seqz	a0, a0
@@ -22,8 +22,8 @@ func0000000000000034:                   # @func0000000000000034
 	ret
 func0000000000000030:                   # @func0000000000000030
 	addi	a1, a0, -1
-	seqz	a1, a1
 	sltiu	a0, a0, 5
+	seqz	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -43,8 +43,8 @@ func0000000000000082:                   # @func0000000000000082
 	ret
 func0000000000000102:                   # @func0000000000000102
 	sltiu	a1, a0, 17
-	xori	a1, a1, 1
 	addi	a0, a0, -2
+	xori	a1, a1, 1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

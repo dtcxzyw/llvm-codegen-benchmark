@@ -1,10 +1,10 @@
 func0000000000000015:                   # @func0000000000000015
 	sext.w	a1, a1
-	slli	a2, a1, 1
-	slli	a1, a1, 31
-	sub	a1, a1, a2
 	li	a2, 5
+	slli	a3, a1, 1
+	slli	a1, a1, 31
 	bseti	a2, a2, 33
+	sub	a1, a1, a3
 	mulhu	a2, a0, a2
 	sub	a3, a0, a2
 	srli	a3, a3, 1

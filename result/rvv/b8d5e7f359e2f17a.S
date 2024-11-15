@@ -1,8 +1,8 @@
 func0000000000000010:                   # @func0000000000000010
 	fli.s	fa5, 1.0
+	lui	a0, 524288
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmfeq.vf	v0, v10, fa5
-	lui	a0, 524288
 	vor.vx	v10, v8, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret

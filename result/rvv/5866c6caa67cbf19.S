@@ -26,8 +26,8 @@ func0000000000000030:                   # @func0000000000000030
 func000000000000002c:                   # @func000000000000002c
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
-	vmsle.vi	v8, v10, -1
 	lui	a0, 262128
+	vmsle.vi	v8, v10, -1
 	vand.vx	v9, v10, a0
 	vmseq.vi	v9, v9, 0
 	vmor.mm	v0, v8, v9

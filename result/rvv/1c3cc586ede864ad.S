@@ -37,8 +37,8 @@ func000000000000004c:                   # @func000000000000004c
 	vnsrl.wi	v9, v10, 0
 	li	a0, 17
 	vmsltu.vx	v9, v9, a0
-	vmand.mm	v9, v9, v0
 	li	a0, 195
+	vmand.mm	v9, v9, v0
 	vmsne.vx	v8, v8, a0
 	vmand.mm	v0, v8, v9
 	ret
@@ -47,8 +47,8 @@ func0000000000000081:                   # @func0000000000000081
 	vnsrl.wi	v9, v10, 0
 	li	a0, 51
 	vmsgtu.vx	v9, v9, a0
-	vmand.mm	v9, v9, v0
 	li	a0, 22
+	vmand.mm	v9, v9, v0
 	vmseq.vx	v8, v8, a0
 	vmand.mm	v0, v8, v9
 	ret
@@ -57,9 +57,9 @@ func00000000000000c4:                   # @func00000000000000c4
 	vnsrl.wi	v9, v10, 0
 	li	a0, 133
 	vmsne.vx	v9, v9, a0
-	vmand.mm	v9, v9, v0
 	lui	a0, 1048574
 	addi	a0, a0, 2
+	vmand.mm	v9, v9, v0
 	vmsltu.vx	v8, v8, a0
 	vmand.mm	v0, v8, v9
 	ret

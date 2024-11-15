@@ -19,8 +19,8 @@ func0000000000000011:                   # @func0000000000000011
 	sext.w	a0, a0
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	seqz	a1, a1
 	addi	a0, a0, -127
+	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
@@ -77,8 +77,8 @@ func0000000000000016:                   # @func0000000000000016
 func0000000000000046:                   # @func0000000000000046
 	sext.w	a0, a0
 	slli	a1, a1, 48
-	srli	a1, a1, 48
 	lui	a2, 16
+	srli	a1, a1, 48
 	addiw	a2, a2, -2
 	sltu	a1, a1, a2
 	slti	a0, a0, 5
@@ -88,8 +88,8 @@ func000000000000004c:                   # @func000000000000004c
 	sext.w	a0, a0
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	sltiu	a1, a1, 173
 	addi	a0, a0, -225
+	sltiu	a1, a1, 173
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
@@ -106,9 +106,9 @@ func00000000000000a1:                   # @func00000000000000a1
 	sext.w	a0, a0
 	slli	a1, a1, 48
 	srai	a1, a1, 48
+	addi	a0, a0, -40
 	slti	a1, a1, 0
 	xori	a1, a1, 1
-	addi	a0, a0, -40
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
@@ -141,8 +141,8 @@ func0000000000000048:                   # @func0000000000000048
 	sext.w	a0, a0
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	sltiu	a1, a1, 2
 	sltiu	a0, a0, 65
+	sltiu	a1, a1, 2
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -159,8 +159,8 @@ func0000000000000018:                   # @func0000000000000018
 	sext.w	a0, a0
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	seqz	a1, a1
 	sltiu	a0, a0, 30
+	seqz	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -168,28 +168,28 @@ func000000000000006c:                   # @func000000000000006c
 	sext.w	a0, a0
 	slli	a1, a1, 48
 	srai	a1, a1, 48
-	slti	a1, a1, 1
 	addi	a0, a0, -403
+	slti	a1, a1, 1
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
 func0000000000000044:                   # @func0000000000000044
 	sext.w	a0, a0
 	slli	a1, a1, 48
-	srli	a1, a1, 56
-	sltiu	a1, a1, 255
 	lui	a2, 1048482
+	srli	a1, a1, 56
 	addiw	a2, a2, 1024
+	sltiu	a1, a1, 255
 	sltu	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func0000000000000064:                   # @func0000000000000064
 	sext.w	a0, a0
 	slli	a1, a1, 48
-	srai	a1, a1, 48
-	slti	a1, a1, 0
 	lui	a2, 1047552
+	srai	a1, a1, 48
 	addiw	a2, a2, 3
+	slti	a1, a1, 0
 	sltu	a0, a0, a2
 	or	a0, a0, a1
 	ret

@@ -8,10 +8,10 @@ func0000000000000007:                   # @func0000000000000007
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	fli.d	fa5, 1.5
-	fneg.d	fa5, fa5
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa4, %lo(.LCPI0_0)(a0)
 	lui	a0, %hi(.LCPI0_1)
+	fneg.d	fa5, fa5
 	fld	fa3, %lo(.LCPI0_1)(a0)
 	lui	a0, %hi(.LCPI0_2)
 	fld	fa2, %lo(.LCPI0_2)(a0)

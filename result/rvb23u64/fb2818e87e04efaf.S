@@ -19,10 +19,10 @@ func0000000000000055:                   # @func0000000000000055
 	ret
 func000000000000007f:                   # @func000000000000007f
 	andi	a1, a1, 255
-	sh1add	a1, a1, a1
-	slli	a1, a1, 4
 	lui	a2, 8
+	sh1add	a1, a1, a1
 	addi	a2, a2, 92
+	slli	a1, a1, 4
 	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
@@ -30,8 +30,8 @@ func000000000000003d:                   # @func000000000000003d
 	andi	a1, a1, 255
 	li	a2, 191
 	mul	a1, a1, a2
+	lui	a2, 1048570
 	add	a0, a0, a1
-	lui	a1, 1048570
-	addi	a1, a1, -1273
+	addi	a1, a2, -1273
 	addw	a0, a0, a1
 	ret

@@ -1,8 +1,8 @@
 func0000000000000007:                   # @func0000000000000007
 	andi	a0, a0, 1
 	andi	a1, a1, 255
-	slli	a1, a1, 16
 	lui	a2, 4096
+	slli	a1, a1, 16
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	bseti	a0, a0, 25
@@ -10,8 +10,8 @@ func0000000000000007:                   # @func0000000000000007
 	ret
 func000000000000000f:                   # @func000000000000000f
 	andi	a1, a1, 255
-	slli	a1, a1, 16
 	andi	a0, a0, 1
+	slli	a1, a1, 16
 	slli	a0, a0, 24
 	or	a0, a0, a1
 	ret

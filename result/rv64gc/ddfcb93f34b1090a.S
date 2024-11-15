@@ -4,9 +4,9 @@
 	.word	0x40c90fdb                      # float 6.28318548
 func0000000000000090:                   # @func0000000000000090
 	lui	a1, %hi(.LCPI0_0)
+	lui	a2, %hi(.LCPI0_1)
 	fld	fa5, %lo(.LCPI0_0)(a1)
-	lui	a1, %hi(.LCPI0_1)
-	flw	fa4, %lo(.LCPI0_1)(a1)
+	flw	fa4, %lo(.LCPI0_1)(a2)
 	flt.d	a1, fa1, fa5
 	flt.s	a2, fa4, fa0
 	or	a1, a1, a2

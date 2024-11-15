@@ -88,12 +88,12 @@ func00000000000000c1:                   # @func00000000000000c1
 	ret
 func0000000000000066:                   # @func0000000000000066
 	sext.w	a0, a0
-	slti	a1, a0, 27
-	li	a2, 2
-	sub	a2, a2, a1
+	li	a1, 2
+	slti	a2, a0, 27
 	slti	a0, a0, 10
+	sub	a1, a1, a2
 	addi	a0, a0, -1
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 func0000000000000064:                   # @func0000000000000064
 	sext.w	a1, a0

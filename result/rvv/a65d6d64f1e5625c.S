@@ -22,9 +22,9 @@ func0000000000000171:                   # @func0000000000000171
 func0000000000000104:                   # @func0000000000000104
 	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsra.vx	v12, v12, a0
 	vadd.vv	v8, v8, v10
-	vsub.vv	v8, v8, v12
+	vsra.vx	v10, v12, a0
+	vsub.vv	v8, v8, v10
 	bseti	a0, zero, 31
 	vmsltu.vx	v0, v8, a0
 	ret

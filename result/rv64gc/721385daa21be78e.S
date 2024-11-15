@@ -1,7 +1,7 @@
 func000000000000001c:                   # @func000000000000001c
 	lui	a3, 1047552
-	addw	a2, a2, a3
 	slliw	a1, a1, 12
+	addw	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -26,23 +26,23 @@ func0000000000000038:                   # @func0000000000000038
 	ret
 func000000000000000c:                   # @func000000000000000c
 	lui	a3, 16
+	slliw	a1, a1, 16
 	addi	a3, a3, -512
 	addw	a2, a2, a3
-	slliw	a1, a1, 16
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 func0000000000000014:                   # @func0000000000000014
 	lui	a3, 592
-	addw	a2, a2, a3
 	slliw	a1, a1, 8
+	addw	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 func0000000000000034:                   # @func0000000000000034
 	lui	a3, 4016
-	addw	a2, a2, a3
 	slliw	a1, a1, 8
+	addw	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

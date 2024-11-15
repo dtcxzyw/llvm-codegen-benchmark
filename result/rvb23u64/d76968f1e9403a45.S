@@ -2,11 +2,11 @@ func00000000000000a4:                   # @func00000000000000a4
 	andi	a0, a0, 1
 	subw	a3, a2, a1
 	subw	a1, a1, a2
-	czero.nez	a2, a3, a0
+	lui	a2, 15
+	czero.nez	a3, a3, a0
 	czero.eqz	a0, a1, a0
-	or	a0, a0, a2
-	lui	a1, 15
-	addiw	a1, a1, -1439
+	or	a0, a0, a3
+	addiw	a1, a2, -1439
 	sltu	a0, a0, a1
 	ret
 func00000000000000a8:                   # @func00000000000000a8
@@ -50,10 +50,10 @@ func000000000000000a:                   # @func000000000000000a
 	andi	a0, a0, 1
 	subw	a3, a2, a1
 	subw	a1, a1, a2
-	czero.nez	a2, a3, a0
+	lui	a2, 4096
+	czero.nez	a3, a3, a0
 	czero.eqz	a0, a1, a0
-	or	a0, a0, a2
-	lui	a1, 4096
-	addiw	a1, a1, -1
-	slt	a0, a1, a0
+	or	a0, a0, a3
+	addiw	a2, a2, -1
+	slt	a0, a2, a0
 	ret

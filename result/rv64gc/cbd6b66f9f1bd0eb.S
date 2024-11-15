@@ -8,8 +8,8 @@ func000000000000003d:                   # @func000000000000003d
 func0000000000000000:                   # @func0000000000000000
 	andi	a1, a1, -8
 	subw	a1, a1, a0
-	slli	a0, a1, 32
-	li	a1, -1
-	slli	a1, a1, 35
+	li	a0, -1
+	slli	a1, a1, 32
+	slli	a0, a0, 35
 	add	a0, a0, a1
 	ret

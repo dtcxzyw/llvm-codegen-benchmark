@@ -44,8 +44,8 @@ func0000000000000041:                   # @func0000000000000041
 	li	a0, 195
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgtu.vx	v12, v10, a0
-	vmor.mm	v0, v12, v0
 	li	a0, 30
+	vmor.mm	v0, v12, v0
 	vmv.v.x	v10, a0
 	li	a0, 90
 	vmerge.vxm	v10, v10, a0, v0
@@ -54,8 +54,8 @@ func0000000000000041:                   # @func0000000000000041
 func0000000000000060:                   # @func0000000000000060
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsne.vi	v12, v10, 0
-	vmor.mm	v0, v12, v0
 	li	a0, 72
+	vmor.mm	v0, v12, v0
 	vmv.v.x	v10, a0
 	li	a0, 68
 	vmerge.vxm	v10, v10, a0, v0
@@ -64,8 +64,8 @@ func0000000000000060:                   # @func0000000000000060
 func0000000000000020:                   # @func0000000000000020
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsleu.vi	v12, v10, 3
-	vmor.mm	v0, v12, v0
 	li	a0, 72
+	vmor.mm	v0, v12, v0
 	vmv.v.x	v10, a0
 	li	a0, 68
 	vmerge.vxm	v10, v10, a0, v0

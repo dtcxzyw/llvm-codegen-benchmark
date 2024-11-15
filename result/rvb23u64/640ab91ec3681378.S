@@ -1,22 +1,22 @@
 func000000000000006c:                   # @func000000000000006c
 	sext.w	a2, a2
-	slti	a2, a2, 0
 	snez	a0, a0
+	slti	a2, a2, 0
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
 func0000000000000066:                   # @func0000000000000066
 	sext.w	a2, a2
-	slti	a2, a2, 4
 	slti	a0, a0, 100
+	slti	a2, a2, 4
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
 func0000000000000011:                   # @func0000000000000011
 	sext.w	a2, a2
+	binvi	a0, a0, 63
 	seqz	a2, a2
 	and	a1, a1, a2
-	binvi	a0, a0, 63
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -39,9 +39,9 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 func0000000000000016:                   # @func0000000000000016
 	sext.w	a2, a2
+	slti	a0, a0, 0
 	addi	a2, a2, 1
 	seqz	a2, a2
-	slti	a0, a0, 0
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret

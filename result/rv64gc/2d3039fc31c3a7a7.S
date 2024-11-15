@@ -10,9 +10,9 @@ func0000000000000038:                   # @func0000000000000038
 	lui	a3, %hi(.LCPI0_1)
 	ld	a3, %lo(.LCPI0_1)(a3)
 	mul	a1, a1, a2
-	add	a1, a1, a3
 	lui	a2, %hi(.LCPI0_2)
 	ld	a2, %lo(.LCPI0_2)(a2)
+	add	a1, a1, a3
 	slli	a3, a1, 62
 	srli	a1, a1, 2
 	or	a1, a1, a3

@@ -17,8 +17,8 @@ func00000000000000a1:                   # @func00000000000000a1
 	andi	a0, a0, 255
 	not	a1, a1
 	srliw	a1, a1, 31
-	xori	a1, a1, 3
 	snez	a0, a0
+	xori	a1, a1, 3
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret

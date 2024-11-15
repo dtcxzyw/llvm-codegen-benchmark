@@ -2,9 +2,9 @@ func0000000000000004:                   # @func0000000000000004
 	sraiw	a1, a0, 31
 	xor	a0, a0, a1
 	subw	a0, a0, a1
-	addiw	a0, a0, 30
 	lui	a1, 559241
 	addiw	a1, a1, -1911
+	addiw	a0, a0, 30
 	mul	a1, a0, a1
 	srli	a1, a1, 32
 	add	a0, a0, a1

@@ -5,8 +5,8 @@ func00000000000000cc:                   # @func00000000000000cc
 func0000000000000011:                   # @func0000000000000011
 	lui	a2, 3
 	and	a1, a1, a2
-	seqz	a1, a1
 	and	a0, a0, a2
+	seqz	a1, a1
 	seqz	a0, a0
 	xor	a0, a0, a1
 	ret

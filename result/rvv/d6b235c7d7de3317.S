@@ -34,8 +34,8 @@ func0000000000000026:                   # @func0000000000000026
 func0000000000000024:                   # @func0000000000000024
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v9, v10, 0
-	vmor.mm	v9, v9, v0
 	li	a0, 120
+	vmor.mm	v9, v9, v0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsltu.vx	v8, v8, a0
 	vmand.mm	v0, v8, v9

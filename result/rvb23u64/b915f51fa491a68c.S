@@ -10,9 +10,9 @@ func0000000000000080:                   # @func0000000000000080
 	ret
 func0000000000000088:                   # @func0000000000000088
 	sltu	a1, a1, a2
+	lui	a2, 960284
 	add	a0, a0, a1
-	lui	a1, 960284
-	addi	a1, a1, -1545
+	addi	a1, a2, -1545
 	slli.uw	a1, a1, 12
 	addi	a1, a1, -317
 	slli	a1, a1, 19
@@ -20,9 +20,9 @@ func0000000000000088:                   # @func0000000000000088
 	ret
 func0000000000000081:                   # @func0000000000000081
 	sltu	a1, a1, a2
+	lui	a2, 960284
 	add	a0, a0, a1
-	lui	a1, 960284
-	addi	a1, a1, -1545
+	addi	a1, a2, -1545
 	slli.uw	a1, a1, 12
 	addi	a1, a1, -317
 	slli	a1, a1, 19

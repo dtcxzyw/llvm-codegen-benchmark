@@ -37,18 +37,18 @@ func0000000000000c81:                   # @func0000000000000c81
 func0000000000000c8c:                   # @func0000000000000c8c
 	li	a0, 19
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsne.vx	v12, v10, a0
-	vmsgtu.vi	v13, v10, 12
+	vmsgtu.vi	v12, v10, 12
+	vmsne.vx	v13, v10, a0
 	vmsne.vi	v10, v8, 0
-	vmand.mm	v8, v12, v10
-	vmand.mm	v0, v8, v13
+	vmand.mm	v8, v13, v10
+	vmand.mm	v0, v8, v12
 	ret
 func00000000000006ca:                   # @func00000000000006ca
 	li	a0, 37
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmslt.vx	v12, v10, a0
-	vmsne.vi	v13, v10, 1
-	vmand.mm	v10, v13, v12
+	vmsne.vi	v12, v10, 1
+	vmslt.vx	v13, v10, a0
+	vmand.mm	v10, v12, v13
 	vmsgt.vi	v11, v8, 0
 	vmand.mm	v0, v10, v11
 	ret

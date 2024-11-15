@@ -76,9 +76,9 @@ func0000000000000118:                   # @func0000000000000118
 	li	a0, 128
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
-	vmsne.vi	v12, v10, 0
 	lui	a0, 345895
 	addi	a0, a0, -1741
+	vmsne.vi	v12, v10, 0
 	vmsne.vx	v10, v8, a0
 	vmor.mm	v0, v10, v12
 	ret

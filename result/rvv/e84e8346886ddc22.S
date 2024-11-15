@@ -37,8 +37,8 @@ func000000000000000c:                   # @func000000000000000c
 	vsrl.vi	v10, v10, 15
 	li	a0, 510
 	vand.vx	v10, v10, a0
-	vadd.vv	v8, v10, v8
 	lui	a0, 16382
+	vadd.vv	v8, v10, v8
 	addi	a0, a0, -1527
 	vmul.vx	v8, v8, a0
 	ret

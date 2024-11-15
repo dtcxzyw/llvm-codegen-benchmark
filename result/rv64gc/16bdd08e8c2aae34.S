@@ -16,8 +16,8 @@ func0000000000000182:                   # @func0000000000000182
 	lui	a2, 586
 	addiw	a2, a2, -256
 	xor	a1, a1, a2
-	snez	a1, a1
 	xor	a0, a0, a2
+	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

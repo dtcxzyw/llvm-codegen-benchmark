@@ -1,7 +1,7 @@
 func000000000000000a:                   # @func000000000000000a
+	li	a0, 63
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmadd.vv	v8, v10, v8
-	li	a0, 63
 	vadd.vx	v8, v8, a0
 	vsra.vi	v10, v8, 31
 	vsrl.vi	v10, v10, 26
@@ -9,9 +9,9 @@ func000000000000000a:                   # @func000000000000000a
 	vsra.vi	v8, v8, 6
 	ret
 func000000000000002a:                   # @func000000000000002a
+	li	a0, 16
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmadd.vv	v8, v10, v8
-	li	a0, 16
 	vadd.vx	v8, v8, a0
 	vsra.vi	v10, v8, 31
 	vsrl.vi	v10, v10, 30

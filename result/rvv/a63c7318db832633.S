@@ -22,9 +22,9 @@ func0000000000000025:                   # @func0000000000000025
 	vmulh.vx	v8, v8, a0
 	li	a0, 63
 	vsrl.vx	v12, v8, a0
+	lui	a0, 1048575
 	vsra.vi	v8, v8, 18
 	vadd.vv	v8, v8, v12
-	lui	a0, 1048575
 	addi	a0, a0, 496
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwmaccsu.vx	v8, a0, v10
@@ -38,9 +38,9 @@ func000000000000002d:                   # @func000000000000002d
 	vmulh.vx	v8, v8, a0
 	li	a0, 63
 	vsrl.vx	v12, v8, a0
+	lui	a0, 244
 	vsra.vi	v8, v8, 7
 	vadd.vv	v8, v8, v12
-	lui	a0, 244
 	addi	a0, a0, 576
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwmaccu.vx	v8, a0, v10

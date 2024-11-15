@@ -25,8 +25,8 @@ func00000000000001ca:                   # @func00000000000001ca
 	sext.w	a0, a0
 	subw	a1, a1, a2
 	xor	a1, a1, a0
-	snez	a1, a1
 	slti	a0, a0, 0
+	snez	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
 	ret

@@ -19,8 +19,8 @@ func0000000000000015:                   # @func0000000000000015
 func0000000000000004:                   # @func0000000000000004
 	srai	a2, a2, 32
 	mul	a1, a1, a2
+	li	a2, 63
 	add	a0, a0, a1
-	li	a1, 63
-	bseti	a1, a1, 63
+	bseti	a1, a2, 63
 	and	a0, a0, a1
 	ret

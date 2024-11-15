@@ -28,10 +28,10 @@ func000000000000004a:                   # @func000000000000004a
 func000000000000026a:                   # @func000000000000026a
 	add	a1, a1, a2
 	slli	a0, a0, 4
+	lui	a2, 1
 	add	a0, a0, a1
-	lui	a1, 1
-	addiw	a1, a1, 4
-	add	a0, a0, a1
+	addiw	a2, a2, 4
+	add	a0, a0, a2
 	ret
 func0000000000000268:                   # @func0000000000000268
 	add	a1, a1, a2

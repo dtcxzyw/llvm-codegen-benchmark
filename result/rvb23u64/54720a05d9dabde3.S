@@ -1,9 +1,9 @@
 func00000000000000c1:                   # @func00000000000000c1
 	lui	a1, 21824
-	and	a1, a1, a0
-	snez	a1, a1
 	lui	a2, 10912
+	and	a1, a1, a0
 	and	a0, a0, a2
+	snez	a1, a1
 	seqz	a0, a0
 	xor	a0, a0, a1
 	ret

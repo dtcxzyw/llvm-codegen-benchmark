@@ -16,10 +16,10 @@ func0000000000000013:                   # @func0000000000000013
 .LCPI2_0:
 	.word	0x45908800                      # float 4625
 func0000000000000085:                   # @func0000000000000085
+	lui	a0, %hi(.LCPI2_0)
+	flw	fa5, %lo(.LCPI2_0)(a0)
 	lui	a0, 3
 	addi	a0, a0, -288
-	lui	a1, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a1)
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgtu.vx	v0, v12, a0
 	vmerge.vvm	v8, v10, v8, v0
@@ -29,10 +29,10 @@ func0000000000000085:                   # @func0000000000000085
 .LCPI3_0:
 	.word	0x45bf6800                      # float 6125
 func0000000000000083:                   # @func0000000000000083
+	lui	a0, %hi(.LCPI3_0)
+	flw	fa5, %lo(.LCPI3_0)(a0)
 	lui	a0, 3
 	addi	a0, a0, -288
-	lui	a1, %hi(.LCPI3_0)
-	flw	fa5, %lo(.LCPI3_0)(a1)
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgtu.vx	v0, v12, a0
 	vmerge.vvm	v8, v10, v8, v0
@@ -42,17 +42,17 @@ func0000000000000083:                   # @func0000000000000083
 func0000000000000012:                   # @func0000000000000012
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v0, v12, 2
-	vmerge.vvm	v8, v10, v8, v0
 	lui	a0, 264704
+	vmerge.vvm	v8, v10, v8, v0
 	fmv.w.x	fa5, a0
 	vmflt.vf	v0, v8, fa5
 	ret
 .LCPI5_0:
 	.word	0x358637bd                      # float 9.99999997E-7
 func0000000000000014:                   # @func0000000000000014
+	lui	a0, %hi(.LCPI5_0)
+	flw	fa5, %lo(.LCPI5_0)(a0)
 	li	a0, 179
-	lui	a1, %hi(.LCPI5_0)
-	flw	fa5, %lo(.LCPI5_0)(a1)
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vx	v0, v12, a0
 	vmerge.vvm	v8, v10, v8, v0

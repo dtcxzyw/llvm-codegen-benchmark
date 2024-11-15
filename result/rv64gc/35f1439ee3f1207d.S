@@ -16,8 +16,8 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func00000000000000c1:                   # @func00000000000000c1
 	sext.w	a1, a1
-	snez	a1, a1
 	addi	a0, a0, -2
+	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	addi	a0, a0, -1
@@ -34,8 +34,8 @@ func00000000000000ac:                   # @func00000000000000ac
 	ret
 func00000000000000ca:                   # @func00000000000000ca
 	sext.w	a1, a1
-	snez	a1, a1
 	sgtz	a0, a0
+	snez	a1, a1
 	and	a0, a0, a1
 	li	a1, -1
 	slli	a1, a1, 63
@@ -44,8 +44,8 @@ func00000000000000ca:                   # @func00000000000000ca
 func0000000000000066:                   # @func0000000000000066
 	sext.w	a1, a1
 	and	a0, a0, a1
-	slti	a0, a0, 0
 	li	a1, -1
+	slti	a0, a0, 0
 	slli	a1, a1, 63
 	sub	a0, a1, a0
 	ret

@@ -22,11 +22,11 @@ func0000000000000006:                   # @func0000000000000006
 	ld	a0, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulhu.vx	v12, v10, a0
+	lui	a0, 16
 	vsub.vv	v14, v10, v12
 	vsrl.vi	v14, v14, 1
 	vadd.vv	v12, v14, v12
 	vsrl.vi	v12, v12, 15
-	lui	a0, 16
 	addiw	a0, a0, -15
 	vnmsub.vx	v12, a0, v10
 	vsll.vi	v10, v12, 16
@@ -37,11 +37,11 @@ func0000000000000007:                   # @func0000000000000007
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
+	li	a1, 3
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulhu.vx	v12, v10, a0
 	vsrl.vi	v12, v12, 1
-	li	a0, 3
-	vnmsub.vx	v12, a0, v10
+	vnmsub.vx	v12, a1, v10
 	li	a0, 32
 	vsll.vx	v10, v12, a0
 	vor.vv	v8, v10, v8

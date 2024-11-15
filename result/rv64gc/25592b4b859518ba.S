@@ -1,12 +1,12 @@
 func0000000000000020:                   # @func0000000000000020
 	slli	a1, a1, 1
-	add	a1, a1, a0
-	sext.w	a0, a0
-	lui	a2, 419430
-	addiw	a2, a2, 1639
-	mul	a0, a0, a2
-	srli	a2, a0, 63
-	srai	a0, a0, 33
-	add	a0, a0, a2
+	sext.w	a2, a0
+	add	a0, a0, a1
+	lui	a1, 419430
+	addiw	a1, a1, 1639
+	mul	a1, a2, a1
+	srli	a2, a1, 63
+	srai	a1, a1, 33
+	add	a1, a1, a2
 	addw	a0, a0, a1
 	ret

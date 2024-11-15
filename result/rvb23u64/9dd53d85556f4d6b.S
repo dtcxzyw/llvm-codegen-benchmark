@@ -4,9 +4,9 @@ func00000000000000a1:                   # @func00000000000000a1
 	addiw	a2, a2, -1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
+	li	a3, 1
 	mul	a1, a1, a2
-	li	a2, 1
-	maxu	a1, a1, a2
+	maxu	a1, a1, a3
 	addi	a0, a0, 1
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -17,9 +17,9 @@ func00000000000000b1:                   # @func00000000000000b1
 	addiw	a2, a2, -819
 	slli	a3, a2, 32
 	add	a2, a2, a3
+	li	a3, 1
 	mul	a1, a1, a2
-	li	a2, 1
-	maxu	a1, a1, a2
+	maxu	a1, a1, a3
 	addi	a0, a0, 1
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -30,9 +30,9 @@ func00000000000000ac:                   # @func00000000000000ac
 	addiw	a2, a2, -1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
+	li	a3, 1
 	mul	a1, a1, a2
-	li	a2, 1
-	maxu	a1, a1, a2
+	maxu	a1, a1, a3
 	addi	a0, a0, 1
 	xor	a0, a0, a1
 	snez	a0, a0

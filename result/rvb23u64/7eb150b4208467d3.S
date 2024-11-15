@@ -1,7 +1,7 @@
 func0000000000000024:                   # @func0000000000000024
 	sltiu	a1, a0, 2
-	czero.nez	a0, a0, a1
 	li	a2, 7
+	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret

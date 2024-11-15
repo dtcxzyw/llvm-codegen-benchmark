@@ -39,8 +39,8 @@ func0000000000000314:                   # @func0000000000000314
 	lui	a3, 13
 	addiw	a3, a3, 2047
 	xor	a2, a2, a3
-	czero.eqz	a1, a1, a2
 	lui	a3, 14
+	czero.eqz	a1, a1, a2
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
 	sltu	a0, a1, a0
@@ -107,9 +107,9 @@ func0000000000000048:                   # @func0000000000000048
 	sext.w	a0, a0
 	sext.w	a2, a1
 	addiw	a1, a1, 1
+	li	a3, 2
 	sltiu	a2, a2, 2
 	czero.nez	a1, a1, a2
-	li	a3, 2
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
 	sltu	a0, a0, a1

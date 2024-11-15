@@ -22,9 +22,9 @@ func00000000000007a1:                   # @func00000000000007a1
 	ret
 func00000000000000a1:                   # @func00000000000000a1
 	addi	a2, a2, 1
+	li	a3, 88
 	slli	a2, a2, 32
 	srli	a2, a2, 32
-	li	a3, 88
 	mul	a2, a2, a3
 	add	a1, a1, a2
 	addi	a0, a0, 88
@@ -61,9 +61,9 @@ func0000000000000304:                   # @func0000000000000304
 	ret
 func00000000000002a1:                   # @func00000000000002a1
 	addi	a2, a2, 1
+	li	a3, 80
 	slli	a2, a2, 32
 	srli	a2, a2, 32
-	li	a3, 80
 	mul	a2, a2, a3
 	add	a1, a1, a2
 	addi	a0, a0, 80

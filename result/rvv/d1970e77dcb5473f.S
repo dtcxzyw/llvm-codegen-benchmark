@@ -13,10 +13,10 @@ func000000000000000f:                   # @func000000000000000f
 func000000000000000b:                   # @func000000000000000b
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsra.vi	v10, v10, 4
 	li	a1, 32
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vx	v8, v8, a1
+	vsra.vi	v10, v10, 4
 	vmacc.vx	v8, a0, v10
 	ret
 .LCPI2_0:
@@ -24,9 +24,9 @@ func000000000000000b:                   # @func000000000000000b
 func000000000000000d:                   # @func000000000000000d
 	lui	a0, %hi(.LCPI2_0)
 	ld	a0, %lo(.LCPI2_0)(a0)
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsra.vi	v10, v10, 3
 	li	a1, 32
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vx	v8, v8, a1
+	vsra.vi	v10, v10, 3
 	vmacc.vx	v8, a0, v10
 	ret

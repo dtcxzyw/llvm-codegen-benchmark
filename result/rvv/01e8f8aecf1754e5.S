@@ -9,10 +9,11 @@ func000000000000007e:                   # @func000000000000007e
 	ret
 func000000000000000e:                   # @func000000000000000e
 	li	a0, 33
-	vsetivli	zero, 4, e32, m1, ta, ma
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vv	v8, v8, v8
+	vsetvli	zero, zero, e32, m1, ta, ma
 	vwsll.vx	v12, v10, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vv	v8, v8, v8
 	vor.vv	v8, v8, v12
 	li	a0, 32
 	vsrl.vx	v8, v8, a0
@@ -29,9 +30,9 @@ func000000000000003e:                   # @func000000000000003e
 	ret
 func0000000000000008:                   # @func0000000000000008
 	li	a0, 56
+	li	a1, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwsll.vx	v12, v10, a0
-	li	a1, 32
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsll.vx	v8, v8, a1
 	vor.vv	v8, v8, v12

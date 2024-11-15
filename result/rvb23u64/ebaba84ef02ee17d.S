@@ -3,14 +3,14 @@
 func000000000000001a:                   # @func000000000000001a
 	lui	a2, %hi(.LCPI0_0)
 	ld	a2, %lo(.LCPI0_0)(a2)
+	andi	a0, a0, 1
 	mulh	a1, a1, a2
 	srli	a2, a1, 63
 	srli	a1, a1, 13
 	add	a1, a1, a2
-	andi	a0, a0, 1
+	lui	a2, 1048400
 	subw	a1, a1, a0
-	lui	a0, 1048400
-	addiw	a0, a0, 1427
+	addiw	a0, a2, 1427
 	slt	a0, a0, a1
 	ret
 func0000000000000101:                   # @func0000000000000101

@@ -59,8 +59,8 @@ func0000000000000021:                   # @func0000000000000021
 	ret
 func0000000000000001:                   # @func0000000000000001
 	sext.w	a1, a1
-	addi	a1, a1, -2
 	lui	a2, 16
+	addi	a1, a1, -2
 	addi	a2, a2, -2
 	czero.nez	a1, a2, a1
 	addw	a0, a0, a1

@@ -132,8 +132,8 @@ func0000000000000030:                   # @func0000000000000030
 	andi	a0, a0, 255
 	andi	a1, a1, 255
 	addi	a1, a1, -128
-	seqz	a1, a1
 	sltiu	a0, a0, 192
+	seqz	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

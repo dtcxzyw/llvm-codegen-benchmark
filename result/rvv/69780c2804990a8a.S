@@ -53,10 +53,10 @@ func0000000000000041:                   # @func0000000000000041
 func0000000000000068:                   # @func0000000000000068
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmv.v.i	v9, 1
-	vwsll.vv	v10, v9, v8
 	li	a0, 63
 	vmsgtu.vx	v0, v8, a0
 	bseti	a0, zero, 63
+	vwsll.vv	v10, v9, v8
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmerge.vxm	v8, v10, a0, v0
 	ret

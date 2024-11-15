@@ -1,7 +1,7 @@
 func0000000000000356:                   # @func0000000000000356
 	subw	a2, a2, a1
-	addw	a0, a0, a2
 	lui	a1, 8
+	addw	a0, a0, a2
 	addiw	a1, a1, -150
 	slt	a0, a0, a1
 	ret
@@ -33,8 +33,8 @@ func000000000000005a:                   # @func000000000000005a
 	ret
 func0000000000000046:                   # @func0000000000000046
 	subw	a2, a2, a1
-	addw	a0, a0, a2
 	lui	a1, 262144
+	addw	a0, a0, a2
 	addiw	a1, a1, 1
 	slt	a0, a0, a1
 	ret
@@ -57,8 +57,8 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func0000000000000004:                   # @func0000000000000004
 	subw	a2, a2, a1
-	addw	a0, a0, a2
 	lui	a1, 244
+	addw	a0, a0, a2
 	addiw	a1, a1, 576
 	sltu	a0, a0, a1
 	ret

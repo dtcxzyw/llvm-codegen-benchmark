@@ -1,7 +1,7 @@
 func00000000000000cc:                   # @func00000000000000cc
 	slli	a1, a1, 60
-	srli	a1, a1, 63
 	andi	a0, a0, -2
+	srli	a1, a1, 63
 	sext.w	a0, a0
 	addi	a0, a0, -178
 	snez	a0, a0
@@ -10,9 +10,9 @@ func00000000000000cc:                   # @func00000000000000cc
 func0000000000000011:                   # @func0000000000000011
 	lui	a2, 1
 	and	a1, a1, a2
-	seqz	a1, a1
 	lui	a2, 32768
 	and	a0, a0, a2
+	seqz	a1, a1
 	seqz	a0, a0
 	xor	a0, a0, a1
 	ret

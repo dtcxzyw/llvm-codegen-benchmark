@@ -5,9 +5,9 @@ func0000000000000005:                   # @func0000000000000005
 	ret
 func0000000000000031:                   # @func0000000000000031
 	andi	a0, a0, 255
+	lui	a1, 921600
 	addi	a0, a0, -2
 	snez	a0, a0
-	lui	a1, 921600
 	addiw	a1, a1, -2
 	or	a0, a0, a1
 	ret

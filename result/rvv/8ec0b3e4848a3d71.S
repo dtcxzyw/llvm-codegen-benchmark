@@ -74,11 +74,11 @@ func0000000000000003:                   # @func0000000000000003
 	vmulh.vx	v8, v8, a0
 	li	a0, 63
 	vsrl.vx	v10, v8, a0
+	lui	a0, 140
 	vsrl.vi	v8, v8, 25
 	vadd.vv	v8, v8, v10
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
-	lui	a0, 140
 	addi	a0, a0, -68
 	vadd.vx	v8, v10, a0
 	ret

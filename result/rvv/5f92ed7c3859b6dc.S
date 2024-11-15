@@ -40,9 +40,9 @@ func00000000000000d4:                   # @func00000000000000d4
 	ret
 func00000000000000c8:                   # @func00000000000000c8
 	li	a0, 258
+	fmv.w.x	fa5, zero
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmslt.vx	v12, v10, a0
-	fmv.w.x	fa5, zero
 	vmfgt.vf	v10, v8, fa5
 	vmor.mm	v0, v10, v12
 	ret
@@ -86,9 +86,9 @@ func0000000000000148:                   # @func0000000000000148
 	ret
 func0000000000000102:                   # @func0000000000000102
 	fmv.w.x	fa5, zero
+	li	a0, 16
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmfeq.vf	v12, v10, fa5
-	li	a0, 16
 	vmseq.vx	v10, v8, a0
 	vmor.mm	v0, v10, v12
 	ret
@@ -108,17 +108,17 @@ func0000000000000058:                   # @func0000000000000058
 	ret
 func0000000000000024:                   # @func0000000000000024
 	li	a0, 256
+	fli.s	fa5, 0.5
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vx	v12, v10, a0
-	fli.s	fa5, 0.5
 	vmflt.vf	v10, v8, fa5
 	vmor.mm	v0, v10, v12
 	ret
 func0000000000000084:                   # @func0000000000000084
 	lui	a0, 4096
+	fli.s	fa5, 0.5
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsltu.vx	v12, v10, a0
-	fli.s	fa5, 0.5
 	vmflt.vf	v10, v8, fa5
 	vmor.mm	v0, v10, v12
 	ret

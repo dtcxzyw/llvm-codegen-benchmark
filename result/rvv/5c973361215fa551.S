@@ -32,8 +32,8 @@ func0000000000000014:                   # @func0000000000000014
 	li	a0, 99
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgt.vx	v12, v10, a0
-	vmor.mm	v0, v12, v0
 	lui	a0, 64
+	vmor.mm	v0, v12, v0
 	vmv.v.x	v10, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret

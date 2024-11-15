@@ -16,9 +16,9 @@ func0000000000000012:                   # @func0000000000000012
 	ret
 func000000000000001e:                   # @func000000000000001e
 	lui	a3, 524304
+	slli	a1, a1, 16
 	addi	a3, a3, -8
 	and	a2, a2, a3
-	slli	a1, a1, 16
 	or	a0, a0, a1
 	or	a0, a0, a2
 	slli	a0, a0, 32
@@ -26,8 +26,8 @@ func000000000000001e:                   # @func000000000000001e
 	ret
 func000000000000001f:                   # @func000000000000001f
 	lui	a3, 112
-	and	a2, a2, a3
 	slli	a0, a0, 8
+	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
 	sext.w	a0, a0

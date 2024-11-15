@@ -15,8 +15,8 @@ func0000000000000029:                   # @func0000000000000029
 	sext.w	a1, a1
 	slli	a2, a2, 63
 	srai	a2, a2, 63
-	ori	a2, a2, 1
 	sgtz	a1, a1
+	ori	a2, a2, 1
 	negw	a1, a1
 	and	a1, a1, a2
 	addw	a0, a0, a1

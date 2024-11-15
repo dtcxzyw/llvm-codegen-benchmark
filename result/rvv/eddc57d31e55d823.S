@@ -77,9 +77,9 @@ func0000000000000053:                   # @func0000000000000053
 	.quad	0x433fffffffffffff              # double 9007199254740991
 func000000000000006a:                   # @func000000000000006a
 	fli.d	fa5, inf
+	lui	a0, %hi(.LCPI5_0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v16, v8, fa5
-	lui	a0, %hi(.LCPI5_0)
 	fld	fa4, %lo(.LCPI5_0)(a0)
 	vmfgt.vf	v17, v8, fa5
 	vmor.mm	v16, v17, v16
@@ -106,8 +106,8 @@ func00000000000000a2:                   # @func00000000000000a2
 	fld	fa5, %lo(.LCPI7_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfle.vf	v16, v8, fa5
-	vmand.mm	v16, v16, v0
 	fli.d	fa5, 65536.0
+	vmand.mm	v16, v16, v0
 	vmflt.vf	v17, v8, fa5
 	vmand.mm	v0, v17, v16
 	ret

@@ -92,9 +92,9 @@ func0000000000000102:                   # @func0000000000000102
 func0000000000000118:                   # @func0000000000000118
 	sext.w	a0, a0
 	andi	a1, a1, 7
+	lui	a2, 5
 	addi	a1, a1, -3
 	snez	a1, a1
-	lui	a2, 5
 	sltu	a0, a2, a0
 	or	a0, a0, a1
 	ret

@@ -26,16 +26,16 @@ func0000000000000190:                   # @func0000000000000190
 	li	a0, 255
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vand.vx	v10, v8, a0
-	vmsne.vi	v12, v10, 0
 	li	a0, 767
+	vmsne.vi	v12, v10, 0
 	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v12
 	ret
 func0000000000000188:                   # @func0000000000000188
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vand.vi	v10, v8, 15
-	vmsne.vi	v12, v10, 0
 	li	a0, 32
+	vmsne.vi	v12, v10, 0
 	vmsltu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v12
 	ret

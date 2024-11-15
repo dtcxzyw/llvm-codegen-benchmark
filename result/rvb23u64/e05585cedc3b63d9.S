@@ -24,8 +24,8 @@ func0000000000000081:                   # @func0000000000000081
 	sext.w	a0, a0
 	bseti	a3, zero, 31
 	sltu	a2, a3, a2
-	czero.nez	a1, a1, a2
 	lui	a3, 524288
+	czero.nez	a1, a1, a2
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
 	sext.w	a1, a1
@@ -42,8 +42,8 @@ func0000000000000089:                   # @func0000000000000089
 	sext.w	a0, a0
 	bseti	a3, zero, 31
 	sltu	a2, a3, a2
-	czero.nez	a1, a1, a2
 	lui	a3, 524288
+	czero.nez	a1, a1, a2
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
 	sext.w	a1, a1
@@ -112,9 +112,9 @@ func000000000000008a:                   # @func000000000000008a
 	sext.w	a0, a0
 	lui	a3, 524288
 	addiw	a4, a3, -33
+	addi	a3, a3, -1
 	sltu	a2, a4, a2
 	czero.nez	a1, a1, a2
-	addi	a3, a3, -1
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
 	sext.w	a1, a1

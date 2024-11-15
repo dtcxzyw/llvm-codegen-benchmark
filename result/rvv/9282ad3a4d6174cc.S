@@ -50,8 +50,8 @@ func0000000000000086:                   # @func0000000000000086
 	.quad	99999999999999999               # 0x16345785d89ffff
 func00000000000000aa:                   # @func00000000000000aa
 	lui	a0, 5960
-	addiw	a0, a0, 1903
 	lui	a1, %hi(.LCPI7_0)
+	addiw	a0, a0, 1903
 	ld	a1, %lo(.LCPI7_0)(a1)
 	slli	a0, a0, 12
 	addi	a0, a0, -1049
@@ -64,8 +64,8 @@ func00000000000000aa:                   # @func00000000000000aa
 	.quad	99999999999999999               # 0x16345785d89ffff
 func0000000000000088:                   # @func0000000000000088
 	lui	a0, 5960
-	addiw	a0, a0, 1903
 	lui	a1, %hi(.LCPI8_0)
+	addiw	a0, a0, 1903
 	ld	a1, %lo(.LCPI8_0)(a1)
 	slli	a0, a0, 12
 	addi	a0, a0, -1049

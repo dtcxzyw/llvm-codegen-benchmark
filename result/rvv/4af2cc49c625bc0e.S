@@ -3,9 +3,9 @@ func0000000000000007:                   # @func0000000000000007
 	vor.vv	v8, v8, v10
 	li	a0, 32
 	vor.vx	v10, v8, a0
-	vmerge.vvm	v8, v10, v8, v0
 	lui	a0, 33825
 	addi	a0, a0, 133
+	vmerge.vvm	v8, v10, v8, v0
 	vmulhu.vx	v10, v8, a0
 	vsub.vv	v12, v8, v10
 	vsrl.vi	v12, v12, 1

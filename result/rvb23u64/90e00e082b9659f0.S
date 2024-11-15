@@ -16,17 +16,17 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func0000000000000001:                   # @func0000000000000001
 	subw	a1, a1, a2
+	li	a2, -64
 	addi	a1, a1, 1
 	czero.eqz	a0, a0, a1
-	li	a2, -64
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret
 func000000000000001a:                   # @func000000000000001a
 	subw	a1, a1, a2
+	li	a2, 7
 	slti	a1, a1, 15
 	czero.eqz	a0, a0, a1
-	li	a2, 7
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret
@@ -37,9 +37,9 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000008:                   # @func0000000000000008
 	subw	a1, a1, a2
+	li	a2, 189
 	sltiu	a1, a1, 34
 	czero.eqz	a0, a0, a1
-	li	a2, 189
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret

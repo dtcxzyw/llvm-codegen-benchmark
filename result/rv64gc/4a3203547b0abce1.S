@@ -24,9 +24,9 @@ func000000000000000d:                   # @func000000000000000d
 	ret
 func0000000000000003:                   # @func0000000000000003
 	or	a0, a0, a1
+	lui	a1, 1034754
 	slli	a0, a0, 48
 	srli	a0, a0, 48
-	lui	a1, 1034754
 	addiw	a1, a1, 1024
 	add	a0, a0, a1
 	ret

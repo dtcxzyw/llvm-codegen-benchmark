@@ -35,20 +35,20 @@ func00000000000000ca:                   # @func00000000000000ca
 func0000000000000024:                   # @func0000000000000024
 	lui	a0, 323584
 	fmv.w.x	fa5, a0
+	lui	a0, 16
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmflt.vf	v12, v10, fa5
 	vmand.mm	v10, v12, v0
-	lui	a0, 16
 	vmsltu.vx	v11, v8, a0
 	vmand.mm	v0, v10, v11
 	ret
 func00000000000000c4:                   # @func00000000000000c4
 	lui	a0, 847872
 	fmv.w.x	fa5, a0
+	lui	a0, 16
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmfge.vf	v12, v10, fa5
 	vmand.mm	v10, v12, v0
-	lui	a0, 16
 	vmsltu.vx	v11, v8, a0
 	vmand.mm	v0, v10, v11
 	ret

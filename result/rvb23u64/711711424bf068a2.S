@@ -2,8 +2,8 @@ func0000000000000082:                   # @func0000000000000082
 	andi	a1, a0, 255
 	andi	a0, a0, 251
 	addi	a0, a0, -1
-	sltiu	a0, a0, 3
 	addi	a1, a1, -8
+	sltiu	a0, a0, 3
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret

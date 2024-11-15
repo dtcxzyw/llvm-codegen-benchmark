@@ -12,8 +12,8 @@ func000000000000041c:                   # @func000000000000041c
 	sext.w	a2, a2
 	lui	a3, 24
 	addiw	a3, a3, 1695
-	sltu	a2, a3, a2
 	snez	a1, a1
+	sltu	a2, a3, a2
 	or	a1, a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1

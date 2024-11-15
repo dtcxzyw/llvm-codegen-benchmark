@@ -20,16 +20,16 @@ func0000000000000002:                   # @func0000000000000002
 	li	a3, 31
 	slli	a3, a3, 11
 	addi	a4, a3, 2016
-	and	a2, a2, a4
 	and	a1, a1, a3
+	and	a2, a2, a4
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 func000000000000000c:                   # @func000000000000000c
 	lui	a3, 1
+	andi	a0, a0, 63
 	addiw	a3, a3, -64
 	and	a2, a2, a3
-	andi	a0, a0, 63
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

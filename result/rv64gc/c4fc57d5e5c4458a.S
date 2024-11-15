@@ -1,7 +1,7 @@
 func0000000000000028:                   # @func0000000000000028
 	addi	a2, a2, 1
-	seqz	a2, a2
 	sltiu	a1, a1, 2
+	seqz	a2, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

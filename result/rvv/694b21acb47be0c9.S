@@ -1,9 +1,9 @@
 func0000000000000051:                   # @func0000000000000051
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vwsll.vi	v12, v10, 8
+	lui	a0, 2
 	vsetvli	zero, zero, e16, m2, ta, ma
 	vor.vv	v8, v12, v8
-	lui	a0, 2
 	addi	a0, a0, 2
 	vmseq.vx	v10, v8, a0
 	vmand.mm	v0, v10, v0

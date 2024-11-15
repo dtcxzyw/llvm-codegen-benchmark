@@ -4,9 +4,9 @@ func0000000000000385:                   # @func0000000000000385
 	lui	a0, 32
 	addiw	a0, a0, -31
 	vmsgtu.vx	v0, v10, a0
+	lui	a0, 983055
 	vmerge.vvm	v8, v10, v8, v0
 	vsll.vi	v8, v8, 16
-	lui	a0, 983055
 	slli	a0, a0, 4
 	vadd.vx	v8, v8, a0
 	ret

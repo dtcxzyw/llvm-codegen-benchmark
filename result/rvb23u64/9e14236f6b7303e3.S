@@ -25,8 +25,8 @@ func0000000000000061:                   # @func0000000000000061
 	zext.h	a1, a1
 	slli	a1, a1, 8
 	or	a0, a0, a1
-	sext.w	a0, a0
 	li	a1, 7
+	sext.w	a0, a0
 	slli	a1, a1, 9
 	xor	a0, a0, a1
 	seqz	a0, a0

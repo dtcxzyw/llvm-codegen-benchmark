@@ -84,8 +84,8 @@ func000000000000000c:                   # @func000000000000000c
 	ret
 func0000000000000054:                   # @func0000000000000054
 	sub	a1, a1, a0
-	addi	a1, a1, 1
 	lui	a0, 244
+	addi	a1, a1, 1
 	addiw	a0, a0, 576
 	sltu	a0, a1, a0
 	ret

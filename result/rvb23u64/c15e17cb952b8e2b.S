@@ -2,8 +2,8 @@ func00000000000000cc:                   # @func00000000000000cc
 	zext.h	a1, a0
 	andi	a0, a0, 55
 	addi	a0, a0, -23
-	snez	a0, a0
 	addi	a1, a1, -24
+	snez	a0, a0
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
@@ -18,10 +18,10 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func00000000000000c4:                   # @func00000000000000c4
 	andi	a1, a0, 255
-	addi	a1, a1, -255
-	snez	a1, a1
 	slli	a0, a0, 48
+	addi	a1, a1, -255
 	srli	a0, a0, 56
+	snez	a1, a1
 	sltiu	a0, a0, 255
 	and	a0, a0, a1
 	ret

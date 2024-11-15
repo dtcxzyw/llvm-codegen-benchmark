@@ -68,8 +68,8 @@ func000000000000004a:                   # @func000000000000004a
 func000000000000008c:                   # @func000000000000008c
 	sext.w	a0, a0
 	sext.w	a1, a1
-	sltu	a1, a1, a0
 	lui	a2, 32
+	sltu	a1, a1, a0
 	addiw	a2, a2, -1
 	xor	a0, a0, a2
 	snez	a0, a0

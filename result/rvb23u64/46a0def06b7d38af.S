@@ -7,8 +7,8 @@ func0000000000000041:                   # @func0000000000000041
 	ret
 func0000000000000044:                   # @func0000000000000044
 	remuw	a1, a1, a2
-	sltiu	a1, a1, 16
 	srliw	a0, a0, 16
+	sltiu	a1, a1, 16
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

@@ -3,8 +3,8 @@ func00000000000001b2:                   # @func00000000000001b2
 	vmsgt.vi	v0, v10, 0
 	li	a0, 400
 	vmadd.vx	v12, a0, v8
-	vmerge.vvm	v8, v12, v8, v0
 	lui	a0, 335544
+	vmerge.vvm	v8, v12, v8, v0
 	addi	a0, a0, 1311
 	vmulh.vx	v8, v8, a0
 	vsra.vi	v8, v8, 5

@@ -47,9 +47,9 @@ func00000000000000c0:                   # @func00000000000000c0
 	add	a1, a1, a2
 	li	a2, 37
 	mul	a1, a1, a2
+	lui	a2, 1000785
 	add	a0, a0, a1
-	lui	a1, 1000785
-	addi	a1, a1, 865
+	addi	a1, a2, 865
 	addw	a0, a0, a1
 	ret
 func000000000000000d:                   # @func000000000000000d

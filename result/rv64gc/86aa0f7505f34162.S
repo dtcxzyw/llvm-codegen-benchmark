@@ -44,9 +44,9 @@ func0000000000000009:                   # @func0000000000000009
 	srai	a2, a0, 63
 	srli	a2, a2, 62
 	add	a0, a0, a2
-	srai	a0, a0, 2
 	lui	a2, 176
 	addiw	a2, a2, -1429
+	srai	a0, a0, 2
 	add	a1, a1, a2
 	sub	a0, a1, a0
 	ret

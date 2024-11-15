@@ -1,7 +1,7 @@
 func0000000000000008:                   # @func0000000000000008
 	fcvt.s.d	fa5, fa1
-	fdiv.s	fa5, fa5, fa0
 	lui	a0, 260096
+	fdiv.s	fa5, fa5, fa0
 	fmv.w.x	fa4, a0
 	feq.s	a0, fa5, fa4
 	ret

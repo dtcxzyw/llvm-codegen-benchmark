@@ -41,8 +41,8 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000006:                   # @func0000000000000006
 	slli	a1, a1, 48
-	srai	a1, a1, 48
 	slli	a0, a0, 48
+	srai	a1, a1, 48
 	srai	a2, a0, 48
 	li	a0, 24
 	blt	a2, a1, .LBB4_2
@@ -51,8 +51,8 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func000000000000000a:                   # @func000000000000000a
 	slli	a0, a0, 48
-	srai	a2, a0, 48
 	slli	a1, a1, 48
+	srai	a2, a0, 48
 	srai	a1, a1, 48
 	li	a0, 16
 	blt	a1, a2, .LBB5_2

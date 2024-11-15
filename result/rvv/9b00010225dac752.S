@@ -15,8 +15,8 @@ func0000000000000004:                   # @func0000000000000004
 	vmseq.vi	v0, v12, 0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.i	v12, 5
-	vmerge.vim	v12, v12, 1, v0
 	li	a0, -2
+	vmerge.vim	v12, v12, 1, v0
 	zext.w	a0, a0
 	vand.vx	v10, v10, a0
 	vor.vv	v8, v10, v8

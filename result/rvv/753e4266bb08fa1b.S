@@ -2,8 +2,8 @@ func0000000000000021:                   # @func0000000000000021
 	lui	a0, 16
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v8, v8, a0
-	vmseq.vi	v0, v8, 0
 	li	a0, 69
+	vmseq.vi	v0, v8, 0
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vmv.v.x	v8, a0
 	li	a0, 101

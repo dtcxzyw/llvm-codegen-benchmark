@@ -7,8 +7,8 @@ func0000000000000111:                   # @func0000000000000111
 func00000000000001c1:                   # @func00000000000001c1
 	andi	a1, a1, 255
 	xori	a2, a2, 72
-	snez	a1, a1
 	xori	a0, a0, 72
+	snez	a1, a1
 	or	a0, a0, a2
 	seqz	a0, a0
 	and	a0, a0, a1

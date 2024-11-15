@@ -16,8 +16,8 @@ func0000000000000058:                   # @func0000000000000058
 	ret
 func0000000000000031:                   # @func0000000000000031
 	slli	a1, a0, 20
-	addi	a1, a1, 208
 	li	a2, 212
+	addi	a1, a1, 208
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2

@@ -101,16 +101,16 @@ func000000000000000b:                   # @func000000000000000b
 func000000000000001c:                   # @func000000000000001c
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfsub.vv	v8, v8, v12
-	vfabs.v	v8, v8
 	lui	a0, 275264
+	vfabs.v	v8, v8
 	fmv.w.x	fa5, a0
 	vmfge.vf	v0, v8, fa5
 	ret
 func0000000000000013:                   # @func0000000000000013
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfsub.vv	v8, v8, v12
-	vfabs.v	v8, v8
 	lui	a0, 275264
+	vfabs.v	v8, v8
 	fmv.w.x	fa5, a0
 	vmfge.vf	v12, v8, fa5
 	vmnot.m	v0, v12
@@ -145,8 +145,8 @@ func0000000000000007:                   # @func0000000000000007
 func000000000000001a:                   # @func000000000000001a
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfsub.vv	v8, v8, v12
-	vfabs.v	v8, v8
 	lui	a0, 212992
+	vfabs.v	v8, v8
 	fmv.w.x	fa5, a0
 	vmfle.vf	v0, v8, fa5
 	ret

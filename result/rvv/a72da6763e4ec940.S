@@ -31,9 +31,9 @@ func0000000000000008:                   # @func0000000000000008
 	lui	a1, 262144
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmv.v.x	v8, a1
+	lui	a1, 256
 	vmerge.vxm	v8, v8, a0, v0
-	lui	a0, 256
-	vmv.v.x	v9, a0
+	vmv.v.x	v9, a1
 	vmv1r.v	v0, v10
 	vmerge.vvm	v8, v9, v8, v0
 	ret

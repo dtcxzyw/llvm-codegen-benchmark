@@ -42,8 +42,8 @@ func0000000000000086:                   # @func0000000000000086
 	.quad	99999999999999999               # 0x16345785d89ffff
 func00000000000000aa:                   # @func00000000000000aa
 	lui	a2, 5960
-	addiw	a2, a2, 1903
 	lui	a3, %hi(.LCPI7_0)
+	addiw	a2, a2, 1903
 	ld	a3, %lo(.LCPI7_0)(a3)
 	slli	a2, a2, 12
 	addi	a2, a2, -1049
@@ -55,8 +55,8 @@ func00000000000000aa:                   # @func00000000000000aa
 	.quad	99999999999999999               # 0x16345785d89ffff
 func0000000000000088:                   # @func0000000000000088
 	lui	a2, 5960
-	addiw	a2, a2, 1903
 	lui	a3, %hi(.LCPI8_0)
+	addiw	a2, a2, 1903
 	ld	a3, %lo(.LCPI8_0)(a3)
 	slli	a2, a2, 12
 	addi	a2, a2, -1049
@@ -80,9 +80,9 @@ func0000000000000041:                   # @func0000000000000041
 	ret
 func00000000000000a4:                   # @func00000000000000a4
 	li	a2, -1
+	srli	a0, a0, 12
 	srli	a2, a2, 32
 	slt	a1, a2, a1
-	srli	a0, a0, 12
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
@@ -99,8 +99,8 @@ func0000000000000066:                   # @func0000000000000066
 	ret
 func0000000000000048:                   # @func0000000000000048
 	sltiu	a1, a1, 2
-	not	a1, a1
 	srli	a0, a0, 15
+	not	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

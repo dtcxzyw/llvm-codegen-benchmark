@@ -7,9 +7,9 @@ func0000000000000015:                   # @func0000000000000015
 	ret
 func0000000000000003:                   # @func0000000000000003
 	sext.w	a1, a1
+	andi	a0, a0, -1552
 	seqz	a1, a1
 	slli	a1, a1, 9
-	andi	a0, a0, -1552
 	bclri	a0, a0, 11
 	or	a0, a0, a1
 	ret
@@ -36,9 +36,9 @@ func0000000000000019:                   # @func0000000000000019
 	ret
 func000000000000000d:                   # @func000000000000000d
 	sext.w	a1, a1
+	slli	a0, a0, 49
 	sgtz	a1, a1
 	slli	a1, a1, 15
-	slli	a0, a0, 49
 	srli	a0, a0, 49
 	or	a0, a0, a1
 	ret

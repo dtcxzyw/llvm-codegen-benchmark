@@ -30,8 +30,8 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func000000000000000f:                   # @func000000000000000f
 	slli	a0, a0, 1
-	addi	a0, a0, 2
 	lui	a1, 64
+	addi	a0, a0, 2
 	addiw	a1, a1, -32
 	and	a0, a0, a1
 	ret

@@ -39,16 +39,16 @@ func0000000000000018:                   # @func0000000000000018
 func0000000000000031:                   # @func0000000000000031
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vzext.vf2	v12, v10
-	vor.vv	v8, v12, v8
 	lui	a0, 1
+	vor.vv	v8, v12, v8
 	addi	a0, a0, -1
 	vmseq.vx	v0, v8, a0
 	ret
 func0000000000000014:                   # @func0000000000000014
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vzext.vf2	v12, v10
-	vor.vv	v8, v12, v8
 	lui	a0, 3
+	vor.vv	v8, v12, v8
 	addi	a0, a0, 1
 	vmsltu.vx	v0, v8, a0
 	ret

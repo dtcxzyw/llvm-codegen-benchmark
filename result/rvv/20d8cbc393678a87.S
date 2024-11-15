@@ -1,8 +1,8 @@
 func0000000000000002:                   # @func0000000000000002
 	fmv.d.x	fa5, zero
+	lui	a0, 143
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vmflt.vf	v0, v8, fa5
-	lui	a0, 143
 	addi	a1, a0, -1340
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.x	v8, a1
@@ -19,9 +19,9 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000008:                   # @func0000000000000008
 	fli.d	fa5, 1.0
+	li	a0, 27
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vmfeq.vf	v0, v8, fa5
-	li	a0, 27
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.x	v8, a0
 	li	a0, 31
@@ -29,14 +29,14 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func0000000000000003:                   # @func0000000000000003
 	fli.d	fa5, 4.0
+	lui	a0, 448199
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vmfge.vf	v12, v8, fa5
-	vmnot.m	v0, v12
-	lui	a0, 448199
 	addi	a0, a0, 1379
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.x	v8, a0
 	lui	a0, 476760
+	vmnot.m	v0, v12
 	addi	a0, a0, -1932
 	vmerge.vxm	v8, v8, a0, v0
 	ret

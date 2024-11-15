@@ -106,9 +106,9 @@ func00000000000000a8:                   # @func00000000000000a8
 	ret
 func0000000000000084:                   # @func0000000000000084
 	lui	a2, 1
+	srliw	a0, a0, 12
 	addiw	a2, a2, 1
 	sltu	a1, a1, a2
-	srliw	a0, a0, 12
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

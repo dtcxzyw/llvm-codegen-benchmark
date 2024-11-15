@@ -36,9 +36,9 @@ func0000000000000108:                   # @func0000000000000108
 	addi	a0, a0, -2
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vmsgtu.vx	v10, v10, a0
-	vmor.mm	v10, v10, v0
 	lui	a0, 7
 	addi	a0, a0, 1328
+	vmor.mm	v10, v10, v0
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsltu.vx	v11, v8, a0
 	vmor.mm	v0, v10, v11

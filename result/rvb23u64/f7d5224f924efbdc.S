@@ -13,8 +13,8 @@ func0000000000000060:                   # @func0000000000000060
 	ret
 func00000000000000ff:                   # @func00000000000000ff
 	sext.w	a2, a2
-	slli	a2, a2, 8
 	sext.w	a1, a1
+	slli	a2, a2, 8
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

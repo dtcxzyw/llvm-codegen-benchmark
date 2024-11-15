@@ -7,8 +7,8 @@ func0000000000000018:                   # @func0000000000000018
 .LBB0_2:                                # %entry
 	sext.w	a2, a2
 	xor	a0, a0, a2
-	snez	a0, a0
 	sltiu	a1, a2, 128
+	snez	a0, a0
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret

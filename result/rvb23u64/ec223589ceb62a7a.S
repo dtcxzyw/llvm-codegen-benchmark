@@ -18,8 +18,8 @@ func0000000000000003:                   # @func0000000000000003
 	.quad	35887507618889599               # 0x7f7f7f7f7f7f7f
 func0000000000000000:                   # @func0000000000000000
 	lui	a2, %hi(.LCPI2_0)
-	ld	a2, %lo(.LCPI2_0)(a2)
 	lui	a3, %hi(.LCPI2_1)
+	ld	a2, %lo(.LCPI2_0)(a2)
 	ld	a3, %lo(.LCPI2_1)(a3)
 	srli	a1, a1, 7
 	and	a1, a1, a2

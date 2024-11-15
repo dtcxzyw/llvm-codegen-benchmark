@@ -5,10 +5,10 @@ func00000000000000ac:                   # @func00000000000000ac
 	vle64.v	v24, (a0)
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a0)
-	vmfle.vf	v7, v24, fa5
-	fmv.d.x	fa5, zero
-	vmfge.vf	v6, v24, fa5
-	vmand.mm	v0, v6, v7
+	fmv.d.x	fa4, zero
+	vmfge.vf	v7, v24, fa4
+	vmfle.vf	v6, v24, fa5
+	vmand.mm	v0, v7, v6
 	vmerge.vvm	v8, v16, v8, v0
 	ret
 .LCPI1_0:

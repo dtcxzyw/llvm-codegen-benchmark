@@ -10,9 +10,9 @@ func0000000000000006:                   # @func0000000000000006
 func0000000000000002:                   # @func0000000000000002
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.i	v10, -6
+	lui	a0, 233017
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vwaddu.wv	v10, v10, v8
-	lui	a0, 233017
 	addi	a0, a0, -455
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmulhu.vx	v8, v10, a0

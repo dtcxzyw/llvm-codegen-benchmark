@@ -14,8 +14,8 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func0000000000000074:                   # @func0000000000000074
 	sub	a2, a2, a1
-	srai	a2, a2, 2
 	li	a1, 8
+	srai	a2, a2, 2
 	sub	a1, a1, a0
 	sltu	a0, a2, a1
 	ret

@@ -14,14 +14,14 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000008:                   # @func0000000000000008
 	andi	a0, a0, 1
 	zext.h	a1, a1
-	sltiu	a1, a1, 12
 	li	a2, 17
+	sltiu	a1, a1, 12
 	slli	a3, a2, 10
 	czero.nez	a1, a3, a1
 	li	a3, 9
 	slli	a3, a3, 11
-	add	a1, a1, a3
 	slli	a2, a2, 11
+	add	a1, a1, a3
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2

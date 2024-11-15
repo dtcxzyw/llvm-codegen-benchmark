@@ -12,10 +12,10 @@ func000000000000014c:                   # @func000000000000014c
 	lui	a2, 1048574
 	addiw	a2, a2, -47
 	add	a1, a1, a2
-	sltiu	a1, a1, -5
 	lui	a2, 2
 	addiw	a2, a2, 12
 	xor	a0, a0, a2
+	sltiu	a1, a1, -5
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

@@ -1,8 +1,8 @@
 func0000000000000198:                   # @func0000000000000198
 	sext.w	a1, a1
 	addi	a2, a1, -1
-	snez	a2, a2
 	addi	a1, a1, -7
+	snez	a2, a2
 	snez	a1, a1
 	and	a1, a1, a2
 	or	a0, a0, a1
@@ -11,8 +11,8 @@ func00000000000000d8:                   # @func00000000000000d8
 	sext.w	a1, a1
 	lui	a2, 1048568
 	addiw	a3, a2, 1262
-	slt	a3, a1, a3
 	addiw	a2, a2, 767
+	slt	a3, a1, a3
 	xor	a1, a1, a2
 	snez	a1, a1
 	and	a1, a1, a3
@@ -29,8 +29,8 @@ func0000000000000188:                   # @func0000000000000188
 func0000000000000190:                   # @func0000000000000190
 	sext.w	a1, a1
 	addi	a2, a1, -3
-	snez	a2, a2
 	sltiu	a1, a1, 2
+	snez	a2, a2
 	not	a1, a1
 	and	a1, a1, a2
 	or	a0, a0, a1

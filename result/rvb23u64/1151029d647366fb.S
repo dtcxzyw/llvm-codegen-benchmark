@@ -16,9 +16,9 @@ func00000000000002f4:                   # @func00000000000002f4
 	ret
 func0000000000000851:                   # @func0000000000000851
 	sext.w	a2, a2
-	sltiu	a2, a2, 3
 	add	a0, a0, a1
-	addw	a0, a0, a2
+	sltiu	a1, a2, 3
+	addw	a0, a0, a1
 	lui	a1, 1048568
 	xor	a0, a0, a1
 	seqz	a0, a0

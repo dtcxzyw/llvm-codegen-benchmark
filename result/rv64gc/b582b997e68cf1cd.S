@@ -33,8 +33,8 @@ func0000000000000001:                   # @func0000000000000001
 	srli	a1, a0, 63
 	srli	a0, a0, 13
 	add	a0, a0, a1
-	andi	a0, a0, 255
 	lui	a1, 1048555
+	andi	a0, a0, 255
 	addiw	a1, a1, -384
 	mul	a0, a0, a1
 	ret

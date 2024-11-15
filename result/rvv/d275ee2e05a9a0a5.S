@@ -12,8 +12,8 @@ func000000000000000f:                   # @func000000000000000f
 	addi	a0, a0, -1
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vand.vx	v8, v8, a0
-	vwsll.vi	v10, v8, 24
 	lui	a0, 4641
+	vwsll.vi	v10, v8, 24
 	slli	a0, a0, 36
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vor.vx	v8, v10, a0

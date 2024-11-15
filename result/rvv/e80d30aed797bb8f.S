@@ -8,8 +8,8 @@ func0000000000000161:                   # @func0000000000000161
 func000000000000016a:                   # @func000000000000016a
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vsub.vv	v8, v8, v10
-	vmsle.vi	v0, v8, -1
 	lui	a0, 10
+	vmsle.vi	v0, v8, -1
 	addi	a1, a0, -960
 	vadd.vx	v8, v8, a1, v0.t
 	addi	a0, a0, -963

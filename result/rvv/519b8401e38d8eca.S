@@ -1,8 +1,8 @@
 func0000000000000038:                   # @func0000000000000038
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vi	v12, v10, 1
-	vadd.vv	v10, v12, v10
 	lui	a0, 8192
+	vadd.vv	v10, v12, v10
 	addiw	a0, a0, -1
 	vmsgtu.vx	v0, v10, a0
 	lui	a0, 14336

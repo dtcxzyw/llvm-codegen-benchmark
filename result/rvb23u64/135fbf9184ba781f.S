@@ -1,16 +1,16 @@
 func00000000000001cc:                   # @func00000000000001cc
 	addi	a2, a2, -4
-	seqz	a2, a2
 	snez	a1, a1
 	snez	a0, a0
+	seqz	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
 func0000000000000cc8:                   # @func0000000000000cc8
 	snez	a2, a2
 	snez	a1, a1
-	and	a1, a1, a2
 	sltiu	a0, a0, 3
+	and	a1, a1, a2
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
@@ -35,8 +35,8 @@ func0000000000000114:                   # @func0000000000000114
 	ret
 func00000000000008c1:                   # @func00000000000008c1
 	srli	a2, a2, 5
-	sltiu	a2, a2, 513
 	snez	a1, a1
+	sltiu	a2, a2, 513
 	andn	a1, a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1

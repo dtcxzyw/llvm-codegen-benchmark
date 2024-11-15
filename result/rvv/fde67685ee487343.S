@@ -8,8 +8,8 @@ func000000000000000e:                   # @func000000000000000e
 func000000000000002e:                   # @func000000000000002e
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v8, v8, v10
-	vsrl.vi	v8, v8, 4
 	li	a0, 1
+	vsrl.vi	v8, v8, 4
 	csrwi	vxrm, 2
 	vaaddu.vx	v8, v8, a0
 	ret

@@ -8,8 +8,8 @@ func000000000000014c:                   # @func000000000000014c
 func0000000000000028:                   # @func0000000000000028
 	sext.w	a0, a0
 	subw	a1, a1, a2
-	sltu	a0, a1, a0
 	lui	a2, 4
+	sltu	a0, a1, a0
 	addiw	a2, a2, -1
 	xor	a1, a1, a2
 	seqz	a1, a1

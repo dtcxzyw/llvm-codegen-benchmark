@@ -3,8 +3,8 @@ func0000000000001882:                   # @func0000000000001882
 	vmsne.vi	v9, v8, 9
 	li	a0, 32
 	vmsltu.vx	v10, v8, a0
-	vmand.mm	v9, v10, v9
 	li	a0, 127
+	vmand.mm	v9, v10, v9
 	vmseq.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9
 	ret
@@ -13,8 +13,8 @@ func0000000000001890:                   # @func0000000000001890
 	vmsne.vi	v9, v8, 9
 	li	a0, 32
 	vmsltu.vx	v10, v8, a0
-	vmand.mm	v9, v10, v9
 	li	a0, 126
+	vmand.mm	v9, v10, v9
 	vmsgtu.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9
 	ret

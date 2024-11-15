@@ -1,10 +1,10 @@
 func0000000000000a1c:                   # @func0000000000000a1c
 	sext.w	a1, a1
 	sext.w	a2, a2
-	slti	a2, a2, 3
-	not	a2, a2
-	seqz	a1, a1
 	snez	a0, a0
+	slti	a2, a2, 3
+	seqz	a1, a1
+	not	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
@@ -61,12 +61,12 @@ func0000000000000aac:                   # @func0000000000000aac
 func0000000000000c1c:                   # @func0000000000000c1c
 	sext.w	a1, a1
 	sext.w	a2, a2
-	snez	a2, a2
 	lui	a3, 524288
+	snez	a0, a0
+	snez	a2, a2
 	addiw	a3, a3, 3
 	xor	a1, a1, a3
 	seqz	a1, a1
-	snez	a0, a0
 	and	a0, a0, a2
 	and	a0, a0, a1
 	ret

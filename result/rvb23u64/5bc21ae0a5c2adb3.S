@@ -31,9 +31,9 @@ func0000000000000007:                   # @func0000000000000007
 	lui	a1, 1
 	addiw	a1, a1, -1
 	add	a0, a0, a1
-	srli	a0, a0, 4
 	li	a1, 1
 	slli	a1, a1, 33
+	srli	a0, a0, 4
 	addi	a1, a1, -256
 	and	a0, a0, a1
 	ret

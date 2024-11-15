@@ -27,10 +27,10 @@ func000000000000000e:                   # @func000000000000000e
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
+	li	a1, 1
 	vmul.vx	v8, v8, a0
-	li	a0, 1
 	csrwi	vxrm, 2
-	vaaddu.vx	v8, v8, a0
+	vaaddu.vx	v8, v8, a1
 	ret
 .LCPI3_0:
 	.quad	19342813113834067               # 0x44b82fa09b5a53

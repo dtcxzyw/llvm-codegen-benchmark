@@ -54,13 +54,13 @@ func0000000000000101:                   # @func0000000000000101
 func000000000000005a:                   # @func000000000000005a
 	lui	a3, %hi(.LCPI4_0)
 	ld	a3, %lo(.LCPI4_0)(a3)
+	add	a0, a0, a1
+	lui	a1, 2
 	mulh	a2, a2, a3
 	srli	a3, a2, 63
 	srai	a2, a2, 7
 	add	a2, a2, a3
-	add	a0, a0, a1
 	add	a0, a0, a2
-	lui	a1, 2
 	addiw	a1, a1, 1808
 	slt	a0, a1, a0
 	ret

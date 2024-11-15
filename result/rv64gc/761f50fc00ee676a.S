@@ -26,9 +26,9 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 func0000000000000018:                   # @func0000000000000018
 	lui	a3, 16
+	lui	a4, 5
 	addiw	a3, a3, -1
 	and	a2, a2, a3
-	lui	a4, 5
 	addiw	a4, a4, -1719
 	beq	a2, a4, .LBB3_2
 	mv	a1, a0

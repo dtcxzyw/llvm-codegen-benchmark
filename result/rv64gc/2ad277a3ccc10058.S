@@ -7,10 +7,10 @@ func0000000000000022:                   # @func0000000000000022
 	ret
 func0000000000000190:                   # @func0000000000000190
 	slli	a2, a2, 52
+	sltiu	a0, a0, 64
 	srli	a2, a2, 52
 	or	a1, a1, a2
 	snez	a1, a1
-	sltiu	a0, a0, 64
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

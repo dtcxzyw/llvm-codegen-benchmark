@@ -3,10 +3,10 @@ func0000000000000056:                   # @func0000000000000056
 	seqz	a2, a2
 	addi	a2, a2, -1
 	and	a1, a1, a2
+	li	a2, 1
 	add	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 62
-	slt	a0, a0, a1
+	slli	a2, a2, 62
+	slt	a0, a0, a2
 	ret
 func000000000000004a:                   # @func000000000000004a
 	seqz	a2, a2

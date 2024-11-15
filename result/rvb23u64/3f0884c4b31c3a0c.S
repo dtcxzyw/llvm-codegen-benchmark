@@ -26,9 +26,9 @@ func000000000000001a:                   # @func000000000000001a
 	ret
 func000000000000008c:                   # @func000000000000008c
 	sub	a2, a2, a1
+	sltiu	a0, a0, 401
 	addi	a1, a2, -400
 	snez	a1, a1
-	sltiu	a0, a0, 401
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret

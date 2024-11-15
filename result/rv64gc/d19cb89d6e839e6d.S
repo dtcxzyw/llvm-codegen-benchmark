@@ -1,13 +1,13 @@
 func0000000000000185:                   # @func0000000000000185
 	lui	a1, 32
+	slli	a2, a0, 16
+	lui	a3, 983055
 	addiw	a1, a1, -31
-	sltu	a1, a1, a0
-	slli	a0, a0, 16
-	neg	a1, a1
-	lui	a2, 983055
-	slli	a3, a2, 5
-	and	a1, a1, a3
-	slli	a2, a2, 4
+	sltu	a0, a1, a0
+	slli	a1, a3, 5
+	slli	a3, a3, 4
+	neg	a0, a0
+	and	a0, a0, a1
+	add	a2, a2, a3
 	add	a0, a0, a2
-	add	a0, a0, a1
 	ret

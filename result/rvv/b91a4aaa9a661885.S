@@ -49,21 +49,21 @@ func0000000000000354:                   # @func0000000000000354
 func0000000000000006:                   # @func0000000000000006
 	lui	a0, %hi(.LCPI3_0)
 	ld	a0, %lo(.LCPI3_0)(a0)
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmulh.vx	v14, v12, a0
-	vadd.vv	v12, v14, v12
-	li	a0, 63
-	vsrl.vx	v14, v12, a0
 	lui	a1, %hi(.LCPI3_1)
 	ld	a1, %lo(.LCPI3_1)(a1)
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmulh.vx	v14, v12, a0
+	li	a0, 63
+	vadd.vv	v12, v14, v12
+	vmulh.vx	v14, v10, a1
+	vsub.vv	v10, v14, v10
+	vsrl.vx	v14, v12, a0
 	vsra.vi	v12, v12, 6
 	vadd.vv	v12, v12, v14
-	vadd.vv	v8, v12, v8
-	vmulh.vx	v12, v10, a1
-	vsub.vv	v10, v12, v10
-	vsrl.vx	v12, v10, a0
+	vsrl.vx	v14, v10, a0
 	vsra.vi	v10, v10, 8
-	vadd.vv	v10, v10, v12
+	vadd.vv	v8, v12, v8
+	vadd.vv	v10, v10, v14
 	vadd.vv	v8, v8, v10
 	vmsle.vi	v0, v8, -1
 	ret
@@ -140,19 +140,19 @@ func0000000000000356:                   # @func0000000000000356
 	vmsle.vi	v0, v8, -1
 	ret
 func00000000000002d1:                   # @func00000000000002d1
+	lui	a0, 349525
+	lui	a1, 699051
+	addiw	a0, a0, 1365
+	addiw	a1, a1, -1365
+	slli	a2, a0, 32
+	add	a0, a0, a2
+	slli	a2, a1, 32
+	add	a1, a1, a2
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v12, v12, 3
-	lui	a0, 349525
-	addiw	a0, a0, 1365
-	slli	a1, a0, 32
-	add	a0, a0, a1
+	vsra.vi	v8, v8, 3
 	vmul.vx	v12, v12, a0
 	vsub.vv	v10, v12, v10
-	vsra.vi	v8, v8, 3
-	lui	a0, 699051
-	addiw	a0, a0, -1365
-	slli	a1, a0, 32
-	add	a0, a0, a1
-	vmul.vx	v8, v8, a0
+	vmul.vx	v8, v8, a1
 	vmseq.vv	v0, v8, v10
 	ret

@@ -32,9 +32,9 @@ func0000000000000084:                   # @func0000000000000084
 	addi	a0, a0, 513
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsltu.vx	v10, v8, a0
-	vmor.mm	v10, v10, v0
 	lui	a0, 4
 	addi	a0, a0, 1
+	vmor.mm	v10, v10, v0
 	vmsltu.vx	v11, v8, a0
 	vmand.mm	v0, v11, v10
 	ret
@@ -50,9 +50,9 @@ func000000000000010a:                   # @func000000000000010a
 	addi	a0, a0, -1
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgtu.vx	v10, v8, a0
-	vmor.mm	v10, v10, v0
 	li	a0, 19
 	slli	a0, a0, 11
+	vmor.mm	v10, v10, v0
 	vmsgt.vx	v11, v8, a0
 	vmand.mm	v0, v11, v10
 	ret
@@ -96,8 +96,8 @@ func0000000000000198:                   # @func0000000000000198
 	addi	a0, a0, -1481
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsne.vx	v10, v8, a0
-	vmor.mm	v10, v10, v0
 	li	a0, 1262
+	vmor.mm	v10, v10, v0
 	vmsne.vx	v11, v8, a0
 	vmand.mm	v0, v10, v11
 	ret

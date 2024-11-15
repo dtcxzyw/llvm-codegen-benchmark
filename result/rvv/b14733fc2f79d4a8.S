@@ -29,27 +29,27 @@ func0000000000000088:                   # @func0000000000000088
 func00000000000000aa:                   # @func00000000000000aa
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vmfle.vf	v24, v16, fa5
-	vmfle.vv	v25, v8, v16
-	vmnot.m	v8, v25
-	vmorn.mm	v0, v8, v24
+	vmfle.vv	v24, v8, v16
+	vmfle.vf	v8, v16, fa5
+	vmnot.m	v9, v24
+	vmorn.mm	v0, v9, v8
 	ret
 func00000000000000ba:                   # @func00000000000000ba
 	fli.d	fa5, 1.0
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vmfle.vf	v24, v16, fa5
-	vmflt.vv	v25, v8, v16
-	vmnot.m	v8, v25
-	vmorn.mm	v0, v8, v24
+	vmflt.vv	v24, v8, v16
+	vmfle.vf	v8, v16, fa5
+	vmnot.m	v9, v24
+	vmorn.mm	v0, v9, v8
 	ret
 func0000000000000142:                   # @func0000000000000142
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vmfle.vf	v24, v16, fa5
-	vmfne.vv	v25, v16, v16
-	vmfne.vv	v16, v8, v8
-	vmor.mm	v8, v16, v25
-	vmor.mm	v0, v8, v24
+	vmfne.vv	v24, v16, v16
+	vmfne.vv	v25, v8, v8
+	vmfle.vf	v8, v16, fa5
+	vmor.mm	v9, v25, v24
+	vmor.mm	v0, v9, v8
 	ret
 .LCPI7_0:
 	.quad	0x3fe204189374bc6a              # double 0.56299999999999994

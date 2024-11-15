@@ -1,8 +1,8 @@
 func0000000000000056:                   # @func0000000000000056
 	add	a1, a1, a2
+	lui	a2, 599186
 	addw	a0, a0, a1
-	lui	a1, 599186
-	addiw	a1, a1, 1171
+	addiw	a1, a2, 1171
 	mul	a1, a1, a0
 	srli	a1, a1, 32
 	add	a1, a1, a0
@@ -16,37 +16,37 @@ func0000000000000056:                   # @func0000000000000056
 	ret
 func000000000000005c:                   # @func000000000000005c
 	add	a1, a1, a2
+	lui	a2, 796918
 	add	a0, a0, a1
-	lui	a1, 796918
-	addi	a1, a1, -983
-	mul	a0, a0, a1
 	lui	a1, 20972
+	addi	a2, a2, -983
+	mul	a0, a0, a2
+	lui	a2, 10486
 	addi	a1, a1, -1968
 	add	a0, a0, a1
 	roriw	a0, a0, 2
-	lui	a1, 10486
-	addiw	a1, a1, -984
+	addiw	a1, a2, -984
 	sltu	a0, a1, a0
 	ret
 func0000000000000051:                   # @func0000000000000051
 	add	a1, a1, a2
+	lui	a2, 796918
 	add	a0, a0, a1
-	lui	a1, 796918
-	addi	a1, a1, -983
-	mul	a0, a0, a1
 	lui	a1, 20972
+	addi	a2, a2, -983
+	mul	a0, a0, a2
+	lui	a2, 2621
 	addi	a1, a1, -1968
 	add	a0, a0, a1
 	roriw	a0, a0, 4
-	lui	a1, 2621
-	addiw	a1, a1, 1803
+	addiw	a1, a2, 1803
 	sltu	a0, a0, a1
 	ret
 func0000000000000006:                   # @func0000000000000006
 	add	a1, a1, a2
+	lui	a2, 599186
 	addw	a0, a0, a1
-	lui	a1, 599186
-	addiw	a1, a1, 1171
+	addiw	a1, a2, 1171
 	mul	a1, a1, a0
 	srli	a1, a1, 32
 	add	a1, a1, a0
@@ -60,9 +60,9 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func0000000000000058:                   # @func0000000000000058
 	add	a1, a1, a2
+	lui	a2, 599186
 	addw	a0, a0, a1
-	lui	a1, 599186
-	addiw	a1, a1, 1171
+	addiw	a1, a2, 1171
 	mul	a1, a1, a0
 	srli	a1, a1, 32
 	add	a1, a1, a0
@@ -83,14 +83,14 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000011:                   # @func0000000000000011
 	add	a1, a1, a2
+	lui	a2, 699051
 	add	a0, a0, a1
-	lui	a1, 699051
-	addi	a1, a1, -1365
-	mul	a0, a0, a1
 	lui	a1, 174763
+	addi	a2, a2, -1365
+	mul	a0, a0, a2
+	lui	a2, 349525
 	addi	a1, a1, -1366
 	addw	a0, a0, a1
-	lui	a1, 349525
-	addiw	a1, a1, 1365
+	addiw	a1, a2, 1365
 	sltu	a0, a0, a1
 	ret

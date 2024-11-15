@@ -12,17 +12,17 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func00000000000000c1:                   # @func00000000000000c1
 	slli	a1, a1, 61
-	srli	a1, a1, 63
 	andi	a0, a0, 32
+	srli	a1, a1, 63
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 func00000000000000cc:                   # @func00000000000000cc
 	andi	a1, a1, 254
-	addi	a1, a1, -12
-	snez	a1, a1
 	andi	a0, a0, 254
+	addi	a1, a1, -12
 	addi	a0, a0, -12
+	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -42,8 +42,8 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 func0000000000000044:                   # @func0000000000000044
 	andi	a1, a1, 63
-	sltiu	a1, a1, 9
 	andi	a0, a0, 6
+	sltiu	a1, a1, 9
 	addi	a0, a0, -6
 	snez	a0, a0
 	and	a0, a0, a1

@@ -6,42 +6,42 @@ func0000000000000020:                   # @func0000000000000020
 	ret
 func000000000000002a:                   # @func000000000000002a
 	addi	a1, a1, -320
-	sraiw	a1, a1, 1
 	lui	a2, 338
+	sraiw	a1, a1, 1
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 func000000000000000a:                   # @func000000000000000a
 	addi	a1, a1, 159
-	sraiw	a1, a1, 1
 	lui	a2, 338
+	sraiw	a1, a1, 1
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 func0000000000000002:                   # @func0000000000000002
 	addiw	a1, a1, -161
-	slli	a1, a1, 1
-	andi	a1, a1, -4
 	lui	a2, 225
+	slli	a1, a1, 1
 	addiw	a2, a2, 1280
+	andi	a1, a1, -4
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 func0000000000000022:                   # @func0000000000000022
 	addiw	a1, a1, -161
-	slli	a1, a1, 1
-	andi	a1, a1, -4
 	lui	a2, 25
+	slli	a1, a1, 1
 	addiw	a2, a2, 128
+	andi	a1, a1, -4
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 func0000000000000032:                   # @func0000000000000032
 	addiw	a1, a1, -160
-	slli	a1, a1, 1
-	andi	a1, a1, -4
 	lui	a2, 225
+	slli	a1, a1, 1
 	addiw	a2, a2, 1280
+	andi	a1, a1, -4
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

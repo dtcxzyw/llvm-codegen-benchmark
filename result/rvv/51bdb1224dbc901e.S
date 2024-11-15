@@ -15,11 +15,11 @@ func0000000000000000:                   # @func0000000000000000
 	addiw	a0, a0, 1911
 	slli	a1, a0, 32
 	add	a0, a0, a1
+	li	a1, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulh.vx	v10, v8, a0
 	vsub.vv	v8, v10, v8
-	li	a0, 63
-	vsrl.vx	v10, v8, a0
+	vsrl.vx	v10, v8, a1
 	vsra.vi	v8, v8, 5
 	vadd.vv	v8, v8, v10
 	vsetvli	zero, zero, e32, m1, ta, ma

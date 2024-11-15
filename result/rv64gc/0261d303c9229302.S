@@ -11,9 +11,9 @@ func0000000000000230:                   # @func0000000000000230
 	lui	a3, 1048540
 	addiw	a3, a3, 1359
 	sltu	a2, a2, a3
+	lui	a3, 36
 	add	a1, a1, a2
-	lui	a2, 36
-	addi	a2, a2, -1359
+	addi	a2, a3, -1359
 	mul	a1, a1, a2
 	addw	a0, a0, a1
 	ret

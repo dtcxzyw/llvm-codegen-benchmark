@@ -20,9 +20,9 @@ func0000000000000022:                   # @func0000000000000022
 	ret
 .LBB1_2:
 	addi	a0, a0, -2
+	lui	a1, 16
 	seqz	a0, a0
 	addi	a0, a0, -1
-	lui	a1, 16
 	addi	a1, a1, -1
 	or	a0, a0, a1
 	slli	a0, a0, 32

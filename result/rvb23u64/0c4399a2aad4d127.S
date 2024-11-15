@@ -15,8 +15,8 @@ func000000000000000c:                   # @func000000000000000c
 func0000000000000023:                   # @func0000000000000023
 	sext.w	a2, a1
 	slliw	a1, a1, 8
-	czero.eqz	a1, a1, a2
 	lui	a3, 16
+	czero.eqz	a1, a1, a2
 	addiw	a3, a3, -256
 	czero.nez	a2, a3, a2
 	or	a0, a0, a1

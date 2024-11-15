@@ -10,9 +10,9 @@ func000000000000007a:                   # @func000000000000007a
 	lui	a2, 524288
 	addiw	a2, a2, -4
 	and	a1, a1, a2
-	slli	a1, a1, 2
 	lui	a2, 88
 	addiw	a2, a2, 512
+	slli	a1, a1, 2
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
@@ -20,9 +20,9 @@ func0000000000000072:                   # @func0000000000000072
 	lui	a2, 524288
 	addiw	a2, a2, -4
 	and	a1, a1, a2
-	slli	a1, a1, 2
 	lui	a2, 48
 	addiw	a2, a2, 512
+	slli	a1, a1, 2
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

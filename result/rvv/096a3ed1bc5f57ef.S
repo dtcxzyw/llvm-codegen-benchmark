@@ -21,12 +21,12 @@ func0000000000000073:                   # @func0000000000000073
 func0000000000000072:                   # @func0000000000000072
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vfdiv.vv	v16, v16, v8
 	fmv.d.x	fa4, zero
+	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfeq.vf	v24, v8, fa4
-	vmflt.vf	v8, v16, fa5
-	vmor.mm	v0, v24, v8
+	vfdiv.vv	v8, v16, v8
+	vmflt.vf	v16, v8, fa5
+	vmor.mm	v0, v24, v16
 	ret
 func000000000000007c:                   # @func000000000000007c
 	vsetivli	zero, 16, e64, m8, ta, ma

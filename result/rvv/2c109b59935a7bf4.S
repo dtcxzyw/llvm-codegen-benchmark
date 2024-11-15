@@ -22,9 +22,9 @@ func00000000000000f8:                   # @func00000000000000f8
 	li	a0, 10
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
+	lui	a0, 524288
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
-	lui	a0, 524288
 	addiw	a0, a0, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v0, v8, a0
@@ -54,10 +54,10 @@ func00000000000001f8:                   # @func00000000000001f8
 	addiw	a0, a0, 576
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vwaddu.wv	v8, v8, v10
 	lui	a0, 2575
 	addiw	a0, a0, -325
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vwaddu.wv	v8, v8, v10
 	slli	a0, a0, 13
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v0, v8, a0
@@ -66,9 +66,9 @@ func0000000000000134:                   # @func0000000000000134
 	li	a0, 10
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
+	lui	a0, 524288
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
-	lui	a0, 524288
 	addiw	a0, a0, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
@@ -153,9 +153,9 @@ func00000000000001e1:                   # @func00000000000001e1
 	li	a0, 30
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
+	li	a0, -1
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
-	li	a0, -1
 	srli	a0, a0, 1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmseq.vx	v0, v8, a0

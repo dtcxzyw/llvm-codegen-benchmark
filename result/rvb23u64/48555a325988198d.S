@@ -1,14 +1,14 @@
 func0000000000000005:                   # @func0000000000000005
 	andi	a0, a0, 255
-	addi	a0, a0, -150
 	lui	a1, 154
+	addi	a0, a0, -150
 	addiw	a1, a1, 521
 	mul	a0, a0, a1
 	ret
 func0000000000000007:                   # @func0000000000000007
 	andi	a0, a0, 255
-	addi	a0, a0, -48
 	lui	a1, 49
+	addi	a0, a0, -48
 	addiw	a1, a1, -704
 	mul	a0, a0, a1
 	ret

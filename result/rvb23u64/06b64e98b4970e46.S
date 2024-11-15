@@ -1,8 +1,8 @@
 func0000000000000082:                   # @func0000000000000082
 	sext.w	a1, a1
 	andi	a2, a2, -2048
-	bclri	a2, a2, 11
 	lui	a3, 2
+	bclri	a2, a2, 11
 	addiw	a3, a3, 1
 	sltu	a2, a2, a3
 	seqz	a1, a1

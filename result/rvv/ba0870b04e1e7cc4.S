@@ -64,20 +64,20 @@ func000000000000006c:                   # @func000000000000006c
 func0000000000000064:                   # @func0000000000000064
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmv.v.i	v9, 1
+	lui	a0, 1
 	vwsll.vv	v10, v9, v8
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vand.vi	v8, v10, -2
-	lui	a0, 1
 	addiw	a0, a0, 1
 	vmsltu.vx	v0, v8, a0
 	ret
 func0000000000000068:                   # @func0000000000000068
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmv.v.i	v9, 1
+	li	a0, 7
 	vwsll.vv	v10, v9, v8
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vand.vi	v8, v10, -2
-	li	a0, 7
 	slli	a0, a0, 60
 	vmsgtu.vx	v0, v8, a0
 	ret

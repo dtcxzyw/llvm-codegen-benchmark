@@ -30,8 +30,8 @@ func000000000000001a:                   # @func000000000000001a
 	srai	a1, a1, 63
 	ori	a1, a1, -13
 	addw	a0, a0, a1
-	slti	a0, a0, 3
 	lui	a1, 1048575
+	slti	a0, a0, 3
 	addiw	a1, a1, -620
 	or	a0, a0, a1
 	ret

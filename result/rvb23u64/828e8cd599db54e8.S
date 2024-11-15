@@ -15,8 +15,8 @@ func0000000000000045:                   # @func0000000000000045
 func0000000000000015:                   # @func0000000000000015
 	seqz	a2, a2
 	add	a0, a0, a1
-	sub	a0, a0, a2
 	lui	a1, 1048572
+	sub	a0, a0, a2
 	addiw	a1, a1, 2
 	add	a0, a0, a1
 	ret

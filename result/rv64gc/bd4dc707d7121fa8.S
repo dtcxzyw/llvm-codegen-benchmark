@@ -1,7 +1,7 @@
 func0000000000000005:                   # @func0000000000000005
 	slli	a2, a2, 48
-	srai	a2, a2, 48
 	lui	a3, 6
+	srai	a2, a2, 48
 	addiw	a3, a3, -1593
 	mul	a2, a2, a3
 	srli	a3, a2, 63
@@ -12,8 +12,8 @@ func0000000000000005:                   # @func0000000000000005
 	ret
 func0000000000000000:                   # @func0000000000000000
 	slli	a2, a2, 48
-	srai	a2, a2, 48
 	lui	a3, 1
+	srai	a2, a2, 48
 	addiw	a3, a3, 1147
 	mul	a2, a2, a3
 	srli	a3, a2, 63

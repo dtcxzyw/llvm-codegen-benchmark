@@ -21,8 +21,8 @@ func0000000000000014:                   # @func0000000000000014
 	sext.w	a0, a0
 	lui	a2, 13
 	addiw	a2, a2, 1288
-	or	a1, a1, a2
 	sltiu	a0, a0, 32
+	or	a1, a1, a2
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
@@ -44,8 +44,8 @@ func0000000000000001:                   # @func0000000000000001
 func000000000000001c:                   # @func000000000000001c
 	sext.w	a0, a0
 	ori	a1, a1, 4
-	czero.eqz	a1, a1, a0
 	li	a2, 1
+	czero.eqz	a1, a1, a0
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	ret

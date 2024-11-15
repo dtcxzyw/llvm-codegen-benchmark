@@ -125,9 +125,9 @@ func0000000000000090:                   # @func0000000000000090
 func000000000000007a:                   # @func000000000000007a
 	lui	a0, 737280
 	fmv.w.x	fa5, a0
+	lui	a0, 212992
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfge.vf	v12, v8, fa5
-	lui	a0, 212992
 	fmv.w.x	fa5, a0
 	vmflt.vf	v13, v8, fa5
 	vmnot.m	v8, v13
@@ -192,9 +192,9 @@ func0000000000000050:                   # @func0000000000000050
 func00000000000001a6:                   # @func00000000000001a6
 	lui	a0, 323584
 	fmv.w.x	fa5, a0
+	lui	a0, 847872
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vf	v12, v8, fa5
-	lui	a0, 847872
 	fmv.w.x	fa5, a0
 	vmfge.vf	v13, v8, fa5
 	vmnot.m	v8, v13

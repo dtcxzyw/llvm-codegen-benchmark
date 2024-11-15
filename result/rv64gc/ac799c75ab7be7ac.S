@@ -31,11 +31,11 @@ func0000000000000032:                   # @func0000000000000032
 func0000000000000022:                   # @func0000000000000022
 	lui	a0, %hi(.LCPI2_0)
 	flw	fa5, %lo(.LCPI2_0)(a0)
-	flt.s	a0, fa2, fa5
-	lui	a1, 260096
-	fmv.w.x	fa5, a1
+	lui	a0, 260096
+	flt.s	a1, fa2, fa5
+	fmv.w.x	fa5, a0
 	fmv.s	fa4, fa5
-	bnez	a0, .LBB2_2
+	bnez	a1, .LBB2_2
 	fmv.s	fa4, fa1
 .LBB2_2:                                # %entry
 	fadd.s	fa4, fa4, fa0

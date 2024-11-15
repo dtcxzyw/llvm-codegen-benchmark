@@ -9,9 +9,9 @@ func0000000000000003:                   # @func0000000000000003
 	slli	a1, a1, 10
 	lui	a2, 51
 	czero.nez	a0, a2, a0
+	lui	a2, 95
 	add	a0, a0, a1
-	lui	a1, 95
-	addi	a1, a1, -1024
+	addi	a1, a2, -1024
 	addw	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
@@ -19,8 +19,8 @@ func0000000000000001:                   # @func0000000000000001
 	slli	a1, a1, 10
 	lui	a2, 51
 	czero.nez	a0, a2, a0
+	lui	a2, 95
 	add	a0, a0, a1
-	lui	a1, 95
-	addi	a1, a1, -972
+	addi	a1, a2, -972
 	addw	a0, a0, a1
 	ret

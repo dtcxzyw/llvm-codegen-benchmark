@@ -3,9 +3,9 @@ func0000000000000004:                   # @func0000000000000004
 	addi	a0, a0, 255
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
+	li	a0, 31
 	vmul.vv	v8, v10, v8
 	vsrl.vi	v8, v8, 17
-	li	a0, 31
 	slli	a0, a0, 10
 	vand.vx	v8, v8, a0
 	ret

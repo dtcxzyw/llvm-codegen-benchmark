@@ -16,8 +16,8 @@ func0000000000000148:                   # @func0000000000000148
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v12, v12, 5
 	vsub.vv	v8, v10, v8
-	vadd.vv	v8, v12, v8
 	li	a0, -1
+	vadd.vv	v8, v12, v8
 	srli	a0, a0, 6
 	vmsgtu.vx	v0, v8, a0
 	ret

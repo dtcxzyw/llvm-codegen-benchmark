@@ -1,7 +1,7 @@
 func000000000000000d:                   # @func000000000000000d
 	slli	a2, a2, 54
-	srli	a2, a2, 61
 	andi	a1, a1, 15
+	srli	a2, a2, 61
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret

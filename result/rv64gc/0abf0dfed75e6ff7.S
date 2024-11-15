@@ -21,8 +21,8 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func0000000000000000:                   # @func0000000000000000
 	sext.w	a1, a1
-	srli	a1, a1, 1
 	li	a2, 1
+	srli	a1, a1, 1
 	slli	a2, a2, 35
 	addi	a2, a2, -8
 	and	a1, a1, a2

@@ -29,12 +29,11 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 func0000000000000048:                   # @func0000000000000048
 	li	a0, 32
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsltu.vx	v11, v12, a0
-	vsetvli	zero, zero, e32, m1, ta, ma
+	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsgtu.vi	v10, v10, 8
-	vmand.mm	v0, v10, v11
 	vsetvli	zero, zero, e64, m2, ta, ma
+	vmsltu.vx	v11, v12, a0
+	vmand.mm	v0, v10, v11
 	vmv.v.i	v10, 0
 	vmerge.vvm	v8, v10, v8, v0
 	ret

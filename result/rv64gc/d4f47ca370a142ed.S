@@ -1,18 +1,18 @@
 func00000000000000da:                   # @func00000000000000da
 	addi	a2, a1, -1
 	not	a1, a1
-	and	a1, a1, a2
-	srli	a2, a1, 1
 	lui	a3, 5
-	addiw	a3, a3, 1365
-	and	a2, a2, a3
-	sub	a1, a1, a2
-	lui	a2, 3
-	addiw	a2, a2, 819
-	and	a3, a1, a2
-	srli	a1, a1, 2
 	and	a1, a1, a2
-	add	a1, a1, a3
+	addiw	a2, a3, 1365
+	srli	a3, a1, 1
+	and	a2, a2, a3
+	lui	a3, 3
+	addiw	a3, a3, 819
+	sub	a1, a1, a2
+	and	a2, a1, a3
+	srli	a1, a1, 2
+	and	a1, a1, a3
+	add	a1, a1, a2
 	srli	a2, a1, 4
 	add	a1, a1, a2
 	andi	a2, a1, 15
@@ -29,18 +29,18 @@ func00000000000000da:                   # @func00000000000000da
 func00000000000000d8:                   # @func00000000000000d8
 	addi	a2, a1, -1
 	not	a1, a1
-	and	a1, a1, a2
-	srli	a2, a1, 1
 	lui	a3, 5
-	addiw	a3, a3, 1365
-	and	a2, a2, a3
-	sub	a1, a1, a2
-	lui	a2, 3
-	addiw	a2, a2, 819
-	and	a3, a1, a2
-	srli	a1, a1, 2
 	and	a1, a1, a2
-	add	a1, a1, a3
+	addiw	a2, a3, 1365
+	srli	a3, a1, 1
+	and	a2, a2, a3
+	lui	a3, 3
+	addiw	a3, a3, 819
+	sub	a1, a1, a2
+	and	a2, a1, a3
+	srli	a1, a1, 2
+	and	a1, a1, a3
+	add	a1, a1, a2
 	srli	a2, a1, 4
 	add	a1, a1, a2
 	andi	a2, a1, 15

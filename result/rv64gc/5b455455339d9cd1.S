@@ -20,9 +20,9 @@ func000000000000004a:                   # @func000000000000004a
 	sext.w	a0, a0
 	slli	a1, a1, 48
 	srli	a1, a1, 48
+	slti	a0, a0, 9
 	addi	a1, a1, -11
 	sltiu	a1, a1, 3
-	slti	a0, a0, 9
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -48,9 +48,9 @@ func000000000000008a:                   # @func000000000000008a
 	sext.w	a0, a0
 	slli	a1, a1, 48
 	srli	a1, a1, 48
+	slti	a0, a0, 0
 	addi	a1, a1, -40
 	sltiu	a1, a1, -20
-	slti	a0, a0, 0
 	not	a0, a0
 	and	a0, a0, a1
 	ret

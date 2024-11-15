@@ -5,8 +5,8 @@ func000000000000000c:                   # @func000000000000000c
 	li	a0, 771
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.x	v12, a0
-	vmerge.vim	v12, v12, 0, v0
 	li	a0, 770
+	vmerge.vim	v12, v12, 0, v0
 	vmv1r.v	v0, v8
 	vmerge.vxm	v8, v12, a0, v0
 	li	a0, 769
@@ -19,8 +19,8 @@ func0000000000000001:                   # @func0000000000000001
 	vmseq.vi	v0, v9, 3
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.i	v12, 0
-	vmerge.vim	v12, v12, 1, v0
 	li	a0, 36
+	vmerge.vim	v12, v12, 1, v0
 	vsll.vx	v12, v12, a0
 	lui	a0, 512
 	vmv1r.v	v0, v8
@@ -37,13 +37,13 @@ func000000000000000a:                   # @func000000000000000a
 	addiw	a1, a0, 2007
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.x	v12, a1
+	lui	a1, 1048573
 	addiw	a0, a0, 1448
 	vmerge.vxm	v12, v12, a0, v0
-	lui	a0, 1048573
-	addiw	a1, a0, -1544
+	addiw	a0, a1, -1544
 	vmv1r.v	v0, v8
-	vmerge.vxm	v8, v12, a1, v0
-	addiw	a0, a0, -1533
+	vmerge.vxm	v8, v12, a0, v0
+	addiw	a0, a1, -1533
 	vmv1r.v	v0, v10
 	vmerge.vxm	v8, v8, a0, v0
 	ret

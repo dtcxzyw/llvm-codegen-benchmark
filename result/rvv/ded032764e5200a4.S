@@ -48,8 +48,8 @@ func0000000000000014:                   # @func0000000000000014
 	li	a0, -58
 	vsetivli	zero, 4, e8, mf4, ta, ma
 	vadd.vx	v10, v10, a0
-	vmsleu.vi	v10, v10, -11
 	li	a0, 255
+	vmsleu.vi	v10, v10, -11
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmseq.vx	v11, v8, a0
 	vmor.mm	v0, v10, v11

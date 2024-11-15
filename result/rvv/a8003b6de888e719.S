@@ -9,20 +9,20 @@ func000000000000018c:                   # @func000000000000018c
 func00000000000001c8:                   # @func00000000000001c8
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmv.v.i	v11, 1
+	lui	a0, 524288
 	vwsll.vv	v12, v11, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vv	v8, v12, v8
-	lui	a0, 524288
 	addiw	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret
 func0000000000000188:                   # @func0000000000000188
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmv.v.i	v11, 1
+	lui	a0, 524288
 	vwsll.vv	v12, v11, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vv	v8, v12, v8
-	lui	a0, 524288
 	addiw	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret

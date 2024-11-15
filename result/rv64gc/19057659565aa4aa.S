@@ -37,9 +37,9 @@ func000000000000007b:                   # @func000000000000007b
 func000000000000000b:                   # @func000000000000000b
 	andi	a2, a2, 1
 	subw	a1, a1, a2
+	li	a2, 19
 	addi	a1, a1, 2
 	slli	a1, a1, 32
-	li	a2, 19
 	slli	a2, a2, 35
 	mulhu	a1, a1, a2
 	add	a0, a0, a1

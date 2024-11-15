@@ -4,9 +4,9 @@ func000000000000001b:                   # @func000000000000001b
 	lui	a0, 512
 	addiw	a0, a0, -1
 	vadd.vx	v8, v8, a0
-	vsrl.vi	v8, v8, 18
 	li	a0, 1
 	slli	a0, a0, 35
+	vsrl.vi	v8, v8, 18
 	addi	a0, a0, -8
 	vand.vx	v8, v8, a0
 	ret

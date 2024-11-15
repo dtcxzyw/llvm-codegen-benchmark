@@ -57,9 +57,9 @@ func0000000000000047:                   # @func0000000000000047
 	ret
 func00000000000000a4:                   # @func00000000000000a4
 	fmv.w.x	fa5, zero
+	lui	a0, 267264
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfle.vf	v12, v8, fa5
-	lui	a0, 267264
 	fmv.w.x	fa5, a0
 	vmfgt.vf	v13, v8, fa5
 	vmandn.mm	v0, v13, v12

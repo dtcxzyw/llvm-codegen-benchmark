@@ -1,8 +1,8 @@
 func000000000000009a:                   # @func000000000000009a
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	vsra.vi	v10, v10, 4
 	li	a0, 63
+	vsra.vi	v10, v10, 4
 	vsrl.vx	v12, v8, a0
 	vadd.vv	v8, v8, v12
 	vsra.vi	v8, v8, 1
@@ -12,8 +12,8 @@ func000000000000009a:                   # @func000000000000009a
 func0000000000000094:                   # @func0000000000000094
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	vsra.vi	v10, v10, 4
 	li	a0, 63
+	vsra.vi	v10, v10, 4
 	vsrl.vx	v12, v8, a0
 	vadd.vv	v8, v8, v12
 	vsra.vi	v8, v8, 1
@@ -24,8 +24,8 @@ func0000000000000094:                   # @func0000000000000094
 func000000000000005a:                   # @func000000000000005a
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	vsra.vi	v10, v10, 4
 	li	a0, 63
+	vsra.vi	v10, v10, 4
 	vsrl.vx	v12, v8, a0
 	vadd.vv	v8, v8, v12
 	vsra.vi	v8, v8, 1
@@ -35,8 +35,8 @@ func000000000000005a:                   # @func000000000000005a
 func0000000000000054:                   # @func0000000000000054
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	vsra.vi	v10, v10, 4
 	li	a0, 63
+	vsra.vi	v10, v10, 4
 	vsrl.vx	v12, v8, a0
 	vadd.vv	v8, v8, v12
 	vsra.vi	v8, v8, 1
@@ -63,9 +63,9 @@ func00000000000000d8:                   # @func00000000000000d8
 func00000000000000d1:                   # @func00000000000000d1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	vsra.vi	v10, v10, 4
 	vsra.vi	v8, v8, 3
 	lui	a0, 699051
+	vsra.vi	v10, v10, 4
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
@@ -80,9 +80,9 @@ func0000000000000091:                   # @func0000000000000091
 	ld	a0, %lo(.LCPI6_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	vsra.vi	v10, v10, 3
 	vmulh.vx	v8, v8, a0
 	li	a0, 63
+	vsra.vi	v10, v10, 3
 	vsrl.vx	v12, v8, a0
 	vsra.vi	v8, v8, 1
 	vadd.vv	v8, v8, v12

@@ -3,8 +3,8 @@ func000000000000000c:                   # @func000000000000000c
 	lui	a1, 838861
 	addi	a1, a1, -819
 	mul	a0, a0, a1
-	roriw	a0, a0, 2
 	lui	a1, 52429
+	roriw	a0, a0, 2
 	addiw	a1, a1, -820
 	sltu	a0, a1, a0
 	ret
@@ -22,16 +22,16 @@ func0000000000000011:                   # @func0000000000000011
 	lui	a1, 159384
 	addi	a1, a1, -1835
 	mul	a0, a0, a1
-	roriw	a0, a0, 3
 	lui	a1, 1049
+	roriw	a0, a0, 3
 	addiw	a1, a1, -1736
 	sltu	a0, a0, a1
 	ret
 func0000000000000014:                   # @func0000000000000014
 	add	a0, a0, a1
-	zext.w	a1, a0
-	lui	a2, 149797
-	addiw	a2, a2, -1755
+	lui	a1, 149797
+	zext.w	a2, a0
+	addiw	a1, a1, -1755
 	mul	a1, a1, a2
 	srli	a1, a1, 32
 	subw	a2, a0, a1

@@ -3,8 +3,8 @@ func0000000000000053:                   # @func0000000000000053
 	vrsub.vi	v9, v9, 4
 	li	a0, -1086
 	vmsgt.vx	v8, v8, a0
-	vmerge.vim	v9, v9, 4, v0
 	li	a0, -49
+	vmerge.vim	v9, v9, 4, v0
 	vmv.v.v	v0, v8
 	vmerge.vxm	v10, v9, a0, v0
 	vsetvli	zero, zero, e64, m2, ta, ma

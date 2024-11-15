@@ -1,11 +1,11 @@
 func000000000000009d:                   # @func000000000000009d
 	fmul.s	fa5, fa1, fa2
 	lui	a0, 798688
+	fli.s	fa4, inf
+	flt.s	a1, fa0, fa4
+	flt.s	a2, fa4, fa0
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
-	fli.s	fa5, inf
-	flt.s	a1, fa0, fa5
-	flt.s	a2, fa5, fa0
 	or	a1, a1, a2
 	or	a0, a0, a1
 	xori	a0, a0, 1

@@ -1,8 +1,8 @@
 func0000000000000003:                   # @func0000000000000003
 	slli	a2, a2, 35
-	srli	a2, a2, 35
 	or	a0, a0, a1
 	lui	a1, 917504
+	srli	a2, a2, 35
 	addi	a1, a1, 1
 	slli	a1, a1, 32
 	addi	a1, a1, -1

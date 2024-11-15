@@ -1,8 +1,8 @@
 func000000000000007f:                   # @func000000000000007f
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vv	v9, v10, v9
-	vadd.vi	v9, v9, 2
 	lui	a0, 2048
+	vadd.vi	v9, v9, 2
 	addi	a0, a0, -2
 	vand.vx	v9, v9, a0
 	vadd.vv	v10, v9, v8

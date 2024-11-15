@@ -12,8 +12,8 @@ func0000000000000054:                   # @func0000000000000054
 	ret
 func0000000000000001:                   # @func0000000000000001
 	add	a0, a0, a1
-	zext.h	a0, a0
 	lui	a1, 16
+	zext.h	a0, a0
 	addiw	a1, a1, -3
 	xor	a0, a0, a1
 	seqz	a0, a0

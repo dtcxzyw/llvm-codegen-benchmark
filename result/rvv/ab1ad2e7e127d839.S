@@ -69,8 +69,8 @@ func0000000000000008:                   # @func0000000000000008
 	addi	a0, a0, -2042
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v8, v8, a0
-	vsrl.vi	v8, v8, 1
 	lui	a0, 528416
+	vsrl.vi	v8, v8, 1
 	addi	a0, a0, 1033
 	vmulhu.vx	v10, v8, a0
 	vsetvli	zero, zero, e16, m1, ta, ma

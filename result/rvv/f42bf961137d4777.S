@@ -53,9 +53,9 @@ func0000000000000028:                   # @func0000000000000028
 func00000000000000c8:                   # @func00000000000000c8
 	lui	a0, 524288
 	addi	a1, a0, 8
+	addi	a0, a0, 4
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v12, v12, a1
-	addi	a0, a0, 4
 	vmsltu.vx	v14, v12, a0
 	vmslt.vv	v12, v8, v10
 	vmor.mm	v0, v14, v12

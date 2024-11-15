@@ -19,9 +19,9 @@ func0000000000000003:                   # @func0000000000000003
 func0000000000000002:                   # @func0000000000000002
 	andi	a1, a1, 1
 	slli	a2, a2, 59
+	lui	a3, 8192
 	srli	a2, a2, 52
 	addi	a1, a1, -1
-	lui	a3, 8192
 	and	a1, a1, a3
 	or	a0, a0, a2
 	or	a0, a0, a1

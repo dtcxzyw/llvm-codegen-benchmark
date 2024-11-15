@@ -6,10 +6,10 @@ func000000000000000a:                   # @func000000000000000a
 	fli.d	fa4, 0.5
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vfmv.v.f	v12, fa4
+	lui	a0, 244141
 	vfmacc.vf	v12, fa5, v8
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vfncvt.rtz.x.f.w	v8, v12
-	lui	a0, 244141
 	addi	a0, a0, -1537
 	vmsgt.vx	v0, v8, a0
 	ret
@@ -24,10 +24,10 @@ func0000000000000006:                   # @func0000000000000006
 	fld	fa4, %lo(.LCPI1_1)(a0)
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vfmv.v.f	v12, fa5
+	lui	a0, 1
 	vfmacc.vf	v12, fa4, v8
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vfncvt.rtz.x.f.w	v8, v12
-	lui	a0, 1
 	addi	a0, a0, -2015
 	vmslt.vx	v0, v8, a0
 	ret
@@ -42,10 +42,10 @@ func0000000000000004:                   # @func0000000000000004
 	fld	fa4, %lo(.LCPI2_1)(a0)
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vfmv.v.f	v12, fa5
+	lui	a0, 1
 	vfmacc.vf	v12, fa4, v8
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vfncvt.rtz.x.f.w	v8, v12
-	lui	a0, 1
 	addi	a0, a0, -515
 	vmsltu.vx	v0, v8, a0
 	ret
@@ -60,10 +60,10 @@ func0000000000000008:                   # @func0000000000000008
 	fld	fa4, %lo(.LCPI3_1)(a0)
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vfmv.v.f	v12, fa5
+	lui	a0, 12
 	vfmacc.vf	v12, fa4, v8
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vfncvt.rtz.x.f.w	v8, v12
-	lui	a0, 12
 	addi	a0, a0, 848
 	vmsgtu.vx	v0, v8, a0
 	ret

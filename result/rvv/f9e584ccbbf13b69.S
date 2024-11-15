@@ -52,9 +52,9 @@ func0000000000000038:                   # @func0000000000000038
 func0000000000000198:                   # @func0000000000000198
 	li	a0, 480
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vmsne.vx	v14, v12, a0
-	vmsne.vi	v12, v10, 0
-	vmand.mm	v0, v12, v14
+	vmsne.vi	v14, v10, 0
+	vmsne.vx	v10, v12, a0
+	vmand.mm	v0, v14, v10
 	lui	a0, 1024
 	vor.vx	v8, v8, a0, v0.t
 	ret

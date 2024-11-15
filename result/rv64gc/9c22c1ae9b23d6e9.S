@@ -1,7 +1,7 @@
 func000000000000002c:                   # @func000000000000002c
 	sext.w	a1, a0
-	slti	a1, a1, 0
 	lui	a2, 524288
+	slti	a1, a1, 0
 	addiw	a2, a2, -17
 	and	a0, a0, a2
 	addi	a0, a0, -8
@@ -10,10 +10,10 @@ func000000000000002c:                   # @func000000000000002c
 	ret
 func0000000000000030:                   # @func0000000000000030
 	srliw	a1, a0, 11
-	addi	a1, a1, -27
-	seqz	a1, a1
 	srliw	a0, a0, 16
+	addi	a1, a1, -27
 	sltiu	a0, a0, 17
+	seqz	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

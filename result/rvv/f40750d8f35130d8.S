@@ -1,8 +1,8 @@
 func00000000000000c8:                   # @func00000000000000c8
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vmsne.vi	v9, v10, 0
-	vmand.mm	v9, v9, v0
 	li	a0, 96
+	vmand.mm	v9, v9, v0
 	vsetvli	zero, zero, e8, m1, ta, ma
 	vmsgtu.vx	v8, v8, a0
 	vmand.mm	v0, v8, v9

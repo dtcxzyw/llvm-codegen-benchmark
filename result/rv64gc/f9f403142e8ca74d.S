@@ -47,8 +47,8 @@ func0000000000000009:                   # @func0000000000000009
 	andi	a0, a0, 1
 	sext.w	a1, a1
 	sltiu	a1, a1, 2
-	slli	a1, a1, 9
 	addi	a0, a0, -1
+	slli	a1, a1, 9
 	andi	a0, a0, 2
 	or	a0, a0, a1
 	ret

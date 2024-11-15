@@ -13,10 +13,10 @@ func0000000000000094:                   # @func0000000000000094
 	ret
 func0000000000000095:                   # @func0000000000000095
 	lui	a1, 8
-	addi	a1, a1, -2
-	addw	a1, a1, a0
 	lui	a2, 524304
+	addi	a1, a1, -2
 	addiw	a2, a2, 3
+	addw	a1, a1, a0
 	mul	a2, a2, a1
 	srli	a2, a2, 32
 	add	a1, a1, a2
@@ -29,10 +29,10 @@ func0000000000000095:                   # @func0000000000000095
 	ret
 func0000000000000090:                   # @func0000000000000090
 	lui	a1, 16
-	addi	a1, a1, -2
-	addw	a1, a1, a0
 	lui	a2, 524296
+	addi	a1, a1, -2
 	addiw	a2, a2, 1
+	addw	a1, a1, a0
 	mul	a2, a2, a1
 	srli	a2, a2, 32
 	add	a1, a1, a2

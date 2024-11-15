@@ -25,8 +25,8 @@ func0000000000000035:                   # @func0000000000000035
 	lui	a2, 1048544
 	addi	a2, a2, -165
 	czero.eqz	a0, a2, a0
+	lui	a2, 965733
 	add	a0, a0, a1
-	lui	a1, 965733
-	addi	a1, a1, -2047
+	addi	a1, a2, -2047
 	addw	a0, a0, a1
 	ret

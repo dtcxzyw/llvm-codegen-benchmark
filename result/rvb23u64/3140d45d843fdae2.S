@@ -7,9 +7,9 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func0000000000000004:                   # @func0000000000000004
 	li	a2, 64
+	lui	a3, 526344
 	subw	a2, a2, a1
-	lui	a1, 526344
-	addi	a1, a1, 128
+	addi	a1, a3, 128
 	slli	a3, a1, 32
 	add.uw	a1, a1, a3
 	srl	a1, a1, a2

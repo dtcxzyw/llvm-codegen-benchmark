@@ -2,8 +2,8 @@ func0000000000000031:                   # @func0000000000000031
 	li	a1, -11
 	slli	a1, a1, 47
 	xor	a0, a0, a1
-	snez	a0, a0
 	li	a1, -5
+	snez	a0, a0
 	slli	a1, a1, 48
 	or	a0, a0, a1
 	ret

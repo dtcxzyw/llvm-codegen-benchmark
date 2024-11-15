@@ -6,25 +6,25 @@ func0000000000000146:                   # @func0000000000000146
 	ret
 func0000000000000049:                   # @func0000000000000049
 	slli	a2, a2, 32
+	sltu	a1, a0, a1
 	srli	a2, a2, 32
-	sltu	a2, a0, a2
-	sltu	a0, a0, a1
-	not	a0, a0
-	and	a0, a0, a2
+	sltu	a0, a0, a2
+	not	a1, a1
+	and	a0, a0, a1
 	ret
 func0000000000000149:                   # @func0000000000000149
 	sext.w	a2, a2
-	sltu	a2, a0, a2
-	sltu	a0, a0, a1
-	not	a0, a0
-	and	a0, a0, a2
+	sltu	a1, a0, a1
+	sltu	a0, a0, a2
+	not	a1, a1
+	and	a0, a0, a1
 	ret
 func000000000000014b:                   # @func000000000000014b
 	sext.w	a2, a2
-	sltu	a2, a0, a2
-	slt	a0, a0, a1
-	not	a0, a0
-	and	a0, a0, a2
+	slt	a1, a0, a1
+	sltu	a0, a0, a2
+	not	a1, a1
+	and	a0, a0, a1
 	ret
 func0000000000000188:                   # @func0000000000000188
 	sext.w	a2, a2

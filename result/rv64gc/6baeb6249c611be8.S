@@ -8,8 +8,8 @@ func00000000000001cc:                   # @func00000000000001cc
 	sext.w	a3, a0
 	subw	a0, a0, a1
 	addi	a0, a0, -1
-	snez	a0, a0
 	xor	a2, a2, a3
+	snez	a0, a0
 	snez	a1, a2
 	and	a0, a0, a1
 	ret

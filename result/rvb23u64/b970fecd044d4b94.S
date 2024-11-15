@@ -2,9 +2,9 @@ func000000000000004c:                   # @func000000000000004c
 	sext.w	a0, a0
 	negw	a1, a0
 	max	a0, a0, a1
-	addiw	a0, a0, 30
 	lui	a1, 559241
 	addiw	a1, a1, -1911
+	addiw	a0, a0, 30
 	mul	a1, a1, a0
 	srli	a1, a1, 32
 	add	a0, a0, a1
@@ -17,8 +17,8 @@ func000000000000004c:                   # @func000000000000004c
 	lui	a1, 34953
 	addi	a1, a1, -1912
 	add	a0, a0, a1
-	roriw	a0, a0, 2
 	lui	a1, 17476
+	roriw	a0, a0, 2
 	addiw	a1, a1, 1092
 	sltu	a0, a1, a0
 	ret

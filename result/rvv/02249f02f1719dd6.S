@@ -13,8 +13,8 @@ func0000000000000038:                   # @func0000000000000038
 	vsll.vi	v10, v10, 18
 	lui	a0, 448
 	vand.vx	v10, v10, a0
-	vor.vv	v8, v10, v8
 	lui	a0, 16
+	vor.vv	v8, v10, v8
 	addi	a0, a0, -1
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v0, v0, v10

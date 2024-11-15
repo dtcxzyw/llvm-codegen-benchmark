@@ -14,9 +14,9 @@ func0000000000000006:                   # @func0000000000000006
 	li	a0, 255
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v8, a0
-	vadd.vi	v10, v10, 2
 	lui	a0, 4096
 	addi	a0, a0, -256
+	vadd.vi	v10, v10, 2
 	vand.vx	v8, v8, a0
 	vor.vv	v8, v10, v8
 	ret

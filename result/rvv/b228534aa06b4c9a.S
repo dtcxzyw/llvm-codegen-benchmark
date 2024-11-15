@@ -1,7 +1,7 @@
 func0000000000000004:                   # @func0000000000000004
+	lui	a0, 335544
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vadd.vv	v8, v8, v10, v0.t
-	lui	a0, 335544
 	addi	a0, a0, 1311
 	vmulh.vx	v8, v8, a0
 	vsra.vi	v8, v8, 5

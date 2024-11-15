@@ -5,12 +5,12 @@
 func0000000000000058:                   # @func0000000000000058
 	sub	a1, a1, a0
 	lui	a0, 748983
-	addiw	a0, a0, -585
-	slli	a2, a0, 33
-	add	a0, a0, a2
 	lui	a2, %hi(.LCPI0_0)
-	ld	a2, %lo(.LCPI0_0)(a2)
+	addiw	a0, a0, -585
+	slli	a3, a0, 33
+	add	a0, a0, a3
 	lui	a3, %hi(.LCPI0_1)
+	ld	a2, %lo(.LCPI0_0)(a2)
 	ld	a3, %lo(.LCPI0_1)(a3)
 	srai	a1, a1, 3
 	mul	a0, a1, a0
@@ -24,8 +24,8 @@ func0000000000000051:                   # @func0000000000000051
 	ret
 func0000000000000054:                   # @func0000000000000054
 	sub	a1, a1, a0
-	srai	a1, a1, 3
 	lui	a0, 699051
+	srai	a1, a1, 3
 	addiw	a0, a0, -1365
 	slli	a2, a0, 32
 	add	a0, a0, a2

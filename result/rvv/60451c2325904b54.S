@@ -26,8 +26,8 @@ func0000000000000020:                   # @func0000000000000020
 	lui	a0, 947030
 	addi	a0, a0, 1353
 	vxor.vx	v9, v9, a0
-	vadd.vv	v8, v8, v9
 	lui	a0, 249451
+	vadd.vv	v8, v8, v9
 	addi	a0, a0, -856
 	vadd.vx	v8, v8, a0
 	ret

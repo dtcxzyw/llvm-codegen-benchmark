@@ -17,17 +17,17 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func0000000000000014:                   # @func0000000000000014
 	fadd.s	fa5, fa1, fa2
+	lui	a0, 212992
 	fadd.s	fa5, fa5, fa0
 	fabs.s	fa5, fa5
-	lui	a0, 212992
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	ret
 func0000000000000012:                   # @func0000000000000012
 	fadd.s	fa5, fa1, fa2
+	lui	a0, 212992
 	fadd.s	fa5, fa5, fa0
 	fabs.s	fa5, fa5
-	lui	a0, 212992
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	ret

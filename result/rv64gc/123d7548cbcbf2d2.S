@@ -1,9 +1,9 @@
 func000000000000003f:                   # @func000000000000003f
 	addw	a0, a0, a1
-	slli	a1, a0, 32
-	lui	a2, 9363
-	slli	a2, a2, 20
-	mulhu	a1, a1, a2
+	lui	a1, 9363
+	slli	a2, a0, 32
+	slli	a1, a1, 20
+	mulhu	a1, a2, a1
 	srli	a1, a1, 16
 	subw	a2, a0, a1
 	slli	a2, a2, 48

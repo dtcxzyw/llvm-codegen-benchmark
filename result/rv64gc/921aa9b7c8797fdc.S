@@ -9,8 +9,8 @@ func00000000000000ca:                   # @func00000000000000ca
 	ret
 func0000000000000090:                   # @func0000000000000090
 	ori	a2, a2, 1
-	sext.w	a2, a2
 	slli	a1, a1, 1
+	sext.w	a2, a2
 	add	a0, a0, a1
 	slli	a2, a2, 1
 	add	a0, a0, a2

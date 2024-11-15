@@ -3,10 +3,10 @@ func000000000000000d:                   # @func000000000000000d
 	addiw	a2, a2, -1
 	and	a1, a1, a2
 	and	a0, a0, a2
+	lui	a2, 9
 	sub	a0, a1, a0
-	lui	a1, 9
-	addiw	a1, a1, 3
-	add	a0, a0, a1
+	addiw	a2, a2, 3
+	add	a0, a0, a2
 	ret
 func0000000000000005:                   # @func0000000000000005
 	lui	a2, 16

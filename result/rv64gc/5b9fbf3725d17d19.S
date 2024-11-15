@@ -19,9 +19,9 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func0000000000000018:                   # @func0000000000000018
 	andi	a1, a1, 255
+	sltiu	a0, a0, 2
 	addi	a1, a1, -255
 	seqz	a1, a1
-	sltiu	a0, a0, 2
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -52,9 +52,9 @@ func0000000000000181:                   # @func0000000000000181
 	ret
 func0000000000000148:                   # @func0000000000000148
 	andi	a1, a1, 255
+	sltiu	a0, a0, 2
 	addi	a1, a1, -97
 	sltiu	a1, a1, 6
-	sltiu	a0, a0, 2
 	not	a0, a0
 	and	a0, a0, a1
 	ret

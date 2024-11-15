@@ -26,10 +26,10 @@ func0000000000000008:                   # @func0000000000000008
 func000000000000000f:                   # @func000000000000000f
 	li	a0, 32
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vmv.v.x	v10, a0
-	vnsrl.wi	v11, v8, 0
-	vand.vi	v8, v11, 7
-	vsll.vv	v8, v10, v8
+	vnsrl.wi	v10, v8, 0
+	vmv.v.x	v8, a0
+	vand.vi	v9, v10, 7
+	vsll.vv	v8, v8, v9
 	ret
 func0000000000000005:                   # @func0000000000000005
 	vsetivli	zero, 8, e16, m1, ta, ma

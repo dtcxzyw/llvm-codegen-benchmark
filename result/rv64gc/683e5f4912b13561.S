@@ -21,8 +21,8 @@ func000000000000000e:                   # @func000000000000000e
 func000000000000000a:                   # @func000000000000000a
 	lui	a1, 277312
 	fmv.w.x	fa5, a1
-	fsub.s	fa5, fa5, fa0
 	lui	a1, 274784
+	fsub.s	fa5, fa5, fa0
 	fmv.w.x	fa4, a1
 	fle.s	a1, fa5, fa4
 	and	a0, a0, a1
@@ -30,8 +30,8 @@ func000000000000000a:                   # @func000000000000000a
 func0000000000000002:                   # @func0000000000000002
 	lui	a1, 277312
 	fmv.w.x	fa5, a1
-	fsub.s	fa5, fa5, fa0
 	lui	a1, 275744
+	fsub.s	fa5, fa5, fa0
 	fmv.w.x	fa4, a1
 	flt.s	a1, fa5, fa4
 	and	a0, a0, a1
@@ -39,8 +39,8 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000004:                   # @func0000000000000004
 	lui	a1, 277312
 	fmv.w.x	fa5, a1
-	fsub.s	fa5, fa5, fa0
 	lui	a1, 274784
+	fsub.s	fa5, fa5, fa0
 	fmv.w.x	fa4, a1
 	flt.s	a1, fa4, fa5
 	and	a0, a0, a1

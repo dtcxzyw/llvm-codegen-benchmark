@@ -57,8 +57,8 @@ func0000000000000018:                   # @func0000000000000018
 	addi	a0, a0, -511
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
-	vmseq.vi	v12, v10, 0
 	li	a0, 63
+	vmseq.vi	v12, v10, 0
 	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v12
 	ret
@@ -76,8 +76,8 @@ func00000000000000c4:                   # @func00000000000000c4
 	addi	a0, a0, 771
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
-	vmsne.vi	v12, v10, 0
 	li	a0, -20
+	vmsne.vi	v12, v10, 0
 	vmsltu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v12
 	ret
@@ -89,8 +89,8 @@ func00000000000000c8:                   # @func00000000000000c8
 	addi	a0, a0, -7
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
-	vmsne.vi	v12, v10, 0
 	li	a0, 63
+	vmsne.vi	v12, v10, 0
 	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v12
 	ret

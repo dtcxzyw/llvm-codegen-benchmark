@@ -14,8 +14,8 @@ func0000000000000ccc:                   # @func0000000000000ccc
 	ret
 func0000000000000448:                   # @func0000000000000448
 	srliw	a2, a2, 24
-	sltiu	a2, a2, 255
 	srliw	a1, a1, 24
+	sltiu	a2, a2, 255
 	sltiu	a1, a1, 255
 	or	a1, a1, a2
 	li	a2, 1

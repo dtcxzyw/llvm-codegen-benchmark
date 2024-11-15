@@ -1,7 +1,7 @@
 func000000000000000f:                   # @func000000000000000f
 	lui	a3, 13
-	and	a2, a2, a3
 	slliw	a1, a1, 11
+	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -13,30 +13,30 @@ func000000000000001f:                   # @func000000000000001f
 	ret
 func000000000000001c:                   # @func000000000000001c
 	lui	a3, 1
-	and	a2, a2, a3
 	slliw	a1, a1, 14
+	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 func000000000000000c:                   # @func000000000000000c
 	lui	a3, 8
-	and	a2, a2, a3
 	slliw	a1, a1, 19
+	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 func000000000000001b:                   # @func000000000000001b
 	slli	a2, a2, 51
-	srli	a2, a2, 51
 	slliw	a1, a1, 26
+	srli	a2, a2, 51
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 func0000000000000013:                   # @func0000000000000013
 	lui	a3, 1
+	slliw	a1, a1, 12
 	addiw	a3, a3, -2
 	and	a2, a2, a3
-	slliw	a1, a1, 12
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

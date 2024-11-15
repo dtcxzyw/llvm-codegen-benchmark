@@ -8,8 +8,8 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000011:                   # @func0000000000000011
 	or	a0, a0, a1
-	sext.w	a0, a0
 	lui	a1, 196384
+	sext.w	a0, a0
 	addiw	a1, a1, 274
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -18,11 +18,11 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func0000000000000014:                   # @func0000000000000014
 	or	a0, a0, a1
-	sext.w	a1, a0
-	lui	a0, 8
-	addiw	a2, a0, 1132
+	lui	a1, 8
+	sext.w	a2, a0
+	addiw	a1, a1, 1132
 	li	a0, 1131
-	bltu	a1, a2, .LBB2_2
+	bltu	a2, a1, .LBB2_2
 	lui	a0, 8
 .LBB2_2:                                # %entry
 	ret

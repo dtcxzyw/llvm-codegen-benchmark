@@ -11,8 +11,8 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000008:                   # @func0000000000000008
 	sllw	a1, a1, a2
+	lui	a2, 512
 	add	a0, a0, a1
-	lui	a1, 512
-	addiw	a1, a1, -1024
+	addiw	a1, a2, -1024
 	and	a0, a0, a1
 	ret

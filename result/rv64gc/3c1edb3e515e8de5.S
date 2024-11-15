@@ -39,9 +39,9 @@ func000000000000003a:                   # @func000000000000003a
 	ret
 func0000000000000018:                   # @func0000000000000018
 	sub	a1, a1, a2
+	lui	a2, 3
 	add	a0, a0, a1
-	lui	a1, 3
-	addiw	a1, a1, -800
+	addiw	a1, a2, -800
 	add	a0, a0, a1
 	ret
 func000000000000001a:                   # @func000000000000001a

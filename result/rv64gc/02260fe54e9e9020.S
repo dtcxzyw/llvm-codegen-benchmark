@@ -19,12 +19,12 @@ func000000000000003d:                   # @func000000000000003d
 	slli	a3, a2, 1
 	slli	a2, a2, 3
 	sub	a2, a2, a3
+	lui	a3, 61440
+	addiw	a3, a3, 15
 	add	a1, a1, a2
+	slli	a3, a3, 24
 	srli	a1, a1, 4
-	lui	a2, 61440
-	addiw	a2, a2, 15
-	slli	a2, a2, 24
-	addi	a2, a2, 15
-	and	a1, a1, a2
+	addi	a3, a3, 15
+	and	a1, a1, a3
 	or	a0, a0, a1
 	ret

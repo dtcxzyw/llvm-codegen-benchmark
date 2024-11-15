@@ -1,7 +1,7 @@
 func0000000000000007:                   # @func0000000000000007
 	sext.w	a1, a1
-	addi	a1, a1, -8
 	slli	a0, a0, 2
+	addi	a1, a1, -8
 	andi	a0, a0, 4
 	li	a2, 4
 	czero.nez	a1, a2, a1

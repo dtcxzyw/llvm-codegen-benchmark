@@ -7,12 +7,12 @@ func0000000000000067:                   # @func0000000000000067
 	ret
 func000000000000000c:                   # @func000000000000000c
 	lui	a0, 32885
-	addi	a0, a0, -1200
 	vsetivli	zero, 4, e32, m1, ta, ma
+	vmv.v.i	v11, 12
+	addi	a0, a0, -1200
 	vmseq.vx	v0, v10, a0
-	vmv.v.i	v10, 12
 	li	a0, 16
-	vmerge.vxm	v10, v10, a0, v0
+	vmerge.vxm	v10, v11, a0, v0
 	vwaddu.wv	v8, v8, v10
 	ret
 func0000000000000027:                   # @func0000000000000027

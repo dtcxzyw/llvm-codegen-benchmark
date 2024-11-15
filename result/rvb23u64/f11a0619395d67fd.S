@@ -12,10 +12,10 @@ func0000000000000018:                   # @func0000000000000018
 func0000000000000016:                   # @func0000000000000016
 	sext.w	a1, a1
 	sext.w	a3, a2
-	addi	a3, a3, 1
-	czero.eqz	a2, a2, a3
 	lui	a4, 524288
+	addi	a3, a3, 1
 	addi	a4, a4, -1
+	czero.eqz	a2, a2, a3
 	czero.nez	a3, a4, a3
 	or	a2, a2, a3
 	sext.w	a2, a2

@@ -6,9 +6,9 @@ func000000000000001c:                   # @func000000000000001c
 	lui	a0, 615165
 	addi	a0, a0, -1693
 	vmacc.vx	v10, a0, v8
-	vror.vi	v10, v10, 2
 	lui	a0, 3495
 	addi	a0, a0, 1036
+	vror.vi	v10, v10, 2
 	vmsleu.vx	v12, v10, a0
 	vmsne.vi	v10, v8, 0
 	vmand.mm	v0, v10, v12
@@ -32,13 +32,13 @@ func00000000000000a6:                   # @func00000000000000a6
 	addi	a0, a0, 1311
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmulh.vx	v10, v8, a0
+	li	a0, 100
 	vsra.vi	v10, v10, 5
 	vsrl.vi	v12, v10, 31
 	vadd.vv	v10, v10, v12
-	li	a0, 100
 	vnmsub.vx	v10, a0, v8
-	vmsgt.vi	v12, v10, 0
 	li	a0, -1999
+	vmsgt.vi	v12, v10, 0
 	vmslt.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	ret

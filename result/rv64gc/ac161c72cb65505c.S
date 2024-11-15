@@ -1,9 +1,9 @@
 func0000000000000045:                   # @func0000000000000045
 	sext.w	a0, a0
 	sext.w	a2, a2
+	srli	a1, a1, 32
 	sltu	a0, a0, a2
 	not	a0, a0
-	srli	a1, a1, 32
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
@@ -24,9 +24,9 @@ func0000000000000041:                   # @func0000000000000041
 func00000000000000c8:                   # @func00000000000000c8
 	sext.w	a1, a1
 	sext.w	a2, a2
+	srli	a0, a0, 32
 	xor	a1, a1, a2
 	snez	a1, a1
-	srli	a0, a0, 32
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

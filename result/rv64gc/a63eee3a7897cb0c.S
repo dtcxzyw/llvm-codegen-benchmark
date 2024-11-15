@@ -24,14 +24,14 @@ func000000000000000a:                   # @func000000000000000a
 	sub	a3, a1, a2
 	srli	a3, a3, 1
 	add	a2, a2, a3
+	li	a3, 80
 	srli	a2, a2, 12
-	slli	a3, a2, 13
 	add	a1, a1, a2
-	sub	a1, a1, a3
-	li	a2, 80
-	mul	a1, a1, a2
+	slli	a2, a2, 13
+	sub	a1, a1, a2
 	lui	a2, 1
 	addiw	a2, a2, 192
+	mul	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

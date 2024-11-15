@@ -22,26 +22,26 @@ func000000000000004a:                   # @func000000000000004a
 	ret
 func0000000000000088:                   # @func0000000000000088
 	mul	a1, a1, a2
+	lui	a2, 78125
 	mul	a0, a0, a1
-	lui	a1, 78125
-	slli	a1, a1, 11
-	addi	a1, a1, -1
-	sltu	a0, a1, a0
+	slli	a2, a2, 11
+	addi	a2, a2, -1
+	sltu	a0, a2, a0
 	ret
 func00000000000000f1:                   # @func00000000000000f1
 	mul	a1, a1, a2
+	lui	a2, 65279
 	mul	a0, a0, a1
-	lui	a1, 65279
-	addiw	a1, a1, 16
-	xor	a0, a0, a1
+	addiw	a2, a2, 16
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 func00000000000000fc:                   # @func00000000000000fc
 	mul	a1, a1, a2
+	lui	a2, 65279
 	mul	a0, a0, a1
-	lui	a1, 65279
-	addiw	a1, a1, 16
-	xor	a0, a0, a1
+	addiw	a2, a2, 16
+	xor	a0, a0, a2
 	snez	a0, a0
 	ret
 func00000000000000f8:                   # @func00000000000000f8
@@ -147,8 +147,8 @@ func00000000000000e4:                   # @func00000000000000e4
 	ret
 func0000000000000054:                   # @func0000000000000054
 	mul	a1, a1, a2
+	lui	a2, 88
 	mul	a0, a0, a1
-	lui	a1, 88
-	addiw	a1, a1, -2047
+	addiw	a1, a2, -2047
 	sltu	a0, a0, a1
 	ret

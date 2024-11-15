@@ -2,9 +2,9 @@ func0000000000000008:                   # @func0000000000000008
 	sext.w	a0, a0
 	lui	a2, 8
 	add	a1, a1, a2
-	slli	a1, a1, 32
 	lui	a2, 524296
 	addi	a2, a2, 1
+	slli	a1, a1, 32
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
 	srli	a1, a1, 47
@@ -14,9 +14,9 @@ func0000000000000001:                   # @func0000000000000001
 	sext.w	a0, a0
 	lui	a2, 8
 	add	a1, a1, a2
-	slli	a1, a1, 32
 	lui	a2, 524296
 	addi	a2, a2, 1
+	slli	a1, a1, 32
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
 	srli	a1, a1, 47
@@ -38,8 +38,8 @@ func0000000000000021:                   # @func0000000000000021
 func0000000000000004:                   # @func0000000000000004
 	sext.w	a0, a0
 	addi	a1, a1, 999
-	zext.w	a1, a1
 	lui	a2, 67109
+	zext.w	a1, a1
 	addiw	a2, a2, -557
 	mul	a1, a1, a2
 	srli	a1, a1, 38

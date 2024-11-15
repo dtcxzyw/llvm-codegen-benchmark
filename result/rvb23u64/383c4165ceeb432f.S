@@ -12,8 +12,8 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func000000000000000a:                   # @func000000000000000a
 	sub	a1, a1, a0
-	addi	a1, a1, -3
 	lui	a0, 16
+	addi	a1, a1, -3
 	addiw	a0, a0, -1
 	minu	a0, a1, a0
 	ret

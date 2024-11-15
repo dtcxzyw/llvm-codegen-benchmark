@@ -40,10 +40,10 @@ func0000000000000016:                   # @func0000000000000016
 	vmerge.vvm	v8, v10, v8, v0
 	ret
 func0000000000000038:                   # @func0000000000000038
-	li	a0, 1023
-	li	a1, 1022
+	li	a0, 1022
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsgtu.vx	v0, v10, a1
+	vmsgtu.vx	v0, v10, a0
+	li	a0, 1023
 	vrsub.vx	v10, v10, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret

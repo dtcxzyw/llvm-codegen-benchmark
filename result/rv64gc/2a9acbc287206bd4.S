@@ -42,8 +42,8 @@ func000000000000001e:                   # @func000000000000001e
 	lui	a2, 16
 	addiw	a2, a2, -1
 	and	a1, a1, a2
-	slli	a1, a1, 4
 	and	a0, a0, a2
+	slli	a1, a1, 4
 	slli	a0, a0, 12
 	or	a0, a0, a1
 	ret

@@ -15,9 +15,9 @@ func0000000000000238:                   # @func0000000000000238
 	lui	a0, 796918
 	addi	a0, a0, -983
 	vmacc.vx	v12, a0, v10
-	vror.vi	v10, v12, 4
 	lui	a0, 2621
 	addi	a0, a0, 1802
+	vror.vi	v10, v12, 4
 	vmsleu.vx	v12, v10, a0
 	vmsne.vi	v10, v8, 0
 	vmor.mm	v0, v10, v12

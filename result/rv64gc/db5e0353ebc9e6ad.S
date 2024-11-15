@@ -16,9 +16,9 @@ func000000000000004d:                   # @func000000000000004d
 func0000000000000024:                   # @func0000000000000024
 	fadd.s	fa5, fa0, fa1
 	lui	a0, 784384
+	lui	a1, 292864
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
-	lui	a1, 292864
 	fmv.w.x	fa4, a1
 	flt.s	a1, fa5, fa4
 	and	a0, a0, a1
@@ -36,9 +36,9 @@ func00000000000000db:                   # @func00000000000000db
 func0000000000000042:                   # @func0000000000000042
 	fadd.s	fa5, fa0, fa1
 	lui	a0, 283576
+	lui	a1, 281862
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
-	lui	a1, 281862
 	fmv.w.x	fa4, a1
 	flt.s	a1, fa4, fa5
 	and	a0, a0, a1

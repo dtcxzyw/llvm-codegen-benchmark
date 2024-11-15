@@ -9,8 +9,8 @@ func00000000000002c4:                   # @func00000000000002c4
 	ret
 func0000000000000244:                   # @func0000000000000244
 	bset	a1, zero, a1
-	andi	a1, a1, -2
 	lui	a2, 1
+	andi	a1, a1, -2
 	addiw	a2, a2, 1
 	sltu	a1, a1, a2
 	lui	a2, 4

@@ -1,8 +1,8 @@
 func000000000000004e:                   # @func000000000000004e
 	sext.w	a2, a2
 	sub	a0, a0, a1
-	srai	a0, a0, 2
 	lui	a1, 699051
+	srai	a0, a0, 2
 	addiw	a1, a1, -1365
 	slli	a3, a1, 32
 	add	a1, a1, a3
@@ -14,10 +14,10 @@ func000000000000004e:                   # @func000000000000004e
 	ret
 func000000000000000e:                   # @func000000000000000e
 	slli	a2, a2, 32
-	srli	a2, a2, 32
 	sub	a0, a0, a1
-	srai	a0, a0, 2
 	lui	a1, 699051
+	srli	a2, a2, 32
+	srai	a0, a0, 2
 	addiw	a1, a1, -1365
 	slli	a3, a1, 32
 	add	a1, a1, a3

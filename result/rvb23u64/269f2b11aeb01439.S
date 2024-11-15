@@ -6,9 +6,9 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func000000000000000d:                   # @func000000000000000d
 	subw	a1, a1, a0
-	slli	a0, a1, 32
-	li	a1, -1
+	li	a0, -1
 	slli	a1, a1, 32
+	slli	a0, a0, 32
 	add	a0, a0, a1
 	ret
 func0000000000000002:                   # @func0000000000000002
@@ -19,17 +19,17 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func0000000000000005:                   # @func0000000000000005
 	sub	a1, a1, a0
-	slli	a0, a1, 8
-	li	a1, 1
-	slli	a1, a1, 40
-	addi	a1, a1, -1280
+	li	a0, 1
+	slli	a1, a1, 8
+	slli	a0, a0, 40
+	addi	a0, a0, -1280
 	add	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
 	sub	a1, a1, a0
-	slli	a0, a1, 30
-	li	a1, -1
-	slli	a1, a1, 32
+	li	a0, -1
+	slli	a1, a1, 30
+	slli	a0, a0, 32
 	add	a0, a0, a1
 	ret
 func0000000000000003:                   # @func0000000000000003

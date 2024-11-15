@@ -7,15 +7,15 @@ func000000000000001a:                   # @func000000000000001a
 	ret
 func000000000000005a:                   # @func000000000000005a
 	sext.w	a2, a2
-	slli	a2, a2, 5
 	slli.uw	a1, a1, 5
+	slli	a2, a2, 5
 	add	a0, a0, a1
 	sub	a0, a0, a2
 	ret
 func0000000000000058:                   # @func0000000000000058
 	sext.w	a2, a2
-	slli	a2, a2, 5
 	andi	a1, a1, -128
+	slli	a2, a2, 5
 	add	a0, a0, a1
 	sub	a0, a0, a2
 	ret

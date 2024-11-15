@@ -1,10 +1,10 @@
 func0000000000000003:                   # @func0000000000000003
 	andi	a2, a2, 1
-	addi	a2, a2, -1
 	li	a3, 1
+	slli	a1, a1, 61
+	addi	a2, a2, -1
 	slli	a3, a3, 60
 	and	a2, a2, a3
-	slli	a1, a1, 61
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -51,8 +51,8 @@ func000000000000000f:                   # @func000000000000000f
 	ret
 func000000000000000b:                   # @func000000000000000b
 	andi	a2, a2, 1
-	slli	a2, a2, 16
 	slli	a1, a1, 32
+	slli	a2, a2, 16
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

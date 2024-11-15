@@ -10,8 +10,8 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000014:                   # @func0000000000000014
 	addiw	a0, a0, -7
-	sltiu	a0, a0, 2
 	lui	a1, 1
+	sltiu	a0, a0, 2
 	addiw	a1, a1, 327
 	xor	a0, a0, a1
 	ret

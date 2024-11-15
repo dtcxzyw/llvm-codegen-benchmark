@@ -16,10 +16,10 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func0000000000000001:                   # @func0000000000000001
 	li	a0, -1
+	slli	a3, a1, 32
 	bclri	a0, a0, 32
 	mulhsu	a2, a0, a1
-	slli	a0, a1, 32
-	neg	a1, a1
-	sub	a0, a1, a0
+	neg	a0, a1
+	sub	a0, a0, a3
 	mv	a1, a2
 	ret

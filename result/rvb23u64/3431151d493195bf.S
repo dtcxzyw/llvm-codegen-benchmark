@@ -3,10 +3,10 @@ func00000000000001a1:                   # @func00000000000001a1
 	sext.w	a1, a1
 	lui	a3, 524288
 	addi	a3, a3, -1
+	addi	a2, a2, 1
 	xor	a0, a0, a3
 	sext.w	a0, a0
 	slt	a0, a0, a1
-	addi	a2, a2, 1
 	seqz	a1, a2
 	or	a0, a0, a1
 	ret

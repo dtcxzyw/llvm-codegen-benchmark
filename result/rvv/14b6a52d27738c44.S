@@ -3,8 +3,8 @@ func0000000000000075:                   # @func0000000000000075
 	vsll.vi	v12, v12, 16
 	lui	a0, 496
 	vand.vx	v12, v12, a0
-	vor.vv	v10, v12, v10
 	lui	a0, 1048409
+	vor.vv	v10, v12, v10
 	addiw	a0, a0, 131
 	vmadd.vx	v8, a0, v10
 	ret
@@ -13,8 +13,8 @@ func000000000000007f:                   # @func000000000000007f
 	vsll.vi	v12, v12, 16
 	lui	a0, 496
 	vand.vx	v12, v12, a0
-	vor.vv	v8, v12, v8
 	lui	a0, 115
+	vor.vv	v8, v12, v8
 	addiw	a0, a0, -744
 	vmacc.vx	v8, a0, v10
 	ret
@@ -23,8 +23,8 @@ func0000000000000070:                   # @func0000000000000070
 	vsll.vi	v12, v12, 16
 	lui	a0, 496
 	vand.vx	v12, v12, a0
-	vor.vv	v10, v12, v10
 	lui	a0, 163
+	vor.vv	v10, v12, v10
 	addiw	a0, a0, -1005
 	vmadd.vx	v8, a0, v10
 	ret

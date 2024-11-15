@@ -9,8 +9,8 @@ func000000000000001f:                   # @func000000000000001f
 	lui	a2, 16
 	addiw	a2, a2, -1
 	and	a1, a1, a2
-	slli	a1, a1, 16
 	and	a0, a0, a2
+	slli	a1, a1, 16
 	slli	a0, a0, 32
 	or	a0, a0, a1
 	ret
@@ -25,8 +25,8 @@ func000000000000001e:                   # @func000000000000001e
 	lui	a2, 16
 	addiw	a2, a2, -1
 	and	a1, a1, a2
-	slli	a1, a1, 10
 	and	a0, a0, a2
+	slli	a1, a1, 10
 	slli	a0, a0, 15
 	or	a0, a0, a1
 	ret
@@ -34,8 +34,8 @@ func000000000000007f:                   # @func000000000000007f
 	lui	a2, 16
 	addiw	a2, a2, -1
 	and	a1, a1, a2
-	slli	a1, a1, 13
 	and	a0, a0, a2
+	slli	a1, a1, 13
 	slli	a0, a0, 21
 	or	a0, a0, a1
 	ret
@@ -50,8 +50,8 @@ func000000000000003f:                   # @func000000000000003f
 	lui	a2, 16
 	addiw	a2, a2, -1
 	and	a1, a1, a2
-	slli	a1, a1, 32
 	and	a0, a0, a2
+	slli	a1, a1, 32
 	slli	a0, a0, 16
 	or	a0, a0, a1
 	ret

@@ -7,8 +7,8 @@ func0000000000000006:                   # @func0000000000000006
 func0000000000000008:                   # @func0000000000000008
 	sext.w	a1, a0
 	bseti	a0, a0, 19
-	sltiu	a1, a1, 3
 	lui	a2, 128
+	sltiu	a1, a1, 3
 	addiw	a2, a2, 4
 	czero.eqz	a2, a2, a1
 	czero.nez	a0, a0, a1

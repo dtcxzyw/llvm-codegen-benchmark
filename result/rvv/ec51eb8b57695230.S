@@ -33,15 +33,16 @@ func000000000000000c:                   # @func000000000000000c
 	vmerge.vxm	v8, v8, a0, v0
 	ret
 func0000000000000008:                   # @func0000000000000008
+	li	a0, 24
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.x	v10, a0
 	lui	a0, 25
 	addi	a0, a0, 1631
-	vsetivli	zero, 4, e32, m1, ta, ma
+	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsgtu.vx	v0, v8, a0
-	li	a0, 24
-	vsetvli	zero, zero, e64, m2, ta, ma
-	vmv.v.x	v8, a0
 	li	a0, 47
-	vmerge.vxm	v8, v8, a0, v0
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vmerge.vxm	v8, v10, a0, v0
 	ret
 func0000000000000006:                   # @func0000000000000006
 	vsetivli	zero, 4, e32, m1, ta, ma

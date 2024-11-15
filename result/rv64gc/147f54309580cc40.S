@@ -26,10 +26,10 @@ func0000000000000006:                   # @func0000000000000006
 	lui	a3, 244141
 	addiw	a3, a3, -1536
 	mul	a2, a2, a3
+	lui	a3, 976563
 	sub	a1, a1, a2
 	srai	a1, a1, 63
-	lui	a2, 976563
-	addi	a2, a2, -2048
+	addi	a2, a3, -2048
 	and	a1, a1, a2
 	addw	a0, a0, a1
 	ret

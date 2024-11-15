@@ -23,8 +23,8 @@ func000000000000004a:                   # @func000000000000004a
 	ret
 func0000000000000008:                   # @func0000000000000008
 	andi	a2, a2, 1
-	add	a0, a0, a2
 	andi	a1, a1, 1
+	add	a0, a0, a2
 	add	a0, a0, a1
 	li	a1, 2047
 	sltu	a0, a1, a0

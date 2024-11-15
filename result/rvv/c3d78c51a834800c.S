@@ -85,8 +85,8 @@ func000000000000001c:                   # @func000000000000001c
 func00000000000000a4:                   # @func00000000000000a4
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
-	vmslt.vv	v9, v12, v9
 	li	a0, -17
+	vmslt.vv	v9, v12, v9
 	vmsltu.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9
 	ret

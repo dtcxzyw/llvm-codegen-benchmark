@@ -5,8 +5,8 @@ func0000000000000001:                   # @func0000000000000001
 	lui	a2, 512
 	addiw	a2, a2, -32
 	and	a0, a0, a2
+	lui	a2, 600576
 	or	a0, a0, a1
-	lui	a1, 600576
-	addiw	a1, a1, -32
-	xor	a0, a0, a1
+	addiw	a2, a2, -32
+	xor	a0, a0, a2
 	ret

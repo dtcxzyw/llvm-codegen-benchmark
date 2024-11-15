@@ -1,9 +1,9 @@
 func0000000000000054:                   # @func0000000000000054
 	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsra.vx	v12, v12, a0
 	vsub.vv	v8, v10, v8
-	vsub.vv	v8, v12, v8
+	vsra.vx	v10, v12, a0
+	vsub.vv	v8, v10, v8
 	bseti	a0, zero, 32
 	vmsltu.vx	v0, v8, a0
 	ret
@@ -22,8 +22,8 @@ func0000000000000158:                   # @func0000000000000158
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v12, v12, 2
 	vsub.vv	v8, v10, v8
-	vsub.vv	v8, v12, v8
 	li	a0, -1
+	vsub.vv	v8, v12, v8
 	srli	a0, a0, 3
 	vmsgtu.vx	v0, v8, a0
 	ret

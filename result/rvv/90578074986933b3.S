@@ -12,8 +12,8 @@ func000000000000007c:                   # @func000000000000007c
 	vsll.vi	v10, v10, 18
 	lui	a0, 448
 	vand.vx	v10, v10, a0
-	vor.vv	v8, v10, v8
 	lui	a0, 272
+	vor.vv	v8, v10, v8
 	addi	a0, a0, 1
 	vmsne.vx	v0, v8, a0
 	ret
@@ -22,8 +22,8 @@ func0000000000000078:                   # @func0000000000000078
 	vsll.vi	v10, v10, 18
 	lui	a0, 448
 	vand.vx	v10, v10, a0
-	vor.vv	v8, v10, v8
 	lui	a0, 272
+	vor.vv	v8, v10, v8
 	addi	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret

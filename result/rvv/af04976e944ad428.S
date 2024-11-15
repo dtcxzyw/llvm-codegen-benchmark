@@ -1,8 +1,8 @@
 func0000000000000001:                   # @func0000000000000001
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsne.vi	v10, v8, 0
-	vmor.mm	v0, v0, v10
 	li	a0, 19
+	vmor.mm	v0, v0, v10
 	vmv.v.x	v8, a0
 	li	a0, 22
 	vmerge.vxm	v8, v8, a0, v0

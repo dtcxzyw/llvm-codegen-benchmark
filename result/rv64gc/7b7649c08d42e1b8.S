@@ -18,8 +18,8 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 func0000000000000016:                   # @func0000000000000016
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	andi	a2, a1, 255
+	srai	a0, a0, 56
 	addi	a2, a2, -47
 	seqz	a2, a2
 	addi	a2, a2, -1
@@ -30,8 +30,8 @@ func0000000000000016:                   # @func0000000000000016
 	ret
 func000000000000001a:                   # @func000000000000001a
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	andi	a2, a1, 255
+	srai	a0, a0, 56
 	addi	a2, a2, -47
 	seqz	a2, a2
 	addi	a2, a2, -1

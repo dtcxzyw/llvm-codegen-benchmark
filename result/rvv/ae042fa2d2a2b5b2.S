@@ -36,9 +36,9 @@ func0000000000000045:                   # @func0000000000000045
 	ret
 func0000000000000004:                   # @func0000000000000004
 	li	a0, 32
+	li	a1, -5
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vx	v10, v10, a0
-	li	a1, -5
 	slli	a1, a1, 34
 	vadd.vx	v10, v10, a1
 	vsra.vx	v10, v10, a0
@@ -46,9 +46,9 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000044:                   # @func0000000000000044
 	li	a0, 32
+	li	a1, -5
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vx	v10, v10, a0
-	li	a1, -5
 	slli	a1, a1, 34
 	vadd.vx	v10, v10, a1
 	vsra.vx	v10, v10, a0

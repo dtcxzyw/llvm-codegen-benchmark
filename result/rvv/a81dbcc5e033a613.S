@@ -14,9 +14,9 @@ func00000000000001c4:                   # @func00000000000001c4
 	lui	a0, 16
 	addi	a0, a0, -2
 	vand.vx	v10, v10, a0
-	vmsne.vi	v12, v10, 0
 	lui	a0, 256
 	addi	a0, a0, 528
+	vmsne.vi	v12, v10, 0
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	ret

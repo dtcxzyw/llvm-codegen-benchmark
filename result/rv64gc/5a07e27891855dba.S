@@ -9,11 +9,11 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000000:                   # @func0000000000000000
 	slli	a1, a1, 16
 	lui	a2, 1048560
-	addw	a1, a1, a2
 	slliw	a0, a0, 8
+	addw	a1, a1, a2
+	lui	a2, 8192
 	or	a0, a0, a1
-	lui	a1, 8192
-	addiw	a1, a1, 65
+	addiw	a1, a2, 65
 	or	a0, a0, a1
 	ret
 func000000000000000d:                   # @func000000000000000d

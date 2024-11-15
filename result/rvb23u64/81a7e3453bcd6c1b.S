@@ -7,9 +7,9 @@ func0000000000000038:                   # @func0000000000000038
 	ret
 func0000000000000382:                   # @func0000000000000382
 	sext.w	a2, a2
+	addi	a1, a1, -2
 	xor	a0, a0, a2
 	seqz	a0, a0
-	addi	a1, a1, -2
 	snez	a1, a1
 	or	a0, a0, a1
 	ret
@@ -83,9 +83,9 @@ func0000000000000388:                   # @func0000000000000388
 	ret
 func000000000000008a:                   # @func000000000000008a
 	zext.w	a2, a2
+	srli	a1, a1, 24
 	sltu	a0, a2, a0
 	xori	a0, a0, 1
-	srli	a1, a1, 24
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret

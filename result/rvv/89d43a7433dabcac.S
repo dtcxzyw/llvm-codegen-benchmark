@@ -18,10 +18,10 @@ func000000000000003c:                   # @func000000000000003c
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsrl.vi	v12, v12, 3
 	lui	a0, 131072
-	addi	a0, a0, -4
-	vand.vx	v12, v12, a0
 	vadd.vv	v8, v10, v8
-	vadd.vv	v8, v8, v12
+	addi	a0, a0, -4
+	vand.vx	v10, v12, a0
+	vadd.vv	v8, v8, v10
 	li	a0, 16
 	vadd.vx	v8, v8, a0
 	ret

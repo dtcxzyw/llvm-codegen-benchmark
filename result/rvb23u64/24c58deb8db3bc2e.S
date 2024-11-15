@@ -1,8 +1,8 @@
 func0000000000000004:                   # @func0000000000000004
 	addw	a0, a0, a1
-	sext.h	a1, a0
-	lui	a2, 2
-	addiw	a2, a2, -1513
+	lui	a1, 2
+	sext.h	a2, a0
+	addiw	a1, a1, -1513
 	mul	a1, a1, a2
 	srli	a2, a1, 63
 	srai	a1, a1, 20

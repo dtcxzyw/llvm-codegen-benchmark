@@ -66,10 +66,10 @@ func000000000000004f:                   # @func000000000000004f
 	ret
 func0000000000000068:                   # @func0000000000000068
 	slli	a0, a0, 1
-	addi	a0, a0, 2
-	andi	a0, a0, -4
 	li	a1, 1
+	addi	a0, a0, 2
 	slli	a1, a1, 34
+	andi	a0, a0, -4
 	addi	a1, a1, -8
 	add	a0, a0, a1
 	ret

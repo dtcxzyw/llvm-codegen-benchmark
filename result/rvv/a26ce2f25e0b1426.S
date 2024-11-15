@@ -10,11 +10,10 @@ func0000000000000c4c:                   # @func0000000000000c4c
 	ret
 func0000000000000414:                   # @func0000000000000414
 	li	a0, 64
-	vsetivli	zero, 8, e8, mf2, ta, ma
-	vmsltu.vx	v9, v9, a0
-	vsetvli	zero, zero, e32, m2, ta, ma
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v12, v10, 0
 	vsetvli	zero, zero, e8, mf2, ta, ma
+	vmsltu.vx	v9, v9, a0
 	vmsltu.vx	v8, v8, a0
 	vmor.mm	v8, v9, v8
 	vmor.mm	v0, v8, v12

@@ -14,9 +14,9 @@ func0000000000000028:                   # @func0000000000000028
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a0)
 	fabs.d	fa4, fa1
-	flt.d	a0, fa4, fa5
-	fclass.d	a1, fa0
-	srli	a1, a1, 7
+	fclass.d	a0, fa0
+	flt.d	a1, fa4, fa5
+	srli	a0, a0, 7
 	and	a0, a0, a1
 	ret
 .LCPI2_0:
@@ -42,9 +42,9 @@ func0000000000000066:                   # @func0000000000000066
 	ret
 func0000000000000088:                   # @func0000000000000088
 	fclass.d	a0, fa1
+	fclass.d	a1, fa0
 	andi	a0, a0, 129
 	snez	a0, a0
-	fclass.d	a1, fa0
 	srli	a1, a1, 7
 	and	a0, a0, a1
 	ret
@@ -71,9 +71,9 @@ func0000000000000044:                   # @func0000000000000044
 	ret
 func0000000000000064:                   # @func0000000000000064
 	fclass.d	a0, fa1
+	fmv.d.x	fa5, zero
 	andi	a0, a0, 126
 	snez	a0, a0
-	fmv.d.x	fa5, zero
 	flt.d	a1, fa5, fa0
 	and	a0, a0, a1
 	ret

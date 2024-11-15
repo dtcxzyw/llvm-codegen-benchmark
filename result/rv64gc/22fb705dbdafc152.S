@@ -47,9 +47,9 @@ func0000000000000042:                   # @func0000000000000042
 	ret
 func0000000000000047:                   # @func0000000000000047
 	fmv.w.x	fa5, zero
-	flt.s	a0, fa5, fa0
-	feq.s	a1, fa0, fa1
-	not	a1, a1
+	feq.s	a0, fa0, fa1
+	flt.s	a1, fa5, fa0
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 func0000000000000044:                   # @func0000000000000044

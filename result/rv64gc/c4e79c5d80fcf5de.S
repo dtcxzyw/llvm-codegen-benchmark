@@ -17,9 +17,9 @@ func000000000000001c:                   # @func000000000000001c
 	sext.w	a1, a1
 	lui	a3, 4097
 	addiw	a3, a3, -2048
+	snez	a1, a1
 	and	a2, a2, a3
 	seqz	a2, a2
-	snez	a1, a1
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret

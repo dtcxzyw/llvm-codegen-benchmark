@@ -8,10 +8,10 @@ func000000000000002f:                   # @func000000000000002f
 func0000000000000037:                   # @func0000000000000037
 	slli	a2, a2, 40
 	or	a0, a0, a2
+	li	a2, 11
 	add.uw	a0, a1, a0
-	li	a1, 11
-	slli	a1, a1, 33
-	or	a0, a0, a1
+	slli	a2, a2, 33
+	or	a0, a0, a2
 	ret
 func000000000000003f:                   # @func000000000000003f
 	slli	a2, a2, 22

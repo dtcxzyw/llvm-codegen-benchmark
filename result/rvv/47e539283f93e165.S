@@ -50,8 +50,8 @@ func0000000000000018:                   # @func0000000000000018
 	li	a0, 255
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v12, v12, a0
-	vmseq.vv	v14, v12, v10
 	li	a0, 511
+	vmseq.vv	v14, v12, v10
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v14
 	ret
@@ -82,9 +82,9 @@ func00000000000000a1:                   # @func00000000000000a1
 	li	a0, 127
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v12, v12, a0
-	vmseq.vv	v14, v12, v8
 	lui	a0, 8192
 	addi	a0, a0, -1
+	vmseq.vv	v14, v12, v8
 	vmsgt.vx	v8, v10, a0
 	vmand.mm	v0, v14, v8
 	ret

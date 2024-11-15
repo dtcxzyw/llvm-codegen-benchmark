@@ -1,7 +1,7 @@
 func0000000000000010:                   # @func0000000000000010
 	sext.w	a1, a1
-	sltiu	a1, a1, 127
 	li	a2, 256
+	sltiu	a1, a1, 127
 	czero.nez	a1, a2, a1
 	add	a0, a0, a1
 	li	a1, 1800

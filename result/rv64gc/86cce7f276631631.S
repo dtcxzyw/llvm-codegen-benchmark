@@ -4,21 +4,21 @@ func0000000000000182:                   # @func0000000000000182
 	and	a0, a0, a3
 	and	a2, a2, a3
 	addi	a2, a2, -396
+	addi	a0, a0, -198
 	snez	a2, a2
 	and	a1, a1, a2
-	addi	a0, a0, -198
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 func0000000000000082:                   # @func0000000000000082
 	slli	a0, a0, 48
+	lui	a3, 8
 	srli	a0, a0, 48
+	xor	a0, a0, a3
 	slli	a2, a2, 48
 	srli	a2, a2, 62
 	sltiu	a2, a2, 3
 	and	a1, a1, a2
-	lui	a2, 8
-	xor	a0, a0, a2
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
@@ -34,8 +34,8 @@ func0000000000000022:                   # @func0000000000000022
 	ret
 func0000000000000088:                   # @func0000000000000088
 	slli	a0, a0, 48
-	srli	a0, a0, 48
 	slli	a2, a2, 48
+	srli	a0, a0, 48
 	srli	a2, a2, 53
 	sltiu	a2, a2, 2047
 	and	a1, a1, a2

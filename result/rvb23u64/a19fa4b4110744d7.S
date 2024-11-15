@@ -12,8 +12,8 @@ func00000000000000a6:                   # @func00000000000000a6
 	sext.w	a2, a2
 	sext.w	a1, a1
 	min	a1, a1, a2
-	slti	a1, a1, 0
 	slti	a0, a0, 64
+	slti	a1, a1, 0
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

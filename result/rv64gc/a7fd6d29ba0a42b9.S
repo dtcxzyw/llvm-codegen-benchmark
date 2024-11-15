@@ -69,8 +69,8 @@ func0000000000000110:                   # @func0000000000000110
 	ret
 func000000000000008c:                   # @func000000000000008c
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	andi	a1, a1, 255
+	srai	a0, a0, 56
 	sltiu	a1, a1, 2
 	slti	a0, a0, -64
 	or	a0, a0, a1
@@ -128,8 +128,8 @@ func00000000000000c2:                   # @func00000000000000c2
 	andi	a0, a0, 255
 	slli	a1, a1, 56
 	srai	a1, a1, 56
-	slti	a1, a1, 0
 	addi	a0, a0, -32
+	slti	a1, a1, 0
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
@@ -137,15 +137,15 @@ func0000000000000030:                   # @func0000000000000030
 	andi	a0, a0, 255
 	andi	a1, a1, 255
 	addi	a1, a1, -128
-	seqz	a1, a1
 	sltiu	a0, a0, 192
+	seqz	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 func000000000000010c:                   # @func000000000000010c
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	andi	a1, a1, 255
+	srai	a0, a0, 56
 	sltiu	a1, a1, 4
 	xori	a1, a1, 1
 	slti	a0, a0, 0
@@ -161,8 +161,8 @@ func0000000000000118:                   # @func0000000000000118
 	ret
 func0000000000000094:                   # @func0000000000000094
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	andi	a1, a1, 255
+	srai	a0, a0, 56
 	sltiu	a1, a1, 244
 	slti	a0, a0, 0
 	xori	a0, a0, 1
@@ -170,8 +170,8 @@ func0000000000000094:                   # @func0000000000000094
 	ret
 func00000000000000cc:                   # @func00000000000000cc
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	slli	a1, a1, 56
+	srai	a0, a0, 56
 	srai	a1, a1, 56
 	slti	a1, a1, 1
 	slti	a0, a0, 1
@@ -179,8 +179,8 @@ func00000000000000cc:                   # @func00000000000000cc
 	ret
 func000000000000002c:                   # @func000000000000002c
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	andi	a1, a1, 255
+	srai	a0, a0, 56
 	addi	a1, a1, -8
 	seqz	a1, a1
 	slti	a0, a0, 0
@@ -188,8 +188,8 @@ func000000000000002c:                   # @func000000000000002c
 	ret
 func0000000000000034:                   # @func0000000000000034
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	andi	a1, a1, 255
+	srai	a0, a0, 56
 	seqz	a1, a1
 	slti	a0, a0, 0
 	xori	a0, a0, 1
@@ -217,8 +217,8 @@ func00000000000000d8:                   # @func00000000000000d8
 	andi	a0, a0, 255
 	slli	a1, a1, 56
 	srai	a1, a1, 56
-	slti	a1, a1, -112
 	addi	a0, a0, -244
+	slti	a1, a1, -112
 	snez	a0, a0
 	or	a0, a0, a1
 	ret

@@ -41,8 +41,8 @@ func0000000000000032:                   # @func0000000000000032
 	ret
 func0000000000000012:                   # @func0000000000000012
 	srliw	a1, a1, 1
-	slli	a1, a1, 2
 	lui	a2, 48
+	slli	a1, a1, 2
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

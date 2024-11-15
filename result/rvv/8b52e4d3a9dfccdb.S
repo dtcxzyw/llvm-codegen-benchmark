@@ -51,9 +51,9 @@ func00000000000000da:                   # @func00000000000000da
 	ret
 func00000000000000d8:                   # @func00000000000000d8
 	li	a0, 63
+	lui	a1, 786432
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v8, a0
-	lui	a1, 786432
 	srli	a1, a1, 24
 	vand.vx	v10, v10, a1
 	vsub.vv	v8, v10, v8

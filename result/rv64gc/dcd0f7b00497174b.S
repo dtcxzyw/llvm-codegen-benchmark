@@ -42,15 +42,15 @@ func000000000000007a:                   # @func000000000000007a
 	ret
 func000000000000005c:                   # @func000000000000005c
 	not	a2, a2
-	andi	a2, a2, -8
 	slli	a1, a1, 3
+	andi	a2, a2, -8
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
 func000000000000005e:                   # @func000000000000005e
 	not	a2, a2
-	andi	a2, a2, -8
 	slli	a1, a1, 3
+	andi	a2, a2, -8
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
@@ -63,9 +63,9 @@ func000000000000004b:                   # @func000000000000004b
 	ret
 func0000000000000017:                   # @func0000000000000017
 	srai	a2, a2, 32
+	slli	a1, a1, 4
 	not	a2, a2
 	slli	a2, a2, 4
-	slli	a1, a1, 4
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

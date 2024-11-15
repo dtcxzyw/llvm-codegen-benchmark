@@ -30,9 +30,9 @@ func0000000000000027:                   # @func0000000000000027
 func0000000000000042:                   # @func0000000000000042
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
+	lui	a0, 287172
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfgt.vf	v12, v16, fa5
-	lui	a0, 287172
 	fmv.w.x	fa5, a0
 	vsetvli	zero, zero, e32, m4, ta, ma
 	vmflt.vf	v13, v8, fa5

@@ -41,10 +41,10 @@ func0000000000000001:                   # @func0000000000000001
 	ld	a0, %lo(.LCPI3_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
-	vsrl.vi	v10, v8, 31
-	vxor.vv	v8, v10, v8
 	lui	a0, 118350
 	addi	a0, a0, 1465
+	vsrl.vi	v10, v8, 31
+	vxor.vv	v8, v10, v8
 	slli	a0, a0, 32
 	vmul.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 31

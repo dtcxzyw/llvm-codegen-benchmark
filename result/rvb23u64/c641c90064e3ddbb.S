@@ -24,8 +24,8 @@ func0000000000000041:                   # @func0000000000000041
 	ret
 func0000000000000148:                   # @func0000000000000148
 	addi	a2, a2, -1
-	sltiu	a2, a2, 4
 	li	a3, 5
+	sltiu	a2, a2, 4
 	czero.nez	a3, a3, a2
 	czero.eqz	a1, a1, a2
 	or	a1, a1, a3

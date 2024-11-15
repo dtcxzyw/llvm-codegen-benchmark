@@ -24,8 +24,8 @@ func0000000000000011:                   # @func0000000000000011
 func000000000000008c:                   # @func000000000000008c
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vi	v10, v10, 2
-	vmsne.vi	v12, v10, 0
 	lui	a0, 524288
+	vmsne.vi	v12, v10, 0
 	addiw	a0, a0, -1
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v0, v12, v10
@@ -33,8 +33,8 @@ func000000000000008c:                   # @func000000000000008c
 func0000000000000081:                   # @func0000000000000081
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vi	v10, v10, 2
-	vmseq.vi	v12, v10, 0
 	li	a0, -1
+	vmseq.vi	v12, v10, 0
 	srli	a0, a0, 32
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v0, v12, v10
@@ -61,8 +61,8 @@ func00000000000000ac:                   # @func00000000000000ac
 	lui	a0, 4096
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
-	vmsne.vi	v12, v10, 0
 	li	a0, 31
+	vmsne.vi	v12, v10, 0
 	vmsgt.vx	v10, v8, a0
 	vmand.mm	v0, v12, v10
 	ret
@@ -80,8 +80,8 @@ func0000000000000041:                   # @func0000000000000041
 	srli	a0, a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
-	vmseq.vi	v12, v10, 0
 	bseti	a0, zero, 33
+	vmseq.vi	v12, v10, 0
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v12, v10
 	ret

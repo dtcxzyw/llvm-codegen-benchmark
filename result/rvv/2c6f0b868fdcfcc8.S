@@ -42,16 +42,16 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000014:                   # @func0000000000000014
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	vadd.vv	v8, v10, v8
 	lui	a0, 4
+	vadd.vv	v8, v10, v8
 	addiw	a0, a0, -1
 	vadd.vx	v8, v8, a0
 	ret
 func000000000000003d:                   # @func000000000000003d
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	vadd.vv	v8, v10, v8
 	lui	a0, 1048544
+	vadd.vv	v8, v10, v8
 	addiw	a0, a0, 30
 	vadd.vx	v8, v8, a0
 	ret

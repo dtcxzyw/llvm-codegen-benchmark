@@ -145,10 +145,10 @@ func000000000000004a:                   # @func000000000000004a
 	ret
 func0000000000000061:                   # @func0000000000000061
 	sext.b	a2, a2
-	slti	a2, a2, 0
 	xor	a0, a0, a1
+	slti	a1, a2, 0
 	seqz	a0, a0
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 func00000000000000c1:                   # @func00000000000000c1
 	andi	a0, a0, 255
@@ -159,11 +159,11 @@ func00000000000000c1:                   # @func00000000000000c1
 	ret
 func00000000000000ac:                   # @func00000000000000ac
 	sext.b	a2, a2
-	slti	a2, a2, 0
-	xori	a2, a2, 1
 	xor	a0, a0, a1
+	slti	a1, a2, 0
+	xori	a1, a1, 1
 	snez	a0, a0
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 func00000000000000bc:                   # @func00000000000000bc
 	andi	a0, a0, 255

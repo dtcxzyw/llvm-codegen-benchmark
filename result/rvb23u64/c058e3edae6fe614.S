@@ -1,7 +1,7 @@
 func0000000000000018:                   # @func0000000000000018
 	andi	a2, a2, 1
-	czero.eqz	a1, a1, a2
 	bseti	a3, zero, 11
+	czero.eqz	a1, a1, a2
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
 	sltu	a0, a1, a0
@@ -21,8 +21,8 @@ func000000000000001a:                   # @func000000000000001a
 	ret
 func0000000000000011:                   # @func0000000000000011
 	bexti	a2, a2, 32
-	czero.eqz	a1, a1, a2
 	li	a3, 3
+	czero.eqz	a1, a1, a2
 	slli	a3, a3, 32
 	addi	a3, a3, -1
 	czero.nez	a2, a3, a2

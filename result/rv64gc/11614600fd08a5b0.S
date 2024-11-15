@@ -1,7 +1,7 @@
 func0000000000000051:                   # @func0000000000000051
 	slli	a1, a1, 48
-	srli	a1, a1, 48
 	slliw	a0, a0, 16
+	srli	a1, a1, 48
 	or	a0, a0, a1
 	lui	a1, 999455
 	addiw	a1, a1, 1025
@@ -29,8 +29,8 @@ func000000000000005c:                   # @func000000000000005c
 	ret
 func0000000000000061:                   # @func0000000000000061
 	slli	a1, a1, 48
-	srli	a1, a1, 48
 	slliw	a0, a0, 8
+	srli	a1, a1, 48
 	or	a0, a0, a1
 	li	a1, 7
 	slli	a1, a1, 9
@@ -61,8 +61,8 @@ func0000000000000054:                   # @func0000000000000054
 	ret
 func0000000000000078:                   # @func0000000000000078
 	slli	a1, a1, 48
-	srli	a1, a1, 48
 	slliw	a0, a0, 16
+	srli	a1, a1, 48
 	or	a0, a0, a1
 	lui	a1, 2048
 	sltu	a0, a1, a0

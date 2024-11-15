@@ -11,9 +11,9 @@ func000000000000003d:                   # @func000000000000003d
 	addi	a0, a0, -1
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
+	lui	a0, 1044480
 	vadd.vv	v8, v10, v8
 	vsll.vi	v8, v8, 8
-	lui	a0, 1044480
 	addi	a0, a0, 256
 	vadd.vx	v8, v8, a0
 	ret

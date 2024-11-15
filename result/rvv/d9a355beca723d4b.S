@@ -30,12 +30,11 @@ func000000000000000a:                   # @func000000000000000a
 	vmerge.vim	v8, v8, 0, v0
 	ret
 func000000000000000c:                   # @func000000000000000c
+	vmv1r.v	v24, v0
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vmfle.vv	v24, v16, v8
-	vmv1r.v	v25, v0
-	vmv1r.v	v0, v24
-	vmerge.vvm	v8, v16, v8, v0
+	vmfle.vv	v0, v16, v8
 	fli.d	fa5, 1.0
-	vmv1r.v	v0, v25
+	vmerge.vvm	v8, v16, v8, v0
+	vmv1r.v	v0, v24
 	vfmerge.vfm	v8, v8, fa5, v0
 	ret

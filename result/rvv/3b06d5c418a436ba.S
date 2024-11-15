@@ -1,8 +1,8 @@
 func0000000000000000:                   # @func0000000000000000
 	li	a0, 365
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmacc.vx	v8, a0, v10
 	vsra.vi	v12, v10, 31
+	vmacc.vx	v8, a0, v10
 	vsrl.vi	v12, v12, 30
 	vadd.vv	v10, v10, v12
 	vsra.vi	v10, v10, 2
@@ -11,8 +11,8 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000020:                   # @func0000000000000020
 	li	a0, 365
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmacc.vx	v8, a0, v10
 	vsra.vi	v12, v10, 31
+	vmacc.vx	v8, a0, v10
 	vsrl.vi	v12, v12, 30
 	vadd.vv	v10, v10, v12
 	vsra.vi	v10, v10, 2

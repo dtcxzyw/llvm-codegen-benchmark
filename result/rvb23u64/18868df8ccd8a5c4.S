@@ -59,8 +59,8 @@ func0000000000000018:                   # @func0000000000000018
 	sext.w	a1, a1
 	lui	a3, 5
 	addiw	a3, a3, 1028
-	or	a2, a2, a3
 	sltiu	a1, a1, 3
+	or	a2, a2, a3
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
@@ -69,8 +69,8 @@ func0000000000000004:                   # @func0000000000000004
 	sext.w	a1, a1
 	lui	a3, 5
 	addiw	a3, a3, 1028
-	or	a2, a2, a3
 	sltiu	a1, a1, 16
+	or	a2, a2, a3
 	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1

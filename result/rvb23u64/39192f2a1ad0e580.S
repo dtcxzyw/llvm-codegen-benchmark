@@ -54,9 +54,9 @@ func0000000000000228:                   # @func0000000000000228
 	ret
 func0000000000000298:                   # @func0000000000000298
 	andi	a1, a1, 255
+	lui	a2, 524288
 	addi	a1, a1, -192
 	snez	a1, a1
-	lui	a2, 524288
 	sltu	a0, a0, a2
 	or	a0, a0, a1
 	ret

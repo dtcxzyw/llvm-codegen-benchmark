@@ -36,8 +36,8 @@ func000000000000003f:                   # @func000000000000003f
 	ret
 func0000000000000020:                   # @func0000000000000020
 	srliw	a2, a2, 14
-	slli	a2, a2, 14
 	sext.w	a1, a1
+	slli	a2, a2, 14
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

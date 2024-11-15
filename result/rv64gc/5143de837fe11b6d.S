@@ -3,8 +3,8 @@ func0000000000000388:                   # @func0000000000000388
 	sext.w	a1, a1
 	lui	a2, 8
 	addiw	a2, a2, 1
-	sltu	a0, a0, a2
 	sltiu	a1, a1, 1601
+	sltu	a0, a0, a2
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret

@@ -58,9 +58,9 @@ func00000000000000ca:                   # @func00000000000000ca
 	ret
 func0000000000000018:                   # @func0000000000000018
 	andi	a1, a1, 255
+	li	a2, -1
 	addi	a1, a1, -45
 	seqz	a1, a1
-	li	a2, -1
 	srli	a2, a2, 1
 	add	a1, a1, a2
 	sltu	a0, a1, a0

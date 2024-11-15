@@ -8,8 +8,8 @@ func0000000000000084:                   # @func0000000000000084
 	ret
 func0000000000000001:                   # @func0000000000000001
 	srli	a2, a2, 28
-	add	a0, a0, a2
 	srli	a1, a1, 28
+	add	a0, a0, a2
 	neg	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -23,8 +23,8 @@ func00000000000000a1:                   # @func00000000000000a1
 	ret
 func0000000000000081:                   # @func0000000000000081
 	srli	a2, a2, 32
-	add	a0, a0, a2
 	srli	a1, a1, 32
+	add	a0, a0, a2
 	neg	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0

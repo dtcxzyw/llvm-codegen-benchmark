@@ -9,8 +9,8 @@ func000000000000008c:                   # @func000000000000008c
 	sext.w	a0, a0
 	sext.w	a1, a1
 	sltiu	a1, a1, 12
-	xori	a1, a1, 1
 	addi	a0, a0, -16
+	xori	a1, a1, 1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -32,8 +32,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	sext.w	a0, a0
 	sext.w	a1, a1
 	addi	a1, a1, -33
-	snez	a1, a1
 	addi	a0, a0, -33
+	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

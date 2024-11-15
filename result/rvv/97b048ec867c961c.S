@@ -1,8 +1,8 @@
 func000000000000001e:                   # @func000000000000001e
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v8, v8, -1
-	vclz.v	v8, v8
 	li	a0, 64
+	vclz.v	v8, v8
 	vrsub.vx	v8, v8, a0
 	vmv.v.i	v10, 1
 	vsll.vv	v8, v10, v8
@@ -19,8 +19,8 @@ func000000000000004e:                   # @func000000000000004e
 func00000000000000df:                   # @func00000000000000df
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v8, v8, 1
-	vclz.v	v8, v8
 	li	a0, 64
+	vclz.v	v8, v8
 	vrsub.vx	v8, v8, a0
 	li	a0, 20
 	vmv.v.x	v10, a0
@@ -29,8 +29,8 @@ func00000000000000df:                   # @func00000000000000df
 func000000000000004f:                   # @func000000000000004f
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v8, v8, -1
-	vclz.v	v8, v8
 	li	a0, 64
+	vclz.v	v8, v8
 	vrsub.vx	v8, v8, a0
 	vmv.v.i	v10, 1
 	vsll.vv	v8, v10, v8
@@ -47,8 +47,8 @@ func000000000000000d:                   # @func000000000000000d
 func000000000000000e:                   # @func000000000000000e
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v8, v8, -1
-	vclz.v	v8, v8
 	li	a0, 64
+	vclz.v	v8, v8
 	vrsub.vx	v8, v8, a0
 	vmv.v.i	v10, 1
 	vsll.vv	v8, v10, v8
@@ -56,8 +56,8 @@ func000000000000000e:                   # @func000000000000000e
 func000000000000004c:                   # @func000000000000004c
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v8, v8, -1
-	vclz.v	v8, v8
 	li	a0, 64
+	vclz.v	v8, v8
 	vrsub.vx	v8, v8, a0
 	vmv.v.i	v10, 8
 	vsll.vv	v8, v10, v8
@@ -65,8 +65,8 @@ func000000000000004c:                   # @func000000000000004c
 func000000000000005f:                   # @func000000000000005f
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v8, v8, -1
-	vclz.v	v8, v8
 	li	a0, 64
+	vclz.v	v8, v8
 	vrsub.vx	v8, v8, a0
 	vmv.v.i	v10, 1
 	vsll.vv	v8, v10, v8
@@ -83,8 +83,8 @@ func000000000000004d:                   # @func000000000000004d
 func000000000000005e:                   # @func000000000000005e
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v8, v8, -1
-	vclz.v	v8, v8
 	li	a0, 64
+	vclz.v	v8, v8
 	vrsub.vx	v8, v8, a0
 	vmv.v.i	v10, 1
 	vsll.vv	v8, v10, v8

@@ -1,8 +1,8 @@
 func000000000000001f:                   # @func000000000000001f
 	slli	a2, a2, 48
 	or	a0, a0, a1
-	or	a0, a0, a2
 	lui	a1, 65535
+	or	a0, a0, a2
 	slli	a1, a1, 12
 	or	a0, a0, a1
 	ret
@@ -21,16 +21,16 @@ func0000000000000011:                   # @func0000000000000011
 func0000000000000018:                   # @func0000000000000018
 	slli	a2, a2, 49
 	or	a0, a0, a1
-	or	a0, a0, a2
 	li	a1, 1
+	or	a0, a0, a2
 	slli	a1, a1, 54
 	or	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000
 	slli	a2, a2, 60
 	or	a0, a0, a1
-	or	a0, a0, a2
 	li	a1, 7
+	or	a0, a0, a2
 	slli	a1, a1, 56
 	or	a0, a0, a1
 	ret
@@ -51,8 +51,8 @@ func000000000000000c:                   # @func000000000000000c
 func0000000000000017:                   # @func0000000000000017
 	slli	a2, a2, 48
 	or	a0, a0, a1
-	or	a0, a0, a2
 	lui	a1, 65279
+	or	a0, a0, a2
 	slli	a1, a1, 12
 	or	a0, a0, a1
 	ret

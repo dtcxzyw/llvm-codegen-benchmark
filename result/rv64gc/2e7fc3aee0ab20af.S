@@ -94,8 +94,8 @@ func00000000000003c1:                   # @func00000000000003c1
 	andi	a0, a0, 255
 	sext.w	a1, a1
 	addi	a1, a1, -2
-	snez	a1, a1
 	addi	a0, a0, -48
+	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -118,8 +118,8 @@ func0000000000000311:                   # @func0000000000000311
 	ret
 func00000000000001c6:                   # @func00000000000001c6
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	sext.w	a1, a1
+	srai	a0, a0, 56
 	addi	a1, a1, -1
 	snez	a1, a1
 	slti	a0, a0, 0
@@ -135,8 +135,8 @@ func00000000000000cc:                   # @func00000000000000cc
 	ret
 func000000000000014a:                   # @func000000000000014a
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	addiw	a1, a1, -48
+	srai	a0, a0, 56
 	sltiu	a1, a1, 10
 	slti	a0, a0, 32
 	not	a0, a0

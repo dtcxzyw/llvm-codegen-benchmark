@@ -9,9 +9,9 @@ func0000000000000003:                   # @func0000000000000003
 func0000000000000002:                   # @func0000000000000002
 	lui	a2, 20
 	and	a1, a1, a2
+	lui	a2, 12
 	seqz	a1, a1
 	addi	a1, a1, -1
-	lui	a2, 12
 	and	a1, a1, a2
 	lui	a2, 1048572
 	addiw	a2, a2, -1

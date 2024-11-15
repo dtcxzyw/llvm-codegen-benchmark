@@ -1,8 +1,8 @@
 func0000000000000018:                   # @func0000000000000018
 	andi	a0, a0, 1
 	andi	a1, a1, 255
-	slli	a1, a1, 3
 	lui	a2, 528400
+	slli	a1, a1, 3
 	addi	a2, a2, 257
 	slli.uw	a2, a2, 17
 	addi	a2, a2, 1

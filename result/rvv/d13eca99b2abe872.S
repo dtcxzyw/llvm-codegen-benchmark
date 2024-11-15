@@ -6,8 +6,8 @@ func0000000000000234:                   # @func0000000000000234
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v12, v12, 3
 	vmv.v.i	v14, -1
-	vmacc.vx	v14, a0, v12
 	vsub.vv	v8, v8, v10
+	vmacc.vx	v14, a0, v12
 	vsra.vi	v8, v8, 3
 	vmsltu.vv	v0, v8, v14
 	ret

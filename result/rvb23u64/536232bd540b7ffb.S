@@ -14,8 +14,8 @@ func000000000000000d:                   # @func000000000000000d
 	ret
 func000000000000000f:                   # @func000000000000000f
 	andi	a0, a0, 31
-	bset	a0, zero, a0
 	li	a1, -1
+	bset	a0, zero, a0
 	srli	a1, a1, 32
 	add	a0, a0, a1
 	ret

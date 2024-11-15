@@ -6,8 +6,8 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func0000000000000010:                   # @func0000000000000010
 	slli	a0, a0, 63
-	srai	a0, a0, 63
 	lui	a2, 524288
+	srai	a0, a0, 63
 	addi	a2, a2, 1
 	and	a0, a0, a2
 	add	a0, a0, a1
@@ -16,8 +16,8 @@ func0000000000000010:                   # @func0000000000000010
 	ret
 func000000000000000b:                   # @func000000000000000b
 	slli	a0, a0, 63
-	srai	a0, a0, 63
 	lui	a2, 244
+	srai	a0, a0, 63
 	addi	a2, a2, 576
 	and	a0, a0, a2
 	addw	a0, a0, a1

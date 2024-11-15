@@ -40,19 +40,19 @@ func0000000000000070:                   # @func0000000000000070
 	ret
 func0000000000000014:                   # @func0000000000000014
 	slli	a2, a2, 1
-	addi	a2, a2, 1
 	li	a3, 136
-	mul	a2, a2, a3
+	addi	a2, a2, 1
 	mul	a1, a1, a3
+	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
 func0000000000000034:                   # @func0000000000000034
 	slli	a2, a2, 1
-	addi	a2, a2, 1
 	li	a3, 136
-	mul	a2, a2, a3
+	addi	a2, a2, 1
 	mul	a1, a1, a3
+	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

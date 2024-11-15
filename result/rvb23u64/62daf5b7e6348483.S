@@ -11,9 +11,9 @@ func0000000000000048:                   # @func0000000000000048
 	addi	a3, a3, 1
 	czero.eqz	a2, a2, a3
 	czero.nez	a1, a1, a3
+	lui	a3, 122
 	or	a1, a1, a2
 	mulw	a0, a1, a0
-	lui	a1, 122
-	addiw	a1, a1, 288
+	addiw	a1, a3, 288
 	sltu	a0, a1, a0
 	ret

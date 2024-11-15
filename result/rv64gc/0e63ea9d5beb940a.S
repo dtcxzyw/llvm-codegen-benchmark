@@ -19,11 +19,11 @@ func00000000000003a8:                   # @func00000000000003a8
 	ret
 func0000000000000388:                   # @func0000000000000388
 	slli	a2, a2, 8
+	lui	a3, 1048560
 	or	a1, a1, a2
-	lui	a2, 1048560
-	addi	a3, a2, -1
-	addw	a1, a1, a3
-	addiw	a2, a2, 511
+	addi	a2, a3, -1
+	addw	a1, a1, a2
+	addiw	a2, a3, 511
 	sltu	a1, a1, a2
 	or	a0, a0, a1
 	ret

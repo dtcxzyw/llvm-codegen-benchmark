@@ -8,8 +8,8 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000002:                   # @func0000000000000002
 	sltiu	a1, a0, 64
-	neg	a1, a1
 	li	a2, 1
+	neg	a1, a1
 	sll	a0, a2, a0
 	and	a0, a0, a1
 	ret

@@ -7,12 +7,12 @@ func0000000000000000:                   # @func0000000000000000
 	vmulh.vx	v8, v8, a0
 	li	a0, 63
 	vsrl.vx	v10, v8, a0
+	lui	a0, 559241
+	addi	a0, a0, -1911
 	vsrl.vi	v8, v8, 7
 	vadd.vv	v8, v8, v10
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
-	lui	a0, 559241
-	addi	a0, a0, -1911
 	vmulh.vx	v8, v10, a0
 	vadd.vv	v8, v8, v10
 	vsra.vi	v8, v8, 5
@@ -28,12 +28,12 @@ func0000000000000004:                   # @func0000000000000004
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
+	lui	a1, 349525
+	addi	a1, a1, 1366
 	vmul.vx	v8, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
-	lui	a0, 349525
-	addi	a0, a0, 1366
-	vmulh.vx	v8, v10, a0
+	vmulh.vx	v8, v10, a1
 	vsrl.vi	v9, v8, 31
 	vadd.vv	v8, v8, v9
 	li	a0, 3

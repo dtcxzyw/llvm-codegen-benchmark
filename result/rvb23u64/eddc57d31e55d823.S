@@ -98,9 +98,9 @@ func000000000000007a:                   # @func000000000000007a
 func00000000000000a2:                   # @func00000000000000a2
 	lui	a1, %hi(.LCPI7_0)
 	fld	fa5, %lo(.LCPI7_0)(a1)
-	fle.d	a1, fa0, fa5
-	fli.d	fa5, 65536.0
-	flt.d	a2, fa0, fa5
-	and	a0, a0, a2
+	fli.d	fa4, 65536.0
+	flt.d	a1, fa0, fa4
+	fle.d	a2, fa0, fa5
 	and	a0, a0, a1
+	and	a0, a0, a2
 	ret

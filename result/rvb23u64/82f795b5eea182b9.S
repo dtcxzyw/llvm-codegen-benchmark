@@ -1,7 +1,7 @@
 func00000000000000a4:                   # @func00000000000000a4
 	addi	a2, a2, 16
-	sltu	a0, a2, a0
 	slti	a1, a1, 17
+	sltu	a0, a2, a0
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
@@ -21,9 +21,9 @@ func0000000000000214:                   # @func0000000000000214
 	ret
 func00000000000002c4:                   # @func00000000000002c4
 	addi	a2, a2, 130
+	srli	a0, a0, 32
 	xor	a1, a1, a2
 	snez	a1, a1
-	srli	a0, a0, 32
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -87,8 +87,8 @@ func0000000000000285:                   # @func0000000000000285
 	ret
 func00000000000002a4:                   # @func00000000000002a4
 	addi	a2, a2, 8
-	sltu	a0, a2, a0
 	slti	a1, a1, 8
+	sltu	a0, a2, a0
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret

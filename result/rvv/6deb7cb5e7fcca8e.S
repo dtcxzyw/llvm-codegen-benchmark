@@ -21,11 +21,11 @@ func0000000000000000:                   # @func0000000000000000
 .LCPI1_1:
 	.word	0x3dcccccd                      # float 0.100000001
 func0000000000000001:                   # @func0000000000000001
+	lui	a0, %hi(.LCPI1_0)
+	flw	fa5, %lo(.LCPI1_0)(a0)
+	lui	a0, %hi(.LCPI1_1)
+	flw	fa4, %lo(.LCPI1_1)(a0)
 	lui	a0, 194560
-	lui	a1, %hi(.LCPI1_0)
-	flw	fa5, %lo(.LCPI1_0)(a1)
-	lui	a1, %hi(.LCPI1_1)
-	flw	fa4, %lo(.LCPI1_1)(a1)
 	fmv.w.x	fa3, a0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vf	v12, v8, fa3

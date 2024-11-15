@@ -19,8 +19,8 @@ func000000000000001b:                   # @func000000000000001b
 	ret
 func000000000000000a:                   # @func000000000000000a
 	li	a2, 513
-	subw	a2, a2, a1
 	slli	a0, a0, 48
+	subw	a2, a2, a1
 	srli	a0, a0, 48
 	slt	a0, a2, a0
 	ret

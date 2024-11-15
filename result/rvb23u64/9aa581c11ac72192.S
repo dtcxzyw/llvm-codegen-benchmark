@@ -20,8 +20,8 @@ func000000000000004c:                   # @func000000000000004c
 	ret
 func00000000000000c1:                   # @func00000000000000c1
 	andi	a1, a1, 255
-	snez	a1, a1
 	addi	a0, a0, -256
+	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -54,10 +54,10 @@ func0000000000000211:                   # @func0000000000000211
 	ret
 func000000000000031c:                   # @func000000000000031c
 	andi	a1, a1, 2047
-	addi	a1, a1, -1022
-	seqz	a1, a1
 	li	a2, -513
+	addi	a1, a1, -1022
 	slli	a2, a2, 53
+	seqz	a1, a1
 	xor	a0, a0, a2
 	snez	a0, a0
 	and	a0, a0, a1

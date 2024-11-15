@@ -15,10 +15,10 @@ func000000000000004c:                   # @func000000000000004c
 	ret
 func0000000000000041:                   # @func0000000000000041
 	andi	a1, a1, 255
-	addi	a1, a1, -65
-	sltiu	a1, a1, 26
 	andi	a0, a0, 255
+	addi	a1, a1, -65
 	addi	a0, a0, -32
+	sltiu	a1, a1, 26
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

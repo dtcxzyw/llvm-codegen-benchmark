@@ -1,15 +1,15 @@
 func0000000000000015:                   # @func0000000000000015
 	subw	a1, a1, a2
+	lui	a2, 1
 	add	a0, a0, a1
-	lui	a1, 1
-	addi	a1, a1, 337
+	addi	a1, a2, 337
 	mulw	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000
 	subw	a1, a1, a2
+	lui	a2, 1
 	add	a0, a0, a1
-	lui	a1, 1
-	addi	a1, a1, 337
+	addi	a1, a2, 337
 	mulw	a0, a0, a1
 	ret
 func0000000000000005:                   # @func0000000000000005
@@ -27,9 +27,9 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000014:                   # @func0000000000000014
 	subw	a1, a1, a2
+	lui	a2, 21
 	add	a0, a0, a1
-	lui	a1, 21
-	addi	a1, a1, 384
+	addi	a1, a2, 384
 	mulw	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004

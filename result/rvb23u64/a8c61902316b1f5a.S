@@ -1,12 +1,12 @@
 func0000000000000121:                   # @func0000000000000121
 	mul	a3, a3, a0
 	mulhu	a0, a0, a2
-	add	a0, a0, a3
 	mul	a1, a1, a2
+	li	a2, -1
+	add	a0, a0, a3
 	add	a0, a0, a1
-	li	a1, -1
-	srli	a1, a1, 26
-	andn	a0, a1, a0
+	srli	a2, a2, 26
+	andn	a0, a2, a0
 	seqz	a0, a0
 	ret
 func000000000000012c:                   # @func000000000000012c

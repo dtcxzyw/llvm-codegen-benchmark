@@ -15,22 +15,22 @@ func000000000000054a:                   # @func000000000000054a
 	ret
 func0000000000000541:                   # @func0000000000000541
 	srai	a2, a2, 4
-	add	a0, a0, a2
 	slli	a1, a1, 5
+	add	a0, a0, a2
+	li	a2, -1
 	add	a0, a0, a1
-	li	a1, -1
-	srli	a1, a1, 5
-	xor	a0, a0, a1
+	srli	a2, a2, 5
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 func0000000000000441:                   # @func0000000000000441
 	srai	a2, a2, 4
-	add	a0, a0, a2
 	slli	a1, a1, 2
+	add	a0, a0, a2
+	li	a2, -1
 	add	a0, a0, a1
-	li	a1, -1
-	srli	a1, a1, 5
-	xor	a0, a0, a1
+	srli	a2, a2, 5
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 func000000000000044a:                   # @func000000000000044a

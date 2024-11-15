@@ -13,10 +13,10 @@ func000000000000000c:                   # @func000000000000000c
 	ret
 func000000000000001f:                   # @func000000000000001f
 	andi	a1, a1, 255
+	andi	a0, a0, 255
 	addi	a1, a1, -2
 	seqz	a1, a1
 	slliw	a1, a1, 31
-	andi	a0, a0, 255
 	slliw	a0, a0, 16
 	or	a0, a0, a1
 	ret
@@ -40,10 +40,10 @@ func000000000000000f:                   # @func000000000000000f
 	ret
 func0000000000000017:                   # @func0000000000000017
 	andi	a1, a1, 255
+	andi	a0, a0, 255
 	addi	a1, a1, -6
 	snez	a1, a1
 	slli	a1, a1, 2
-	andi	a0, a0, 255
 	slli	a0, a0, 23
 	or	a0, a0, a1
 	ret

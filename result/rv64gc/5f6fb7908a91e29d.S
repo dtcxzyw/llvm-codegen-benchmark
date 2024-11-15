@@ -48,8 +48,8 @@ func000000000000006a:                   # @func000000000000006a
 	ret
 func000000000000002a:                   # @func000000000000002a
 	slli	a1, a1, 1
-	addi	a1, a1, 1
 	li	a2, 5
+	addi	a1, a1, 1
 	slli	a2, a2, 35
 	slli	a1, a1, 32
 	mulhu	a1, a1, a2

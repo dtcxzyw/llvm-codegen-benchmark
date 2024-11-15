@@ -8,8 +8,8 @@ func0000000000000015:                   # @func0000000000000015
 	vmax.vv	v10, v8, v10
 	vsrl.vi	v8, v10, 4
 	vmulhu.vx	v8, v8, a0
-	vsrl.vi	v8, v8, 3
 	lui	a0, 1
+	vsrl.vi	v8, v8, 3
 	addiw	a0, a0, -496
 	vnmsub.vx	v8, a0, v10
 	ret
@@ -22,9 +22,9 @@ func0000000000000035:                   # @func0000000000000035
 	vrsub.vi	v10, v8, 0
 	vmax.vv	v10, v8, v10
 	vmulhu.vx	v8, v10, a0
-	vsrl.vi	v8, v8, 31
 	lui	a0, 439453
 	slli	a0, a0, 1
+	vsrl.vi	v8, v8, 31
 	addi	a0, a0, 1024
 	vnmsub.vx	v8, a0, v10
 	ret

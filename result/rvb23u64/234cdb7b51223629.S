@@ -22,13 +22,13 @@ func0000000000000084:                   # @func0000000000000084
 	zext.h	a2, a1
 	lui	a3, 8
 	sltu	a2, a3, a2
+	lui	a3, 3
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1
 	zext.h	a0, a0
-	lui	a1, 3
-	addiw	a1, a1, 1
-	sltu	a0, a0, a1
+	addiw	a3, a3, 1
+	sltu	a0, a0, a3
 	ret
 func0000000000000088:                   # @func0000000000000088
 	zext.h	a2, a1

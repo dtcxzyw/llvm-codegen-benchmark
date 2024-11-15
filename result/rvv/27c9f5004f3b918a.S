@@ -2,8 +2,8 @@ func0000000000000086:                   # @func0000000000000086
 	li	a0, 127
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v12, v12, a0
-	vmsltu.vv	v14, v12, v10
 	lui	a0, 8192
+	vmsltu.vv	v14, v12, v10
 	vmslt.vx	v10, v8, a0
 	vmor.mm	v0, v10, v14
 	ret
@@ -12,9 +12,9 @@ func00000000000000bc:                   # @func00000000000000bc
 	addi	a0, a0, -1
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v12, v12, a0
-	vmsle.vv	v14, v12, v10
 	li	a0, 27
 	slli	a0, a0, 11
+	vmsle.vv	v14, v12, v10
 	vmsne.vx	v10, v8, a0
 	vmor.mm	v0, v10, v14
 	ret
@@ -40,9 +40,9 @@ func000000000000001c:                   # @func000000000000001c
 	addi	a0, a0, -1
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v12, v12, a0
-	vmseq.vv	v14, v12, v10
 	li	a0, 27
 	slli	a0, a0, 11
+	vmseq.vv	v14, v12, v10
 	vmsne.vx	v10, v8, a0
 	vmor.mm	v0, v10, v14
 	ret

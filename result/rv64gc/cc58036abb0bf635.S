@@ -12,9 +12,9 @@ func0000000000000104:                   # @func0000000000000104
 	ret
 func0000000000000144:                   # @func0000000000000144
 	sext.w	a1, a1
+	fmv.d.x	fa5, zero
 	slti	a1, a1, 9
 	xori	a1, a1, 1
-	fmv.d.x	fa5, zero
 	flt.d	a2, fa0, fa5
 	and	a1, a1, a2
 	or	a0, a0, a1

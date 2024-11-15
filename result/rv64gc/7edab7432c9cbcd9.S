@@ -1,12 +1,12 @@
 func0000000000001898:                   # @func0000000000001898
 	andi	a0, a0, 255
 	li	a3, 255
+	srli	a1, a1, 56
 	slli	a3, a3, 36
 	addi	a3, a3, 5
 	slli	a3, a3, 12
 	addi	a3, a3, -1
 	xor	a2, a2, a3
-	srli	a1, a1, 56
 	sltiu	a1, a1, 255
 	or	a0, a0, a2
 	snez	a0, a0

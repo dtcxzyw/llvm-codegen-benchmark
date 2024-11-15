@@ -20,8 +20,8 @@ func0000000000000041:                   # @func0000000000000041
 	ret
 func0000000000000148:                   # @func0000000000000148
 	not	a1, a1
-	sltu	a1, a1, a2
 	sltiu	a0, a0, 769
+	sltu	a1, a1, a2
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

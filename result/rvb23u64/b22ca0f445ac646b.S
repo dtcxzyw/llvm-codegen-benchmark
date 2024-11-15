@@ -2,8 +2,8 @@ func00000000000000cc:                   # @func00000000000000cc
 	andi	a1, a1, 255
 	sext.w	a2, a2
 	addi	a2, a2, -3
-	snez	a2, a2
 	addi	a1, a1, -10
+	snez	a2, a2
 	czero.eqz	a1, a0, a1
 	and	a0, a0, a2
 	or	a0, a0, a1

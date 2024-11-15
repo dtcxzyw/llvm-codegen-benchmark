@@ -4,8 +4,8 @@ func000000000000003f:                   # @func000000000000003f
 	slli	a1, a1, 6
 	sub	a1, a1, a2
 	lui	a2, 28
-	addiw	a2, a2, 512
 	slli	a0, a0, 59
+	addiw	a2, a2, 512
 	mulhu	a0, a0, a2
 	add	a0, a0, a1
 	ret

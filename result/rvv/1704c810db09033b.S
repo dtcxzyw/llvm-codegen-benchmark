@@ -1,9 +1,9 @@
 func000000000000000a:                   # @func000000000000000a
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vzext.vf4	v14, v12
+	lui	a0, 526344
 	vsub.vv	v10, v14, v10
 	vmul.vv	v8, v10, v8
-	lui	a0, 526344
 	addi	a0, a0, 129
 	vmulh.vx	v10, v8, a0
 	vadd.vv	v8, v10, v8

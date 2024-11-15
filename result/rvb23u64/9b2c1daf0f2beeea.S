@@ -8,9 +8,9 @@ func0000000000000046:                   # @func0000000000000046
 	ret
 func0000000000000001:                   # @func0000000000000001
 	srli	a0, a0, 3
+	li	a1, -2
 	sext.w	a0, a0
 	addi	a0, a0, -4
-	li	a1, -2
 	czero.eqz	a0, a1, a0
 	lui	a1, 1048573
 	addiw	a1, a1, -627
@@ -18,10 +18,10 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000004:                   # @func0000000000000004
 	srli	a0, a0, 3
-	sext.w	a0, a0
-	sltiu	a0, a0, 33
 	lui	a1, 1044480
+	sext.w	a0, a0
 	addiw	a1, a1, 16
+	sltiu	a0, a0, 33
 	czero.eqz	a0, a1, a0
 	lui	a1, 8192
 	addiw	a1, a1, 20

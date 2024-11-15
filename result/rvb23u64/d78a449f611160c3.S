@@ -20,8 +20,8 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func0000000000000008:                   # @func0000000000000008
 	andi	a0, a0, 14
-	sltiu	a0, a0, 10
 	lui	a1, 1048574
+	sltiu	a0, a0, 10
 	addiw	a1, a1, 192
 	czero.eqz	a0, a1, a0
 	li	a1, 2000

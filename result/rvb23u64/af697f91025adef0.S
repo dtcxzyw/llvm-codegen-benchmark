@@ -1,8 +1,8 @@
 func0000000000000011:                   # @func0000000000000011
 	fmv.x.w	a3, fa0
 	lui	a4, 522240
-	and	a3, a3, a4
 	zext.w	a2, a2
+	and	a3, a3, a4
 	czero.eqz	a0, a0, a3
 	czero.nez	a2, a2, a3
 	or	a0, a0, a2

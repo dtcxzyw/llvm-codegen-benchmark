@@ -26,8 +26,8 @@ func0000000000000012:                   # @func0000000000000012
 	vzext.vf8	v10, v8
 	bseti	a0, zero, 35
 	vmv.v.x	v8, a0
-	vsll.vv	v8, v8, v10
 	li	a0, -1
+	vsll.vv	v8, v8, v10
 	srli	a0, a0, 1
 	vadd.vx	v8, v8, a0
 	ret

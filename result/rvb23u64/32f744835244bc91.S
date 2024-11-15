@@ -6,23 +6,23 @@ func00000000000000c8:                   # @func00000000000000c8
 	ret
 func0000000000000028:                   # @func0000000000000028
 	sext.w	a1, a0
-	seqz	a1, a1
 	srli	a0, a0, 32
+	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 func0000000000000148:                   # @func0000000000000148
 	sext.w	a1, a0
+	srli	a0, a0, 32
 	slti	a1, a1, 3
 	xori	a1, a1, 1
-	srli	a0, a0, 32
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 func0000000000000082:                   # @func0000000000000082
 	sext.w	a1, a0
-	sltiu	a1, a1, 13
 	li	a2, 13
+	sltiu	a1, a1, 13
 	bseti	a2, a2, 63
 	xor	a0, a0, a2
 	seqz	a0, a0

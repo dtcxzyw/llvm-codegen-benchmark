@@ -11,10 +11,10 @@ func0000000000000089:                   # @func0000000000000089
 	ret
 func0000000000000077:                   # @func0000000000000077
 	slli	a0, a0, 48
-	srai	a0, a0, 48
 	slli	a1, a1, 48
-	srai	a1, a1, 48
 	slli	a2, a2, 48
+	srai	a0, a0, 48
+	srai	a1, a1, 48
 	srai	a2, a2, 48
 	slt	a2, a2, a1
 	slt	a0, a1, a0
@@ -34,10 +34,10 @@ func0000000000000055:                   # @func0000000000000055
 	ret
 func00000000000000aa:                   # @func00000000000000aa
 	slli	a1, a1, 48
-	srai	a1, a1, 48
 	slli	a2, a2, 48
-	srai	a2, a2, 48
 	slli	a0, a0, 48
+	srai	a1, a1, 48
+	srai	a2, a2, 48
 	srai	a0, a0, 48
 	slt	a2, a0, a2
 	slt	a0, a1, a0
@@ -60,10 +60,10 @@ func00000000000000cc:                   # @func00000000000000cc
 	and	a0, a0, a3
 	and	a2, a2, a3
 	xor	a2, a2, a0
-	snez	a2, a2
 	xor	a0, a0, a1
+	snez	a1, a2
 	snez	a0, a0
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 func0000000000000044:                   # @func0000000000000044
 	lui	a3, 16

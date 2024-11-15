@@ -43,8 +43,8 @@ func000000000000004c:                   # @func000000000000004c
 	ret
 func0000000000000041:                   # @func0000000000000041
 	andi	a1, a1, 4
-	seqz	a1, a1
 	srliw	a0, a0, 16
+	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

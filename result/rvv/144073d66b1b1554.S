@@ -98,12 +98,12 @@ func0000000000000066:                   # @func0000000000000066
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v24, v16, fa5
 	vmfgt.vf	v25, v16, fa5
-	vmor.mm	v16, v25, v24
-	vmand.mm	v16, v16, v0
-	vmflt.vf	v17, v8, fa5
-	vmfgt.vf	v18, v8, fa5
-	vmor.mm	v8, v18, v17
-	vmand.mm	v0, v16, v8
+	vmflt.vf	v16, v8, fa5
+	vmfgt.vf	v17, v8, fa5
+	vmor.mm	v8, v25, v24
+	vmand.mm	v8, v8, v0
+	vmor.mm	v9, v17, v16
+	vmand.mm	v0, v8, v9
 	ret
 func00000000000000ee:                   # @func00000000000000ee
 	vsetivli	zero, 16, e64, m8, ta, ma

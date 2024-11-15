@@ -1,10 +1,10 @@
 func0000000000000004:                   # @func0000000000000004
 	addw	a0, a0, a1
-	slli	a1, a0, 48
-	srai	a1, a1, 48
-	lui	a2, 2
-	addiw	a2, a2, -1513
-	mul	a1, a1, a2
+	lui	a1, 2
+	slli	a2, a0, 48
+	addiw	a1, a1, -1513
+	srai	a2, a2, 48
+	mul	a1, a2, a1
 	srli	a2, a1, 63
 	srai	a1, a1, 20
 	add	a1, a1, a2

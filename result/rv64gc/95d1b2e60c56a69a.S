@@ -17,9 +17,9 @@ func00000000000000ac:                   # @func00000000000000ac
 	.quad	0xbfe921fb54442d18              # double -0.78539816339744828
 func00000000000000c2:                   # @func00000000000000c2
 	lui	a0, %hi(.LCPI1_0)
+	lui	a1, %hi(.LCPI1_1)
 	fld	fa5, %lo(.LCPI1_0)(a0)
-	lui	a0, %hi(.LCPI1_1)
-	fld	fa4, %lo(.LCPI1_1)(a0)
+	fld	fa4, %lo(.LCPI1_1)(a1)
 	fle.d	a0, fa5, fa2
 	flt.d	a1, fa2, fa4
 	and	a0, a0, a1

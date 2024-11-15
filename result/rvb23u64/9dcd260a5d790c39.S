@@ -5,9 +5,9 @@ func000000000000000d:                   # @func000000000000000d
 	addiw	a2, a2, -585
 	slli	a3, a2, 33
 	add	a2, a2, a3
+	li	a3, 1
 	mul	a0, a0, a2
 	czero.eqz	a2, a0, a1
-	li	a3, 1
 	czero.nez	a1, a3, a1
 	or	a1, a1, a2
 	add	a0, a0, a1
@@ -19,10 +19,10 @@ func000000000000000f:                   # @func000000000000000f
 	ld	a3, %lo(.LCPI1_0)(a3)
 	xor	a1, a1, a2
 	srai	a0, a0, 3
+	li	a2, 1
 	mul	a0, a0, a3
-	czero.eqz	a2, a0, a1
-	li	a3, 1
-	czero.nez	a1, a3, a1
-	or	a1, a1, a2
+	czero.eqz	a3, a0, a1
+	czero.nez	a1, a2, a1
+	or	a1, a1, a3
 	add	a0, a0, a1
 	ret

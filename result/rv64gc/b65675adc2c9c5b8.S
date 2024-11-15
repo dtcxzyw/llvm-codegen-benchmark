@@ -61,15 +61,15 @@ func00000000000000cc:                   # @func00000000000000cc
 func00000000000000ca:                   # @func00000000000000ca
 	sext.w	a0, a0
 	xor	a1, a1, a0
-	snez	a1, a1
 	slti	a0, a0, 0
+	snez	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
 	ret
 func0000000000000086:                   # @func0000000000000086
 	sext.w	a0, a0
-	sltu	a1, a0, a1
 	lui	a2, 262144
+	sltu	a1, a0, a1
 	addiw	a2, a2, -1
 	slt	a0, a0, a2
 	and	a0, a0, a1

@@ -1,9 +1,9 @@
 func0000000000000204:                   # @func0000000000000204
 	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
-	addi	a0, a0, -48
 	lui	a1, 227374
 	addiw	a1, a1, -1329
+	addi	a0, a0, -48
 	slli	a1, a1, 12
 	addi	a1, a1, -1575
 	slli	a1, a1, 18
@@ -82,18 +82,18 @@ func0000000000000156:                   # @func0000000000000156
 	lui	a2, 21
 	addiw	a2, a2, 384
 	mul	a1, a1, a2
+	lui	a2, 930062
+	addiw	a2, a2, -1681
 	add	a0, a0, a1
-	lui	a1, 930062
-	addiw	a1, a1, -1681
-	slli	a1, a1, 7
-	add	a0, a0, a1
+	slli	a2, a2, 7
+	add	a0, a0, a2
 	srli	a0, a0, 63
 	ret
 func000000000000010a:                   # @func000000000000010a
 	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0
-	addi	a0, a0, -48
 	lui	a1, 524288
+	addi	a0, a0, -48
 	addiw	a1, a1, -1
 	slt	a0, a1, a0
 	ret

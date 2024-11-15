@@ -38,8 +38,8 @@ func0000000000000071:                   # @func0000000000000071
 func000000000000001a:                   # @func000000000000001a
 	slli	a2, a2, 8
 	or	a1, a1, a2
-	sext.w	a1, a1
 	lui	a2, 8
+	sext.w	a1, a1
 	addiw	a2, a2, 1131
 	bge	a2, a1, .LBB4_2
 	lui	a0, 8

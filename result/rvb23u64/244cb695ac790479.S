@@ -12,8 +12,8 @@ func00000000000000da:                   # @func00000000000000da
 func00000000000001da:                   # @func00000000000001da
 	sh2add	a0, a0, a1
 	sext.w	a2, a2
-	sh2add	a0, a2, a0
 	lui	a1, 3
+	sh2add	a0, a2, a0
 	addiw	a1, a1, 1196
 	add	a0, a0, a1
 	ret

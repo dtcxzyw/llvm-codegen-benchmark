@@ -10,8 +10,8 @@ func0000000000000044:                   # @func0000000000000044
 func0000000000000014:                   # @func0000000000000014
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vrsub.vi	v12, v12, 0
-	vmseq.vv	v14, v12, v10
 	li	a0, 17
+	vmseq.vv	v14, v12, v10
 	vmsltu.vx	v10, v8, a0
 	vmor.mm	v0, v14, v10
 	ret

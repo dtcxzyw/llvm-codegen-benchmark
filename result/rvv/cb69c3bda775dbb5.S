@@ -9,8 +9,8 @@ func0000000000000005:                   # @func0000000000000005
 func0000000000000011:                   # @func0000000000000011
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	vsra.vi	v10, v10, 3
 	vsll.vi	v8, v8, 3
+	vsra.vi	v10, v10, 3
 	vadd.vv	v8, v8, v10
 	li	a0, -64
 	vadd.vx	v8, v8, a0
@@ -18,8 +18,8 @@ func0000000000000011:                   # @func0000000000000011
 func0000000000000010:                   # @func0000000000000010
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	vsra.vi	v10, v10, 3
 	vsll.vi	v8, v8, 2
+	vsra.vi	v10, v10, 3
 	vadd.vv	v8, v8, v10
 	li	a0, -32
 	vadd.vx	v8, v8, a0

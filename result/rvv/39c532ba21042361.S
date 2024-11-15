@@ -13,8 +13,8 @@ func0000000000000035:                   # @func0000000000000035
 	addi	a0, a0, 1311
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmulhu.vx	v10, v10, a0
-	vsrl.vi	v10, v10, 7
 	lui	a0, 1048540
+	vsrl.vi	v10, v10, 7
 	addi	a0, a0, 1359
 	vmadd.vx	v10, a0, v8
 	vadd.vx	v8, v10, a0, v0.t
@@ -24,8 +24,8 @@ func0000000000000034:                   # @func0000000000000034
 	addi	a0, a0, 1311
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmulhu.vx	v10, v10, a0
-	vsrl.vi	v10, v10, 7
 	lui	a0, 1048540
+	vsrl.vi	v10, v10, 7
 	addi	a0, a0, 1359
 	vmadd.vx	v10, a0, v8
 	vadd.vx	v8, v10, a0, v0.t

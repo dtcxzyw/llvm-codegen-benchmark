@@ -10,10 +10,12 @@ func0000000000000071:                   # @func0000000000000071
 func0000000000000078:                   # @func0000000000000078
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf4	v10, v9
-	vwsll.vi	v12, v10, 8
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf8	v10, v8
-	vor.vv	v8, v12, v10
+	vzext.vf8	v12, v8
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vwsll.vi	v8, v10, 8
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vor.vv	v8, v8, v12
 	li	a0, 256
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -38,10 +40,12 @@ func000000000000007c:                   # @func000000000000007c
 func0000000000000178:                   # @func0000000000000178
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf4	v10, v9
-	vwsll.vi	v12, v10, 8
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf8	v10, v8
-	vor.vv	v8, v12, v10
+	vzext.vf8	v12, v8
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vwsll.vi	v8, v10, 8
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vor.vv	v8, v8, v12
 	lui	a0, 1
 	vmsgtu.vx	v0, v8, a0
 	ret

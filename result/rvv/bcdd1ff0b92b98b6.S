@@ -8,8 +8,8 @@ func0000000000000014:                   # @func0000000000000014
 func0000000000000006:                   # @func0000000000000006
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vfmul.vv	v16, v8, v16
-	vfclass.v	v8, v16
 	li	a0, 126
+	vfclass.v	v8, v16
 	vand.vx	v8, v8, a0
 	vmsne.vi	v0, v8, 0
 	vmv.v.i	v8, 0

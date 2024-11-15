@@ -22,8 +22,8 @@ func0000000000000012:                   # @func0000000000000012
 	ret
 func0000000000000068:                   # @func0000000000000068
 	sext.w	a0, a0
-	slti	a0, a0, 0
 	fmv.w.x	fa5, zero
+	slti	a0, a0, 0
 	feq.s	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
@@ -41,8 +41,8 @@ func000000000000001b:                   # @func000000000000001b
 	ret
 func000000000000001a:                   # @func000000000000001a
 	sext.w	a0, a0
-	seqz	a0, a0
 	fmv.w.x	fa5, zero
+	seqz	a0, a0
 	fle.s	a1, fa0, fa5
 	or	a0, a0, a1
 	ret

@@ -1,8 +1,8 @@
 func00000000000000a1:                   # @func00000000000000a1
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsgt.vi	v0, v8, -5
-	vadd.vi	v8, v8, 4, v0.t
 	lui	a0, 748983
+	vadd.vi	v8, v8, 4, v0.t
 	addi	a0, a0, -585
 	vmul.vx	v8, v8, a0
 	lui	a0, 149797
@@ -20,16 +20,16 @@ func0000000000000081:                   # @func0000000000000081
 	lui	a0, 429094
 	addi	a0, a0, 313
 	vmul.vx	v8, v8, a0
-	vror.vi	v8, v8, 6
 	lui	a0, 1
+	vror.vi	v8, v8, 6
 	addi	a0, a0, 198
 	vmsleu.vx	v0, v8, a0
 	ret
 func00000000000001a8:                   # @func00000000000001a8
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsgt.vi	v0, v8, -5
-	vadd.vi	v8, v8, 4, v0.t
 	lui	a0, 149797
+	vadd.vi	v8, v8, 4, v0.t
 	addi	a0, a0, -1755
 	vmulhu.vx	v10, v8, a0
 	vsub.vv	v12, v8, v10
@@ -43,8 +43,8 @@ func00000000000001a8:                   # @func00000000000001a8
 func00000000000001a1:                   # @func00000000000001a1
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsgt.vi	v0, v8, -5
-	vadd.vi	v8, v8, 4, v0.t
 	lui	a0, 748983
+	vadd.vi	v8, v8, 4, v0.t
 	addi	a0, a0, -585
 	vmul.vx	v8, v8, a0
 	lui	a0, 149797

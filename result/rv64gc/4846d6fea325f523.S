@@ -9,8 +9,8 @@ func0000000000000088:                   # @func0000000000000088
 func0000000000000229:                   # @func0000000000000229
 	sext.w	a0, a0
 	slli	a2, a2, 48
-	srli	a2, a2, 48
 	lui	a3, 16
+	srli	a2, a2, 48
 	addiw	a3, a3, -5
 	sltu	a2, a2, a3
 	addw	a1, a1, a2
@@ -20,8 +20,8 @@ func0000000000000229:                   # @func0000000000000229
 func0000000000000201:                   # @func0000000000000201
 	sext.w	a0, a0
 	slli	a2, a2, 48
-	srli	a2, a2, 48
 	lui	a3, 16
+	srli	a2, a2, 48
 	addiw	a3, a3, -5
 	sltu	a2, a2, a3
 	addw	a1, a1, a2

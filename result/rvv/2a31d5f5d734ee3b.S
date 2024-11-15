@@ -16,9 +16,9 @@ func0000000000000000:                   # @func0000000000000000
 	addiw	a0, a0, 255
 	slli	a1, a0, 32
 	add	a0, a0, a1
+	lui	a1, 1600
 	vand.vx	v8, v8, a0
-	lui	a0, 1600
-	addiw	a0, a0, 1
-	vmul.vx	v8, v8, a0
+	addiw	a1, a1, 1
+	vmul.vx	v8, v8, a1
 	vsrl.vi	v8, v8, 16
 	ret

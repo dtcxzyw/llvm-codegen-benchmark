@@ -7,8 +7,8 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func0000000000000013:                   # @func0000000000000013
 	bset	a1, zero, a1
-	addi	a1, a1, -1
 	li	a2, 16
+	addi	a1, a1, -1
 	sll	a0, a2, a0
 	add	a0, a0, a1
 	ret

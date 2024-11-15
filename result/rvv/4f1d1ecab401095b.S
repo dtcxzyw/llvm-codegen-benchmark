@@ -54,12 +54,12 @@ func000000000000000f:                   # @func000000000000000f
 	ret
 func0000000000000004:                   # @func0000000000000004
 	li	a0, 32
+	lui	a1, 16
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wx	v9, v10, a0
-	lui	a0, 16
-	addi	a1, a0, -97
-	vand.vx	v9, v9, a1
-	addi	a0, a0, -32
-	vand.vx	v8, v8, a0
+	addi	a0, a1, -97
+	addi	a1, a1, -32
+	vand.vx	v9, v9, a0
+	vand.vx	v8, v8, a1
 	vor.vv	v8, v9, v8
 	ret

@@ -19,11 +19,11 @@ func0000000000000082:                   # @func0000000000000082
 	ret
 func0000000000000022:                   # @func0000000000000022
 	andi	a2, a2, 255
-	addi	a2, a2, -42
-	seqz	a2, a2
 	xor	a0, a0, a1
+	addi	a1, a2, -42
+	seqz	a1, a1
 	seqz	a0, a0
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 func0000000000000098:                   # @func0000000000000098
 	andi	a0, a0, 255
@@ -53,11 +53,11 @@ func0000000000000028:                   # @func0000000000000028
 	ret
 func0000000000000182:                   # @func0000000000000182
 	andi	a2, a2, 255
-	addi	a2, a2, -32
-	snez	a2, a2
 	xor	a0, a0, a1
+	addi	a2, a2, -32
+	snez	a1, a2
 	seqz	a0, a0
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 func0000000000000122:                   # @func0000000000000122
 	andi	a0, a0, 255
@@ -82,24 +82,24 @@ func0000000000000188:                   # @func0000000000000188
 	ret
 func0000000000000032:                   # @func0000000000000032
 	andi	a2, a2, 255
-	seqz	a2, a2
 	sltu	a0, a0, a1
+	seqz	a1, a2
 	xori	a0, a0, 1
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 func000000000000008a:                   # @func000000000000008a
 	andi	a2, a2, 255
-	sltiu	a2, a2, 10
 	sltu	a0, a1, a0
+	sltiu	a1, a2, 10
 	xori	a0, a0, 1
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 func0000000000000092:                   # @func0000000000000092
 	andi	a2, a2, 255
-	sltiu	a2, a2, 246
 	sltu	a0, a0, a1
+	sltiu	a1, a2, 246
 	xori	a0, a0, 1
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 func00000000000000b8:                   # @func00000000000000b8
 	andi	a0, a0, 255

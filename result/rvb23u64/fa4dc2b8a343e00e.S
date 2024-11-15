@@ -12,8 +12,8 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func0000000000000041:                   # @func0000000000000041
 	zext.w	a1, a1
-	sltiu	a1, a1, 29
 	lui	a2, 6
+	sltiu	a1, a1, 29
 	addiw	a2, a2, 128
 	and	a0, a0, a2
 	seqz	a0, a0
@@ -31,8 +31,8 @@ func00000000000000cc:                   # @func00000000000000cc
 	ret
 func0000000000000081:                   # @func0000000000000081
 	andi	a1, a1, 2046
-	snez	a1, a1
 	slli	a0, a0, 12
+	snez	a1, a1
 	srli	a0, a0, 12
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -46,8 +46,8 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 func00000000000000c4:                   # @func00000000000000c4
 	andi	a1, a1, 109
-	snez	a1, a1
 	andi	a0, a0, 508
+	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

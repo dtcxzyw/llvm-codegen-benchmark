@@ -11,9 +11,9 @@ func0000000000000155:                   # @func0000000000000155
 	sext.w	a2, a2
 	li	a3, -60
 	mul	a2, a2, a3
+	lui	a3, 1048561
 	add	a1, a1, a2
-	lui	a2, 1048561
-	addiw	a2, a2, 1440
+	addiw	a2, a3, 1440
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret

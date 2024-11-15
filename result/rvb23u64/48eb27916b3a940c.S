@@ -81,9 +81,9 @@ func00000000000000aa:                   # @func00000000000000aa
 func00000000000000bd:                   # @func00000000000000bd
 	fmv.d.x	fa5, zero
 	flt.d	a1, fa5, fa1
+	fli.d	fa5, 1.0
 	xori	a1, a1, 1
 	or	a0, a0, a1
-	fli.d	fa5, 1.0
 	flt.d	a1, fa0, fa5
 	xori	a1, a1, 1
 	or	a0, a0, a1

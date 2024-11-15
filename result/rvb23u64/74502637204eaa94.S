@@ -1,16 +1,16 @@
 func000000000000000e:                   # @func000000000000000e
 	slli	a0, a0, 1
+	lui	a1, 65536
 	addi	a0, a0, 63
 	srli	a0, a0, 3
-	lui	a1, 65536
 	addiw	a1, a1, -8
 	and	a0, a0, a1
 	ret
 func000000000000001e:                   # @func000000000000001e
 	slli	a0, a0, 1
+	lui	a1, 8
 	addi	a0, a0, 63
 	srli	a0, a0, 3
-	lui	a1, 8
 	addiw	a1, a1, -8
 	and	a0, a0, a1
 	ret

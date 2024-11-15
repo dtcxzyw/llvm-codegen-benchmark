@@ -30,8 +30,8 @@ func0000000000000001:                   # @func0000000000000001
 	sub	a0, a0, a1
 	srli	a1, a0, 4
 	mulhu	a1, a1, a2
-	srli	a1, a1, 3
 	lui	a2, 1
+	srli	a1, a1, 3
 	addiw	a2, a2, -496
 	mul	a1, a1, a2
 	sub	a0, a0, a1

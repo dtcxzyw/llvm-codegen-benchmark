@@ -9,8 +9,8 @@ func0000000000000003:                   # @func0000000000000003
 	subw	a3, a1, a2
 	srliw	a3, a3, 1
 	add	a2, a2, a3
-	srliw	a2, a2, 4
 	li	a3, 19
+	srliw	a2, a2, 4
 	mul	a2, a2, a3
 	subw	a2, a2, a1
 	addiw	a2, a2, 19

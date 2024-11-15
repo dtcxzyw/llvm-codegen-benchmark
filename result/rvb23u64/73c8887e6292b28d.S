@@ -8,8 +8,8 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func0000000000000002:                   # @func0000000000000002
 	andi	a2, a2, 255
-	addi	a2, a2, -62
 	li	a3, 1024
+	addi	a2, a2, -62
 	czero.eqz	a3, a3, a2
 	czero.nez	a1, a1, a2
 	or	a1, a1, a3
@@ -35,8 +35,8 @@ func000000000000000c:                   # @func000000000000000c
 	ret
 func0000000000000014:                   # @func0000000000000014
 	sext.b	a2, a2
-	slti	a2, a2, 0
 	li	a3, 68
+	slti	a2, a2, 0
 	czero.eqz	a3, a3, a2
 	czero.nez	a1, a1, a2
 	or	a1, a1, a3

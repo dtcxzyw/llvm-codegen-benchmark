@@ -5,15 +5,15 @@ func000000000000003f:                   # @func000000000000003f
 	ret
 func000000000000000c:                   # @func000000000000000c
 	sub	a0, a0, a1
-	slli	a0, a0, 3
 	li	a1, 29
+	slli	a0, a0, 3
 	slli	a1, a1, 10
 	add	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
 	sub	a0, a0, a1
-	slli	a0, a0, 3
 	li	a1, 29
+	slli	a0, a0, 3
 	slli	a1, a1, 10
 	add	a0, a0, a1
 	ret

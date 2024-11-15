@@ -29,8 +29,8 @@ func0000000000000081:                   # @func0000000000000081
 	andi	a2, a2, 1
 	lui	a3, 8
 	addiw	a4, a3, 16
-	czero.nez	a2, a4, a2
 	addiw	a3, a3, 7
+	czero.nez	a2, a4, a2
 	add	a1, a1, a3
 	add	a1, a1, a2
 	xor	a0, a0, a1
@@ -40,8 +40,8 @@ func0000000000000088:                   # @func0000000000000088
 	andi	a2, a2, 1
 	lui	a3, 8
 	addiw	a4, a3, 16
-	czero.nez	a2, a4, a2
 	addiw	a3, a3, 7
+	czero.nez	a2, a4, a2
 	add	a1, a1, a3
 	add	a1, a1, a2
 	sltu	a0, a1, a0

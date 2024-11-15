@@ -13,8 +13,8 @@ func0000000000000000:                   # @func0000000000000000
 	li	a0, -64
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v8, v8, a0
-	vadd.vi	v8, v8, -1
 	lui	a0, 838861
+	vadd.vi	v8, v8, -1
 	addi	a0, a0, -819
 	vmulhu.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 7
@@ -24,8 +24,8 @@ func0000000000000002:                   # @func0000000000000002
 	addi	a0, a0, -1
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v8, v8, a0
-	vadd.vi	v8, v8, -1
 	lui	a0, 233017
+	vadd.vi	v8, v8, -1
 	addi	a0, a0, -455
 	vmulhu.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 2

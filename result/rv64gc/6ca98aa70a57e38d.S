@@ -9,8 +9,8 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func0000000000000007:                   # @func0000000000000007
 	sext.w	a1, a1
-	slli	a1, a1, 5
 	slli	a0, a0, 63
+	slli	a1, a1, 5
 	srai	a0, a0, 63
 	or	a0, a0, a1
 	ori	a0, a0, 8

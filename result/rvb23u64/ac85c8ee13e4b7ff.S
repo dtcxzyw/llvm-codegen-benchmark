@@ -7,8 +7,8 @@ func0000000000000015:                   # @func0000000000000015
 	ret
 func0000000000000014:                   # @func0000000000000014
 	sh3add	a0, a1, a0
-	addi	a0, a0, -2
 	li	a1, 63
+	addi	a0, a0, -2
 	bseti	a1, a1, 63
 	and	a0, a0, a1
 	ret

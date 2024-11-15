@@ -14,9 +14,9 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000055:                   # @func0000000000000055
 	add	a0, a0, a2
 	sh2add	a1, a1, a1
+	lui	a2, 1048563
 	sh1add	a0, a1, a0
-	lui	a1, 1048563
-	addiw	a1, a1, -80
+	addiw	a1, a2, -80
 	add	a0, a0, a1
 	ret
 func00000000000000ff:                   # @func00000000000000ff
@@ -30,9 +30,9 @@ func0000000000000054:                   # @func0000000000000054
 	add	a0, a0, a2
 	li	a2, -365
 	mul	a1, a1, a2
+	lui	a2, 176
 	add	a0, a0, a1
-	lui	a1, 176
-	addiw	a1, a1, -1429
+	addiw	a1, a2, -1429
 	add	a0, a0, a1
 	ret
 func0000000000000010:                   # @func0000000000000010

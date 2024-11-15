@@ -24,8 +24,8 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func0000000000000241:                   # @func0000000000000241
 	slli	a2, a2, 3
-	add	a1, a1, a2
 	srliw	a0, a0, 16
+	add	a1, a1, a2
 	seqz	a0, a0
 	seqz	a1, a1
 	or	a0, a0, a1

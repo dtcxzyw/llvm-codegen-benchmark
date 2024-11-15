@@ -4,8 +4,8 @@ func0000000000000616:                   # @func0000000000000616
 	sext.w	a2, a2
 	slti	a2, a2, 7
 	slti	a1, a1, 1
-	andn	a1, a1, a2
 	addi	a0, a0, -31
+	andn	a1, a1, a2
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
@@ -15,8 +15,8 @@ func0000000000000416:                   # @func0000000000000416
 	srliw	a2, a2, 24
 	sltiu	a2, a2, 7
 	slti	a1, a1, 1
-	andn	a1, a1, a2
 	addi	a0, a0, -31
+	andn	a1, a1, a2
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

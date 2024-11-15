@@ -1,7 +1,7 @@
 func0000000000000011:                   # @func0000000000000011
 	andi	a1, a0, 255
-	sltiu	a1, a1, 58
 	li	a2, -7
+	sltiu	a1, a1, 58
 	czero.nez	a1, a2, a1
 	sext.b	a0, a0
 	add	a0, a0, a1

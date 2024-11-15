@@ -9,7 +9,7 @@ func0000000000000021:                   # @func0000000000000021
 	ret
 func0000000000000038:                   # @func0000000000000038
 	vsetivli	zero, 4, e64, m2, ta, mu
-	vadd.vi	v10, v10, 11, v0.t
 	vadd.vi	v8, v8, 2
+	vadd.vi	v10, v10, 11, v0.t
 	vmsltu.vv	v0, v10, v8
 	ret

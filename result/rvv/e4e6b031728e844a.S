@@ -11,10 +11,10 @@ func000000000000018c:                   # @func000000000000018c
 	bseti	a0, zero, 11
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
-	vmsne.vi	v12, v10, 0
-	vmor.mm	v10, v12, v0
 	lui	a0, 1
 	addi	a0, a0, -2032
+	vmsne.vi	v12, v10, 0
+	vmor.mm	v10, v12, v0
 	vmsne.vx	v11, v8, a0
 	vmand.mm	v0, v11, v10
 	ret
@@ -22,10 +22,10 @@ func000000000000002c:                   # @func000000000000002c
 	li	a0, 897
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
-	vmseq.vi	v12, v10, 0
-	vmor.mm	v10, v12, v0
 	lui	a0, 1
 	addi	a0, a0, -2032
+	vmseq.vi	v12, v10, 0
+	vmor.mm	v10, v12, v0
 	vmsne.vx	v11, v8, a0
 	vmand.mm	v0, v11, v10
 	ret

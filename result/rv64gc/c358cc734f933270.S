@@ -34,9 +34,9 @@ func0000000000000003:                   # @func0000000000000003
 	addi	a1, a0, -1
 	li	a2, 1
 	subw	a2, a2, a0
-	and	a1, a1, a2
 	lui	a0, 30667
 	addi	a0, a0, 1329
+	and	a1, a1, a2
 	mul	a0, a1, a0
 	srliw	a0, a0, 27
 	lui	a1, %hi(.LCPI2_0)

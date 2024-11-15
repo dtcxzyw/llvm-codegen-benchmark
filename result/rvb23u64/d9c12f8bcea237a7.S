@@ -31,8 +31,8 @@ func0000000000000001:                   # @func0000000000000001
 	and	a2, a2, a3
 	lui	a3, 520191
 	and	a1, a1, a3
+	lui	a3, 524288
 	or	a1, a1, a2
-	lui	a2, 524288
-	or	a0, a0, a2
+	or	a0, a0, a3
 	or	a0, a0, a1
 	ret

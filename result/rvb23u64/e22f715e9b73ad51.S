@@ -29,8 +29,8 @@ func000000000000007c:                   # @func000000000000007c
 	ret
 func0000000000000178:                   # @func0000000000000178
 	andi	a1, a1, 255
-	slli	a1, a1, 8
 	andi	a0, a0, 255
+	slli	a1, a1, 8
 	or	a0, a0, a1
 	lui	a1, 1
 	sltu	a0, a1, a0

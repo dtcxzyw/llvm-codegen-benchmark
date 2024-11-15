@@ -8,12 +8,12 @@ func0000000000000016:                   # @func0000000000000016
 func0000000000000001:                   # @func0000000000000001
 	sext.w	a0, a0
 	or	a1, a1, a2
+	li	a2, 39
 	sext.w	a1, a1
 	xor	a0, a0, a1
-	li	a1, 39
-	slli	a1, a1, 26
-	czero.eqz	a0, a1, a0
 	lui	a1, 804872
+	slli	a2, a2, 26
+	czero.eqz	a0, a2, a0
 	addiw	a1, a1, 128
 	add	a0, a0, a1
 	ret

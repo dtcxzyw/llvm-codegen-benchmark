@@ -82,8 +82,8 @@ func00000000000000ca:                   # @func00000000000000ca
 func000000000000000a:                   # @func000000000000000a
 	srli	a2, a2, 3
 	add	a0, a0, a1
-	add	a0, a0, a2
 	li	a1, -49
+	add	a0, a0, a2
 	srli	a1, a1, 3
 	slt	a0, a1, a0
 	ret

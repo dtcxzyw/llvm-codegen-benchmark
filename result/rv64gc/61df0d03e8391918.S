@@ -13,8 +13,8 @@ func000000000000007a:                   # @func000000000000007a
 	addi	a0, a0, 128
 	lui	a1, 1044496
 	addi	a1, a1, -255
-	slli	a1, a1, 32
 	slli	a0, a0, 32
+	slli	a1, a1, 32
 	mulhu	a0, a0, a1
 	srli	a0, a0, 16
 	sext.w	a0, a0
@@ -25,8 +25,8 @@ func000000000000007b:                   # @func000000000000007b
 	addi	a0, a0, 128
 	lui	a1, 1044496
 	addi	a1, a1, -255
-	slli	a1, a1, 32
 	slli	a0, a0, 32
+	slli	a1, a1, 32
 	mulhu	a0, a0, a1
 	srli	a0, a0, 24
 	sext.w	a0, a0

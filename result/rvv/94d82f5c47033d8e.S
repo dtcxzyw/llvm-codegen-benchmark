@@ -20,12 +20,12 @@ func0000000000000001:                   # @func0000000000000001
 	vmerge.vvm	v8, v10, v8, v0
 	ret
 func000000000000001a:                   # @func000000000000001a
+	lui	a0, 1048400
+	addi	a0, a0, 1427
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vmsgt.vx	v0, v10, a0
 	lui	a0, 140
 	addiw	a0, a0, -68
-	lui	a1, 1048400
-	addi	a1, a1, 1427
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vmsgt.vx	v0, v10, a1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v10, v12, a0
 	vmerge.vvm	v8, v10, v8, v0

@@ -9,12 +9,12 @@ func00000000000001ca:                   # @func00000000000001ca
 	ret
 func0000000000000080:                   # @func0000000000000080
 	lui	a0, 36
-	addi	a0, a0, -1359
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmacc.vx	v10, a0, v12
 	vsrl.vi	v8, v8, 2
-	vadd.vv	v8, v10, v8
+	addi	a0, a0, -1359
+	vmacc.vx	v10, a0, v12
 	lui	a0, 1048400
+	vadd.vv	v8, v10, v8
 	addi	a0, a0, 1427
 	vadd.vx	v8, v8, a0
 	ret

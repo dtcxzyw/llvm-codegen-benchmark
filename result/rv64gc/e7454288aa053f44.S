@@ -21,8 +21,8 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func0000000000000004:                   # @func0000000000000004
 	or	a0, a0, a1
-	slliw	a0, a0, 2
 	lui	a1, 838861
+	slliw	a0, a0, 2
 	addiw	a1, a1, -820
 	and	a0, a0, a1
 	ret

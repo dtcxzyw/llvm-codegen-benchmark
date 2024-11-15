@@ -36,8 +36,8 @@ func000000000000001b:                   # @func000000000000001b
 func000000000000001a:                   # @func000000000000001a
 	sext.w	a0, a0
 	slli	a1, a1, 48
-	srli	a1, a1, 49
 	lui	a2, 5
+	srli	a1, a1, 49
 	addiw	a2, a2, -1755
 	mul	a1, a1, a2
 	srli	a1, a1, 17

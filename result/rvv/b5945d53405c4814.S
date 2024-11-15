@@ -32,8 +32,8 @@ func0000000000000025:                   # @func0000000000000025
 	vmseq.vi	v0, v10, 0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.i	v12, 0
-	vmerge.vim	v14, v12, 1, v0
 	li	a0, -365
+	vmerge.vim	v14, v12, 1, v0
 	vxor.vx	v14, v14, a0
 	vmv1r.v	v0, v11
 	vmerge.vim	v10, v12, 1, v0

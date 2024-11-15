@@ -1,7 +1,7 @@
 func0000000000000088:                   # @func0000000000000088
 	andi	a1, a0, 255
-	sltiu	a1, a1, 16
 	andi	a0, a0, 240
+	sltiu	a1, a1, 16
 	addi	a0, a0, -16
 	snez	a0, a0
 	andn	a0, a0, a1

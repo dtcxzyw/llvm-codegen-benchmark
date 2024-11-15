@@ -54,16 +54,16 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000007:                   # @func0000000000000007
 	slliw	a2, a2, 27
 	or	a0, a0, a1
-	or	a0, a0, a2
 	li	a1, 31
+	or	a0, a0, a2
 	slli	a1, a1, 11
 	or	a0, a0, a1
 	ret
 func000000000000001a:                   # @func000000000000001a
 	slliw	a2, a2, 13
 	or	a0, a0, a1
-	or	a0, a0, a2
 	lui	a1, 450624
+	or	a0, a0, a2
 	addiw	a1, a1, 1024
 	or	a0, a0, a1
 	ret

@@ -3,15 +3,15 @@
 func0000000000000011:                   # @func0000000000000011
 	lui	a1, %hi(.LCPI0_0)
 	ld	a1, %lo(.LCPI0_0)(a1)
+	lui	a2, 281475
 	mul	a0, a0, a1
-	lui	a1, 281475
-	addiw	a2, a1, -95
-	slli	a2, a2, 12
-	addi	a2, a2, -2048
-	add	a0, a0, a2
+	addiw	a1, a2, -95
+	slli	a2, a2, 4
+	slli	a1, a1, 12
+	addi	a1, a1, -2048
+	add	a0, a0, a1
 	rori	a0, a0, 9
-	slli	a1, a1, 4
-	addi	a1, a1, -1527
+	addi	a1, a2, -1527
 	sltu	a0, a0, a1
 	ret
 .LCPI1_0:

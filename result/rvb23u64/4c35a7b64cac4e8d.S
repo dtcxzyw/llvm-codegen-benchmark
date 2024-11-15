@@ -28,8 +28,8 @@ func0000000000000015:                   # @func0000000000000015
 	ret
 func000000000000003d:                   # @func000000000000003d
 	slli	a0, a0, 4
-	addi	a0, a0, 143
 	lui	a1, 512
+	addi	a0, a0, 143
 	addiw	a1, a1, -8
 	and	a0, a0, a1
 	addi	a0, a0, -136
@@ -74,9 +74,9 @@ func0000000000000014:                   # @func0000000000000014
 	li	a1, -1023
 	slli	a1, a1, 51
 	add	a0, a0, a1
+	li	a1, 511
 	srli	a0, a0, 52
 	slli	a0, a0, 52
-	li	a1, 511
 	slli	a1, a1, 53
 	add	a0, a0, a1
 	ret

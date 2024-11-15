@@ -159,8 +159,8 @@ func000000000000011c:                   # @func000000000000011c
 	sext.w	a1, a1
 	negw	a2, a2
 	xor	a1, a1, a2
-	snez	a1, a1
 	addi	a0, a0, -1
+	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -168,8 +168,8 @@ func000000000000038c:                   # @func000000000000038c
 	sext.w	a0, a0
 	or	a1, a1, a2
 	sext.w	a1, a1
-	snez	a1, a1
 	sltiu	a0, a0, 2
+	snez	a1, a1
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret

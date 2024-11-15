@@ -17,10 +17,10 @@ func0000000000000341:                   # @func0000000000000341
 	srai	a2, a2, 4
 	srai	a1, a1, 4
 	add	a1, a1, a2
+	li	a2, -1
 	add	a0, a0, a1
-	li	a1, -1
-	srli	a1, a1, 5
-	xor	a0, a0, a1
+	srli	a2, a2, 5
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 func0000000000000358:                   # @func0000000000000358

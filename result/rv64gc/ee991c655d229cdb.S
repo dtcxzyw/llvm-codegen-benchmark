@@ -1,9 +1,9 @@
 func0000000000000003:                   # @func0000000000000003
 	andi	a1, a1, 1
 	slli	a2, a2, 44
+	lui	a3, 256
 	srli	a2, a2, 44
 	addi	a1, a1, -1
-	lui	a3, 256
 	and	a1, a1, a3
 	or	a1, a1, a2
 	slli	a0, a0, 4

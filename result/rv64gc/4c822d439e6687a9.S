@@ -1,8 +1,8 @@
 func000000000000007a:                   # @func000000000000007a
 	andi	a1, a1, 511
-	slli	a1, a1, 13
 	slliw	a0, a0, 16
 	lui	a2, 523264
+	slli	a1, a1, 13
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret

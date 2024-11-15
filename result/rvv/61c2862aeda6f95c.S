@@ -22,8 +22,8 @@ func000000000000000c:                   # @func000000000000000c
 func000000000000002c:                   # @func000000000000002c
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vand.vi	v9, v9, 1
-	vmsne.vi	v9, v9, 0
 	li	a0, 27
+	vmsne.vi	v9, v9, 0
 	vmsne.vx	v8, v8, a0
 	vmand.mm	v0, v8, v9
 	ret

@@ -26,10 +26,10 @@ func00000000000000d5:                   # @func00000000000000d5
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v12, v12, a0
 	lui	a0, 1048448
-	srli	a0, a0, 15
-	vand.vx	v12, v12, a0
 	vadd.vv	v8, v10, v8
-	vadd.vv	v8, v12, v8
+	srli	a0, a0, 15
+	vand.vx	v10, v12, a0
+	vadd.vv	v8, v10, v8
 	li	a0, 31
 	vadd.vx	v8, v8, a0
 	ret

@@ -6,9 +6,9 @@ func000000000000000f:                   # @func000000000000000f
 	ret
 func000000000000000d:                   # @func000000000000000d
 	slli	a0, a0, 48
+	li	a1, 1
 	srli	a0, a0, 48
 	slli	a0, a0, 42
-	li	a1, 1
 	slli	a1, a1, 56
 	sub	a0, a1, a0
 	ret

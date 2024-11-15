@@ -43,8 +43,8 @@ func0000000000000015:                   # @func0000000000000015
 func0000000000000020:                   # @func0000000000000020
 	andi	a2, a2, 1
 	add	a0, a0, a1
-	add	a0, a0, a2
 	lui	a1, 960284
+	add	a0, a0, a2
 	addi	a1, a1, -1545
 	slli.uw	a1, a1, 12
 	addi	a1, a1, -317
@@ -54,8 +54,8 @@ func0000000000000020:                   # @func0000000000000020
 func0000000000000001:                   # @func0000000000000001
 	andi	a2, a2, 1
 	add	a0, a0, a1
-	add	a0, a0, a2
 	lui	a1, 960284
+	add	a0, a0, a2
 	addi	a1, a1, -1545
 	slli.uw	a1, a1, 12
 	addi	a1, a1, -317

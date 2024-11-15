@@ -9,10 +9,10 @@ func00000000000002cc:                   # @func00000000000002cc
 	ret
 func000000000000034a:                   # @func000000000000034a
 	lui	a3, 244
+	slti	a0, a0, 0
 	addiw	a3, a3, 576
 	mul	a2, a2, a3
 	sltu	a1, a1, a2
-	slti	a0, a0, 0
 	not	a0, a0
 	and	a0, a0, a1
 	ret

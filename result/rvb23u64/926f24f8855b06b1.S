@@ -3,9 +3,9 @@ func0000000000000001:                   # @func0000000000000001
 	sext.w	a3, a1
 	lui	a4, 8
 	addiw	a5, a4, 5
+	addiw	a4, a4, 9
 	xor	a3, a3, a5
 	czero.eqz	a2, a2, a3
-	addiw	a4, a4, 9
 	czero.nez	a3, a4, a3
 	or	a2, a2, a3
 	czero.eqz	a2, a2, a0
@@ -15,9 +15,9 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000006:                   # @func0000000000000006
 	andi	a0, a0, 1
 	sext.w	a3, a1
+	li	a4, 1
 	slti	a3, a3, 0
 	czero.nez	a2, a2, a3
-	li	a4, 1
 	czero.eqz	a3, a4, a3
 	or	a2, a2, a3
 	czero.eqz	a2, a2, a0

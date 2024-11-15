@@ -106,11 +106,11 @@ func000000000000007c:                   # @func000000000000007c
 	.quad	1844674407370955161             # 0x1999999999999999
 func0000000000000048:                   # @func0000000000000048
 	li	a2, 1
+	lui	a3, %hi(.LCPI12_0)
 	slli	a2, a2, 32
+	ld	a3, %lo(.LCPI12_0)(a3)
 	addi	a2, a2, -48
 	add	a1, a1, a2
-	lui	a3, %hi(.LCPI12_0)
-	ld	a3, %lo(.LCPI12_0)(a3)
 	addi	a2, a2, 47
 	and	a1, a1, a2
 	add	a0, a0, a1

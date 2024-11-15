@@ -39,9 +39,9 @@ func00000000000001b4:                   # @func00000000000001b4
 	addi	a0, a0, -1403
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmul.vx	v10, v10, a0
+	lui	a0, 3
 	vsrl.vi	v10, v10, 8
 	vadd.vv	v8, v10, v8
-	lui	a0, 3
 	addi	a0, a0, 1946
 	vmsltu.vx	v0, v8, a0
 	ret

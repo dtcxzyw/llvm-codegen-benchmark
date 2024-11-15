@@ -1,8 +1,8 @@
 func0000000000000004:                   # @func0000000000000004
 	fmv.w.x	fa5, zero
+	li	a0, 16
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmfgt.vf	v0, v8, fa5
-	li	a0, 16
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.x	v8, a0
 	vmerge.vim	v8, v8, 4, v0

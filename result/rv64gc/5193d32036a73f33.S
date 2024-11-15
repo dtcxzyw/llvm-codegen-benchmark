@@ -16,8 +16,8 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func0000000000000015:                   # @func0000000000000015
 	slli	a2, a2, 1
-	addiw	a2, a2, -4
 	lui	a3, 1048568
+	addiw	a2, a2, -4
 	addiw	a3, a3, 254
 	and	a2, a2, a3
 	or	a0, a0, a1

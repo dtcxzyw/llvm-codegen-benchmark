@@ -17,9 +17,9 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func00000000000000c1:                   # @func00000000000000c1
 	or	a1, a1, a2
+	andi	a0, a0, 1
 	sext.w	a1, a1
 	snez	a1, a1
-	andi	a0, a0, 1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -48,19 +48,19 @@ func00000000000001cc:                   # @func00000000000001cc
 	ret
 func00000000000001c1:                   # @func00000000000001c1
 	or	a1, a1, a2
-	sext.w	a1, a1
-	snez	a1, a1
 	lui	a2, 64
+	sext.w	a1, a1
 	and	a0, a0, a2
+	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 func0000000000000118:                   # @func0000000000000118
 	or	a1, a1, a2
-	sext.w	a1, a1
-	seqz	a1, a1
 	andi	a0, a0, 896
+	sext.w	a1, a1
 	sltiu	a0, a0, 384
+	seqz	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
 	ret

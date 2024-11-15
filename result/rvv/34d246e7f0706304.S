@@ -1,8 +1,8 @@
 func0000000000000068:                   # @func0000000000000068
-	li	a0, 256
-	li	a1, 257
+	li	a0, 257
 	vsetivli	zero, 4, e16, mf2, ta, ma
-	vmsltu.vx	v0, v9, a1
+	vmsltu.vx	v0, v9, a0
+	li	a0, 256
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vadd.vx	v9, v10, a0
 	vmerge.vvm	v10, v9, v8, v0

@@ -16,13 +16,13 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000002:                   # @func0000000000000002
 	lui	a1, 8
+	lui	a2, 16
 	addi	a1, a1, -1
+	addi	a2, a2, -255
 	add	a0, a0, a1
-	lui	a1, 16
-	addi	a1, a1, -255
-	addi	a2, a1, 254
-	and	a0, a0, a2
-	mulw	a0, a0, a1
+	addi	a1, a2, 254
+	and	a0, a0, a1
+	mulw	a0, a0, a2
 	ret
 func000000000000000f:                   # @func000000000000000f
 	addi	a0, a0, 5

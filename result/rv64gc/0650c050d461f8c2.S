@@ -56,10 +56,10 @@ func000000000000008a:                   # @func000000000000008a
 	sltiu	a2, a2, 4
 	addi	a2, a2, -1
 	and	a1, a1, a2
-	slli	a1, a1, 32
-	srli	a1, a1, 31
 	lui	a2, 7
 	addiw	a2, a2, -740
+	slli	a1, a1, 32
+	srli	a1, a1, 31
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

@@ -39,16 +39,16 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func000000000000002f:                   # @func000000000000002f
 	li	a0, -529
+	lui	a1, 526344
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
-	lui	a0, 526344
-	addiw	a0, a0, 129
+	addiw	a0, a1, 129
 	slli	a1, a0, 32
 	add	a0, a0, a1
+	li	a1, -129
 	vmulhu.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 7
-	li	a0, -129
-	srli	a0, a0, 7
-	vand.vx	v8, v8, a0
+	srli	a1, a1, 7
+	vand.vx	v8, v8, a1
 	vadd.vi	v8, v8, 2
 	ret

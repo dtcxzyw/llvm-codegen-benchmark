@@ -14,8 +14,8 @@ func0000000000000010:                   # @func0000000000000010
 	li	a0, 32
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vor.vx	v10, v8, a0
-	vmerge.vvm	v8, v10, v8, v0
 	li	a0, 16
+	vmerge.vvm	v8, v10, v8, v0
 	vand.vx	v9, v9, a0
 	vor.vv	v8, v8, v9
 	ret
@@ -25,8 +25,8 @@ func0000000000000006:                   # @func0000000000000006
 	li	a0, 64
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vor.vx	v10, v8, a0
-	vmerge.vvm	v8, v10, v8, v0
 	li	a0, -128
+	vmerge.vvm	v8, v10, v8, v0
 	vand.vx	v9, v9, a0
 	vor.vv	v8, v8, v9
 	ret

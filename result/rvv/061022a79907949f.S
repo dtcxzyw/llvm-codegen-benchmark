@@ -18,14 +18,15 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 func0000000000000081:                   # @func0000000000000081
 	lui	a0, 122
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.i	v12, 0
 	addi	a0, a0, 288
-	vsetivli	zero, 4, e32, m1, ta, ma
+	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsgtu.vx	v0, v10, a0
-	vsetvli	zero, zero, e64, m2, ta, ma
-	vmv.v.i	v10, 0
 	lui	a0, 244
 	addiw	a0, a0, 576
-	vmerge.vxm	v10, v10, a0, v0
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vmerge.vxm	v10, v12, a0, v0
 	vmseq.vv	v0, v10, v8
 	ret
 func0000000000000016:                   # @func0000000000000016

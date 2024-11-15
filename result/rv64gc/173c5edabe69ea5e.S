@@ -7,9 +7,9 @@ func000000000000003f:                   # @func000000000000003f
 	ret
 func000000000000001c:                   # @func000000000000001c
 	lui	a3, 131072
+	slli	a1, a1, 32
 	addiw	a3, a3, -4
 	and	a2, a2, a3
-	slli	a1, a1, 32
 	srli	a1, a1, 32
 	mul	a1, a2, a1
 	add	a0, a0, a1

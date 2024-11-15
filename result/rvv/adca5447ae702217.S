@@ -5,13 +5,13 @@ func0000000000000010:                   # @func0000000000000010
 	addiw	a0, a0, -585
 	slli	a1, a0, 33
 	add	a0, a0, a1
+	lui	a1, 4096
 	vmul.vx	v8, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
 	vadd.vi	v8, v10, 1
-	lui	a0, 4096
-	addi	a0, a0, -1
-	vand.vx	v8, v8, a0
+	addi	a1, a1, -1
+	vand.vx	v8, v8, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
 	vsetivli	zero, 4, e32, m1, ta, ma

@@ -20,12 +20,11 @@ func00000000000001c1:                   # @func00000000000001c1
 	ret
 func0000000000000c1c:                   # @func0000000000000c1c
 	li	a0, 95
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsne.vx	v11, v12, a0
-	vsetvli	zero, zero, e16, m1, ta, ma
+	vsetivli	zero, 8, e16, m1, ta, ma
 	vmseq.vi	v10, v10, 0
-	li	a0, 128
 	vsetvli	zero, zero, e32, m2, ta, ma
+	vmsne.vx	v11, v12, a0
+	li	a0, 128
 	vmsne.vx	v12, v8, a0
 	vmand.mm	v8, v11, v12
 	vmand.mm	v0, v8, v10

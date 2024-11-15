@@ -56,9 +56,9 @@ func000000000000001d:                   # @func000000000000001d
 	ret
 func000000000000003f:                   # @func000000000000003f
 	add	a1, a1, a2
+	lui	a2, 3
 	subw	a1, a1, a0
-	lui	a0, 3
-	addi	a0, a0, 1
+	addi	a0, a2, 1
 	addw	a0, a0, a1
 	ret
 func0000000000000019:                   # @func0000000000000019
@@ -68,16 +68,16 @@ func0000000000000019:                   # @func0000000000000019
 	ret
 func0000000000000034:                   # @func0000000000000034
 	add	a1, a1, a2
+	lui	a2, 1048400
 	subw	a1, a1, a0
-	lui	a0, 1048400
-	addi	a0, a0, 1733
+	addi	a0, a2, 1733
 	addw	a0, a0, a1
 	ret
 func0000000000000035:                   # @func0000000000000035
 	add	a1, a1, a2
+	lui	a2, 1048400
 	subw	a1, a1, a0
-	lui	a0, 1048400
-	addi	a0, a0, 1733
+	addi	a0, a2, 1733
 	addw	a0, a0, a1
 	ret
 func0000000000000018:                   # @func0000000000000018

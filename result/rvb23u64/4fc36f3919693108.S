@@ -25,8 +25,8 @@ func0000000000000011:                   # @func0000000000000011
 func0000000000000001:                   # @func0000000000000001
 	sext.w	a0, a0
 	bseti	a2, a2, 0
-	bseti	a2, a2, 28
 	ori	a1, a1, 1
+	bseti	a2, a2, 28
 	addi	a0, a0, -15
 	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0

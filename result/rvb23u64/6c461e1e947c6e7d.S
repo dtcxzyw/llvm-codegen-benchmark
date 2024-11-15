@@ -6,11 +6,11 @@ func0000000000000016:                   # @func0000000000000016
 	li	a2, 1000
 	mul	a2, a2, a0
 	slt	a0, a0, a1
-	czero.eqz	a1, a2, a0
-	li	a2, -1
-	srli	a2, a2, 1
-	czero.nez	a0, a2, a0
-	or	a0, a0, a1
+	li	a1, -1
+	srli	a1, a1, 1
+	czero.eqz	a2, a2, a0
+	czero.nez	a0, a1, a0
+	or	a0, a0, a2
 	ret
 func000000000000000a:                   # @func000000000000000a
 	sh1add	a1, a0, a0
@@ -37,8 +37,8 @@ func000000000000001a:                   # @func000000000000001a
 	li	a2, 1000
 	mul	a2, a2, a0
 	slt	a0, a1, a0
-	czero.eqz	a1, a2, a0
-	bseti	a2, zero, 63
-	czero.nez	a0, a2, a0
-	or	a0, a0, a1
+	bseti	a1, zero, 63
+	czero.eqz	a2, a2, a0
+	czero.nez	a0, a1, a0
+	or	a0, a0, a2
 	ret

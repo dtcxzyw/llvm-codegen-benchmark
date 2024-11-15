@@ -1,9 +1,9 @@
 func0000000000000050:                   # @func0000000000000050
 	slli	a2, a2, 24
 	or	a1, a1, a2
+	lui	a2, 370728
 	add	a0, a0, a1
-	lui	a1, 370728
-	addi	a1, a1, -1639
+	addi	a1, a2, -1639
 	addw	a0, a0, a1
 	ret
 func000000000000007c:                   # @func000000000000007c

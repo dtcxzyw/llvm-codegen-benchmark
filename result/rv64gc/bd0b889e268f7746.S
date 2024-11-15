@@ -20,19 +20,19 @@ func0000000000000016:                   # @func0000000000000016
 	ret
 func0000000000000056:                   # @func0000000000000056
 	add	a0, a0, a1
-	srai	a1, a0, 63
-	lui	a2, 1048540
-	addiw	a2, a2, 1360
+	lui	a1, 1048540
+	srai	a2, a0, 63
+	addiw	a1, a1, 1360
 	and	a1, a1, a2
 	add	a0, a0, a1
 	ret
 func00000000000000d8:                   # @func00000000000000d8
 	add	a0, a0, a1
 	lui	a1, 16
+	lui	a2, 1048560
 	addiw	a1, a1, -16
 	sltu	a1, a1, a0
 	neg	a1, a1
-	lui	a2, 1048560
 	addiw	a2, a2, 15
 	and	a1, a1, a2
 	add	a0, a0, a1
@@ -40,10 +40,10 @@ func00000000000000d8:                   # @func00000000000000d8
 func000000000000004a:                   # @func000000000000004a
 	add	a0, a0, a1
 	lui	a1, 244
+	lui	a2, 12
 	addiw	a1, a1, 575
 	slt	a1, a1, a0
 	neg	a1, a1
-	lui	a2, 12
 	addiw	a2, a2, -576
 	and	a1, a1, a2
 	add	a0, a0, a1

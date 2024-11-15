@@ -11,8 +11,8 @@ func00000000000000cc:                   # @func00000000000000cc
 	ret
 func0000000000000018:                   # @func0000000000000018
 	andi	a1, a1, 7
-	seqz	a1, a1
 	sltiu	a0, a0, 64
+	seqz	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
 	ret

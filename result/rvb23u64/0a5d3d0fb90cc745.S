@@ -1,9 +1,9 @@
 func0000000000000000:                   # @func0000000000000000
 	slli	a2, a1, 1
 	slli	a1, a1, 31
+	li	a3, 5
 	sub	a1, a1, a2
-	li	a2, 5
-	bseti	a2, a2, 33
+	bseti	a2, a3, 33
 	mulhu	a2, a0, a2
 	sub	a3, a0, a2
 	srli	a3, a3, 1
@@ -18,9 +18,9 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000015:                   # @func0000000000000015
 	slli	a2, a1, 1
 	slli	a1, a1, 31
+	li	a3, 5
 	sub	a1, a1, a2
-	li	a2, 5
-	bseti	a2, a2, 33
+	bseti	a2, a3, 33
 	mulhu	a2, a0, a2
 	sub	a3, a0, a2
 	srli	a3, a3, 1

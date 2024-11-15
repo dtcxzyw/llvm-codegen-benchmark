@@ -32,12 +32,12 @@ func0000000000000061:                   # @func0000000000000061
 	vmor.mm	v0, v12, v10
 	ret
 func0000000000000081:                   # @func0000000000000081
+	lui	a0, 16
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vand.vx	v8, v8, a0
 	lui	a0, 8
 	addi	a0, a0, -1
-	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgtu.vx	v12, v10, a0
-	lui	a0, 16
-	vand.vx	v8, v8, a0
 	vmseq.vi	v10, v8, 0
 	vmor.mm	v0, v12, v10
 	ret

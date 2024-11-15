@@ -12,9 +12,9 @@ func000000000000018a:                   # @func000000000000018a
 	ret
 func0000000000000144:                   # @func0000000000000144
 	add	a1, a1, a2
+	lui	a2, 1034754
 	subw	a1, a1, a0
-	lui	a0, 1034754
-	addi	a0, a0, 1024
+	addi	a0, a2, 1024
 	addw	a0, a0, a1
 	sltiu	a0, a0, 128
 	ret

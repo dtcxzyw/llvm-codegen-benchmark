@@ -41,8 +41,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	ret
 func000000000000000a:                   # @func000000000000000a
 	add	a0, a0, a1
-	sh3add	a0, a0, a0
 	lui	a1, 524288
+	sh3add	a0, a0, a0
 	addiw	a1, a1, -1
 	slt	a0, a1, a0
 	ret

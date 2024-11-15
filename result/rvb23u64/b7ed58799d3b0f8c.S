@@ -1,10 +1,10 @@
 func0000000000000000:                   # @func0000000000000000
 	add	a1, a1, a2
-	slli	a2, a1, 2
+	lui	a2, 352717
 	add	a0, a0, a1
-	add	a0, a0, a2
-	lui	a1, 352717
-	addi	a1, a1, -741
+	slli	a1, a1, 2
+	add	a0, a0, a1
+	addi	a1, a2, -741
 	add	a0, a0, a1
 	sh2add	a0, a0, a0
 	sext.w	a0, a0

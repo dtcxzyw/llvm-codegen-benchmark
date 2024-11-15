@@ -18,17 +18,17 @@ func0000000000000070:                   # @func0000000000000070
 func000000000000001a:                   # @func000000000000001a
 	li	a2, 122
 	mulw	a1, a1, a2
+	lui	a2, 305
 	sh2add	a0, a1, a0
-	lui	a1, 305
-	addiw	a1, a1, 976
+	addiw	a1, a2, 976
 	add	a0, a0, a1
 	ret
 func0000000000000012:                   # @func0000000000000012
 	li	a2, 122
 	mulw	a1, a1, a2
+	lui	a2, 320
 	sh2add	a0, a1, a0
-	lui	a1, 320
-	addiw	a1, a1, -928
+	addiw	a1, a2, -928
 	add	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000

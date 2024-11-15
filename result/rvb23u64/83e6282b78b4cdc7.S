@@ -17,13 +17,13 @@ func000000000000000f:                   # @func000000000000000f
 	lui	a3, 335544
 	addiw	a3, a3, 1311
 	mul	a2, a2, a3
+	slli	a3, a0, 2
+	slli	a0, a0, 6
 	srli	a2, a2, 37
 	sh2add	a2, a2, a2
 	sh2add	a2, a2, a2
 	slli	a2, a2, 2
 	subw	a1, a1, a2
-	slli	a2, a0, 2
-	slli	a0, a0, 6
-	subw	a0, a0, a2
+	subw	a0, a0, a3
 	addw	a0, a0, a1
 	ret

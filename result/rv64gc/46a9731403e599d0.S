@@ -1,8 +1,8 @@
 func000000000000010b:                   # @func000000000000010b
 	not	a2, a2
 	add	a1, a1, a2
-	slli	a1, a1, 32
 	li	a2, 9
+	slli	a1, a1, 32
 	slli	a2, a2, 35
 	mulhu	a1, a1, a2
 	add	a0, a0, a1
@@ -11,8 +11,8 @@ func000000000000010b:                   # @func000000000000010b
 func000000000000000b:                   # @func000000000000000b
 	not	a2, a2
 	add	a1, a1, a2
-	slli	a1, a1, 32
 	li	a2, 11
+	slli	a1, a1, 32
 	slli	a2, a2, 36
 	mulhu	a1, a1, a2
 	add	a0, a0, a1

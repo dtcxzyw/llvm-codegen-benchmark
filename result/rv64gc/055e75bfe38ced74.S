@@ -1,7 +1,7 @@
 func0000000000000004:                   # @func0000000000000004
 	seqz	a2, a2
-	addi	a2, a2, -1
 	lui	a3, 1048320
+	addi	a2, a2, -1
 	addiw	a3, a3, 1
 	slli	a3, a3, 12
 	and	a2, a2, a3

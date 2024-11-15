@@ -8,9 +8,10 @@ func0000000000000004:                   # @func0000000000000004
 	lui	a1, %hi(.LCPI0_1)
 	ld	a1, %lo(.LCPI0_1)(a1)
 	vsetivli	zero, 4, e64, m2, ta, mu
-	vzext.vf2	v10, v8
-	vmv.v.x	v8, a0
-	vmul.vx	v8, v10, a1, v0.t
+	vmv.v.x	v10, a0
+	vzext.vf2	v12, v8
+	vmul.vx	v10, v12, a1, v0.t
+	vmv.v.v	v8, v10
 	ret
 .LCPI1_0:
 	.quad	5871781006564002453             # 0x517cc1b727220a95

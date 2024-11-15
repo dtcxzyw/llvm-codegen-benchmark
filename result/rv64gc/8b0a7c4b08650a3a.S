@@ -1,9 +1,9 @@
 func000000000000000f:                   # @func000000000000000f
 	andi	a1, a1, 7
-	addw	a0, a0, a1
-	slli	a1, a0, 32
 	lui	a2, 9363
+	addw	a0, a0, a1
 	slli	a2, a2, 20
+	slli	a1, a0, 32
 	mulhu	a1, a1, a2
 	srli	a1, a1, 16
 	subw	a2, a0, a1

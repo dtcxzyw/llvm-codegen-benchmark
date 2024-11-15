@@ -16,30 +16,30 @@ func0000000000000081:                   # @func0000000000000081
 	lui	a2, 244141
 	addiw	a2, a2, -1537
 	sltu	a1, a2, a1
-	negw	a1, a1
 	lui	a2, 804435
 	addi	a2, a2, 1536
+	negw	a1, a1
 	and	a1, a1, a2
+	lui	a2, 429094
 	add	a0, a0, a1
-	lui	a1, 429094
-	addi	a1, a1, 313
-	mul	a0, a0, a1
-	slliw	a1, a0, 26
-	srliw	a0, a0, 6
-	or	a0, a0, a1
 	lui	a1, 1
+	addi	a2, a2, 313
+	mul	a0, a0, a2
+	slliw	a2, a0, 26
+	srliw	a0, a0, 6
+	or	a0, a0, a2
 	addiw	a1, a1, 199
 	sltu	a0, a0, a1
 	ret
 func00000000000001a8:                   # @func00000000000001a8
 	sext.w	a1, a0
+	lui	a2, 149797
 	slti	a1, a1, -4
+	addi	a2, a2, -1755
 	xori	a1, a1, 1
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	slli	a1, a0, 32
-	lui	a2, 149797
-	addi	a2, a2, -1755
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
 	srli	a1, a1, 32

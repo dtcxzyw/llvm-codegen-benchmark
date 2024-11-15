@@ -53,8 +53,8 @@ func0000000000000046:                   # @func0000000000000046
 func0000000000000088:                   # @func0000000000000088
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	vmsgtu.vi	v12, v10, 8
 	li	a0, -1
+	vmsgtu.vi	v12, v10, 8
 	srli	a0, a0, 3
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v0, v12, v10

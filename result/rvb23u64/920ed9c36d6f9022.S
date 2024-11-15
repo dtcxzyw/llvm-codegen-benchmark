@@ -29,10 +29,10 @@ func0000000000000005:                   # @func0000000000000005
 	addiw	a2, a2, -1911
 	slli	a3, a2, 32
 	add	a2, a2, a3
+	li	a3, -60
 	mulhu	a1, a1, a2
 	srli	a1, a1, 5
-	li	a2, -60
-	mul	a0, a0, a2
+	mul	a0, a0, a3
 	add	a0, a0, a1
 	ret
 .LCPI3_0:
@@ -42,10 +42,10 @@ func000000000000000f:                   # @func000000000000000f
 	ld	a2, %lo(.LCPI3_0)(a2)
 	srli	a1, a1, 9
 	mulhu	a1, a1, a2
-	srli	a1, a1, 11
 	lui	a2, 1571
 	addiw	a2, a2, 667
 	slli	a2, a2, 9
+	srli	a1, a1, 11
 	mul	a0, a0, a2
 	add	a0, a0, a1
 	ret
@@ -56,9 +56,9 @@ func000000000000000a:                   # @func000000000000000a
 	ld	a2, %lo(.LCPI4_0)(a2)
 	srli	a1, a1, 8
 	mulhu	a1, a1, a2
-	srli	a1, a1, 10
 	li	a2, -60
 	zext.w	a2, a2
+	srli	a1, a1, 10
 	mul	a0, a0, a2
 	add	a0, a0, a1
 	ret

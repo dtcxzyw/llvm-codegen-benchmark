@@ -3,8 +3,8 @@ func0000000000000061:                   # @func0000000000000061
 	andi	a4, a1, 255
 	beq	a4, a3, .LBB0_2
 	slli	a2, a2, 56
-	srai	a2, a2, 56
 	slli	a1, a1, 56
+	srai	a2, a2, 56
 	srai	a1, a1, 56
 	slt	a0, a1, a2
 .LBB0_2:                                # %entry

@@ -19,15 +19,15 @@ func000000000000000e:                   # @func000000000000000e
 	csrr	a1, vlenb
 	slli	a1, a1, 3
 	sub	sp, sp, a1
+	addi	a1, sp, 16
+	vs8r.v	v8, (a1)                        # Unknown-size Folded Spill
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vle64.v	v24, (a0)
-	addi	a0, sp, 16
-	vs8r.v	v8, (a0)                        # Unknown-size Folded Spill
-	vmfeq.vv	v0, v24, v24
-	vmv.v.v	v8, v24
+	vle64.v	v8, (a0)
+	vmfeq.vv	v0, v8, v8
 	vmv.v.i	v24, 0
 	vmerge.vvm	v24, v24, v8, v0
 	vfmul.vv	v16, v24, v16
+	addi	a0, sp, 16
 	vl8r.v	v8, (a0)                        # Unknown-size Folded Reload
 	vfadd.vv	v8, v16, v8
 	csrr	a0, vlenb

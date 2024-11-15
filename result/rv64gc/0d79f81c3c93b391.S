@@ -16,9 +16,9 @@ func0000000000000048:                   # @func0000000000000048
 func0000000000000001:                   # @func0000000000000001
 	addi	a1, a1, -48
 	lui	a2, 16
+	neg	a0, a0
 	addiw	a2, a2, -1
 	and	a1, a1, a2
-	neg	a0, a0
 	and	a0, a0, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -26,9 +26,9 @@ func0000000000000001:                   # @func0000000000000001
 func000000000000000c:                   # @func000000000000000c
 	addi	a1, a1, -48
 	lui	a2, 16
+	neg	a0, a0
 	addiw	a2, a2, -1
 	and	a1, a1, a2
-	neg	a0, a0
 	and	a0, a0, a2
 	xor	a0, a0, a1
 	snez	a0, a0

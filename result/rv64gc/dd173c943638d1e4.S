@@ -14,8 +14,8 @@ func00000000000004a8:                   # @func00000000000004a8
 func00000000000004a4:                   # @func00000000000004a4
 	mul	a4, a1, a4
 	mulhu	a1, a1, a3
-	add	a1, a1, a4
 	mul	a2, a2, a3
+	add	a1, a1, a4
 	add	a0, a0, a2
 	add	a0, a0, a1
 	sltiu	a0, a0, 100
@@ -23,8 +23,8 @@ func00000000000004a4:                   # @func00000000000004a4
 func0000000000000488:                   # @func0000000000000488
 	mul	a4, a1, a4
 	mulhu	a1, a1, a3
-	add	a1, a1, a4
 	mul	a2, a2, a3
+	add	a1, a1, a4
 	add	a0, a0, a2
 	add	a0, a0, a1
 	sltiu	a0, a0, 2

@@ -7,8 +7,8 @@ func00000000000000c4:                   # @func00000000000000c4
 func00000000000000fc:                   # @func00000000000000fc
 	slli	a2, a2, 8
 	or	a0, a0, a1
-	or	a0, a0, a2
 	li	a1, -1
+	or	a0, a0, a2
 	srli	a1, a1, 32
 	xor	a0, a0, a1
 	snez	a0, a0
@@ -33,8 +33,8 @@ func000000000000002c:                   # @func000000000000002c
 func00000000000000b4:                   # @func00000000000000b4
 	slli	a2, a2, 32
 	or	a0, a0, a1
-	or	a0, a0, a2
 	li	a1, 7
+	or	a0, a0, a2
 	bseti	a1, a1, 63
 	sltu	a0, a0, a1
 	ret

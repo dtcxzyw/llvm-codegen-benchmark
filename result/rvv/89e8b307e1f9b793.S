@@ -19,9 +19,9 @@ func000000000000000f:                   # @func000000000000000f
 	li	a0, 1
 	slli	a0, a0, 36
 	addi	a1, a0, -48
+	addi	a0, a0, -16
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a1
-	addi	a0, a0, -16
 	vand.vx	v8, v8, a0
 	li	a0, 16
 	vadd.vx	v8, v8, a0
@@ -38,15 +38,15 @@ func0000000000000005:                   # @func0000000000000005
 func000000000000000a:                   # @func000000000000000a
 	lui	a0, 152146
 	addiw	a0, a0, 1317
+	slli	a1, a0, 32
+	add	a0, a0, a1
 	lui	a1, %hi(.LCPI4_0)
 	ld	a1, %lo(.LCPI4_0)(a1)
-	slli	a2, a0, 32
-	add	a0, a0, a2
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v8, v8, a0
-	vand.vx	v8, v8, a1
 	lui	a0, 106914
 	addiw	a0, a0, -1510
+	vand.vx	v8, v8, a1
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vadd.vx	v8, v8, a0

@@ -37,9 +37,9 @@ func0000000000000001:                   # @func0000000000000001
 func000000000000002f:                   # @func000000000000002f
 	slliw	a2, a2, 24
 	lui	a3, 1048064
+	slliw	a0, a0, 1
 	addiw	a3, a3, 1
 	and	a1, a1, a3
-	slliw	a0, a0, 1
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -55,9 +55,9 @@ func000000000000000f:                   # @func000000000000000f
 func0000000000000036:                   # @func0000000000000036
 	slliw	a2, a2, 24
 	lui	a3, 1046544
+	slliw	a0, a0, 16
 	addiw	a3, a3, -1
 	and	a1, a1, a3
-	slliw	a0, a0, 16
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret

@@ -46,8 +46,8 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func000000000000000d:                   # @func000000000000000d
 	andi	a2, a2, 1
-	addi	a2, a2, -1
 	lui	a3, 1024
+	addi	a2, a2, -1
 	and	a2, a2, a3
 	add	a0, a0, a1
 	addw	a0, a0, a2

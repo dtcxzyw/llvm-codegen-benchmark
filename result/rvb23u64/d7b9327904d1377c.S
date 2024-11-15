@@ -2,16 +2,16 @@ func0000000000000281:                   # @func0000000000000281
 	sh3add	a0, a0, a1
 	lui	a2, 4
 	addiw	a3, a2, 240
-	add	a0, a0, a3
 	addiw	a2, a2, 272
+	add	a0, a0, a3
 	add	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000289:                   # @func0000000000000289
 	sh3add	a0, a0, a1
-	addi	a0, a0, 8
 	li	a2, 1025
+	addi	a0, a0, 8
 	sh3add	a1, a2, a1
 	sltu	a0, a0, a1
 	xori	a0, a0, 1

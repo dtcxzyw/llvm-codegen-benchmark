@@ -34,8 +34,8 @@ func0000000000000115:                   # @func0000000000000115
 	sext.w	a1, a1
 	srai	a2, a2, 3
 	sltu	a0, a0, a2
-	not	a0, a0
 	addi	a1, a1, -3
+	not	a0, a0
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret

@@ -25,9 +25,9 @@ func0000000000000006:                   # @func0000000000000006
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v24, v16, fa5
 	vmfgt.vf	v25, v16, fa5
+	fli.d	fa5, nan
 	vmor.mm	v16, v25, v24
 	vmand.mm	v0, v16, v0
-	fli.d	fa5, nan
 	vfmv.v.f	v16, fa5
 	vmerge.vvm	v8, v16, v8, v0
 	ret

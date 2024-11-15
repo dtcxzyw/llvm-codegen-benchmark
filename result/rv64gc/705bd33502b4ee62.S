@@ -31,8 +31,8 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func000000000000000c:                   # @func000000000000000c
 	srliw	a0, a0, 16
-	slli	a0, a0, 16
 	li	a1, 1
+	slli	a0, a0, 16
 	slli	a1, a1, 31
 	xor	a0, a0, a1
 	snez	a0, a0

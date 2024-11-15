@@ -4,11 +4,11 @@ func0000000000000288:                   # @func0000000000000288
 	li	a0, -48
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.x	v12, a0
+	li	a0, 26
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vwaddu.wv	v12, v12, v11
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsleu.vi	v10, v12, 9
-	li	a0, 26
 	vmsltu.vx	v11, v8, a0
 	vmor.mm	v0, v10, v11
 	ret
@@ -18,11 +18,11 @@ func0000000000000a88:                   # @func0000000000000a88
 	li	a0, -37
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.x	v12, a0
+	li	a0, -36
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vwaddu.wv	v12, v12, v11
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsleu.vi	v10, v12, 1
-	li	a0, -36
 	vmsltu.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10
 	ret

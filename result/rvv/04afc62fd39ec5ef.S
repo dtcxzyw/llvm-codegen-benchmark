@@ -1,8 +1,8 @@
 func0000000000000038:                   # @func0000000000000038
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vzext.vf4	v12, v10
-	vmul.vv	v8, v12, v8
 	lui	a0, 8
+	vmul.vv	v8, v12, v8
 	addi	a0, a0, 7
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -22,8 +22,8 @@ func0000000000000034:                   # @func0000000000000034
 func0000000000000004:                   # @func0000000000000004
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vzext.vf4	v12, v10
-	vmul.vv	v8, v12, v8
 	lui	a0, 8
+	vmul.vv	v8, v12, v8
 	addi	a0, a0, -256
 	vmsltu.vx	v0, v8, a0
 	ret

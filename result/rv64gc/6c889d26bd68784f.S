@@ -6,15 +6,15 @@ func000000000000001a:                   # @func000000000000001a
 	ret
 func0000000000000010:                   # @func0000000000000010
 	slli	a1, a1, 2
-	add	a0, a0, a1
 	srli	a2, a2, 3
+	add	a0, a0, a1
 	andi	a1, a2, 508
 	add	a0, a0, a1
 	ret
 func0000000000000018:                   # @func0000000000000018
 	slli	a1, a1, 4
-	add	a0, a0, a1
 	srli	a2, a2, 12
+	add	a0, a0, a1
 	lui	a1, 1
 	addiw	a1, a1, -16
 	and	a1, a1, a2

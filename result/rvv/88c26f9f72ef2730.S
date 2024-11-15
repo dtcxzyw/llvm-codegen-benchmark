@@ -8,22 +8,22 @@ func0000000000000004:                   # @func0000000000000004
 func0000000000000001:                   # @func0000000000000001
 	lui	a0, 16
 	addi	a1, a0, -768
+	addi	a0, a0, -1
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v8, v8, a1
-	addi	a0, a0, -1
 	vand.vx	v8, v8, a0
 	li	a0, -3
 	vmul.vx	v8, v8, a0
 	ret
 func0000000000000002:                   # @func0000000000000002
 	lui	a0, 8
+	lui	a1, 16
 	addi	a0, a0, -1
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v8, v8, a0
-	lui	a0, 16
-	addi	a1, a0, -1
-	vand.vx	v8, v8, a1
-	addi	a0, a0, -255
+	addi	a0, a1, -1
+	vand.vx	v8, v8, a0
+	addi	a0, a1, -255
 	vmul.vx	v8, v8, a0
 	ret
 func000000000000000f:                   # @func000000000000000f

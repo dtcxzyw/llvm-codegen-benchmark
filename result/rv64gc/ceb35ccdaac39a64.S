@@ -3,10 +3,10 @@ func000000000000000b:                   # @func000000000000000b
 	lui	a3, 1015840
 	addiw	a3, a3, -1
 	and	a1, a1, a3
+	lui	a3, 1016832
+	addiw	a3, a3, -1
 	or	a1, a1, a2
-	lui	a2, 1016832
-	addiw	a2, a2, -1
-	and	a0, a0, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	ret
 func000000000000000f:                   # @func000000000000000f
@@ -32,9 +32,9 @@ func000000000000000c:                   # @func000000000000000c
 	lui	a3, 1046536
 	addiw	a3, a3, 255
 	and	a1, a1, a3
+	lui	a3, 1048568
+	addiw	a3, a3, 255
 	or	a1, a1, a2
-	lui	a2, 1048568
-	addiw	a2, a2, 255
-	and	a0, a0, a2
+	and	a0, a0, a3
 	or	a0, a0, a1
 	ret

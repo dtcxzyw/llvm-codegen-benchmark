@@ -24,10 +24,10 @@ func00000000000000c1:                   # @func00000000000000c1
 func00000000000000cc:                   # @func00000000000000cc
 	lui	a2, 2048
 	and	a1, a1, a2
+	lui	a2, 1046528
 	or	a0, a0, a1
 	sext.w	a0, a0
-	lui	a1, 1046528
-	czero.nez	a0, a1, a0
+	czero.nez	a0, a2, a0
 	lui	a1, 2688
 	add	a0, a0, a1
 	ret

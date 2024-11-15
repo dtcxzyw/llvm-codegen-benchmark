@@ -17,12 +17,12 @@ func00000000000001c0:                   # @func00000000000001c0
 	ret
 func00000000000000c0:                   # @func00000000000000c0
 	li	a3, 5
-	slli	a3, a3, 39
 	slli	a2, a2, 32
-	mulhu	a2, a2, a3
 	add	a0, a0, a1
 	lui	a1, 313
+	slli	a3, a3, 39
 	addiw	a1, a1, -768
+	mulhu	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

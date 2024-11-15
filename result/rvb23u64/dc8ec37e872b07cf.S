@@ -35,30 +35,30 @@ func00000000000003ff:                   # @func00000000000003ff
 func0000000000000155:                   # @func0000000000000155
 	slli	a2, a2, 13
 	lui	a3, 1048572
-	addiw	a3, a3, 1301
-	mul	a1, a1, a3
 	add	a0, a0, a2
 	lui	a2, 32
+	addiw	a3, a3, 1301
+	mul	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 func0000000000000175:                   # @func0000000000000175
 	slli	a2, a2, 13
 	lui	a3, 3
-	addiw	a3, a3, -1850
-	mul	a1, a1, a3
 	add	a0, a0, a2
 	lui	a2, 32
+	addiw	a3, a3, -1850
+	mul	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 func00000000000001d5:                   # @func00000000000001d5
 	slli	a2, a2, 13
 	lui	a3, 1
-	addiw	a3, a3, 1697
-	mul	a1, a1, a3
 	add	a0, a0, a2
 	lui	a2, 32
+	addiw	a3, a3, 1697
+	mul	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

@@ -28,8 +28,8 @@ func0000000000000053:                   # @func0000000000000053
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgt.vi	v0, v8, 5
 	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
 	li	a0, 52
+	vmerge.vim	v8, v8, 1, v0
 	vmv.v.x	v10, a0
 	vsll.vv	v8, v10, v8
 	ret

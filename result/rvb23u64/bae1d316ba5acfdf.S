@@ -3,9 +3,9 @@
 func0000000000000148:                   # @func0000000000000148
 	lui	a3, %hi(.LCPI0_0)
 	ld	a3, %lo(.LCPI0_0)(a3)
-	sh1add	a2, a2, a2
 	add	a0, a0, a1
-	sh2add	a0, a2, a0
+	sh1add	a1, a2, a2
+	sh2add	a0, a1, a0
 	sltu	a0, a3, a0
 	ret
 func0000000000000141:                   # @func0000000000000141
@@ -23,11 +23,11 @@ func0000000000000104:                   # @func0000000000000104
 	ret
 func000000000000010a:                   # @func000000000000010a
 	lui	a3, 804435
+	add	a0, a0, a1
+	lui	a1, 244141
 	addiw	a3, a3, 1536
 	mul	a2, a2, a3
-	add	a0, a0, a1
 	add	a0, a0, a2
-	lui	a1, 244141
 	addiw	a1, a1, -1537
 	slt	a0, a1, a0
 	ret
@@ -49,13 +49,13 @@ func000000000000000c:                   # @func000000000000000c
 	ret
 func0000000000000108:                   # @func0000000000000108
 	lui	a3, 244
-	addiw	a3, a3, 576
-	mul	a2, a2, a3
 	add	a0, a0, a1
-	add	a0, a0, a2
 	lui	a1, 2575
+	addiw	a3, a3, 576
 	addiw	a1, a1, -325
+	mul	a2, a2, a3
 	slli	a1, a1, 13
+	add	a0, a0, a2
 	addi	a1, a1, -1
 	sltu	a0, a1, a0
 	ret

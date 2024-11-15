@@ -8,9 +8,9 @@ func0000000000000015:                   # @func0000000000000015
 	vmacc.vx	v8, a0, v10
 	ret
 func0000000000000000:                   # @func0000000000000000
+	li	a0, 769
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vadd.vi	v8, v8, 12, v0.t
-	li	a0, 769
 	vmv.v.x	v10, a0
 	lui	a0, 15
 	addi	a0, a0, 1279

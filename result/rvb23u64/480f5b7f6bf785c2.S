@@ -1,8 +1,8 @@
 func0000000000000011:                   # @func0000000000000011
 	lui	a1, 522240
 	and	a1, a1, a0
-	snez	a1, a1
 	slli	a0, a0, 41
+	snez	a1, a1
 	srli	a0, a0, 41
 	slli	a1, a1, 23
 	or	a0, a0, a1
@@ -18,8 +18,8 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000014:                   # @func0000000000000014
 	lui	a1, 524032
 	and	a1, a1, a0
-	snez	a1, a1
 	slli	a0, a0, 44
+	snez	a1, a1
 	srli	a0, a0, 44
 	slli	a1, a1, 20
 	or	a0, a0, a1

@@ -20,10 +20,10 @@ func00000000000004c4:                   # @func00000000000004c4
 func000000000000044c:                   # @func000000000000044c
 	li	a0, -26
 	vsetivli	zero, 16, e8, m1, ta, ma
-	vmsltu.vx	v10, v10, a0
 	vmsleu.vi	v9, v9, -11
-	vmand.mm	v9, v9, v10
+	vmsltu.vx	v10, v10, a0
 	li	a0, 95
+	vmand.mm	v9, v9, v10
 	vmsne.vx	v8, v8, a0
 	vmand.mm	v0, v8, v9
 	ret
@@ -40,8 +40,8 @@ func0000000000000c4c:                   # @func0000000000000c4c
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vmsne.vi	v10, v10, 12
 	li	a0, 22
-	vmsltu.vx	v9, v9, a0
 	vmsne.vi	v8, v8, 12
+	vmsltu.vx	v9, v9, a0
 	vmand.mm	v8, v10, v8
 	vmand.mm	v0, v8, v9
 	ret

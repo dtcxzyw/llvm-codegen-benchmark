@@ -15,8 +15,8 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000008:                   # @func0000000000000008
 	slli	a0, a0, 2
 	lui	a1, 1048340
-	addiw	a1, a1, -1079
 	lui	a2, %hi(.LCPI1_0)
+	addiw	a1, a1, -1079
 	ld	a2, %lo(.LCPI1_0)(a2)
 	srli	a1, a1, 1
 	not	a1, a1
@@ -26,8 +26,8 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func000000000000000a:                   # @func000000000000000a
 	slli	a0, a0, 10
-	addi	a0, a0, -8
 	lui	a1, 699051
+	addi	a0, a0, -8
 	addiw	a1, a1, -1365
 	slli	a2, a1, 32
 	add	a1, a1, a2

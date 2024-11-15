@@ -24,8 +24,8 @@ func0000000000000002:                   # @func0000000000000002
 	fmv.w.x	fa0, a1
 	bnez	a0, .LBB1_3
 	fdiv.s	fa4, fa0, fa1
-	fmul.s	fa5, fa4, fa5
 	lui	a0, 784384
+	fmul.s	fa5, fa4, fa5
 	fmv.w.x	fa0, a0
 	flt.s	a0, fa5, fa0
 	bnez	a0, .LBB1_3

@@ -39,11 +39,11 @@ func0000000000000003:                   # @func0000000000000003
 	addi	a1, a0, -1
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v10, a1
+	lui	a1, 1047844
 	addi	a0, a0, 2
 	vmerge.vxm	v10, v10, a0, v0
 	vadd.vv	v8, v10, v8
-	lui	a0, 1047844
-	addi	a0, a0, -1731
+	addi	a0, a1, -1731
 	vadd.vx	v8, v8, a0
 	ret
 func0000000000000013:                   # @func0000000000000013

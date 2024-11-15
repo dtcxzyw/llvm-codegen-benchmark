@@ -1,7 +1,7 @@
 func000000000000000d:                   # @func000000000000000d
 	li	a2, 64
-	sub	a1, a2, a1
 	slli	a0, a0, 32
+	sub	a1, a2, a1
 	srli	a0, a0, 32
 	bltu	a0, a1, .LBB0_2
 	mv	a0, a1
@@ -9,8 +9,8 @@ func000000000000000d:                   # @func000000000000000d
 	ret
 func0000000000000004:                   # @func0000000000000004
 	li	a2, 64
-	sub	a1, a2, a1
 	slli	a0, a0, 32
+	sub	a1, a2, a1
 	srli	a0, a0, 32
 	bltu	a0, a1, .LBB1_2
 	mv	a0, a1
@@ -34,9 +34,9 @@ func000000000000000e:                   # @func000000000000000e
 	ret
 func0000000000000005:                   # @func0000000000000005
 	lui	a2, 64
+	slli	a0, a0, 32
 	addiw	a2, a2, -16
 	sub	a1, a2, a1
-	slli	a0, a0, 32
 	srli	a0, a0, 32
 	bltu	a0, a1, .LBB4_2
 	mv	a0, a1
@@ -44,8 +44,8 @@ func0000000000000005:                   # @func0000000000000005
 	ret
 func000000000000000c:                   # @func000000000000000c
 	li	a2, 3
-	sub	a1, a2, a1
 	slli	a0, a0, 32
+	sub	a1, a2, a1
 	srli	a0, a0, 32
 	bltu	a0, a1, .LBB5_2
 	mv	a0, a1
@@ -53,8 +53,8 @@ func000000000000000c:                   # @func000000000000000c
 	ret
 func0000000000000000:                   # @func0000000000000000
 	slli	a1, a1, 32
-	srli	a1, a1, 32
 	li	a2, 16
+	srli	a1, a1, 32
 	sub	a0, a2, a0
 	bltu	a0, a1, .LBB6_2
 	mv	a0, a1

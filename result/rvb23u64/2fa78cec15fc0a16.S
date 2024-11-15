@@ -11,8 +11,8 @@ func0000000000000028:                   # @func0000000000000028
 func0000000000000008:                   # @func0000000000000008
 	slli	a2, a1, 3
 	slli	a1, a1, 6
-	sub	a1, a1, a2
 	srli	a0, a0, 61
+	sub	a1, a1, a2
 	seqz	a0, a0
 	addi	a0, a0, -1
 	or	a0, a0, a1
@@ -20,9 +20,9 @@ func0000000000000008:                   # @func0000000000000008
 func0000000000000034:                   # @func0000000000000034
 	sh2add	a1, a1, a1
 	srli	a0, a0, 3
+	li	a2, 5
 	sltiu	a0, a0, 625
 	czero.nez	a1, a1, a0
-	li	a2, 5
 	czero.eqz	a0, a2, a0
 	or	a0, a0, a1
 	ret

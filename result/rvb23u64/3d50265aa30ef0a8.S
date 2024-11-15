@@ -36,22 +36,22 @@ func000000000000000c:                   # @func000000000000000c
 	ret
 func000000000000000e:                   # @func000000000000000e
 	slli	a2, a2, 21
-	or	a0, a0, a2
 	bclri	a1, a1, 18
+	or	a0, a0, a2
 	bclri	a1, a1, 21
 	or	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
 	slli	a2, a2, 9
-	or	a0, a0, a2
 	srli	a1, a1, 63
+	or	a0, a0, a2
 	slli	a1, a1, 63
 	or	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000
 	slli	a2, a2, 9
-	or	a0, a0, a2
 	srli	a1, a1, 63
+	or	a0, a0, a2
 	slli	a1, a1, 63
 	or	a0, a0, a1
 	ret

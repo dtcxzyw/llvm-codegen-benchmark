@@ -3,10 +3,10 @@ func0000000000000000:                   # @func0000000000000000
 	addi	a0, a0, -381
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmulh.vx	v10, v10, a0
+	li	a0, 1000
 	vsra.vi	v10, v10, 18
 	vsrl.vi	v11, v10, 31
 	vadd.vv	v10, v10, v11
-	li	a0, 1000
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -17,11 +17,11 @@ func0000000000000004:                   # @func0000000000000004
 	addi	a0, a0, -557
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmulh.vx	v10, v10, a0
+	lui	a0, 244
+	addiw	a0, a0, 576
 	vsra.vi	v10, v10, 6
 	vsrl.vi	v11, v10, 31
 	vadd.vv	v10, v10, v11
-	lui	a0, 244
-	addiw	a0, a0, 576
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -32,10 +32,10 @@ func0000000000000005:                   # @func0000000000000005
 	addi	a0, a0, -557
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmulh.vx	v10, v10, a0
+	li	a0, 1000
 	vsra.vi	v10, v10, 6
 	vsrl.vi	v11, v10, 31
 	vadd.vv	v10, v10, v11
-	li	a0, 1000
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma

@@ -3,8 +3,8 @@ func0000000000000003:                   # @func0000000000000003
 	addi	a0, a0, 129
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmulhu.vx	v8, v8, a0
-	vadd.vv	v8, v8, v8
 	lui	a0, 16
+	vadd.vv	v8, v8, v8
 	addi	a0, a0, -256
 	vand.vx	v8, v8, a0
 	ret

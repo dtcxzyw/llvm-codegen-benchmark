@@ -14,12 +14,12 @@ func0000000000000088:                   # @func0000000000000088
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfclass.v	v16, v16
 	li	a0, 129
-	vand.vx	v16, v16, a0
-	vmsne.vi	v24, v16, 0
 	fli.d	fa5, inf
-	vmfeq.vf	v16, v8, fa5
-	vmor.mm	v8, v0, v16
-	vmor.mm	v0, v8, v24
+	vand.vx	v16, v16, a0
+	vmfeq.vf	v24, v8, fa5
+	vmsne.vi	v8, v16, 0
+	vmor.mm	v9, v0, v24
+	vmor.mm	v0, v9, v8
 	ret
 .LCPI2_0:
 	.quad	0x4056800000000000              # double 90

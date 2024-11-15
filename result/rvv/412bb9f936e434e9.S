@@ -2,21 +2,21 @@ func0000000000000544:                   # @func0000000000000544
 	li	a0, -58
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v10, v10, a0
-	vmsleu.vi	v12, v10, -11
 	li	a0, -91
 	vadd.vx	v8, v8, a0
 	li	a0, -26
+	vmsleu.vi	v12, v10, -11
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	ret
 func0000000000000044:                   # @func0000000000000044
 	li	a0, -97
+	lui	a1, 2
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v10, v10, a0
-	lui	a1, 2
 	addi	a1, a1, -228
-	vmsltu.vx	v12, v10, a1
 	vadd.vx	v8, v8, a0
+	vmsltu.vx	v12, v10, a1
 	vmsltu.vx	v10, v8, a1
 	vmand.mm	v0, v10, v12
 	ret

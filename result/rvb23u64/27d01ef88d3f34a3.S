@@ -4,8 +4,8 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func000000000000001a:                   # @func000000000000001a
 	sh1add	a0, a0, a0
-	sh2add	a0, a0, a2
 	sext.w	a1, a1
+	sh2add	a0, a0, a2
 	sh1add	a1, a1, a1
 	sh2add	a0, a1, a0
 	ret

@@ -11,9 +11,9 @@ func0000000000000011:                   # @func0000000000000011
 	slli	a3, a3, 10
 	addi	a3, a3, -1
 	sltu	a2, a3, a2
-	czero.nez	a1, a1, a2
 	lui	a3, 1
 	addiw	a3, a3, -8
+	czero.nez	a1, a1, a2
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
 	or	a0, a0, a1

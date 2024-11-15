@@ -3,9 +3,9 @@ func0000000000000002:                   # @func0000000000000002
 	lui	a2, 87381
 	addiw	a2, a2, 1365
 	and	a1, a1, a2
+	lui	a2, 209715
 	add	a0, a0, a1
-	lui	a1, 209715
-	addiw	a1, a1, 819
+	addiw	a1, a2, 819
 	and	a0, a0, a1
 	ret
 func0000000000000003:                   # @func0000000000000003
@@ -13,9 +13,9 @@ func0000000000000003:                   # @func0000000000000003
 	lui	a2, 13107
 	addiw	a2, a2, 819
 	and	a1, a1, a2
+	lui	a2, 28784
 	add	a0, a0, a1
-	lui	a1, 28784
-	addiw	a1, a1, 1799
+	addiw	a1, a2, 1799
 	and	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
@@ -29,10 +29,10 @@ func0000000000000007:                   # @func0000000000000007
 	lui	a2, 48
 	addiw	a2, a2, 771
 	and	a1, a1, a2
+	lui	a2, 112
 	add	a0, a0, a1
-	lui	a1, 112
-	addiw	a1, a1, 7
-	and	a0, a0, a1
+	addiw	a2, a2, 7
+	and	a0, a0, a2
 	ret
 func0000000000000000:                   # @func0000000000000000
 	bexti	a1, a1, 11

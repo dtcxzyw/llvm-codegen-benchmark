@@ -48,8 +48,8 @@ func0000000000000081:                   # @func0000000000000081
 	lui	a2, 65408
 	and	a1, a1, a2
 	lui	a2, 62720
-	sltu	a1, a2, a1
 	addi	a0, a0, -13
+	sltu	a1, a2, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

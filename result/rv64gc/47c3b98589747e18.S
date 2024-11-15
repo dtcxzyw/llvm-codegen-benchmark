@@ -10,19 +10,19 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func000000000000000c:                   # @func000000000000000c
 	andi	a1, a1, 1
+	negw	a0, a0
 	addi	a1, a1, -1
 	ori	a1, a1, 1
 	andi	a1, a1, 255
-	negw	a0, a0
 	andi	a0, a0, 255
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
 func0000000000000001:                   # @func0000000000000001
 	andi	a1, a1, 1
+	negw	a0, a0
 	addi	a1, a1, -5
 	andi	a1, a1, 255
-	negw	a0, a0
 	andi	a0, a0, 255
 	xor	a0, a0, a1
 	seqz	a0, a0

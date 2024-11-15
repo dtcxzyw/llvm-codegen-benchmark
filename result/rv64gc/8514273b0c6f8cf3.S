@@ -13,10 +13,10 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func0000000000000008:                   # @func0000000000000008
 	andi	a0, a0, 1
-	addi	a0, a0, -1
-	ori	a0, a0, 1
 	fmv.d.x	fa5, zero
+	addi	a0, a0, -1
 	feq.d	a1, fa0, fa5
+	ori	a0, a0, 1
 	addi	a1, a1, -1
 	and	a0, a0, a1
 	ret

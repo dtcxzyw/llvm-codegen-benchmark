@@ -18,8 +18,8 @@ func000000000000004a:                   # @func000000000000004a
 func00000000000000cc:                   # @func00000000000000cc
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vi	v9, v10, 0
-	vmand.mm	v9, v9, v0
 	li	a0, 16
+	vmand.mm	v9, v9, v0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsne.vx	v8, v8, a0
 	vmand.mm	v0, v9, v8
@@ -27,8 +27,8 @@ func00000000000000cc:                   # @func00000000000000cc
 func00000000000000c1:                   # @func00000000000000c1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vi	v9, v10, 0
-	vmand.mm	v9, v9, v0
 	li	a0, 30
+	vmand.mm	v9, v9, v0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmseq.vx	v8, v8, a0
 	vmand.mm	v0, v9, v8

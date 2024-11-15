@@ -3,11 +3,11 @@ func0000000000000000:                   # @func0000000000000000
 	slli	a2, a1, 9
 	lui	a3, 8176
 	and	a2, a2, a3
+	lui	a3, 786930
+	addiw	a3, a3, -1
 	czero.eqz	a0, a2, a0
-	lui	a2, 786930
-	addiw	a2, a2, -1
-	slli	a2, a2, 16
-	addi	a2, a2, 127
+	slli	a3, a3, 16
+	addi	a2, a3, 127
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret

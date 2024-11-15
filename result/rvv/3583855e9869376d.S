@@ -53,13 +53,13 @@ func0000000000000077:                   # @func0000000000000077
 func0000000000000076:                   # @func0000000000000076
 	lui	a0, %hi(.LCPI5_0)
 	fld	fa5, %lo(.LCPI5_0)(a0)
+	fli.d	fa4, inf
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vmfne.vf	v24, v16, fa5
-	fli.d	fa5, inf
-	vmflt.vf	v16, v8, fa5
-	vmfgt.vf	v17, v8, fa5
-	vmor.mm	v8, v17, v16
-	vmand.mm	v8, v8, v24
+	vmflt.vf	v24, v8, fa4
+	vmfgt.vf	v25, v8, fa4
+	vmfne.vf	v8, v16, fa5
+	vmor.mm	v9, v25, v24
+	vmand.mm	v8, v9, v8
 	vmand.mm	v0, v8, v0
 	ret
 func0000000000000011:                   # @func0000000000000011
@@ -116,11 +116,11 @@ func0000000000000066:                   # @func0000000000000066
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v24, v16, fa5
 	vmfgt.vf	v25, v16, fa5
-	vmor.mm	v16, v25, v24
-	vmflt.vf	v17, v8, fa5
-	vmfgt.vf	v18, v8, fa5
-	vmor.mm	v8, v18, v17
-	vmand.mm	v8, v8, v16
+	vmflt.vf	v16, v8, fa5
+	vmfgt.vf	v17, v8, fa5
+	vmor.mm	v8, v25, v24
+	vmor.mm	v9, v17, v16
+	vmand.mm	v8, v9, v8
 	vmand.mm	v0, v8, v0
 	ret
 func00000000000000ee:                   # @func00000000000000ee

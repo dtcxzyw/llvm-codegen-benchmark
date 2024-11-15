@@ -18,10 +18,10 @@ func0000000000000048:                   # @func0000000000000048
 	addiw	a0, a0, -585
 	slli	a1, a0, 33
 	add	a0, a0, a1
+	li	a1, -4
 	vmul.vx	v8, v8, a0
-	li	a0, -4
-	zext.w	a0, a0
-	vand.vx	v8, v8, a0
+	zext.w	a1, a1
+	vand.vx	v8, v8, a1
 	vmsne.vi	v10, v8, 0
 	vmand.mm	v0, v10, v0
 	ret

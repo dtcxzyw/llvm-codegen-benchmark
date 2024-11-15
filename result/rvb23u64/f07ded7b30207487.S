@@ -15,11 +15,11 @@ func000000000000000d:                   # @func000000000000000d
 	ret
 func000000000000000f:                   # @func000000000000000f
 	sext.w	a1, a1
-	addi	a1, a1, -1
 	li	a2, -31
+	zext.h	a0, a0
+	addi	a1, a1, -1
 	slli	a2, a2, 7
 	czero.nez	a1, a2, a1
-	zext.h	a0, a0
 	lui	a2, 1
 	add	a0, a0, a2
 	add	a0, a0, a1

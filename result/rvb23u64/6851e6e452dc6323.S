@@ -1,7 +1,7 @@
 func0000000000000017:                   # @func0000000000000017
 	slli	a2, a1, 48
-	srli	a2, a2, 50
 	lui	a3, 5
+	srli	a2, a2, 50
 	addiw	a3, a3, -1755
 	mul	a2, a2, a3
 	srli	a2, a2, 17

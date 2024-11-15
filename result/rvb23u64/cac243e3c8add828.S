@@ -1,8 +1,8 @@
 func000000000000000c:                   # @func000000000000000c
 	andi	a0, a0, 1
 	clz	a1, a1
-	xori	a1, a1, 63
 	li	a2, 8
+	xori	a1, a1, 63
 	sll	a1, a2, a1
 	li	a2, 16
 	czero.eqz	a2, a2, a0

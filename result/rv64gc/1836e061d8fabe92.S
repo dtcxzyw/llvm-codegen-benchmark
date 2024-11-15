@@ -10,8 +10,8 @@ func0000000000000141:                   # @func0000000000000141
 	ret
 func000000000000014a:                   # @func000000000000014a
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	andi	a2, a2, 255
+	srai	a0, a0, 56
 	sltiu	a2, a2, 26
 	slli	a1, a1, 56
 	slli	a2, a2, 61

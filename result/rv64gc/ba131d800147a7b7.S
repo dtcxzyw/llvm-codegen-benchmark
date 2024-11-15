@@ -16,8 +16,8 @@ func0000000000000021:                   # @func0000000000000021
 	ret
 func0000000000000001:                   # @func0000000000000001
 	slli	a1, a1, 48
-	srli	a1, a1, 48
 	li	a3, 27
+	srli	a1, a1, 48
 	slli	a3, a3, 11
 	bne	a1, a3, .LBB2_2
 	addi	a0, a2, -4

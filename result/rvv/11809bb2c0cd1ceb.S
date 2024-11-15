@@ -16,8 +16,8 @@ func00000000000000d4:                   # @func00000000000000d4
 	li	a0, 15
 	slli	a0, a0, 8
 	vand.vx	v8, v8, a0
-	vor.vv	v8, v10, v8
 	lui	a0, 1048575
+	vor.vv	v8, v10, v8
 	addiw	a0, a0, 2047
 	vadd.vx	v8, v8, a0
 	vmsleu.vi	v0, v8, 1

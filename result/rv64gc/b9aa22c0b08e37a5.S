@@ -1,8 +1,8 @@
 func0000000000000011:                   # @func0000000000000011
 	slli	a0, a0, 48
+	lui	a2, 11
 	srli	a1, a0, 48
-	lui	a0, 11
-	addiw	a2, a0, -1912
+	addiw	a2, a2, -1912
 	li	a0, 22
 	bne	a1, a2, .LBB0_3
 	li	a2, 129

@@ -6,10 +6,10 @@ func0000000000000010:                   # @func0000000000000010
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
+	li	a1, -1
 	vmacc.vx	v8, a0, v12
-	li	a0, -1
-	srli	a0, a0, 32
-	vand.vx	v8, v8, a0
+	srli	a1, a1, 32
+	vand.vx	v8, v8, a1
 	ret
 func0000000000000015:                   # @func0000000000000015
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -19,10 +19,10 @@ func0000000000000015:                   # @func0000000000000015
 	addiw	a0, a0, -105
 	slli	a1, a0, 36
 	add	a0, a0, a1
+	li	a1, -1
 	vmacc.vx	v8, a0, v12
-	li	a0, -1
-	srli	a0, a0, 32
-	vand.vx	v8, v8, a0
+	srli	a1, a1, 32
+	vand.vx	v8, v8, a1
 	ret
 func0000000000000004:                   # @func0000000000000004
 	li	a0, 63

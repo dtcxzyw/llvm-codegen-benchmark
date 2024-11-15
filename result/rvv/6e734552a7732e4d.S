@@ -1,8 +1,8 @@
 func0000000000000084:                   # @func0000000000000084
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
-	vfmacc.vv	v24, v16, v8
 	fmv.d.x	fa5, zero
+	vfmacc.vv	v24, v16, v8
 	vmflt.vf	v8, v24, fa5
 	fli.d	fa5, -1.0
 	vmfgt.vf	v9, v24, fa5

@@ -9,8 +9,8 @@ func0000000000000011:                   # @func0000000000000011
 func0000000000000004:                   # @func0000000000000004
 	andi	a0, a0, 255
 	ori	a1, a1, 32
-	sltiu	a0, a0, 26
 	li	a2, 95
+	sltiu	a0, a0, 26
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
@@ -23,8 +23,8 @@ func000000000000001c:                   # @func000000000000001c
 func0000000000000014:                   # @func0000000000000014
 	andi	a0, a0, 255
 	ori	a1, a1, 48
-	sltiu	a0, a0, 160
 	li	a2, 32
+	sltiu	a0, a0, 160
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
@@ -32,8 +32,8 @@ func0000000000000014:                   # @func0000000000000014
 func0000000000000018:                   # @func0000000000000018
 	andi	a0, a0, 255
 	ori	a1, a1, 8
-	sltiu	a0, a0, 9
 	li	a2, 8
+	sltiu	a0, a0, 9
 	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2

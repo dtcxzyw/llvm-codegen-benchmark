@@ -8,19 +8,19 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func0000000000000009:                   # @func0000000000000009
 	zext.h	a1, a1
-	sltiu	a1, a1, 1000
 	sext.w	a0, a0
-	czero.nez	a0, a0, a1
 	li	a2, 3
+	sltiu	a1, a1, 1000
+	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret
 func0000000000000003:                   # @func0000000000000003
 	zext.h	a1, a1
-	addi	a1, a1, -18
 	sext.w	a0, a0
-	czero.eqz	a0, a0, a1
 	li	a2, 7
+	addi	a1, a1, -18
+	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret

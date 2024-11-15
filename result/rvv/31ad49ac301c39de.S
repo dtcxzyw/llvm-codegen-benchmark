@@ -1,8 +1,8 @@
 func0000000000000001:                   # @func0000000000000001
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 3
-	vmseq.vi	v0, v12, 2
 	lui	a0, 1048573
+	vmseq.vi	v0, v12, 2
 	addiw	a0, a0, -625
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmerge.vxm	v8, v8, a0, v0

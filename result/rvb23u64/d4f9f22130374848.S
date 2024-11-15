@@ -28,10 +28,10 @@ func0000000000000055:                   # @func0000000000000055
 	ret
 func0000000000000091:                   # @func0000000000000091
 	sltu	a2, a1, a2
-	xori	a2, a2, 1
 	xor	a0, a0, a1
+	xori	a1, a2, 1
 	seqz	a0, a0
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 func0000000000000099:                   # @func0000000000000099
 	sltu	a2, a2, a0
@@ -155,8 +155,8 @@ func0000000000000049:                   # @func0000000000000049
 	ret
 func000000000000001c:                   # @func000000000000001c
 	xor	a2, a2, a1
-	seqz	a2, a2
 	xor	a0, a0, a1
+	seqz	a1, a2
 	snez	a0, a0
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret

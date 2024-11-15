@@ -7,9 +7,9 @@ func000000000000000f:                   # @func000000000000000f
 	sub	a4, a2, a3
 	srli	a4, a4, 1
 	add	a3, a3, a4
-	srli	a3, a3, 15
 	lui	a4, 16
 	addiw	a4, a4, -15
+	srli	a3, a3, 15
 	mul	a3, a3, a4
 	add	a0, a0, a1
 	sub	a3, a3, a2

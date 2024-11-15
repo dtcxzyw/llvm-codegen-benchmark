@@ -2,9 +2,9 @@ func0000000000000013:                   # @func0000000000000013
 	lui	a1, 16
 	addi	a1, a1, -2
 	add	a0, a0, a1
-	slli	a0, a0, 32
 	lui	a1, 524296
 	addi	a1, a1, 1
+	slli	a0, a0, 32
 	slli	a1, a1, 32
 	mulhu	a0, a0, a1
 	srli	a0, a0, 44
@@ -25,8 +25,8 @@ func0000000000000018:                   # @func0000000000000018
 	addi	a0, a0, 127
 	lui	a1, 526344
 	addi	a1, a1, 129
-	slli	a1, a1, 32
 	slli	a0, a0, 32
+	slli	a1, a1, 32
 	mulhu	a0, a0, a1
 	srli	a0, a0, 15
 	sext.w	a0, a0
@@ -37,8 +37,8 @@ func000000000000001b:                   # @func000000000000001b
 	addi	a0, a0, 128
 	lui	a1, 1044496
 	addi	a1, a1, -255
-	slli	a1, a1, 32
 	slli	a0, a0, 32
+	slli	a1, a1, 32
 	mulhu	a0, a0, a1
 	srli	a0, a0, 24
 	sext.w	a0, a0

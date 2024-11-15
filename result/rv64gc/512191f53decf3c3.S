@@ -3,11 +3,11 @@ func0000000000000022:                   # @func0000000000000022
 	li	a3, 1
 	slli	a3, a3, 11
 	and	a2, a2, a3
+	lui	a3, 1
+	addiw	a3, a3, -2032
+	xor	a0, a0, a3
 	seqz	a2, a2
 	and	a1, a1, a2
-	lui	a2, 1
-	addiw	a2, a2, -2032
-	xor	a0, a0, a2
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
@@ -24,10 +24,10 @@ func0000000000000182:                   # @func0000000000000182
 	ret
 func0000000000000190:                   # @func0000000000000190
 	andi	a2, a2, 13
+	srliw	a0, a0, 24
 	addi	a2, a2, -5
 	snez	a2, a2
 	and	a1, a1, a2
-	srliw	a0, a0, 24
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
@@ -59,8 +59,8 @@ func000000000000018c:                   # @func000000000000018c
 func0000000000000030:                   # @func0000000000000030
 	sext.w	a1, a1
 	slli	a2, a2, 33
-	srli	a2, a2, 33
 	lui	a3, 524032
+	srli	a2, a2, 33
 	xor	a2, a2, a3
 	seqz	a2, a2
 	and	a0, a0, a2
@@ -79,10 +79,10 @@ func0000000000000034:                   # @func0000000000000034
 	sext.w	a1, a1
 	lui	a3, 522240
 	and	a2, a2, a3
+	slti	a1, a1, 16
 	xor	a2, a2, a3
 	seqz	a2, a2
 	and	a0, a0, a2
-	slti	a1, a1, 16
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret

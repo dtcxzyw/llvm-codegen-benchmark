@@ -6,8 +6,8 @@
 	.quad	46116860184273878               # 0xa3d70a3d70a3d6
 func0000000000000002:                   # @func0000000000000002
 	lui	a0, %hi(.LCPI0_0)
-	ld	a0, %lo(.LCPI0_0)(a0)
 	lui	a1, %hi(.LCPI0_1)
+	ld	a0, %lo(.LCPI0_0)(a0)
 	ld	a1, %lo(.LCPI0_1)(a1)
 	lui	a2, %hi(.LCPI0_2)
 	ld	a2, %lo(.LCPI0_2)(a2)

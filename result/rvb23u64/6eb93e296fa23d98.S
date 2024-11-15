@@ -1,7 +1,7 @@
 func00000000000002d8:                   # @func00000000000002d8
 	slt	a2, a1, a2
-	xori	a2, a2, 1
 	slti	a1, a1, 1
+	xori	a2, a2, 1
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -32,16 +32,16 @@ func0000000000000198:                   # @func0000000000000198
 	ret
 func0000000000000210:                   # @func0000000000000210
 	srli	a3, a1, 16
-	sltiu	a3, a3, 17
-	xori	a3, a3, 1
 	sltu	a1, a1, a2
+	sltiu	a2, a3, 17
+	xori	a2, a2, 1
 	or	a0, a0, a1
-	or	a0, a0, a3
+	or	a0, a0, a2
 	ret
 func0000000000000258:                   # @func0000000000000258
 	sltu	a2, a1, a2
-	xori	a2, a2, 1
 	slti	a1, a1, 0
+	xori	a2, a2, 1
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

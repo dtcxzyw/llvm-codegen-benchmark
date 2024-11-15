@@ -16,35 +16,35 @@ func0000000000000000:                   # @func0000000000000000
 func000000000000001f:                   # @func000000000000001f
 	slli	a2, a2, 2
 	lui	a3, 4
-	addiw	a3, a3, -256
-	and	a2, a2, a3
 	or	a0, a0, a1
 	lui	a1, 2056
+	addiw	a3, a3, -256
 	addiw	a1, a1, 224
+	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 func000000000000001e:                   # @func000000000000001e
 	slli	a2, a2, 56
-	srli	a2, a2, 48
 	or	a0, a0, a1
 	lui	a1, 1044480
+	srli	a2, a2, 48
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 func0000000000000006:                   # @func0000000000000006
 	slli	a2, a2, 56
-	srli	a2, a2, 48
 	or	a0, a0, a1
 	lui	a1, 1044480
+	srli	a2, a2, 48
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 func000000000000001b:                   # @func000000000000001b
 	slli	a2, a2, 56
-	srli	a2, a2, 48
 	or	a0, a0, a1
 	lui	a1, 983040
+	srli	a2, a2, 48
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -64,9 +64,9 @@ func000000000000000f:                   # @func000000000000000f
 	ret
 func000000000000001c:                   # @func000000000000001c
 	slli	a2, a2, 56
-	srli	a2, a2, 48
 	or	a0, a0, a1
 	lui	a1, 1044480
+	srli	a2, a2, 48
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -79,17 +79,17 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 func000000000000001a:                   # @func000000000000001a
 	slli	a2, a2, 60
-	srli	a2, a2, 45
 	or	a0, a0, a1
 	lui	a1, 786432
+	srli	a2, a2, 45
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 func0000000000000002:                   # @func0000000000000002
 	slli	a2, a2, 57
-	srli	a2, a2, 42
 	or	a0, a0, a1
 	lui	a1, 786432
+	srli	a2, a2, 42
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -118,17 +118,17 @@ func000000000000001d:                   # @func000000000000001d
 	ret
 func000000000000000e:                   # @func000000000000000e
 	slli	a2, a2, 56
-	srli	a2, a2, 48
 	or	a0, a0, a1
 	lui	a1, 1044480
+	srli	a2, a2, 48
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 func0000000000000016:                   # @func0000000000000016
 	slli	a2, a2, 56
-	srli	a2, a2, 48
 	or	a0, a0, a1
 	lui	a1, 1044480
+	srli	a2, a2, 48
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

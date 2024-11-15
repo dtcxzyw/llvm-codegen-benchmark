@@ -1,8 +1,8 @@
 func0000000000000081:                   # @func0000000000000081
 	fli.d	fa5, inf
+	li	a0, 34
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vmfeq.vf	v10, v12, fa5
-	li	a0, 34
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmseq.vx	v11, v8, a0
 	vmand.mm	v0, v11, v10
@@ -35,9 +35,9 @@ func0000000000000091:                   # @func0000000000000091
 	ret
 func0000000000000028:                   # @func0000000000000028
 	fli.d	fa5, 1.0
+	li	a0, 22
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vmflt.vf	v10, v12, fa5
-	li	a0, 22
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsgtu.vx	v11, v8, a0
 	vmand.mm	v0, v11, v10

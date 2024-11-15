@@ -13,8 +13,8 @@ func000000000000001f:                   # @func000000000000001f
 	ret
 func000000000000001e:                   # @func000000000000001e
 	zext.h	a1, a1
-	slli	a1, a1, 4
 	lui	a2, 1048544
+	slli	a1, a1, 4
 	addiw	a2, a2, 7
 	and	a0, a0, a2
 	or	a0, a0, a1
@@ -22,8 +22,8 @@ func000000000000001e:                   # @func000000000000001e
 	ret
 func000000000000000e:                   # @func000000000000000e
 	andi	a1, a1, 1023
-	slli	a1, a1, 13
 	lui	a2, 524288
+	slli	a1, a1, 13
 	and	a0, a0, a2
 	or	a0, a0, a1
 	lui	a1, 522240

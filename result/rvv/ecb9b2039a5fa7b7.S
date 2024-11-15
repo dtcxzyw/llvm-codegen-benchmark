@@ -24,10 +24,10 @@ func0000000000000320:                   # @func0000000000000320
 	addi	a0, a0, 64
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vand.vx	v10, v10, a0
-	vmsne.vi	v10, v10, 0
-	vmor.mm	v10, v10, v0
 	lui	a0, 1221
 	addiw	a0, a0, -1217
+	vmsne.vi	v10, v10, 0
+	vmor.mm	v10, v10, v0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v11, v8, a0
 	vmor.mm	v0, v10, v11

@@ -27,12 +27,12 @@ func0000000000000000:                   # @func0000000000000000
 	addiw	a0, a0, 257
 	slli	a1, a0, 32
 	add	a0, a0, a1
+	lui	a1, 526344
+	addi	a1, a1, 128
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
-	lui	a0, 526344
-	addi	a0, a0, 128
-	slli	a1, a0, 32
-	add.uw	a0, a0, a1
+	slli	a0, a1, 32
+	add.uw	a0, a1, a0
 	vor.vx	v8, v8, a0
 	ret
 func0000000000000006:                   # @func0000000000000006

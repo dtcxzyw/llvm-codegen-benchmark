@@ -1,34 +1,34 @@
 func0000000000000008:                   # @func0000000000000008
 	add	a1, a1, a2
-	srli	a1, a1, 3
-	andi	a1, a1, 24
 	lui	a2, 4
+	srli	a1, a1, 3
 	addiw	a2, a2, 240
+	andi	a1, a1, 24
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 func0000000000000028:                   # @func0000000000000028
 	add	a1, a1, a2
-	srli	a1, a1, 3
-	andi	a1, a1, 24
 	lui	a2, 4
+	srli	a1, a1, 3
 	addiw	a2, a2, 240
+	andi	a1, a1, 24
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 func0000000000000062:                   # @func0000000000000062
 	add	a1, a1, a2
+	lui	a2, 48
 	srliw	a1, a1, 1
 	slli	a1, a1, 2
-	lui	a2, 48
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 func000000000000006a:                   # @func000000000000006a
 	add	a1, a1, a2
+	lui	a2, 56
 	srliw	a1, a1, 1
 	slli	a1, a1, 2
-	lui	a2, 56
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

@@ -130,8 +130,8 @@ func000000000000008c:                   # @func000000000000008c
 func0000000000000181:                   # @func0000000000000181
 	sext.w	a0, a0
 	addiw	a1, a1, -99
-	sltiu	a1, a1, -7
 	lui	a2, 1044208
+	sltiu	a1, a1, -7
 	addiw	a2, a2, 1213
 	xor	a0, a0, a2
 	seqz	a0, a0
@@ -181,8 +181,8 @@ func00000000000000a1:                   # @func00000000000000a1
 	sext.w	a0, a0
 	addiw	a1, a1, 1
 	slti	a1, a1, 2
-	xori	a1, a1, 1
 	addi	a0, a0, -1
+	xori	a1, a1, 1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

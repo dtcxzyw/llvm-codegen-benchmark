@@ -18,8 +18,8 @@ func00000000000007c4:                   # @func00000000000007c4
 func000000000000034c:                   # @func000000000000034c
 	andi	a0, a0, 255
 	slli	a2, a2, 32
-	srli	a2, a2, 32
 	addi	a1, a1, 1
+	srli	a2, a2, 32
 	sltu	a1, a1, a2
 	snez	a0, a0
 	and	a0, a0, a1
@@ -36,8 +36,8 @@ func0000000000000741:                   # @func0000000000000741
 func00000000000003cc:                   # @func00000000000003cc
 	andi	a0, a0, 255
 	slli	a2, a2, 32
-	srli	a2, a2, 32
 	addi	a1, a1, 1
+	srli	a2, a2, 32
 	xor	a1, a1, a2
 	snez	a1, a1
 	snez	a0, a0
@@ -46,11 +46,11 @@ func00000000000003cc:                   # @func00000000000003cc
 func00000000000003c1:                   # @func00000000000003c1
 	andi	a0, a0, 255
 	slli	a2, a2, 32
-	srli	a2, a2, 32
 	addi	a1, a1, 1
+	srli	a2, a2, 32
+	addi	a0, a0, -255
 	xor	a1, a1, a2
 	snez	a1, a1
-	addi	a0, a0, -255
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

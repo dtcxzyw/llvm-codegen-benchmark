@@ -18,13 +18,13 @@ func000000000000001c:                   # @func000000000000001c
 	addiw	a2, a2, 127
 	slli	a3, a2, 32
 	add	a2, a2, a3
+	lui	a3, 522248
+	addiw	a3, a3, -128
 	and	a1, a1, a2
+	slli	a2, a3, 32
 	mul	a0, a1, a0
-	lui	a1, 522248
-	addiw	a1, a1, -128
-	slli	a2, a1, 32
-	add	a1, a1, a2
-	add	a0, a0, a1
+	add	a2, a2, a3
+	add	a0, a0, a2
 	srli	a0, a0, 8
 	ret
 func000000000000000a:                   # @func000000000000000a

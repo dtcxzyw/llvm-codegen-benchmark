@@ -6,8 +6,8 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func0000000000000005:                   # @func0000000000000005
 	lui	a3, 1048544
-	addw	a2, a2, a3
 	sext.w	a1, a1
+	addw	a2, a2, a3
 	mul	a0, a0, a1
 	add	a0, a0, a2
 	ret

@@ -14,8 +14,8 @@ func00000000000000ac:                   # @func00000000000000ac
 	ret
 func0000000000000066:                   # @func0000000000000066
 	and	a0, a0, a1
-	srai	a0, a0, 63
 	li	a1, -1
+	srai	a0, a0, 63
 	slli	a1, a1, 63
 	add	a0, a0, a1
 	ret

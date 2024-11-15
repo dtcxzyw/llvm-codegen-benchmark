@@ -50,9 +50,9 @@ func000000000000000a:                   # @func000000000000000a
 	.quad	0x3fc5555555555555              # double 0.16666666666666666
 func0000000000000006:                   # @func0000000000000006
 	fli.d	fa5, inf
+	lui	a0, %hi(.LCPI4_0)
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vmflt.vf	v24, v8, fa5
-	lui	a0, %hi(.LCPI4_0)
 	fld	fa4, %lo(.LCPI4_0)(a0)
 	vmfgt.vf	v25, v8, fa5
 	vmor.mm	v0, v25, v24

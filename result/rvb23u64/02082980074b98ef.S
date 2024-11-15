@@ -10,9 +10,9 @@ func00000000000000c1:                   # @func00000000000000c1
 	zext.h	a0, a0
 	slli	a1, a1, 48
 	srli	a1, a1, 60
+	binvi	a0, a0, 15
 	addi	a1, a1, -8
 	snez	a1, a1
-	binvi	a0, a0, 15
 	seqz	a0, a0
 	xor	a0, a0, a1
 	ret

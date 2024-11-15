@@ -11,11 +11,11 @@ func0000000000000012:                   # @func0000000000000012
 	ret
 func000000000000001a:                   # @func000000000000001a
 	andi	a2, a2, -2
+	li	a3, -4
+	sh2add	a1, a1, a1
 	sext.w	a2, a2
 	addi	a2, a2, -4
-	li	a3, -4
 	czero.eqz	a2, a3, a2
-	sh2add	a1, a1, a1
 	sh2add	a0, a1, a0
 	add	a0, a0, a2
 	addi	a0, a0, 12

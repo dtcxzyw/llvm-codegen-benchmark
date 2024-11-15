@@ -49,10 +49,10 @@ func000000000000031c:                   # @func000000000000031c
 func000000000000034c:                   # @func000000000000034c
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsrl.vv	v10, v10, v12
-	vand.vi	v10, v10, 1
-	vmsne.vi	v12, v10, 0
 	lui	a0, 262144
+	vand.vi	v10, v10, 1
 	addi	a0, a0, -1
+	vmsne.vi	v12, v10, 0
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v12, v10
 	ret

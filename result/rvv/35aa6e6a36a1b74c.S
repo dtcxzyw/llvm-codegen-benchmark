@@ -10,9 +10,9 @@ func0000000000000024:                   # @func0000000000000024
 	.quad	0x3e50000000000000              # double 1.4901161193847656E-8
 func0000000000000025:                   # @func0000000000000025
 	fmv.d.x	fa5, zero
+	lui	a0, %hi(.LCPI1_0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v0, v16, fa5
-	lui	a0, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a0)
 	vmerge.vim	v16, v16, 0, v0
 	vfmul.vv	v8, v16, v8

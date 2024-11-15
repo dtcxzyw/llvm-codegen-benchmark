@@ -1,11 +1,11 @@
 func0000000000000022:                   # @func0000000000000022
 	lui	a0, 256000
 	fmv.w.x	fa5, a0
-	fmul.s	fa5, fa0, fa5
 	lui	a0, 273536
+	fmul.s	fa5, fa0, fa5
 	fmv.w.x	fa4, a0
-	fmin.s	fa5, fa5, fa4
 	lui	a0, 797824
+	fmin.s	fa5, fa5, fa4
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	ret

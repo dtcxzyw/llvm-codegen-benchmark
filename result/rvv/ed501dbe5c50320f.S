@@ -3,10 +3,10 @@ func000000000000000f:                   # @func000000000000000f
 	srli	a0, a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
-	vor.vv	v10, v12, v10
-	vsll.vi	v10, v10, 19
 	lui	a0, 128
 	addiw	a0, a0, -8
+	vor.vv	v10, v12, v10
+	vsll.vi	v10, v10, 19
 	vand.vx	v8, v8, a0
 	vor.vv	v8, v10, v8
 	ret
@@ -15,10 +15,10 @@ func0000000000000009:                   # @func0000000000000009
 	addiw	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
-	vor.vv	v10, v12, v10
-	vsll.vi	v10, v10, 22
 	lui	a0, 1024
 	addiw	a0, a0, -1
+	vor.vv	v10, v12, v10
+	vsll.vi	v10, v10, 22
 	vand.vx	v8, v8, a0
 	vor.vv	v8, v8, v10
 	ret

@@ -104,9 +104,9 @@ func00000000000004ca:                   # @func00000000000004ca
 	fmv.d	fa1, fa2
 .LBB9_2:                                # %entry
 	lui	a0, %hi(.LCPI9_0)
+	lui	a1, %hi(.LCPI9_1)
 	fld	fa5, %lo(.LCPI9_0)(a0)
-	lui	a0, %hi(.LCPI9_1)
-	fld	fa4, %lo(.LCPI9_1)(a0)
+	fld	fa4, %lo(.LCPI9_1)(a1)
 	fle.d	a0, fa5, fa1
 	fle.d	a1, fa0, fa4
 	and	a0, a0, a1

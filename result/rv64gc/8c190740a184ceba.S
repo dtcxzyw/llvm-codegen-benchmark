@@ -1,8 +1,8 @@
 func0000000000000000:                   # @func0000000000000000
 	slli	a2, a2, 32
+	slli	a1, a1, 32
 	srli	a2, a2, 28
 	add	a0, a0, a2
-	slli	a1, a1, 32
 	srli	a1, a1, 28
 	add	a0, a0, a1
 	ret
@@ -18,9 +18,9 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func0000000000000010:                   # @func0000000000000010
 	sext.w	a2, a2
+	andi	a1, a1, 511
 	slli	a2, a2, 11
 	add	a0, a0, a2
-	andi	a1, a1, 511
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	ret

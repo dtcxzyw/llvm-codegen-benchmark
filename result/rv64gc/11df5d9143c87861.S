@@ -1,24 +1,24 @@
 func0000000000000022:                   # @func0000000000000022
 	andi	a1, a1, 32
-	seqz	a1, a1
 	andi	a0, a0, 1024
+	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 func0000000000000182:                   # @func0000000000000182
 	andi	a1, a1, 304
-	addi	a1, a1, -304
-	snez	a1, a1
 	lui	a2, 1
+	addi	a1, a1, -304
 	addiw	a2, a2, -1952
+	snez	a1, a1
 	and	a0, a0, a2
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 func0000000000000038:                   # @func0000000000000038
 	andi	a1, a1, 64
-	seqz	a1, a1
 	andi	a0, a0, 1792
+	seqz	a1, a1
 	addi	a0, a0, -1792
 	snez	a0, a0
 	or	a0, a0, a1

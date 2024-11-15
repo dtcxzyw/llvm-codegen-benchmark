@@ -169,8 +169,8 @@ func00000000000000c6:                   # @func00000000000000c6
 func0000000000000148:                   # @func0000000000000148
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v10, v10, -6
-	vmsleu.vi	v12, v10, -6
 	li	a0, -1
+	vmsleu.vi	v12, v10, -6
 	srli	a0, a0, 32
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12

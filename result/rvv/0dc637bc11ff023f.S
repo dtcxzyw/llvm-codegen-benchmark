@@ -7,11 +7,11 @@ func0000000000000054:                   # @func0000000000000054
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
+	li	a1, 1
 	vmul.vx	v10, v10, a0
-	li	a0, 1
-	vmaxu.vx	v12, v10, a0
 	lui	a0, %hi(.LCPI0_0)
 	ld	a0, %lo(.LCPI0_0)(a0)
+	vmaxu.vx	v12, v10, a1
 	vnot.v	v10, v10
 	vmsltu.vv	v0, v10, v12
 	vmerge.vxm	v8, v8, a0, v0
@@ -25,11 +25,11 @@ func0000000000000044:                   # @func0000000000000044
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
+	li	a1, 1
 	vmul.vx	v10, v10, a0
-	li	a0, 1
-	vmaxu.vx	v12, v10, a0
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
+	vmaxu.vx	v12, v10, a1
 	vnot.v	v10, v10
 	vmsltu.vv	v0, v10, v12
 	vmerge.vxm	v8, v8, a0, v0

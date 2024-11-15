@@ -1,9 +1,9 @@
 func0000000000000034:                   # @func0000000000000034
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	vsra.vi	v10, v10, 4
 	vsra.vi	v8, v8, 5
 	lui	a0, 838861
+	vsra.vi	v10, v10, 4
 	addiw	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
@@ -13,9 +13,9 @@ func0000000000000034:                   # @func0000000000000034
 func0000000000000038:                   # @func0000000000000038
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	vsra.vi	v10, v10, 5
 	vsra.vi	v8, v8, 3
 	lui	a0, 699051
+	vsra.vi	v10, v10, 5
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
@@ -25,9 +25,9 @@ func0000000000000038:                   # @func0000000000000038
 func0000000000000031:                   # @func0000000000000031
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	vsra.vi	v10, v10, 4
 	vsra.vi	v8, v8, 2
 	lui	a0, 699051
+	vsra.vi	v10, v10, 4
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
@@ -37,9 +37,9 @@ func0000000000000031:                   # @func0000000000000031
 func000000000000003c:                   # @func000000000000003c
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	vsra.vi	v10, v10, 3
 	vsra.vi	v8, v8, 5
 	lui	a0, 699051
+	vsra.vi	v10, v10, 3
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
@@ -61,8 +61,8 @@ func0000000000000035:                   # @func0000000000000035
 func0000000000000021:                   # @func0000000000000021
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	vsra.vi	v10, v10, 4
 	li	a0, 63
+	vsra.vi	v10, v10, 4
 	vsrl.vx	v12, v8, a0
 	vadd.vv	v8, v8, v12
 	vsra.vi	v8, v8, 1
@@ -71,8 +71,8 @@ func0000000000000021:                   # @func0000000000000021
 func0000000000000028:                   # @func0000000000000028
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	vsra.vi	v10, v10, 2
 	li	a0, 63
+	vsra.vi	v10, v10, 2
 	vsra.vx	v12, v8, a0
 	li	a0, 62
 	vsrl.vx	v12, v12, a0
@@ -83,8 +83,8 @@ func0000000000000028:                   # @func0000000000000028
 func0000000000000024:                   # @func0000000000000024
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	vsra.vi	v10, v10, 3
 	li	a0, 63
+	vsra.vi	v10, v10, 3
 	vsrl.vx	v12, v8, a0
 	vadd.vv	v8, v8, v12
 	vsra.vi	v8, v8, 1

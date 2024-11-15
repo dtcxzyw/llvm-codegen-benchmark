@@ -31,10 +31,11 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000005:                   # @func0000000000000005
 	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsra.vx	v10, v8, a0
-	vmv.v.i	v8, 8
+	vmv.v.i	v10, 8
+	vsra.vx	v8, v8, a0
 	li	a0, 40
-	vmacc.vx	v8, a0, v10
+	vmacc.vx	v10, a0, v8
+	vmv.v.v	v8, v10
 	ret
 func0000000000000011:                   # @func0000000000000011
 	vsetivli	zero, 4, e64, m2, ta, ma

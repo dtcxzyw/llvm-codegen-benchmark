@@ -1,8 +1,8 @@
 func0000000000000013:                   # @func0000000000000013
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vv	v12, v12, v16
-	vfmadd.vv	v12, v12, v8
 	lui	a0, 165888
+	vfmadd.vv	v12, v12, v8
 	fmv.w.x	fa5, a0
 	vmfge.vf	v8, v12, fa5
 	vmnot.m	v0, v8

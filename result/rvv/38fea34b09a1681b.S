@@ -31,11 +31,11 @@ func000000000000000b:                   # @func000000000000000b
 func000000000000000e:                   # @func000000000000000e
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v12, v12, 9
+	bseti	a0, zero, 63
+	vand.vx	v10, v10, a0
 	li	a0, -1023
 	srli	a0, a0, 1
 	vand.vx	v12, v12, a0
-	bseti	a0, zero, 63
-	vand.vx	v10, v10, a0
 	vor.vv	v8, v10, v8
 	vor.vv	v8, v8, v12
 	ret

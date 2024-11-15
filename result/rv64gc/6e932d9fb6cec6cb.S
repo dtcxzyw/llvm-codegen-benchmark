@@ -1,8 +1,8 @@
 func0000000000000001:                   # @func0000000000000001
 	lui	a2, 16
+	neg	a1, a1
 	addiw	a2, a2, -1
 	and	a0, a0, a2
-	neg	a1, a1
 	and	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -55,9 +55,9 @@ func0000000000000016:                   # @func0000000000000016
 	ret
 func0000000000000011:                   # @func0000000000000011
 	lui	a2, 16
+	neg	a1, a1
 	addiw	a2, a2, -1
 	and	a0, a0, a2
-	neg	a1, a1
 	and	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -71,9 +71,9 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 func0000000000000014:                   # @func0000000000000014
 	add	a0, a0, a1
+	lui	a1, 16
 	slli	a0, a0, 48
 	srli	a0, a0, 48
-	lui	a1, 16
 	addiw	a1, a1, -30
 	sltu	a0, a0, a1
 	ret
@@ -85,9 +85,9 @@ func0000000000000034:                   # @func0000000000000034
 	ret
 func000000000000000c:                   # @func000000000000000c
 	lui	a2, 16
+	neg	a1, a1
 	addiw	a2, a2, -1
 	and	a0, a0, a2
-	neg	a1, a1
 	and	a1, a1, a2
 	xor	a0, a0, a1
 	snez	a0, a0

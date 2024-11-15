@@ -15,9 +15,9 @@ func0000000000000023:                   # @func0000000000000023
 	sext.w	a2, a2
 	li	a3, 576
 	czero.eqz	a2, a3, a2
-	bseti	a2, a2, 19
 	lui	a3, 128
 	addiw	a3, a3, 64
+	bseti	a2, a2, 19
 	czero.eqz	a3, a3, a1
 	czero.nez	a1, a2, a1
 	or	a0, a0, a3

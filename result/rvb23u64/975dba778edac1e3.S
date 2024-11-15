@@ -31,17 +31,17 @@ func0000000000000022:                   # @func0000000000000022
 	ret
 func0000000000000066:                   # @func0000000000000066
 	fclass.d	a0, fa1
+	fli.d	fa5, inf
 	andi	a0, a0, 126
 	snez	a0, a0
-	fli.d	fa5, inf
 	flt.d	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
 func0000000000000088:                   # @func0000000000000088
 	fclass.d	a0, fa1
+	fli.d	fa5, inf
 	andi	a0, a0, 129
 	snez	a0, a0
-	fli.d	fa5, inf
 	feq.d	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
@@ -68,9 +68,9 @@ func0000000000000044:                   # @func0000000000000044
 	ret
 func0000000000000064:                   # @func0000000000000064
 	fclass.d	a0, fa1
+	fmv.d.x	fa5, zero
 	andi	a0, a0, 126
 	snez	a0, a0
-	fmv.d.x	fa5, zero
 	flt.d	a1, fa5, fa0
 	and	a0, a0, a1
 	ret

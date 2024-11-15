@@ -24,8 +24,8 @@ func0000000000000041:                   # @func0000000000000041
 	ret
 func00000000000000c8:                   # @func00000000000000c8
 	add.uw	a0, a1, a0
-	addi	a0, a0, 72
 	lui	a1, 16
+	addi	a0, a0, 72
 	addiw	a1, a1, -20
 	sltu	a0, a1, a0
 	ret

@@ -13,10 +13,10 @@ func0000000000000006:                   # @func0000000000000006
 func0000000000000004:                   # @func0000000000000004
 	sext.w	a0, a0
 	subw	a1, a1, a2
+	lui	a2, 16
 	max	a0, a1, a0
-	lui	a1, 16
-	addiw	a1, a1, 1
-	sltu	a0, a0, a1
+	addiw	a2, a2, 1
+	sltu	a0, a0, a2
 	ret
 func000000000000000a:                   # @func000000000000000a
 	sext.w	a0, a0

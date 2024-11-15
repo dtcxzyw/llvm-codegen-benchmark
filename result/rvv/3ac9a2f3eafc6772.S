@@ -46,9 +46,9 @@ func0000000000000008:                   # @func0000000000000008
 	lui	a0, %hi(.LCPI4_0)
 	flw	fa5, %lo(.LCPI4_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vfmul.vf	v16, v16, fa5
 	vfadd.vv	v8, v8, v12
-	vfadd.vv	v8, v8, v16
+	vfmul.vf	v12, v16, fa5
+	vfadd.vv	v8, v8, v12
 	fli.s	fa5, inf
 	vmfeq.vf	v0, v8, fa5
 	ret

@@ -1,8 +1,8 @@
 func000000000000000a:                   # @func000000000000000a
 	mv	a3, a0
 	sub	a2, a2, a1
-	srai	a2, a2, 2
 	lui	a0, 699051
+	srai	a2, a2, 2
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
@@ -15,8 +15,8 @@ func000000000000000a:                   # @func000000000000000a
 func000000000000000e:                   # @func000000000000000e
 	mv	a3, a0
 	sub	a2, a2, a1
-	srai	a2, a2, 2
 	lui	a0, 699051
+	srai	a2, a2, 2
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1

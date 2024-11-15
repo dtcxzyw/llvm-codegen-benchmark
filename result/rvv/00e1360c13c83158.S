@@ -3,8 +3,8 @@ func0000000000000006:                   # @func0000000000000006
 	vmseq.vi	v0, v12, 0
 	li	a0, 76
 	vmv.v.x	v12, a0
-	vmerge.vim	v12, v12, 12, v0
 	li	a0, 256
+	vmerge.vim	v12, v12, 12, v0
 	vand.vx	v10, v10, a0
 	vor.vv	v10, v10, v12
 	vor.vv	v8, v10, v8

@@ -30,20 +30,20 @@ func00000000000003b4:                   # @func00000000000003b4
 	slli	a2, a2, 8
 	slli	a1, a1, 32
 	or	a1, a1, a2
+	li	a2, -1
+	slli	a2, a2, 63
 	or	a0, a0, a1
-	li	a1, -1
-	slli	a1, a1, 63
-	addi	a1, a1, 7
-	sltu	a0, a0, a1
+	addi	a2, a2, 7
+	sltu	a0, a0, a2
 	ret
 func00000000000003f8:                   # @func00000000000003f8
 	slli	a2, a2, 16
 	slli	a1, a1, 8
 	or	a1, a1, a2
+	lui	a2, 4
 	or	a0, a0, a1
-	lui	a1, 4
-	addiw	a1, a1, -12
-	sltu	a0, a1, a0
+	addiw	a2, a2, -12
+	sltu	a0, a2, a0
 	ret
 func00000000000002fc:                   # @func00000000000002fc
 	slli	a2, a2, 32

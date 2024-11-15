@@ -37,9 +37,9 @@ func000000000000001f:                   # @func000000000000001f
 	li	a0, 64
 	vsetivli	zero, 4, e8, mf4, ta, ma
 	vrsub.vx	v8, v8, a0
+	li	a0, 32
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vzext.vf4	v10, v8
-	li	a0, 32
 	vmv.v.x	v11, a0
 	vwsll.vv	v8, v11, v10
 	ret

@@ -48,8 +48,8 @@ func0000000000000186:                   # @func0000000000000186
 func0000000000000188:                   # @func0000000000000188
 	slli	a2, a2, 2
 	sub	a1, a1, a0
-	sub	a1, a1, a2
 	li	a0, -7
+	sub	a1, a1, a2
 	srli	a0, a0, 1
 	sltu	a0, a0, a1
 	ret

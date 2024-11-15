@@ -47,8 +47,8 @@ func0000000000000042:                   # @func0000000000000042
 func0000000000000024:                   # @func0000000000000024
 	fli.s	fa5, 1.0
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vfmin.vf	v12, v12, fa5
 	vmv.v.i	v16, 0
+	vfmin.vf	v12, v12, fa5
 	vmerge.vvm	v8, v16, v8, v0
 	vmflt.vv	v0, v12, v8
 	ret

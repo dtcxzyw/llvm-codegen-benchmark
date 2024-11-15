@@ -7,21 +7,21 @@ func0000000000000311:                   # @func0000000000000311
 	vmor.mm	v0, v10, v12
 	ret
 func000000000000004c:                   # @func000000000000004c
+	bseti	a0, zero, 11
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vand.vx	v8, v8, a0
 	lui	a0, 1048574
 	addi	a0, a0, -42
-	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v10, v10, a0
 	vmsleu.vi	v12, v10, -3
-	bseti	a0, zero, 11
-	vand.vx	v8, v8, a0
 	vmsne.vi	v10, v8, 0
 	vmor.mm	v0, v10, v12
 	ret
 func000000000000014c:                   # @func000000000000014c
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v10, v10, -7
-	vmsleu.vi	v12, v10, 1
 	lui	a0, 4
+	vmsleu.vi	v12, v10, 1
 	addi	a0, a0, 48
 	vand.vx	v8, v8, a0
 	vmsne.vi	v10, v8, 0
@@ -30,8 +30,8 @@ func000000000000014c:                   # @func000000000000014c
 func0000000000000141:                   # @func0000000000000141
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v10, v10, -1
-	vmsleu.vi	v12, v10, 3
 	li	a0, 112
+	vmsleu.vi	v12, v10, 3
 	vand.vx	v8, v8, a0
 	li	a0, 80
 	vmseq.vx	v10, v8, a0

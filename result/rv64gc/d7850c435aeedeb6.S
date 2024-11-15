@@ -1,8 +1,8 @@
 func0000000000000312:                   # @func0000000000000312
 	sext.w	a0, a0
+	fmv.d.x	fa5, zero
 	addi	a0, a0, -9
 	seqz	a0, a0
-	fmv.d.x	fa5, zero
 	flt.d	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
@@ -19,9 +19,9 @@ func0000000000000112:                   # @func0000000000000112
 	ret
 func0000000000000318:                   # @func0000000000000318
 	sext.w	a0, a0
+	fmv.d.x	fa5, zero
 	addi	a0, a0, -4
 	seqz	a0, a0
-	fmv.d.x	fa5, zero
 	feq.d	a1, fa0, fa5
 	or	a0, a0, a1
 	ret

@@ -2,8 +2,8 @@ func000000000000006c:                   # @func000000000000006c
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf4	v9, v8
 	vmv.v.i	v8, 1
-	vwsll.vv	v10, v8, v9
 	lui	a0, 262145
+	vwsll.vv	v10, v8, v9
 	slli	a0, a0, 2
 	addi	a0, a0, -511
 	vsetvli	zero, zero, e64, m2, ta, ma
@@ -15,8 +15,8 @@ func000000000000002c:                   # @func000000000000002c
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf4	v9, v8
 	vmv.v.i	v8, 1
-	vwsll.vv	v10, v8, v9
 	lui	a0, 81921
+	vwsll.vv	v10, v8, v9
 	addi	a0, a0, -23
 	slli	a0, a0, 33
 	addi	a0, a0, 1

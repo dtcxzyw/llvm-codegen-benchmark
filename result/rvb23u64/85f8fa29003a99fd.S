@@ -21,10 +21,10 @@ func000000000000000c:                   # @func000000000000000c
 	addiw	a1, a1, -241
 	slli	a2, a1, 32
 	add	a1, a1, a2
+	lui	a2, 4112
+	addiw	a2, a2, 257
 	and	a0, a0, a1
-	lui	a1, 4112
-	addiw	a1, a1, 257
-	slli	a2, a1, 32
+	slli	a1, a2, 32
 	add	a1, a1, a2
 	mul	a0, a0, a1
 	ret
@@ -36,16 +36,16 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func000000000000000a:                   # @func000000000000000a
 	add	a0, a0, a1
-	slli	a0, a0, 32
 	lui	a1, 1032699
+	slli	a0, a0, 32
 	addi	a1, a1, 389
 	slli	a1, a1, 33
 	mulhu	a0, a0, a1
 	ret
 func000000000000000f:                   # @func000000000000000f
 	add	a0, a0, a1
-	zext.w	a0, a0
 	lui	a1, 26844
+	zext.w	a0, a0
 	addiw	a1, a1, -1861
 	mul	a0, a0, a1
 	ret

@@ -75,9 +75,9 @@ func000000000000000c:                   # @func000000000000000c
 func000000000000000a:                   # @func000000000000000a
 	lui	a0, 281862
 	fmv.w.x	fa5, a0
+	lui	a0, 284576
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfadd.vf	v8, v8, fa5
-	lui	a0, 284576
 	fmv.w.x	fa5, a0
 	vmfle.vf	v0, v8, fa5
 	ret

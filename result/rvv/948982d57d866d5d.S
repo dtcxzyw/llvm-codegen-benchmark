@@ -36,8 +36,8 @@ func0000000000000004:                   # @func0000000000000004
 	vfcvt.f.x.v	v10, v10
 	lui	a0, 49152
 	fmv.w.x	fa5, a0
-	vfmul.vf	v10, v10, fa5
 	lui	a0, 219648
+	vfmul.vf	v10, v10, fa5
 	fmv.w.x	fa5, a0
 	vfmul.vf	v8, v8, fa5
 	vmflt.vv	v0, v10, v8

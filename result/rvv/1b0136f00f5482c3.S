@@ -1,8 +1,8 @@
 func0000000000000024:                   # @func0000000000000024
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
-	vfabs.v	v24, v24
 	fli.d	fa5, 1.0
+	vfabs.v	v24, v24
 	vmfgt.vf	v7, v24, fa5
 	vmflt.vv	v24, v8, v16
 	vmand.mm	v0, v7, v24
@@ -10,8 +10,8 @@ func0000000000000024:                   # @func0000000000000024
 func000000000000006a:                   # @func000000000000006a
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
-	vfclass.v	v24, v24
 	li	a0, 126
+	vfclass.v	v24, v24
 	vand.vx	v24, v24, a0
 	vmsne.vi	v7, v24, 0
 	vmfle.vv	v24, v8, v16

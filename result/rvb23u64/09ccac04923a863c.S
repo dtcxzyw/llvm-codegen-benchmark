@@ -100,13 +100,13 @@ func0000000000000138:                   # @func0000000000000138
 	ret
 func0000000000000188:                   # @func0000000000000188
 	slli	a2, a2, 8
-	or	a0, a0, a2
 	andi	a1, a1, 255
+	or	a0, a0, a2
+	lui	a2, 1
 	or	a0, a0, a1
 	sext.w	a0, a0
-	lui	a1, 1
-	addiw	a1, a1, -24
-	sltu	a0, a1, a0
+	addiw	a2, a2, -24
+	sltu	a0, a2, a0
 	ret
 func00000000000001fc:                   # @func00000000000001fc
 	slli	a2, a2, 12
@@ -119,11 +119,11 @@ func00000000000001fc:                   # @func00000000000001fc
 	ret
 func00000000000001f8:                   # @func00000000000001f8
 	slli	a2, a2, 12
-	or	a0, a0, a2
 	andi	a1, a1, 255
+	or	a0, a0, a2
+	lui	a2, 16
 	or	a0, a0, a1
 	sext.w	a0, a0
-	lui	a1, 16
-	addiw	a1, a1, -561
+	addiw	a1, a2, -561
 	sltu	a0, a1, a0
 	ret

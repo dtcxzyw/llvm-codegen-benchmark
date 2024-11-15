@@ -2,8 +2,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	sext.w	a0, a0
 	lui	a1, 258048
 	fmv.w.x	fa5, a1
-	fle.s	a1, fa5, fa0
 	addi	a0, a0, -3
+	fle.s	a1, fa5, fa0
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -11,8 +11,8 @@ func0000000000000021:                   # @func0000000000000021
 	sext.w	a0, a0
 	lui	a1, 258048
 	fmv.w.x	fa5, a1
-	flt.s	a1, fa0, fa5
 	addi	a0, a0, -3
+	flt.s	a1, fa0, fa5
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -91,8 +91,8 @@ func000000000000004a:                   # @func000000000000004a
 	lui	a1, %hi(.LCPI11_0)
 	flw	fa5, %lo(.LCPI11_0)(a1)
 	sext.w	a0, a0
-	flt.s	a1, fa5, fa0
 	slti	a0, a0, 2
+	flt.s	a1, fa5, fa0
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -108,8 +108,8 @@ func0000000000000051:                   # @func0000000000000051
 	sext.w	a0, a0
 	fmv.w.x	fa5, zero
 	fle.s	a1, fa0, fa5
-	xori	a1, a1, 1
 	addi	a0, a0, -1
+	xori	a1, a1, 1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

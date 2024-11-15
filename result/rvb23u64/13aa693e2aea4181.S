@@ -11,8 +11,8 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000011:                   # @func0000000000000011
 	sltu	a1, a2, a1
 	sext.w	a0, a0
-	czero.nez	a0, a0, a1
 	lui	a2, 1024
+	czero.nez	a0, a0, a1
 	addiw	a2, a2, -27
 	slli	a2, a2, 10
 	czero.eqz	a1, a2, a1
@@ -31,8 +31,8 @@ func0000000000000003:                   # @func0000000000000003
 func0000000000000009:                   # @func0000000000000009
 	sltu	a1, a1, a2
 	sext.w	a0, a0
-	czero.nez	a0, a0, a1
 	li	a2, 6
+	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret

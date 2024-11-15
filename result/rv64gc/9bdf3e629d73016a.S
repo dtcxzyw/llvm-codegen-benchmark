@@ -2,8 +2,8 @@ func0000000000000061:                   # @func0000000000000061
 	sext.w	a2, a2
 	sext.w	a1, a1
 	slti	a1, a1, 0
-	not	a1, a1
 	seqz	a2, a2
+	not	a1, a1
 	and	a0, a0, a2
 	and	a0, a0, a1
 	ret

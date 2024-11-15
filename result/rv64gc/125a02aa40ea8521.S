@@ -1,14 +1,14 @@
 func0000000000000171:                   # @func0000000000000171
 	sub	a1, a1, a2
-	srli	a1, a1, 6
-	srli	a0, a0, 3
-	lui	a2, 699051
-	addiw	a2, a2, -1365
-	slli	a3, a2, 32
-	add	a2, a2, a3
-	mul	a0, a0, a2
-	bltu	a1, a0, .LBB0_2
-	mv	a1, a0
+	srli	a2, a0, 3
+	lui	a3, 699051
+	srli	a0, a1, 6
+	addiw	a1, a3, -1365
+	slli	a3, a1, 32
+	add	a1, a1, a3
+	mul	a1, a2, a1
+	bltu	a0, a1, .LBB0_2
+	mv	a0, a1
 .LBB0_2:                                # %entry
-	seqz	a0, a1
+	seqz	a0, a0
 	ret

@@ -19,8 +19,8 @@ func00000000000000f1:                   # @func00000000000000f1
 func00000000000001f8:                   # @func00000000000001f8
 	sext.w	a1, a1
 	sub	a0, a0, a1
-	addi	a0, a0, -4
 	li	a1, 3
+	addi	a0, a0, -4
 	slli	a1, a1, 10
 	sltu	a0, a1, a0
 	ret

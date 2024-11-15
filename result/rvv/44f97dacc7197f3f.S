@@ -5,8 +5,8 @@ func0000000000000007:                   # @func0000000000000007
 	li	a0, 256
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmv.v.x	v8, a0
-	vmerge.vim	v8, v8, 0, v0
 	lui	a0, 1
+	vmerge.vim	v8, v8, 0, v0
 	vor.vx	v9, v8, a0
 	vmv1r.v	v0, v10
 	vmerge.vvm	v8, v9, v8, v0

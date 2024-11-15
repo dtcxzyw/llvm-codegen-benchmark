@@ -8,9 +8,9 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000006:                   # @func0000000000000006
 	slli	a0, a0, 19
+	lui	a1, 1047552
 	ori	a0, a0, 12
 	bseti	a0, a0, 51
-	lui	a1, 1047552
 	addiw	a1, a1, 12
 	and	a0, a0, a1
 	ret

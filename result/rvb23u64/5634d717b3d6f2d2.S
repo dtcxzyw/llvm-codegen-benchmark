@@ -18,9 +18,9 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000034:                   # @func0000000000000034
 	sltiu	a0, a0, 256
-	xori	a0, a0, 1
 	andi	a1, a1, 1
 	li	a3, 16
+	xori	a0, a0, 1
 	czero.nez	a1, a3, a1
 	or	a1, a1, a2
 	slli	a0, a0, 3

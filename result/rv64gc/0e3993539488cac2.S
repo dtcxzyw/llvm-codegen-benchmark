@@ -34,9 +34,9 @@ func0000000000000022:                   # @func0000000000000022
 	sext.w	a1, a1
 	lui	a2, 12
 	xor	a1, a1, a2
+	lui	a2, 512
 	seqz	a1, a1
 	slli	a1, a1, 20
-	lui	a2, 512
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -58,17 +58,17 @@ func0000000000000031:                   # @func0000000000000031
 	ret
 func0000000000000034:                   # @func0000000000000034
 	not	a1, a1
+	lui	a2, 1024
 	srliw	a1, a1, 31
 	slli	a1, a1, 21
-	lui	a2, 1024
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func0000000000000028:                   # @func0000000000000028
 	sext.w	a1, a1
+	lui	a2, 49152
 	sltiu	a1, a1, 2
 	slli	a1, a1, 11
-	lui	a2, 49152
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret

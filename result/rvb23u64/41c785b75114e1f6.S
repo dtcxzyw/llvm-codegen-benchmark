@@ -1,7 +1,7 @@
 func0000000000000051:                   # @func0000000000000051
 	sub	a1, a1, a2
-	slli	a1, a1, 3
 	zext.w	a0, a0
+	slli	a1, a1, 3
 	neg	a0, a0
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -53,8 +53,8 @@ func0000000000000158:                   # @func0000000000000158
 	ret
 func0000000000000151:                   # @func0000000000000151
 	sub	a1, a1, a2
-	slli	a1, a1, 3
 	sext.w	a0, a0
+	slli	a1, a1, 3
 	neg	a0, a0
 	xor	a0, a0, a1
 	seqz	a0, a0

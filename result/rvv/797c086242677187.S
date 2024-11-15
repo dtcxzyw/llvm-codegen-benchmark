@@ -37,8 +37,8 @@ func0000000000000116:                   # @func0000000000000116
 	addi	a0, a0, 77
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmacc.vx	v8, a0, v10
-	vmsle.vi	v0, v8, -1
 	lui	a0, 524288
+	vmsle.vi	v0, v8, -1
 	addi	a0, a0, -85
 	vadd.vx	v8, v8, a0, v0.t
 	ret
@@ -47,8 +47,8 @@ func0000000000000316:                   # @func0000000000000316
 	addi	a0, a0, 576
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmacc.vx	v8, a0, v10
-	vmsle.vi	v0, v8, -1
 	lui	a0, 244141
+	vmsle.vi	v0, v8, -1
 	addi	a0, a0, -1536
 	vadd.vx	v8, v8, a0, v0.t
 	ret

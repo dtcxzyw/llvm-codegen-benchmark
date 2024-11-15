@@ -17,10 +17,10 @@ func00000000000000c1:                   # @func00000000000000c1
 func00000000000000c4:                   # @func00000000000000c4
 	sext.w	a0, a0
 	and	a1, a1, a2
-	andi	a1, a1, 255
-	snez	a1, a1
 	lui	a2, 262144
+	andi	a1, a1, 255
 	addiw	a2, a2, -1
+	snez	a1, a1
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret

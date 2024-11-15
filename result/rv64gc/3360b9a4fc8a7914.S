@@ -31,19 +31,19 @@ func0000000000000155:                   # @func0000000000000155
 	ret
 func0000000000000087:                   # @func0000000000000087
 	fclass.d	a0, fa1
-	andi	a0, a0, 894
-	snez	a0, a0
 	fclass.d	a1, fa0
+	andi	a0, a0, 894
 	slli	a1, a1, 56
+	snez	a0, a0
 	srli	a1, a1, 63
 	or	a0, a0, a1
 	ret
 func0000000000000088:                   # @func0000000000000088
 	fclass.d	a0, fa1
-	andi	a0, a0, 129
-	snez	a0, a0
 	fclass.d	a1, fa0
+	andi	a0, a0, 129
 	slli	a1, a1, 56
+	snez	a0, a0
 	srli	a1, a1, 63
 	or	a0, a0, a1
 	ret
@@ -53,9 +53,9 @@ func0000000000000088:                   # @func0000000000000088
 	.quad	0x40554345b1a57f00              # double 85.051128779999999
 func0000000000000044:                   # @func0000000000000044
 	lui	a0, %hi(.LCPI5_0)
+	lui	a1, %hi(.LCPI5_1)
 	fld	fa5, %lo(.LCPI5_0)(a0)
-	lui	a0, %hi(.LCPI5_1)
-	fld	fa4, %lo(.LCPI5_1)(a0)
+	fld	fa4, %lo(.LCPI5_1)(a1)
 	fabs.d	fa3, fa1
 	flt.d	a0, fa5, fa3
 	flt.d	a1, fa4, fa0
@@ -83,8 +83,8 @@ func0000000000000022:                   # @func0000000000000022
 	ret
 func0000000000000099:                   # @func0000000000000099
 	fclass.d	a0, fa1
-	andi	a0, a0, 897
 	fclass.d	a1, fa0
+	andi	a0, a0, 897
 	andi	a1, a1, 896
 	or	a0, a0, a1
 	snez	a0, a0
@@ -102,9 +102,9 @@ func00000000000000a2:                   # @func00000000000000a2
 	ret
 func0000000000000017:                   # @func0000000000000017
 	fclass.d	a0, fa1
+	feq.d	a1, fa0, fa0
 	andi	a0, a0, 894
 	snez	a0, a0
-	feq.d	a1, fa0, fa0
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret

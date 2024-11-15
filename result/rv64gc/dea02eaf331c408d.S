@@ -79,9 +79,9 @@ func0000000000000005:                   # @func0000000000000005
 	ret
 func00000000000000f8:                   # @func00000000000000f8
 	slli	a2, a2, 32
+	addi	a0, a0, 2047
 	srli	a2, a2, 32
 	add	a1, a1, a2
-	addi	a0, a0, 2047
 	addi	a0, a0, 2003
 	sltu	a0, a1, a0
 	ret

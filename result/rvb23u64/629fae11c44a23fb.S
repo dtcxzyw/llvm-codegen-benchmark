@@ -61,8 +61,8 @@ func000000000000008c:                   # @func000000000000008c
 	zext.h	a0, a0
 	andi	a1, a1, 255
 	addi	a1, a1, -14
-	snez	a1, a1
 	sltiu	a0, a0, 2
+	snez	a1, a1
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
@@ -70,8 +70,8 @@ func0000000000000081:                   # @func0000000000000081
 	zext.h	a0, a0
 	andi	a1, a1, 24
 	addi	a1, a1, -8
-	seqz	a1, a1
 	sltiu	a0, a0, 6
+	seqz	a1, a1
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret

@@ -9,9 +9,9 @@ func0000000000000066:                   # @func0000000000000066
 func0000000000000388:                   # @func0000000000000388
 	lui	a3, %hi(.LCPI1_0)
 	ld	a3, %lo(.LCPI1_0)(a3)
+	sltiu	a0, a0, 10
 	sub	a3, a3, a2
 	sltu	a1, a3, a1
-	sltiu	a0, a0, 10
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -24,9 +24,9 @@ func0000000000000114:                   # @func0000000000000114
 	ret
 func000000000000016a:                   # @func000000000000016a
 	li	a3, -2
+	slti	a0, a0, 0
 	sub	a3, a3, a2
 	slt	a1, a1, a3
-	slti	a0, a0, 0
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

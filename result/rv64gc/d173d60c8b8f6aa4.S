@@ -3,10 +3,10 @@
 func000000000000000d:                   # @func000000000000000d
 	lui	a2, %hi(.LCPI0_0)
 	ld	a2, %lo(.LCPI0_0)(a2)
-	mulhu	a2, a1, a2
-	srli	a2, a2, 18
 	lui	a3, 244
 	addiw	a3, a3, 576
+	mulhu	a2, a1, a2
+	srli	a2, a2, 18
 	mul	a2, a2, a3
 	sub	a1, a1, a2
 	li	a2, 1000
@@ -18,10 +18,10 @@ func000000000000000d:                   # @func000000000000000d
 func000000000000000c:                   # @func000000000000000c
 	lui	a2, %hi(.LCPI1_0)
 	ld	a2, %lo(.LCPI1_0)(a2)
-	mulhu	a2, a1, a2
-	srli	a2, a2, 18
 	lui	a3, 244
 	addiw	a3, a3, 576
+	mulhu	a2, a1, a2
+	srli	a2, a2, 18
 	mul	a2, a2, a3
 	sub	a1, a1, a2
 	li	a2, 1000
@@ -33,9 +33,9 @@ func000000000000000f:                   # @func000000000000000f
 	addiw	a2, a2, -819
 	slli	a3, a2, 32
 	add	a2, a2, a3
+	li	a3, 10
 	mulhu	a2, a1, a2
 	srli	a2, a2, 3
-	li	a3, 10
 	mul	a2, a2, a3
 	sub	a1, a1, a2
 	slli	a2, a1, 1
@@ -47,13 +47,13 @@ func000000000000000f:                   # @func000000000000000f
 	.quad	1844674407370955161             # 0x1999999999999999
 func000000000000000a:                   # @func000000000000000a
 	lui	a2, 838861
+	lui	a3, %hi(.LCPI3_0)
 	addiw	a2, a2, -819
-	slli	a3, a2, 32
-	add	a2, a2, a3
+	ld	a3, %lo(.LCPI3_0)(a3)
+	slli	a4, a2, 32
+	add	a2, a2, a4
 	mulhu	a2, a1, a2
 	srli	a2, a2, 3
-	lui	a3, %hi(.LCPI3_0)
-	ld	a3, %lo(.LCPI3_0)(a3)
 	li	a4, 10
 	mul	a2, a2, a4
 	sub	a1, a1, a2
@@ -65,9 +65,9 @@ func000000000000000e:                   # @func000000000000000e
 	addiw	a2, a2, 193
 	slli	a3, a2, 32
 	add	a2, a2, a3
+	li	a3, 170
 	mulhu	a2, a1, a2
 	srli	a2, a2, 7
-	li	a3, 170
 	mul	a2, a2, a3
 	sub	a1, a1, a2
 	slli	a2, a1, 3

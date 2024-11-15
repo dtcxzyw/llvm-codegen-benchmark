@@ -9,20 +9,20 @@ func000000000000004a:                   # @func000000000000004a
 func000000000000000a:                   # @func000000000000000a
 	li	a2, 122
 	mul	a1, a1, a2
-	addiw	a1, a1, -122
-	slli	a1, a1, 2
 	lui	a2, 305
 	addiw	a2, a2, 976
+	addiw	a1, a1, -122
+	slli	a1, a1, 2
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 func0000000000000002:                   # @func0000000000000002
 	li	a2, 122
 	mul	a1, a1, a2
-	addiw	a1, a1, -122
-	slli	a1, a1, 2
 	lui	a2, 320
 	addiw	a2, a2, -928
+	addiw	a1, a1, -122
+	slli	a1, a1, 2
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

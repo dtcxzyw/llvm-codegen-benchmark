@@ -15,8 +15,8 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func0000000000000004:                   # @func0000000000000004
 	divu	a0, a0, a1
-	sext.w	a0, a0
 	lui	a1, 524288
+	sext.w	a0, a0
 	addiw	a1, a1, -1
 	sltu	a0, a0, a1
 	ret

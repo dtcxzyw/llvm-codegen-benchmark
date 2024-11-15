@@ -1,8 +1,8 @@
 func0000000000000003:                   # @func0000000000000003
 	slli	a1, a1, 48
-	srli	a1, a1, 48
 	andi	a0, a0, 1
 	lui	a2, 524288
+	srli	a1, a1, 48
 	addiw	a2, a2, 1
 	xor	a0, a0, a2
 	or	a0, a0, a1
@@ -18,8 +18,8 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func0000000000000001:                   # @func0000000000000001
 	slli	a1, a1, 48
-	srli	a1, a1, 48
 	andi	a0, a0, 1
+	srli	a1, a1, 48
 	slli	a0, a0, 16
 	or	a0, a0, a1
 	ret

@@ -10,9 +10,9 @@ func0000000000000003:                   # @func0000000000000003
 .LCPI1_0:
 	.word	0x4006538f                      # float 2.09885001
 func0000000000000005:                   # @func0000000000000005
+	lui	a0, %hi(.LCPI1_0)
+	flw	fa5, %lo(.LCPI1_0)(a0)
 	lui	a0, 260096
-	lui	a1, %hi(.LCPI1_0)
-	flw	fa5, %lo(.LCPI1_0)(a1)
 	fmv.w.x	fa4, a0
 	fadd.s	fa4, fa1, fa4
 	fdiv.s	fa4, fa0, fa4

@@ -21,12 +21,12 @@ func0000000000000080:                   # @func0000000000000080
 	ret
 func00000000000000b2:                   # @func00000000000000b2
 	bset	a1, zero, a1
-	neg	a2, a1
+	li	a2, -1
 	add	a0, a0, a1
-	li	a1, -1
-	srli	a1, a1, 3
-	add	a0, a0, a1
-	and	a0, a0, a2
+	neg	a1, a1
+	srli	a2, a2, 3
+	add	a0, a0, a2
+	and	a0, a0, a1
 	ret
 func0000000000000020:                   # @func0000000000000020
 	bset	a0, zero, a0

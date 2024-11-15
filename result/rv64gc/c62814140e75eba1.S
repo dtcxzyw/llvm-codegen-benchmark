@@ -10,9 +10,9 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func0000000000000014:                   # @func0000000000000014
 	fmv.x.w	a1, fa0
+	lui	a2, 1047552
 	slli	a1, a1, 41
 	srai	a1, a1, 63
-	lui	a2, 1047552
 	addw	a0, a0, a2
 	and	a0, a0, a1
 	ret

@@ -24,9 +24,9 @@ func0000000000000007:                   # @func0000000000000007
 	vmseq.vi	v0, v12, 0
 	li	a0, 512
 	vmv.v.x	v12, a0
+	li	a0, 9
 	vmerge.vvm	v10, v12, v10, v0
 	vor.vv	v8, v10, v8
-	li	a0, 9
 	slli	a0, a0, 8
 	vor.vx	v8, v8, a0
 	ret

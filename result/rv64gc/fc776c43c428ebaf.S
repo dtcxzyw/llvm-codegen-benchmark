@@ -19,10 +19,10 @@ func0000000000000014:                   # @func0000000000000014
 	sext.w	a1, a1
 	lui	a3, 1048575
 	addi	a3, a3, -224
-	addw	a2, a2, a3
-	sltiu	a2, a2, 10
 	addi	a1, a1, -987
+	addw	a2, a2, a3
 	seqz	a1, a1
+	sltiu	a2, a2, 10
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
@@ -47,10 +47,10 @@ func00000000000001c4:                   # @func00000000000001c4
 	lui	a3, 1048574
 	addi	a3, a3, -106
 	addw	a2, a2, a3
-	sltiu	a2, a2, -4
 	lui	a3, 2
 	addiw	a3, a3, 12
 	xor	a1, a1, a3
+	sltiu	a2, a2, -4
 	snez	a1, a1
 	and	a0, a0, a1
 	and	a0, a0, a2

@@ -7,22 +7,22 @@ func0000000000000023:                   # @func0000000000000023
 	ret
 func0000000000000022:                   # @func0000000000000022
 	sext.w	a1, a1
-	seqz	a1, a1
-	addi	a1, a1, -1
 	li	a2, 255
+	seqz	a1, a1
 	slli	a3, a2, 32
-	and	a1, a1, a3
 	slli	a2, a2, 24
+	addi	a1, a1, -1
+	and	a1, a1, a3
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func0000000000000002:                   # @func0000000000000002
 	sext.w	a1, a1
+	lui	a2, 4080
 	seqz	a1, a1
 	addi	a1, a1, -1
 	srliw	a1, a1, 24
 	slli	a1, a1, 24
-	lui	a2, 4080
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -36,10 +36,10 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 func0000000000000014:                   # @func0000000000000014
 	sext.w	a1, a1
-	slti	a1, a1, 1
-	slli	a1, a1, 34
 	li	a2, 1
+	slti	a1, a1, 1
 	slli	a2, a2, 35
+	slli	a1, a1, 34
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret

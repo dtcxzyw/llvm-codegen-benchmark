@@ -11,9 +11,9 @@ func0000000000000000:                   # @func0000000000000000
 	vnmsac.vx	v8, a0, v10
 	ret
 func0000000000000001:                   # @func0000000000000001
+	lui	a0, 149797
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vadd.vi	v8, v8, 4, v0.t
-	lui	a0, 149797
 	addi	a0, a0, -1755
 	vmulhu.vx	v10, v8, a0
 	vsub.vv	v12, v8, v10

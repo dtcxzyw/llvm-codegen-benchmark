@@ -18,11 +18,11 @@ func0000000000000046:                   # @func0000000000000046
 	addiw	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
+	lui	a1, 5
 	vmul.vx	v8, v8, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
-	lui	a0, 5
-	addi	a0, a0, -481
+	addi	a0, a1, -481
 	vmslt.vx	v8, v10, a0
 	vmand.mm	v0, v0, v8
 	ret

@@ -1,9 +1,9 @@
 func000000000000004c:                   # @func000000000000004c
 	sub	a2, a0, a1
-	sltiu	a2, a2, 2
 	xor	a0, a0, a1
+	sltiu	a1, a2, 2
 	snez	a0, a0
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 func0000000000000068:                   # @func0000000000000068
 	sub	a2, a0, a1
@@ -26,11 +26,11 @@ func00000000000000a9:                   # @func00000000000000a9
 	ret
 func0000000000000045:                   # @func0000000000000045
 	sub	a2, a1, a0
-	srli	a2, a2, 32
-	seqz	a2, a2
 	sltu	a0, a1, a0
+	srli	a2, a2, 32
+	seqz	a1, a2
 	not	a0, a0
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 func0000000000000088:                   # @func0000000000000088
 	sub	a2, a0, a1

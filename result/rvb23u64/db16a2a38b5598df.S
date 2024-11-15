@@ -1,8 +1,8 @@
 func0000000000000005:                   # @func0000000000000005
 	addi	a0, a0, 1
-	sext.h	a1, a0
-	lui	a2, 5
-	addiw	a2, a2, -1755
+	lui	a1, 5
+	sext.h	a2, a0
+	addiw	a1, a1, -1755
 	mul	a1, a1, a2
 	srli	a2, a1, 63
 	srai	a1, a1, 17
@@ -13,9 +13,9 @@ func0000000000000005:                   # @func0000000000000005
 	ret
 func0000000000000001:                   # @func0000000000000001
 	addi	a0, a0, -64
-	sext.h	a1, a0
-	lui	a2, 4
-	addiw	a2, a2, 877
+	lui	a1, 4
+	sext.h	a2, a0
+	addiw	a1, a1, 877
 	mul	a1, a1, a2
 	srli	a2, a1, 63
 	srai	a1, a1, 22
@@ -26,9 +26,9 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000000:                   # @func0000000000000000
 	addi	a0, a0, 1
-	sext.h	a1, a0
-	lui	a2, 5
-	addiw	a2, a2, 1366
+	lui	a1, 5
+	sext.h	a2, a0
+	addiw	a1, a1, 1366
 	mul	a1, a1, a2
 	srli	a2, a1, 63
 	srli	a1, a1, 16

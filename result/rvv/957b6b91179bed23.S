@@ -2,8 +2,8 @@ func00000000000000fc:                   # @func00000000000000fc
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v12, v12, 24
 	vor.vv	v8, v8, v10
-	vor.vv	v8, v8, v12
 	li	a0, -1
+	vor.vv	v8, v8, v12
 	srli	a0, a0, 32
 	vmsne.vx	v0, v8, a0
 	ret
@@ -18,8 +18,8 @@ func00000000000000f8:                   # @func00000000000000f8
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v12, v12, 24
 	vor.vv	v8, v8, v10
-	vor.vv	v8, v8, v12
 	lui	a0, 2
+	vor.vv	v8, v8, v12
 	addiw	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret

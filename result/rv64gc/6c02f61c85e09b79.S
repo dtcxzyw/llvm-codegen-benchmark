@@ -2,10 +2,10 @@ func00000000000000aa:                   # @func00000000000000aa
 	sext.w	a1, a1
 	sext.w	a2, a2
 	slti	a3, a2, 0
-	not	a3, a3
 	slt	a1, a2, a1
+	not	a2, a3
 	and	a0, a0, a1
-	and	a0, a0, a3
+	and	a0, a0, a2
 	ret
 func00000000000000c4:                   # @func00000000000000c4
 	sext.w	a1, a1

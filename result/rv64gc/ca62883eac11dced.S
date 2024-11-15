@@ -10,8 +10,8 @@ func00000000000001c1:                   # @func00000000000001c1
 func0000000000000111:                   # @func0000000000000111
 	lui	a3, %hi(.LCPI1_0)
 	ld	a3, %lo(.LCPI1_0)(a3)
-	sext.w	a0, a0
 	or	a1, a1, a2
+	sext.w	a0, a0
 	xor	a1, a1, a3
 	lui	a2, 390917
 	addiw	a2, a2, 273

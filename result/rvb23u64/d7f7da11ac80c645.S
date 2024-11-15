@@ -36,9 +36,9 @@ func000000000000011c:                   # @func000000000000011c
 	sext.w	a1, a1
 	addiw	a2, a2, 1
 	xor	a1, a1, a2
-	seqz	a1, a1
 	li	a2, 27
 	slli	a2, a2, 11
+	seqz	a1, a1
 	xor	a0, a0, a2
 	snez	a0, a0
 	or	a0, a0, a1
@@ -56,9 +56,9 @@ func000000000000031c:                   # @func000000000000031c
 	sext.w	a1, a1
 	addiw	a2, a2, 1
 	xor	a1, a1, a2
-	seqz	a1, a1
 	li	a2, 27
 	slli	a2, a2, 11
+	seqz	a1, a1
 	xor	a0, a0, a2
 	snez	a0, a0
 	or	a0, a0, a1

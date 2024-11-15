@@ -10,9 +10,9 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000014:                   # @func0000000000000014
 	andi	a1, a1, 1
 	czero.eqz	a1, a2, a1
+	lui	a2, 244
 	sub	a0, a0, a1
-	lui	a1, 244
-	addiw	a1, a1, 576
+	addiw	a1, a2, 576
 	sltu	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008

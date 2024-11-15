@@ -40,8 +40,8 @@ func000000000000000f:                   # @func000000000000000f
 func0000000000000023:                   # @func0000000000000023
 	li	a0, 880
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vmsltu.vx	v0, v10, a0
 	vsrl.vi	v8, v8, 5
+	vmsltu.vx	v0, v10, a0
 	li	a0, 320
 	vadd.vx	v8, v8, a0, v0.t
 	ret

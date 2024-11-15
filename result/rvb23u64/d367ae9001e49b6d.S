@@ -1,7 +1,7 @@
 func0000000000000093:                   # @func0000000000000093
 	sltu	a1, a1, a2
-	xori	a1, a1, 1
 	lui	a2, 838861
+	xori	a1, a1, 1
 	addiw	a2, a2, -819
 	slli	a3, a2, 32
 	add	a2, a2, a3

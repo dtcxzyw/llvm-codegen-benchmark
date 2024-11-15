@@ -4,8 +4,8 @@ func0000000000000075:                   # @func0000000000000075
 	vsra.vx	v12, v12, a0
 	li	a0, 44
 	vsra.vx	v10, v10, a0
-	vadd.vv	v10, v10, v12
 	li	a0, 40
+	vadd.vv	v10, v10, v12
 	vsra.vx	v8, v8, a0
 	vadd.vv	v8, v10, v8
 	ret

@@ -23,11 +23,11 @@ func0000000000000110:                   # @func0000000000000110
 	addi	a1, a0, 287
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v10, v10, a1
+	lui	a1, 1048572
 	addi	a0, a0, 303
+	addi	a1, a1, 399
 	vmsltu.vx	v12, v10, a0
-	lui	a0, 1048572
-	addi	a0, a0, 399
-	vmsltu.vx	v10, v8, a0
+	vmsltu.vx	v10, v8, a1
 	vmor.mm	v8, v10, v12
 	vmor.mm	v0, v8, v0
 	ret
@@ -71,8 +71,8 @@ func0000000000000450:                   # @func0000000000000450
 	li	a0, -37
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v10, v10, a0
-	vmsleu.vi	v12, v10, -7
 	li	a0, 32
+	vmsleu.vi	v12, v10, -7
 	vmseq.vx	v10, v8, a0
 	vmor.mm	v8, v12, v10
 	vmor.mm	v0, v8, v0

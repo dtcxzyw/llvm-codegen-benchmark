@@ -39,8 +39,8 @@ func0000000000000041:                   # @func0000000000000041
 	.quad	1000000000000000001             # 0xde0b6b3a7640001
 func0000000000000224:                   # @func0000000000000224
 	sext.w	a2, a2
-	sltiu	a2, a2, 16
 	lui	a3, %hi(.LCPI4_0)
+	sltiu	a2, a2, 16
 	ld	a3, %lo(.LCPI4_0)(a3)
 	neg	a2, a2
 	and	a1, a1, a2

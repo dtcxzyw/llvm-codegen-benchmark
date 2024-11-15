@@ -9,10 +9,10 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func0000000000000000:                   # @func0000000000000000
 	mul	a0, a0, a1
-	sh1add	a0, a0, a0
-	sext.w	a0, a0
 	lui	a1, 419430
+	sh1add	a0, a0, a0
 	addiw	a1, a1, 1639
+	sext.w	a0, a0
 	mul	a0, a0, a1
 	srli	a1, a0, 63
 	srai	a0, a0, 34

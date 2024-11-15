@@ -13,8 +13,8 @@ func000000000000003f:                   # @func000000000000003f
 func0000000000000014:                   # @func0000000000000014
 	zext.h	a2, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
 	lui	a1, 1048560
+	add	a0, a0, a2
 	addi	a1, a1, 1
 	addw	a0, a0, a1
 	ret

@@ -10,8 +10,8 @@ func000000000000001c:                   # @func000000000000001c
 	andi	a0, a0, 255
 	sub	a1, a1, a2
 	addi	a1, a1, -3
-	snez	a1, a1
 	addi	a0, a0, -105
+	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -35,8 +35,8 @@ func0000000000000018:                   # @func0000000000000018
 	andi	a0, a0, 255
 	sub	a1, a1, a2
 	sltiu	a1, a1, 3
-	not	a1, a1
 	addi	a0, a0, -91
+	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -57,8 +57,8 @@ func000000000000001a:                   # @func000000000000001a
 	andi	a0, a0, 255
 	sub	a1, a1, a2
 	slti	a1, a1, 2
-	not	a1, a1
 	addi	a0, a0, -58
+	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -66,8 +66,8 @@ func00000000000000a1:                   # @func00000000000000a1
 	andi	a0, a0, 255
 	sub	a1, a1, a2
 	slti	a1, a1, 2
-	xori	a1, a1, 1
 	addi	a0, a0, -58
+	xori	a1, a1, 1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -75,8 +75,8 @@ func0000000000000118:                   # @func0000000000000118
 	andi	a0, a0, 255
 	sub	a1, a1, a2
 	sltiu	a1, a1, 4
-	not	a1, a1
 	addi	a0, a0, -240
+	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -84,8 +84,8 @@ func00000000000001a1:                   # @func00000000000001a1
 	andi	a0, a0, 255
 	sub	a1, a1, a2
 	slti	a1, a1, 2
-	xori	a1, a1, 1
 	addi	a0, a0, -27
+	xori	a1, a1, 1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

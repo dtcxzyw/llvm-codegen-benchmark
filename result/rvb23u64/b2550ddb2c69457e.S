@@ -7,8 +7,8 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000000:                   # @func0000000000000000
 	or	a1, a1, a2
-	andi	a1, a1, 1
 	bseti	a2, zero, 31
+	andi	a1, a1, 1
 	czero.nez	a1, a2, a1
 	lui	a2, 532544
 	add	a1, a1, a2

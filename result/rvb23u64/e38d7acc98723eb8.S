@@ -28,10 +28,10 @@ func0000000000000118:                   # @func0000000000000118
 	addi	a3, a3, 1620
 	czero.nez	a3, a3, a2
 	czero.eqz	a1, a1, a2
+	lui	a2, 1048573
 	or	a1, a1, a3
 	subw	a0, a0, a1
-	lui	a1, 1048573
-	addiw	a1, a1, 1619
+	addiw	a1, a2, 1619
 	sltu	a0, a1, a0
 	ret
 func0000000000000116:                   # @func0000000000000116
@@ -56,9 +56,9 @@ func0000000000000114:                   # @func0000000000000114
 	addi	a3, a3, 1620
 	czero.nez	a3, a3, a2
 	czero.eqz	a1, a1, a2
+	lui	a2, 3
 	or	a1, a1, a3
 	subw	a0, a0, a1
-	lui	a1, 3
-	addiw	a1, a1, -1620
+	addiw	a1, a2, -1620
 	sltu	a0, a0, a1
 	ret

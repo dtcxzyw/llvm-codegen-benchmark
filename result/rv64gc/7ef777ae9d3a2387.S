@@ -26,12 +26,12 @@ func0000000000000174:                   # @func0000000000000174
 	addiw	a2, a2, -1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
+	li	a3, 1
+	slli	a3, a3, 32
+	addi	a3, a3, -2
 	mul	a1, a1, a2
-	li	a2, 1
-	slli	a2, a2, 32
-	addi	a2, a2, -2
-	add	a1, a1, a2
-	addi	a2, a2, 1
+	addi	a2, a3, 1
+	add	a1, a1, a3
 	and	a1, a1, a2
 	addi	a0, a0, 1
 	sltu	a0, a0, a1

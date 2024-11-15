@@ -66,8 +66,8 @@ func0000000000000044:                   # @func0000000000000044
 	ret
 func00000000000000ca:                   # @func00000000000000ca
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	xor	a1, a1, a2
+	srai	a0, a0, 56
 	snez	a1, a1
 	slti	a0, a0, 0
 	not	a0, a0

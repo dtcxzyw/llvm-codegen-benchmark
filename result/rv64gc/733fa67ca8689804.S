@@ -1,8 +1,8 @@
 func000000000000003d:                   # @func000000000000003d
 	add	a1, a1, a2
 	slli	a0, a0, 63
-	srai	a0, a0, 63
 	lui	a2, 804435
+	srai	a0, a0, 63
 	addi	a2, a2, 1536
 	and	a0, a0, a2
 	addw	a0, a0, a1

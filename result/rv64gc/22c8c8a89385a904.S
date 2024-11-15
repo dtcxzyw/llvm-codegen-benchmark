@@ -1,22 +1,21 @@
 func0000000000000084:                   # @func0000000000000084
-	fmv.w.x	fa5, zero
-	feq.s	a0, fa1, fa5
-	lui	a1, 260096
-	fmv.w.x	fa5, a1
-	fmv.s	fa4, fa5
-	beqz	a0, .LBB0_3
-	fdiv.s	fa4, fa0, fa4
-	flt.s	a0, fa5, fa4
+	fmv.s	fa5, fa0
+	fmv.w.x	fa4, zero
+	lui	a0, 260096
+	feq.s	a1, fa1, fa4
+	fmv.w.x	fa0, a0
+	fmv.s	fa4, fa0
+	beqz	a1, .LBB0_3
+	fdiv.s	fa5, fa5, fa4
+	flt.s	a0, fa0, fa5
 	beqz	a0, .LBB0_4
 .LBB0_2:                                # %entry
-	fmv.s	fa0, fa5
 	ret
 .LBB0_3:                                # %entry
-	fdiv.s	fa4, fa0, fa1
-	flt.s	a0, fa5, fa4
+	fdiv.s	fa5, fa5, fa1
+	flt.s	a0, fa0, fa5
 	bnez	a0, .LBB0_2
 .LBB0_4:                                # %entry
-	fmv.s	fa5, fa4
 	fmv.s	fa0, fa5
 	ret
 .LCPI1_0:

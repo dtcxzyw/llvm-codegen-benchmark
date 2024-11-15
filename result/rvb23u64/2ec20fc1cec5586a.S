@@ -1,8 +1,8 @@
 func0000000000000028:                   # @func0000000000000028
 	andi	a2, a2, 255
 	subw	a0, a0, a1
-	mulw	a0, a0, a2
 	lui	a1, 526344
+	mulw	a0, a0, a2
 	addiw	a1, a1, 129
 	mul	a1, a1, a0
 	srli	a1, a1, 32

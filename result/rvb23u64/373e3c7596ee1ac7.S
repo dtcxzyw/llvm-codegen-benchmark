@@ -17,8 +17,8 @@ func0000000000000034:                   # @func0000000000000034
 	sext.w	a0, a0
 	addiw	a1, a1, 1
 	sltu	a0, a0, a2
-	czero.nez	a1, a1, a0
 	li	a2, 32
+	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
 	or	a0, a0, a1
 	ret

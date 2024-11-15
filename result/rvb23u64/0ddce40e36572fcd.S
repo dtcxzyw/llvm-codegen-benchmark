@@ -39,8 +39,8 @@ func000000000000000a:                   # @func000000000000000a
 func000000000000005a:                   # @func000000000000005a
 	sext.w	a2, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
 	lui	a1, 524288
+	add	a0, a0, a2
 	addiw	a1, a1, -1
 	slt	a0, a1, a0
 	ret

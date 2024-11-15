@@ -9,8 +9,8 @@ func0000000000000098:                   # @func0000000000000098
 	li	a3, -1
 	slli	a3, a3, 63
 	addi	a4, a3, 2
-	sltu	a2, a2, a4
 	addi	a3, a3, 3
+	sltu	a2, a2, a4
 	xor	a1, a1, a3
 	snez	a1, a1
 	and	a1, a1, a2

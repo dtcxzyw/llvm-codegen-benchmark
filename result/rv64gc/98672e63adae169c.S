@@ -12,9 +12,9 @@ func000000000000001b:                   # @func000000000000001b
 	ret
 func0000000000000014:                   # @func0000000000000014
 	sub	a1, a1, a2
-	fcvt.d.l	fa5, a1
-	fcvt.d.l	fa4, a0
-	fdiv.d	fa5, fa5, fa4
+	fcvt.d.l	fa5, a0
+	fcvt.d.l	fa4, a1
+	fdiv.d	fa5, fa4, fa5
 	fmv.d.x	fa4, zero
 	flt.d	a0, fa4, fa5
 	ret

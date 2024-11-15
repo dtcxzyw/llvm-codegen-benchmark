@@ -50,10 +50,10 @@ func0000000000000704:                   # @func0000000000000704
 func0000000000000191:                   # @func0000000000000191
 	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wx	v12, v10, a0
-	vnsrl.wi	v10, v8, 0
-	vadd.vi	v8, v10, 1
-	vmseq.vv	v0, v8, v12
+	vnsrl.wi	v12, v8, 0
+	vnsrl.wx	v8, v10, a0
+	vadd.vi	v9, v12, 1
+	vmseq.vv	v0, v9, v8
 	ret
 func0000000000000511:                   # @func0000000000000511
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -72,16 +72,16 @@ func0000000000000516:                   # @func0000000000000516
 func0000000000000181:                   # @func0000000000000181
 	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wx	v12, v10, a0
-	vnsrl.wi	v10, v8, 0
-	vadd.vi	v8, v10, 1
-	vmseq.vv	v0, v8, v12
+	vnsrl.wi	v12, v8, 0
+	vnsrl.wx	v8, v10, a0
+	vadd.vi	v9, v12, 1
+	vmseq.vv	v0, v9, v8
 	ret
 func0000000000000381:                   # @func0000000000000381
 	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wx	v12, v10, a0
-	vnsrl.wi	v10, v8, 0
-	vadd.vi	v8, v10, 1
-	vmseq.vv	v0, v8, v12
+	vnsrl.wi	v12, v8, 0
+	vnsrl.wx	v8, v10, a0
+	vadd.vi	v9, v12, 1
+	vmseq.vv	v0, v9, v8
 	ret

@@ -12,9 +12,9 @@ func00000000000000c4:                   # @func00000000000000c4
 	ret
 func0000000000000041:                   # @func0000000000000041
 	lui	a3, 24
+	seqz	a0, a0
 	addiw	a3, a3, 1697
 	sltu	a2, a2, a3
-	seqz	a0, a0
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret

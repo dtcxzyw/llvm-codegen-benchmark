@@ -14,8 +14,8 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func000000000000000b:                   # @func000000000000000b
 	sext.w	a0, a0
-	slli	a0, a0, 8
 	li	a1, -1
+	slli	a0, a0, 8
 	slli	a1, a1, 32
 	srli	a1, a1, 8
 	and	a0, a0, a1

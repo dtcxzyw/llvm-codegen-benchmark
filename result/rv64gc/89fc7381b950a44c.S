@@ -1,7 +1,7 @@
 func0000000000000011:                   # @func0000000000000011
 	sext.w	a0, a0
-	snez	a0, a0
 	andi	a2, a1, 1
+	snez	a0, a0
 	lui	a1, 419424
 	bnez	a2, .LBB0_2
 	addiw	a1, a1, 193
@@ -26,8 +26,8 @@ func0000000000000014:                   # @func0000000000000014
 	sext.w	a0, a0
 	andi	a1, a1, 1
 	addi	a1, a1, -1
-	andi	a1, a1, 292
 	sltiu	a0, a0, 2
+	andi	a1, a1, 292
 	addi	a0, a0, -1
 	andi	a0, a0, 146
 	or	a0, a0, a1

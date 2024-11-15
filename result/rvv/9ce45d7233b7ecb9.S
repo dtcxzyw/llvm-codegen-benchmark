@@ -13,8 +13,8 @@ func0000000000000030:                   # @func0000000000000030
 	lui	a0, 272
 	addi	a0, a0, -1
 	vmsgtu.vx	v10, v8, a0
-	vmor.mm	v0, v10, v12
 	lui	a0, 16
+	vmor.mm	v0, v10, v12
 	addi	a0, a0, -3
 	vmerge.vxm	v8, v8, a0, v0
 	ret
@@ -25,8 +25,8 @@ func0000000000000090:                   # @func0000000000000090
 	lui	a0, 272
 	addi	a0, a0, -2
 	vmsgtu.vx	v10, v8, a0
-	vmor.mm	v0, v10, v12
 	lui	a0, 16
+	vmor.mm	v0, v10, v12
 	addi	a0, a0, -3
 	vmerge.vxm	v8, v8, a0, v0
 	ret

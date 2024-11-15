@@ -2,8 +2,8 @@ func0000000000000141:                   # @func0000000000000141
 	li	a0, -55
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v10, v10, a0
-	vmsleu.vi	v9, v10, 3
 	li	a0, 21
+	vmsleu.vi	v9, v10, 3
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vmseq.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9

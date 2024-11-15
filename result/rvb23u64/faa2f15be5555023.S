@@ -29,8 +29,8 @@ func0000000000000041:                   # @func0000000000000041
 func0000000000000081:                   # @func0000000000000081
 	zext.h	a0, a0
 	andi	a1, a1, 15
-	seqz	a1, a1
 	li	a2, 2047
+	seqz	a1, a1
 	sltu	a0, a2, a0
 	or	a0, a0, a1
 	ret

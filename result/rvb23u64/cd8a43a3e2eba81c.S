@@ -2,8 +2,8 @@ func0000000000000022:                   # @func0000000000000022
 	andi	a0, a0, 255
 	andi	a1, a1, 255
 	addi	a1, a1, -11
-	seqz	a1, a1
 	addi	a0, a0, -11
+	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	addi	a0, a0, 10
@@ -12,8 +12,8 @@ func0000000000000182:                   # @func0000000000000182
 	andi	a0, a0, 255
 	andi	a1, a1, 255
 	addi	a1, a1, -2
-	snez	a1, a1
 	seqz	a0, a0
+	snez	a1, a1
 	or	a0, a0, a1
 	li	a1, -98
 	czero.nez	a0, a1, a0

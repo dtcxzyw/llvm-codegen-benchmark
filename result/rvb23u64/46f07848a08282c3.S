@@ -1,38 +1,38 @@
 func0000000000000054:                   # @func0000000000000054
 	or	a3, a3, a4
-	xor	a4, a3, a1
-	sltu	a1, a1, a3
-	czero.eqz	a1, a1, a4
 	sltu	a0, a0, a2
-	czero.nez	a0, a0, a4
+	xor	a2, a3, a1
+	sltu	a1, a1, a3
+	czero.eqz	a1, a1, a2
+	czero.nez	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func0000000000000056:                   # @func0000000000000056
 	or	a3, a3, a4
-	xor	a4, a3, a1
-	slt	a1, a1, a3
-	czero.eqz	a1, a1, a4
 	sltu	a0, a0, a2
-	czero.nez	a0, a0, a4
+	xor	a2, a3, a1
+	slt	a1, a1, a3
+	czero.eqz	a1, a1, a2
+	czero.nez	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func000000000000005b:                   # @func000000000000005b
 	or	a3, a3, a4
-	xor	a4, a3, a1
-	slt	a1, a1, a3
-	czero.eqz	a1, a1, a4
 	sltu	a0, a0, a2
-	czero.nez	a0, a0, a4
+	xor	a2, a3, a1
+	slt	a1, a1, a3
+	czero.eqz	a1, a1, a2
+	czero.nez	a0, a0, a2
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret
 func000000000000005a:                   # @func000000000000005a
 	or	a3, a3, a4
-	xor	a4, a3, a1
-	slt	a1, a3, a1
-	czero.eqz	a1, a1, a4
 	sltu	a0, a2, a0
-	czero.nez	a0, a0, a4
+	xor	a2, a3, a1
+	slt	a1, a3, a1
+	czero.eqz	a1, a1, a2
+	czero.nez	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func0000000000000051:                   # @func0000000000000051
@@ -44,49 +44,49 @@ func0000000000000051:                   # @func0000000000000051
 	ret
 func0000000000000058:                   # @func0000000000000058
 	or	a3, a3, a4
-	xor	a4, a3, a1
-	sltu	a1, a3, a1
-	czero.eqz	a1, a1, a4
 	sltu	a0, a2, a0
-	czero.nez	a0, a0, a4
+	xor	a2, a3, a1
+	sltu	a1, a3, a1
+	czero.eqz	a1, a1, a2
+	czero.nez	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func0000000000000074:                   # @func0000000000000074
 	srli	a6, a4, 32
 	slli	a5, a5, 32
-	or	a5, a5, a6
 	slli	a4, a4, 32
+	or	a5, a5, a6
 	or	a2, a2, a4
 	or	a3, a3, a5
-	xor	a4, a3, a1
-	sltu	a1, a1, a3
-	czero.eqz	a1, a1, a4
 	sltu	a0, a0, a2
-	czero.nez	a0, a0, a4
+	xor	a2, a3, a1
+	sltu	a1, a1, a3
+	czero.eqz	a1, a1, a2
+	czero.nez	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func0000000000000059:                   # @func0000000000000059
 	or	a3, a3, a4
-	xor	a4, a3, a1
-	sltu	a1, a1, a3
-	czero.eqz	a1, a1, a4
 	sltu	a0, a0, a2
-	czero.nez	a0, a0, a4
+	xor	a2, a3, a1
+	sltu	a1, a1, a3
+	czero.eqz	a1, a1, a2
+	czero.nez	a0, a0, a2
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret
 func0000000000000079:                   # @func0000000000000079
 	srli	a6, a4, 32
 	slli	a5, a5, 32
-	or	a5, a5, a6
 	slli	a4, a4, 32
+	or	a5, a5, a6
 	or	a2, a2, a4
 	or	a3, a3, a5
-	xor	a4, a3, a1
-	sltu	a1, a1, a3
-	czero.eqz	a1, a1, a4
 	sltu	a0, a0, a2
-	czero.nez	a0, a0, a4
+	xor	a2, a3, a1
+	sltu	a1, a1, a3
+	czero.eqz	a1, a1, a2
+	czero.nez	a0, a0, a2
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret
@@ -106,10 +106,10 @@ func0000000000000041:                   # @func0000000000000041
 	ret
 func0000000000000071:                   # @func0000000000000071
 	srli	a6, a4, 63
-	sh1add	a5, a5, a6
 	slli	a4, a4, 1
-	or	a3, a3, a5
+	sh1add	a5, a5, a6
 	or	a2, a2, a4
+	or	a3, a3, a5
 	xor	a0, a0, a2
 	xor	a1, a1, a3
 	or	a0, a0, a1

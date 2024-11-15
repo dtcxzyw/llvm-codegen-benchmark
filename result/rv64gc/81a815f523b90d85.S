@@ -6,8 +6,8 @@ func000000000000001e:                   # @func000000000000001e
 func0000000000000012:                   # @func0000000000000012
 	li	a2, 1
 	sllw	a1, a2, a1
-	slli	a1, a1, 32
 	li	a2, 5
+	slli	a1, a1, 32
 	slli	a2, a2, 36
 	mulhu	a1, a1, a2
 	add	a0, a0, a1

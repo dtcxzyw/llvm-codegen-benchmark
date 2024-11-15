@@ -1,7 +1,7 @@
 func0000000000000042:                   # @func0000000000000042
 	fmv.w.x	fa5, zero
-	fmax.s	fa5, fa0, fa5
 	lui	a0, 280480
+	fmax.s	fa5, fa0, fa5
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	ret
@@ -35,8 +35,8 @@ func00000000000000ca:                   # @func00000000000000ca
 func0000000000000022:                   # @func0000000000000022
 	lui	a0, 273536
 	fmv.w.x	fa5, a0
-	fmin.s	fa5, fa0, fa5
 	lui	a0, 797824
+	fmin.s	fa5, fa0, fa5
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	ret
@@ -45,8 +45,8 @@ func0000000000000022:                   # @func0000000000000022
 func0000000000000044:                   # @func0000000000000044
 	lui	a0, %hi(.LCPI5_0)
 	flw	fa5, %lo(.LCPI5_0)(a0)
-	fmax.s	fa5, fa0, fa5
 	lui	a0, 217088
+	fmax.s	fa5, fa0, fa5
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	ret
@@ -64,11 +64,11 @@ func00000000000000c4:                   # @func00000000000000c4
 	ret
 func00000000000000c8:                   # @func00000000000000c8
 	lui	a0, 2048
+	lui	a1, 260096
 	fmv.w.x	fa5, a0
 	fle.s	a0, fa5, fa0
-	xori	a0, a0, 1
-	lui	a1, 260096
 	fmv.w.x	fa5, a1
+	xori	a0, a0, 1
 	feq.s	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
@@ -95,8 +95,8 @@ func0000000000000047:                   # @func0000000000000047
 func00000000000000aa:                   # @func00000000000000aa
 	lui	a0, 273216
 	fmv.w.x	fa5, a0
-	fmin.s	fa5, fa0, fa5
 	lui	a0, 797504
+	fmin.s	fa5, fa0, fa5
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa5, fa4
 	ret

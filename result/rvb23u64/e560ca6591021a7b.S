@@ -14,10 +14,10 @@ func0000000000000020:                   # @func0000000000000020
 	ret
 func0000000000000068:                   # @func0000000000000068
 	lui	a1, 244141
-	addiw	a1, a1, -1537
-	slt	a1, a1, a0
 	lui	a2, 804435
+	addiw	a1, a1, -1537
 	addiw	a2, a2, 1536
+	slt	a1, a1, a0
 	czero.eqz	a1, a2, a1
 	lui	a2, 1048332
 	addiw	a2, a2, -576
@@ -26,10 +26,10 @@ func0000000000000068:                   # @func0000000000000068
 	ret
 func0000000000000069:                   # @func0000000000000069
 	lui	a1, 244141
-	addiw	a1, a1, -1537
-	slt	a1, a1, a0
 	lui	a2, 804435
+	addiw	a1, a1, -1537
 	addiw	a2, a2, 1536
+	slt	a1, a1, a0
 	czero.eqz	a1, a2, a1
 	lui	a2, 243896
 	addiw	a2, a2, 1984

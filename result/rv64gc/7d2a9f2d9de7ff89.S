@@ -4,8 +4,8 @@ func000000000000000b:                   # @func000000000000000b
 	lui	a2, %hi(.LCPI0_0)
 	ld	a2, %lo(.LCPI0_0)(a2)
 	srai	a1, a1, 2
-	mul	a1, a1, a2
 	slli	a0, a0, 48
+	mul	a1, a1, a2
 	srli	a0, a0, 48
 	add	a0, a0, a1
 	ret
@@ -14,11 +14,11 @@ func000000000000000b:                   # @func000000000000000b
 func0000000000000001:                   # @func0000000000000001
 	lui	a2, %hi(.LCPI1_0)
 	ld	a2, %lo(.LCPI1_0)(a2)
+	slli	a0, a0, 48
 	mulh	a1, a1, a2
 	srli	a2, a1, 63
 	srai	a1, a1, 18
 	add	a1, a1, a2
-	slli	a0, a0, 48
 	srli	a0, a0, 48
 	add	a0, a0, a1
 	ret

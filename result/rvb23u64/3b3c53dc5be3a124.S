@@ -13,17 +13,17 @@ func0000000000000028:                   # @func0000000000000028
 func000000000000002a:                   # @func000000000000002a
 	addiw	a2, a2, -122
 	sh2add	a1, a2, a1
+	lui	a2, 305
 	sh2add	a0, a0, a1
-	lui	a1, 305
-	addiw	a1, a1, 976
+	addiw	a1, a2, 976
 	add	a0, a0, a1
 	ret
 func000000000000000a:                   # @func000000000000000a
 	addiw	a2, a2, -122
 	sh2add	a1, a2, a1
+	lui	a2, 320
 	sh2add	a0, a0, a1
-	lui	a1, 320
-	addiw	a1, a1, -928
+	addiw	a1, a2, -928
 	add	a0, a0, a1
 	ret
 func0000000000000020:                   # @func0000000000000020

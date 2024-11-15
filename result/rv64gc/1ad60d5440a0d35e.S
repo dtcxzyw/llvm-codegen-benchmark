@@ -3,10 +3,10 @@ func0000000000000822:                   # @func0000000000000822
 	sext.w	a1, a1
 	lui	a3, 2
 	addiw	a3, a3, 1
-	sltu	a2, a2, a3
 	seqz	a1, a1
-	and	a1, a1, a2
 	addi	a0, a0, -2
+	sltu	a2, a2, a3
+	and	a1, a1, a2
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

@@ -40,8 +40,8 @@ func000000000000004a:                   # @func000000000000004a
 	ret
 func0000000000000064:                   # @func0000000000000064
 	lui	a1, 264192
-	addw	a1, a1, a0
 	lui	a2, 784384
+	addw	a1, a1, a0
 	subw	a2, a2, a0
 	srliw	a0, a0, 23
 	sltiu	a0, a0, 383
@@ -51,8 +51,8 @@ func0000000000000064:                   # @func0000000000000064
 	ret
 func0000000000000024:                   # @func0000000000000024
 	lui	a1, 264192
-	addw	a1, a1, a0
 	lui	a2, 784384
+	addw	a1, a1, a0
 	subw	a2, a2, a0
 	srliw	a0, a0, 23
 	sltiu	a0, a0, 383

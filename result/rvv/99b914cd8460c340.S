@@ -8,10 +8,10 @@ func0000000000000401:                   # @func0000000000000401
 func000000000000019a:                   # @func000000000000019a
 	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wx	v12, v10, a0
 	vadd.vv	v8, v9, v8
+	vnsrl.wx	v9, v10, a0
 	vadd.vi	v8, v8, 2
-	vmslt.vv	v0, v12, v8
+	vmslt.vv	v0, v9, v8
 	ret
 func0000000000000511:                   # @func0000000000000511
 	vsetivli	zero, 4, e32, m1, ta, ma

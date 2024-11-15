@@ -1,12 +1,12 @@
 func0000000000000028:                   # @func0000000000000028
 	lui	a1, 838861
+	lui	a2, 104858
 	addi	a1, a1, -819
 	mul	a1, a1, a0
-	roriw	a1, a1, 1
-	lui	a2, 104858
-	addiw	a2, a2, -1638
-	sltu	a1, a1, a2
 	srliw	a0, a0, 16
+	addiw	a2, a2, -1638
+	roriw	a1, a1, 1
+	sltu	a1, a1, a2
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
@@ -15,9 +15,9 @@ func000000000000002c:                   # @func000000000000002c
 	lui	a2, 838861
 	addi	a2, a2, -819
 	mul	a0, a0, a2
-	roriw	a0, a0, 1
 	lui	a2, 104858
 	addiw	a2, a2, -1638
+	roriw	a0, a0, 1
 	sltu	a0, a0, a2
 	slti	a1, a1, 20
 	or	a0, a0, a1

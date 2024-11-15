@@ -11,9 +11,9 @@ func0000000000000002:                   # @func0000000000000002
 	fld	fa4, %lo(.LCPI0_1)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfmul.vf	v16, v8, fa5
+	lui	a0, %hi(.LCPI0_2)
 	vfabs.v	v24, v16
 	vmflt.vf	v0, v24, fa4
-	lui	a0, %hi(.LCPI0_2)
 	fld	fa5, %lo(.LCPI0_2)(a0)
 	vfcvt.rtz.x.f.v	v24, v16, v0.t
 	vfcvt.f.x.v	v24, v24, v0.t
@@ -34,11 +34,11 @@ func0000000000000008:                   # @func0000000000000008
 	vfmul.vf	v16, v8, fa4
 	vfabs.v	v24, v16
 	vmflt.vf	v0, v24, fa5
+	fli.d	fa5, 2.0
 	vfcvt.rtz.x.f.v	v24, v16, v0.t
 	vfcvt.f.x.v	v24, v24, v0.t
 	vsetvli	zero, zero, e64, m8, ta, mu
 	vfsgnj.vv	v16, v24, v16, v0.t
-	fli.d	fa5, 2.0
 	vfnmsub.vf	v16, fa5, v8
 	vfsgnj.vv	v8, v16, v8
 	fmv.d.x	fa5, zero

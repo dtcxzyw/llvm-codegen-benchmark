@@ -48,8 +48,8 @@ func000000000000000f:                   # @func000000000000000f
 	ret
 func000000000000000c:                   # @func000000000000000c
 	addi	a0, a0, -16
-	andi	a0, a0, -16
 	lui	a1, 16
+	andi	a0, a0, -16
 	addiw	a1, a1, -1
 	sll	a0, a1, a0
 	ret

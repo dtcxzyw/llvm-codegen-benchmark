@@ -5,15 +5,15 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func0000000000000007:                   # @func0000000000000007
 	slli	a1, a1, 48
-	srli	a1, a1, 48
 	andi	a0, a0, 128
+	srli	a1, a1, 48
 	slli	a0, a0, 16
 	or	a0, a0, a1
 	ret
 func0000000000000005:                   # @func0000000000000005
 	slli	a1, a1, 48
-	srli	a1, a1, 48
 	slli	a0, a0, 49
+	srli	a1, a1, 48
 	srli	a0, a0, 33
 	or	a0, a0, a1
 	ret

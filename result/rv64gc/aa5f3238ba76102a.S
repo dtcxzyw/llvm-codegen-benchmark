@@ -9,10 +9,10 @@ func000000000000001a:                   # @func000000000000001a
 	ret
 func0000000000000080:                   # @func0000000000000080
 	sext.w	a2, a2
+	slli	a1, a1, 5
 	sltiu	a2, a2, 3
 	addi	a2, a2, -1
 	andi	a2, a2, -32
-	slli	a1, a1, 5
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
@@ -78,11 +78,11 @@ func00000000000000cb:                   # @func00000000000000cb
 	ret
 func00000000000000aa:                   # @func00000000000000aa
 	sext.w	a2, a2
-	sgtz	a2, a2
-	slli	a2, a2, 3
 	slli	a3, a1, 3
 	slli	a1, a1, 5
+	sgtz	a2, a2
 	sub	a1, a1, a3
+	slli	a2, a2, 3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
@@ -98,24 +98,24 @@ func000000000000004a:                   # @func000000000000004a
 	ret
 func00000000000000a0:                   # @func00000000000000a0
 	srli	a2, a2, 28
-	andi	a2, a2, 8
 	slli	a1, a1, 2
+	andi	a2, a2, 8
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, -4
 	ret
 func0000000000000018:                   # @func0000000000000018
 	sext.w	a2, a2
+	slli	a1, a1, 3
 	snez	a2, a2
 	slli	a2, a2, 3
-	slli	a1, a1, 3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
 func000000000000006a:                   # @func000000000000006a
 	srli	a2, a2, 29
-	andi	a2, a2, 4
 	li	a3, 20
+	andi	a2, a2, 4
 	mul	a1, a1, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

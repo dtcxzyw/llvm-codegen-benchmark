@@ -2,13 +2,13 @@ func000000000000046a:                   # @func000000000000046a
 	sext.w	a0, a0
 	srai	a1, a1, 3
 	lui	a2, 838861
+	lui	a3, 5
 	addi	a2, a2, -819
 	mulw	a1, a1, a2
-	lui	a2, 5
-	addiw	a3, a2, -481
-	slt	a1, a1, a3
-	addiw	a2, a2, -480
-	slt	a0, a2, a0
+	addiw	a2, a3, -481
+	addiw	a3, a3, -480
+	slt	a1, a1, a2
+	slt	a0, a3, a0
 	and	a0, a0, a1
 	ret
 func00000000000004aa:                   # @func00000000000004aa

@@ -13,9 +13,9 @@ func0000000000000009:                   # @func0000000000000009
 	ret
 func0000000000000011:                   # @func0000000000000011
 	sltiu	a1, a1, 8
+	slli	a0, a0, 33
 	not	a1, a1
 	slliw	a1, a1, 31
-	slli	a0, a0, 33
 	srli	a0, a0, 33
 	or	a0, a0, a1
 	ret
@@ -33,16 +33,16 @@ func0000000000000015:                   # @func0000000000000015
 	ret
 func0000000000000019:                   # @func0000000000000019
 	snez	a1, a1
-	slliw	a1, a1, 31
 	slli	a0, a0, 33
+	slliw	a1, a1, 31
 	srli	a0, a0, 33
 	or	a0, a0, a1
 	ret
 func000000000000000d:                   # @func000000000000000d
 	slti	a1, a1, 0
 	lui	a2, 786432
-	czero.nez	a1, a2, a1
 	slli	a0, a0, 40
+	czero.nez	a1, a2, a1
 	srli	a0, a0, 40
 	or	a0, a0, a1
 	add	a0, a0, a2

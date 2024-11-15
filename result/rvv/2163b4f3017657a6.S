@@ -6,11 +6,11 @@ func0000000000000014:                   # @func0000000000000014
 	addi	a0, a0, 255
 	slli	a0, a0, 40
 	vand.vx	v10, v10, a0
-	vor.vv	v8, v10, v8
 	lui	a0, 196615
 	slli	a0, a0, 12
 	addi	a0, a0, 5
 	slli	a0, a0, 16
+	vor.vv	v8, v10, v8
 	addi	a0, a0, 11
 	vmul.vx	v8, v8, a0
 	ret

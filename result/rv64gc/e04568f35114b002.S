@@ -2,9 +2,9 @@ func00000000000000cc:                   # @func00000000000000cc
 	sext.w	a0, a0
 	xor	a1, a1, a2
 	sext.w	a1, a1
+	addi	a0, a0, -511
 	sltiu	a1, a1, 512
 	not	a1, a1
-	addi	a0, a0, -511
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -12,8 +12,8 @@ func000000000000001c:                   # @func000000000000001c
 	sext.w	a0, a0
 	xor	a1, a1, a2
 	sext.w	a1, a1
-	sltiu	a1, a1, 8
 	addi	a0, a0, -7
+	sltiu	a1, a1, 8
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

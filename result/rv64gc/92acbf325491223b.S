@@ -92,8 +92,8 @@ func0000000000000038:                   # @func0000000000000038
 func0000000000000032:                   # @func0000000000000032
 	lui	a2, 2
 	addiw	a3, a2, -1256
-	mul	a1, a1, a3
 	addiw	a2, a2, -1264
+	mul	a1, a1, a3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

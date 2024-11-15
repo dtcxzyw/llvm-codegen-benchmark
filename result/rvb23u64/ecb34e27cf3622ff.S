@@ -1,9 +1,9 @@
 func000000000000001a:                   # @func000000000000001a
 	sh1add	a0, a0, a0
-	slli	a0, a0, 2
-	addi	a0, a0, -12
 	lui	a1, 699051
+	slli	a0, a0, 2
 	addiw	a1, a1, -1365
+	addi	a0, a0, -12
 	slli	a2, a1, 32
 	add	a1, a1, a2
 	mulhu	a0, a0, a1
@@ -11,12 +11,12 @@ func000000000000001a:                   # @func000000000000001a
 	ret
 func000000000000000b:                   # @func000000000000000b
 	sh1add	a0, a0, a0
-	slli	a0, a0, 3
-	addi	a0, a0, -24
-	srli	a0, a0, 3
 	lui	a1, 699051
+	slli	a0, a0, 3
 	addiw	a1, a1, -1365
+	addi	a0, a0, -24
 	slli	a2, a1, 32
+	srli	a0, a0, 3
 	add	a1, a1, a2
 	mul	a0, a0, a1
 	ret
@@ -32,10 +32,10 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func0000000000000014:                   # @func0000000000000014
 	li	a1, 153
+	lui	a2, 838861
 	mul	a0, a0, a1
+	addiw	a1, a2, -819
 	addi	a0, a0, 2
-	lui	a1, 838861
-	addiw	a1, a1, -819
 	slli	a2, a1, 32
 	add	a1, a1, a2
 	mulhu	a0, a0, a1
@@ -55,21 +55,21 @@ func000000000000001e:                   # @func000000000000001e
 	ret
 func000000000000001b:                   # @func000000000000001b
 	sh2add	a0, a0, a0
-	slli	a0, a0, 3
-	addi	a0, a0, -40
-	srli	a0, a0, 3
 	lui	a1, 838861
+	slli	a0, a0, 3
 	addiw	a1, a1, -819
+	addi	a0, a0, -40
 	slli	a2, a1, 32
+	srli	a0, a0, 3
 	add	a1, a1, a2
 	mul	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
 	sh1add	a0, a0, a0
-	slli	a0, a0, 3
-	addi	a0, a0, -24
 	lui	a1, 699051
+	slli	a0, a0, 3
 	addiw	a1, a1, -1365
+	addi	a0, a0, -24
 	slli	a2, a1, 32
 	add	a1, a1, a2
 	mulhu	a0, a0, a1
@@ -78,10 +78,10 @@ func0000000000000008:                   # @func0000000000000008
 func000000000000000a:                   # @func000000000000000a
 	addi	a0, a0, -815
 	li	a1, -10
+	lui	a2, 838861
 	mul	a0, a0, a1
+	addiw	a1, a2, -819
 	addi	a0, a0, 2
-	lui	a1, 838861
-	addiw	a1, a1, -819
 	slli	a2, a1, 32
 	add	a1, a1, a2
 	mulhu	a0, a0, a1

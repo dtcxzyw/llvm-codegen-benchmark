@@ -1,10 +1,10 @@
 func000000000000003f:                   # @func000000000000003f
 	slli	a2, a2, 16
-	or	a0, a0, a2
 	slli	a1, a1, 24
+	or	a0, a0, a2
+	lui	a2, 235216
 	or	a0, a0, a1
-	lui	a1, 235216
-	addiw	a1, a1, -328
+	addiw	a1, a2, -328
 	xor	a0, a0, a1
 	ret
 .LCPI1_0:

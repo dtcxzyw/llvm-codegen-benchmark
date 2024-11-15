@@ -20,9 +20,9 @@ func000000000000000a:                   # @func000000000000000a
 func0000000000000002:                   # @func0000000000000002
 	sext.w	a2, a2
 	add	a1, a1, a2
+	lui	a2, 12
 	sh2add	a0, a1, a0
-	lui	a1, 12
-	addiw	a1, a1, 1024
+	addiw	a1, a2, 1024
 	add	a0, a0, a1
 	ret
 func000000000000001e:                   # @func000000000000001e

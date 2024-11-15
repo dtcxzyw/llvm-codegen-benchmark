@@ -1,8 +1,8 @@
 func0000000000000104:                   # @func0000000000000104
 	sext.w	a0, a0
 	sext.w	a1, a1
-	sltiu	a1, a1, 2
 	lui	a2, 917504
+	sltiu	a1, a1, 2
 	addiw	a2, a2, 4
 	xor	a0, a0, a2
 	seqz	a0, a0
@@ -12,8 +12,8 @@ func0000000000000044:                   # @func0000000000000044
 	sext.w	a0, a0
 	sext.w	a1, a1
 	binvi	a1, a1, 26
-	seqz	a1, a1
 	binvi	a0, a0, 28
+	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

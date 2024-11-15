@@ -5,9 +5,9 @@ func000000000000000b:                   # @func000000000000000b
 	ret
 func000000000000000f:                   # @func000000000000000f
 	slli	a0, a0, 33
+	li	a1, -1
 	srli	a0, a0, 33
 	slli	a0, a0, 32
-	li	a1, -1
 	slli	a1, a1, 53
 	add	a0, a0, a1
 	ret

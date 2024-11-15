@@ -11,8 +11,8 @@ func00000000000000cb:                   # @func00000000000000cb
 	ret
 func00000000000000cd:                   # @func00000000000000cd
 	xor	a0, a0, a1
-	snez	a0, a0
 	fmv.w.x	fa5, zero
+	snez	a0, a0
 	flt.s	a1, fa0, fa5
 	not	a1, a1
 	and	a0, a0, a1
@@ -26,8 +26,8 @@ func0000000000000042:                   # @func0000000000000042
 	ret
 func00000000000000c8:                   # @func00000000000000c8
 	xor	a0, a0, a1
-	snez	a0, a0
 	fmv.w.x	fa5, zero
+	snez	a0, a0
 	feq.s	a1, fa0, fa5
 	and	a0, a0, a1
 	ret

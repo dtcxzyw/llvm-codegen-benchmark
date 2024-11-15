@@ -26,8 +26,8 @@ func000000000000002c:                   # @func000000000000002c
 	sext.w	a1, a1
 	sext.w	a2, a2
 	binvi	a2, a2, 16
-	snez	a2, a2
 	slti	a1, a1, 0
+	snez	a2, a2
 	xori	a1, a1, 1
 	or	a1, a1, a2
 	or	a0, a0, a1

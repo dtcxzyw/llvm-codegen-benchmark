@@ -118,8 +118,8 @@ func0000000000000041:                   # @func0000000000000041
 	ret
 func00000000000000a4:                   # @func00000000000000a4
 	sext.w	a2, a2
-	slt	a1, a2, a1
 	srliw	a0, a0, 16
+	slt	a1, a2, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

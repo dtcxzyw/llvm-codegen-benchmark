@@ -14,17 +14,17 @@ func0000000000000080:                   # @func0000000000000080
 	ret
 func0000000000000000:                   # @func0000000000000000
 	slli	a2, a2, 32
-	srli	a2, a2, 32
 	andi	a1, a1, 255
+	srli	a2, a2, 32
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 10
 	ret
 func000000000000002a:                   # @func000000000000002a
 	slli	a2, a2, 32
+	andi	a1, a1, 255
 	srli	a2, a2, 32
 	add	a0, a0, a2
-	andi	a1, a1, 255
 	slli	a2, a1, 1
 	slli	a1, a1, 3
 	sub	a1, a1, a2

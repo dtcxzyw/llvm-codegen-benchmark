@@ -18,15 +18,15 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func000000000000003c:                   # @func000000000000003c
 	zext.h	a2, a2
-	slli	a2, a2, 8
 	zext.h	a1, a1
+	slli	a2, a2, 8
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 func000000000000003d:                   # @func000000000000003d
 	zext.h	a2, a2
-	slli	a2, a2, 8
 	zext.h	a1, a1
+	slli	a2, a2, 8
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -38,8 +38,8 @@ func000000000000003a:                   # @func000000000000003a
 	ret
 func000000000000003f:                   # @func000000000000003f
 	zext.h	a2, a2
-	slli	a2, a2, 12
 	zext.h	a1, a1
+	slli	a2, a2, 12
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

@@ -28,8 +28,8 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000003:                   # @func0000000000000003
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vsll.vi	v9, v9, 2
-	vand.vi	v9, v9, 12
 	vor.vi	v10, v8, 2
+	vand.vi	v9, v9, 12
 	vmerge.vvm	v8, v10, v8, v0
 	vor.vv	v8, v8, v9
 	ret

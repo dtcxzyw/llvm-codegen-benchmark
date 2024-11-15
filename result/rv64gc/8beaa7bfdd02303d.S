@@ -3,15 +3,15 @@ func0000000000000010:                   # @func0000000000000010
 	lui	a2, 244141
 	addiw	a2, a2, -1537
 	sltu	a1, a2, a1
-	negw	a1, a1
 	lui	a2, 804435
 	addi	a2, a2, 1536
+	negw	a1, a1
 	and	a1, a1, a2
+	lui	a2, 67109
+	addi	a2, a2, -557
 	add	a0, a0, a1
 	slli	a0, a0, 32
-	lui	a1, 67109
-	addi	a1, a1, -557
-	slli	a1, a1, 32
-	mulhu	a0, a0, a1
+	slli	a2, a2, 32
+	mulhu	a0, a0, a2
 	srli	a0, a0, 38
 	ret

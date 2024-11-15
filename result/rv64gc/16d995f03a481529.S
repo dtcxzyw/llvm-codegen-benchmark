@@ -150,16 +150,16 @@ func000000000000004a:                   # @func000000000000004a
 	ret
 func0000000000000016:                   # @func0000000000000016
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	addi	a1, a1, -63
+	srai	a0, a0, 56
 	seqz	a1, a1
 	slti	a0, a0, 0
 	and	a0, a0, a1
 	ret
 func0000000000000086:                   # @func0000000000000086
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	sltiu	a1, a1, 126
+	srai	a0, a0, 56
 	xori	a1, a1, 1
 	slti	a0, a0, 0
 	and	a0, a0, a1

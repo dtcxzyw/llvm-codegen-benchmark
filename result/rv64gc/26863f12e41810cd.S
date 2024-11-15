@@ -60,15 +60,15 @@ func000000000000001b:                   # @func000000000000001b
 .LCPI5_0:
 	.quad	-4454547087429121353            # 0xc22e450672894ab7
 func0000000000000011:                   # @func0000000000000011
-	lui	a1, %hi(.LCPI5_0)
-	ld	a1, %lo(.LCPI5_0)(a1)
-	lui	a2, 21
-	addiw	a3, a2, 383
+	lui	a1, 21
+	lui	a2, %hi(.LCPI5_0)
+	ld	a2, %lo(.LCPI5_0)(a2)
+	addiw	a3, a1, 383
 	add	a0, a0, a3
-	mulhu	a1, a0, a1
-	srli	a1, a1, 16
-	addiw	a2, a2, 384
-	mul	a1, a1, a2
+	addiw	a1, a1, 384
+	mulhu	a2, a0, a2
+	srli	a2, a2, 16
+	mul	a1, a2, a1
 	sub	a0, a0, a0
 	sub	a0, a0, a1
 	ret

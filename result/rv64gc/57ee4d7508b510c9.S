@@ -1,10 +1,10 @@
 func0000000000000003:                   # @func0000000000000003
 	or	a1, a1, a2
+	lui	a2, 1536
+	and	a0, a0, a2
 	lui	a2, 1046784
 	addiw	a2, a2, -1
 	and	a1, a1, a2
-	lui	a2, 1536
-	and	a0, a0, a2
 	lui	a2, 256
 	or	a0, a0, a2
 	or	a0, a0, a1
@@ -12,9 +12,9 @@ func0000000000000003:                   # @func0000000000000003
 func0000000000000007:                   # @func0000000000000007
 	or	a1, a1, a2
 	lui	a2, 1047560
+	andi	a0, a0, 256
 	addiw	a2, a2, -512
 	and	a1, a1, a2
-	andi	a0, a0, 256
 	lui	a2, 8
 	addiw	a2, a2, 5
 	or	a0, a0, a2

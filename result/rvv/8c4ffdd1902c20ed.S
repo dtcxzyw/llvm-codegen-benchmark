@@ -42,8 +42,8 @@ func0000000000000012:                   # @func0000000000000012
 func000000000000001a:                   # @func000000000000001a
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
-	vadd.vi	v8, v10, -1
 	lui	a0, 419430
+	vadd.vi	v8, v10, -1
 	addi	a0, a0, 1639
 	vmulh.vx	v8, v8, a0
 	vsra.vi	v8, v8, 1

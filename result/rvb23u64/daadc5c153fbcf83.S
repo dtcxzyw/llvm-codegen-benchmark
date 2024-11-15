@@ -13,8 +13,8 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000006:                   # @func0000000000000006
 	addi	a0, a0, -1
-	fcvt.d.wu	fa5, a0
-	fli.d	fa4, 2.0
+	fli.d	fa5, 2.0
+	fcvt.d.wu	fa4, a0
 	fli.d	fa3, 1.5
-	fmadd.d	fa0, fa5, fa3, fa4
+	fmadd.d	fa0, fa4, fa3, fa5
 	ret

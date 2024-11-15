@@ -22,8 +22,8 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000004:                   # @func0000000000000004
 	andi	a1, a1, 1
 	addi	a2, a2, 1
-	czero.nez	a2, a2, a1
 	lui	a3, 262144
+	czero.nez	a2, a2, a1
 	addiw	a3, a3, -1
 	czero.eqz	a1, a3, a1
 	or	a1, a1, a2
@@ -32,8 +32,8 @@ func0000000000000004:                   # @func0000000000000004
 func0000000000000015:                   # @func0000000000000015
 	andi	a1, a1, 1
 	addi	a2, a2, -1
-	czero.nez	a2, a2, a1
 	li	a3, 2047
+	czero.nez	a2, a2, a1
 	czero.eqz	a1, a3, a1
 	or	a1, a1, a2
 	sltu	a0, a1, a0
@@ -43,8 +43,8 @@ func0000000000000014:                   # @func0000000000000014
 	andi	a1, a1, 1
 	lui	a3, 524288
 	addiw	a4, a3, -1
-	add	a2, a2, a4
 	addiw	a3, a3, -513
+	add	a2, a2, a4
 	czero.eqz	a3, a3, a1
 	czero.nez	a1, a2, a1
 	or	a1, a1, a3
@@ -53,8 +53,8 @@ func0000000000000014:                   # @func0000000000000014
 func0000000000000034:                   # @func0000000000000034
 	andi	a1, a1, 1
 	addi	a2, a2, 1
-	czero.nez	a2, a2, a1
 	li	a3, 1
+	czero.nez	a2, a2, a1
 	czero.eqz	a1, a3, a1
 	or	a1, a1, a2
 	sltu	a0, a0, a1
@@ -62,8 +62,8 @@ func0000000000000034:                   # @func0000000000000034
 func0000000000000031:                   # @func0000000000000031
 	andi	a1, a1, 1
 	addi	a2, a2, 1
-	czero.nez	a2, a2, a1
 	li	a3, 1
+	czero.nez	a2, a2, a1
 	czero.eqz	a1, a3, a1
 	or	a1, a1, a2
 	xor	a0, a0, a1

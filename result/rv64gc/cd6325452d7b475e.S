@@ -40,8 +40,8 @@ func0000000000000288:                   # @func0000000000000288
 	lui	a1, 1048574
 	addi	a1, a1, -809
 	addw	a1, a1, a0
-	sltiu	a1, a1, 2
 	srliw	a0, a0, 5
+	sltiu	a1, a1, 2
 	sltiu	a0, a0, 139
 	or	a0, a0, a1
 	ret
@@ -56,10 +56,10 @@ func0000000000000094:                   # @func0000000000000094
 	ret
 func0000000000000108:                   # @func0000000000000108
 	addi	a1, a0, -160
-	srliw	a1, a1, 5
-	sltiu	a1, a1, 1723
 	srliw	a0, a0, 13
+	srliw	a1, a1, 5
 	sltiu	a0, a0, 7
+	sltiu	a1, a1, 1723
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -68,9 +68,9 @@ func0000000000000090:                   # @func0000000000000090
 	li	a2, -27
 	slli	a2, a2, 11
 	addw	a0, a0, a2
-	sltiu	a0, a0, 2047
 	lui	a2, 272
 	addiw	a2, a2, -2
+	sltiu	a0, a0, 2047
 	sltu	a1, a2, a1
 	or	a0, a0, a1
 	ret

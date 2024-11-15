@@ -19,10 +19,10 @@ func0000000000000091:                   # @func0000000000000091
 	ret
 func00000000000000c1:                   # @func00000000000000c1
 	zext.h	a2, a2
-	snez	a2, a2
 	xor	a0, a0, a1
+	snez	a1, a2
 	seqz	a0, a0
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 func00000000000000c4:                   # @func00000000000000c4
 	zext.h	a2, a2

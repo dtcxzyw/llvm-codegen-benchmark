@@ -8,9 +8,9 @@ func000000000000000c:                   # @func000000000000000c
 func0000000000000018:                   # @func0000000000000018
 	zext.h	a1, a1
 	srli	a0, a0, 7
+	li	a2, 100
 	sltiu	a0, a0, 425
 	czero.eqz	a1, a1, a0
-	li	a2, 100
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	ret

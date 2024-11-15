@@ -35,8 +35,8 @@ func000000000000004c:                   # @func000000000000004c
 func0000000000000044:                   # @func0000000000000044
 	sext.w	a1, a1
 	andi	a2, a2, 255
-	sltu	a1, a1, a2
 	srliw	a0, a0, 24
+	sltu	a1, a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

@@ -14,9 +14,9 @@ func0000000000000048:                   # @func0000000000000048
 	vmsgtu.vi	v0, v8, -4
 	ret
 func0000000000000004:                   # @func0000000000000004
+	li	a0, 128
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vnmsac.vv	v8, v12, v10
-	li	a0, 128
 	vmsltu.vx	v0, v8, a0
 	ret
 func00000000000000ca:                   # @func00000000000000ca
@@ -40,15 +40,15 @@ func0000000000000001:                   # @func0000000000000001
 	vmseq.vv	v0, v10, v8
 	ret
 func00000000000000e8:                   # @func00000000000000e8
+	li	a0, 135
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vnmsac.vv	v8, v12, v10
-	li	a0, 135
 	vmsgtu.vx	v0, v8, a0
 	ret
 func0000000000000018:                   # @func0000000000000018
+	li	a0, -7
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vnmsac.vv	v8, v12, v10
-	li	a0, -7
 	srli	a0, a0, 1
 	vmsgtu.vx	v0, v8, a0
 	ret

@@ -1,11 +1,11 @@
 func000000000000000a:                   # @func000000000000000a
 	lui	a3, 2048
-	and	a2, a2, a3
 	slliw	a1, a1, 8
+	and	a2, a2, a3
+	lui	a3, 34767
 	or	a0, a0, a1
 	or	a0, a0, a2
-	lui	a1, 34767
-	addiw	a1, a1, 98
+	addiw	a1, a3, 98
 	xor	a0, a0, a1
 	ret
 func000000000000000f:                   # @func000000000000000f

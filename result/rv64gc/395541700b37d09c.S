@@ -170,8 +170,8 @@ func0000000000000086:                   # @func0000000000000086
 	ret
 func000000000000001a:                   # @func000000000000001a
 	sext.w	a1, a1
-	seqz	a1, a1
 	li	a2, -1
+	seqz	a1, a1
 	srli	a2, a2, 3
 	xor	a1, a1, a2
 	slt	a0, a1, a0

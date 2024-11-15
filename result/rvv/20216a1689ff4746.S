@@ -2,8 +2,8 @@ func0000000000000088:                   # @func0000000000000088
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v14, v12
 	vmul.vv	v8, v10, v8
-	vmul.vv	v8, v14, v8
 	lui	a0, 78125
+	vmul.vv	v8, v14, v8
 	slli	a0, a0, 11
 	addi	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0

@@ -22,10 +22,10 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func00000000000000c4:                   # @func00000000000000c4
 	lui	a2, 25056
+	srliw	a0, a0, 15
 	addiw	a2, a2, 1823
 	and	a1, a1, a2
 	snez	a1, a1
-	srliw	a0, a0, 15
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -46,9 +46,9 @@ func000000000000001a:                   # @func000000000000001a
 	sext.w	a0, a0
 	li	a2, 1
 	slli	a2, a2, 33
+	slti	a0, a0, 3
 	and	a1, a1, a2
 	seqz	a1, a1
-	slti	a0, a0, 3
 	not	a0, a0
 	and	a0, a0, a1
 	ret

@@ -12,10 +12,10 @@ func000000000000001a:                   # @func000000000000001a
 	addiw	a2, a2, -1
 	and	a1, a1, a2
 	and	a0, a0, a2
+	lui	a2, 8
 	sub	a0, a0, a1
-	lui	a1, 8
-	addiw	a1, a1, -1
-	slt	a0, a1, a0
+	addiw	a2, a2, -1
+	slt	a0, a2, a0
 	ret
 func0000000000000011:                   # @func0000000000000011
 	lui	a2, 16

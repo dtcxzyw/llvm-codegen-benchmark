@@ -6,19 +6,19 @@ func0000000000000001:                   # @func0000000000000001
 	vmerge.vvm	v8, v10, v8, v0
 	ret
 func0000000000000011:                   # @func0000000000000011
-	li	a0, 1022
-	li	a1, 16
+	li	a0, 16
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vmseq.vx	v0, v10, a1
+	vmseq.vx	v0, v10, a0
+	li	a0, 1022
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v10, v12, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret
 func0000000000000034:                   # @func0000000000000034
-	li	a0, 256
-	li	a1, 257
+	li	a0, 257
 	vsetivli	zero, 8, e16, m1, ta, ma
-	vmsltu.vx	v0, v10, a1
+	vmsltu.vx	v0, v10, a0
+	li	a0, 256
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v10, v12, a0
 	vmerge.vvm	v8, v10, v8, v0

@@ -42,11 +42,11 @@ func0000000000000016:                   # @func0000000000000016
 	srli	a2, a0, 63
 	srai	a0, a0, 13
 	add	a0, a0, a2
+	lui	a2, 961553
+	addiw	a2, a2, 721
+	slli	a2, a2, 12
 	add	a0, a0, a1
-	lui	a1, 961553
-	addiw	a1, a1, 721
-	slli	a1, a1, 12
-	addi	a1, a1, -647
+	addi	a1, a2, -647
 	slt	a0, a0, a1
 	ret
 .LCPI5_0:

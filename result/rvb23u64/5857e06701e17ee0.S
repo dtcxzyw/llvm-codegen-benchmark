@@ -1,8 +1,8 @@
 func00000000000000f1:                   # @func00000000000000f1
 	zext.h	a2, a2
 	mul	a0, a0, a1
-	mul	a0, a0, a2
 	lui	a1, 65279
+	mul	a0, a0, a2
 	addiw	a1, a1, 16
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -10,8 +10,8 @@ func00000000000000f1:                   # @func00000000000000f1
 func00000000000000fc:                   # @func00000000000000fc
 	zext.h	a2, a2
 	mul	a0, a0, a1
-	mul	a0, a0, a2
 	lui	a1, 65279
+	mul	a0, a0, a2
 	addiw	a1, a1, 16
 	xor	a0, a0, a1
 	snez	a0, a0

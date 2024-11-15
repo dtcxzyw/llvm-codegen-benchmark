@@ -31,9 +31,9 @@ func0000000000000298:                   # @func0000000000000298
 	ret
 func00000000000002cc:                   # @func00000000000002cc
 	add	a2, a2, a1
-	xor	a2, a2, a0
-	snez	a2, a2
-	xor	a0, a0, a1
+	xor	a1, a1, a0
+	xor	a0, a0, a2
 	snez	a0, a0
-	and	a0, a0, a2
+	snez	a1, a1
+	and	a0, a0, a1
 	ret

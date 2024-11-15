@@ -20,8 +20,8 @@ func0000000000000034:                   # @func0000000000000034
 	ret
 func000000000000001a:                   # @func000000000000001a
 	sext.w	a1, a0
-	sgtz	a1, a1
 	lui	a2, 524288
+	sgtz	a1, a1
 	addi	a2, a2, -1
 	czero.nez	a1, a2, a1
 	addw	a0, a0, a1

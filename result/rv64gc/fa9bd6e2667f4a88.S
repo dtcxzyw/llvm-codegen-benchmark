@@ -1,16 +1,16 @@
 func0000000000000063:                   # @func0000000000000063
 	lui	a1, 16368
 	add	a0, a0, a1
-	srliw	a0, a0, 10
 	li	a1, -5
+	srliw	a0, a0, 10
 	slli	a1, a1, 11
 	add	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000
 	lui	a1, 16368
 	add	a0, a0, a1
-	srliw	a0, a0, 10
 	li	a1, -5
+	srliw	a0, a0, 10
 	slli	a1, a1, 11
 	add	a0, a0, a1
 	ret

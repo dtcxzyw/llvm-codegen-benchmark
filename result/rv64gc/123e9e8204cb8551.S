@@ -8,22 +8,22 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000007:                   # @func0000000000000007
 	srli	a1, a1, 7
-	andi	a1, a1, 14
 	slli	a0, a0, 62
+	andi	a1, a1, 14
 	srli	a0, a0, 58
 	or	a0, a0, a1
 	ret
 func0000000000000003:                   # @func0000000000000003
 	slli	a1, a1, 34
-	srli	a1, a1, 63
 	slli	a0, a0, 57
+	srli	a1, a1, 63
 	srli	a0, a0, 56
 	or	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000
 	slli	a1, a1, 5
-	andi	a1, a1, 192
 	slli	a0, a0, 53
+	andi	a1, a1, 192
 	srli	a0, a0, 56
 	or	a0, a0, a1
 	ret

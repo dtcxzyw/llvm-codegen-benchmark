@@ -2,8 +2,8 @@ func000000000000007b:                   # @func000000000000007b
 	li	a4, 10
 	mul	a3, a3, a4
 	mulhu	a5, a2, a4
-	add	a3, a3, a5
 	mul	a2, a2, a4
+	add	a3, a3, a5
 	add	a0, a0, a2
 	sltu	a0, a0, a2
 	add	a1, a1, a3
@@ -16,8 +16,8 @@ func0000000000000052:                   # @func0000000000000052
 	ld	a4, %lo(.LCPI1_0)(a4)
 	mul	a3, a3, a4
 	mulhu	a5, a2, a4
-	add	a3, a3, a5
 	mul	a2, a2, a4
+	add	a3, a3, a5
 	add	a0, a0, a2
 	sltu	a0, a0, a2
 	add	a1, a1, a3

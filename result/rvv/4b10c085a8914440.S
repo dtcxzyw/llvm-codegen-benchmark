@@ -36,23 +36,23 @@ func00000000000000a1:                   # @func00000000000000a1
 func000000000000005a:                   # @func000000000000005a
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v8, v8
-	vadd.vi	v10, v10, 10
 	lui	a0, 32
 	addi	a0, a0, -5
 	vmsgt.vx	v0, v8, a0
 	lui	a0, 64
-	vmerge.vxm	v8, v10, a0, v0
+	vadd.vi	v8, v10, 10
+	vmerge.vxm	v8, v8, a0, v0
 	ret
 func0000000000000006:                   # @func0000000000000006
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v8, 7
 	lui	a0, 481
-	addi	a0, a0, 248
-	vadd.vx	v10, v10, a0
 	vmsle.vi	v0, v8, 0
+	addi	a0, a0, 248
+	vadd.vx	v8, v10, a0
 	lui	a0, 480
 	addi	a0, a0, 528
-	vmerge.vxm	v8, v10, a0, v0
+	vmerge.vxm	v8, v8, a0, v0
 	ret
 func0000000000000051:                   # @func0000000000000051
 	vsetivli	zero, 8, e32, m2, ta, ma

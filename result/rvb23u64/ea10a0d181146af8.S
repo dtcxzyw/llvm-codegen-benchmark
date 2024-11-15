@@ -25,9 +25,9 @@ func00000000000000ac:                   # @func00000000000000ac
 	.word	0x3e547ae1                      # float 0.207499996
 func0000000000000024:                   # @func0000000000000024
 	lui	a0, %hi(.LCPI3_0)
+	lui	a1, %hi(.LCPI3_1)
 	flw	fa5, %lo(.LCPI3_0)(a0)
-	lui	a0, %hi(.LCPI3_1)
-	flw	fa4, %lo(.LCPI3_1)(a0)
+	flw	fa4, %lo(.LCPI3_1)(a1)
 	flt.s	a0, fa0, fa5
 	flt.s	a1, fa4, fa0
 	and	a0, a0, a1
@@ -55,9 +55,9 @@ func0000000000000035:                   # @func0000000000000035
 	.word	0xb58637bd                      # float -9.99999997E-7
 func000000000000004d:                   # @func000000000000004d
 	lui	a0, %hi(.LCPI6_0)
+	lui	a1, %hi(.LCPI6_1)
 	flw	fa5, %lo(.LCPI6_0)(a0)
-	lui	a0, %hi(.LCPI6_1)
-	flw	fa4, %lo(.LCPI6_1)(a0)
+	flw	fa4, %lo(.LCPI6_1)(a1)
 	flt.s	a0, fa5, fa0
 	flt.s	a1, fa0, fa4
 	andn	a0, a0, a1
@@ -80,9 +80,9 @@ func00000000000000bd:                   # @func00000000000000bd
 	ret
 func000000000000003d:                   # @func000000000000003d
 	lui	a0, 323584
+	lui	a1, 847872
 	fmv.w.x	fa5, a0
 	fle.s	a0, fa5, fa0
-	lui	a1, 847872
 	fmv.w.x	fa5, a1
 	flt.s	a1, fa0, fa5
 	or	a0, a0, a1
@@ -129,9 +129,9 @@ func00000000000000c2:                   # @func00000000000000c2
 	ret
 func0000000000000042:                   # @func0000000000000042
 	lui	a0, 281862
+	lui	a1, 283576
 	fmv.w.x	fa5, a0
 	flt.s	a0, fa5, fa0
-	lui	a1, 283576
 	fmv.w.x	fa5, a1
 	flt.s	a1, fa0, fa5
 	and	a0, a0, a1
@@ -164,16 +164,16 @@ func000000000000007b:                   # @func000000000000007b
 func0000000000000072:                   # @func0000000000000072
 	fli.s	fa5, -1.0
 	feq.s	a0, fa0, fa5
-	xori	a0, a0, 1
 	fmv.w.x	fa5, zero
+	xori	a0, a0, 1
 	flt.s	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
 func0000000000000047:                   # @func0000000000000047
 	lui	a0, 272576
+	lui	a1, 277312
 	fmv.w.x	fa5, a0
 	flt.s	a0, fa5, fa0
-	lui	a1, 277312
 	fmv.w.x	fa5, a1
 	feq.s	a1, fa0, fa5
 	andn	a0, a0, a1
@@ -182,8 +182,8 @@ func0000000000000074:                   # @func0000000000000074
 	lui	a0, 280480
 	fmv.w.x	fa5, a0
 	feq.s	a0, fa0, fa5
-	xori	a0, a0, 1
 	fmv.w.x	fa5, zero
+	xori	a0, a0, 1
 	flt.s	a1, fa5, fa0
 	and	a0, a0, a1
 	ret

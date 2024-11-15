@@ -17,9 +17,9 @@ func0000000000000044:                   # @func0000000000000044
 	li	a0, 64
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsltu.vx	v0, v12, a0
+	lui	a0, 524288
 	vsetvli	zero, zero, e64, m2, ta, mu
 	vand.vv	v8, v8, v10, v0.t
-	lui	a0, 524288
 	addiw	a0, a0, -1
 	vmsltu.vx	v0, v8, a0
 	ret

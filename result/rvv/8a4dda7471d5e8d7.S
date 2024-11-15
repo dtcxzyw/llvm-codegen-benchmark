@@ -5,8 +5,8 @@ func0000000000000888:                   # @func0000000000000888
 	lui	a0, 16
 	addiw	a0, a0, -1
 	vmsgtu.vx	v12, v10, a0
-	vmor.mm	v9, v12, v9
 	li	a0, 31
+	vmor.mm	v9, v12, v9
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsgtu.vx	v8, v8, a0
 	vmor.mm	v0, v9, v8

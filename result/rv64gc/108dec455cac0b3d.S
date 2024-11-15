@@ -13,17 +13,17 @@ func0000000000000048:                   # @func0000000000000048
 	ret
 func0000000000000249:                   # @func0000000000000249
 	sub	a3, a0, a1
-	sltu	a2, a3, a2
 	sltu	a0, a0, a1
+	sltu	a1, a3, a2
 	not	a0, a0
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 func0000000000000045:                   # @func0000000000000045
 	sub	a3, a1, a0
-	sltu	a2, a3, a2
 	sltu	a0, a1, a0
+	sltu	a1, a3, a2
 	not	a0, a0
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 func0000000000000088:                   # @func0000000000000088
 	sub	a3, a0, a1
@@ -33,8 +33,8 @@ func0000000000000088:                   # @func0000000000000088
 	ret
 func0000000000000089:                   # @func0000000000000089
 	sub	a3, a0, a1
-	sltu	a2, a2, a3
 	sltu	a0, a0, a1
+	sltu	a1, a2, a3
 	not	a0, a0
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret

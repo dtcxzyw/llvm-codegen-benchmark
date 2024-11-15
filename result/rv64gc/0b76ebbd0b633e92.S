@@ -6,10 +6,10 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func0000000000000002:                   # @func0000000000000002
 	add	a1, a1, a2
+	lui	a2, 518487
 	add	a0, a0, a1
 	srliw	a0, a0, 5
-	lui	a1, 518487
-	addi	a1, a1, 1566
+	addi	a1, a2, 1566
 	addw	a0, a0, a1
 	ret
 func0000000000000022:                   # @func0000000000000022

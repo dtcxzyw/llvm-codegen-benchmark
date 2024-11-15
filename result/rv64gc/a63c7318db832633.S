@@ -4,8 +4,8 @@ func000000000000000d:                   # @func000000000000000d
 	li	a2, 125
 	lui	a3, %hi(.LCPI0_0)
 	ld	a3, %lo(.LCPI0_0)(a3)
-	slli	a2, a2, 35
 	slli	a1, a1, 32
+	slli	a2, a2, 35
 	mulhu	a1, a1, a2
 	mulh	a0, a0, a3
 	srli	a2, a0, 63

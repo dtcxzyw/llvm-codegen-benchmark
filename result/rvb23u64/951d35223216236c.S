@@ -1,7 +1,7 @@
 func00000000000001a4:                   # @func00000000000001a4
 	addiw	a1, a1, -240
-	sltiu	a1, a1, 5
 	slti	a0, a0, 3
+	sltiu	a1, a1, 5
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
@@ -19,8 +19,8 @@ func0000000000000064:                   # @func0000000000000064
 	ret
 func0000000000000084:                   # @func0000000000000084
 	addiw	a1, a1, -4
-	sltiu	a1, a1, -2
 	li	a2, -13
+	sltiu	a1, a1, -2
 	zext.w	a2, a2
 	sltu	a0, a2, a0
 	and	a0, a0, a1
@@ -34,8 +34,8 @@ func00000000000000cc:                   # @func00000000000000cc
 	ret
 func00000000000001c4:                   # @func00000000000001c4
 	addiw	a1, a1, -48
-	sltiu	a1, a1, 10
 	lui	a2, 524288
+	sltiu	a1, a1, 10
 	addiw	a2, a2, -1
 	xor	a0, a0, a2
 	snez	a0, a0

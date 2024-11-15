@@ -63,9 +63,9 @@ func000000000000004f:                   # @func000000000000004f
 .LCPI5_0:
 	.quad	999999999999999999              # 0xde0b6b3a763ffff
 func0000000000000205:                   # @func0000000000000205
+	vmv1r.v	v9, v0
 	lui	a0, %hi(.LCPI5_0)
 	ld	a0, %lo(.LCPI5_0)(a0)
-	vmv1r.v	v9, v0
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vx	v0, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma

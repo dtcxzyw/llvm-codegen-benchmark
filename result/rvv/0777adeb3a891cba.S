@@ -19,10 +19,10 @@ func000000000000007c:                   # @func000000000000007c
 func00000000000000f8:                   # @func00000000000000f8
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v11, v10
+	lui	a0, 16
 	vwsll.vi	v12, v11, 12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vor.vv	v8, v12, v8
-	lui	a0, 16
 	addi	a0, a0, -1
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v0, v0, v10

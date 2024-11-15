@@ -34,8 +34,8 @@ func0000000000000019:                   # @func0000000000000019
 	mv	a1, a2
 .LBB3_2:                                # %entry
 	slli	a0, a0, 63
-	srai	a0, a0, 63
 	lui	a2, 525234
+	srai	a0, a0, 63
 	addi	a2, a2, 1427
 	and	a0, a0, a2
 	addw	a0, a0, a1

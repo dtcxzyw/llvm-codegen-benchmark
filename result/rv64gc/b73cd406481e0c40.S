@@ -35,8 +35,8 @@ func00000000000000f6:                   # @func00000000000000f6
 	ret
 .LBB3_2:
 	slli	a0, a0, 1
-	addi	a0, a0, 129
 	lui	a1, 524288
+	addi	a0, a0, 129
 	addiw	a1, a1, -128
 	and	a0, a0, a1
 	ret

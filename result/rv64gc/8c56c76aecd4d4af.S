@@ -36,19 +36,19 @@ func000000000000005a:                   # @func000000000000005a
 	ret
 func000000000000007a:                   # @func000000000000007a
 	addi	a1, a1, -64
-	srliw	a1, a1, 6
-	slli	a1, a1, 3
 	lui	a2, 9
+	srliw	a1, a1, 6
 	addiw	a2, a2, -16
+	slli	a1, a1, 3
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 func00000000000000f2:                   # @func00000000000000f2
 	addi	a1, a1, 160
-	srliw	a1, a1, 1
-	slli	a1, a1, 2
 	lui	a2, 225
+	srliw	a1, a1, 1
 	addiw	a2, a2, 1280
+	slli	a1, a1, 2
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

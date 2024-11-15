@@ -1,9 +1,9 @@
 func000000000000034c:                   # @func000000000000034c
 	addi	a3, a0, 1
-	sltu	a2, a3, a2
 	xor	a0, a0, a1
+	sltu	a1, a3, a2
 	snez	a0, a0
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 func0000000000000366:                   # @func0000000000000366
 	addi	a3, a0, 1

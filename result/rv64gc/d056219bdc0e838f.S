@@ -1,8 +1,8 @@
 func0000000000000000:                   # @func0000000000000000
 	andi	a1, a1, 255
+	lui	a2, 526344
 	mul	a0, a1, a0
-	lui	a1, 526344
-	addiw	a1, a1, 129
+	addiw	a1, a2, 129
 	slli	a2, a1, 32
 	add	a1, a1, a2
 	mulhu	a0, a0, a1
@@ -10,9 +10,9 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func0000000000000008:                   # @func0000000000000008
 	andi	a1, a1, 255
+	lui	a2, 699051
 	mul	a0, a1, a0
-	lui	a1, 699051
-	addiw	a1, a1, -1365
+	addiw	a1, a2, -1365
 	slli	a2, a1, 32
 	add	a1, a1, a2
 	mulhu	a0, a0, a1

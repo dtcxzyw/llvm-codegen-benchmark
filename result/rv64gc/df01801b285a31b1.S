@@ -1,7 +1,7 @@
 func0000000000000002:                   # @func0000000000000002
 	fmul.s	fa0, fa0, fa1
-	fabs.s	fa5, fa0
 	lui	a0, 14336
+	fabs.s	fa5, fa0
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	beqz	a0, .LBB0_2

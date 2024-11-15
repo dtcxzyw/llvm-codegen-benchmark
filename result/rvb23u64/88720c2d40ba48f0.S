@@ -3,10 +3,10 @@ func0000000000000012:                   # @func0000000000000012
 	sraiw	a1, a0, 31
 	srliw	a1, a1, 24
 	add	a0, a0, a1
-	sraiw	a0, a0, 8
-	addiw	a0, a0, 119
 	lui	a1, 559241
 	addiw	a1, a1, -1911
+	sraiw	a0, a0, 8
+	addiw	a0, a0, 119
 	mul	a1, a1, a0
 	srli	a1, a1, 32
 	add	a0, a0, a1

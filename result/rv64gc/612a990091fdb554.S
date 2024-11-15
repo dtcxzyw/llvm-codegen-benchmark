@@ -71,10 +71,10 @@ func00000000000002ca:                   # @func00000000000002ca
 	sext.w	a0, a0
 	lui	a3, 1
 	addiw	a3, a3, 344
+	slti	a0, a0, 2
 	add	a2, a2, a3
 	xor	a1, a1, a2
 	snez	a1, a1
-	slti	a0, a0, 2
 	not	a0, a0
 	and	a0, a0, a1
 	ret

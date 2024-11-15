@@ -7,8 +7,8 @@ func0000000000000065:                   # @func0000000000000065
 	ret
 func000000000000006f:                   # @func000000000000006f
 	andi	a1, a1, 255
-	slli	a1, a1, 4
 	andi	a0, a0, 255
+	slli	a1, a1, 4
 	add	a0, a0, a1
 	lui	a1, 4096
 	addiw	a1, a1, -816
@@ -23,8 +23,8 @@ func000000000000006d:                   # @func000000000000006d
 	ret
 func00000000000000e7:                   # @func00000000000000e7
 	andi	a1, a1, 255
-	slli	a1, a1, 16
 	andi	a0, a0, 255
+	slli	a1, a1, 16
 	or	a0, a0, a1
 	lui	a1, 1046785
 	addiw	a1, a1, 96
@@ -32,8 +32,8 @@ func00000000000000e7:                   # @func00000000000000e7
 	ret
 func0000000000000067:                   # @func0000000000000067
 	andi	a1, a1, 255
-	slli	a1, a1, 16
 	andi	a0, a0, 255
+	slli	a1, a1, 16
 	or	a0, a0, a1
 	lui	a1, 1045508
 	addiw	a1, a1, 128

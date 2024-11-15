@@ -64,8 +64,8 @@ func000000000000001c:                   # @func000000000000001c
 func0000000000000004:                   # @func0000000000000004
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vnot.v	v8, v8
-	vadd.vv	v8, v8, v10
 	lui	a0, 24076
+	vadd.vv	v8, v8, v10
 	addiw	a0, a0, 179
 	slli	a0, a0, 7
 	vadd.vx	v8, v8, a0

@@ -17,8 +17,8 @@ func0000000000000102:                   # @func0000000000000102
 	andi	a1, a1, 255
 	andi	a2, a2, 255
 	sltiu	a2, a2, 15
-	xori	a2, a2, 1
 	addi	a1, a1, -2
+	xori	a2, a2, 1
 	seqz	a1, a1
 	and	a1, a1, a2
 	or	a0, a0, a1

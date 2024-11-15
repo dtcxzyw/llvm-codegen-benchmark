@@ -1,8 +1,8 @@
 func0000000000000051:                   # @func0000000000000051
 	sub	a2, a2, a1
+	li	a1, -1
 	srai	a2, a2, 5
 	add	a0, a0, a2
-	li	a1, -1
 	srli	a1, a1, 6
 	xor	a0, a0, a1
 	seqz	a0, a0

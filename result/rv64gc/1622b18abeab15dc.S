@@ -1,7 +1,7 @@
 func0000000000000002:                   # @func0000000000000002
 	addi	a1, a1, -1
-	srli	a1, a1, 1
 	lui	a2, 349525
+	srli	a1, a1, 1
 	addi	a2, a2, 1365
 	and	a1, a1, a2
 	addw	a0, a0, a1
@@ -14,8 +14,8 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 func000000000000001b:                   # @func000000000000001b
 	addi	a1, a1, 63
-	srli	a1, a1, 3
 	lui	a2, 4
+	srli	a1, a1, 3
 	addi	a2, a2, -8
 	and	a1, a1, a2
 	addw	a0, a0, a1

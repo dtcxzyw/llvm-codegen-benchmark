@@ -16,9 +16,9 @@ func0000000000000020:                   # @func0000000000000020
 	andi	a1, a1, 7
 	li	a2, 144
 	mul	a1, a1, a2
+	lui	a2, 3
 	add	a0, a0, a1
-	lui	a1, 3
-	addiw	a1, a1, 724
+	addiw	a1, a2, 724
 	add	a0, a0, a1
 	ret
 func000000000000003b:                   # @func000000000000003b

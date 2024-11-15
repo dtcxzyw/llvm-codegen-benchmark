@@ -1,7 +1,7 @@
 func00000000000000c1:                   # @func00000000000000c1
 	snez	a3, a1
-	and	a0, a0, a3
 	xor	a1, a1, a2
+	and	a0, a0, a3
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret

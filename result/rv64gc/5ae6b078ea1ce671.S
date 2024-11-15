@@ -44,8 +44,8 @@ func0000000000000015:                   # @func0000000000000015
 	.quad	-49064778989728546              # 0xff51afd7ed558cde
 func0000000000000040:                   # @func0000000000000040
 	lui	a2, %hi(.LCPI5_0)
-	ld	a2, %lo(.LCPI5_0)(a2)
 	lui	a3, %hi(.LCPI5_1)
+	ld	a2, %lo(.LCPI5_0)(a2)
 	ld	a3, %lo(.LCPI5_1)(a3)
 	sext.w	a1, a1
 	mul	a1, a1, a2

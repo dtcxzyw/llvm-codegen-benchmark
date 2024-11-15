@@ -20,8 +20,8 @@ func0000000000000009:                   # @func0000000000000009
 	ret
 func0000000000000003:                   # @func0000000000000003
 	slli	a2, a2, 48
-	srli	a2, a2, 48
 	lui	a3, 4080
+	srli	a2, a2, 48
 	and	a1, a1, a3
 	or	a1, a1, a2
 	slliw	a0, a0, 24
@@ -29,8 +29,8 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func0000000000000002:                   # @func0000000000000002
 	lui	a3, 1048575
-	and	a2, a2, a3
 	slli	a1, a1, 52
+	and	a2, a2, a3
 	srli	a1, a1, 52
 	or	a1, a1, a2
 	slliw	a0, a0, 12
@@ -54,18 +54,18 @@ func0000000000000007:                   # @func0000000000000007
 	ret
 func000000000000000d:                   # @func000000000000000d
 	lui	a3, 1048568
+	slliw	a0, a0, 8
 	and	a2, a2, a3
 	addiw	a3, a3, 254
 	and	a1, a1, a3
-	slliw	a0, a0, 8
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func000000000000000e:                   # @func000000000000000e
 	andi	a2, a2, 63
 	lui	a3, 3
-	and	a1, a1, a3
 	slliw	a0, a0, 8
+	and	a1, a1, a3
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret

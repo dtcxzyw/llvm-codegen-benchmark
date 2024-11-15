@@ -2,8 +2,8 @@ func000000000000000c:                   # @func000000000000000c
 	lui	a1, 838861
 	addi	a1, a1, -819
 	mul	a0, a0, a1
-	roriw	a0, a0, 1
 	lui	a1, 104858
+	roriw	a0, a0, 1
 	addiw	a1, a1, -1639
 	sltu	a0, a1, a0
 	ret
@@ -24,8 +24,8 @@ func0000000000000001:                   # @func0000000000000001
 	lui	a1, 241592
 	addi	a1, a1, -367
 	mul	a0, a0, a1
-	roriw	a0, a0, 4
 	lui	a1, 105
+	roriw	a0, a0, 4
 	addiw	a1, a1, -583
 	sltu	a0, a0, a1
 	ret
@@ -35,8 +35,8 @@ func0000000000000006:                   # @func0000000000000006
 	addi	a2, a2, 1881
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
-	srli	a1, a1, 45
 	lui	a2, 2
+	srli	a1, a1, 45
 	addi	a2, a2, 1808
 	mul	a1, a1, a2
 	subw	a0, a0, a1
@@ -49,8 +49,8 @@ func0000000000000004:                   # @func0000000000000004
 	addi	a2, a2, 1881
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
-	srli	a1, a1, 45
 	lui	a2, 2
+	srli	a1, a1, 45
 	addi	a2, a2, 1808
 	mul	a1, a1, a2
 	subw	a0, a0, a1

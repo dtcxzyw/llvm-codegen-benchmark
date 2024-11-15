@@ -10,12 +10,12 @@ func000000000000002c:                   # @func000000000000002c
 	addiw	a3, a3, -1
 	and	a2, a2, a3
 	xor	a2, a2, a3
+	li	a3, 5
+	slli	a3, a3, 29
+	addi	a3, a3, -1
+	xor	a0, a0, a3
 	seqz	a2, a2
 	or	a1, a1, a2
-	li	a2, 5
-	slli	a2, a2, 29
-	addi	a2, a2, -1
-	xor	a0, a0, a2
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -39,9 +39,9 @@ func0000000000000186:                   # @func0000000000000186
 	ret
 func0000000000000024:                   # @func0000000000000024
 	andi	a2, a2, 48
+	srli	a0, a0, 32
 	seqz	a2, a2
 	or	a1, a1, a2
-	srli	a0, a0, 32
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

@@ -28,8 +28,8 @@ func0000000000000018:                   # @func0000000000000018
 func000000000000001e:                   # @func000000000000001e
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v10
-	vor.vv	v8, v12, v8
 	lui	a0, 3
+	vor.vv	v8, v12, v8
 	addiw	a0, a0, -1802
 	vmul.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 20

@@ -28,8 +28,8 @@ func000000000000003a:                   # @func000000000000003a
 	ret
 func000000000000003f:                   # @func000000000000003f
 	addi	a1, a1, 32
-	andi	a1, a1, 255
 	sh2add	a0, a0, a0
+	andi	a1, a1, 255
 	sh2add	a0, a0, a0
 	sh2add	a0, a0, a1
 	sext.w	a0, a0

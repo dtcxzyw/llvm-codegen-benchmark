@@ -8,9 +8,9 @@ func0000000000000001:                   # @func0000000000000001
 	vmerge.vxm	v10, v10, a0, v0
 	lui	a0, 64
 	vmv.v.x	v12, a0
+	lui	a0, 256
 	vmv1r.v	v0, v8
 	vmerge.vvm	v10, v12, v10, v0
-	lui	a0, 256
 	vmv.v.x	v12, a0
 	vmv1r.v	v0, v9
 	vmerge.vvm	v8, v12, v10, v0

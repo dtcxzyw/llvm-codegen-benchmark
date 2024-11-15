@@ -5,10 +5,10 @@ func0000000000000074:                   # @func0000000000000074
 	ld	a0, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v10, v10, 3
+	lui	a1, 299593
+	addiw	a1, a1, 585
 	vmv.v.x	v12, a0
-	lui	a0, 299593
-	addiw	a0, a0, 585
-	slli	a1, a0, 33
+	slli	a0, a1, 33
 	add	a0, a0, a1
 	vmacc.vx	v12, a0, v10
 	vmsltu.vv	v0, v12, v8
@@ -20,10 +20,10 @@ func0000000000000054:                   # @func0000000000000054
 	ld	a0, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v10, v10, 3
+	lui	a1, 209715
+	addiw	a1, a1, 819
 	vmv.v.x	v12, a0
-	lui	a0, 209715
-	addiw	a0, a0, 819
-	slli	a1, a0, 32
+	slli	a0, a1, 32
 	add	a0, a0, a1
 	vmacc.vx	v12, a0, v10
 	vmsltu.vv	v0, v12, v8
@@ -35,10 +35,10 @@ func0000000000000058:                   # @func0000000000000058
 	ld	a0, %lo(.LCPI2_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v10, v10, 3
+	lui	a1, 209715
+	addiw	a1, a1, 819
 	vmv.v.x	v12, a0
-	lui	a0, 209715
-	addiw	a0, a0, 819
-	slli	a1, a0, 32
+	slli	a0, a1, 32
 	add	a0, a0, a1
 	vmacc.vx	v12, a0, v10
 	vmsltu.vv	v0, v8, v12

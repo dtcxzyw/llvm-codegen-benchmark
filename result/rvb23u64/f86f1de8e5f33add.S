@@ -17,8 +17,8 @@ func00000000000003d4:                   # @func00000000000003d4
 func0000000000000394:                   # @func0000000000000394
 	slli	a2, a2, 6
 	or	a0, a0, a1
-	or	a0, a0, a2
 	lui	a1, 1048304
+	or	a0, a0, a2
 	addw	a0, a0, a1
 	lui	a1, 1048320
 	sltu	a0, a0, a1
@@ -41,8 +41,8 @@ func00000000000003c4:                   # @func00000000000003c4
 func00000000000002c4:                   # @func00000000000002c4
 	slli	a2, a2, 16
 	or	a0, a0, a1
-	or	a0, a0, a2
 	lui	a1, 1048552
+	or	a0, a0, a2
 	addi	a2, a1, -1697
 	addw	a0, a0, a2
 	addiw	a1, a1, -1696

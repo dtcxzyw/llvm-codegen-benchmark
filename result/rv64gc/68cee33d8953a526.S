@@ -54,9 +54,9 @@ func0000000000000069:                   # @func0000000000000069
 	lui	a2, 1
 	addiw	a2, a2, 906
 	slt	a1, a2, a1
-	negw	a1, a1
 	lui	a2, 1048575
 	addi	a2, a2, -907
+	negw	a1, a1
 	and	a1, a1, a2
 	add	a0, a0, a2
 	addw	a0, a0, a1

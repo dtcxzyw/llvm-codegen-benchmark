@@ -50,9 +50,9 @@ func000000000000001a:                   # @func000000000000001a
 	li	a0, 45
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmseq.vx	v0, v10, a0
+	lui	a0, 524288
 	vsetvli	zero, zero, e64, m2, ta, mu
 	vrsub.vi	v8, v8, 0, v0.t
-	lui	a0, 524288
 	addiw	a0, a0, -1
 	vmsgt.vx	v0, v8, a0
 	ret

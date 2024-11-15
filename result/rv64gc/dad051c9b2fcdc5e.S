@@ -27,8 +27,8 @@ func0000000000000038:                   # @func0000000000000038
 	fld	fa5, %lo(.LCPI2_0)(a0)
 	fabs.d	fa4, fa1
 	fle.d	a0, fa5, fa4
-	xori	a0, a0, 1
 	fmv.d.x	fa5, zero
+	xori	a0, a0, 1
 	feq.d	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
@@ -66,10 +66,10 @@ func0000000000000087:                   # @func0000000000000087
 	ret
 func0000000000000088:                   # @func0000000000000088
 	fclass.d	a0, fa1
-	andi	a0, a0, 129
-	snez	a0, a0
 	fclass.d	a1, fa0
+	andi	a0, a0, 129
 	slli	a1, a1, 56
+	snez	a0, a0
 	srli	a1, a1, 63
 	or	a0, a0, a1
 	ret
@@ -84,8 +84,8 @@ func0000000000000022:                   # @func0000000000000022
 	ret
 func0000000000000099:                   # @func0000000000000099
 	fclass.d	a0, fa1
-	andi	a0, a0, 897
 	fclass.d	a1, fa0
+	andi	a0, a0, 897
 	andi	a1, a1, 896
 	or	a0, a0, a1
 	snez	a0, a0

@@ -29,8 +29,8 @@ func0000000000000018:                   # @func0000000000000018
 	slli	a0, a0, 48
 	srli	a0, a0, 48
 	xor	a1, a1, a0
-	seqz	a1, a1
 	sltiu	a0, a0, 2
+	seqz	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -39,8 +39,8 @@ func00000000000000cc:                   # @func00000000000000cc
 	slli	a0, a0, 48
 	srli	a0, a0, 48
 	xor	a1, a1, a0
-	snez	a1, a1
 	addi	a0, a0, -1
+	snez	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

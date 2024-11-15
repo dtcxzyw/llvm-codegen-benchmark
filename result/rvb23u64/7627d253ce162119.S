@@ -18,8 +18,8 @@ func000000000000005c:                   # @func000000000000005c
 	ret
 func000000000000005a:                   # @func000000000000005a
 	sgtz	a1, a0
-	czero.eqz	a1, a1, a0
 	snez	a2, a2
+	czero.eqz	a1, a1, a0
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	ret

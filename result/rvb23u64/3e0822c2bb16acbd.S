@@ -5,9 +5,9 @@ func0000000000000001:                   # @func0000000000000001
 	addiw	a2, a2, -585
 	slli	a3, a2, 33
 	add	a2, a2, a3
+	li	a3, 1
 	mul	a1, a1, a2
-	li	a2, 1
-	czero.eqz	a2, a2, a0
+	czero.eqz	a2, a3, a0
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2
 	ret
@@ -21,11 +21,11 @@ func0000000000000000:                   # @func0000000000000000
 	srli	a2, a1, 63
 	srai	a1, a1, 18
 	add	a1, a1, a2
-	czero.nez	a1, a1, a0
 	lui	a2, 274878
 	addiw	a2, a2, -381
 	slli	a2, a2, 13
 	addi	a2, a2, -1290
+	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
 	or	a0, a0, a1
 	ret

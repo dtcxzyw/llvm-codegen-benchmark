@@ -12,9 +12,9 @@ func000000000000000f:                   # @func000000000000000f
 	ret
 func000000000000001b:                   # @func000000000000001b
 	addi	a0, a0, 7
+	lui	a1, 1048560
 	srli	a0, a0, 3
 	addi	a0, a0, 7
-	lui	a1, 1048560
 	srli	a1, a1, 13
 	and	a0, a0, a1
 	ret

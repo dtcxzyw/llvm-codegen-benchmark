@@ -3,8 +3,8 @@ func0000000000000009:                   # @func0000000000000009
 	flt.d	a1, fa0, fa5
 	flt.d	a2, fa5, fa0
 	or	a1, a1, a2
-	czero.eqz	a0, a0, a1
 	li	a2, -22
+	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret
@@ -13,10 +13,10 @@ func0000000000000009:                   # @func0000000000000009
 func0000000000000004:                   # @func0000000000000004
 	lui	a1, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a1)
-	flt.d	a1, fa5, fa0
-	czero.nez	a0, a0, a1
-	li	a2, 2
-	czero.eqz	a1, a2, a1
+	li	a1, 2
+	flt.d	a2, fa5, fa0
+	czero.nez	a0, a0, a2
+	czero.eqz	a1, a1, a2
 	or	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
@@ -29,11 +29,11 @@ func0000000000000008:                   # @func0000000000000008
 func000000000000000c:                   # @func000000000000000c
 	lui	a1, %hi(.LCPI3_0)
 	fld	fa5, %lo(.LCPI3_0)(a1)
-	fle.d	a1, fa5, fa0
-	czero.nez	a0, a0, a1
-	lui	a2, 524288
-	addiw	a2, a2, -1
-	czero.eqz	a1, a2, a1
+	lui	a1, 524288
+	addiw	a1, a1, -1
+	fle.d	a2, fa5, fa0
+	czero.nez	a0, a0, a2
+	czero.eqz	a1, a1, a2
 	or	a0, a0, a1
 	ret
 .LCPI4_0:
@@ -41,10 +41,10 @@ func000000000000000c:                   # @func000000000000000c
 func0000000000000002:                   # @func0000000000000002
 	lui	a1, %hi(.LCPI4_0)
 	fld	fa5, %lo(.LCPI4_0)(a1)
-	flt.d	a1, fa0, fa5
-	czero.nez	a0, a0, a1
-	li	a2, 2
-	czero.eqz	a1, a2, a1
+	li	a1, 2
+	flt.d	a2, fa0, fa5
+	czero.nez	a0, a0, a2
+	czero.eqz	a1, a1, a2
 	or	a0, a0, a1
 	ret
 func0000000000000003:                   # @func0000000000000003
@@ -64,9 +64,9 @@ func000000000000000d:                   # @func000000000000000d
 	ret
 func000000000000000b:                   # @func000000000000000b
 	fmv.d.x	fa5, zero
-	flt.d	a1, fa5, fa0
-	czero.eqz	a0, a0, a1
-	li	a2, 185
-	czero.nez	a1, a2, a1
+	li	a1, 185
+	flt.d	a2, fa5, fa0
+	czero.eqz	a0, a0, a2
+	czero.nez	a1, a1, a2
 	or	a0, a0, a1
 	ret

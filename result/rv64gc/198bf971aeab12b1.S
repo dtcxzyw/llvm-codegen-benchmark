@@ -18,8 +18,8 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func000000000000000b:                   # @func000000000000000b
 	slli	a1, a1, 48
-	srai	a1, a1, 48
 	slli	a2, a2, 48
+	srai	a1, a1, 48
 	srai	a2, a2, 48
 	slt	a1, a1, a2
 	xori	a1, a1, 1

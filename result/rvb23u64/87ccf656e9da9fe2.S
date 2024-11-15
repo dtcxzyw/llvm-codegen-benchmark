@@ -19,8 +19,8 @@ func0000000000000001:                   # @func0000000000000001
 func000000000000000a:                   # @func000000000000000a
 	andi	a0, a0, 1
 	sext.w	a2, a2
-	slti	a2, a2, 49
 	li	a3, -128
+	slti	a2, a2, 49
 	czero.eqz	a2, a3, a2
 	addi	a2, a2, 408
 	czero.eqz	a1, a1, a0

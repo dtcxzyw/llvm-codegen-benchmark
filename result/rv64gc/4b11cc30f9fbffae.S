@@ -11,9 +11,9 @@ func0000000000000310:                   # @func0000000000000310
 	sext.w	a1, a0
 	addi	a2, a0, -1
 	and	a0, a0, a2
+	sltiu	a1, a1, 65
 	sext.w	a0, a0
 	snez	a0, a0
-	sltiu	a1, a1, 65
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret

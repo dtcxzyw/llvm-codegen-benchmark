@@ -3,11 +3,11 @@
 .LCPI0_1:
 	.word	0x3f214518                      # float 0.629960536
 func0000000000000000:                   # @func0000000000000000
+	vmv1r.v	v13, v0
 	lui	a0, %hi(.LCPI0_0)
 	flw	fa5, %lo(.LCPI0_0)(a0)
 	lui	a0, %hi(.LCPI0_1)
 	flw	fa4, %lo(.LCPI0_1)(a0)
-	vmv1r.v	v13, v0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmv.v.f	v16, fa5
 	vmv1r.v	v0, v12

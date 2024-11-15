@@ -1,9 +1,9 @@
 func00000000000000cc:                   # @func00000000000000cc
 	andi	a1, a1, 255
-	addi	a1, a1, -22
-	snez	a1, a1
 	li	a2, 11
+	addi	a1, a1, -22
 	slli	a2, a2, 57
+	snez	a1, a1
 	xor	a0, a0, a2
 	snez	a0, a0
 	xor	a0, a0, a1

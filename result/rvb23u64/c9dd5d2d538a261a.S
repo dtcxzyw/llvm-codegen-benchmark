@@ -12,8 +12,8 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func000000000000001a:                   # @func000000000000001a
 	addi	a1, a1, -8
-	bset	a1, zero, a1
 	lui	a2, 524288
+	bset	a1, zero, a1
 	addi	a2, a2, -1
 	addw	a1, a1, a2
 	and	a0, a0, a1

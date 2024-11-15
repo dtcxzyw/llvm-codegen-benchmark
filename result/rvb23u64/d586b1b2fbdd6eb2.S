@@ -6,9 +6,9 @@ func00000000000000a0:                   # @func00000000000000a0
 	ret
 func0000000000000010:                   # @func0000000000000010
 	sext.w	a3, a2
+	li	a4, 30
 	addi	a3, a3, -31
 	czero.eqz	a2, a2, a3
-	li	a4, 30
 	czero.nez	a3, a4, a3
 	or	a2, a2, a3
 	add	a0, a0, a1

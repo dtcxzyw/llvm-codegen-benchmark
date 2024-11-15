@@ -104,8 +104,8 @@ func00000000000000a1:                   # @func00000000000000a1
 func00000000000000c4:                   # @func00000000000000c4
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vi	v10, v10, 7
-	vmsne.vi	v9, v10, 7
 	lui	a0, 524288
+	vmsne.vi	v9, v10, 7
 	addi	a0, a0, -2
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsltu.vx	v8, v8, a0
@@ -157,8 +157,8 @@ func000000000000008c:                   # @func000000000000008c
 	bseti	a0, zero, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
-	vmsne.vi	v9, v10, 0
 	li	a0, 72
+	vmsne.vi	v9, v10, 0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsgtu.vx	v8, v8, a0
 	vmand.mm	v0, v9, v8
@@ -168,8 +168,8 @@ func0000000000000048:                   # @func0000000000000048
 	zext.w	a0, a0
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
-	vmsne.vi	v9, v10, 0
 	li	a0, 47
+	vmsne.vi	v9, v10, 0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmsltu.vx	v8, v8, a0
 	vmand.mm	v0, v9, v8

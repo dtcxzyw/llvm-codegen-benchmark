@@ -1,8 +1,8 @@
 func0000000000000002:                   # @func0000000000000002
-	fli.s	fa5, 256.0
-	fmv.w.x	fa4, zero
+	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vmflt.vf	v0, v8, fa4
+	vmflt.vf	v0, v8, fa5
+	fli.s	fa5, 256.0
 	vfmul.vf	v8, v12, fa5
 	vmerge.vim	v8, v8, 0, v0
 	ret
@@ -17,10 +17,10 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func0000000000000003:                   # @func0000000000000003
 	lui	a0, 273536
-	fmv.w.x	fa5, a0
-	fmv.w.x	fa4, zero
+	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vmfge.vf	v16, v8, fa4
+	vmfge.vf	v16, v8, fa5
+	fmv.w.x	fa5, a0
 	vmnot.m	v0, v16
 	vfmul.vf	v8, v12, fa5
 	vmerge.vim	v8, v8, 0, v0

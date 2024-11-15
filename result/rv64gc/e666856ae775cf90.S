@@ -40,9 +40,9 @@ func0000000000000018:                   # @func0000000000000018
 func0000000000000045:                   # @func0000000000000045
 	sext.w	a0, a0
 	sext.w	a2, a2
+	srliw	a1, a1, 24
 	sltu	a0, a0, a2
 	not	a0, a0
-	srliw	a1, a1, 24
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret

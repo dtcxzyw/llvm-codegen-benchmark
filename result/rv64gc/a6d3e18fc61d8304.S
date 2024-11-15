@@ -89,8 +89,8 @@ func0000000000000031:                   # @func0000000000000031
 	sext.w	a0, a0
 	sext.w	a1, a1
 	xor	a0, a0, a1
-	seqz	a0, a0
 	li	a1, -1
+	seqz	a0, a0
 	slli	a1, a1, 63
 	sub	a0, a1, a0
 	ret

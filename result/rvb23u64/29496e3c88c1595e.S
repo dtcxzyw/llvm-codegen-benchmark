@@ -2,11 +2,11 @@ func0000000000000005:                   # @func0000000000000005
 	andi	a2, a2, 1
 	li	a3, 4
 	czero.nez	a2, a3, a2
+	lui	a3, 8
 	sub	a2, a2, a1
-	lui	a1, 8
-	addiw	a1, a1, -11
-	add	a1, a1, a2
-	sltu	a0, a1, a0
+	addiw	a3, a3, -11
+	add	a2, a2, a3
+	sltu	a0, a2, a0
 	xori	a0, a0, 1
 	ret
 func0000000000000016:                   # @func0000000000000016

@@ -19,8 +19,8 @@ func0000000000000012:                   # @func0000000000000012
 func0000000000000014:                   # @func0000000000000014
 	lui	a0, %hi(.LCPI2_0)
 	flw	fa5, %lo(.LCPI2_0)(a0)
-	fmadd.s	fa5, fa0, fa5, fa1
 	lui	a0, 275360
+	fmadd.s	fa5, fa0, fa5, fa1
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	ret
@@ -33,8 +33,8 @@ func000000000000000d:                   # @func000000000000000d
 	ret
 func0000000000000004:                   # @func0000000000000004
 	fli.s	fa5, 1.25
-	fmadd.s	fa5, fa0, fa5, fa1
 	lui	a0, 266752
+	fmadd.s	fa5, fa0, fa5, fa1
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	ret

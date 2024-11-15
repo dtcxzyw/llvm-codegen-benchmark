@@ -42,11 +42,11 @@ func000000000000008c:                   # @func000000000000008c
 	ret
 func0000000000000030:                   # @func0000000000000030
 	li	a2, 27
+	srli	a0, a0, 16
 	slli	a2, a2, 11
+	sltiu	a0, a0, 17
 	xor	a1, a1, a2
 	seqz	a1, a1
-	srli	a0, a0, 16
-	sltiu	a0, a0, 17
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -90,8 +90,8 @@ func0000000000000028:                   # @func0000000000000028
 	.quad	8784043285714375740             # 0x79e730d418a9143c
 func0000000000000198:                   # @func0000000000000198
 	lui	a2, %hi(.LCPI14_0)
-	ld	a2, %lo(.LCPI14_0)(a2)
 	lui	a3, %hi(.LCPI14_1)
+	ld	a2, %lo(.LCPI14_0)(a2)
 	ld	a3, %lo(.LCPI14_1)(a3)
 	xor	a1, a1, a2
 	xor	a0, a0, a3
@@ -193,8 +193,8 @@ func0000000000000090:                   # @func0000000000000090
 	ret
 func0000000000000158:                   # @func0000000000000158
 	slti	a1, a1, 0
-	xori	a1, a1, 1
 	addi	a0, a0, -6
+	xori	a1, a1, 1
 	snez	a0, a0
 	or	a0, a0, a1
 	ret

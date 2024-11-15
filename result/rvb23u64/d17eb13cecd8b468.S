@@ -1,8 +1,8 @@
 func00000000000003cc:                   # @func00000000000003cc
 	andi	a1, a0, 61
+	addi	a0, a0, -7
 	addi	a1, a1, -4
 	snez	a1, a1
-	addi	a0, a0, -7
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

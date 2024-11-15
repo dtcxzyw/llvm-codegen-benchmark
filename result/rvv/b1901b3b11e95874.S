@@ -37,8 +37,8 @@ func0000000000000361:                   # @func0000000000000361
 func0000000000000323:                   # @func0000000000000323
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v12, v12, 8
-	vor.vv	v10, v12, v10
 	lui	a0, 8
+	vor.vv	v10, v12, v10
 	vmsltu.vx	v0, v10, a0
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0

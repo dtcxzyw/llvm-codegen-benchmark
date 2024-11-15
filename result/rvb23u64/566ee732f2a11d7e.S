@@ -4,10 +4,10 @@ func0000000000000002:                   # @func0000000000000002
 	lui	a1, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a1)
 	fabs.d	fa4, fa0
-	flt.d	a1, fa4, fa5
-	czero.nez	a0, a0, a1
-	li	a2, 2
-	czero.eqz	a1, a2, a1
+	li	a1, 2
+	flt.d	a2, fa4, fa5
+	czero.nez	a0, a0, a2
+	czero.eqz	a1, a1, a2
 	or	a0, a0, a1
 	ret
 func0000000000000007:                   # @func0000000000000007
@@ -21,9 +21,9 @@ func0000000000000004:                   # @func0000000000000004
 	lui	a1, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a1)
 	fabs.d	fa4, fa0
-	flt.d	a1, fa5, fa4
-	czero.nez	a0, a0, a1
-	li	a2, 1
-	czero.eqz	a1, a2, a1
+	li	a1, 1
+	flt.d	a2, fa5, fa4
+	czero.nez	a0, a0, a2
+	czero.eqz	a1, a1, a2
 	or	a0, a0, a1
 	ret

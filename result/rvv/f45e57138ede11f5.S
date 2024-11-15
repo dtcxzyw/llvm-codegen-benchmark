@@ -77,26 +77,26 @@ func0000000000000031:                   # @func0000000000000031
 	vmerge.vim	v8, v8, 0, v0
 	ret
 func0000000000000014:                   # @func0000000000000014
-	li	a0, -972
-	li	a1, 243
-	slli	a1, a1, 54
+	li	a0, 243
+	slli	a0, a0, 54
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmsltu.vx	v0, v8, a1
+	vmsltu.vx	v0, v8, a0
+	li	a0, -972
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vadd.vx	v8, v10, a0
 	vmerge.vim	v8, v8, 0, v0
 	ret
 func0000000000000018:                   # @func0000000000000018
 	li	a0, 32
+	lui	a1, 524288
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vx	v10, v10, a0
-	lui	a0, 524288
-	addiw	a1, a0, -33
+	addiw	a0, a1, -33
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vmsgtu.vx	v0, v8, a1
-	addi	a0, a0, -1
+	vmsgtu.vx	v0, v8, a0
+	addi	a1, a1, -1
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vmerge.vxm	v8, v10, a0, v0
+	vmerge.vxm	v8, v10, a1, v0
 	ret
 func000000000000000a:                   # @func000000000000000a
 	vsetivli	zero, 4, e64, m2, ta, ma

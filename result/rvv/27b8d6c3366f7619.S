@@ -13,8 +13,8 @@ func00000000000000c4:                   # @func00000000000000c4
 func0000000000000046:                   # @func0000000000000046
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v10, v10, -3
-	vmsleu.vi	v12, v10, 9
 	lui	a0, 3
+	vmsleu.vi	v12, v10, 9
 	addi	a0, a0, 1364
 	vmslt.vx	v10, v8, a0
 	vmand.mm	v8, v10, v12

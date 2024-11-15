@@ -53,10 +53,10 @@ func00000000000000c1:                   # @func00000000000000c1
 func0000000000000018:                   # @func0000000000000018
 	li	a0, -1
 	srli	a1, a0, 2
+	bclri	a0, a0, 62
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a1
 	vmseq.vv	v14, v12, v10
-	bclri	a0, a0, 62
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v14
 	ret

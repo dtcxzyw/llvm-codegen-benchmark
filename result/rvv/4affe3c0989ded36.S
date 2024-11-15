@@ -11,8 +11,9 @@ func0000000000000004:                   # @func0000000000000004
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vmv.v.x	v9, a0
 	li	a0, -87
+	vmsleu.vi	v8, v8, 9
 	vmerge.vxm	v9, v9, a0, v0
-	vmsleu.vi	v0, v8, 9
 	li	a0, -48
+	vmv.v.v	v0, v8
 	vmerge.vxm	v8, v9, a0, v0
 	ret

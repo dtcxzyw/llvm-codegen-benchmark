@@ -30,8 +30,8 @@ func0000000000000021:                   # @func0000000000000021
 func0000000000000011:                   # @func0000000000000011
 	slli	a1, a1, 8
 	or	a0, a0, a1
-	zext.h	a0, a0
 	lui	a1, 14
+	zext.h	a0, a0
 	addiw	a1, a1, 333
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -48,8 +48,8 @@ func0000000000000051:                   # @func0000000000000051
 	slli	a1, a1, 16
 	andi	a0, a0, -2048
 	or	a0, a0, a1
-	sext.w	a0, a0
 	li	a1, 27
+	sext.w	a0, a0
 	slli	a1, a1, 11
 	xor	a0, a0, a1
 	seqz	a0, a0

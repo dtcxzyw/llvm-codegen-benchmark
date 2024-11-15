@@ -14,12 +14,12 @@ func0000000000000008:                   # @func0000000000000008
 	li	a0, -125
 	slli	a0, a0, 26
 	addi	a1, a0, 127
+	addi	a0, a0, 125
 	slli	a1, a1, 12
 	addi	a1, a1, -193
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a1
 	vmacc.vv	v12, v10, v8
-	addi	a0, a0, 125
 	slli	a0, a0, 12
 	vmsltu.vx	v0, v12, a0
 	ret
@@ -27,12 +27,12 @@ func0000000000000058:                   # @func0000000000000058
 	li	a0, -125
 	slli	a0, a0, 26
 	addi	a1, a0, 127
+	addi	a0, a0, 125
 	slli	a1, a1, 12
 	addi	a1, a1, -193
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a1
 	vmacc.vv	v12, v10, v8
-	addi	a0, a0, 125
 	slli	a0, a0, 12
 	vmsltu.vx	v0, v12, a0
 	ret
@@ -57,8 +57,8 @@ func0000000000000054:                   # @func0000000000000054
 	lui	a0, 524288
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v12, a0
-	vmacc.vv	v12, v10, v8
 	li	a0, -1
+	vmacc.vv	v12, v10, v8
 	slli	a0, a0, 32
 	vmsltu.vx	v0, v12, a0
 	ret

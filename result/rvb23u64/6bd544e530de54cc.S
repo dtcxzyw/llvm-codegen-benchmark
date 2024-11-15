@@ -17,8 +17,8 @@ func0000000000000141:                   # @func0000000000000141
 	zext.h	a0, a0
 	zext.h	a1, a1
 	addi	a1, a1, -11
-	sltiu	a1, a1, 2
 	addi	a0, a0, -128
+	sltiu	a1, a1, 2
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

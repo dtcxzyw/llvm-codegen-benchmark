@@ -2,8 +2,8 @@ func00000000000002ea:                   # @func00000000000002ea
 	sh2add	a0, a0, a0
 	sh1add	a1, a1, a1
 	sh3add	a0, a0, a1
-	sh2add	a0, a0, a2
 	lui	a1, 2
+	sh2add	a0, a0, a2
 	addiw	a1, a1, 1164
 	add	a0, a0, a1
 	ret

@@ -2,8 +2,8 @@ func0000000000000071:                   # @func0000000000000071
 	slli	a1, a1, 60
 	srli	a1, a1, 48
 	or	a0, a0, a1
-	sext.w	a0, a0
 	lui	a1, 14
+	sext.w	a0, a0
 	addiw	a1, a1, -1024
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -88,8 +88,8 @@ func0000000000000058:                   # @func0000000000000058
 	slli	a1, a1, 56
 	srli	a1, a1, 48
 	or	a0, a0, a1
-	sext.w	a0, a0
 	lui	a1, 8192
+	sext.w	a0, a0
 	addiw	a1, a1, -2
 	sltu	a0, a1, a0
 	ret

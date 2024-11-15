@@ -25,8 +25,8 @@ func000000000000000d:                   # @func000000000000000d
 	ret
 func000000000000000f:                   # @func000000000000000f
 	zext.h	a2, a2
-	add	a1, a1, a2
 	andi	a0, a0, 1
+	add	a1, a1, a2
 	xori	a0, a0, 65
 	addw	a0, a0, a1
 	ret

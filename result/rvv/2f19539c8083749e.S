@@ -29,8 +29,8 @@ func0000000000000014:                   # @func0000000000000014
 func0000000000000015:                   # @func0000000000000015
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgt.vi	v12, v10, -1
-	vmand.mm	v0, v12, v0
 	lui	a0, 176
+	vmand.mm	v0, v12, v0
 	vmv.v.x	v10, a0
 	addi	a0, a0, 16
 	vmerge.vxm	v10, v10, a0, v0

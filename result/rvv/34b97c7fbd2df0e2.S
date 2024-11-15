@@ -25,8 +25,8 @@ func000000000000003c:                   # @func000000000000003c
 	vadd.vv	v8, v8, v10
 	li	a0, 44
 	vsll.vx	v8, v8, a0
-	vadd.vv	v8, v8, v12
 	li	a0, -1
+	vadd.vv	v8, v8, v12
 	slli	a0, a0, 44
 	vand.vx	v8, v8, a0
 	ret

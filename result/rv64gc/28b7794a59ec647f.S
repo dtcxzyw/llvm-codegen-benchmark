@@ -39,20 +39,19 @@ func0000000000000004:                   # @func0000000000000004
 .LBB1_4:                                # %entry
 	ret
 func000000000000000a:                   # @func000000000000000a
+	fmv.s	fa5, fa0
 	andi	a0, a0, 1
-	fmv.w.x	fa5, zero
-	fmv.s	fa4, fa5
+	fmv.w.x	fa0, zero
+	fmv.s	fa4, fa0
 	beqz	a0, .LBB2_3
-	fle.s	a0, fa4, fa5
+	fle.s	a0, fa4, fa0
 	beqz	a0, .LBB2_4
 .LBB2_2:                                # %entry
-	fmv.s	fa0, fa5
 	ret
 .LBB2_3:                                # %entry
-	fmul.s	fa4, fa0, fa1
-	fle.s	a0, fa4, fa5
+	fmul.s	fa4, fa5, fa1
+	fle.s	a0, fa4, fa0
 	bnez	a0, .LBB2_2
 .LBB2_4:                                # %entry
-	fmv.s	fa5, fa4
-	fmv.s	fa0, fa5
+	fmv.s	fa0, fa4
 	ret

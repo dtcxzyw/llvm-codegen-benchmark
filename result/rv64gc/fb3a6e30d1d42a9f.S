@@ -56,9 +56,9 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 func000000000000001f:                   # @func000000000000001f
 	lui	a3, 448
-	and	a1, a1, a3
 	add	a0, a0, a2
 	lui	a2, 4096
+	and	a1, a1, a3
 	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret

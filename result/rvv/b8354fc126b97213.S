@@ -59,10 +59,10 @@ func0000000000000366:                   # @func0000000000000366
 func0000000000000241:                   # @func0000000000000241
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.i	v14, 1
-	vsll.vv	v12, v14, v12
 	vmsleu.vi	v0, v10, 15
+	vsll.vv	v10, v14, v12
 	li	a0, 64
-	vmerge.vxm	v10, v12, a0, v0
+	vmerge.vxm	v10, v10, a0, v0
 	vmseq.vv	v0, v10, v8
 	ret
 func0000000000000318:                   # @func0000000000000318

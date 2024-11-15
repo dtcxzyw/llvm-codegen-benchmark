@@ -29,8 +29,8 @@ func0000000000000042:                   # @func0000000000000042
 	ret
 func00000000000000d8:                   # @func00000000000000d8
 	flt.s	a0, fa1, fa2
-	xori	a0, a0, 1
 	fmv.w.x	fa5, zero
+	xori	a0, a0, 1
 	feq.s	a1, fa0, fa5
 	or	a0, a0, a1
 	ret

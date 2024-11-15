@@ -20,11 +20,11 @@ func0000000000000044:                   # @func0000000000000044
 	srliw	a2, a1, 20
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2
+	lui	a2, 58
 	or	a0, a0, a1
 	slli	a0, a0, 44
 	srli	a0, a0, 44
-	lui	a1, 58
-	addiw	a1, a1, -1905
+	addiw	a1, a2, -1905
 	sltu	a0, a0, a1
 	ret
 func000000000000001c:                   # @func000000000000001c

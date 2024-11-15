@@ -27,8 +27,8 @@ func0000000000000009:                   # @func0000000000000009
 func0000000000000012:                   # @func0000000000000012
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfncvt.f.f.w	v16, v8
-	vfabs.v	v8, v16
 	lui	a0, 212992
+	vfabs.v	v8, v16
 	fmv.w.x	fa5, a0
 	vmflt.vf	v0, v8, fa5
 	ret
@@ -61,8 +61,8 @@ func0000000000000008:                   # @func0000000000000008
 func000000000000000a:                   # @func000000000000000a
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfncvt.f.f.w	v16, v8
-	vfabs.v	v8, v16
 	lui	a0, 273536
+	vfabs.v	v8, v16
 	fmv.w.x	fa5, a0
 	vmfle.vf	v0, v8, fa5
 	ret
@@ -85,8 +85,8 @@ func0000000000000003:                   # @func0000000000000003
 func0000000000000015:                   # @func0000000000000015
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfncvt.f.f.w	v16, v8
-	vfabs.v	v8, v16
 	lui	a0, 212992
+	vfabs.v	v8, v16
 	fmv.w.x	fa5, a0
 	vmfle.vf	v12, v8, fa5
 	vmnot.m	v0, v12
@@ -104,8 +104,8 @@ func0000000000000004:                   # @func0000000000000004
 func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfncvt.f.f.w	v16, v8
-	vfabs.v	v8, v16
 	lui	a0, 273536
+	vfabs.v	v8, v16
 	fmv.w.x	fa5, a0
 	vmfge.vf	v0, v8, fa5
 	ret

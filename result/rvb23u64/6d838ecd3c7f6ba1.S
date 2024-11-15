@@ -24,9 +24,9 @@ func0000000000000004:                   # @func0000000000000004
 .LCPI2_0:
 	.quad	0x40190a3d70a3d70a              # double 6.2599999999999998
 func0000000000000003:                   # @func0000000000000003
+	fmv.d	fa5, fa0
 	andi	a0, a0, 1
 	fmv.d.x	fa4, zero
-	fmv.d	fa5, fa0
 	fmv.d	fa0, fa4
 	beqz	a0, .LBB2_3
 	lui	a0, %hi(.LCPI2_0)
@@ -61,9 +61,9 @@ func000000000000000e:                   # @func000000000000000e
 	fmv.d.x	fa0, zero
 	ret
 func000000000000000c:                   # @func000000000000000c
+	fmv.d	fa5, fa0
 	andi	a0, a0, 1
 	fmv.d.x	fa4, zero
-	fmv.d	fa5, fa0
 	fmv.d	fa0, fa4
 	beqz	a0, .LBB4_3
 	fle.d	a0, fa4, fa0

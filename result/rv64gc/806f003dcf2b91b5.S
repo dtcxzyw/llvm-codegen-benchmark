@@ -2,13 +2,13 @@
 	.quad	384307168202282325              # 0x555555555555555
 func0000000000000024:                   # @func0000000000000024
 	sub	a1, a1, a2
-	srai	a1, a1, 3
-	lui	a3, 699051
-	lui	a2, %hi(.LCPI0_0)
-	ld	a2, %lo(.LCPI0_0)(a2)
-	addiw	a3, a3, -1365
-	slli	a4, a3, 32
+	lui	a2, 699051
+	lui	a3, %hi(.LCPI0_0)
+	addiw	a4, a2, -1365
+	ld	a2, %lo(.LCPI0_0)(a3)
+	slli	a3, a4, 32
 	add	a3, a3, a4
+	srai	a1, a1, 3
 	mul	a3, a1, a3
 	mv	a1, a0
 	bgeu	a0, a2, .LBB0_3

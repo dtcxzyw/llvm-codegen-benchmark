@@ -46,12 +46,12 @@ func00000000000000e8:                   # @func00000000000000e8
 func000000000000005a:                   # @func000000000000005a
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v8, v10
-	vadd.vv	v10, v8, v8
 	li	a0, 1800
 	vmsgt.vx	v0, v8, a0
 	lui	a0, 1
+	vadd.vv	v8, v8, v8
 	addiw	a0, a0, -496
-	vmerge.vxm	v8, v10, a0, v0
+	vmerge.vxm	v8, v8, a0, v0
 	ret
 func0000000000000058:                   # @func0000000000000058
 	vsetivli	zero, 4, e64, m2, ta, ma

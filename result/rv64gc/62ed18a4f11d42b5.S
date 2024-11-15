@@ -4,8 +4,8 @@ func00000000000001f1:                   # @func00000000000001f1
 	lui	a3, %hi(.LCPI0_0)
 	ld	a3, %lo(.LCPI0_0)(a3)
 	srli	a2, a2, 5
-	mul	a2, a2, a3
 	srli	a1, a1, 5
+	mul	a2, a2, a3
 	mul	a1, a1, a3
 	bltu	a1, a2, .LBB0_2
 	mv	a1, a2

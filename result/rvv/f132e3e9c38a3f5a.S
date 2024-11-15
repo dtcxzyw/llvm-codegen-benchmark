@@ -86,8 +86,8 @@ func0000000000000006:                   # @func0000000000000006
 func0000000000000068:                   # @func0000000000000068
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
-	vor.vv	v8, v9, v8
 	lui	a0, 16
+	vor.vv	v8, v9, v8
 	addi	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret

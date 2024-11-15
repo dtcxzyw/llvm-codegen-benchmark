@@ -47,11 +47,11 @@ func0000000000000001:                   # @func0000000000000001
 	lui	a0, 746366
 	addi	a0, a0, -1921
 	vmulhu.vx	v12, v10, a0
+	lui	a0, 598
 	vsub.vv	v10, v10, v12
 	vsrl.vi	v10, v10, 1
 	vadd.vv	v10, v10, v12
 	vsrl.vi	v10, v10, 21
-	lui	a0, 598
 	addi	a0, a0, 837
 	vmacc.vx	v8, a0, v10
 	ret
@@ -61,8 +61,8 @@ func0000000000000005:                   # @func0000000000000005
 	lui	a0, 203613
 	addi	a0, a0, 1083
 	vmulhu.vx	v10, v10, a0
-	vsrl.vi	v10, v10, 24
 	lui	a0, 21094
+	vsrl.vi	v10, v10, 24
 	addi	a0, a0, -1024
 	vmacc.vx	v8, a0, v10
 	ret

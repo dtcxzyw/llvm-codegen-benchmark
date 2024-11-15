@@ -21,8 +21,8 @@ func000000000000000f:                   # @func000000000000000f
 	addi	a0, a0, -1911
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmulhu.vx	v10, v10, a0
-	vsrl.vi	v10, v10, 2
 	lui	a0, 262144
+	vsrl.vi	v10, v10, 2
 	addi	a0, a0, -2
 	vand.vx	v10, v10, a0
 	vadd.vv	v8, v10, v8

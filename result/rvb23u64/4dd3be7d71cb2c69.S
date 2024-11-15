@@ -1,9 +1,9 @@
 func0000000000000034:                   # @func0000000000000034
 	sext.w	a0, a0
 	srliw	a1, a1, 1
+	li	a2, 100
 	addiw	a1, a1, 96
 	sltiu	a0, a0, 28
-	li	a2, 100
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2

@@ -10,9 +10,9 @@ func0000000000000052:                   # @func0000000000000052
 	add	a1, a1, a2
 	li	a2, 640
 	mul	a1, a1, a2
+	lui	a2, 313
 	add	a0, a0, a1
-	lui	a1, 313
-	addiw	a1, a1, -128
+	addiw	a1, a2, -128
 	add	a0, a0, a1
 	ret
 func00000000000000fa:                   # @func00000000000000fa

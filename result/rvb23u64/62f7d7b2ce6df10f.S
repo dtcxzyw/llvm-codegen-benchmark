@@ -21,8 +21,8 @@ func0000000000000082:                   # @func0000000000000082
 	ret
 func00000000000000a2:                   # @func00000000000000a2
 	bset	a1, zero, a1
-	add	a0, a0, a1
 	li	a2, -1
+	add	a0, a0, a1
 	srli	a2, a2, 32
 	add	a0, a0, a2
 	neg	a1, a1

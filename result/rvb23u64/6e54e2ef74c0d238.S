@@ -13,10 +13,10 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 func0000000000000034:                   # @func0000000000000034
 	subw	a1, a1, a2
+	lui	a2, 16
 	add.uw	a0, a1, a0
-	lui	a1, 16
-	addiw	a1, a1, -1
-	sltu	a0, a0, a1
+	addiw	a2, a2, -1
+	sltu	a0, a0, a2
 	ret
 func0000000000000108:                   # @func0000000000000108
 	subw	a1, a1, a2

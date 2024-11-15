@@ -33,8 +33,8 @@ func0000000000000058:                   # @func0000000000000058
 func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vzext.vf4	v14, v12
-	vmadd.vv	v14, v10, v8
 	lui	a0, 244141
+	vmadd.vv	v14, v10, v8
 	addi	a0, a0, -1537
 	vmsgtu.vx	v0, v14, a0
 	ret

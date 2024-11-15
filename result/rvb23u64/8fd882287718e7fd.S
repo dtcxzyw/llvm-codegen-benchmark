@@ -22,8 +22,8 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func000000000000002b:                   # @func000000000000002b
 	sext.w	a1, a1
-	sgtz	a1, a1
 	lui	a2, 1047599
+	sgtz	a1, a1
 	addiw	a2, a2, 1792
 	czero.nez	a1, a2, a1
 	lui	a2, 1221

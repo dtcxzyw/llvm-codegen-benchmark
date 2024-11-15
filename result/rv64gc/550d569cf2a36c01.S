@@ -22,8 +22,8 @@ func0000000000000022:                   # @func0000000000000022
 	ret
 func000000000000001a:                   # @func000000000000001a
 	slli	a2, a2, 48
-	srai	a2, a2, 48
 	slli	a1, a1, 48
+	srai	a2, a2, 48
 	srai	a3, a1, 48
 	li	a1, 24
 	blt	a3, a2, .LBB2_2
@@ -33,8 +33,8 @@ func000000000000001a:                   # @func000000000000001a
 	ret
 func000000000000002a:                   # @func000000000000002a
 	slli	a1, a1, 48
-	srai	a3, a1, 48
 	slli	a2, a2, 48
+	srai	a3, a1, 48
 	srai	a2, a2, 48
 	li	a1, 16
 	blt	a2, a3, .LBB3_2

@@ -15,8 +15,8 @@ func0000000000000009:                   # @func0000000000000009
 	ret
 func0000000000000007:                   # @func0000000000000007
 	addi	a0, a0, 8
-	andi	a0, a0, 255
 	li	a1, -1
+	andi	a0, a0, 255
 	srli	a1, a1, 32
 	add	a0, a0, a1
 	ret

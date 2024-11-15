@@ -17,11 +17,11 @@ func0000000000000141:                   # @func0000000000000141
 	vzext.vf2	v9, v8
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.i	v10, -2
+	li	a0, 47
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vwaddu.wv	v10, v10, v9
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsleu.vi	v9, v10, 4
-	li	a0, 47
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmseq.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9

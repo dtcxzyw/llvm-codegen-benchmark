@@ -32,8 +32,8 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func0000000000000008:                   # @func0000000000000008
 	sext.w	a0, a0
-	sltiu	a0, a0, 128
 	lui	a1, 1048320
+	sltiu	a0, a0, 128
 	czero.eqz	a0, a1, a0
 	lui	a1, 512
 	add	a0, a0, a1

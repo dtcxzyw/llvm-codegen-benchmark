@@ -27,8 +27,8 @@ func0000000000000013:                   # @func0000000000000013
 	addi	a1, a1, -1365
 	zext.w	a1, a1
 	mul	a0, a0, a1
-	srli	a0, a0, 33
 	lui	a1, 1
+	srli	a0, a0, 33
 	addi	a1, a1, -1
 	addw	a0, a0, a1
 	ret

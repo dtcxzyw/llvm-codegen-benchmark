@@ -156,8 +156,8 @@ func000000000000021a:                   # @func000000000000021a
 func0000000000000088:                   # @func0000000000000088
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
-	vmsgtu.vi	v9, v9, 2
 	li	a0, 127
+	vmsgtu.vi	v9, v9, 2
 	vmsgtu.vx	v8, v8, a0
 	vmand.mm	v0, v9, v8
 	ret
@@ -171,8 +171,8 @@ func00000000000000c6:                   # @func00000000000000c6
 func000000000000008a:                   # @func000000000000008a
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
-	vmsgt.vi	v9, v9, 0
 	lui	a0, 16
+	vmsgt.vi	v9, v9, 0
 	addi	a0, a0, -1
 	vmsgtu.vx	v8, v8, a0
 	vmand.mm	v0, v9, v8

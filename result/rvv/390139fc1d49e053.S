@@ -59,9 +59,9 @@ func000000000000000a:                   # @func000000000000000a
 	vmsgt.vi	v0, v8, 6
 	ret
 func0000000000000004:                   # @func0000000000000004
+	li	a0, 64
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vadd.vi	v8, v8, -4, v0.t
-	li	a0, 64
 	vmsltu.vx	v0, v8, a0
 	ret
 func000000000000000c:                   # @func000000000000000c

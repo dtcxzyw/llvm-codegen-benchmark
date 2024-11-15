@@ -1,8 +1,8 @@
 func0000000000000041:                   # @func0000000000000041
 	andi	a0, a0, 1
 	sext.w	a2, a2
-	sltiu	a2, a2, 10
 	li	a3, 4
+	sltiu	a2, a2, 10
 	sub	a3, a3, a2
 	czero.eqz	a1, a1, a0
 	czero.nez	a0, a3, a0

@@ -26,8 +26,8 @@ func00000000000000cc:                   # @func00000000000000cc
 	ret
 func00000000000000c7:                   # @func00000000000000c7
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	slli	a1, a1, 56
+	srai	a0, a0, 56
 	srai	a1, a1, 56
 	snez	a2, a2
 	slt	a0, a1, a0
@@ -36,8 +36,8 @@ func00000000000000c7:                   # @func00000000000000c7
 	ret
 func00000000000000cb:                   # @func00000000000000cb
 	slli	a1, a1, 56
-	srai	a1, a1, 56
 	slli	a0, a0, 56
+	srai	a1, a1, 56
 	srai	a0, a0, 56
 	snez	a2, a2
 	slt	a0, a0, a1

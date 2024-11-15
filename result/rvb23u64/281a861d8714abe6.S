@@ -25,33 +25,33 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000012:                   # @func0000000000000012
 	sext.w	a2, a2
 	sh2add	a0, a2, a0
+	lui	a2, 313
 	sh2add	a0, a1, a0
-	lui	a1, 313
-	addiw	a1, a1, -128
+	addiw	a1, a2, -128
 	add	a0, a0, a1
 	ret
 func0000000000000002:                   # @func0000000000000002
 	sext.w	a2, a2
 	sh2add	a0, a2, a0
+	lui	a2, 313
 	sh2add	a0, a1, a0
-	lui	a1, 313
-	addiw	a1, a1, -128
+	addiw	a1, a2, -128
 	add	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
 	sext.w	a2, a2
 	sh2add	a0, a2, a0
+	lui	a2, 100
 	sh2add	a0, a1, a0
-	lui	a1, 100
-	addiw	a1, a1, 512
+	addiw	a1, a2, 512
 	add	a0, a0, a1
 	ret
 func000000000000000a:                   # @func000000000000000a
 	sext.w	a2, a2
 	sh2add	a0, a2, a0
+	lui	a2, 175
 	sh2add	a0, a1, a0
-	lui	a1, 175
-	addiw	a1, a1, 896
+	addiw	a1, a2, 896
 	add	a0, a0, a1
 	ret
 func0000000000000018:                   # @func0000000000000018

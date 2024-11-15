@@ -59,8 +59,8 @@ func000000000000000c:                   # @func000000000000000c
 	vzext.vf2	v9, v8
 	li	a0, 32
 	vmv.v.x	v8, a0
-	vwsubu.vv	v10, v8, v9
 	lui	a0, 1044480
+	vwsubu.vv	v10, v8, v9
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.x	v8, a0
 	vsll.vv	v8, v8, v10
@@ -69,8 +69,8 @@ func0000000000000017:                   # @func0000000000000017
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v9, v8
 	vmv.v.i	v8, 8
-	vwsubu.vv	v10, v8, v9
 	li	a0, 255
+	vwsubu.vv	v10, v8, v9
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.x	v8, a0
 	vsll.vv	v8, v8, v10

@@ -50,8 +50,8 @@ func0000000000000144:                   # @func0000000000000144
 	vzext.vf2	v12, v10
 	lui	a0, 524288
 	vmv.v.x	v10, a0
-	vmacc.vv	v10, v8, v12
 	li	a0, -1
+	vmacc.vv	v10, v8, v12
 	slli	a0, a0, 32
 	vmsltu.vx	v0, v10, a0
 	ret
@@ -60,8 +60,8 @@ func0000000000000054:                   # @func0000000000000054
 	vzext.vf2	v12, v10
 	lui	a0, 524288
 	vmv.v.x	v10, a0
-	vmacc.vv	v10, v8, v12
 	li	a0, -1
+	vmacc.vv	v10, v8, v12
 	slli	a0, a0, 32
 	vmsltu.vx	v0, v10, a0
 	ret

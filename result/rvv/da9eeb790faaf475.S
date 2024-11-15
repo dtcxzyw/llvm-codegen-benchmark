@@ -20,9 +20,9 @@ func0000000000000008:                   # @func0000000000000008
 	lui	a0, 1048568
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vmsgtu.vx	v10, v8, a0
-	vmand.mm	v0, v10, v0
 	li	a0, 11
 	slli	a0, a0, 11
+	vmand.mm	v0, v10, v0
 	vmv.v.x	v8, a0
 	lui	a0, 5
 	vmerge.vxm	v8, v8, a0, v0

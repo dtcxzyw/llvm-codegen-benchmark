@@ -37,8 +37,8 @@ func000000000000007c:                   # @func000000000000007c
 	slli	a2, a1, 2
 	slli	a1, a1, 6
 	subw	a1, a1, a2
+	lui	a2, 14648
 	add	a0, a0, a1
-	lui	a1, 14648
-	addi	a1, a1, 1792
+	addi	a1, a2, 1792
 	mulw	a0, a0, a1
 	ret

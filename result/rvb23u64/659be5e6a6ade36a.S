@@ -6,11 +6,11 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func0000000000000014:                   # @func0000000000000014
 	add	a1, a1, a2
+	li	a2, 31
 	add	a0, a0, a1
 	slli	a0, a0, 3
-	li	a1, 31
-	slli	a1, a1, 10
-	and	a0, a0, a1
+	slli	a2, a2, 10
+	and	a0, a0, a2
 	ret
 func000000000000003f:                   # @func000000000000003f
 	add	a1, a1, a2

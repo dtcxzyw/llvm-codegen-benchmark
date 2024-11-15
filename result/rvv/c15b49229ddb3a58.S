@@ -31,9 +31,9 @@ func0000000000000061:                   # @func0000000000000061
 func0000000000000068:                   # @func0000000000000068
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vmsle.vi	v0, v12, -1
+	lui	a0, 8
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmerge.vvm	v8, v10, v8, v0
-	lui	a0, 8
 	addiw	a0, a0, -1025
 	vmsgtu.vx	v0, v8, a0
 	ret

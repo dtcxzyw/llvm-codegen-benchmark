@@ -2,52 +2,52 @@
 	.quad	307445734561825861              # 0x444444444444445
 func0000000000000031:                   # @func0000000000000031
 	slli	a0, a0, 48
-	srli	a0, a0, 48
 	lui	a1, 978671
 	addiw	a1, a1, -273
 	slli	a2, a1, 32
 	add	a1, a1, a2
+	lui	a2, %hi(.LCPI0_0)
+	srli	a0, a0, 48
+	ld	a2, %lo(.LCPI0_0)(a2)
 	mul	a0, a0, a1
-	lui	a1, %hi(.LCPI0_0)
-	ld	a1, %lo(.LCPI0_0)(a1)
-	slli	a2, a0, 62
+	slli	a1, a0, 62
 	srli	a0, a0, 2
-	or	a0, a0, a2
-	sltu	a0, a0, a1
+	or	a0, a0, a1
+	sltu	a0, a0, a2
 	ret
 .LCPI1_0:
 	.quad	-8116567392432202711            # 0x8f5c28f5c28f5c29
 .LCPI1_1:
 	.quad	184467440737095517              # 0x28f5c28f5c28f5d
 func0000000000000011:                   # @func0000000000000011
+	slli	a0, a0, 48
 	lui	a1, %hi(.LCPI1_0)
 	ld	a1, %lo(.LCPI1_0)(a1)
-	slli	a0, a0, 48
+	lui	a2, %hi(.LCPI1_1)
 	srli	a0, a0, 48
+	ld	a2, %lo(.LCPI1_1)(a2)
 	mul	a0, a0, a1
-	lui	a1, %hi(.LCPI1_1)
-	ld	a1, %lo(.LCPI1_1)(a1)
-	slli	a2, a0, 62
+	slli	a1, a0, 62
 	srli	a0, a0, 2
-	or	a0, a0, a2
-	sltu	a0, a0, a1
+	or	a0, a0, a1
+	sltu	a0, a0, a2
 	ret
 .LCPI2_0:
 	.quad	658812288346769701              # 0x924924924924925
 func0000000000000021:                   # @func0000000000000021
 	slli	a0, a0, 48
-	srli	a0, a0, 48
 	lui	a1, 748983
 	addiw	a1, a1, -585
 	slli	a2, a1, 33
 	add	a1, a1, a2
+	lui	a2, %hi(.LCPI2_0)
+	srli	a0, a0, 48
+	ld	a2, %lo(.LCPI2_0)(a2)
 	mul	a0, a0, a1
-	lui	a1, %hi(.LCPI2_0)
-	ld	a1, %lo(.LCPI2_0)(a1)
-	slli	a2, a0, 62
+	slli	a1, a0, 62
 	srli	a0, a0, 2
-	or	a0, a0, a2
-	sltu	a0, a0, a1
+	or	a0, a0, a1
+	sltu	a0, a0, a2
 	ret
 .LCPI3_0:
 	.quad	307445734561825861              # 0x444444444444445
@@ -123,15 +123,15 @@ func0000000000000024:                   # @func0000000000000024
 .LCPI8_1:
 	.quad	184467440737095516              # 0x28f5c28f5c28f5c
 func000000000000002c:                   # @func000000000000002c
+	slli	a0, a0, 48
 	lui	a1, %hi(.LCPI8_0)
 	ld	a1, %lo(.LCPI8_0)(a1)
-	slli	a0, a0, 48
+	lui	a2, %hi(.LCPI8_1)
 	srli	a0, a0, 48
+	ld	a2, %lo(.LCPI8_1)(a2)
 	mul	a0, a0, a1
-	lui	a1, %hi(.LCPI8_1)
-	ld	a1, %lo(.LCPI8_1)(a1)
-	slli	a2, a0, 62
+	slli	a1, a0, 62
 	srli	a0, a0, 2
-	or	a0, a0, a2
-	sltu	a0, a1, a0
+	or	a0, a0, a1
+	sltu	a0, a2, a0
 	ret

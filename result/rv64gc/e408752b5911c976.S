@@ -1,10 +1,10 @@
 func00000000000001a5:                   # @func00000000000001a5
 	slli	a2, a2, 6
-	add	a1, a1, a2
 	andi	a0, a0, 255
+	add	a1, a1, a2
+	lui	a2, 1048350
 	add	a0, a0, a1
-	lui	a1, 1048350
-	addi	a1, a1, -128
+	addi	a1, a2, -128
 	addw	a0, a0, a1
 	ret
 func00000000000001ef:                   # @func00000000000001ef
@@ -16,12 +16,12 @@ func00000000000001ef:                   # @func00000000000001ef
 	ret
 func0000000000000180:                   # @func0000000000000180
 	slli	a2, a2, 8
-	add	a1, a1, a2
 	andi	a0, a0, 255
+	add	a1, a1, a2
+	lui	a2, 1048572
 	add	a0, a0, a1
-	lui	a1, 1048572
-	addi	a1, a1, 1
-	addw	a0, a0, a1
+	addi	a2, a2, 1
+	addw	a0, a0, a2
 	ret
 func00000000000001c0:                   # @func00000000000001c0
 	slli	a2, a2, 8

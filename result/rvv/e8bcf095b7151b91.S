@@ -30,9 +30,9 @@ func0000000000000008:                   # @func0000000000000008
 func000000000000000c:                   # @func000000000000000c
 	lui	a0, %hi(.LCPI3_0)
 	fld	fa5, %lo(.LCPI3_0)(a0)
+	lui	a0, 524288
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vmfge.vf	v0, v12, fa5
-	lui	a0, 524288
 	addi	a0, a0, -1
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmerge.vxm	v8, v8, a0, v0

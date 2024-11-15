@@ -5,8 +5,8 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func000000000000001f:                   # @func000000000000001f
 	bset	a0, zero, a0
-	sext.w	a0, a0
 	li	a1, -1
+	sext.w	a0, a0
 	srli	a1, a1, 32
 	add	a0, a0, a1
 	ret

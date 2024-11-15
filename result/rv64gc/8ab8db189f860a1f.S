@@ -19,8 +19,8 @@ func000000000000000f:                   # @func000000000000000f
 	ret
 func0000000000000007:                   # @func0000000000000007
 	slli	a1, a1, 63
-	srai	a1, a1, 63
 	lui	a3, 1048560
+	srai	a1, a1, 63
 	addiw	a3, a3, 15
 	and	a1, a1, a3
 	add	a0, a0, a2

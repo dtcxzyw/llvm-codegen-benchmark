@@ -23,8 +23,8 @@ func0000000000000080:                   # @func0000000000000080
 func0000000000000095:                   # @func0000000000000095
 	li	a3, 365
 	mul	a3, a3, a2
-	add	a1, a1, a3
 	sext.w	a2, a2
+	add	a1, a1, a3
 	lui	a3, 713032
 	addiw	a3, a3, -1311
 	mul	a2, a2, a3

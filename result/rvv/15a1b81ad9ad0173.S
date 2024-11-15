@@ -11,8 +11,8 @@ func00000000000000c4:                   # @func00000000000000c4
 	lui	a0, 15
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
-	vmsne.vi	v9, v10, 0
 	lui	a0, 1048575
+	vmsne.vi	v9, v10, 0
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vmsltu.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9

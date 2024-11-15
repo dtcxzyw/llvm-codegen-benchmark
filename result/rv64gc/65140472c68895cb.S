@@ -1,12 +1,12 @@
 func0000000000000002:                   # @func0000000000000002
 	li	a3, 1
+	slli	a1, a1, 63
 	slli	a3, a3, 32
+	srai	a1, a1, 63
 	addi	a3, a3, -4
 	add	a2, a2, a3
 	addi	a3, a3, 3
 	and	a2, a2, a3
-	slli	a1, a1, 63
-	srai	a1, a1, 63
 	and	a1, a1, a2
 	slli	a2, a1, 2
 	slli	a1, a1, 4

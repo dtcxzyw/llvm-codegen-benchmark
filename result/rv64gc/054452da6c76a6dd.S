@@ -9,13 +9,13 @@ func00000000000003f4:                   # @func00000000000003f4
 	.quad	230584300921369395              # 0x333333333333333
 func0000000000000148:                   # @func0000000000000148
 	add	a1, a1, a2
-	slli	a2, a1, 2
-	lui	a3, %hi(.LCPI1_0)
-	ld	a3, %lo(.LCPI1_0)(a3)
+	lui	a2, %hi(.LCPI1_0)
+	slli	a3, a1, 2
+	ld	a2, %lo(.LCPI1_0)(a2)
 	slli	a1, a1, 4
-	sub	a1, a1, a2
+	sub	a1, a1, a3
 	add	a0, a0, a1
-	sltu	a0, a3, a0
+	sltu	a0, a2, a0
 	ret
 func0000000000000141:                   # @func0000000000000141
 	add	a1, a1, a2
@@ -39,10 +39,10 @@ func0000000000000001:                   # @func0000000000000001
 	slli	a2, a1, 2
 	slli	a1, a1, 6
 	sub	a1, a1, a2
+	li	a2, -1
 	add	a0, a0, a1
-	li	a1, -1
-	slli	a1, a1, 63
-	xor	a0, a0, a1
+	slli	a2, a2, 63
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 .LCPI5_0:
@@ -60,10 +60,10 @@ func0000000000000008:                   # @func0000000000000008
 	add	a1, a1, a2
 	li	a2, 10
 	mul	a1, a1, a2
+	li	a2, -1
 	add	a0, a0, a1
-	li	a1, -1
-	slli	a1, a1, 63
-	sltu	a0, a1, a0
+	slli	a2, a2, 63
+	sltu	a0, a2, a0
 	ret
 .LCPI7_0:
 	.quad	1844674407370955161             # 0x1999999999999999

@@ -1,8 +1,8 @@
 func0000000000000004:                   # @func0000000000000004
 	fsub.s	fa5, fa2, fa1
 	fsub.s	fa4, fa0, fa1
-	fdiv.s	fa5, fa4, fa5
 	lui	a0, 260096
+	fdiv.s	fa5, fa4, fa5
 	fmv.w.x	fa0, a0
 	flt.s	a0, fa0, fa5
 	bnez	a0, .LBB0_2

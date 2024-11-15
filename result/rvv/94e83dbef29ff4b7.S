@@ -57,8 +57,8 @@ func00000000000000a2:                   # @func00000000000000a2
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfle.vf	v16, v12, fa5
-	vmor.mm	v12, v16, v0
 	fli.s	fa5, 1.0
+	vmor.mm	v12, v16, v0
 	vmflt.vf	v13, v8, fa5
 	vmor.mm	v0, v12, v13
 	ret

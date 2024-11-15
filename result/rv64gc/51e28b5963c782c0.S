@@ -12,8 +12,8 @@ func0000000000000022:                   # @func0000000000000022
 	fld	fa5, %lo(.LCPI1_0)(a1)
 	not	a0, a0
 	flt.d	a1, fa0, fa5
-	not	a1, a1
 	fmv.d.x	fa5, zero
+	not	a1, a1
 	flt.d	a2, fa0, fa5
 	or	a0, a0, a1
 	and	a0, a0, a2
@@ -59,8 +59,8 @@ func0000000000000042:                   # @func0000000000000042
 	fld	fa5, %lo(.LCPI5_0)(a1)
 	not	a0, a0
 	flt.d	a1, fa5, fa0
-	not	a1, a1
 	fmv.d.x	fa5, zero
+	not	a1, a1
 	flt.d	a2, fa0, fa5
 	or	a0, a0, a1
 	and	a0, a0, a2
@@ -74,8 +74,8 @@ func0000000000000044:                   # @func0000000000000044
 	fld	fa5, %lo(.LCPI6_0)(a1)
 	lui	a1, %hi(.LCPI6_1)
 	fld	fa4, %lo(.LCPI6_1)(a1)
-	not	a0, a0
 	flt.d	a1, fa5, fa0
+	not	a0, a0
 	not	a1, a1
 	flt.d	a2, fa4, fa0
 	or	a0, a0, a1

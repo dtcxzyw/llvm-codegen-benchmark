@@ -9,10 +9,10 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000051:                   # @func0000000000000051
 	add	a1, a1, a2
+	li	a2, 1
 	add	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 11
-	and	a0, a0, a1
+	slli	a2, a2, 11
+	and	a0, a0, a2
 	seqz	a0, a0
 	ret
 func0000000000000041:                   # @func0000000000000041
@@ -34,20 +34,20 @@ func00000000000000f1:                   # @func00000000000000f1
 	ret
 func0000000000000048:                   # @func0000000000000048
 	add	a1, a1, a2
+	li	a2, -1
 	add	a0, a0, a1
-	li	a1, -1
-	slli	a1, a1, 63
-	addi	a2, a1, 63
-	and	a0, a0, a2
-	sltu	a0, a1, a0
+	slli	a2, a2, 63
+	addi	a1, a2, 63
+	and	a0, a0, a1
+	sltu	a0, a2, a0
 	ret
 func00000000000000f4:                   # @func00000000000000f4
 	add	a1, a1, a2
+	lui	a2, 16
 	add	a0, a0, a1
-	lui	a1, 16
-	addiw	a1, a1, -8
-	and	a0, a0, a1
 	lui	a1, 4
+	addiw	a2, a2, -8
+	and	a0, a0, a2
 	addiw	a1, a1, 1192
 	sltu	a0, a0, a1
 	ret
@@ -61,11 +61,11 @@ func0000000000000058:                   # @func0000000000000058
 	ret
 func0000000000000008:                   # @func0000000000000008
 	add	a1, a1, a2
+	li	a2, 1
 	add	a0, a0, a1
 	andi	a0, a0, -4
-	li	a1, 1
-	slli	a1, a1, 34
-	sltu	a0, a1, a0
+	slli	a2, a2, 34
+	sltu	a0, a2, a0
 	ret
 func0000000000000011:                   # @func0000000000000011
 	add	a1, a1, a2
@@ -75,10 +75,10 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func0000000000000018:                   # @func0000000000000018
 	add	a1, a1, a2
+	li	a2, -1
 	add	a0, a0, a1
-	li	a1, -1
-	slli	a1, a1, 63
-	addi	a2, a1, 63
-	and	a0, a0, a2
-	sltu	a0, a1, a0
+	slli	a2, a2, 63
+	addi	a1, a2, 63
+	and	a0, a0, a1
+	sltu	a0, a2, a0
 	ret

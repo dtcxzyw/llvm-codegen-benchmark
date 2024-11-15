@@ -26,8 +26,8 @@ func000000000000001a:                   # @func000000000000001a
 func0000000000000118:                   # @func0000000000000118
 	slli	a2, a2, 2
 	sub	a0, a0, a1
-	sub	a0, a0, a2
 	lui	a1, 1
+	sub	a0, a0, a2
 	addiw	a1, a1, -4
 	sltu	a0, a1, a0
 	ret

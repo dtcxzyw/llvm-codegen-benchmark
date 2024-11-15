@@ -22,8 +22,8 @@ func0000000000000064:                   # @func0000000000000064
 	sext.w	a0, a0
 	andi	a1, a1, 30
 	slti	a0, a0, 0
-	xori	a0, a0, 1
 	addi	a1, a1, -30
+	xori	a0, a0, 1
 	snez	a1, a1
 	or	a0, a0, a1
 	ret
@@ -31,8 +31,8 @@ func000000000000006c:                   # @func000000000000006c
 	sext.w	a0, a0
 	andi	a1, a1, 31
 	slti	a0, a0, 0
-	xori	a0, a0, 1
 	addi	a1, a1, -6
+	xori	a0, a0, 1
 	snez	a1, a1
 	or	a0, a0, a1
 	ret

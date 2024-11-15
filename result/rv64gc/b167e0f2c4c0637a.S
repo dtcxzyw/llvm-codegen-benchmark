@@ -8,9 +8,9 @@ func00000000000000c2:                   # @func00000000000000c2
 	fmv.d	fa0, fa1
 .LBB0_2:                                # %entry
 	lui	a0, %hi(.LCPI0_0)
+	lui	a1, %hi(.LCPI0_1)
 	fld	fa5, %lo(.LCPI0_0)(a0)
-	lui	a0, %hi(.LCPI0_1)
-	fld	fa4, %lo(.LCPI0_1)(a0)
+	fld	fa4, %lo(.LCPI0_1)(a1)
 	flt.d	a0, fa0, fa5
 	fle.d	a1, fa4, fa0
 	and	a0, a0, a1
@@ -25,9 +25,9 @@ func0000000000000024:                   # @func0000000000000024
 	fmv.d	fa0, fa1
 .LBB1_2:                                # %entry
 	lui	a0, %hi(.LCPI1_0)
+	lui	a1, %hi(.LCPI1_1)
 	fld	fa5, %lo(.LCPI1_0)(a0)
-	lui	a0, %hi(.LCPI1_1)
-	fld	fa4, %lo(.LCPI1_1)(a0)
+	fld	fa4, %lo(.LCPI1_1)(a1)
 	flt.d	a0, fa5, fa0
 	flt.d	a1, fa0, fa4
 	and	a0, a0, a1
@@ -42,9 +42,9 @@ func000000000000002c:                   # @func000000000000002c
 	fmv.d	fa0, fa1
 .LBB2_2:                                # %entry
 	lui	a0, %hi(.LCPI2_0)
+	lui	a1, %hi(.LCPI2_1)
 	fld	fa5, %lo(.LCPI2_0)(a0)
-	lui	a0, %hi(.LCPI2_1)
-	fld	fa4, %lo(.LCPI2_1)(a0)
+	fld	fa4, %lo(.LCPI2_1)(a1)
 	fle.d	a0, fa5, fa0
 	flt.d	a1, fa0, fa4
 	and	a0, a0, a1
@@ -58,9 +58,9 @@ func0000000000000072:                   # @func0000000000000072
 .LBB3_2:                                # %entry
 	lui	a0, %hi(.LCPI3_0)
 	fld	fa5, %lo(.LCPI3_0)(a0)
-	flt.d	a0, fa0, fa5
-	fmv.d.x	fa5, zero
-	feq.d	a1, fa0, fa5
-	xori	a1, a1, 1
+	fmv.d.x	fa4, zero
+	feq.d	a0, fa0, fa4
+	flt.d	a1, fa0, fa5
+	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret

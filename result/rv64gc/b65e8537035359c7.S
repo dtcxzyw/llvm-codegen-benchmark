@@ -37,9 +37,9 @@ func00000000000000c2:                   # @func00000000000000c2
 	ret
 func0000000000000038:                   # @func0000000000000038
 	lui	a2, 96
+	addi	a0, a0, -104
 	and	a1, a1, a2
 	seqz	a1, a1
-	addi	a0, a0, -104
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
@@ -76,8 +76,8 @@ func0000000000000190:                   # @func0000000000000190
 	ret
 func0000000000000102:                   # @func0000000000000102
 	andi	a1, a1, 256
-	seqz	a1, a1
 	sltiu	a0, a0, 8
+	seqz	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -91,18 +91,18 @@ func0000000000000110:                   # @func0000000000000110
 func0000000000000030:                   # @func0000000000000030
 	lui	a2, 1
 	and	a1, a1, a2
-	seqz	a1, a1
 	lui	a2, 16
+	seqz	a1, a1
 	sltu	a0, a2, a0
 	or	a0, a0, a1
 	ret
 func0000000000000034:                   # @func0000000000000034
 	lui	a2, 4
+	slti	a0, a0, 509
 	addiw	a2, a2, -1
 	and	a1, a1, a2
 	xor	a1, a1, a2
 	seqz	a1, a1
-	slti	a0, a0, 509
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

@@ -1,9 +1,9 @@
 func0000000000000110:                   # @func0000000000000110
 	slli	a1, a1, 3
 	li	a2, -7
+	srli	a0, a0, 61
 	srli	a2, a2, 1
 	sltu	a1, a2, a1
-	srli	a0, a0, 61
 	snez	a0, a0
 	or	a0, a0, a1
 	ret

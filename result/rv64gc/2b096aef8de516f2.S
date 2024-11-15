@@ -1,7 +1,7 @@
 func00000000000000a1:                   # @func00000000000000a1
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	andi	a1, a1, 512
+	srai	a0, a0, 56
 	seqz	a1, a1
 	slti	a0, a0, 0
 	xori	a0, a0, 1
@@ -50,8 +50,8 @@ func000000000000008c:                   # @func000000000000008c
 	ret
 func0000000000000061:                   # @func0000000000000061
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	andi	a1, a1, 7
+	srai	a0, a0, 56
 	addi	a1, a1, -7
 	seqz	a1, a1
 	slti	a0, a0, 0
@@ -62,9 +62,9 @@ func0000000000000081:                   # @func0000000000000081
 	lui	a2, 8128
 	and	a1, a1, a2
 	lui	a2, 2432
+	sltiu	a0, a0, 2
 	xor	a1, a1, a2
 	seqz	a1, a1
-	sltiu	a0, a0, 2
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
@@ -77,8 +77,8 @@ func0000000000000044:                   # @func0000000000000044
 	ret
 func00000000000000ac:                   # @func00000000000000ac
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	andi	a1, a1, 3
+	srai	a0, a0, 56
 	snez	a1, a1
 	sgtz	a0, a0
 	and	a0, a0, a1

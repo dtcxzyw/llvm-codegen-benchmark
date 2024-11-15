@@ -32,8 +32,8 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func0000000000000010:                   # @func0000000000000010
 	andi	a1, a1, 255
-	sltiu	a1, a1, 64
 	lui	a2, 1
+	sltiu	a1, a1, 64
 	czero.nez	a1, a2, a1
 	lui	a2, 69760
 	or	a0, a0, a2

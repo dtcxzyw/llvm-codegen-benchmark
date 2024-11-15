@@ -1,8 +1,8 @@
 func0000000000000028:                   # @func0000000000000028
 	slli	a2, a1, 1
+	lui	a3, 699051
 	add	a1, a1, a2
-	lui	a2, 699051
-	addiw	a2, a2, -1365
+	addiw	a2, a3, -1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	sltu	a0, a2, a0
@@ -12,8 +12,8 @@ func0000000000000028:                   # @func0000000000000028
 func0000000000000008:                   # @func0000000000000008
 	slli	a2, a1, 3
 	slli	a1, a1, 6
-	sub	a1, a1, a2
 	srli	a0, a0, 61
+	sub	a1, a1, a2
 	seqz	a0, a0
 	addi	a0, a0, -1
 	or	a0, a0, a1

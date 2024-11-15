@@ -34,8 +34,8 @@ func000000000000000d:                   # @func000000000000000d
 func0000000000000000:                   # @func0000000000000000
 	lui	a3, 1048575
 	addiw	a4, a3, 3
-	and	a2, a2, a4
 	and	a1, a1, a3
+	and	a2, a2, a4
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

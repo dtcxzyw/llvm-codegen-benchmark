@@ -9,11 +9,11 @@ func00000000000000bd:                   # @func00000000000000bd
 	fld	fa4, %lo(.LCPI0_1)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfgt.vf	v16, v8, fa5
-	vmnot.m	v16, v16
 	vmflt.vf	v17, v8, fa4
-	vmandn.mm	v8, v0, v17
-	vmandn.mm	v9, v16, v0
-	vmor.mm	v0, v8, v9
+	vmnot.m	v8, v16
+	vmandn.mm	v9, v0, v17
+	vmandn.mm	v8, v8, v0
+	vmor.mm	v0, v9, v8
 	ret
 func000000000000004c:                   # @func000000000000004c
 	fmv.d.x	fa5, zero

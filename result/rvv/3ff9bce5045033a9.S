@@ -37,9 +37,9 @@ func0000000000000028:                   # @func0000000000000028
 	li	a0, 127
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
+	li	a0, 63
 	vmseq.vi	v12, v10, 15
 	vmor.mm	v10, v12, v0
-	li	a0, 63
 	vmsltu.vx	v11, v8, a0
 	vmand.mm	v0, v10, v11
 	ret

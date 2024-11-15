@@ -33,9 +33,9 @@ func000000000000000a:                   # @func000000000000000a
 	lui	a2, 9
 	addi	a2, a2, -340
 	mul	a1, a1, a2
+	lui	a2, 3
 	subw	a0, a0, a1
-	lui	a1, 3
-	addiw	a1, a1, -1273
+	addiw	a1, a2, -1273
 	slt	a0, a1, a0
 	ret
 func0000000000000004:                   # @func0000000000000004
@@ -51,9 +51,9 @@ func0000000000000004:                   # @func0000000000000004
 	lui	a2, 9
 	addi	a2, a2, -340
 	mul	a1, a1, a2
+	lui	a2, 3
 	subw	a0, a0, a1
-	lui	a1, 3
-	addiw	a1, a1, -966
+	addiw	a1, a2, -966
 	sltu	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c

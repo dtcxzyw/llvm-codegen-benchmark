@@ -2,8 +2,8 @@ func0000000000000024:                   # @func0000000000000024
 	fli.s	fa5, 1.0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vf	v16, v12, fa5
-	vmand.mm	v12, v16, v0
 	fmv.w.x	fa5, zero
+	vmand.mm	v12, v16, v0
 	vmfgt.vf	v13, v8, fa5
 	vmand.mm	v0, v13, v12
 	ret
@@ -11,8 +11,8 @@ func0000000000000042:                   # @func0000000000000042
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfgt.vf	v16, v12, fa5
-	vmand.mm	v12, v16, v0
 	fli.s	fa5, 1.0
+	vmand.mm	v12, v16, v0
 	vmflt.vf	v13, v8, fa5
 	vmand.mm	v0, v12, v13
 	ret
@@ -20,8 +20,8 @@ func0000000000000022:                   # @func0000000000000022
 	fli.s	fa5, 1.0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vf	v16, v12, fa5
-	vmand.mm	v12, v16, v0
 	fmv.w.x	fa5, zero
+	vmand.mm	v12, v16, v0
 	vmflt.vf	v13, v8, fa5
 	vmand.mm	v0, v12, v13
 	ret
@@ -45,8 +45,8 @@ func00000000000000ca:                   # @func00000000000000ca
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfge.vf	v16, v12, fa5
-	vmand.mm	v12, v16, v0
 	fli.s	fa5, 1.0
+	vmand.mm	v12, v16, v0
 	vmfle.vf	v13, v8, fa5
 	vmand.mm	v0, v12, v13
 	ret
@@ -76,13 +76,13 @@ func0000000000000044:                   # @func0000000000000044
 	ret
 func0000000000000063:                   # @func0000000000000063
 	fli.s	fa5, inf
+	lui	a0, 323584
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vf	v16, v12, fa5
 	vmfgt.vf	v17, v12, fa5
+	fmv.w.x	fa5, a0
 	vmor.mm	v12, v17, v16
 	vmand.mm	v12, v12, v0
-	lui	a0, 323584
-	fmv.w.x	fa5, a0
 	vmfge.vf	v13, v8, fa5
 	vmandn.mm	v0, v12, v13
 	ret
@@ -109,8 +109,8 @@ func00000000000000a4:                   # @func00000000000000a4
 	flw	fa5, %lo(.LCPI12_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfle.vf	v16, v12, fa5
-	vmand.mm	v12, v16, v0
 	fmv.w.x	fa5, zero
+	vmand.mm	v12, v16, v0
 	vmfgt.vf	v13, v8, fa5
 	vmand.mm	v0, v13, v12
 	ret
@@ -118,8 +118,8 @@ func0000000000000027:                   # @func0000000000000027
 	fli.s	fa5, 1.0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vf	v16, v12, fa5
-	vmand.mm	v12, v16, v0
 	fmv.w.x	fa5, zero
+	vmand.mm	v12, v16, v0
 	vmfne.vf	v13, v8, fa5
 	vmand.mm	v0, v13, v12
 	ret

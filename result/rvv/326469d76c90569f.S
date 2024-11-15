@@ -4,11 +4,11 @@ func00000000000000f4:                   # @func00000000000000f4
 	lui	a0, 2
 	addi	a0, a0, 1171
 	vmulhu.vx	v8, v10, a0
+	li	a0, 7
 	vsub.vv	v9, v10, v8
 	vsrl.vi	v9, v9, 1
 	vadd.vv	v8, v9, v8
 	vsrl.vi	v9, v8, 2
-	li	a0, 7
 	vnmsub.vx	v9, a0, v10
 	vmsleu.vi	v0, v9, 5
 	vmv.v.i	v8, 0

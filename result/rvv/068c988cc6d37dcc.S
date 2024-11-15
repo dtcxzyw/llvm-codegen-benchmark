@@ -29,9 +29,9 @@ func0000000000000196:                   # @func0000000000000196
 	lui	a0, 2441
 	addiw	a0, a0, 1664
 	vmv.v.x	v12, a0
+	lui	a0, 244
 	vmerge.vvm	v10, v12, v10, v0
 	vadd.vv	v8, v10, v8
-	lui	a0, 244
 	addiw	a0, a0, 576
 	vmslt.vx	v0, v8, a0
 	ret

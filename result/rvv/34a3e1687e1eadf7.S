@@ -115,9 +115,9 @@ func00000000000000aa:                   # @func00000000000000aa
 	ret
 func0000000000000088:                   # @func0000000000000088
 	li	a0, 160
+	li	a1, -34
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgtu.vx	v0, v12, a0
-	li	a1, -34
 	vmv.v.x	v14, a1
 	vmsgtu.vx	v12, v10, a0
 	vmerge.vim	v10, v14, 0, v0

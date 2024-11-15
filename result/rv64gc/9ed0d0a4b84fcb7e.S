@@ -7,14 +7,14 @@ func0000000000000034:                   # @func0000000000000034
 	slli	a2, a2, 48
 	srli	a2, a2, 49
 	add	a1, a1, a2
+	lui	a2, 16
+	addiw	a2, a2, -1
 	srli	a1, a1, 2
-	slli	a2, a1, 3
 	add	a0, a0, a1
-	sub	a0, a0, a2
-	lui	a1, 16
-	addiw	a1, a1, -1
-	and	a1, a1, a0
-	sltiu	a1, a1, 6
+	slli	a1, a1, 3
+	sub	a0, a0, a1
+	and	a2, a2, a0
+	sltiu	a1, a2, 6
 	addi	a0, a0, 1
 	neg	a1, a1
 	and	a0, a0, a1

@@ -14,9 +14,9 @@ func000000000000000c:                   # @func000000000000000c
 	vmsne.vi	v0, v8, 1
 	ret
 func0000000000000004:                   # @func0000000000000004
+	li	a0, 256
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vsrl.vi	v8, v10, 3, v0.t
-	li	a0, 256
 	vmsltu.vx	v0, v8, a0
 	ret
 func0000000000000006:                   # @func0000000000000006

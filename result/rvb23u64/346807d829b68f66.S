@@ -6,10 +6,10 @@ func0000000000000351:                   # @func0000000000000351
 	sh1add	a0, a2, a0
 	srai	a1, a1, 3
 	mul	a1, a1, a3
+	lui	a2, 36158
+	addiw	a2, a2, -848
 	add	a0, a0, a1
-	lui	a1, 36158
-	addiw	a1, a1, -848
-	slli	a2, a1, 28
+	slli	a1, a2, 28
 	add	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -38,10 +38,10 @@ func000000000000010a:                   # @func000000000000010a
 	ret
 func0000000000000054:                   # @func0000000000000054
 	slli	a2, a2, 12
-	add	a1, a1, a2
 	srai	a0, a0, 3
-	lui	a2, 699051
-	addiw	a2, a2, -1365
+	lui	a3, 699051
+	add	a1, a1, a2
+	addiw	a2, a3, -1365
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a0, a0, a2

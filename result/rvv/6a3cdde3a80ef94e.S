@@ -14,9 +14,9 @@ func000000000000014c:                   # @func000000000000014c
 	vadd.vx	v10, v10, a0
 	li	a0, -32
 	vmsltu.vx	v12, v10, a0
-	vmand.mm	v10, v12, v0
 	li	a0, 27
 	slli	a0, a0, 11
+	vmand.mm	v10, v12, v0
 	vmsne.vx	v11, v8, a0
 	vmand.mm	v0, v10, v11
 	ret
@@ -32,9 +32,9 @@ func0000000000000044:                   # @func0000000000000044
 func000000000000004c:                   # @func000000000000004c
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v10, v10, -13
+	li	a0, 2020
 	vmsleu.vi	v12, v10, 2
 	vmand.mm	v10, v12, v0
-	li	a0, 2020
 	vmsne.vx	v11, v8, a0
 	vmand.mm	v0, v11, v10
 	ret
@@ -61,8 +61,8 @@ func0000000000000048:                   # @func0000000000000048
 	lui	a0, 4
 	addi	a0, a0, 274
 	vmsltu.vx	v12, v10, a0
-	vmand.mm	v10, v12, v0
 	li	a0, 63
+	vmand.mm	v10, v12, v0
 	vmsgtu.vx	v11, v8, a0
 	vmand.mm	v0, v10, v11
 	ret

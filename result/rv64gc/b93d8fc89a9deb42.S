@@ -30,8 +30,8 @@ func00000000000000fc:                   # @func00000000000000fc
 	ret
 func00000000000000f1:                   # @func00000000000000f1
 	andi	a2, a2, 255
-	slli	a2, a2, 8
 	or	a0, a0, a1
+	slli	a2, a2, 8
 	or	a0, a0, a2
 	sext.w	a0, a0
 	lui	a1, 32
@@ -40,11 +40,11 @@ func00000000000000f1:                   # @func00000000000000f1
 	ret
 func00000000000000f8:                   # @func00000000000000f8
 	andi	a2, a2, 255
-	slli	a2, a2, 8
 	or	a0, a0, a1
+	lui	a1, 16
+	slli	a2, a2, 8
 	or	a0, a0, a2
 	sext.w	a0, a0
-	lui	a1, 16
 	addiw	a1, a1, 2
 	sltu	a0, a1, a0
 	ret

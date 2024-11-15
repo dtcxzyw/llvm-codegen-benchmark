@@ -3,8 +3,8 @@ func00000000000000a6:                   # @func00000000000000a6
 	vfmul.vv	v8, v8, v12
 	fli.s	fa5, 0.125
 	vmfge.vf	v12, v8, fa5
-	vmnot.m	v12, v12
 	fli.s	fa5, 8.0
+	vmnot.m	v12, v12
 	vmfle.vf	v13, v8, fa5
 	vmorn.mm	v0, v12, v13
 	ret

@@ -10,13 +10,13 @@ func0000000000000044:                   # @func0000000000000044
 	ret
 func0000000000000099:                   # @func0000000000000099
 	fsub.d	fa5, fa1, fa2
+	fli.d	fa4, inf
 	fclass.d	a0, fa5
+	flt.d	a1, fa0, fa4
+	flt.d	a2, fa4, fa0
 	andi	a0, a0, 897
-	snez	a0, a0
-	fli.d	fa5, inf
-	flt.d	a1, fa0, fa5
-	flt.d	a2, fa5, fa0
 	or	a1, a1, a2
+	snez	a0, a0
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret

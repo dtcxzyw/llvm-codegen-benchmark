@@ -12,8 +12,8 @@ func0000000000000000:                   # @func0000000000000000
 	vfmv.v.f	v0, fa5
 	vfmacc.vv	v0, v8, v24
 	vfmv.v.f	v24, fa4
-	vfmacc.vv	v24, v8, v0
 	fli.d	fa5, 1.0
+	vfmacc.vv	v24, v8, v0
 	vfmv.v.f	v0, fa5
 	vfmacc.vv	v0, v8, v16
 	vfdiv.vv	v8, v24, v0

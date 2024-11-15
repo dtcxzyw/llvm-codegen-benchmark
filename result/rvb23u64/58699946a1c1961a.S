@@ -1,8 +1,8 @@
 func000000000000003c:                   # @func000000000000003c
 	slli	a2, a2, 40
 	or	a0, a0, a1
-	or	a0, a0, a2
 	lui	a1, 196615
+	or	a0, a0, a2
 	slli	a1, a1, 12
 	addi	a1, a1, 5
 	slli	a1, a1, 16
@@ -12,8 +12,8 @@ func000000000000003c:                   # @func000000000000003c
 func000000000000003f:                   # @func000000000000003f
 	slli	a2, a2, 24
 	or	a0, a0, a1
-	or	a0, a0, a2
 	lui	a1, 123738
+	or	a0, a0, a2
 	addiw	a1, a1, 1981
 	mul	a0, a0, a1
 	ret

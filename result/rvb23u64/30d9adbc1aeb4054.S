@@ -33,8 +33,8 @@ func0000000000000043:                   # @func0000000000000043
 	ret
 func0000000000000195:                   # @func0000000000000195
 	sh2add	a2, a1, a1
-	sh2add	a1, a2, a1
 	andi	a0, a0, 255
+	sh2add	a1, a2, a1
 	add	a0, a0, a1
 	addi	a0, a0, -161
 	slli	a1, a0, 2

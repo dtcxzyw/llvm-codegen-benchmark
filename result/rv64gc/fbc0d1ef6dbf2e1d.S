@@ -20,8 +20,8 @@ func0000000000000024:                   # @func0000000000000024
 	ret
 func0000000000000001:                   # @func0000000000000001
 	slli	a1, a1, 48
-	srli	a1, a1, 48
 	li	a3, 27
+	srli	a1, a1, 48
 	slli	a3, a3, 11
 	beq	a1, a3, .LBB3_2
 	addi	a0, a2, -2

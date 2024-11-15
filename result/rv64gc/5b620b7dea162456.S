@@ -25,9 +25,9 @@ func000000000000003a:                   # @func000000000000003a
 func000000000000000a:                   # @func000000000000000a
 	slli	a2, a2, 2
 	li	a3, 16
+	slli	a0, a0, 3
 	sub	a3, a3, a2
 	slli	a3, a3, 3
-	slli	a0, a0, 3
 	add	a0, a0, a1
 	add	a0, a0, a3
 	ret

@@ -39,12 +39,12 @@ func00000000000000ba:                   # @func00000000000000ba
 	ret
 func0000000000000142:                   # @func0000000000000142
 	fmv.d.x	fa5, zero
-	fle.d	a0, fa1, fa5
-	feq.d	a1, fa1, fa1
-	feq.d	a2, fa0, fa0
-	and	a1, a1, a2
-	xori	a1, a1, 1
-	or	a0, a0, a1
+	feq.d	a0, fa1, fa1
+	feq.d	a1, fa0, fa0
+	fle.d	a2, fa1, fa5
+	and	a0, a0, a1
+	xori	a0, a0, 1
+	or	a0, a0, a2
 	ret
 .LCPI7_0:
 	.quad	0x3fe204189374bc6a              # double 0.56299999999999994

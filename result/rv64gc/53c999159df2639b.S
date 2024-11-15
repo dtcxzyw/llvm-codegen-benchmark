@@ -18,8 +18,8 @@ func00000000000000d5:                   # @func00000000000000d5
 	ret
 func00000000000000cc:                   # @func00000000000000cc
 	li	a2, 37
-	slli	a2, a2, 35
 	slli	a1, a1, 32
+	slli	a2, a2, 35
 	mulhu	a1, a1, a2
 	lui	a2, 2
 	addiw	a2, a2, 96
@@ -29,8 +29,8 @@ func00000000000000cc:                   # @func00000000000000cc
 	ret
 func00000000000000ff:                   # @func00000000000000ff
 	lui	a2, 13933
-	slli	a2, a2, 20
 	slli	a1, a1, 32
+	slli	a2, a2, 20
 	mulhu	a1, a1, a2
 	lui	a2, 11
 	addiw	a2, a2, 1815

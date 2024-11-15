@@ -19,8 +19,8 @@ func0000000000000198:                   # @func0000000000000198
 	ret
 func000000000000018c:                   # @func000000000000018c
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	sext.w	a1, a1
+	srai	a0, a0, 56
 	snez	a1, a1
 	slti	a0, a0, 0
 	or	a0, a0, a1
@@ -60,8 +60,8 @@ func0000000000000038:                   # @func0000000000000038
 	ret
 func0000000000000028:                   # @func0000000000000028
 	andi	a1, a1, 255
-	seqz	a1, a1
 	srliw	a0, a0, 16
+	seqz	a1, a1
 	seqz	a0, a0
 	or	a0, a0, a1
 	li	a1, 2

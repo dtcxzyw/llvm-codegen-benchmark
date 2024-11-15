@@ -3,9 +3,9 @@ func00000000000000c4:                   # @func00000000000000c4
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfadd.vf	v8, v8, fa5
 	fli.s	fa5, 128.0
+	lui	a0, 274400
 	fneg.s	fa5, fa5
 	vfmax.vf	v8, v8, fa5
-	lui	a0, 274400
 	fmv.w.x	fa5, a0
 	vmfgt.vf	v0, v8, fa5
 	ret

@@ -1,9 +1,9 @@
 func000000000000003c:                   # @func000000000000003c
 	addi	a1, a1, 3
-	slli	a1, a1, 32
-	srli	a1, a1, 31
 	li	a2, -1
+	slli	a1, a1, 32
 	srli	a2, a2, 32
+	srli	a1, a1, 31
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

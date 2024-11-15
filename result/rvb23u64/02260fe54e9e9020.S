@@ -18,9 +18,9 @@ func0000000000000031:                   # @func0000000000000031
 func000000000000003d:                   # @func000000000000003d
 	sh1add	a2, a2, a2
 	sh1add	a1, a2, a1
-	srli	a1, a1, 4
 	lui	a2, 61440
 	addiw	a2, a2, 15
+	srli	a1, a1, 4
 	slli	a2, a2, 24
 	addi	a2, a2, 15
 	and	a1, a1, a2

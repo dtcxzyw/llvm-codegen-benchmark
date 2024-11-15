@@ -3,9 +3,9 @@ func00000000000002b8:                   # @func00000000000002b8
 	vmsgt.vi	v0, v10, -1
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.i	v10, 0
+	li	a0, 96
 	vmerge.vim	v10, v10, 1, v0
 	vadd.vv	v8, v8, v10
-	li	a0, 96
 	vadd.vx	v8, v8, a0
 	li	a0, 254
 	vmsgtu.vx	v0, v8, a0

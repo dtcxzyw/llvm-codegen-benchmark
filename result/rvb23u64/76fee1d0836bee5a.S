@@ -38,11 +38,11 @@ func000000000000001c:                   # @func000000000000001c
 	addi	a2, a2, -1
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2
+	lui	a2, 16
 	or	a0, a0, a1
 	zext.h	a0, a0
-	lui	a1, 16
-	addiw	a1, a1, -1
-	xor	a0, a0, a1
+	addiw	a2, a2, -1
+	xor	a0, a0, a2
 	snez	a0, a0
 	ret
 func00000000000000a1:                   # @func00000000000000a1

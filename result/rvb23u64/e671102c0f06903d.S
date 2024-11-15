@@ -1,8 +1,8 @@
 func0000000000000238:                   # @func0000000000000238
 	or	a1, a1, a2
+	addi	a0, a0, 1
 	sext.w	a1, a1
 	snez	a1, a1
-	addi	a0, a0, 1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
@@ -16,10 +16,10 @@ func0000000000000298:                   # @func0000000000000298
 	ret
 func0000000000000382:                   # @func0000000000000382
 	or	a1, a1, a2
+	addi	a0, a0, -16
 	sext.w	a1, a1
 	addi	a1, a1, -2
 	snez	a1, a1
-	addi	a0, a0, -16
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

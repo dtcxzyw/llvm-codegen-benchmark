@@ -1,10 +1,10 @@
 func0000000000000018:                   # @func0000000000000018
 	addi	a1, a1, 1
-	slli	a1, a1, 32
-	srli	a1, a1, 32
 	srai	a0, a0, 3
 	lui	a2, 699051
+	slli	a1, a1, 32
 	addiw	a2, a2, -1365
+	srli	a1, a1, 32
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a0, a0, a2
@@ -12,11 +12,11 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 func0000000000000011:                   # @func0000000000000011
 	addi	a1, a1, 1
-	slli	a1, a1, 32
-	srli	a1, a1, 32
 	srai	a0, a0, 3
 	lui	a2, 618391
+	slli	a1, a1, 32
 	addiw	a2, a2, -105
+	srli	a1, a1, 32
 	slli	a3, a2, 36
 	add	a2, a2, a3
 	mul	a0, a0, a2
@@ -50,11 +50,11 @@ func00000000000000f4:                   # @func00000000000000f4
 	ret
 func0000000000000014:                   # @func0000000000000014
 	addi	a1, a1, 1
-	slli	a1, a1, 32
-	srli	a1, a1, 32
 	srai	a0, a0, 3
 	lui	a2, 699051
+	slli	a1, a1, 32
 	addiw	a2, a2, -1365
+	srli	a1, a1, 32
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a0, a0, a2
@@ -82,11 +82,11 @@ func0000000000000078:                   # @func0000000000000078
 	ret
 func0000000000000058:                   # @func0000000000000058
 	addi	a1, a1, -64
-	slli	a1, a1, 32
-	srli	a1, a1, 32
 	srai	a0, a0, 3
 	lui	a2, 838861
+	slli	a1, a1, 32
 	addiw	a2, a2, -819
+	srli	a1, a1, 32
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a0, a0, a2
@@ -125,11 +125,11 @@ func00000000000000f1:                   # @func00000000000000f1
 	ret
 func0000000000000015:                   # @func0000000000000015
 	addi	a1, a1, 1
-	slli	a1, a1, 32
-	srli	a1, a1, 32
 	srai	a0, a0, 3
 	lui	a2, 699051
+	slli	a1, a1, 32
 	addiw	a2, a2, -1365
+	srli	a1, a1, 32
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a0, a0, a2
@@ -138,21 +138,21 @@ func0000000000000015:                   # @func0000000000000015
 	ret
 func0000000000000004:                   # @func0000000000000004
 	addi	a1, a1, 1
-	slli	a1, a1, 32
-	srli	a1, a1, 32
 	srai	a2, a0, 63
+	slli	a1, a1, 32
 	srli	a2, a2, 61
+	srli	a1, a1, 32
 	add	a0, a0, a2
 	srai	a0, a0, 3
 	sltu	a0, a0, a1
 	ret
 func0000000000000098:                   # @func0000000000000098
 	addi	a1, a1, 1
-	slli	a1, a1, 32
-	srli	a1, a1, 32
 	srai	a0, a0, 5
 	lui	a2, 748983
+	slli	a1, a1, 32
 	addiw	a2, a2, -585
+	srli	a1, a1, 32
 	slli	a3, a2, 33
 	add	a2, a2, a3
 	mul	a0, a0, a2

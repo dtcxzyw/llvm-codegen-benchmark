@@ -10,10 +10,10 @@ func0000000000000045:                   # @func0000000000000045
 	sext.w	a1, a1
 	li	a3, -2
 	zext.w	a3, a3
-	sltu	a2, a3, a2
 	sltu	a0, a1, a0
+	sltu	a1, a3, a2
 	xori	a0, a0, 1
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 func0000000000000087:                   # @func0000000000000087
 	sext.w	a0, a0

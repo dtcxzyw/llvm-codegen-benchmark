@@ -28,9 +28,9 @@ func000000000000030a:                   # @func000000000000030a
 func000000000000000a:                   # @func000000000000000a
 	sh2add	a2, a2, a2
 	sh1add	a1, a2, a1
+	lui	a2, 1
 	addw	a0, a0, a1
-	lui	a1, 1
-	addiw	a1, a1, -2001
+	addiw	a1, a2, -2001
 	slt	a0, a1, a0
 	ret
 func0000000000000001:                   # @func0000000000000001
@@ -56,10 +56,10 @@ func000000000000015a:                   # @func000000000000015a
 func000000000000010a:                   # @func000000000000010a
 	slli	a3, a2, 2
 	slli	a2, a2, 6
-	subw	a2, a2, a3
 	add	a0, a0, a1
-	addw	a0, a0, a2
 	lui	a1, 21
+	subw	a2, a2, a3
+	addw	a0, a0, a2
 	addiw	a1, a1, 383
 	slt	a0, a1, a0
 	ret
@@ -73,11 +73,11 @@ func0000000000000106:                   # @func0000000000000106
 	ret
 func0000000000000004:                   # @func0000000000000004
 	lui	a3, 2
+	add	a0, a0, a1
+	lui	a1, 20
 	addi	a3, a3, 1808
 	mul	a2, a2, a3
-	add	a0, a0, a1
 	addw	a0, a0, a2
-	lui	a1, 20
 	addiw	a1, a1, -1717
 	sltu	a0, a0, a1
 	ret
@@ -118,9 +118,9 @@ func00000000000003f4:                   # @func00000000000003f4
 	sh2add	a2, a2, a2
 	sh2add	a2, a2, a2
 	sh2add	a1, a2, a1
+	lui	a2, 2
 	addw	a0, a0, a1
-	lui	a1, 2
-	addiw	a1, a1, 1809
+	addiw	a1, a2, 1809
 	sltu	a0, a0, a1
 	ret
 func00000000000003f8:                   # @func00000000000003f8
@@ -153,10 +153,10 @@ func0000000000000354:                   # @func0000000000000354
 	ret
 func0000000000000114:                   # @func0000000000000114
 	li	a3, -192
-	mul	a2, a2, a3
 	add	a0, a0, a1
-	addw	a0, a0, a2
 	lui	a1, 2
+	mul	a2, a2, a3
+	addw	a0, a0, a2
 	addiw	a1, a1, -323
 	sltu	a0, a0, a1
 	ret

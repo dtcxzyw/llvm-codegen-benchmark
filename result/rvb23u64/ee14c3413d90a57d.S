@@ -31,8 +31,8 @@ func0000000000000023:                   # @func0000000000000023
 	ret
 func000000000000001b:                   # @func000000000000001b
 	sext.w	a2, a2
-	srli	a2, a2, 31
 	lui	a3, 524160
+	srli	a2, a2, 31
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

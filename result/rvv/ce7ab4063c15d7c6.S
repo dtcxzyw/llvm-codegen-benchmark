@@ -7,9 +7,9 @@ func0000000000000000:                   # @func0000000000000000
 	vmulh.vx	v8, v8, a0
 	li	a0, 63
 	vsrl.vx	v10, v8, a0
+	lui	a0, 524288
 	vsra.vi	v8, v8, 18
 	vadd.vv	v8, v8, v10
-	lui	a0, 524288
 	addiw	a0, a0, -1
 	vmin.vx	v8, v8, a0
 	ret

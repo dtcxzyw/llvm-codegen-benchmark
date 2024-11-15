@@ -92,9 +92,9 @@ func0000000000000019:                   # @func0000000000000019
 	ret
 func0000000000000022:                   # @func0000000000000022
 	zext.h	a1, a1
+	lui	a2, 16
 	sltiu	a1, a1, 2
 	xori	a1, a1, 1
-	lui	a2, 16
 	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret

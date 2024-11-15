@@ -2,9 +2,9 @@ func0000000000000030:                   # @func0000000000000030
 	andi	a1, a1, 255
 	li	a2, 272
 	mul	a1, a1, a2
+	lui	a2, 3
 	add	a0, a0, a1
-	lui	a1, 3
-	addiw	a1, a1, -224
+	addiw	a1, a2, -224
 	add	a0, a0, a1
 	ret
 func0000000000000038:                   # @func0000000000000038
@@ -41,8 +41,8 @@ func00000000000000b8:                   # @func00000000000000b8
 	ret
 func00000000000000a8:                   # @func00000000000000a8
 	andi	a1, a1, 255
-	addi	a1, a1, -1
 	li	a2, 9
+	addi	a1, a1, -1
 	slli	a2, a2, 36
 	slli	a1, a1, 32
 	mulhu	a1, a1, a2

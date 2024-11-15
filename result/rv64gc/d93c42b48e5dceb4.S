@@ -23,8 +23,8 @@ func00000000000000ca:                   # @func00000000000000ca
 	ret
 func000000000000004a:                   # @func000000000000004a
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	sext.w	a2, a2
+	srai	a0, a0, 56
 	sltu	a1, a1, a2
 	slti	a0, a0, 0
 	not	a0, a0

@@ -3,12 +3,12 @@
 func0000000000000084:                   # @func0000000000000084
 	lui	a1, %hi(.LCPI0_0)
 	flw	fa5, %lo(.LCPI0_0)(a1)
-	flt.s	a1, fa1, fa5
-	lui	a2, 210944
-	fmv.w.x	fa5, a2
-	flt.s	a2, fa0, fa5
-	or	a0, a0, a2
+	lui	a1, 210944
+	fmv.w.x	fa4, a1
+	flt.s	a1, fa0, fa4
+	flt.s	a2, fa1, fa5
 	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 func0000000000000210:                   # @func0000000000000210
 	fli.s	fa5, 1.0
@@ -19,11 +19,11 @@ func0000000000000210:                   # @func0000000000000210
 	ret
 func00000000000002d6:                   # @func00000000000002d6
 	fmv.w.x	fa5, zero
-	flt.s	a1, fa5, fa1
-	xori	a1, a1, 1
-	or	a0, a0, a1
 	lui	a1, 274624
+	flt.s	a2, fa5, fa1
 	fmv.w.x	fa5, a1
+	xori	a1, a2, 1
+	or	a0, a0, a1
 	flt.s	a1, fa5, fa0
 	xori	a1, a1, 1
 	or	a0, a0, a1
@@ -59,11 +59,11 @@ func00000000000000c6:                   # @func00000000000000c6
 func0000000000000110:                   # @func0000000000000110
 	lui	a1, %hi(.LCPI6_0)
 	flw	fa5, %lo(.LCPI6_0)(a1)
-	flt.s	a1, fa5, fa1
-	fmv.w.x	fa5, zero
-	feq.s	a2, fa0, fa5
-	or	a0, a0, a2
+	fmv.w.x	fa4, zero
+	feq.s	a1, fa0, fa4
+	flt.s	a2, fa5, fa1
 	or	a0, a0, a1
+	or	a0, a0, a2
 	ret
 func0000000000000108:                   # @func0000000000000108
 	lui	a1, 212992
@@ -76,9 +76,9 @@ func0000000000000108:                   # @func0000000000000108
 func00000000000001ce:                   # @func00000000000001ce
 	fmv.w.x	fa5, zero
 	feq.s	a1, fa1, fa5
+	fli.s	fa5, 1.0
 	xori	a1, a1, 1
 	or	a0, a0, a1
-	fli.s	fa5, 1.0
 	feq.s	a1, fa0, fa5
 	xori	a1, a1, 1
 	or	a0, a0, a1
@@ -108,9 +108,9 @@ func00000000000000d4:                   # @func00000000000000d4
 	ret
 func0000000000000060:                   # @func0000000000000060
 	feq.s	a1, fa1, fa1
+	fli.s	fa5, inf
 	xori	a1, a1, 1
 	or	a0, a0, a1
-	fli.s	fa5, inf
 	feq.s	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
@@ -119,8 +119,8 @@ func0000000000000260:                   # @func0000000000000260
 	flt.s	a1, fa1, fa5
 	flt.s	a2, fa5, fa1
 	or	a1, a1, a2
-	xori	a1, a1, 1
 	feq.s	a2, fa0, fa5
+	xori	a1, a1, 1
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -134,9 +134,9 @@ func0000000000000202:                   # @func0000000000000202
 	ret
 func0000000000000050:                   # @func0000000000000050
 	feq.s	a1, fa1, fa1
+	fli.s	fa5, inf
 	xori	a1, a1, 1
 	or	a0, a0, a1
-	fli.s	fa5, inf
 	feq.s	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
@@ -144,19 +144,19 @@ func0000000000000258:                   # @func0000000000000258
 	fli.s	fa5, inf
 	flt.s	a1, fa1, fa5
 	flt.s	a2, fa5, fa1
-	or	a1, a1, a2
-	xori	a1, a1, 1
 	fli.s	fa5, 128.0
+	or	a1, a1, a2
 	fle.s	a2, fa5, fa0
+	xori	a1, a1, 1
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func00000000000000ca:                   # @func00000000000000ca
 	fmv.w.x	fa5, zero
 	fle.s	a1, fa5, fa1
+	fli.s	fa5, 1.0
 	xori	a1, a1, 1
 	or	a0, a0, a1
-	fli.s	fa5, 1.0
 	fle.s	a1, fa0, fa5
 	xori	a1, a1, 1
 	or	a0, a0, a1
@@ -173,16 +173,16 @@ func0000000000000154:                   # @func0000000000000154
 func0000000000000104:                   # @func0000000000000104
 	fli.s	fa5, 1.0
 	flt.s	a1, fa5, fa1
-	or	a0, a0, a1
 	fmv.w.x	fa5, zero
+	or	a0, a0, a1
 	flt.s	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
 func00000000000001d0:                   # @func00000000000001d0
 	fli.s	fa5, inf
 	feq.s	a1, fa1, fa5
-	xori	a1, a1, 1
 	feq.s	a2, fa0, fa5
+	xori	a1, a1, 1
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret

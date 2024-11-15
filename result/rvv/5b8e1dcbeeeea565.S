@@ -19,8 +19,8 @@ func0000000000000006:                   # @func0000000000000006
 	vmandn.mm	v0, v10, v0
 	ret
 func0000000000000004:                   # @func0000000000000004
+	li	a0, 53
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmax.vx	v8, v10, zero, v0.t
-	li	a0, 53
 	vmsltu.vx	v0, v8, a0
 	ret

@@ -44,8 +44,8 @@ func0000000000000058:                   # @func0000000000000058
 func0000000000000064:                   # @func0000000000000064
 	andi	a0, a0, 1
 	lui	a2, 264192
-	addw	a2, a2, a1
 	lui	a3, 784384
+	addw	a2, a2, a1
 	subw	a3, a3, a1
 	czero.nez	a1, a2, a0
 	czero.eqz	a0, a3, a0
@@ -55,8 +55,8 @@ func0000000000000064:                   # @func0000000000000064
 func0000000000000024:                   # @func0000000000000024
 	andi	a0, a0, 1
 	lui	a2, 264192
-	addw	a2, a2, a1
 	lui	a3, 784384
+	addw	a2, a2, a1
 	subw	a3, a3, a1
 	czero.nez	a1, a2, a0
 	czero.eqz	a0, a3, a0

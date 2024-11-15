@@ -1,10 +1,10 @@
 func000000000000010c:                   # @func000000000000010c
 	lui	a3, 16
+	slli	a0, a0, 48
 	addiw	a3, a3, -1
+	srai	a0, a0, 48
 	and	a1, a1, a3
 	and	a2, a2, a3
-	slli	a0, a0, 48
-	srai	a0, a0, 48
 	sltu	a1, a2, a1
 	slti	a0, a0, 0
 	or	a0, a0, a1
@@ -16,10 +16,10 @@ func0000000000000022:                   # @func0000000000000022
 	and	a0, a0, a3
 	and	a2, a2, a3
 	addi	a2, a2, -126
-	seqz	a2, a2
 	xor	a0, a0, a1
+	seqz	a1, a2
 	seqz	a0, a0
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 func0000000000000182:                   # @func0000000000000182
 	lui	a3, 16
@@ -34,11 +34,11 @@ func0000000000000182:                   # @func0000000000000182
 	ret
 func000000000000018c:                   # @func000000000000018c
 	lui	a3, 16
+	slli	a0, a0, 48
 	addiw	a3, a3, -1
+	srai	a0, a0, 48
 	and	a2, a2, a3
 	and	a1, a1, a3
-	slli	a0, a0, 48
-	srai	a0, a0, 48
 	xor	a1, a1, a2
 	snez	a1, a1
 	slti	a0, a0, 0

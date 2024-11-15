@@ -5,8 +5,8 @@ func0000000000000111:                   # @func0000000000000111
 func0000000000000141:                   # @func0000000000000141
 	sext.w	a0, a0
 	addi	a1, a0, -6
-	snez	a1, a1
 	sltiu	a0, a0, 2
+	snez	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
 	ret

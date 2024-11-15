@@ -37,25 +37,25 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func0000000000000004:                   # @func0000000000000004
 	srli	a1, a0, 32
-	czero.eqz	a0, a0, a1
 	lui	a2, 16
+	czero.eqz	a0, a0, a1
 	addiw	a2, a2, -3
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret
 func0000000000000024:                   # @func0000000000000024
 	sltiu	a1, a0, 2
-	czero.nez	a0, a0, a1
 	li	a2, 7
+	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret
 func0000000000000021:                   # @func0000000000000021
 	li	a1, -1
+	li	a2, -4
 	srli	a1, a1, 32
 	xor	a1, a1, a0
 	czero.eqz	a0, a0, a1
-	li	a2, -4
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret

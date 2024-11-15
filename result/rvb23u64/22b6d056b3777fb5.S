@@ -31,9 +31,9 @@ func0000000000000015:                   # @func0000000000000015
 	andi	a2, a2, 1
 	lui	a3, 51
 	czero.nez	a2, a3, a2
+	lui	a3, 95
 	add	a1, a1, a2
-	lui	a2, 95
-	addi	a2, a2, -972
+	addi	a2, a3, -972
 	addw	a1, a1, a2
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
@@ -43,9 +43,9 @@ func0000000000000018:                   # @func0000000000000018
 	andi	a2, a2, 1
 	lui	a3, 51
 	czero.nez	a2, a3, a2
+	lui	a3, 95
 	add	a1, a1, a2
-	lui	a2, 95
-	addi	a2, a2, -940
+	addi	a2, a3, -940
 	addw	a1, a1, a2
 	sltu	a0, a0, a1
 	ret

@@ -9,10 +9,10 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func0000000000000018:                   # @func0000000000000018
 	lui	a0, 14
-	addi	a0, a0, -1024
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmseq.vx	v0, v10, a0
 	vsrl.vi	v8, v8, 6
+	addi	a0, a0, -1024
+	vmseq.vx	v0, v10, a0
 	li	a0, 1023
 	vmerge.vxm	v8, v8, a0, v0
 	ret

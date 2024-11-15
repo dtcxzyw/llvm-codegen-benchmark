@@ -30,8 +30,8 @@ func0000000000000051:                   # @func0000000000000051
 	ret
 func00000000000000c1:                   # @func00000000000000c1
 	lui	a3, 1048560
-	addw	a2, a2, a3
 	negw	a0, a0
+	addw	a2, a2, a3
 	xor	a0, a0, a2
 	seqz	a0, a0
 	xori	a1, a1, 1

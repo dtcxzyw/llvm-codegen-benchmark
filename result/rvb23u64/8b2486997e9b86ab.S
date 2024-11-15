@@ -6,9 +6,9 @@
 	.quad	0x3fefae147ae147ae              # double 0.98999999999999999
 func0000000000000084:                   # @func0000000000000084
 	lui	a0, %hi(.LCPI0_0)
+	lui	a1, %hi(.LCPI0_1)
 	fld	fa5, %lo(.LCPI0_0)(a0)
-	lui	a0, %hi(.LCPI0_1)
-	fld	fa4, %lo(.LCPI0_1)(a0)
+	fld	fa4, %lo(.LCPI0_1)(a1)
 	flt.d	a0, fa5, fa0
 	flt.d	a1, fa0, fa4
 	or	a0, a0, a1

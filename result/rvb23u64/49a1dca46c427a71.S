@@ -3,9 +3,9 @@ func0000000000000014:                   # @func0000000000000014
 	lui	a2, 838861
 	addi	a2, a2, -819
 	mul	a1, a1, a2
-	roriw	a1, a1, 1
 	lui	a2, 104858
 	addiw	a2, a2, -1638
+	roriw	a1, a1, 1
 	sltu	a1, a1, a2
 	sltiu	a0, a0, 50
 	and	a0, a0, a1
@@ -15,9 +15,9 @@ func00000000000000c1:                   # @func00000000000000c1
 	lui	a2, 796918
 	addi	a2, a2, -983
 	mul	a1, a1, a2
-	roriw	a1, a1, 2
 	lui	a2, 10486
 	addiw	a2, a2, -984
+	roriw	a1, a1, 2
 	sltu	a1, a2, a1
 	seqz	a0, a0
 	and	a0, a0, a1
@@ -27,9 +27,9 @@ func000000000000001c:                   # @func000000000000001c
 	lui	a2, 796918
 	addi	a2, a2, -983
 	mul	a1, a1, a2
-	roriw	a1, a1, 1
 	lui	a2, 20972
 	addiw	a2, a2, -1966
+	roriw	a1, a1, 1
 	sltu	a1, a1, a2
 	snez	a0, a0
 	and	a0, a0, a1
@@ -40,9 +40,9 @@ func00000000000000c8:                   # @func00000000000000c8
 	lui	a2, 978671
 	addi	a2, a2, -273
 	mul	a1, a1, a2
-	roriw	a1, a1, 2
 	lui	a2, 17476
 	addiw	a2, a2, 1091
+	roriw	a1, a1, 2
 	sltu	a1, a2, a1
 	lui	a2, 244141
 	addiw	a2, a2, -1537
@@ -54,9 +54,9 @@ func0000000000000018:                   # @func0000000000000018
 	lui	a2, 838861
 	addi	a2, a2, -819
 	mul	a1, a1, a2
-	roriw	a1, a1, 1
 	lui	a2, 104858
 	addiw	a2, a2, -1638
+	roriw	a1, a1, 1
 	sltu	a1, a1, a2
 	sltiu	a0, a0, 10
 	andn	a0, a1, a0
@@ -67,9 +67,9 @@ func0000000000000011:                   # @func0000000000000011
 	addi	a3, a3, 1881
 	slli	a3, a3, 32
 	mulhu	a2, a2, a3
-	srli	a2, a2, 45
 	lui	a3, 2
 	addi	a3, a3, 1808
+	srli	a2, a2, 45
 	mul	a2, a2, a3
 	subw	a1, a1, a2
 	xori	a0, a0, 2

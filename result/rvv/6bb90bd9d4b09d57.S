@@ -12,8 +12,8 @@ func0000000000000ccc:                   # @func0000000000000ccc
 	vmsne.vx	v14, v12, a0
 	li	a0, 238
 	vmsne.vx	v12, v10, a0
-	vmand.mm	v10, v12, v14
 	li	a0, 164
+	vmand.mm	v10, v12, v14
 	vmsne.vx	v11, v8, a0
 	vmand.mm	v0, v11, v10
 	ret

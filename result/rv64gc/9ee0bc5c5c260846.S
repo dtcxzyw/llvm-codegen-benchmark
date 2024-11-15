@@ -19,8 +19,8 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func000000000000000a:                   # @func000000000000000a
 	subw	a2, a2, a1
-	addw	a0, a0, a2
 	lui	a1, 131072
+	addw	a0, a0, a2
 	addiw	a1, a1, -1
 	slt	a0, a1, a0
 	ret
@@ -54,8 +54,8 @@ func000000000000000c:                   # @func000000000000000c
 	ret
 func000000000000003a:                   # @func000000000000003a
 	subw	a2, a2, a1
-	addw	a0, a0, a2
 	lui	a1, 1
+	addw	a0, a0, a2
 	addiw	a1, a1, -1
 	slt	a0, a1, a0
 	ret

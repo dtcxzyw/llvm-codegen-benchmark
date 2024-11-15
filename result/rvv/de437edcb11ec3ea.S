@@ -9,8 +9,8 @@ func0000000000000008:                   # @func0000000000000008
 func00000000000000e8:                   # @func00000000000000e8
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vi	v8, v8, -16
-	vadd.vv	v8, v10, v8
 	li	a0, 16
+	vadd.vv	v8, v10, v8
 	vadd.vx	v8, v8, a0
 	li	a0, -31
 	srli	a0, a0, 1
@@ -38,8 +38,8 @@ func00000000000000d4:                   # @func00000000000000d4
 	slli	a0, a0, 8
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
-	vadd.vv	v8, v8, v10
 	lui	a0, 1048575
+	vadd.vv	v8, v8, v10
 	addiw	a0, a0, 2047
 	vadd.vx	v8, v8, a0
 	vmsleu.vi	v0, v8, 1
@@ -83,8 +83,8 @@ func0000000000000056:                   # @func0000000000000056
 	li	a0, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
-	vadd.vv	v8, v8, v10
 	li	a0, -31
+	vadd.vv	v8, v8, v10
 	vadd.vx	v8, v8, a0
 	li	a0, 32
 	vmslt.vx	v0, v8, a0

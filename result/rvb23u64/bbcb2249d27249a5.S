@@ -29,9 +29,9 @@ func0000000000000010:                   # @func0000000000000010
 	ret
 func0000000000000018:                   # @func0000000000000018
 	add	a1, a1, a2
+	lui	a2, 815559
 	subw	a0, a0, a1
-	lui	a1, 815559
-	addiw	a1, a1, 455
+	addiw	a1, a2, 455
 	mul	a0, a0, a1
 	srli	a1, a0, 63
 	srai	a0, a0, 33
@@ -39,9 +39,9 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 func0000000000000002:                   # @func0000000000000002
 	add	a1, a1, a2
+	lui	a2, 599186
 	subw	a0, a0, a1
-	lui	a1, 599186
-	addiw	a1, a1, 1171
+	addiw	a1, a2, 1171
 	mul	a1, a1, a0
 	srli	a1, a1, 32
 	add	a0, a0, a1

@@ -22,9 +22,9 @@ func0000000000000020:                   # @func0000000000000020
 	xor	a1, a1, a3
 	sub	a1, a1, a3
 	mulhu	a1, a1, a2
-	srli	a1, a1, 18
 	li	a2, 1
 	slli	a2, a2, 32
+	srli	a1, a1, 18
 	addi	a2, a2, -1000
 	mul	a1, a1, a2
 	add	a0, a0, a1
@@ -38,9 +38,9 @@ func000000000000002a:                   # @func000000000000002a
 	xor	a1, a1, a3
 	sub	a1, a1, a3
 	mulhu	a1, a1, a2
-	srli	a1, a1, 31
 	li	a2, 1
 	slli	a2, a2, 32
+	srli	a1, a1, 31
 	addi	a2, a2, -60
 	mul	a1, a1, a2
 	add	a0, a0, a1
@@ -54,9 +54,9 @@ func000000000000002f:                   # @func000000000000002f
 	xor	a1, a1, a3
 	sub	a1, a1, a3
 	mulhu	a1, a1, a2
-	srli	a1, a1, 34
 	li	a2, 1
 	slli	a2, a2, 32
+	srli	a1, a1, 34
 	addi	a2, a2, -24
 	mul	a1, a1, a2
 	add	a0, a0, a1

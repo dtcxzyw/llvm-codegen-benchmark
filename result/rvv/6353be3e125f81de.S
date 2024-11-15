@@ -65,8 +65,8 @@ func000000000000003c:                   # @func000000000000003c
 	addiw	a0, a0, -1904
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v10, v10, a0
-	vsub.vv	v8, v10, v8
 	lui	a0, 29
+	vsub.vv	v8, v10, v8
 	addiw	a0, a0, 288
 	vadd.vx	v8, v8, a0
 	ret

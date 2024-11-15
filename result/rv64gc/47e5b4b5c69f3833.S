@@ -19,9 +19,9 @@ func0000000000000020:                   # @func0000000000000020
 	ret
 func000000000000002a:                   # @func000000000000002a
 	add	a1, a1, a2
+	lui	a2, 1048570
 	add	a0, a0, a1
-	lui	a1, 1048570
-	addi	a1, a1, 66
+	addi	a1, a2, 66
 	add	a0, a0, a1
 	slli	a0, a0, 32
 	srli	a0, a0, 32

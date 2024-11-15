@@ -43,8 +43,8 @@ func00000000000000da:                   # @func00000000000000da
 	ret
 func0000000000000050:                   # @func0000000000000050
 	sh2add	a2, a2, a2
-	sh2add	a0, a2, a0
 	neg	a1, a1
+	sh2add	a0, a2, a0
 	sh2add	a1, a1, a1
 	sh2add	a0, a1, a0
 	addi	a0, a0, -20

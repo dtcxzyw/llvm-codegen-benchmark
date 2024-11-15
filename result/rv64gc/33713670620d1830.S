@@ -23,8 +23,8 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func0000000000000081:                   # @func0000000000000081
 	slli	a0, a0, 63
-	srai	a0, a0, 63
 	lui	a2, 524288
+	srai	a0, a0, 63
 	addi	a2, a2, 1
 	and	a0, a0, a2
 	addw	a0, a0, a1
@@ -59,12 +59,12 @@ func000000000000005a:                   # @func000000000000005a
 	ret
 func0000000000000008:                   # @func0000000000000008
 	slli	a0, a0, 63
-	srai	a0, a0, 63
 	lui	a2, 976563
+	srai	a0, a0, 63
 	addi	a2, a2, -2048
 	and	a0, a0, a2
+	lui	a2, 976562
 	addw	a0, a0, a1
-	lui	a1, 976562
-	addiw	a1, a1, 2047
+	addiw	a1, a2, 2047
 	sltu	a0, a1, a0
 	ret

@@ -21,9 +21,9 @@ func0000000000000005:                   # @func0000000000000005
 	vmul.vx	v8, v8, a0
 	ret
 func0000000000000004:                   # @func0000000000000004
+	lui	a0, 75
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vadd.vi	v8, v8, 12, v0.t
-	lui	a0, 75
 	addi	a0, a0, -1199
 	vmul.vx	v8, v8, a0
 	ret

@@ -28,10 +28,10 @@ func0000000000000702:                   # @func0000000000000702
 	ret
 func0000000000001042:                   # @func0000000000001042
 	lui	a3, 524288
-	addiw	a3, a3, 1
-	sltu	a2, a2, a3
 	seqz	a1, a1
 	seqz	a0, a0
+	addiw	a3, a3, 1
+	sltu	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

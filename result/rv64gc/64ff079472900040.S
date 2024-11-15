@@ -1,15 +1,15 @@
 func0000000000000004:                   # @func0000000000000004
 	addi	a1, a1, -14
-	seqz	a1, a1
 	lui	a2, 1048063
+	seqz	a1, a1
 	addiw	a2, a2, 1535
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func0000000000000005:                   # @func0000000000000005
 	addi	a1, a1, -24
-	seqz	a1, a1
 	lui	a2, 128
+	seqz	a1, a1
 	addiw	a2, a2, -2
 	and	a0, a0, a2
 	or	a0, a0, a1

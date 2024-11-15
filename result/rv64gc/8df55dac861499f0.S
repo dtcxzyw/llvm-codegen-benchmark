@@ -3,10 +3,10 @@ func0000000000000155:                   # @func0000000000000155
 	mul	a2, a2, a3
 	li	a3, 1000
 	mul	a1, a1, a3
+	lui	a3, 1048563
+	addiw	a3, a3, -80
 	add	a1, a1, a2
-	lui	a2, 1048563
-	addiw	a2, a2, -80
-	add	a0, a0, a2
+	add	a0, a0, a3
 	add	a0, a0, a1
 	ret
 func00000000000003ff:                   # @func00000000000003ff

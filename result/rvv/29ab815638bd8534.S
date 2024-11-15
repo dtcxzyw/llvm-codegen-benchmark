@@ -4,8 +4,8 @@ func0000000000000031:                   # @func0000000000000031
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v10, a0
 	vmacc.vx	v10, a0, v8
-	vror.vi	v8, v10, 1
 	lui	a0, 104858
+	vror.vi	v8, v10, 1
 	addi	a0, a0, -1639
 	vmsleu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v0

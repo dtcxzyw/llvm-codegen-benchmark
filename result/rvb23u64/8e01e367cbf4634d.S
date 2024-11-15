@@ -6,9 +6,9 @@ func000000000000001c:                   # @func000000000000001c
 	lui	a2, 6991
 	addi	a2, a2, -2024
 	add	a0, a0, a2
-	roriw	a0, a0, 2
 	lui	a2, 3495
 	addiw	a2, a2, 1037
+	roriw	a0, a0, 2
 	sltu	a0, a0, a2
 	snez	a1, a1
 	and	a0, a0, a1

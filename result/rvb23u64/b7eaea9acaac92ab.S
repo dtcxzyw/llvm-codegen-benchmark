@@ -1,11 +1,11 @@
 func000000000000006a:                   # @func000000000000006a
 	sh1add	a2, a2, a2
-	sext.w	a2, a2
 	sh2add	a0, a0, a0
+	sext.w	a2, a2
 	sh3add	a0, a0, a2
+	lui	a2, 2
 	sh2add	a0, a0, a1
-	lui	a1, 2
-	addiw	a1, a1, 1156
+	addiw	a1, a2, 1156
 	add	a0, a0, a1
 	ret
 func000000000000004a:                   # @func000000000000004a

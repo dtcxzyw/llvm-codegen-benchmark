@@ -15,10 +15,10 @@ func000000000000000c:                   # @func000000000000000c
 func0000000000000011:                   # @func0000000000000011
 	lui	a2, 15
 	and	a1, a1, a2
+	lui	a2, 14
 	or	a0, a0, a1
 	sext.w	a0, a0
-	lui	a1, 14
-	addiw	a1, a1, -1024
+	addiw	a1, a2, -1024
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -59,8 +59,8 @@ func0000000000000008:                   # @func0000000000000008
 func000000000000001a:                   # @func000000000000001a
 	andi	a1, a1, 63
 	or	a0, a0, a1
-	sext.w	a0, a0
 	lui	a1, 272
+	sext.w	a0, a0
 	addiw	a1, a1, -1
 	slt	a0, a1, a0
 	ret

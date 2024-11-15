@@ -4,8 +4,8 @@ func0000000000000011:                   # @func0000000000000011
 	bnez	a3, .LBB0_2
 	andi	a0, a2, 255
 	or	a0, a0, a1
-	sext.w	a0, a0
 	lui	a1, 196384
+	sext.w	a0, a0
 	addiw	a1, a1, 274
 	xor	a0, a0, a1
 	seqz	a0, a0

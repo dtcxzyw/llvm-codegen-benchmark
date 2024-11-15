@@ -66,9 +66,9 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func0000000000000034:                   # @func0000000000000034
 	subw	a1, a1, a2
+	lui	a2, 420
 	add	a0, a0, a1
-	lui	a1, 420
-	addi	a1, a1, 1102
+	addi	a1, a2, 1102
 	addw	a0, a0, a1
 	ret
 func000000000000001c:                   # @func000000000000001c

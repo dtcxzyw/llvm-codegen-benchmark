@@ -1,8 +1,8 @@
 func0000000000000086:                   # @func0000000000000086
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
-	vmsle.vi	v10, v12, 0
 	lui	a0, 32768
+	vmsle.vi	v10, v12, 0
 	addiw	a0, a0, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v11, v8, a0

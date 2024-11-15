@@ -9,8 +9,8 @@ func0000000000000054:                   # @func0000000000000054
 func00000000000000d4:                   # @func00000000000000d4
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vzext.vf4	v12, v10
-	vor.vv	v8, v12, v8
 	li	a0, -127
+	vor.vv	v8, v12, v8
 	vadd.vx	v8, v8, a0
 	li	a0, 33
 	vmsltu.vx	v10, v8, a0

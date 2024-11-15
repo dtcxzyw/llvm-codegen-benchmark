@@ -28,8 +28,8 @@ func0000000000000081:                   # @func0000000000000081
 	andi	a0, a0, 255
 	andi	a1, a1, 12
 	addi	a1, a1, -12
-	seqz	a1, a1
 	sltiu	a0, a0, 3
+	seqz	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

@@ -8,10 +8,10 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 func0000000000000018:                   # @func0000000000000018
 	xori	a2, a2, 42
-	srlw	a1, a2, a1
-	snez	a1, a1
 	srliw	a0, a0, 8
+	srlw	a1, a2, a1
 	sltiu	a0, a0, 17
+	snez	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

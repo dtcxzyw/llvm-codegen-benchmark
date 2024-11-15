@@ -1,9 +1,9 @@
 func0000000000000064:                   # @func0000000000000064
 	sext.w	a1, a1
 	srli	a2, a2, 2
+	srli	a0, a0, 4
 	sext.w	a2, a2
 	slt	a1, a1, a2
-	srli	a0, a0, 4
 	sltiu	a0, a0, 625
 	and	a0, a0, a1
 	ret

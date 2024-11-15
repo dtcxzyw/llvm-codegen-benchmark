@@ -14,9 +14,9 @@ func000000000000003a:                   # @func000000000000003a
 	ret
 func000000000000001a:                   # @func000000000000001a
 	andi	a0, a0, 255
-	sh2add	a0, a0, a0
-	sh2add	a0, a0, a0
 	lui	a1, 32
+	sh2add	a0, a0, a0
+	sh2add	a0, a0, a0
 	addiw	a1, a1, 1036
 	mul	a0, a0, a1
 	srli	a0, a0, 22

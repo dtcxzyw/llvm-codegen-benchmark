@@ -6,15 +6,15 @@ func0000000000000016:                   # @func0000000000000016
 	ret
 func00000000000000c1:                   # @func00000000000000c1
 	slli	a2, a2, 55
-	srli	a2, a2, 63
 	xor	a0, a0, a1
+	srli	a2, a2, 63
 	seqz	a0, a0
 	xor	a0, a0, a2
 	ret
 func00000000000000cc:                   # @func00000000000000cc
 	slli	a2, a2, 55
-	srli	a2, a2, 63
 	xor	a0, a0, a1
+	srli	a2, a2, 63
 	snez	a0, a0
 	xor	a0, a0, a2
 	ret
@@ -26,8 +26,8 @@ func00000000000000c8:                   # @func00000000000000c8
 	ret
 func000000000000001c:                   # @func000000000000001c
 	slli	a2, a2, 55
-	srli	a2, a2, 63
 	xor	a0, a0, a1
+	srli	a2, a2, 63
 	seqz	a0, a0
 	xor	a0, a0, a2
 	ret

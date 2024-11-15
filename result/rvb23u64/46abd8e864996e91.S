@@ -11,10 +11,10 @@ func00000000000000f8:                   # @func00000000000000f8
 	andi	a0, a0, 255
 	lui	a3, 16
 	addi	a3, a3, -55
-	add	a2, a2, a3
-	addiw	a2, a2, 7
-	addw	a1, a1, a3
 	sltiu	a0, a0, 58
+	add	a2, a2, a3
+	addw	a1, a1, a3
+	addiw	a2, a2, 7
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
 	or	a0, a0, a1

@@ -10,8 +10,8 @@ func0000000000000010:                   # @func0000000000000010
 	bclri	a0, a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vx	v12, v10, a0
-	vmor.mm	v0, v12, v0
 	lui	a0, 523264
+	vmor.mm	v0, v12, v0
 	vmv.v.x	v10, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret

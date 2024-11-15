@@ -8,8 +8,8 @@ func0000000000000005:                   # @func0000000000000005
 	add	a1, a1, a2
 	slli	a2, a1, 2
 	slli	a3, a1, 6
-	subw	a3, a3, a2
 	sh2add	a1, a1, a1
+	subw	a3, a3, a2
 	sh2add	a1, a1, a1
 	slli	a1, a1, 2
 	subw	a0, a0, a1

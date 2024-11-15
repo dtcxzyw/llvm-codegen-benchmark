@@ -27,8 +27,8 @@ func000000000000001c:                   # @func000000000000001c
 func000000000000008c:                   # @func000000000000008c
 	vsetivli	zero, 4, e16, mf2, ta, ma
 	vand.vi	v10, v10, 1
-	vmsne.vi	v10, v10, 0
 	li	a0, 18
+	vmsne.vi	v10, v10, 0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v11, v8, a0
 	vmand.mm	v0, v10, v11

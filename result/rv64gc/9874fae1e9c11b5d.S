@@ -18,12 +18,12 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func00000000000000cc:                   # @func00000000000000cc
 	lui	a3, 16
-	addiw	a3, a3, -256
-	and	a2, a2, a3
-	xori	a2, a2, 256
 	xor	a0, a0, a1
+	addiw	a1, a3, -256
+	and	a1, a1, a2
+	xori	a1, a1, 256
 	sext.w	a0, a0
-	or	a0, a0, a2
+	or	a0, a0, a1
 	snez	a0, a0
 	ret
 func000000000000001c:                   # @func000000000000001c

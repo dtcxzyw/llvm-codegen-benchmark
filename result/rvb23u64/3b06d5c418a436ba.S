@@ -21,8 +21,8 @@ func0000000000000020:                   # @func0000000000000020
 func0000000000000025:                   # @func0000000000000025
 	li	a2, 365
 	mul	a2, a2, a1
-	add	a0, a0, a2
 	sext.w	a1, a1
+	add	a0, a0, a2
 	lui	a2, 713032
 	addiw	a2, a2, -1311
 	mul	a1, a1, a2

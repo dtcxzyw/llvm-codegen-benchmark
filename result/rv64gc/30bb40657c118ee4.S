@@ -38,8 +38,8 @@ func0000000000000016:                   # @func0000000000000016
 	ret
 .LBB3_2:
 	seqz	a0, a0
-	addi	a0, a0, -1
 	lui	a1, 4
+	addi	a0, a0, -1
 	addiw	a1, a1, 3
 	and	a0, a0, a1
 	ret

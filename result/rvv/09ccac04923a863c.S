@@ -102,8 +102,8 @@ func0000000000000188:                   # @func0000000000000188
 	vsll.vi	v12, v12, 8
 	vor.vv	v8, v12, v8
 	vzext.vf4	v12, v10
-	vor.vv	v8, v8, v12
 	lui	a0, 1
+	vor.vv	v8, v8, v12
 	addi	a0, a0, -24
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -120,8 +120,8 @@ func00000000000001f8:                   # @func00000000000001f8
 	vsll.vi	v12, v12, 12
 	vor.vv	v8, v12, v8
 	vzext.vf4	v12, v10
-	vor.vv	v8, v8, v12
 	lui	a0, 16
+	vor.vv	v8, v8, v12
 	addi	a0, a0, -561
 	vmsgtu.vx	v0, v8, a0
 	ret

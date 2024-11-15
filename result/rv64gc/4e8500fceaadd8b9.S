@@ -20,8 +20,8 @@ func0000000000000014:                   # @func0000000000000014
 func0000000000000008:                   # @func0000000000000008
 	slli	a1, a1, 2
 	add	a0, a0, a1
-	addi	a0, a0, 8
 	lui	a1, 51
+	addi	a0, a0, 8
 	addiw	a1, a1, 811
 	sltu	a0, a1, a0
 	ret

@@ -23,10 +23,10 @@ func000000000000000b:                   # @func000000000000000b
 	ld	a3, %lo(.LCPI3_0)(a3)
 	add	a1, a1, a2
 	and	a1, a1, a3
+	lui	a2, 28784
+	addiw	a2, a2, 1799
 	add	a0, a0, a1
-	lui	a1, 28784
-	addiw	a1, a1, 1799
-	slli	a2, a1, 32
+	slli	a1, a2, 32
 	add	a1, a1, a2
 	and	a0, a0, a1
 	ret

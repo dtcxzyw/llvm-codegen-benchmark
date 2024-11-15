@@ -3,8 +3,8 @@ func0000000000000004:                   # @func0000000000000004
 	vadd.vi	v10, v8, -1
 	lui	a0, 524288
 	addiw	a1, a0, -2
-	vmsltu.vx	v0, v10, a1
 	addiw	a0, a0, -1
+	vmsltu.vx	v0, v10, a1
 	vmv.v.x	v10, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret

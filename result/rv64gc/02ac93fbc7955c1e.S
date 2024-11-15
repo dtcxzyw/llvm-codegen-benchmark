@@ -10,9 +10,9 @@ func0000000000000241:                   # @func0000000000000241
 	sext.w	a0, a0
 	lui	a2, 524288
 	addiw	a2, a2, -2
+	addi	a0, a0, -6
 	and	a1, a1, a2
 	sltiu	a1, a1, 6
-	addi	a0, a0, -6
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

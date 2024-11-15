@@ -16,8 +16,8 @@ func0000000000000022:                   # @func0000000000000022
 .LBB1_2:                                # %entry
 	sext.w	a1, a1
 	addi	a0, a1, -17
-	seqz	a0, a0
 	addi	a1, a1, -34
+	seqz	a0, a0
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret

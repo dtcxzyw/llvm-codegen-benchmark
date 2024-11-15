@@ -18,8 +18,8 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func0000000000000041:                   # @func0000000000000041
 	andi	a1, a1, 7
-	seqz	a1, a1
 	lui	a2, 262144
+	seqz	a1, a1
 	addiw	a2, a2, -55
 	sltu	a0, a0, a2
 	and	a0, a0, a1

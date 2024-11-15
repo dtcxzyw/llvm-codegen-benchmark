@@ -3,8 +3,8 @@
 func000000000000001c:                   # @func000000000000001c
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 24
-	vor.vv	v8, v10, v8
 	lui	a0, %hi(.LCPI0_0)
+	vor.vv	v8, v10, v8
 	ld	a0, %lo(.LCPI0_0)(a0)
 	lui	a1, 235216
 	addiw	a1, a1, -328

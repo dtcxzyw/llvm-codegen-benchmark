@@ -17,9 +17,9 @@ func000000000000014c:                   # @func000000000000014c
 	ret
 func0000000000000148:                   # @func0000000000000148
 	li	a3, -1
+	srli	a1, a1, 61
 	srli	a3, a3, 2
 	slt	a2, a2, a3
-	srli	a1, a1, 61
 	seqz	a1, a1
 	and	a1, a1, a2
 	or	a0, a0, a1

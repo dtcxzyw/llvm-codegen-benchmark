@@ -1,8 +1,8 @@
 func0000000000000009:                   # @func0000000000000009
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v8, v8, v10
-	vsra.vi	v8, v8, 3
 	lui	a0, 699051
+	vsra.vi	v8, v8, 3
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
@@ -14,8 +14,8 @@ func0000000000000009:                   # @func0000000000000009
 func000000000000000b:                   # @func000000000000000b
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v8, v8, v10
-	vsra.vi	v8, v8, 3
 	lui	a0, 699051
+	vsra.vi	v8, v8, 3
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
@@ -27,8 +27,8 @@ func000000000000000b:                   # @func000000000000000b
 func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v8, v8, v10
-	vsra.vi	v8, v8, 2
 	lui	a0, 699051
+	vsra.vi	v8, v8, 2
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1

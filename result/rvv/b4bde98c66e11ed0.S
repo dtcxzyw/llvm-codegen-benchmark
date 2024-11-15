@@ -36,9 +36,9 @@ func0000000000000065:                   # @func0000000000000065
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfclass.v	v12, v8
 	li	a0, 126
+	fli.s	fa5, -1.0
 	vand.vx	v12, v12, a0
 	vmsne.vi	v16, v12, 0
-	fli.s	fa5, -1.0
 	vmfle.vf	v12, v8, fa5
 	vmandn.mm	v0, v16, v12
 	ret

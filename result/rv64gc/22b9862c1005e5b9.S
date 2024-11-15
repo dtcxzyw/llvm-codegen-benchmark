@@ -33,9 +33,9 @@ func0000000000000003:                   # @func0000000000000003
 func0000000000000004:                   # @func0000000000000004
 	lui	a0, %hi(.LCPI3_0)
 	flw	fa5, %lo(.LCPI3_0)(a0)
+	lui	a0, 260096
 	fmadd.s	fa5, fa1, fa5, fa2
 	fadd.s	fa5, fa5, fa0
-	lui	a0, 260096
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	ret

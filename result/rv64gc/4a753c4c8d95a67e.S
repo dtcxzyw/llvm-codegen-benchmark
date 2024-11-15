@@ -8,15 +8,15 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func000000000000000c:                   # @func000000000000000c
 	slli	a1, a1, 52
-	srli	a1, a1, 53
 	lui	a2, 1
+	srli	a1, a1, 53
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func000000000000000f:                   # @func000000000000000f
 	slli	a1, a1, 56
-	srli	a1, a1, 59
 	lui	a2, 1048568
+	srli	a1, a1, 59
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret

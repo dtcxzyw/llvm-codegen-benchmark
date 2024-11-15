@@ -13,21 +13,21 @@ func0000000000000001:                   # @func0000000000000001
 	.quad	9187201950435737470             # 0x7f7f7f7f7f7f7f7e
 func000000000000000a:                   # @func000000000000000a
 	lui	a1, 522232
+	lui	a2, 152146
 	addiw	a1, a1, -129
-	slli	a2, a1, 32
-	add	a1, a1, a2
-	and	a0, a0, a1
-	lui	a1, 152146
-	addiw	a1, a1, 1317
-	lui	a2, %hi(.LCPI1_0)
-	ld	a2, %lo(.LCPI1_0)(a2)
+	addiw	a2, a2, 1317
 	slli	a3, a1, 32
 	add	a1, a1, a3
-	add	a0, a0, a1
-	and	a0, a0, a2
-	lui	a1, 106914
-	addiw	a1, a1, -1510
-	slli	a2, a1, 32
+	slli	a3, a2, 32
+	add	a2, a2, a3
+	and	a0, a0, a1
+	lui	a1, %hi(.LCPI1_0)
+	ld	a1, %lo(.LCPI1_0)(a1)
+	add	a0, a0, a2
+	lui	a2, 106914
+	addiw	a2, a2, -1510
+	and	a0, a0, a1
+	slli	a1, a2, 32
 	add	a1, a1, a2
 	add	a0, a0, a1
 	ret

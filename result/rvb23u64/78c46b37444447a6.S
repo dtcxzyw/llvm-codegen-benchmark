@@ -1,8 +1,8 @@
 func0000000000000007:                   # @func0000000000000007
 	xor	a5, a2, a4
 	slt	a2, a4, a2
-	czero.eqz	a2, a2, a5
 	sltu	a1, a3, a1
+	czero.eqz	a2, a2, a5
 	czero.nez	a1, a1, a5
 	or	a1, a1, a2
 	xori	a1, a1, 1
@@ -11,8 +11,8 @@ func0000000000000007:                   # @func0000000000000007
 func0000000000000006:                   # @func0000000000000006
 	xor	a5, a2, a4
 	slt	a2, a2, a4
-	czero.eqz	a2, a2, a5
 	sltu	a1, a1, a3
+	czero.eqz	a2, a2, a5
 	czero.nez	a1, a1, a5
 	or	a1, a1, a2
 	or	a0, a0, a1

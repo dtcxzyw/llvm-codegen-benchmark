@@ -24,28 +24,28 @@ func0000000000000051:                   # @func0000000000000051
 .LCPI2_0:
 	.quad	768614336404564650              # 0xaaaaaaaaaaaaaaa
 func0000000000000058:                   # @func0000000000000058
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsra.vi	v10, v10, 3
 	lui	a0, 699051
-	addiw	a0, a0, -1365
 	lui	a1, %hi(.LCPI2_0)
+	addiw	a0, a0, -1365
 	ld	a1, %lo(.LCPI2_0)(a1)
 	slli	a2, a0, 32
 	add	a0, a0, a2
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsra.vi	v10, v10, 3
 	vmadd.vx	v10, a0, v8
 	vmsgtu.vx	v0, v10, a1
 	ret
 .LCPI3_0:
 	.quad	768614336404564650              # 0xaaaaaaaaaaaaaaa
 func0000000000000048:                   # @func0000000000000048
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsra.vi	v10, v10, 3
 	lui	a0, 699051
-	addiw	a0, a0, -1365
 	lui	a1, %hi(.LCPI3_0)
+	addiw	a0, a0, -1365
 	ld	a1, %lo(.LCPI3_0)(a1)
 	slli	a2, a0, 32
 	add	a0, a0, a2
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsra.vi	v10, v10, 3
 	vmadd.vx	v10, a0, v8
 	vmsgtu.vx	v0, v10, a1
 	ret
@@ -137,12 +137,12 @@ func0000000000000016:                   # @func0000000000000016
 	vmulh.vx	v10, v10, a0
 	li	a0, 63
 	vsrl.vx	v12, v10, a0
-	vsra.vi	v10, v10, 13
-	vadd.vv	v10, v10, v12
-	vadd.vv	v8, v10, v8
 	lui	a0, 961553
 	addiw	a0, a0, 721
 	slli	a0, a0, 12
+	vsra.vi	v10, v10, 13
+	vadd.vv	v10, v10, v12
+	vadd.vv	v8, v10, v8
 	addi	a0, a0, -647
 	vmslt.vx	v0, v8, a0
 	ret
@@ -163,10 +163,10 @@ func0000000000000018:                   # @func0000000000000018
 	vsra.vx	v12, v10, a0
 	li	a0, 58
 	vsrl.vx	v12, v12, a0
+	li	a0, -1
 	vadd.vv	v10, v10, v12
 	vsra.vi	v10, v10, 6
 	vadd.vv	v8, v10, v8
-	li	a0, -1
 	srli	a0, a0, 4
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -179,10 +179,10 @@ func0000000000000008:                   # @func0000000000000008
 	vmulh.vx	v10, v10, a0
 	li	a0, 63
 	vsrl.vx	v12, v10, a0
+	lui	a0, 244
 	vsra.vi	v10, v10, 7
 	vadd.vv	v10, v10, v12
 	vadd.vv	v8, v10, v8
-	lui	a0, 244
 	addiw	a0, a0, 576
 	vmsgtu.vx	v0, v8, a0
 	ret

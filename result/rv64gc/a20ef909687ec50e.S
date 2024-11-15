@@ -7,8 +7,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	ret
 func000000000000001c:                   # @func000000000000001c
 	slli	a1, a1, 61
-	srli	a1, a1, 63
 	addi	a0, a0, -36
+	srli	a1, a1, 63
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
@@ -26,8 +26,8 @@ func0000000000000041:                   # @func0000000000000041
 	ret
 func000000000000008c:                   # @func000000000000008c
 	slli	a1, a1, 54
-	srli	a1, a1, 63
 	lui	a2, 1
+	srli	a1, a1, 63
 	addiw	a2, a2, -1096
 	sltu	a0, a2, a0
 	or	a0, a0, a1

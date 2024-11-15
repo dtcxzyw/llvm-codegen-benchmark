@@ -30,11 +30,11 @@ func000000000000001e:                   # @func000000000000001e
 func000000000000000c:                   # @func000000000000000c
 	andi	a1, a1, 1
 	lui	a3, 51
-	czero.nez	a1, a3, a1
 	add	a0, a0, a2
+	lui	a2, 95
+	czero.nez	a1, a3, a1
 	add	a0, a0, a1
-	lui	a1, 95
-	addi	a1, a1, -1024
+	addi	a1, a2, -1024
 	addw	a0, a0, a1
 	ret
 func000000000000003f:                   # @func000000000000003f

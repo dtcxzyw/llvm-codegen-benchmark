@@ -19,15 +19,15 @@ func000000000000000a:                   # @func000000000000000a
 .LCPI2_0:
 	.word	0x42b0c0a5                      # float 88.3762589
 func0000000000000004:                   # @func0000000000000004
+	fmv.s	fa5, fa0
 	lui	a0, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a0)
+	flw	fa0, %lo(.LCPI2_0)(a0)
 	fadd.s	fa4, fa1, fa2
-	fadd.s	fa4, fa4, fa0
-	flt.s	a0, fa5, fa4
+	fadd.s	fa5, fa4, fa5
+	flt.s	a0, fa0, fa5
 	bnez	a0, .LBB2_2
-	fmv.s	fa5, fa4
-.LBB2_2:                                # %entry
 	fmv.s	fa0, fa5
+.LBB2_2:                                # %entry
 	ret
 func0000000000000008:                   # @func0000000000000008
 	fadd.s	fa5, fa1, fa2

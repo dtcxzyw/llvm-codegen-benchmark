@@ -12,9 +12,9 @@ func00000000000000f4:                   # @func00000000000000f4
 	ret
 func0000000000000008:                   # @func0000000000000008
 	add.uw	a0, a2, a0
+	lui	a2, 30
 	add.uw	a0, a1, a0
-	lui	a1, 30
-	addiw	a1, a1, -96
+	addiw	a1, a2, -96
 	sltu	a0, a1, a0
 	ret
 func00000000000002f4:                   # @func00000000000002f4
@@ -39,8 +39,8 @@ func0000000000000004:                   # @func0000000000000004
 func00000000000002a8:                   # @func00000000000002a8
 	sext.w	a2, a2
 	add	a0, a0, a2
+	li	a2, -7
 	add.uw	a0, a1, a0
-	li	a1, -7
-	srli	a1, a1, 1
-	sltu	a0, a1, a0
+	srli	a2, a2, 1
+	sltu	a0, a2, a0
 	ret

@@ -5,8 +5,8 @@ func000000000000002a:                   # @func000000000000002a
 	ret
 func000000000000003a:                   # @func000000000000003a
 	slli	a2, a2, 5
-	sub	a0, a0, a2
 	zext.h	a1, a1
+	sub	a0, a0, a2
 	slli	a1, a1, 5
 	add	a0, a0, a1
 	ret

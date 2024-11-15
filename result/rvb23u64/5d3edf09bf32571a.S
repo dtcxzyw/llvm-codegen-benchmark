@@ -33,8 +33,8 @@ func0000000000000144:                   # @func0000000000000144
 func0000000000000175:                   # @func0000000000000175
 	add	a1, a1, a2
 	slli	a0, a0, 14
+	lui	a2, 1048572
 	add	a0, a0, a1
-	lui	a1, 1048572
-	addi	a1, a1, -128
+	addi	a1, a2, -128
 	addw	a0, a0, a1
 	ret

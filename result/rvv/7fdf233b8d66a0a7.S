@@ -1,9 +1,9 @@
 func0000000000000000:                   # @func0000000000000000
 	lui	a0, 838115
+	lui	a1, 112755
 	addi	a0, a0, -687
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmul.vx	v10, v10, a0
-	lui	a1, 112755
 	addi	a1, a1, 1427
 	vmacc.vx	v10, a1, v12
 	vmadd.vx	v8, a0, v10

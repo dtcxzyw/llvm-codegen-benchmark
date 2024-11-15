@@ -1,19 +1,19 @@
 func0000000000000001:                   # @func0000000000000001
 	addi	a1, a1, 1
+	srli	a0, a0, 32
 	slli	a1, a1, 32
 	srli	a1, a1, 32
-	srli	a0, a0, 32
 	slli	a0, a0, 32
 	or	a0, a0, a1
 	ret
 func0000000000000003:                   # @func0000000000000003
 	li	a2, 1
+	srli	a0, a0, 40
 	slli	a2, a2, 40
 	addi	a2, a2, -1280
 	add	a1, a1, a2
 	addi	a2, a2, 1024
 	and	a1, a1, a2
-	srli	a0, a0, 40
 	slli	a0, a0, 40
 	or	a0, a0, a1
 	ret

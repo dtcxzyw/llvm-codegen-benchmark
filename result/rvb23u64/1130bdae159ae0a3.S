@@ -14,9 +14,9 @@ func000000000000001c:                   # @func000000000000001c
 func0000000000000004:                   # @func0000000000000004
 	li	a3, -1250
 	sh3add	a2, a3, a2
-	sext.w	a2, a2
 	lui	a3, 1048574
 	addiw	a3, a3, -1807
+	sext.w	a2, a2
 	sltu	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

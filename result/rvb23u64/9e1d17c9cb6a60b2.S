@@ -1,15 +1,15 @@
 func0000000000000011:                   # @func0000000000000011
 	andi	a3, a2, 511
-	or	a1, a1, a3
 	bexti	a2, a2, 25
+	or	a1, a1, a3
 	czero.eqz	a0, a0, a2
 	czero.nez	a1, a1, a2
 	or	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
 	andi	a3, a2, 1022
-	or	a1, a1, a3
 	bexti	a2, a2, 12
+	or	a1, a1, a3
 	czero.eqz	a0, a0, a2
 	czero.nez	a1, a1, a2
 	or	a0, a0, a1

@@ -65,9 +65,9 @@ func0000000000000057:                   # @func0000000000000057
 	add	a1, a1, a2
 	li	a2, 94
 	mul	a1, a1, a2
+	lui	a2, 14
 	add	a0, a0, a1
-	lui	a1, 14
-	addi	a1, a1, -161
+	addi	a1, a2, -161
 	addw	a0, a0, a1
 	ret
 func0000000000000010:                   # @func0000000000000010

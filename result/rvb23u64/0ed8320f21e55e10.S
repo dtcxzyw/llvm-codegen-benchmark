@@ -1,9 +1,9 @@
 func0000000000000011:                   # @func0000000000000011
 	lui	a2, 15
+	srliw	a0, a0, 31
 	and	a1, a1, a2
 	binvi	a1, a1, 13
 	binvi	a1, a1, 15
-	srliw	a0, a0, 31
 	slli	a0, a0, 31
 	or	a0, a0, a1
 	seqz	a0, a0

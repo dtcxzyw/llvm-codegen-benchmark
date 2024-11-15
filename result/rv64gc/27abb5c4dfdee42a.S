@@ -106,8 +106,8 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func0000000000000014:                   # @func0000000000000014
 	sext.w	a0, a0
-	snez	a3, a0
 	slli	a1, a1, 63
+	snez	a3, a0
 	srai	a1, a1, 63
 	or	a1, a1, a2
 	sext.w	a1, a1

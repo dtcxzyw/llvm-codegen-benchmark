@@ -1,7 +1,7 @@
 func0000000000000014:                   # @func0000000000000014
 	slli	a1, a1, 32
-	srli	a1, a1, 32
 	slli	a0, a0, 32
+	srli	a1, a1, 32
 	or	a0, a0, a1
 	li	a1, 1
 	slli	a1, a1, 62
@@ -28,8 +28,8 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func0000000000000054:                   # @func0000000000000054
 	slli	a1, a1, 32
-	srli	a1, a1, 32
 	slli	a0, a0, 32
+	srli	a1, a1, 32
 	or	a0, a0, a1
 	li	a1, 1
 	slli	a1, a1, 32
@@ -48,8 +48,8 @@ func0000000000000071:                   # @func0000000000000071
 	ret
 func0000000000000061:                   # @func0000000000000061
 	slli	a1, a1, 32
-	srli	a1, a1, 32
 	slli	a0, a0, 24
+	srli	a1, a1, 32
 	or	a0, a0, a1
 	lui	a1, 262144
 	xor	a0, a0, a1

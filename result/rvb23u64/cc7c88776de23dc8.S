@@ -2,8 +2,8 @@ func000000000000004c:                   # @func000000000000004c
 	sext.w	a1, a1
 	sext.w	a2, a2
 	addi	a2, a2, -9
-	snez	a2, a2
 	sltiu	a1, a1, -2
+	snez	a2, a2
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret

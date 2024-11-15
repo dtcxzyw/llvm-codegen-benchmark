@@ -20,10 +20,10 @@ func000000000000006a:                   # @func000000000000006a
 func000000000000004a:                   # @func000000000000004a
 	andi	a1, a1, 1
 	sext.w	a2, a2
-	sh1add	a2, a2, a2
-	slli	a2, a2, 6
 	li	a3, 24
+	sh1add	a2, a2, a2
 	czero.nez	a1, a3, a1
+	slli	a2, a2, 6
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 16
@@ -31,10 +31,10 @@ func000000000000004a:                   # @func000000000000004a
 func0000000000000042:                   # @func0000000000000042
 	andi	a1, a1, 1
 	sext.w	a2, a2
-	sh2add	a2, a2, a2
-	slli	a2, a2, 4
 	li	a3, -80
+	sh2add	a2, a2, a2
 	czero.nez	a1, a3, a1
+	slli	a2, a2, 4
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, -72

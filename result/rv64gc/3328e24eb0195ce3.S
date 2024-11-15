@@ -1,18 +1,18 @@
 func000000000000008a:                   # @func000000000000008a
 	li	a3, -1
+	slli	a1, a1, 3
 	slli	a3, a3, 63
 	sltu	a2, a3, a2
 	neg	a2, a2
 	andi	a2, a2, -8
-	slli	a1, a1, 3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
 func000000000000001a:                   # @func000000000000001a
 	seqz	a2, a2
+	slli	a1, a1, 3
 	addi	a2, a2, -1
 	andi	a2, a2, -8
-	slli	a1, a1, 3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
@@ -26,8 +26,8 @@ func0000000000000010:                   # @func0000000000000010
 	ret
 func00000000000000c0:                   # @func00000000000000c0
 	snez	a2, a2
-	slli	a2, a2, 3
 	slli	a1, a1, 2
+	slli	a2, a2, 3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

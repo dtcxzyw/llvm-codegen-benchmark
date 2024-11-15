@@ -3,8 +3,8 @@ func000000000000006f:                   # @func000000000000006f
 	vsll.vi	v12, v12, 8
 	vor.vv	v8, v12, v8
 	vzext.vf8	v12, v10
-	vor.vv	v8, v8, v12
 	lui	a0, 244
+	vor.vv	v8, v8, v12
 	addiw	a0, a0, 576
 	vmul.vx	v8, v8, a0
 	ret

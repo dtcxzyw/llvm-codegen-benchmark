@@ -24,9 +24,9 @@ func000000000000001e:                   # @func000000000000001e
 	vand.vx	v10, v10, a0
 	li	a0, 32
 	vwsll.vx	v12, v10, a0
+	lui	a0, 1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vor.vv	v8, v12, v8
-	lui	a0, 1
 	addiw	a0, a0, -1
 	vor.vx	v8, v8, a0
 	ret
@@ -35,9 +35,9 @@ func000000000000000b:                   # @func000000000000000b
 	vand.vi	v10, v10, -16
 	li	a0, 32
 	vwsll.vx	v12, v10, a0
+	lui	a0, 67392
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vor.vv	v8, v12, v8
-	lui	a0, 67392
 	addiw	a0, a0, 1
 	vor.vx	v8, v8, a0
 	ret
@@ -55,9 +55,9 @@ func000000000000001a:                   # @func000000000000001a
 	vand.vx	v10, v10, a0
 	li	a0, 48
 	vwsll.vx	v12, v10, a0
+	li	a0, 2047
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vor.vv	v8, v12, v8
-	li	a0, 2047
 	slli	a0, a0, 52
 	vor.vx	v8, v8, a0
 	ret

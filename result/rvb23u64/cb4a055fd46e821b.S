@@ -1,11 +1,11 @@
 func0000000000000003:                   # @func0000000000000003
 	andi	a1, a1, 1
 	slli	a2, a2, 4
+	lui	a3, 256
+	czero.nez	a1, a3, a1
 	lui	a3, 16
 	addiw	a3, a3, -1664
 	and	a2, a2, a3
-	lui	a3, 256
-	czero.nez	a1, a3, a1
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -31,9 +31,9 @@ func000000000000000e:                   # @func000000000000000e
 	ret
 func0000000000000000:                   # @func0000000000000000
 	andi	a2, a2, 2
+	andi	a1, a1, 1
 	slli	a2, a2, 18
 	or	a0, a0, a2
-	andi	a1, a1, 1
 	slli	a1, a1, 18
 	or	a0, a0, a1
 	ret
@@ -57,8 +57,8 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func0000000000000007:                   # @func0000000000000007
 	slli	a2, a2, 51
-	srli	a2, a2, 35
 	slliw	a1, a1, 31
+	srli	a2, a2, 35
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

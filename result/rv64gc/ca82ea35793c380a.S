@@ -2,10 +2,10 @@ func0000000000000001:                   # @func0000000000000001
 	andi	a0, a0, 1
 	bnez	a0, .LBB0_2
 	andi	a0, a1, 255
+	li	a1, 9
 	addi	a0, a0, -120
 	snez	a0, a0
 	addi	a0, a0, -1
-	li	a1, 9
 	slli	a1, a1, 32
 	and	a0, a0, a1
 	ret

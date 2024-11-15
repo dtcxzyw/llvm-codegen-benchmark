@@ -34,8 +34,8 @@ func0000000000000220:                   # @func0000000000000220
 	.quad	8784043285714375740             # 0x79e730d418a9143c
 func0000000000000330:                   # @func0000000000000330
 	lui	a0, %hi(.LCPI4_0)
-	ld	a0, %lo(.LCPI4_0)(a0)
 	lui	a1, %hi(.LCPI4_1)
+	ld	a0, %lo(.LCPI4_0)(a0)
 	ld	a1, %lo(.LCPI4_1)(a1)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vx	v12, v10, a0

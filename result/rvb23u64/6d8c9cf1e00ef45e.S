@@ -37,8 +37,8 @@ func0000000000000144:                   # @func0000000000000144
 func0000000000000148:                   # @func0000000000000148
 	sext.w	a0, a0
 	cpopw	a1, a1
-	sltiu	a1, a1, 2
 	li	a2, 2047
+	sltiu	a1, a1, 2
 	sltu	a0, a2, a0
 	and	a0, a0, a1
 	ret

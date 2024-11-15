@@ -13,9 +13,9 @@ func000000000000002a:                   # @func000000000000002a
 func000000000000006a:                   # @func000000000000006a
 	srai	a3, a2, 23
 	srai	a2, a2, 19
+	sh2add	a0, a0, a0
 	sub	a2, a2, a3
 	add	a1, a1, a2
-	sh2add	a0, a0, a0
 	slli	a0, a0, 4
 	add	a0, a0, a1
 	addi	a0, a0, 160

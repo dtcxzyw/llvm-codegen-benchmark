@@ -14,8 +14,8 @@ func0000000000000092:                   # @func0000000000000092
 	ret
 func0000000000000012:                   # @func0000000000000012
 	add	a1, a1, a2
-	sltu	a2, a1, a2
 	li	a3, -1
+	sltu	a2, a1, a2
 	srli	a3, a3, 1
 	minu	a1, a1, a3
 	czero.nez	a1, a1, a2
@@ -25,8 +25,8 @@ func0000000000000012:                   # @func0000000000000012
 	ret
 func0000000000000093:                   # @func0000000000000093
 	add	a1, a1, a2
-	sltu	a2, a1, a2
 	li	a3, -1
+	sltu	a2, a1, a2
 	srli	a3, a3, 4
 	minu	a1, a1, a3
 	czero.nez	a1, a1, a2
@@ -36,8 +36,8 @@ func0000000000000093:                   # @func0000000000000093
 	ret
 func0000000000000090:                   # @func0000000000000090
 	add	a1, a1, a2
-	sltu	a2, a1, a2
 	li	a3, -1
+	sltu	a2, a1, a2
 	srli	a3, a3, 4
 	minu	a1, a1, a3
 	czero.nez	a1, a1, a2

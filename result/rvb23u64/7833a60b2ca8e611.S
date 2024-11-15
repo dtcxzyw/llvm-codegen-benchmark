@@ -50,8 +50,8 @@ func00000000000003c1:                   # @func00000000000003c1
 	ret
 func0000000000000241:                   # @func0000000000000241
 	addi	a2, a2, 1
-	sltu	a1, a2, a1
 	addi	a0, a0, 1
+	sltu	a1, a2, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

@@ -17,9 +17,9 @@ func0000000000000030:                   # @func0000000000000030
 	ret
 func0000000000000054:                   # @func0000000000000054
 	li	a0, -1
-	srli	a0, a0, 1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsle.vi	v0, v10, -1
+	srli	a0, a0, 1
 	vadd.vx	v10, v12, a0
 	vmerge.vvm	v8, v10, v8, v0
 	li	a0, 63

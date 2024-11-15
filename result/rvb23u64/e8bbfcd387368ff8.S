@@ -14,8 +14,8 @@ func000000000000001c:                   # @func000000000000001c
 func0000000000000004:                   # @func0000000000000004
 	lui	a3, 786432
 	addi	a4, a3, 1
-	addw	a2, a2, a4
 	addiw	a3, a3, 3
+	addw	a2, a2, a4
 	sltu	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2
@@ -23,8 +23,8 @@ func0000000000000004:                   # @func0000000000000004
 func0000000000000008:                   # @func0000000000000008
 	lui	a3, 1048514
 	addi	a4, a3, -1049
-	addw	a2, a2, a4
 	addiw	a3, a3, -2048
+	addw	a2, a2, a4
 	sltu	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

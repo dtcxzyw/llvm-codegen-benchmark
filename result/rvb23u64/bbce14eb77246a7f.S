@@ -59,15 +59,15 @@ func0000000000000021:                   # @func0000000000000021
 func0000000000000020:                   # @func0000000000000020
 	lui	a2, 1048561
 	lui	a3, %hi(.LCPI3_0)
-	ld	a3, %lo(.LCPI3_0)(a3)
 	addiw	a2, a2, 1440
+	ld	a3, %lo(.LCPI3_0)(a3)
 	mul	a1, a1, a2
 	add	a0, a0, a1
-	mulh	a0, a0, a3
-	srli	a1, a0, 63
-	srai	a0, a0, 7
-	add	a0, a0, a1
 	lui	a1, 16
+	mulh	a0, a0, a3
+	srli	a2, a0, 63
+	srai	a0, a0, 7
+	add	a0, a0, a2
 	addiw	a1, a1, -1000
 	mul	a0, a0, a1
 	ret

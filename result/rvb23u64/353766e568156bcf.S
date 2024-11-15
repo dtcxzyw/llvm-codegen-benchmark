@@ -1,8 +1,8 @@
 func0000000000000441:                   # @func0000000000000441
 	add	a0, a0, a2
+	li	a2, 31
 	sh2add	a0, a1, a0
-	li	a1, 31
-	bseti	a1, a1, 59
+	bseti	a1, a2, 59
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -22,8 +22,8 @@ func0000000000000508:                   # @func0000000000000508
 	ret
 func0000000000000501:                   # @func0000000000000501
 	add	a0, a0, a2
-	addi	a0, a0, 2
 	slli	a1, a1, 1
+	addi	a0, a0, 2
 	neg	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0

@@ -1,8 +1,8 @@
 func0000000000000052:                   # @func0000000000000052
 	li	a0, 32
+	lui	a1, 548541
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vx	v10, v10, a0
-	lui	a1, 548541
 	addi	a1, a1, -1401
 	zext.w	a1, a1
 	vmul.vx	v8, v8, a1
@@ -11,9 +11,9 @@ func0000000000000052:                   # @func0000000000000052
 	ret
 func000000000000007b:                   # @func000000000000007b
 	li	a0, 32
+	lui	a1, 163151
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vx	v10, v10, a0
-	lui	a1, 163151
 	addiw	a1, a1, -1201
 	vmul.vx	v8, v8, a1
 	vsrl.vx	v8, v8, a0
@@ -33,8 +33,8 @@ func00000000000000cf:                   # @func00000000000000cf
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v10, v10, a0
 	li	a0, 32
-	vsrl.vx	v10, v10, a0
 	vsrl.vx	v8, v8, a0
+	vsrl.vx	v10, v10, a0
 	li	a0, -100
 	zext.w	a0, a0
 	vmadd.vx	v8, a0, v10

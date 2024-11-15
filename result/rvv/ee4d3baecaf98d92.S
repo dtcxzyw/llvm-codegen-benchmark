@@ -19,8 +19,8 @@ func0000000000000111:                   # @func0000000000000111
 func0000000000000018:                   # @func0000000000000018
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmseq.vi	v0, v8, -1
-	vsub.vv	v8, v10, v12, v0.t
 	lui	a0, 65536
+	vsub.vv	v8, v10, v12, v0.t
 	addi	a0, a0, -1
 	vmsgtu.vx	v0, v8, a0
 	ret

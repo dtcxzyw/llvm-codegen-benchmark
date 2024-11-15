@@ -17,8 +17,8 @@ func000000000000000f:                   # @func000000000000000f
 	ret
 func0000000000000004:                   # @func0000000000000004
 	add.uw	a0, a1, a0
-	addi	a0, a0, -2
 	li	a1, 63
+	addi	a0, a0, -2
 	bseti	a1, a1, 63
 	and	a0, a0, a1
 	ret

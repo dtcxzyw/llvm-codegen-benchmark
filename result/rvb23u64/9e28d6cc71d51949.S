@@ -7,8 +7,8 @@ func0000000000000000:                   # @func0000000000000000
 	srli	a1, a0, 63
 	srli	a0, a0, 6
 	add	a0, a0, a1
-	zext.w	a0, a0
 	lui	a1, 335544
+	zext.w	a0, a0
 	addiw	a1, a1, 1311
 	mul	a0, a0, a1
 	srli	a0, a0, 37

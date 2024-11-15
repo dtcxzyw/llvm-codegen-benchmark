@@ -13,8 +13,8 @@ func0000000000000045:                   # @func0000000000000045
 	addiw	a1, a1, -64
 	lui	a3, 16
 	addiw	a3, a3, -63
-	sltu	a1, a1, a3
 	sltu	a0, a2, a0
+	sltu	a1, a1, a3
 	not	a0, a0
 	and	a0, a0, a1
 	ret

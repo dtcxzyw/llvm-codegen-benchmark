@@ -18,23 +18,23 @@ func0000000000000081:                   # @func0000000000000081
 	lui	a2, 804435
 	addi	a2, a2, 1536
 	czero.eqz	a1, a2, a1
+	lui	a2, 429094
 	add	a0, a0, a1
-	lui	a1, 429094
-	addi	a1, a1, 313
-	mul	a0, a0, a1
-	roriw	a0, a0, 6
 	lui	a1, 1
+	addi	a2, a2, 313
+	mul	a0, a0, a2
+	roriw	a0, a0, 6
 	addiw	a1, a1, 199
 	sltu	a0, a0, a1
 	ret
 func00000000000001a8:                   # @func00000000000001a8
 	sext.w	a1, a0
+	lui	a2, 149797
 	slti	a1, a1, -4
+	addiw	a2, a2, -1755
 	xori	a1, a1, 1
 	sh2add	a0, a1, a0
 	zext.w	a1, a0
-	lui	a2, 149797
-	addiw	a2, a2, -1755
 	mul	a1, a1, a2
 	srli	a1, a1, 32
 	subw	a2, a0, a1

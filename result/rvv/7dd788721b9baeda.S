@@ -36,9 +36,9 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func0000000000000003:                   # @func0000000000000003
 	li	a0, 17
+	lui	a1, 493448
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vx	v8, v8, a0
-	lui	a1, 493448
 	addi	a1, a1, -1927
 	vmulh.vx	v9, v8, a1
 	vsra.vi	v9, v9, 3

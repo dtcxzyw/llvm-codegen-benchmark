@@ -31,11 +31,11 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func0000000000000011:                   # @func0000000000000011
 	andi	a1, a1, 240
+	lui	a2, 8
 	sltiu	a1, a1, 144
 	addi	a1, a1, -1
 	slli	a1, a1, 49
 	srli	a1, a1, 49
-	lui	a2, 8
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret

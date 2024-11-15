@@ -4,8 +4,8 @@ func0000000000000007:                   # @func0000000000000007
 	addi	a2, a2, 129
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
-	srli	a1, a1, 31
 	lui	a2, 16
+	srli	a1, a1, 31
 	addiw	a2, a2, -256
 	and	a1, a1, a2
 	or	a0, a0, a1
@@ -16,8 +16,8 @@ func0000000000000006:                   # @func0000000000000006
 	addi	a2, a2, 1
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
-	srli	a1, a1, 39
 	lui	a2, 16
+	srli	a1, a1, 39
 	addiw	a2, a2, -256
 	and	a1, a1, a2
 	or	a0, a0, a1

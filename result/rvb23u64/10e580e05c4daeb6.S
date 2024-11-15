@@ -19,8 +19,8 @@ func0000000000000010:                   # @func0000000000000010
 	ret
 func0000000000000212:                   # @func0000000000000212
 	addi	a2, a1, 8
-	czero.eqz	a1, a2, a1
 	sh1add	a0, a0, a0
+	czero.eqz	a1, a2, a1
 	slli	a0, a0, 4
 	add	a0, a0, a1
 	addi	a0, a0, 8

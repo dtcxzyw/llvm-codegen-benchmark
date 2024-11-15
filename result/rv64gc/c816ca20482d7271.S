@@ -25,8 +25,8 @@ func0000000000000034:                   # @func0000000000000034
 	ret
 func0000000000000001:                   # @func0000000000000001
 	li	a2, 6
-	sub	a2, a2, a1
 	seqz	a0, a0
+	sub	a2, a2, a1
 	addi	a0, a0, -1
 	and	a0, a0, a2
 	ret

@@ -11,8 +11,8 @@ func000000000000000f:                   # @func000000000000000f
 	lui	a0, 32
 	addiw	a0, a0, -2
 	vand.vx	v8, v8, a0
-	vadd.vi	v8, v8, 2
 	lui	a0, 64
+	vadd.vi	v8, v8, 2
 	addiw	a0, a0, -32
 	vand.vx	v8, v8, a0
 	ret

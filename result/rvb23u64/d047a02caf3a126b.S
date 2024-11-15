@@ -48,10 +48,10 @@ func000000000000006c:                   # @func000000000000006c
 	ret
 func0000000000000081:                   # @func0000000000000081
 	sltiu	a2, a1, 2
-	xori	a2, a2, 1
 	xor	a0, a0, a1
+	xori	a1, a2, 1
 	seqz	a0, a0
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 func0000000000000085:                   # @func0000000000000085
 	lui	a2, 512
@@ -119,8 +119,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	ret
 func000000000000007c:                   # @func000000000000007c
 	slt	a1, a0, a1
-	xori	a1, a1, 1
 	li	a2, -1
+	xori	a1, a1, 1
 	slli.uw	a2, a2, 31
 	addi	a2, a2, -1
 	xor	a0, a0, a2

@@ -11,8 +11,8 @@ func000000000000001f:                   # @func000000000000001f
 	andi	a1, a1, 255
 	li	a2, 94
 	mul	a1, a1, a2
+	lui	a2, 1048572
 	add	a0, a0, a1
-	lui	a1, 1048572
-	addi	a1, a1, 1250
+	addi	a1, a2, 1250
 	addw	a0, a0, a1
 	ret

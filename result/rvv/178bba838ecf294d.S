@@ -5,8 +5,8 @@ func0000000000000003:                   # @func0000000000000003
 	flw	fa5, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfge.vf	v20, v16, fa5
-	vmnot.m	v0, v20
 	fli.s	fa5, -1.0
+	vmnot.m	v0, v20
 	vfmv.v.f	v16, fa5
 	vmerge.vvm	v12, v16, v12, v0
 	vfadd.vv	v8, v12, v8
@@ -40,8 +40,8 @@ func0000000000000005:                   # @func0000000000000005
 	fmv.w.x	fa5, a0
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfle.vf	v20, v16, fa5
-	vmnot.m	v0, v20
 	fli.s	fa5, 8.0
+	vmnot.m	v0, v20
 	vfmv.v.f	v16, fa5
 	vmerge.vvm	v12, v16, v12, v0
 	vfadd.vv	v8, v12, v8

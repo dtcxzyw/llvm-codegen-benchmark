@@ -1,8 +1,8 @@
 func0000000000000081:                   # @func0000000000000081
 	and	a1, a1, a2
+	bseti	a2, zero, 33
 	sext.w	a1, a1
 	seqz	a1, a1
-	bseti	a2, zero, 33
 	sltu	a0, a2, a0
 	or	a0, a0, a1
 	ret

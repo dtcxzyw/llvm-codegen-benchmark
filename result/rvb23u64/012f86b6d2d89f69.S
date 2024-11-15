@@ -162,8 +162,8 @@ func000000000000015a:                   # @func000000000000015a
 	ret
 func000000000000020a:                   # @func000000000000020a
 	add	a1, a1, a2
+	lui	a2, 524288
 	addw	a0, a0, a1
-	lui	a1, 524288
-	addiw	a1, a1, -25
-	slt	a0, a1, a0
+	addiw	a2, a2, -25
+	slt	a0, a2, a0
 	ret

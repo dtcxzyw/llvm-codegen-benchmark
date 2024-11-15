@@ -19,11 +19,11 @@ func000000000000000e:                   # @func000000000000000e
 	ret
 func0000000000000008:                   # @func0000000000000008
 	andi	a2, a2, 255
+	or	a0, a0, a1
+	lui	a1, 8192
 	seqz	a2, a2
 	addi	a2, a2, -1
 	andi	a2, a2, 60
-	or	a0, a0, a1
-	lui	a1, 8192
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

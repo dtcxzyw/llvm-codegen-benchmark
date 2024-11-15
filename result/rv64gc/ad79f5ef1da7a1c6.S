@@ -12,8 +12,8 @@ func00000000000002a8:                   # @func00000000000002a8
 	slli	a3, a2, 4
 	slli	a2, a2, 6
 	sub	a2, a2, a3
-	add	a1, a1, a2
 	li	a3, 1
+	add	a1, a1, a2
 	li	a2, -32
 	bltu	a3, a0, .LBB1_2
 	li	a2, -8
@@ -31,8 +31,8 @@ func00000000000002a1:                   # @func00000000000002a1
 	ret
 func0000000000000208:                   # @func0000000000000208
 	slli	a2, a2, 2
-	add	a1, a1, a2
 	li	a3, 7
+	add	a1, a1, a2
 	li	a2, 4
 	bltu	a3, a0, .LBB3_2
 	li	a2, 12

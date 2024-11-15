@@ -27,8 +27,8 @@ func00000000000000a1:                   # @func00000000000000a1
 	sext.w	a0, a0
 	zext.h	a2, a2
 	xor	a0, a0, a2
-	seqz	a0, a0
 	li	a2, 2047
+	seqz	a0, a0
 	slt	a1, a2, a1
 	and	a0, a0, a1
 	ret

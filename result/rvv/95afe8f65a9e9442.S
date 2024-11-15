@@ -75,10 +75,10 @@ func0000000000000176:                   # @func0000000000000176
 func000000000000017a:                   # @func000000000000017a
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsll.vi	v10, v10, 2
+	li	a0, 64
 	vadd.vi	v10, v10, -3
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsext.vf2	v12, v10
-	li	a0, 64
 	vadd.vx	v8, v8, a0
 	vmslt.vv	v0, v12, v8
 	ret

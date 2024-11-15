@@ -1,7 +1,7 @@
 func0000000000000001:                   # @func0000000000000001
 	rev8	a3, a1
-	srli	a3, a3, 32
 	andi	a2, a2, 1
+	srli	a3, a3, 32
 	czero.nez	a1, a1, a2
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
@@ -11,8 +11,8 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000004:                   # @func0000000000000004
 	rev8	a3, a1
-	srli	a3, a3, 32
 	andi	a2, a2, 1
+	srli	a3, a3, 32
 	czero.nez	a1, a1, a2
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
@@ -21,8 +21,8 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000005:                   # @func0000000000000005
 	rev8	a3, a1
-	srli	a3, a3, 32
 	andi	a2, a2, 1
+	srli	a3, a3, 32
 	czero.nez	a1, a1, a2
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
@@ -32,8 +32,8 @@ func0000000000000005:                   # @func0000000000000005
 	ret
 func0000000000000008:                   # @func0000000000000008
 	rev8	a3, a1
-	srli	a3, a3, 32
 	andi	a2, a2, 1
+	srli	a3, a3, 32
 	czero.nez	a1, a1, a2
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2

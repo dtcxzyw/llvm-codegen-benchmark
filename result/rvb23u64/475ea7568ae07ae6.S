@@ -11,8 +11,8 @@ func0000000000000092:                   # @func0000000000000092
 func00000000000000da:                   # @func00000000000000da
 	mul	a5, a5, a2
 	mulhu	a2, a2, a4
-	add	a2, a2, a5
 	mul	a3, a3, a4
+	add	a2, a2, a5
 	add	a2, a2, a3
 	add	a0, a0, a2
 	sltu	a2, a0, a2

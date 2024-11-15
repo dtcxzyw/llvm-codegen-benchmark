@@ -2,9 +2,9 @@
 	.quad	0x3d19000000000000              # double 2.2204460492503131E-14
 func0000000000000025:                   # @func0000000000000025
 	fli.d	fa5, min
+	lui	a0, %hi(.LCPI0_0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v0, v16, fa5
-	lui	a0, %hi(.LCPI0_0)
 	fld	fa4, %lo(.LCPI0_0)(a0)
 	vfmerge.vfm	v16, v16, fa5, v0
 	vfdiv.vv	v8, v8, v16
@@ -15,9 +15,9 @@ func0000000000000025:                   # @func0000000000000025
 	.quad	0x3d19000000000000              # double 2.2204460492503131E-14
 func000000000000002a:                   # @func000000000000002a
 	fli.d	fa5, min
+	lui	a0, %hi(.LCPI1_0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v0, v16, fa5
-	lui	a0, %hi(.LCPI1_0)
 	fld	fa4, %lo(.LCPI1_0)(a0)
 	vfmerge.vfm	v16, v16, fa5, v0
 	vfdiv.vv	v8, v8, v16

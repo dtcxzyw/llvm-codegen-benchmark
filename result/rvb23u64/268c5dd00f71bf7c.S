@@ -6,8 +6,8 @@ func0000000000000040:                   # @func0000000000000040
 	ret
 func000000000000004a:                   # @func000000000000004a
 	sh2add	a0, a0, a0
-	sh3add	a0, a0, a2
 	andi	a1, a1, 255
+	sh3add	a0, a0, a2
 	sh2add	a1, a1, a1
 	sh3add	a0, a1, a0
 	addi	a0, a0, 16

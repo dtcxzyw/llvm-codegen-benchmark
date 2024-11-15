@@ -22,8 +22,8 @@ func000000000000003e:                   # @func000000000000003e
 func0000000000000035:                   # @func0000000000000035
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsrl.vi	v12, v12, 1
-	vadd.vv	v10, v12, v10
 	lui	a0, 1048570
+	vadd.vv	v10, v12, v10
 	addi	a0, a0, -2
 	vmacc.vx	v8, a0, v10
 	ret

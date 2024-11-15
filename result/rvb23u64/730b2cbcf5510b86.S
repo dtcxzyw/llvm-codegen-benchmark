@@ -30,8 +30,8 @@ func000000000000001c:                   # @func000000000000001c
 	sext.w	a0, a0
 	lui	a2, 131584
 	and	a1, a1, a2
-	seqz	a1, a1
 	snez	a0, a0
+	seqz	a1, a1
 	and	a0, a0, a1
 	lui	a1, 512
 	czero.nez	a0, a1, a0
@@ -41,8 +41,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	sext.w	a0, a0
 	andi	a1, a1, 136
 	addi	a1, a1, -136
-	seqz	a1, a1
 	snez	a0, a0
+	seqz	a1, a1
 	and	a0, a0, a1
 	li	a1, 3
 	czero.nez	a0, a1, a0
@@ -76,8 +76,8 @@ func0000000000000014:                   # @func0000000000000014
 	sext.w	a0, a0
 	lui	a2, 24576
 	and	a1, a1, a2
-	seqz	a1, a1
 	sltiu	a0, a0, 2
+	seqz	a1, a1
 	and	a0, a0, a1
 	li	a1, -4
 	czero.nez	a0, a1, a0

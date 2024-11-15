@@ -1,10 +1,9 @@
 func0000000000000211:                   # @func0000000000000211
 	fmv.d.x	fa5, zero
-	vsetivli	zero, 8, e64, m4, ta, ma
-	vmfgt.vf	v0, v8, fa5
-	vsetvli	zero, zero, e32, m2, ta, ma
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.i	v14, 0
 	vsetvli	zero, zero, e64, m4, ta, ma
+	vmfgt.vf	v0, v8, fa5
 	vmflt.vf	v12, v8, fa5
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmerge.vim	v8, v14, 1, v0

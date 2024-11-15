@@ -28,8 +28,8 @@ func000000000000000c:                   # @func000000000000000c
 	srli	a0, a0, 2
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
-	vsub.vv	v8, v10, v8
 	lui	a0, 64
+	vsub.vv	v8, v10, v8
 	addiw	a0, a0, -4
 	vadd.vx	v8, v8, a0
 	ret
@@ -47,8 +47,8 @@ func000000000000000f:                   # @func000000000000000f
 	srli	a0, a0, 8
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
-	vsub.vv	v8, v10, v8
 	li	a0, 4
+	vsub.vv	v8, v10, v8
 	bseti	a0, a0, 58
 	vadd.vx	v8, v8, a0
 	ret

@@ -42,9 +42,9 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func0000000000000008:                   # @func0000000000000008
 	fli.s	fa5, 1.0
+	lui	a0, 833536
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfeq.vf	v0, v8, fa5
-	lui	a0, 833536
 	vmv.v.x	v8, a0
 	lui	a0, 309248
 	vmerge.vxm	v8, v8, a0, v0
@@ -69,11 +69,11 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func0000000000000005:                   # @func0000000000000005
 	fli.s	fa5, 256.0
+	lui	a0, 271488
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfle.vf	v12, v8, fa5
-	vmnot.m	v0, v12
-	lui	a0, 271488
 	vmv.v.x	v8, a0
+	vmnot.m	v0, v12
 	lui	a0, 272896
 	vmerge.vxm	v8, v8, a0, v0
 	ret

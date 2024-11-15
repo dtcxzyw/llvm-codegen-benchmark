@@ -11,8 +11,8 @@ func000000000000000e:                   # @func000000000000000e
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vclz.v	v8, v8
 	li	a0, 33
-	vrsub.vx	v8, v8, a0
 	vmv.v.i	v10, 1
+	vrsub.vx	v8, v8, a0
 	vsll.vv	v8, v10, v8
 	li	a0, 64
 	vmerge.vxm	v8, v8, a0, v0
@@ -21,8 +21,8 @@ func000000000000002e:                   # @func000000000000002e
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vclz.v	v8, v8
 	li	a0, 33
-	vrsub.vx	v8, v8, a0
 	vmv.v.i	v10, 1
+	vrsub.vx	v8, v8, a0
 	vsll.vv	v8, v10, v8
 	li	a0, 64
 	vmerge.vxm	v8, v8, a0, v0

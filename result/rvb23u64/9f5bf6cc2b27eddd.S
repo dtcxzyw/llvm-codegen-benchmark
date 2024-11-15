@@ -1,11 +1,11 @@
 func0000000000000003:                   # @func0000000000000003
 	andi	a0, a0, 1
+	bseti	a2, zero, 44
+	czero.nez	a0, a2, a0
 	lui	a2, 28673
 	slli	a2, a2, 9
 	addi	a2, a2, 2046
 	and	a1, a1, a2
-	bseti	a2, zero, 44
-	czero.nez	a0, a2, a0
 	li	a2, 1177
 	slli	a2, a2, 21
 	addi	a2, a2, -2047

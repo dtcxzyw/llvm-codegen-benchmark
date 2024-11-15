@@ -9,9 +9,9 @@ func000000000000003f:                   # @func000000000000003f
 	sub	a3, a0, a2
 	srli	a3, a3, 1
 	add	a2, a2, a3
-	srli	a2, a2, 15
 	lui	a3, 16
 	addiw	a3, a3, -15
+	srli	a2, a2, 15
 	mul	a2, a2, a3
 	sub	a0, a2, a0
 	add	a1, a1, a3

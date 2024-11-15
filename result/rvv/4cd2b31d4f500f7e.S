@@ -6,8 +6,8 @@ func000000000000002c:                   # @func000000000000002c
 	lui	a0, 32
 	addi	a0, a0, 1024
 	vmseq.vx	v12, v10, a0
-	vmor.mm	v10, v12, v0
 	lui	a0, 256
+	vmor.mm	v10, v12, v0
 	vmsne.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10
 	ret

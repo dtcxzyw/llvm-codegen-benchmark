@@ -1,7 +1,7 @@
 func0000000000000018:                   # @func0000000000000018
 	slli	a0, a0, 48
-	srli	a0, a0, 48
 	li	a3, 152
+	srli	a0, a0, 48
 	mul	a2, a2, a3
 	add	a1, a1, a2
 	add	a0, a0, a1
@@ -9,8 +9,8 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 func000000000000005a:                   # @func000000000000005a
 	slli	a0, a0, 48
-	srli	a0, a0, 48
 	li	a3, 528
+	srli	a0, a0, 48
 	mul	a2, a2, a3
 	add	a1, a1, a2
 	slli	a0, a0, 1

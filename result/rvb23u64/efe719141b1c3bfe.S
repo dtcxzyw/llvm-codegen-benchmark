@@ -57,15 +57,15 @@ func0000000000000090:                   # @func0000000000000090
 	ret
 func0000000000000118:                   # @func0000000000000118
 	sltiu	a2, a0, 21
-	xori	a2, a2, 1
 	xor	a0, a0, a1
+	xori	a1, a2, 1
 	snez	a0, a0
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 func0000000000000190:                   # @func0000000000000190
 	xor	a1, a1, a0
-	snez	a1, a1
 	sltiu	a0, a0, 65
+	snez	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -117,11 +117,11 @@ func0000000000000032:                   # @func0000000000000032
 	ret
 func000000000000010a:                   # @func000000000000010a
 	li	a2, -2
+	sltu	a1, a1, a0
 	zext.w	a2, a2
-	sltu	a2, a2, a0
-	sltu	a0, a1, a0
-	xori	a0, a0, 1
-	or	a0, a0, a2
+	sltu	a0, a2, a0
+	xori	a1, a1, 1
+	or	a0, a0, a1
 	ret
 func0000000000000108:                   # @func0000000000000108
 	sltu	a1, a1, a0
@@ -130,12 +130,12 @@ func0000000000000108:                   # @func0000000000000108
 	ret
 func0000000000000038:                   # @func0000000000000038
 	lui	a2, 560295
+	xor	a1, a1, a0
 	addiw	a2, a2, -1025
-	xor	a2, a2, a0
-	seqz	a2, a2
-	xor	a0, a0, a1
-	snez	a0, a0
-	or	a0, a0, a2
+	xor	a0, a0, a2
+	seqz	a0, a0
+	snez	a1, a1
+	or	a0, a0, a1
 	ret
 func000000000000018c:                   # @func000000000000018c
 	xor	a1, a1, a0
@@ -151,8 +151,8 @@ func0000000000000114:                   # @func0000000000000114
 	ret
 func00000000000000a2:                   # @func00000000000000a2
 	sltu	a1, a1, a0
-	xori	a1, a1, 1
 	addi	a0, a0, 1
+	xori	a1, a1, 1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
@@ -175,15 +175,15 @@ func00000000000000c8:                   # @func00000000000000c8
 	ret
 func000000000000002a:                   # @func000000000000002a
 	addi	a2, a0, 1
-	seqz	a2, a2
 	sltu	a0, a1, a0
+	seqz	a1, a2
 	xori	a0, a0, 1
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 func0000000000000162:                   # @func0000000000000162
 	slt	a1, a0, a1
-	xori	a1, a1, 1
 	addi	a0, a0, -50
+	xori	a1, a1, 1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
@@ -226,10 +226,10 @@ func000000000000012c:                   # @func000000000000012c
 	ret
 func000000000000010e:                   # @func000000000000010e
 	srli	a2, a0, 31
-	snez	a2, a2
 	slt	a0, a1, a0
+	snez	a1, a2
 	xori	a0, a0, 1
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 func00000000000000e2:                   # @func00000000000000e2
 	slt	a1, a1, a0

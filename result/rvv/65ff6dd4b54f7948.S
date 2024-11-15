@@ -15,9 +15,9 @@ func0000000000000022:                   # @func0000000000000022
 func0000000000000038:                   # @func0000000000000038
 	lui	a0, 4096
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmseq.vx	v14, v12, a0
-	vmsne.vi	v12, v10, 0
-	vmor.mm	v0, v12, v14
+	vmsne.vi	v14, v10, 0
+	vmseq.vx	v10, v12, a0
+	vmor.mm	v0, v14, v10
 	vmerge.vim	v8, v8, 0, v0
 	ret
 func0000000000000088:                   # @func0000000000000088

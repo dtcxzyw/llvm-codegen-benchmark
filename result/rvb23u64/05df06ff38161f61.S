@@ -23,8 +23,8 @@ func000000000000001a:                   # @func000000000000001a
 	sext.w	a0, a0
 	zext.h	a1, a1
 	addi	a1, a1, -10
-	snez	a1, a1
 	slti	a0, a0, 0
+	snez	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

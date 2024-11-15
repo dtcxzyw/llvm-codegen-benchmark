@@ -11,10 +11,10 @@ func00000000000001c1:                   # @func00000000000001c1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v12, v10, 0
 	lui	a0, 244141
-	addi	a0, a0, -1536
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vmsne.vx	v9, v9, a0
 	vmseq.vi	v8, v8, 0
+	addi	a0, a0, -1536
+	vmsne.vx	v9, v9, a0
 	vmand.mm	v8, v12, v8
 	vmand.mm	v0, v8, v9
 	ret

@@ -13,12 +13,12 @@ func0000000000000028:                   # @func0000000000000028
 	addi	a0, a0, 8
 	ret
 func000000000000000a:                   # @func000000000000000a
-	lui	a3, 1
-	addiw	a3, a3, -1712
-	mul	a2, a2, a3
 	slli	a3, a0, 3
 	slli	a0, a0, 5
 	sub	a0, a0, a3
+	lui	a3, 1
+	addiw	a3, a3, -1712
+	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 8

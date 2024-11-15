@@ -23,12 +23,12 @@ func000000000000001c:                   # @func000000000000001c
 	add	a4, a4, a2
 	sltu	a2, a4, a2
 	sub	a1, a1, a3
-	sub	a1, a1, a2
-	sltu	a2, a0, a4
-	sub	a1, a1, a2
+	sltu	a3, a0, a4
 	sub	a0, a0, a4
-	slli	a2, a1, 8
+	sub	a1, a1, a2
 	srli	a0, a0, 56
+	sub	a1, a1, a3
+	slli	a2, a1, 8
 	or	a0, a0, a2
 	srli	a1, a1, 56
 	ret
@@ -37,12 +37,12 @@ func0000000000000000:                   # @func0000000000000000
 	add	a4, a4, a2
 	sltu	a2, a4, a2
 	sub	a1, a1, a3
-	sub	a1, a1, a2
-	sltu	a2, a0, a4
-	sub	a1, a1, a2
+	sltu	a3, a0, a4
 	sub	a0, a0, a4
-	slli	a2, a1, 8
+	sub	a1, a1, a2
 	srli	a0, a0, 56
+	sub	a1, a1, a3
+	slli	a2, a1, 8
 	or	a0, a0, a2
 	srli	a1, a1, 56
 	ret
@@ -51,12 +51,12 @@ func0000000000000008:                   # @func0000000000000008
 	add	a4, a4, a2
 	sltu	a2, a4, a2
 	sub	a1, a1, a3
-	sub	a1, a1, a2
-	sltu	a2, a0, a4
-	sub	a1, a1, a2
+	sltu	a3, a0, a4
 	sub	a0, a0, a4
-	slli	a2, a1, 8
+	sub	a1, a1, a2
 	srli	a0, a0, 56
+	sub	a1, a1, a3
+	slli	a2, a1, 8
 	or	a0, a0, a2
 	srli	a1, a1, 56
 	ret

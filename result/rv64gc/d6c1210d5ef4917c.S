@@ -15,8 +15,8 @@ func0000000000000111:                   # @func0000000000000111
 func0000000000000ccc:                   # @func0000000000000ccc
 	sext.w	a1, a1
 	snez	a2, a2
-	snez	a1, a1
 	snez	a0, a0
+	snez	a1, a1
 	and	a0, a0, a2
 	and	a0, a0, a1
 	ret
@@ -31,10 +31,10 @@ func0000000000000c11:                   # @func0000000000000c11
 func0000000000000c88:                   # @func0000000000000c88
 	sext.w	a1, a1
 	snez	a2, a2
-	sltiu	a1, a1, 2
-	not	a1, a1
 	sltiu	a0, a0, 9
+	sltiu	a1, a1, 2
 	not	a0, a0
+	not	a1, a1
 	and	a0, a0, a2
 	and	a0, a0, a1
 	ret

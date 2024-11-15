@@ -45,8 +45,8 @@ func000000000000001e:                   # @func000000000000001e
 	ret
 func000000000000001c:                   # @func000000000000001c
 	andi	a1, a1, 215
-	slli	a1, a1, 21
 	lui	a2, 20480
+	slli	a1, a1, 21
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -65,8 +65,8 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 func000000000000000d:                   # @func000000000000000d
 	andi	a1, a1, 255
-	slli	a1, a1, 4
 	lui	a2, 1008
+	slli	a1, a1, 4
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret

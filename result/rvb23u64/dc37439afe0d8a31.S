@@ -36,8 +36,8 @@ func0000000000000011:                   # @func0000000000000011
 func000000000000001c:                   # @func000000000000001c
 	sext.w	a0, a0
 	zext.h	a1, a1
-	seqz	a1, a1
 	lui	a2, 33843
+	seqz	a1, a1
 	addiw	a2, a2, 571
 	xor	a0, a0, a2
 	snez	a0, a0

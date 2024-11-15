@@ -7,9 +7,9 @@ func0000000000000005:                   # @func0000000000000005
 func0000000000000007:                   # @func0000000000000007
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2
+	lui	a2, 25
 	or	a0, a0, a1
-	lui	a1, 25
-	addiw	a1, a1, 543
+	addiw	a1, a2, 543
 	mul	a0, a0, a1
 	ret
 func0000000000000010:                   # @func0000000000000010

@@ -53,12 +53,12 @@ func0000000000000024:                   # @func0000000000000024
 func0000000000000034:                   # @func0000000000000034
 	andi	a2, a2, 48
 	lui	a3, 1
+	or	a0, a0, a2
+	lui	a2, 16
 	addi	a3, a3, -64
 	and	a1, a1, a3
-	or	a0, a0, a2
 	or	a0, a0, a1
 	sext.w	a0, a0
-	lui	a1, 16
-	addiw	a1, a1, -528
+	addiw	a1, a2, -528
 	sltu	a0, a0, a1
 	ret

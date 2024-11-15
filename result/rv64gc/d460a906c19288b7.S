@@ -1,8 +1,8 @@
 func000000000000010a:                   # @func000000000000010a
 	andi	a1, a1, 255
 	add	a0, a0, a1
-	addiw	a0, a0, -48
 	lui	a1, 52429
+	addiw	a0, a0, -48
 	addiw	a1, a1, -821
 	slt	a0, a1, a0
 	ret
@@ -15,8 +15,8 @@ func0000000000000154:                   # @func0000000000000154
 func0000000000000108:                   # @func0000000000000108
 	andi	a1, a1, 255
 	add	a0, a0, a1
-	addiw	a0, a0, -48
 	lui	a1, 52429
+	addiw	a0, a0, -48
 	addiw	a1, a1, -821
 	sltu	a0, a1, a0
 	ret

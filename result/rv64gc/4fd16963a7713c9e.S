@@ -31,8 +31,8 @@ func00000000000000a1:                   # @func00000000000000a1
 func0000000000000061:                   # @func0000000000000061
 	sext.w	a0, a0
 	sub	a1, a1, a2
-	slti	a1, a1, 3
 	li	a2, 27
+	slti	a1, a1, 3
 	slli	a2, a2, 11
 	xor	a0, a0, a2
 	seqz	a0, a0

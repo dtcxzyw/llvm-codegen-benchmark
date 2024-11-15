@@ -3,9 +3,9 @@
 func0000000000000002:                   # @func0000000000000002
 	lui	a1, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a1)
-	fcvt.d.w	fa4, a0
-	fdiv.d	fa3, fa0, fa1
-	fmul.d	fa4, fa3, fa4
+	fdiv.d	fa4, fa0, fa1
+	fcvt.d.w	fa3, a0
+	fmul.d	fa4, fa4, fa3
 	flt.d	a0, fa4, fa5
 	ret
 func0000000000000008:                   # @func0000000000000008

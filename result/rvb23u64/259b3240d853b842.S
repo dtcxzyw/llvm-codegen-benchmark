@@ -13,19 +13,19 @@ func000000000000024c:                   # @func000000000000024c
 	ret
 func00000000000003cc:                   # @func00000000000003cc
 	addi	a2, a2, 48
-	xor	a2, a2, a0
-	snez	a2, a2
-	xor	a0, a0, a1
+	xor	a1, a1, a0
+	xor	a0, a0, a2
 	snez	a0, a0
-	and	a0, a0, a2
+	snez	a1, a1
+	and	a0, a0, a1
 	ret
 func00000000000002cc:                   # @func00000000000002cc
 	addi	a2, a2, 224
-	xor	a2, a2, a0
-	snez	a2, a2
-	xor	a0, a0, a1
+	xor	a1, a1, a0
+	xor	a0, a0, a2
 	snez	a0, a0
-	and	a0, a0, a2
+	snez	a1, a1
+	and	a0, a0, a1
 	ret
 func0000000000000048:                   # @func0000000000000048
 	addi	a2, a2, 1

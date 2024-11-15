@@ -2,13 +2,13 @@ func000000000000029a:                   # @func000000000000029a
 	sext.w	a1, a1
 	andi	a2, a2, 1
 	li	a3, -1024
+	lui	a4, 8
 	czero.nez	a2, a3, a2
+	addiw	a3, a4, 1131
 	addi	a2, a2, 1131
-	lui	a3, 8
-	addiw	a4, a3, 1131
-	slt	a1, a4, a1
+	slt	a1, a3, a1
 	czero.nez	a2, a2, a1
-	czero.eqz	a1, a3, a1
+	czero.eqz	a1, a4, a1
 	or	a1, a1, a2
 	addw	a0, a0, a1
 	slti	a0, a0, 0
@@ -19,10 +19,10 @@ func0000000000000288:                   # @func0000000000000288
 	andi	a2, a2, 1
 	li	a3, 100
 	czero.nez	a2, a3, a2
-	addi	a2, a2, -1980
-	slti	a1, a1, 1980
 	lui	a3, 1048575
+	slti	a1, a1, 1980
 	addi	a3, a3, 216
+	addi	a2, a2, -1980
 	czero.nez	a3, a3, a1
 	czero.eqz	a1, a2, a1
 	or	a1, a1, a3

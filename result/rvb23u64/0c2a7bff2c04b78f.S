@@ -22,8 +22,8 @@ func000000000000000b:                   # @func000000000000000b
 func000000000000000a:                   # @func000000000000000a
 	slli	a1, a1, 24
 	or	a0, a0, a1
-	srli	a0, a0, 7
 	lui	a1, 4112
+	srli	a0, a0, 7
 	addiw	a1, a1, 257
 	and	a0, a0, a1
 	ret

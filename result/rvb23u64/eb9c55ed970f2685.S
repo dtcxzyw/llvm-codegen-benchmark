@@ -44,9 +44,9 @@ func0000000000000012:                   # @func0000000000000012
 	ret
 func0000000000000004:                   # @func0000000000000004
 	fli.s	fa5, -1.0
+	lui	a0, 212992
 	fadd.s	fa5, fa0, fa5
 	fabs.s	fa5, fa5
-	lui	a0, 212992
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	ret
@@ -101,9 +101,9 @@ func0000000000000005:                   # @func0000000000000005
 	ret
 func0000000000000013:                   # @func0000000000000013
 	fli.s	fa5, -1.0
+	lui	a0, 212992
 	fadd.s	fa5, fa0, fa5
 	fabs.s	fa5, fa5
-	lui	a0, 212992
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa4, fa5
 	xori	a0, a0, 1

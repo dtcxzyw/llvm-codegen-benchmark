@@ -3,8 +3,8 @@
 func00000000000002c4:                   # @func00000000000002c4
 	lui	a2, %hi(.LCPI0_0)
 	ld	a2, %lo(.LCPI0_0)(a2)
-	mul	a1, a1, a2
 	slli	a0, a0, 54
+	mul	a1, a1, a2
 	li	a2, -1
 	slli	a2, a2, 54
 	add	a0, a0, a2

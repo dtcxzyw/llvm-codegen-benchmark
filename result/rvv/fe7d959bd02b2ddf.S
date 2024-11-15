@@ -107,13 +107,13 @@ func0000000000000000:                   # @func0000000000000000
 	vl8r.v	v8, (a0)                        # Unknown-size Folded Reload
 	vsetivli	zero, 1, e64, m2, ta, ma
 	vslidedown.vi	v8, v8, 2
-	vfmv.f.s	fa0, v8
 	csrr	a0, vlenb
 	sh3add	a0, a0, sp
 	addi	a0, a0, 624
-	vl8r.v	v8, (a0)                        # Unknown-size Folded Reload
-	vslidedown.vi	v8, v8, 2
-	vfmv.f.s	fa1, v8
+	vl8r.v	v16, (a0)                       # Unknown-size Folded Reload
+	vslidedown.vi	v10, v16, 2
+	vfmv.f.s	fa0, v8
+	vfmv.f.s	fa1, v10
 	call	fmod
 	fsd	fa0, 400(sp)
 	addi	a0, sp, 384

@@ -53,17 +53,17 @@ func0000000000000016:                   # @func0000000000000016
 func000000000000001c:                   # @func000000000000001c
 	lui	a2, %hi(.LCPI3_0)
 	ld	a2, %lo(.LCPI3_0)(a2)
-	lui	a3, %hi(.LCPI3_1)
-	ld	a3, %lo(.LCPI3_1)(a3)
 	add	a0, a0, a1
+	lui	a1, %hi(.LCPI3_1)
+	ld	a1, %lo(.LCPI3_1)(a1)
 	mul	a0, a0, a2
-	add	a0, a0, a3
-	lui	a1, %hi(.LCPI3_2)
-	ld	a1, %lo(.LCPI3_2)(a1)
-	slli	a2, a0, 62
+	lui	a2, %hi(.LCPI3_2)
+	ld	a2, %lo(.LCPI3_2)(a2)
+	add	a0, a0, a1
+	slli	a1, a0, 62
 	srli	a0, a0, 2
-	or	a0, a0, a2
-	sltu	a0, a1, a0
+	or	a0, a0, a1
+	sltu	a0, a2, a0
 	ret
 .LCPI4_0:
 	.quad	2066035336255469781             # 0x1cac083126e978d5
@@ -74,17 +74,17 @@ func000000000000001c:                   # @func000000000000001c
 func0000000000000001:                   # @func0000000000000001
 	lui	a2, %hi(.LCPI4_0)
 	ld	a2, %lo(.LCPI4_0)(a2)
-	lui	a3, %hi(.LCPI4_1)
-	ld	a3, %lo(.LCPI4_1)(a3)
 	add	a0, a0, a1
+	lui	a1, %hi(.LCPI4_1)
+	ld	a1, %lo(.LCPI4_1)(a1)
 	mul	a0, a0, a2
-	add	a0, a0, a3
-	lui	a1, %hi(.LCPI4_2)
-	ld	a1, %lo(.LCPI4_2)(a1)
-	slli	a2, a0, 61
+	lui	a2, %hi(.LCPI4_2)
+	ld	a2, %lo(.LCPI4_2)(a2)
+	add	a0, a0, a1
+	slli	a1, a0, 61
 	srli	a0, a0, 3
-	or	a0, a0, a2
-	sltu	a0, a0, a1
+	or	a0, a0, a1
+	sltu	a0, a0, a2
 	ret
 .LCPI5_0:
 	.quad	7164004856975580295             # 0x636ba875fd33dc87
@@ -99,9 +99,9 @@ func0000000000000008:                   # @func0000000000000008
 	lui	a2, 21094
 	addiw	a2, a2, -1024
 	mul	a1, a1, a2
+	lui	a2, 15820
 	sub	a0, a0, a1
-	lui	a1, 15820
-	addiw	a1, a1, 1279
+	addiw	a1, a2, 1279
 	sltu	a0, a1, a0
 	ret
 .LCPI6_0:
@@ -113,15 +113,15 @@ func0000000000000008:                   # @func0000000000000008
 func000000000000000c:                   # @func000000000000000c
 	lui	a2, %hi(.LCPI6_0)
 	ld	a2, %lo(.LCPI6_0)(a2)
-	lui	a3, %hi(.LCPI6_1)
-	ld	a3, %lo(.LCPI6_1)(a3)
 	add	a0, a0, a1
+	lui	a1, %hi(.LCPI6_1)
+	ld	a1, %lo(.LCPI6_1)(a1)
 	mul	a0, a0, a2
-	add	a0, a0, a3
-	lui	a1, %hi(.LCPI6_2)
-	ld	a1, %lo(.LCPI6_2)(a1)
-	slli	a2, a0, 62
+	lui	a2, %hi(.LCPI6_2)
+	ld	a2, %lo(.LCPI6_2)(a2)
+	add	a0, a0, a1
+	slli	a1, a0, 62
 	srli	a0, a0, 2
-	or	a0, a0, a2
-	sltu	a0, a1, a0
+	or	a0, a0, a1
+	sltu	a0, a2, a0
 	ret

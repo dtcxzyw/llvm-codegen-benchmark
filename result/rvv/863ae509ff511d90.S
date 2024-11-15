@@ -9,8 +9,8 @@ func0000000000000003:                   # @func0000000000000003
 	li	a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmax.vx	v8, v8, a0
-	vadd.vi	v8, v8, 3
 	li	a0, -7
+	vadd.vi	v8, v8, 3
 	srli	a0, a0, 1
 	vand.vx	v8, v8, a0
 	ret

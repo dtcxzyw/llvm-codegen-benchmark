@@ -11,8 +11,8 @@ func0000000000000031:                   # @func0000000000000031
 	vmsne.vi	v0, v8, 2
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.i	v8, 0
-	vmerge.vim	v8, v8, 1, v0
 	lui	a0, 921600
+	vmerge.vim	v8, v8, 1, v0
 	addi	a0, a0, -2
 	vor.vx	v8, v8, a0
 	ret

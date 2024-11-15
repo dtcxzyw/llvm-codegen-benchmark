@@ -1,9 +1,9 @@
 func0000000000000443:                   # @func0000000000000443
 	lui	a0, 244
-	addi	a0, a0, 575
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsgtu.vx	v0, v8, a0
 	vmv.v.i	v12, 0
+	addi	a0, a0, 575
+	vmsgtu.vx	v0, v8, a0
 	lui	a0, 24
 	addi	a0, a0, 1695
 	vmsgtu.vx	v10, v8, a0
@@ -15,10 +15,10 @@ func0000000000000443:                   # @func0000000000000443
 	ret
 func0000000000000553:                   # @func0000000000000553
 	lui	a0, 4096
-	addi	a0, a0, -1
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsgt.vx	v0, v8, a0
 	vmv.v.i	v12, 0
+	addi	a0, a0, -1
+	vmsgt.vx	v0, v8, a0
 	lui	a0, 16
 	addi	a0, a0, -1
 	vmsgt.vx	v10, v8, a0

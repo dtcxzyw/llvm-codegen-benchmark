@@ -8,9 +8,9 @@ func0000000000000004:                   # @func0000000000000004
 func0000000000000002:                   # @func0000000000000002
 	lui	a0, 272352
 	fmv.w.x	fa5, a0
+	lui	a0, 274400
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfadd.vf	v8, v8, fa5
-	lui	a0, 274400
 	fmv.w.x	fa5, a0
 	vfmin.vf	v8, v8, fa5
 	ret

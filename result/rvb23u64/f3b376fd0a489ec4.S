@@ -24,9 +24,9 @@ func000000000000003a:                   # @func000000000000003a
 func0000000000000018:                   # @func0000000000000018
 	srli	a2, a2, 4
 	lui	a3, 1
+	slli	a0, a0, 4
 	addiw	a3, a3, -16
 	and	a2, a2, a3
-	slli	a0, a0, 4
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

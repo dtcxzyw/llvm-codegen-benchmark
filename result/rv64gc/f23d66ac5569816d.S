@@ -50,10 +50,10 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func0000000000000022:                   # @func0000000000000022
 	sext.w	a2, a2
-	snez	a2, a2
-	addi	a2, a2, -1
 	lui	a3, 256
+	snez	a2, a2
 	addiw	a3, a3, -128
+	addi	a2, a2, -1
 	and	a2, a2, a3
 	or	a0, a0, a1
 	or	a0, a0, a2

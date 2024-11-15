@@ -24,16 +24,16 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func000000000000000b:                   # @func000000000000000b
 	fadd.s	fa5, fa1, fa2
-	fadd.s	fa5, fa5, fa0
 	lui	a0, 784384
+	fadd.s	fa5, fa5, fa0
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	xori	a0, a0, 1
 	ret
 func000000000000000d:                   # @func000000000000000d
 	fadd.s	fa5, fa1, fa2
-	fadd.s	fa5, fa5, fa0
 	lui	a0, 276480
+	fadd.s	fa5, fa5, fa0
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	xori	a0, a0, 1

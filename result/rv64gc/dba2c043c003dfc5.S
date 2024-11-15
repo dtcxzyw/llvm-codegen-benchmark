@@ -30,8 +30,8 @@ func0000000000000006:                   # @func0000000000000006
 func0000000000000010:                   # @func0000000000000010
 	andi	a1, a1, 1
 	andi	a2, a2, 255
-	sltiu	a2, a2, 240
 	li	a3, 2
+	sltiu	a2, a2, 240
 	sub	a3, a3, a2
 	addi	a1, a1, -1
 	and	a1, a1, a3

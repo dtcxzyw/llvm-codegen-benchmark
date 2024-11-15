@@ -49,10 +49,10 @@ func0000000000000012:                   # @func0000000000000012
 	ret
 func0000000000000004:                   # @func0000000000000004
 	fli.s	fa5, -1.0
+	lui	a0, 212992
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfadd.vf	v8, v8, fa5
 	vfabs.v	v8, v8
-	lui	a0, 212992
 	fmv.w.x	fa5, a0
 	vmfgt.vf	v0, v8, fa5
 	ret
@@ -112,10 +112,10 @@ func0000000000000005:                   # @func0000000000000005
 	ret
 func0000000000000013:                   # @func0000000000000013
 	fli.s	fa5, -1.0
+	lui	a0, 212992
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfadd.vf	v8, v8, fa5
 	vfabs.v	v8, v8
-	lui	a0, 212992
 	fmv.w.x	fa5, a0
 	vmfge.vf	v12, v8, fa5
 	vmnot.m	v0, v12

@@ -2,9 +2,9 @@ func00000000000000c4:                   # @func00000000000000c4
 	fli.s	fa5, 0.5
 	fadd.s	fa5, fa0, fa5
 	fli.s	fa4, 128.0
+	lui	a0, 274400
 	fneg.s	fa4, fa4
 	fmax.s	fa5, fa5, fa4
-	lui	a0, 274400
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	ret

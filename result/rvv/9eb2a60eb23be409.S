@@ -2,8 +2,8 @@ func0000000000000008:                   # @func0000000000000008
 	vmv1r.v	v13, v0
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vmfgt.vf	v14, v8, fa5
 	vmv.v.i	v16, 0
+	vmfgt.vf	v14, v8, fa5
 	vmor.mm	v0, v14, v12
 	fli.s	fa5, 1.0
 	vfmerge.vfm	v16, v16, fa5, v0

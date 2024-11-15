@@ -21,9 +21,9 @@ func0000000000000441:                   # @func0000000000000441
 	ret
 func0000000000000548:                   # @func0000000000000548
 	srai	a2, a2, 2
+	sltiu	a0, a0, 769
 	not	a2, a2
 	sltu	a1, a2, a1
-	sltiu	a0, a0, 769
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

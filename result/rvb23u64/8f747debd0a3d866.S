@@ -1,8 +1,8 @@
 func0000000000000003:                   # @func0000000000000003
 	sext.w	a0, a0
 	srli	a1, a1, 8
-	andi	a1, a1, 240
 	li	a2, 7
+	andi	a1, a1, 240
 	slli	a2, a2, 9
 	xor	a0, a0, a2
 	li	a2, -8

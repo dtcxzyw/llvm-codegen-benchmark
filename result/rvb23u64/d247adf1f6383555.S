@@ -1,9 +1,9 @@
 func000000000000002f:                   # @func000000000000002f
 	slli.uw	a0, a0, 2
-	sh1add	a0, a0, a0
-	addi	a0, a0, -12
 	lui	a1, 699051
+	sh1add	a0, a0, a0
 	addiw	a1, a1, -1365
+	addi	a0, a0, -12
 	slli	a2, a1, 32
 	add	a1, a1, a2
 	mulhu	a0, a0, a1
@@ -14,10 +14,10 @@ func000000000000002f:                   # @func000000000000002f
 	ret
 func000000000000002d:                   # @func000000000000002d
 	slli.uw	a0, a0, 2
-	sh1add	a0, a0, a0
-	addi	a0, a0, -12
 	lui	a1, 699051
+	sh1add	a0, a0, a0
 	addiw	a1, a1, -1365
+	addi	a0, a0, -12
 	slli	a2, a1, 32
 	add	a1, a1, a2
 	mulhu	a0, a0, a1
@@ -30,8 +30,8 @@ func000000000000002d:                   # @func000000000000002d
 	.quad	-7515340178177965473            # 0x97b425ed097b425f
 func000000000000003f:                   # @func000000000000003f
 	sext.w	a0, a0
-	sh1add	a0, a0, a0
 	lui	a1, %hi(.LCPI2_0)
+	sh1add	a0, a0, a0
 	ld	a1, %lo(.LCPI2_0)(a1)
 	sh3add	a0, a0, a0
 	slli	a0, a0, 3
@@ -47,8 +47,8 @@ func000000000000003f:                   # @func000000000000003f
 	.quad	-7515340178177965473            # 0x97b425ed097b425f
 func000000000000003d:                   # @func000000000000003d
 	sext.w	a0, a0
-	sh1add	a0, a0, a0
 	lui	a1, %hi(.LCPI3_0)
+	sh1add	a0, a0, a0
 	ld	a1, %lo(.LCPI3_0)(a1)
 	sh3add	a0, a0, a0
 	slli	a0, a0, 3

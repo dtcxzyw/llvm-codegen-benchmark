@@ -2,8 +2,8 @@ func000000000000000c:                   # @func000000000000000c
 	andi	a1, a1, 255
 	snez	a1, a1
 	and	a0, a0, a1
-	neg	a0, a0
 	lui	a1, 61681
+	neg	a0, a0
 	addiw	a1, a1, -241
 	and	a0, a0, a1
 	ret

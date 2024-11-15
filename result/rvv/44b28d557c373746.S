@@ -17,10 +17,10 @@ func0000000000000035:                   # @func0000000000000035
 	addiw	a0, a0, 384
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v10, v10, a0
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vwaddu.wv	v10, v10, v8
 	lui	a0, 981163
 	slli	a0, a0, 3
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vwaddu.wv	v10, v10, v8
 	addi	a0, a0, 384
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v8, v10, a0
@@ -30,9 +30,9 @@ func000000000000007f:                   # @func000000000000007f
 	addiw	a0, a0, 384
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v10, v10, a0
+	lui	a0, 15398
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v10, v10, v8
-	lui	a0, 15398
 	addiw	a0, a0, 1792
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v8, v10, a0
@@ -42,10 +42,10 @@ func0000000000000025:                   # @func0000000000000025
 	addiw	a0, a0, 384
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v10, v10, a0
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vwaddu.wv	v10, v10, v8
 	lui	a0, 930062
 	addiw	a0, a0, -1681
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vwaddu.wv	v10, v10, v8
 	slli	a0, a0, 7
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v8, v10, a0

@@ -38,9 +38,9 @@ func00000000000003fd:                   # @func00000000000003fd
 	li	a3, 91
 	mul	a2, a2, a3
 	add	a1, a1, a2
-	mul	a1, a1, a3
 	lui	a2, 1042437
 	addi	a2, a2, 1192
+	mul	a1, a1, a3
 	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret

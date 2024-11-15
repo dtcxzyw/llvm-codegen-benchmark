@@ -70,25 +70,25 @@ func0000000000000034:                   # @func0000000000000034
 	ret
 func0000000000000038:                   # @func0000000000000038
 	mul	a1, a1, a2
+	li	a2, -1
 	add	a0, a0, a1
-	li	a1, -1
-	srli	a1, a1, 32
-	add	a0, a0, a1
+	srli	a2, a2, 32
+	add	a0, a0, a2
 	ret
 func0000000000000030:                   # @func0000000000000030
 	mul	a1, a1, a2
+	li	a2, 1
 	add	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 32
-	addi	a1, a1, -2
-	add	a0, a0, a1
+	slli	a2, a2, 32
+	addi	a2, a2, -2
+	add	a0, a0, a2
 	ret
 func0000000000000017:                   # @func0000000000000017
 	mul	a1, a1, a2
+	li	a2, -1
 	add	a0, a0, a1
-	li	a1, -1
-	srli	a1, a1, 32
-	add	a0, a0, a1
+	srli	a2, a2, 32
+	add	a0, a0, a2
 	ret
 func000000000000003c:                   # @func000000000000003c
 	mul	a1, a1, a2
@@ -98,8 +98,8 @@ func000000000000003c:                   # @func000000000000003c
 	ret
 func0000000000000008:                   # @func0000000000000008
 	mul	a1, a1, a2
+	lui	a2, 8
 	add	a0, a0, a1
-	lui	a1, 8
-	addiw	a1, a1, 448
+	addiw	a1, a2, 448
 	add	a0, a0, a1
 	ret

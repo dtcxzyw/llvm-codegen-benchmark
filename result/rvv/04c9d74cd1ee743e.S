@@ -67,8 +67,8 @@ func000000000000000c:                   # @func000000000000000c
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.x	v10, a1
 	addiw	a1, a0, 392
-	vmerge.vxm	v10, v10, a1, v0
 	addiw	a0, a0, 396
+	vmerge.vxm	v10, v10, a1, v0
 	vmv.v.x	v12, a0
 	vmv1r.v	v0, v9
 	vmerge.vvm	v8, v12, v10, v0

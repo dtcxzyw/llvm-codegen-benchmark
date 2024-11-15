@@ -40,8 +40,8 @@ func000000000000001a:                   # @func000000000000001a
 func0000000000000031:                   # @func0000000000000031
 	slli	a1, a0, 1
 	slli	a2, a0, 3
-	sub	a2, a2, a1
 	addi	a0, a0, -6
+	sub	a2, a2, a1
 	seqz	a0, a0
 	addi	a0, a0, -1
 	and	a0, a0, a2
@@ -60,8 +60,8 @@ func0000000000000028:                   # @func0000000000000028
 	ret
 func0000000000000008:                   # @func0000000000000008
 	li	a1, 44
-	mul	a1, a0, a1
 	lui	a2, 95325
+	mul	a1, a0, a1
 	addiw	a2, a2, 372
 	slli	a3, a2, 30
 	add	a2, a2, a3

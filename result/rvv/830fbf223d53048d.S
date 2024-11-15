@@ -35,9 +35,9 @@ func000000000000000a:                   # @func000000000000000a
 	vsrl.vi	v10, v10, 3
 	vadd.vv	v8, v10, v8
 	vmv.v.i	v10, 0
+	li	a0, -49
 	vmerge.vim	v10, v10, 1, v0
 	vadd.vv	v8, v8, v10
-	li	a0, -49
 	srli	a0, a0, 3
 	vmsgt.vx	v0, v8, a0
 	ret

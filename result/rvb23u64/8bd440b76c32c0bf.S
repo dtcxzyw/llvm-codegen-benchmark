@@ -4,14 +4,14 @@ func000000000000003d:                   # @func000000000000003d
 	lui	a2, %hi(.LCPI0_0)
 	ld	a2, %lo(.LCPI0_0)(a2)
 	mulhu	a1, a1, a2
+	lui	a2, 262144
+	addiw	a2, a2, -1225
 	srli	a1, a1, 15
 	sh2add	a1, a1, a1
 	sh2add	a1, a1, a1
 	sh2add	a0, a1, a0
-	lui	a1, 262144
-	addiw	a1, a1, -1225
-	slli	a1, a1, 2
-	add	a0, a0, a1
+	slli	a2, a2, 2
+	add	a0, a0, a2
 	ret
 func0000000000000028:                   # @func0000000000000028
 	lui	a2, 699051
@@ -33,8 +33,8 @@ func0000000000000035:                   # @func0000000000000035
 	lui	a2, %hi(.LCPI2_0)
 	ld	a2, %lo(.LCPI2_0)(a2)
 	mulhu	a1, a1, a2
-	srli	a1, a1, 15
 	lui	a2, %hi(.LCPI2_1)
+	srli	a1, a1, 15
 	ld	a2, %lo(.LCPI2_1)(a2)
 	sh2add	a1, a1, a1
 	sh2add	a1, a1, a1

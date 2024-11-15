@@ -2,10 +2,10 @@ func000000000000000a:                   # @func000000000000000a
 	andi	a2, a2, 255
 	andi	a1, a1, 255
 	subw	a1, a1, a2
+	lui	a2, 526344
+	addiw	a2, a2, 129
 	mulw	a0, a1, a0
-	lui	a1, 526344
-	addiw	a1, a1, 129
-	mul	a1, a0, a1
+	mul	a1, a0, a2
 	srli	a1, a1, 32
 	add	a0, a0, a1
 	srliw	a1, a0, 31

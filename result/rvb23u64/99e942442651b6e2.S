@@ -72,8 +72,8 @@ func00000000000002c1:                   # @func00000000000002c1
 	andi	a0, a0, 255
 	addi	a2, a2, 104
 	xor	a1, a1, a2
-	snez	a1, a1
 	addi	a0, a0, -2
+	snez	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

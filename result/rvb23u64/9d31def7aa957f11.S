@@ -3,8 +3,8 @@ func0000000000000011:                   # @func0000000000000011
 	addw	a0, a0, a1
 	lui	a1, 524288
 	xor	a1, a1, a2
-	czero.eqz	a0, a0, a1
 	li	a2, 1
+	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret
@@ -18,8 +18,8 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000031:                   # @func0000000000000031
 	sext.w	a2, a0
 	addw	a0, a0, a1
-	czero.eqz	a0, a0, a2
 	li	a1, 16
+	czero.eqz	a0, a0, a2
 	czero.nez	a1, a1, a2
 	or	a0, a0, a1
 	ret

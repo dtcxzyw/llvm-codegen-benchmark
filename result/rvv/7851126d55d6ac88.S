@@ -1,8 +1,8 @@
 func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf2	v13, v12
-	vwsll.vi	v14, v13, 5
 	li	a0, -1024
+	vwsll.vi	v14, v13, 5
 	zext.w	a0, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
@@ -11,12 +11,13 @@ func000000000000000c:                   # @func000000000000000c
 	ret
 func000000000000000f:                   # @func000000000000000f
 	li	a0, -1
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vzext.vf2	v11, v10
 	slli	a0, a0, 32
-	vsetivli	zero, 4, e64, m2, ta, ma
+	vsetvli	zero, zero, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
 	vor.vv	v8, v12, v8
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vzext.vf2	v11, v10
 	vwsll.vi	v12, v11, 16
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vor.vv	v8, v12, v8

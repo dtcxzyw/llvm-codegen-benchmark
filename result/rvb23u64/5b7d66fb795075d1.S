@@ -7,8 +7,8 @@ func0000000000000000:                   # @func0000000000000000
 func000000000000003d:                   # @func000000000000003d
 	zext.h	a1, a1
 	add	a0, a0, a1
-	slli	a0, a0, 8
 	lui	a1, 1044480
+	slli	a0, a0, 8
 	addi	a1, a1, 256
 	addw	a0, a0, a1
 	ret

@@ -4,9 +4,9 @@
 	.word	0x4b189680                      # float 1.0E+7
 func00000000000000c2:                   # @func00000000000000c2
 	lui	a0, %hi(.LCPI0_0)
+	lui	a1, %hi(.LCPI0_1)
 	fld	fa5, %lo(.LCPI0_0)(a0)
-	lui	a0, %hi(.LCPI0_1)
-	flw	fa4, %lo(.LCPI0_1)(a0)
+	flw	fa4, %lo(.LCPI0_1)(a1)
 	fle.d	a0, fa5, fa1
 	flt.s	a1, fa0, fa4
 	and	a0, a0, a1
@@ -26,10 +26,10 @@ func0000000000000027:                   # @func0000000000000027
 func0000000000000042:                   # @func0000000000000042
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
-	flt.d	a0, fa5, fa1
-	lui	a1, 287172
-	fmv.w.x	fa5, a1
-	flt.s	a1, fa0, fa5
+	lui	a0, 287172
+	flt.d	a1, fa5, fa1
+	fmv.w.x	fa5, a0
+	flt.s	a0, fa0, fa5
 	and	a0, a0, a1
 	ret
 .LCPI3_0:
@@ -58,9 +58,9 @@ func0000000000000024:                   # @func0000000000000024
 	.word	0x3c38aa3b                      # float 0.0112710549
 func0000000000000055:                   # @func0000000000000055
 	lui	a0, %hi(.LCPI5_0)
+	lui	a1, %hi(.LCPI5_1)
 	fld	fa5, %lo(.LCPI5_0)(a0)
-	lui	a0, %hi(.LCPI5_1)
-	flw	fa4, %lo(.LCPI5_1)(a0)
+	flw	fa4, %lo(.LCPI5_1)(a1)
 	fle.d	a0, fa1, fa5
 	fle.s	a1, fa0, fa4
 	or	a0, a0, a1

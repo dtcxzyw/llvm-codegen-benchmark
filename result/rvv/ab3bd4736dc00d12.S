@@ -1,8 +1,8 @@
 func0000000000000015:                   # @func0000000000000015
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vzext.vf2	v14, v12
-	vmadd.vv	v14, v10, v8
 	lui	a0, 244
+	vmadd.vv	v14, v10, v8
 	addi	a0, a0, 576
 	vadd.vx	v8, v14, a0
 	ret

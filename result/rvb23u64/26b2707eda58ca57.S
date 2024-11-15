@@ -2,8 +2,8 @@ func0000000000000032:                   # @func0000000000000032
 	sext.w	a0, a0
 	addiw	a1, a1, 64
 	sltu	a0, a1, a0
-	xori	a0, a0, 1
 	addi	a1, a1, -512
+	xori	a0, a0, 1
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret

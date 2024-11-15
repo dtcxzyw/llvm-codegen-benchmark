@@ -52,8 +52,8 @@ func0000000000000002:                   # @func0000000000000002
 	sext.w	a1, a1
 	bnez	a1, .LBB3_2
 	andi	a2, a2, 1
-	addi	a2, a2, -1
 	lui	a0, 16
+	addi	a2, a2, -1
 	addi	a0, a0, -1
 	or	a0, a0, a2
 .LBB3_2:                                # %entry

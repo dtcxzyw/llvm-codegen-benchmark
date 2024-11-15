@@ -17,9 +17,9 @@ func000000000000000f:                   # @func000000000000000f
 	li	a0, 1016
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
+	li	a0, -8
 	vadd.vv	v8, v8, v10
 	vadd.vi	v8, v8, 8
-	li	a0, -8
 	zext.w	a0, a0
 	vand.vx	v8, v8, a0
 	ret

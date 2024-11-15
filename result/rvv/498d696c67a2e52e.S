@@ -33,8 +33,8 @@ func0000000000000081:                   # @func0000000000000081
 func0000000000000014:                   # @func0000000000000014
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v11, v12, 0
-	vmseq.vv	v10, v11, v10
 	bseti	a0, zero, 32
+	vmseq.vv	v10, v11, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10
@@ -58,8 +58,8 @@ func0000000000000384:                   # @func0000000000000384
 func0000000000000214:                   # @func0000000000000214
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v11, v12, 0
-	vmseq.vv	v10, v11, v10
 	bseti	a0, zero, 32
+	vmseq.vv	v10, v11, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10
@@ -75,8 +75,8 @@ func00000000000000cc:                   # @func00000000000000cc
 func0000000000000244:                   # @func0000000000000244
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v11, v12, 0
-	vmsltu.vv	v10, v10, v11
 	bseti	a0, zero, 32
+	vmsltu.vv	v10, v10, v11
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10

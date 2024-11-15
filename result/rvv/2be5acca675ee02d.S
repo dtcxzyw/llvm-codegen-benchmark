@@ -22,8 +22,8 @@ func00000000000000aa:                   # @func00000000000000aa
 func0000000000000064:                   # @func0000000000000064
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsext.vf2	v12, v10
-	vmslt.vv	v10, v8, v12
 	bseti	a0, zero, 31
+	vmslt.vv	v10, v8, v12
 	vmsltu.vx	v11, v8, a0
 	vmand.mm	v0, v11, v10
 	ret

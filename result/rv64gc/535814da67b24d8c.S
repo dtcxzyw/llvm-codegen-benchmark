@@ -18,10 +18,10 @@ func0000000000000021:                   # @func0000000000000021
 	ret
 func0000000000000011:                   # @func0000000000000011
 	lui	a1, 16
+	lui	a2, 10
 	addiw	a1, a1, -256
 	and	a0, a0, a1
-	lui	a1, 10
-	addiw	a2, a1, -255
+	addiw	a2, a2, -255
 	lui	a1, 1048569
 	bltu	a0, a2, .LBB2_2
 	lui	a1, 1048565

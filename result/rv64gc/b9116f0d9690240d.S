@@ -2,8 +2,8 @@ func0000000000000005:                   # @func0000000000000005
 	sraiw	a2, a1, 31
 	srliw	a2, a2, 28
 	add	a1, a1, a2
-	sraiw	a1, a1, 4
 	slli	a2, a0, 1
+	sraiw	a1, a1, 4
 	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
@@ -18,8 +18,8 @@ func0000000000000019:                   # @func0000000000000019
 	ret
 func0000000000000000:                   # @func0000000000000000
 	li	a2, 1000
-	mul	a1, a1, a2
 	sext.w	a0, a0
+	mul	a1, a1, a2
 	lui	a2, 274878
 	addiw	a2, a2, -381
 	mul	a0, a0, a2
@@ -31,8 +31,8 @@ func0000000000000000:                   # @func0000000000000000
 func000000000000000d:                   # @func000000000000000d
 	srliw	a2, a1, 31
 	add	a1, a1, a2
-	sraiw	a1, a1, 1
 	slli	a2, a0, 8
+	sraiw	a1, a1, 1
 	subw	a0, a2, a0
 	addw	a0, a0, a1
 	ret

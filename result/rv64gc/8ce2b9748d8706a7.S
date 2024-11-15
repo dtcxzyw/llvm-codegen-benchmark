@@ -25,22 +25,22 @@ func000000000000000d:                   # @func000000000000000d
 	ret
 func0000000000000003:                   # @func0000000000000003
 	slli	a1, a1, 2
-	addi	a1, a1, 8
 	slli	a0, a0, 63
+	addi	a1, a1, 8
 	srai	a0, a0, 63
 	or	a0, a0, a1
 	ret
 func000000000000000a:                   # @func000000000000000a
 	slli	a1, a1, 3
-	addi	a1, a1, 16
 	slli	a0, a0, 63
+	addi	a1, a1, 16
 	srai	a0, a0, 63
 	or	a0, a0, a1
 	ret
 func000000000000000b:                   # @func000000000000000b
 	slli	a1, a1, 2
-	addi	a1, a1, 16
 	slli	a0, a0, 63
+	addi	a1, a1, 16
 	srai	a0, a0, 63
 	or	a0, a0, a1
 	ret

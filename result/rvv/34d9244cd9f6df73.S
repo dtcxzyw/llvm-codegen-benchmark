@@ -9,9 +9,9 @@ func00000000000000d5:                   # @func00000000000000d5
 func00000000000000ff:                   # @func00000000000000ff
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v10, 4
+	lui	a0, 65533
 	vadd.vv	v8, v10, v8
 	vsll.vi	v8, v8, 4
-	lui	a0, 65533
 	addi	a0, a0, -768
 	vadd.vx	v8, v8, a0
 	ret

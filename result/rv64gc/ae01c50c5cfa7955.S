@@ -32,8 +32,8 @@ func0000000000000266:                   # @func0000000000000266
 	sext.w	a1, a1
 	sext.w	a0, a0
 	slti	a0, a0, 6
-	not	a0, a0
 	addi	a1, a1, -31
+	not	a0, a0
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
@@ -49,8 +49,8 @@ func0000000000000246:                   # @func0000000000000246
 	sext.w	a1, a1
 	sext.w	a0, a0
 	sltiu	a0, a0, 7
-	not	a0, a0
 	addi	a1, a1, -31
+	not	a0, a0
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret

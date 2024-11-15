@@ -39,10 +39,10 @@ func00000000000000c1:                   # @func00000000000000c1
 	ret
 func0000000000000018:                   # @func0000000000000018
 	slli	a2, a2, 2
+	srli	a0, a0, 62
 	srli	a2, a2, 2
 	xor	a1, a1, a2
 	seqz	a1, a1
-	srli	a0, a0, 62
 	sltiu	a0, a0, 3
 	andn	a0, a1, a0
 	ret

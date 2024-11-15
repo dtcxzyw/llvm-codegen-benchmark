@@ -1,21 +1,21 @@
 func0000000000000110:                   # @func0000000000000110
 	fsub.d	fa5, fa1, fa2
-	fclass.d	a0, fa5
-	andi	a0, a0, 129
-	snez	a0, a0
-	fclass.d	a1, fa0
-	slli	a1, a1, 56
-	srli	a1, a1, 63
+	fclass.d	a0, fa0
+	fclass.d	a1, fa5
+	slli	a0, a0, 56
+	andi	a1, a1, 129
+	snez	a1, a1
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 func00000000000000f0:                   # @func00000000000000f0
 	fsub.d	fa5, fa1, fa2
-	fclass.d	a0, fa5
-	andi	a0, a0, 894
-	snez	a0, a0
-	fclass.d	a1, fa0
-	slli	a1, a1, 56
-	srli	a1, a1, 63
+	fclass.d	a0, fa0
+	fclass.d	a1, fa5
+	slli	a0, a0, 56
+	andi	a1, a1, 894
+	snez	a1, a1
+	srli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 .LCPI2_0:

@@ -16,18 +16,18 @@ func0000000000000087:                   # @func0000000000000087
 func0000000000000050:                   # @func0000000000000050
 	li	a0, 64
 	vsetivli	zero, 4, e64, m2, ta, ma
+	vsll.vi	v10, v10, 6
 	vmsltu.vx	v0, v8, a0
-	vsll.vi	v8, v10, 6
 	li	a0, -64
-	vadd.vx	v8, v8, a0
+	vadd.vx	v8, v10, a0
 	vmerge.vim	v8, v8, 0, v0
 	ret
 func0000000000000051:                   # @func0000000000000051
 	li	a0, 64
 	vsetivli	zero, 4, e64, m2, ta, ma
+	vsll.vi	v10, v10, 3
 	vmsltu.vx	v0, v8, a0
-	vsll.vi	v8, v10, 3
-	vadd.vi	v8, v8, -8
+	vadd.vi	v8, v10, -8
 	vmerge.vim	v8, v8, 0, v0
 	ret
 func00000000000000c7:                   # @func00000000000000c7

@@ -25,8 +25,8 @@ func00000000000000ec:                   # @func00000000000000ec
 func0000000000000060:                   # @func0000000000000060
 	mul	a2, a2, a3
 	mulhu	a4, a3, a1
-	add	a2, a2, a4
 	mul	a1, a1, a3
+	add	a2, a2, a4
 	srli	a1, a1, 61
 	sh3add	a1, a2, a1
 	add	a0, a0, a1

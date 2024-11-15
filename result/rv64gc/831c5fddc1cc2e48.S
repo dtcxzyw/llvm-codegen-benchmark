@@ -32,10 +32,10 @@ func000000000000007c:                   # @func000000000000007c
 func0000000000000016:                   # @func0000000000000016
 	li	a2, 10
 	mul	a1, a1, a2
+	li	a2, 1
+	slli	a2, a2, 32
 	add	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 32
-	addi	a1, a1, -48
+	addi	a1, a2, -48
 	add	a0, a0, a1
 	ret
 func00000000000000c0:                   # @func00000000000000c0
@@ -48,9 +48,9 @@ func00000000000000c0:                   # @func00000000000000c0
 func0000000000000014:                   # @func0000000000000014
 	li	a2, 10
 	mul	a1, a1, a2
+	li	a2, 1
+	slli	a2, a2, 32
 	add	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 32
-	addi	a1, a1, -48
+	addi	a1, a2, -48
 	add	a0, a0, a1
 	ret

@@ -74,8 +74,8 @@ func000000000000000d:                   # @func000000000000000d
 func000000000000000a:                   # @func000000000000000a
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfadd.vv	v12, v12, v12
-	vfdiv.vv	v8, v8, v12
 	lui	a0, 279800
+	vfdiv.vv	v8, v8, v12
 	fmv.w.x	fa5, a0
 	vmfle.vf	v0, v8, fa5
 	ret

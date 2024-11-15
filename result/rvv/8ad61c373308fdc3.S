@@ -15,19 +15,19 @@ func0000000000000004:                   # @func0000000000000004
 	.quad	19342813113834067               # 0x44b82fa09b5a53
 func0000000000000008:                   # @func0000000000000008
 	lui	a0, %hi(.LCPI1_0)
+	lui	a1, 8801
 	ld	a0, %lo(.LCPI1_0)(a0)
+	slli	a1, a1, 8
+	addi	a1, a1, -1751
+	slli	a1, a1, 16
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vi	v10, v8, 9
-	vmulhu.vx	v10, v10, a0
-	vsrl.vi	v10, v10, 11
-	lui	a0, 8801
-	slli	a0, a0, 8
-	addi	a0, a0, -1751
-	slli	a0, a0, 16
-	vmsgtu.vx	v0, v8, a0
+	vmsgtu.vx	v0, v8, a1
+	vsrl.vi	v8, v8, 9
+	vmulhu.vx	v8, v8, a0
 	lui	a0, 148
+	vsrl.vi	v8, v8, 11
 	addiw	a0, a0, -1408
-	vmerge.vxm	v8, v10, a0, v0
+	vmerge.vxm	v8, v8, a0, v0
 	ret
 .LCPI2_0:
 	.quad	-1336720585051416783            # 0xed7303b5cc0ed731

@@ -22,8 +22,8 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func0000000000000020:                   # @func0000000000000020
 	sltu	a2, a0, a1
-	czero.nez	a1, a1, a2
 	li	a3, -72
+	czero.nez	a1, a1, a2
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
 	sub	a0, a0, a1

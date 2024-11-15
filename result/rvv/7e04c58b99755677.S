@@ -167,8 +167,8 @@ func000000000000000e:                   # @func000000000000000e
 func0000000000000016:                   # @func0000000000000016
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
-	vfmacc.vv	v24, v16, v8
 	fmv.d.x	fa5, zero
+	vfmacc.vv	v24, v16, v8
 	vmflt.vf	v8, v24, fa5
 	vmfgt.vf	v9, v24, fa5
 	vmor.mm	v0, v9, v8
@@ -176,8 +176,8 @@ func0000000000000016:                   # @func0000000000000016
 func0000000000000019:                   # @func0000000000000019
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
-	vfmacc.vv	v24, v16, v8
 	fmv.d.x	fa5, zero
+	vfmacc.vv	v24, v16, v8
 	vmflt.vf	v8, v24, fa5
 	vmfgt.vf	v9, v24, fa5
 	vmnor.mm	v0, v9, v8
@@ -185,8 +185,8 @@ func0000000000000019:                   # @func0000000000000019
 func0000000000000009:                   # @func0000000000000009
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
-	vfmacc.vv	v24, v16, v8
 	fmv.d.x	fa5, zero
+	vfmacc.vv	v24, v16, v8
 	vmflt.vf	v8, v24, fa5
 	vmfgt.vf	v9, v24, fa5
 	vmnor.mm	v0, v9, v8

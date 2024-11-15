@@ -16,8 +16,8 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000006:                   # @func0000000000000006
 	sext.w	a1, a1
-	srli	a1, a1, 31
 	lui	a2, 19474
+	srli	a1, a1, 31
 	addiw	a2, a2, -585
 	and	a1, a1, a2
 	xor	a0, a0, a1

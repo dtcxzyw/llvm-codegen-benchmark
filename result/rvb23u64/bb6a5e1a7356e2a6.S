@@ -23,25 +23,25 @@ func0000000000000048:                   # @func0000000000000048
 	ret
 func0000000000000032:                   # @func0000000000000032
 	fclass.s	a0, fa1
+	feq.s	a1, fa0, fa0
 	andi	a0, a0, 897
 	snez	a0, a0
-	feq.s	a1, fa0, fa0
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
 func0000000000000242:                   # @func0000000000000242
 	fabs.s	fa5, fa1
 	fli.s	fa4, min
-	flt.s	a0, fa5, fa4
-	feq.s	a1, fa0, fa0
-	xori	a1, a1, 1
+	feq.s	a0, fa0, fa0
+	flt.s	a1, fa5, fa4
+	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 func0000000000000110:                   # @func0000000000000110
 	fclass.s	a0, fa1
+	fli.s	fa5, inf
 	andi	a0, a0, 129
 	snez	a0, a0
-	fli.s	fa5, inf
 	feq.s	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
@@ -56,9 +56,9 @@ func0000000000000044:                   # @func0000000000000044
 	ret
 func00000000000000f0:                   # @func00000000000000f0
 	fclass.s	a0, fa1
+	fli.s	fa5, inf
 	andi	a0, a0, 894
 	snez	a0, a0
-	fli.s	fa5, inf
 	feq.s	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
@@ -73,9 +73,9 @@ func00000000000000aa:                   # @func00000000000000aa
 	ret
 func0000000000000310:                   # @func0000000000000310
 	fclass.s	a0, fa1
+	fli.s	fa5, inf
 	andi	a0, a0, 129
 	snez	a0, a0
-	fli.s	fa5, inf
 	feq.s	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
@@ -90,8 +90,8 @@ func0000000000000244:                   # @func0000000000000244
 	ret
 func0000000000000198:                   # @func0000000000000198
 	fabs.s	fa5, fa1
-	fmax.s	fa5, fa0, fa5
 	lui	a0, 273536
+	fmax.s	fa5, fa0, fa5
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa4, fa5
 	ret

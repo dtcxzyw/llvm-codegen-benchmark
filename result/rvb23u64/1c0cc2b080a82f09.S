@@ -117,8 +117,8 @@ func00000000000000ac:                   # @func00000000000000ac
 	sext.b	a1, a1
 	addi	a2, a2, 1
 	xor	a0, a0, a2
-	snez	a0, a0
 	slti	a1, a1, 0
+	snez	a0, a0
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret

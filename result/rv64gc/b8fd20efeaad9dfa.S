@@ -2,10 +2,10 @@ func0000000000000000:                   # @func0000000000000000
 	srli	a3, a2, 18
 	slli	a4, a2, 46
 	or	a3, a3, a4
-	xor	a1, a1, a3
-	srli	a3, a2, 41
+	srli	a4, a2, 41
 	slli	a2, a2, 23
-	or	a2, a2, a3
+	xor	a1, a1, a3
+	or	a2, a2, a4
 	xor	a1, a1, a2
 	add	a0, a0, a1
 	ret

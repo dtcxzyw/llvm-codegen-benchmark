@@ -7,8 +7,8 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000031:                   # @func0000000000000031
 	slliw	a2, a2, 6
-	srli	a2, a2, 31
 	or	a0, a0, a1
+	srli	a2, a2, 31
 	lui	a1, 10
 	and	a1, a1, a2
 	or	a0, a0, a1

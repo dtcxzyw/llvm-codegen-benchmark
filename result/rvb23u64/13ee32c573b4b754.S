@@ -17,8 +17,8 @@ func000000000000008c:                   # @func000000000000008c
 	andi	a0, a0, 255
 	andi	a1, a1, 15
 	sltiu	a1, a1, 3
-	xori	a1, a1, 1
 	snez	a0, a0
+	xori	a1, a1, 1
 	and	a0, a0, a1
 	li	a1, -12
 	czero.nez	a0, a1, a0

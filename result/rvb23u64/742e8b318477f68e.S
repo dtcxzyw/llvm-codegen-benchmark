@@ -9,9 +9,9 @@ func00000000000000d4:                   # @func00000000000000d4
 func0000000000000094:                   # @func0000000000000094
 	lui	a2, 1033216
 	add	a1, a1, a2
+	lui	a2, 1048304
 	or	a0, a0, a1
-	lui	a1, 1048304
-	addw	a0, a0, a1
+	addw	a0, a0, a2
 	lui	a1, 1048320
 	sltu	a0, a0, a1
 	ret

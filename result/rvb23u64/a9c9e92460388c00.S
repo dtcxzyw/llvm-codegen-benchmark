@@ -1,7 +1,7 @@
 func000000000000003f:                   # @func000000000000003f
 	andi	a1, a1, 255
-	slli	a1, a1, 9
 	sext.w	a0, a0
+	slli	a1, a1, 9
 	slli	a0, a0, 17
 	or	a0, a0, a1
 	ret

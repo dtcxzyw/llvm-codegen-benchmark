@@ -21,10 +21,10 @@ func0000000000000041:                   # @func0000000000000041
 	fld	fa5, %lo(.LCPI2_0)(a2)
 	sext.w	a1, a1
 	sext.w	a0, a0
-	flt.d	a2, fa5, fa0
 	xor	a0, a0, a1
+	flt.d	a1, fa5, fa0
 	seqz	a0, a0
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 .LCPI3_0:
 	.quad	0x3fe6666666666666              # double 0.69999999999999996
@@ -33,10 +33,10 @@ func000000000000002c:                   # @func000000000000002c
 	fld	fa5, %lo(.LCPI3_0)(a2)
 	sext.w	a1, a1
 	sext.w	a0, a0
-	flt.d	a2, fa0, fa5
 	xor	a0, a0, a1
+	flt.d	a1, fa0, fa5
 	snez	a0, a0
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 .LCPI4_0:
 	.quad	0xc0d6e6c000000000              # double -23451

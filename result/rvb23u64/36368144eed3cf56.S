@@ -2,8 +2,8 @@ func0000000000000005:                   # @func0000000000000005
 	sext.w	a2, a0
 	andi	a1, a1, 1
 	bseti	a1, a1, 16
-	bseti	a1, a1, 20
 	czero.eqz	a0, a0, a2
+	bseti	a1, a1, 20
 	czero.nez	a1, a1, a2
 	or	a0, a0, a1
 	lui	a1, 1048304

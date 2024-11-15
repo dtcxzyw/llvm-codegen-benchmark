@@ -3,8 +3,8 @@ func000000000000007f:                   # @func000000000000007f
 	vzext.vf2	v14, v12
 	li	a0, 56
 	vsll.vx	v10, v10, a0
-	vor.vv	v10, v10, v14
 	li	a0, 61
+	vor.vv	v10, v10, v14
 	vsll.vx	v8, v8, a0
 	vor.vv	v8, v10, v8
 	ret
@@ -13,8 +13,8 @@ func000000000000003f:                   # @func000000000000003f
 	vzext.vf2	v14, v12
 	li	a0, 32
 	vsll.vx	v10, v10, a0
-	vor.vv	v10, v10, v14
 	li	a0, 40
+	vor.vv	v10, v10, v14
 	vsll.vx	v8, v8, a0
 	vor.vv	v8, v10, v8
 	ret
@@ -23,8 +23,8 @@ func000000000000003d:                   # @func000000000000003d
 	vzext.vf2	v14, v12
 	li	a0, 32
 	vsll.vx	v10, v10, a0
-	vor.vv	v10, v10, v14
 	li	a0, 40
+	vor.vv	v10, v10, v14
 	vsll.vx	v8, v8, a0
 	vor.vv	v8, v8, v10
 	ret

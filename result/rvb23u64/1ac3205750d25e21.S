@@ -3,8 +3,8 @@ func000000000000002a:                   # @func000000000000002a
 	slli	a3, a3, 33
 	addi	a3, a3, -8
 	addi	a4, a3, 4
-	and	a2, a2, a4
 	and	a0, a0, a3
+	and	a2, a2, a4
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 12

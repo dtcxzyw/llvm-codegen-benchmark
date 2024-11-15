@@ -1,8 +1,8 @@
 func0000000000000051:                   # @func0000000000000051
 	andi	a2, a2, -8
 	add	a0, a0, a1
-	add	a0, a0, a2
 	li	a1, -1
+	add	a0, a0, a2
 	srli	a1, a1, 7
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -30,10 +30,10 @@ func000000000000005c:                   # @func000000000000005c
 	ret
 func0000000000000006:                   # @func0000000000000006
 	slli	a2, a2, 32
-	srli	a2, a2, 32
 	add	a0, a0, a1
-	add	a0, a0, a2
 	lui	a1, 16
+	srli	a2, a2, 32
+	add	a0, a0, a2
 	addiw	a1, a1, 7
 	slt	a0, a0, a1
 	ret

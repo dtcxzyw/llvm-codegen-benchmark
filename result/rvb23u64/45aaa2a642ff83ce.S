@@ -3,9 +3,9 @@ func0000000000000182:                   # @func0000000000000182
 	sext.w	a1, a1
 	lui	a2, 256
 	addiw	a2, a2, -1
+	addi	a0, a0, -1
 	xor	a1, a1, a2
 	snez	a1, a1
-	addi	a0, a0, -1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

@@ -14,10 +14,9 @@ func0000000000000382:                   # @func0000000000000382
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v11, v12, 0
 	li	a0, 46
-	vsetvli	zero, zero, e8, mf2, ta, ma
-	vmsne.vx	v10, v10, a0
-	vsetvli	zero, zero, e32, m2, ta, ma
 	vmseq.vi	v12, v8, 4
-	vmor.mm	v8, v11, v12
-	vmor.mm	v0, v8, v10
+	vsetvli	zero, zero, e8, mf2, ta, ma
+	vmsne.vx	v8, v10, a0
+	vmor.mm	v9, v11, v12
+	vmor.mm	v0, v9, v8
 	ret

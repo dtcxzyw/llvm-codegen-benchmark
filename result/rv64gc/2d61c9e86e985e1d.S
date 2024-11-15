@@ -29,10 +29,10 @@ func00000000000000c4:                   # @func00000000000000c4
 	lui	a3, 8
 	addiw	a3, a3, -512
 	and	a2, a2, a3
+	lui	a3, 1048570
+	addiw	a3, a3, 1
 	xor	a1, a1, a2
 	snez	a1, a1
-	lui	a2, 1048570
-	addiw	a2, a2, 1
-	sltu	a0, a0, a2
+	sltu	a0, a0, a3
 	or	a0, a0, a1
 	ret

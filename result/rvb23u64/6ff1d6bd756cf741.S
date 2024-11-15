@@ -14,8 +14,8 @@ func000000000000004a:                   # @func000000000000004a
 	lui	a1, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a1)
 	sext.w	a0, a0
-	flt.d	a1, fa5, fa0
 	slti	a0, a0, 0
+	flt.d	a1, fa5, fa0
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

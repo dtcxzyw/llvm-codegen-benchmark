@@ -41,10 +41,10 @@ func0000000000000161:                   # @func0000000000000161
 	vmseq.vi	v0, v8, 0
 	ret
 func0000000000000144:                   # @func0000000000000144
-	li	a0, -190
-	li	a1, 190
+	li	a0, 190
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsltu.vx	v0, v8, a1
+	vmsltu.vx	v0, v8, a0
+	li	a0, -190
 	vadd.vx	v10, v8, a0
 	vmerge.vvm	v8, v10, v8, v0
 	li	a0, 63

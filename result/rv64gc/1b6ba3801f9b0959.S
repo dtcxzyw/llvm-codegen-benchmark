@@ -19,8 +19,8 @@ func0000000000000011:                   # @func0000000000000011
 	sext.w	a2, a2
 	sltiu	a2, a2, 94
 	and	a1, a1, a2
-	negw	a1, a1
 	lui	a2, 1048560
+	negw	a1, a1
 	addi	a2, a2, 288
 	and	a1, a1, a2
 	addw	a0, a0, a1

@@ -27,8 +27,8 @@ func0000000000000068:                   # @func0000000000000068
 func0000000000000058:                   # @func0000000000000058
 	andi	a2, a2, 255
 	or	a1, a1, a2
+	lui	a2, 5
 	sub	a1, a1, a0
-	lui	a0, 5
-	addiw	a0, a0, -480
+	addiw	a0, a2, -480
 	sltu	a0, a0, a1
 	ret

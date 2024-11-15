@@ -118,12 +118,12 @@ func00000000000001ba:                   # @func00000000000001ba
 	ret
 func0000000000000124:                   # @func0000000000000124
 	fli.s	fa5, inf
+	lui	a0, 913408
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vf	v16, v12, fa5
 	vmfgt.vf	v17, v12, fa5
-	vmor.mm	v12, v17, v16
-	lui	a0, 913408
 	fmv.w.x	fa5, a0
+	vmor.mm	v12, v17, v16
 	vmflt.vf	v13, v8, fa5
 	vmorn.mm	v0, v13, v12
 	ret
@@ -160,21 +160,21 @@ func0000000000000154:                   # @func0000000000000154
 	ret
 func0000000000000108:                   # @func0000000000000108
 	fli.s	fa5, inf
+	lui	a0, 325632
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfeq.vf	v16, v12, fa5
-	lui	a0, 325632
 	fmv.w.x	fa5, a0
 	vmfgt.vf	v12, v8, fa5
 	vmor.mm	v0, v12, v16
 	ret
 func0000000000000134:                   # @func0000000000000134
 	fli.s	fa5, inf
+	lui	a0, 798736
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vf	v16, v12, fa5
 	vmfgt.vf	v17, v12, fa5
-	vmor.mm	v12, v17, v16
-	lui	a0, 798736
 	fmv.w.x	fa5, a0
+	vmor.mm	v12, v17, v16
 	vmfle.vf	v13, v8, fa5
 	vmorn.mm	v0, v13, v12
 	ret
@@ -194,12 +194,12 @@ func00000000000000a6:                   # @func00000000000000a6
 func000000000000006a:                   # @func000000000000006a
 	lui	a0, %hi(.LCPI23_0)
 	flw	fa5, %lo(.LCPI23_0)(a0)
+	fli.s	fa4, 1.0
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vmfge.vf	v16, v12, fa5
-	fli.s	fa5, 1.0
-	vmfle.vf	v12, v8, fa5
-	vmnot.m	v8, v12
-	vmorn.mm	v0, v8, v16
+	vmfle.vf	v16, v8, fa4
+	vmfge.vf	v8, v12, fa5
+	vmnot.m	v9, v16
+	vmorn.mm	v0, v9, v8
 	ret
 func00000000000000f0:                   # @func00000000000000f0
 	fli.s	fa5, inf
@@ -218,9 +218,9 @@ func00000000000000e2:                   # @func00000000000000e2
 func0000000000000084:                   # @func0000000000000084
 	lui	a0, 277312
 	fmv.w.x	fa5, a0
+	lui	a0, 799552
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfgt.vf	v16, v12, fa5
-	lui	a0, 799552
 	fmv.w.x	fa5, a0
 	vmflt.vf	v12, v8, fa5
 	vmor.mm	v0, v12, v16

@@ -34,10 +34,10 @@ func000000000000000d:                   # @func000000000000000d
 	ret
 func0000000000000003:                   # @func0000000000000003
 	fli.s	fa5, 2.5
+	lui	a0, 266752
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmerge.vfm	v12, v12, fa5, v0
 	vfadd.vv	v8, v12, v8
-	lui	a0, 266752
 	fmv.w.x	fa5, a0
 	vmfge.vf	v12, v8, fa5
 	vmnot.m	v0, v12

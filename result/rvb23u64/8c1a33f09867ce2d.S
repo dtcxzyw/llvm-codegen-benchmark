@@ -7,8 +7,8 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 func0000000000000008:                   # @func0000000000000008
 	andi	a2, a2, -2048
-	bclri	a2, a2, 11
 	lui	a3, 2
+	bclri	a2, a2, 11
 	addiw	a3, a3, 1
 	sltu	a2, a2, a3
 	and	a1, a1, a2

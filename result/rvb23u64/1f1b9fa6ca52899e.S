@@ -8,9 +8,9 @@ func0000000000000031:                   # @func0000000000000031
 	ret
 func00000000000001b1:                   # @func00000000000001b1
 	addi	a1, a1, 7
+	lui	a2, 1048560
 	srli	a1, a1, 3
 	addi	a1, a1, 7
-	lui	a2, 1048560
 	srli	a2, a2, 13
 	and	a1, a1, a2
 	xor	a0, a0, a1

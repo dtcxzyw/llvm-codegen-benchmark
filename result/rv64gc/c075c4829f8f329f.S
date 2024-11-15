@@ -10,8 +10,8 @@ func0000000000000000:                   # @func0000000000000000
 	andi	a0, a0, 255
 	fcvt.s.wu	fa3, a0
 	fmadd.s	fa5, fa3, fa5, fa1
-	fmadd.s	fa5, fa0, fa4, fa5
 	lui	a0, 798720
+	fmadd.s	fa5, fa0, fa4, fa5
 	fmv.w.x	fa4, a0
 	fadd.s	fa0, fa5, fa4
 	ret

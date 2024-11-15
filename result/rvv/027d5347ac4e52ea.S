@@ -57,8 +57,8 @@ func0000000000000071:                   # @func0000000000000071
 func0000000000000058:                   # @func0000000000000058
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vand.vi	v10, v10, 1
-	vwaddu.wv	v8, v8, v10
 	li	a0, -1
+	vwaddu.wv	v8, v8, v10
 	srli	a0, a0, 3
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v0, v8, a0

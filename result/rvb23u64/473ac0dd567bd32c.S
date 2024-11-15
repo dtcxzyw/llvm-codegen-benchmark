@@ -4,9 +4,9 @@
 	.word	0x3727c5ac                      # float 9.99999974E-6
 func0000000000000022:                   # @func0000000000000022
 	lui	a0, %hi(.LCPI0_0)
+	lui	a1, %hi(.LCPI0_1)
 	flw	fa5, %lo(.LCPI0_0)(a0)
-	lui	a0, %hi(.LCPI0_1)
-	flw	fa4, %lo(.LCPI0_1)(a0)
+	flw	fa4, %lo(.LCPI0_1)(a1)
 	flt.s	a0, fa1, fa5
 	flt.s	a1, fa0, fa4
 	or	a0, a0, a1
@@ -51,9 +51,9 @@ func000000000000005b:                   # @func000000000000005b
 	ret
 func0000000000000024:                   # @func0000000000000024
 	lui	a0, 788992
+	lui	a1, 264704
 	fmv.w.x	fa5, a0
 	flt.s	a0, fa1, fa5
-	lui	a1, 264704
 	fmv.w.x	fa5, a1
 	flt.s	a1, fa5, fa0
 	or	a0, a0, a1
@@ -116,9 +116,9 @@ func0000000000000099:                   # @func0000000000000099
 	fli.s	fa5, inf
 	flt.s	a0, fa1, fa5
 	flt.s	a1, fa5, fa1
+	flt.s	a2, fa0, fa5
 	or	a0, a0, a1
-	flt.s	a1, fa0, fa5
-	flt.s	a2, fa5, fa0
+	flt.s	a1, fa5, fa0
 	or	a1, a1, a2
 	and	a0, a0, a1
 	xori	a0, a0, 1

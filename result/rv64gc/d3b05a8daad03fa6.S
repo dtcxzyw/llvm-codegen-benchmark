@@ -1,8 +1,8 @@
 func00000000000000c1:                   # @func00000000000000c1
 	sext.w	a2, a0
 	andi	a1, a1, 255
-	snez	a1, a1
 	lui	a3, 197429
+	snez	a1, a1
 	addiw	a3, a3, 600
 	xor	a2, a2, a3
 	seqz	a2, a2

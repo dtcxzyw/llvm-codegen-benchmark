@@ -33,10 +33,10 @@ func0000000000000181:                   # @func0000000000000181
 	slti	a3, a2, 0
 	czero.nez	a2, a2, a3
 	czero.eqz	a1, a1, a3
+	li	a3, -1
 	or	a1, a1, a2
 	sub	a0, a0, a1
-	li	a1, -1
-	srli	a1, a1, 1
-	xor	a0, a0, a1
+	srli	a3, a3, 1
+	xor	a0, a0, a3
 	seqz	a0, a0
 	ret

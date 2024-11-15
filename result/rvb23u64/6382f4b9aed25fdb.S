@@ -18,9 +18,9 @@ func0000000000000014:                   # @func0000000000000014
 func0000000000000088:                   # @func0000000000000088
 	sext.w	a0, a0
 	andi	a2, a2, 255
+	li	a3, 4
 	sltiu	a2, a2, 9
 	czero.eqz	a1, a1, a2
-	li	a3, 4
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
 	sext.w	a1, a1
@@ -29,9 +29,9 @@ func0000000000000088:                   # @func0000000000000088
 func0000000000000018:                   # @func0000000000000018
 	sext.w	a0, a0
 	andi	a2, a2, 255
+	li	a3, 159
 	addi	a2, a2, -237
 	czero.eqz	a1, a1, a2
-	li	a3, 159
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
 	sext.w	a1, a1

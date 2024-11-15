@@ -1,9 +1,11 @@
 func0000000000000051:                   # @func0000000000000051
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	vsll.vi	v10, v10, 3
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmv.v.i	v9, 0
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vsll.vi	v10, v10, 3
+	vsetvli	zero, zero, e32, m1, ta, ma
 	vwsubu.vv	v12, v9, v8
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmseq.vv	v0, v10, v12
@@ -65,10 +67,10 @@ func000000000000004a:                   # @func000000000000004a
 func0000000000000158:                   # @func0000000000000158
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
+	li	a0, -1
 	vsll.vi	v10, v10, 3
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v10, v10, v8
-	li	a0, -1
 	srli	a0, a0, 4
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v0, v10, a0
@@ -76,9 +78,11 @@ func0000000000000158:                   # @func0000000000000158
 func0000000000000151:                   # @func0000000000000151
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	vsll.vi	v10, v10, 3
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmv.v.i	v9, 0
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vsll.vi	v10, v10, 3
+	vsetvli	zero, zero, e32, m1, ta, ma
 	vwsubu.vv	v12, v9, v8
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmseq.vv	v0, v10, v12

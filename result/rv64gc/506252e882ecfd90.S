@@ -8,9 +8,9 @@ func0000000000000016:                   # @func0000000000000016
 	ret
 func0000000000000048:                   # @func0000000000000048
 	srai	a2, a2, 3
+	lui	a3, 978671
 	mul	a1, a2, a1
-	lui	a2, 978671
-	addiw	a2, a2, -273
+	addiw	a2, a3, -273
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a1, a1, a2
@@ -18,9 +18,9 @@ func0000000000000048:                   # @func0000000000000048
 	ret
 func0000000000000044:                   # @func0000000000000044
 	srai	a2, a2, 3
+	lui	a3, 978671
 	mul	a1, a2, a1
-	lui	a2, 978671
-	addiw	a2, a2, -273
+	addiw	a2, a3, -273
 	slli	a3, a2, 32
 	add	a2, a2, a3
 	mul	a1, a1, a2

@@ -31,8 +31,8 @@ func0000000000000006:                   # @func0000000000000006
 func0000000000000028:                   # @func0000000000000028
 	andi	a0, a0, 1
 	sext.w	a1, a1
-	slti	a1, a1, 2
 	li	a2, 14
+	slti	a1, a1, 2
 	czero.nez	a1, a2, a1
 	li	a2, 9
 	czero.eqz	a0, a2, a0

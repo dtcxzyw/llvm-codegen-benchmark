@@ -1,7 +1,7 @@
 func0000000000000031:                   # @func0000000000000031
 	addi	a1, a1, 2047
-	addi	a1, a1, 1754
 	addi	a2, a0, -4
+	addi	a1, a1, 1754
 	czero.eqz	a0, a0, a2
 	czero.nez	a1, a1, a2
 	or	a0, a0, a1

@@ -6,8 +6,8 @@ func00000000000000c8:                   # @func00000000000000c8
 	ret
 func00000000000000cb:                   # @func00000000000000cb
 	addi	a0, a0, -3
-	snez	a0, a0
 	flt.d	a1, fa1, fa0
+	snez	a0, a0
 	not	a1, a1
 	and	a0, a0, a1
 	ret

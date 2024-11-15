@@ -1,10 +1,10 @@
 func0000000000000007:                   # @func0000000000000007
 	lui	a2, 16
+	slli	a0, a0, 63
 	addiw	a2, a2, 257
 	mul	a1, a1, a2
-	slli	a0, a0, 63
-	srai	a0, a0, 63
 	lui	a2, 1044480
+	srai	a0, a0, 63
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret

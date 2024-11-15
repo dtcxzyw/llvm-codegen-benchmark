@@ -7,9 +7,9 @@ func0000000000000041:                   # @func0000000000000041
 	ret
 func0000000000000141:                   # @func0000000000000141
 	andi	a1, a1, 255
+	addi	a0, a0, -59
 	addi	a1, a1, -15
 	sltiu	a1, a1, 2
-	addi	a0, a0, -59
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

@@ -6,11 +6,11 @@ func0000000000000008:                   # @func0000000000000008
 	addi	a1, a1, -193
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v14, a1
-	vmacc.vv	v14, v12, v10
+	li	a1, -59
 	addi	a0, a0, 125
 	slli	a0, a0, 12
+	vmacc.vv	v14, v12, v10
 	vmsltu.vx	v0, v14, a0
-	li	a0, -59
-	zext.w	a0, a0
-	vmerge.vxm	v8, v8, a0, v0
+	zext.w	a1, a1
+	vmerge.vxm	v8, v8, a1, v0
 	ret

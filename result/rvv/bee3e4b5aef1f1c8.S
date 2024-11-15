@@ -35,8 +35,8 @@ func0000000000000181:                   # @func0000000000000181
 func0000000000000041:                   # @func0000000000000041
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vor.vv	v10, v10, v11
-	vmseq.vi	v10, v10, 3
 	bseti	a0, zero, 32
+	vmseq.vi	v10, v10, 3
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vx	v11, v8, a0
 	vmand.mm	v0, v10, v11

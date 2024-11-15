@@ -32,16 +32,16 @@ func0000000000000015:                   # @func0000000000000015
 func0000000000000014:                   # @func0000000000000014
 	sext.w	a2, a1
 	lui	a3, 335544
+	subw	a1, a1, a1
+	add	a0, a0, a1
+	li	a1, 400
 	addiw	a3, a3, 1311
 	mul	a2, a2, a3
 	srli	a3, a2, 63
 	srai	a2, a2, 39
 	add	a2, a2, a3
-	li	a3, 400
-	mul	a2, a2, a3
-	subw	a1, a1, a1
-	add	a0, a0, a1
-	subw	a0, a0, a2
+	mul	a1, a2, a1
+	subw	a0, a0, a1
 	li	a1, 365
 	mulw	a0, a0, a1
 	ret

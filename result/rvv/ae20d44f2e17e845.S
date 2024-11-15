@@ -2,8 +2,8 @@ func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vfsub.vv	v8, v8, v12
 	fli.d	fa5, 1.0
-	vmfeq.vf	v0, v8, fa5
 	li	a0, 27
+	vmfeq.vf	v0, v8, fa5
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.x	v8, a0
 	li	a0, 31

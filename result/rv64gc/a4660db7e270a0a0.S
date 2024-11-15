@@ -1,7 +1,7 @@
 func0000000000000001:                   # @func0000000000000001
 	slli	a1, a1, 48
-	srli	a1, a1, 48
 	andi	a3, a2, 1
+	srli	a1, a1, 48
 	li	a2, -1871
 	beqz	a3, .LBB0_3
 	lui	a3, 1

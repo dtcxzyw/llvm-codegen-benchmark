@@ -1,10 +1,10 @@
 func0000000000000061:                   # @func0000000000000061
 	vmv1r.v	v12, v0
 	li	a0, 5
-	bseti	a0, a0, 63
 	vsetivli	zero, 4, e64, m2, ta, mu
-	vmslt.vx	v0, v10, a0
 	vmv.v.i	v14, 0
+	bseti	a0, a0, 63
+	vmslt.vx	v0, v10, a0
 	li	a0, 1
 	bseti	a0, a0, 63
 	vmv.v.i	v16, 0

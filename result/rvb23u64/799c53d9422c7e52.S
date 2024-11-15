@@ -4,16 +4,16 @@ func000000000000006d:                   # @func000000000000006d
 	lui	a2, %hi(.LCPI0_0)
 	ld	a2, %lo(.LCPI0_0)(a2)
 	sh2add	a1, a1, a1
-	sh2add	a1, a1, a1
 	mulh	a0, a0, a2
 	srli	a2, a0, 63
 	srai	a0, a0, 17
 	add	a0, a0, a2
+	lui	a2, 262144
+	sh2add	a1, a1, a1
+	addiw	a2, a2, -1225
 	sh2add	a0, a1, a0
-	lui	a1, 262144
-	addiw	a1, a1, -1225
-	slli	a1, a1, 2
-	add	a0, a0, a1
+	slli	a2, a2, 2
+	add	a0, a0, a2
 	ret
 func0000000000000000:                   # @func0000000000000000
 	li	a2, 365
@@ -21,9 +21,9 @@ func0000000000000000:                   # @func0000000000000000
 	srai	a2, a0, 63
 	srli	a2, a2, 62
 	add	a0, a0, a2
-	srai	a0, a0, 2
 	lui	a2, 1048400
 	addiw	a2, a2, 1846
+	srai	a0, a0, 2
 	add	a1, a1, a2
 	add	a0, a0, a1
 	ret

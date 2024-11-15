@@ -19,8 +19,8 @@ func000000000000000d:                   # @func000000000000000d
 func0000000000000005:                   # @func0000000000000005
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmerge.vvm	v8, v10, v8, v0
-	vsll.vi	v8, v8, 16
 	lui	a0, 983055
+	vsll.vi	v8, v8, 16
 	slli	a0, a0, 4
 	vadd.vx	v8, v8, a0
 	ret

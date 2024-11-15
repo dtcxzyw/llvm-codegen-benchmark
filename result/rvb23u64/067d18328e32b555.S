@@ -18,16 +18,16 @@ func0000000000000007:                   # @func0000000000000007
 	ret
 func000000000000003f:                   # @func000000000000003f
 	add	a1, a1, a2
-	addi	a1, a1, 2
 	lui	a2, 2048
+	addi	a1, a1, 2
 	addi	a2, a2, -2
 	and	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 func000000000000003d:                   # @func000000000000003d
 	add	a1, a1, a2
-	addi	a1, a1, 2
 	lui	a2, 2048
+	addi	a1, a1, 2
 	addi	a2, a2, -2
 	and	a1, a1, a2
 	addw	a0, a0, a1

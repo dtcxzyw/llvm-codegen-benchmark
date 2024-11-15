@@ -15,8 +15,8 @@ func0000000000000057:                   # @func0000000000000057
 	ret
 func0000000000000043:                   # @func0000000000000043
 	sext.w	a1, a1
-	sltiu	a1, a1, 58
 	li	a2, -8
+	sltiu	a1, a1, 58
 	czero.eqz	a1, a2, a1
 	andi	a0, a0, 255
 	add	a0, a0, a1

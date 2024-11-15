@@ -28,9 +28,9 @@ func000000000000000c:                   # @func000000000000000c
 func0000000000000004:                   # @func0000000000000004
 	lui	a0, 49152
 	fmv.w.x	fa5, a0
+	lui	a0, 219648
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfmul.vf	v12, v12, fa5
-	lui	a0, 219648
 	fmv.w.x	fa5, a0
 	vfmul.vf	v8, v8, fa5
 	vmflt.vv	v0, v12, v8

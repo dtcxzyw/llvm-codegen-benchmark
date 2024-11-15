@@ -16,9 +16,9 @@ func000000000000000e:                   # @func000000000000000e
 	andi	a1, a1, 1
 	li	a2, -8
 	czero.nez	a1, a2, a1
+	lui	a2, 98
 	add	a0, a0, a1
-	lui	a1, 98
-	addiw	a1, a1, -1952
+	addiw	a1, a2, -1952
 	add	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008

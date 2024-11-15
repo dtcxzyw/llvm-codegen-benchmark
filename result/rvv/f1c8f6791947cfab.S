@@ -1,8 +1,8 @@
 func0000000000000088:                   # @func0000000000000088
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgtu.vi	v9, v10, 3
-	vmor.mm	v9, v0, v9
 	li	a0, 1023
+	vmor.mm	v9, v0, v9
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vmsgtu.vx	v8, v8, a0
 	vmor.mm	v0, v9, v8
@@ -35,8 +35,8 @@ func000000000000008c:                   # @func000000000000008c
 func00000000000000cc:                   # @func00000000000000cc
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsne.vi	v9, v10, 1
-	vmor.mm	v9, v0, v9
 	li	a0, 64
+	vmor.mm	v9, v0, v9
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vmsne.vx	v8, v8, a0
 	vmor.mm	v0, v9, v8

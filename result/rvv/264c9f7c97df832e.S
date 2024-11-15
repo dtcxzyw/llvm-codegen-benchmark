@@ -3,9 +3,9 @@ func000000000000014c:                   # @func000000000000014c
 	vsext.vf2	v9, v8
 	li	a0, -14
 	vwadd.vx	v10, v9, a0
+	li	a0, 32
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsleu.vi	v9, v10, -6
-	li	a0, 32
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmsne.vx	v8, v8, a0
 	vmand.mm	v0, v8, v9
@@ -15,9 +15,9 @@ func000000000000014a:                   # @func000000000000014a
 	vsext.vf2	v9, v8
 	li	a0, -48
 	vwadd.vx	v10, v9, a0
+	li	a0, 31
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsleu.vi	v9, v10, 9
-	li	a0, 31
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmsgt.vx	v8, v8, a0
 	vmand.mm	v0, v8, v9

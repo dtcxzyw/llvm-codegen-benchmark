@@ -13,10 +13,10 @@ func0000000000000087:                   # @func0000000000000087
 	ret
 func0000000000000088:                   # @func0000000000000088
 	fclass.d	a1, fa1
-	andi	a1, a1, 129
-	snez	a1, a1
 	fclass.d	a2, fa0
+	andi	a1, a1, 129
 	slli	a2, a2, 56
+	snez	a1, a1
 	srli	a2, a2, 63
 	or	a1, a1, a2
 	or	a0, a0, a1

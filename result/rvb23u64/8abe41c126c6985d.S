@@ -1,7 +1,7 @@
 func0000000000000004:                   # @func0000000000000004
 	addw	a0, a0, a1
-	sltiu	a0, a0, 1519
 	li	a1, 4
+	sltiu	a0, a0, 1519
 	czero.nez	a0, a1, a0
 	li	a1, 1223
 	sh3add	a0, a1, a0
@@ -33,16 +33,16 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000034:                   # @func0000000000000034
 	addw	a0, a0, a1
-	sltiu	a0, a0, 1048
 	li	a1, 31
+	sltiu	a0, a0, 1048
 	slli	a1, a1, 10
 	czero.nez	a0, a1, a0
 	addi	a0, a0, 1023
 	ret
 func0000000000000008:                   # @func0000000000000008
 	addw	a0, a0, a1
-	sltiu	a0, a0, 507
 	lui	a1, 1
+	sltiu	a0, a0, 507
 	addiw	a1, a1, 903
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, 1

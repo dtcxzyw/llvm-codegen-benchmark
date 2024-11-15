@@ -1,9 +1,9 @@
 func0000000000000154:                   # @func0000000000000154
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	slli	a1, a1, 56
-	srai	a1, a1, 56
 	slli	a2, a2, 56
+	srai	a0, a0, 56
+	srai	a1, a1, 56
 	srai	a2, a2, 56
 	slt	a2, a2, a1
 	slt	a0, a1, a0
@@ -19,10 +19,10 @@ func0000000000000110:                   # @func0000000000000110
 	ret
 func00000000000000ee:                   # @func00000000000000ee
 	slli	a1, a1, 56
-	srai	a1, a1, 56
 	slli	a2, a2, 56
-	srai	a2, a2, 56
 	slli	a0, a0, 56
+	srai	a1, a1, 56
+	srai	a2, a2, 56
 	srai	a0, a0, 56
 	slt	a2, a0, a2
 	slt	a0, a1, a0

@@ -1,10 +1,10 @@
 func0000000000000063:                   # @func0000000000000063
 	andi	a0, a0, 1023
-	seqz	a1, a0
-	li	a2, 1024
-	sub	a2, a2, a0
-	addi	a0, a1, -1
-	and	a0, a0, a2
+	li	a1, 1024
+	seqz	a2, a0
+	sub	a1, a1, a0
+	addi	a0, a2, -1
+	and	a0, a0, a1
 	ret
 func0000000000000023:                   # @func0000000000000023
 	andi	a0, a0, 63

@@ -1,15 +1,15 @@
 func0000000000000000:                   # @func0000000000000000
 	or	a1, a1, a2
-	zext.w	a1, a1
 	lui	a2, 1048464
+	zext.w	a1, a1
 	addiw	a2, a2, -1
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func0000000000000003:                   # @func0000000000000003
 	or	a1, a1, a2
-	sext.w	a1, a1
 	lui	a2, 1046656
+	sext.w	a1, a1
 	addiw	a2, a2, -1
 	and	a0, a0, a2
 	or	a0, a0, a1
@@ -22,8 +22,8 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000007:                   # @func0000000000000007
 	or	a1, a1, a2
-	sext.w	a1, a1
 	lui	a2, 786432
+	sext.w	a1, a1
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret

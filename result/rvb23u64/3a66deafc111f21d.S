@@ -24,8 +24,8 @@ func000000000000000c:                   # @func000000000000000c
 	ret
 func000000000000001f:                   # @func000000000000001f
 	addi	a1, a1, -1
-	andi	a1, a1, 511
 	slli	a0, a0, 10
+	andi	a1, a1, 511
 	srli	a0, a0, 10
 	add	a0, a0, a1
 	addi	a0, a0, 1
@@ -39,8 +39,8 @@ func0000000000000035:                   # @func0000000000000035
 	ret
 func000000000000000f:                   # @func000000000000000f
 	addi	a1, a1, 1
-	srliw	a1, a1, 1
 	srliw	a0, a0, 1
+	srliw	a1, a1, 1
 	slli	a0, a0, 1
 	sh1add	a0, a1, a0
 	addi	a0, a0, 16

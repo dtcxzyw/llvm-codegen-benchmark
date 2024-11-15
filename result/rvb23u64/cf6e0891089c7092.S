@@ -36,8 +36,8 @@ func000000000000000d:                   # @func000000000000000d
 	lui	a1, 335544
 	addiw	a1, a1, 1311
 	mul	a0, a0, a1
-	srli	a0, a0, 39
 	lui	a1, 1048540
+	srli	a0, a0, 39
 	addi	a1, a1, 1359
 	mul	a0, a0, a1
 	addw	a0, a0, a1

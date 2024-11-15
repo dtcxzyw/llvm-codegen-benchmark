@@ -12,9 +12,9 @@ func0000000000000046:                   # @func0000000000000046
 	lui	a2, 1048332
 	addi	a2, a2, -576
 	mul	a1, a1, a2
+	lui	a2, 244
 	add	a0, a0, a1
 	sraiw	a0, a0, 31
-	lui	a1, 244
-	addiw	a1, a1, 576
+	addiw	a1, a2, 576
 	and	a0, a0, a1
 	ret

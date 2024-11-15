@@ -3,8 +3,8 @@ func0000000000000004:                   # @func0000000000000004
 	vxor.vv	v10, v10, v12
 	lui	a0, 92808
 	vmul.vx	v10, v10, a0
-	vor.vv	v8, v10, v8
 	lui	a0, 112755
+	vor.vv	v8, v10, v8
 	addi	a0, a0, 1427
 	vmul.vx	v8, v8, a0
 	ret

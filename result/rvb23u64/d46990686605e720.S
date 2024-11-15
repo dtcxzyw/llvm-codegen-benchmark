@@ -1,7 +1,7 @@
 func000000000000001f:                   # @func000000000000001f
 	addi	a0, a0, 7
-	bset	a0, zero, a0
 	lui	a1, 790527
+	bset	a0, zero, a0
 	slli.uw	a1, a1, 15
 	and	a0, a0, a1
 	ret
@@ -14,8 +14,8 @@ func000000000000000d:                   # @func000000000000000d
 	ret
 func000000000000000e:                   # @func000000000000000e
 	addi	a0, a0, -47
-	bset	a0, zero, a0
 	lui	a1, 1047936
+	bset	a0, zero, a0
 	addiw	a1, a1, -961
 	slli	a1, a1, 20
 	addi	a1, a1, 1212

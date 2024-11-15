@@ -52,8 +52,8 @@ func000000000000000e:                   # @func000000000000000e
 	vzext.vf2	v12, v10
 	li	a0, 32
 	vsll.vx	v8, v8, a0
-	vor.vv	v8, v8, v12
 	bseti	a0, zero, 31
+	vor.vv	v8, v8, v12
 	bseti	a0, a0, 63
 	vor.vx	v8, v8, a0
 	ret

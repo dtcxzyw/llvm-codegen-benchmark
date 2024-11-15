@@ -38,12 +38,13 @@ func000000000000002b:                   # @func000000000000002b
 func0000000000000023:                   # @func0000000000000023
 	vmv1r.v	v11, v0
 	lui	a0, 32768
-	addi	a0, a0, 15
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vmsgtu.vx	v0, v10, a0
-	vsetvli	zero, zero, e64, m2, ta, mu
+	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v12, 8
+	addi	a0, a0, 15
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vmsgtu.vx	v0, v10, a0
 	li	a0, 264
+	vsetvli	zero, zero, e64, m2, ta, mu
 	vmerge.vxm	v12, v12, a0, v0
 	vor.vv	v8, v12, v8
 	li	a0, 64

@@ -31,23 +31,23 @@ func0000000000000110:                   # @func0000000000000110
 	ret
 func0000000000000038:                   # @func0000000000000038
 	lui	a3, 131072
+	snez	a1, a1
 	addiw	a3, a3, -1
 	xor	a2, a2, a3
 	seqz	a2, a2
-	snez	a1, a1
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 func0000000000000188:                   # @func0000000000000188
 	li	a3, 255
+	srli	a1, a1, 56
 	slli	a3, a3, 36
+	sltiu	a1, a1, 255
 	addi	a3, a3, 5
 	slli	a3, a3, 12
 	addi	a3, a3, -1
 	xor	a2, a2, a3
 	snez	a2, a2
-	srli	a1, a1, 56
-	sltiu	a1, a1, 255
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
@@ -61,11 +61,11 @@ func0000000000000108:                   # @func0000000000000108
 	ret
 func0000000000000028:                   # @func0000000000000028
 	li	a3, -1
+	srli	a1, a1, 32
 	srli	a3, a3, 32
+	seqz	a1, a1
 	xor	a2, a2, a3
 	seqz	a2, a2
-	srli	a1, a1, 32
-	seqz	a1, a1
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

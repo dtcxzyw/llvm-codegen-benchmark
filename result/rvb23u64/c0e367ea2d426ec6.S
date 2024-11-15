@@ -14,8 +14,8 @@ func0000000000000005:                   # @func0000000000000005
 	ret
 func000000000000000f:                   # @func000000000000000f
 	sub	a0, a0, a1
-	slli	a0, a0, 3
 	li	a1, -125
+	slli	a0, a0, 3
 	srli	a1, a1, 2
 	and	a0, a0, a1
 	ret

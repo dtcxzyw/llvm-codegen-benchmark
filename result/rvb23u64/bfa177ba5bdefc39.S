@@ -3,10 +3,10 @@ func000000000000001c:                   # @func000000000000001c
 	sext.w	a0, a0
 	andi	a2, a2, 31
 	addi	a2, a2, -5
-	seqz	a2, a2
 	xor	a0, a0, a1
+	seqz	a1, a2
 	snez	a0, a0
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
 	andi	a2, a2, 512
@@ -35,13 +35,13 @@ func00000000000000bc:                   # @func00000000000000bc
 	sext.w	a0, a0
 	li	a3, -7
 	slli.uw	a3, a3, 29
+	slt	a0, a0, a1
 	addi	a3, a3, -1
 	and	a2, a2, a3
 	xor	a2, a2, a3
-	snez	a2, a2
-	slt	a0, a0, a1
+	snez	a1, a2
 	xori	a0, a0, 1
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 func00000000000000c1:                   # @func00000000000000c1
 	sext.w	a1, a1

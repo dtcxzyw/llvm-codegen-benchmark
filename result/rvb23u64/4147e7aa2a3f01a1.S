@@ -9,8 +9,8 @@ func0000000000000003:                   # @func0000000000000003
 	sext.w	a0, a0
 	li	a1, 8
 	maxu	a0, a0, a1
-	addi	a0, a0, 7
 	lui	a1, 524288
+	addi	a0, a0, 7
 	addiw	a1, a1, -8
 	and	a0, a0, a1
 	ret

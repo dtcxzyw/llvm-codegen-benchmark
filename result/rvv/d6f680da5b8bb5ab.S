@@ -12,8 +12,8 @@ func0000000000000008:                   # @func0000000000000008
 	vsext.vf2	v12, v11
 	vmul.vv	v8, v12, v8
 	vsext.vf2	v12, v10
-	vmul.vv	v8, v8, v12
 	li	a0, -1
+	vmul.vv	v8, v8, v12
 	srli	a0, a0, 6
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -96,8 +96,8 @@ func000000000000004a:                   # @func000000000000004a
 	vsext.vf2	v12, v11
 	vmul.vv	v8, v12, v8
 	vsext.vf2	v12, v10
-	vmul.vv	v8, v8, v12
 	lui	a0, 524288
+	vmul.vv	v8, v8, v12
 	addiw	a0, a0, -2
 	vmsgt.vx	v0, v8, a0
 	ret

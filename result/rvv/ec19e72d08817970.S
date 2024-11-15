@@ -4,9 +4,9 @@ func0000000000000002:                   # @func0000000000000002
 	lui	a0, 2720
 	addi	a0, a0, 170
 	vand.vx	v12, v12, a0
+	lui	a0, 4080
 	vxor.vv	v10, v12, v10
 	vxor.vv	v8, v10, v8
-	lui	a0, 4080
 	addi	a0, a0, 255
 	vand.vx	v8, v8, a0
 	ret

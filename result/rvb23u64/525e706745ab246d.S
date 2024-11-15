@@ -1,7 +1,7 @@
 func000000000000000b:                   # @func000000000000000b
 	or	a1, a1, a2
-	srli	a1, a1, 3
 	slli	a0, a0, 43
+	srli	a1, a1, 3
 	srli	a0, a0, 43
 	mul	a0, a0, a1
 	ret

@@ -29,8 +29,8 @@ func0000000000000021:                   # @func0000000000000021
 func0000000000000031:                   # @func0000000000000031
 	lui	a0, 16
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vmv.v.x	v12, a0
 	vmseq.vi	v0, v8, 3
+	vmv.v.x	v12, a0
 	vmv.v.i	v8, 0
 	vsll.vv	v8, v12, v10, v0.t
 	ret
@@ -65,8 +65,8 @@ func0000000000000026:                   # @func0000000000000026
 func0000000000000001:                   # @func0000000000000001
 	lui	a0, 32
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vmv.v.x	v12, a0
 	vmseq.vi	v0, v8, 0
+	vmv.v.x	v12, a0
 	vmv.v.i	v8, 0
 	vsll.vv	v8, v12, v10, v0.t
 	ret

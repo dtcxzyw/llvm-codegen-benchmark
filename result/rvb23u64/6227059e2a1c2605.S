@@ -86,8 +86,8 @@ func0000000000000114:                   # @func0000000000000114
 	ret
 func0000000000000204:                   # @func0000000000000204
 	andi	a1, a1, 255
-	sltiu	a1, a1, 6
 	lui	a2, 253
+	sltiu	a1, a1, 6
 	czero.nez	a1, a2, a1
 	lui	a2, 3
 	add	a0, a0, a2
@@ -97,12 +97,12 @@ func0000000000000204:                   # @func0000000000000204
 	ret
 func0000000000000216:                   # @func0000000000000216
 	andi	a1, a1, 255
-	sltiu	a1, a1, 127
 	li	a2, -34
+	sltiu	a1, a1, 127
 	czero.nez	a1, a2, a1
+	lui	a2, 3
 	addw	a0, a0, a1
-	lui	a1, 3
-	addiw	a1, a1, 1487
+	addiw	a1, a2, 1487
 	slt	a0, a0, a1
 	ret
 func0000000000000041:                   # @func0000000000000041

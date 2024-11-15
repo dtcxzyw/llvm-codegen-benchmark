@@ -7,10 +7,10 @@ func000000000000002a:                   # @func000000000000002a
 	ret
 func0000000000000028:                   # @func0000000000000028
 	sub	a1, a1, a2
+	lui	a2, 4
 	add	a0, a0, a1
-	lui	a1, 4
-	addiw	a1, a1, -1
-	add	a0, a0, a1
+	addiw	a2, a2, -1
+	add	a0, a0, a2
 	srli	a0, a0, 13
 	ret
 func0000000000000020:                   # @func0000000000000020

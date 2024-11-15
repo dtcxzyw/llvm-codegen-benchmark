@@ -7,10 +7,10 @@ func000000000000000b:                   # @func000000000000000b
 	add	a1, a1, a2
 	andi	a0, a0, 1
 	minu	a1, a1, a3
-	sh2add	a1, a1, a1
-	slli	a1, a1, 3
 	li	a2, -15
 	srli	a2, a2, 1
+	sh2add	a1, a1, a1
+	slli	a1, a1, 3
 	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2

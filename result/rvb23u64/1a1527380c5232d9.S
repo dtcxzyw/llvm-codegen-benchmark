@@ -68,11 +68,11 @@ func0000000000000047:                   # @func0000000000000047
 	ret
 func00000000000000a4:                   # @func00000000000000a4
 	fmv.w.x	fa5, zero
-	fle.s	a0, fa0, fa5
-	lui	a1, 267264
-	fmv.w.x	fa5, a1
-	flt.s	a1, fa5, fa0
-	andn	a0, a1, a0
+	lui	a0, 267264
+	fle.s	a1, fa0, fa5
+	fmv.w.x	fa5, a0
+	flt.s	a0, fa5, fa0
+	andn	a0, a0, a1
 	ret
 .LCPI8_0:
 	.word	0xf149f2ca                      # float -1.00000002E+30

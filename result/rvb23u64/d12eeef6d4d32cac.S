@@ -11,10 +11,10 @@ func00000000000002cc:                   # @func00000000000002cc
 	sext.w	a0, a0
 	srai	a2, a2, 32
 	xor	a2, a2, a0
-	snez	a2, a2
 	xor	a0, a0, a1
+	snez	a1, a2
 	snez	a0, a0
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 func0000000000000288:                   # @func0000000000000288
 	sext.w	a0, a0

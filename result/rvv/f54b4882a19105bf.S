@@ -11,8 +11,8 @@ func0000000000000034:                   # @func0000000000000034
 	vfabs.v	v12, v12
 	vfabs.v	v8, v8
 	vmflt.vv	v0, v12, v8
-	vmerge.vvm	v8, v12, v8, v0
 	lui	a0, 215040
+	vmerge.vvm	v8, v12, v8, v0
 	fmv.w.x	fa5, a0
 	vfmul.vf	v8, v8, fa5
 	ret
@@ -30,8 +30,8 @@ func0000000000000022:                   # @func0000000000000022
 	vfabs.v	v12, v12
 	vfabs.v	v8, v8
 	vmflt.vv	v0, v12, v8
-	vmerge.vvm	v8, v12, v8, v0
 	lui	a0, 223232
+	vmerge.vvm	v8, v12, v8, v0
 	fmv.w.x	fa5, a0
 	vfmul.vf	v8, v8, fa5
 	ret

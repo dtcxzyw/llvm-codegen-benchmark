@@ -19,10 +19,10 @@ func0000000000000422:                   # @func0000000000000422
 	fmv.s	fa5, fa0
 .LBB1_2:                                # %entry
 	fli.s	fa4, 0.5
-	flt.s	a0, fa0, fa4
-	lui	a1, 273536
-	fmv.w.x	fa4, a1
-	flt.s	a1, fa5, fa4
+	lui	a0, 273536
+	flt.s	a1, fa0, fa4
+	fmv.w.x	fa4, a0
+	flt.s	a0, fa5, fa4
 	or	a0, a0, a1
 	ret
 func000000000000042b:                   # @func000000000000042b

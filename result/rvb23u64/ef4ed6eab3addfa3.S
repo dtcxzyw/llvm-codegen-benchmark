@@ -30,8 +30,8 @@ func0000000000000008:                   # @func0000000000000008
 	sext.w	a3, a2
 	lui	a4, 1048560
 	addi	a4, a4, 1
-	addw	a2, a2, a4
 	sltu	a1, a3, a1
+	addw	a2, a2, a4
 	czero.nez	a2, a2, a1
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2

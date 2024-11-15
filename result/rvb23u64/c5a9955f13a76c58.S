@@ -3,10 +3,10 @@ func0000000000000022:                   # @func0000000000000022
 	sext.w	a2, a2
 	sext.w	a0, a0
 	xor	a2, a2, a0
-	seqz	a2, a2
 	xor	a0, a0, a1
+	seqz	a1, a2
 	seqz	a0, a0
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 func000000000000010e:                   # @func000000000000010e
 	sext.w	a1, a1
@@ -124,10 +124,10 @@ func00000000000000f8:                   # @func00000000000000f8
 	sext.w	a0, a0
 	sext.w	a2, a2
 	slt	a2, a2, a0
-	xori	a2, a2, 1
 	xor	a0, a0, a1
+	xori	a1, a2, 1
 	snez	a0, a0
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 func000000000000012a:                   # @func000000000000012a
 	sext.w	a1, a1
@@ -150,10 +150,10 @@ func0000000000000038:                   # @func0000000000000038
 	sext.w	a2, a2
 	sext.w	a0, a0
 	xor	a2, a2, a0
-	seqz	a2, a2
 	xor	a0, a0, a1
+	seqz	a1, a2
 	snez	a0, a0
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 func0000000000000198:                   # @func0000000000000198
 	xor	a2, a2, a0
@@ -192,10 +192,10 @@ func0000000000000182:                   # @func0000000000000182
 	sext.w	a2, a2
 	sext.w	a0, a0
 	xor	a2, a2, a0
-	snez	a2, a2
 	xor	a0, a0, a1
+	snez	a1, a2
 	seqz	a0, a0
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 func000000000000010c:                   # @func000000000000010c
 	sext.w	a1, a1
@@ -210,10 +210,10 @@ func00000000000000b8:                   # @func00000000000000b8
 	sext.w	a0, a0
 	sext.w	a2, a2
 	sltu	a2, a2, a0
-	xori	a2, a2, 1
 	xor	a0, a0, a1
+	xori	a1, a2, 1
 	snez	a0, a0
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 func0000000000000128:                   # @func0000000000000128
 	sext.w	a1, a1
@@ -229,10 +229,10 @@ func000000000000002a:                   # @func000000000000002a
 	sext.w	a2, a2
 	sext.w	a0, a0
 	xor	a2, a2, a0
-	seqz	a2, a2
 	sltu	a0, a1, a0
+	seqz	a1, a2
 	xori	a0, a0, 1
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 func0000000000000092:                   # @func0000000000000092
 	sext.w	a1, a1
@@ -273,10 +273,10 @@ func0000000000000162:                   # @func0000000000000162
 	sext.w	a2, a2
 	sext.w	a0, a0
 	slt	a2, a0, a2
-	xori	a2, a2, 1
 	xor	a0, a0, a1
+	xori	a1, a2, 1
 	seqz	a0, a0
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 func00000000000000d0:                   # @func00000000000000d0
 	sext.w	a1, a1

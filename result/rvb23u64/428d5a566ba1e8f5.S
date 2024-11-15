@@ -12,10 +12,10 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func000000000000000a:                   # @func000000000000000a
 	sh2add	a1, a1, a1
+	slli	a0, a0, 63
 	sh2add	a1, a1, a1
 	slli	a1, a1, 4
 	addi	a1, a1, 16
-	slli	a0, a0, 63
 	srai	a0, a0, 63
 	or	a0, a0, a1
 	ret

@@ -3,9 +3,9 @@ func0000000000000036:                   # @func0000000000000036
 	vsll.vi	v12, v12, 8
 	vor.vv	v8, v12, v8
 	vzext.vf4	v12, v10
-	vor.vv	v8, v8, v12
 	lui	a0, 97656
 	addi	a0, a0, 1024
+	vor.vv	v8, v8, v12
 	vmv.v.x	v10, a0
 	vdivu.vv	v8, v10, v8
 	ret

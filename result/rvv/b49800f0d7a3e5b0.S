@@ -24,22 +24,22 @@ func0000000000000008:                   # @func0000000000000008
 func0000000000000058:                   # @func0000000000000058
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v12, 0
-	vmerge.vim	v12, v12, 1, v0
 	li	a0, -127
-	vxor.vx	v12, v12, a0
 	vadd.vv	v8, v8, v10
-	vadd.vv	v8, v8, v12
+	vmerge.vim	v10, v12, 1, v0
+	vxor.vx	v10, v10, a0
+	vadd.vv	v8, v8, v10
 	li	a0, 252
 	vmsgtu.vx	v0, v8, a0
 	ret
 func000000000000005c:                   # @func000000000000005c
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v12, 0
-	vmerge.vim	v12, v12, 1, v0
 	li	a0, -127
-	vxor.vx	v12, v12, a0
 	vadd.vv	v8, v8, v10
-	vadd.vv	v8, v8, v12
+	vmerge.vim	v10, v12, 1, v0
+	vxor.vx	v10, v10, a0
+	vadd.vv	v8, v8, v10
 	li	a0, 253
 	vmsne.vx	v0, v8, a0
 	ret

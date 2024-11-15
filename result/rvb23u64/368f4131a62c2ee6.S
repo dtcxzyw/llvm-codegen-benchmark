@@ -1,10 +1,10 @@
 func0000000000000004:                   # @func0000000000000004
 	andi	a2, a2, 1
 	lui	a3, 4096
-	czero.nez	a2, a3, a2
 	or	a0, a0, a1
-	or	a0, a0, a2
 	lui	a1, 24576
+	czero.nez	a2, a3, a2
+	or	a0, a0, a2
 	addiw	a1, a1, 256
 	or	a0, a0, a1
 	ret

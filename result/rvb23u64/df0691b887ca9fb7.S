@@ -2,9 +2,9 @@ func00000000000000f4:                   # @func00000000000000f4
 	zext.h	a2, a2
 	zext.h	a1, a1
 	add	a1, a1, a2
+	lui	a2, 1
 	addw	a0, a0, a1
-	lui	a1, 1
-	addiw	a1, a1, -1011
+	addiw	a1, a2, -1011
 	sltu	a0, a0, a1
 	ret
 func00000000000000f8:                   # @func00000000000000f8

@@ -31,9 +31,9 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func000000000000000c:                   # @func000000000000000c
 	fmv.d.x	fa5, zero
+	li	a0, 45
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfge.vf	v0, v8, fa5
-	li	a0, 45
 	vsetvli	zero, zero, e8, m1, ta, ma
 	vmv.v.x	v8, a0
 	li	a0, 43

@@ -13,8 +13,8 @@ func0000000000000198:                   # @func0000000000000198
 	.quad	5756111188138146979             # 0x4fe1d0a0e0a03ca3
 func0000000000000022:                   # @func0000000000000022
 	lui	a0, %hi(.LCPI1_0)
-	ld	a0, %lo(.LCPI1_0)(a0)
 	lui	a1, %hi(.LCPI1_1)
+	ld	a0, %lo(.LCPI1_0)(a0)
 	ld	a1, %lo(.LCPI1_1)(a1)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vx	v12, v10, a0

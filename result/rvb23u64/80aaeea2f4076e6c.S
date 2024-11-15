@@ -1,24 +1,24 @@
 func0000000000000034:                   # @func0000000000000034
 	addiw	a1, a1, 1
 	srliw	a0, a0, 30
-	czero.eqz	a1, a1, a0
 	li	a2, 32
+	czero.eqz	a1, a1, a0
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	ret
 func0000000000000031:                   # @func0000000000000031
 	sext.w	a0, a0
 	addiw	a1, a1, 1
-	czero.eqz	a1, a1, a0
 	li	a2, 32
+	czero.eqz	a1, a1, a0
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
 	sext.w	a0, a0
 	addiw	a1, a1, 1
-	czero.eqz	a1, a1, a0
 	li	a2, 1
+	czero.eqz	a1, a1, a0
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	ret
@@ -41,9 +41,9 @@ func0000000000000021:                   # @func0000000000000021
 func0000000000000014:                   # @func0000000000000014
 	sext.w	a0, a0
 	addiw	a1, a1, -48
+	li	a2, 16
 	sltiu	a0, a0, 64
 	czero.nez	a1, a1, a0
-	li	a2, 16
 	czero.eqz	a0, a2, a0
 	or	a0, a0, a1
 	ret
@@ -56,27 +56,27 @@ func0000000000000036:                   # @func0000000000000036
 func0000000000000006:                   # @func0000000000000006
 	sext.w	a0, a0
 	addiw	a1, a1, 9
+	li	a2, 7
 	slti	a0, a0, 0
 	czero.nez	a1, a1, a0
-	li	a2, 7
 	czero.eqz	a0, a2, a0
 	or	a0, a0, a1
 	ret
 func0000000000000018:                   # @func0000000000000018
 	addiw	a1, a1, -5
 	srliw	a0, a0, 2
+	li	a2, 63
 	sltiu	a0, a0, 1725
 	czero.eqz	a1, a1, a0
-	li	a2, 63
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	ret
 func0000000000000038:                   # @func0000000000000038
 	addiw	a1, a1, 5
 	srliw	a0, a0, 2
+	li	a2, 63
 	sltiu	a0, a0, 1475
 	czero.eqz	a1, a1, a0
-	li	a2, 63
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	ret
@@ -89,9 +89,9 @@ func000000000000001a:                   # @func000000000000001a
 func0000000000000004:                   # @func0000000000000004
 	sext.w	a0, a0
 	addiw	a1, a1, 10
+	li	a2, 16
 	sltiu	a0, a0, 15
 	czero.nez	a1, a1, a0
-	li	a2, 16
 	czero.eqz	a0, a2, a0
 	or	a0, a0, a1
 	ret

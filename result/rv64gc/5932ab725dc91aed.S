@@ -30,10 +30,10 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func000000000000000a:                   # @func000000000000000a
 	lui	a1, 244
+	lui	a2, 12
 	addiw	a1, a1, 575
 	slt	a1, a1, a0
 	neg	a1, a1
-	lui	a2, 12
 	addiw	a2, a2, -576
 	and	a1, a1, a2
 	add	a0, a0, a1

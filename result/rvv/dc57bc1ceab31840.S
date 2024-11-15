@@ -11,10 +11,10 @@ func000000000000001e:                   # @func000000000000001e
 	ret
 func0000000000000012:                   # @func0000000000000012
 	lui	a0, 1
-	addi	a0, a0, 885
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vmseq.vx	v0, v12, a0
 	vsll.vi	v10, v10, 5
+	addi	a0, a0, 885
+	vmseq.vx	v0, v12, a0
 	li	a0, 16
 	vor.vx	v10, v10, a0, v0.t
 	vor.vv	v8, v10, v8

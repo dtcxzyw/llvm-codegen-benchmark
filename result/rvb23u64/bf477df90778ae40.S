@@ -1,7 +1,7 @@
 func00000000000000fa:                   # @func00000000000000fa
 	bset	a2, zero, a2
-	sext.w	a2, a2
 	sext.w	a1, a1
+	sext.w	a2, a2
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
@@ -17,8 +17,8 @@ func000000000000008a:                   # @func000000000000008a
 	ret
 func00000000000000f0:                   # @func00000000000000f0
 	li	a3, 256
-	sllw	a2, a3, a2
 	sext.w	a1, a1
+	sllw	a2, a3, a2
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

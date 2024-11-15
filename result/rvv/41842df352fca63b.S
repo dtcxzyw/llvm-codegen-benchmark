@@ -7,9 +7,9 @@ func0000000000000001:                   # @func0000000000000001
 	vmulh.vx	v8, v8, a0
 	li	a0, 63
 	vsrl.vx	v10, v8, a0
+	lui	a0, 244141
 	vsra.vi	v8, v8, 26
 	vadd.vv	v8, v8, v10
-	lui	a0, 244141
 	addiw	a0, a0, -1536
 	vmul.vx	v8, v8, a0
 	ret
@@ -44,10 +44,10 @@ func0000000000000000:                   # @func0000000000000000
 	vmulh.vx	v8, v8, a0
 	li	a0, 63
 	vsrl.vx	v10, v8, a0
-	vsra.vi	v8, v8, 13
-	vadd.vv	v8, v8, v10
 	lui	a0, 8192
 	addiw	a0, a0, -675
+	vsra.vi	v8, v8, 13
+	vadd.vv	v8, v8, v10
 	slli	a0, a0, 7
 	vmul.vx	v8, v8, a0
 	ret

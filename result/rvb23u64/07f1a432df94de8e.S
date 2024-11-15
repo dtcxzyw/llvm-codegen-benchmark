@@ -2,9 +2,9 @@ func0000000000000000:                   # @func0000000000000000
 	andi	a2, a2, 1
 	li	a3, -7
 	czero.nez	a2, a3, a2
+	li	a3, 7
 	add	a1, a1, a2
-	li	a2, 7
-	bseti	a2, a2, 32
+	bseti	a2, a3, 32
 	add	a1, a1, a2
 	and	a0, a0, a1
 	ret

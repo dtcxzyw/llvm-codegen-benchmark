@@ -21,8 +21,8 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func0000000000000011:                   # @func0000000000000011
 	andi	a1, a1, 240
-	sltiu	a1, a1, 144
 	lui	a2, 8
+	sltiu	a1, a1, 144
 	addiw	a3, a2, -1
 	czero.nez	a1, a3, a1
 	and	a0, a0, a2

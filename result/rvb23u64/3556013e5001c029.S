@@ -6,8 +6,8 @@ func0000000000000015:                   # @func0000000000000015
 	sub	a0, a0, a1
 	srli	a1, a0, 9
 	mulhu	a1, a1, a2
-	srli	a1, a1, 11
 	lui	a2, 244141
+	srli	a1, a1, 11
 	addiw	a2, a2, -1536
 	mul	a1, a1, a2
 	sub	a0, a0, a1
@@ -20,8 +20,8 @@ func0000000000000010:                   # @func0000000000000010
 	sub	a0, a0, a1
 	srli	a1, a0, 2
 	mulhu	a1, a1, a2
-	srli	a1, a1, 2
 	li	a2, -100
+	srli	a1, a1, 2
 	zext.w	a2, a2
 	mul	a1, a1, a2
 	add	a0, a0, a1
@@ -44,10 +44,10 @@ func0000000000000030:                   # @func0000000000000030
 	lui	a2, %hi(.LCPI3_0)
 	ld	a2, %lo(.LCPI3_0)(a2)
 	sub	a0, a0, a1
-	mulhu	a1, a0, a2
-	srli	a1, a1, 4
-	li	a2, -19
-	zext.w	a2, a2
+	li	a1, -19
+	mulhu	a2, a0, a2
+	srli	a2, a2, 4
+	zext.w	a1, a1
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret

@@ -2,9 +2,9 @@ func000000000000001a:                   # @func000000000000001a
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v10, -12
 	li	a0, 12
+	lui	a1, 699051
 	vmacc.vx	v10, a0, v8
-	lui	a0, 699051
-	addiw	a0, a0, -1365
+	addiw	a0, a1, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmulhu.vx	v8, v10, a0
@@ -12,14 +12,14 @@ func000000000000001a:                   # @func000000000000001a
 	ret
 func000000000000000b:                   # @func000000000000000b
 	li	a0, -24
+	li	a1, 24
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0
-	li	a0, 24
-	vmacc.vx	v10, a0, v8
-	vsrl.vi	v8, v10, 3
 	lui	a0, 699051
 	addiw	a0, a0, -1365
+	vmacc.vx	v10, a1, v8
 	slli	a1, a0, 32
+	vsrl.vi	v8, v10, 3
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0
 	ret
@@ -39,9 +39,9 @@ func0000000000000014:                   # @func0000000000000014
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v10, 2
 	li	a0, 153
+	lui	a1, 838861
 	vmacc.vx	v10, a0, v8
-	lui	a0, 838861
-	addiw	a0, a0, -819
+	addiw	a0, a1, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmulhu.vx	v8, v10, a0
@@ -51,10 +51,10 @@ func0000000000000014:                   # @func0000000000000014
 	.quad	3234497591006606311             # 0x2ce33e6c02ce33e7
 func000000000000001e:                   # @func000000000000001e
 	li	a0, 24
+	lui	a1, %hi(.LCPI4_0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
-	lui	a0, %hi(.LCPI4_0)
-	ld	a0, %lo(.LCPI4_0)(a0)
+	ld	a0, %lo(.LCPI4_0)(a1)
 	li	a1, 365
 	csrwi	vxrm, 2
 	vaaddu.vx	v8, v8, a1
@@ -63,25 +63,25 @@ func000000000000001e:                   # @func000000000000001e
 	ret
 func000000000000001b:                   # @func000000000000001b
 	li	a0, -40
+	li	a1, 40
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0
-	li	a0, 40
-	vmacc.vx	v10, a0, v8
-	vsrl.vi	v8, v10, 3
 	lui	a0, 838861
 	addiw	a0, a0, -819
+	vmacc.vx	v10, a1, v8
 	slli	a1, a0, 32
+	vsrl.vi	v8, v10, 3
 	add	a0, a0, a1
 	vmul.vx	v8, v8, a0
 	ret
 func0000000000000008:                   # @func0000000000000008
 	li	a0, -24
+	li	a1, 24
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0
-	li	a0, 24
-	vmacc.vx	v10, a0, v8
 	lui	a0, 699051
 	addiw	a0, a0, -1365
+	vmacc.vx	v10, a1, v8
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmulhu.vx	v8, v10, a0
@@ -89,13 +89,13 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func000000000000000a:                   # @func000000000000000a
 	lui	a0, 2
+	li	a1, -10
 	addiw	a0, a0, -40
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.x	v10, a0
-	li	a0, -10
-	vmacc.vx	v10, a0, v8
 	lui	a0, 838861
 	addiw	a0, a0, -819
+	vmacc.vx	v10, a1, v8
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmulhu.vx	v8, v10, a0

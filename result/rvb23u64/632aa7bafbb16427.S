@@ -17,10 +17,10 @@ func0000000000000048:                   # @func0000000000000048
 	ret
 func0000000000000006:                   # @func0000000000000006
 	minu	a1, a1, a2
+	lui	a2, 524288
 	sub	a1, a1, a0
-	lui	a0, 524288
-	addiw	a0, a0, -1
-	slt	a0, a1, a0
+	addiw	a2, a2, -1
+	slt	a0, a1, a2
 	ret
 func0000000000000014:                   # @func0000000000000014
 	minu	a1, a1, a2

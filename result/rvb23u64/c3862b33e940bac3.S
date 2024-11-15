@@ -4,10 +4,10 @@ func0000000000000000:                   # @func0000000000000000
 	li	a3, 2
 	czero.nez	a2, a3, a2
 	li	a3, 1
-	czero.eqz	a3, a3, a1
-	czero.nez	a1, a2, a1
 	slli	a0, a0, 63
+	czero.eqz	a3, a3, a1
 	srai	a0, a0, 63
+	czero.nez	a1, a2, a1
 	or	a0, a0, a3
 	or	a0, a0, a1
 	ret

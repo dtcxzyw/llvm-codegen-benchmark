@@ -21,8 +21,8 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func000000000000000a:                   # @func000000000000000a
 	slli	a1, a1, 56
-	srai	a1, a1, 56
 	slli	a2, a2, 56
+	srai	a1, a1, 56
 	srai	a2, a2, 56
 	slt	a1, a2, a1
 	addi	a1, a1, -1
@@ -30,8 +30,8 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func0000000000000006:                   # @func0000000000000006
 	slli	a2, a2, 56
-	srai	a2, a2, 56
 	slli	a1, a1, 56
+	srai	a2, a2, 56
 	srai	a1, a1, 56
 	bge	a1, a2, .LBB4_2
 	li	a0, 2

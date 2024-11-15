@@ -35,8 +35,8 @@ func000000000000004a:                   # @func000000000000004a
 func000000000000009b:                   # @func000000000000009b
 	flt.s	a0, fa0, fa1
 	flt.s	a1, fa1, fa0
-	or	a0, a0, a1
 	fmv.w.x	fa5, zero
+	or	a0, a0, a1
 	flt.s	a1, fa5, fa0
 	and	a0, a0, a1
 	xori	a0, a0, 1

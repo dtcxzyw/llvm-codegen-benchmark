@@ -11,9 +11,9 @@ func0000000000000048:                   # @func0000000000000048
 	ret
 func000000000000000a:                   # @func000000000000000a
 	mul	a1, a1, a2
+	lui	a2, 1
 	addw	a0, a0, a1
-	lui	a1, 1
-	addiw	a1, a1, -2001
+	addiw	a1, a2, -2001
 	slt	a0, a1, a0
 	ret
 func000000000000001a:                   # @func000000000000001a
@@ -40,16 +40,16 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func0000000000000008:                   # @func0000000000000008
 	mul	a1, a1, a2
+	lui	a2, 52429
 	addw	a0, a0, a1
-	lui	a1, 52429
-	addiw	a1, a1, -820
+	addiw	a1, a2, -820
 	sltu	a0, a1, a0
 	ret
 func0000000000000001:                   # @func0000000000000001
 	mul	a1, a1, a2
+	lui	a2, 52429
 	addw	a0, a0, a1
-	lui	a1, 52429
-	addiw	a1, a1, -820
+	addiw	a1, a2, -820
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

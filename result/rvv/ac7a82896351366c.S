@@ -22,16 +22,16 @@ func0000000000000022:                   # @func0000000000000022
 func000000000000002c:                   # @func000000000000002c
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v12, v12, 2
-	vmslt.vv	v14, v8, v12
 	bseti	a0, zero, 63
+	vmslt.vv	v14, v8, v12
 	vmseq.vx	v8, v10, a0
 	vmor.mm	v0, v14, v8
 	ret
 func00000000000000c2:                   # @func00000000000000c2
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v12, v12, 7
-	vmslt.vv	v14, v10, v12
 	bseti	a0, zero, 63
+	vmslt.vv	v14, v10, v12
 	vmseq.vx	v10, v8, a0
 	vmor.mm	v0, v10, v14
 	ret

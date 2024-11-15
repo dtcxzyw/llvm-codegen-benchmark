@@ -10,8 +10,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	sext.w	a0, a0
 	andi	a1, a1, 31
 	xor	a1, a1, a0
-	seqz	a1, a1
 	addi	a0, a0, -31
+	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

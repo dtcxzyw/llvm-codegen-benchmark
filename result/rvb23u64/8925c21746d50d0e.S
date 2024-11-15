@@ -12,9 +12,9 @@ func0000000000000009:                   # @func0000000000000009
 	ret
 func000000000000000d:                   # @func000000000000000d
 	slli	a1, a1, 15
+	slli	a0, a0, 47
 	srliw	a1, a1, 16
 	slli	a1, a1, 16
-	slli	a0, a0, 47
 	srli	a0, a0, 48
 	or	a0, a0, a1
 	ret

@@ -22,8 +22,8 @@ func0000000000000034:                   # @func0000000000000034
 	.quad	7520897724310334953             # 0x685f98a2018fade9
 func000000000000000c:                   # @func000000000000000c
 	lui	a2, %hi(.LCPI3_0)
-	ld	a2, %lo(.LCPI3_0)(a2)
 	lui	a3, %hi(.LCPI3_1)
+	ld	a2, %lo(.LCPI3_0)(a2)
 	ld	a3, %lo(.LCPI3_1)(a3)
 	add	a1, a1, a2
 	mul	a0, a0, a3

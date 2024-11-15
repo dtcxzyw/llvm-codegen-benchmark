@@ -14,8 +14,8 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func000000000000001a:                   # @func000000000000001a
 	andi	a1, a1, 255
-	addi	a1, a1, -10
 	bseti	a2, zero, 31
+	addi	a1, a1, -10
 	bseti	a2, a2, 63
 	czero.eqz	a1, a2, a1
 	lui	a2, 524288
@@ -24,8 +24,8 @@ func000000000000001a:                   # @func000000000000001a
 	ret
 func0000000000000016:                   # @func0000000000000016
 	andi	a1, a1, 255
-	addi	a1, a1, -10
 	bseti	a2, zero, 31
+	addi	a1, a1, -10
 	bseti	a2, a2, 63
 	czero.nez	a1, a2, a1
 	li	a2, -1
@@ -35,8 +35,8 @@ func0000000000000016:                   # @func0000000000000016
 	ret
 func00000000000000c1:                   # @func00000000000000c1
 	andi	a1, a1, 255
-	addi	a1, a1, -10
 	bseti	a2, zero, 31
+	addi	a1, a1, -10
 	bseti	a2, a2, 63
 	czero.eqz	a1, a2, a1
 	lui	a2, 524288
@@ -46,8 +46,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	ret
 func00000000000000ca:                   # @func00000000000000ca
 	andi	a1, a1, 255
-	addi	a1, a1, -10
 	bseti	a2, zero, 31
+	addi	a1, a1, -10
 	bseti	a2, a2, 63
 	czero.eqz	a1, a2, a1
 	lui	a2, 524288
@@ -56,9 +56,9 @@ func00000000000000ca:                   # @func00000000000000ca
 	ret
 func0000000000000018:                   # @func0000000000000018
 	andi	a1, a1, 255
+	li	a2, -1
 	addi	a1, a1, -45
 	seqz	a1, a1
-	li	a2, -1
 	srli	a2, a2, 1
 	add	a1, a1, a2
 	sltu	a0, a1, a0

@@ -1,9 +1,9 @@
 func0000000000000048:                   # @func0000000000000048
 	sext.w	a2, a2
-	seqz	a2, a2
 	sub	a0, a0, a1
+	seqz	a1, a2
 	sltiu	a0, a0, 8
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 func0000000000000108:                   # @func0000000000000108
 	srliw	a2, a2, 28
@@ -23,8 +23,8 @@ func0000000000000208:                   # @func0000000000000208
 	ret
 func0000000000000206:                   # @func0000000000000206
 	sext.w	a2, a2
-	sltiu	a2, a2, 507
 	lui	a3, 1
+	sltiu	a2, a2, 507
 	addiw	a3, a3, 903
 	czero.eqz	a2, a3, a2
 	addi	a2, a2, 1

@@ -8,21 +8,21 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func0000000000000015:                   # @func0000000000000015
 	slli	a1, a1, 13
-	srli	a1, a1, 13
 	li	a2, -19
 	mul	a0, a0, a2
+	lui	a2, 1048538
+	srli	a1, a1, 13
 	sub	a0, a0, a1
-	lui	a1, 1048538
-	srli	a1, a1, 12
-	add	a0, a0, a1
+	srli	a2, a2, 12
+	add	a0, a0, a2
 	ret
 func0000000000000035:                   # @func0000000000000035
 	slli	a1, a1, 13
-	srli	a1, a1, 13
 	li	a2, -19
 	mul	a0, a0, a2
+	lui	a2, 1048538
+	srli	a1, a1, 13
 	sub	a0, a0, a1
-	lui	a1, 1048538
-	srli	a1, a1, 12
-	add	a0, a0, a1
+	srli	a2, a2, 12
+	add	a0, a0, a2
 	ret

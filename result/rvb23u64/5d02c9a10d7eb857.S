@@ -26,10 +26,10 @@ func0000000000000051:                   # @func0000000000000051
 func0000000000000004:                   # @func0000000000000004
 	zext.w	a1, a1
 	sub	a1, a1, a0
-	addi	a0, a1, -1240
-	lui	a1, 1048575
-	addiw	a1, a1, 1616
-	sltu	a0, a0, a1
+	lui	a0, 1048575
+	addi	a1, a1, -1240
+	addiw	a0, a0, 1616
+	sltu	a0, a1, a0
 	ret
 func0000000000000054:                   # @func0000000000000054
 	zext.w	a1, a1

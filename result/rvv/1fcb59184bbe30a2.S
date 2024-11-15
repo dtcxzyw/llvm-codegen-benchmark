@@ -3,8 +3,8 @@ func0000000000000016:                   # @func0000000000000016
 	addi	a0, a0, -1
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
-	vmseq.vi	v0, v10, 0
 	lui	a0, 7
+	vmseq.vi	v0, v10, 0
 	addi	a0, a0, 1328
 	vmerge.vxm	v10, v10, a0, v0
 	vmslt.vv	v0, v10, v8

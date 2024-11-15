@@ -2,10 +2,10 @@ func000000000000003a:                   # @func000000000000003a
 	li	a0, 127
 	vsetivli	zero, 4, e8, mf4, ta, ma
 	vand.vx	v10, v10, a0
+	lui	a0, 4096
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf8	v12, v10
 	vor.vv	v8, v12, v8
-	lui	a0, 4096
 	addiw	a0, a0, -1
 	vmsgt.vx	v0, v8, a0
 	ret

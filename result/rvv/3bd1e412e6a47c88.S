@@ -1,16 +1,16 @@
 func0000000000000294:                   # @func0000000000000294
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	vmsleu.vv	v12, v8, v10
 	li	a0, 65
+	vmsleu.vv	v12, v8, v10
 	vmsltu.vx	v8, v10, a0
 	vmand.mm	v0, v8, v12
 	ret
 func000000000000016b:                   # @func000000000000016b
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	vmsle.vv	v12, v8, v10
 	li	a0, 128
+	vmsle.vv	v12, v8, v10
 	vmslt.vx	v8, v10, a0
 	vmand.mm	v0, v12, v8
 	ret

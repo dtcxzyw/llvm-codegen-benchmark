@@ -17,11 +17,11 @@ func0000000000000022:                   # @func0000000000000022
 	vsetivli	zero, 16, e32, m4, ta, mu
 	vfsub.vv	v8, v8, v12
 	fmv.w.x	fa5, zero
-	vmflt.vf	v0, v8, fa5
 	lui	a0, 277312
+	vmflt.vf	v0, v8, fa5
 	fmv.w.x	fa5, a0
-	vfadd.vf	v8, v8, fa5, v0.t
 	lui	a0, 275264
+	vfadd.vf	v8, v8, fa5, v0.t
 	fmv.w.x	fa5, a0
 	vmflt.vf	v0, v8, fa5
 	ret

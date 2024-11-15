@@ -20,18 +20,18 @@ func0000000000000006:                   # @func0000000000000006
 func0000000000000008:                   # @func0000000000000008
 	li	a2, 100
 	mul	a1, a1, a2
+	lui	a2, 6
 	div	a0, a1, a0
-	lui	a1, 6
-	addiw	a1, a1, 423
+	addiw	a1, a2, 423
 	sltu	a0, a1, a0
 	ret
 func0000000000000004:                   # @func0000000000000004
 	li	a2, 10
 	mul	a1, a1, a2
+	li	a2, -1
 	div	a0, a1, a0
-	li	a1, -1
-	srli	a1, a1, 1
-	sltu	a0, a0, a1
+	srli	a2, a2, 1
+	sltu	a0, a0, a2
 	ret
 func000000000000002a:                   # @func000000000000002a
 	li	a2, 100

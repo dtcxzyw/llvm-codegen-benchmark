@@ -12,9 +12,9 @@ func0000000000000023:                   # @func0000000000000023
 func0000000000000022:                   # @func0000000000000022
 	vmv1r.v	v11, v0
 	li	a0, 255
-	slli	a1, a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmseq.vi	v0, v10, 0
+	slli	a1, a0, 32
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vor.vx	v12, v8, a1
 	vmerge.vvm	v8, v12, v8, v0
@@ -26,9 +26,9 @@ func0000000000000022:                   # @func0000000000000022
 func0000000000000002:                   # @func0000000000000002
 	vmv1r.v	v11, v0
 	li	a0, 255
-	slli	a0, a0, 24
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmseq.vi	v0, v10, 0
+	slli	a0, a0, 24
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vor.vx	v12, v8, a0
 	vmerge.vvm	v8, v12, v8, v0

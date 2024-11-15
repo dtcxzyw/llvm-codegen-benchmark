@@ -13,10 +13,10 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func00000000000000c1:                   # @func00000000000000c1
 	andi	a2, a2, 1
-	seqz	a2, a2
 	xor	a0, a0, a1
+	seqz	a1, a2
 	snez	a0, a0
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 func00000000000000c8:                   # @func00000000000000c8
 	bexti	a2, a2, 15
@@ -31,11 +31,11 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func00000000000000cc:                   # @func00000000000000cc
 	andi	a2, a2, 255
-	addi	a2, a2, -121
-	snez	a2, a2
 	xor	a0, a0, a1
+	addi	a1, a2, -121
+	snez	a1, a1
 	snez	a0, a0
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 func00000000000000c4:                   # @func00000000000000c4
 	bexti	a2, a2, 1

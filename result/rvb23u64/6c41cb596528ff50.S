@@ -10,8 +10,8 @@ func0000000000000005:                   # @func0000000000000005
 	ret
 func000000000000000f:                   # @func000000000000000f
 	or	a1, a1, a2
-	slli	a1, a1, 32
 	lui	a2, 917506
+	slli	a1, a1, 32
 	addiw	a2, a2, -1
 	slli	a2, a2, 19
 	addi	a2, a2, 7

@@ -51,8 +51,8 @@ func000000000000003f:                   # @func000000000000003f
 	ret
 func0000000000000000:                   # @func0000000000000000
 	sub	a1, a1, a0
-	addi	a1, a1, 3
 	lui	a0, 244
+	addi	a1, a1, 3
 	addiw	a0, a0, 576
 	mul	a0, a0, a1
 	ret

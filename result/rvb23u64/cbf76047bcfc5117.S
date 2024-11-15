@@ -14,10 +14,10 @@ func0000000000000007:                   # @func0000000000000007
 	ret
 func0000000000000000:                   # @func0000000000000000
 	srli	a2, a2, 10
-	andi	a2, a2, 1020
 	or	a0, a0, a1
-	or	a0, a0, a2
 	lui	a1, 786432
+	andi	a2, a2, 1020
+	or	a0, a0, a2
 	addiw	a1, a1, 1024
 	or	a0, a0, a1
 	ret

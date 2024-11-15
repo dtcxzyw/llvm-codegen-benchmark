@@ -11,12 +11,12 @@ func0000000000000180:                   # @func0000000000000180
 	ret
 func00000000000001ff:                   # @func00000000000001ff
 	slli	a2, a2, 42
-	add	a1, a1, a2
 	sext.w	a0, a0
+	add	a1, a1, a2
+	lui	a2, 24578
+	bseti	a2, a2, 54
 	add	a0, a0, a1
-	lui	a1, 24578
-	bseti	a1, a1, 54
-	bseti	a1, a1, 62
+	bseti	a1, a2, 62
 	add	a0, a0, a1
 	ret
 func00000000000001ef:                   # @func00000000000001ef
@@ -27,9 +27,9 @@ func00000000000001ef:                   # @func00000000000001ef
 	ret
 func00000000000001ed:                   # @func00000000000001ed
 	sh1add	a1, a2, a1
+	li	a2, -1
 	add.uw	a0, a0, a1
-	li	a1, -1
-	slli	a1, a1, 32
-	addi	a1, a1, 98
+	slli	a2, a2, 32
+	addi	a1, a2, 98
 	add	a0, a0, a1
 	ret

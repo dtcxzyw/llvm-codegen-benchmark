@@ -81,8 +81,8 @@ func0000000000000888:                   # @func0000000000000888
 func0000000000000c4c:                   # @func0000000000000c4c
 	andi	a1, a1, 255
 	xori	a2, a2, 18
-	sltiu	a1, a1, 32
 	xori	a0, a0, 10
+	sltiu	a1, a1, 32
 	or	a0, a0, a2
 	andi	a0, a0, 255
 	snez	a0, a0

@@ -7,8 +7,8 @@ func0000000000000028:                   # @func0000000000000028
 func0000000000000024:                   # @func0000000000000024
 	sext.w	a0, a0
 	bset	a1, zero, a1
-	sltiu	a0, a0, -2
 	li	a2, 1
+	sltiu	a0, a0, -2
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
@@ -22,8 +22,8 @@ func000000000000002a:                   # @func000000000000002a
 func0000000000000021:                   # @func0000000000000021
 	sext.w	a0, a0
 	bset	a1, zero, a1
-	addi	a0, a0, -3
 	li	a2, 16
+	addi	a0, a0, -3
 	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2
@@ -83,8 +83,8 @@ func0000000000000034:                   # @func0000000000000034
 func0000000000000036:                   # @func0000000000000036
 	sext.w	a0, a0
 	bset	a1, zero, a1
-	slti	a0, a0, 8
 	lui	a2, 2
+	slti	a0, a0, 8
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2

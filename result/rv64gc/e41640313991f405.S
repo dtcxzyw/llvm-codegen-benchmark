@@ -20,9 +20,9 @@ func0000000000000007:                   # @func0000000000000007
 	lui	a2, 8
 	addi	a2, a2, -256
 	and	a1, a1, a2
+	lui	a2, 4
 	or	a0, a0, a1
-	lui	a1, 4
-	addi	a1, a1, 62
+	addi	a1, a2, 62
 	subw	a0, a1, a0
 	ret
 func0000000000000005:                   # @func0000000000000005

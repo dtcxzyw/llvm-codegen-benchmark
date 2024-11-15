@@ -5,8 +5,8 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000003:                   # @func0000000000000003
 	xori	a0, a0, 48
-	andi	a0, a0, 255
 	lui	a1, 16
+	andi	a0, a0, 255
 	addiw	a1, a1, -10
 	add	a0, a0, a1
 	ret

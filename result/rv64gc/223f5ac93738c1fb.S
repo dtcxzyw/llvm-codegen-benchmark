@@ -1,9 +1,9 @@
 func0000000000000009:                   # @func0000000000000009
 	andi	a2, a2, 1
 	subw	a1, a1, a2
-	slli	a1, a1, 32
 	lui	a2, 335544
 	addi	a2, a2, 1311
+	slli	a1, a1, 32
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
 	srli	a1, a1, 39
@@ -12,9 +12,9 @@ func0000000000000009:                   # @func0000000000000009
 func000000000000000b:                   # @func000000000000000b
 	andi	a2, a2, 1
 	subw	a1, a1, a2
-	slli	a1, a1, 32
 	lui	a2, 335544
 	addi	a2, a2, 1311
+	slli	a1, a1, 32
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
 	srli	a1, a1, 39
@@ -23,9 +23,9 @@ func000000000000000b:                   # @func000000000000000b
 func0000000000000003:                   # @func0000000000000003
 	andi	a2, a2, 1
 	subw	a1, a1, a2
-	slli	a1, a1, 32
 	lui	a2, 699051
 	addi	a2, a2, -1365
+	slli	a1, a1, 32
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
 	srli	a1, a1, 35
@@ -34,9 +34,9 @@ func0000000000000003:                   # @func0000000000000003
 func0000000000000001:                   # @func0000000000000001
 	andi	a2, a2, 1
 	subw	a1, a1, a2
-	slli	a1, a1, 32
 	lui	a2, 335544
 	addi	a2, a2, 1311
+	slli	a1, a1, 32
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
 	srli	a1, a1, 39

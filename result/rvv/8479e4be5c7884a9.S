@@ -25,8 +25,8 @@ func0000000000000007:                   # @func0000000000000007
 func0000000000000005:                   # @func0000000000000005
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
-	vfwcvt.f.xu.v	v10, v12
 	fli.d	fa5, 1.0
+	vfwcvt.f.xu.v	v10, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vfrdiv.vf	v8, v8, fa5
 	vfmul.vv	v8, v8, v10

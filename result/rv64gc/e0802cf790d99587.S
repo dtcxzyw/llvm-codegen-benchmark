@@ -1,9 +1,9 @@
 .LCPI0_0:
 	.quad	0x3e50000000000000              # double 1.4901161193847656E-8
 func0000000000000204:                   # @func0000000000000204
-	sext.w	a1, a1
 	lui	a2, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a2)
+	sext.w	a1, a1
 	sltiu	a1, a1, 3
 	xori	a1, a1, 1
 	or	a0, a0, a1
@@ -12,9 +12,9 @@ func0000000000000204:                   # @func0000000000000204
 	ret
 func0000000000000188:                   # @func0000000000000188
 	sext.w	a1, a1
+	fmv.d.x	fa5, zero
 	slti	a1, a1, 1
 	or	a0, a0, a1
-	fmv.d.x	fa5, zero
 	flt.d	a1, fa0, fa5
 	or	a0, a0, a1
 	ret

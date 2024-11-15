@@ -28,12 +28,12 @@ func0000000000000006:                   # @func0000000000000006
 	lui	a0, 786432
 	addi	a0, a0, 64
 	vmv.v.x	v8, a0
-	vmerge.vim	v8, v8, 0, v0
 	li	a0, 16
+	vmerge.vim	v8, v8, 0, v0
 	vor.vx	v12, v8, a0
+	lui	a0, 262144
 	vmv1r.v	v0, v10
 	vmerge.vvm	v8, v12, v8, v0
-	lui	a0, 262144
 	addi	a0, a0, 256
 	vor.vx	v8, v8, a0
 	ret

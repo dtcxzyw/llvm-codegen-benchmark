@@ -3,8 +3,8 @@ func00000000000000a6:                   # @func00000000000000a6
 	vfadd.vv	v8, v8, v16
 	fmv.d.x	fa5, zero
 	vmfge.vf	v16, v8, fa5
-	vmnot.m	v16, v16
 	fli.d	fa5, 1.0
+	vmnot.m	v16, v16
 	vmfle.vf	v17, v8, fa5
 	vmorn.mm	v0, v16, v17
 	ret

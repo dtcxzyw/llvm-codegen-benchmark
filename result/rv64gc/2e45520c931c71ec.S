@@ -85,10 +85,10 @@ func0000000000000194:                   # @func0000000000000194
 	ret
 func00000000000001c4:                   # @func00000000000001c4
 	slli	a1, a1, 8
+	lui	a2, 1048560
 	or	a0, a0, a1
-	lui	a1, 1048560
-	addi	a2, a1, -1
-	addw	a0, a0, a2
-	addiw	a1, a1, 511
+	addi	a1, a2, -1
+	addw	a0, a0, a1
+	addiw	a1, a2, 511
 	sltu	a0, a0, a1
 	ret

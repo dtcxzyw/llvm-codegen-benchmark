@@ -17,18 +17,18 @@ func0000000000000075:                   # @func0000000000000075
 	andi	a1, a1, 255
 	li	a2, 10
 	mul	a1, a1, a2
+	lui	a2, 1048575
 	add	a0, a0, a1
-	lui	a1, 1048575
-	addi	a1, a1, -1232
+	addi	a1, a2, -1232
 	addw	a0, a0, a1
 	ret
 func0000000000000035:                   # @func0000000000000035
 	andi	a1, a1, 255
 	li	a2, 1260
 	mul	a1, a1, a2
+	lui	a2, 1048164
 	add	a0, a0, a1
-	lui	a1, 1048164
-	addi	a1, a1, 382
+	addi	a1, a2, 382
 	addw	a0, a0, a1
 	ret
 func000000000000003d:                   # @func000000000000003d

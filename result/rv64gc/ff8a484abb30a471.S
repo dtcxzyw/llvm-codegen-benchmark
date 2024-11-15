@@ -18,15 +18,15 @@ func0000000000000007:                   # @func0000000000000007
 	ret
 func0000000000000000:                   # @func0000000000000000
 	srli	a1, a1, 28
-	andi	a1, a1, -16
 	slli	a0, a0, 32
+	andi	a1, a1, -16
 	srli	a0, a0, 32
 	mul	a0, a1, a0
 	ret
 func000000000000000b:                   # @func000000000000000b
 	srliw	a1, a1, 11
-	slli	a1, a1, 7
 	slli	a0, a0, 32
+	slli	a1, a1, 7
 	srli	a0, a0, 32
 	mul	a0, a1, a0
 	ret

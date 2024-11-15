@@ -28,8 +28,8 @@ func000000000000000c:                   # @func000000000000000c
 func000000000000000e:                   # @func000000000000000e
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfdiv.vv	v8, v8, v12
-	vmfeq.vv	v0, v8, v8
 	fli.s	fa5, 1.0
+	vmfeq.vv	v0, v8, v8
 	vfmv.v.f	v12, fa5
 	vmerge.vvm	v8, v12, v8, v0
 	ret

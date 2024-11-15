@@ -30,11 +30,11 @@ func0000000000000c11:                   # @func0000000000000c11
 func0000000000000464:                   # @func0000000000000464
 	andi	a0, a0, 255
 	slli	a1, a1, 56
-	srai	a1, a1, 56
 	andi	a2, a2, 255
+	srai	a1, a1, 56
 	sltiu	a2, a2, 26
-	slti	a1, a1, 0
 	sltiu	a0, a0, 26
+	slti	a1, a1, 0
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -50,10 +50,10 @@ func00000000000001c1:                   # @func00000000000001c1
 	ret
 func0000000000000aaa:                   # @func0000000000000aaa
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	slli	a1, a1, 56
-	srai	a1, a1, 56
 	slli	a2, a2, 56
+	srai	a0, a0, 56
+	srai	a1, a1, 56
 	srai	a2, a2, 56
 	slti	a2, a2, -64
 	slti	a1, a1, -112
@@ -64,12 +64,12 @@ func0000000000000aaa:                   # @func0000000000000aaa
 	ret
 func0000000000000a4a:                   # @func0000000000000a4a
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	andi	a1, a1, 255
 	slli	a2, a2, 56
+	srai	a0, a0, 56
 	srai	a2, a2, 56
-	slti	a2, a2, -64
 	sltiu	a1, a1, 208
+	slti	a2, a2, -64
 	slti	a0, a0, -64
 	and	a0, a0, a2
 	xori	a0, a0, 1
@@ -89,8 +89,8 @@ func0000000000000888:                   # @func0000000000000888
 func0000000000000c4c:                   # @func0000000000000c4c
 	andi	a1, a1, 255
 	xori	a2, a2, 18
-	sltiu	a1, a1, 32
 	xori	a0, a0, 10
+	sltiu	a1, a1, 32
 	or	a0, a0, a2
 	andi	a0, a0, 255
 	snez	a0, a0

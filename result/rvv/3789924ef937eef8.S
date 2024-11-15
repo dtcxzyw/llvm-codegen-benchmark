@@ -6,8 +6,8 @@ func0000000000000018:                   # @func0000000000000018
 	vmseq.vx	v0, v10, a0
 	li	a0, 59
 	vmv.v.x	v10, a0
-	vmerge.vim	v10, v10, 0, v0
 	li	a0, 63
+	vmerge.vim	v10, v10, 0, v0
 	vand.vx	v8, v8, a0
 	vmsltu.vv	v0, v10, v8
 	ret
@@ -36,10 +36,10 @@ func000000000000001c:                   # @func000000000000001c
 	vand.vi	v10, v10, 7
 	vmseq.vi	v0, v10, 6
 	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
-	vadd.vi	v10, v10, 5
 	lui	a0, 1
 	addi	a0, a0, -1
+	vmerge.vim	v10, v10, 1, v0
+	vadd.vi	v10, v10, 5
 	vand.vx	v8, v8, a0
 	vmsne.vv	v0, v8, v10
 	ret

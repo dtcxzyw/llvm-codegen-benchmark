@@ -15,8 +15,8 @@ func0000000000000021:                   # @func0000000000000021
 	lui	a0, 796918
 	addi	a0, a0, -983
 	vmul.vx	v8, v10, a0
-	vror.vi	v8, v8, 1
 	lui	a0, 20972
+	vror.vi	v8, v8, 1
 	addi	a0, a0, -1967
 	vmsleu.vx	v8, v8, a0
 	vmand.mm	v0, v8, v0
@@ -29,8 +29,8 @@ func000000000000003c:                   # @func000000000000003c
 	lui	a0, 978671
 	addi	a0, a0, -273
 	vmul.vx	v8, v8, a0
-	vror.vi	v8, v8, 2
 	lui	a0, 17476
+	vror.vi	v8, v8, 2
 	addi	a0, a0, 1091
 	vmsgtu.vx	v8, v8, a0
 	vmand.mm	v0, v8, v0
@@ -43,8 +43,8 @@ func000000000000001c:                   # @func000000000000001c
 	lui	a0, 978671
 	addi	a0, a0, -273
 	vmul.vx	v8, v8, a0
-	vror.vi	v8, v8, 2
 	lui	a0, 17476
+	vror.vi	v8, v8, 2
 	addi	a0, a0, 1091
 	vmsgtu.vx	v8, v8, a0
 	vmand.mm	v0, v8, v0

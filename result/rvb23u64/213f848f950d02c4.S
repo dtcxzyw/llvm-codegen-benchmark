@@ -23,8 +23,8 @@ func0000000000000122:                   # @func0000000000000122
 	ret
 func00000000000000e2:                   # @func00000000000000e2
 	slt	a1, a2, a1
-	xori	a1, a1, 1
 	binvi	a0, a0, 20
+	xori	a1, a1, 1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
@@ -169,8 +169,8 @@ func00000000000000cc:                   # @func00000000000000cc
 	ret
 func0000000000000190:                   # @func0000000000000190
 	xor	a1, a1, a2
-	snez	a1, a1
 	sltiu	a0, a0, 30
+	snez	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -222,8 +222,8 @@ func0000000000000128:                   # @func0000000000000128
 	ret
 func00000000000000b0:                   # @func00000000000000b0
 	sltu	a1, a2, a1
-	xori	a1, a1, 1
 	lui	a2, 65537
+	xori	a1, a1, 1
 	slli	a2, a2, 4
 	addi	a2, a2, -1
 	sltu	a0, a2, a0
@@ -236,8 +236,8 @@ func000000000000010c:                   # @func000000000000010c
 	ret
 func00000000000000a8:                   # @func00000000000000a8
 	sltu	a1, a2, a1
-	xori	a1, a1, 1
 	srli	a0, a0, 32
+	xori	a1, a1, 1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
@@ -255,8 +255,8 @@ func00000000000000ac:                   # @func00000000000000ac
 	ret
 func0000000000000034:                   # @func0000000000000034
 	xor	a1, a1, a2
-	seqz	a1, a1
 	slti	a0, a0, 2
+	seqz	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -286,11 +286,11 @@ func000000000000016c:                   # @func000000000000016c
 	ret
 func0000000000000092:                   # @func0000000000000092
 	lui	a3, 122070
-	addiw	a3, a3, 1280
-	sltu	a2, a2, a3
 	sltu	a0, a0, a1
+	addiw	a1, a3, 1280
+	sltu	a1, a2, a1
 	xori	a0, a0, 1
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 func00000000000000d4:                   # @func00000000000000d4
 	slti	a2, a2, 0
@@ -323,10 +323,10 @@ func0000000000000162:                   # @func0000000000000162
 	ret
 func0000000000000158:                   # @func0000000000000158
 	li	a3, 2047
-	slt	a2, a3, a2
 	xor	a0, a0, a1
+	slt	a1, a3, a2
 	snez	a0, a0
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 func0000000000000150:                   # @func0000000000000150
 	slt	a1, a2, a1

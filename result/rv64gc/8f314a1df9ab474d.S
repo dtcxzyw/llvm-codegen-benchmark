@@ -1,8 +1,8 @@
 func0000000000000451:                   # @func0000000000000451
 	srai	a2, a2, 3
 	add	a0, a0, a1
-	add	a0, a0, a2
 	li	a1, 1
+	add	a0, a0, a2
 	slli	a1, a1, 61
 	addi	a1, a1, 63
 	xor	a0, a0, a1
@@ -11,8 +11,8 @@ func0000000000000451:                   # @func0000000000000451
 func0000000000000541:                   # @func0000000000000541
 	srai	a2, a2, 4
 	add	a0, a0, a1
-	add	a0, a0, a2
 	li	a1, 1
+	add	a0, a0, a2
 	slli	a1, a1, 59
 	addi	a1, a1, 31
 	xor	a0, a0, a1

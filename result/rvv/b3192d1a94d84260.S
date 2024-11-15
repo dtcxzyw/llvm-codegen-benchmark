@@ -24,9 +24,9 @@ func000000000000001c:                   # @func000000000000001c
 	vadd.vi	v8, v8, -1
 	ret
 func0000000000000020:                   # @func0000000000000020
+	li	a0, 128
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vv	v8, v12, v10
-	li	a0, 128
 	vadd.vx	v8, v8, a0
 	ret
 func0000000000000004:                   # @func0000000000000004
@@ -80,9 +80,9 @@ func000000000000001d:                   # @func000000000000001d
 	vadd.vi	v8, v8, 1
 	ret
 func0000000000000028:                   # @func0000000000000028
+	bseti	a0, zero, 31
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vv	v8, v12, v10
-	bseti	a0, zero, 31
 	vadd.vx	v8, v8, a0
 	ret
 func000000000000003c:                   # @func000000000000003c

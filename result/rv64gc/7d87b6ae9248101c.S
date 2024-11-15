@@ -11,8 +11,8 @@ func0000000000000054:                   # @func0000000000000054
 	ret
 func0000000000000044:                   # @func0000000000000044
 	sext.w	a1, a0
-	sltiu	a1, a1, -1
 	addiw	a0, a0, -4
+	sltiu	a1, a1, -1
 	sltiu	a0, a0, -2
 	and	a0, a0, a1
 	ret

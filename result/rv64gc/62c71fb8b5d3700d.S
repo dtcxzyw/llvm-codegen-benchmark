@@ -9,8 +9,8 @@ func0000000000000044:                   # @func0000000000000044
 	slli	a0, a0, 48
 	srli	a0, a0, 56
 	or	a0, a0, a1
-	addi	a0, a0, -125
 	lui	a1, 16
+	addi	a0, a0, -125
 	addiw	a1, a1, -1
 	and	a0, a0, a1
 	sltiu	a0, a0, 3
@@ -20,8 +20,8 @@ func0000000000000004:                   # @func0000000000000004
 	slli	a0, a0, 48
 	srli	a0, a0, 56
 	or	a0, a0, a1
-	addi	a0, a0, 256
 	lui	a1, 16
+	addi	a0, a0, 256
 	addiw	a1, a1, -1
 	and	a0, a0, a1
 	sltiu	a0, a0, 257
@@ -29,14 +29,14 @@ func0000000000000004:                   # @func0000000000000004
 func0000000000000008:                   # @func0000000000000008
 	slli	a1, a0, 8
 	slli	a0, a0, 48
+	lui	a2, 16
 	srli	a0, a0, 56
 	or	a0, a0, a1
+	addiw	a1, a2, -1
 	addi	a0, a0, -9
-	lui	a1, 16
-	addiw	a2, a1, -1
-	and	a0, a0, a2
-	addiw	a1, a1, -17
-	sltu	a0, a0, a1
+	and	a0, a0, a1
+	addiw	a2, a2, -17
+	sltu	a0, a0, a2
 	ret
 func0000000000000048:                   # @func0000000000000048
 	andi	a0, a0, 252

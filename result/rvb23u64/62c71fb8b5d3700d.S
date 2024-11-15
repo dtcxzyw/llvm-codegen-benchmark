@@ -19,10 +19,10 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000008:                   # @func0000000000000008
 	rev8	a0, a0
+	lui	a1, 16
 	srli	a0, a0, 48
 	addi	a0, a0, -9
 	zext.h	a0, a0
-	lui	a1, 16
 	addiw	a1, a1, -17
 	sltu	a0, a0, a1
 	ret

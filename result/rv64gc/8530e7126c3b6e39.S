@@ -6,8 +6,8 @@ func0000000000000031:                   # @func0000000000000031
 	ret
 func0000000000000019:                   # @func0000000000000019
 	sext.w	a1, a1
-	slti	a1, a1, 5
 	lui	a2, 917504
+	slti	a1, a1, 5
 	addi	a2, a2, 1
 	slli	a2, a2, 34
 	and	a0, a0, a2

@@ -1,7 +1,7 @@
 func000000000000007e:                   # @func000000000000007e
 	lui	a3, 469
-	addiw	a3, a3, -1024
 	slli	a2, a2, 56
+	addiw	a3, a3, -1024
 	mulhu	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -19,8 +19,8 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func0000000000000060:                   # @func0000000000000060
 	lui	a3, 28770
-	addiw	a3, a3, 1024
 	slli	a2, a2, 56
+	addiw	a3, a3, 1024
 	mulhu	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

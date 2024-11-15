@@ -10,8 +10,8 @@ func00000000000001e0:                   # @func00000000000001e0
 func00000000000001e5:                   # @func00000000000001e5
 	addi	a1, a1, 3
 	lui	a2, 718
-	addiw	a2, a2, -1183
 	lui	a3, %hi(.LCPI1_0)
+	addiw	a2, a2, -1183
 	ld	a3, %lo(.LCPI1_0)(a3)
 	mul	a1, a1, a2
 	srli	a1, a1, 32

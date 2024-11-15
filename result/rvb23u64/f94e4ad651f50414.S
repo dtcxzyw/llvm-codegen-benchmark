@@ -25,8 +25,8 @@ func0000000000000118:                   # @func0000000000000118
 	andi	a1, a1, 255
 	sext.w	a2, a2
 	sltiu	a2, a2, 2
-	xori	a2, a2, 1
 	snez	a1, a1
+	xori	a2, a2, 1
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

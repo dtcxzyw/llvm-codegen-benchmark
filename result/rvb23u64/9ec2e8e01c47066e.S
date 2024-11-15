@@ -27,12 +27,12 @@ func0000000000000444:                   # @func0000000000000444
 	ret
 func0000000000000244:                   # @func0000000000000244
 	lui	a0, 788992
-	fmv.w.x	fa5, a0
-	flt.s	a0, fa2, fa5
 	fmax.s	fa5, fa1, fa0
 	lui	a1, 264704
-	fmv.w.x	fa4, a1
-	flt.s	a1, fa4, fa5
+	fmv.w.x	fa4, a0
+	fmv.w.x	fa3, a1
+	flt.s	a0, fa2, fa4
+	flt.s	a1, fa3, fa5
 	or	a0, a0, a1
 	ret
 func0000000000000ddd:                   # @func0000000000000ddd
@@ -65,9 +65,9 @@ func0000000000000bbb:                   # @func0000000000000bbb
 	ret
 func00000000000002a2:                   # @func00000000000002a2
 	fmv.w.x	fa5, zero
+	fmin.s	fa4, fa2, fa0
+	fli.s	fa3, 1.0
 	fle.s	a0, fa1, fa5
-	fmin.s	fa5, fa2, fa0
-	fli.s	fa4, 1.0
-	flt.s	a1, fa5, fa4
+	flt.s	a1, fa4, fa3
 	or	a0, a0, a1
 	ret

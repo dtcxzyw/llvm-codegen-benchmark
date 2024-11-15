@@ -20,12 +20,12 @@ func0000000000000008:                   # @func0000000000000008
 	addi	a1, a1, -193
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v10, v10, a1
+	li	a1, -59
 	addi	a0, a0, 125
 	slli	a0, a0, 12
 	vmsltu.vx	v0, v10, a0
-	li	a0, -59
-	zext.w	a0, a0
-	vmerge.vxm	v8, v8, a0, v0
+	zext.w	a1, a1
+	vmerge.vxm	v8, v8, a1, v0
 	ret
 func0000000000000004:                   # @func0000000000000004
 	vsetivli	zero, 4, e64, m2, ta, ma

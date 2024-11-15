@@ -18,41 +18,41 @@ func0000000000000005:                   # @func0000000000000005
 	ret
 func0000000000000010:                   # @func0000000000000010
 	srli	a2, a2, 27
-	czero.eqz	a1, a1, a2
 	lui	a3, 32768
+	czero.eqz	a1, a1, a2
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
 	sub	a0, a0, a1
 	ret
 func0000000000000012:                   # @func0000000000000012
 	sltiu	a2, a2, 23
-	czero.nez	a1, a1, a2
 	li	a3, 32
+	czero.nez	a1, a1, a2
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
 	sub	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
 	sltiu	a2, a2, 23
-	czero.nez	a1, a1, a2
 	li	a3, 32
+	czero.nez	a1, a1, a2
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
 	sub	a0, a0, a1
 	ret
 func0000000000000019:                   # @func0000000000000019
 	slti	a2, a2, 64
-	czero.nez	a1, a1, a2
 	li	a3, 64
+	czero.nez	a1, a1, a2
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
 	sub	a0, a0, a1
 	ret
 func0000000000000020:                   # @func0000000000000020
 	srli	a2, a2, 43
+	lui	a3, 5
 	sltiu	a2, a2, 5
 	czero.eqz	a1, a1, a2
-	lui	a3, 5
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
 	sub	a0, a0, a1

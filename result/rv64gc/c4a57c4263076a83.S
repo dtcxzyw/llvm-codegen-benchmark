@@ -121,9 +121,9 @@ func0000000000000184:                   # @func0000000000000184
 	slti	a2, a2, 10
 	negw	a2, a2
 	and	a1, a1, a2
+	lui	a2, 22
 	addw	a0, a0, a1
-	lui	a1, 22
-	addiw	a1, a1, 588
+	addiw	a1, a2, 588
 	sltu	a0, a0, a1
 	ret
 func0000000000000296:                   # @func0000000000000296

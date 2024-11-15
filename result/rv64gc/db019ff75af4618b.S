@@ -1,7 +1,7 @@
 func0000000000000029:                   # @func0000000000000029
 	andi	a1, a1, 1
-	slli	a1, a1, 4
 	srliw	a0, a0, 24
+	slli	a1, a1, 4
 	seqz	a0, a0
 	slli	a0, a0, 3
 	or	a0, a0, a1
@@ -38,8 +38,8 @@ func0000000000000014:                   # @func0000000000000014
 	sext.w	a0, a0
 	slli	a1, a1, 63
 	srai	a1, a1, 63
-	andi	a1, a1, 10
 	slti	a0, a0, 2
+	andi	a1, a1, 10
 	addi	a0, a0, -1
 	andi	a0, a0, 9
 	or	a0, a0, a1

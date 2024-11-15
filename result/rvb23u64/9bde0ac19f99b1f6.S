@@ -50,8 +50,8 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func0000000000000038:                   # @func0000000000000038
 	sext.w	a1, a1
-	sltiu	a1, a1, 3
 	li	a2, 7
+	sltiu	a1, a1, 3
 	slli	a2, a2, 9
 	czero.eqz	a1, a2, a1
 	addw	a0, a0, a1

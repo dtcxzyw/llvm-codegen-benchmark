@@ -5,13 +5,13 @@ func000000000000018e:                   # @func000000000000018e
 	ret
 func0000000000000182:                   # @func0000000000000182
 	addi	a2, a2, -2
+	slli	a3, a1, 3
+	slli	a1, a1, 6
 	snez	a2, a2
+	sub	a1, a1, a3
 	slli	a3, a2, 3
 	slli	a2, a2, 6
 	sub	a2, a2, a3
-	slli	a3, a1, 3
-	slli	a1, a1, 6
-	sub	a1, a1, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

@@ -1,15 +1,15 @@
 func00000000000000fa:                   # @func00000000000000fa
 	not	a2, a2
-	slli	a2, a2, 4
 	slli	a1, a1, 4
+	slli	a2, a2, 4
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 8
 	ret
 func0000000000000000:                   # @func0000000000000000
 	not	a2, a2
-	slli	a2, a2, 3
 	slli	a1, a1, 3
+	slli	a2, a2, 3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 16
@@ -27,10 +27,10 @@ func000000000000005a:                   # @func000000000000005a
 	ret
 func000000000000000a:                   # @func000000000000000a
 	sub	a1, a1, a2
+	lui	a2, 32
 	add	a0, a0, a1
-	lui	a1, 32
-	addiw	a1, a1, 8
-	add	a0, a0, a1
+	addiw	a2, a2, 8
+	add	a0, a0, a2
 	ret
 func00000000000000aa:                   # @func00000000000000aa
 	not	a2, a2
@@ -40,8 +40,8 @@ func00000000000000aa:                   # @func00000000000000aa
 	ret
 func00000000000000d0:                   # @func00000000000000d0
 	not	a2, a2
-	slli	a2, a2, 3
 	slli	a1, a1, 3
+	slli	a2, a2, 3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, -8

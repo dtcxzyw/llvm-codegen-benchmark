@@ -80,10 +80,10 @@ func000000000000001a:                   # @func000000000000001a
 	ret
 func0000000000000014:                   # @func0000000000000014
 	sext.w	a2, a2
+	lui	a3, 1047552
 	addi	a2, a2, -3
 	seqz	a2, a2
 	addi	a2, a2, -1
-	lui	a3, 1047552
 	and	a2, a2, a3
 	add	a0, a0, a1
 	addw	a0, a0, a2

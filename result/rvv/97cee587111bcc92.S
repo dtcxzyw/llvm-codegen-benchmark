@@ -19,11 +19,11 @@ func0000000000000000:                   # @func0000000000000000
 	lui	a0, 612866
 	addi	a0, a0, 1385
 	vmulh.vx	v10, v8, a0
+	lui	a0, 1
 	vadd.vv	v8, v10, v8
 	vsra.vi	v8, v8, 11
 	vsrl.vi	v10, v8, 31
 	vadd.vv	v8, v8, v10
-	lui	a0, 1
 	addi	a0, a0, -1
 	vmin.vx	v8, v8, a0
 	ret

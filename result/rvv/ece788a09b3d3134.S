@@ -49,9 +49,9 @@ func000000000000004c:                   # @func000000000000004c
 	ret
 func00000000000000cc:                   # @func00000000000000cc
 	li	a0, 192
+	fmv.d.x	fa5, zero
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vx	v12, v10, a0
-	fmv.d.x	fa5, zero
 	vmfge.vf	v10, v8, fa5
 	vmand.mm	v0, v10, v12
 	ret

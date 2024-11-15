@@ -123,9 +123,9 @@ func000000000000006a:                   # @func000000000000006a
 func0000000000000068:                   # @func0000000000000068
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsle.vi	v0, v10, -1
+	lui	a0, 976562
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmerge.vvm	v8, v9, v8, v0
-	lui	a0, 976562
 	addi	a0, a0, 2047
 	vmsgtu.vx	v0, v8, a0
 	ret

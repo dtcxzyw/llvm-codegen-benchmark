@@ -16,8 +16,8 @@ func0000000000000007:                   # @func0000000000000007
 	ret
 func0000000000000004:                   # @func0000000000000004
 	andi	a1, a1, 15
-	addi	a1, a1, -6
 	li	a2, -2048
+	addi	a1, a1, -6
 	czero.eqz	a1, a2, a1
 	lui	a2, 1
 	add	a0, a0, a2

@@ -3,22 +3,22 @@
 func000000000000000b:                   # @func000000000000000b
 	lui	a2, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a2)
-	flt.d	a2, fa5, fa0
-	xori	a2, a2, 1
 	or	a0, a0, a1
+	flt.d	a1, fa5, fa0
+	xori	a1, a1, 1
 	not	a0, a0
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 .LCPI1_0:
 	.quad	0x4070000000000000              # double 256
 func000000000000000d:                   # @func000000000000000d
 	lui	a2, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a2)
-	flt.d	a2, fa0, fa5
-	xori	a2, a2, 1
 	or	a0, a0, a1
+	flt.d	a1, fa0, fa5
+	xori	a1, a1, 1
 	not	a0, a0
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 .LCPI2_0:
 	.quad	0xbff0000000000000              # double -1

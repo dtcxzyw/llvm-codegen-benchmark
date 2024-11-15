@@ -35,9 +35,9 @@ func000000000000002a:                   # @func000000000000002a
 	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vx	v8, v8, a0
+	lui	a0, 16
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
-	lui	a0, 16
 	addi	a0, a0, -1
 	vmsgt.vx	v8, v10, a0
 	vmand.mm	v0, v0, v8

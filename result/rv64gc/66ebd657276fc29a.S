@@ -6,7 +6,9 @@ func000000000000005d:                   # @func000000000000005d
 	ret
 .LBB0_2:
 	sraiw	a1, a2, 31
+	lui	a3, 349525
 	xor	a2, a2, a1
+	addiw	a3, a3, 1365
 	subw	a2, a2, a1
 	srliw	a1, a2, 1
 	or	a1, a1, a2
@@ -20,23 +22,21 @@ func000000000000005d:                   # @func000000000000005d
 	or	a1, a1, a2
 	not	a1, a1
 	srli	a2, a1, 1
-	lui	a3, 349525
-	addiw	a3, a3, 1365
 	and	a2, a2, a3
+	lui	a3, 209715
+	addiw	a3, a3, 819
 	sub	a1, a1, a2
-	lui	a2, 209715
-	addiw	a2, a2, 819
-	and	a3, a1, a2
+	and	a2, a1, a3
 	srli	a1, a1, 2
-	and	a1, a1, a2
-	add	a1, a1, a3
+	and	a1, a1, a3
+	lui	a3, 61681
+	add	a1, a1, a2
 	srli	a2, a1, 4
 	add	a1, a1, a2
-	lui	a2, 61681
-	addi	a2, a2, -241
-	and	a1, a1, a2
 	lui	a2, 4112
+	addi	a3, a3, -241
 	addi	a2, a2, 257
+	and	a1, a1, a3
 	mul	a1, a1, a2
 	srliw	a1, a1, 24
 	li	a2, 32

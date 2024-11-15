@@ -7,32 +7,32 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func0000000000000005:                   # @func0000000000000005
 	andi	a1, a1, 1
-	czero.nez	a2, a2, a1
 	li	a3, -151
+	czero.nez	a2, a2, a1
 	czero.eqz	a1, a3, a1
+	lui	a3, 1048279
 	or	a1, a1, a2
 	add	a0, a0, a1
-	lui	a1, 1048279
-	addi	a1, a1, -847
+	addi	a1, a3, -847
 	mulw	a0, a0, a1
 	ret
 func0000000000000007:                   # @func0000000000000007
 	andi	a1, a1, 1
-	czero.nez	a2, a2, a1
 	li	a3, 2000
+	czero.nez	a2, a2, a1
 	czero.eqz	a1, a3, a1
+	lui	a3, 9
 	or	a1, a1, a2
 	add	a0, a0, a1
-	lui	a1, 9
-	addi	a1, a1, -339
+	addi	a1, a3, -339
 	mulw	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
 	slli	a1, a1, 63
 	srai	a1, a1, 63
 	or	a1, a1, a2
+	lui	a2, 21
 	add	a0, a0, a1
-	lui	a1, 21
-	addi	a1, a1, 384
+	addi	a1, a2, 384
 	mulw	a0, a0, a1
 	ret

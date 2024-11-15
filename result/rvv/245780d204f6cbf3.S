@@ -2,19 +2,19 @@ func0000000000000caa:                   # @func0000000000000caa
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	fmv.d.x	fa5, zero
-	vmfge.vf	v7, v24, fa5
-	vmfle.vf	v24, v16, fa5
+	vmfle.vf	v7, v16, fa5
 	vmfle.vf	v16, v8, fa5
-	vmand.mm	v8, v24, v16
-	vmand.mm	v0, v8, v7
+	vmfge.vf	v8, v24, fa5
+	vmand.mm	v9, v7, v16
+	vmand.mm	v0, v9, v8
 	ret
 func0000000000000888:                   # @func0000000000000888
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	fmv.d.x	fa5, zero
-	vmfeq.vf	v7, v24, fa5
-	vmfeq.vf	v24, v16, fa5
-	vmand.mm	v16, v24, v7
+	vmfeq.vf	v7, v16, fa5
+	vmfeq.vf	v16, v24, fa5
+	vmand.mm	v16, v7, v16
 	vmfeq.vf	v17, v8, fa5
 	vmand.mm	v0, v16, v17
 	ret
@@ -56,9 +56,9 @@ func0000000000000777:                   # @func0000000000000777
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	fmv.d.x	fa5, zero
-	vmfne.vf	v7, v24, fa5
-	vmfne.vf	v24, v16, fa5
-	vmand.mm	v16, v24, v7
+	vmfne.vf	v7, v16, fa5
+	vmfne.vf	v16, v24, fa5
+	vmand.mm	v16, v7, v16
 	vmfne.vf	v17, v8, fa5
 	vmand.mm	v0, v16, v17
 	ret
@@ -82,9 +82,9 @@ func0000000000000222:                   # @func0000000000000222
 func0000000000000111:                   # @func0000000000000111
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
-	vmfne.vv	v7, v24, v24
-	vmfne.vv	v24, v16, v16
-	vmand.mm	v16, v24, v7
+	vmfne.vv	v7, v16, v16
+	vmfne.vv	v16, v24, v24
+	vmand.mm	v16, v7, v16
 	vmfne.vv	v17, v8, v8
 	vmand.mm	v0, v16, v17
 	ret
@@ -109,11 +109,11 @@ func0000000000000c22:                   # @func0000000000000c22
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	fmv.d.x	fa5, zero
-	vmfge.vf	v7, v24, fa5
-	vmflt.vf	v24, v16, fa5
+	vmflt.vf	v7, v16, fa5
 	vmflt.vf	v16, v8, fa5
-	vmand.mm	v8, v24, v16
-	vmand.mm	v0, v8, v7
+	vmfge.vf	v8, v24, fa5
+	vmand.mm	v9, v7, v16
+	vmand.mm	v0, v9, v8
 	ret
 .LCPI9_0:
 	.quad	0xbd71979980000000              # double -9.999999960041972E-13
@@ -132,24 +132,24 @@ func0000000000000666:                   # @func0000000000000666
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	fli.d	fa5, inf
-	vmflt.vf	v7, v24, fa5
-	vmfgt.vf	v6, v24, fa5
-	vmor.mm	v24, v6, v7
-	vmflt.vf	v25, v16, fa5
-	vmfgt.vf	v26, v16, fa5
-	vmor.mm	v16, v26, v25
-	vmand.mm	v16, v16, v24
-	vmflt.vf	v17, v8, fa5
-	vmfgt.vf	v18, v8, fa5
-	vmor.mm	v8, v18, v17
-	vmand.mm	v0, v16, v8
+	vmflt.vf	v7, v16, fa5
+	vmfgt.vf	v6, v16, fa5
+	vmflt.vf	v16, v8, fa5
+	vmfgt.vf	v17, v8, fa5
+	vmor.mm	v8, v6, v7
+	vmflt.vf	v9, v24, fa5
+	vmfgt.vf	v10, v24, fa5
+	vmor.mm	v9, v10, v9
+	vmand.mm	v8, v8, v9
+	vmor.mm	v9, v17, v16
+	vmand.mm	v0, v8, v9
 	ret
 func0000000000000eee:                   # @func0000000000000eee
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
-	vmfeq.vv	v7, v24, v24
-	vmfeq.vv	v24, v16, v16
-	vmand.mm	v16, v24, v7
+	vmfeq.vv	v7, v16, v16
+	vmfeq.vv	v16, v24, v24
+	vmand.mm	v16, v7, v16
 	vmfeq.vv	v17, v8, v8
 	vmand.mm	v0, v16, v17
 	ret

@@ -8,16 +8,16 @@ func0000000000000022:                   # @func0000000000000022
 func0000000000000190:                   # @func0000000000000190
 	zext.w	a1, a1
 	xor	a1, a1, a0
-	snez	a1, a1
 	sltiu	a0, a0, 65
+	snez	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 func0000000000000118:                   # @func0000000000000118
 	zext.w	a1, a1
+	lui	a2, 32768
 	xor	a1, a1, a0
 	snez	a1, a1
-	lui	a2, 32768
 	sltu	a0, a2, a0
 	or	a0, a0, a1
 	ret
@@ -56,8 +56,8 @@ func000000000000010c:                   # @func000000000000010c
 	ret
 func0000000000000108:                   # @func0000000000000108
 	zext.w	a1, a1
-	sltu	a1, a0, a1
 	li	a2, -2
+	sltu	a1, a0, a1
 	zext.w	a2, a2
 	sltu	a0, a2, a0
 	or	a0, a0, a1

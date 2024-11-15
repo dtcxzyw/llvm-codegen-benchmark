@@ -12,8 +12,8 @@ func0000000000000007:                   # @func0000000000000007
 	ret
 func0000000000000005:                   # @func0000000000000005
 	seqz	a2, a2
-	addi	a2, a2, -1
 	li	a3, -1
+	addi	a2, a2, -1
 	srli	a3, a3, 24
 	or	a2, a2, a3
 	add	a0, a0, a1

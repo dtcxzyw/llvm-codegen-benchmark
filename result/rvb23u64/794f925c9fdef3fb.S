@@ -1,7 +1,7 @@
 func000000000000000c:                   # @func000000000000000c
 	negw	a2, a2
-	sll	a1, a1, a2
 	slli	a0, a0, 63
+	sll	a1, a1, a2
 	srai	a0, a0, 63
 	or	a0, a0, a1
 	ret

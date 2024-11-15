@@ -2,8 +2,8 @@ func00000000000000cc:                   # @func00000000000000cc
 	andi	a0, a0, 255
 	srli	a1, a1, 56
 	addi	a1, a1, -22
-	snez	a1, a1
 	addi	a0, a0, -22
+	snez	a1, a1
 	snez	a0, a0
 	xor	a0, a0, a1
 	ret

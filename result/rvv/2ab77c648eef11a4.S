@@ -1,10 +1,10 @@
 func0000000000000016:                   # @func0000000000000016
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsrl.vi	v11, v10, 31
+	lui	a0, 8
 	vadd.vv	v10, v10, v11
 	vsra.vi	v10, v10, 1
 	vwadd.wv	v8, v8, v10
-	lui	a0, 8
 	addiw	a0, a0, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmslt.vx	v0, v8, a0

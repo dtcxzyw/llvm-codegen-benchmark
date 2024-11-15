@@ -2,8 +2,8 @@ func0000000000000088:                   # @func0000000000000088
 	li	a0, -121
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vadd.vx	v9, v9, a0
-	vmsleu.vi	v9, v9, 3
 	li	a0, 69
+	vmsleu.vi	v9, v9, 3
 	vmsltu.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9
 	ret
@@ -59,8 +59,8 @@ func000000000000008c:                   # @func000000000000008c
 func0000000000000298:                   # @func0000000000000298
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vadd.vi	v9, v9, -15
-	vmsleu.vi	v9, v9, 1
 	li	a0, 16
+	vmsleu.vi	v9, v9, 1
 	vmsne.vx	v8, v8, a0
 	vmor.mm	v0, v8, v9
 	ret
@@ -83,8 +83,8 @@ func0000000000000108:                   # @func0000000000000108
 	li	a0, -30
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vadd.vx	v9, v9, a0
-	vmsleu.vi	v9, v9, -16
 	li	a0, 53
+	vmsleu.vi	v9, v9, -16
 	vmsgtu.vx	v8, v8, a0
 	vmor.mm	v0, v9, v8
 	ret

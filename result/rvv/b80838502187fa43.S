@@ -1,8 +1,8 @@
 func0000000000000084:                   # @func0000000000000084
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v10, v10, -4
-	vmsltu.vv	v12, v10, v8
 	li	a0, 64
+	vmsltu.vv	v12, v10, v8
 	vmsgtu.vx	v10, v8, a0
 	vmand.mm	v0, v12, v10
 	ret

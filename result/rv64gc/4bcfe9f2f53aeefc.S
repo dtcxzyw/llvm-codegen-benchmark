@@ -33,8 +33,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	ret
 func000000000000001a:                   # @func000000000000001a
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	andi	a1, a1, 3
+	srai	a0, a0, 56
 	seqz	a1, a1
 	slti	a0, a0, 0
 	xori	a0, a0, 1

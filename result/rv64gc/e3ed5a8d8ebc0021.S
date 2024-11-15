@@ -1,8 +1,8 @@
 func0000000000000081:                   # @func0000000000000081
 	lui	a1, 524032
+	fmv.d.x	fa5, zero
 	and	a0, a0, a1
 	seqz	a0, a0
-	fmv.d.x	fa5, zero
 	feq.d	a1, fa0, fa5
 	and	a0, a0, a1
 	ret

@@ -20,9 +20,9 @@ func0000000000000005:                   # @func0000000000000005
 	lui	a0, 748983
 	addi	a0, a0, -585
 	vmacc.vx	v12, a0, v10
-	vror.vi	v10, v12, 2
 	lui	a0, 37449
 	addi	a0, a0, 584
+	vror.vi	v10, v12, 2
 	vmsleu.vx	v0, v10, a0
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0

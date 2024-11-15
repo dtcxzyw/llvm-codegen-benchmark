@@ -11,18 +11,18 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func0000000000000003:                   # @func0000000000000003
 	slli	a2, a2, 39
+	slli	a1, a1, 40
 	srli	a2, a2, 39
 	xor	a0, a0, a2
-	slli	a1, a1, 40
 	srli	a1, a1, 40
 	xor	a0, a0, a1
 	slli	a0, a0, 32
 	ret
 func0000000000000002:                   # @func0000000000000002
 	slli	a2, a2, 39
+	slli	a1, a1, 34
 	srli	a2, a2, 39
 	xor	a0, a0, a2
-	slli	a1, a1, 34
 	srli	a1, a1, 34
 	xor	a0, a0, a1
 	slli	a0, a0, 32

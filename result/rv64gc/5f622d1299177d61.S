@@ -22,8 +22,8 @@ func000000000000008c:                   # @func000000000000008c
 	ret
 func0000000000000081:                   # @func0000000000000081
 	andi	a1, a1, 2
-	seqz	a1, a1
 	srli	a0, a0, 32
+	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -77,8 +77,8 @@ func00000000000000a1:                   # @func00000000000000a1
 	ret
 func0000000000000044:                   # @func0000000000000044
 	srliw	a1, a1, 3
-	slli	a1, a1, 3
 	lui	a2, 4
+	slli	a1, a1, 3
 	addiw	a2, a2, -2047
 	sltu	a1, a1, a2
 	lui	a2, 1

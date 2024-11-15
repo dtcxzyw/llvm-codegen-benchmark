@@ -1,7 +1,7 @@
 func0000000000000001:                   # @func0000000000000001
 	slli	a1, a1, 48
-	srli	a1, a1, 48
 	andi	a3, a2, 1
+	srli	a1, a1, 48
 	li	a2, 4
 	beqz	a3, .LBB0_3
 	li	a3, 2
@@ -17,8 +17,8 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000004:                   # @func0000000000000004
 	slli	a1, a1, 48
-	srli	a1, a1, 48
 	andi	a3, a2, 1
+	srli	a1, a1, 48
 	li	a2, 41
 	beqz	a3, .LBB1_3
 	li	a3, 2
@@ -34,8 +34,8 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000008:                   # @func0000000000000008
 	slli	a1, a1, 48
-	srli	a1, a1, 48
 	andi	a3, a2, 1
+	srli	a1, a1, 48
 	li	a2, 266
 	beqz	a3, .LBB2_3
 	li	a3, 829

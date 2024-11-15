@@ -1,9 +1,9 @@
 func0000000000000166:                   # @func0000000000000166
 	fclass.s	a0, fa1
-	andi	a0, a0, 126
-	snez	a0, a0
 	lui	a1, 522240
+	andi	a0, a0, 126
 	fmv.w.x	fa5, a1
+	snez	a0, a0
 	flt.s	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
@@ -38,8 +38,8 @@ func00000000000001dd:                   # @func00000000000001dd
 	ret
 func0000000000000122:                   # @func0000000000000122
 	fabs.s	fa5, fa1
-	fmin.s	fa5, fa5, fa0
 	lui	a0, 212992
+	fmin.s	fa5, fa5, fa0
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	ret
@@ -56,10 +56,10 @@ func0000000000000155:                   # @func0000000000000155
 	ret
 func0000000000000099:                   # @func0000000000000099
 	fclass.s	a0, fa1
-	andi	a0, a0, 897
-	snez	a0, a0
 	lui	a1, 522240
+	andi	a0, a0, 897
 	fmv.w.x	fa5, a1
+	snez	a0, a0
 	flt.s	a1, fa0, fa5
 	flt.s	a2, fa5, fa0
 	or	a1, a1, a2
@@ -79,17 +79,17 @@ func00000000000000dd:                   # @func00000000000000dd
 	ret
 func0000000000000088:                   # @func0000000000000088
 	fclass.s	a0, fa1
-	andi	a0, a0, 129
-	snez	a0, a0
 	lui	a1, 522240
+	andi	a0, a0, 129
 	fmv.w.x	fa5, a1
+	snez	a0, a0
 	feq.s	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
 func0000000000000144:                   # @func0000000000000144
 	fabs.s	fa5, fa1
-	fmax.s	fa5, fa5, fa0
 	lui	a0, 2048
+	fmax.s	fa5, fa5, fa0
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	ret

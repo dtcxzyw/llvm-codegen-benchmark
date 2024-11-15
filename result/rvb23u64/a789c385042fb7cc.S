@@ -105,8 +105,8 @@ func0000000000000061:                   # @func0000000000000061
 	ret
 func0000000000000064:                   # @func0000000000000064
 	sext.h	a1, a1
-	slti	a1, a1, 0
 	srli	a0, a0, 16
+	slti	a1, a1, 0
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -146,8 +146,8 @@ func000000000000008c:                   # @func000000000000008c
 	ret
 func0000000000000044:                   # @func0000000000000044
 	zext.h	a1, a1
-	sltiu	a1, a1, 60
 	srli	a0, a0, 5
+	sltiu	a1, a1, 60
 	sltiu	a0, a0, 75
 	and	a0, a0, a1
 	ret

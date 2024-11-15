@@ -21,8 +21,8 @@ func000000000000000e:                   # @func000000000000000e
 func000000000000000a:                   # @func000000000000000a
 	andi	a2, a2, 255
 	or	a0, a0, a1
-	or	a0, a0, a2
 	lui	a1, 450624
+	or	a0, a0, a2
 	addiw	a1, a1, 1024
 	or	a0, a0, a1
 	ret

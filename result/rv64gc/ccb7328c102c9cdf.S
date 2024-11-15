@@ -14,10 +14,10 @@ func0000000000000051:                   # @func0000000000000051
 	ret
 func0000000000000046:                   # @func0000000000000046
 	slli	a2, a2, 34
-	srli	a2, a2, 34
 	subw	a0, a0, a1
-	addw	a0, a0, a2
 	lui	a1, 262144
+	srli	a2, a2, 34
+	addw	a0, a0, a2
 	addiw	a1, a1, 1
 	slt	a0, a0, a1
 	ret

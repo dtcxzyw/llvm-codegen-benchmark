@@ -8,8 +8,8 @@ func0000000000000015:                   # @func0000000000000015
 	ret
 func0000000000000010:                   # @func0000000000000010
 	sext.w	a2, a2
-	addi	a2, a2, -1
 	li	a3, 10
+	addi	a2, a2, -1
 	czero.eqz	a2, a3, a2
 	li	a3, -98
 	zext.w	a3, a3
@@ -19,8 +19,8 @@ func0000000000000010:                   # @func0000000000000010
 	ret
 func00000000000000ad:                   # @func00000000000000ad
 	sext.w	a2, a2
-	sgtz	a2, a2
 	lui	a3, 1047599
+	sgtz	a2, a2
 	addiw	a3, a3, 1792
 	czero.nez	a2, a3, a2
 	lui	a3, 1221

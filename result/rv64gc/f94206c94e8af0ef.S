@@ -10,8 +10,8 @@ func0000000000000022:                   # @func0000000000000022
 	ret
 func0000000000000094:                   # @func0000000000000094
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	andi	a1, a1, 255
+	srai	a0, a0, 56
 	sltiu	a1, a1, 63
 	slti	a0, a0, 0
 	xori	a0, a0, 1
@@ -21,8 +21,8 @@ func0000000000000094:                   # @func0000000000000094
 	ret
 func000000000000008c:                   # @func000000000000008c
 	slli	a0, a0, 56
-	srai	a0, a0, 56
 	andi	a1, a1, 255
+	srai	a0, a0, 56
 	sltiu	a1, a1, 63
 	slti	a0, a0, -3
 	or	a0, a0, a1

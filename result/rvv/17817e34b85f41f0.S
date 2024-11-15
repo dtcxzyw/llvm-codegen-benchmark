@@ -13,8 +13,8 @@ func00000000000003cb:                   # @func00000000000003cb
 func00000000000003cd:                   # @func00000000000003cd
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v12, v12, 1
-	vmsne.vv	v9, v12, v10
 	fmv.w.x	fa5, zero
+	vmsne.vv	v9, v12, v10
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmflt.vf	v8, v8, fa5
 	vmandn.mm	v0, v9, v8
@@ -22,8 +22,8 @@ func00000000000003cd:                   # @func00000000000003cd
 func00000000000002c8:                   # @func00000000000002c8
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v12, v12, 1
-	vmsne.vv	v9, v12, v10
 	fmv.w.x	fa5, zero
+	vmsne.vv	v9, v12, v10
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmfeq.vf	v8, v8, fa5
 	vmand.mm	v0, v8, v9

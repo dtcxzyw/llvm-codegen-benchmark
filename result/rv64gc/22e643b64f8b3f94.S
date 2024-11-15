@@ -1,8 +1,8 @@
 func0000000000000010:                   # @func0000000000000010
 	li	a3, 64
+	slli	a1, a1, 32
 	subw	a3, a3, a2
 	sll	a0, a0, a3
-	slli	a1, a1, 32
 	srli	a1, a1, 32
 	or	a0, a0, a1
 	ret

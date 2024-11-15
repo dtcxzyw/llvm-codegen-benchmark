@@ -23,8 +23,8 @@ func0000000000000002:                   # @func0000000000000002
 	andi	a1, a1, 1
 	bseti	a3, zero, 44
 	czero.nez	a1, a3, a1
+	lui	a3, 60162
 	add.uw	a1, a2, a1
-	lui	a2, 60162
-	or	a0, a0, a2
+	or	a0, a0, a3
 	or	a0, a0, a1
 	ret

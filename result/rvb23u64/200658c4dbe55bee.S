@@ -1,7 +1,7 @@
 func0000000000000000:                   # @func0000000000000000
 	addi	a0, a0, -1
-	zext.w	a0, a0
 	lui	a1, 335544
+	zext.w	a0, a0
 	addiw	a1, a1, 1311
 	mul	a0, a0, a1
 	srli	a0, a0, 37
@@ -37,9 +37,9 @@ func000000000000000a:                   # @func000000000000000a
 	lui	a1, 8738
 	addi	a1, a1, 546
 	add	a0, a0, a1
-	slli	a0, a0, 32
 	lui	a1, 699051
 	addi	a1, a1, -1365
+	slli	a0, a0, 32
 	slli	a1, a1, 32
 	mulhu	a0, a0, a1
 	srli	a0, a0, 36
@@ -48,8 +48,8 @@ func0000000000000010:                   # @func0000000000000010
 	lui	a1, 804435
 	addi	a1, a1, 1536
 	add	a0, a0, a1
-	srliw	a0, a0, 9
 	lui	a1, 69
+	srliw	a0, a0, 9
 	addiw	a1, a1, -1149
 	mul	a0, a0, a1
 	srli	a0, a0, 39

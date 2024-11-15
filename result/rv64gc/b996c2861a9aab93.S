@@ -15,15 +15,15 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000004:                   # @func0000000000000004
 	lui	a1, 258048
 	fmv.w.x	fa5, a1
-	fadd.s	fa5, fa0, fa5
 	lui	a1, 276464
-	fmv.w.x	fa4, a1
-	flt.s	a1, fa4, fa5
+	fadd.s	fa4, fa0, fa5
+	fmv.w.x	fa5, a1
+	flt.s	a1, fa5, fa4
 	andi	a0, a0, 1
 	bnez	a1, .LBB1_2
-	fmv.s	fa4, fa5
+	fmv.s	fa5, fa4
 .LBB1_2:                                # %entry
-	fcvt.lu.s	a1, fa4, rtz
+	fcvt.lu.s	a1, fa5, rtz
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret

@@ -5,9 +5,9 @@ func000000000000004a:                   # @func000000000000004a
 	addiw	a0, a0, 1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
+	li	a1, 48
 	vmacc.vx	v8, a0, v10
-	li	a0, 48
-	vmv.v.x	v10, a0
+	vmv.v.x	v10, a1
 	li	a0, 24
 	vmadd.vx	v8, a0, v10
 	ret
@@ -18,9 +18,9 @@ func000000000000004b:                   # @func000000000000004b
 	addiw	a0, a0, 1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
+	li	a1, 48
 	vmacc.vx	v8, a0, v10
-	li	a0, 48
-	vmv.v.x	v10, a0
+	vmv.v.x	v10, a1
 	li	a0, 24
 	vmadd.vx	v8, a0, v10
 	ret

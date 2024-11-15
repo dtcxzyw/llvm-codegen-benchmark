@@ -1,7 +1,7 @@
 func0000000000000001:                   # @func0000000000000001
 	or	a0, a0, a1
-	sext.w	a0, a0
 	lui	a1, 1024000
+	sext.w	a0, a0
 	addiw	a1, a1, 1
 	slli	a1, a1, 16
 	addi	a1, a1, 1341

@@ -14,8 +14,8 @@ func0000000000000081:                   # @func0000000000000081
 	mv	a1, a2
 .LBB1_2:                                # %entry
 	sltiu	a1, a1, 3
-	xori	a1, a1, 1
 	addi	a0, a0, -3
+	xori	a1, a1, 1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

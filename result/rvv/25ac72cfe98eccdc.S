@@ -16,8 +16,8 @@ func0000000000000444:                   # @func0000000000000444
 	addi	a0, a0, 1024
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsltu.vx	v12, v10, a0
-	vmor.mm	v9, v12, v9
 	li	a0, -64
+	vmor.mm	v9, v12, v9
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vmsltu.vx	v8, v8, a0
 	vmor.mm	v0, v9, v8

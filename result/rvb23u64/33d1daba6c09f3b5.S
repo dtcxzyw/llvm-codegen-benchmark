@@ -80,8 +80,8 @@ func00000000000000d8:                   # @func00000000000000d8
 	subw	a0, a0, a1
 	li	a1, -2046
 	sh2add	a0, a1, a0
-	sext.w	a0, a0
 	lui	a1, 2
+	sext.w	a0, a0
 	addiw	a1, a1, -8
 	sltu	a0, a1, a0
 	ret

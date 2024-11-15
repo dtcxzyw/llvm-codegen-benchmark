@@ -20,9 +20,9 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000003:                   # @func0000000000000003
 	li	a1, 1
 	sll	a0, a1, a0
-	not	a0, a0
 	lui	a1, 510
 	addi	a1, a1, 1
+	not	a0, a0
 	slli	a1, a1, 35
 	and	a0, a0, a1
 	ret

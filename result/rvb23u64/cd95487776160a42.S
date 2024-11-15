@@ -10,8 +10,8 @@ func000000000000010a:                   # @func000000000000010a
 	andi	a1, a1, 255
 	sh2add	a0, a0, a0
 	sh1add	a0, a0, a1
-	sext.w	a0, a0
 	lui	a1, 16
+	sext.w	a0, a0
 	addiw	a1, a1, -1
 	slt	a0, a1, a0
 	ret
@@ -42,8 +42,8 @@ func0000000000000101:                   # @func0000000000000101
 	andi	a1, a1, 255
 	sh2add	a0, a0, a0
 	sh1add	a0, a0, a1
-	sext.w	a0, a0
 	lui	a1, 524288
+	sext.w	a0, a0
 	addiw	a1, a1, -1
 	xor	a0, a0, a1
 	seqz	a0, a0

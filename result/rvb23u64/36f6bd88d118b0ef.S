@@ -6,15 +6,15 @@ func0000000000000020:                   # @func0000000000000020
 	ret
 func000000000000002a:                   # @func000000000000002a
 	addi	a1, a1, -320
-	sraiw	a1, a1, 1
 	lui	a2, 338
+	sraiw	a1, a1, 1
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret
 func000000000000000a:                   # @func000000000000000a
 	addi	a1, a1, 159
-	sraiw	a1, a1, 1
 	lui	a2, 338
+	sraiw	a1, a1, 1
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

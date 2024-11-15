@@ -1,8 +1,8 @@
 func0000000000000053:                   # @func0000000000000053
 	li	a0, 64
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vmsgt.vx	v0, v8, a0
 	vmv.v.i	v9, -1
+	vmsgt.vx	v0, v8, a0
 	li	a0, -65
 	vmerge.vxm	v9, v9, a0, v0
 	vadd.vv	v10, v9, v8

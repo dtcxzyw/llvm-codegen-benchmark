@@ -2,8 +2,8 @@ func0000000000000000:                   # @func0000000000000000
 	roriw	a1, a1, 19
 	sh2add	a1, a1, a1
 	add	a0, a0, a1
-	roriw	a0, a0, 11
 	lui	a1, 838115
+	roriw	a0, a0, 11
 	addi	a1, a1, -687
 	mulw	a0, a0, a1
 	ret

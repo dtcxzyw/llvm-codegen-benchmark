@@ -5,9 +5,9 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func00000000000000d1:                   # @func00000000000000d1
 	slli	a1, a0, 1
-	addi	a1, a1, -1
 	binvi	a0, a0, 52
 	li	a2, -1
+	addi	a1, a1, -1
 	srli	a2, a2, 10
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
@@ -15,8 +15,8 @@ func00000000000000d1:                   # @func00000000000000d1
 	ret
 func00000000000000a8:                   # @func00000000000000a8
 	slli	a1, a0, 3
-	addi	a1, a1, 16
 	li	a2, -17
+	addi	a1, a1, 16
 	srli	a2, a2, 3
 	sltu	a0, a2, a0
 	neg	a0, a0
@@ -33,8 +33,8 @@ func00000000000000f1:                   # @func00000000000000f1
 	ret
 func00000000000000a1:                   # @func00000000000000a1
 	slli	a1, a0, 2
-	addi	a1, a1, 24
 	li	a2, 28
+	addi	a1, a1, 24
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2

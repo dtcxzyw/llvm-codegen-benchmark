@@ -11,8 +11,8 @@ func0000000000000022:                   # @func0000000000000022
 	fld	fa5, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v16, v8, fa5
-	vmand.mm	v16, v16, v0
 	fmv.d.x	fa5, zero
+	vmand.mm	v16, v16, v0
 	vmflt.vf	v17, v8, fa5
 	vmandn.mm	v0, v17, v16
 	ret
@@ -58,8 +58,8 @@ func0000000000000042:                   # @func0000000000000042
 	fld	fa5, %lo(.LCPI5_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfgt.vf	v16, v8, fa5
-	vmand.mm	v16, v16, v0
 	fmv.d.x	fa5, zero
+	vmand.mm	v16, v16, v0
 	vmflt.vf	v17, v8, fa5
 	vmandn.mm	v0, v17, v16
 	ret
@@ -70,8 +70,8 @@ func0000000000000044:                   # @func0000000000000044
 	fld	fa5, %lo(.LCPI6_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfgt.vf	v16, v8, fa5
-	vmand.mm	v16, v16, v0
 	fli.d	fa5, 1.0
+	vmand.mm	v16, v16, v0
 	vmfgt.vf	v17, v8, fa5
 	vmandn.mm	v0, v17, v16
 	ret

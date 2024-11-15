@@ -13,20 +13,20 @@ func00000000000000c1:                   # @func00000000000000c1
 	sext.w	a2, a2
 	lui	a3, 256
 	xor	a2, a2, a3
-	snez	a2, a2
 	xor	a0, a0, a1
+	snez	a1, a2
 	seqz	a0, a0
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
 	sext.w	a1, a1
 	sext.w	a0, a0
 	sext.w	a2, a2
 	addi	a2, a2, -16
-	seqz	a2, a2
 	xor	a0, a0, a1
+	seqz	a1, a2
 	seqz	a0, a0
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 func000000000000001a:                   # @func000000000000001a
 	sext.w	a0, a0
@@ -51,10 +51,10 @@ func0000000000000017:                   # @func0000000000000017
 	sext.w	a1, a1
 	sext.w	a2, a2
 	addi	a2, a2, -1
-	seqz	a2, a2
 	slt	a0, a1, a0
+	seqz	a1, a2
 	xori	a0, a0, 1
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 func00000000000000cc:                   # @func00000000000000cc
 	xor	a0, a0, a1
@@ -94,10 +94,10 @@ func0000000000000015:                   # @func0000000000000015
 	sext.w	a1, a1
 	sext.w	a2, a2
 	addi	a2, a2, -4
-	seqz	a2, a2
 	sltu	a0, a1, a0
+	seqz	a1, a2
 	xori	a0, a0, 1
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 func0000000000000019:                   # @func0000000000000019
 	sext.w	a1, a1
@@ -217,10 +217,10 @@ func0000000000000061:                   # @func0000000000000061
 	sext.w	a2, a2
 	lui	a3, 1048568
 	addiw	a3, a3, 1262
-	slt	a2, a2, a3
 	xor	a0, a0, a1
+	slt	a1, a2, a3
 	seqz	a0, a0
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 func00000000000000c4:                   # @func00000000000000c4
 	sext.w	a1, a1
@@ -306,10 +306,10 @@ func00000000000000c9:                   # @func00000000000000c9
 	sext.w	a0, a0
 	sext.w	a2, a2
 	addi	a2, a2, -1
-	snez	a2, a2
 	sltu	a0, a0, a1
+	snez	a1, a2
 	xori	a0, a0, 1
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 func0000000000000048:                   # @func0000000000000048
 	sext.w	a0, a0
@@ -359,10 +359,10 @@ func000000000000008c:                   # @func000000000000008c
 	sext.w	a0, a0
 	srliw	a2, a2, 6
 	sltiu	a2, a2, 59
-	xori	a2, a2, 1
 	xor	a0, a0, a1
+	xori	a1, a2, 1
 	snez	a0, a0
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 func00000000000000a8:                   # @func00000000000000a8
 	sext.w	a0, a0
@@ -378,10 +378,10 @@ func0000000000000047:                   # @func0000000000000047
 	sext.w	a2, a2
 	lui	a3, 2
 	addiw	a3, a3, 1
-	sltu	a2, a2, a3
 	slt	a0, a1, a0
+	sltu	a1, a2, a3
 	xori	a0, a0, 1
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 func00000000000000c7:                   # @func00000000000000c7
 	sext.w	a0, a0
@@ -415,8 +415,8 @@ func0000000000000081:                   # @func0000000000000081
 	sext.w	a0, a0
 	sext.w	a2, a2
 	sltiu	a2, a2, 16
-	xori	a2, a2, 1
 	xor	a0, a0, a1
+	xori	a1, a2, 1
 	seqz	a0, a0
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret

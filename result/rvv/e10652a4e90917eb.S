@@ -8,8 +8,8 @@ func0000000000000011:                   # @func0000000000000011
 func000000000000008a:                   # @func000000000000008a
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vi	v12, v10, 1
-	vmand.mm	v10, v12, v0
 	li	a0, 19
+	vmand.mm	v10, v12, v0
 	vmsgt.vx	v11, v8, a0
 	vmor.mm	v0, v10, v11
 	ret

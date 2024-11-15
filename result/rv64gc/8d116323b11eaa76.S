@@ -30,8 +30,8 @@ func0000000000000014:                   # @func0000000000000014
 	lui	a2, 1048304
 	addw	a1, a1, a2
 	lui	a2, 1048318
-	sltu	a1, a1, a2
 	andi	a0, a0, 1
+	sltu	a1, a1, a2
 	li	a2, 4
 	sub	a2, a2, a0
 	addi	a0, a1, -1

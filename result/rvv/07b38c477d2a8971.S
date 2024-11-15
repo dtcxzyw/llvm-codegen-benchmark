@@ -3,11 +3,11 @@
 func0000000000001082:                   # @func0000000000001082
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a0)
+	fmv.d.x	fa4, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
-	vmfgt.vf	v16, v8, fa5
-	fmv.d.x	fa5, zero
-	vmflt.vf	v17, v8, fa5
-	vmor.mm	v16, v17, v16
+	vmflt.vf	v16, v8, fa4
+	vmfgt.vf	v17, v8, fa5
+	vmor.mm	v16, v16, v17
 	vmfne.vv	v17, v8, v8
 	vmor.mm	v0, v17, v16
 	ret

@@ -1,7 +1,7 @@
 func00000000000000a4:                   # @func00000000000000a4
 	addi	a2, a2, 16
-	sltu	a0, a2, a0
 	slti	a1, a1, 17
+	sltu	a0, a2, a0
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
@@ -21,9 +21,9 @@ func0000000000000214:                   # @func0000000000000214
 	ret
 func00000000000002c4:                   # @func00000000000002c4
 	addi	a2, a2, 130
+	srli	a0, a0, 32
 	xor	a1, a1, a2
 	snez	a1, a1
-	srli	a0, a0, 32
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -35,9 +35,9 @@ func0000000000000044:                   # @func0000000000000044
 	ret
 func0000000000000218:                   # @func0000000000000218
 	addi	a2, a2, 24
+	sltiu	a0, a0, 9
 	xor	a1, a1, a2
 	seqz	a1, a1
-	sltiu	a0, a0, 9
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -76,8 +76,8 @@ func0000000000000268:                   # @func0000000000000268
 	ret
 func0000000000000288:                   # @func0000000000000288
 	addi	a2, a2, -1
-	sltu	a1, a1, a2
 	sltiu	a0, a0, 10
+	sltu	a1, a1, a2
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -90,8 +90,8 @@ func0000000000000285:                   # @func0000000000000285
 	ret
 func00000000000002a4:                   # @func00000000000002a4
 	addi	a2, a2, 8
-	sltu	a0, a2, a0
 	slti	a1, a1, 8
+	sltu	a0, a2, a0
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
@@ -104,9 +104,9 @@ func000000000000021c:                   # @func000000000000021c
 	ret
 func0000000000000318:                   # @func0000000000000318
 	addi	a2, a2, 24
+	sltiu	a0, a0, 9
 	xor	a1, a1, a2
 	seqz	a1, a1
-	sltiu	a0, a0, 9
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -139,8 +139,8 @@ func0000000000000049:                   # @func0000000000000049
 	ret
 func0000000000000088:                   # @func0000000000000088
 	addi	a2, a2, -1
-	sltu	a1, a1, a2
 	sltiu	a0, a0, 2
+	sltu	a1, a1, a2
 	not	a0, a0
 	and	a0, a0, a1
 	ret

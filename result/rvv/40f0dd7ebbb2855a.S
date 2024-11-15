@@ -1,8 +1,8 @@
 func0000000000000110:                   # @func0000000000000110
 	li	a0, 63
+	li	a1, 42
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vx	v12, v12, a0
-	li	a1, 42
 	vsll.vx	v10, v10, a1
 	vadd.vv	v10, v10, v12
 	vadd.vv	v8, v10, v8
@@ -15,9 +15,9 @@ func0000000000000130:                   # @func0000000000000130
 	vsll.vx	v12, v12, a0
 	li	a0, 53
 	vsll.vx	v10, v10, a0
+	li	a0, 1023
 	vadd.vv	v10, v10, v12
 	vadd.vv	v8, v10, v8
-	li	a0, 1023
 	slli	a0, a0, 52
 	vadd.vx	v8, v8, a0
 	ret

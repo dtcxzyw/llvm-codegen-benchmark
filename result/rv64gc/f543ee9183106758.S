@@ -1,26 +1,26 @@
 func0000000000000182:                   # @func0000000000000182
 	sext.w	a2, a2
+	andi	a1, a1, 48
 	snez	a2, a2
 	or	a0, a0, a2
-	andi	a1, a1, 48
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
 func0000000000000098:                   # @func0000000000000098
 	sext.w	a2, a2
+	andi	a1, a1, 7
 	sltiu	a2, a2, 4
 	or	a0, a0, a2
-	andi	a1, a1, 7
 	snez	a1, a1
 	or	a0, a0, a1
 	ret
 func0000000000000198:                   # @func0000000000000198
 	sext.w	a2, a2
+	slli	a1, a1, 48
 	addi	a2, a2, -2
+	srli	a1, a1, 48
 	snez	a2, a2
 	or	a0, a0, a2
-	slli	a1, a1, 48
-	srli	a1, a1, 48
 	snez	a1, a1
 	or	a0, a0, a1
 	ret

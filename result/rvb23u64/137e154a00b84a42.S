@@ -19,8 +19,8 @@ func000000000000007f:                   # @func000000000000007f
 	ret
 func000000000000000c:                   # @func000000000000000c
 	lui	a2, 105378
-	addiw	a2, a2, 256
 	slli	a1, a1, 56
+	addiw	a2, a2, 256
 	mulhu	a1, a1, a2
 	lui	a2, 16
 	addiw	a2, a2, 177
@@ -29,8 +29,8 @@ func000000000000000c:                   # @func000000000000000c
 	ret
 func0000000000000030:                   # @func0000000000000030
 	lui	a2, 105378
-	addiw	a2, a2, 256
 	slli	a1, a1, 56
+	addiw	a2, a2, 256
 	mulhu	a1, a1, a2
 	lui	a2, 16
 	addiw	a2, a2, 177
@@ -39,8 +39,8 @@ func0000000000000030:                   # @func0000000000000030
 	ret
 func000000000000004c:                   # @func000000000000004c
 	andi	a1, a1, 255
-	sh2add	a1, a1, a1
 	sh2add	a0, a0, a0
+	sh2add	a1, a1, a1
 	sh2add	a0, a0, a0
 	add	a0, a0, a1
 	ret

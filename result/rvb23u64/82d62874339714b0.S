@@ -6,16 +6,16 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000009:                   # @func0000000000000009
 	slli	a1, a1, 48
-	srli	a1, a1, 43
 	lui	a2, 1536
+	srli	a1, a1, 43
 	addiw	a2, a2, 31
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
 	slli	a1, a1, 1
-	andi	a1, a1, 240
 	li	a2, 15
+	andi	a1, a1, 240
 	slli	a2, a2, 8
 	and	a0, a0, a2
 	or	a0, a0, a1
@@ -28,8 +28,8 @@ func0000000000000005:                   # @func0000000000000005
 	ret
 func0000000000000007:                   # @func0000000000000007
 	slli	a1, a1, 62
-	srli	a1, a1, 58
 	andi	a0, a0, -49
+	srli	a1, a1, 58
 	bclri	a0, a0, 14
 	or	a0, a0, a1
 	ret

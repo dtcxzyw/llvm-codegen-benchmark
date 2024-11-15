@@ -1,7 +1,7 @@
 func0000000000000021:                   # @func0000000000000021
 	slli	a0, a0, 48
-	srli	a0, a0, 48
 	li	a2, 2
+	srli	a0, a0, 48
 	sllw	a1, a2, a1
 	seqz	a0, a0
 	addi	a0, a0, -1
@@ -39,8 +39,8 @@ func000000000000003a:                   # @func000000000000003a
 	ret
 func000000000000002a:                   # @func000000000000002a
 	slli	a0, a0, 48
-	srai	a0, a0, 48
 	li	a2, 1
+	srai	a0, a0, 48
 	sllw	a1, a2, a1
 	slti	a0, a0, 32
 	addi	a0, a0, -1

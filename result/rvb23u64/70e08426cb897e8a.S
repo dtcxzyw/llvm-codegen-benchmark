@@ -20,10 +20,10 @@ func0000000000000010:                   # @func0000000000000010
 	ret
 func0000000000000030:                   # @func0000000000000030
 	mul	a1, a1, a2
+	li	a2, -1
 	mul	a0, a0, a1
-	li	a1, -1
-	srli	a1, a1, 29
-	add	a0, a0, a1
+	srli	a2, a2, 29
+	add	a0, a0, a2
 	ret
 func0000000000000001:                   # @func0000000000000001
 	mul	a1, a1, a2

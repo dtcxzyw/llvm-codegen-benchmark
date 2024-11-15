@@ -42,8 +42,8 @@ func000000000000074c:                   # @func000000000000074c
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v14, v12
 	vadd.vi	v10, v10, 1
-	vmsne.vv	v12, v10, v14
 	li	a0, 255
+	vmsne.vv	v12, v10, v14
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v12, v10
 	ret

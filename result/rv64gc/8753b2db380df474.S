@@ -35,9 +35,9 @@ func000000000000000c:                   # @func000000000000000c
 func0000000000000008:                   # @func0000000000000008
 	andi	a2, a2, 1
 	add	a0, a0, a1
+	lui	a1, 1
 	sub	a0, a0, a2
 	addi	a0, a0, 2
-	lui	a1, 1
 	addiw	a1, a1, 1
 	sltu	a0, a1, a0
 	ret
@@ -51,8 +51,8 @@ func0000000000000071:                   # @func0000000000000071
 func0000000000000001:                   # @func0000000000000001
 	andi	a2, a2, 1
 	add	a0, a0, a1
-	sub	a0, a0, a2
 	li	a1, -1
+	sub	a0, a0, a2
 	slli	a1, a1, 63
 	addi	a1, a1, 1
 	xor	a0, a0, a1

@@ -27,33 +27,33 @@ func0000000000000035:                   # @func0000000000000035
 	ret
 func0000000000000005:                   # @func0000000000000005
 	slli	a1, a1, 32
+	slli	a0, a0, 32
 	srli	a1, a1, 32
 	addi	a1, a1, -1
-	slli	a0, a0, 32
 	srli	a0, a0, 32
 	mul	a0, a1, a0
 	ret
 func0000000000000006:                   # @func0000000000000006
 	slli	a1, a1, 32
+	slli	a0, a0, 32
 	srli	a1, a1, 32
 	addi	a1, a1, -1
-	slli	a0, a0, 32
 	srli	a0, a0, 32
 	mul	a0, a1, a0
 	ret
 func000000000000000e:                   # @func000000000000000e
 	slli	a1, a1, 32
+	slli	a0, a0, 32
 	srli	a1, a1, 32
 	addi	a1, a1, 1
-	slli	a0, a0, 32
 	srli	a0, a0, 32
 	mul	a0, a1, a0
 	ret
 func000000000000000c:                   # @func000000000000000c
 	slli	a1, a1, 32
+	slli	a0, a0, 32
 	srli	a1, a1, 32
 	addi	a1, a1, 8
-	slli	a0, a0, 32
 	srli	a0, a0, 32
 	mul	a0, a1, a0
 	ret

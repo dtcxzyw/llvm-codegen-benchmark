@@ -41,9 +41,9 @@ func000000000000000c:                   # @func000000000000000c
 	lui	a2, %hi(.LCPI2_1)
 	ld	a2, %lo(.LCPI2_1)(a2)
 	mul	a0, a0, a1
-	add	a0, a0, a2
 	lui	a1, %hi(.LCPI2_2)
 	ld	a1, %lo(.LCPI2_2)(a1)
+	add	a0, a0, a2
 	slli	a2, a0, 62
 	srli	a0, a0, 2
 	or	a0, a0, a2
@@ -61,9 +61,9 @@ func0000000000000001:                   # @func0000000000000001
 	lui	a2, %hi(.LCPI3_1)
 	ld	a2, %lo(.LCPI3_1)(a2)
 	mul	a0, a0, a1
-	add	a0, a0, a2
 	lui	a1, %hi(.LCPI3_2)
 	ld	a1, %lo(.LCPI3_2)(a1)
+	add	a0, a0, a2
 	slli	a2, a0, 60
 	srli	a0, a0, 4
 	or	a0, a0, a2

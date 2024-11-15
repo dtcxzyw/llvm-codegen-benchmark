@@ -71,8 +71,8 @@ func000000000000016c:                   # @func000000000000016c
 func0000000000000111:                   # @func0000000000000111
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v12, v12, -1
-	vmseq.vv	v14, v12, v10
 	li	a0, 16
+	vmseq.vv	v14, v12, v10
 	vmseq.vx	v10, v8, a0
 	vmor.mm	v0, v10, v14
 	ret

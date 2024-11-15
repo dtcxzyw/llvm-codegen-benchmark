@@ -14,9 +14,9 @@ func00000000000000d4:                   # @func00000000000000d4
 	ret
 func0000000000000094:                   # @func0000000000000094
 	or	a1, a1, a2
+	lui	a2, 1048304
 	or	a0, a0, a1
-	lui	a1, 1048304
-	addw	a0, a0, a1
+	addw	a0, a0, a2
 	lui	a1, 1048320
 	sltu	a0, a0, a1
 	ret
@@ -47,11 +47,11 @@ func00000000000000c8:                   # @func00000000000000c8
 	ret
 func0000000000000008:                   # @func0000000000000008
 	or	a1, a1, a2
+	lui	a2, 1048560
 	or	a0, a0, a1
-	lui	a1, 1048560
-	addi	a2, a1, 1
-	addw	a0, a0, a2
-	sltu	a0, a0, a1
+	addi	a1, a2, 1
+	addw	a0, a0, a1
+	sltu	a0, a0, a2
 	ret
 func00000000000000d1:                   # @func00000000000000d1
 	or	a1, a1, a2
@@ -69,11 +69,11 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000084:                   # @func0000000000000084
 	or	a1, a1, a2
+	lui	a2, 1048560
 	or	a0, a0, a1
-	lui	a1, 1048560
-	addw	a0, a0, a1
-	addiw	a1, a1, 1
-	sltu	a0, a0, a1
+	addw	a0, a0, a2
+	addiw	a2, a2, 1
+	sltu	a0, a0, a2
 	ret
 func00000000000000ca:                   # @func00000000000000ca
 	or	a1, a1, a2

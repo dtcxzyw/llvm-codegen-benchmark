@@ -24,15 +24,15 @@ func0000000000000084:                   # @func0000000000000084
 	ret
 func000000000000008c:                   # @func000000000000008c
 	fli.d	fa5, inf
-	feq.d	a2, fa0, fa5
 	xor	a0, a0, a1
+	feq.d	a1, fa0, fa5
 	snez	a0, a0
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 func00000000000000c8:                   # @func00000000000000c8
 	xor	a0, a0, a1
-	snez	a0, a0
 	fli.d	fa5, inf
+	snez	a0, a0
 	feq.d	a1, fa0, fa5
 	and	a0, a0, a1
 	ret

@@ -1,9 +1,9 @@
 func000000000000003d:                   # @func000000000000003d
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
+	li	a0, 20
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vnsrl.wi	v8, v10, 0
-	li	a0, 20
 	vadd.vx	v8, v8, a0
 	li	a0, -85
 	vmulhu.vx	v8, v8, a0

@@ -16,11 +16,12 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmv.v.i	v12, 2
-	vmerge.vvm	v10, v12, v10, v0
-	vmseq.vi	v0, v8, 0
-	vmv.v.i	v8, 3
-	vmerge.vvm	v8, v8, v10, v0
+	vmv.v.i	v14, 2
+	vmseq.vi	v12, v8, 0
+	vmerge.vvm	v8, v14, v10, v0
+	vmv.v.i	v10, 3
+	vmv1r.v	v0, v12
+	vmerge.vvm	v8, v10, v8, v0
 	ret
 func0000000000000004:                   # @func0000000000000004
 	li	a0, 20

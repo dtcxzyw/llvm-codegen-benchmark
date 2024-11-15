@@ -39,10 +39,10 @@ func0000000000000028:                   # @func0000000000000028
 	ret
 func0000000000000002:                   # @func0000000000000002
 	sext.w	a1, a1
-	sh1add	a1, a1, a1
-	slli	a1, a1, 5
 	lui	a2, 2
+	sh1add	a1, a1, a1
 	addiw	a2, a2, 324
+	slli	a1, a1, 5
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

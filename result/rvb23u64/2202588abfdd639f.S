@@ -49,8 +49,8 @@ func0000000000000051:                   # @func0000000000000051
 	ret
 func0000000000000052:                   # @func0000000000000052
 	addiw	a1, a1, -2
-	sltiu	a1, a1, -3
 	lui	a2, 16
+	sltiu	a1, a1, -3
 	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret

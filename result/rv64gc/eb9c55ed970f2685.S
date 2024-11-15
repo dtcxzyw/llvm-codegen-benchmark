@@ -11,9 +11,9 @@ func0000000000000018:                   # @func0000000000000018
 .LCPI1_0:
 	.word	0x358637bd                      # float 9.99999997E-7
 func0000000000000014:                   # @func0000000000000014
+	lui	a0, %hi(.LCPI1_0)
+	flw	fa5, %lo(.LCPI1_0)(a0)
 	lui	a0, 784384
-	lui	a1, %hi(.LCPI1_0)
-	flw	fa5, %lo(.LCPI1_0)(a1)
 	fmv.w.x	fa4, a0
 	fadd.s	fa4, fa0, fa4
 	fabs.s	fa4, fa4
@@ -22,9 +22,9 @@ func0000000000000014:                   # @func0000000000000014
 .LCPI2_0:
 	.word	0x358637bd                      # float 9.99999997E-7
 func0000000000000015:                   # @func0000000000000015
+	lui	a0, %hi(.LCPI2_0)
+	flw	fa5, %lo(.LCPI2_0)(a0)
 	lui	a0, 784384
-	lui	a1, %hi(.LCPI2_0)
-	flw	fa5, %lo(.LCPI2_0)(a1)
 	fmv.w.x	fa4, a0
 	fadd.s	fa4, fa0, fa4
 	fabs.s	fa4, fa4
@@ -47,9 +47,9 @@ func0000000000000012:                   # @func0000000000000012
 func0000000000000004:                   # @func0000000000000004
 	lui	a0, 784384
 	fmv.w.x	fa5, a0
+	lui	a0, 212992
 	fadd.s	fa5, fa0, fa5
 	fabs.s	fa5, fa5
-	lui	a0, 212992
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	ret
@@ -70,9 +70,9 @@ func000000000000001d:                   # @func000000000000001d
 .LCPI6_0:
 	.word	0x3c23d70a                      # float 0.00999999977
 func0000000000000002:                   # @func0000000000000002
+	lui	a0, %hi(.LCPI6_0)
+	flw	fa5, %lo(.LCPI6_0)(a0)
 	lui	a0, 787456
-	lui	a1, %hi(.LCPI6_0)
-	flw	fa5, %lo(.LCPI6_0)(a1)
 	fmv.w.x	fa4, a0
 	fadd.s	fa4, fa0, fa4
 	fabs.s	fa4, fa4
@@ -95,9 +95,9 @@ func000000000000000d:                   # @func000000000000000d
 .LCPI8_0:
 	.word	0x358637bd                      # float 9.99999997E-7
 func0000000000000005:                   # @func0000000000000005
+	lui	a0, %hi(.LCPI8_0)
+	flw	fa5, %lo(.LCPI8_0)(a0)
 	lui	a0, 784384
-	lui	a1, %hi(.LCPI8_0)
-	flw	fa5, %lo(.LCPI8_0)(a1)
 	fmv.w.x	fa4, a0
 	fadd.s	fa4, fa0, fa4
 	fabs.s	fa4, fa4
@@ -107,9 +107,9 @@ func0000000000000005:                   # @func0000000000000005
 func0000000000000013:                   # @func0000000000000013
 	lui	a0, 784384
 	fmv.w.x	fa5, a0
+	lui	a0, 212992
 	fadd.s	fa5, fa0, fa5
 	fabs.s	fa5, fa5
-	lui	a0, 212992
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa4, fa5
 	xori	a0, a0, 1

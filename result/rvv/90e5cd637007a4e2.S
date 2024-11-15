@@ -21,8 +21,8 @@ func00000000000001bc:                   # @func00000000000001bc
 	vmslt.vv	v0, v10, v11
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vi	v10, v8, 4
-	vmerge.vvm	v8, v10, v8, v0
 	lui	a0, 10
+	vmerge.vvm	v8, v10, v8, v0
 	addiw	a0, a0, -960
 	vmsne.vx	v0, v8, a0
 	ret

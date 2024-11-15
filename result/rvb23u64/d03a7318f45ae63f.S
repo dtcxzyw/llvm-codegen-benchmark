@@ -7,9 +7,9 @@ func0000000000000028:                   # @func0000000000000028
 	ret
 func0000000000000005:                   # @func0000000000000005
 	sext.w	a2, a2
+	li	a3, 1
 	addi	a2, a2, -4
 	czero.eqz	a1, a1, a2
-	li	a3, 1
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
 	add	a0, a0, a1
@@ -33,16 +33,16 @@ func0000000000000007:                   # @func0000000000000007
 	ret
 func0000000000000010:                   # @func0000000000000010
 	srliw	a2, a2, 11
-	czero.eqz	a1, a1, a2
 	li	a3, -2
+	czero.eqz	a1, a1, a2
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
 	add	a0, a0, a1
 	ret
 func0000000000000013:                   # @func0000000000000013
 	srliw	a2, a2, 11
-	czero.eqz	a1, a1, a2
 	li	a3, 2
+	czero.eqz	a1, a1, a2
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
 	add	a0, a0, a1
@@ -61,10 +61,10 @@ func0000000000000020:                   # @func0000000000000020
 	ret
 func0000000000000012:                   # @func0000000000000012
 	sext.w	a2, a2
-	sltiu	a2, a2, 15
-	czero.nez	a1, a1, a2
 	lui	a3, 1
+	sltiu	a2, a2, 15
 	addiw	a3, a3, -1
+	czero.nez	a1, a1, a2
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
 	add	a0, a0, a1
@@ -85,9 +85,9 @@ func0000000000000030:                   # @func0000000000000030
 	ret
 func0000000000000011:                   # @func0000000000000011
 	sext.w	a2, a2
+	li	a3, -48
 	sltiu	a2, a2, 10
 	czero.nez	a1, a1, a2
-	li	a3, -48
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
 	add	a0, a0, a1

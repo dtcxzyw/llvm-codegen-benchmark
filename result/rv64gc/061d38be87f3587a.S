@@ -27,8 +27,8 @@ func0000000000000024:                   # @func0000000000000024
 func00000000000000a8:                   # @func00000000000000a8
 	lui	a1, %hi(.LCPI3_0)
 	fld	fa5, %lo(.LCPI3_0)(a1)
-	fle.d	a1, fa0, fa5
 	sltiu	a0, a0, 1001
+	fle.d	a1, fa0, fa5
 	not	a0, a0
 	and	a0, a0, a1
 	ret

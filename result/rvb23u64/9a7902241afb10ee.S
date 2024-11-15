@@ -12,8 +12,8 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func0000000000000007:                   # @func0000000000000007
 	or	a0, a0, a1
-	add.uw	a0, a2, a0
 	li	a1, 11
+	add.uw	a0, a2, a0
 	slli	a1, a1, 33
 	or	a0, a0, a1
 	ret

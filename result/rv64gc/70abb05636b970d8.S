@@ -21,9 +21,9 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func0000000000000001:                   # @func0000000000000001
 	or	a1, a1, a2
+	lui	a2, 270336
 	or	a0, a0, a1
-	lui	a1, 270336
-	addi	a1, a1, 1
-	or	a0, a0, a1
+	addi	a2, a2, 1
+	or	a0, a0, a2
 	sext.w	a0, a0
 	ret

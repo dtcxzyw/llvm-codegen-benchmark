@@ -1,7 +1,7 @@
 func0000000000000041:                   # @func0000000000000041
 	sext.w	a2, a2
-	sltiu	a2, a2, 32
 	li	a3, 1
+	sltiu	a2, a2, 32
 	czero.nez	a3, a3, a2
 	czero.eqz	a1, a1, a2
 	or	a1, a1, a3

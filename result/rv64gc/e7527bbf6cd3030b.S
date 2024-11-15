@@ -21,16 +21,16 @@ func0000000000000020:                   # @func0000000000000020
 	ret
 func0000000000000000:                   # @func0000000000000000
 	li	a3, 160
-	mul	a2, a2, a3
 	slli	a0, a0, 3
+	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, -8
 	ret
 func0000000000000022:                   # @func0000000000000022
 	li	a3, 160
-	mul	a2, a2, a3
 	slli	a0, a0, 3
+	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, -56
@@ -38,9 +38,9 @@ func0000000000000022:                   # @func0000000000000022
 func000000000000002b:                   # @func000000000000002b
 	li	a3, 100
 	mul	a2, a2, a3
+	li	a3, 20
 	add	a1, a1, a2
-	li	a2, 20
-	mul	a0, a0, a2
+	mul	a0, a0, a3
 	add	a0, a0, a1
 	addi	a0, a0, 8
 	ret

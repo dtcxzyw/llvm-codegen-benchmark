@@ -17,10 +17,10 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000048:                   # @func0000000000000048
 	andi	a1, a1, 1
 	li	a3, 7
-	czero.eqz	a1, a3, a1
 	subw	a2, a2, a0
-	addw	a1, a1, a2
 	lui	a0, 524288
+	czero.eqz	a1, a3, a1
+	addw	a1, a1, a2
 	addiw	a0, a0, -2
 	sltu	a0, a0, a1
 	ret

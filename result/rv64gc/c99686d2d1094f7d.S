@@ -1,9 +1,9 @@
 func00000000000001e0:                   # @func00000000000001e0
 	addw	a1, a1, a2
+	li	a2, 21
 	add	a0, a0, a1
-	li	a1, 21
-	slli	a1, a1, 8
-	add	a0, a0, a1
+	slli	a2, a2, 8
+	add	a0, a0, a2
 	ret
 func000000000000002a:                   # @func000000000000002a
 	add	a1, a1, a2

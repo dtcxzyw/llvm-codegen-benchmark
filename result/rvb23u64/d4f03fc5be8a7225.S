@@ -22,10 +22,10 @@ func0000000000000035:                   # @func0000000000000035
 	slli	a2, a1, 2
 	slli	a1, a1, 6
 	sub	a1, a1, a2
+	lui	a2, 981163
+	slli	a2, a2, 3
 	add	a0, a0, a1
-	lui	a1, 981163
-	slli	a1, a1, 3
-	addi	a1, a1, 384
+	addi	a1, a2, 384
 	add	a0, a0, a1
 	ret
 func0000000000000037:                   # @func0000000000000037

@@ -34,8 +34,8 @@ func0000000000000304:                   # @func0000000000000304
 	li	a0, 128
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vand.vx	v10, v10, a0
-	vmsne.vi	v10, v10, 0
 	bseti	a0, zero, 50
+	vmsne.vi	v10, v10, 0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmseq.vx	v11, v8, a0
 	vmor.mm	v8, v11, v10

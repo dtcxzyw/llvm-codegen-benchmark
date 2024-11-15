@@ -13,8 +13,8 @@ func0000000000000010:                   # @func0000000000000010
 	ret
 func0000000000000001:                   # @func0000000000000001
 	add	a0, a0, a1
-	add.uw	a0, a2, a0
 	li	a1, 63
+	add.uw	a0, a2, a0
 	bseti	a1, a1, 63
 	and	a0, a0, a1
 	ret

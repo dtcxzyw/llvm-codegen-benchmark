@@ -7,8 +7,8 @@ func0000000000000074:                   # @func0000000000000074
 	ret
 func0000000000000014:                   # @func0000000000000014
 	addiw	a1, a1, -1
-	sltiu	a1, a1, 6
 	lui	a2, 16
+	sltiu	a1, a1, 6
 	addi	a3, a2, 256
 	addw	a0, a0, a3
 	czero.nez	a2, a2, a1

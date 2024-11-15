@@ -20,11 +20,11 @@ func00000000000001bc:                   # @func00000000000001bc
 	sext.w	a2, a2
 	sext.w	a1, a1
 	slt	a1, a1, a2
+	lui	a2, 10
 	xori	a1, a1, 1
 	slli	a1, a1, 2
 	add	a0, a0, a1
-	lui	a1, 10
-	addiw	a1, a1, -960
+	addiw	a1, a2, -960
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret

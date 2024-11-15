@@ -28,8 +28,8 @@ func000000000000004c:                   # @func000000000000004c
 	sext.w	a2, a0
 	slli	a0, a0, 32
 	srli	a0, a0, 32
-	sltu	a0, a1, a0
 	addi	a2, a2, 2
+	sltu	a0, a1, a0
 	snez	a1, a2
 	and	a0, a0, a1
 	ret
@@ -37,10 +37,10 @@ func0000000000000018:                   # @func0000000000000018
 	sext.w	a2, a0
 	slli	a0, a0, 32
 	srli	a0, a0, 32
+	sltiu	a2, a2, 17
 	xor	a0, a0, a1
 	seqz	a0, a0
-	sltiu	a1, a2, 17
-	not	a1, a1
+	not	a1, a2
 	and	a0, a0, a1
 	ret
 func000000000000011c:                   # @func000000000000011c
@@ -69,10 +69,10 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func0000000000000194:                   # @func0000000000000194
 	sext.w	a0, a0
-	sltu	a1, a1, a0
-	xori	a1, a1, 1
 	lui	a2, 524288
+	sltu	a1, a1, a0
 	addiw	a2, a2, -1
+	xori	a1, a1, 1
 	sltu	a0, a0, a2
 	and	a0, a0, a1
 	ret

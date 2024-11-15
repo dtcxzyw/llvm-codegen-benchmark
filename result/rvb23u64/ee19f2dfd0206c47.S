@@ -39,9 +39,9 @@ func0000000000000060:                   # @func0000000000000060
 	ret
 func0000000000000061:                   # @func0000000000000061
 	add	a0, a0, a1
-	sraiw	a1, a0, 31
-	lui	a2, 244
-	addi	a2, a2, 576
+	lui	a1, 244
+	sraiw	a2, a0, 31
+	addi	a1, a1, 576
 	and	a1, a1, a2
 	addw	a0, a0, a1
 	ret

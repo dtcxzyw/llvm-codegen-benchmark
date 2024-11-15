@@ -3,8 +3,8 @@
 func00000000000000b5:                   # @func00000000000000b5
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v12, v12, 3
-	vadd.vv	v10, v12, v10
 	lui	a0, %hi(.LCPI0_0)
+	vadd.vv	v10, v12, v10
 	ld	a0, %lo(.LCPI0_0)(a0)
 	li	a1, 7
 	vmul.vx	v10, v10, a1

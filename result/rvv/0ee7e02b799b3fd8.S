@@ -3,8 +3,8 @@ func00000000000000d1:                   # @func00000000000000d1
 	vnsrl.wi	v10, v8, 0
 	li	a0, 2047
 	vand.vx	v8, v10, a0
-	vmseq.vi	v0, v8, 0
 	li	a0, -1075
+	vmseq.vi	v0, v8, 0
 	vadd.vx	v8, v8, a0
 	li	a0, -1074
 	vmerge.vxm	v8, v8, a0, v0
@@ -33,9 +33,9 @@ func00000000000000d4:                   # @func00000000000000d4
 	vnsrl.wi	v10, v8, 0
 	li	a0, 2047
 	vand.vx	v8, v10, a0
+	li	a0, 1023
+	vmsltu.vx	v0, v8, a0
 	li	a0, -1011
-	li	a1, 1023
-	vmsltu.vx	v0, v8, a1
 	vadd.vx	v8, v8, a0
 	vmerge.vim	v8, v8, 1, v0
 	ret

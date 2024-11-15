@@ -47,12 +47,12 @@ func00000000000000c2:                   # @func00000000000000c2
 	ret
 func0000000000000130:                   # @func0000000000000130
 	fli.d	fa5, inf
+	li	a0, -8
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmflt.vf	v12, v10, fa5
 	vmfgt.vf	v13, v10, fa5
-	vmor.mm	v10, v13, v12
-	li	a0, -8
 	rori	a0, a0, 16
+	vmor.mm	v10, v13, v12
 	vmsgtu.vx	v11, v8, a0
 	vmorn.mm	v0, v11, v10
 	ret

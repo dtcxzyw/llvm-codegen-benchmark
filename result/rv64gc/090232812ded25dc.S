@@ -11,8 +11,8 @@ func0000000000000010:                   # @func0000000000000010
 	ret
 func0000000000000030:                   # @func0000000000000030
 	slli	a2, a2, 63
-	srai	a2, a2, 63
 	lui	a3, 21
+	srai	a2, a2, 63
 	addiw	a3, a3, 384
 	and	a2, a2, a3
 	add	a1, a1, a2
@@ -23,8 +23,8 @@ func0000000000000030:                   # @func0000000000000030
 	ret
 func0000000000000028:                   # @func0000000000000028
 	slli	a2, a2, 63
-	srai	a2, a2, 63
 	lui	a3, 244141
+	srai	a2, a2, 63
 	addiw	a3, a3, -1536
 	and	a2, a2, a3
 	add	a1, a1, a2

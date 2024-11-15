@@ -16,8 +16,8 @@ func0000000000000001:                   # @func0000000000000001
 	or	a1, a1, a2
 	li	a2, 1280
 	czero.nez	a0, a2, a0
+	lui	a2, 10
 	add	a0, a0, a1
-	lui	a1, 10
-	addi	a1, a1, 417
+	addi	a1, a2, 417
 	addw	a0, a0, a1
 	ret

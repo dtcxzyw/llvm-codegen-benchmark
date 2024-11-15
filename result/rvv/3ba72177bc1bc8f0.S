@@ -2,8 +2,8 @@ func0000000000000058:                   # @func0000000000000058
 	li	a0, -57
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v12, v12, a0
-	vmslt.vv	v0, v10, v12
 	li	a0, 57
+	vmslt.vv	v0, v10, v12
 	vmv.v.x	v10, a0
 	li	a0, 144
 	vmerge.vxm	v10, v10, a0, v0
@@ -20,8 +20,8 @@ func0000000000000069:                   # @func0000000000000069
 func0000000000000010:                   # @func0000000000000010
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v12, v12, -4
-	vmsltu.vv	v0, v10, v12
 	li	a0, 16
+	vmsltu.vv	v0, v10, v12
 	vmv.v.x	v10, a0
 	li	a0, 18
 	vmerge.vxm	v10, v10, a0, v0

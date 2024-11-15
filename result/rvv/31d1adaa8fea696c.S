@@ -2,9 +2,9 @@ func0000000000000070:                   # @func0000000000000070
 	li	a0, 40
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vx	v10, v10, a0
-	vor.vv	v10, v10, v8
 	li	a0, 53
 	slli	a0, a0, 56
+	vor.vv	v10, v10, v8
 	vmv.v.x	v8, a0
 	lui	a0, 196615
 	slli	a0, a0, 12

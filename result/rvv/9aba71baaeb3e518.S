@@ -1,8 +1,8 @@
 func0000000000000018:                   # @func0000000000000018
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vrsub.vi	v10, v8, 0
-	vmax.vv	v8, v8, v10
 	li	a0, -1
+	vmax.vv	v8, v8, v10
 	srli	a0, a0, 11
 	vmsgtu.vx	v0, v8, a0
 	ret
@@ -15,8 +15,8 @@ func0000000000000008:                   # @func0000000000000008
 func0000000000000014:                   # @func0000000000000014
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vrsub.vi	v10, v8, 0
-	vmax.vv	v8, v8, v10
 	lui	a0, 2
+	vmax.vv	v8, v8, v10
 	addiw	a0, a0, 1808
 	vmsltu.vx	v0, v8, a0
 	ret
@@ -56,8 +56,8 @@ func0000000000000034:                   # @func0000000000000034
 func0000000000000006:                   # @func0000000000000006
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vrsub.vi	v10, v8, 0
-	vmax.vv	v8, v8, v10
 	lui	a0, 2384
+	vmax.vv	v8, v8, v10
 	addiw	a0, a0, 761
 	slli	a0, a0, 9
 	vmslt.vx	v0, v8, a0

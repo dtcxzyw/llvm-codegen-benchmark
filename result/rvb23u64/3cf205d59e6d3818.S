@@ -15,9 +15,9 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000008:                   # @func0000000000000008
 	sext.w	a1, a1
 	sext.w	a0, a0
+	lui	a2, 1048560
 	maxu	a0, a0, a1
-	lui	a1, 1048560
-	addi	a2, a1, 7
-	addw	a0, a0, a2
-	sltu	a0, a0, a1
+	addi	a1, a2, 7
+	addw	a0, a0, a1
+	sltu	a0, a0, a2
 	ret

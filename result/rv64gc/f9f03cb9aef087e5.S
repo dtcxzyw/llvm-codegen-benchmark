@@ -26,9 +26,9 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func0000000000000029:                   # @func0000000000000029
 	andi	a1, a1, 255
+	lui	a2, 96
 	sltiu	a1, a1, 11
 	neg	a1, a1
-	lui	a2, 96
 	and	a1, a1, a2
 	lui	a2, 2048
 	addiw	a2, a2, 128

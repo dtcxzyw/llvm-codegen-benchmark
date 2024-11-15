@@ -32,16 +32,16 @@ func0000000000000031:                   # @func0000000000000031
 	ret
 func0000000000000038:                   # @func0000000000000038
 	slli	a1, a1, 32
-	srli	a1, a1, 32
 	slli	a0, a0, 32
+	srli	a1, a1, 32
 	srli	a0, a0, 32
 	add	a0, a0, a1
 	srli	a0, a0, 32
 	ret
 func0000000000000034:                   # @func0000000000000034
 	slli	a1, a1, 32
-	srli	a1, a1, 32
 	slli	a0, a0, 32
+	srli	a1, a1, 32
 	srli	a0, a0, 32
 	add	a0, a0, a1
 	srli	a0, a0, 12
@@ -68,8 +68,8 @@ func00000000000000f1:                   # @func00000000000000f1
 	ret
 func0000000000000074:                   # @func0000000000000074
 	slli	a1, a1, 32
-	srli	a1, a1, 32
 	sext.w	a0, a0
+	srli	a1, a1, 32
 	add	a0, a0, a1
 	lui	a1, 1
 	addiw	a1, a1, 1

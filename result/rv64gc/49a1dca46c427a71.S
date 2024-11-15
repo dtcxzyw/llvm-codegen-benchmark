@@ -67,8 +67,8 @@ func0000000000000018:                   # @func0000000000000018
 	or	a1, a1, a2
 	lui	a2, 104858
 	addiw	a2, a2, -1638
-	sltu	a1, a1, a2
 	sltiu	a0, a0, 10
+	sltu	a1, a1, a2
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -78,9 +78,9 @@ func0000000000000011:                   # @func0000000000000011
 	addi	a3, a3, 1881
 	slli	a3, a3, 32
 	mulhu	a2, a2, a3
-	srli	a2, a2, 45
 	lui	a3, 2
 	addi	a3, a3, 1808
+	srli	a2, a2, 45
 	mul	a2, a2, a3
 	subw	a1, a1, a2
 	xori	a0, a0, 2

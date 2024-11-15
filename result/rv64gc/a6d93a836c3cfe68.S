@@ -10,10 +10,10 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000000:                   # @func0000000000000000
 	or	a1, a1, a2
+	li	a2, 1
 	or	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 54
-	or	a0, a0, a1
+	slli	a2, a2, 54
+	or	a0, a0, a2
 	ret
 func0000000000000005:                   # @func0000000000000005
 	or	a1, a1, a2
@@ -27,15 +27,15 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func0000000000000001:                   # @func0000000000000001
 	or	a1, a1, a2
+	li	a2, 31
 	or	a0, a0, a1
-	li	a1, 31
-	slli	a1, a1, 10
-	or	a0, a0, a1
+	slli	a2, a2, 10
+	or	a0, a0, a2
 	ret
 func0000000000000003:                   # @func0000000000000003
 	or	a1, a1, a2
+	li	a2, 1
 	or	a0, a0, a1
-	li	a1, 1
-	slli	a1, a1, 62
-	or	a0, a0, a1
+	slli	a2, a2, 62
+	or	a0, a0, a2
 	ret

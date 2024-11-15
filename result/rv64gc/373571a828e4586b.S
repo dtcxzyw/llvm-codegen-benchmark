@@ -2,9 +2,9 @@ func0000000000000044:                   # @func0000000000000044
 	sext.w	a1, a1
 	lui	a3, 1048562
 	add	a2, a2, a3
+	sltiu	a1, a1, -32
 	srliw	a2, a2, 13
 	sltiu	a2, a2, 129
-	sltiu	a1, a1, -32
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret

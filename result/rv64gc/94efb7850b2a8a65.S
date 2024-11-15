@@ -13,10 +13,10 @@ func00000000000000c7:                   # @func00000000000000c7
 	sext.w	a1, a1
 	li	a3, 1
 	slli	a3, a3, 35
+	seqz	a1, a1
 	addi	a3, a3, -8
 	and	a2, a2, a3
 	addi	a2, a2, 40
-	seqz	a1, a1
 	addi	a1, a1, -1
 	and	a1, a1, a2
 	add	a0, a0, a1

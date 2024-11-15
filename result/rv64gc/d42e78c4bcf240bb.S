@@ -1,10 +1,10 @@
 func000000000000000f:                   # @func000000000000000f
 	lui	a2, 1047556
+	slli	a0, a0, 7
 	addiw	a2, a2, 256
 	and	a1, a1, a2
-	slli	a0, a0, 7
-	andi	a0, a0, 512
 	lui	a2, 8
+	andi	a0, a0, 512
 	addiw	a2, a2, 5
 	or	a0, a0, a2
 	or	a0, a0, a1

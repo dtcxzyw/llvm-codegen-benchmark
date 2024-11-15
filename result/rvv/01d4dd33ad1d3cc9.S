@@ -39,8 +39,8 @@ func000000000000000a:                   # @func000000000000000a
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmsgt.vi	v0, v10, 0
 	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
 	bseti	a0, zero, 63
+	vmerge.vim	v10, v10, 1, v0
 	vmv1r.v	v0, v12
 	vrsub.vx	v8, v10, a0, v0.t
 	ret

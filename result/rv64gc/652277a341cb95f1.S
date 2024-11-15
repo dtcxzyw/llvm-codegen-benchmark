@@ -1,18 +1,18 @@
 func00000000000000f1:                   # @func00000000000000f1
 	andi	a1, a1, 255
-	slli	a1, a1, 6
 	lui	a2, 15
 	and	a0, a0, a2
+	lui	a2, 14
+	slli	a1, a1, 6
 	or	a0, a0, a1
-	lui	a1, 14
-	addiw	a1, a1, -1024
+	addiw	a1, a2, -1024
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000074:                   # @func0000000000000074
 	andi	a1, a1, 224
-	slli	a1, a1, 6
 	lui	a2, 15
+	slli	a1, a1, 6
 	and	a0, a0, a2
 	or	a0, a0, a1
 	srli	a0, a0, 11
@@ -20,8 +20,8 @@ func0000000000000074:                   # @func0000000000000074
 	ret
 func00000000000000f4:                   # @func00000000000000f4
 	andi	a1, a1, 224
-	slli	a1, a1, 6
 	lui	a2, 15
+	slli	a1, a1, 6
 	and	a0, a0, a2
 	or	a0, a0, a1
 	srli	a0, a0, 11
@@ -29,8 +29,8 @@ func00000000000000f4:                   # @func00000000000000f4
 	ret
 func00000000000000f8:                   # @func00000000000000f8
 	andi	a1, a1, 224
-	slli	a1, a1, 6
 	lui	a2, 15
+	slli	a1, a1, 6
 	and	a0, a0, a2
 	or	a0, a0, a1
 	srli	a0, a0, 11
@@ -59,8 +59,8 @@ func0000000000000068:                   # @func0000000000000068
 	ret
 func0000000000000061:                   # @func0000000000000061
 	andi	a1, a1, 255
-	slli	a1, a1, 8
 	slli	a0, a0, 48
+	slli	a1, a1, 8
 	srli	a0, a0, 48
 	or	a0, a0, a1
 	lui	a1, 8

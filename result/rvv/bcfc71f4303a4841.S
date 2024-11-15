@@ -26,8 +26,8 @@ func0000000000000090:                   # @func0000000000000090
 	addi	a0, a0, -1
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
-	vmsltu.vv	v12, v8, v10
 	li	a0, 25
+	vmsltu.vv	v12, v8, v10
 	vmsltu.vx	v8, v10, a0
 	vmor.mm	v0, v12, v8
 	ret

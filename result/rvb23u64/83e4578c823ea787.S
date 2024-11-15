@@ -1,13 +1,13 @@
 func0000000000000018:                   # @func0000000000000018
 	andi	a0, a0, 1
-	czero.nez	a1, a1, a0
 	lui	a2, 272
+	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
 	or	a0, a0, a1
 	sext.w	a0, a0
 	xor	a2, a2, a0
-	snez	a1, a2
 	sltiu	a0, a0, 128
+	snez	a1, a2
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret

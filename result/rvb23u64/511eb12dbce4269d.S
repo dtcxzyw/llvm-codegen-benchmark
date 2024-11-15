@@ -1,9 +1,9 @@
 func0000000000000001:                   # @func0000000000000001
 	xor	a1, a1, a2
+	lui	a2, 61681
 	seqz	a1, a1
 	and	a0, a0, a1
-	lui	a1, 61681
-	addiw	a1, a1, -241
+	addiw	a1, a2, -241
 	czero.eqz	a0, a1, a0
 	ret
 func0000000000000005:                   # @func0000000000000005

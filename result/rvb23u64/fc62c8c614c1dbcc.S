@@ -1,11 +1,11 @@
 func0000000000000190:                   # @func0000000000000190
 	li	a3, 122
-	mul	a2, a2, a3
 	sext.w	a0, a0
+	mul	a2, a2, a3
+	lui	a3, 200
 	add	a0, a0, a1
 	add	a0, a0, a2
-	lui	a1, 200
-	addiw	a1, a1, -702
+	addiw	a1, a3, -702
 	add	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000

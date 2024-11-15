@@ -27,8 +27,8 @@ func0000000000000005:                   # @func0000000000000005
 	lui	a0, 1048571
 	addi	a0, a0, -1365
 	vmulhu.vx	v8, v10, a0
-	vsrl.vi	v10, v8, 6
 	li	a0, -96
+	vsrl.vi	v10, v8, 6
 	vmv.v.x	v11, a0
 	vwmulsu.vv	v8, v11, v10
 	ret

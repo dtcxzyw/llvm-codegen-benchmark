@@ -57,9 +57,9 @@ func000000000000019a:                   # @func000000000000019a
 	vmslt.vv	v0, v10, v12
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmv.v.i	v9, 0
+	lui	a0, 1048400
 	vmerge.vim	v9, v9, 1, v0
 	vsub.vv	v8, v8, v9
-	lui	a0, 1048400
 	addi	a0, a0, 1427
 	vmsgt.vx	v0, v8, a0
 	ret
@@ -68,9 +68,9 @@ func000000000000029a:                   # @func000000000000029a
 	vmslt.vv	v0, v12, v10
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmv.v.i	v9, 0
+	lui	a0, 1048400
 	vmerge.vim	v9, v9, 1, v0
 	vsub.vv	v8, v8, v9
-	lui	a0, 1048400
 	addi	a0, a0, 1427
 	vmsgt.vx	v0, v8, a0
 	ret

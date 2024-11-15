@@ -2,8 +2,8 @@ func0000000000000004:                   # @func0000000000000004
 	bseti	a0, zero, 11
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vand.vx	v10, v10, a0
-	vmseq.vi	v0, v10, 0
 	li	a0, 201
+	vmseq.vi	v0, v10, 0
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.x	v10, a0
 	vmerge.vim	v10, v10, 1, v0
@@ -23,8 +23,8 @@ func0000000000000007:                   # @func0000000000000007
 	li	a0, 64
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vand.vx	v10, v10, a0
-	vmseq.vi	v0, v10, 0
 	li	a0, 16
+	vmseq.vi	v0, v10, 0
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.x	v10, a0
 	vmerge.vim	v10, v10, 8, v0

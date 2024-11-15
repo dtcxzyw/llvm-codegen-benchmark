@@ -5,8 +5,8 @@ func0000000000000016:                   # @func0000000000000016
 	ret
 func0000000000000018:                   # @func0000000000000018
 	srliw	a1, a0, 7
-	sltiu	a1, a1, 675
 	lui	a2, 1048555
+	sltiu	a1, a1, 675
 	addi	a2, a2, -384
 	czero.nez	a1, a2, a1
 	addw	a0, a0, a1

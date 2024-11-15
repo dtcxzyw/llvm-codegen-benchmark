@@ -38,10 +38,10 @@ func0000000000000047:                   # @func0000000000000047
 	sext.w	a1, a1
 	sext.w	a3, a2
 	xor	a2, a2, a3
-	seqz	a2, a2
 	slt	a0, a1, a0
+	seqz	a1, a2
 	not	a0, a0
-	and	a0, a0, a2
+	and	a0, a0, a1
 	ret
 func00000000000001c1:                   # @func00000000000001c1
 	sext.w	a1, a1

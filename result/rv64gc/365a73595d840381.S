@@ -2,8 +2,8 @@ func0000000000000038:                   # @func0000000000000038
 	andi	a0, a0, 255
 	sub	a1, a1, a2
 	addi	a1, a1, -1
-	seqz	a1, a1
 	addi	a0, a0, -79
+	seqz	a1, a1
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
@@ -11,8 +11,8 @@ func0000000000000182:                   # @func0000000000000182
 	andi	a0, a0, 255
 	sub	a1, a1, a2
 	addi	a1, a1, -2
-	seqz	a1, a1
 	addi	a0, a0, -70
+	seqz	a1, a1
 	snez	a0, a0
 	or	a0, a0, a1
 	ret

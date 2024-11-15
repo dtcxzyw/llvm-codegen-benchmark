@@ -103,8 +103,8 @@ func0000000000000088:                   # @func0000000000000088
 func0000000000000038:                   # @func0000000000000038
 	fli.d	fa5, 2.0
 	fle.d	a0, fa5, fa1
-	xori	a0, a0, 1
 	fmv.d.x	fa5, zero
+	xori	a0, a0, 1
 	feq.d	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
@@ -140,13 +140,13 @@ func000000000000001e:                   # @func000000000000001e
 	.quad	0x7ea2aa4f4a405be2              # double 1.0000000000000001E+302
 func0000000000000089:                   # @func0000000000000089
 	lui	a0, %hi(.LCPI18_0)
-	fld	fa5, %lo(.LCPI18_0)(a0)
-	feq.d	a0, fa1, fa5
 	fli.d	fa5, inf
-	flt.d	a1, fa0, fa5
-	flt.d	a2, fa5, fa0
-	or	a1, a1, a2
-	xori	a1, a1, 1
+	fld	fa4, %lo(.LCPI18_0)(a0)
+	flt.d	a0, fa0, fa5
+	flt.d	a1, fa5, fa0
+	or	a0, a0, a1
+	feq.d	a1, fa1, fa4
+	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 func0000000000000087:                   # @func0000000000000087
@@ -183,9 +183,9 @@ func0000000000000099:                   # @func0000000000000099
 	fli.d	fa5, inf
 	flt.d	a0, fa1, fa5
 	flt.d	a1, fa5, fa1
+	flt.d	a2, fa0, fa5
 	or	a0, a0, a1
-	flt.d	a1, fa0, fa5
-	flt.d	a2, fa5, fa0
+	flt.d	a1, fa5, fa0
 	or	a1, a1, a2
 	and	a0, a0, a1
 	xori	a0, a0, 1
@@ -215,8 +215,8 @@ func00000000000000a2:                   # @func00000000000000a2
 	ret
 func0000000000000018:                   # @func0000000000000018
 	feq.d	a0, fa1, fa1
-	xori	a0, a0, 1
 	fmv.d.x	fa5, zero
+	xori	a0, a0, 1
 	feq.d	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
@@ -231,9 +231,9 @@ func0000000000000066:                   # @func0000000000000066
 	fmv.d.x	fa5, zero
 	flt.d	a0, fa1, fa5
 	flt.d	a1, fa5, fa1
+	flt.d	a2, fa0, fa5
 	or	a0, a0, a1
-	flt.d	a1, fa0, fa5
-	flt.d	a2, fa5, fa0
+	flt.d	a1, fa5, fa0
 	or	a1, a1, a2
 	or	a0, a0, a1
 	ret

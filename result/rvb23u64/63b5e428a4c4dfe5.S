@@ -1,9 +1,9 @@
 func000000000000009d:                   # @func000000000000009d
 	fclass.s	a0, fa1
-	andi	a0, a0, 897
-	snez	a0, a0
 	lui	a1, 798688
+	andi	a0, a0, 897
 	fmv.w.x	fa5, a1
+	snez	a0, a0
 	flt.s	a1, fa0, fa5
 	andn	a0, a0, a1
 	ret
@@ -29,9 +29,9 @@ func00000000000000aa:                   # @func00000000000000aa
 	ret
 func0000000000000066:                   # @func0000000000000066
 	fclass.s	a0, fa1
+	fli.s	fa5, inf
 	andi	a0, a0, 126
 	snez	a0, a0
-	fli.s	fa5, inf
 	flt.s	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
@@ -47,9 +47,9 @@ func0000000000000044:                   # @func0000000000000044
 	ret
 func0000000000000077:                   # @func0000000000000077
 	fclass.s	a0, fa1
+	fli.s	fa5, inf
 	andi	a0, a0, 894
 	snez	a0, a0
-	fli.s	fa5, inf
 	feq.s	a1, fa0, fa5
 	andn	a0, a0, a1
 	ret

@@ -3,8 +3,8 @@ func000000000000000b:                   # @func000000000000000b
 	vmseq.vi	v0, v9, 0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
 	li	a0, -257
+	vmerge.vim	v10, v10, 1, v0
 	vxor.vx	v10, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vzext.vf4	v9, v8

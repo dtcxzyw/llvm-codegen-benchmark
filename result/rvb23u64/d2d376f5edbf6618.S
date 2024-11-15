@@ -35,19 +35,19 @@ func0000000000000228:                   # @func0000000000000228
 	add	a1, a1, a2
 	lui	a2, 244141
 	addiw	a2, a2, -1536
-	sltu	a1, a1, a2
 	addi	a0, a0, -59
+	sltu	a1, a1, a2
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
 func0000000000000310:                   # @func0000000000000310
 	sext.w	a0, a0
 	add	a1, a1, a2
+	lui	a2, 488281
 	srli	a1, a1, 7
+	addiw	a2, a2, 1023
 	sltiu	a1, a1, 675
 	xori	a1, a1, 1
-	lui	a2, 488281
-	addiw	a2, a2, 1023
 	sltu	a0, a2, a0
 	or	a0, a0, a1
 	ret
@@ -55,8 +55,8 @@ func0000000000000102:                   # @func0000000000000102
 	sext.w	a0, a0
 	add	a1, a1, a2
 	sltiu	a1, a1, -16
-	xori	a1, a1, 1
 	addi	a0, a0, 1
+	xori	a1, a1, 1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

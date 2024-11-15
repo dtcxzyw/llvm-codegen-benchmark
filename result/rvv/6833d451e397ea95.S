@@ -2,10 +2,10 @@
 	.quad	5545529020109919103             # 0x4cf5ad432745937f
 func0000000000000008:                   # @func0000000000000008
 	lui	a0, 1048337
+	lui	a1, %hi(.LCPI0_0)
 	addi	a0, a0, 1061
 	slli	a0, a0, 12
 	addi	a0, a0, 981
-	lui	a1, %hi(.LCPI0_0)
 	ld	a1, %lo(.LCPI0_0)(a1)
 	slli	a0, a0, 31
 	vsetivli	zero, 4, e64, m2, ta, ma

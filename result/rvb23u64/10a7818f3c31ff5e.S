@@ -6,8 +6,8 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000004:                   # @func0000000000000004
 	and	a0, a0, a1
-	srliw	a0, a0, 14
 	lui	a1, 1048575
+	srliw	a0, a0, 14
 	addiw	a1, a1, 196
 	czero.eqz	a0, a1, a0
 	lui	a1, 12

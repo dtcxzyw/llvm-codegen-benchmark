@@ -1,7 +1,7 @@
 func0000000000000008:                   # @func0000000000000008
 	slli	a2, a2, 32
-	srli	a2, a2, 32
 	slli	a0, a0, 4
+	srli	a2, a2, 32
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 16
@@ -21,10 +21,10 @@ func0000000000000048:                   # @func0000000000000048
 	ret
 func000000000000006a:                   # @func000000000000006a
 	sext.w	a2, a2
+	slli	a0, a0, 2
 	slli	a3, a2, 3
 	slli	a2, a2, 7
 	sub	a2, a2, a3
-	slli	a0, a0, 2
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 32
@@ -32,28 +32,28 @@ func000000000000006a:                   # @func000000000000006a
 func0000000000000042:                   # @func0000000000000042
 	sext.w	a2, a2
 	li	a3, 144
-	mul	a2, a2, a3
 	slli	a0, a0, 2
+	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, -80
 	ret
 func000000000000002a:                   # @func000000000000002a
 	li	a3, 9
-	slli	a3, a3, 35
 	slli	a2, a2, 32
-	mulhu	a2, a2, a3
 	slli	a0, a0, 3
+	slli	a3, a3, 35
+	mulhu	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 8
 	ret
 func000000000000002e:                   # @func000000000000002e
 	li	a3, 9
-	slli	a3, a3, 36
 	slli	a2, a2, 32
-	mulhu	a2, a2, a3
 	slli	a0, a0, 3
+	slli	a3, a3, 36
+	mulhu	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 72
@@ -70,8 +70,8 @@ func000000000000006e:                   # @func000000000000006e
 	ret
 func0000000000000000:                   # @func0000000000000000
 	slli	a2, a2, 32
-	srli	a2, a2, 32
 	slli	a0, a0, 4
+	srli	a2, a2, 32
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, -272
@@ -79,9 +79,9 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000040:                   # @func0000000000000040
 	sext.w	a2, a2
 	lui	a3, 1
+	slli	a0, a0, 3
 	addiw	a3, a3, -2024
 	mul	a2, a2, a3
-	slli	a0, a0, 3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, -2048
@@ -91,8 +91,8 @@ func000000000000000a:                   # @func000000000000000a
 	slli	a0, a0, 5
 	sub	a0, a0, a3
 	li	a3, 43
-	slli	a3, a3, 35
 	slli	a2, a2, 32
+	slli	a3, a3, 35
 	mulhu	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2

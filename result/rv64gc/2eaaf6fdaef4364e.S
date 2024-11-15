@@ -38,8 +38,8 @@ func000000000000001a:                   # @func000000000000001a
 func0000000000000002:                   # @func0000000000000002
 	andi	a3, a1, 1
 	li	a1, 535
-	slli	a1, a1, 36
 	slli	a2, a2, 32
+	slli	a1, a1, 36
 	mulhu	a1, a2, a1
 	add	a0, a0, a1
 	li	a1, 36
@@ -51,8 +51,8 @@ func0000000000000002:                   # @func0000000000000002
 func000000000000000b:                   # @func000000000000000b
 	andi	a3, a1, 1
 	li	a1, 143
-	slli	a1, a1, 35
 	slli	a2, a2, 32
+	slli	a1, a1, 35
 	mulhu	a1, a2, a1
 	add	a0, a0, a1
 	li	a1, 608

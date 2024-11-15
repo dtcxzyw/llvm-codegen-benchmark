@@ -48,11 +48,11 @@ func00000000000001fc:                   # @func00000000000001fc
 	andi	a2, a2, 255
 	slli	a1, a1, 6
 	or	a1, a1, a2
+	lui	a2, 272
 	or	a0, a0, a1
 	sext.w	a0, a0
-	lui	a1, 272
-	addiw	a1, a1, 1
-	xor	a0, a0, a1
+	addiw	a2, a2, 1
+	xor	a0, a0, a2
 	snez	a0, a0
 	ret
 func00000000000001f4:                   # @func00000000000001f4
@@ -65,9 +65,9 @@ func00000000000001f8:                   # @func00000000000001f8
 	andi	a2, a2, 255
 	slli	a1, a1, 6
 	or	a1, a1, a2
+	lui	a2, 16
 	or	a0, a0, a1
 	sext.w	a0, a0
-	lui	a1, 16
-	addiw	a1, a1, -561
+	addiw	a1, a2, -561
 	sltu	a0, a1, a0
 	ret

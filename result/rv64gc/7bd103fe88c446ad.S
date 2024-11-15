@@ -54,8 +54,8 @@ func0000000000000007:                   # @func0000000000000007
 	.word	0x40490fdb                      # float 3.14159274
 func0000000000000003:                   # @func0000000000000003
 	fadd.s	fa5, fa1, fa2
-	fadd.s	fa5, fa5, fa0
 	lui	a0, %hi(.LCPI5_0)
+	fadd.s	fa5, fa5, fa0
 	flw	fa4, %lo(.LCPI5_0)(a0)
 	lui	a0, 258048
 	fmv.w.x	fa3, a0

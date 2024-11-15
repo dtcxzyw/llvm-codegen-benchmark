@@ -9,8 +9,8 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000000:                   # @func0000000000000000
 	add	a0, a0, a1
-	addiw	a0, a0, 599
 	lui	a1, 174763
+	addiw	a0, a0, 599
 	addiw	a1, a1, -1365
 	mul	a1, a1, a0
 	srli	a2, a1, 63
@@ -22,8 +22,8 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func0000000000000005:                   # @func0000000000000005
 	add	a0, a0, a1
-	addiw	a0, a0, 600
 	lui	a1, 174763
+	addiw	a0, a0, 600
 	addiw	a1, a1, -1365
 	mul	a1, a1, a0
 	srli	a2, a1, 63

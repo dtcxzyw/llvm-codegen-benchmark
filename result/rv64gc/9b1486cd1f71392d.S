@@ -1,8 +1,8 @@
 func0000000000000011:                   # @func0000000000000011
 	li	a3, 31
+	li	a4, 27
 	slli	a3, a3, 11
 	and	a3, a3, a2
-	li	a4, 27
 	slli	a4, a4, 11
 	beq	a3, a4, .LBB0_2
 	or	a0, a1, a2

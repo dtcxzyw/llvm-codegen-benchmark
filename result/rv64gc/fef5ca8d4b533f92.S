@@ -1,6 +1,8 @@
 func000000000000003f:                   # @func000000000000003f
 	srliw	a2, a1, 2
+	lui	a3, 349525
 	slli	a2, a2, 1
+	addiw	a3, a3, 1365
 	or	a1, a1, a2
 	srliw	a2, a1, 3
 	slli	a2, a2, 1
@@ -16,23 +18,21 @@ func000000000000003f:                   # @func000000000000003f
 	or	a1, a1, a2
 	not	a1, a1
 	srli	a2, a1, 1
-	lui	a3, 349525
-	addiw	a3, a3, 1365
 	and	a2, a2, a3
+	lui	a3, 209715
+	addiw	a3, a3, 819
 	andi	a1, a1, -2
 	sub	a1, a1, a2
-	lui	a2, 209715
-	addiw	a2, a2, 819
-	and	a3, a1, a2
+	and	a2, a1, a3
 	srli	a1, a1, 2
-	and	a1, a1, a2
-	add	a1, a1, a3
+	and	a1, a1, a3
+	lui	a3, 61681
+	add	a1, a1, a2
 	srli	a2, a1, 4
 	add	a1, a1, a2
-	lui	a2, 61681
-	addi	a2, a2, -241
-	and	a1, a1, a2
 	lui	a2, 4112
+	addi	a3, a3, -241
+	and	a1, a1, a3
 	addi	a2, a2, 257
 	mul	a1, a1, a2
 	srliw	a1, a1, 24

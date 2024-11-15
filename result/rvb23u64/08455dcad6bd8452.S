@@ -3,9 +3,9 @@
 func000000000000003f:                   # @func000000000000003f
 	lui	a3, %hi(.LCPI0_0)
 	ld	a3, %lo(.LCPI0_0)(a3)
-	sh2add	a2, a2, a2
 	add	a0, a0, a1
-	add	a0, a0, a2
+	sh2add	a1, a2, a2
+	add	a0, a0, a1
 	mulhu	a1, a0, a3
 	srli	a1, a1, 5
 	sh3add	a1, a1, a1
@@ -16,9 +16,9 @@ func000000000000003f:                   # @func000000000000003f
 	.quad	19342813113834067               # 0x44b82fa09b5a53
 func000000000000003c:                   # @func000000000000003c
 	lui	a3, 244141
-	addiw	a3, a3, -1536
 	add	a0, a0, a1
 	lui	a1, %hi(.LCPI1_0)
+	addiw	a3, a3, -1536
 	ld	a1, %lo(.LCPI1_0)(a1)
 	mul	a2, a2, a3
 	add	a0, a0, a2
@@ -32,9 +32,9 @@ func000000000000003c:                   # @func000000000000003c
 	.quad	3667970486771497111             # 0x32e73fb956a1b897
 func0000000000000000:                   # @func0000000000000000
 	lui	a3, 2575
-	addiw	a3, a3, -325
 	add	a0, a0, a1
 	lui	a1, %hi(.LCPI2_0)
+	addiw	a3, a3, -325
 	ld	a1, %lo(.LCPI2_0)(a1)
 	slli	a3, a3, 13
 	mul	a2, a2, a3

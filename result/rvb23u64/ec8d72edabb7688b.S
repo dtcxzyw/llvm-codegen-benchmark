@@ -12,8 +12,8 @@ func000000000000002a:                   # @func000000000000002a
 	srai	a2, a2, 4
 	add	a2, a2, a3
 	li	a3, 88
-	mul	a2, a2, a3
 	mul	a0, a0, a3
+	mul	a2, a2, a3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

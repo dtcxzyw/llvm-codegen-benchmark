@@ -31,14 +31,14 @@ func00000000000001f4:                   # @func00000000000001f4
 func00000000000003f8:                   # @func00000000000003f8
 	sext.w	a1, a1
 	lui	a2, 244
+	sext.w	a0, a0
 	addiw	a2, a2, 576
 	mul	a1, a1, a2
-	sext.w	a0, a0
+	lui	a2, 2575
+	addiw	a2, a2, -325
 	add	a0, a0, a1
-	lui	a1, 2575
-	addiw	a1, a1, -325
-	slli	a1, a1, 13
-	sltu	a0, a1, a0
+	slli	a2, a2, 13
+	sltu	a0, a2, a0
 	ret
 func000000000000035a:                   # @func000000000000035a
 	sext.w	a1, a1

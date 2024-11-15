@@ -25,9 +25,9 @@ func0000000000000082:                   # @func0000000000000082
 	lui	a0, 1048575
 	addi	a0, a0, 441
 	vadd.vx	v10, v10, a0
-	vmsleu.vi	v12, v10, 7
 	lui	a0, 1
 	addi	a0, a0, -460
+	vmsleu.vi	v12, v10, 7
 	vmseq.vx	v10, v8, a0
 	vmor.mm	v0, v10, v12
 	ret

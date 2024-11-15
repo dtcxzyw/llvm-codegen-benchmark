@@ -3,11 +3,11 @@ func0000000000000055:                   # @func0000000000000055
 	lui	a2, 67109
 	addiw	a2, a2, -557
 	mul	a1, a1, a2
-	srli	a1, a1, 38
 	li	a2, -1000
+	srli	a1, a1, 38
 	mul	a1, a1, a2
+	lui	a2, 244
 	add	a0, a0, a1
-	lui	a1, 244
-	addiw	a1, a1, 576
+	addiw	a1, a2, 576
 	mul	a0, a0, a1
 	ret

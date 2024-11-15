@@ -16,8 +16,8 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func0000000000000001:                   # @func0000000000000001
 	sext.w	a0, a0
-	snez	a0, a0
 	andi	a3, a2, 1
+	snez	a0, a0
 	li	a2, 1012
 	bnez	a3, .LBB1_2
 	li	a2, 1008
@@ -28,8 +28,8 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000031:                   # @func0000000000000031
 	sext.w	a0, a0
-	snez	a0, a0
 	andi	a2, a2, 1
+	snez	a0, a0
 	addi	a2, a2, -1
 	andi	a2, a2, 16
 	or	a1, a1, a2

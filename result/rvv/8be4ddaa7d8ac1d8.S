@@ -48,8 +48,8 @@ func00000000000000a2:                   # @func00000000000000a2
 	vmv.v.i	v14, 1
 	vsll.vv	v12, v14, v12
 	vsll.vv	v10, v14, v10
+	vmv.v.i	v14, 14
 	vor.vv	v10, v10, v12
-	vmv.v.i	v12, 14
-	vsll.vv	v8, v12, v8
+	vsll.vv	v8, v14, v8
 	vor.vv	v8, v10, v8
 	ret

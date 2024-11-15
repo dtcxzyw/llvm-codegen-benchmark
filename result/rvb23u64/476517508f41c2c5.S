@@ -1,8 +1,8 @@
 func00000000000000c4:                   # @func00000000000000c4
 	zext.h	a1, a1
 	add	a0, a0, a1
-	addi	a0, a0, 2
 	lui	a1, 16
+	addi	a0, a0, 2
 	addiw	a1, a1, 1
 	sltu	a0, a0, a1
 	ret

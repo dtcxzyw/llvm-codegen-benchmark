@@ -30,8 +30,8 @@ func0000000000000011:                   # @func0000000000000011
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vx	v0, v10, a0
 	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
 	li	a0, 57
+	vmerge.vim	v10, v10, 1, v0
 	vxor.vx	v10, v10, a0
 	li	a0, 32
 	vmv1r.v	v0, v12

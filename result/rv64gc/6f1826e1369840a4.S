@@ -3,11 +3,11 @@ func000000000000001a:                   # @func000000000000001a
 	li	a2, 27
 	slli	a2, a2, 11
 	xor	a1, a1, a2
+	lui	a2, 272
 	snez	a1, a1
 	addi	a1, a1, -1
 	or	a0, a0, a1
 	sext.w	a1, a0
-	lui	a2, 272
 	addiw	a2, a2, -1
 	slt	a1, a2, a1
 	neg	a1, a1

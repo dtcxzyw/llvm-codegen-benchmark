@@ -2,9 +2,9 @@ func0000000000000002:                   # @func0000000000000002
 	lui	a0, 131584
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
+	lui	a0, 1536
 	vmseq.vi	v12, v10, 0
 	vmand.mm	v0, v12, v0
-	lui	a0, 1536
 	vmv.v.x	v10, a0
 	lui	a0, 1024
 	vmerge.vxm	v10, v10, a0, v0
@@ -14,9 +14,9 @@ func0000000000000018:                   # @func0000000000000018
 	lui	a0, 3072
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
+	lui	a0, 1536
 	vmsne.vi	v12, v10, 0
 	vmand.mm	v0, v12, v0
-	lui	a0, 1536
 	vmv.v.x	v10, a0
 	lui	a0, 1024
 	vmerge.vxm	v10, v10, a0, v0

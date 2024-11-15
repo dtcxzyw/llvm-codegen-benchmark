@@ -24,10 +24,10 @@ func0000000000000016:                   # @func0000000000000016
 	ret
 func000000000000000a:                   # @func000000000000000a
 	subw	a1, a1, a2
+	lui	a2, 131072
 	addw	a0, a0, a1
-	lui	a1, 131072
-	addiw	a1, a1, -1
-	slt	a0, a1, a0
+	addiw	a2, a2, -1
+	slt	a0, a2, a0
 	ret
 func0000000000000006:                   # @func0000000000000006
 	subw	a1, a1, a2
@@ -66,8 +66,8 @@ func000000000000010a:                   # @func000000000000010a
 	ret
 func000000000000003a:                   # @func000000000000003a
 	subw	a1, a1, a2
+	lui	a2, 1
 	addw	a0, a0, a1
-	lui	a1, 1
-	addiw	a1, a1, -1
-	slt	a0, a1, a0
+	addiw	a2, a2, -1
+	slt	a0, a2, a0
 	ret

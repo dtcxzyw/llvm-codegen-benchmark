@@ -5,9 +5,9 @@ func000000000000005a:                   # @func000000000000005a
 	ret
 func000000000000001a:                   # @func000000000000001a
 	slli	a2, a2, 29
+	slli	a1, a1, 3
 	srai	a2, a2, 32
 	slli	a2, a2, 3
-	slli	a1, a1, 3
 	sub	a0, a0, a1
 	add	a0, a0, a2
 	ret

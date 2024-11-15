@@ -36,23 +36,23 @@ func0000000000000018:                   # @func0000000000000018
 	andi	a1, a1, 1
 	lui	a3, 7
 	addi	a3, a3, 1620
-	czero.nez	a3, a3, a1
-	czero.eqz	a1, a2, a1
-	or	a1, a1, a3
+	czero.eqz	a2, a2, a1
+	czero.nez	a1, a3, a1
+	lui	a3, 1048573
+	or	a1, a1, a2
 	subw	a0, a0, a1
-	lui	a1, 1048573
-	addiw	a1, a1, 1619
+	addiw	a1, a3, 1619
 	sltu	a0, a1, a0
 	ret
 func0000000000000014:                   # @func0000000000000014
 	andi	a1, a1, 1
 	lui	a3, 7
 	addi	a3, a3, 1620
-	czero.nez	a3, a3, a1
-	czero.eqz	a1, a2, a1
-	or	a1, a1, a3
+	czero.eqz	a2, a2, a1
+	czero.nez	a1, a3, a1
+	lui	a3, 3
+	or	a1, a1, a2
 	subw	a0, a0, a1
-	lui	a1, 3
-	addiw	a1, a1, -1620
+	addiw	a1, a3, -1620
 	sltu	a0, a0, a1
 	ret

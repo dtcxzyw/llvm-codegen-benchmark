@@ -34,8 +34,8 @@ func000000000000000c:                   # @func000000000000000c
 	lui	a2, 61681
 	addi	a2, a2, -241
 	and	a1, a1, a2
+	lui	a2, 4112
 	add	a0, a0, a1
-	lui	a1, 4112
-	addi	a1, a1, 257
+	addi	a1, a2, 257
 	mulw	a0, a0, a1
 	ret

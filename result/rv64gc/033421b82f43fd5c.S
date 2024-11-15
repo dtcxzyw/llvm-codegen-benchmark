@@ -47,11 +47,11 @@ func0000000000000062:                   # @func0000000000000062
 	ret
 func0000000000000060:                   # @func0000000000000060
 	addi	a1, a1, -1
+	lui	a2, 6
 	slli	a1, a1, 33
+	addiw	a2, a2, -1952
 	srli	a1, a1, 33
 	slli	a1, a1, 4
-	lui	a2, 6
-	addiw	a2, a2, -1952
 	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

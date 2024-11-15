@@ -11,8 +11,8 @@ func0000000000000374:                   # @func0000000000000374
 	ret
 func0000000000000344:                   # @func0000000000000344
 	addi	a1, a1, 1
-	sltu	a0, a1, a0
 	fmv.w.x	fa5, zero
+	sltu	a0, a1, a0
 	flt.s	a1, fa5, fa0
 	and	a0, a0, a1
 	ret

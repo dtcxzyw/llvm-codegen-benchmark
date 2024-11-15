@@ -1,18 +1,18 @@
 func0000000000000384:                   # @func0000000000000384
 	andi	a1, a1, 14
-	addi	a1, a1, -14
-	snez	a1, a1
 	srliw	a0, a0, 11
+	addi	a1, a1, -14
 	sltiu	a0, a0, 27
+	snez	a1, a1
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
 func0000000000000184:                   # @func0000000000000184
 	andi	a1, a1, 14
-	addi	a1, a1, -14
-	snez	a1, a1
 	srliw	a0, a0, 11
+	addi	a1, a1, -14
 	sltiu	a0, a0, 27
+	snez	a1, a1
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
@@ -36,8 +36,8 @@ func0000000000000084:                   # @func0000000000000084
 	sext.w	a0, a0
 	andi	a1, a1, 14
 	addi	a1, a1, -14
-	snez	a1, a1
 	sltiu	a0, a0, 864
+	snez	a1, a1
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret

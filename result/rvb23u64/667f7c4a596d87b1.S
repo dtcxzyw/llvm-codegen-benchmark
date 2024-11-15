@@ -1,8 +1,8 @@
 func0000000000000008:                   # @func0000000000000008
 	lui	a3, 524288
 	addiw	a4, a3, -2
-	sltu	a2, a2, a4
 	addiw	a3, a3, -1
+	sltu	a2, a2, a4
 	czero.nez	a3, a3, a2
 	czero.eqz	a1, a1, a2
 	or	a1, a1, a3

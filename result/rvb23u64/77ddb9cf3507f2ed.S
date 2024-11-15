@@ -1,7 +1,7 @@
 func0000000000000048:                   # @func0000000000000048
 	srli	a2, a2, 3
-	sltu	a1, a1, a2
 	srli	a0, a0, 16
+	sltu	a1, a1, a2
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -39,8 +39,8 @@ func000000000000008c:                   # @func000000000000008c
 	ret
 func0000000000000084:                   # @func0000000000000084
 	srli	a2, a2, 2
-	sltu	a1, a2, a1
 	srli	a0, a0, 14
+	sltu	a1, a2, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

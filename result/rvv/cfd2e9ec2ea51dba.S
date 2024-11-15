@@ -1,8 +1,8 @@
 func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v0, v12, 0
-	vmerge.vvm	v8, v10, v8, v0
 	lui	a0, 33825
+	vmerge.vvm	v8, v10, v8, v0
 	addi	a0, a0, 133
 	vmulhu.vx	v10, v8, a0
 	vsub.vv	v12, v8, v10

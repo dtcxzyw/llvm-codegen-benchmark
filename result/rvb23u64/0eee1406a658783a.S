@@ -1,7 +1,7 @@
 func0000000000000008:                   # @func0000000000000008
 	addiw	a1, a1, -300
-	sltiu	a1, a1, -100
 	lui	a2, 1048572
+	sltiu	a1, a1, -100
 	addiw	a2, a2, 73
 	czero.nez	a1, a2, a1
 	lui	a2, 8

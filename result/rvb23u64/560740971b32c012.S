@@ -32,10 +32,10 @@ func0000000000000041:                   # @func0000000000000041
 	ret
 func0000000000000008:                   # @func0000000000000008
 	min	a1, a1, a2
+	li	a2, -17
 	sub	a0, a0, a1
-	li	a1, -17
-	srli	a1, a1, 2
-	sltu	a0, a1, a0
+	srli	a2, a2, 2
+	sltu	a0, a2, a0
 	ret
 func000000000000004a:                   # @func000000000000004a
 	min	a1, a1, a2

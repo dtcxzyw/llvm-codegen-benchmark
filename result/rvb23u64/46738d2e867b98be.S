@@ -43,8 +43,8 @@ func0000000000000006:                   # @func0000000000000006
 	lui	a3, 5
 	addiw	a3, a3, 1028
 	sh3add	a1, a1, a3
-	addiw	a1, a1, 96
 	or	a2, a2, a3
+	addiw	a1, a1, 96
 	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2

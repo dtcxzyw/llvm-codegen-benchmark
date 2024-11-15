@@ -9,9 +9,9 @@ func0000000000000035:                   # @func0000000000000035
 	zext.h	a1, a1
 	li	a2, 365
 	mul	a0, a0, a2
+	lui	a2, 1048568
 	add	a0, a0, a1
-	lui	a1, 1048568
-	addi	a1, a1, 723
+	addi	a1, a2, 723
 	addw	a0, a0, a1
 	ret
 func000000000000003f:                   # @func000000000000003f

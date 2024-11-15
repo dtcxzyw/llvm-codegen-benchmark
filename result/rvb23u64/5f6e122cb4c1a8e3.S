@@ -4,10 +4,10 @@ func0000000000000022:                   # @func0000000000000022
 	addi	a2, a2, -4
 	seqz	a2, a2
 	or	a1, a1, a2
-	seqz	a2, a3
-	and	a1, a1, a2
-	czero.nez	a0, a0, a1
 	li	a2, -5
+	seqz	a3, a3
+	and	a1, a1, a3
+	czero.nez	a0, a0, a1
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret

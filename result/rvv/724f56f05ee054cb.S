@@ -20,12 +20,12 @@ func0000000000000004:                   # @func0000000000000004
 	vmulh.vx	v10, v10, a0
 	li	a0, 63
 	vsrl.vx	v12, v10, a0
+	lui	a0, 437
 	vsrl.vi	v10, v10, 13
 	vadd.vv	v10, v10, v12
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
 	vadd.vv	v8, v9, v8
-	lui	a0, 437
 	addi	a0, a0, 43
 	vadd.vx	v8, v8, a0
 	ret
@@ -51,12 +51,12 @@ func0000000000000005:                   # @func0000000000000005
 	vmulh.vx	v10, v10, a0
 	li	a0, 63
 	vsrl.vx	v12, v10, a0
+	lui	a0, 176
 	vsrl.vi	v10, v10, 25
 	vadd.vv	v10, v10, v12
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
 	vadd.vv	v8, v9, v8
-	lui	a0, 176
 	addi	a0, a0, -1428
 	vadd.vx	v8, v8, a0
 	ret
@@ -71,11 +71,11 @@ func0000000000000015:                   # @func0000000000000015
 	vsrl.vx	v12, v10, a0
 	li	a0, 45
 	vsra.vx	v10, v10, a0
+	lui	a0, 176
 	vadd.vv	v10, v10, v12
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
 	vadd.vv	v8, v9, v8
-	lui	a0, 176
 	addi	a0, a0, -1428
 	vadd.vx	v8, v8, a0
 	ret

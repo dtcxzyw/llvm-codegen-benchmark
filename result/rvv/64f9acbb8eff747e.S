@@ -3,8 +3,8 @@ func0000000000000014:                   # @func0000000000000014
 	vwsll.vi	v10, v9, 16
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vzext.vf2	v12, v8
-	vor.vv	v8, v10, v12
 	lui	a0, 912092
+	vor.vv	v8, v10, v12
 	addi	a0, a0, -260
 	vadd.vx	v8, v8, a0
 	ret
@@ -13,8 +13,8 @@ func0000000000000019:                   # @func0000000000000019
 	vwsll.vi	v10, v9, 8
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vzext.vf2	v12, v8
-	vor.vv	v8, v10, v12
 	li	a0, -3
+	vor.vv	v8, v10, v12
 	slli	a0, a0, 10
 	vadd.vx	v8, v8, a0
 	ret

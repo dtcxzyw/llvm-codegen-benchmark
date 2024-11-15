@@ -21,8 +21,8 @@ func0000000000000216:                   # @func0000000000000216
 	ret
 func0000000000000181:                   # @func0000000000000181
 	sext.w	a2, a2
-	slti	a2, a2, 0
 	li	a3, 1
+	slti	a2, a2, 0
 	czero.nez	a3, a3, a2
 	czero.eqz	a1, a1, a2
 	or	a1, a1, a3
@@ -45,8 +45,8 @@ func0000000000000186:                   # @func0000000000000186
 	ret
 func000000000000021a:                   # @func000000000000021a
 	sext.w	a2, a2
-	sltiu	a2, a2, 2
 	li	a3, 1
+	sltiu	a2, a2, 2
 	czero.eqz	a3, a3, a2
 	czero.nez	a1, a1, a2
 	or	a1, a1, a3
@@ -106,9 +106,9 @@ func0000000000000184:                   # @func0000000000000184
 	sext.w	a2, a2
 	slti	a2, a2, 10
 	czero.eqz	a1, a1, a2
+	lui	a2, 22
 	addw	a0, a0, a1
-	lui	a1, 22
-	addiw	a1, a1, 588
+	addiw	a1, a2, 588
 	sltu	a0, a0, a1
 	ret
 func0000000000000296:                   # @func0000000000000296

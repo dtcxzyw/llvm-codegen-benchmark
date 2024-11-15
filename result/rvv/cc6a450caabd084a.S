@@ -11,8 +11,8 @@ func0000000000000005:                   # @func0000000000000005
 func0000000000000007:                   # @func0000000000000007
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vi	v8, v8, 4
-	vmseq.vi	v0, v8, 0
 	lui	a0, 4024
+	vmseq.vi	v0, v8, 0
 	addi	a0, a0, -2048
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmv.v.x	v8, a0

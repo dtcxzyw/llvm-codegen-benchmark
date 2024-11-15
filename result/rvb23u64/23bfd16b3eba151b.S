@@ -63,8 +63,8 @@ func0000000000000048:                   # @func0000000000000048
 	sext.w	a0, a0
 	lui	a1, 264704
 	fmv.w.x	fa5, a1
-	flt.s	a1, fa5, fa0
 	sltiu	a0, a0, 3
+	flt.s	a1, fa5, fa0
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

@@ -65,8 +65,8 @@ func0000000000000006:                   # @func0000000000000006
 	li	a0, 51
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vx	v8, v8, a0
-	vadd.vv	v8, v8, v10
 	li	a0, -1
+	vadd.vv	v8, v8, v10
 	slli	a0, a0, 51
 	vand.vx	v8, v8, a0
 	ret
@@ -74,8 +74,8 @@ func000000000000000e:                   # @func000000000000000e
 	li	a0, 48
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vx	v8, v8, a0
-	vadd.vv	v8, v8, v10
 	li	a0, -1
+	vadd.vv	v8, v8, v10
 	slli	a0, a0, 48
 	vand.vx	v8, v8, a0
 	ret

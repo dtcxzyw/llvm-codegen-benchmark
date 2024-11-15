@@ -13,8 +13,8 @@ func000000000000000d:                   # @func000000000000000d
 func0000000000000003:                   # @func0000000000000003
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
-	vfadd.vv	v16, v16, v24
 	fli.d	fa5, 0.5
+	vfadd.vv	v16, v16, v24
 	fneg.d	fa5, fa5
 	vfadd.vf	v16, v16, fa5
 	vmfle.vv	v24, v8, v16

@@ -35,10 +35,10 @@ func000000000000006c:                   # @func000000000000006c
 	vmerge.vvm	v8, v10, v8, v0
 	ret
 func0000000000000004:                   # @func0000000000000004
-	lui	a0, 1
-	lui	a1, 522240
+	lui	a0, 522240
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vmsltu.vx	v0, v10, a1
+	vmsltu.vx	v0, v10, a0
+	lui	a0, 1
 	vadd.vx	v10, v12, a0
 	vsrl.vi	v8, v10, 13, v0.t
 	ret

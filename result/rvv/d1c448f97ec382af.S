@@ -2,8 +2,8 @@ func0000000000000210:                   # @func0000000000000210
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfeq.vf	v16, v8, fa5
-	vmor.mm	v16, v16, v0
 	fli.d	fa5, 1.0
+	vmor.mm	v16, v16, v0
 	vmfeq.vf	v17, v8, fa5
 	vmor.mm	v0, v17, v16
 	ret
@@ -11,8 +11,8 @@ func0000000000000298:                   # @func0000000000000298
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfle.vf	v16, v8, fa5
-	vmor.mm	v16, v16, v0
 	fli.d	fa5, 1.0
+	vmor.mm	v16, v16, v0
 	vmfge.vf	v17, v8, fa5
 	vmor.mm	v0, v17, v16
 	ret
@@ -20,8 +20,8 @@ func0000000000000088:                   # @func0000000000000088
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v16, v8, fa5
-	vmor.mm	v16, v16, v0
 	fli.d	fa5, 1.0
+	vmor.mm	v16, v16, v0
 	vmfgt.vf	v17, v8, fa5
 	vmor.mm	v0, v17, v16
 	ret
@@ -48,16 +48,16 @@ func0000000000000214:                   # @func0000000000000214
 	fli.d	fa5, inf
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfeq.vf	v16, v8, fa5
-	vmor.mm	v16, v16, v0
 	fmv.d.x	fa5, zero
+	vmor.mm	v16, v16, v0
 	vmfle.vf	v17, v8, fa5
 	vmor.mm	v0, v17, v16
 	ret
 func0000000000000054:                   # @func0000000000000054
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfne.vv	v16, v8, v8
-	vmor.mm	v16, v16, v0
 	fmv.d.x	fa5, zero
+	vmor.mm	v16, v16, v0
 	vmfle.vf	v17, v8, fa5
 	vmor.mm	v0, v17, v16
 	ret
@@ -72,8 +72,8 @@ func0000000000000282:                   # @func0000000000000282
 func0000000000000044:                   # @func0000000000000044
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfne.vv	v16, v8, v8
-	vmor.mm	v16, v16, v0
 	fmv.d.x	fa5, zero
+	vmor.mm	v16, v16, v0
 	vmflt.vf	v17, v8, fa5
 	vmor.mm	v0, v17, v16
 	ret
@@ -107,9 +107,9 @@ func0000000000000048:                   # @func0000000000000048
 	.quad	0x433fffffffffffff              # double 9007199254740991
 func000000000000024a:                   # @func000000000000024a
 	fli.d	fa5, inf
+	lui	a0, %hi(.LCPI11_0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v16, v8, fa5
-	lui	a0, %hi(.LCPI11_0)
 	fld	fa4, %lo(.LCPI11_0)(a0)
 	vmfgt.vf	v17, v8, fa5
 	vmor.mm	v16, v17, v16

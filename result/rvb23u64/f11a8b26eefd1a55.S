@@ -11,8 +11,8 @@ func00000000000000a1:                   # @func00000000000000a1
 	sext.w	a1, a1
 	sext.w	a2, a2
 	slti	a2, a2, 3
-	xori	a2, a2, 1
 	seqz	a1, a1
+	xori	a2, a2, 1
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret

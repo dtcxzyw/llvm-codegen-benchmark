@@ -1,7 +1,7 @@
 func0000000000000005:                   # @func0000000000000005
+	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, mu
 	vfmul.vv	v8, v8, v12, v0.t
-	fmv.w.x	fa5, zero
 	vmfle.vf	v12, v8, fa5
 	vmnot.m	v0, v12
 	ret
@@ -26,23 +26,23 @@ func000000000000000b:                   # @func000000000000000b
 	vmnot.m	v0, v12
 	ret
 func0000000000000008:                   # @func0000000000000008
+	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, mu
 	vfmul.vv	v8, v8, v12, v0.t
-	fmv.w.x	fa5, zero
 	vmfeq.vf	v0, v8, fa5
 	ret
 func0000000000000009:                   # @func0000000000000009
+	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, mu
 	vfmul.vv	v8, v8, v12, v0.t
-	fmv.w.x	fa5, zero
 	vmflt.vf	v12, v8, fa5
 	vmfgt.vf	v13, v8, fa5
 	vmnor.mm	v0, v13, v12
 	ret
 func0000000000000002:                   # @func0000000000000002
+	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, mu
 	vfmul.vv	v8, v8, v12, v0.t
-	fmv.w.x	fa5, zero
 	vmflt.vf	v0, v8, fa5
 	ret
 .LCPI6_0:

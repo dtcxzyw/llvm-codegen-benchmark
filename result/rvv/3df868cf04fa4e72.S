@@ -1,33 +1,35 @@
 func000000000000000d:                   # @func000000000000000d
 	li	a0, 255
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v10, v8, a0
-	vmv.v.i	v8, -3
+	vmv.v.i	v10, -3
+	vand.vx	v8, v8, a0
 	li	a0, 3
-	vmacc.vx	v8, a0, v10
+	vmacc.vx	v10, a0, v8
+	vmv.v.v	v8, v10
 	ret
 func000000000000000f:                   # @func000000000000000f
+	li	a0, 57
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.x	v10, a0
 	lui	a0, 524288
 	addiw	a0, a0, -1
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v10, v8, a0
-	li	a0, 57
-	vmv.v.x	v8, a0
+	vand.vx	v8, v8, a0
 	li	a0, 72
-	vmacc.vx	v8, a0, v10
+	vmacc.vx	v10, a0, v8
+	vmv.v.v	v8, v10
 	ret
 func000000000000000e:                   # @func000000000000000e
 	lui	a0, 2032
+	lui	a1, 522248
 	addiw	a0, a0, 127
-	slli	a1, a0, 32
-	add	a0, a0, a1
+	addiw	a1, a1, -128
+	slli	a2, a0, 32
+	add	a0, a0, a2
+	slli	a2, a1, 32
+	add	a1, a1, a2
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v8, a0
-	lui	a0, 522248
-	addiw	a0, a0, -128
-	slli	a1, a0, 32
-	add	a0, a0, a1
-	vmv.v.x	v8, a0
+	vmv.v.x	v8, a1
 	li	a0, 3
 	vmacc.vx	v8, a0, v10
 	ret

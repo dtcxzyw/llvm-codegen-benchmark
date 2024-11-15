@@ -1,8 +1,8 @@
 func0000000000000004:                   # @func0000000000000004
 	sh2add	a0, a0, a0
+	lui	a1, 1
 	slli	a0, a0, 3
 	addiw	a0, a0, 16
-	lui	a1, 1
 	addiw	a1, a1, 1
 	sltu	a0, a0, a1
 	ret
@@ -21,10 +21,10 @@ func0000000000000008:                   # @func0000000000000008
 	addi	a0, a0, -108
 	slli	a1, a0, 6
 	subw	a1, a1, a0
-	addiw	a0, a1, -46
-	lui	a1, 1048574
-	addiw	a1, a1, 1292
-	sltu	a0, a0, a1
+	lui	a0, 1048574
+	addiw	a1, a1, -46
+	addiw	a0, a0, 1292
+	sltu	a0, a1, a0
 	ret
 func0000000000000044:                   # @func0000000000000044
 	slli	a1, a0, 5

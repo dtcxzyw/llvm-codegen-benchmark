@@ -15,8 +15,8 @@ func0000000000000006:                   # @func0000000000000006
 	vmslt.vx	v0, v8, a0
 	li	a0, 128
 	vmv.v.x	v12, a0
-	vmerge.vvm	v8, v12, v8, v0
 	li	a0, -128
+	vmerge.vvm	v8, v12, v8, v0
 	vmv1r.v	v0, v10
 	vmerge.vxm	v8, v8, a0, v0
 	ret

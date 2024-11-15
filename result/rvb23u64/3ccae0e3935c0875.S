@@ -15,9 +15,9 @@ func000000000000000c:                   # @func000000000000000c
 	lui	a1, 6
 	addi	a1, a1, -983
 	mul	a0, a0, a1
+	lui	a1, 1
 	addi	a0, a0, 1310
 	zext.h	a0, a0
-	lui	a1, 1
 	addiw	a1, a1, -1476
 	sltu	a0, a1, a0
 	ret

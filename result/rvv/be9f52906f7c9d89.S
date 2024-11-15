@@ -5,10 +5,10 @@ func000000000000000b:                   # @func000000000000000b
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
+	li	a1, -2
 	vmul.vx	v8, v8, a0
-	li	a0, -2
 	csrwi	vxrm, 2
-	vaadd.vx	v8, v8, a0
+	vaadd.vx	v8, v8, a1
 	ret
 .LCPI1_0:
 	.quad	3074457345618258603             # 0x2aaaaaaaaaaaaaab
@@ -19,9 +19,9 @@ func0000000000000003:                   # @func0000000000000003
 	vmulh.vx	v8, v8, a0
 	li	a0, 63
 	vsrl.vx	v10, v8, a0
+	li	a0, -2
 	vsra.vi	v8, v8, 1
 	vadd.vv	v8, v8, v10
-	li	a0, -2
 	csrwi	vxrm, 2
 	vaadd.vx	v8, v8, a0
 	ret

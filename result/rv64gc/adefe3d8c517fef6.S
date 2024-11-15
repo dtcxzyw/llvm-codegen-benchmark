@@ -5,9 +5,9 @@ func0000000000000016:                   # @func0000000000000016
 	ret
 func0000000000000018:                   # @func0000000000000018
 	srliw	a1, a0, 7
+	lui	a2, 1048555
 	sltiu	a1, a1, 675
 	addi	a1, a1, -1
-	lui	a2, 1048555
 	addi	a2, a2, -384
 	and	a1, a1, a2
 	addw	a0, a0, a1

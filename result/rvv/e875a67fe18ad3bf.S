@@ -38,9 +38,9 @@ func0000000000000001:                   # @func0000000000000001
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vi	v12, v12, 1
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vzext.vf2	v14, v12
-	vmv.v.i	v12, -1
-	vsll.vv	v12, v12, v14
+	vmv.v.i	v14, -1
+	vzext.vf2	v16, v12
+	vsll.vv	v12, v14, v16
 	vand.vv	v8, v8, v10
 	vand.vv	v8, v8, v12
 	ret

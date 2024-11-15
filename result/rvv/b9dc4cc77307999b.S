@@ -36,9 +36,9 @@ func00000000000000a3:                   # @func00000000000000a3
 func0000000000000043:                   # @func0000000000000043
 	lui	a0, 1048568
 	addi	a1, a0, 512
+	addi	a0, a0, 768
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v10, v10, a1
-	addi	a0, a0, 768
 	vmsltu.vx	v0, v10, a0
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0

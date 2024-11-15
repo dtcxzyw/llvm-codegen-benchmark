@@ -1,19 +1,19 @@
 func000000000000002a:                   # @func000000000000002a
 	slli	a2, a2, 32
-	srli	a2, a2, 27
-	add	a0, a0, a2
 	slli	a1, a1, 63
+	srli	a2, a2, 27
 	srai	a1, a1, 63
+	add	a0, a0, a2
 	andi	a1, a1, -32
 	add	a0, a0, a1
 	addi	a0, a0, 31
 	ret
 func000000000000006a:                   # @func000000000000006a
 	sext.w	a2, a2
-	slli	a2, a2, 5
-	add	a0, a0, a2
 	slli	a1, a1, 63
+	slli	a2, a2, 5
 	srai	a1, a1, 63
+	add	a0, a0, a2
 	andi	a1, a1, -32
 	add	a0, a0, a1
 	addi	a0, a0, 29

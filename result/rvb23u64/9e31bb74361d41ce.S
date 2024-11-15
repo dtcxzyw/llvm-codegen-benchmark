@@ -32,10 +32,10 @@ func0000000000000653:                   # @func0000000000000653
 	ret
 func0000000000000c42:                   # @func0000000000000c42
 	fmv.d.x	fa5, zero
-	fle.d	a0, fa5, fa0
-	flt.d	a1, fa5, fa1
-	fli.d	fa5, 1.0
-	flt.d	a2, fa0, fa5
-	and	a1, a1, a2
+	flt.d	a0, fa5, fa1
+	fli.d	fa4, 1.0
+	fle.d	a1, fa5, fa0
+	flt.d	a2, fa0, fa4
+	and	a0, a0, a2
 	and	a0, a0, a1
 	ret

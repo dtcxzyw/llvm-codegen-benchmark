@@ -36,8 +36,8 @@ func000000000000009a:                   # @func000000000000009a
 	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wx	v9, v10, a0
-	vadd.vv	v8, v9, v8
 	lui	a0, 490
+	vadd.vv	v8, v9, v8
 	addi	a0, a0, -1018
 	vmsgt.vx	v0, v8, a0
 	ret
@@ -127,8 +127,8 @@ func0000000000000088:                   # @func0000000000000088
 	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wx	v9, v10, a0
-	vadd.vv	v8, v9, v8
 	lui	a0, 244141
+	vadd.vv	v8, v9, v8
 	addi	a0, a0, -1537
 	vmsgtu.vx	v0, v8, a0
 	ret

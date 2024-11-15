@@ -32,8 +32,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	sext.w	a0, a0
 	andi	a1, a1, 1023
 	addi	a1, a1, -19
-	seqz	a1, a1
 	addi	a0, a0, -2
+	seqz	a1, a1
 	snez	a0, a0
 	xor	a0, a0, a1
 	ret

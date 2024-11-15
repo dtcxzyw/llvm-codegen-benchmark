@@ -3,14 +3,14 @@
 func0000000000000074:                   # @func0000000000000074
 	sub	a2, a2, a1
 	lui	a1, 299593
+	lui	a3, %hi(.LCPI0_0)
 	addiw	a1, a1, 585
-	slli	a3, a1, 33
-	lui	a4, %hi(.LCPI0_0)
-	ld	a4, %lo(.LCPI0_0)(a4)
-	add	a1, a1, a3
+	ld	a3, %lo(.LCPI0_0)(a3)
+	slli	a4, a1, 33
+	add	a1, a1, a4
 	srai	a2, a2, 3
 	mul	a1, a2, a1
-	add	a1, a1, a4
+	add	a1, a1, a3
 	sltu	a0, a1, a0
 	ret
 .LCPI1_0:
@@ -18,14 +18,14 @@ func0000000000000074:                   # @func0000000000000074
 func0000000000000054:                   # @func0000000000000054
 	sub	a2, a2, a1
 	lui	a1, 209715
+	lui	a3, %hi(.LCPI1_0)
 	addiw	a1, a1, 819
-	slli	a3, a1, 32
-	lui	a4, %hi(.LCPI1_0)
-	ld	a4, %lo(.LCPI1_0)(a4)
-	add	a1, a1, a3
+	ld	a3, %lo(.LCPI1_0)(a3)
+	slli	a4, a1, 32
+	add	a1, a1, a4
 	srai	a2, a2, 3
 	mul	a1, a2, a1
-	add	a1, a1, a4
+	add	a1, a1, a3
 	sltu	a0, a1, a0
 	ret
 .LCPI2_0:
@@ -33,13 +33,13 @@ func0000000000000054:                   # @func0000000000000054
 func0000000000000058:                   # @func0000000000000058
 	sub	a2, a2, a1
 	lui	a1, 209715
+	lui	a3, %hi(.LCPI2_0)
 	addiw	a1, a1, 819
-	slli	a3, a1, 32
-	lui	a4, %hi(.LCPI2_0)
-	ld	a4, %lo(.LCPI2_0)(a4)
-	add	a1, a1, a3
+	ld	a3, %lo(.LCPI2_0)(a3)
+	slli	a4, a1, 32
+	add	a1, a1, a4
 	srai	a2, a2, 3
 	mul	a1, a2, a1
-	add	a1, a1, a4
+	add	a1, a1, a3
 	sltu	a0, a0, a1
 	ret

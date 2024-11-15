@@ -32,8 +32,8 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func000000000000000c:                   # @func000000000000000c
 	addi	a1, a1, -16
-	andi	a1, a1, -16
 	lui	a2, 32
+	andi	a1, a1, -16
 	addiw	a2, a2, -2
 	sll	a1, a2, a1
 	not	a1, a1

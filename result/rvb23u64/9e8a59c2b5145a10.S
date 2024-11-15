@@ -30,11 +30,11 @@ func0000000000000040:                   # @func0000000000000040
 	ret
 func00000000000000c0:                   # @func00000000000000c0
 	mul	a1, a1, a2
+	li	a2, -1
 	add	a0, a0, a1
 	slli	a0, a0, 32
-	li	a1, -1
-	slli	a1, a1, 33
-	add	a0, a0, a1
+	slli	a2, a2, 33
+	add	a0, a0, a2
 	ret
 func00000000000000fc:                   # @func00000000000000fc
 	mul	a1, a1, a2

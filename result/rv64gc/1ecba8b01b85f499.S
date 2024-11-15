@@ -5,8 +5,8 @@ func000000000000000f:                   # @func000000000000000f
 	ret
 func0000000000000001:                   # @func0000000000000001
 	or	a0, a0, a1
-	slliw	a0, a0, 24
 	lui	a1, 1934
+	slliw	a0, a0, 24
 	addiw	a1, a1, 196
 	or	a0, a0, a1
 	ret

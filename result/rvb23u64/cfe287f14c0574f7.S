@@ -19,8 +19,8 @@ func0000000000000002:                   # @func0000000000000002
 	.word	0x3f800347                      # float 1.00010002
 func0000000000000005:                   # @func0000000000000005
 	fli.s	fa5, 1.0
-	fdiv.s	fa5, fa5, fa2
 	lui	a0, %hi(.LCPI2_0)
+	fdiv.s	fa5, fa5, fa2
 	flw	fa4, %lo(.LCPI2_0)(a0)
 	fmul.s	fa3, fa5, fa0
 	fmul.s	fa5, fa5, fa1

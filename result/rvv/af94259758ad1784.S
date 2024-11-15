@@ -13,18 +13,16 @@ func0000000000000111:                   # @func0000000000000111
 func0000000000000038:                   # @func0000000000000038
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vmseq.vi	v0, v9, 0
+	li	a0, 31
+	vmsgtu.vx	v10, v8, a0
 	lui	a0, 1
 	addi	a0, a0, 2
-	vsetvli	zero, zero, e32, m2, ta, ma
-	vmv.v.x	v10, a0
-	vmerge.vim	v10, v10, 2, v0
-	li	a0, 31
-	vsetvli	zero, zero, e8, mf2, ta, ma
-	vmsgtu.vx	v0, v8, a0
-	li	a0, 1024
 	vsetvli	zero, zero, e32, m2, ta, mu
-	vor.vx	v10, v10, a0, v0.t
-	vmv.v.v	v8, v10
+	vmv.v.x	v8, a0
+	vmerge.vim	v8, v8, 2, v0
+	li	a0, 1024
+	vmv1r.v	v0, v10
+	vor.vx	v8, v8, a0, v0.t
 	ret
 func0000000000000031:                   # @func0000000000000031
 	li	a0, 123

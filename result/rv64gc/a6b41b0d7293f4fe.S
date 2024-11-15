@@ -4,11 +4,11 @@ func0000000000000034:                   # @func0000000000000034
 	addi	a2, a2, 1
 	slli	a2, a2, 32
 	mulhu	a1, a1, a2
+	lui	a2, 16
 	srli	a1, a1, 47
 	addw	a0, a0, a1
-	lui	a1, 16
-	addiw	a1, a1, -1
-	sltu	a0, a0, a1
+	addiw	a2, a2, -1
+	sltu	a0, a0, a2
 	ret
 func0000000000000014:                   # @func0000000000000014
 	slli	a1, a1, 32

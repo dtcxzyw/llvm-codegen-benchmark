@@ -1,8 +1,8 @@
 func0000000000000030:                   # @func0000000000000030
 	sext.w	a0, a0
+	fmv.d.x	fa5, zero
 	addi	a0, a0, -1
 	seqz	a0, a0
-	fmv.d.x	fa5, zero
 	feq.d	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
@@ -15,8 +15,8 @@ func0000000000000102:                   # @func0000000000000102
 	ret
 func000000000000014e:                   # @func000000000000014e
 	sext.w	a0, a0
-	sgtz	a0, a0
 	fmv.d.x	fa5, zero
+	sgtz	a0, a0
 	feq.d	a1, fa0, fa5
 	xori	a1, a1, 1
 	or	a0, a0, a1
@@ -27,9 +27,9 @@ func0000000000000178:                   # @func0000000000000178
 	lui	a1, %hi(.LCPI3_0)
 	fld	fa5, %lo(.LCPI3_0)(a1)
 	sext.w	a0, a0
+	addi	a0, a0, -2
 	flt.d	a1, fa5, fa0
 	xori	a1, a1, 1
-	addi	a0, a0, -2
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
@@ -39,8 +39,8 @@ func0000000000000050:                   # @func0000000000000050
 	lui	a1, %hi(.LCPI4_0)
 	fld	fa5, %lo(.LCPI4_0)(a1)
 	sext.w	a0, a0
-	flt.d	a1, fa0, fa5
 	sltiu	a0, a0, 100
+	flt.d	a1, fa0, fa5
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -98,8 +98,8 @@ func0000000000000094:                   # @func0000000000000094
 	lui	a1, %hi(.LCPI10_0)
 	fld	fa5, %lo(.LCPI10_0)(a1)
 	sext.w	a0, a0
-	flt.d	a1, fa5, fa0
 	slti	a0, a0, 3
+	flt.d	a1, fa5, fa0
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -126,8 +126,8 @@ func00000000000000d6:                   # @func00000000000000d6
 	ret
 func0000000000000096:                   # @func0000000000000096
 	sext.w	a0, a0
-	sltiu	a0, a0, 6
 	fmv.d.x	fa5, zero
+	sltiu	a0, a0, 6
 	flt.d	a1, fa5, fa0
 	xori	a1, a1, 1
 	or	a0, a0, a1
@@ -144,16 +144,16 @@ func000000000000004c:                   # @func000000000000004c
 	ret
 func00000000000000c6:                   # @func00000000000000c6
 	sext.w	a0, a0
-	slti	a0, a0, 1
 	fmv.d.x	fa5, zero
+	slti	a0, a0, 1
 	fle.d	a1, fa5, fa0
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
 func000000000000014a:                   # @func000000000000014a
 	sext.w	a0, a0
-	slti	a0, a0, 0
 	fmv.d.x	fa5, zero
+	slti	a0, a0, 0
 	fle.d	a1, fa0, fa5
 	and	a0, a0, a1
 	xori	a0, a0, 1
@@ -181,8 +181,8 @@ func000000000000008c:                   # @func000000000000008c
 	ret
 func0000000000000106:                   # @func0000000000000106
 	sext.w	a0, a0
-	sltiu	a0, a0, 2
 	fmv.d.x	fa5, zero
+	sltiu	a0, a0, 2
 	fle.d	a1, fa5, fa0
 	and	a0, a0, a1
 	xori	a0, a0, 1
@@ -196,8 +196,8 @@ func0000000000000038:                   # @func0000000000000038
 	ret
 func0000000000000182:                   # @func0000000000000182
 	sext.w	a0, a0
-	snez	a0, a0
 	feq.d	a1, fa0, fa0
+	snez	a0, a0
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
@@ -226,8 +226,8 @@ func00000000000000e2:                   # @func00000000000000e2
 	sext.w	a0, a0
 	fmv.d.x	fa5, zero
 	feq.d	a1, fa0, fa5
-	xori	a1, a1, 1
 	addi	a0, a0, -1032
+	xori	a1, a1, 1
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret

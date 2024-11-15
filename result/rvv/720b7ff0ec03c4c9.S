@@ -34,8 +34,8 @@ func0000000000000048:                   # @func0000000000000048
 	lui	a0, 1044480
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsltu.vx	v10, v10, a0
-	vmor.mm	v10, v0, v10
 	bseti	a0, zero, 32
+	vmor.mm	v10, v0, v10
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsgtu.vx	v11, v8, a0
 	vmor.mm	v0, v10, v11

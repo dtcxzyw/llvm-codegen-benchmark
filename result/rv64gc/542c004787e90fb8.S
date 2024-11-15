@@ -1,8 +1,8 @@
 func00000000000000f5:                   # @func00000000000000f5
 	slli	a1, a1, 23
 	slli	a0, a0, 41
-	srli	a0, a0, 41
 	lui	a2, 258048
+	srli	a0, a0, 41
 	subw	a1, a1, a2
 	subw	a0, a0, a1
 	ret

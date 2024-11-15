@@ -1,8 +1,8 @@
 func000000000000002a:                   # @func000000000000002a
 	sh3add	a1, a2, a1
+	lui	a2, 233017
 	addw	a0, a0, a1
-	lui	a1, 233017
-	addiw	a1, a1, -455
+	addiw	a1, a2, -455
 	mul	a0, a0, a1
 	srli	a1, a0, 63
 	srai	a0, a0, 39

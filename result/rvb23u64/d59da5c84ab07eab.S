@@ -1,7 +1,7 @@
 func000000000000008c:                   # @func000000000000008c
 	sext.w	a2, a2
-	sltiu	a2, a2, 2
 	li	a3, -2
+	sltiu	a2, a2, 2
 	czero.eqz	a2, a3, a2
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -24,8 +24,8 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func00000000000000a0:                   # @func00000000000000a0
 	sext.w	a2, a2
-	slti	a2, a2, 2
 	li	a3, 4
+	slti	a2, a2, 2
 	czero.eqz	a2, a3, a2
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -33,8 +33,8 @@ func00000000000000a0:                   # @func00000000000000a0
 	ret
 func0000000000000045:                   # @func0000000000000045
 	sext.w	a2, a2
-	sltiu	a2, a2, 6
 	li	a3, 7
+	sltiu	a2, a2, 6
 	czero.nez	a2, a3, a2
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -49,8 +49,8 @@ func0000000000000065:                   # @func0000000000000065
 	ret
 func000000000000004f:                   # @func000000000000004f
 	sext.w	a2, a2
-	sltiu	a2, a2, 8
 	li	a3, -2
+	sltiu	a2, a2, 8
 	czero.nez	a2, a3, a2
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -58,8 +58,8 @@ func000000000000004f:                   # @func000000000000004f
 	ret
 func0000000000000010:                   # @func0000000000000010
 	sext.w	a2, a2
-	addi	a2, a2, -1
 	li	a3, 5
+	addi	a2, a2, -1
 	czero.eqz	a2, a3, a2
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -75,8 +75,8 @@ func000000000000001a:                   # @func000000000000001a
 	ret
 func0000000000000014:                   # @func0000000000000014
 	sext.w	a2, a2
-	addi	a2, a2, -3
 	lui	a3, 1047552
+	addi	a2, a2, -3
 	czero.eqz	a2, a3, a2
 	add	a0, a0, a1
 	addw	a0, a0, a2
@@ -124,8 +124,8 @@ func000000000000008f:                   # @func000000000000008f
 	ret
 func0000000000000040:                   # @func0000000000000040
 	sext.w	a2, a2
-	sltiu	a2, a2, 10
 	li	a3, -39
+	sltiu	a2, a2, 10
 	czero.nez	a2, a3, a2
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -141,8 +141,8 @@ func0000000000000085:                   # @func0000000000000085
 	ret
 func0000000000000041:                   # @func0000000000000041
 	sext.w	a2, a2
-	sltiu	a2, a2, 4
 	li	a3, 4
+	sltiu	a2, a2, 4
 	czero.nez	a2, a3, a2
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -150,8 +150,8 @@ func0000000000000041:                   # @func0000000000000041
 	ret
 func00000000000000c0:                   # @func00000000000000c0
 	sext.w	a2, a2
-	addi	a2, a2, -1
 	li	a3, -4
+	addi	a2, a2, -1
 	czero.nez	a2, a3, a2
 	add	a0, a0, a1
 	addw	a0, a0, a2

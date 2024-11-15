@@ -1,8 +1,8 @@
 func00000000000000f4:                   # @func00000000000000f4
 	lui	a0, 15
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vx	v12, v12, a0
 	vsll.vi	v10, v10, 6
+	vand.vx	v12, v12, a0
 	vor.vv	v10, v10, v12
 	vor.vv	v8, v10, v8
 	bseti	a0, zero, 11
@@ -20,8 +20,8 @@ func00000000000000f1:                   # @func00000000000000f1
 func00000000000000f8:                   # @func00000000000000f8
 	lui	a0, 240
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vx	v12, v12, a0
 	vsll.vi	v10, v10, 8
+	vand.vx	v12, v12, a0
 	vor.vv	v10, v10, v12
 	vor.vv	v8, v10, v8
 	lui	a0, 32

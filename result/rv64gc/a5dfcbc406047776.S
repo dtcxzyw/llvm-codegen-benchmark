@@ -15,10 +15,10 @@ func000000000000007a:                   # @func000000000000007a
 	ret
 func000000000000000a:                   # @func000000000000000a
 	andi	a2, a2, -32
+	slli	a0, a0, 5
 	addi	a2, a2, 1216
 	slli	a2, a2, 32
 	srli	a2, a2, 32
-	slli	a0, a0, 5
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

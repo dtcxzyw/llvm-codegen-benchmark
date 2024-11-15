@@ -6,10 +6,10 @@ func0000000000000040:                   # @func0000000000000040
 	ret
 func0000000000000042:                   # @func0000000000000042
 	srliw	a1, a0, 16
-	sltiu	a1, a1, 17
 	srliw	a0, a0, 12
-	czero.eqz	a0, a0, a1
 	li	a2, 15
+	sltiu	a1, a1, 17
+	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret

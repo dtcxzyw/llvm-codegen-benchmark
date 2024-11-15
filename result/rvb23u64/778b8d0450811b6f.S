@@ -1,7 +1,7 @@
 func0000000000000015:                   # @func0000000000000015
 	sext.w	a2, a2
-	addi	a2, a2, -1
 	neg	a3, a1
+	addi	a2, a2, -1
 	czero.eqz	a3, a3, a2
 	czero.nez	a1, a1, a2
 	or	a1, a1, a3

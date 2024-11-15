@@ -3,11 +3,11 @@ func0000000000000100:                   # @func0000000000000100
 	slli	a3, a3, 3
 	addi	a3, a3, -1792
 	mul	a2, a2, a3
+	lui	a3, 262083
+	slli	a3, a3, 2
+	addi	a3, a3, -576
 	add	a1, a1, a2
-	lui	a2, 262083
-	slli	a2, a2, 2
-	addi	a2, a2, -576
-	mul	a0, a0, a2
+	mul	a0, a0, a3
 	add	a0, a0, a1
 	ret
 func0000000000000154:                   # @func0000000000000154
@@ -15,10 +15,10 @@ func0000000000000154:                   # @func0000000000000154
 	addiw	a3, a3, 547
 	slli	a3, a3, 7
 	mul	a2, a2, a3
+	lui	a3, 32768
+	addiw	a3, a3, -1875
+	slli	a3, a3, 5
 	add	a0, a0, a2
-	lui	a2, 32768
-	addiw	a2, a2, -1875
-	slli	a2, a2, 5
-	mul	a1, a1, a2
+	mul	a1, a1, a3
 	add	a0, a0, a1
 	ret

@@ -83,8 +83,8 @@ func000000000000009c:                   # @func000000000000009c
 	ret
 func0000000000000018:                   # @func0000000000000018
 	xor	a1, a1, a0
-	seqz	a1, a1
 	sltiu	a0, a0, 16
+	seqz	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
 	ret
@@ -96,8 +96,8 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 func000000000000001a:                   # @func000000000000001a
 	xor	a1, a1, a0
-	seqz	a1, a1
 	slti	a0, a0, 0
+	seqz	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
 	ret

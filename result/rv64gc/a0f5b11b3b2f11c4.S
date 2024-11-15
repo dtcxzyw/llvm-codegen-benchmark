@@ -25,8 +25,8 @@ func0000000000000022:                   # @func0000000000000022
 	ret
 func0000000000000190:                   # @func0000000000000190
 	addi	a1, a1, -2
-	snez	a1, a1
 	sltiu	a0, a0, 8
+	snez	a1, a1
 	not	a0, a0
 	and	a0, a0, a1
 	ret

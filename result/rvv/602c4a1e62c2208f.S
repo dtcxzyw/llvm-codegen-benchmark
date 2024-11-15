@@ -11,8 +11,8 @@ func000000000000003e:                   # @func000000000000003e
 	addiw	a0, a0, -1691
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmadd.vx	v8, a0, v10
-	vadd.vi	v8, v8, 2
 	li	a0, -1
+	vadd.vi	v8, v8, 2
 	srli	a0, a0, 32
 	vand.vx	v8, v8, a0
 	ret

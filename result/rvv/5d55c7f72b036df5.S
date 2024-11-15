@@ -3,8 +3,8 @@ func0000000000000000:                   # @func0000000000000000
 	vle64.v	v24, (a0)
 	fli.d	fa5, -1.0
 	vfmv.v.f	v0, fa5
-	vfmacc.vv	v0, v16, v24
 	fli.d	fa5, 1.0
+	vfmacc.vv	v0, v16, v24
 	vfmv.v.f	v16, fa5
 	vfmadd.vv	v8, v0, v16
 	ret

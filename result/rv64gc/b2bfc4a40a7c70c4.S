@@ -10,10 +10,10 @@ func0000000000000015:                   # @func0000000000000015
 	ret
 func000000000000001d:                   # @func000000000000001d
 	andi	a2, a2, 1
-	addi	a2, a2, -1
 	lui	a3, 1024
-	and	a2, a2, a3
 	slli	a1, a1, 22
+	addi	a2, a2, -1
+	and	a2, a2, a3
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret

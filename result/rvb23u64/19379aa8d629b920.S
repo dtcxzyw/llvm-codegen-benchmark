@@ -58,8 +58,8 @@ func00000000000002bb:                   # @func00000000000002bb
 func000000000000029a:                   # @func000000000000029a
 	sext.w	a0, a0
 	sext.w	a2, a2
-	sgtz	a2, a2
 	lui	a3, 16
+	sgtz	a2, a2
 	addi	a3, a3, -1
 	czero.eqz	a2, a3, a2
 	addw	a1, a1, a2

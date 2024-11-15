@@ -25,15 +25,15 @@ func0000000000000007:                   # @func0000000000000007
 func0000000000000006:                   # @func0000000000000006
 	andi	a0, a0, 1
 	sext.w	a1, a1
-	seqz	a1, a1
-	addi	a1, a1, -1
 	lui	a2, 524288
+	seqz	a1, a1
 	addiw	a2, a2, 64
+	addi	a1, a1, -1
 	and	a1, a1, a2
-	addi	a0, a0, -1
-	andi	a0, a0, 16
 	lui	a2, 262144
+	addi	a0, a0, -1
 	addiw	a2, a2, 256
+	andi	a0, a0, 16
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -55,8 +55,8 @@ func0000000000000013:                   # @func0000000000000013
 	andi	a0, a0, 1
 	srliw	a1, a1, 16
 	snez	a1, a1
-	slli	a1, a1, 4
 	addi	a0, a0, -1
+	slli	a1, a1, 4
 	andi	a0, a0, 8
 	or	a0, a0, a1
 	addi	a0, a0, 4

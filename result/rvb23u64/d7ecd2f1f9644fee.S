@@ -8,8 +8,8 @@ func000000000000000f:                   # @func000000000000000f
 func000000000000000e:                   # @func000000000000000e
 	andi	a2, a2, 1
 	lui	a3, 4096
-	czero.nez	a2, a3, a2
 	slliw	a1, a1, 16
+	czero.nez	a2, a3, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
 	bseti	a0, a0, 25
@@ -56,16 +56,16 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000009:                   # @func0000000000000009
 	andi	a2, a2, 1
 	lui	a3, 2
-	czero.nez	a2, a3, a2
 	slliw	a1, a1, 16
+	czero.nez	a2, a3, a2
 	or	a0, a0, a1
 	or	a0, a0, a2
 	bseti	a0, a0, 30
 	ret
 func000000000000000b:                   # @func000000000000000b
 	andi	a2, a2, 1
-	slli	a2, a2, 16
 	slliw	a1, a1, 24
+	slli	a2, a2, 16
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

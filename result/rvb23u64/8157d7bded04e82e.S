@@ -8,10 +8,10 @@ func0000000000000005:                   # @func0000000000000005
 	srli	a3, a2, 63
 	srai	a2, a2, 1
 	add	a2, a2, a3
-	slli	a3, a2, 3
+	li	a3, 7
 	add	a1, a1, a2
-	subw	a1, a1, a3
-	li	a2, 7
-	czero.eqz	a0, a2, a0
+	slli	a2, a2, 3
+	subw	a1, a1, a2
+	czero.eqz	a0, a3, a0
 	addw	a0, a0, a1
 	ret

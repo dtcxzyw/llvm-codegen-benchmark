@@ -24,8 +24,8 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func0000000000000007:                   # @func0000000000000007
 	slt	a1, a2, a1
-	addi	a1, a1, -1
 	lui	a2, 72014
+	addi	a1, a1, -1
 	addi	a2, a2, -2048
 	and	a1, a1, a2
 	addw	a0, a0, a1

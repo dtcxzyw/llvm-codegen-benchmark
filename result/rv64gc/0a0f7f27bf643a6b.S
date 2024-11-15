@@ -1,10 +1,10 @@
 func0000000000000010:                   # @func0000000000000010
 	li	a3, 256
 	sub	a3, a3, a2
+	lui	a2, 16
 	mul	a1, a3, a1
 	add	a0, a0, a1
-	lui	a1, 16
-	addiw	a1, a1, -256
+	addiw	a1, a2, -256
 	and	a0, a0, a1
 	ret
 func0000000000000038:                   # @func0000000000000038

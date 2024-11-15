@@ -10,8 +10,8 @@ func0000000000000090:                   # @func0000000000000090
 	sext.w	a1, a1
 	srai	a0, a0, 48
 	mul	a0, a1, a0
-	slli	a0, a0, 17
 	li	a1, 1
+	slli	a0, a0, 17
 	slli	a1, a1, 31
 	add	a0, a0, a1
 	ret
@@ -25,8 +25,8 @@ func0000000000000015:                   # @func0000000000000015
 	ret
 func00000000000000b0:                   # @func00000000000000b0
 	slli	a1, a1, 48
-	srai	a1, a1, 48
 	srai	a0, a0, 15
+	srai	a1, a1, 48
 	mul	a0, a0, a1
 	li	a1, 1
 	slli	a1, a1, 31
@@ -36,8 +36,8 @@ func0000000000000030:                   # @func0000000000000030
 	sext.w	a1, a1
 	srai	a0, a0, 48
 	mul	a0, a1, a0
-	slli	a0, a0, 17
 	li	a1, 1
+	slli	a0, a0, 17
 	slli	a1, a1, 31
 	add	a0, a0, a1
 	ret

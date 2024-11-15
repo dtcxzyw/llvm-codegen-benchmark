@@ -8,8 +8,8 @@ func0000000000000011:                   # @func0000000000000011
 	j	.LBB0_4
 .LBB0_2:
 	andi	a1, a1, 1
-	addi	a1, a1, -1
 	lui	a0, 1
+	addi	a1, a1, -1
 	addiw	a0, a0, -1
 	or	a0, a0, a1
 	li	a1, 1

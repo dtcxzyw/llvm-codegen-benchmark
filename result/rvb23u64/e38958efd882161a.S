@@ -27,10 +27,10 @@ func0000000000000002:                   # @func0000000000000002
 	lui	a3, 524280
 	addi	a3, a3, -1
 	and	a2, a2, a3
+	lui	a3, 16
 	czero.nez	a1, a1, a0
 	czero.eqz	a0, a2, a0
 	or	a0, a0, a1
-	lui	a1, 16
-	addi	a1, a1, 1
-	addw	a0, a0, a1
+	addi	a3, a3, 1
+	addw	a0, a0, a3
 	ret

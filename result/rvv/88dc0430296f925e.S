@@ -1,9 +1,9 @@
 func0000000000000020:                   # @func0000000000000020
 	lui	a0, 524032
 	vsetivli	zero, 4, e32, m1, ta, ma
-	vand.vx	v10, v10, a0
 	vnsrl.wi	v11, v8, 0
-	vsub.vv	v8, v11, v10
+	vand.vx	v8, v10, a0
+	vsub.vv	v8, v11, v8
 	lui	a0, 27392
 	vadd.vx	v8, v8, a0
 	ret

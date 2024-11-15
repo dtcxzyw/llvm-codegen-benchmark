@@ -1,7 +1,7 @@
 func00000000000000a8:                   # @func00000000000000a8
 	slli	a1, a1, 32
-	srli	a1, a1, 32
 	slli	a0, a0, 32
+	srli	a1, a1, 32
 	srli	a0, a0, 32
 	sub	a0, a0, a1
 	srai	a1, a0, 63
@@ -10,8 +10,8 @@ func00000000000000a8:                   # @func00000000000000a8
 	ret
 func00000000000000a4:                   # @func00000000000000a4
 	slli	a1, a1, 32
-	srli	a1, a1, 32
 	slli	a0, a0, 32
+	srli	a1, a1, 32
 	srli	a0, a0, 32
 	sub	a0, a0, a1
 	srai	a1, a0, 63
@@ -20,8 +20,8 @@ func00000000000000a4:                   # @func00000000000000a4
 	ret
 func0000000000000004:                   # @func0000000000000004
 	slli	a1, a1, 32
-	srli	a1, a1, 32
 	slli	a0, a0, 32
+	srli	a1, a1, 32
 	srli	a0, a0, 32
 	sub	a0, a0, a1
 	srai	a1, a0, 63
@@ -39,8 +39,8 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func00000000000000f8:                   # @func00000000000000f8
 	slli	a1, a1, 32
-	srli	a1, a1, 32
 	slli	a0, a0, 32
+	srli	a1, a1, 32
 	srli	a0, a0, 32
 	sub	a0, a0, a1
 	srai	a1, a0, 63
@@ -49,8 +49,8 @@ func00000000000000f8:                   # @func00000000000000f8
 	ret
 func0000000000000084:                   # @func0000000000000084
 	slli	a1, a1, 32
-	srli	a1, a1, 32
 	slli	a0, a0, 32
+	srli	a1, a1, 32
 	srli	a0, a0, 32
 	sub	a0, a0, a1
 	srai	a1, a0, 63
@@ -59,8 +59,8 @@ func0000000000000084:                   # @func0000000000000084
 	ret
 func0000000000000008:                   # @func0000000000000008
 	slli	a1, a1, 32
-	srli	a1, a1, 32
 	slli	a0, a0, 32
+	srli	a1, a1, 32
 	srli	a0, a0, 32
 	sub	a0, a0, a1
 	srai	a1, a0, 63
@@ -69,8 +69,8 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func00000000000000b8:                   # @func00000000000000b8
 	slli	a1, a1, 32
-	srli	a1, a1, 32
 	slli	a0, a0, 32
+	srli	a1, a1, 32
 	srli	a0, a0, 32
 	sub	a0, a0, a1
 	srai	a1, a0, 63

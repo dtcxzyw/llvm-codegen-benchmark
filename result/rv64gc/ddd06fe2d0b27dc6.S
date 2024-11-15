@@ -10,9 +10,9 @@ func000000000000003e:                   # @func000000000000003e
 	andi	a1, a1, 255
 	li	a2, 10
 	mul	a1, a1, a2
+	lui	a2, 244
 	add	a0, a0, a1
-	lui	a1, 244
-	addi	a1, a1, 576
+	addi	a1, a2, 576
 	mulw	a0, a0, a1
 	ret
 func0000000000000035:                   # @func0000000000000035
@@ -39,8 +39,8 @@ func000000000000007c:                   # @func000000000000007c
 	slli	a2, a1, 2
 	slli	a1, a1, 6
 	subw	a1, a1, a2
+	lui	a2, 14648
 	add	a0, a0, a1
-	lui	a1, 14648
-	addi	a1, a1, 1792
+	addi	a1, a2, 1792
 	mulw	a0, a0, a1
 	ret

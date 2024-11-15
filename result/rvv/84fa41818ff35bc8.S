@@ -33,8 +33,8 @@ func00000000000001a1:                   # @func00000000000001a1
 	vmsne.vi	v12, v10, 0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmseq.vi	v9, v9, 2
-	vmand.mm	v9, v12, v9
 	li	a0, 24
+	vmand.mm	v9, v12, v9
 	vmsgt.vx	v8, v8, a0
 	vmand.mm	v0, v9, v8
 	ret

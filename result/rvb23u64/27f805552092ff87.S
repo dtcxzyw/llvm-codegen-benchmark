@@ -14,8 +14,8 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000009:                   # @func0000000000000009
 	andi	a2, a2, 127
 	or	a1, a1, a2
-	slli	a1, a1, 8
 	lui	a2, 130056
+	slli	a1, a1, 8
 	addiw	a2, a2, -256
 	and	a1, a1, a2
 	or	a0, a0, a1

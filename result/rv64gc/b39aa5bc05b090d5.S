@@ -7,9 +7,9 @@ func00000000000000ac:                   # @func00000000000000ac
 	ret
 func00000000000001aa:                   # @func00000000000001aa
 	slli	a2, a0, 56
-	srai	a2, a2, 56
 	sext.w	a1, a1
 	andi	a0, a0, 255
+	srai	a2, a2, 56
 	slt	a0, a0, a1
 	slti	a1, a2, 97
 	not	a1, a1
@@ -17,9 +17,9 @@ func00000000000001aa:                   # @func00000000000001aa
 	ret
 func000000000000018a:                   # @func000000000000018a
 	slli	a2, a0, 56
-	srai	a2, a2, 56
 	sext.w	a1, a1
 	andi	a0, a0, 255
+	srai	a2, a2, 56
 	sltu	a0, a0, a1
 	slti	a1, a2, 0
 	not	a1, a1

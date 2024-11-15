@@ -1,12 +1,12 @@
 func0000000000000025:                   # @func0000000000000025
 	slli	a0, a0, 48
-	srli	a0, a0, 50
 	lui	a1, 1
+	li	a2, 205
+	srli	a0, a0, 50
 	addiw	a1, a1, 1147
 	mul	a0, a0, a1
 	srli	a0, a0, 17
-	li	a1, 205
-	mul	a1, a0, a1
+	mul	a1, a0, a2
 	slli	a1, a1, 48
 	srli	a1, a1, 59
 	li	a2, 10

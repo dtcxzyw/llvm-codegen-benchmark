@@ -48,8 +48,8 @@ func0000000000000009:                   # @func0000000000000009
 	lui	a0, %hi(.LCPI4_0)
 	fld	fa5, %lo(.LCPI4_0)(a0)
 	fdiv.d	fa5, fa1, fa5
-	fadd.d	fa5, fa5, fa0
 	fmv.d.x	fa4, zero
+	fadd.d	fa5, fa5, fa0
 	flt.d	a0, fa5, fa4
 	flt.d	a1, fa4, fa5
 	or	a0, a0, a1

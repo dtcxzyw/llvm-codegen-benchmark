@@ -7,8 +7,8 @@ func0000000000000050:                   # @func0000000000000050
 	ret
 func0000000000000010:                   # @func0000000000000010
 	bclri	a2, a2, 0
-	bclri	a2, a2, 16
 	lui	a3, 1048544
+	bclri	a2, a2, 16
 	addw	a2, a2, a3
 	lui	a3, 16
 	addiw	a3, a3, -2

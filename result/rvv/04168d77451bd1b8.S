@@ -34,8 +34,8 @@ func00000000000000b1:                   # @func00000000000000b1
 	li	a0, 48
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vx	v12, v12, a0
-	vor.vv	v10, v12, v10
 	lui	a0, 16
+	vor.vv	v10, v12, v10
 	addiw	a0, a0, -1
 	vor.vx	v10, v10, a0
 	vmseq.vv	v0, v10, v8

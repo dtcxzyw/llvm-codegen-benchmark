@@ -2,8 +2,8 @@ func0000000000000014:                   # @func0000000000000014
 	andi	a0, a0, 1
 	andi	a2, a2, 1
 	bseti	a2, a2, 16
-	bseti	a2, a2, 20
 	czero.nez	a1, a1, a0
+	bseti	a2, a2, 20
 	czero.eqz	a0, a2, a0
 	or	a0, a0, a1
 	lui	a1, 1048304

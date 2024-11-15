@@ -1,12 +1,12 @@
 func0000000000000011:                   # @func0000000000000011
 	sext.w	a1, a1
+	lui	a2, 33825
 	snez	a1, a1
+	addi	a2, a2, 133
 	slli	a1, a1, 5
+	slli	a2, a2, 32
 	or	a0, a0, a1
 	slli	a1, a0, 32
-	lui	a2, 33825
-	addi	a2, a2, 133
-	slli	a2, a2, 32
 	mulhu	a1, a1, a2
 	srli	a1, a1, 32
 	subw	a2, a0, a1

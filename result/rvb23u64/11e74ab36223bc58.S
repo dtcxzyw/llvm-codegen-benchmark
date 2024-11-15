@@ -14,8 +14,8 @@ func0000000000000022:                   # @func0000000000000022
 	slli	a2, a2, 6
 	andi	a1, a1, -2
 	or	a1, a1, a2
-	sext.w	a1, a1
 	lui	a2, 16
+	sext.w	a1, a1
 	addiw	a2, a2, -2
 	xor	a1, a1, a2
 	seqz	a1, a1
@@ -34,8 +34,8 @@ func00000000000000a2:                   # @func00000000000000a2
 	slli	a2, a2, 16
 	andi	a1, a1, -2048
 	or	a1, a1, a2
-	sext.w	a1, a1
 	li	a2, 27
+	sext.w	a1, a1
 	slli	a2, a2, 11
 	xor	a1, a1, a2
 	seqz	a1, a1

@@ -1,8 +1,8 @@
 func0000000000000007:                   # @func0000000000000007
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v13, v12
-	vwsll.vi	v14, v13, 8
 	lui	a0, 16
+	vwsll.vi	v14, v13, 8
 	addi	a0, a0, -256
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vand.vx	v12, v14, a0

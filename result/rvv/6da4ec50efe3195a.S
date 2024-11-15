@@ -14,11 +14,13 @@ func0000000000000000:                   # @func0000000000000000
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vfmv.v.f	v16, fa5
 	vfmacc.vf	v16, fa4, v12
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vmv.v.i	v12, 0
+	vsetvli	zero, zero, e64, m4, ta, ma
 	vfmacc.vf	v16, fa3, v8
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vfncvt.rtz.x.f.w	v8, v16
-	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
+	vmerge.vim	v10, v12, 1, v0
 	vsub.vv	v8, v8, v10
 	ret
 .LCPI1_0:
@@ -37,10 +39,12 @@ func0000000000000001:                   # @func0000000000000001
 	vsetivli	zero, 8, e64, m4, ta, ma
 	vfmv.v.f	v16, fa5
 	vfmacc.vf	v16, fa4, v12
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vmv.v.i	v12, 0
+	vsetvli	zero, zero, e64, m4, ta, ma
 	vfmacc.vf	v16, fa3, v8
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vfncvt.rtz.x.f.w	v8, v16
-	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
+	vmerge.vim	v10, v12, 1, v0
 	vsub.vv	v8, v8, v10
 	ret

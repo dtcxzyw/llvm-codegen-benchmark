@@ -22,9 +22,9 @@ func0000000000000078:                   # @func0000000000000078
 	addi	a3, a3, 1387
 	slli	a3, a3, 32
 	mulhu	a2, a2, a3
-	srli	a2, a2, 44
 	lui	a3, 5
 	addi	a3, a3, -1409
+	srli	a2, a2, 44
 	mul	a2, a2, a3
 	lui	a3, 2
 	addi	a3, a3, -1989

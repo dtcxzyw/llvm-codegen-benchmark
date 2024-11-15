@@ -1,7 +1,7 @@
 func0000000000000006:                   # @func0000000000000006
 	slli	a2, a2, 48
-	srai	a2, a2, 48
 	slli	a3, a1, 48
+	srai	a2, a2, 48
 	srai	a3, a3, 48
 	blt	a3, a2, .LBB0_2
 	mv	a0, a1
@@ -27,8 +27,8 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func000000000000000a:                   # @func000000000000000a
 	slli	a3, a1, 48
-	srai	a3, a3, 48
 	slli	a2, a2, 48
+	srai	a3, a3, 48
 	srai	a2, a2, 48
 	blt	a2, a3, .LBB3_2
 	mv	a0, a1

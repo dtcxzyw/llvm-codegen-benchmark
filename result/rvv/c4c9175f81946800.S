@@ -36,11 +36,11 @@ func0000000000000015:                   # @func0000000000000015
 	addiw	a0, a0, -1911
 	slli	a1, a0, 32
 	add	a0, a0, a1
+	li	a1, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulh.vx	v14, v12, a0
 	vadd.vv	v12, v14, v12
-	li	a0, 63
-	vsrl.vx	v14, v12, a0
+	vsrl.vx	v14, v12, a1
 	vsra.vi	v12, v12, 5
 	vadd.vv	v12, v12, v14
 	vadd.vv	v8, v12, v8
@@ -56,10 +56,10 @@ func0000000000000010:                   # @func0000000000000010
 	vmulh.vx	v12, v12, a0
 	li	a0, 63
 	vsrl.vx	v14, v12, a0
+	lui	a0, 36
 	vsra.vi	v12, v12, 1
 	vadd.vv	v12, v12, v14
 	vadd.vv	v8, v12, v8
-	lui	a0, 36
 	addiw	a0, a0, -1359
 	vmacc.vx	v8, a0, v10
 	ret
@@ -70,8 +70,8 @@ func0000000000000000:                   # @func0000000000000000
 	ld	a0, %lo(.LCPI5_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulh.vx	v14, v12, a0
-	vsub.vv	v12, v14, v12
 	li	a0, 63
+	vsub.vv	v12, v14, v12
 	vsrl.vx	v14, v12, a0
 	vsra.vi	v12, v12, 8
 	vadd.vv	v12, v12, v14

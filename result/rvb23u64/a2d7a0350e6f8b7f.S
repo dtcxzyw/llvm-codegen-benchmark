@@ -96,8 +96,8 @@ func00000000000000ac:                   # @func00000000000000ac
 	andi	a0, a0, 255
 	lui	a2, 272
 	addiw	a2, a2, -1
-	slt	a1, a2, a1
 	addi	a0, a0, -59
+	slt	a1, a2, a1
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
@@ -122,8 +122,8 @@ func00000000000000a8:                   # @func00000000000000a8
 	lui	a2, %hi(.LCPI17_0)
 	ld	a2, %lo(.LCPI17_0)(a2)
 	andi	a0, a0, 255
-	slt	a1, a2, a1
 	sltiu	a0, a0, 10
+	slt	a1, a2, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

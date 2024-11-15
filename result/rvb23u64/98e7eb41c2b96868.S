@@ -8,8 +8,8 @@ func0000000000000010:                   # @func0000000000000010
 	ret
 func0000000000000012:                   # @func0000000000000012
 	andi	a2, a2, 255
-	addi	a2, a2, -117
 	li	a3, 2
+	addi	a2, a2, -117
 	czero.eqz	a2, a3, a2
 	add	a0, a0, a1
 	add	a0, a0, a2

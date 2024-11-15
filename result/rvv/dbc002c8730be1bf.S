@@ -21,8 +21,8 @@ func0000000000000011:                   # @func0000000000000011
 	vmseq.vi	v9, v8, 0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmseq.vi	v12, v10, 0
-	vmand.mm	v0, v12, v9
 	lui	a0, 244141
+	vmand.mm	v0, v12, v9
 	addi	a0, a0, -1535
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmerge.vxm	v8, v8, a0, v0

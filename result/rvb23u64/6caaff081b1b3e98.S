@@ -23,8 +23,8 @@ func0000000000000008:                   # @func0000000000000008
 func000000000000006a:                   # @func000000000000006a
 	sext.w	a0, a0
 	slli	a1, a1, 33
-	srli	a1, a1, 32
 	lui	a2, 349525
+	srli	a1, a1, 32
 	addiw	a2, a2, 1366
 	mul	a1, a1, a2
 	srli	a1, a1, 32
@@ -33,8 +33,8 @@ func000000000000006a:                   # @func000000000000006a
 func000000000000006b:                   # @func000000000000006b
 	sext.w	a0, a0
 	slli	a1, a1, 33
-	srli	a1, a1, 32
 	lui	a2, 349525
+	srli	a1, a1, 32
 	addiw	a2, a2, 1366
 	mul	a1, a1, a2
 	srli	a1, a1, 32
@@ -56,8 +56,8 @@ func0000000000000009:                   # @func0000000000000009
 func0000000000000066:                   # @func0000000000000066
 	sext.w	a0, a0
 	slli	a1, a1, 33
-	srli	a1, a1, 32
 	lui	a2, 349525
+	srli	a1, a1, 32
 	addiw	a2, a2, 1366
 	mul	a1, a1, a2
 	srli	a1, a1, 32
@@ -66,8 +66,8 @@ func0000000000000066:                   # @func0000000000000066
 func0000000000000068:                   # @func0000000000000068
 	sext.w	a0, a0
 	slli	a1, a1, 33
-	srli	a1, a1, 32
 	lui	a2, 349525
+	srli	a1, a1, 32
 	addiw	a2, a2, 1366
 	mul	a1, a1, a2
 	srli	a1, a1, 32

@@ -11,8 +11,8 @@ func0000000000000034:                   # @func0000000000000034
 	lui	a2, 16
 	addiw	a2, a2, -192
 	add	a1, a1, a2
-	sltiu	a0, a0, 63
 	lui	a2, 512
+	sltiu	a0, a0, 63
 	addiw	a2, a2, -1
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0

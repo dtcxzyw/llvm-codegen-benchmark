@@ -2,8 +2,8 @@
 	.quad	0x3fee666660000000              # double 0.94999998807907104
 func0000000000000014:                   # @func0000000000000014
 	fli.d	fa5, 0.5
-	fneg.d	fa5, fa5
 	lui	a0, %hi(.LCPI0_0)
+	fneg.d	fa5, fa5
 	fld	fa4, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfadd.vf	v16, v16, fa5
@@ -15,8 +15,8 @@ func0000000000000014:                   # @func0000000000000014
 	.quad	0x3cb0000000000000              # double 2.2204460492503131E-16
 func0000000000000012:                   # @func0000000000000012
 	fli.d	fa5, 0.5
-	fneg.d	fa5, fa5
 	lui	a0, %hi(.LCPI1_0)
+	fneg.d	fa5, fa5
 	fld	fa4, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfadd.vf	v16, v16, fa5

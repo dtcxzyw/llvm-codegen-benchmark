@@ -1,7 +1,7 @@
 func0000000000000048:                   # @func0000000000000048
 	flt.d	a0, fa2, fa1
-	xori	a0, a0, 1
 	fmv.d.x	fa5, zero
+	xori	a0, a0, 1
 	feq.d	a1, fa0, fa5
 	or	a0, a0, a1
 	ret

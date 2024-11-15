@@ -9,8 +9,8 @@ func0000000000000011:                   # @func0000000000000011
 func000000000000005a:                   # @func000000000000005a
 	subw	a1, a1, a2
 	slli	a0, a0, 63
-	srai	a0, a0, 63
 	lui	a2, 21
+	srai	a0, a0, 63
 	addi	a2, a2, 384
 	and	a0, a0, a2
 	addw	a0, a0, a1
@@ -25,8 +25,8 @@ func0000000000000016:                   # @func0000000000000016
 func000000000000001a:                   # @func000000000000001a
 	subw	a1, a1, a2
 	slli	a0, a0, 63
-	srai	a0, a0, 63
 	lui	a2, 10
+	srai	a0, a0, 63
 	addi	a3, a2, -960
 	and	a0, a0, a3
 	addw	a0, a0, a1

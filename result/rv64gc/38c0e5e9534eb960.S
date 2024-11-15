@@ -27,9 +27,9 @@ func0000000000000044:                   # @func0000000000000044
 	ret
 func0000000000000024:                   # @func0000000000000024
 	lui	a1, 788992
+	lui	a2, 264704
 	fmv.w.x	fa5, a1
 	flt.s	a1, fa1, fa5
-	lui	a2, 264704
 	fmv.w.x	fa5, a2
 	flt.s	a2, fa5, fa0
 	or	a1, a1, a2
@@ -75,10 +75,10 @@ func00000000000000bb:                   # @func00000000000000bb
 	ret
 func000000000000002a:                   # @func000000000000002a
 	lui	a1, 260096
-	fmv.w.x	fa5, a1
-	flt.s	a1, fa1, fa5
 	fmv.w.x	fa5, zero
 	fle.s	a2, fa0, fa5
+	fmv.w.x	fa5, a1
+	flt.s	a1, fa1, fa5
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret

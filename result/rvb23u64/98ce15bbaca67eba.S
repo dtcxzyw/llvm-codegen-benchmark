@@ -21,8 +21,8 @@ func0000000000000004:                   # @func0000000000000004
 	andi	a1, a1, 1
 	li	a2, 34
 	czero.nez	a1, a2, a1
+	lui	a2, 16
 	add	a0, a0, a1
-	lui	a1, 16
-	addi	a1, a1, -98
+	addi	a1, a2, -98
 	addw	a0, a0, a1
 	ret

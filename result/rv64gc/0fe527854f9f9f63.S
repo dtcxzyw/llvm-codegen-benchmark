@@ -2,8 +2,8 @@ func0000000000000018:                   # @func0000000000000018
 	andi	a0, a0, 255
 	subw	a1, a1, a2
 	sltiu	a1, a1, 2
-	not	a1, a1
 	addi	a0, a0, -18
+	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
@@ -11,8 +11,8 @@ func00000000000000ca:                   # @func00000000000000ca
 	andi	a0, a0, 255
 	subw	a1, a1, a2
 	slti	a1, a1, 43
-	not	a1, a1
 	addi	a0, a0, -221
+	not	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
@@ -20,8 +20,8 @@ func000000000000001a:                   # @func000000000000001a
 	andi	a0, a0, 255
 	subw	a1, a1, a2
 	slti	a1, a1, 2
-	not	a1, a1
 	addi	a0, a0, -34
+	not	a1, a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

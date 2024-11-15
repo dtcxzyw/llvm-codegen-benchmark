@@ -31,11 +31,11 @@ func00000000000001d6:                   # @func00000000000001d6
 	lui	a2, 21
 	addiw	a2, a2, 384
 	mul	a1, a1, a2
+	lui	a2, 100549
+	addiw	a2, a2, 521
 	add	a0, a0, a1
-	lui	a1, 100549
-	addiw	a1, a1, 521
-	slli	a1, a1, 9
-	slt	a0, a0, a1
+	slli	a2, a2, 9
+	slt	a0, a0, a2
 	ret
 func000000000000008a:                   # @func000000000000008a
 	slli	a2, a1, 32
@@ -63,22 +63,22 @@ func00000000000001f8:                   # @func00000000000001f8
 	lui	a2, 244
 	addiw	a2, a2, 576
 	mul	a1, a1, a2
+	lui	a2, 2575
+	addiw	a2, a2, -325
 	add	a0, a0, a1
-	lui	a1, 2575
-	addiw	a1, a1, -325
-	slli	a1, a1, 13
-	sltu	a0, a1, a0
+	slli	a2, a2, 13
+	sltu	a0, a2, a0
 	ret
 func00000000000001ca:                   # @func00000000000001ca
 	sext.w	a1, a1
 	lui	a2, 244
 	addiw	a2, a2, 576
 	mul	a1, a1, a2
+	lui	a2, 2575
+	addiw	a2, a2, -325
 	add	a0, a0, a1
-	lui	a1, 2575
-	addiw	a1, a1, -325
-	slli	a1, a1, 13
-	slt	a0, a1, a0
+	slli	a2, a2, 13
+	slt	a0, a2, a0
 	ret
 func00000000000000c8:                   # @func00000000000000c8
 	slli.uw	a2, a1, 4

@@ -40,13 +40,13 @@ func0000000000000ccc:                   # @func0000000000000ccc
 	ret
 func00000000000004c4:                   # @func00000000000004c4
 	lui	a0, 2
-	addi	a0, a0, 1808
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsltu.vx	v12, v10, a0
-	vmsne.vv	v13, v10, v8
+	vmsne.vv	v12, v10, v8
+	addi	a0, a0, 1808
+	vmsltu.vx	v13, v10, a0
 	vmsltu.vx	v10, v8, a0
-	vmand.mm	v8, v12, v10
-	vmand.mm	v0, v8, v13
+	vmand.mm	v8, v13, v10
+	vmand.mm	v0, v8, v12
 	ret
 func00000000000009cc:                   # @func00000000000009cc
 	vsetivli	zero, 8, e32, m2, ta, ma

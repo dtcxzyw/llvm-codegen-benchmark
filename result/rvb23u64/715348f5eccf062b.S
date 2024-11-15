@@ -6,8 +6,8 @@ func0000000000000058:                   # @func0000000000000058
 	ret
 func00000000000000a1:                   # @func00000000000000a1
 	bset	a1, zero, a1
-	sext.w	a1, a1
 	bset	a0, zero, a0
+	sext.w	a1, a1
 	sext.w	a0, a0
 	xor	a0, a0, a1
 	seqz	a0, a0

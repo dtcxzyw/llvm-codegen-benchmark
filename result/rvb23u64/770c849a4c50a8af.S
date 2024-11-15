@@ -3,10 +3,10 @@ func0000000000000006:                   # @func0000000000000006
 	lui	a2, 524288
 	addi	a2, a2, 1
 	and	a1, a1, a2
-	add	a0, a0, a1
-	zext.w	a1, a0
 	lui	a2, 322639
 	addiw	a2, a2, -945
+	add	a0, a0, a1
+	zext.w	a1, a0
 	mul	a1, a1, a2
 	srli	a1, a1, 35
 	li	a2, 26
@@ -15,12 +15,12 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func000000000000000a:                   # @func000000000000000a
 	sext.w	a1, a0
+	lui	a2, 149797
 	slti	a1, a1, -4
+	addiw	a2, a2, -1755
 	xori	a1, a1, 1
 	sh2add	a0, a1, a0
 	zext.w	a1, a0
-	lui	a2, 149797
-	addiw	a2, a2, -1755
 	mul	a1, a1, a2
 	srli	a1, a1, 32
 	subw	a2, a0, a1
@@ -39,25 +39,25 @@ func0000000000000008:                   # @func0000000000000008
 	lui	a2, 804435
 	addi	a2, a2, 1536
 	czero.eqz	a1, a2, a1
-	add	a0, a0, a1
-	zext.w	a1, a0
 	lui	a2, 274878
 	addiw	a2, a2, -381
+	add	a0, a0, a1
+	zext.w	a1, a0
 	mul	a1, a1, a2
-	srli	a1, a1, 50
 	lui	a2, 244
+	srli	a1, a1, 50
 	addi	a2, a2, 576
 	mul	a1, a1, a2
 	subw	a0, a0, a1
 	ret
 func000000000000001a:                   # @func000000000000001a
 	sext.w	a1, a0
+	lui	a2, 149797
 	slti	a1, a1, -4
+	addiw	a2, a2, -1755
 	xori	a1, a1, 1
 	sh2add	a0, a1, a0
 	zext.w	a1, a0
-	lui	a2, 149797
-	addiw	a2, a2, -1755
 	mul	a1, a1, a2
 	srli	a1, a1, 32
 	subw	a2, a0, a1

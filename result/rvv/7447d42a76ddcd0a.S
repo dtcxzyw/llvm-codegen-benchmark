@@ -46,10 +46,10 @@ func000000000000034c:                   # @func000000000000034c
 func0000000000000344:                   # @func0000000000000344
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vi	v12, v12, -2
+	li	a0, 127
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v14, v12
 	vmsltu.vv	v12, v10, v14
-	li	a0, 127
 	vmsltu.vx	v10, v8, a0
 	vmand.mm	v0, v10, v12
 	ret

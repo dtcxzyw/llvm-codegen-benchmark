@@ -32,21 +32,21 @@ func000000000000014e:                   # @func000000000000014e
 	ret
 func0000000000000022:                   # @func0000000000000022
 	slli	a2, a2, 32
+	xor	a1, a1, a0
 	srli	a2, a2, 32
-	xor	a2, a2, a0
-	seqz	a2, a2
-	xor	a0, a0, a1
+	xor	a0, a0, a2
 	seqz	a0, a0
-	or	a0, a0, a2
+	seqz	a1, a1
+	or	a0, a0, a1
 	ret
 func0000000000000162:                   # @func0000000000000162
 	slli	a2, a2, 32
+	slt	a1, a0, a1
 	srli	a2, a2, 32
-	xor	a2, a2, a0
-	seqz	a2, a2
-	slt	a0, a0, a1
-	xori	a0, a0, 1
-	or	a0, a0, a2
+	xor	a0, a0, a2
+	seqz	a0, a0
+	xori	a1, a1, 1
+	or	a0, a0, a1
 	ret
 func000000000000008a:                   # @func000000000000008a
 	slli	a2, a2, 32
@@ -58,11 +58,11 @@ func000000000000008a:                   # @func000000000000008a
 	ret
 func0000000000000222:                   # @func0000000000000222
 	sext.w	a2, a2
-	xor	a2, a2, a0
-	seqz	a2, a2
-	xor	a0, a0, a1
+	xor	a1, a1, a0
+	xor	a0, a0, a2
 	seqz	a0, a0
-	or	a0, a0, a2
+	seqz	a1, a1
+	or	a0, a0, a1
 	ret
 func0000000000000108:                   # @func0000000000000108
 	slli	a2, a2, 32
@@ -80,11 +80,11 @@ func0000000000000388:                   # @func0000000000000388
 	ret
 func0000000000000188:                   # @func0000000000000188
 	slli	a2, a2, 32
+	xor	a1, a1, a0
 	srli	a2, a2, 32
-	sltu	a2, a0, a2
-	xor	a0, a0, a1
-	snez	a0, a0
-	or	a0, a0, a2
+	sltu	a0, a0, a2
+	snez	a1, a1
+	or	a0, a0, a1
 	ret
 func0000000000000090:                   # @func0000000000000090
 	slli	a2, a2, 32
@@ -95,11 +95,11 @@ func0000000000000090:                   # @func0000000000000090
 	ret
 func0000000000000102:                   # @func0000000000000102
 	slli	a2, a2, 32
+	xor	a1, a1, a0
 	srli	a2, a2, 32
-	sltu	a2, a2, a0
-	xor	a0, a0, a1
-	seqz	a0, a0
-	or	a0, a0, a2
+	sltu	a0, a2, a0
+	seqz	a1, a1
+	or	a0, a0, a1
 	ret
 func0000000000000348:                   # @func0000000000000348
 	sext.w	a2, a2
@@ -109,15 +109,15 @@ func0000000000000348:                   # @func0000000000000348
 	ret
 func0000000000000374:                   # @func0000000000000374
 	sext.w	a2, a2
-	slt	a2, a2, a0
-	slt	a0, a0, a1
-	xori	a0, a0, 1
-	or	a0, a0, a2
+	slt	a1, a0, a1
+	slt	a0, a2, a0
+	xori	a1, a1, 1
+	or	a0, a0, a1
 	ret
 func000000000000030a:                   # @func000000000000030a
 	sext.w	a2, a2
-	sltu	a2, a2, a0
-	sltu	a0, a1, a0
-	xori	a0, a0, 1
-	or	a0, a0, a2
+	sltu	a1, a1, a0
+	sltu	a0, a2, a0
+	xori	a1, a1, 1
+	or	a0, a0, a1
 	ret

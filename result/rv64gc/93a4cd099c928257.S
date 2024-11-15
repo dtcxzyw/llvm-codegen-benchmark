@@ -12,9 +12,9 @@ func00000000000000a1:                   # @func00000000000000a1
 func0000000000000001:                   # @func0000000000000001
 	sext.w	a3, a0
 	slli	a0, a2, 5
+	lui	a2, 524288
 	add	a0, a0, a1
-	lui	a1, 524288
-	addiw	a2, a1, 3
+	addiw	a2, a2, 3
 	li	a1, 16
 	beq	a3, a2, .LBB1_2
 	li	a1, 24

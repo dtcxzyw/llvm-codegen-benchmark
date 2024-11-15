@@ -32,8 +32,8 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func0000000000000010:                   # @func0000000000000010
 	or	a0, a0, a1
-	sext.w	a0, a0
 	lui	a1, 2441
+	sext.w	a0, a0
 	addiw	a1, a1, 1663
 	sltu	a0, a1, a0
 	ret

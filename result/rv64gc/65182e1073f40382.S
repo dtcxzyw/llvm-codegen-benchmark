@@ -4,8 +4,8 @@ func000000000000001c:                   # @func000000000000001c
 	and	a0, a0, a2
 	and	a1, a1, a2
 	addi	a1, a1, -126
-	seqz	a1, a1
 	addi	a0, a0, -126
+	seqz	a1, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

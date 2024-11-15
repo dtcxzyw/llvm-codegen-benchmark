@@ -34,9 +34,9 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func000000000000001c:                   # @func000000000000001c
 	srli	a1, a1, 59
+	addi	a0, a0, -32
 	addi	a1, a1, -28
 	snez	a1, a1
-	addi	a0, a0, -32
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

@@ -6,8 +6,8 @@ func0000000000000054:                   # @func0000000000000054
 func0000000000000034:                   # @func0000000000000034
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vadd.vi	v10, v10, -6
-	vmsleu.vi	v0, v10, 3
 	li	a0, 700
+	vmsleu.vi	v0, v10, 3
 	vsetvli	zero, zero, e32, m2, ta, mu
 	vmv.v.x	v10, a0
 	li	a0, 26

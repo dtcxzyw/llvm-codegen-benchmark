@@ -19,9 +19,9 @@ func000000000000004a:                   # @func000000000000004a
 	sext.w	a0, a0
 	sext.w	a2, a2
 	mul	a1, a1, a2
+	slti	a0, a0, 5
 	srli	a1, a1, 16
 	seqz	a1, a1
-	slti	a0, a0, 5
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -29,8 +29,8 @@ func000000000000004c:                   # @func000000000000004c
 	sext.w	a0, a0
 	sext.w	a2, a2
 	mul	a1, a1, a2
-	sltiu	a1, a1, 512
 	addi	a0, a0, -128
+	sltiu	a1, a1, 512
 	snez	a0, a0
 	or	a0, a0, a1
 	ret

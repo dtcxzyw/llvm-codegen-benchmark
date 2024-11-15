@@ -18,8 +18,8 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func000000000000000a:                   # @func000000000000000a
 	fdiv.s	fa5, fa0, fa1
-	fabs.s	fa5, fa5
 	lui	a0, 2048
+	fabs.s	fa5, fa5
 	fmv.w.x	fa4, a0
 	fle.s	a0, fa5, fa4
 	ret
@@ -35,15 +35,15 @@ func0000000000000015:                   # @func0000000000000015
 	ret
 func0000000000000012:                   # @func0000000000000012
 	fdiv.s	fa5, fa0, fa1
-	fabs.s	fa5, fa5
 	lui	a0, 212992
+	fabs.s	fa5, fa5
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	ret
 func000000000000001d:                   # @func000000000000001d
 	fdiv.s	fa5, fa0, fa1
-	fabs.s	fa5, fa5
 	lui	a0, 260096
+	fabs.s	fa5, fa5
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	xori	a0, a0, 1
@@ -59,15 +59,15 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000002:                   # @func0000000000000002
 	fdiv.s	fa5, fa0, fa1
-	fabs.s	fa5, fa5
 	lui	a0, 2048
+	fabs.s	fa5, fa5
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa5, fa4
 	ret
 func0000000000000014:                   # @func0000000000000014
 	fdiv.s	fa5, fa0, fa1
-	fabs.s	fa5, fa5
 	lui	a0, 2048
+	fabs.s	fa5, fa5
 	fmv.w.x	fa4, a0
 	flt.s	a0, fa4, fa5
 	ret

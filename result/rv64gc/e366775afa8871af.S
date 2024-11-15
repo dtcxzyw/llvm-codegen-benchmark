@@ -1,18 +1,18 @@
 func00000000000000c1:                   # @func00000000000000c1
 	andi	a0, a0, 3
-	addi	a0, a0, -3
-	seqz	a0, a0
 	lui	a1, 258048
+	addi	a0, a0, -3
 	fmv.w.x	fa5, a1
+	seqz	a0, a0
 	fle.s	a1, fa5, fa0
 	and	a0, a0, a1
 	ret
 func0000000000000021:                   # @func0000000000000021
 	andi	a0, a0, 3
-	addi	a0, a0, -3
-	seqz	a0, a0
 	lui	a1, 258048
+	addi	a0, a0, -3
 	fmv.w.x	fa5, a1
+	seqz	a0, a0
 	flt.s	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
@@ -34,9 +34,9 @@ func0000000000000041:                   # @func0000000000000041
 	ret
 func0000000000000081:                   # @func0000000000000081
 	slli	a0, a0, 34
+	fmv.w.x	fa5, zero
 	srli	a0, a0, 34
 	seqz	a0, a0
-	fmv.w.x	fa5, zero
 	feq.s	a1, fa0, fa5
 	and	a0, a0, a1
 	ret

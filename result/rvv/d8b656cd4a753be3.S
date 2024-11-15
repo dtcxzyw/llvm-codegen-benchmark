@@ -15,11 +15,11 @@ func00000000000000cc:                   # @func00000000000000cc
 	slli	a1, a0, 59
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v10, v10, a1
+	li	a1, 28
 	slli	a0, a0, 60
 	vmsne.vx	v9, v10, a0
-	li	a0, 28
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vmsne.vx	v8, v8, a0
+	vmsne.vx	v8, v8, a1
 	vmand.mm	v0, v9, v8
 	ret
 func0000000000000041:                   # @func0000000000000041

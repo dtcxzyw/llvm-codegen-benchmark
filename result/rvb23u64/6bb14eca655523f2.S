@@ -9,9 +9,9 @@ func0000000000000154:                   # @func0000000000000154
 func0000000000000030:                   # @func0000000000000030
 	sext.w	a1, a1
 	sext.w	a0, a0
+	fmv.d.x	fa5, zero
 	xor	a0, a0, a1
 	seqz	a0, a0
-	fmv.d.x	fa5, zero
 	feq.d	a1, fa0, fa5
 	or	a0, a0, a1
 	ret

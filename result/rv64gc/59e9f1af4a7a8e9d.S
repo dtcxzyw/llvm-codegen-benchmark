@@ -1,9 +1,9 @@
 func00000000000000c2:                   # @func00000000000000c2
 	or	a2, a1, a0
-	slti	a2, a2, 0
 	xor	a0, a0, a1
+	slti	a1, a2, 0
 	seqz	a0, a0
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 func0000000000000030:                   # @func0000000000000030
 	or	a2, a1, a0

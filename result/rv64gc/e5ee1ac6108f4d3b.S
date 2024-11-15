@@ -5,8 +5,8 @@ func000000000000001b:                   # @func000000000000001b
 	ld	a1, %lo(.LCPI0_0)(a1)
 	slli	a0, a0, 2
 	mulhu	a0, a0, a1
-	srli	a0, a0, 15
 	lui	a1, 36
+	srli	a0, a0, 15
 	addiw	a1, a1, -1359
 	mul	a0, a0, a1
 	ret

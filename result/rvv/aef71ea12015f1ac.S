@@ -1,8 +1,8 @@
 func0000000000000101:                   # @func0000000000000101
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	vsrl.vi	v10, v10, 3
 	lui	a0, 699051
+	vsrl.vi	v10, v10, 3
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
@@ -15,8 +15,8 @@ func0000000000000101:                   # @func0000000000000101
 func000000000000010a:                   # @func000000000000010a
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	vsrl.vi	v10, v10, 2
 	lui	a0, 699051
+	vsrl.vi	v10, v10, 2
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
@@ -29,8 +29,8 @@ func000000000000010a:                   # @func000000000000010a
 func0000000000000104:                   # @func0000000000000104
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	vsrl.vi	v10, v10, 2
 	lui	a0, 699051
+	vsrl.vi	v10, v10, 2
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
@@ -43,8 +43,8 @@ func0000000000000104:                   # @func0000000000000104
 func0000000000000126:                   # @func0000000000000126
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	vsrl.vi	v10, v10, 2
 	lui	a0, 699051
+	vsrl.vi	v10, v10, 2
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
@@ -57,8 +57,8 @@ func0000000000000126:                   # @func0000000000000126
 func000000000000010c:                   # @func000000000000010c
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	vsrl.vi	v10, v10, 4
 	lui	a0, 838861
+	vsrl.vi	v10, v10, 4
 	addiw	a0, a0, -819
 	slli	a1, a0, 32
 	add	a0, a0, a1
@@ -71,8 +71,8 @@ func000000000000010c:                   # @func000000000000010c
 func000000000000010b:                   # @func000000000000010b
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	vsrl.vi	v10, v10, 4
 	lui	a0, 699051
+	vsrl.vi	v10, v10, 4
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
@@ -85,8 +85,8 @@ func000000000000010b:                   # @func000000000000010b
 func0000000000000111:                   # @func0000000000000111
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	vsrl.vi	v10, v10, 4
 	lui	a0, 699051
+	vsrl.vi	v10, v10, 4
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
@@ -113,8 +113,8 @@ func0000000000000106:                   # @func0000000000000106
 func0000000000000107:                   # @func0000000000000107
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	vsrl.vi	v10, v10, 3
 	lui	a0, 699051
+	vsrl.vi	v10, v10, 3
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
@@ -127,8 +127,8 @@ func0000000000000107:                   # @func0000000000000107
 func0000000000000136:                   # @func0000000000000136
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	vsrl.vi	v10, v10, 3
 	lui	a0, 699051
+	vsrl.vi	v10, v10, 3
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
@@ -141,8 +141,8 @@ func0000000000000136:                   # @func0000000000000136
 func0000000000000116:                   # @func0000000000000116
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
-	vsrl.vi	v10, v10, 4
 	lui	a0, 699051
+	vsrl.vi	v10, v10, 4
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1

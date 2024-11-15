@@ -1,10 +1,10 @@
 func0000000000000190:                   # @func0000000000000190
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsrl.vi	v12, v12, 6
-	vand.vi	v12, v12, 7
-	vmsne.vv	v14, v12, v10
 	lui	a0, 16384
+	vand.vi	v12, v12, 7
 	addi	a0, a0, -1
+	vmsne.vv	v14, v12, v10
 	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v14
 	ret

@@ -25,10 +25,10 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func0000000000000006:                   # @func0000000000000006
 	fli.s	fa5, 1.0
+	lui	a0, 280480
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfge.vf	v12, v8, fa5
 	vmorn.mm	v0, v0, v12
-	lui	a0, 280480
 	vmv.v.x	v8, a0
 	vfmerge.vfm	v8, v8, fa5, v0
 	ret

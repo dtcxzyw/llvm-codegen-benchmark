@@ -1,8 +1,8 @@
 func0000000000000008:                   # @func0000000000000008
 	lui	a0, 260096
 	fmv.w.x	fa5, a0
-	fsub.s	fa4, fa5, fa1
 	lui	a0, 522240
+	fsub.s	fa4, fa5, fa1
 	fmv.w.x	fa5, a0
 	feq.s	a0, fa4, fa5
 	bnez	a0, .LBB0_2
@@ -22,8 +22,8 @@ func0000000000000003:                   # @func0000000000000003
 func0000000000000004:                   # @func0000000000000004
 	lui	a0, 258048
 	fmv.w.x	fa5, a0
-	fsub.s	fa4, fa5, fa1
 	lui	a0, 260096
+	fsub.s	fa4, fa5, fa1
 	fmv.w.x	fa5, a0
 	flt.s	a0, fa5, fa4
 	bnez	a0, .LBB2_2

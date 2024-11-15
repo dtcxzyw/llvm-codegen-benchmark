@@ -20,8 +20,8 @@ func0000000000000022:                   # @func0000000000000022
 	sext.w	a1, a1
 	zext.w	a2, a2
 	xor	a0, a0, a2
-	seqz	a0, a0
 	xor	a1, a1, a3
+	seqz	a0, a0
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
@@ -54,8 +54,8 @@ func0000000000000322:                   # @func0000000000000322
 	sext.w	a0, a0
 	sext.w	a1, a1
 	sltu	a2, a2, a1
-	xori	a2, a2, 1
 	xor	a0, a0, a1
+	xori	a1, a2, 1
 	seqz	a0, a0
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret

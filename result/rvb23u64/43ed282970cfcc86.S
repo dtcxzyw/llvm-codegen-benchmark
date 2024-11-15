@@ -14,18 +14,18 @@ func00000000000000c0:                   # @func00000000000000c0
 func0000000000000055:                   # @func0000000000000055
 	zext.w	a2, a2
 	lui	a3, 1048572
+	slli	a0, a0, 13
 	addiw	a3, a3, 1247
 	mul	a2, a2, a3
-	slli	a0, a0, 13
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
 func00000000000000d5:                   # @func00000000000000d5
 	zext.w	a2, a2
 	lui	a3, 4
+	slli	a1, a1, 14
 	addiw	a3, a3, -1247
 	mul	a2, a2, a3
-	slli	a1, a1, 14
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

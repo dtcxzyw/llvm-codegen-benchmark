@@ -5,8 +5,8 @@ func00000000000001cb:                   # @func00000000000001cb
 	fld	fa5, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vfabs.v	v10, v10
-	vmfgt.vf	v12, v10, fa5
 	li	a0, 16
+	vmfgt.vf	v12, v10, fa5
 	vmsne.vx	v10, v8, a0
 	vmandn.mm	v0, v10, v12
 	ret

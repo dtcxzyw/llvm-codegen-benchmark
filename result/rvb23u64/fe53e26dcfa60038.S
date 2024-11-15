@@ -3,10 +3,10 @@ func000000000000008e:                   # @func000000000000008e
 	sext.w	a1, a1
 	andi	a2, a2, 255
 	addi	a2, a2, -127
-	sltiu	a2, a2, -126
 	slt	a0, a1, a0
+	sltiu	a1, a2, -126
 	xori	a0, a0, 1
-	or	a0, a0, a2
+	or	a0, a0, a1
 	ret
 func00000000000000c8:                   # @func00000000000000c8
 	sext.w	a1, a1

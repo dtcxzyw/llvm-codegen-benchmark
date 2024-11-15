@@ -22,8 +22,8 @@ func0000000000000011:                   # @func0000000000000011
 func00000000000000a1:                   # @func00000000000000a1
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vzext.vf2	v14, v12
-	vmseq.vv	v12, v14, v8
 	li	a0, 2047
+	vmseq.vv	v12, v14, v8
 	vmsgt.vx	v8, v10, a0
 	vmand.mm	v0, v12, v8
 	ret

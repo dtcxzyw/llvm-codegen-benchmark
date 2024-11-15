@@ -11,10 +11,10 @@ func00000000000007b6:                   # @func00000000000007b6
 func0000000000000541:                   # @func0000000000000541
 	sext.w	a0, a0
 	sltu	a3, a2, a1
-	xori	a3, a3, 1
 	sltu	a1, a1, a2
+	xori	a2, a3, 1
 	czero.nez	a1, a1, a0
-	czero.eqz	a0, a3, a0
+	czero.eqz	a0, a2, a0
 	or	a0, a0, a1
 	ret
 func0000000000000571:                   # @func0000000000000571

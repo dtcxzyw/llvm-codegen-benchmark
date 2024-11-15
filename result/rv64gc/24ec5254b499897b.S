@@ -13,8 +13,8 @@ func00000000000001cc:                   # @func00000000000001cc
 	ret
 func000000000000014a:                   # @func000000000000014a
 	add	a1, a1, a2
-	sltu	a1, a0, a1
-	slti	a0, a0, 0
-	not	a0, a0
+	slti	a2, a0, 0
+	sltu	a0, a0, a1
+	not	a1, a2
 	and	a0, a0, a1
 	ret

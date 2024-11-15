@@ -6,8 +6,8 @@ func0000000000000000:                   # @func0000000000000000
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v10, v8, 2
 	vmulhu.vx	v10, v10, a0
-	vsrl.vi	v10, v10, 2
 	li	a0, -100
+	vsrl.vi	v10, v10, 2
 	zext.w	a0, a0
 	vmadd.vx	v10, a0, v8
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -20,9 +20,9 @@ func000000000000003c:                   # @func000000000000003c
 	ld	a0, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulhu.vx	v10, v8, a0
-	vsrl.vi	v10, v10, 26
 	lui	a0, 512081
 	slli	a0, a0, 1
+	vsrl.vi	v10, v10, 26
 	addi	a0, a0, -256
 	vmadd.vx	v10, a0, v8
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -36,8 +36,8 @@ func0000000000000030:                   # @func0000000000000030
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v10, v8, 11
 	vmulhu.vx	v10, v10, a0
-	vsrl.vi	v10, v10, 9
 	lui	a0, 72014
+	vsrl.vi	v10, v10, 9
 	addiw	a0, a0, -2048
 	vmadd.vx	v10, a0, v8
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -51,9 +51,9 @@ func0000000000000020:                   # @func0000000000000020
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vi	v10, v8, 9
 	vmulhu.vx	v10, v10, a0
-	vsrl.vi	v10, v10, 11
 	lui	a0, 1571
 	addiw	a0, a0, 667
+	vsrl.vi	v10, v10, 11
 	slli	a0, a0, 9
 	vmadd.vx	v10, a0, v8
 	vsetvli	zero, zero, e32, m1, ta, ma

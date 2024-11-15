@@ -1,9 +1,9 @@
 func0000000000000001:                   # @func0000000000000001
 	slli	a1, a0, 2
 	slli	a0, a0, 4
+	lui	a2, 599186
 	subw	a0, a0, a1
-	lui	a1, 599186
-	addiw	a1, a1, 1171
+	addiw	a1, a2, 1171
 	mul	a1, a0, a1
 	srli	a1, a1, 32
 	add	a1, a1, a0
@@ -18,9 +18,9 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000000:                   # @func0000000000000000
 	slli	a1, a0, 1
 	slli	a0, a0, 3
+	lui	a2, 274878
 	subw	a0, a0, a1
-	lui	a1, 274878
-	addiw	a1, a1, -381
+	addiw	a1, a2, -381
 	mul	a1, a0, a1
 	srli	a2, a1, 63
 	srai	a1, a1, 50

@@ -8,8 +8,8 @@ func0000000000000071:                   # @func0000000000000071
 	ret
 func00000000000001b1:                   # @func00000000000001b1
 	sext.w	a1, a1
-	slti	a1, a1, 3
 	li	a2, 16
+	slti	a1, a1, 3
 	czero.nez	a1, a2, a1
 	addi	a1, a1, 16
 	addi	a0, a0, 1
@@ -27,8 +27,8 @@ func0000000000000331:                   # @func0000000000000331
 	ret
 func00000000000002b1:                   # @func00000000000002b1
 	sext.w	a1, a1
-	slti	a1, a1, 11
 	li	a2, -7
+	slti	a1, a1, 11
 	czero.eqz	a1, a2, a1
 	addi	a1, a1, 10
 	addi	a0, a0, 1
@@ -37,8 +37,8 @@ func00000000000002b1:                   # @func00000000000002b1
 	ret
 func0000000000000131:                   # @func0000000000000131
 	sext.w	a1, a1
-	sltiu	a1, a1, 17
 	li	a2, 2
+	sltiu	a1, a1, 17
 	czero.nez	a1, a2, a1
 	addi	a1, a1, 2
 	addi	a0, a0, 1

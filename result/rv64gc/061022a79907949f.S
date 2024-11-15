@@ -20,8 +20,8 @@ func0000000000000081:                   # @func0000000000000081
 	lui	a2, 122
 	addiw	a2, a2, 288
 	sltu	a1, a2, a1
-	neg	a1, a1
 	lui	a2, 244
+	neg	a1, a1
 	addiw	a2, a2, 576
 	and	a1, a1, a2
 	xor	a0, a0, a1

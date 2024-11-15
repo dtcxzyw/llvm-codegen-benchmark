@@ -30,8 +30,8 @@ func000000000000003b:                   # @func000000000000003b
 	ret
 func000000000000003d:                   # @func000000000000003d
 	add	a0, a0, a1
-	addi	a0, a0, 17
 	lui	a1, 16
+	addi	a0, a0, 17
 	addiw	a1, a1, -8
 	and	a0, a0, a1
 	addi	a0, a0, -1

@@ -28,16 +28,16 @@ func0000000000000007:                   # @func0000000000000007
 	ret
 func0000000000000012:                   # @func0000000000000012
 	sltiu	a2, a2, -1025
-	czero.nez	a1, a1, a2
 	li	a3, 33
+	czero.nez	a1, a1, a2
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
 	add	a0, a0, a1
 	ret
 func0000000000000022:                   # @func0000000000000022
 	sltiu	a2, a2, 16
-	czero.eqz	a1, a1, a2
 	li	a3, 15
+	czero.eqz	a1, a1, a2
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
 	add	a0, a0, a1
@@ -52,8 +52,8 @@ func000000000000002a:                   # @func000000000000002a
 	ret
 func0000000000000020:                   # @func0000000000000020
 	srli	a2, a2, 31
-	czero.nez	a1, a1, a2
 	lui	a3, 524288
+	czero.nez	a1, a1, a2
 	addiw	a3, a3, -1
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2

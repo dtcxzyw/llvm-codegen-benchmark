@@ -6,8 +6,8 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func0000000000000004:                   # @func0000000000000004
 	lui	a2, 3
-	and	a1, a1, a2
 	andi	a0, a0, -2048
+	and	a1, a1, a2
 	bclri	a0, a0, 11
 	add	a0, a0, a1
 	ret

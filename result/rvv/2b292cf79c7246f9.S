@@ -22,8 +22,8 @@ func0000000000000038:                   # @func0000000000000038
 func0000000000000028:                   # @func0000000000000028
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v12, v10, 0
-	vmor.mm	v10, v12, v0
 	li	a0, 512
+	vmor.mm	v10, v12, v0
 	vmsltu.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10
 	ret
@@ -58,8 +58,8 @@ func0000000000000190:                   # @func0000000000000190
 func0000000000000090:                   # @func0000000000000090
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsleu.vi	v12, v10, 14
-	vmor.mm	v10, v12, v0
 	li	a0, 39
+	vmor.mm	v10, v12, v0
 	vmsgtu.vx	v11, v8, a0
 	vmor.mm	v0, v11, v10
 	ret
@@ -101,8 +101,8 @@ func000000000000010c:                   # @func000000000000010c
 func0000000000000082:                   # @func0000000000000082
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsleu.vi	v12, v10, -8
-	vmor.mm	v10, v12, v0
 	li	a0, 40
+	vmor.mm	v10, v12, v0
 	vmseq.vx	v11, v8, a0
 	vmor.mm	v0, v10, v11
 	ret

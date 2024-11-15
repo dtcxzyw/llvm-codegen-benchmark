@@ -10,15 +10,15 @@ func000000000000001f:                   # @func000000000000001f
 	ret
 func000000000000003f:                   # @func000000000000003f
 	sext.w	a2, a2
-	or	a0, a0, a2
 	sh2add	a1, a1, a1
+	or	a0, a0, a2
 	slli	a1, a1, 5
 	add	a0, a0, a1
 	ret
 func000000000000002d:                   # @func000000000000002d
 	sext.w	a2, a2
-	or	a0, a0, a2
 	sh2add	a1, a1, a1
+	or	a0, a0, a2
 	slli	a1, a1, 5
 	add	a0, a0, a1
 	ret

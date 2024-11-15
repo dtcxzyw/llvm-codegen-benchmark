@@ -1,8 +1,8 @@
 func00000000000001d4:                   # @func00000000000001d4
 	sext.w	a2, a2
+	li	a3, 5
 	mul	a0, a0, a2
-	li	a2, 5
-	bseti	a2, a2, 33
+	bseti	a2, a3, 33
 	mulhu	a2, a1, a2
 	sub	a3, a1, a2
 	srli	a3, a3, 1

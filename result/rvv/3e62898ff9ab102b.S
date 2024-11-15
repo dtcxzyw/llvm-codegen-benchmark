@@ -1,8 +1,8 @@
 func000000000000000d:                   # @func000000000000000d
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v13, v12
-	vwaddu.wv	v8, v8, v13
 	lui	a0, 4
+	vwaddu.wv	v8, v8, v13
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v10, v10, a0
 	vmul.vv	v8, v8, v10
@@ -10,8 +10,8 @@ func000000000000000d:                   # @func000000000000000d
 func0000000000000045:                   # @func0000000000000045
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v13, v12
-	vwaddu.wv	v10, v10, v13
 	lui	a0, 1048560
+	vwaddu.wv	v10, v10, v13
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	vmul.vv	v8, v8, v10

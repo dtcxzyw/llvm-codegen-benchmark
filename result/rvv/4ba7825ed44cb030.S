@@ -41,9 +41,9 @@ func00000000000000c8:                   # @func00000000000000c8
 	lui	a0, 128
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
-	vmseq.vi	v0, v10, 0
 	lui	a0, 272
 	addi	a0, a0, -1
+	vmseq.vi	v0, v10, 0
 	vmv.v.x	v10, a0
 	li	a0, 255
 	vmerge.vxm	v10, v10, a0, v0
@@ -52,8 +52,8 @@ func00000000000000c8:                   # @func00000000000000c8
 func0000000000000016:                   # @func0000000000000016
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v10, v10, 2
-	vmseq.vi	v0, v10, 0
 	li	a0, 20
+	vmseq.vi	v0, v10, 0
 	vmv.v.x	v10, a0
 	li	a0, 16
 	vmerge.vxm	v10, v10, a0, v0
@@ -73,9 +73,9 @@ func0000000000000019:                   # @func0000000000000019
 	li	a0, 64
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
-	vmseq.vi	v0, v10, 0
 	lui	a0, 1951
 	addi	a0, a0, 704
+	vmseq.vi	v0, v10, 0
 	vmv.v.x	v10, a0
 	lui	a0, 1978
 	addi	a0, a0, -1888
@@ -86,9 +86,9 @@ func0000000000000015:                   # @func0000000000000015
 	li	a0, 64
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
-	vmseq.vi	v0, v10, 0
 	lui	a0, 2441
 	addi	a0, a0, 1664
+	vmseq.vi	v0, v10, 0
 	vmv.v.x	v10, a0
 	lui	a0, 1978
 	addi	a0, a0, -1888
@@ -98,8 +98,8 @@ func0000000000000015:                   # @func0000000000000015
 func000000000000001a:                   # @func000000000000001a
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v10, v10, 1
-	vmseq.vi	v0, v10, 0
 	li	a0, 256
+	vmseq.vi	v0, v10, 0
 	vmv.v.x	v10, a0
 	li	a0, 16
 	vmerge.vxm	v10, v10, a0, v0

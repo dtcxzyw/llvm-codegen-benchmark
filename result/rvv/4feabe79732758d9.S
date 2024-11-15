@@ -79,8 +79,8 @@ func0000000000000069:                   # @func0000000000000069
 func0000000000000028:                   # @func0000000000000028
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v10, v8
-	vsll.vi	v8, v8, 16
 	bseti	a0, zero, 31
+	vsll.vi	v8, v8, 16
 	vadd.vx	v8, v8, a0
 	li	a0, 32
 	vsra.vx	v8, v8, a0

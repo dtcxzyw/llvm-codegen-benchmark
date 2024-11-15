@@ -17,8 +17,8 @@ func0000000000000024:                   # @func0000000000000024
 func0000000000000042:                   # @func0000000000000042
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfneg.v	v16, v16
-	vfdiv.vv	v8, v16, v8
 	fli.d	fa5, 1.0
+	vfdiv.vv	v8, v16, v8
 	vmflt.vf	v16, v8, fa5
 	fmv.d.x	fa5, zero
 	vmfgt.vf	v17, v8, fa5
@@ -27,8 +27,8 @@ func0000000000000042:                   # @func0000000000000042
 func00000000000000ac:                   # @func00000000000000ac
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfneg.v	v16, v16
-	vfdiv.vv	v8, v16, v8
 	fmv.d.x	fa5, zero
+	vfdiv.vv	v8, v16, v8
 	vmfge.vf	v16, v8, fa5
 	fli.d	fa5, 1.0
 	vmfle.vf	v17, v8, fa5

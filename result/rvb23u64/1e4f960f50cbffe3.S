@@ -65,10 +65,10 @@ func00000000000000aa:                   # @func00000000000000aa
 func0000000000000081:                   # @func0000000000000081
 	sext.w	a0, a0
 	zext.h	a1, a1
-	sltiu	a1, a1, 8
-	xori	a1, a1, 1
 	lui	a2, 52429
+	sltiu	a1, a1, 8
 	addiw	a2, a2, -820
+	xori	a1, a1, 1
 	xor	a0, a0, a2
 	seqz	a0, a0
 	and	a0, a0, a1

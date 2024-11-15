@@ -9,8 +9,8 @@ func0000000000000088:                   # @func0000000000000088
 	li	a0, 64
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v12, v12, a0
-	vmsleu.vv	v14, v12, v10
 	li	a0, 63
+	vmsleu.vv	v14, v12, v10
 	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v0, v14, v10
 	ret

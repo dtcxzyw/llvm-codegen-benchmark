@@ -27,8 +27,8 @@ func0000000000000008:                   # @func0000000000000008
 	li	a0, -128
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vmsgtu.vx	v8, v8, a0
-	vmand.mm	v0, v8, v0
 	li	a0, 96
+	vmand.mm	v0, v8, v0
 	vmv.v.x	v8, a0
 	li	a0, 104
 	vmerge.vxm	v8, v8, a0, v0

@@ -12,8 +12,8 @@ func00000000000000ac:                   # @func00000000000000ac
 	ret
 func0000000000000061:                   # @func0000000000000061
 	sext.w	a2, a2
-	slt	a0, a0, a2
 	andi	a1, a1, 1
+	slt	a0, a0, a2
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
@@ -34,8 +34,8 @@ func000000000000004c:                   # @func000000000000004c
 	ret
 func0000000000000041:                   # @func0000000000000041
 	sext.w	a2, a2
-	sltu	a0, a0, a2
 	andi	a1, a1, 240
+	sltu	a0, a0, a2
 	addi	a1, a1, -176
 	seqz	a1, a1
 	and	a0, a0, a1

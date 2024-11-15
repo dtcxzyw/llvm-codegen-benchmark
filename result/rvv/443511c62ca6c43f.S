@@ -31,8 +31,8 @@ func0000000000000238:                   # @func0000000000000238
 	li	a0, -1
 	srli	a0, a0, 12
 	vand.vx	v10, v10, a0
-	vmseq.vi	v12, v10, 0
 	lui	a0, 524032
+	vmseq.vi	v12, v10, 0
 	vmsne.vx	v10, v8, a0
 	vmor.mm	v0, v10, v12
 	ret

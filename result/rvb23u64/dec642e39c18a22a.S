@@ -13,16 +13,16 @@ func000000000000001a:                   # @func000000000000001a
 	ret
 func00000000000000c4:                   # @func00000000000000c4
 	andi	a1, a0, 224
-	snez	a1, a1
 	slli	a0, a0, 48
+	snez	a1, a1
 	srli	a0, a0, 60
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 func0000000000000018:                   # @func0000000000000018
 	not	a1, a0
-	bexti	a1, a1, 11
 	slli	a0, a0, 48
+	bexti	a1, a1, 11
 	srli	a0, a0, 62
 	snez	a0, a0
 	and	a0, a0, a1

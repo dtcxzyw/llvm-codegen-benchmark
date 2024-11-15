@@ -45,8 +45,8 @@ func0000000000000000:                   # @func0000000000000000
 	vzext.vf4	v12, v10
 	lui	a0, 65536
 	addi	a1, a0, -691
-	vmul.vx	v8, v8, a1
 	addi	a0, a0, -1357
+	vmul.vx	v8, v8, a1
 	vmacc.vx	v8, a0, v12
 	bseti	a0, zero, 11
 	vadd.vx	v8, v8, a0

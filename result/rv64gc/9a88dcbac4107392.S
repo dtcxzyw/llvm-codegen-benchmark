@@ -16,8 +16,8 @@ func000000000000008c:                   # @func000000000000008c
 	sext.w	a2, a0
 	addw	a0, a0, a1
 	sltiu	a0, a0, 12
-	xori	a0, a0, 1
 	addi	a2, a2, -16
+	xori	a0, a0, 1
 	snez	a1, a2
 	and	a0, a0, a1
 	ret

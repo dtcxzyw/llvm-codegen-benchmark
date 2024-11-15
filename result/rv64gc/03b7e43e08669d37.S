@@ -1,7 +1,7 @@
 func0000000000000018:                   # @func0000000000000018
 	li	a2, 52
-	sub	a2, a2, a1
 	srli	a0, a0, 12
+	sub	a2, a2, a1
 	sltiu	a0, a0, 5
 	addi	a0, a0, -1
 	and	a0, a0, a2

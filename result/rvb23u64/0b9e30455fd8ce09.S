@@ -13,8 +13,8 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000004:                   # @func0000000000000004
 	sh2add	a0, a0, a0
-	slli	a0, a0, 1
 	lui	a1, 524288
+	slli	a0, a0, 1
 	addiw	a1, a1, -32
 	and	a0, a0, a1
 	seqz	a0, a0

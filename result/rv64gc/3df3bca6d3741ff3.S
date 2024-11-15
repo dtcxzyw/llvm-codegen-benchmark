@@ -2,14 +2,14 @@
 	.quad	4835703278458516699             # 0x431bde82d7b634db
 func0000000000000006:                   # @func0000000000000006
 	sgtz	a1, a0
+	lui	a2, %hi(.LCPI0_0)
 	neg	a1, a1
+	ld	a2, %lo(.LCPI0_0)(a2)
 	and	a0, a0, a1
-	lui	a1, %hi(.LCPI0_0)
-	ld	a1, %lo(.LCPI0_0)(a1)
-	lui	a2, 244
-	addiw	a2, a2, 575
-	add	a0, a0, a2
-	mulhu	a0, a0, a1
+	lui	a1, 244
+	addiw	a1, a1, 575
+	add	a0, a0, a1
+	mulhu	a0, a0, a2
 	srli	a0, a0, 18
 	ret
 .LCPI1_0:

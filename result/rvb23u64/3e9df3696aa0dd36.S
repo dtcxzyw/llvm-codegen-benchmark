@@ -23,10 +23,10 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 func000000000000001b:                   # @func000000000000001b
 	or	a1, a1, a2
+	lui	a2, 1048320
 	or	a0, a0, a1
-	lui	a1, 1048320
-	addi	a1, a1, 1
-	addw	a0, a0, a1
+	addi	a2, a2, 1
+	addw	a0, a0, a2
 	ret
 func000000000000001c:                   # @func000000000000001c
 	or	a1, a1, a2

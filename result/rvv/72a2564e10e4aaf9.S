@@ -32,8 +32,8 @@ func0000000000000011:                   # @func0000000000000011
 	lui	a0, 699051
 	addi	a0, a0, -1365
 	vmacc.vx	v8, a0, v10
-	vror.vi	v8, v8, 3
 	lui	a0, 43691
+	vror.vi	v8, v8, 3
 	addi	a0, a0, -1366
 	vmsleu.vx	v0, v8, a0
 	ret

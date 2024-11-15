@@ -12,12 +12,12 @@ func000000000000000c:                   # @func000000000000000c
 	li	a2, 3
 	slli	a2, a2, 10
 	and	a1, a1, a2
+	li	a2, -61
 	snez	a1, a1
 	and	a0, a0, a1
-	li	a1, -61
-	slli	a1, a1, 28
-	czero.nez	a0, a1, a0
 	lui	a1, 851968
+	slli	a2, a2, 28
+	czero.nez	a0, a2, a0
 	addiw	a1, a1, -1
 	add	a0, a0, a1
 	ret

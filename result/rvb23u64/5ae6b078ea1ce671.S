@@ -38,8 +38,8 @@ func0000000000000015:                   # @func0000000000000015
 	.quad	-49064778989728546              # 0xff51afd7ed558cde
 func0000000000000040:                   # @func0000000000000040
 	lui	a2, %hi(.LCPI5_0)
-	ld	a2, %lo(.LCPI5_0)(a2)
 	lui	a3, %hi(.LCPI5_1)
+	ld	a2, %lo(.LCPI5_0)(a2)
 	ld	a3, %lo(.LCPI5_1)(a3)
 	sext.w	a1, a1
 	mul	a1, a1, a2
@@ -83,8 +83,8 @@ func0000000000000038:                   # @func0000000000000038
 	slli.uw	a2, a1, 6
 	slli.uw	a1, a1, 9
 	sub	a1, a1, a2
+	lui	a2, 8
 	add	a0, a0, a1
-	lui	a1, 8
-	addiw	a1, a1, 448
+	addiw	a1, a2, 448
 	add	a0, a0, a1
 	ret

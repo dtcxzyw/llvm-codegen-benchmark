@@ -17,8 +17,8 @@ func0000000000000114:                   # @func0000000000000114
 	czero.eqz	a2, a3, a2
 	lui	a3, 1048392
 	or	a2, a2, a3
-	sltiu	a1, a1, 67
 	li	a3, -16
+	sltiu	a1, a1, 67
 	czero.eqz	a3, a3, a1
 	czero.nez	a1, a2, a1
 	or	a1, a1, a3

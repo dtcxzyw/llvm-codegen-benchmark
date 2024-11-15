@@ -16,8 +16,8 @@ func0000000000000008:                   # @func0000000000000008
 func000000000000000a:                   # @func000000000000000a
 	addi	a2, a2, 1
 	and	a1, a1, a2
+	lui	a2, 7
 	sh1add.uw	a0, a1, a0
-	lui	a1, 7
-	addiw	a1, a1, -964
+	addiw	a1, a2, -964
 	add	a0, a0, a1
 	ret

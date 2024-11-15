@@ -1,7 +1,7 @@
 func0000000000000023:                   # @func0000000000000023
 	srli	a0, a0, 1
-	sext.w	a0, a0
 	lui	a1, 16
+	sext.w	a0, a0
 	addiw	a1, a1, -1
 	max	a0, a0, a1
 	addiw	a0, a0, 1

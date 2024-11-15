@@ -15,8 +15,8 @@ func00000000000000c1:                   # @func00000000000000c1
 func0000000000000081:                   # @func0000000000000081
 	li	a0, 127
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsgtu.vx	v14, v8, a0
-	vmseq.vi	v15, v12, 1
-	vmand.mm	v0, v15, v14
+	vmseq.vi	v14, v12, 1
+	vmsgtu.vx	v12, v8, a0
+	vmand.mm	v0, v14, v12
 	vmerge.vvm	v8, v10, v8, v0
 	ret

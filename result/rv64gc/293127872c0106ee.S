@@ -9,9 +9,9 @@ func000000000000008a:                   # @func000000000000008a
 	ret
 func000000000000004a:                   # @func000000000000004a
 	sltiu	a2, a2, 50
+	slli	a0, a0, 4
 	xori	a2, a2, 1
 	slli	a2, a2, 3
-	slli	a0, a0, 4
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

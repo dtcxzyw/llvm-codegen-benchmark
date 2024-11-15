@@ -67,9 +67,9 @@ func00000000000001c8:                   # @func00000000000001c8
 	li	a0, -22
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.x	v12, a0
+	li	a0, -18
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vwaddu.wv	v12, v12, v11
-	li	a0, -18
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsltu.vx	v10, v12, a0
 	vmsne.vi	v11, v8, 0

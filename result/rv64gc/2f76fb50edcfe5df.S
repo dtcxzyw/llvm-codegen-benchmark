@@ -19,9 +19,9 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000008:                   # @func0000000000000008
 	slli	a1, a1, 48
-	srli	a1, a1, 48
 	andi	a0, a0, 1
 	li	a2, 2
+	srli	a1, a1, 48
 	sub	a2, a2, a0
 	sltu	a0, a1, a2
 	ret
@@ -38,8 +38,8 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func000000000000001c:                   # @func000000000000001c
 	slli	a1, a1, 48
-	srli	a1, a1, 48
 	andi	a0, a0, 1
+	srli	a1, a1, 48
 	xori	a0, a0, 33
 	xor	a0, a0, a1
 	snez	a0, a0
@@ -56,9 +56,9 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func000000000000000c:                   # @func000000000000000c
 	slli	a1, a1, 48
-	srli	a1, a1, 48
 	andi	a0, a0, 1
 	li	a2, 2
+	srli	a1, a1, 48
 	sub	a2, a2, a0
 	xor	a1, a1, a2
 	snez	a0, a1

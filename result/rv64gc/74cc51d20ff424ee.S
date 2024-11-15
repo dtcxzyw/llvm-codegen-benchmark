@@ -16,8 +16,8 @@ func0000000000000000:                   # @func0000000000000000
 	addiw	a2, a2, -2046
 .LBB1_2:                                # %entry
 	or	a0, a0, a1
-	or	a0, a0, a2
 	lui	a1, 786432
+	or	a0, a0, a2
 	addiw	a1, a1, 1024
 	or	a0, a0, a1
 	ret

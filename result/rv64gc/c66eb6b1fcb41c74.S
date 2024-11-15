@@ -10,8 +10,8 @@ func0000000000000088:                   # @func0000000000000088
 	sext.w	a1, a1
 	andi	a2, a2, 60
 	addi	a2, a2, -60
-	seqz	a2, a2
 	sltiu	a1, a1, 60
+	seqz	a2, a2
 	xori	a1, a1, 1
 	or	a1, a1, a2
 	or	a0, a0, a1

@@ -38,8 +38,8 @@ func00000000000000a1:                   # @func00000000000000a1
 	sext.w	a0, a0
 	srliw	a1, a1, 31
 	slli	a1, a1, 31
-	seqz	a1, a1
 	slti	a0, a0, 0
+	seqz	a1, a1
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
@@ -55,10 +55,10 @@ func0000000000000084:                   # @func0000000000000084
 	sext.w	a0, a0
 	li	a2, 1
 	slli	a2, a2, 35
+	sltiu	a0, a0, 385
 	addi	a2, a2, -8
 	and	a1, a1, a2
 	sltiu	a1, a1, 312
-	sltiu	a0, a0, 385
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

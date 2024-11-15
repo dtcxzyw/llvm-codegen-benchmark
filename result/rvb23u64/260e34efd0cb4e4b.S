@@ -50,11 +50,11 @@ func0000000000000075:                   # @func0000000000000075
 	ret
 func0000000000000065:                   # @func0000000000000065
 	li	a2, 190
-	mul	a1, a1, a2
 	andi	a0, a0, 255
+	mul	a1, a1, a2
+	lui	a2, 1048570
 	add	a0, a0, a1
-	lui	a1, 1048570
-	addi	a1, a1, 66
+	addi	a1, a2, 66
 	addw	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
@@ -90,10 +90,10 @@ func0000000000000025:                   # @func0000000000000025
 	ret
 func0000000000000027:                   # @func0000000000000027
 	li	a2, 94
-	mul	a1, a1, a2
 	andi	a0, a0, 255
+	mul	a1, a1, a2
+	lui	a2, 14
 	add	a0, a0, a1
-	lui	a1, 14
-	addi	a1, a1, -161
+	addi	a1, a2, -161
 	addw	a0, a0, a1
 	ret

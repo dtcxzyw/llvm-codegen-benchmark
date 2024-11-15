@@ -1,7 +1,7 @@
 func000000000000003f:                   # @func000000000000003f
 	sh2add	a0, a1, a0
-	addi	a0, a0, 35
 	lui	a1, 524288
+	addi	a0, a0, 35
 	addiw	a1, a1, -8
 	and	a0, a0, a1
 	ret

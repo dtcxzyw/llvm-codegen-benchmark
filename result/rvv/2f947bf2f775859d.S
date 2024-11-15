@@ -21,8 +21,8 @@ func0000000000000020:                   # @func0000000000000020
 	vrsub.vi	v12, v10, 0
 	vmax.vv	v10, v10, v12
 	vmulhu.vx	v10, v10, a0
-	vsrl.vi	v10, v10, 18
 	li	a0, -1000
+	vsrl.vi	v10, v10, 18
 	zext.w	a0, a0
 	vmacc.vx	v8, a0, v10
 	ret
@@ -35,8 +35,8 @@ func000000000000002a:                   # @func000000000000002a
 	vrsub.vi	v12, v10, 0
 	vmax.vv	v10, v10, v12
 	vmulhu.vx	v10, v10, a0
-	vsrl.vi	v10, v10, 31
 	li	a0, -60
+	vsrl.vi	v10, v10, 31
 	zext.w	a0, a0
 	vmacc.vx	v8, a0, v10
 	ret

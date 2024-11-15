@@ -1,9 +1,9 @@
 func000000000000000f:                   # @func000000000000000f
 	slli	a1, a1, 48
-	srli	a1, a1, 48
-	slli	a1, a1, 40
 	li	a2, 1
+	srli	a1, a1, 48
 	slli	a2, a2, 32
+	slli	a1, a1, 40
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
@@ -14,10 +14,10 @@ func000000000000000b:                   # @func000000000000000b
 	ret
 func000000000000001f:                   # @func000000000000001f
 	slli	a1, a1, 48
-	srli	a1, a1, 48
-	slli	a1, a1, 32
 	li	a2, -1
+	srli	a1, a1, 48
 	slli	a2, a2, 63
+	slli	a1, a1, 32
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret

@@ -20,8 +20,8 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000002:                   # @func0000000000000002
 	andi	a1, a1, 1
 	srli	a2, a2, 52
-	slli	a2, a2, 52
 	li	a3, 511
+	slli	a2, a2, 52
 	slli	a3, a3, 53
 	add	a2, a2, a3
 	addi	a1, a1, -1

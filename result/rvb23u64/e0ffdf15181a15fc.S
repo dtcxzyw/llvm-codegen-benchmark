@@ -6,8 +6,8 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func0000000000000002:                   # @func0000000000000002
 	bclri	a2, a2, 11
-	bclri	a2, a2, 12
 	bclri	a1, a1, 11
+	bclri	a2, a2, 12
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

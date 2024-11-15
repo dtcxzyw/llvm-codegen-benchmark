@@ -6,11 +6,11 @@ func00000000000000c1:                   # @func00000000000000c1
 	lui	a2, 34953
 	addi	a2, a2, -1912
 	add	a1, a1, a2
-	roriw	a1, a1, 2
 	lui	a2, 17476
 	addiw	a2, a2, 1093
-	sltu	a1, a1, a2
 	addi	a0, a0, -2
+	roriw	a1, a1, 2
+	sltu	a1, a1, a2
 	snez	a0, a0
 	and	a0, a0, a1
 	ret

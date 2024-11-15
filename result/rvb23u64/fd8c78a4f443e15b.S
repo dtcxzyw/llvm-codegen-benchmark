@@ -3,8 +3,8 @@ func0000000000000035:                   # @func0000000000000035
 	lui	a2, 67109
 	addiw	a2, a2, -557
 	mul	a1, a1, a2
-	srli	a1, a1, 38
 	li	a2, -1000
+	srli	a1, a1, 38
 	mul	a1, a1, a2
 	sext.w	a0, a0
 	add	a0, a0, a1

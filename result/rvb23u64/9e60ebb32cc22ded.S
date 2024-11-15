@@ -2,13 +2,13 @@ func0000000000000000:                   # @func0000000000000000
 	lui	a3, 478667
 	addi	a3, a3, 771
 	mul	a2, a2, a3
+	lui	a3, 648450
 	xor	a1, a1, a2
-	lui	a2, 648450
-	addi	a2, a2, -829
-	mul	a1, a1, a2
+	lui	a2, 820746
+	addi	a3, a3, -829
+	mul	a1, a1, a3
 	xor	a0, a0, a1
-	lui	a1, 820746
-	addi	a1, a1, 991
+	addi	a1, a2, 991
 	mulw	a0, a0, a1
 	ret
 func0000000000000014:                   # @func0000000000000014
@@ -24,12 +24,12 @@ func0000000000000014:                   # @func0000000000000014
 func0000000000000010:                   # @func0000000000000010
 	slli	a3, a2, 4
 	add	a2, a2, a3
+	lui	a3, 129
 	xor	a1, a1, a2
 	slli	a2, a1, 10
 	add	a1, a1, a2
 	xor	a0, a0, a1
-	lui	a1, 129
-	addi	a1, a1, 129
+	addi	a1, a3, 129
 	mulw	a0, a0, a1
 	ret
 func0000000000000030:                   # @func0000000000000030

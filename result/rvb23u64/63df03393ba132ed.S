@@ -23,9 +23,9 @@ func0000000000000014:                   # @func0000000000000014
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
 	fabs.d	fa4, fa0
-	flt.d	a0, fa5, fa4
-	feq.d	a1, fa0, fa0
-	xori	a1, a1, 1
+	feq.d	a0, fa0, fa0
+	flt.d	a1, fa5, fa4
+	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 .LCPI3_0:
@@ -34,8 +34,8 @@ func000000000000001a:                   # @func000000000000001a
 	lui	a0, %hi(.LCPI3_0)
 	fld	fa5, %lo(.LCPI3_0)(a0)
 	fabs.d	fa4, fa0
-	fle.d	a0, fa4, fa5
-	feq.d	a1, fa0, fa0
-	xori	a1, a1, 1
+	feq.d	a0, fa0, fa0
+	fle.d	a1, fa4, fa5
+	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret

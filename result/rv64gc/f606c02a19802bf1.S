@@ -12,15 +12,15 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func0000000000000041:                   # @func0000000000000041
 	andi	a1, a1, 255
-	sltiu	a1, a1, 2
 	addi	a0, a0, -1
+	sltiu	a1, a1, 2
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
 func0000000000000018:                   # @func0000000000000018
 	andi	a1, a1, 255
-	seqz	a1, a1
 	lui	a2, 16384
+	seqz	a1, a1
 	sltu	a0, a2, a0
 	and	a0, a0, a1
 	ret

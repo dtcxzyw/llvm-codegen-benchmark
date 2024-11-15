@@ -8,8 +8,8 @@ func0000000000000001:                   # @func0000000000000001
 	add	a1, a1, a2
 	li	a2, 1000
 	mul	a1, a1, a2
+	lui	a2, 244
 	subw	a0, a0, a1
-	lui	a1, 244
-	addi	a1, a1, 576
+	addi	a1, a2, 576
 	mulw	a0, a0, a1
 	ret

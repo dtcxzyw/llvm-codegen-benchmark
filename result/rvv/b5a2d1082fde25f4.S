@@ -31,11 +31,11 @@ func000000000000001d:                   # @func000000000000001d
 	ret
 func0000000000000010:                   # @func0000000000000010
 	li	a0, 12
+	lui	a1, 16
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmacc.vx	v8, a0, v10
-	lui	a0, 16
-	addi	a1, a0, -2
-	vadd.vx	v8, v8, a1
-	addi	a0, a0, -1
-	vand.vx	v8, v8, a0
+	addi	a0, a1, -2
+	vadd.vx	v8, v8, a0
+	addi	a1, a1, -1
+	vand.vx	v8, v8, a1
 	ret

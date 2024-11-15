@@ -1,8 +1,8 @@
 func0000000000000108:                   # @func0000000000000108
 	sext.w	a2, a2
 	sub	a0, a0, a1
-	sub	a0, a0, a2
 	li	a1, -2
+	sub	a0, a0, a2
 	zext.w	a1, a1
 	sltu	a0, a1, a0
 	ret
@@ -59,10 +59,10 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func0000000000000008:                   # @func0000000000000008
 	add.uw	a1, a2, a1
+	lui	a2, 524288
 	sub	a0, a0, a1
-	lui	a1, 524288
-	addiw	a1, a1, -2
-	sltu	a0, a1, a0
+	addiw	a2, a2, -2
+	sltu	a0, a2, a0
 	ret
 func00000000000000e8:                   # @func00000000000000e8
 	add.uw	a1, a2, a1
@@ -89,10 +89,10 @@ func00000000000000cc:                   # @func00000000000000cc
 	ret
 func00000000000000c8:                   # @func00000000000000c8
 	add.uw	a1, a2, a1
+	li	a2, -2
 	sub	a0, a0, a1
-	li	a1, -2
-	zext.w	a1, a1
-	sltu	a0, a1, a0
+	zext.w	a2, a2
+	sltu	a0, a2, a0
 	ret
 func000000000000004a:                   # @func000000000000004a
 	add.uw	a1, a2, a1

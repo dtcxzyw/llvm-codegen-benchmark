@@ -22,10 +22,10 @@ func000000000000003f:                   # @func000000000000003f
 	ret
 func000000000000002a:                   # @func000000000000002a
 	vmv1r.v	v9, v0
+	vmv1r.v	v0, v8
 	li	a0, 72
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v12, v10, a0
-	vmv1r.v	v0, v8
 	vmerge.vvm	v10, v12, v10, v0
 	li	a0, 28
 	vadd.vx	v12, v10, a0

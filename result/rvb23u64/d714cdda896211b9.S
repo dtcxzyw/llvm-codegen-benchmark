@@ -5,8 +5,8 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func0000000000000000:                   # @func0000000000000000
 	add	a0, a0, a1
-	slli	a0, a0, 32
 	li	a1, -1
+	slli	a0, a0, 32
 	slli	a1, a1, 32
 	add	a0, a0, a1
 	ret
@@ -47,22 +47,22 @@ func000000000000003f:                   # @func000000000000003f
 	ret
 func0000000000000010:                   # @func0000000000000010
 	add	a0, a0, a1
-	slli	a0, a0, 32
 	li	a1, -475
+	slli	a0, a0, 32
 	slli	a1, a1, 34
 	add	a0, a0, a1
 	ret
 func0000000000000030:                   # @func0000000000000030
 	add	a0, a0, a1
-	slli	a0, a0, 32
 	li	a1, -1
+	slli	a0, a0, 32
 	slli	a1, a1, 32
 	add	a0, a0, a1
 	ret
 func0000000000000035:                   # @func0000000000000035
 	add	a0, a0, a1
-	slli	a0, a0, 16
 	lui	a1, 983055
+	slli	a0, a0, 16
 	slli	a1, a1, 4
 	add	a0, a0, a1
 	ret

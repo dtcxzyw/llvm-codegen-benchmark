@@ -13,9 +13,9 @@ func0000000000000061:                   # @func0000000000000061
 	sext.w	a2, a2
 	sext.w	a3, a1
 	slt	a2, a3, a2
-	czero.nez	a1, a1, a2
 	lui	a3, 524288
 	addi	a3, a3, -1
+	czero.nez	a1, a1, a2
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
 	sext.w	a1, a1
@@ -54,9 +54,9 @@ func00000000000000ac:                   # @func00000000000000ac
 	sext.w	a3, a1
 	sext.w	a2, a2
 	slt	a2, a2, a3
-	czero.nez	a1, a1, a2
 	lui	a3, 16
 	addi	a3, a3, -1
+	czero.nez	a1, a1, a2
 	czero.eqz	a2, a3, a2
 	or	a1, a1, a2
 	sext.w	a1, a1

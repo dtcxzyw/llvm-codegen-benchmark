@@ -7,8 +7,8 @@ func0000000000000025:                   # @func0000000000000025
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vx	v12, v12, a1
 	vmulh.vx	v14, v12, a0
-	vadd.vv	v12, v14, v12
 	li	a0, 63
+	vadd.vv	v12, v14, v12
 	vsrl.vx	v14, v12, a0
 	vsra.vi	v12, v12, 8
 	vadd.vv	v12, v12, v14
@@ -23,8 +23,8 @@ func0000000000000020:                   # @func0000000000000020
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v12, v12, -1
 	vmulh.vx	v14, v12, a0
-	vadd.vv	v12, v14, v12
 	li	a0, 63
+	vadd.vv	v12, v14, v12
 	vsrl.vx	v14, v12, a0
 	vsra.vi	v12, v12, 6
 	vadd.vv	v12, v12, v14

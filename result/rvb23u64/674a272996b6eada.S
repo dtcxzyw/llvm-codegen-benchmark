@@ -52,8 +52,8 @@ func0000000000000028:                   # @func0000000000000028
 func0000000000000078:                   # @func0000000000000078
 	andi	a1, a1, 255
 	add	a0, a0, a1
-	zext.h	a0, a0
 	lui	a1, 2
+	zext.h	a0, a0
 	addiw	a1, a1, -1639
 	sltu	a0, a1, a0
 	ret

@@ -28,8 +28,8 @@ func000000000000046c:                   # @func000000000000046c
 func0000000000000564:                   # @func0000000000000564
 	sext.w	a0, a0
 	addiw	a2, a2, 1
-	slt	a0, a2, a0
 	addiw	a1, a1, -925
+	slt	a0, a2, a0
 	sltiu	a1, a1, 3
 	and	a0, a0, a1
 	ret

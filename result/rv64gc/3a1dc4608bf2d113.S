@@ -21,16 +21,16 @@ func0000000000000004:                   # @func0000000000000004
 func000000000000015a:                   # @func000000000000015a
 	sraiw	a2, a2, 16
 	add	a0, a0, a1
-	addw	a0, a0, a2
 	lui	a1, 12
+	addw	a0, a0, a2
 	addiw	a1, a1, 1932
 	slt	a0, a1, a0
 	ret
 func0000000000000156:                   # @func0000000000000156
 	sraiw	a2, a2, 16
 	add	a0, a0, a1
-	addw	a0, a0, a2
 	lui	a1, 1048564
+	addw	a0, a0, a2
 	addiw	a1, a1, -1930
 	slt	a0, a0, a1
 	ret
@@ -44,8 +44,8 @@ func0000000000000041:                   # @func0000000000000041
 func0000000000000046:                   # @func0000000000000046
 	sraiw	a2, a2, 5
 	add	a0, a0, a1
-	addw	a0, a0, a2
 	lui	a1, 1
+	addw	a0, a0, a2
 	addiw	a1, a1, 30
 	slt	a0, a0, a1
 	ret

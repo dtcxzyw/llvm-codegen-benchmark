@@ -30,8 +30,8 @@ func000000000000000a:                   # @func000000000000000a
 func0000000000000000:                   # @func0000000000000000
 	li	a2, 1
 	subw	a2, a2, a1
-	zext.w	a2, a2
 	lui	a1, 1
+	zext.w	a2, a2
 	addiw	a1, a1, -1472
 	mul	a1, a1, a2
 	add	a0, a0, a1

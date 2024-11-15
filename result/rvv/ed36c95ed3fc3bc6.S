@@ -32,24 +32,24 @@ func00000000000001aa:                   # @func00000000000001aa
 	vmand.mm	v0, v16, v12
 	ret
 func0000000000000066:                   # @func0000000000000066
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vfclass.v	v12, v12
-	li	a0, 126
-	vand.vx	v12, v12, a0
-	vmsne.vi	v16, v12, 0
 	fli.s	fa5, inf
-	vmflt.vf	v12, v8, fa5
-	vmfgt.vf	v13, v8, fa5
-	vmor.mm	v8, v13, v12
-	vmand.mm	v0, v16, v8
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vmflt.vf	v16, v8, fa5
+	vmfgt.vf	v17, v8, fa5
+	vfclass.v	v8, v12
+	li	a0, 126
+	vand.vx	v8, v8, a0
+	vmsne.vi	v12, v8, 0
+	vmor.mm	v8, v17, v16
+	vmand.mm	v0, v12, v8
 	ret
 func0000000000000024:                   # @func0000000000000024
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfabs.v	v12, v12
 	lui	a0, 275264
 	fmv.w.x	fa5, a0
-	vmfgt.vf	v16, v12, fa5
 	lui	a0, 277312
+	vmfgt.vf	v16, v12, fa5
 	fmv.w.x	fa5, a0
 	vmflt.vf	v12, v8, fa5
 	vmand.mm	v0, v16, v12
@@ -59,8 +59,8 @@ func00000000000000c4:                   # @func00000000000000c4
 	vfabs.v	v12, v12
 	lui	a0, 275264
 	fmv.w.x	fa5, a0
-	vmfgt.vf	v16, v12, fa5
 	lui	a0, 277312
+	vmfgt.vf	v16, v12, fa5
 	fmv.w.x	fa5, a0
 	vmfge.vf	v12, v8, fa5
 	vmand.mm	v0, v16, v12

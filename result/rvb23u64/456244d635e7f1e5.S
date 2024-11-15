@@ -21,8 +21,8 @@ func0000000000000005:                   # @func0000000000000005
 func0000000000000011:                   # @func0000000000000011
 	srai	a2, a2, 63
 	add	a0, a0, a1
-	add	a0, a0, a2
 	lui	a1, 488281
+	add	a0, a0, a2
 	slli	a1, a1, 1
 	addi	a1, a1, 2047
 	add	a0, a0, a1

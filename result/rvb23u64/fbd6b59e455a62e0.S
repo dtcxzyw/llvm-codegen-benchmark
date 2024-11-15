@@ -1,8 +1,8 @@
 func0000000000000021:                   # @func0000000000000021
 	addi	a1, a1, 1
+	li	a2, 9
 	xor	a0, a0, a1
 	czero.eqz	a1, a1, a0
-	li	a2, 9
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	ret
@@ -33,9 +33,9 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func0000000000000038:                   # @func0000000000000038
 	addi	a1, a1, 8
+	li	a2, -72
 	sltu	a0, a0, a1
 	czero.nez	a1, a1, a0
-	li	a2, -72
 	czero.eqz	a0, a2, a0
 	or	a0, a0, a1
 	ret

@@ -1,7 +1,7 @@
 func0000000000000003:                   # @func0000000000000003
 	neg	a0, a0
-	srli	a0, a0, 2
 	li	a1, -57
+	srli	a0, a0, 2
 	srli	a1, a1, 3
 	and	a0, a0, a1
 	ret

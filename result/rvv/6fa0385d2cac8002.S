@@ -3,9 +3,9 @@ func0000000000000010:                   # @func0000000000000010
 	vmor.mm	v10, v0, v10
 	li	a0, 195
 	vmsgtu.vx	v11, v8, a0
-	vmor.mm	v0, v11, v10
 	li	a0, 30
 	vmv.v.x	v8, a0
+	vmor.mm	v0, v11, v10
 	li	a0, 90
 	vmerge.vxm	v8, v8, a0, v0
 	ret

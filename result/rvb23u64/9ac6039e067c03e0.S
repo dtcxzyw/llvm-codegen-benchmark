@@ -1,7 +1,7 @@
 func000000000000002a:                   # @func000000000000002a
 	sext.w	a2, a2
-	addi	a2, a2, 1
 	li	a3, -1
+	addi	a2, a2, 1
 	srli	a3, a3, 32
 	czero.nez	a2, a3, a2
 	zext.w	a1, a1
@@ -11,8 +11,8 @@ func000000000000002a:                   # @func000000000000002a
 	ret
 func000000000000003a:                   # @func000000000000003a
 	sext.w	a2, a2
-	czero.eqz	a1, a1, a2
 	li	a3, 1
+	czero.eqz	a1, a1, a2
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
 	sext.w	a1, a1

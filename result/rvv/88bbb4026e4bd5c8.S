@@ -48,8 +48,8 @@ func0000000000000044:                   # @func0000000000000044
 func0000000000000041:                   # @func0000000000000041
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vadd.vi	v10, v10, -2
-	vmsleu.vi	v10, v10, 7
 	li	a0, 64
+	vmsleu.vi	v10, v10, 7
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmseq.vx	v11, v8, a0
 	vmand.mm	v0, v11, v10

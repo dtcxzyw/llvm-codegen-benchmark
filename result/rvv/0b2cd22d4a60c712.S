@@ -16,10 +16,10 @@ func000000000000015a:                   # @func000000000000015a
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vor.vv	v10, v8, v10
 	lui	a0, 8
-	addi	a1, a0, 1131
-	vmsgt.vx	v8, v10, a1
 	li	a1, 1239
 	vmsgt.vx	v0, v10, a1
+	addi	a1, a0, 1131
+	vmsgt.vx	v8, v10, a1
 	li	a1, 107
 	vmv.v.x	v10, a1
 	li	a1, 1131

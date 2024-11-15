@@ -25,8 +25,8 @@ func000000000000000e:                   # @func000000000000000e
 func0000000000000002:                   # @func0000000000000002
 	slli	a1, a1, 16
 	or	a0, a0, a1
-	srli	a0, a0, 1
 	lui	a1, 349525
+	srli	a0, a0, 1
 	addiw	a1, a1, 1365
 	and	a0, a0, a1
 	ret
@@ -42,8 +42,8 @@ func000000000000000b:                   # @func000000000000000b
 func000000000000000a:                   # @func000000000000000a
 	slli	a1, a1, 24
 	or	a0, a0, a1
-	srli	a0, a0, 7
 	lui	a1, 4112
+	srli	a0, a0, 7
 	addiw	a1, a1, 257
 	and	a0, a0, a1
 	ret

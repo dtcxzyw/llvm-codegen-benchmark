@@ -22,9 +22,9 @@ func00000000000001c1:                   # @func00000000000001c1
 func00000000000001c8:                   # @func00000000000001c8
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v12, v12, 3
+	li	a0, -1
 	vsll.vv	v10, v10, v12
 	vor.vv	v8, v10, v8
-	li	a0, -1
 	srli	a0, a0, 32
 	vmsgtu.vx	v0, v8, a0
 	ret

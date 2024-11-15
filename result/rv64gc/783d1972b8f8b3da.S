@@ -30,8 +30,8 @@ func0000000000000020:                   # @func0000000000000020
 	.quad	8130577079664715991             # 0x70d59cc6bc5928d7
 func0000000000000068:                   # @func0000000000000068
 	lui	a2, 439453
-	slli	a2, a2, 1
 	lui	a3, %hi(.LCPI2_0)
+	slli	a2, a2, 1
 	ld	a3, %lo(.LCPI2_0)(a3)
 	addi	a2, a2, 1024
 	mul	a1, a1, a2
@@ -60,8 +60,8 @@ func0000000000000028:                   # @func0000000000000028
 	.quad	3667970486771497111             # 0x32e73fb956a1b897
 func0000000000000021:                   # @func0000000000000021
 	lui	a2, 1009952
-	addiw	a2, a2, 779
 	lui	a3, %hi(.LCPI4_0)
+	addiw	a2, a2, 779
 	ld	a3, %lo(.LCPI4_0)(a3)
 	slli	a2, a2, 14
 	mul	a1, a1, a2
@@ -74,22 +74,22 @@ func0000000000000021:                   # @func0000000000000021
 func000000000000002c:                   # @func000000000000002c
 	li	a2, -40
 	mul	a1, a1, a2
+	lui	a2, 838861
+	addiw	a2, a2, -819
 	add	a0, a0, a1
+	slli	a1, a2, 32
 	srai	a0, a0, 3
-	lui	a1, 838861
-	addiw	a1, a1, -819
-	slli	a2, a1, 32
 	add	a1, a1, a2
 	mul	a0, a0, a1
 	ret
 func000000000000006c:                   # @func000000000000006c
 	li	a2, 40
 	mul	a1, a1, a2
+	lui	a2, 838861
+	addiw	a2, a2, -819
 	add	a0, a0, a1
+	slli	a1, a2, 32
 	srai	a0, a0, 3
-	lui	a1, 838861
-	addiw	a1, a1, -819
-	slli	a2, a1, 32
 	add	a1, a1, a2
 	mul	a0, a0, a1
 	ret

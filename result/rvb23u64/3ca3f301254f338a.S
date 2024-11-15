@@ -47,9 +47,9 @@ func0000000000000000:                   # @func0000000000000000
 	addi	a1, a1, 1673
 	slli	a1, a1, 32
 	mulhu	a0, a0, a1
+	lui	a1, 13
 	srli	a0, a0, 47
 	addi	a0, a0, -1
-	lui	a1, 13
 	addi	a1, a1, -896
 	mulw	a0, a0, a1
 	ret

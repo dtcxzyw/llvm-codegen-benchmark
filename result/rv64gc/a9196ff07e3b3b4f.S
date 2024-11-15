@@ -55,9 +55,9 @@ func00000000000000cc:                   # @func00000000000000cc
 	sext.w	a2, a2
 	lui	a3, 319488
 	xor	a2, a2, a3
-	snez	a2, a2
 	lui	a3, 311296
 	xor	a1, a1, a3
+	snez	a2, a2
 	snez	a1, a1
 	and	a1, a1, a2
 	addi	a1, a1, -1

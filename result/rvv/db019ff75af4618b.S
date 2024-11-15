@@ -1,8 +1,8 @@
 func0000000000000029:                   # @func0000000000000029
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
 	lui	a0, 4096
+	vmerge.vim	v10, v10, 1, v0
 	vmsltu.vx	v0, v8, a0
 	vsll.vi	v8, v10, 4
 	vor.vi	v8, v8, 8, v0.t
@@ -20,8 +20,8 @@ func0000000000000023:                   # @func0000000000000023
 func0000000000000031:                   # @func0000000000000031
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv.v.i	v10, 0
-	vmerge.vim	v10, v10, 1, v0
 	li	a0, 255
+	vmerge.vim	v10, v10, 1, v0
 	vmsgtu.vx	v0, v8, a0
 	vsll.vi	v8, v10, 4
 	vor.vi	v8, v8, 8, v0.t

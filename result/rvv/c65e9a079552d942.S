@@ -4,9 +4,9 @@ func0000000000000031:                   # @func0000000000000031
 	li	a0, 32
 	vmseq.vi	v0, v8, 0
 	vor.vx	v8, v10, a0
-	vmerge.vvm	v10, v8, v10, v0
 	lui	a0, 33825
 	addi	a0, a0, 133
+	vmerge.vvm	v10, v8, v10, v0
 	vmulhu.vx	v8, v10, a0
 	vsub.vv	v12, v10, v8
 	vsrl.vi	v12, v12, 1

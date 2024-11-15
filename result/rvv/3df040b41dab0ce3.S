@@ -2,8 +2,8 @@ func00000000000000aa:                   # @func00000000000000aa
 	li	a0, -100
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmacc.vx	v10, a0, v12
-	vadd.vv	v8, v10, v8
 	li	a0, 25
+	vadd.vv	v8, v10, v8
 	slli	a0, a0, 9
 	vadd.vx	v8, v8, a0
 	vsra.vi	v8, v8, 8

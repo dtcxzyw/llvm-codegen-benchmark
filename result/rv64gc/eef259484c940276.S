@@ -48,18 +48,18 @@ func00000000000003a1:                   # @func00000000000003a1
 	ret
 func00000000000002e1:                   # @func00000000000002e1
 	slli	a2, a2, 3
+	slli	a1, a1, 3
 	add	a2, a2, a0
 	addi	a2, a2, 8
-	slli	a1, a1, 3
 	add	a0, a0, a1
 	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 func00000000000003e1:                   # @func00000000000003e1
 	slli	a2, a2, 3
+	slli	a1, a1, 3
 	add	a2, a2, a0
 	addi	a2, a2, 8
-	slli	a1, a1, 3
 	add	a0, a0, a1
 	xor	a0, a0, a2
 	seqz	a0, a0
@@ -98,9 +98,9 @@ func0000000000000281:                   # @func0000000000000281
 	ret
 func0000000000000001:                   # @func0000000000000001
 	slli	a2, a2, 3
+	slli	a1, a1, 3
 	add	a2, a2, a0
 	addi	a2, a2, 8
-	slli	a1, a1, 3
 	add	a0, a0, a1
 	xor	a0, a0, a2
 	seqz	a0, a0
@@ -113,9 +113,9 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func0000000000000009:                   # @func0000000000000009
 	slli	a2, a2, 3
+	slli	a1, a1, 3
 	add	a2, a2, a0
 	addi	a2, a2, 8
-	slli	a1, a1, 3
 	add	a0, a0, a1
 	sltu	a0, a2, a0
 	xori	a0, a0, 1

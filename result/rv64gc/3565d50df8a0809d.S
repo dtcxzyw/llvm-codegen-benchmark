@@ -1,16 +1,16 @@
 func0000000000000001:                   # @func0000000000000001
-	sub	a1, a1, a2
-	mv	a2, a1
-	bge	a1, a0, .LBB0_3
-	bnez	a0, .LBB0_4
+	mv	a3, a0
+	sub	a0, a1, a2
+	mv	a1, a0
+	bge	a0, a3, .LBB0_3
+	bnez	a3, .LBB0_4
 .LBB0_2:                                # %entry
-	mv	a0, a1
 	ret
 .LBB0_3:                                # %entry
-	mv	a2, a0
-	beqz	a0, .LBB0_2
+	mv	a1, a3
+	beqz	a3, .LBB0_2
 .LBB0_4:                                # %entry
-	mv	a0, a2
+	mv	a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
 	sub	a1, a1, a2

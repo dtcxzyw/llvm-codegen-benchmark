@@ -24,8 +24,8 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func000000000000000e:                   # @func000000000000000e
 	slli	a1, a1, 56
-	srai	a1, a1, 56
 	li	a2, 44
+	srai	a1, a1, 56
 	mul	a1, a1, a2
 	lui	a2, 6
 	addiw	a2, a2, 256

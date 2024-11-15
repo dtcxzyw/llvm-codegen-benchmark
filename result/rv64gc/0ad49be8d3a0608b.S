@@ -9,8 +9,8 @@ func0000000000000114:                   # @func0000000000000114
 	sext.w	a0, a0
 	add	a1, a1, a2
 	srli	a1, a1, 7
-	sltiu	a1, a1, 675
 	addi	a0, a0, -1
+	sltiu	a1, a1, 675
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret

@@ -9,8 +9,8 @@ func000000000000001a:                   # @func000000000000001a
 func000000000000011a:                   # @func000000000000011a
 	zext.h	a0, a0
 	subw	a1, a1, a2
-	slti	a1, a1, 2
 	li	a2, 27
+	slti	a1, a1, 2
 	slli	a2, a2, 11
 	xor	a0, a0, a2
 	seqz	a0, a0

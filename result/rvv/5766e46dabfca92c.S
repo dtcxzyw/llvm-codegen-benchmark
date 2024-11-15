@@ -3,8 +3,8 @@ func0000000000000002:                   # @func0000000000000002
 	addiw	a0, a0, -256
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v12, a0
-	vor.vv	v8, v12, v8
 	li	a0, 56
+	vor.vv	v8, v12, v8
 	vsrl.vx	v10, v10, a0
 	vor.vv	v8, v8, v10
 	ret

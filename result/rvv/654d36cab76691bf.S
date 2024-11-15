@@ -23,8 +23,8 @@ func0000000000000041:                   # @func0000000000000041
 	slli	a0, a0, 10
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
-	vmseq.vi	v9, v10, 0
 	li	a0, 256
+	vmseq.vi	v9, v10, 0
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vmsltu.vx	v8, v8, a0
 	vmor.mm	v0, v9, v8

@@ -11,10 +11,10 @@ func0000000000000024:                   # @func0000000000000024
 func00000000000000ca:                   # @func00000000000000ca
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vmfge.vf	v0, v8, fa5
 	vmv.v.i	v12, 0
-	vmerge.vvm	v8, v12, v8, v0
+	vmfge.vf	v0, v8, fa5
 	lui	a0, 323584
+	vmerge.vvm	v8, v12, v8, v0
 	fmv.w.x	fa5, a0
 	vfmin.vf	v8, v8, fa5
 	ret

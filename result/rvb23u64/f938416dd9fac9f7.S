@@ -1,8 +1,8 @@
 func0000000000000007:                   # @func0000000000000007
 	addw	a1, a1, a2
+	lui	a2, 17
 	add	a0, a0, a1
-	lui	a1, 17
-	addiw	a1, a1, -1063
+	addiw	a1, a2, -1063
 	add	a0, a0, a1
 	ret
 func0000000000000010:                   # @func0000000000000010
@@ -17,9 +17,9 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func0000000000000015:                   # @func0000000000000015
 	addw	a1, a1, a2
+	lui	a2, 750553
 	add	a0, a0, a1
-	lui	a1, 750553
-	addiw	a1, a1, -917
+	addiw	a1, a2, -917
 	slli	a1, a1, 13
 	add	a0, a0, a1
 	ret

@@ -4,9 +4,9 @@ func000000000000046a:                   # @func000000000000046a
 	lui	a2, 699051
 	addi	a2, a2, -1365
 	mulw	a1, a1, a2
-	slt	a1, a0, a1
-	slti	a0, a0, 0
-	not	a0, a0
+	slti	a2, a0, 0
+	slt	a0, a0, a1
+	not	a1, a2
 	and	a0, a0, a1
 	ret
 func000000000000044a:                   # @func000000000000044a
@@ -15,8 +15,8 @@ func000000000000044a:                   # @func000000000000044a
 	lui	a2, 838861
 	addi	a2, a2, -819
 	mulw	a1, a1, a2
-	sltu	a1, a0, a1
-	slti	a0, a0, 0
-	not	a0, a0
+	slti	a2, a0, 0
+	sltu	a0, a0, a1
+	not	a1, a2
 	and	a0, a0, a1
 	ret

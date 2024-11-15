@@ -14,9 +14,9 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 func00000000000000c1:                   # @func00000000000000c1
 	sext.w	a2, a2
+	li	a3, 2
 	addi	a2, a2, -192
 	czero.eqz	a1, a1, a2
-	li	a3, 2
 	czero.nez	a2, a3, a2
 	or	a1, a1, a2
 	xor	a0, a0, a1
@@ -60,8 +60,8 @@ func00000000000000ca:                   # @func00000000000000ca
 	ret
 func0000000000000016:                   # @func0000000000000016
 	sext.w	a2, a2
-	addi	a2, a2, -1
 	li	a3, 1
+	addi	a2, a2, -1
 	czero.eqz	a3, a3, a2
 	czero.nez	a1, a1, a2
 	or	a1, a1, a3
