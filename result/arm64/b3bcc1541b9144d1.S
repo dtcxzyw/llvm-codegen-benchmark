@@ -99,12 +99,14 @@ func000000000000003d:                   // @func000000000000003d
                                         // -- End function
 func0000000000000015:                   // @func0000000000000015
 // %bb.0:                               // %entry
-	mov	w8, #-1000                      // =0xfffffc18
-	ushr	v5.4s, v5.4s, #23
 	ushr	v4.4s, v4.4s, #23
-	dup	v6.4s, w8
-	mla	v3.4s, v5.4s, v6.4s
-	mla	v2.4s, v4.4s, v6.4s
+	ushr	v5.4s, v5.4s, #23
+	mov	w8, #64536                      // =0xfc18
+	dup	v6.4h, w8
+	xtn	v4.4h, v4.4s
+	xtn	v5.4h, v5.4s
+	smlal	v3.4s, v5.4h, v6.4h
+	smlal	v2.4s, v4.4h, v6.4h
 	add	v0.4s, v2.4s, v0.4s
 	add	v1.4s, v3.4s, v1.4s
 	ret

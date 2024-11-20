@@ -117,26 +117,16 @@ func000000000000006f:                   // @func000000000000006f
 func000000000000002c:                   // @func000000000000002c
 // %bb.0:                               // %entry
 	mov	x8, #4503599627370494           // =0xffffffffffffe
-	mov	x9, #-19                        // =0xffffffffffffffed
 	dup	v4.2d, x8
-	add	v3.2d, v3.2d, v4.2d
 	add	v2.2d, v2.2d, v4.2d
+	add	v3.2d, v3.2d, v4.2d
+	mvni	v4.2s, #18
 	ushr	v3.2d, v3.2d, #51
 	ushr	v2.2d, v2.2d, #51
-	fmov	x10, d3
-	fmov	x12, d2
-	mov	x8, v3.d[1]
-	mov	x11, v2.d[1]
-	smull	x10, w10, w9
-	smull	x12, w12, w9
-	smull	x8, w8, w9
-	smull	x9, w11, w9
-	fmov	d2, x10
-	fmov	d3, x12
-	mov	v2.d[1], x8
-	mov	v3.d[1], x9
-	add	v1.2d, v2.2d, v1.2d
-	add	v0.2d, v3.2d, v0.2d
+	xtn	v3.2s, v3.2d
+	xtn	v2.2s, v2.2d
+	smlal	v0.2d, v2.2s, v4.2s
+	smlal	v1.2d, v3.2s, v4.2s
 	ret
                                         // -- End function
 func0000000000000020:                   // @func0000000000000020

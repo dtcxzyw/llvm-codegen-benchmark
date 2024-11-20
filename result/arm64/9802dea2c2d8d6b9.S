@@ -68,22 +68,11 @@ func0000000000000011:                   // @func0000000000000011
                                         // -- End function
 func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
-	sshr	v2.2d, v2.2d, #32
-	sshr	v3.2d, v3.2d, #32
-	fmov	x10, d3
-	fmov	x11, d2
-	mov	x8, v3.d[1]
-	mov	x9, v2.d[1]
-	add	x10, x10, x10, lsl #1
-	add	x11, x11, x11, lsl #1
-	add	x8, x8, x8, lsl #1
-	fmov	d2, x10
-	fmov	d3, x11
-	add	x9, x9, x9, lsl #1
-	mov	v2.d[1], x8
-	mov	v3.d[1], x9
-	add	v0.2d, v3.2d, v0.2d
-	add	v1.2d, v2.2d, v1.2d
+	movi	v4.2s, #3
+	shrn	v3.2s, v3.2d, #32
+	shrn	v2.2s, v2.2d, #32
+	smlal	v0.2d, v2.2s, v4.2s
+	smlal	v1.2d, v3.2s, v4.2s
 	ret
                                         // -- End function
 func0000000000000010:                   // @func0000000000000010
@@ -112,41 +101,19 @@ func0000000000000010:                   // @func0000000000000010
                                         // -- End function
 func0000000000000015:                   // @func0000000000000015
 // %bb.0:                               // %entry
-	sshr	v2.2d, v2.2d, #32
-	sshr	v3.2d, v3.2d, #32
-	fmov	x10, d3
-	fmov	x11, d2
-	mov	x8, v3.d[1]
-	mov	x9, v2.d[1]
-	add	x10, x10, x10, lsl #1
-	add	x11, x11, x11, lsl #1
-	add	x8, x8, x8, lsl #1
-	fmov	d2, x10
-	fmov	d3, x11
-	add	x9, x9, x9, lsl #1
-	mov	v2.d[1], x8
-	mov	v3.d[1], x9
-	add	v0.2d, v3.2d, v0.2d
-	add	v1.2d, v2.2d, v1.2d
+	movi	v4.2s, #3
+	shrn	v3.2s, v3.2d, #32
+	shrn	v2.2s, v2.2d, #32
+	smlal	v0.2d, v2.2s, v4.2s
+	smlal	v1.2d, v3.2s, v4.2s
 	ret
                                         // -- End function
 func0000000000000017:                   // @func0000000000000017
 // %bb.0:                               // %entry
-	sshr	v2.2d, v2.2d, #32
-	sshr	v3.2d, v3.2d, #32
-	fmov	x10, d3
-	fmov	x11, d2
-	mov	x8, v3.d[1]
-	mov	x9, v2.d[1]
-	add	x10, x10, x10, lsl #1
-	add	x11, x11, x11, lsl #1
-	add	x8, x8, x8, lsl #1
-	fmov	d2, x10
-	fmov	d3, x11
-	add	x9, x9, x9, lsl #1
-	mov	v2.d[1], x8
-	mov	v3.d[1], x9
-	add	v0.2d, v3.2d, v0.2d
-	add	v1.2d, v2.2d, v1.2d
+	movi	v4.2s, #3
+	shrn	v3.2s, v3.2d, #32
+	shrn	v2.2s, v2.2d, #32
+	smlal	v0.2d, v2.2s, v4.2s
+	smlal	v1.2d, v3.2s, v4.2s
 	ret
                                         // -- End function

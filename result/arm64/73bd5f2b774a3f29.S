@@ -18,17 +18,19 @@ func000000000000000f:                   // @func000000000000000f
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
 	mov	w8, #1020                       // =0x3fc
-	ushr	v2.4s, v1.4s, #14
+	ushr	v1.4s, v1.4s, #14
 	ushr	v0.4s, v0.4s, #14
-	dup	v3.4s, w8
+	dup	v2.4s, w8
+	mov	w8, #55817                      // =0xda09
+	and	v1.16b, v1.16b, v2.16b
+	and	v0.16b, v0.16b, v2.16b
+	dup	v2.4h, w8
 	mov	w8, #33685504                   // =0x2020000
+	xtn	v3.4h, v1.4s
 	dup	v1.4s, w8
-	mov	w8, #-9719                      // =0xffffda09
-	and	v4.16b, v0.16b, v3.16b
-	and	v2.16b, v2.16b, v3.16b
-	dup	v3.4s, w8
+	xtn	v4.4h, v0.4s
 	mov	v0.16b, v1.16b
-	mla	v1.4s, v2.4s, v3.4s
-	mla	v0.4s, v4.4s, v3.4s
+	smlal	v1.4s, v3.4h, v2.4h
+	smlal	v0.4s, v4.4h, v2.4h
 	ret
                                         // -- End function

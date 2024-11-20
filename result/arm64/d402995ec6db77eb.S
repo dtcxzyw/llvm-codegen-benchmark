@@ -29,25 +29,10 @@ func0000000000000009:                   // @func0000000000000009
 	movi	v3.4s, #1
 	sshr	v1.2d, v1.2d, #32
 	sshr	v0.2d, v0.2d, #32
-	fmov	x9, d1
-	fmov	x14, d0
-	mov	x8, v1.d[1]
+	uzp1	v0.4s, v0.4s, v1.4s
 	add	v2.4s, v2.4s, v3.4s
-	mov	x11, v0.d[1]
-	sshll2	v3.2d, v2.4s, #0
-	sshll	v2.2d, v2.2s, #0
-	fmov	x12, d3
-	mov	x10, v3.d[1]
-	mov	x13, v2.d[1]
-	smull	x9, w9, w12
-	fmov	x12, d2
-	smull	x8, w8, w10
-	smull	x10, w11, w13
-	smull	x12, w14, w12
-	fmov	d1, x9
-	fmov	d0, x12
-	mov	v1.d[1], x8
-	mov	v0.d[1], x10
+	smull2	v1.2d, v0.4s, v2.4s
+	smull	v0.2d, v0.2s, v2.2s
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c

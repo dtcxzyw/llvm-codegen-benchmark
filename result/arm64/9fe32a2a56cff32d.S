@@ -30,13 +30,15 @@ func000000000000000f:                   // @func000000000000000f
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
 	movi	v4.4s, #15
-	ushr	v3.4s, v3.4s, #13
 	ushr	v2.4s, v2.4s, #13
-	and	v2.16b, v2.16b, v4.16b
+	ushr	v3.4s, v3.4s, #13
 	and	v3.16b, v3.16b, v4.16b
-	mvni	v4.4s, #2
-	mla	v0.4s, v2.4s, v4.4s
-	mla	v1.4s, v3.4s, v4.4s
+	and	v2.16b, v2.16b, v4.16b
+	mvni	v4.4h, #2
+	xtn	v3.4h, v3.4s
+	xtn	v2.4h, v2.4s
+	smlal	v0.4s, v2.4h, v4.4h
+	smlal	v1.4s, v3.4h, v4.4h
 	ret
                                         // -- End function
 func000000000000000d:                   // @func000000000000000d
@@ -81,14 +83,16 @@ func0000000000000000:                   // @func0000000000000000
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
 	mov	w8, #1020                       // =0x3fc
-	ushr	v3.4s, v3.4s, #6
 	ushr	v2.4s, v2.4s, #6
+	ushr	v3.4s, v3.4s, #6
 	dup	v4.4s, w8
-	mov	w8, #-19081                     // =0xffffb577
-	and	v2.16b, v2.16b, v4.16b
+	mov	w8, #46455                      // =0xb577
 	and	v3.16b, v3.16b, v4.16b
-	dup	v4.4s, w8
-	mla	v0.4s, v2.4s, v4.4s
-	mla	v1.4s, v3.4s, v4.4s
+	and	v2.16b, v2.16b, v4.16b
+	dup	v4.4h, w8
+	xtn	v3.4h, v3.4s
+	xtn	v2.4h, v2.4s
+	smlal	v0.4s, v2.4h, v4.4h
+	smlal	v1.4s, v3.4h, v4.4h
 	ret
                                         // -- End function

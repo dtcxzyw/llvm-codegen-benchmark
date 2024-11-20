@@ -25,12 +25,14 @@ func000000000000003d:                   // @func000000000000003d
                                         // -- End function
 func0000000000000015:                   // @func0000000000000015
 // %bb.0:                               // %entry
-	mov	w8, #-1000                      // =0xfffffc18
-	ushr	v3.4s, v3.4s, #23
 	ushr	v2.4s, v2.4s, #23
-	dup	v4.4s, w8
-	mla	v1.4s, v3.4s, v4.4s
-	mla	v0.4s, v2.4s, v4.4s
+	ushr	v3.4s, v3.4s, #23
+	mov	w8, #64536                      // =0xfc18
+	dup	v4.4h, w8
+	xtn	v2.4h, v2.4s
+	xtn	v3.4h, v3.4s
+	smlal	v1.4s, v3.4h, v4.4h
+	smlal	v0.4s, v2.4h, v4.4h
 	movi	v2.4s, #41
 	mul	v0.4s, v0.4s, v2.4s
 	mul	v1.4s, v1.4s, v2.4s
@@ -50,12 +52,14 @@ func0000000000000014:                   // @func0000000000000014
                                         // -- End function
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
-	mov	w8, #-1000                      // =0xfffffc18
-	ushr	v3.4s, v3.4s, #23
 	ushr	v2.4s, v2.4s, #23
-	dup	v4.4s, w8
-	mla	v1.4s, v3.4s, v4.4s
-	mla	v0.4s, v2.4s, v4.4s
+	ushr	v3.4s, v3.4s, #23
+	mov	w8, #64536                      // =0xfc18
+	dup	v4.4h, w8
+	xtn	v2.4h, v2.4s
+	xtn	v3.4h, v3.4s
+	smlal	v1.4s, v3.4h, v4.4h
+	smlal	v0.4s, v2.4h, v4.4h
 	movi	v2.4s, #41
 	mul	v0.4s, v0.4s, v2.4s
 	mul	v1.4s, v1.4s, v2.4s

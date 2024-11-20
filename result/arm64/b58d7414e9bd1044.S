@@ -39,25 +39,16 @@ func0000000000000000:                   // @func0000000000000000
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
 	mov	w8, #2097151                    // =0x1fffff
-	mov	x9, #-28541                     // =0xffffffffffff9083
 	dup	v4.2d, x8
-	movk	x9, #65525, lsl #16
+	mov	w8, #36995                      // =0x9083
+	movk	w8, #65525, lsl #16
 	and	v3.16b, v3.16b, v4.16b
 	and	v2.16b, v2.16b, v4.16b
-	fmov	x10, d3
-	fmov	x12, d2
-	mov	x8, v3.d[1]
-	mov	x11, v2.d[1]
-	smull	x10, w10, w9
-	smull	x12, w12, w9
-	smull	x8, w8, w9
-	smull	x9, w11, w9
-	fmov	d2, x10
-	fmov	d3, x12
-	mov	v2.d[1], x8
-	mov	v3.d[1], x9
-	add	v1.2d, v2.2d, v1.2d
-	add	v0.2d, v3.2d, v0.2d
+	dup	v4.2s, w8
+	xtn	v3.2s, v3.2d
+	xtn	v2.2s, v2.2d
+	smlal	v0.2d, v2.2s, v4.2s
+	smlal	v1.2d, v3.2s, v4.2s
 	ret
                                         // -- End function
 func000000000000000d:                   // @func000000000000000d

@@ -32,9 +32,11 @@ func0000000000000001:                   // @func0000000000000001
 	ushr	v1.4s, v1.4s, #13
 	and	v1.16b, v1.16b, v2.16b
 	and	v0.16b, v0.16b, v2.16b
-	mvni	v2.4s, #2
-	mul	v0.4s, v0.4s, v2.4s
-	mul	v1.4s, v1.4s, v2.4s
+	mvni	v2.4h, #2
+	xtn	v1.4h, v1.4s
+	xtn	v0.4h, v0.4s
+	smull	v0.4s, v0.4h, v2.4h
+	smull	v1.4s, v1.4h, v2.4h
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000

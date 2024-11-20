@@ -13,13 +13,13 @@ func0000000000000010:                   // @func0000000000000010
                                         // -- End function
 func0000000000000050:                   // @func0000000000000050
 // %bb.0:                               // %entry
-	movi	v6.4s, #23
-	sshr	v4.4s, v4.4s, #16
-	sshr	v5.4s, v5.4s, #16
+	movi	v6.4h, #23
+	shrn	v5.4h, v5.4s, #16
+	shrn	v4.4h, v4.4s, #16
 	add	v1.4s, v1.4s, v3.4s
 	add	v0.4s, v0.4s, v2.4s
-	mla	v0.4s, v4.4s, v6.4s
-	mla	v1.4s, v5.4s, v6.4s
+	smlal	v0.4s, v4.4h, v6.4h
+	smlal	v1.4s, v5.4h, v6.4h
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004

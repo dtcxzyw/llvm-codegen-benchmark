@@ -42,12 +42,14 @@ func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
 	mov	w8, #1020                       // =0x3fc
 	dup	v4.4s, w8
-	mov	w8, #-4684                      // =0xffffedb4
-	and	v3.16b, v3.16b, v4.16b
+	mov	w8, #60852                      // =0xedb4
 	and	v2.16b, v2.16b, v4.16b
-	dup	v4.4s, w8
-	mla	v1.4s, v3.4s, v4.4s
-	mla	v0.4s, v2.4s, v4.4s
+	and	v3.16b, v3.16b, v4.16b
+	dup	v4.4h, w8
+	xtn	v2.4h, v2.4s
+	xtn	v3.4h, v3.4s
+	smlal	v1.4s, v3.4h, v4.4h
+	smlal	v0.4s, v2.4h, v4.4h
 	ushr	v0.4s, v0.4s, #18
 	ushr	v1.4s, v1.4s, #18
 	ret

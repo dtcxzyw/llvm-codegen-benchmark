@@ -13,11 +13,12 @@ func00000000000000ca:                   // @func00000000000000ca
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
 	mov	w8, #5243                       // =0x147b
-	mvni	v2.4s, #99
+	mvni	v2.4h, #99
 	dup	v1.4s, w8
 	mul	v1.4s, v0.4s, v1.4s
 	ushr	v1.4s, v1.4s, #19
-	mla	v0.4s, v1.4s, v2.4s
+	xtn	v1.4h, v1.4s
+	smlal	v0.4s, v1.4h, v2.4h
 	ushll2	v1.2d, v0.4s, #0
 	ushll	v0.2d, v0.2s, #0
 	ret
@@ -25,11 +26,12 @@ func0000000000000008:                   // @func0000000000000008
 func000000000000008a:                   // @func000000000000008a
 // %bb.0:                               // %entry
 	mov	w8, #5243                       // =0x147b
-	mvni	v2.4s, #99
+	mvni	v2.4h, #99
 	dup	v1.4s, w8
 	mul	v1.4s, v0.4s, v1.4s
 	ushr	v1.4s, v1.4s, #19
-	mla	v0.4s, v1.4s, v2.4s
+	xtn	v1.4h, v1.4s
+	smlal	v0.4s, v1.4h, v2.4h
 	ushll2	v1.2d, v0.4s, #0
 	ushll	v0.2d, v0.2s, #0
 	ret

@@ -16,15 +16,15 @@ func0000000000000050:                   // @func0000000000000050
 func0000000000000150:                   // @func0000000000000150
 // %bb.0:                               // %entry
 	mov	w8, #57818                      // =0xe1da
-	movi	v7.4s, #23
+	movi	v7.4h, #23
 	movk	w8, #581, lsl #16
 	dup	v6.4s, w8
 	mla	v1.4s, v3.4s, v6.4s
 	mla	v0.4s, v2.4s, v6.4s
-	sshr	v2.4s, v4.4s, #16
-	sshr	v3.4s, v5.4s, #16
-	mla	v0.4s, v2.4s, v7.4s
-	mla	v1.4s, v3.4s, v7.4s
+	shrn	v2.4h, v5.4s, #16
+	shrn	v3.4h, v4.4s, #16
+	smlal	v0.4s, v3.4h, v7.4h
+	smlal	v1.4s, v2.4h, v7.4h
 	ret
                                         // -- End function
 func0000000000000110:                   // @func0000000000000110
@@ -32,13 +32,13 @@ func0000000000000110:                   // @func0000000000000110
 	mov	w8, #1013                       // =0x3f5
 	dup	v6.4s, w8
 	mov	w8, #1619                       // =0x653
+	dup	v7.4h, w8
 	mla	v1.4s, v3.4s, v6.4s
 	mla	v0.4s, v2.4s, v6.4s
-	sshr	v2.4s, v4.4s, #16
-	sshr	v3.4s, v5.4s, #16
-	dup	v4.4s, w8
-	mla	v0.4s, v2.4s, v4.4s
-	mla	v1.4s, v3.4s, v4.4s
+	shrn	v2.4h, v5.4s, #16
+	shrn	v3.4h, v4.4s, #16
+	smlal	v0.4s, v3.4h, v7.4h
+	smlal	v1.4s, v2.4h, v7.4h
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004

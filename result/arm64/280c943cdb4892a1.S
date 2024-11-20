@@ -19,28 +19,21 @@ func000000000000000b:                   // @func000000000000000b
                                         // -- End function
 func0000000000000009:                   // @func0000000000000009
 // %bb.0:                               // %entry
-	orr	v0.16b, v0.16b, v2.16b
 	orr	v1.16b, v1.16b, v3.16b
+	orr	v0.16b, v0.16b, v2.16b
 	mov	w8, #2097151                    // =0x1fffff
 	dup	v2.2d, x8
-	mov	x9, #-14765                     // =0xffffffffffffc653
-	movk	x9, #65520, lsl #16
+	mov	w8, #50771                      // =0xc653
+	movk	w8, #65520, lsl #16
 	ushr	v0.2d, v0.2d, #1
 	ushr	v1.2d, v1.2d, #1
-	and	v0.16b, v0.16b, v2.16b
 	and	v1.16b, v1.16b, v2.16b
-	fmov	x10, d0
-	fmov	x12, d1
-	mov	x8, v0.d[1]
-	mov	x11, v1.d[1]
-	smull	x10, w10, w9
-	smull	x12, w12, w9
-	smull	x8, w8, w9
-	smull	x9, w11, w9
-	fmov	d0, x10
-	fmov	d1, x12
-	mov	v0.d[1], x8
-	mov	v1.d[1], x9
+	and	v0.16b, v0.16b, v2.16b
+	dup	v2.2s, w8
+	xtn	v1.2s, v1.2d
+	xtn	v0.2s, v0.2d
+	smull	v0.2d, v0.2s, v2.2s
+	smull	v1.2d, v1.2s, v2.2s
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003

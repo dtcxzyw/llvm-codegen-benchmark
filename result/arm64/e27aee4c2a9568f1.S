@@ -48,24 +48,13 @@ func0000000000000050:                   // @func0000000000000050
                                         // -- End function
 func0000000000000055:                   // @func0000000000000055
 // %bb.0:                               // %entry
-	sshr	v5.2d, v5.2d, #32
-	sshr	v4.2d, v4.2d, #32
+	movi	v6.2s, #3
+	shrn	v4.2s, v4.2d, #32
+	shrn	v5.2s, v5.2d, #32
+	smlal	v3.2d, v5.2s, v6.2s
+	smlal	v2.2d, v4.2s, v6.2s
 	add	v0.2d, v2.2d, v0.2d
 	add	v1.2d, v3.2d, v1.2d
-	fmov	x10, d4
-	fmov	x11, d5
-	mov	x8, v4.d[1]
-	mov	x9, v5.d[1]
-	add	x10, x10, x10, lsl #1
-	add	x11, x11, x11, lsl #1
-	add	x8, x8, x8, lsl #1
-	fmov	d4, x10
-	fmov	d5, x11
-	add	x9, x9, x9, lsl #1
-	mov	v4.d[1], x8
-	mov	v5.d[1], x9
-	add	v0.2d, v4.2d, v0.2d
-	add	v1.2d, v5.2d, v1.2d
 	ret
                                         // -- End function
 func0000000000000040:                   // @func0000000000000040

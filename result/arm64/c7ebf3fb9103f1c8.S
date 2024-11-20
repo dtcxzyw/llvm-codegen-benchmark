@@ -48,11 +48,13 @@ func000000000000000e:                   // @func000000000000000e
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
 	movi	v4.4s, #15
-	and	v2.16b, v2.16b, v4.16b
 	and	v3.16b, v3.16b, v4.16b
-	mvni	v4.4s, #2
-	mla	v0.4s, v2.4s, v4.4s
-	mla	v1.4s, v3.4s, v4.4s
+	and	v2.16b, v2.16b, v4.16b
+	mvni	v4.4h, #2
+	xtn	v3.4h, v3.4s
+	xtn	v2.4h, v2.4s
+	smlal	v0.4s, v2.4h, v4.4h
+	smlal	v1.4s, v3.4h, v4.4h
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a

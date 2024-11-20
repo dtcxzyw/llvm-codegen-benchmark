@@ -2,24 +2,17 @@ func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
 	ushll	v0.4s, v0.4h, #0
 	mov	w8, #1000                       // =0x3e8
+	dup	v2.2s, w8
 	ushll2	v1.2d, v0.4s, #0
 	ushll	v0.2d, v0.2s, #0
-	shl	v1.2d, v1.2d, #56
 	shl	v0.2d, v0.2d, #56
-	sshr	v1.2d, v1.2d, #56
+	shl	v1.2d, v1.2d, #56
 	sshr	v0.2d, v0.2d, #56
-	fmov	x10, d1
-	fmov	x12, d0
-	mov	x9, v1.d[1]
-	mov	x11, v0.d[1]
-	smull	x10, w10, w8
-	smull	x12, w12, w8
-	smull	x9, w9, w8
-	smull	x8, w11, w8
-	fmov	d1, x10
-	fmov	d0, x12
-	mov	v1.d[1], x9
-	mov	v0.d[1], x8
+	sshr	v1.2d, v1.2d, #56
+	xtn	v0.2s, v0.2d
+	xtn	v1.2s, v1.2d
+	smull	v1.2d, v1.2s, v2.2s
+	smull	v0.2d, v0.2s, v2.2s
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000

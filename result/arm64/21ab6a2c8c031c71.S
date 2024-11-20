@@ -59,14 +59,16 @@ func0000000000000030:                   // @func0000000000000030
                                         // -- End function
 func0000000000000015:                   // @func0000000000000015
 // %bb.0:                               // %entry
-	mov	w8, #-1000                      // =0xfffffc18
-	ushr	v4.4s, v4.4s, #23
 	ushr	v5.4s, v5.4s, #23
-	dup	v6.4s, w8
+	ushr	v4.4s, v4.4s, #23
+	mov	w8, #64536                      // =0xfc18
+	dup	v6.4h, w8
 	add	v1.4s, v1.4s, v3.4s
 	add	v0.4s, v0.4s, v2.4s
-	mla	v0.4s, v4.4s, v6.4s
-	mla	v1.4s, v5.4s, v6.4s
+	xtn	v5.4h, v5.4s
+	xtn	v4.4h, v4.4s
+	smlal	v0.4s, v4.4h, v6.4h
+	smlal	v1.4s, v5.4h, v6.4h
 	ret
                                         // -- End function
 func000000000000001d:                   // @func000000000000001d
@@ -82,14 +84,16 @@ func000000000000001d:                   // @func000000000000001d
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	mov	w8, #-1000                      // =0xfffffc18
-	ushr	v4.4s, v4.4s, #23
 	ushr	v5.4s, v5.4s, #23
-	dup	v6.4s, w8
+	ushr	v4.4s, v4.4s, #23
+	mov	w8, #64536                      // =0xfc18
+	dup	v6.4h, w8
 	add	v1.4s, v1.4s, v3.4s
 	add	v0.4s, v0.4s, v2.4s
-	mla	v0.4s, v4.4s, v6.4s
-	mla	v1.4s, v5.4s, v6.4s
+	xtn	v5.4h, v5.4s
+	xtn	v4.4h, v4.4s
+	smlal	v0.4s, v4.4h, v6.4h
+	smlal	v1.4s, v5.4h, v6.4h
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
@@ -105,12 +109,14 @@ func000000000000000c:                   // @func000000000000000c
                                         // -- End function
 func0000000000000035:                   // @func0000000000000035
 // %bb.0:                               // %entry
-	ushr	v4.4s, v4.4s, #17
 	ushr	v5.4s, v5.4s, #17
-	mvni	v6.4s, #99
+	ushr	v4.4s, v4.4s, #17
+	mvni	v6.4h, #99
 	add	v1.4s, v1.4s, v3.4s
 	add	v0.4s, v0.4s, v2.4s
-	mla	v0.4s, v4.4s, v6.4s
-	mla	v1.4s, v5.4s, v6.4s
+	xtn	v5.4h, v5.4s
+	xtn	v4.4h, v4.4s
+	smlal	v0.4s, v4.4h, v6.4h
+	smlal	v1.4s, v5.4h, v6.4h
 	ret
                                         // -- End function

@@ -33,8 +33,10 @@ func0000000000000005:                   // @func0000000000000005
 	clz	v1.4s, v1.4s
 	eor	v1.16b, v1.16b, v2.16b
 	eor	v0.16b, v0.16b, v2.16b
-	mvni	v2.4s, #29
-	mul	v0.4s, v0.4s, v2.4s
-	mul	v1.4s, v1.4s, v2.4s
+	mvni	v2.4h, #29
+	xtn	v1.4h, v1.4s
+	xtn	v0.4h, v0.4s
+	smull	v0.4s, v0.4h, v2.4h
+	smull	v1.4s, v1.4h, v2.4h
 	ret
                                         // -- End function

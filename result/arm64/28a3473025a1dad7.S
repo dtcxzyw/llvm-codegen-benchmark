@@ -84,56 +84,29 @@ func0000000000000015:                   // @func0000000000000015
                                         // -- End function
 func0000000000000035:                   // @func0000000000000035
 // %bb.0:                               // %entry
-	sshr	v3.2d, v3.2d, #32
-	sshr	v1.2d, v1.2d, #32
-	sshr	v2.2d, v2.2d, #32
-	sshr	v0.2d, v0.2d, #32
-	fmov	x10, d3
-	fmov	x11, d1
-	fmov	x14, d2
-	mov	x8, v3.d[1]
-	mov	x9, v1.d[1]
-	mov	x12, v2.d[1]
-	mov	x13, v0.d[1]
-	smull	x10, w11, w10
-	fmov	x11, d0
-	movi	v0.4s, #128, lsl #24
-	smull	x8, w9, w8
-	smull	x11, w11, w14
-	fmov	d1, x10
-	smull	x9, w13, w12
-	fneg	v3.2d, v0.2d
-	fmov	d2, x11
-	mov	v1.d[1], x8
-	mov	v2.d[1], x9
-	add	v1.2d, v1.2d, v3.2d
-	add	v0.2d, v2.2d, v3.2d
+	movi	v4.4s, #128, lsl #24
+	shrn	v3.2s, v3.2d, #32
+	shrn	v1.2s, v1.2d, #32
+	shrn	v2.2s, v2.2d, #32
+	shrn	v5.2s, v0.2d, #32
+	fneg	v4.2d, v4.2d
+	mov	v0.16b, v4.16b
+	smlal	v4.2d, v1.2s, v3.2s
+	smlal	v0.2d, v5.2s, v2.2s
+	mov	v1.16b, v4.16b
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	sshr	v3.2d, v3.2d, #32
-	sshr	v1.2d, v1.2d, #32
-	sshr	v2.2d, v2.2d, #32
-	sshr	v0.2d, v0.2d, #32
-	fmov	x10, d3
-	fmov	x11, d1
-	fmov	x14, d2
-	mov	x8, v3.d[1]
-	mov	x9, v1.d[1]
-	mov	x12, v2.d[1]
-	mov	x13, v0.d[1]
-	movi	v2.2d, #0xffffffffffffffff
-	smull	x10, w11, w10
-	fmov	x11, d0
-	smull	x8, w9, w8
-	smull	x11, w11, w14
-	fmov	d1, x10
-	smull	x9, w13, w12
-	fmov	d0, x11
-	mov	v1.d[1], x8
-	mov	v0.d[1], x9
-	add	v1.2d, v1.2d, v2.2d
-	add	v0.2d, v0.2d, v2.2d
+	movi	v4.2d, #0xffffffffffffffff
+	shrn	v5.2s, v3.2d, #32
+	movi	v3.2d, #0xffffffffffffffff
+	shrn	v2.2s, v2.2d, #32
+	shrn	v1.2s, v1.2d, #32
+	shrn	v0.2s, v0.2d, #32
+	smlal	v3.2d, v0.2s, v2.2s
+	smlal	v4.2d, v1.2s, v5.2s
+	mov	v0.16b, v3.16b
+	mov	v1.16b, v4.16b
 	ret
                                         // -- End function

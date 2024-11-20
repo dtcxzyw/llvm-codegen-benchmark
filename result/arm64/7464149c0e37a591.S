@@ -1,23 +1,13 @@
 func0000000000000058:                   // @func0000000000000058
 // %bb.0:                               // %entry
-	sshr	v0.2d, v0.2d, #32
-	sshr	v1.2d, v1.2d, #32
+	shrn	v1.2s, v1.2d, #32
+	shrn	v0.2s, v0.2d, #32
 	mov	x8, #2305843009213693951        // =0x1fffffffffffffff
 	dup	v2.2d, x8
-	fmov	x10, d0
-	fmov	x12, d1
-	mov	x9, v0.d[1]
-	mov	x11, v1.d[1]
-	smull	x10, w10, w10
-	smull	x12, w12, w12
-	smull	x9, w9, w9
-	smull	x11, w11, w11
-	fmov	d0, x10
-	fmov	d1, x12
-	mov	v0.d[1], x9
-	mov	v1.d[1], x11
-	cmhi	v0.2d, v0.2d, v2.2d
+	smull	v0.2d, v0.2s, v0.2s
+	smull	v1.2d, v1.2s, v1.2s
 	cmhi	v1.2d, v1.2d, v2.2d
+	cmhi	v0.2d, v0.2d, v2.2d
 	uzp1	v0.4s, v0.4s, v1.4s
 	xtn	v0.4h, v0.4s
 	ret

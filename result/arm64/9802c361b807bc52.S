@@ -37,70 +37,46 @@ func000000000000004b:                   // @func000000000000004b
                                         // -- End function
 func00000000000000d9:                   // @func00000000000000d9
 // %bb.0:                               // %entry
-	add	v2.2d, v2.2d, v4.2d
 	add	v3.2d, v3.2d, v5.2d
-	mov	x9, #-19                        // =0xffffffffffffffed
+	add	v2.2d, v2.2d, v4.2d
 	usra	v0.2d, v2.2d, #51
 	usra	v1.2d, v3.2d, #51
-	ushr	v0.2d, v0.2d, #51
+	mvni	v2.2s, #18
 	ushr	v1.2d, v1.2d, #51
-	fmov	x10, d0
-	fmov	x12, d1
-	mov	x8, v0.d[1]
-	mov	x11, v1.d[1]
-	smull	x10, w10, w9
-	smull	x12, w12, w9
-	smull	x8, w8, w9
-	smull	x9, w11, w9
-	fmov	d0, x10
-	fmov	d1, x12
-	mov	v0.d[1], x8
-	mov	v1.d[1], x9
+	ushr	v0.2d, v0.2d, #51
+	xtn	v1.2s, v1.2d
+	xtn	v0.2s, v0.2d
+	smull	v0.2d, v0.2s, v2.2s
+	smull	v1.2d, v1.2s, v2.2s
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	add	v2.2d, v2.2d, v4.2d
 	add	v3.2d, v3.2d, v5.2d
-	mov	x9, #-19                        // =0xffffffffffffffed
+	add	v2.2d, v2.2d, v4.2d
 	usra	v0.2d, v2.2d, #51
 	usra	v1.2d, v3.2d, #51
-	ushr	v0.2d, v0.2d, #51
+	mvni	v2.2s, #18
 	ushr	v1.2d, v1.2d, #51
-	fmov	x10, d0
-	fmov	x12, d1
-	mov	x8, v0.d[1]
-	mov	x11, v1.d[1]
-	smull	x10, w10, w9
-	smull	x12, w12, w9
-	smull	x8, w8, w9
-	smull	x9, w11, w9
-	fmov	d0, x10
-	fmov	d1, x12
-	mov	v0.d[1], x8
-	mov	v1.d[1], x9
+	ushr	v0.2d, v0.2d, #51
+	xtn	v1.2s, v1.2d
+	xtn	v0.2s, v0.2d
+	smull	v0.2d, v0.2s, v2.2s
+	smull	v1.2d, v1.2s, v2.2s
 	ret
                                         // -- End function
 func00000000000000db:                   // @func00000000000000db
 // %bb.0:                               // %entry
-	add	v2.2d, v2.2d, v4.2d
 	add	v3.2d, v3.2d, v5.2d
-	mov	x9, #-19                        // =0xffffffffffffffed
+	add	v2.2d, v2.2d, v4.2d
 	usra	v0.2d, v2.2d, #51
 	usra	v1.2d, v3.2d, #51
-	ushr	v0.2d, v0.2d, #51
+	mvni	v2.2s, #18
 	ushr	v1.2d, v1.2d, #51
-	fmov	x10, d0
-	fmov	x12, d1
-	mov	x8, v0.d[1]
-	mov	x11, v1.d[1]
-	smull	x10, w10, w9
-	smull	x12, w12, w9
-	smull	x8, w8, w9
-	smull	x9, w11, w9
-	fmov	d0, x10
-	fmov	d1, x12
-	mov	v0.d[1], x8
-	mov	v1.d[1], x9
+	ushr	v0.2d, v0.2d, #51
+	xtn	v1.2s, v1.2d
+	xtn	v0.2s, v0.2d
+	smull	v0.2d, v0.2s, v2.2s
+	smull	v1.2d, v1.2s, v2.2s
 	ret
                                         // -- End function

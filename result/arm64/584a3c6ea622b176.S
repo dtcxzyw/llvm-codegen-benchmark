@@ -45,9 +45,10 @@ func0000000000000010:                   // @func0000000000000010
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	mvni	v2.4s, #99
 	ushr	v1.4s, v1.4s, #19
-	mla	v0.4s, v1.4s, v2.4s
+	mvni	v2.4h, #99
+	xtn	v1.4h, v1.4s
+	smlal	v0.4s, v1.4h, v2.4h
 	ushll2	v1.2d, v0.4s, #0
 	ushll	v0.2d, v0.2s, #0
 	ret

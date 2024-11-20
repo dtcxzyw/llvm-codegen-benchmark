@@ -14,11 +14,13 @@ func0000000000000001:                   // @func0000000000000001
                                         // -- End function
 func000000000000005a:                   // @func000000000000005a
 // %bb.0:                               // %entry
-	ushr	v2.4s, v2.4s, #25
 	ushr	v3.4s, v3.4s, #25
-	mvni	v4.4s, #48, lsl #8
-	mla	v0.4s, v2.4s, v4.4s
-	mla	v1.4s, v3.4s, v4.4s
+	ushr	v2.4s, v2.4s, #25
+	mvni	v4.4h, #48, lsl #8
+	xtn	v3.4h, v3.4s
+	xtn	v2.4h, v2.4s
+	smlal	v0.4s, v2.4h, v4.4h
+	smlal	v1.4s, v3.4h, v4.4h
 	movi	v2.4s, #48, lsl #8
 	cmgt	v1.4s, v1.4s, v2.4s
 	cmgt	v0.4s, v0.4s, v2.4s
@@ -44,11 +46,13 @@ func0000000000000041:                   // @func0000000000000041
 // %bb.0:                               // %entry
 	ushr	v3.4s, v3.4s, #19
 	ushr	v2.4s, v2.4s, #19
-	mvni	v4.4s, #99
+	mvni	v4.4h, #99
 	neg	v0.4s, v0.4s
 	neg	v1.4s, v1.4s
-	mul	v2.4s, v2.4s, v4.4s
-	mul	v3.4s, v3.4s, v4.4s
+	xtn	v3.4h, v3.4s
+	xtn	v2.4h, v2.4s
+	smull	v2.4s, v2.4h, v4.4h
+	smull	v3.4s, v3.4h, v4.4h
 	cmeq	v1.4s, v3.4s, v1.4s
 	cmeq	v0.4s, v2.4s, v0.4s
 	uzp1	v0.8h, v0.8h, v1.8h
@@ -59,11 +63,13 @@ func0000000000000051:                   // @func0000000000000051
 // %bb.0:                               // %entry
 	ushr	v3.4s, v3.4s, #19
 	ushr	v2.4s, v2.4s, #19
-	mvni	v4.4s, #99
+	mvni	v4.4h, #99
 	neg	v0.4s, v0.4s
 	neg	v1.4s, v1.4s
-	mul	v2.4s, v2.4s, v4.4s
-	mul	v3.4s, v3.4s, v4.4s
+	xtn	v3.4h, v3.4s
+	xtn	v2.4h, v2.4s
+	smull	v2.4s, v2.4h, v4.4h
+	smull	v3.4s, v3.4h, v4.4h
 	cmeq	v1.4s, v3.4s, v1.4s
 	cmeq	v0.4s, v2.4s, v0.4s
 	uzp1	v0.8h, v0.8h, v1.8h

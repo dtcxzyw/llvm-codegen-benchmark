@@ -24,10 +24,12 @@ func0000000000000019:                   // @func0000000000000019
 	dup	v2.4s, w8
 	mul	v0.4s, v0.4s, v2.4s
 	mul	v1.4s, v1.4s, v2.4s
-	mvni	v2.4s, #99
+	mvni	v2.4h, #99
 	ushr	v1.4s, v1.4s, #17
 	ushr	v0.4s, v0.4s, #17
-	mul	v0.4s, v0.4s, v2.4s
-	mul	v1.4s, v1.4s, v2.4s
+	xtn	v1.4h, v1.4s
+	xtn	v0.4h, v0.4s
+	smull	v0.4s, v0.4h, v2.4h
+	smull	v1.4s, v1.4h, v2.4h
 	ret
                                         // -- End function
