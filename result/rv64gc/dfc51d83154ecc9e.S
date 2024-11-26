@@ -1,9 +1,13 @@
 func00000000000000a1:                   # @func00000000000000a1
-	andi	a3, a1, 1
-	li	a1, 512
-	bnez	a3, .LBB0_2
+	andi	a1, a1, 1
+	bnez	a1, .LBB0_2
 	li	a1, 257
-.LBB0_2:                                # %entry
+	add	a1, a1, a2
+	xor	a0, a0, a1
+	seqz	a0, a0
+	ret
+.LBB0_2:
+	li	a1, 512
 	add	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0

@@ -18,11 +18,13 @@ func0000000000000007:                   # @func0000000000000007
 	sub	a0, a1, a0
 	ret
 func0000000000000000:                   # @func0000000000000000
-	andi	a3, a1, 1
-	li	a1, 6
-	bnez	a3, .LBB2_2
+	andi	a1, a1, 1
+	bnez	a1, .LBB2_2
 	slli	a1, a2, 32
 	srli	a1, a1, 32
-.LBB2_2:                                # %entry
+	sub	a0, a1, a0
+	ret
+.LBB2_2:
+	li	a1, 6
 	sub	a0, a1, a0
 	ret

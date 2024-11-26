@@ -23,18 +23,17 @@ func0000000000000001:                   # @func0000000000000001
 	and	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
-	sext.w	a4, a2
-	li	a5, 23
-	andi	a3, a0, 1
-	bgeu	a5, a4, .LBB2_3
-	li	a0, 22
-	beqz	a3, .LBB2_4
+	sext.w	a3, a2
+	li	a4, 23
+	andi	a0, a0, 1
+	bgeu	a4, a3, .LBB2_3
+	bnez	a0, .LBB2_4
 .LBB2_2:                                # %entry
+	mv	a0, a1
 	ret
 .LBB2_3:                                # %entry
 	mv	a1, a2
+	beqz	a0, .LBB2_2
+.LBB2_4:
 	li	a0, 22
-	bnez	a3, .LBB2_2
-.LBB2_4:                                # %entry
-	mv	a0, a1
 	ret

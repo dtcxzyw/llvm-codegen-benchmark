@@ -1,11 +1,12 @@
 func0000000000000018:                   # @func0000000000000018
 	snez	a1, a1
 	sltiu	a0, a0, 170
-	or	a1, a1, a0
-	li	a0, 307
-	beqz	a1, .LBB0_2
+	or	a0, a0, a1
+	beqz	a0, .LBB0_2
 	li	a0, 311
-.LBB0_2:                                # %entry
+	ret
+.LBB0_2:
+	li	a0, 307
 	ret
 func00000000000000c1:                   # @func00000000000000c1
 	lui	a2, 131072
@@ -35,11 +36,12 @@ func0000000000000014:                   # @func0000000000000014
 	addi	a1, a1, -90
 	seqz	a1, a1
 	sltiu	a0, a0, 271
-	and	a1, a1, a0
-	li	a0, 4
-	bnez	a1, .LBB3_2
+	and	a0, a0, a1
+	bnez	a0, .LBB3_2
 	li	a0, 14
-.LBB3_2:                                # %entry
+	ret
+.LBB3_2:
+	li	a0, 4
 	ret
 func00000000000000c8:                   # @func00000000000000c8
 	snez	a1, a1

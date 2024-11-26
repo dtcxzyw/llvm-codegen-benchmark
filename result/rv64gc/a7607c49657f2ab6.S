@@ -22,15 +22,16 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func0000000000000001:                   # @func0000000000000001
 	lui	a1, 699051
-	lui	a2, 174763
 	addi	a1, a1, -1365
 	mul	a0, a0, a1
+	lui	a1, 174763
+	addi	a1, a1, -1366
+	addw	a0, a0, a1
 	lui	a1, 349525
-	addi	a2, a2, -1366
-	addw	a2, a2, a0
 	addiw	a1, a1, 1365
-	li	a0, 1
-	bltu	a2, a1, .LBB2_2
+	bltu	a0, a1, .LBB2_2
 	li	a0, 122
-.LBB2_2:                                # %entry
+	ret
+.LBB2_2:
+	li	a0, 1
 	ret

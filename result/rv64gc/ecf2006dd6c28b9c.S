@@ -23,11 +23,12 @@ func00000000000000c8:                   # @func00000000000000c8
 	xor	a1, a1, a2
 	seqz	a1, a1
 	sltiu	a0, a0, 3
-	or	a1, a1, a0
-	li	a0, 6
-	beqz	a1, .LBB2_2
+	or	a0, a0, a1
+	beqz	a0, .LBB2_2
 	li	a0, 17
-.LBB2_2:                                # %entry
+	ret
+.LBB2_2:
+	li	a0, 6
 	ret
 func0000000000000061:                   # @func0000000000000061
 	sext.w	a0, a0
@@ -41,11 +42,12 @@ func0000000000000061:                   # @func0000000000000061
 func0000000000000011:                   # @func0000000000000011
 	xori	a0, a0, 1
 	or	a0, a0, a1
-	sext.w	a1, a0
-	li	a0, 4
-	beqz	a1, .LBB4_2
+	sext.w	a0, a0
+	beqz	a0, .LBB4_2
 	li	a0, 1
-.LBB4_2:                                # %entry
+	ret
+.LBB4_2:
+	li	a0, 4
 	ret
 func00000000000000cc:                   # @func00000000000000cc
 	sext.w	a0, a0
@@ -86,11 +88,12 @@ func0000000000000018:                   # @func0000000000000018
 	addi	a1, a1, -3
 	snez	a1, a1
 	sltiu	a0, a0, 5
-	or	a1, a1, a0
-	li	a0, 3
-	beqz	a1, .LBB8_2
+	or	a0, a0, a1
+	beqz	a0, .LBB8_2
 	li	a0, 1
-.LBB8_2:                                # %entry
+	ret
+.LBB8_2:
+	li	a0, 3
 	ret
 func00000000000000c1:                   # @func00000000000000c1
 	sext.w	a0, a0
@@ -98,11 +101,12 @@ func00000000000000c1:                   # @func00000000000000c1
 	sltiu	a1, a1, -1
 	addi	a0, a0, -7
 	seqz	a0, a0
-	and	a1, a1, a0
-	li	a0, 4
-	bnez	a1, .LBB9_2
+	and	a0, a0, a1
+	bnez	a0, .LBB9_2
 	li	a0, 121
-.LBB9_2:                                # %entry
+	ret
+.LBB9_2:
+	li	a0, 4
 	ret
 func0000000000000066:                   # @func0000000000000066
 	and	a0, a0, a1
@@ -116,11 +120,12 @@ func0000000000000081:                   # @func0000000000000081
 	sltiu	a1, a1, 64
 	addi	a0, a0, -24
 	snez	a0, a0
-	or	a1, a1, a0
-	li	a0, 1023
-	beqz	a1, .LBB11_2
+	or	a0, a0, a1
+	beqz	a0, .LBB11_2
 	li	a0, 767
-.LBB11_2:                               # %entry
+	ret
+.LBB11_2:
+	li	a0, 1023
 	ret
 func000000000000004a:                   # @func000000000000004a
 	sext.w	a0, a0
@@ -157,11 +162,12 @@ func000000000000004c:                   # @func000000000000004c
 	sext.w	a1, a1
 	sltiu	a1, a1, 3
 	snez	a0, a0
-	and	a1, a1, a0
-	li	a0, 10
-	bnez	a1, .LBB15_2
+	and	a0, a0, a1
+	bnez	a0, .LBB15_2
 	li	a0, 20
-.LBB15_2:                               # %entry
+	ret
+.LBB15_2:
+	li	a0, 10
 	ret
 func0000000000000041:                   # @func0000000000000041
 	sext.w	a0, a0

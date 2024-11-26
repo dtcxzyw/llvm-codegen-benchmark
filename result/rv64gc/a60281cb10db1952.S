@@ -7,11 +7,12 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func000000000000000c:                   # @func000000000000000c
 	sext.w	a1, a1
-	sext.w	a2, a0
-	li	a0, 10
-	bne	a2, a1, .LBB1_2
+	sext.w	a0, a0
+	bne	a0, a1, .LBB1_2
 	li	a0, 2
-.LBB1_2:                                # %entry
+	ret
+.LBB1_2:
+	li	a0, 10
 	ret
 func0000000000000009:                   # @func0000000000000009
 	sext.w	a1, a1

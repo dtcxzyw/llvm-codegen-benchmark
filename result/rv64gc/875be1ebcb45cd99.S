@@ -12,11 +12,11 @@ func000000000000000a:                   # @func000000000000000a
 	addi	a0, a0, 1899
 	ret
 func0000000000000008:                   # @func0000000000000008
-	mv	a2, a0
-	li	a0, 5
-	bltu	a1, a2, .LBB3_2
+	bltu	a1, a0, .LBB3_2
 	li	a0, 52
-.LBB3_2:                                # %entry
+	ret
+.LBB3_2:
+	li	a0, 5
 	ret
 func0000000000000004:                   # @func0000000000000004
 	sltu	a0, a0, a1

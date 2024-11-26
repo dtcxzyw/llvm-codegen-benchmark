@@ -19,11 +19,11 @@ func0000000000000004:                   # @func0000000000000004
 	slli	a0, a0, 1
 	ret
 func0000000000000008:                   # @func0000000000000008
-	mv	a2, a0
-	li	a0, 16
-	bltu	a1, a2, .LBB4_2
+	bltu	a1, a0, .LBB4_2
 	li	a0, 24
-.LBB4_2:                                # %entry
+	ret
+.LBB4_2:
+	li	a0, 16
 	ret
 .LCPI5_0:
 	.quad	-7046029254386353130            # 0x9e3779b97f4a7c16
@@ -35,9 +35,9 @@ func000000000000000c:                   # @func000000000000000c
 	sub	a0, a2, a0
 	ret
 func0000000000000007:                   # @func0000000000000007
-	mv	a2, a0
-	li	a0, 408
-	blt	a1, a2, .LBB6_2
+	blt	a1, a0, .LBB6_2
 	li	a0, 736
-.LBB6_2:                                # %entry
+	ret
+.LBB6_2:
+	li	a0, 408
 	ret

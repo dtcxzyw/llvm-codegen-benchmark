@@ -6,21 +6,27 @@ func0000000000000015:                   # @func0000000000000015
 	ret
 func00000000000000a0:                   # @func00000000000000a0
 	lui	a3, 16
-	addiw	a4, a3, -1
-	li	a3, 11
-	blt	a4, a2, .LBB1_2
-	li	a3, 7
-.LBB1_2:                                # %entry
+	addiw	a3, a3, -1
+	blt	a3, a2, .LBB1_2
+	li	a2, 7
 	add	a0, a0, a1
-	addw	a0, a0, a3
+	addw	a0, a0, a2
+	ret
+.LBB1_2:
+	li	a2, 11
+	add	a0, a0, a1
+	addw	a0, a0, a2
 	ret
 func0000000000000010:                   # @func0000000000000010
-	li	a3, -5
 	beqz	a2, .LBB2_2
-	li	a3, -13
-.LBB2_2:                                # %entry
+	li	a2, -13
 	add	a0, a0, a1
-	addw	a0, a0, a3
+	addw	a0, a0, a2
+	ret
+.LBB2_2:
+	li	a2, -5
+	add	a0, a0, a1
+	addw	a0, a0, a2
 	ret
 func0000000000000045:                   # @func0000000000000045
 	sltiu	a2, a2, 1024

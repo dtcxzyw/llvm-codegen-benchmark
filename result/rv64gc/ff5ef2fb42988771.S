@@ -20,9 +20,10 @@ func0000000000000008:                   # @func0000000000000008
 	srli	a1, a1, 48
 	sltiu	a1, a1, 21
 	or	a0, a0, a1
-	andi	a1, a0, 1
-	li	a0, 13
-	bnez	a1, .LBB2_2
+	andi	a0, a0, 1
+	bnez	a0, .LBB2_2
 	li	a0, 8
-.LBB2_2:                                # %entry
+	ret
+.LBB2_2:
+	li	a0, 13
 	ret

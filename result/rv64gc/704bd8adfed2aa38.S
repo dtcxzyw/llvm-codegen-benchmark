@@ -60,18 +60,18 @@ func0000000000000008:                   # @func0000000000000008
 	andi	a0, a0, -34
 	ret
 func0000000000000004:                   # @func0000000000000004
-	andi	a2, a0, 1
 	sext.w	a3, a1
 	li	a1, 7
-	li	a0, 8
-	bgeu	a3, a1, .LBB4_3
-	beqz	a2, .LBB4_4
-.LBB4_2:                                # %entry
-	ret
-.LBB4_3:                                # %entry
+	andi	a2, a0, 1
+	bltu	a3, a1, .LBB4_2
 	li	a0, 11
 	li	a1, 10
-	bnez	a2, .LBB4_2
-.LBB4_4:                                # %entry
+	beqz	a2, .LBB4_3
+	j	.LBB4_4
+.LBB4_2:
+	li	a0, 8
+	bnez	a2, .LBB4_4
+.LBB4_3:                                # %entry
 	mv	a0, a1
+.LBB4_4:                                # %entry
 	ret

@@ -1,18 +1,18 @@
 func00000000000000aa:                   # @func00000000000000aa
 	sext.w	a1, a1
-	li	a3, 48
-	li	a2, 408
-	bge	a3, a1, .LBB0_3
-	li	a3, 50
-	bge	a3, a1, .LBB0_4
-.LBB0_2:                                # %entry
-	ret
-.LBB0_3:                                # %entry
+	li	a2, 48
+	blt	a2, a1, .LBB0_2
 	li	a2, 280
 	li	a3, 50
-	blt	a3, a1, .LBB0_2
-.LBB0_4:                                # %entry
+	bge	a3, a1, .LBB0_3
+	j	.LBB0_4
+.LBB0_2:
+	li	a2, 408
+	li	a3, 50
+	blt	a3, a1, .LBB0_4
+.LBB0_3:                                # %entry
 	mv	a0, a2
+.LBB0_4:                                # %entry
 	ret
 func0000000000000088:                   # @func0000000000000088
 	sext.w	a1, a1

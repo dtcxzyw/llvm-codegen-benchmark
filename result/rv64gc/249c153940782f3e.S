@@ -46,34 +46,32 @@ func000000000000000a:                   # @func000000000000000a
 	srli	a0, a1, 1
 	ret
 func0000000000000008:                   # @func0000000000000008
-	mv	a3, a0
 	andi	a1, a1, 1
-	li	a0, 32
-	beqz	a1, .LBB3_3
-	srli	a3, a3, 17
-	bnez	a3, .LBB3_4
+	bnez	a1, .LBB3_3
+	srli	a0, a0, 17
+	bnez	a0, .LBB3_4
 .LBB3_2:                                # %entry
-	ret
-.LBB3_3:                                # %entry
 	mv	a0, a2
-	srli	a3, a3, 17
-	beqz	a3, .LBB3_2
+	ret
+.LBB3_3:
+	li	a2, 32
+	srli	a0, a0, 17
+	beqz	a0, .LBB3_2
 .LBB3_4:                                # %entry
 	li	a0, 128
 	ret
 func0000000000000004:                   # @func0000000000000004
-	mv	a3, a0
 	andi	a1, a1, 1
-	li	a0, 25
-	beqz	a1, .LBB4_3
+	bnez	a1, .LBB4_3
 	li	a1, 23
-	bltu	a3, a1, .LBB4_4
+	bltu	a0, a1, .LBB4_4
 .LBB4_2:                                # %entry
-	ret
-.LBB4_3:                                # %entry
 	mv	a0, a2
+	ret
+.LBB4_3:
+	li	a2, 25
 	li	a1, 23
-	bgeu	a3, a1, .LBB4_2
+	bgeu	a0, a1, .LBB4_2
 .LBB4_4:                                # %entry
 	li	a0, 23
 	ret

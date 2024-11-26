@@ -20,20 +20,19 @@ func0000000000000004:                   # @func0000000000000004
 	add	a0, a0, a1
 	ret
 func0000000000000010:                   # @func0000000000000010
-	andi	a3, a2, 1
-	li	a2, 8
-	beqz	a3, .LBB2_3
-	srli	a1, a1, 16
-	beqz	a1, .LBB2_4
-.LBB2_2:                                # %entry
-	add	a0, a0, a2
-	ret
-.LBB2_3:                                # %entry
+	andi	a2, a2, 1
+	bnez	a2, .LBB2_2
 	li	a2, 16
 	srli	a1, a1, 16
-	bnez	a1, .LBB2_2
-.LBB2_4:                                # %entry
+	beqz	a1, .LBB2_3
+	j	.LBB2_4
+.LBB2_2:
+	li	a2, 8
+	srli	a1, a1, 16
+	bnez	a1, .LBB2_4
+.LBB2_3:                                # %entry
 	li	a2, 4
+.LBB2_4:                                # %entry
 	add	a0, a0, a2
 	ret
 func0000000000000005:                   # @func0000000000000005
@@ -46,37 +45,35 @@ func0000000000000005:                   # @func0000000000000005
 	add	a0, a0, a1
 	ret
 func0000000000000013:                   # @func0000000000000013
-	andi	a3, a2, 1
-	li	a2, 58
-	beqz	a3, .LBB4_3
-	li	a3, 513
-	bltu	a1, a3, .LBB4_4
-.LBB4_2:                                # %entry
-	add	a0, a0, a2
-	ret
-.LBB4_3:                                # %entry
+	andi	a2, a2, 1
+	bnez	a2, .LBB4_2
 	li	a2, 184
 	li	a3, 513
-	bgeu	a1, a3, .LBB4_2
-.LBB4_4:                                # %entry
+	bltu	a1, a3, .LBB4_3
+	j	.LBB4_4
+.LBB4_2:
+	li	a2, 58
+	li	a3, 513
+	bgeu	a1, a3, .LBB4_4
+.LBB4_3:                                # %entry
 	li	a2, 2
+.LBB4_4:                                # %entry
 	add	a0, a0, a2
 	ret
 func0000000000000011:                   # @func0000000000000011
-	andi	a3, a2, 1
-	li	a2, 64
-	beqz	a3, .LBB5_3
-	li	a3, 513
-	bltu	a1, a3, .LBB5_4
-.LBB5_2:                                # %entry
-	add	a0, a0, a2
-	ret
-.LBB5_3:                                # %entry
+	andi	a2, a2, 1
+	bnez	a2, .LBB5_2
 	lui	a2, 1
 	li	a3, 513
-	bgeu	a1, a3, .LBB5_2
-.LBB5_4:                                # %entry
+	bltu	a1, a3, .LBB5_3
+	j	.LBB5_4
+.LBB5_2:
+	li	a2, 64
+	li	a3, 513
+	bgeu	a1, a3, .LBB5_4
+.LBB5_3:                                # %entry
 	li	a2, 8
+.LBB5_4:                                # %entry
 	add	a0, a0, a2
 	ret
 func0000000000000020:                   # @func0000000000000020

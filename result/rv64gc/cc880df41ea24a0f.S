@@ -34,11 +34,14 @@ func0000000000000068:                   # @func0000000000000068
 	sltu	a0, a1, a0
 	ret
 func0000000000000124:                   # @func0000000000000124
-	srliw	a3, a2, 16
-	li	a2, -2
-	beqz	a3, .LBB4_2
+	srliw	a2, a2, 16
+	beqz	a2, .LBB4_2
 	li	a2, -4
-.LBB4_2:                                # %entry
+	add	a1, a1, a2
+	sltu	a0, a0, a1
+	ret
+.LBB4_2:
+	li	a2, -2
 	add	a1, a1, a2
 	sltu	a0, a0, a1
 	ret

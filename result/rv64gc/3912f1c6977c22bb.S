@@ -24,9 +24,8 @@ func0000000000000028:                   # @func0000000000000028
 	sgtz	a0, a0
 	addi	a0, a0, -1
 	or	a0, a0, a2
-	li	a2, 2
-	bnez	a3, .LBB2_2
-	mv	a2, a1
+	beqz	a3, .LBB2_2
+	li	a1, 2
 .LBB2_2:                                # %entry
-	addw	a0, a0, a2
+	addw	a0, a0, a1
 	ret

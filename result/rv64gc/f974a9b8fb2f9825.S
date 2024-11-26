@@ -29,20 +29,26 @@ func0000000000000071:                   # @func0000000000000071
 	seqz	a0, a0
 	ret
 func0000000000000038:                   # @func0000000000000038
-	andi	a3, a2, 1
-	li	a2, 12
-	bnez	a3, .LBB4_2
+	andi	a2, a2, 1
+	bnez	a2, .LBB4_2
 	li	a2, 8
-.LBB4_2:                                # %entry
+	addw	a1, a1, a2
+	sltu	a0, a1, a0
+	ret
+.LBB4_2:
+	li	a2, 12
 	addw	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
 func0000000000000078:                   # @func0000000000000078
-	andi	a3, a2, 1
-	li	a2, 12
-	bnez	a3, .LBB5_2
+	andi	a2, a2, 1
+	bnez	a2, .LBB5_2
 	li	a2, 8
-.LBB5_2:                                # %entry
+	addw	a1, a1, a2
+	sltu	a0, a1, a0
+	ret
+.LBB5_2:
+	li	a2, 12
 	addw	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
@@ -56,11 +62,16 @@ func0000000000000021:                   # @func0000000000000021
 	seqz	a0, a0
 	ret
 func0000000000000008:                   # @func0000000000000008
-	andi	a3, a2, 1
-	li	a2, 148
-	bnez	a3, .LBB7_2
+	andi	a2, a2, 1
+	bnez	a2, .LBB7_2
 	li	a2, 118
-.LBB7_2:                                # %entry
+	add	a1, a1, a2
+	slli	a1, a1, 32
+	srli	a1, a1, 32
+	sltu	a0, a1, a0
+	ret
+.LBB7_2:
+	li	a2, 148
 	add	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 32

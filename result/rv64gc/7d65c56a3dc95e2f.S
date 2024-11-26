@@ -7,10 +7,11 @@ func0000000000000005:                   # @func0000000000000005
 	slli	a1, a0, 33
 	add	a0, a0, a1
 	mul	a0, a2, a0
-	li	a1, 1
 	bnez	a3, .LBB0_2
-	mv	a1, a0
-.LBB0_2:                                # %entry
+	add	a0, a0, a0
+	ret
+.LBB0_2:
+	li	a1, 1
 	add	a0, a0, a1
 	ret
 .LCPI1_0:
@@ -19,12 +20,13 @@ func0000000000000007:                   # @func0000000000000007
 	lui	a3, %hi(.LCPI1_0)
 	ld	a3, %lo(.LCPI1_0)(a3)
 	sub	a2, a2, a1
-	andi	a4, a0, 1
+	andi	a1, a0, 1
 	srai	a2, a2, 3
 	mul	a0, a2, a3
+	bnez	a1, .LBB1_2
+	add	a0, a0, a0
+	ret
+.LBB1_2:
 	li	a1, 1
-	bnez	a4, .LBB1_2
-	mv	a1, a0
-.LBB1_2:                                # %entry
 	add	a0, a0, a1
 	ret

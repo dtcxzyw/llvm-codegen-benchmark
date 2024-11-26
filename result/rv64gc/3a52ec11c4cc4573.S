@@ -8,21 +8,21 @@ func0000000000000005:                   # @func0000000000000005
 	addiw	a0, a0, -1
 	ret
 func0000000000000011:                   # @func0000000000000011
-	sext.w	a3, a1
 	andi	a2, a2, 1
-	li	a1, 64
-	beqz	a2, .LBB1_3
-	li	a2, 1025
-	bgeu	a3, a2, .LBB1_4
-.LBB1_2:                                # %entry
-	addiw	a0, a1, -1
-	ret
+	sext.w	a1, a1
+	bnez	a2, .LBB1_2
+	li	a2, 128
+	li	a3, 1025
+	bgeu	a1, a3, .LBB1_3
+	j	.LBB1_4
+.LBB1_2:
+	li	a2, 64
+	li	a3, 1025
+	bltu	a1, a3, .LBB1_4
 .LBB1_3:                                # %entry
-	li	a1, 128
-	li	a2, 1025
-	bltu	a3, a2, .LBB1_2
+	mv	a2, a0
 .LBB1_4:                                # %entry
-	addiw	a0, a0, -1
+	addiw	a0, a2, -1
 	ret
 func0000000000000007:                   # @func0000000000000007
 	sext.w	a1, a1

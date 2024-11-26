@@ -7,11 +7,12 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000024:                   # @func0000000000000024
 	lui	a1, 524032
-	and	a1, a1, a0
-	li	a0, -1076
-	beqz	a1, .LBB1_2
+	and	a0, a0, a1
+	beqz	a0, .LBB1_2
 	li	a0, -1023
-.LBB1_2:                                # %entry
+	ret
+.LBB1_2:
+	li	a0, -1076
 	ret
 func0000000000000021:                   # @func0000000000000021
 	slli	a0, a0, 44
@@ -26,17 +27,17 @@ func000000000000000c:                   # @func000000000000000c
 	addi	a0, a0, 12
 	ret
 func0000000000000031:                   # @func0000000000000031
-	andi	a1, a0, 1
-	li	a0, 32
-	beqz	a1, .LBB4_2
+	andi	a0, a0, 1
+	beqz	a0, .LBB4_2
 	li	a0, 126
-.LBB4_2:                                # %entry
+	ret
+.LBB4_2:
+	li	a0, 32
 	ret
 func0000000000000004:                   # @func0000000000000004
 	andi	a1, a0, 56
-	li	a2, 56
-	li	a0, 120
-	beq	a1, a2, .LBB5_2
 	li	a0, 56
+	bne	a1, a0, .LBB5_2
+	li	a0, 120
 .LBB5_2:                                # %entry
 	ret

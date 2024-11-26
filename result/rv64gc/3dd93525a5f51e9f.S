@@ -1,36 +1,32 @@
 func0000000000000000:                   # @func0000000000000000
-	andi	a1, a1, 1
 	andi	a3, a2, 1
-	li	a2, 60
-	beqz	a3, .LBB0_3
-	li	a3, 44
-	beqz	a1, .LBB0_4
-.LBB0_2:                                # %entry
-	mulw	a0, a3, a0
-	ret
-.LBB0_3:                                # %entry
-	li	a2, 36
-	li	a3, 44
-	bnez	a1, .LBB0_2
+	andi	a2, a1, 1
+	bnez	a3, .LBB0_2
+	li	a1, 36
+	bnez	a2, .LBB0_3
+	j	.LBB0_4
+.LBB0_2:
+	li	a1, 60
+	beqz	a2, .LBB0_4
+.LBB0_3:
+	li	a1, 44
 .LBB0_4:                                # %entry
-	mulw	a0, a2, a0
+	mulw	a0, a1, a0
 	ret
 func0000000000000003:                   # @func0000000000000003
-	andi	a1, a1, 1
 	andi	a3, a2, 1
-	li	a2, 3
-	beqz	a3, .LBB1_3
-	li	a3, 2
-	beqz	a1, .LBB1_4
-.LBB1_2:                                # %entry
-	mulw	a0, a3, a0
-	ret
-.LBB1_3:                                # %entry
-	li	a2, 1
-	li	a3, 2
-	bnez	a1, .LBB1_2
+	andi	a2, a1, 1
+	bnez	a3, .LBB1_2
+	li	a1, 1
+	bnez	a2, .LBB1_3
+	j	.LBB1_4
+.LBB1_2:
+	li	a1, 3
+	beqz	a2, .LBB1_4
+.LBB1_3:
+	li	a1, 2
 .LBB1_4:                                # %entry
-	mulw	a0, a2, a0
+	mulw	a0, a1, a0
 	ret
 func0000000000000001:                   # @func0000000000000001
 	andi	a1, a1, 1

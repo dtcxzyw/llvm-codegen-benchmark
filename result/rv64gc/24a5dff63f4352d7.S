@@ -15,12 +15,17 @@ func0000000000000007:                   # @func0000000000000007
 	or	a0, a0, a1
 	ret
 func0000000000000006:                   # @func0000000000000006
-	li	a3, 1
 	beqz	a2, .LBB2_2
-	li	a3, 3
-.LBB2_2:                                # %entry
-	lui	a2, 1048575
-	and	a1, a1, a2
-	or	a0, a0, a3
+	li	a2, 3
+	lui	a3, 1048575
+	and	a1, a1, a3
+	or	a0, a0, a2
+	or	a0, a0, a1
+	ret
+.LBB2_2:
+	li	a2, 1
+	lui	a3, 1048575
+	and	a1, a1, a3
+	or	a0, a0, a2
 	or	a0, a0, a1
 	ret

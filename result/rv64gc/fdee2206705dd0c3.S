@@ -17,10 +17,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	srli	a1, a1, 63
 	addi	a2, a2, -1
 	seqz	a2, a2
-	and	a2, a2, a1
-	li	a1, 8
-	bnez	a2, .LBB1_2
-	mv	a1, a0
+	and	a1, a1, a2
+	beqz	a1, .LBB1_2
+	li	a0, 8
 .LBB1_2:                                # %entry
-	mv	a0, a1
 	ret

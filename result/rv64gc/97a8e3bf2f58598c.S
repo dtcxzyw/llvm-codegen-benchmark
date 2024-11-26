@@ -1,10 +1,11 @@
 func0000000000000004:                   # @func0000000000000004
 	fmv.x.d	a0, fa0
-	srli	a1, a0, 52
-	li	a0, -1536
-	beqz	a1, .LBB0_2
+	srli	a0, a0, 52
+	beqz	a0, .LBB0_2
 	li	a0, -1022
-.LBB0_2:                                # %entry
+	ret
+.LBB0_2:
+	li	a0, -1536
 	ret
 func000000000000000a:                   # @func000000000000000a
 	fmv.x.d	a0, fa0

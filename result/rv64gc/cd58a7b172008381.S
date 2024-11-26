@@ -41,11 +41,12 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func0000000000000007:                   # @func0000000000000007
 	fmv.d.x	fa5, zero
-	feq.d	a1, fa0, fa5
-	li	a0, 16
-	beqz	a1, .LBB6_2
+	feq.d	a0, fa0, fa5
+	beqz	a0, .LBB6_2
 	li	a0, 24
-.LBB6_2:                                # %entry
+	ret
+.LBB6_2:
+	li	a0, 16
 	ret
 .LCPI7_0:
 	.quad	0x3ff657184ae74487              # double 1.3962634015954636

@@ -33,12 +33,14 @@ func0000000000000009:                   # @func0000000000000009
 func0000000000000011:                   # @func0000000000000011
 	li	a2, 1
 	slli	a2, a2, 32
-	addi	a3, a2, 1024
-	li	a2, 264
-	bltu	a3, a1, .LBB5_2
-	li	a2, 8
-.LBB5_2:                                # %entry
-	or	a0, a0, a2
+	addi	a2, a2, 1024
+	bltu	a2, a1, .LBB5_2
+	li	a1, 8
+	or	a0, a0, a1
+	ret
+.LBB5_2:
+	li	a1, 264
+	or	a0, a0, a1
 	ret
 func0000000000000019:                   # @func0000000000000019
 	snez	a1, a1
@@ -46,18 +48,22 @@ func0000000000000019:                   # @func0000000000000019
 	or	a0, a0, a1
 	ret
 func0000000000000010:                   # @func0000000000000010
-	li	a3, 15
-	li	a2, 4
-	bltu	a3, a1, .LBB7_2
-	li	a2, 8
-.LBB7_2:                                # %entry
-	or	a0, a0, a2
+	li	a2, 15
+	bltu	a2, a1, .LBB7_2
+	li	a1, 8
+	or	a0, a0, a1
+	ret
+.LBB7_2:
+	li	a1, 4
+	or	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
-	li	a3, -16
-	li	a2, 16
-	bltu	a1, a3, .LBB8_2
-	li	a2, 32
-.LBB8_2:                                # %entry
-	or	a0, a0, a2
+	li	a2, -16
+	bltu	a1, a2, .LBB8_2
+	li	a1, 32
+	or	a0, a0, a1
+	ret
+.LBB8_2:
+	li	a1, 16
+	or	a0, a0, a1
 	ret

@@ -26,13 +26,13 @@ func0000000000000014:                   # @func0000000000000014
 	and	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
-	mv	a2, a0
 	slli	a1, a1, 32
 	srli	a1, a1, 32
-	li	a0, 20
-	bltu	a1, a2, .LBB4_2
+	bltu	a1, a0, .LBB4_2
 	li	a0, 1
-.LBB4_2:                                # %entry
+	ret
+.LBB4_2:
+	li	a0, 20
 	ret
 func000000000000001c:                   # @func000000000000001c
 	sext.w	a1, a1

@@ -2,20 +2,22 @@ func000000000000000c:                   # @func000000000000000c
 	sext.w	a1, a1
 	addi	a1, a1, -1
 	snez	a1, a1
-	and	a1, a1, a0
-	li	a0, 24
-	bnez	a1, .LBB0_2
+	and	a0, a0, a1
+	bnez	a0, .LBB0_2
 	li	a0, 32
-.LBB0_2:                                # %entry
+	ret
+.LBB0_2:
+	li	a0, 24
 	ret
 func0000000000000001:                   # @func0000000000000001
 	sext.w	a1, a1
 	seqz	a1, a1
-	and	a1, a1, a0
-	li	a0, 24
-	bnez	a1, .LBB1_2
+	and	a0, a0, a1
+	bnez	a0, .LBB1_2
 	li	a0, 32
-.LBB1_2:                                # %entry
+	ret
+.LBB1_2:
+	li	a0, 24
 	ret
 func000000000000000a:                   # @func000000000000000a
 	sext.w	a1, a1

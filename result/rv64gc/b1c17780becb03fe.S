@@ -15,18 +15,16 @@ func0000000000000002:                   # @func0000000000000002
 	mv	a0, a1
 	ret
 func0000000000000003:                   # @func0000000000000003
-	andi	a2, a0, 1
-	andi	a0, a1, 1
-	li	a1, 32
-	beqz	a0, .LBB1_3
-	li	a0, 16
-	beqz	a2, .LBB1_4
-.LBB1_2:                                # %entry
-	ret
-.LBB1_3:                                # %entry
-	li	a1, 48
-	li	a0, 16
+	andi	a2, a1, 1
+	andi	a1, a0, 1
 	bnez	a2, .LBB1_2
+	li	a0, 48
+	bnez	a1, .LBB1_3
+	j	.LBB1_4
+.LBB1_2:
+	li	a0, 32
+	beqz	a1, .LBB1_4
+.LBB1_3:
+	li	a0, 16
 .LBB1_4:                                # %entry
-	mv	a0, a1
 	ret

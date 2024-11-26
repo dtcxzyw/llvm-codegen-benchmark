@@ -1,10 +1,13 @@
 func0000000000000010:                   # @func0000000000000010
-	li	a3, 3
 	beqz	a2, .LBB0_2
-	li	a3, 1
-.LBB0_2:                                # %entry
+	li	a2, 1
 	add	a0, a0, a1
-	add	a0, a0, a3
+	add	a0, a0, a2
+	ret
+.LBB0_2:
+	li	a2, 3
+	add	a0, a0, a1
+	add	a0, a0, a2
 	ret
 func0000000000000045:                   # @func0000000000000045
 	srli	a2, a2, 62

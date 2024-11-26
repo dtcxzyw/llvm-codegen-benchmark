@@ -14,11 +14,15 @@ func0000000000000018:                   # @func0000000000000018
 	sltu	a0, a2, a0
 	ret
 func0000000000000014:                   # @func0000000000000014
-	andi	a3, a2, 1
-	li	a2, 8
-	bnez	a3, .LBB1_2
+	andi	a2, a2, 1
+	bnez	a2, .LBB1_2
 	li	a2, 16
-.LBB1_2:                                # %entry
+	or	a0, a0, a1
+	sext.w	a0, a0
+	sltu	a0, a0, a2
+	ret
+.LBB1_2:
+	li	a2, 8
 	or	a0, a0, a1
 	sext.w	a0, a0
 	sltu	a0, a0, a2

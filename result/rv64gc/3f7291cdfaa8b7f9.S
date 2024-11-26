@@ -1,10 +1,9 @@
 func0000000000000000:                   # @func0000000000000000
-	andi	a3, a1, 1
-	li	a1, 59
-	bnez	a3, .LBB0_2
-	mv	a1, a2
+	andi	a1, a1, 1
+	beqz	a1, .LBB0_2
+	li	a2, 59
 .LBB0_2:                                # %entry
-	subw	a0, a0, a1
+	subw	a0, a0, a2
 	ret
 func0000000000000001:                   # @func0000000000000001
 	andi	a1, a1, 1
@@ -19,10 +18,9 @@ func0000000000000002:                   # @func0000000000000002
 	subw	a0, a0, a1
 	ret
 func0000000000000003:                   # @func0000000000000003
-	andi	a3, a1, 1
-	li	a1, 32
-	bnez	a3, .LBB3_2
-	mv	a1, a2
+	andi	a1, a1, 1
+	beqz	a1, .LBB3_2
+	li	a2, 32
 .LBB3_2:                                # %entry
-	subw	a0, a0, a1
+	subw	a0, a0, a2
 	ret

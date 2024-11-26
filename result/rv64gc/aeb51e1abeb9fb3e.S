@@ -4,22 +4,24 @@ func0000000000000002:                   # @func0000000000000002
 	addi	a1, a1, -6
 	seqz	a1, a1
 	or	a0, a0, a1
-	andi	a1, a0, 1
-	li	a0, -28
-	bnez	a1, .LBB0_2
+	andi	a0, a0, 1
+	bnez	a0, .LBB0_2
 	li	a0, -22
-.LBB0_2:                                # %entry
+	ret
+.LBB0_2:
+	li	a0, -28
 	ret
 func0000000000000008:                   # @func0000000000000008
 	slli	a1, a1, 48
 	srli	a1, a1, 48
 	sltiu	a1, a1, 21
 	or	a0, a0, a1
-	andi	a1, a0, 1
-	li	a0, 496
-	bnez	a1, .LBB1_2
+	andi	a0, a0, 1
+	bnez	a0, .LBB1_2
 	li	a0, 185
-.LBB1_2:                                # %entry
+	ret
+.LBB1_2:
+	li	a0, 496
 	ret
 func0000000000000010:                   # @func0000000000000010
 	slli	a1, a1, 48

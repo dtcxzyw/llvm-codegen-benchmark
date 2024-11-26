@@ -4,19 +4,23 @@ func0000000000000000:                   # @func0000000000000000
 	addiw	a0, a0, 48
 	ret
 func0000000000000005:                   # @func0000000000000005
-	andi	a2, a0, 1
-	li	a0, 52
-	bnez	a2, .LBB1_2
+	andi	a0, a0, 1
+	bnez	a0, .LBB1_2
 	li	a0, -48
-.LBB1_2:                                # %entry
+	addw	a0, a0, a1
+	ret
+.LBB1_2:
+	li	a0, 52
 	addw	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004
-	andi	a2, a0, 1
-	li	a0, -48
-	bnez	a2, .LBB2_2
+	andi	a0, a0, 1
+	bnez	a0, .LBB2_2
 	li	a0, -87
-.LBB2_2:                                # %entry
+	addw	a0, a0, a1
+	ret
+.LBB2_2:
+	li	a0, -48
 	addw	a0, a0, a1
 	ret
 func000000000000000a:                   # @func000000000000000a
@@ -35,19 +39,23 @@ func000000000000000f:                   # @func000000000000000f
 	addiw	a0, a0, 2
 	ret
 func0000000000000007:                   # @func0000000000000007
-	andi	a2, a0, 1
-	li	a0, 52
-	bnez	a2, .LBB6_2
+	andi	a0, a0, 1
+	bnez	a0, .LBB6_2
 	li	a0, -48
-.LBB6_2:                                # %entry
+	addw	a0, a0, a1
+	ret
+.LBB6_2:
+	li	a0, 52
 	addw	a0, a0, a1
 	ret
 func0000000000000002:                   # @func0000000000000002
-	andi	a2, a0, 1
-	li	a0, 1
-	bnez	a2, .LBB7_2
+	andi	a0, a0, 1
+	bnez	a0, .LBB7_2
 	li	a0, 3
-.LBB7_2:                                # %entry
+	addw	a0, a0, a1
+	ret
+.LBB7_2:
+	li	a0, 1
 	addw	a0, a0, a1
 	ret
 func0000000000000003:                   # @func0000000000000003

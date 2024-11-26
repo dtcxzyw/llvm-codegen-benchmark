@@ -27,13 +27,15 @@ func000000000000000f:                   # @func000000000000000f
 	addiw	a0, a0, 1
 	ret
 func000000000000001d:                   # @func000000000000001d
-	andi	a3, a1, 1
-	andi	a1, a2, 255
-	add	a0, a0, a1
-	li	a1, -5
-	bnez	a3, .LBB4_2
+	andi	a1, a1, 1
+	andi	a2, a2, 255
+	add	a0, a0, a2
+	bnez	a1, .LBB4_2
 	li	a1, -13
-.LBB4_2:                                # %entry
+	addw	a0, a0, a1
+	ret
+.LBB4_2:
+	li	a1, -5
 	addw	a0, a0, a1
 	ret
 func000000000000000d:                   # @func000000000000000d

@@ -31,11 +31,14 @@ func0000000000000005:                   # @func0000000000000005
 	add	a0, a0, a2
 	ret
 func000000000000000d:                   # @func000000000000000d
-	andi	a3, a2, 1
-	li	a2, 13
-	bnez	a3, .LBB5_2
+	andi	a2, a2, 1
+	bnez	a2, .LBB5_2
 	li	a2, 20
-.LBB5_2:                                # %entry
+	add	a0, a0, a1
+	add	a0, a0, a2
+	ret
+.LBB5_2:
+	li	a2, 13
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

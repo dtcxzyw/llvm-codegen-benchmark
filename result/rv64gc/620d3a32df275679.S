@@ -34,12 +34,14 @@ func0000000000000054:                   # @func0000000000000054
 	addiw	a0, a0, 6
 	ret
 func00000000000000f1:                   # @func00000000000000f1
-	andi	a2, a0, 255
-	li	a3, 1
-	li	a0, 39
-	beq	a2, a3, .LBB5_2
+	andi	a0, a0, 255
+	li	a2, 1
+	beq	a0, a2, .LBB5_2
 	li	a0, 17
-.LBB5_2:                                # %entry
+	addw	a0, a0, a1
+	ret
+.LBB5_2:
+	li	a0, 39
 	addw	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004

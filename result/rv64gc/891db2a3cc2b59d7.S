@@ -16,28 +16,31 @@ func000000000000000c:                   # @func000000000000000c
 	andi	a1, a1, 255
 	addi	a1, a1, -96
 	snez	a1, a1
-	and	a1, a1, a0
-	li	a0, 104
-	bnez	a1, .LBB2_2
+	and	a0, a0, a1
+	bnez	a0, .LBB2_2
 	li	a0, 96
-.LBB2_2:                                # %entry
+	ret
+.LBB2_2:
+	li	a0, 104
 	ret
 func0000000000000008:                   # @func0000000000000008
 	andi	a1, a1, 255
 	sltiu	a1, a1, 129
 	xori	a1, a1, 1
-	and	a1, a1, a0
-	li	a0, 104
-	bnez	a1, .LBB3_2
+	and	a0, a0, a1
+	bnez	a0, .LBB3_2
 	li	a0, 96
-.LBB3_2:                                # %entry
+	ret
+.LBB3_2:
+	li	a0, 104
 	ret
 func0000000000000004:                   # @func0000000000000004
 	andi	a1, a1, 255
 	sltiu	a1, a1, 3
-	and	a1, a1, a0
-	li	a0, 4
-	bnez	a1, .LBB4_2
+	and	a0, a0, a1
+	bnez	a0, .LBB4_2
 	li	a0, 1
-.LBB4_2:                                # %entry
+	ret
+.LBB4_2:
+	li	a0, 4
 	ret

@@ -9,12 +9,14 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func0000000000000008:                   # @func0000000000000008
 	slli	a1, a1, 48
-	srli	a2, a1, 48
-	li	a3, 2
-	li	a1, 48
-	bltu	a2, a3, .LBB1_2
+	srli	a1, a1, 48
+	li	a2, 2
+	bltu	a1, a2, .LBB1_2
 	lui	a1, 3
-.LBB1_2:                                # %entry
+	or	a0, a0, a1
+	ret
+.LBB1_2:
+	li	a1, 48
 	or	a0, a0, a1
 	ret
 func0000000000000002:                   # @func0000000000000002

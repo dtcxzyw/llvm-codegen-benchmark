@@ -17,18 +17,20 @@ func0000000000000005:                   # @func0000000000000005
 	slli	a0, a0, 27
 	ret
 func000000000000001b:                   # @func000000000000001b
-	sext.w	a1, a0
-	li	a2, 9
-	li	a0, 256
-	blt	a1, a2, .LBB2_2
+	sext.w	a0, a0
+	li	a1, 9
+	blt	a0, a1, .LBB2_2
 	li	a0, 1
 	slli	a0, a0, 11
-.LBB2_2:                                # %entry
+	ret
+.LBB2_2:
+	li	a0, 256
 	ret
 func0000000000000011:                   # @func0000000000000011
-	srliw	a1, a0, 16
-	li	a0, -2
-	beqz	a1, .LBB3_2
+	srliw	a0, a0, 16
+	beqz	a0, .LBB3_2
 	li	a0, -4
-.LBB3_2:                                # %entry
+	ret
+.LBB3_2:
+	li	a0, -2
 	ret

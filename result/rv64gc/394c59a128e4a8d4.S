@@ -40,10 +40,14 @@ func0000000000000002:                   # @func0000000000000002
 	andi	a3, a1, 1
 	lui	a1, 1048575
 	and	a1, a1, a2
-	li	a2, 1
 	bnez	a3, .LBB3_2
 	li	a2, 3
-.LBB3_2:                                # %entry
+	slliw	a0, a0, 6
+	or	a0, a0, a2
+	or	a0, a0, a1
+	ret
+.LBB3_2:
+	li	a2, 1
 	slliw	a0, a0, 6
 	or	a0, a0, a2
 	or	a0, a0, a1

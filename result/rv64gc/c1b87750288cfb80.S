@@ -8,22 +8,24 @@ func0000000000000001:                   # @func0000000000000001
 	and	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
-	andi	a2, a0, 1
-	li	a0, 16
-	bnez	a2, .LBB1_2
+	andi	a0, a0, 1
+	bnez	a0, .LBB1_2
 	sext.w	a0, a1
 	sltiu	a0, a0, -2
 	neg	a0, a0
 	and	a0, a0, a1
-.LBB1_2:                                # %entry
+	ret
+.LBB1_2:
+	li	a0, 16
 	ret
 func000000000000000a:                   # @func000000000000000a
-	andi	a2, a0, 1
-	li	a0, 359
-	bnez	a2, .LBB2_2
+	andi	a0, a0, 1
+	bnez	a0, .LBB2_2
 	sext.w	a0, a1
 	slti	a0, a0, 360
 	neg	a0, a0
 	and	a0, a0, a1
-.LBB2_2:                                # %entry
+	ret
+.LBB2_2:
+	li	a0, 359
 	ret

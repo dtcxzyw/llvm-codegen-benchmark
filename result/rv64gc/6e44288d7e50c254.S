@@ -1,10 +1,12 @@
 func0000000000000059:                   # @func0000000000000059
-	addw	a2, a2, a1
-	li	a3, 578
-	li	a1, -428
-	blt	a2, a3, .LBB0_2
+	addw	a1, a1, a2
+	li	a2, 578
+	blt	a1, a2, .LBB0_2
 	li	a1, -528
-.LBB0_2:                                # %entry
+	addw	a0, a0, a1
+	ret
+.LBB0_2:
+	li	a1, -428
 	addw	a0, a0, a1
 	ret
 func0000000000000030:                   # @func0000000000000030

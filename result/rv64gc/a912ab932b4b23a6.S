@@ -1,10 +1,14 @@
 func0000000000000002:                   # @func0000000000000002
+	andi	a2, a2, 1
 	sext.w	a1, a1
-	andi	a3, a2, 1
-	li	a2, 5
-	bnez	a3, .LBB0_2
+	bnez	a2, .LBB0_2
 	li	a2, 3
-.LBB0_2:                                # %entry
+	xor	a1, a1, a2
+	seqz	a1, a1
+	or	a0, a0, a1
+	ret
+.LBB0_2:
+	li	a2, 5
 	xor	a1, a1, a2
 	seqz	a1, a1
 	or	a0, a0, a1
@@ -35,22 +39,28 @@ func0000000000000008:                   # @func0000000000000008
 	or	a0, a0, a1
 	ret
 func0000000000000010:                   # @func0000000000000010
+	andi	a2, a2, 1
 	sext.w	a1, a1
-	andi	a3, a2, 1
-	li	a2, 12
-	bnez	a3, .LBB4_2
+	bnez	a2, .LBB4_2
 	li	a2, 24
-.LBB4_2:                                # %entry
+	sltu	a1, a1, a2
+	or	a0, a0, a1
+	ret
+.LBB4_2:
+	li	a2, 12
 	sltu	a1, a1, a2
 	or	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c
+	andi	a2, a2, 1
 	sext.w	a1, a1
-	andi	a3, a2, 1
-	li	a2, 251
-	bnez	a3, .LBB5_2
+	bnez	a2, .LBB5_2
 	li	a2, 233
-.LBB5_2:                                # %entry
+	slt	a1, a2, a1
+	or	a0, a0, a1
+	ret
+.LBB5_2:
+	li	a2, 251
 	slt	a1, a2, a1
 	or	a0, a0, a1
 	ret

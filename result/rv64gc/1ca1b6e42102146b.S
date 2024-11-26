@@ -1,9 +1,15 @@
 func000000000000006a:                   # @func000000000000006a
-	sext.w	a3, a2
-	li	a2, 52
-	beqz	a3, .LBB0_2
+	sext.w	a2, a2
+	beqz	a2, .LBB0_2
 	li	a2, 64
-.LBB0_2:                                # %entry
+	li	a3, 88
+	mul	a1, a1, a3
+	add	a0, a0, a2
+	add	a0, a0, a1
+	addi	a0, a0, 4
+	ret
+.LBB0_2:
+	li	a2, 52
 	li	a3, 88
 	mul	a1, a1, a3
 	add	a0, a0, a2
@@ -11,11 +17,13 @@ func000000000000006a:                   # @func000000000000006a
 	addi	a0, a0, 4
 	ret
 func000000000000004a:                   # @func000000000000004a
-	sext.w	a3, a2
-	li	a2, 8
-	beqz	a3, .LBB1_2
+	sext.w	a2, a2
+	beqz	a2, .LBB1_2
 	li	a2, 32
-.LBB1_2:                                # %entry
+	j	.LBB1_3
+.LBB1_2:
+	li	a2, 8
+.LBB1_3:                                # %entry
 	slli	a3, a1, 6
 	slli	a1, a1, 8
 	sub	a1, a1, a3

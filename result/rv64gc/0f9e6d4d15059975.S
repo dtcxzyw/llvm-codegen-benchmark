@@ -21,9 +21,10 @@ func0000000000000004:                   # @func0000000000000004
 	sext.w	a2, a2
 	sext.w	a1, a1
 	sltu	a1, a1, a2
-	and	a1, a1, a0
-	li	a0, 16
-	bnez	a1, .LBB2_2
+	and	a0, a0, a1
+	bnez	a0, .LBB2_2
 	li	a0, 24
-.LBB2_2:                                # %entry
+	ret
+.LBB2_2:
+	li	a0, 16
 	ret

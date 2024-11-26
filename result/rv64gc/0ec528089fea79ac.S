@@ -9,9 +9,10 @@ func0000000000000028:                   # @func0000000000000028
 	addiw	a1, a1, -72
 	sltiu	a1, a1, -7
 	or	a0, a0, a1
-	andi	a1, a0, 1
-	li	a0, 184
-	bnez	a1, .LBB1_2
+	andi	a0, a0, 1
+	bnez	a0, .LBB1_2
 	li	a0, 56
-.LBB1_2:                                # %entry
+	ret
+.LBB1_2:
+	li	a0, 184
 	ret

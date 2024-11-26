@@ -37,20 +37,24 @@ func0000000000000028:                   # @func0000000000000028
 	ret
 func0000000000000005:                   # @func0000000000000005
 	sext.w	a2, a2
-	sext.w	a3, a1
-	li	a1, -7
-	beq	a3, a2, .LBB4_2
+	sext.w	a1, a1
+	beq	a1, a2, .LBB4_2
 	li	a1, -9
-.LBB4_2:                                # %entry
+	addw	a0, a0, a1
+	ret
+.LBB4_2:
+	li	a1, -7
 	addw	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004
 	sext.w	a2, a2
-	sext.w	a3, a1
-	li	a1, -7
-	beq	a3, a2, .LBB5_2
+	sext.w	a1, a1
+	beq	a1, a2, .LBB5_2
 	li	a1, -9
-.LBB5_2:                                # %entry
+	addw	a0, a0, a1
+	ret
+.LBB5_2:
+	li	a1, -7
 	addw	a0, a0, a1
 	ret
 func0000000000000020:                   # @func0000000000000020
@@ -62,11 +66,13 @@ func0000000000000020:                   # @func0000000000000020
 	ret
 func0000000000000018:                   # @func0000000000000018
 	sext.w	a2, a2
-	sext.w	a3, a1
-	li	a1, 144
-	blt	a3, a2, .LBB7_2
+	sext.w	a1, a1
+	blt	a1, a2, .LBB7_2
 	li	a1, 57
-.LBB7_2:                                # %entry
+	addw	a0, a0, a1
+	ret
+.LBB7_2:
+	li	a1, 144
 	addw	a0, a0, a1
 	ret
 func000000000000002f:                   # @func000000000000002f
@@ -106,11 +112,13 @@ func0000000000000010:                   # @func0000000000000010
 	ret
 func000000000000002d:                   # @func000000000000002d
 	sext.w	a2, a2
-	sext.w	a3, a1
-	li	a1, 51
-	blt	a3, a2, .LBB13_2
+	sext.w	a1, a1
+	blt	a1, a2, .LBB13_2
 	li	a1, 29
-.LBB13_2:                               # %entry
+	addw	a0, a0, a1
+	ret
+.LBB13_2:
+	li	a1, 51
 	addw	a0, a0, a1
 	ret
 func000000000000001d:                   # @func000000000000001d
@@ -132,10 +140,12 @@ func0000000000000007:                   # @func0000000000000007
 	ret
 func0000000000000027:                   # @func0000000000000027
 	sext.w	a2, a2
-	sext.w	a3, a1
-	li	a1, 4
-	bltu	a3, a2, .LBB16_2
+	sext.w	a1, a1
+	bltu	a1, a2, .LBB16_2
 	li	a1, 6
-.LBB16_2:                               # %entry
+	addw	a0, a0, a1
+	ret
+.LBB16_2:
+	li	a1, 4
 	addw	a0, a0, a1
 	ret

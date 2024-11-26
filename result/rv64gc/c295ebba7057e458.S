@@ -15,20 +15,24 @@ func000000000000004a:                   # @func000000000000004a
 func000000000000006a:                   # @func000000000000006a
 	sext.w	a2, a2
 	slti	a2, a2, 0
-	and	a2, a2, a0
-	li	a0, 208
-	bnez	a2, .LBB2_2
+	and	a0, a0, a2
+	bnez	a0, .LBB2_2
 	li	a0, 240
-.LBB2_2:                                # %entry
+	add	a0, a0, a1
+	ret
+.LBB2_2:
+	li	a0, 208
 	add	a0, a0, a1
 	ret
 func000000000000001a:                   # @func000000000000001a
 	sext.w	a2, a2
 	seqz	a2, a2
-	and	a2, a2, a0
-	li	a0, 928
-	bnez	a2, .LBB3_2
+	and	a0, a0, a2
+	bnez	a0, .LBB3_2
 	li	a0, 936
-.LBB3_2:                                # %entry
+	add	a0, a0, a1
+	ret
+.LBB3_2:
+	li	a0, 928
 	add	a0, a0, a1
 	ret

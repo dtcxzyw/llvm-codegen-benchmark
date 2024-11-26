@@ -16,11 +16,15 @@ func0000000000000018:                   # @func0000000000000018
 	sltu	a0, a2, a0
 	ret
 func0000000000000001:                   # @func0000000000000001
-	andi	a2, a1, 1
-	li	a1, 96
-	bnez	a2, .LBB2_2
+	andi	a1, a1, 1
+	bnez	a1, .LBB2_2
 	li	a1, 32
-.LBB2_2:                                # %entry
+	neg	a0, a0
+	xor	a0, a0, a1
+	seqz	a0, a0
+	ret
+.LBB2_2:
+	li	a1, 96
 	neg	a0, a0
 	xor	a0, a0, a1
 	seqz	a0, a0
@@ -41,11 +45,14 @@ func000000000000001a:                   # @func000000000000001a
 	xori	a0, a0, 1
 	ret
 func0000000000000016:                   # @func0000000000000016
-	andi	a2, a1, 1
-	li	a1, 3
-	bnez	a2, .LBB5_2
+	andi	a1, a1, 1
+	bnez	a1, .LBB5_2
 	li	a1, -9
-.LBB5_2:                                # %entry
+	add	a0, a0, a1
+	slti	a0, a0, 3
+	ret
+.LBB5_2:
+	li	a1, 3
 	add	a0, a0, a1
 	slti	a0, a0, 3
 	ret
@@ -63,11 +70,15 @@ func0000000000000006:                   # @func0000000000000006
 	srli	a0, a0, 63
 	ret
 func0000000000000038:                   # @func0000000000000038
-	andi	a2, a1, 1
-	li	a1, 11
-	bnez	a2, .LBB8_2
+	andi	a1, a1, 1
+	bnez	a1, .LBB8_2
 	li	a1, 6
-.LBB8_2:                                # %entry
+	add	a0, a0, a1
+	sltiu	a0, a0, 16
+	xori	a0, a0, 1
+	ret
+.LBB8_2:
+	li	a1, 11
 	add	a0, a0, a1
 	sltiu	a0, a0, 16
 	xori	a0, a0, 1

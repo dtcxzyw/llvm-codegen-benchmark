@@ -1,23 +1,19 @@
 func0000000000000044:                   # @func0000000000000044
 	sltiu	a2, a2, 20
 	sltiu	a1, a1, 513
-	or	a2, a2, a1
-	li	a1, 8
-	bnez	a2, .LBB0_2
-	mv	a1, a0
+	or	a1, a1, a2
+	beqz	a1, .LBB0_2
+	li	a0, 8
 .LBB0_2:                                # %entry
-	mv	a0, a1
 	ret
 func0000000000000014:                   # @func0000000000000014
 	addi	a2, a2, -1
 	seqz	a2, a2
 	sltiu	a1, a1, 16
-	or	a2, a2, a1
-	li	a1, 4
-	bnez	a2, .LBB1_2
-	mv	a1, a0
+	or	a1, a1, a2
+	beqz	a1, .LBB1_2
+	li	a0, 4
 .LBB1_2:                                # %entry
-	mv	a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
 	snez	a2, a2

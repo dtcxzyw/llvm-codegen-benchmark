@@ -6,19 +6,21 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func0000000000000011:                   # @func0000000000000011
 	slli	a0, a0, 48
-	srli	a1, a0, 48
-	li	a2, 760
-	li	a0, 299
-	bltu	a2, a1, .LBB1_2
+	srli	a0, a0, 48
+	li	a1, 760
+	bltu	a1, a0, .LBB1_2
 	li	a0, 289
-.LBB1_2:                                # %entry
+	ret
+.LBB1_2:
+	li	a0, 299
 	ret
 func0000000000000009:                   # @func0000000000000009
 	slli	a0, a0, 48
-	srli	a1, a0, 48
-	li	a2, 256
-	li	a0, 4
-	bltu	a1, a2, .LBB2_2
+	srli	a0, a0, 48
+	li	a1, 256
+	bltu	a0, a1, .LBB2_2
 	li	a0, 12
-.LBB2_2:                                # %entry
+	ret
+.LBB2_2:
+	li	a0, 4
 	ret

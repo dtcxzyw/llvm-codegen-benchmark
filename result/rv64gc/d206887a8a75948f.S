@@ -2,21 +2,23 @@ func0000000000000004:                   # @func0000000000000004
 	lui	a2, 16
 	addiw	a2, a2, -1
 	and	a1, a1, a2
-	and	a2, a2, a0
-	li	a0, 24
-	bltu	a2, a1, .LBB0_2
+	and	a0, a0, a2
+	bltu	a0, a1, .LBB0_2
 	li	a0, 16
-.LBB0_2:                                # %entry
+	ret
+.LBB0_2:
+	li	a0, 24
 	ret
 func0000000000000008:                   # @func0000000000000008
 	lui	a2, 16
 	addiw	a2, a2, -1
-	and	a3, a0, a2
+	and	a0, a0, a2
 	and	a1, a1, a2
-	li	a0, 16
-	bltu	a1, a3, .LBB1_2
+	bltu	a1, a0, .LBB1_2
 	li	a0, 24
-.LBB1_2:                                # %entry
+	ret
+.LBB1_2:
+	li	a0, 16
 	ret
 func000000000000000c:                   # @func000000000000000c
 	lui	a2, 16
@@ -43,19 +45,21 @@ func0000000000000006:                   # @func0000000000000006
 	slli	a1, a1, 48
 	slli	a0, a0, 48
 	srai	a1, a1, 48
-	srai	a2, a0, 48
-	li	a0, 24
-	blt	a2, a1, .LBB4_2
+	srai	a0, a0, 48
+	blt	a0, a1, .LBB4_2
 	li	a0, 16
-.LBB4_2:                                # %entry
+	ret
+.LBB4_2:
+	li	a0, 24
 	ret
 func000000000000000a:                   # @func000000000000000a
 	slli	a0, a0, 48
 	slli	a1, a1, 48
-	srai	a2, a0, 48
+	srai	a0, a0, 48
 	srai	a1, a1, 48
-	li	a0, 16
-	blt	a1, a2, .LBB5_2
+	blt	a1, a0, .LBB5_2
 	li	a0, 24
-.LBB5_2:                                # %entry
+	ret
+.LBB5_2:
+	li	a0, 16
 	ret

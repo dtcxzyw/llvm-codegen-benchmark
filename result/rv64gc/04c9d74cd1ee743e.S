@@ -42,12 +42,16 @@ func000000000000000a:                   # @func000000000000000a
 	addi	a0, a0, 3
 	ret
 func0000000000000006:                   # @func0000000000000006
-	sext.w	a2, a1
-	li	a3, 2
-	li	a1, 36
-	blt	a2, a3, .LBB4_2
+	sext.w	a1, a1
+	li	a2, 2
+	blt	a1, a2, .LBB4_2
 	li	a1, 32
-.LBB4_2:                                # %entry
+	slli	a0, a0, 63
+	srai	a0, a0, 63
+	and	a0, a0, a1
+	ret
+.LBB4_2:
+	li	a1, 36
 	slli	a0, a0, 63
 	srai	a0, a0, 63
 	and	a0, a0, a1

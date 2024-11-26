@@ -6,12 +6,13 @@ func0000000000000011:                   # @func0000000000000011
 	slli	a0, a0, 1
 	ret
 func0000000000000001:                   # @func0000000000000001
-	sext.w	a3, a0
+	sext.w	a0, a0
 	mulw	a1, a1, a2
-	li	a0, 16
-	beq	a1, a3, .LBB1_2
+	beq	a1, a0, .LBB1_2
 	li	a0, 14
-.LBB1_2:                                # %entry
+	ret
+.LBB1_2:
+	li	a0, 16
 	ret
 func0000000000000034:                   # @func0000000000000034
 	sext.w	a0, a0

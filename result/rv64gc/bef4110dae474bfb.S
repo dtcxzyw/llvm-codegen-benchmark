@@ -1,15 +1,13 @@
 func0000000000000001:                   # @func0000000000000001
-	mv	a2, a0
-	sext.w	a3, a0
-	andi	a1, a1, 1
-	li	a0, 947
-	beqz	a1, .LBB0_3
-	beqz	a3, .LBB0_4
+	andi	a2, a1, 1
+	sext.w	a1, a0
+	bnez	a2, .LBB0_3
+	beqz	a1, .LBB0_4
 .LBB0_2:                                # %entry
 	ret
-.LBB0_3:                                # %entry
-	mv	a0, a2
-	bnez	a3, .LBB0_2
+.LBB0_3:
+	li	a0, 947
+	bnez	a1, .LBB0_2
 .LBB0_4:                                # %entry
 	li	a0, 946
 	ret

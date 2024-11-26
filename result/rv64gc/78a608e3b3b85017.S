@@ -113,9 +113,10 @@ func0000000000000003:                   # @func0000000000000003
 	mul	a2, a2, a3
 	srliw	a3, a2, 24
 .LBB2_2:                                # %cond.end
-	andi	a2, a0, 1
-	li	a0, 16
-	bnez	a2, .LBB2_4
+	andi	a0, a0, 1
+	bnez	a0, .LBB2_4
 	sub	a0, a1, a3
-.LBB2_4:                                # %cond.end
+	ret
+.LBB2_4:
+	li	a0, 16
 	ret

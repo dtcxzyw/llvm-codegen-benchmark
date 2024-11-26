@@ -9,12 +9,14 @@ func0000000000000008:                   # @func0000000000000008
 	or	a0, a0, a1
 	ret
 func0000000000000009:                   # @func0000000000000009
-	addiw	a2, a1, -1
-	li	a3, 2
-	li	a1, 8
-	bltu	a2, a3, .LBB1_2
+	addiw	a1, a1, -1
+	li	a2, 2
+	bltu	a1, a2, .LBB1_2
 	li	a1, 128
-.LBB1_2:                                # %entry
+	or	a0, a0, a1
+	ret
+.LBB1_2:
+	li	a1, 8
 	or	a0, a0, a1
 	ret
 func0000000000000010:                   # @func0000000000000010

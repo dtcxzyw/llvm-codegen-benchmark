@@ -13,12 +13,10 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func000000000000000c:                   # @func000000000000000c
 	snez	a2, a2
-	and	a2, a2, a1
-	li	a1, 1
-	bnez	a2, .LBB2_2
-	mv	a1, a0
+	and	a1, a1, a2
+	beqz	a1, .LBB2_2
+	li	a0, 1
 .LBB2_2:                                # %entry
-	mv	a0, a1
 	ret
 func0000000000000006:                   # @func0000000000000006
 	slti	a2, a2, 0

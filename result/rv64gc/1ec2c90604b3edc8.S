@@ -8,11 +8,13 @@ func0000000000000023:                   # @func0000000000000023
 	andi	a2, a2, 15
 	sltiu	a2, a2, 3
 	xori	a2, a2, 1
-	and	a2, a2, a1
-	li	a1, 16
-	bnez	a2, .LBB1_2
+	and	a1, a1, a2
+	bnez	a1, .LBB1_2
 	li	a1, 4
-.LBB1_2:                                # %entry
+	addw	a0, a0, a1
+	ret
+.LBB1_2:
+	li	a1, 16
 	addw	a0, a0, a1
 	ret
 func0000000000000031:                   # @func0000000000000031

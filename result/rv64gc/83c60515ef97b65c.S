@@ -27,23 +27,20 @@ func0000000000000101:                   # @func0000000000000101
 	seqz	a0, a0
 	ret
 func0000000000000111:                   # @func0000000000000111
-	sext.w	a3, a1
-	andi	a2, a2, 1
-	li	a1, -87
-	beqz	a2, .LBB2_3
-	li	a2, 10
-	bltu	a3, a2, .LBB2_4
-.LBB2_2:                                # %entry
-	neg	a0, a0
-	xor	a0, a0, a1
-	seqz	a0, a0
-	ret
-.LBB2_3:                                # %entry
+	andi	a3, a2, 1
+	sext.w	a2, a1
+	bnez	a3, .LBB2_2
 	li	a1, -55
-	li	a2, 10
-	bgeu	a3, a2, .LBB2_2
-.LBB2_4:                                # %entry
+	li	a3, 10
+	bltu	a2, a3, .LBB2_3
+	j	.LBB2_4
+.LBB2_2:
+	li	a1, -87
+	li	a3, 10
+	bgeu	a2, a3, .LBB2_4
+.LBB2_3:                                # %entry
 	li	a1, -48
+.LBB2_4:                                # %entry
 	neg	a0, a0
 	xor	a0, a0, a1
 	seqz	a0, a0

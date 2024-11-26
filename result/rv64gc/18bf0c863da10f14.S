@@ -35,11 +35,13 @@ func0000000000000018:                   # @func0000000000000018
 	addi	a0, a0, 1
 	ret
 func0000000000000007:                   # @func0000000000000007
-	li	a3, 4
 	beq	a1, a2, .LBB7_2
-	li	a3, 2
-.LBB7_2:                                # %entry
-	add	a0, a0, a3
+	li	a1, 2
+	add	a0, a0, a1
+	ret
+.LBB7_2:
+	li	a1, 4
+	add	a0, a0, a1
 	ret
 .LCPI8_0:
 	.quad	-7046029254386353130            # 0x9e3779b97f4a7c16

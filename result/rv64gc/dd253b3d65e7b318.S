@@ -17,13 +17,17 @@ func0000000000000006:                   # @func0000000000000006
 	or	a0, a0, a1
 	ret
 func0000000000000005:                   # @func0000000000000005
-	sext.w	a2, a1
-	li	a3, 9
-	li	a1, 16
-	beq	a2, a3, .LBB2_2
+	sext.w	a1, a1
+	li	a2, 9
+	beq	a1, a2, .LBB2_2
 	lui	a1, 4
 	addiw	a1, a1, 16
-.LBB2_2:                                # %entry
+	andi	a0, a0, -241
+	or	a0, a0, a1
+	addi	a0, a0, 128
+	ret
+.LBB2_2:
+	li	a1, 16
 	andi	a0, a0, -241
 	or	a0, a0, a1
 	addi	a0, a0, 128

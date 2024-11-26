@@ -22,11 +22,15 @@ func0000000000000008:                   # @func0000000000000008
 	and	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c
-	andi	a3, a2, 1
-	li	a2, 18
-	bnez	a3, .LBB3_2
+	andi	a2, a2, 1
+	bnez	a2, .LBB3_2
 	li	a2, 24
-.LBB3_2:                                # %entry
+	xor	a1, a1, a2
+	snez	a1, a1
+	and	a0, a0, a1
+	ret
+.LBB3_2:
+	li	a2, 18
 	xor	a1, a1, a2
 	snez	a1, a1
 	and	a0, a0, a1

@@ -20,10 +20,8 @@ func000000000000000c:                   # @func000000000000000c
 func0000000000000004:                   # @func0000000000000004
 	sext.w	a2, a2
 	sltiu	a2, a2, 2
-	and	a2, a2, a1
-	li	a1, 1
-	bnez	a2, .LBB2_2
-	mv	a1, a0
+	and	a1, a1, a2
+	beqz	a1, .LBB2_2
+	li	a0, 1
 .LBB2_2:                                # %entry
-	mv	a0, a1
 	ret

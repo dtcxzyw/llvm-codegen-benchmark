@@ -3,10 +3,12 @@ func000000000000003f:                   # @func000000000000003f
 	slliw	a0, a2, 24
 	slliw	a1, a1, 16
 	or	a0, a0, a1
-	li	a1, 41
 	bnez	a3, .LBB0_2
 	li	a1, 39
-.LBB0_2:                                # %entry
+	or	a0, a0, a1
+	ret
+.LBB0_2:
+	li	a1, 41
 	or	a0, a0, a1
 	ret
 func000000000000003e:                   # @func000000000000003e

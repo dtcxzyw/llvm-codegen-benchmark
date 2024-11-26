@@ -1,11 +1,12 @@
 func00000000000000c6:                   # @func00000000000000c6
 	snez	a1, a1
 	slti	a0, a0, 0
-	and	a1, a1, a0
-	li	a0, 3
-	bnez	a1, .LBB0_2
+	and	a0, a0, a1
+	bnez	a0, .LBB0_2
 	li	a0, 1
-.LBB0_2:                                # %entry
+	ret
+.LBB0_2:
+	li	a0, 3
 	ret
 func0000000000000088:                   # @func0000000000000088
 	sltiu	a1, a1, 33

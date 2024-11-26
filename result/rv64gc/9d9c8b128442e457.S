@@ -5,12 +5,10 @@ func0000000000000022:                   # @func0000000000000022
 	addi	a1, a1, -7
 	seqz	a2, a2
 	seqz	a1, a1
-	or	a2, a2, a1
-	li	a1, 8
-	bnez	a2, .LBB0_2
-	mv	a1, a0
+	or	a1, a1, a2
+	beqz	a1, .LBB0_2
+	li	a0, 8
 .LBB0_2:                                # %entry
-	mv	a0, a1
 	ret
 func0000000000000030:                   # @func0000000000000030
 	lui	a1, 512

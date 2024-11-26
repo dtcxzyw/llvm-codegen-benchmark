@@ -1,9 +1,12 @@
 func0000000000000007:                   # @func0000000000000007
-	sext.w	a2, a1
-	li	a1, 1
-	beqz	a2, .LBB0_2
+	sext.w	a1, a1
+	beqz	a1, .LBB0_2
 	li	a1, 3
-.LBB0_2:                                # %entry
+	or	a0, a0, a1
+	ori	a0, a0, 4
+	ret
+.LBB0_2:
+	li	a1, 1
 	or	a0, a0, a1
 	ori	a0, a0, 4
 	ret
@@ -43,11 +46,14 @@ func0000000000000018:                   # @func0000000000000018
 	or	a0, a0, a1
 	ret
 func0000000000000030:                   # @func0000000000000030
-	sext.w	a2, a1
-	li	a1, 1008
-	beqz	a2, .LBB5_2
+	sext.w	a1, a1
+	beqz	a1, .LBB5_2
 	li	a1, 1012
-.LBB5_2:                                # %entry
+	or	a0, a0, a1
+	ori	a0, a0, 8
+	ret
+.LBB5_2:
+	li	a1, 1008
 	or	a0, a0, a1
 	ori	a0, a0, 8
 	ret
@@ -59,13 +65,16 @@ func000000000000002b:                   # @func000000000000002b
 	ori	a0, a0, 2
 	ret
 func0000000000000005:                   # @func0000000000000005
-	sext.w	a2, a1
-	li	a3, 9
-	li	a1, 16
-	beq	a2, a3, .LBB7_2
+	sext.w	a1, a1
+	li	a2, 9
+	beq	a1, a2, .LBB7_2
 	lui	a1, 4
 	addiw	a1, a1, 16
-.LBB7_2:                                # %entry
+	or	a0, a0, a1
+	ori	a0, a0, 128
+	ret
+.LBB7_2:
+	li	a1, 16
 	or	a0, a0, a1
 	ori	a0, a0, 128
 	ret

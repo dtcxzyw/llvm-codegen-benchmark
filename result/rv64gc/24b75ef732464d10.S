@@ -23,10 +23,11 @@ func0000000000000005:                   # @func0000000000000005
 	addiw	a0, a0, -1
 	ret
 func0000000000000001:                   # @func0000000000000001
-	andi	a2, a0, 1
-	li	a0, -149
-	bnez	a2, .LBB3_2
+	andi	a0, a0, 1
+	bnez	a0, .LBB3_2
 	srliw	a0, a1, 23
 	addi	a0, a0, -150
-.LBB3_2:                                # %entry
+	ret
+.LBB3_2:
+	li	a0, -149
 	ret

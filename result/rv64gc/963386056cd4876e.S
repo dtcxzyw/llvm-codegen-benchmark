@@ -1,14 +1,14 @@
 func000000000000000c:                   # @func000000000000000c
-	sext.w	a3, a0
 	andi	a1, a1, 1
-	li	a0, 770
-	beqz	a1, .LBB0_3
-	bnez	a3, .LBB0_4
+	sext.w	a0, a0
+	bnez	a1, .LBB0_3
+	bnez	a0, .LBB0_4
 .LBB0_2:                                # %entry
-	ret
-.LBB0_3:                                # %entry
 	mv	a0, a2
-	beqz	a3, .LBB0_2
+	ret
+.LBB0_3:
+	li	a2, 770
+	beqz	a0, .LBB0_2
 .LBB0_4:                                # %entry
 	li	a0, 769
 	ret
@@ -46,50 +46,49 @@ func000000000000000a:                   # @func000000000000000a
 	addiw	a0, a1, -1533
 	ret
 func0000000000000004:                   # @func0000000000000004
-	mv	a3, a0
 	andi	a1, a1, 1
-	li	a0, 12
-	beqz	a1, .LBB3_3
-	srliw	a1, a3, 14
-	beqz	a1, .LBB3_4
+	bnez	a1, .LBB3_3
+	srliw	a0, a0, 14
+	beqz	a0, .LBB3_4
 .LBB3_2:                                # %entry
-	ret
-.LBB3_3:                                # %entry
 	mv	a0, a2
-	srliw	a1, a3, 14
-	bnez	a1, .LBB3_2
+	ret
+.LBB3_3:
+	li	a2, 12
+	srliw	a0, a0, 14
+	bnez	a0, .LBB3_2
 .LBB3_4:                                # %entry
 	li	a0, 13
 	ret
 func0000000000000008:                   # @func0000000000000008
-	sext.w	a3, a0
 	andi	a1, a1, 1
-	li	a0, -72
-	beqz	a1, .LBB4_3
+	sext.w	a0, a0
+	bnez	a1, .LBB4_3
 	li	a1, -9
-	bltu	a1, a3, .LBB4_4
+	bltu	a1, a0, .LBB4_4
 .LBB4_2:                                # %entry
-	ret
-.LBB4_3:                                # %entry
 	mv	a0, a2
+	ret
+.LBB4_3:
+	li	a2, -72
 	li	a1, -9
-	bgeu	a1, a3, .LBB4_2
+	bgeu	a1, a0, .LBB4_2
 .LBB4_4:                                # %entry
 	li	a0, -14
 	ret
 func0000000000000006:                   # @func0000000000000006
-	sext.w	a3, a0
 	andi	a1, a1, 1
-	li	a0, 24
-	beqz	a1, .LBB5_3
+	sext.w	a0, a0
+	bnez	a1, .LBB5_3
 	li	a1, 6
-	blt	a3, a1, .LBB5_4
+	blt	a0, a1, .LBB5_4
 .LBB5_2:                                # %entry
-	ret
-.LBB5_3:                                # %entry
 	mv	a0, a2
+	ret
+.LBB5_3:
+	li	a2, 24
 	li	a1, 6
-	bge	a3, a1, .LBB5_2
+	bge	a0, a1, .LBB5_2
 .LBB5_4:                                # %entry
 	li	a0, 16
 	ret

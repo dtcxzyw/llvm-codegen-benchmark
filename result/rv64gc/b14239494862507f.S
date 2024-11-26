@@ -22,10 +22,8 @@ func0000000000000008:                   # @func0000000000000008
 func0000000000000004:                   # @func0000000000000004
 	lui	a1, 260096
 	fmv.w.x	fa5, a1
-	flt.s	a2, fa5, fa0
-	li	a1, 5
-	bnez	a2, .LBB3_2
-	mv	a1, a0
+	flt.s	a1, fa5, fa0
+	beqz	a1, .LBB3_2
+	li	a0, 5
 .LBB3_2:                                # %entry
-	mv	a0, a1
 	ret

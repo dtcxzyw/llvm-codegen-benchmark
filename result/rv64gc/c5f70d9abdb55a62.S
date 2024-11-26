@@ -5,20 +5,26 @@ func0000000000000000:                   # @func0000000000000000
 	subw	a0, a0, a2
 	ret
 func0000000000000005:                   # @func0000000000000005
-	andi	a3, a2, 1
-	li	a2, -1322
-	bnez	a3, .LBB1_2
+	andi	a2, a2, 1
+	bnez	a2, .LBB1_2
 	li	a2, -1022
-.LBB1_2:                                # %entry
+	subw	a0, a0, a1
+	subw	a0, a0, a2
+	ret
+.LBB1_2:
+	li	a2, -1322
 	subw	a0, a0, a1
 	subw	a0, a0, a2
 	ret
 func000000000000000d:                   # @func000000000000000d
-	andi	a3, a2, 1
-	li	a2, 284
-	bnez	a3, .LBB2_2
+	andi	a2, a2, 1
+	bnez	a2, .LBB2_2
 	li	a2, 4
-.LBB2_2:                                # %entry
+	subw	a0, a0, a1
+	subw	a0, a0, a2
+	ret
+.LBB2_2:
+	li	a2, 284
 	subw	a0, a0, a1
 	subw	a0, a0, a2
 	ret
@@ -36,11 +42,14 @@ func0000000000000008:                   # @func0000000000000008
 	addw	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c
-	andi	a3, a2, 1
-	li	a2, 12
-	bnez	a3, .LBB5_2
+	andi	a2, a2, 1
+	bnez	a2, .LBB5_2
 	li	a2, 8
-.LBB5_2:                                # %entry
+	subw	a0, a0, a1
+	subw	a0, a0, a2
+	ret
+.LBB5_2:
+	li	a2, 12
 	subw	a0, a0, a1
 	subw	a0, a0, a2
 	ret

@@ -47,9 +47,10 @@ func0000000000000028:                   # @func0000000000000028
 	or	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
-	addi	a1, a0, 1
+	addi	a0, a0, 1
+	beqz	a0, .LBB6_2
+	slli	a0, a0, 1
+	ret
+.LBB6_2:
 	li	a0, 1
-	beqz	a1, .LBB6_2
-	slli	a0, a1, 1
-.LBB6_2:                                # %entry
 	ret

@@ -12,12 +12,14 @@ func0000000000000018:                   # @func0000000000000018
 	sltu	a0, a1, a2
 	ret
 func0000000000000006:                   # @func0000000000000006
-	andi	a3, a0, 1
+	andi	a0, a0, 1
 	sub	a1, a1, a2
-	li	a0, 1
-	bnez	a3, .LBB2_2
+	bnez	a0, .LBB2_2
 	lui	a0, 1
 	addiw	a0, a0, 904
-.LBB2_2:                                # %entry
+	slt	a0, a0, a1
+	ret
+.LBB2_2:
+	li	a0, 1
 	slt	a0, a0, a1
 	ret

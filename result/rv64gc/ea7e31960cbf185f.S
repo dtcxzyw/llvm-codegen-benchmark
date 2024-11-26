@@ -6,12 +6,15 @@ func000000000000000f:                   # @func000000000000000f
 	or	a0, a0, a1
 	ret
 func000000000000000e:                   # @func000000000000000e
-	andi	a3, a1, 1
+	andi	a1, a1, 1
 	slli	a2, a2, 2
-	li	a1, 3
-	bnez	a3, .LBB1_2
+	bnez	a1, .LBB1_2
 	li	a1, 1
-.LBB1_2:                                # %entry
+	or	a1, a1, a2
+	or	a0, a0, a1
+	ret
+.LBB1_2:
+	li	a1, 3
 	or	a1, a1, a2
 	or	a0, a0, a1
 	ret

@@ -1,19 +1,24 @@
 func0000000000000011:                   # @func0000000000000011
 	sext.w	a0, a0
-	li	a2, 26
 	beqz	a1, .LBB0_2
-	li	a2, 161
-.LBB0_2:                                # %entry
-	xor	a0, a0, a2
+	li	a1, 161
+	xor	a0, a0, a1
+	seqz	a0, a0
+	ret
+.LBB0_2:
+	li	a1, 26
+	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000014:                   # @func0000000000000014
 	sext.w	a0, a0
-	li	a2, 31
 	beqz	a1, .LBB1_2
-	li	a2, 63
-.LBB1_2:                                # %entry
-	sltu	a0, a2, a0
+	li	a1, 63
+	sltu	a0, a1, a0
+	ret
+.LBB1_2:
+	li	a1, 31
+	sltu	a0, a1, a0
 	ret
 .LCPI2_0:
 	.quad	999999999999999999              # 0xde0b6b3a763ffff
@@ -40,11 +45,13 @@ func0000000000000018:                   # @func0000000000000018
 	sltu	a0, a0, a1
 	ret
 func0000000000000016:                   # @func0000000000000016
+	li	a2, -1
 	sext.w	a0, a0
-	li	a3, -1
-	li	a2, 3
-	beq	a1, a3, .LBB5_2
-	li	a2, 1
-.LBB5_2:                                # %entry
-	slt	a0, a2, a0
+	beq	a1, a2, .LBB5_2
+	li	a1, 1
+	slt	a0, a1, a0
+	ret
+.LBB5_2:
+	li	a1, 3
+	slt	a0, a1, a0
 	ret

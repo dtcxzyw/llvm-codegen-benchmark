@@ -1,17 +1,16 @@
 func00000000000000db:                   # @func00000000000000db
+	andi	a2, a2, 1
 	sext.w	a1, a1
-	andi	a3, a2, 1
-	li	a2, 32
-	beqz	a3, .LBB0_3
-	bgez	a1, .LBB0_4
-.LBB0_2:                                # %entry
-	li	a1, 43
-	subw	a0, a1, a0
-	ret
-.LBB0_3:                                # %entry
+	bnez	a2, .LBB0_2
 	addi	a2, a0, 1
-	bltz	a1, .LBB0_2
+	bgez	a1, .LBB0_3
+	j	.LBB0_4
+.LBB0_2:
+	li	a2, 32
+	bltz	a1, .LBB0_4
+.LBB0_3:                                # %entry
+	mv	a0, a2
 .LBB0_4:                                # %entry
 	li	a1, 43
-	subw	a0, a1, a2
+	subw	a0, a1, a0
 	ret

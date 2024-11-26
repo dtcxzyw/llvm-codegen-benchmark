@@ -3,9 +3,11 @@ func000000000000002a:                   # @func000000000000002a
 	sext.w	a0, a2
 	slli	a1, a1, 4
 	add	a0, a0, a1
-	li	a1, 53
 	bnez	a3, .LBB0_2
 	li	a1, 24
-.LBB0_2:                                # %entry
+	sra	a0, a0, a1
+	ret
+.LBB0_2:
+	li	a1, 53
 	sra	a0, a0, a1
 	ret

@@ -59,12 +59,15 @@ func00000000000000c1:                   # @func00000000000000c1
 	seqz	a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
+	andi	a0, a0, 1
 	sext.w	a1, a1
-	andi	a2, a0, 1
-	li	a0, 22
-	bnez	a2, .LBB6_2
+	bnez	a0, .LBB6_2
 	li	a0, 17
-.LBB6_2:                                # %entry
+	xor	a0, a0, a1
+	seqz	a0, a0
+	ret
+.LBB6_2:
+	li	a0, 22
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

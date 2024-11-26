@@ -29,12 +29,16 @@ func0000000000000033:                   # @func0000000000000033
 	addw	a0, a0, a1
 	ret
 func0000000000000020:                   # @func0000000000000020
-	sext.w	a2, a0
-	li	a3, 254
-	li	a1, 1
-	bltu	a2, a3, .LBB4_2
+	sext.w	a1, a0
+	li	a2, 254
+	bltu	a1, a2, .LBB4_2
 	li	a1, 5
-.LBB4_2:                                # %entry
+	add	a0, a0, a1
+	slli	a0, a0, 32
+	srli	a0, a0, 32
+	ret
+.LBB4_2:
+	li	a1, 1
 	add	a0, a0, a1
 	slli	a0, a0, 32
 	srli	a0, a0, 32

@@ -7,10 +7,10 @@ func0000000000000003:                   # @func0000000000000003
 .LBB0_2:                                # %entry
 	ret
 func0000000000000011:                   # @func0000000000000011
-	mv	a1, a0
-	li	a2, 1
-	li	a0, 42
-	bltu	a2, a1, .LBB1_2
+	li	a1, 1
+	bltu	a1, a0, .LBB1_2
 	li	a0, 26
-.LBB1_2:                                # %entry
+	ret
+.LBB1_2:
+	li	a0, 42
 	ret

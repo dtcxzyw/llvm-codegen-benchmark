@@ -1,19 +1,23 @@
 func0000000000000013:                   # @func0000000000000013
 	andi	a0, a0, 15
-	li	a2, 10
-	li	a1, 48
-	bltu	a0, a2, .LBB0_2
+	li	a1, 10
+	bltu	a0, a1, .LBB0_2
 	li	a1, 55
-.LBB0_2:                                # %entry
+	add	a0, a0, a1
+	ret
+.LBB0_2:
+	li	a1, 48
 	add	a0, a0, a1
 	ret
 func0000000000000021:                   # @func0000000000000021
 	andi	a0, a0, 63
-	li	a2, 28
-	li	a1, -13
-	bltu	a2, a0, .LBB1_2
+	li	a1, 28
+	bltu	a1, a0, .LBB1_2
 	li	a1, -20
-.LBB1_2:                                # %entry
+	add	a0, a0, a1
+	ret
+.LBB1_2:
+	li	a1, -13
 	add	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011

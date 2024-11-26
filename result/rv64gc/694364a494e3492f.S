@@ -4,11 +4,12 @@ func00000000000000c1:                   # @func00000000000000c1
 	addi	a1, a1, -1
 	snez	a1, a1
 	seqz	a0, a0
-	and	a1, a1, a0
-	li	a0, 24
-	bnez	a1, .LBB0_2
+	and	a0, a0, a1
+	bnez	a0, .LBB0_2
 	li	a0, 32
-.LBB0_2:                                # %entry
+	ret
+.LBB0_2:
+	li	a0, 24
 	ret
 func00000000000000a1:                   # @func00000000000000a1
 	sext.w	a0, a0
@@ -26,11 +27,12 @@ func0000000000000041:                   # @func0000000000000041
 	sltiu	a1, a1, 12
 	addi	a0, a0, -1
 	seqz	a0, a0
-	and	a1, a1, a0
-	li	a0, 3
-	bnez	a1, .LBB2_2
+	and	a0, a0, a1
+	bnez	a0, .LBB2_2
 	li	a0, 12
-.LBB2_2:                                # %entry
+	ret
+.LBB2_2:
+	li	a0, 3
 	ret
 func0000000000000011:                   # @func0000000000000011
 	xori	a1, a1, 2

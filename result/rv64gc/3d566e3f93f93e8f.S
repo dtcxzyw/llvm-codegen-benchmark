@@ -14,12 +14,16 @@ func0000000000000002:                   # @func0000000000000002
 	addi	a0, a0, 512
 	ret
 func0000000000000001:                   # @func0000000000000001
-	andi	a2, a1, 1
-	li	a1, 16
-	bnez	a2, .LBB2_2
+	andi	a1, a1, 1
+	bnez	a1, .LBB2_2
 	lui	a1, 4
 	addiw	a1, a1, 16
-.LBB2_2:                                # %entry
+	andi	a0, a0, -241
+	or	a0, a0, a1
+	addi	a0, a0, 128
+	ret
+.LBB2_2:
+	li	a1, 16
 	andi	a0, a0, -241
 	or	a0, a0, a1
 	addi	a0, a0, 128

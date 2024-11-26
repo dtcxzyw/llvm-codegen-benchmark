@@ -25,11 +25,12 @@ func0000000000000014:                   # @func0000000000000014
 	addi	a1, a1, -1
 	seqz	a1, a1
 	sltiu	a0, a0, 12
-	and	a1, a1, a0
-	li	a0, 23
-	bnez	a1, .LBB2_2
+	and	a0, a0, a1
+	bnez	a0, .LBB2_2
 	li	a0, 1
-.LBB2_2:                                # %entry
+	ret
+.LBB2_2:
+	li	a0, 23
 	ret
 func000000000000001c:                   # @func000000000000001c
 	sext.w	a0, a0

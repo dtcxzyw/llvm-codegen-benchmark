@@ -1,18 +1,16 @@
 func0000000000000047:                   # @func0000000000000047
 	sext.w	a2, a1
-	li	a3, 1
-	li	a1, 3
-	bltu	a3, a2, .LBB0_2
 	li	a1, 1
+	bgeu	a1, a2, .LBB0_2
+	li	a1, 3
 .LBB0_2:                                # %entry
 	addw	a0, a0, a1
 	ret
 func0000000000000042:                   # @func0000000000000042
 	sext.w	a2, a1
-	li	a3, 4
-	li	a1, 6
-	bltu	a3, a2, .LBB1_2
 	li	a1, 4
+	bgeu	a1, a2, .LBB1_2
+	li	a1, 6
 .LBB1_2:                                # %entry
 	add	a0, a0, a1
 	slli	a0, a0, 32
@@ -25,20 +23,26 @@ func000000000000000f:                   # @func000000000000000f
 	addiw	a0, a0, 6
 	ret
 func0000000000000067:                   # @func0000000000000067
-	sext.w	a2, a1
-	li	a1, 24
-	beqz	a2, .LBB3_2
+	sext.w	a1, a1
+	beqz	a1, .LBB3_2
 	li	a1, 40
-.LBB3_2:                                # %entry
+	addw	a0, a0, a1
+	ret
+.LBB3_2:
+	li	a1, 24
 	addw	a0, a0, a1
 	ret
 func0000000000000020:                   # @func0000000000000020
-	sext.w	a2, a1
-	li	a3, 10
-	li	a1, 208
-	bltu	a2, a3, .LBB4_2
+	sext.w	a1, a1
+	li	a2, 10
+	bltu	a1, a2, .LBB4_2
 	li	a1, 201
-.LBB4_2:                                # %entry
+	add	a0, a0, a1
+	slli	a0, a0, 32
+	srli	a0, a0, 32
+	ret
+.LBB4_2:
+	li	a1, 208
 	add	a0, a0, a1
 	slli	a0, a0, 32
 	srli	a0, a0, 32
@@ -81,11 +85,13 @@ func000000000000000d:                   # @func000000000000000d
 	addiw	a0, a0, 3
 	ret
 func0000000000000009:                   # @func0000000000000009
-	sext.w	a2, a1
-	li	a1, -32
-	beqz	a2, .LBB10_2
+	sext.w	a1, a1
+	beqz	a1, .LBB10_2
 	li	a1, -40
-.LBB10_2:                               # %entry
+	addw	a0, a0, a1
+	ret
+.LBB10_2:
+	li	a1, -32
 	addw	a0, a0, a1
 	ret
 func0000000000000027:                   # @func0000000000000027
@@ -113,12 +119,16 @@ func0000000000000022:                   # @func0000000000000022
 	srli	a0, a0, 32
 	ret
 func0000000000000040:                   # @func0000000000000040
-	sext.w	a2, a1
-	li	a3, 253
-	li	a1, -4
-	bltu	a3, a2, .LBB14_2
+	sext.w	a1, a1
+	li	a2, 253
+	bltu	a2, a1, .LBB14_2
 	li	a1, -2
-.LBB14_2:                               # %entry
+	add	a0, a0, a1
+	slli	a0, a0, 32
+	srli	a0, a0, 32
+	ret
+.LBB14_2:
+	li	a1, -4
 	add	a0, a0, a1
 	slli	a0, a0, 32
 	srli	a0, a0, 32

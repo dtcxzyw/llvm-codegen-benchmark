@@ -31,12 +31,14 @@ func0000000000000114:                   # @func0000000000000114
 	sltiu	a0, a0, 65
 	ret
 func0000000000000051:                   # @func0000000000000051
+	andi	a2, a2, 1
 	andi	a1, a1, 255
-	andi	a3, a2, 1
-	li	a2, 4
-	bnez	a3, .LBB2_2
+	bnez	a2, .LBB2_2
 	li	a2, 1
-.LBB2_2:                                # %entry
+	j	.LBB2_3
+.LBB2_2:
+	li	a2, 4
+.LBB2_3:                                # %entry
 	seqz	a1, a1
 	addi	a1, a1, -1
 	and	a1, a1, a2

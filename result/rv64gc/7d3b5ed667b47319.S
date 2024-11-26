@@ -8,9 +8,10 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func0000000000000001:                   # @func0000000000000001
 	sext.w	a1, a1
-	addiw	a2, a0, 2
-	li	a0, 1
-	beq	a2, a1, .LBB1_2
+	addiw	a0, a0, 2
+	beq	a0, a1, .LBB1_2
 	li	a0, 4
-.LBB1_2:                                # %entry
+	ret
+.LBB1_2:
+	li	a0, 1
 	ret

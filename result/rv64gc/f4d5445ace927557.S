@@ -7,11 +7,16 @@ func000000000000003f:                   # @func000000000000003f
 	addiw	a0, a0, 2
 	ret
 func0000000000000020:                   # @func0000000000000020
-	sext.w	a3, a2
-	li	a2, -7
-	beqz	a3, .LBB1_2
+	sext.w	a2, a2
+	beqz	a2, .LBB1_2
 	li	a2, -9
-.LBB1_2:                                # %entry
+	add	a0, a0, a1
+	add	a0, a0, a2
+	slli	a0, a0, 32
+	srli	a0, a0, 32
+	ret
+.LBB1_2:
+	li	a2, -7
 	add	a0, a0, a1
 	add	a0, a0, a2
 	slli	a0, a0, 32
@@ -26,12 +31,17 @@ func0000000000000035:                   # @func0000000000000035
 	addiw	a0, a0, 3
 	ret
 func0000000000000080:                   # @func0000000000000080
-	sext.w	a3, a2
-	li	a4, 254
-	li	a2, 1
-	bltu	a3, a4, .LBB3_2
+	sext.w	a2, a2
+	li	a3, 254
+	bltu	a2, a3, .LBB3_2
 	li	a2, 5
-.LBB3_2:                                # %entry
+	add	a0, a0, a1
+	add	a0, a0, a2
+	slli	a0, a0, 32
+	srli	a0, a0, 32
+	ret
+.LBB3_2:
+	li	a2, 1
 	add	a0, a0, a1
 	add	a0, a0, a2
 	slli	a0, a0, 32

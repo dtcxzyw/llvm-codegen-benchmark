@@ -6,12 +6,15 @@ func0000000000000010:                   # @func0000000000000010
 	addw	a0, a0, a1
 	ret
 func0000000000000040:                   # @func0000000000000040
-	sext.w	a3, a2
-	li	a4, 254
-	li	a2, 1
-	bltu	a3, a4, .LBB1_2
+	sext.w	a2, a2
+	li	a3, 254
+	bltu	a2, a3, .LBB1_2
 	li	a2, 5
-.LBB1_2:                                # %entry
+	subw	a0, a0, a1
+	subw	a0, a0, a2
+	ret
+.LBB1_2:
+	li	a2, 1
 	subw	a0, a0, a1
 	subw	a0, a0, a2
 	ret

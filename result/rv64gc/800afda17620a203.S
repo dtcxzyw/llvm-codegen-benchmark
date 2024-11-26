@@ -6,11 +6,14 @@ func0000000000000018:                   # @func0000000000000018
 	sltu	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
-	andi	a2, a1, 255
-	li	a1, 8
-	beqz	a2, .LBB1_2
+	andi	a1, a1, 255
+	beqz	a1, .LBB1_2
 	li	a1, 16
-.LBB1_2:                                # %entry
+	xor	a0, a0, a1
+	seqz	a0, a0
+	ret
+.LBB1_2:
+	li	a1, 8
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

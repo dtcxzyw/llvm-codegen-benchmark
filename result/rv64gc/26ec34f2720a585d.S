@@ -18,12 +18,10 @@ func000000000000000c:                   # @func000000000000000c
 	sext.w	a2, a2
 	snez	a2, a2
 	or	a1, a1, a2
-	andi	a2, a1, 1
-	li	a1, 384
-	bnez	a2, .LBB2_2
-	mv	a1, a0
+	andi	a1, a1, 1
+	beqz	a1, .LBB2_2
+	li	a0, 384
 .LBB2_2:                                # %entry
-	mv	a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
 	sext.w	a2, a2

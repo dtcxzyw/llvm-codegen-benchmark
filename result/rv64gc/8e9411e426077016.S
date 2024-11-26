@@ -14,18 +14,18 @@ func0000000000000008:                   # @func0000000000000008
 	mv	a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
-	andi	a3, a0, 1
-	sext.w	a2, a2
-	li	a0, 34
-	bnez	a2, .LBB1_3
-	beqz	a3, .LBB1_4
-.LBB1_2:                                # %entry
-	ret
-.LBB1_3:                                # %entry
+	sext.w	a3, a2
+	andi	a2, a0, 1
+	beqz	a3, .LBB1_2
 	li	a0, 17
-	bnez	a3, .LBB1_2
-.LBB1_4:                                # %entry
+	beqz	a2, .LBB1_3
+	j	.LBB1_4
+.LBB1_2:
+	li	a0, 34
+	bnez	a2, .LBB1_4
+.LBB1_3:                                # %entry
 	mv	a0, a1
+.LBB1_4:                                # %entry
 	ret
 func000000000000000a:                   # @func000000000000000a
 	andi	a3, a0, 1
@@ -39,33 +39,33 @@ func000000000000000a:                   # @func000000000000000a
 	addw	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c
-	andi	a3, a0, 1
-	sext.w	a2, a2
-	li	a0, 98
-	bnez	a2, .LBB3_3
-	beqz	a3, .LBB3_4
-.LBB3_2:                                # %entry
-	ret
-.LBB3_3:                                # %entry
+	sext.w	a3, a2
+	andi	a2, a0, 1
+	beqz	a3, .LBB3_2
 	li	a0, 2
-	bnez	a3, .LBB3_2
-.LBB3_4:                                # %entry
+	beqz	a2, .LBB3_3
+	j	.LBB3_4
+.LBB3_2:
+	li	a0, 98
+	bnez	a2, .LBB3_4
+.LBB3_3:                                # %entry
 	mv	a0, a1
+.LBB3_4:                                # %entry
 	ret
 func0000000000000004:                   # @func0000000000000004
-	andi	a3, a0, 1
-	sext.w	a2, a2
+	sext.w	a3, a2
 	li	a4, 513
-	li	a0, 64
-	bgeu	a2, a4, .LBB4_3
-	beqz	a3, .LBB4_4
-.LBB4_2:                                # %entry
-	ret
-.LBB4_3:                                # %entry
+	andi	a2, a0, 1
+	bltu	a3, a4, .LBB4_2
 	li	a0, 128
-	bnez	a3, .LBB4_2
-.LBB4_4:                                # %entry
+	beqz	a2, .LBB4_3
+	j	.LBB4_4
+.LBB4_2:
+	li	a0, 64
+	bnez	a2, .LBB4_4
+.LBB4_3:                                # %entry
 	mv	a0, a1
+.LBB4_4:                                # %entry
 	ret
 func0000000000000006:                   # @func0000000000000006
 	andi	a3, a0, 1

@@ -22,12 +22,16 @@ func00000000000000cc:                   # @func00000000000000cc
 	andi	a0, a0, 771
 	ret
 func0000000000000011:                   # @func0000000000000011
+	sext.w	a1, a1
 	sext.w	a0, a0
-	sext.w	a2, a1
-	li	a1, 1
-	beqz	a2, .LBB2_2
+	beqz	a1, .LBB2_2
 	li	a1, 4
-.LBB2_2:                                # %entry
+	seqz	a0, a0
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	ret
+.LBB2_2:
+	li	a1, 1
 	seqz	a0, a0
 	addi	a0, a0, -1
 	and	a0, a0, a1
@@ -41,13 +45,17 @@ func00000000000000a1:                   # @func00000000000000a1
 	and	a0, a0, a1
 	ret
 func0000000000000066:                   # @func0000000000000066
+	sext.w	a1, a1
+	li	a2, 2
 	sext.w	a0, a0
-	sext.w	a2, a1
-	li	a3, 2
-	li	a1, 36
-	blt	a2, a3, .LBB4_2
+	blt	a1, a2, .LBB4_2
 	li	a1, 32
-.LBB4_2:                                # %entry
+	slti	a0, a0, 0
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	ret
+.LBB4_2:
+	li	a1, 36
 	slti	a0, a0, 0
 	addi	a0, a0, -1
 	and	a0, a0, a1
@@ -91,36 +99,36 @@ func0000000000000014:                   # @func0000000000000014
 	and	a0, a0, a1
 	ret
 func0000000000000064:                   # @func0000000000000064
-	sext.w	a2, a0
-	sext.w	a1, a1
+	sext.w	a2, a1
 	li	a3, 29
-	li	a0, 40
-	bge	a1, a3, .LBB8_3
-	li	a1, 14
-	bltu	a2, a1, .LBB8_4
-.LBB8_2:                                # %entry
-	ret
-.LBB8_3:                                # %entry
+	sext.w	a1, a0
+	blt	a2, a3, .LBB8_2
 	li	a0, 72
-	li	a1, 14
-	bgeu	a2, a1, .LBB8_2
-.LBB8_4:                                # %entry
+	li	a2, 14
+	bltu	a1, a2, .LBB8_3
+	j	.LBB8_4
+.LBB8_2:
+	li	a0, 40
+	li	a2, 14
+	bgeu	a1, a2, .LBB8_4
+.LBB8_3:                                # %entry
 	li	a0, 24
+.LBB8_4:                                # %entry
 	ret
 func0000000000000044:                   # @func0000000000000044
-	sext.w	a2, a0
-	sext.w	a1, a1
+	sext.w	a2, a1
 	li	a3, 6
-	li	a0, -87
-	bgeu	a1, a3, .LBB9_3
-	li	a1, 10
-	bltu	a2, a1, .LBB9_4
-.LBB9_2:                                # %entry
-	ret
-.LBB9_3:                                # %entry
+	sext.w	a1, a0
+	bltu	a2, a3, .LBB9_2
 	li	a0, -55
-	li	a1, 10
-	bgeu	a2, a1, .LBB9_2
-.LBB9_4:                                # %entry
+	li	a2, 10
+	bltu	a1, a2, .LBB9_3
+	j	.LBB9_4
+.LBB9_2:
+	li	a0, -87
+	li	a2, 10
+	bgeu	a1, a2, .LBB9_4
+.LBB9_3:                                # %entry
 	li	a0, -48
+.LBB9_4:                                # %entry
 	ret

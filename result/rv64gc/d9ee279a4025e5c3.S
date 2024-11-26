@@ -7,12 +7,14 @@ func000000000000000c:                   # @func000000000000000c
 	mulw	a0, a1, a0
 	ret
 func000000000000000d:                   # @func000000000000000d
-	andi	a3, a1, 1
-	li	a1, 1
-	bnez	a3, .LBB1_2
+	andi	a1, a1, 1
+	bnez	a1, .LBB1_2
 	li	a1, 32
 	sub	a1, a1, a2
-.LBB1_2:                                # %entry
+	mulw	a0, a1, a0
+	ret
+.LBB1_2:
+	li	a1, 1
 	mulw	a0, a1, a0
 	ret
 func0000000000000005:                   # @func0000000000000005

@@ -7,11 +7,12 @@ func0000000000000006:                   # @func0000000000000006
 	ori	a0, a0, 1
 	ret
 func0000000000000014:                   # @func0000000000000014
-	srli	a1, a0, 36
-	li	a0, 5
-	beqz	a1, .LBB2_2
+	srli	a0, a0, 36
+	beqz	a0, .LBB2_2
 	li	a0, 9
-.LBB2_2:                                # %entry
+	ret
+.LBB2_2:
+	li	a0, 5
 	ret
 func0000000000000001:                   # @func0000000000000001
 	srli	a0, a0, 62

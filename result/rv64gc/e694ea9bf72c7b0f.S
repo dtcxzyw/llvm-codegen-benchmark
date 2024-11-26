@@ -20,12 +20,17 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func000000000000001c:                   # @func000000000000001c
 	sext.w	a0, a0
+	andi	a2, a2, 1
 	sext.w	a1, a1
-	andi	a3, a2, 1
-	li	a2, 6
-	bnez	a3, .LBB2_2
+	bnez	a2, .LBB2_2
 	li	a2, 4
-.LBB2_2:                                # %entry
+	xor	a1, a1, a2
+	seqz	a1, a1
+	snez	a0, a0
+	and	a0, a0, a1
+	ret
+.LBB2_2:
+	li	a2, 6
 	xor	a1, a1, a2
 	seqz	a1, a1
 	snez	a0, a0

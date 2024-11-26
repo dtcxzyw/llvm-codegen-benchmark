@@ -1,9 +1,11 @@
 func0000000000000005:                   # @func0000000000000005
-	andi	a2, a1, 256
-	li	a1, -87
-	beqz	a2, .LBB0_2
+	andi	a1, a1, 256
+	beqz	a1, .LBB0_2
 	li	a1, -55
-.LBB0_2:                                # %entry
+	addw	a0, a0, a1
+	ret
+.LBB0_2:
+	li	a1, -87
 	addw	a0, a0, a1
 	ret
 func0000000000000007:                   # @func0000000000000007

@@ -1,10 +1,12 @@
 func0000000000000002:                   # @func0000000000000002
-	andi	a3, a0, 1
+	andi	a0, a0, 1
 	or	a1, a1, a2
-	li	a0, 768
-	bnez	a3, .LBB0_2
+	bnez	a0, .LBB0_2
 	li	a0, 256
-.LBB0_2:                                # %entry
+	or	a0, a0, a1
+	ret
+.LBB0_2:
+	li	a0, 768
 	or	a0, a0, a1
 	ret
 func0000000000000003:                   # @func0000000000000003

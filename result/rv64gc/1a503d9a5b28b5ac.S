@@ -11,19 +11,18 @@ func000000000000001a:                   # @func000000000000001a
 	and	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
-	mv	a2, a0
-	sext.w	a3, a0
-	andi	a1, a1, 1
+	andi	a2, a1, 1
+	sext.w	a1, a0
+	bnez	a2, .LBB1_2
+	addiw	a0, a0, -237
+	li	a2, 2
+	beq	a1, a2, .LBB1_3
+	j	.LBB1_4
+.LBB1_2:
 	li	a0, 31
-	beqz	a1, .LBB1_3
-	li	a1, 2
-	beq	a3, a1, .LBB1_4
-.LBB1_2:                                # %entry
-	ret
+	li	a2, 2
+	bne	a1, a2, .LBB1_4
 .LBB1_3:                                # %entry
-	addiw	a0, a2, -237
-	li	a1, 2
-	bne	a3, a1, .LBB1_2
-.LBB1_4:                                # %entry
 	li	a0, 29
+.LBB1_4:                                # %entry
 	ret

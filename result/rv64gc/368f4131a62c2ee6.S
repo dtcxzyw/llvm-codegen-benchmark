@@ -31,11 +31,15 @@ func0000000000000007:                   # @func0000000000000007
 	ori	a0, a0, 8
 	ret
 func0000000000000005:                   # @func0000000000000005
-	andi	a3, a2, 1
-	li	a2, 3
-	bnez	a3, .LBB4_2
+	andi	a2, a2, 1
+	bnez	a2, .LBB4_2
 	li	a2, 1
-.LBB4_2:                                # %entry
+	or	a0, a0, a1
+	or	a0, a0, a2
+	ori	a0, a0, 12
+	ret
+.LBB4_2:
+	li	a2, 3
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ori	a0, a0, 12

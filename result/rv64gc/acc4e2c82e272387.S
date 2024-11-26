@@ -20,12 +20,16 @@ func000000000000006a:                   # @func000000000000006a
 	addi	a0, a0, 16
 	ret
 func0000000000000102:                   # @func0000000000000102
-	li	a4, 4
-	li	a3, -72
-	bltu	a2, a4, .LBB2_2
-	li	a3, -48
-.LBB2_2:                                # %entry
+	li	a3, 4
+	bltu	a2, a3, .LBB2_2
+	li	a2, -48
 	add	a0, a0, a1
-	add	a0, a0, a3
+	add	a0, a0, a2
+	addi	a0, a0, 8
+	ret
+.LBB2_2:
+	li	a2, -72
+	add	a0, a0, a1
+	add	a0, a0, a2
 	addi	a0, a0, 8
 	ret

@@ -76,12 +76,15 @@ func0000000000000040:                   # @func0000000000000040
 	addiw	a0, a0, 2
 	ret
 func000000000000008c:                   # @func000000000000008c
-	andi	a3, a2, 255
-	li	a4, 1
-	li	a2, 8
-	bltu	a4, a3, .LBB9_2
+	andi	a2, a2, 255
+	li	a3, 1
+	bltu	a3, a2, .LBB9_2
 	li	a2, 2
-.LBB9_2:                                # %entry
+	add	a0, a0, a1
+	addw	a0, a0, a2
+	ret
+.LBB9_2:
+	li	a2, 8
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret

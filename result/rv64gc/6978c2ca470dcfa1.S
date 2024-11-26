@@ -67,32 +67,41 @@ func0000000000000060:                   # @func0000000000000060
 	addw	a0, a0, a2
 	ret
 func0000000000000041:                   # @func0000000000000041
-	sext.w	a3, a2
-	li	a4, 4
-	li	a2, 34
-	bltu	a3, a4, .LBB9_2
+	sext.w	a2, a2
+	li	a3, 4
+	bltu	a2, a3, .LBB9_2
 	li	a2, 38
-.LBB9_2:                                # %entry
+	add	a0, a0, a1
+	addw	a0, a0, a2
+	ret
+.LBB9_2:
+	li	a2, 34
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
 func000000000000004f:                   # @func000000000000004f
-	sext.w	a3, a2
-	li	a4, 96
-	li	a2, 2000
-	bltu	a3, a4, .LBB10_2
+	sext.w	a2, a2
+	li	a3, 96
+	bltu	a2, a3, .LBB10_2
 	li	a2, 1900
-.LBB10_2:                               # %entry
+	add	a0, a0, a1
+	addw	a0, a0, a2
+	ret
+.LBB10_2:
+	li	a2, 2000
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
 func0000000000000040:                   # @func0000000000000040
-	sext.w	a3, a2
-	li	a4, 254
-	li	a2, 1
-	bltu	a3, a4, .LBB11_2
+	sext.w	a2, a2
+	li	a3, 254
+	bltu	a2, a3, .LBB11_2
 	li	a2, 5
-.LBB11_2:                               # %entry
+	add	a0, a0, a1
+	addw	a0, a0, a2
+	ret
+.LBB11_2:
+	li	a2, 1
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret

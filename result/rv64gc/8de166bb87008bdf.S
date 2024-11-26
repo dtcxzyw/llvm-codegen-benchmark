@@ -29,12 +29,13 @@ func0000000000000006:                   # @func0000000000000006
 	ori	a0, a0, 1
 	ret
 func0000000000000008:                   # @func0000000000000008
-	subw	a1, a0, a1
-	li	a2, 32
-	li	a0, 191
-	bltu	a2, a1, .LBB5_2
+	subw	a0, a0, a1
+	li	a1, 32
+	bltu	a1, a0, .LBB5_2
 	li	a0, 189
-.LBB5_2:                                # %entry
+	ret
+.LBB5_2:
+	li	a0, 191
 	ret
 func000000000000001a:                   # @func000000000000001a
 	sext.w	a0, a0

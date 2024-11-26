@@ -1,11 +1,12 @@
 func0000000000000046:                   # @func0000000000000046
 	srli	a0, a0, 3
-	sext.w	a1, a0
-	li	a2, 4
-	li	a0, 224
-	blt	a1, a2, .LBB0_2
+	sext.w	a0, a0
+	li	a1, 4
+	blt	a0, a1, .LBB0_2
 	li	a0, 240
-.LBB0_2:                                # %entry
+	ret
+.LBB0_2:
+	li	a0, 224
 	ret
 func0000000000000001:                   # @func0000000000000001
 	srli	a0, a0, 3

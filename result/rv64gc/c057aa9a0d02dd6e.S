@@ -33,24 +33,23 @@ func0000000000000002:                   # @func0000000000000002
 	or	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
+	andi	a2, a2, 1
 	andi	a0, a0, 1
-	andi	a3, a2, 1
-	li	a2, 1040
-	beqz	a3, .LBB3_3
-	andi	a1, a1, -31
-	or	a1, a1, a2
-	li	a2, 8
-	beqz	a0, .LBB3_4
-.LBB3_2:                                # %entry
-	or	a0, a2, a1
-	ret
-.LBB3_3:                                # %entry
+	bnez	a2, .LBB3_3
 	li	a2, 16
 	andi	a1, a1, -31
 	or	a1, a1, a2
-	li	a2, 8
+	beqz	a0, .LBB3_4
+.LBB3_2:
+	li	a0, 8
+	or	a0, a0, a1
+	ret
+.LBB3_3:
+	li	a2, 1040
+	andi	a1, a1, -31
+	or	a1, a1, a2
 	bnez	a0, .LBB3_2
 .LBB3_4:                                # %entry
-	li	a2, 4
-	or	a0, a2, a1
+	li	a0, 4
+	or	a0, a0, a1
 	ret

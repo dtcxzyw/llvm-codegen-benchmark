@@ -14,13 +14,15 @@ func0000000000000003:                   # @func0000000000000003
 	or	a0, a0, a1
 	ret
 func0000000000000002:                   # @func0000000000000002
-	sext.w	a3, a1
-	andi	a2, a2, 1
-	li	a1, 4
-	bnez	a2, .LBB1_2
+	andi	a3, a2, 1
+	sext.w	a2, a1
+	bnez	a3, .LBB1_2
 	li	a1, 12
-.LBB1_2:                                # %entry
-	seqz	a2, a3
+	j	.LBB1_3
+.LBB1_2:
+	li	a1, 4
+.LBB1_3:                                # %entry
+	seqz	a2, a2
 	andi	a0, a0, 1
 	addi	a2, a2, -1
 	and	a1, a1, a2

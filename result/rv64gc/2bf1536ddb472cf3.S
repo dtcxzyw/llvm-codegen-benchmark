@@ -21,10 +21,11 @@ func0000000000000004:                   # @func0000000000000004
 	addi	a0, a0, 4
 	ret
 func0000000000000008:                   # @func0000000000000008
-	andi	a1, a0, 7
-	li	a2, 4
-	li	a0, 52
-	bltu	a2, a1, .LBB3_2
+	andi	a0, a0, 7
+	li	a1, 4
+	bltu	a1, a0, .LBB3_2
 	li	a0, 13
-.LBB3_2:                                # %entry
+	ret
+.LBB3_2:
+	li	a0, 52
 	ret

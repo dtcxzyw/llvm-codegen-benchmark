@@ -7,12 +7,13 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000006:                   # @func0000000000000006
 	add	a1, a1, a2
-	subw	a1, a0, a1
-	li	a2, 4
-	li	a0, 200
-	blt	a1, a2, .LBB1_2
+	subw	a0, a0, a1
+	li	a1, 4
+	blt	a0, a1, .LBB1_2
 	li	a0, 300
-.LBB1_2:                                # %entry
+	ret
+.LBB1_2:
+	li	a0, 200
 	ret
 func00000000000000d6:                   # @func00000000000000d6
 	add	a1, a1, a2

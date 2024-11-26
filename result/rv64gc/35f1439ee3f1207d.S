@@ -8,11 +8,12 @@ func00000000000000a1:                   # @func00000000000000a1
 	ret
 func0000000000000011:                   # @func0000000000000011
 	sext.w	a1, a1
-	or	a1, a1, a0
-	li	a0, 5
-	beqz	a1, .LBB1_2
+	or	a0, a0, a1
+	beqz	a0, .LBB1_2
 	li	a0, 15
-.LBB1_2:                                # %entry
+	ret
+.LBB1_2:
+	li	a0, 5
 	ret
 func00000000000000c1:                   # @func00000000000000c1
 	sext.w	a1, a1

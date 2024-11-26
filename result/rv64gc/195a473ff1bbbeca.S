@@ -13,12 +13,14 @@ func000000000000001c:                   # @func000000000000001c
 	addiw	a0, a0, 7
 	ret
 func0000000000000014:                   # @func0000000000000014
-	sext.w	a2, a1
-	li	a3, 1
-	li	a1, 110
-	beq	a2, a3, .LBB2_2
+	sext.w	a1, a1
+	li	a2, 1
+	beq	a1, a2, .LBB2_2
 	li	a1, 105
-.LBB2_2:                                # %entry
+	addw	a0, a0, a1
+	ret
+.LBB2_2:
+	li	a1, 110
 	addw	a0, a0, a1
 	ret
 func0000000000000015:                   # @func0000000000000015

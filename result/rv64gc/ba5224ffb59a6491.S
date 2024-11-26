@@ -29,19 +29,16 @@ func0000000000000013:                   # @func0000000000000013
 	srli	a0, a0, 1
 	ret
 func0000000000000012:                   # @func0000000000000012
-	add	a2, a1, a0
-	li	a0, -1
-	srli	a0, a0, 1
-	mv	a3, a2
-	bgeu	a2, a0, .LBB2_3
-	li	a0, -2
-	bgeu	a2, a1, .LBB2_4
+	add	a0, a0, a1
+	li	a3, -1
+	srli	a3, a3, 1
+	mv	a2, a0
+	bltu	a0, a3, .LBB2_2
+	mv	a2, a3
 .LBB2_2:                                # %entry
+	bltu	a0, a1, .LBB2_4
+	slli	a0, a2, 1
 	ret
-.LBB2_3:                                # %entry
-	mv	a3, a0
+.LBB2_4:
 	li	a0, -2
-	bltu	a2, a1, .LBB2_2
-.LBB2_4:                                # %entry
-	slli	a0, a3, 1
 	ret

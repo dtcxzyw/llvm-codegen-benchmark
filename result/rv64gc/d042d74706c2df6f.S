@@ -5,9 +5,10 @@ func0000000000000000:                   # @func0000000000000000
 	and	a0, a0, a1
 	ret
 func0000000000000002:                   # @func0000000000000002
-	andi	a2, a0, 1
-	li	a0, 15
-	bnez	a2, .LBB1_2
+	andi	a0, a0, 1
+	bnez	a0, .LBB1_2
 	srli	a0, a1, 12
-.LBB1_2:                                # %entry
+	ret
+.LBB1_2:
+	li	a0, 15
 	ret

@@ -1,18 +1,18 @@
 func0000000000000089:                   # @func0000000000000089
-	srli	a3, a2, 32
-	li	a2, 33
-	bnez	a3, .LBB0_3
-	srli	a1, a1, 16
-	bnez	a1, .LBB0_4
-.LBB0_2:                                # %entry
-	ori	a0, a0, 8
-	ret
-.LBB0_3:                                # %entry
+	srli	a2, a2, 32
+	beqz	a2, .LBB0_2
 	li	a2, 1
 	srli	a1, a1, 16
-	beqz	a1, .LBB0_2
+	bnez	a1, .LBB0_3
+	j	.LBB0_4
+.LBB0_2:
+	li	a2, 33
+	srli	a1, a1, 16
+	beqz	a1, .LBB0_4
+.LBB0_3:                                # %entry
+	mv	a0, a2
 .LBB0_4:                                # %entry
-	ori	a0, a2, 8
+	ori	a0, a0, 8
 	ret
 func0000000000000111:                   # @func0000000000000111
 	srli	a1, a1, 16

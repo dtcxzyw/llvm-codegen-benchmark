@@ -36,20 +36,26 @@ func000000000000000e:                   # @func000000000000000e
 	addi	a0, a0, -3
 	ret
 func000000000000000c:                   # @func000000000000000c
-	andi	a3, a2, 1
-	li	a2, 40
-	bnez	a3, .LBB5_2
+	andi	a2, a2, 1
+	bnez	a2, .LBB5_2
 	li	a2, 48
-.LBB5_2:                                # %entry
+	sub	a0, a0, a1
+	sub	a0, a0, a2
+	ret
+.LBB5_2:
+	li	a2, 40
 	sub	a0, a0, a1
 	sub	a0, a0, a2
 	ret
 func0000000000000001:                   # @func0000000000000001
-	andi	a3, a2, 1
-	li	a2, -32
-	bnez	a3, .LBB6_2
+	andi	a2, a2, 1
+	bnez	a2, .LBB6_2
 	li	a2, -38
-.LBB6_2:                                # %entry
+	sub	a0, a0, a1
+	sub	a0, a0, a2
+	ret
+.LBB6_2:
+	li	a2, -32
 	sub	a0, a0, a1
 	sub	a0, a0, a2
 	ret

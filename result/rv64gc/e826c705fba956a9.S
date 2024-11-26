@@ -1,9 +1,11 @@
 func0000000000000034:                   # @func0000000000000034
-	sext.w	a2, a1
-	li	a1, 256
-	beqz	a2, .LBB0_2
+	sext.w	a1, a1
+	beqz	a1, .LBB0_2
 	li	a1, 128
-.LBB0_2:                                # %entry
+	sltu	a0, a0, a1
+	ret
+.LBB0_2:
+	li	a1, 256
 	sltu	a0, a0, a1
 	ret
 func0000000000000191:                   # @func0000000000000191

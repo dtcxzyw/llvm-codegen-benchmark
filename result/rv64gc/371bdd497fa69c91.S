@@ -22,9 +22,10 @@ func0000000000000002:                   # @func0000000000000002
 	lui	a0, %hi(.LCPI1_1)
 	fld	fa4, %lo(.LCPI1_1)(a0)
 	fmul.d	fa5, fa0, fa5
-	flt.d	a1, fa5, fa4
-	li	a0, -1322
-	bnez	a1, .LBB1_2
+	flt.d	a0, fa5, fa4
+	bnez	a0, .LBB1_2
 	li	a0, -1022
-.LBB1_2:                                # %entry
+	ret
+.LBB1_2:
+	li	a0, -1322
 	ret

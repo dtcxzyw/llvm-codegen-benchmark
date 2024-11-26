@@ -10,17 +10,17 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func0000000000000044:                   # @func0000000000000044
 	mv	a1, a0
-	srli	a2, a0, 32
-	li	a0, 470
-	bnez	a2, .LBB1_3
-	srli	a1, a1, 31
-	beqz	a1, .LBB1_4
-.LBB1_2:                                # %entry
-	ret
-.LBB1_3:                                # %entry
+	srli	a0, a0, 32
+	beqz	a0, .LBB1_2
 	li	a0, 406
 	srli	a1, a1, 31
-	bnez	a1, .LBB1_2
-.LBB1_4:                                # %entry
+	beqz	a1, .LBB1_3
+	j	.LBB1_4
+.LBB1_2:
+	li	a0, 470
+	srli	a1, a1, 31
+	bnez	a1, .LBB1_4
+.LBB1_3:                                # %entry
 	li	a0, 502
+.LBB1_4:                                # %entry
 	ret

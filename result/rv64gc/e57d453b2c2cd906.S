@@ -8,19 +8,19 @@ func0000000000000003:                   # @func0000000000000003
 	addw	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
+	andi	a2, a2, 1
 	andi	a0, a0, 1
-	andi	a3, a2, 1
-	li	a2, 1
-	beqz	a3, .LBB1_3
-	beqz	a0, .LBB1_4
-.LBB1_2:                                # %entry
-	addiw	a0, a1, 1
-	ret
-.LBB1_3:                                # %entry
+	bnez	a2, .LBB1_2
 	li	a2, 3
-	bnez	a0, .LBB1_2
+	beqz	a0, .LBB1_3
+	j	.LBB1_4
+.LBB1_2:
+	li	a2, 1
+	bnez	a0, .LBB1_4
+.LBB1_3:                                # %entry
+	mv	a1, a2
 .LBB1_4:                                # %entry
-	addiw	a0, a2, 1
+	addiw	a0, a1, 1
 	ret
 func0000000000000000:                   # @func0000000000000000
 	andi	a0, a0, 1

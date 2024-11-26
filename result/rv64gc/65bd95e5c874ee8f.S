@@ -3,12 +3,10 @@ func0000000000000008:                   # @func0000000000000008
 	slli	a3, a3, 32
 	addi	a3, a3, -2
 	sltu	a2, a3, a2
-	and	a2, a2, a1
-	li	a1, -16
-	bnez	a2, .LBB0_2
-	mv	a1, a0
+	and	a1, a1, a2
+	beqz	a1, .LBB0_2
+	li	a0, -16
 .LBB0_2:                                # %entry
-	mv	a0, a1
 	ret
 func000000000000000a:                   # @func000000000000000a
 	slti	a2, a2, 0

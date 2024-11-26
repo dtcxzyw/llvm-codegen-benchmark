@@ -27,18 +27,18 @@ func0000000000000006:                   # @func0000000000000006
 	slli	a0, a0, 4
 	ret
 func0000000000000004:                   # @func0000000000000004
-	mv	a2, a0
-	andi	a1, a1, 1
-	li	a0, 470
-	beqz	a1, .LBB3_3
-	srli	a2, a2, 31
-	beqz	a2, .LBB3_4
-.LBB3_2:                                # %entry
-	ret
-.LBB3_3:                                # %entry
-	li	a0, 406
-	srli	a2, a2, 31
+	andi	a2, a1, 1
+	mv	a1, a0
 	bnez	a2, .LBB3_2
-.LBB3_4:                                # %entry
+	li	a0, 406
+	srli	a1, a1, 31
+	beqz	a1, .LBB3_3
+	j	.LBB3_4
+.LBB3_2:
+	li	a0, 470
+	srli	a1, a1, 31
+	bnez	a1, .LBB3_4
+.LBB3_3:                                # %entry
 	li	a0, 502
+.LBB3_4:                                # %entry
 	ret

@@ -36,18 +36,15 @@ func0000000000000002:                   # @func0000000000000002
 	seqz	a2, a1
 	add	a1, a1, a1
 	add	a1, a1, a2
-	li	a3, -1
-	srli	a3, a3, 1
-	andi	a2, a0, 1
-	bgeu	a1, a3, .LBB2_3
-	li	a0, -2
-	beqz	a2, .LBB2_4
+	li	a2, -1
+	srli	a2, a2, 1
+	andi	a0, a0, 1
+	bltu	a1, a2, .LBB2_2
+	mv	a1, a2
 .LBB2_2:                                # %entry
-	ret
-.LBB2_3:                                # %entry
-	mv	a1, a3
-	li	a0, -2
-	bnez	a2, .LBB2_2
-.LBB2_4:                                # %entry
+	bnez	a0, .LBB2_4
 	slli	a0, a1, 1
+	ret
+.LBB2_4:
+	li	a0, -2
 	ret

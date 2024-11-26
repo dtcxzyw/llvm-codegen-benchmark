@@ -29,11 +29,14 @@ func0000000000000006:                   # @func0000000000000006
 	or	a0, a0, a1
 	ret
 func000000000000000d:                   # @func000000000000000d
-	andi	a3, a1, 1
-	li	a1, 6
-	bnez	a3, .LBB2_2
-	sext.w	a1, a2
-.LBB2_2:                                # %entry
+	andi	a1, a1, 1
+	bnez	a1, .LBB2_2
+	sext.w	a2, a2
 	slli	a0, a0, 32
-	or	a0, a0, a1
+	or	a0, a0, a2
+	ret
+.LBB2_2:
+	li	a2, 6
+	slli	a0, a0, 32
+	or	a0, a0, a2
 	ret

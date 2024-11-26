@@ -15,12 +15,15 @@ func0000000000000057:                   # @func0000000000000057
 	addi	a0, a0, 4
 	ret
 func0000000000000043:                   # @func0000000000000043
-	sext.w	a2, a1
-	li	a3, 57
-	li	a1, 50
-	bltu	a3, a2, .LBB2_2
+	sext.w	a1, a1
+	li	a2, 57
+	bltu	a2, a1, .LBB2_2
 	li	a1, 42
-.LBB2_2:                                # %entry
+	andi	a0, a0, 255
+	add	a0, a0, a1
+	ret
+.LBB2_2:
+	li	a1, 50
 	andi	a0, a0, 255
 	add	a0, a0, a1
 	ret

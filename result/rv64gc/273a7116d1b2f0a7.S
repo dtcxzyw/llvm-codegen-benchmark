@@ -1,9 +1,12 @@
 func0000000000000020:                   # @func0000000000000020
-	andi	a3, a2, 1
-	li	a2, 3
-	bnez	a3, .LBB0_2
+	andi	a2, a2, 1
+	bnez	a2, .LBB0_2
 	li	a2, 1
-.LBB0_2:                                # %entry
+	add	a0, a0, a1
+	add	a0, a0, a2
+	ret
+.LBB0_2:
+	li	a2, 3
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
@@ -20,11 +23,14 @@ func0000000000000000:                   # @func0000000000000000
 	addi	a0, a0, 1
 	ret
 func000000000000000f:                   # @func000000000000000f
-	andi	a3, a2, 1
-	li	a2, 9
-	bnez	a3, .LBB3_2
+	andi	a2, a2, 1
+	bnez	a2, .LBB3_2
 	li	a2, 5
-.LBB3_2:                                # %entry
+	add	a0, a0, a1
+	add	a0, a0, a2
+	ret
+.LBB3_2:
+	li	a2, 9
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

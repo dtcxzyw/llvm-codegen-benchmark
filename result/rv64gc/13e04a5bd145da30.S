@@ -5,11 +5,14 @@ func0000000000000007:                   # @func0000000000000007
 	ori	a0, a0, 4
 	ret
 func0000000000000004:                   # @func0000000000000004
-	li	a2, 2
 	beqz	a1, .LBB1_2
-	li	a2, 211
-.LBB1_2:                                # %entry
-	or	a0, a0, a2
+	li	a1, 211
+	or	a0, a0, a1
+	ori	a0, a0, 812
+	ret
+.LBB1_2:
+	li	a1, 2
+	or	a0, a0, a1
 	ori	a0, a0, 812
 	ret
 func0000000000000006:                   # @func0000000000000006

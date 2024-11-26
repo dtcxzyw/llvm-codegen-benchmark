@@ -11,9 +11,10 @@ func000000000000008c:                   # @func000000000000008c
 	srli	a1, a1, 1
 	sltiu	a0, a0, 3
 	xori	a0, a0, 1
-	and	a1, a1, a0
-	li	a0, 16
-	bnez	a1, .LBB1_2
+	and	a0, a0, a1
+	bnez	a0, .LBB1_2
 	li	a0, 4
-.LBB1_2:                                # %entry
+	ret
+.LBB1_2:
+	li	a0, 16
 	ret

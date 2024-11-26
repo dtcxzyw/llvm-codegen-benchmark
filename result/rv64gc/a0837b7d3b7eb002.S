@@ -24,9 +24,8 @@ func0000000000000002:                   # @func0000000000000002
 	andi	a3, a0, 1
 	slli	a0, a2, 33
 	srli	a0, a0, 33
-	li	a2, 1
-	bnez	a3, .LBB3_2
-	mv	a2, a1
+	beqz	a3, .LBB3_2
+	li	a1, 1
 .LBB3_2:                                # %entry
-	addw	a0, a0, a2
+	addw	a0, a0, a1
 	ret

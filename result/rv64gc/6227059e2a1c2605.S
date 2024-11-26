@@ -9,22 +9,28 @@ func00000000000002b8:                   # @func00000000000002b8
 	xori	a0, a0, 1
 	ret
 func0000000000000116:                   # @func0000000000000116
-	andi	a2, a1, 255
-	li	a3, 58
-	li	a1, -48
-	bltu	a2, a3, .LBB1_2
+	andi	a1, a1, 255
+	li	a2, 58
+	bltu	a1, a2, .LBB1_2
 	li	a1, -55
-.LBB1_2:                                # %entry
+	addw	a0, a0, a1
+	slti	a0, a0, 0
+	ret
+.LBB1_2:
+	li	a1, -48
 	addw	a0, a0, a1
 	slti	a0, a0, 0
 	ret
 func000000000000011a:                   # @func000000000000011a
-	andi	a2, a1, 255
-	li	a3, 16
-	li	a1, -65
-	bltu	a2, a3, .LBB2_2
+	andi	a1, a1, 255
+	li	a2, 16
+	bltu	a1, a2, .LBB2_2
 	li	a1, -129
-.LBB2_2:                                # %entry
+	addw	a0, a0, a1
+	sgtz	a0, a0
+	ret
+.LBB2_2:
+	li	a1, -65
 	addw	a0, a0, a1
 	sgtz	a0, a0
 	ret
@@ -71,22 +77,28 @@ func000000000000005a:                   # @func000000000000005a
 	xori	a0, a0, 1
 	ret
 func0000000000000044:                   # @func0000000000000044
-	andi	a2, a1, 255
-	li	a3, 10
-	li	a1, 8
-	beq	a2, a3, .LBB8_2
+	andi	a1, a1, 255
+	li	a2, 10
+	beq	a1, a2, .LBB8_2
 	li	a1, 16
-.LBB8_2:                                # %entry
+	addw	a0, a0, a1
+	sltiu	a0, a0, 256
+	ret
+.LBB8_2:
+	li	a1, 8
 	addw	a0, a0, a1
 	sltiu	a0, a0, 256
 	ret
 func0000000000000114:                   # @func0000000000000114
-	andi	a2, a1, 255
-	li	a3, 253
-	li	a1, -120
-	bltu	a2, a3, .LBB9_2
+	andi	a1, a1, 255
+	li	a2, 253
+	bltu	a1, a2, .LBB9_2
 	li	a1, -88
-.LBB9_2:                                # %entry
+	addw	a0, a0, a1
+	sltiu	a0, a0, 3
+	ret
+.LBB9_2:
+	li	a1, -120
 	addw	a0, a0, a1
 	sltiu	a0, a0, 3
 	ret
@@ -120,11 +132,15 @@ func0000000000000041:                   # @func0000000000000041
 	seqz	a0, a0
 	ret
 func0000000000000078:                   # @func0000000000000078
-	andi	a2, a1, 255
-	li	a1, 9
-	beqz	a2, .LBB13_2
+	andi	a1, a1, 255
+	beqz	a1, .LBB13_2
 	li	a1, 4
-.LBB13_2:                               # %entry
+	addw	a0, a0, a1
+	sltiu	a0, a0, 9
+	xori	a0, a0, 1
+	ret
+.LBB13_2:
+	li	a1, 9
 	addw	a0, a0, a1
 	sltiu	a0, a0, 9
 	xori	a0, a0, 1

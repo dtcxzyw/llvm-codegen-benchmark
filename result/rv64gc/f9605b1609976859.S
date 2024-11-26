@@ -1,40 +1,36 @@
 func000000000000000c:                   # @func000000000000000c
-	andi	a3, a0, 1
-	andi	a0, a1, 1
-	li	a1, 770
-	beqz	a0, .LBB0_3
-	li	a0, 769
-	beqz	a3, .LBB0_4
-.LBB0_2:                                # %entry
-	ret
-.LBB0_3:                                # %entry
+	andi	a3, a1, 1
+	andi	a1, a0, 1
+	bnez	a3, .LBB0_2
 	sext.w	a2, a2
 	seqz	a0, a2
 	addi	a0, a0, -1
-	andi	a1, a0, 771
+	andi	a0, a0, 771
+	bnez	a1, .LBB0_3
+	j	.LBB0_4
+.LBB0_2:
+	li	a0, 770
+	beqz	a1, .LBB0_4
+.LBB0_3:
 	li	a0, 769
-	bnez	a3, .LBB0_2
 .LBB0_4:                                # %entry
-	mv	a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
 	andi	a3, a0, 1
-	andi	a0, a1, 1
-	lui	a1, 512
-	beqz	a0, .LBB1_3
-	li	a0, 512
-	beqz	a3, .LBB1_4
+	andi	a1, a1, 1
+	lui	a0, 512
+	beqz	a1, .LBB1_3
+	bnez	a3, .LBB1_4
 .LBB1_2:                                # %entry
 	ret
 .LBB1_3:                                # %entry
 	sext.w	a2, a2
 	addi	a2, a2, -3
-	seqz	a1, a2
-	slli	a1, a1, 36
+	seqz	a0, a2
+	slli	a0, a0, 36
+	beqz	a3, .LBB1_2
+.LBB1_4:
 	li	a0, 512
-	bnez	a3, .LBB1_2
-.LBB1_4:                                # %entry
-	mv	a0, a1
 	ret
 func000000000000000a:                   # @func000000000000000a
 	mv	a3, a0
@@ -62,46 +58,40 @@ func000000000000000a:                   # @func000000000000000a
 	addiw	a0, a2, -1533
 	ret
 func0000000000000004:                   # @func0000000000000004
-	andi	a3, a0, 1
-	andi	a0, a1, 1
-	li	a1, 12
-	beqz	a0, .LBB3_3
-	li	a0, 13
-	beqz	a3, .LBB3_4
-.LBB3_2:                                # %entry
-	ret
-.LBB3_3:                                # %entry
-	srliw	a0, a2, 28
-	seqz	a1, a0
-	addi	a1, a1, 10
-	li	a0, 13
+	andi	a3, a1, 1
+	andi	a1, a0, 1
 	bnez	a3, .LBB3_2
+	srliw	a0, a2, 28
+	seqz	a0, a0
+	addi	a0, a0, 10
+	bnez	a1, .LBB3_3
+	j	.LBB3_4
+.LBB3_2:
+	li	a0, 12
+	beqz	a1, .LBB3_4
+.LBB3_3:
+	li	a0, 13
 .LBB3_4:                                # %entry
-	mv	a0, a1
 	ret
 func0000000000000006:                   # @func0000000000000006
+	mv	a3, a0
+	sext.w	a2, a2
+	li	a0, 30
 	andi	a1, a1, 1
-	sext.w	a3, a2
-	li	a4, 30
-	li	a2, 40
-	bge	a3, a4, .LBB4_4
-	andi	a3, a0, 1
-	li	a4, 24
-	beqz	a1, .LBB4_5
-.LBB4_2:                                # %entry
-	li	a0, 16
-	beqz	a3, .LBB4_6
-.LBB4_3:                                # %entry
-	ret
+	blt	a2, a0, .LBB4_2
+	li	a0, 72
+	andi	a3, a3, 1
+	bnez	a1, .LBB4_3
+	j	.LBB4_4
+.LBB4_2:
+	li	a0, 40
+	andi	a3, a3, 1
+	beqz	a1, .LBB4_4
+.LBB4_3:
+	li	a0, 24
 .LBB4_4:                                # %entry
-	li	a2, 72
-	andi	a3, a0, 1
-	li	a4, 24
-	bnez	a1, .LBB4_2
-.LBB4_5:                                # %entry
-	mv	a4, a2
+	bnez	a3, .LBB4_6
+	ret
+.LBB4_6:
 	li	a0, 16
-	bnez	a3, .LBB4_3
-.LBB4_6:                                # %entry
-	mv	a0, a4
 	ret

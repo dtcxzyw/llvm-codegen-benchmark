@@ -1,11 +1,14 @@
 func000000000000000f:                   # @func000000000000000f
-	li	a3, 5
-	li	a2, 16
-	beq	a1, a3, .LBB0_2
-	li	a2, 20
-.LBB0_2:                                # %entry
+	li	a2, 5
+	beq	a1, a2, .LBB0_2
+	li	a1, 20
 	slli	a0, a0, 1
-	or	a0, a0, a2
+	or	a0, a0, a1
+	ret
+.LBB0_2:
+	li	a1, 16
+	slli	a0, a0, 1
+	or	a0, a0, a1
 	ret
 func0000000000000009:                   # @func0000000000000009
 	addi	a1, a1, -1

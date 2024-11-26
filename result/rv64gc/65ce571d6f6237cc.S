@@ -4,11 +4,12 @@ func0000000000000001:                   # @func0000000000000001
 	andi	a0, a0, 42
 	ret
 func000000000000000c:                   # @func000000000000000c
-	andi	a1, a0, 8
-	li	a0, 40
-	beqz	a1, .LBB1_2
+	andi	a0, a0, 8
+	beqz	a0, .LBB1_2
 	li	a0, 32
-.LBB1_2:                                # %entry
+	ret
+.LBB1_2:
+	li	a0, 40
 	ret
 func0000000000000004:                   # @func0000000000000004
 	andi	a0, a0, 124

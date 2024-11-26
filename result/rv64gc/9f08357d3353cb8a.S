@@ -22,11 +22,13 @@ func0000000000000008:                   # @func0000000000000008
 	or	a0, a0, a1
 	ret
 func0000000000000017:                   # @func0000000000000017
-	flt.s	a2, fa1, fa0
-	li	a1, 272
-	beqz	a2, .LBB4_2
+	flt.s	a1, fa1, fa0
+	beqz	a1, .LBB4_2
 	li	a1, 256
-.LBB4_2:                                # %entry
+	or	a0, a0, a1
+	ret
+.LBB4_2:
+	li	a1, 272
 	or	a0, a0, a1
 	ret
 func000000000000001b:                   # @func000000000000001b

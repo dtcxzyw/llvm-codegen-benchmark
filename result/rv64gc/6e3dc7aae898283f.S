@@ -26,9 +26,10 @@ func0000000000000006:                   # @func0000000000000006
 	sub	a0, a1, a0
 	ret
 func000000000000000c:                   # @func000000000000000c
-	sext.w	a1, a0
-	li	a0, 258
-	beqz	a1, .LBB5_2
+	sext.w	a0, a0
+	beqz	a0, .LBB5_2
 	li	a0, 2
-.LBB5_2:                                # %entry
+	ret
+.LBB5_2:
+	li	a0, 258
 	ret

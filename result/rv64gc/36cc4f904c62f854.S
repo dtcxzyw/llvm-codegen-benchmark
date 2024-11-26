@@ -25,13 +25,14 @@ func0000000000000004:                   # @func0000000000000004
 	xori	a0, a0, 3
 	ret
 func0000000000000018:                   # @func0000000000000018
-	add	a1, a1, a0
-	lui	a0, 244141
-	addiw	a2, a0, -1537
-	li	a0, 10
-	bltu	a2, a1, .LBB4_2
+	add	a0, a0, a1
+	lui	a1, 244141
+	addiw	a1, a1, -1537
+	bltu	a1, a0, .LBB4_2
 	li	a0, 1
-.LBB4_2:                                # %entry
+	ret
+.LBB4_2:
+	li	a0, 10
 	ret
 func0000000000000016:                   # @func0000000000000016
 	add	a0, a0, a1

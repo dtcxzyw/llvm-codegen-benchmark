@@ -47,12 +47,11 @@ func0000000000000024:                   # @func0000000000000024
 	seqz	a0, a0
 	ret
 func0000000000000014:                   # @func0000000000000014
-	andi	a3, a1, 1
-	li	a1, 1
-	bnez	a3, .LBB5_2
-	mv	a1, a2
+	andi	a1, a1, 1
+	beqz	a1, .LBB5_2
+	li	a2, 1
 .LBB5_2:                                # %entry
-	mul	a0, a1, a0
+	mul	a0, a2, a0
 	srli	a0, a0, 60
 	seqz	a0, a0
 	ret

@@ -5,13 +5,14 @@ func0000000000000001:                   # @func0000000000000001
 	andi	a0, a0, 20
 	ret
 func0000000000000004:                   # @func0000000000000004
-	sext.w	a1, a0
-	lui	a0, 600
-	addiw	a2, a0, 1005
-	li	a0, -1988
-	bltu	a1, a2, .LBB1_2
+	sext.w	a0, a0
+	lui	a1, 600
+	addiw	a1, a1, 1005
+	bltu	a0, a1, .LBB1_2
 	li	a0, -2018
-.LBB1_2:                                # %entry
+	ret
+.LBB1_2:
+	li	a0, -1988
 	ret
 func000000000000000c:                   # @func000000000000000c
 	sext.w	a1, a0

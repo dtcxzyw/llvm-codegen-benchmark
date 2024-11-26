@@ -8,11 +8,14 @@ func0000000000000001:                   # @func0000000000000001
 	seqz	a0, a0
 	ret
 func0000000000000028:                   # @func0000000000000028
-	andi	a3, a0, 1
-	li	a0, 1
-	bnez	a3, .LBB1_2
+	andi	a0, a0, 1
+	bnez	a0, .LBB1_2
 	addiw	a0, a2, -33
-.LBB1_2:                                # %entry
+	sext.w	a1, a1
+	sltu	a0, a1, a0
+	ret
+.LBB1_2:
+	li	a0, 1
 	sext.w	a1, a1
 	sltu	a0, a1, a0
 	ret

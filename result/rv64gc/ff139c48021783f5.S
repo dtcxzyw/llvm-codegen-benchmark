@@ -1,16 +1,18 @@
 func000000000000008f:                   # @func000000000000008f
-	sext.w	a1, a0
-	li	a2, 4
-	li	a0, 160
-	bltu	a2, a1, .LBB0_2
+	sext.w	a0, a0
+	li	a1, 4
+	bltu	a1, a0, .LBB0_2
 	li	a0, 128
-.LBB0_2:                                # %entry
+	ret
+.LBB0_2:
+	li	a0, 160
 	ret
 func000000000000001f:                   # @func000000000000001f
-	sext.w	a1, a0
-	li	a2, 2
-	li	a0, 64
-	beq	a1, a2, .LBB1_2
+	sext.w	a0, a0
+	li	a1, 2
+	beq	a0, a1, .LBB1_2
 	li	a0, 88
-.LBB1_2:                                # %entry
+	ret
+.LBB1_2:
+	li	a0, 64
 	ret

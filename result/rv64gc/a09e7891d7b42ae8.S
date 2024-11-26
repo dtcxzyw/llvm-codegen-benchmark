@@ -16,22 +16,20 @@ func0000000000000008:                   # @func0000000000000008
 	snez	a0, a0
 	ret
 func0000000000000034:                   # @func0000000000000034
-	andi	a3, a1, 1
-	li	a1, 4
-	bnez	a3, .LBB2_2
-	mv	a1, a2
+	andi	a1, a1, 1
+	beqz	a1, .LBB2_2
+	li	a2, 4
 .LBB2_2:                                # %entry
-	add	a0, a0, a1
+	add	a0, a0, a2
 	srli	a0, a0, 15
 	seqz	a0, a0
 	ret
 func0000000000000038:                   # @func0000000000000038
-	andi	a3, a1, 1
-	li	a1, 4
-	bnez	a3, .LBB3_2
-	mv	a1, a2
+	andi	a1, a1, 1
+	beqz	a1, .LBB3_2
+	li	a2, 4
 .LBB3_2:                                # %entry
-	add	a0, a0, a1
+	add	a0, a0, a2
 	sltiu	a0, a0, 256
 	xori	a0, a0, 1
 	ret
@@ -88,41 +86,37 @@ func0000000000000031:                   # @func0000000000000031
 	seqz	a0, a0
 	ret
 func0000000000000018:                   # @func0000000000000018
-	andi	a3, a1, 1
-	li	a1, 1
-	bnez	a3, .LBB10_2
-	mv	a1, a2
+	andi	a1, a1, 1
+	beqz	a1, .LBB10_2
+	li	a2, 1
 .LBB10_2:                               # %entry
-	add	a0, a0, a1
+	add	a0, a0, a2
 	sltiu	a0, a0, 2
 	xori	a0, a0, 1
 	ret
 func000000000000000c:                   # @func000000000000000c
-	andi	a3, a1, 1
-	li	a1, 10
-	bnez	a3, .LBB11_2
-	mv	a1, a2
+	andi	a1, a1, 1
+	beqz	a1, .LBB11_2
+	li	a2, 10
 .LBB11_2:                               # %entry
 	neg	a0, a0
-	xor	a0, a0, a1
+	xor	a0, a0, a2
 	snez	a0, a0
 	ret
 func0000000000000011:                   # @func0000000000000011
-	andi	a3, a1, 1
-	li	a1, -48
-	bnez	a3, .LBB12_2
-	mv	a1, a2
+	andi	a1, a1, 1
+	beqz	a1, .LBB12_2
+	li	a2, -48
 .LBB12_2:                               # %entry
 	neg	a0, a0
-	xor	a0, a0, a1
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret
 func0000000000000014:                   # @func0000000000000014
-	andi	a3, a1, 1
-	li	a1, 11
-	bnez	a3, .LBB13_2
-	mv	a1, a2
+	andi	a1, a1, 1
+	beqz	a1, .LBB13_2
+	li	a2, 11
 .LBB13_2:                               # %entry
-	add	a0, a0, a1
+	add	a0, a0, a2
 	sltiu	a0, a0, 64
 	ret

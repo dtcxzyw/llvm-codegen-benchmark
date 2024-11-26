@@ -6,22 +6,26 @@ func0000000000000021:                   # @func0000000000000021
 	ret
 func0000000000000011:                   # @func0000000000000011
 	lui	a1, 2
-	addiw	a2, a1, -2
-	li	a1, 1
-	bltu	a0, a2, .LBB1_2
+	addiw	a1, a1, -2
+	bltu	a0, a1, .LBB1_2
 	lui	a1, 1048574
 	addiw	a1, a1, 2
-.LBB1_2:                                # %entry
+	add	a0, a0, a1
+	ret
+.LBB1_2:
+	li	a1, 1
 	add	a0, a0, a1
 	ret
 func0000000000000010:                   # @func0000000000000010
 	lui	a1, 2
-	addiw	a2, a1, -2
-	li	a1, 1
-	bltu	a0, a2, .LBB2_2
+	addiw	a1, a1, -2
+	bltu	a0, a1, .LBB2_2
 	lui	a1, 1048574
 	addiw	a1, a1, 2
-.LBB2_2:                                # %entry
+	add	a0, a0, a1
+	ret
+.LBB2_2:
+	li	a1, 1
 	add	a0, a0, a1
 	ret
 func0000000000000020:                   # @func0000000000000020
@@ -41,11 +45,13 @@ func0000000000000019:                   # @func0000000000000019
 	add	a0, a0, a1
 	ret
 func0000000000000029:                   # @func0000000000000029
-	li	a2, 11
-	li	a1, -11
-	blt	a2, a0, .LBB6_2
+	li	a1, 11
+	blt	a1, a0, .LBB6_2
 	li	a1, 1
-.LBB6_2:                                # %entry
+	add	a0, a0, a1
+	ret
+.LBB6_2:
+	li	a1, -11
 	add	a0, a0, a1
 	ret
 func0000000000000005:                   # @func0000000000000005

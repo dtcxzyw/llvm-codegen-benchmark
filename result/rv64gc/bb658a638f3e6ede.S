@@ -4,11 +4,13 @@ func0000000000000304:                   # @func0000000000000304
 	addi	a2, a2, -1
 	snez	a2, a2
 	seqz	a1, a1
-	and	a2, a2, a1
-	li	a1, 24
-	bnez	a2, .LBB0_2
+	and	a1, a1, a2
+	bnez	a1, .LBB0_2
 	li	a1, 32
-.LBB0_2:                                # %entry
+	add	a0, a0, a1
+	ret
+.LBB0_2:
+	li	a1, 24
 	add	a0, a0, a1
 	ret
 func0000000000000286:                   # @func0000000000000286
@@ -28,11 +30,13 @@ func0000000000000106:                   # @func0000000000000106
 	sltiu	a2, a2, 12
 	addi	a1, a1, -1
 	seqz	a1, a1
-	and	a2, a2, a1
-	li	a1, 3
-	bnez	a2, .LBB2_2
+	and	a1, a1, a2
+	bnez	a1, .LBB2_2
 	li	a1, 12
-.LBB2_2:                                # %entry
+	add	a0, a0, a1
+	ret
+.LBB2_2:
+	li	a1, 3
 	add	a0, a0, a1
 	ret
 func0000000000000306:                   # @func0000000000000306
@@ -41,11 +45,13 @@ func0000000000000306:                   # @func0000000000000306
 	snez	a2, a2
 	addi	a1, a1, -6
 	seqz	a1, a1
-	and	a2, a2, a1
-	li	a1, 296
-	bnez	a2, .LBB3_2
+	and	a1, a1, a2
+	bnez	a1, .LBB3_2
 	li	a1, 248
-.LBB3_2:                                # %entry
+	add	a0, a0, a1
+	ret
+.LBB3_2:
+	li	a1, 296
 	add	a0, a0, a1
 	ret
 func0000000000000112:                   # @func0000000000000112

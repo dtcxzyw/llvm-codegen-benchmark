@@ -43,11 +43,15 @@ func000000000000008f:                   # @func000000000000008f
 	addiw	a0, a0, 1
 	ret
 func0000000000000020:                   # @func0000000000000020
-	sext.w	a3, a2
-	li	a2, 8
-	beqz	a3, .LBB5_2
+	sext.w	a2, a2
+	beqz	a2, .LBB5_2
 	li	a2, 2
-.LBB5_2:                                # %entry
+	add	a0, a0, a2
+	andi	a1, a1, 1
+	addw	a0, a0, a1
+	ret
+.LBB5_2:
+	li	a2, 8
 	add	a0, a0, a2
 	andi	a1, a1, 1
 	addw	a0, a0, a1

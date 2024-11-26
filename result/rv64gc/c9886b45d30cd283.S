@@ -29,19 +29,21 @@ func0000000000000081:                   # @func0000000000000081
 	addi	a0, a0, -6
 	sltiu	a1, a1, 4
 	snez	a0, a0
-	or	a1, a1, a0
-	li	a0, 224
-	beqz	a1, .LBB3_2
+	or	a0, a0, a1
+	beqz	a0, .LBB3_2
 	li	a0, 216
-.LBB3_2:                                # %entry
+	ret
+.LBB3_2:
+	li	a0, 224
 	ret
 func000000000000001c:                   # @func000000000000001c
 	sext.w	a1, a1
 	seqz	a1, a1
 	snez	a0, a0
-	and	a1, a1, a0
-	li	a0, 7
-	bnez	a1, .LBB4_2
+	and	a0, a0, a1
+	bnez	a0, .LBB4_2
 	li	a0, 14
-.LBB4_2:                                # %entry
+	ret
+.LBB4_2:
+	li	a0, 7
 	ret

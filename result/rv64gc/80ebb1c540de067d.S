@@ -12,11 +12,11 @@ func0000000000000008:                   # @func0000000000000008
 	sub	a0, a1, a0
 	ret
 func000000000000000c:                   # @func000000000000000c
-	mv	a1, a0
-	li	a0, 24
-	beqz	a1, .LBB2_2
+	beqz	a0, .LBB2_2
 	li	a0, 16
-.LBB2_2:                                # %entry
+	ret
+.LBB2_2:
+	li	a0, 24
 	ret
 func0000000000000006:                   # @func0000000000000006
 	srli	a0, a0, 60

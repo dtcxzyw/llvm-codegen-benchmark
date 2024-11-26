@@ -8,11 +8,15 @@ func000000000000000a:                   # @func000000000000000a
 	addi	a0, a0, 8
 	ret
 func0000000000000070:                   # @func0000000000000070
-	andi	a3, a2, 1
-	li	a2, 284
-	bnez	a3, .LBB1_2
+	andi	a2, a2, 1
+	bnez	a2, .LBB1_2
 	li	a2, 4
-.LBB1_2:                                # %entry
+	addw	a1, a1, a2
+	add	a0, a0, a1
+	addi	a0, a0, 6
+	ret
+.LBB1_2:
+	li	a2, 284
 	addw	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 6

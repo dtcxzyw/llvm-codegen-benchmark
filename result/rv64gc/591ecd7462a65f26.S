@@ -9,18 +9,18 @@ func000000000000000a:                   # @func000000000000000a
 	ori	a0, a0, 1
 	ret
 func0000000000000004:                   # @func0000000000000004
-	mv	a2, a0
-	li	a0, 2
-	bltu	a2, a1, .LBB2_2
+	bltu	a0, a1, .LBB2_2
 	li	a0, 4
-.LBB2_2:                                # %entry
+	ret
+.LBB2_2:
+	li	a0, 2
 	ret
 func0000000000000006:                   # @func0000000000000006
-	mv	a2, a0
-	li	a0, 159
-	blt	a2, a1, .LBB3_2
+	blt	a0, a1, .LBB3_2
 	li	a0, 184
-.LBB3_2:                                # %entry
+	ret
+.LBB3_2:
+	li	a0, 159
 	ret
 func0000000000000008:                   # @func0000000000000008
 	sltu	a0, a1, a0

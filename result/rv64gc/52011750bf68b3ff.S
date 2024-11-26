@@ -1,10 +1,13 @@
 func0000000000000018:                   # @func0000000000000018
+	andi	a1, a1, 1
 	sext.w	a0, a0
-	andi	a2, a1, 1
-	li	a1, 12
-	bnez	a2, .LBB0_2
+	bnez	a1, .LBB0_2
 	li	a1, 16
-.LBB0_2:                                # %entry
+	xor	a0, a0, a1
+	snez	a0, a0
+	ret
+.LBB0_2:
+	li	a1, 12
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret

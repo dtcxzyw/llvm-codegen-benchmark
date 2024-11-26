@@ -14,9 +14,10 @@ func0000000000000011:                   # @func0000000000000011
 	addi	a1, a1, -2
 	seqz	a1, a1
 	seqz	a0, a0
-	or	a1, a1, a0
-	li	a0, 44
-	bnez	a1, .LBB1_2
+	or	a0, a0, a1
+	bnez	a0, .LBB1_2
 	li	a0, 58
-.LBB1_2:                                # %entry
+	ret
+.LBB1_2:
+	li	a0, 44
 	ret

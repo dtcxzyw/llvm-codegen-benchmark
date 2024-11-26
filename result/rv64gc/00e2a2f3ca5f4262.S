@@ -15,12 +15,16 @@ func000000000000007f:                   # @func000000000000007f
 	slliw	a0, a0, 2
 	ret
 func0000000000000040:                   # @func0000000000000040
-	sext.w	a3, a2
-	li	a4, 3
-	li	a2, 48
-	beq	a3, a4, .LBB2_2
+	sext.w	a2, a2
+	li	a3, 3
+	beq	a2, a3, .LBB2_2
 	li	a2, 28
-.LBB2_2:                                # %entry
+	add	a0, a0, a1
+	add	a0, a0, a2
+	slliw	a0, a0, 3
+	ret
+.LBB2_2:
+	li	a2, 48
 	add	a0, a0, a1
 	add	a0, a0, a2
 	slliw	a0, a0, 3

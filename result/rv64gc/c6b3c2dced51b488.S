@@ -10,10 +10,11 @@ func000000000000000c:                   # @func000000000000000c
 	addi	a0, a0, 4
 	ret
 func0000000000000004:                   # @func0000000000000004
-	and	a1, a1, a0
-	li	a2, 513
-	li	a0, 3
-	bltu	a1, a2, .LBB2_2
+	and	a0, a0, a1
+	li	a1, 513
+	bltu	a0, a1, .LBB2_2
 	li	a0, 6
-.LBB2_2:                                # %entry
+	ret
+.LBB2_2:
+	li	a0, 3
 	ret

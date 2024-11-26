@@ -10,11 +10,14 @@ func0000000000000085:                   # @func0000000000000085
 	ret
 func00000000000000a0:                   # @func00000000000000a0
 	lui	a3, 16
-	addiw	a4, a3, -1
-	li	a3, 10
-	blt	a4, a2, .LBB1_2
-	li	a3, 6
-.LBB1_2:                                # %entry
+	addiw	a3, a3, -1
+	blt	a3, a2, .LBB1_2
+	li	a2, 6
 	subw	a0, a1, a0
-	addw	a0, a0, a3
+	addw	a0, a0, a2
+	ret
+.LBB1_2:
+	li	a2, 10
+	subw	a0, a1, a0
+	addw	a0, a0, a2
 	ret

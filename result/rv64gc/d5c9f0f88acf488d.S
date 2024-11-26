@@ -79,20 +79,20 @@ func0000000000000088:                   # @func0000000000000088
 	andi	a0, a0, -34
 	ret
 func0000000000000044:                   # @func0000000000000044
-	sext.w	a2, a0
 	sext.w	a3, a1
 	li	a1, 7
-	li	a0, 8
-	bgeu	a3, a1, .LBB5_3
-	li	a3, 4
-	bgeu	a2, a3, .LBB5_4
-.LBB5_2:                                # %entry
-	ret
-.LBB5_3:                                # %entry
+	sext.w	a2, a0
+	bltu	a3, a1, .LBB5_2
 	li	a0, 11
 	li	a1, 10
 	li	a3, 4
-	bltu	a2, a3, .LBB5_2
-.LBB5_4:                                # %entry
+	bgeu	a2, a3, .LBB5_3
+	j	.LBB5_4
+.LBB5_2:
+	li	a0, 8
+	li	a3, 4
+	bltu	a2, a3, .LBB5_4
+.LBB5_3:                                # %entry
 	mv	a0, a1
+.LBB5_4:                                # %entry
 	ret

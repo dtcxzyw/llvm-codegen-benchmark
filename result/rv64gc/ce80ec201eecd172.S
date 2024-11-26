@@ -30,9 +30,8 @@ func000000000000000c:                   # @func000000000000000c
 	slli	a0, a2, 1
 	slli	a2, a2, 3
 	sub	a0, a2, a0
-	li	a2, 16
-	bnez	a3, .LBB3_2
-	mv	a2, a1
+	beqz	a3, .LBB3_2
+	li	a1, 16
 .LBB3_2:                                # %entry
-	add	a0, a0, a2
+	add	a0, a0, a1
 	ret

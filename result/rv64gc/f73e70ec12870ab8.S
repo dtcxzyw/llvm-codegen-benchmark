@@ -12,12 +12,16 @@ func0000000000000016:                   # @func0000000000000016
 	andi	a0, a0, 20
 	ret
 func0000000000000011:                   # @func0000000000000011
+	andi	a1, a1, 32
 	sext.w	a0, a0
-	andi	a2, a1, 32
-	li	a1, 4
-	beqz	a2, .LBB1_2
+	beqz	a1, .LBB1_2
 	li	a1, 8
-.LBB1_2:                                # %entry
+	seqz	a0, a0
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	ret
+.LBB1_2:
+	li	a1, 4
 	seqz	a0, a0
 	addi	a0, a0, -1
 	and	a0, a0, a1

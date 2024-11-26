@@ -7,20 +7,22 @@ func0000000000000001:                   # @func0000000000000001
 	and	a0, a0, a1
 	ret
 func000000000000000a:                   # @func000000000000000a
-	andi	a3, a0, 1
-	li	a0, 2
-	bnez	a3, .LBB1_2
+	andi	a0, a0, 1
+	bnez	a0, .LBB1_2
 	slt	a0, a2, a1
 	negw	a0, a0
 	andi	a0, a0, 3
-.LBB1_2:                                # %entry
+	ret
+.LBB1_2:
+	li	a0, 2
 	ret
 func0000000000000008:                   # @func0000000000000008
-	andi	a3, a0, 1
-	li	a0, 2
-	bnez	a3, .LBB2_2
+	andi	a0, a0, 1
+	bnez	a0, .LBB2_2
 	sltu	a0, a2, a1
 	negw	a0, a0
 	andi	a0, a0, 3
-.LBB2_2:                                # %entry
+	ret
+.LBB2_2:
+	li	a0, 2
 	ret

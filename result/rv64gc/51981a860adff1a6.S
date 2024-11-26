@@ -8,12 +8,14 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000008:                   # @func0000000000000008
 	slli	a0, a0, 48
-	andi	a2, a1, 1
+	andi	a1, a1, 1
 	srli	a0, a0, 48
-	li	a1, 128
-	bnez	a2, .LBB1_2
+	bnez	a1, .LBB1_2
 	lui	a1, 1
-.LBB1_2:                                # %entry
+	sltu	a0, a0, a1
+	ret
+.LBB1_2:
+	li	a1, 128
 	sltu	a0, a0, a1
 	ret
 func0000000000000009:                   # @func0000000000000009

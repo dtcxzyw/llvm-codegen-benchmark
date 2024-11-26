@@ -19,9 +19,9 @@ func0000000000000008:                   # @func0000000000000008
 	addi	a0, a0, 7
 	ret
 func000000000000000c:                   # @func000000000000000c
-	mv	a1, a0
-	li	a0, 4
-	beqz	a1, .LBB4_2
+	beqz	a0, .LBB4_2
 	li	a0, 1
-.LBB4_2:                                # %entry
+	ret
+.LBB4_2:
+	li	a0, 4
 	ret

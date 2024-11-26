@@ -14,20 +14,26 @@ func0000000000000002:                   # @func0000000000000002
 	or	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
-	srliw	a2, a1, 16
-	li	a1, 224
-	beqz	a2, .LBB2_2
+	srliw	a1, a1, 16
+	beqz	a1, .LBB2_2
 	li	a1, 128
-.LBB2_2:                                # %entry
+	andi	a0, a0, 63
+	or	a0, a0, a1
+	ret
+.LBB2_2:
+	li	a1, 224
 	andi	a0, a0, 63
 	or	a0, a0, a1
 	ret
 func0000000000000009:                   # @func0000000000000009
-	srliw	a2, a1, 11
-	li	a1, 192
-	beqz	a2, .LBB3_2
+	srliw	a1, a1, 11
+	beqz	a1, .LBB3_2
 	li	a1, 128
-.LBB3_2:                                # %entry
+	andi	a0, a0, 63
+	or	a0, a0, a1
+	ret
+.LBB3_2:
+	li	a1, 192
 	andi	a0, a0, 63
 	or	a0, a0, a1
 	ret

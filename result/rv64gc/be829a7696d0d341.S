@@ -1,9 +1,12 @@
 func000000000000001a:                   # @func000000000000001a
-	li	a2, 16
 	beqz	a1, .LBB0_2
-	li	a2, 24
-.LBB0_2:                                # %entry
-	add	a0, a0, a2
+	li	a1, 24
+	add	a0, a0, a1
+	addi	a0, a0, 80
+	ret
+.LBB0_2:
+	li	a1, 16
+	add	a0, a0, a1
 	addi	a0, a0, 80
 	ret
 func000000000000008a:                   # @func000000000000008a

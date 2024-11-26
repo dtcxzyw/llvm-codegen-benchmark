@@ -1,7 +1,6 @@
 func000000000000003f:                   # @func000000000000003f
-	andi	a2, a0, 1
-	li	a0, 1
-	bnez	a2, .LBB0_2
+	andi	a0, a0, 1
+	bnez	a0, .LBB0_2
 	srliw	a0, a1, 1
 	lui	a2, 349525
 	or	a0, a0, a1
@@ -37,5 +36,7 @@ func000000000000003f:                   # @func000000000000003f
 	subw	a1, a1, a0
 	slli	a0, a1, 48
 	srli	a0, a0, 48
-.LBB0_2:                                # %entry
+	ret
+.LBB0_2:
+	li	a0, 1
 	ret

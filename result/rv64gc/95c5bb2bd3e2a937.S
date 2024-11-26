@@ -9,12 +9,17 @@ func0000000000000011:                   # @func0000000000000011
 	addi	a0, a0, 2
 	ret
 func00000000000000c1:                   # @func00000000000000c1
+	sext.w	a1, a1
 	sext.w	a0, a0
-	sext.w	a2, a1
-	li	a1, 16
-	beqz	a2, .LBB1_2
+	beqz	a1, .LBB1_2
 	li	a1, 48
-.LBB1_2:                                # %entry
+	addi	a0, a0, -6
+	snez	a0, a0
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	ret
+.LBB1_2:
+	li	a1, 16
 	addi	a0, a0, -6
 	snez	a0, a0
 	addi	a0, a0, -1
@@ -32,21 +37,21 @@ func0000000000000018:                   # @func0000000000000018
 	addi	a0, a0, 10
 	ret
 func000000000000001c:                   # @func000000000000001c
-	sext.w	a2, a0
-	sext.w	a1, a1
+	sext.w	a2, a1
 	li	a3, 224
-	li	a0, 15
-	bne	a1, a3, .LBB3_3
-	li	a1, 192
-	beq	a2, a1, .LBB3_4
-.LBB3_2:                                # %entry
-	ret
-.LBB3_3:                                # %entry
+	sext.w	a1, a0
+	beq	a2, a3, .LBB3_2
 	li	a0, 7
-	li	a1, 192
-	bne	a2, a1, .LBB3_2
-.LBB3_4:                                # %entry
+	li	a2, 192
+	beq	a1, a2, .LBB3_3
+	j	.LBB3_4
+.LBB3_2:
+	li	a0, 15
+	li	a2, 192
+	bne	a1, a2, .LBB3_4
+.LBB3_3:                                # %entry
 	li	a0, 31
+.LBB3_4:                                # %entry
 	ret
 func0000000000000061:                   # @func0000000000000061
 	sext.w	a0, a0
@@ -59,13 +64,17 @@ func0000000000000061:                   # @func0000000000000061
 	addi	a0, a0, 361
 	ret
 func0000000000000084:                   # @func0000000000000084
+	sext.w	a1, a1
+	li	a2, 28
 	sext.w	a0, a0
-	sext.w	a2, a1
-	li	a3, 28
-	li	a1, -13
-	bltu	a3, a2, .LBB5_2
+	bltu	a2, a1, .LBB5_2
 	li	a1, -20
-.LBB5_2:                                # %entry
+	sltiu	a0, a0, 10
+	neg	a0, a0
+	and	a0, a0, a1
+	ret
+.LBB5_2:
+	li	a1, -13
 	sltiu	a0, a0, 10
 	neg	a0, a0
 	and	a0, a0, a1
@@ -81,12 +90,16 @@ func0000000000000014:                   # @func0000000000000014
 .LBB6_2:                                # %entry
 	ret
 func00000000000000a1:                   # @func00000000000000a1
+	sext.w	a1, a1
 	sext.w	a0, a0
-	sext.w	a2, a1
-	li	a1, -100
-	bgtz	a2, .LBB7_2
+	bgtz	a1, .LBB7_2
 	li	a1, 100
-.LBB7_2:                                # %entry
+	snez	a0, a0
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	ret
+.LBB7_2:
+	li	a1, -100
 	snez	a0, a0
 	addi	a0, a0, -1
 	and	a0, a0, a1

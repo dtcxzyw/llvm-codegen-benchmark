@@ -39,7 +39,7 @@ func000000000000001e:                   # @func000000000000001e
 	ret
 func000000000000000e:                   # @func000000000000000e
 	sext.w	a2, a1
-	beqz	a2, .LBB1_4
+	beqz	a2, .LBB1_3
 	srliw	a2, a1, 1
 	lui	a3, 349525
 	or	a1, a1, a2
@@ -71,25 +71,24 @@ func000000000000000e:                   # @func000000000000000e
 	addi	a2, a2, 257
 	mul	a1, a1, a2
 	srliw	a1, a1, 24
-	andi	a2, a0, 1
-	li	a0, 64
-	bnez	a2, .LBB1_3
+	andi	a0, a0, 1
+	bnez	a0, .LBB1_4
 .LBB1_2:                                # %cond.end
 	li	a0, 33
 	subw	a0, a0, a1
 	li	a1, 1
 	sllw	a0, a1, a0
-.LBB1_3:                                # %cond.end
 	ret
-.LBB1_4:
+.LBB1_3:
 	li	a1, 32
-	andi	a2, a0, 1
+	andi	a0, a0, 1
+	beqz	a0, .LBB1_2
+.LBB1_4:
 	li	a0, 64
-	beqz	a2, .LBB1_2
-	j	.LBB1_3
+	ret
 func000000000000002e:                   # @func000000000000002e
 	sext.w	a2, a1
-	beqz	a2, .LBB2_4
+	beqz	a2, .LBB2_3
 	srliw	a2, a1, 1
 	lui	a3, 349525
 	or	a1, a1, a2
@@ -121,19 +120,18 @@ func000000000000002e:                   # @func000000000000002e
 	addi	a2, a2, 257
 	mul	a1, a1, a2
 	srliw	a1, a1, 24
-	andi	a2, a0, 1
-	li	a0, 64
-	bnez	a2, .LBB2_3
+	andi	a0, a0, 1
+	bnez	a0, .LBB2_4
 .LBB2_2:                                # %cond.end
 	li	a0, 33
 	subw	a0, a0, a1
 	li	a1, 1
 	sllw	a0, a1, a0
-.LBB2_3:                                # %cond.end
 	ret
-.LBB2_4:
+.LBB2_3:
 	li	a1, 32
-	andi	a2, a0, 1
+	andi	a0, a0, 1
+	beqz	a0, .LBB2_2
+.LBB2_4:
 	li	a0, 64
-	beqz	a2, .LBB2_2
-	j	.LBB2_3
+	ret

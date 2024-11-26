@@ -15,12 +15,15 @@ func00000000000000a5:                   # @func00000000000000a5
 	addw	a0, a0, a1
 	ret
 func0000000000000010:                   # @func0000000000000010
-	sext.w	a3, a2
-	li	a4, 1
-	li	a2, 98
-	beq	a3, a4, .LBB2_2
+	sext.w	a2, a2
+	li	a3, 1
+	beq	a2, a3, .LBB2_2
 	li	a2, 88
-.LBB2_2:                                # %entry
+	mul	a1, a2, a1
+	addw	a0, a0, a1
+	ret
+.LBB2_2:
+	li	a2, 98
 	mul	a1, a2, a1
 	addw	a0, a0, a1
 	ret
@@ -40,12 +43,15 @@ func0000000000000014:                   # @func0000000000000014
 	addw	a0, a0, a1
 	ret
 func000000000000001c:                   # @func000000000000001c
-	sext.w	a3, a2
-	li	a4, 2
-	li	a2, 6
-	beq	a3, a4, .LBB5_2
+	sext.w	a2, a2
+	li	a3, 2
+	beq	a2, a3, .LBB5_2
 	li	a2, 3
-.LBB5_2:                                # %entry
+	mul	a1, a2, a1
+	addw	a0, a0, a1
+	ret
+.LBB5_2:
+	li	a2, 6
 	mul	a1, a2, a1
 	addw	a0, a0, a1
 	ret

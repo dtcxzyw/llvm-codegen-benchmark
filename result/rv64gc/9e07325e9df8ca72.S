@@ -8,12 +8,13 @@ func0000000000000003:                   # @func0000000000000003
 	addiw	a0, a0, 65
 	ret
 func0000000000000011:                   # @func0000000000000011
-	sext.w	a1, a0
-	li	a2, 769
-	li	a0, 49
-	bltu	a2, a1, .LBB1_2
+	sext.w	a0, a0
+	li	a1, 769
+	bltu	a1, a0, .LBB1_2
 	li	a0, 33
-.LBB1_2:                                # %entry
+	ret
+.LBB1_2:
+	li	a0, 49
 	ret
 func000000000000000d:                   # @func000000000000000d
 	sraiw	a0, a0, 31

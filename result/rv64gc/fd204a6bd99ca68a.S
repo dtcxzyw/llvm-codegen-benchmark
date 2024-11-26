@@ -18,10 +18,11 @@ func0000000000000016:                   # @func0000000000000016
 	andi	a0, a0, 6
 	ret
 func0000000000000001:                   # @func0000000000000001
-	sext.w	a3, a0
+	sext.w	a0, a0
 	subw	a1, a1, a2
-	li	a0, 1
-	beq	a1, a3, .LBB3_2
+	beq	a1, a0, .LBB3_2
 	li	a0, 4
-.LBB3_2:                                # %entry
+	ret
+.LBB3_2:
+	li	a0, 1
 	ret

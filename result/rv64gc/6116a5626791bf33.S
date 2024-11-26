@@ -9,21 +9,19 @@ func000000000000000c:                   # @func000000000000000c
 	snez	a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
+	andi	a2, a2, 1
 	andi	a0, a0, 1
-	andi	a3, a2, 1
-	li	a2, 7
-	beqz	a3, .LBB1_3
-	beqz	a0, .LBB1_4
-.LBB1_2:                                # %entry
-	sext.w	a1, a1
-	addi	a1, a1, -7
-	seqz	a0, a1
-	ret
-.LBB1_3:                                # %entry
+	bnez	a2, .LBB1_2
 	mv	a2, a1
-	bnez	a0, .LBB1_2
+	beqz	a0, .LBB1_3
+	j	.LBB1_4
+.LBB1_2:
+	li	a2, 7
+	bnez	a0, .LBB1_4
+.LBB1_3:                                # %entry
+	mv	a1, a2
 .LBB1_4:                                # %entry
-	sext.w	a1, a2
+	sext.w	a1, a1
 	addi	a1, a1, -7
 	seqz	a0, a1
 	ret

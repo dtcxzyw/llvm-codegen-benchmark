@@ -43,32 +43,44 @@ func000000000000009e:                   # @func000000000000009e
 	add	a0, a0, a1
 	ret
 func000000000000003c:                   # @func000000000000003c
-	sext.w	a3, a2
-	li	a2, 14
-	beqz	a3, .LBB5_2
+	sext.w	a2, a2
+	beqz	a2, .LBB5_2
 	li	a2, 16
-.LBB5_2:                                # %entry
+	addw	a1, a1, a2
+	add	a0, a0, a1
+	ret
+.LBB5_2:
+	li	a2, 14
 	addw	a1, a1, a2
 	add	a0, a0, a1
 	ret
 func000000000000003e:                   # @func000000000000003e
-	sext.w	a3, a2
-	li	a4, 1
-	li	a2, 54
-	beq	a3, a4, .LBB6_2
+	sext.w	a2, a2
+	li	a3, 1
+	beq	a2, a3, .LBB6_2
 	li	a2, 2
-.LBB6_2:                                # %entry
+	addw	a1, a1, a2
+	slli	a1, a1, 2
+	add	a0, a0, a1
+	ret
+.LBB6_2:
+	li	a2, 54
 	addw	a1, a1, a2
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	ret
 func0000000000000102:                   # @func0000000000000102
-	sext.w	a3, a2
-	li	a4, 253
-	li	a2, -4
-	bltu	a4, a3, .LBB7_2
+	sext.w	a2, a2
+	li	a3, 253
+	bltu	a3, a2, .LBB7_2
 	li	a2, -2
-.LBB7_2:                                # %entry
+	add	a1, a1, a2
+	slli	a1, a1, 32
+	srli	a1, a1, 32
+	add	a0, a0, a1
+	ret
+.LBB7_2:
+	li	a2, -4
 	add	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 32

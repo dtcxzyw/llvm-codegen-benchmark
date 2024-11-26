@@ -1,34 +1,36 @@
 func0000000000000074:                   # @func0000000000000074
+	mv	a2, a0
 	slli	a1, a1, 8
-	lui	a2, 8
-	or	a0, a0, a1
-	sext.w	a1, a0
-	addiw	a2, a2, 1132
-	li	a0, 1131
-	bltu	a1, a2, .LBB0_2
 	lui	a0, 8
+	or	a1, a1, a2
+	sext.w	a1, a1
+	addiw	a2, a0, 1132
+	bgeu	a1, a2, .LBB0_2
+	li	a0, 1131
 .LBB0_2:                                # %entry
 	ret
 func0000000000000061:                   # @func0000000000000061
 	slli	a1, a1, 8
-	lui	a2, 8
 	or	a0, a0, a1
-	sext.w	a1, a0
-	addiw	a2, a2, 109
-	li	a0, 13
-	beq	a1, a2, .LBB1_2
+	lui	a1, 8
+	sext.w	a0, a0
+	addiw	a1, a1, 109
+	beq	a0, a1, .LBB1_2
 	li	a0, 4
-.LBB1_2:                                # %entry
+	ret
+.LBB1_2:
+	li	a0, 13
 	ret
 func000000000000001a:                   # @func000000000000001a
 	slli	a1, a1, 8
 	or	a0, a0, a1
-	sext.w	a1, a0
-	li	a2, 1239
-	li	a0, 1131
-	blt	a2, a1, .LBB2_2
+	sext.w	a0, a0
+	li	a1, 1239
+	blt	a1, a0, .LBB2_2
 	li	a0, 107
-.LBB2_2:                                # %entry
+	ret
+.LBB2_2:
+	li	a0, 1131
 	ret
 func0000000000000071:                   # @func0000000000000071
 	slli	a1, a1, 8

@@ -1,26 +1,32 @@
 func00000000000000a4:                   # @func00000000000000a4
-	srli	a2, a0, 6
-	li	a3, 59
-	li	a0, 640
-	bltu	a2, a3, .LBB0_2
+	srli	a0, a0, 6
+	li	a2, 59
+	bltu	a0, a2, .LBB0_2
 	li	a0, 320
-.LBB0_2:                                # %entry
+	add	a0, a0, a1
+	ret
+.LBB0_2:
+	li	a0, 640
 	add	a0, a0, a1
 	ret
 func00000000000000a1:                   # @func00000000000000a1
-	li	a2, 464
 	beqz	a0, .LBB1_2
-	li	a2, 456
-.LBB1_2:                                # %entry
-	add	a0, a1, a2
+	li	a0, 456
+	add	a0, a0, a1
+	ret
+.LBB1_2:
+	li	a0, 464
+	add	a0, a0, a1
 	ret
 func00000000000000a8:                   # @func00000000000000a8
-	li	a3, 2
-	li	a2, 48
-	bltu	a3, a0, .LBB2_2
-	li	a2, 56
-.LBB2_2:                                # %entry
-	add	a0, a1, a2
+	li	a2, 2
+	bltu	a2, a0, .LBB2_2
+	li	a0, 56
+	add	a0, a0, a1
+	ret
+.LBB2_2:
+	li	a0, 48
+	add	a0, a0, a1
 	ret
 func00000000000000f1:                   # @func00000000000000f1
 	lui	a2, 5
@@ -33,27 +39,33 @@ func00000000000000f1:                   # @func00000000000000f1
 	add	a0, a0, a1
 	ret
 func00000000000000b1:                   # @func00000000000000b1
-	li	a2, 48
 	beqz	a0, .LBB4_2
-	li	a2, 96
-.LBB4_2:                                # %entry
-	add	a0, a1, a2
+	li	a0, 96
+	add	a0, a0, a1
+	ret
+.LBB4_2:
+	li	a0, 48
+	add	a0, a0, a1
 	ret
 func00000000000000f4:                   # @func00000000000000f4
-	li	a3, 8
-	li	a2, 88
-	bltu	a0, a3, .LBB5_2
-	li	a2, 32
-.LBB5_2:                                # %entry
-	add	a0, a1, a2
+	li	a2, 8
+	bltu	a0, a2, .LBB5_2
+	li	a0, 32
+	add	a0, a0, a1
+	ret
+.LBB5_2:
+	li	a0, 88
+	add	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
-	li	a3, 7
-	li	a2, 4
-	bltu	a3, a0, .LBB6_2
-	li	a2, 12
-.LBB6_2:                                # %entry
-	add	a0, a1, a2
+	li	a2, 7
+	bltu	a2, a0, .LBB6_2
+	li	a0, 12
+	add	a0, a0, a1
+	ret
+.LBB6_2:
+	li	a0, 4
+	add	a0, a0, a1
 	ret
 func00000000000000a6:                   # @func00000000000000a6
 	slti	a0, a0, 2
@@ -61,31 +73,39 @@ func00000000000000a6:                   # @func00000000000000a6
 	addi	a0, a0, 2
 	ret
 func0000000000000001:                   # @func0000000000000001
-	li	a2, 32
 	beqz	a0, .LBB8_2
-	li	a2, 64
-.LBB8_2:                                # %entry
-	add	a0, a1, a2
+	li	a0, 64
+	add	a0, a0, a1
+	ret
+.LBB8_2:
+	li	a0, 32
+	add	a0, a0, a1
 	ret
 func0000000000000021:                   # @func0000000000000021
-	li	a2, 320
 	beqz	a0, .LBB9_2
-	li	a2, 1024
-.LBB9_2:                                # %entry
-	add	a0, a1, a2
+	li	a0, 1024
+	add	a0, a0, a1
+	ret
+.LBB9_2:
+	li	a0, 320
+	add	a0, a0, a1
 	ret
 func00000000000000e1:                   # @func00000000000000e1
-	li	a2, 240
 	beqz	a0, .LBB10_2
-	li	a2, 232
-.LBB10_2:                               # %entry
-	add	a0, a1, a2
+	li	a0, 232
+	add	a0, a0, a1
+	ret
+.LBB10_2:
+	li	a0, 240
+	add	a0, a0, a1
 	ret
 func00000000000000aa:                   # @func00000000000000aa
-	li	a3, 31
-	li	a2, 88
-	blt	a3, a0, .LBB11_2
-	li	a2, 48
-.LBB11_2:                               # %entry
-	add	a0, a1, a2
+	li	a2, 31
+	blt	a2, a0, .LBB11_2
+	li	a0, 48
+	add	a0, a0, a1
+	ret
+.LBB11_2:
+	li	a0, 88
+	add	a0, a0, a1
 	ret

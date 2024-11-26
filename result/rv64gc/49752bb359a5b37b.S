@@ -23,9 +23,11 @@ func0000000000000010:                   # @func0000000000000010
 	sll	a0, a0, a2
 	ret
 func0000000000000033:                   # @func0000000000000033
-	li	a2, 6
 	beqz	a1, .LBB4_2
-	li	a2, 58
-.LBB4_2:                                # %entry
-	sll	a0, a0, a2
+	li	a1, 58
+	sll	a0, a0, a1
+	ret
+.LBB4_2:
+	li	a1, 6
+	sll	a0, a0, a1
 	ret

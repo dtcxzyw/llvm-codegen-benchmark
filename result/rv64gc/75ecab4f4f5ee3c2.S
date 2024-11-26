@@ -9,11 +9,12 @@ func0000000000000014:                   # @func0000000000000014
 	lui	a2, 48
 	and	a1, a1, a2
 	add	a0, a0, a1
-	srliw	a1, a0, 20
-	li	a0, 4
-	beqz	a1, .LBB1_2
+	srliw	a0, a0, 20
+	beqz	a0, .LBB1_2
 	li	a0, -4
-.LBB1_2:                                # %entry
+	ret
+.LBB1_2:
+	li	a0, 4
 	ret
 func0000000000000038:                   # @func0000000000000038
 	andi	a1, a1, 1023

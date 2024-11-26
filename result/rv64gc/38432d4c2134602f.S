@@ -5,12 +5,13 @@ func0000000000000014:                   # @func0000000000000014
 	addiw	a0, a0, -1365
 	slli	a2, a0, 32
 	add	a0, a0, a2
-	mul	a1, a1, a0
-	li	a2, 4
-	li	a0, -72
-	bltu	a1, a2, .LBB0_2
+	mul	a0, a1, a0
+	li	a1, 4
+	bltu	a0, a1, .LBB0_2
 	li	a0, -48
-.LBB0_2:                                # %entry
+	ret
+.LBB0_2:
+	li	a0, -72
 	ret
 .LCPI1_0:
 	.quad	-8198552921648689607            # 0x8e38e38e38e38e39

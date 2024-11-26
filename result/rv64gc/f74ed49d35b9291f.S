@@ -16,12 +16,12 @@ func0000000000000008:                   # @func0000000000000008
 	ori	a0, a0, 1
 	ret
 func0000000000000001:                   # @func0000000000000001
-	mv	a3, a0
 	add	a1, a1, a2
-	li	a0, 49
-	beq	a1, a3, .LBB3_2
+	beq	a1, a0, .LBB3_2
 	li	a0, 17
-.LBB3_2:                                # %entry
+	ret
+.LBB3_2:
+	li	a0, 49
 	ret
 func0000000000000011:                   # @func0000000000000011
 	add	a1, a1, a2

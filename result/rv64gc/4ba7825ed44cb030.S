@@ -31,22 +31,26 @@ func00000000000000c1:                   # @func00000000000000c1
 	seqz	a0, a0
 	ret
 func00000000000000c8:                   # @func00000000000000c8
+	slli	a1, a1, 44
 	sext.w	a0, a0
-	slli	a2, a1, 44
-	li	a1, 255
-	bgez	a2, .LBB4_2
+	bgez	a1, .LBB4_2
 	lui	a1, 272
 	addiw	a1, a1, -1
-.LBB4_2:                                # %entry
+	sltu	a0, a1, a0
+	ret
+.LBB4_2:
+	li	a1, 255
 	sltu	a0, a1, a0
 	ret
 func0000000000000016:                   # @func0000000000000016
+	andi	a1, a1, 2
 	sext.w	a0, a0
-	andi	a2, a1, 2
-	li	a1, 16
-	beqz	a2, .LBB5_2
+	beqz	a1, .LBB5_2
 	li	a1, 20
-.LBB5_2:                                # %entry
+	slt	a0, a0, a1
+	ret
+.LBB5_2:
+	li	a1, 16
 	slt	a0, a0, a1
 	ret
 func000000000000001c:                   # @func000000000000001c
@@ -88,11 +92,13 @@ func0000000000000015:                   # @func0000000000000015
 	xori	a0, a0, 1
 	ret
 func000000000000001a:                   # @func000000000000001a
+	andi	a1, a1, 1
 	sext.w	a0, a0
-	andi	a2, a1, 1
-	li	a1, 16
-	beqz	a2, .LBB9_2
+	beqz	a1, .LBB9_2
 	li	a1, 256
-.LBB9_2:                                # %entry
+	slt	a0, a1, a0
+	ret
+.LBB9_2:
+	li	a1, 16
 	slt	a0, a1, a0
 	ret

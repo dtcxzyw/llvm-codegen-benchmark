@@ -1,9 +1,13 @@
 func0000000000000004:                   # @func0000000000000004
-	andi	a2, a1, 1
-	li	a1, -87
-	bnez	a2, .LBB0_2
+	andi	a1, a1, 1
+	bnez	a1, .LBB0_2
 	li	a1, -48
-.LBB0_2:                                # %entry
+	add	a0, a0, a1
+	andi	a0, a0, 255
+	sltiu	a0, a0, 2
+	ret
+.LBB0_2:
+	li	a1, -87
 	add	a0, a0, a1
 	andi	a0, a0, 255
 	sltiu	a0, a0, 2
@@ -38,11 +42,16 @@ func000000000000000a:                   # @func000000000000000a
 	xori	a0, a0, 1
 	ret
 func0000000000000008:                   # @func0000000000000008
-	andi	a2, a1, 1
-	li	a1, -49
-	bnez	a2, .LBB4_2
+	andi	a1, a1, 1
+	bnez	a1, .LBB4_2
 	li	a1, -67
-.LBB4_2:                                # %entry
+	add	a0, a0, a1
+	andi	a0, a0, 255
+	sltiu	a0, a0, 94
+	xori	a0, a0, 1
+	ret
+.LBB4_2:
+	li	a1, -49
 	add	a0, a0, a1
 	andi	a0, a0, 255
 	sltiu	a0, a0, 94

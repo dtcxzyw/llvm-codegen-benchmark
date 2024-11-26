@@ -13,23 +13,29 @@ func0000000000000004:                   # @func0000000000000004
 	or	a0, a0, a2
 	ret
 func000000000000002b:                   # @func000000000000002b
-	sext.w	a3, a2
-	li	a4, 7
-	li	a2, 136
-	blt	a4, a3, .LBB2_2
+	sext.w	a2, a2
+	li	a3, 7
+	blt	a3, a2, .LBB2_2
 	li	a2, 8
-.LBB2_2:                                # %entry
+	or	a0, a0, a1
+	or	a0, a0, a2
+	ret
+.LBB2_2:
+	li	a2, 136
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
 func0000000000000023:                   # @func0000000000000023
-	sext.w	a3, a2
-	lui	a2, 32768
-	addiw	a4, a2, 15
-	li	a2, 264
-	bltu	a4, a3, .LBB3_2
+	sext.w	a2, a2
+	lui	a3, 32768
+	addiw	a3, a3, 15
+	bltu	a3, a2, .LBB3_2
 	li	a2, 8
-.LBB3_2:                                # %entry
+	or	a0, a0, a1
+	or	a0, a0, a2
+	ret
+.LBB3_2:
+	li	a2, 264
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

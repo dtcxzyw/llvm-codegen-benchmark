@@ -7,21 +7,25 @@ func0000000000000003:                   # @func0000000000000003
 	or	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
-	sext.w	a3, a1
+	sext.w	a1, a1
 	sext.w	a2, a2
-	li	a1, 128
-	bltu	a2, a3, .LBB1_2
+	bltu	a2, a1, .LBB1_2
 	li	a1, 64
-.LBB1_2:                                # %entry
+	or	a0, a0, a1
+	ret
+.LBB1_2:
+	li	a1, 128
 	or	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c
 	sext.w	a2, a2
-	sext.w	a3, a1
-	li	a1, 16
-	blt	a3, a2, .LBB2_2
+	sext.w	a1, a1
+	blt	a1, a2, .LBB2_2
 	li	a1, 32
-.LBB2_2:                                # %entry
+	or	a0, a0, a1
+	ret
+.LBB2_2:
+	li	a1, 16
 	or	a0, a0, a1
 	ret
 func000000000000000d:                   # @func000000000000000d

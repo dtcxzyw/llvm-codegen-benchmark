@@ -4,11 +4,12 @@ func00000000000000c1:                   # @func00000000000000c1
 	seqz	a1, a1
 	addi	a0, a0, -1
 	snez	a0, a0
-	and	a1, a1, a0
-	li	a0, 24
-	bnez	a1, .LBB0_2
+	and	a0, a0, a1
+	bnez	a0, .LBB0_2
 	li	a0, 32
-.LBB0_2:                                # %entry
+	ret
+.LBB0_2:
+	li	a0, 24
 	ret
 func000000000000001c:                   # @func000000000000001c
 	sext.w	a0, a0

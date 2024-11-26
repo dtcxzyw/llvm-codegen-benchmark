@@ -1,11 +1,13 @@
 func0000000000000008:                   # @func0000000000000008
+	andi	a1, a1, 1
 	sext.w	a0, a0
-	andi	a3, a1, 1
-	li	a1, 19
-	bnez	a3, .LBB0_2
-	addiw	a1, a2, 19
-.LBB0_2:                                # %entry
-	sltu	a0, a0, a1
+	bnez	a1, .LBB0_2
+	addiw	a2, a2, 19
+	sltu	a0, a0, a2
+	ret
+.LBB0_2:
+	li	a2, 19
+	sltu	a0, a0, a2
 	ret
 func0000000000000016:                   # @func0000000000000016
 	sext.w	a0, a0
@@ -16,12 +18,15 @@ func0000000000000016:                   # @func0000000000000016
 	slt	a0, a1, a0
 	ret
 func0000000000000011:                   # @func0000000000000011
+	andi	a1, a1, 1
 	sext.w	a0, a0
-	andi	a3, a1, 1
-	li	a1, 1
-	bnez	a3, .LBB2_2
-	addiw	a1, a2, 1
-.LBB2_2:                                # %entry
-	xor	a0, a0, a1
+	bnez	a1, .LBB2_2
+	addiw	a2, a2, 1
+	xor	a0, a0, a2
+	seqz	a0, a0
+	ret
+.LBB2_2:
+	li	a2, 1
+	xor	a0, a0, a2
 	seqz	a0, a0
 	ret

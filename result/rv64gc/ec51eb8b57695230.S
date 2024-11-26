@@ -16,20 +16,22 @@ func0000000000000004:                   # @func0000000000000004
 	addi	a0, a0, 3
 	ret
 func000000000000000c:                   # @func000000000000000c
-	sext.w	a1, a0
-	li	a0, 32
-	beqz	a1, .LBB3_2
+	sext.w	a0, a0
+	beqz	a0, .LBB3_2
 	li	a0, 64
-.LBB3_2:                                # %entry
+	ret
+.LBB3_2:
+	li	a0, 32
 	ret
 func0000000000000008:                   # @func0000000000000008
-	sext.w	a1, a0
-	lui	a0, 25
-	addiw	a2, a0, 1631
-	li	a0, 47
-	bltu	a2, a1, .LBB4_2
+	sext.w	a0, a0
+	lui	a1, 25
+	addiw	a1, a1, 1631
+	bltu	a1, a0, .LBB4_2
 	li	a0, 24
-.LBB4_2:                                # %entry
+	ret
+.LBB4_2:
+	li	a0, 47
 	ret
 func0000000000000006:                   # @func0000000000000006
 	srli	a0, a0, 28

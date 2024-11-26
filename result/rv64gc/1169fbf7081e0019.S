@@ -17,20 +17,22 @@ func000000000000000a:                   # @func000000000000000a
 	or	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004
-	andi	a1, a0, 255
-	li	a2, 3
-	li	a0, 4
-	bltu	a1, a2, .LBB3_2
+	andi	a0, a0, 255
+	li	a1, 3
+	bltu	a0, a1, .LBB3_2
 	li	a0, 18
-.LBB3_2:                                # %entry
+	ret
+.LBB3_2:
+	li	a0, 4
 	ret
 func0000000000000006:                   # @func0000000000000006
-	slli	a1, a0, 56
-	li	a0, 1
-	bltz	a1, .LBB4_2
+	slli	a0, a0, 56
+	bltz	a0, .LBB4_2
 	lui	a0, 8
 	addiw	a0, a0, -1
-.LBB4_2:                                # %entry
+	ret
+.LBB4_2:
+	li	a0, 1
 	ret
 func000000000000000c:                   # @func000000000000000c
 	andi	a0, a0, 255

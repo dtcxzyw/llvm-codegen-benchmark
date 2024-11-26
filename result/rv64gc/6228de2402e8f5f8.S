@@ -1,10 +1,16 @@
 func0000000000000008:                   # @func0000000000000008
-	sext.w	a3, a2
-	li	a2, 2
-	beqz	a3, .LBB0_2
+	sext.w	a2, a2
+	beqz	a2, .LBB0_2
 	lui	a2, 135168
 	addiw	a2, a2, -2046
-.LBB0_2:                                # %entry
+	or	a0, a0, a1
+	lui	a1, 786432
+	or	a0, a0, a2
+	addiw	a1, a1, 1024
+	or	a0, a0, a1
+	ret
+.LBB0_2:
+	li	a2, 2
 	or	a0, a0, a1
 	lui	a1, 786432
 	or	a0, a0, a2

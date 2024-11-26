@@ -23,11 +23,14 @@ func000000000000000f:                   # @func000000000000000f
 	or	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c
-	sext.w	a2, a1
-	li	a1, 256
-	beqz	a2, .LBB3_2
+	sext.w	a1, a1
+	beqz	a1, .LBB3_2
 	li	a1, 512
-.LBB3_2:                                # %entry
+	or	a0, a0, a1
+	slliw	a0, a0, 2
+	ret
+.LBB3_2:
+	li	a1, 256
 	or	a0, a0, a1
 	slliw	a0, a0, 2
 	ret

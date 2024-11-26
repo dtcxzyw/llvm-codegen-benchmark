@@ -26,10 +26,14 @@ func000000000000000c:                   # @func000000000000000c
 func0000000000000038:                   # @func0000000000000038
 	andi	a3, a1, 1
 	slliw	a1, a2, 6
-	li	a2, 3
 	bnez	a3, .LBB3_2
 	li	a2, 1
-.LBB3_2:                                # %entry
+	or	a1, a1, a2
+	slliw	a0, a0, 16
+	or	a0, a0, a1
+	ret
+.LBB3_2:
+	li	a2, 3
 	or	a1, a1, a2
 	slliw	a0, a0, 16
 	or	a0, a0, a1

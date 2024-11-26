@@ -22,10 +22,10 @@ func000000000000000a:                   # @func000000000000000a
 	ori	a0, a0, 1
 	ret
 func0000000000000008:                   # @func0000000000000008
-	mv	a1, a0
-	li	a2, 8
-	li	a0, 80
-	bltu	a2, a1, .LBB5_2
+	li	a1, 8
+	bltu	a1, a0, .LBB5_2
 	li	a0, 160
-.LBB5_2:                                # %entry
+	ret
+.LBB5_2:
+	li	a0, 80
 	ret

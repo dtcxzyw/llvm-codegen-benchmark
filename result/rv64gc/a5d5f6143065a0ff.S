@@ -27,11 +27,12 @@ func0000000000000008:                   # @func0000000000000008
 func0000000000000006:                   # @func0000000000000006
 	sext.w	a1, a1
 	slti	a1, a1, 300
-	and	a1, a1, a0
-	li	a0, 344
-	bnez	a1, .LBB3_2
+	and	a0, a0, a1
+	bnez	a0, .LBB3_2
 	li	a0, 352
-.LBB3_2:                                # %entry
+	ret
+.LBB3_2:
+	li	a0, 344
 	ret
 func000000000000000a:                   # @func000000000000000a
 	sext.w	a1, a1

@@ -7,19 +7,19 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func0000000000000001:                   # @func0000000000000001
 	and	a1, a1, a2
-	andi	a2, a1, 1
-	li	a1, 64
-	bnez	a2, .LBB1_2
-	addiw	a1, a0, 1
-.LBB1_2:                                # %entry
-	mv	a0, a1
+	andi	a1, a1, 1
+	bnez	a1, .LBB1_2
+	addiw	a0, a0, 1
+	ret
+.LBB1_2:
+	li	a0, 64
 	ret
 func0000000000000003:                   # @func0000000000000003
 	and	a1, a1, a2
-	andi	a2, a1, 1
-	li	a1, 52
-	bnez	a2, .LBB2_2
-	addiw	a1, a0, 32
-.LBB2_2:                                # %entry
-	mv	a0, a1
+	andi	a1, a1, 1
+	bnez	a1, .LBB2_2
+	addiw	a0, a0, 32
+	ret
+.LBB2_2:
+	li	a0, 52
 	ret

@@ -1,9 +1,12 @@
 func0000000000000014:                   # @func0000000000000014
-	li	a2, 1792
 	beqz	a1, .LBB0_2
-	li	a2, 768
-.LBB0_2:                                # %entry
-	and	a0, a0, a2
+	li	a1, 768
+	and	a0, a0, a1
+	seqz	a0, a0
+	ret
+.LBB0_2:
+	li	a1, 1792
+	and	a0, a0, a1
 	seqz	a0, a0
 	ret
 func000000000000001c:                   # @func000000000000001c
@@ -31,21 +34,27 @@ func0000000000000011:                   # @func0000000000000011
 	seqz	a0, a0
 	ret
 func0000000000000044:                   # @func0000000000000044
-	li	a3, 513
-	li	a2, -8
-	bltu	a1, a3, .LBB3_2
-	li	a2, -64
-.LBB3_2:                                # %entry
-	and	a0, a0, a2
+	li	a2, 513
+	bltu	a1, a2, .LBB3_2
+	li	a1, -64
+	and	a0, a0, a1
+	sltiu	a0, a0, 513
+	ret
+.LBB3_2:
+	li	a1, -8
+	and	a0, a0, a1
 	sltiu	a0, a0, 513
 	ret
 func0000000000000081:                   # @func0000000000000081
-	li	a3, 2
-	li	a2, 16
-	bltu	a3, a1, .LBB4_2
-	li	a2, 32
-.LBB4_2:                                # %entry
-	and	a0, a0, a2
+	li	a2, 2
+	bltu	a2, a1, .LBB4_2
+	li	a1, 32
+	and	a0, a0, a1
+	seqz	a0, a0
+	ret
+.LBB4_2:
+	li	a1, 16
+	and	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000084:                   # @func0000000000000084

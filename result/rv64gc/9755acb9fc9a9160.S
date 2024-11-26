@@ -50,11 +50,12 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000005:                   # @func0000000000000005
 	fmv.w.x	fa5, zero
-	fle.s	a1, fa0, fa5
-	li	a0, 11
-	beqz	a1, .LBB7_2
+	fle.s	a0, fa0, fa5
+	beqz	a0, .LBB7_2
 	li	a0, 2
-.LBB7_2:                                # %entry
+	ret
+.LBB7_2:
+	li	a0, 11
 	ret
 func0000000000000003:                   # @func0000000000000003
 	fmv.w.x	fa5, zero
@@ -67,11 +68,12 @@ func0000000000000003:                   # @func0000000000000003
 func000000000000000d:                   # @func000000000000000d
 	lui	a0, %hi(.LCPI9_0)
 	flw	fa5, %lo(.LCPI9_0)(a0)
-	flt.s	a1, fa0, fa5
-	li	a0, 9
-	beqz	a1, .LBB9_2
+	flt.s	a0, fa0, fa5
+	beqz	a0, .LBB9_2
 	li	a0, 17
-.LBB9_2:                                # %entry
+	ret
+.LBB9_2:
+	li	a0, 9
 	ret
 func000000000000000e:                   # @func000000000000000e
 	feq.s	a0, fa0, fa0

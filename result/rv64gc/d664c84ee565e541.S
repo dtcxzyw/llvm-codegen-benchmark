@@ -10,20 +10,19 @@ func0000000000000003:                   # @func0000000000000003
 	or	a0, a0, a1
 	ret
 func0000000000000015:                   # @func0000000000000015
-	andi	a2, a0, 1
-	sext.w	a1, a1
+	sext.w	a2, a1
 	li	a3, 15
-	li	a0, 12
-	bge	a3, a1, .LBB1_3
+	andi	a1, a0, 1
+	blt	a3, a2, .LBB1_3
+	li	a0, 4
+	beqz	a1, .LBB1_4
+.LBB1_2:
 	li	a1, -16
-	beqz	a2, .LBB1_4
-.LBB1_2:                                # %entry
 	or	a0, a0, a1
 	ret
-.LBB1_3:                                # %entry
-	li	a0, 4
-	li	a1, -16
-	bnez	a2, .LBB1_2
+.LBB1_3:
+	li	a0, 12
+	bnez	a1, .LBB1_2
 .LBB1_4:                                # %entry
 	li	a1, -48
 	or	a0, a0, a1

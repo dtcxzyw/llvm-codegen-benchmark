@@ -7,12 +7,13 @@ func0000000000000004:                   # @func0000000000000004
 	li	a2, 26
 	srli	a1, a1, 35
 	mul	a1, a1, a2
-	subw	a1, a0, a1
-	li	a2, 22
-	li	a0, 4
-	bltu	a1, a2, .LBB0_2
+	subw	a0, a0, a1
+	li	a1, 22
+	bltu	a0, a1, .LBB0_2
 	li	a0, 6
-.LBB0_2:                                # %entry
+	ret
+.LBB0_2:
+	li	a0, 4
 	ret
 func0000000000000001:                   # @func0000000000000001
 	lui	a1, 796918

@@ -9,10 +9,10 @@ func0000000000000001:                   # @func0000000000000001
 	or	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000
-	mv	a2, a0
 	andi	a1, a1, 1
-	li	a0, 4
 	bnez	a1, .LBB1_2
-	andi	a0, a2, 4
-.LBB1_2:                                # %entry
+	andi	a0, a0, 4
+	ret
+.LBB1_2:
+	li	a0, 4
 	ret

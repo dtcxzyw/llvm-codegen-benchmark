@@ -19,12 +19,16 @@ func000000000000005a:                   # @func000000000000005a
 	ret
 func0000000000000051:                   # @func0000000000000051
 	slli	a1, a1, 48
-	srli	a2, a1, 48
-	li	a3, 1
-	li	a1, -4
-	beq	a2, a3, .LBB2_2
+	srli	a1, a1, 48
+	li	a2, 1
+	beq	a1, a2, .LBB2_2
 	li	a1, -16
-.LBB2_2:                                # %entry
+	addw	a0, a0, a1
+	addi	a0, a0, -1
+	seqz	a0, a0
+	ret
+.LBB2_2:
+	li	a1, -4
 	addw	a0, a0, a1
 	addi	a0, a0, -1
 	seqz	a0, a0

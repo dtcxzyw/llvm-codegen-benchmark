@@ -19,12 +19,13 @@ func0000000000000011:                   # @func0000000000000011
 	addi	a0, a0, 5
 	ret
 func0000000000000018:                   # @func0000000000000018
-	addiw	a1, a0, -176
-	li	a2, -128
-	li	a0, 128
-	bltu	a1, a2, .LBB3_2
+	addiw	a0, a0, -176
+	li	a1, -128
+	bltu	a0, a1, .LBB3_2
 	li	a0, 64
-.LBB3_2:                                # %entry
+	ret
+.LBB3_2:
+	li	a0, 128
 	ret
 func0000000000000031:                   # @func0000000000000031
 	sext.w	a0, a0
@@ -44,12 +45,13 @@ func0000000000000006:                   # @func0000000000000006
 	sub	a0, a1, a0
 	ret
 func0000000000000001:                   # @func0000000000000001
-	sext.w	a1, a0
-	li	a2, 3
-	li	a0, 18
-	beq	a1, a2, .LBB6_2
+	sext.w	a0, a0
+	li	a1, 3
+	beq	a0, a1, .LBB6_2
 	li	a0, 15
-.LBB6_2:                                # %entry
+	ret
+.LBB6_2:
+	li	a0, 18
 	ret
 func0000000000000008:                   # @func0000000000000008
 	lui	a1, 1048560
@@ -65,10 +67,11 @@ func000000000000000c:                   # @func000000000000000c
 	slli	a0, a0, 2
 	ret
 func000000000000000a:                   # @func000000000000000a
-	addiw	a1, a0, -1900
-	li	a2, 79
-	li	a0, -1980
-	blt	a2, a1, .LBB9_2
+	addiw	a0, a0, -1900
+	li	a1, 79
+	blt	a1, a0, .LBB9_2
 	li	a0, -1880
-.LBB9_2:                                # %entry
+	ret
+.LBB9_2:
+	li	a0, -1980
 	ret

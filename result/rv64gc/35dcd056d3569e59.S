@@ -40,11 +40,12 @@ func0000000000000000:                   # @func0000000000000000
 .LBB4_2:                                # %entry
 	ret
 func0000000000000037:                   # @func0000000000000037
-	andi	a2, a0, 1
-	li	a0, 128
-	bnez	a2, .LBB5_2
+	andi	a0, a0, 1
+	bnez	a0, .LBB5_2
 	addi	a1, a1, -1
 	li	a0, 1
 	sllw	a0, a0, a1
-.LBB5_2:                                # %entry
+	ret
+.LBB5_2:
+	li	a0, 128
 	ret

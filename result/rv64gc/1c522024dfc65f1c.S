@@ -6,12 +6,15 @@ func0000000000000045:                   # @func0000000000000045
 	addiw	a0, a0, -65
 	ret
 func0000000000000010:                   # @func0000000000000010
-	andi	a3, a2, 255
-	li	a4, 1
-	li	a2, 33
-	beq	a3, a4, .LBB1_2
+	andi	a2, a2, 255
+	li	a3, 1
+	beq	a2, a3, .LBB1_2
 	li	a2, 11
-.LBB1_2:                                # %entry
+	add	a0, a0, a1
+	addw	a0, a0, a2
+	ret
+.LBB1_2:
+	li	a2, 33
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret

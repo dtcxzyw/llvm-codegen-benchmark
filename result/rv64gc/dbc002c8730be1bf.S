@@ -14,12 +14,10 @@ func0000000000000081:                   # @func0000000000000081
 	sltiu	a1, a1, 2
 	addi	a2, a2, -4
 	snez	a2, a2
-	or	a2, a2, a1
-	li	a1, 2
-	beqz	a2, .LBB1_2
-	mv	a1, a0
+	or	a1, a1, a2
+	bnez	a1, .LBB1_2
+	li	a0, 2
 .LBB1_2:                                # %entry
-	mv	a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
 	sext.w	a2, a0
@@ -34,10 +32,8 @@ func00000000000000c1:                   # @func00000000000000c1
 	snez	a1, a1
 	addi	a2, a2, -320
 	seqz	a2, a2
-	and	a2, a2, a1
-	li	a1, 321
-	bnez	a2, .LBB3_2
-	mv	a1, a0
+	and	a1, a1, a2
+	beqz	a1, .LBB3_2
+	li	a0, 321
 .LBB3_2:                                # %entry
-	mv	a0, a1
 	ret

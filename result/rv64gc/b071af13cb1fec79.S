@@ -1,19 +1,18 @@
 func0000000000000023:                   # @func0000000000000023
 	sext.w	a1, a1
-	li	a3, 8
-	li	a2, 64
-	bne	a1, a3, .LBB0_3
-	li	a3, 16
-	beq	a1, a3, .LBB0_4
-.LBB0_2:                                # %entry
-	or	a0, a0, a2
-	ret
-.LBB0_3:                                # %entry
+	li	a2, 8
+	beq	a1, a2, .LBB0_2
 	li	a2, 2
 	li	a3, 16
-	bne	a1, a3, .LBB0_2
-.LBB0_4:                                # %entry
+	beq	a1, a3, .LBB0_3
+	j	.LBB0_4
+.LBB0_2:
+	li	a2, 64
+	li	a3, 16
+	bne	a1, a3, .LBB0_4
+.LBB0_3:                                # %entry
 	li	a2, 8
+.LBB0_4:                                # %entry
 	or	a0, a0, a2
 	ret
 func0000000000000022:                   # @func0000000000000022
@@ -29,10 +28,9 @@ func0000000000000022:                   # @func0000000000000022
 	ret
 func0000000000000103:                   # @func0000000000000103
 	sext.w	a1, a1
-	li	a3, 128
-	li	a2, 64
-	bltu	a1, a3, .LBB2_2
 	li	a2, 128
+	bgeu	a1, a2, .LBB2_2
+	li	a2, 64
 .LBB2_2:                                # %entry
 	seqz	a1, a1
 	addi	a1, a1, -1

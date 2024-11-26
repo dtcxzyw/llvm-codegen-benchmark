@@ -13,21 +13,27 @@ func0000000000000060:                   # @func0000000000000060
 	addw	a0, a0, a2
 	ret
 func00000000000000af:                   # @func00000000000000af
-	sext.w	a3, a1
-	li	a4, 158
-	li	a2, 2
-	blt	a4, a3, .LBB2_2
+	sext.w	a2, a1
+	li	a3, 158
+	blt	a3, a2, .LBB2_2
 	li	a2, 96
-.LBB2_2:                                # %entry
+	add	a0, a0, a1
+	addw	a0, a0, a2
+	ret
+.LBB2_2:
+	li	a2, 2
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
 func00000000000000a0:                   # @func00000000000000a0
-	sext.w	a3, a1
-	li	a2, 10
-	bgtz	a3, .LBB3_2
+	sext.w	a2, a1
+	bgtz	a2, .LBB3_2
 	li	a2, 6
-.LBB3_2:                                # %entry
+	add	a0, a0, a1
+	addw	a0, a0, a2
+	ret
+.LBB3_2:
+	li	a2, 10
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret

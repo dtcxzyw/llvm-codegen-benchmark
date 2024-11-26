@@ -4,12 +4,15 @@ func0000000000000140:                   # @func0000000000000140
 	addiw	a3, a3, -1365
 	slli	a4, a3, 32
 	add	a3, a3, a4
-	mul	a3, a2, a3
-	li	a4, 4
-	li	a2, -72
-	bltu	a3, a4, .LBB0_2
+	mul	a2, a2, a3
+	li	a3, 4
+	bltu	a2, a3, .LBB0_2
 	li	a2, -48
-.LBB0_2:                                # %entry
+	add	a0, a0, a1
+	add	a0, a0, a2
+	ret
+.LBB0_2:
+	li	a2, -72
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

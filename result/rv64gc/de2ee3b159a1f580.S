@@ -46,19 +46,19 @@ func0000000000000011:                   # @func0000000000000011
 func00000000000000aa:                   # @func00000000000000aa
 	slli	a0, a0, 56
 	srai	a1, a0, 56
-	li	a2, 64
-	li	a0, -55
-	bge	a2, a1, .LBB3_3
-	li	a2, 96
-	blt	a2, a1, .LBB3_4
-.LBB3_2:                                # %entry
-	ret
-.LBB3_3:                                # %entry
+	li	a0, 64
+	blt	a0, a1, .LBB3_2
 	li	a0, -48
 	li	a2, 96
-	bge	a2, a1, .LBB3_2
-.LBB3_4:                                # %entry
+	blt	a2, a1, .LBB3_3
+	j	.LBB3_4
+.LBB3_2:
+	li	a0, -55
+	li	a2, 96
+	bge	a2, a1, .LBB3_4
+.LBB3_3:                                # %entry
 	li	a0, -87
+.LBB3_4:                                # %entry
 	ret
 func0000000000000041:                   # @func0000000000000041
 	andi	a0, a0, 255

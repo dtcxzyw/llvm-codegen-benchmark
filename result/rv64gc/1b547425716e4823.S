@@ -11,11 +11,12 @@ func0000000000000001:                   # @func0000000000000001
 	and	a0, a0, a1
 	ret
 func000000000000000d:                   # @func000000000000000d
-	andi	a2, a0, 1
-	li	a0, -1022
-	bnez	a2, .LBB2_2
+	andi	a0, a0, 1
+	bnez	a0, .LBB2_2
 	addiw	a0, a1, -1023
-.LBB2_2:                                # %entry
+	ret
+.LBB2_2:
+	li	a0, -1022
 	ret
 func000000000000000f:                   # @func000000000000000f
 	andi	a0, a0, 1

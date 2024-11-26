@@ -9,12 +9,17 @@ func000000000000002a:                   # @func000000000000002a
 	srli	a0, a0, 32
 	ret
 func0000000000000000:                   # @func0000000000000000
-	andi	a3, a1, 1
+	andi	a1, a1, 1
 	add	a0, a0, a2
-	li	a1, -4
-	bnez	a3, .LBB1_2
+	bnez	a1, .LBB1_2
 	li	a1, -8
-.LBB1_2:                                # %entry
+	add	a0, a0, a1
+	addi	a0, a0, -1
+	slli	a0, a0, 32
+	srli	a0, a0, 32
+	ret
+.LBB1_2:
+	li	a1, -4
 	add	a0, a0, a1
 	addi	a0, a0, -1
 	slli	a0, a0, 32

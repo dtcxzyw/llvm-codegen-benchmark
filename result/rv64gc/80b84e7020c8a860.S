@@ -40,12 +40,17 @@ func0000000000000010:                   # @func0000000000000010
 	or	a0, a0, a2
 	ret
 func0000000000000030:                   # @func0000000000000030
+	sext.w	a2, a2
 	andi	a0, a0, 1
-	sext.w	a3, a2
-	li	a2, 1008
-	beqz	a3, .LBB3_2
+	beqz	a2, .LBB3_2
 	li	a2, 1012
-.LBB3_2:                                # %entry
+	or	a1, a1, a2
+	addi	a0, a0, -1
+	andi	a0, a0, 8
+	or	a0, a0, a1
+	ret
+.LBB3_2:
+	li	a2, 1008
 	or	a1, a1, a2
 	addi	a0, a0, -1
 	andi	a0, a0, 8

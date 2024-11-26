@@ -1,12 +1,16 @@
 func0000000000000001:                   # @func0000000000000001
-	lui	a3, 1
-	li	a2, 1
-	beq	a1, a3, .LBB0_2
-	li	a2, 3
-.LBB0_2:                                # %entry
+	lui	a2, 1
+	beq	a1, a2, .LBB0_2
+	li	a1, 3
 	slli	a0, a0, 63
 	srai	a0, a0, 63
-	and	a0, a0, a2
+	and	a0, a0, a1
+	ret
+.LBB0_2:
+	li	a1, 1
+	slli	a0, a0, 63
+	srai	a0, a0, 63
+	and	a0, a0, a1
 	ret
 func000000000000000a:                   # @func000000000000000a
 	srai	a1, a1, 63

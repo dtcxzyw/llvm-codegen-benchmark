@@ -1,7 +1,6 @@
 func0000000000000001:                   # @func0000000000000001
-	andi	a2, a0, 1
-	li	a0, 1
-	bnez	a2, .LBB0_2
+	andi	a0, a0, 1
+	bnez	a0, .LBB0_2
 	andi	a0, a1, -1025
 	lui	a1, 1
 	sext.w	a0, a0
@@ -9,7 +8,9 @@ func0000000000000001:                   # @func0000000000000001
 	xor	a0, a0, a1
 	seqz	a0, a0
 	slli	a0, a0, 1
-.LBB0_2:                                # %entry
+	ret
+.LBB0_2:
+	li	a0, 1
 	ret
 func0000000000000004:                   # @func0000000000000004
 	andi	a2, a1, 254
@@ -30,20 +31,18 @@ func0000000000000004:                   # @func0000000000000004
 .LBB1_4:                                # %entry
 	ret
 func000000000000000c:                   # @func000000000000000c
-	andi	a2, a0, 1
-	lui	a0, 15
-	and	a0, a0, a1
+	lui	a2, 15
+	and	a2, a2, a1
 	lui	a3, 14
-	li	a1, 1
-	bne	a0, a3, .LBB2_3
+	andi	a1, a0, 1
+	beq	a2, a3, .LBB2_2
+	li	a0, 3
+	bnez	a1, .LBB2_3
+	j	.LBB2_4
+.LBB2_2:
+	li	a0, 1
+	beqz	a1, .LBB2_4
+.LBB2_3:
 	li	a0, 2
-	beqz	a2, .LBB2_4
-.LBB2_2:                                # %entry
-	ret
-.LBB2_3:                                # %entry
-	li	a1, 3
-	li	a0, 2
-	bnez	a2, .LBB2_2
 .LBB2_4:                                # %entry
-	mv	a0, a1
 	ret

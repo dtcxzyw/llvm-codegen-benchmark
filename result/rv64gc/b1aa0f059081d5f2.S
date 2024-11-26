@@ -7,18 +7,19 @@ func0000000000000011:                   # @func0000000000000011
 .LBB0_2:                                # %entry
 	ret
 func0000000000000014:                   # @func0000000000000014
-	sext.w	a3, a1
-	andi	a2, a2, 255
-	li	a1, 132
-	bnez	a2, .LBB1_3
-	li	a2, 10
-	bgeu	a3, a2, .LBB1_4
-.LBB1_2:                                # %entry
-	mv	a0, a1
-	ret
-.LBB1_3:                                # %entry
+	andi	a3, a2, 255
+	sext.w	a2, a1
+	beqz	a3, .LBB1_2
 	li	a1, 885
-	li	a2, 10
-	bltu	a3, a2, .LBB1_2
+	li	a3, 10
+	bgeu	a2, a3, .LBB1_3
+	j	.LBB1_4
+.LBB1_2:
+	li	a1, 132
+	li	a3, 10
+	bltu	a2, a3, .LBB1_4
+.LBB1_3:                                # %entry
+	mv	a1, a0
 .LBB1_4:                                # %entry
+	mv	a0, a1
 	ret

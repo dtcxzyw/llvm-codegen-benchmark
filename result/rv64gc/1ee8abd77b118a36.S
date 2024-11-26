@@ -11,11 +11,17 @@ func0000000000000007:                   # @func0000000000000007
 .LCPI1_0:
 	.quad	36028799426231859               # 0x8000008f7bfe33
 func0000000000000004:                   # @func0000000000000004
-	andi	a3, a2, 255
-	li	a2, 257
-	beqz	a3, .LBB1_2
+	andi	a2, a2, 255
+	beqz	a2, .LBB1_2
 	li	a2, 1
-.LBB1_2:                                # %entry
+	lui	a3, %hi(.LCPI1_0)
+	ld	a3, %lo(.LCPI1_0)(a3)
+	or	a0, a0, a2
+	and	a1, a1, a3
+	or	a0, a0, a1
+	ret
+.LBB1_2:
+	li	a2, 257
 	lui	a3, %hi(.LCPI1_0)
 	ld	a3, %lo(.LCPI1_0)(a3)
 	or	a0, a0, a2

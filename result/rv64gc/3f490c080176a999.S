@@ -6,10 +6,11 @@ func0000000000000005:                   # @func0000000000000005
 	slli	a3, a0, 33
 	add	a0, a0, a3
 	mul	a0, a1, a0
-	li	a1, 1
 	bnez	a2, .LBB0_2
-	mv	a1, a0
-.LBB0_2:                                # %entry
+	add	a0, a0, a0
+	ret
+.LBB0_2:
+	li	a1, 1
 	add	a0, a0, a1
 	ret
 .LCPI1_0:
@@ -20,9 +21,10 @@ func0000000000000007:                   # @func0000000000000007
 	andi	a3, a0, 1
 	srai	a1, a1, 3
 	mul	a0, a1, a2
-	li	a1, 1
 	bnez	a3, .LBB1_2
-	mv	a1, a0
-.LBB1_2:                                # %entry
+	add	a0, a0, a0
+	ret
+.LBB1_2:
+	li	a1, 1
 	add	a0, a0, a1
 	ret

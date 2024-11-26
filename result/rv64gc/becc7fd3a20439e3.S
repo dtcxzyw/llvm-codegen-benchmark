@@ -1,12 +1,11 @@
 func0000000000000026:                   # @func0000000000000026
-	andi	a3, a0, 1
+	andi	a0, a0, 1
 	srai	a2, a2, 32
-	li	a0, 16
-	bnez	a3, .LBB0_2
-	mv	a0, a1
+	beqz	a0, .LBB0_2
+	li	a1, 16
 .LBB0_2:                                # %entry
-	sext.w	a0, a0
-	slt	a0, a0, a2
+	sext.w	a1, a1
+	slt	a0, a1, a2
 	ret
 func0000000000000046:                   # @func0000000000000046
 	andi	a3, a0, 1

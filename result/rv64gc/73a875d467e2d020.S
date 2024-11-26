@@ -7,12 +7,15 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 func0000000000000011:                   # @func0000000000000011
 	andi	a1, a1, -5
-	sext.w	a2, a1
-	li	a3, 3
-	li	a1, 6
-	beq	a2, a3, .LBB1_2
+	sext.w	a1, a1
+	li	a2, 3
+	beq	a1, a2, .LBB1_2
 	li	a1, 8
-.LBB1_2:                                # %entry
+	xor	a0, a0, a1
+	seqz	a0, a0
+	ret
+.LBB1_2:
+	li	a1, 6
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

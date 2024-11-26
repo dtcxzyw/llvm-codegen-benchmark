@@ -12,12 +12,15 @@ func000000000000001d:                   # @func000000000000001d
 	add	a0, a0, a2
 	ret
 func000000000000001f:                   # @func000000000000001f
-	li	a3, 32
 	beqz	a2, .LBB2_2
-	li	a3, 40
-.LBB2_2:                                # %entry
+	li	a2, 40
 	add	a0, a0, a1
-	add	a0, a0, a3
+	add	a0, a0, a2
+	ret
+.LBB2_2:
+	li	a2, 32
+	add	a0, a0, a1
+	add	a0, a0, a2
 	ret
 func0000000000000015:                   # @func0000000000000015
 	seqz	a2, a2

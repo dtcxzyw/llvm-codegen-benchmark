@@ -12,12 +12,14 @@ func0000000000000003:                   # @func0000000000000003
 	or	a0, a0, a1
 	ret
 func0000000000000002:                   # @func0000000000000002
-	sext.w	a2, a1
-	lui	a3, 256
-	li	a1, 9
-	beq	a2, a3, .LBB2_2
+	sext.w	a1, a1
+	lui	a2, 256
+	beq	a1, a2, .LBB2_2
 	li	a1, 1
-.LBB2_2:                                # %entry
+	or	a0, a0, a1
+	ret
+.LBB2_2:
+	li	a1, 9
 	or	a0, a0, a1
 	ret
 func0000000000000009:                   # @func0000000000000009
@@ -34,12 +36,14 @@ func0000000000000011:                   # @func0000000000000011
 	or	a0, a0, a1
 	ret
 func0000000000000019:                   # @func0000000000000019
-	sext.w	a2, a1
-	li	a3, 1
-	li	a1, 12
-	beq	a2, a3, .LBB5_2
+	sext.w	a1, a1
+	li	a2, 1
+	beq	a1, a2, .LBB5_2
 	li	a1, 4
-.LBB5_2:                                # %entry
+	or	a0, a0, a1
+	ret
+.LBB5_2:
+	li	a1, 12
 	or	a0, a0, a1
 	ret
 func000000000000000d:                   # @func000000000000000d

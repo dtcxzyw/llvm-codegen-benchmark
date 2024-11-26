@@ -3,11 +3,12 @@ func0000000000000011:                   # @func0000000000000011
 	sext.w	a1, a1
 	snez	a1, a1
 	seqz	a0, a0
-	and	a1, a1, a0
-	li	a0, 19
-	bnez	a1, .LBB0_2
+	and	a0, a0, a1
+	bnez	a0, .LBB0_2
 	li	a0, 22
-.LBB0_2:                                # %entry
+	ret
+.LBB0_2:
+	li	a0, 19
 	ret
 func0000000000000014:                   # @func0000000000000014
 	sext.w	a1, a1

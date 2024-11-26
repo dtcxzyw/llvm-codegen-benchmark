@@ -15,11 +15,13 @@ func0000000000000010:                   # @func0000000000000010
 	or	a0, a0, a1
 	ret
 func0000000000000002:                   # @func0000000000000002
-	li	a2, 1
 	beqz	a1, .LBB2_2
-	li	a2, 129
-.LBB2_2:                                # %entry
-	or	a0, a0, a2
+	li	a1, 129
+	or	a0, a0, a1
+	ret
+.LBB2_2:
+	li	a1, 1
+	or	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
 	srli	a1, a1, 32
@@ -28,12 +30,14 @@ func0000000000000011:                   # @func0000000000000011
 	or	a0, a0, a1
 	ret
 func0000000000000009:                   # @func0000000000000009
-	srli	a2, a1, 12
-	li	a1, 1299
-	beqz	a2, .LBB4_2
+	srli	a1, a1, 12
+	beqz	a1, .LBB4_2
 	lui	a1, 80
 	addiw	a1, a1, 1299
-.LBB4_2:                                # %entry
+	or	a0, a0, a1
+	ret
+.LBB4_2:
+	li	a1, 1299
 	or	a0, a0, a1
 	ret
 func0000000000000019:                   # @func0000000000000019
@@ -42,11 +46,13 @@ func0000000000000019:                   # @func0000000000000019
 	or	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
-	srli	a2, a1, 32
-	li	a1, 48
-	beqz	a2, .LBB6_2
+	srli	a1, a1, 32
+	beqz	a1, .LBB6_2
 	lui	a1, 3
-.LBB6_2:                                # %entry
+	or	a0, a0, a1
+	ret
+.LBB6_2:
+	li	a1, 48
 	or	a0, a0, a1
 	ret
 func0000000000000014:                   # @func0000000000000014

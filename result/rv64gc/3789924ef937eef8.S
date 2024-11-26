@@ -16,12 +16,15 @@ func0000000000000011:                   # @func0000000000000011
 	seqz	a0, a0
 	ret
 func0000000000000014:                   # @func0000000000000014
-	andi	a2, a1, 15
-	li	a3, 1
-	li	a1, 13
-	beq	a2, a3, .LBB2_2
+	andi	a1, a1, 15
+	li	a2, 1
+	beq	a1, a2, .LBB2_2
 	li	a1, 15
-.LBB2_2:                                # %entry
+	andi	a0, a0, 15
+	sltu	a0, a0, a1
+	ret
+.LBB2_2:
+	li	a1, 13
 	andi	a0, a0, 15
 	sltu	a0, a0, a1
 	ret

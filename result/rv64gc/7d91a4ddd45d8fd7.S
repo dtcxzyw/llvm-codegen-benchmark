@@ -31,14 +31,14 @@ func0000000000000022:                   # @func0000000000000022
 func0000000000000155:                   # @func0000000000000155
 	sext.w	a1, a0
 	li	a2, 8
-	li	a0, 4
-	bge	a1, a2, .LBB2_3
-	blt	a2, a1, .LBB2_4
-.LBB2_2:                                # %entry
-	ret
-.LBB2_3:                                # %entry
+	blt	a1, a2, .LBB2_2
 	li	a0, 8
-	bge	a2, a1, .LBB2_2
-.LBB2_4:                                # %entry
+	blt	a2, a1, .LBB2_3
+	j	.LBB2_4
+.LBB2_2:
+	li	a0, 4
+	bge	a2, a1, .LBB2_4
+.LBB2_3:                                # %entry
 	li	a0, 16
+.LBB2_4:                                # %entry
 	ret

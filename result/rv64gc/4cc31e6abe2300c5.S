@@ -7,13 +7,16 @@ func0000000000000006:                   # @func0000000000000006
 	add	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004
-	andi	a3, a1, 1
-	li	a1, 8
-	bnez	a3, .LBB1_2
+	andi	a1, a1, 1
+	bnez	a1, .LBB1_2
 	lui	a1, 1024
 	addiw	a1, a1, -8
 	and	a1, a1, a2
-.LBB1_2:                                # %entry
+	slli	a1, a1, 3
+	add	a0, a0, a1
+	ret
+.LBB1_2:
+	li	a1, 8
 	slli	a1, a1, 3
 	add	a0, a0, a1
 	ret

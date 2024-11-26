@@ -12,9 +12,10 @@ func0000000000000041:                   # @func0000000000000041
 	sltiu	a1, a1, 3
 	addi	a0, a0, -16
 	seqz	a0, a0
-	and	a1, a1, a0
-	li	a0, 4
-	bnez	a1, .LBB1_2
+	and	a0, a0, a1
+	bnez	a0, .LBB1_2
 	li	a0, 1
-.LBB1_2:                                # %entry
+	ret
+.LBB1_2:
+	li	a0, 4
 	ret

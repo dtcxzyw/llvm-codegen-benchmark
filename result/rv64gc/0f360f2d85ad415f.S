@@ -7,18 +7,20 @@ func0000000000000003:                   # @func0000000000000003
 .LBB0_2:                                # %entry
 	ret
 func0000000000000009:                   # @func0000000000000009
-	srli	a1, a0, 32
-	li	a0, 49
-	beqz	a1, .LBB1_2
+	srli	a0, a0, 32
+	beqz	a0, .LBB1_2
 	li	a0, 17
-.LBB1_2:                                # %entry
+	ret
+.LBB1_2:
+	li	a0, 49
 	ret
 func0000000000000011:                   # @func0000000000000011
-	srli	a1, a0, 32
-	li	a0, 48
-	bnez	a1, .LBB2_2
+	srli	a0, a0, 32
+	bnez	a0, .LBB2_2
 	li	a0, 16
-.LBB2_2:                                # %entry
+	ret
+.LBB2_2:
+	li	a0, 48
 	ret
 func0000000000000019:                   # @func0000000000000019
 	mv	a1, a0

@@ -14,11 +14,15 @@ func0000000000000024:                   # @func0000000000000024
 	sltu	a0, a0, a1
 	ret
 func000000000000002c:                   # @func000000000000002c
-	andi	a3, a2, 1
-	li	a2, 3
-	bnez	a3, .LBB2_2
+	andi	a2, a2, 1
+	bnez	a2, .LBB2_2
 	li	a2, 1
-.LBB2_2:                                # %entry
+	add	a1, a1, a2
+	xor	a0, a0, a1
+	snez	a0, a0
+	ret
+.LBB2_2:
+	li	a2, 3
 	add	a1, a1, a2
 	xor	a0, a0, a1
 	snez	a0, a0

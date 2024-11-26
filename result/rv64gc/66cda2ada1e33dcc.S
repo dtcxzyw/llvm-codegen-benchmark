@@ -15,21 +15,22 @@ func0000000000000081:                   # @func0000000000000081
 .LBB0_4:                                # %entry
 	ret
 func00000000000000a1:                   # @func00000000000000a1
+	sext.w	a1, a1
+	li	a3, 2047
 	sext.w	a2, a0
-	sext.w	a3, a1
-	li	a4, 2047
-	li	a1, 256
-	bge	a4, a3, .LBB1_3
-	li	a3, -1
-	bne	a2, a3, .LBB1_4
-.LBB1_2:                                # %entry
-	mv	a0, a1
-	ret
-.LBB1_3:                                # %entry
+	blt	a3, a1, .LBB1_2
 	li	a1, 160
 	li	a3, -1
-	beq	a2, a3, .LBB1_2
+	bne	a2, a3, .LBB1_3
+	j	.LBB1_4
+.LBB1_2:
+	li	a1, 256
+	li	a3, -1
+	beq	a2, a3, .LBB1_4
+.LBB1_3:                                # %entry
+	mv	a1, a0
 .LBB1_4:                                # %entry
+	mv	a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
 	sext.w	a2, a0
@@ -47,17 +48,16 @@ func0000000000000011:                   # @func0000000000000011
 .LBB2_4:                                # %entry
 	ret
 func0000000000000061:                   # @func0000000000000061
-	sext.w	a2, a0
 	sext.w	a3, a1
-	li	a4, 3
-	li	a1, 1
-	bge	a3, a4, .LBB3_3
+	li	a1, 3
+	sext.w	a2, a0
+	blt	a3, a1, .LBB3_3
 	bnez	a2, .LBB3_4
 .LBB3_2:                                # %entry
 	mv	a0, a1
 	ret
-.LBB3_3:                                # %entry
-	li	a1, 3
+.LBB3_3:
+	li	a1, 1
 	beqz	a2, .LBB3_2
 .LBB3_4:                                # %entry
 	ret
@@ -81,18 +81,19 @@ func0000000000000046:                   # @func0000000000000046
 .LBB5_2:                                # %entry
 	ret
 func00000000000000c1:                   # @func00000000000000c1
+	sext.w	a1, a1
+	li	a3, 99
 	sext.w	a2, a0
-	sext.w	a3, a1
-	li	a4, 99
-	li	a1, 1
-	bne	a3, a4, .LBB6_3
-	bnez	a2, .LBB6_4
-.LBB6_2:                                # %entry
-	mv	a0, a1
-	ret
-.LBB6_3:                                # %entry
+	beq	a1, a3, .LBB6_2
 	lui	a1, 524288
 	addiw	a1, a1, -1
-	beqz	a2, .LBB6_2
+	bnez	a2, .LBB6_3
+	j	.LBB6_4
+.LBB6_2:
+	li	a1, 1
+	beqz	a2, .LBB6_4
+.LBB6_3:                                # %entry
+	mv	a1, a0
 .LBB6_4:                                # %entry
+	mv	a0, a1
 	ret

@@ -1,18 +1,17 @@
 func0000000000000044:                   # @func0000000000000044
-	sext.w	a2, a1
-	li	a3, 2
-	li	a1, 60
-	bne	a2, a3, .LBB0_3
+	sext.w	a1, a1
+	li	a2, 2
+	beq	a1, a2, .LBB0_2
+	li	a2, 36
 	li	a3, 1
-	beq	a2, a3, .LBB0_4
-.LBB0_2:                                # %entry
-	mulw	a0, a1, a0
-	ret
+	beq	a1, a3, .LBB0_3
+	j	.LBB0_4
+.LBB0_2:
+	li	a2, 60
+	li	a3, 1
+	bne	a1, a3, .LBB0_4
 .LBB0_3:                                # %entry
-	li	a1, 36
-	li	a3, 1
-	bne	a2, a3, .LBB0_2
+	li	a2, 44
 .LBB0_4:                                # %entry
-	li	a1, 44
-	mulw	a0, a1, a0
+	mulw	a0, a2, a0
 	ret

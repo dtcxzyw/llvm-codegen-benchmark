@@ -1,25 +1,31 @@
 func0000000000000008:                   # @func0000000000000008
-	andi	a3, a1, 1
-	li	a1, 1
-	bnez	a3, .LBB0_2
-	addi	a1, a2, -1
-.LBB0_2:                                # %entry
-	sltu	a0, a0, a1
+	andi	a1, a1, 1
+	bnez	a1, .LBB0_2
+	addi	a2, a2, -1
+	sltu	a0, a0, a2
+	ret
+.LBB0_2:
+	li	a2, 1
+	sltu	a0, a0, a2
 	ret
 func0000000000000034:                   # @func0000000000000034
-	andi	a3, a1, 1
-	li	a1, 1
-	bnez	a3, .LBB1_2
-	addi	a1, a2, 1
-.LBB1_2:                                # %entry
-	sltu	a0, a1, a0
+	andi	a1, a1, 1
+	bnez	a1, .LBB1_2
+	addi	a2, a2, 1
+	sltu	a0, a2, a0
+	ret
+.LBB1_2:
+	li	a2, 1
+	sltu	a0, a2, a0
 	ret
 func0000000000000004:                   # @func0000000000000004
-	andi	a3, a1, 1
-	li	a1, 446
-	bnez	a3, .LBB2_2
+	andi	a1, a1, 1
+	bnez	a1, .LBB2_2
 	addi	a1, a2, -66
-.LBB2_2:                                # %entry
+	sltu	a0, a1, a0
+	ret
+.LBB2_2:
+	li	a1, 446
 	sltu	a0, a1, a0
 	ret
 func0000000000000024:                   # @func0000000000000024
@@ -30,12 +36,14 @@ func0000000000000024:                   # @func0000000000000024
 	sltu	a0, a1, a0
 	ret
 func0000000000000018:                   # @func0000000000000018
-	andi	a3, a1, 1
-	li	a1, -22
-	bnez	a3, .LBB4_2
-	addi	a1, a2, -8
-.LBB4_2:                                # %entry
-	sltu	a0, a0, a1
+	andi	a1, a1, 1
+	bnez	a1, .LBB4_2
+	addi	a2, a2, -8
+	sltu	a0, a0, a2
+	ret
+.LBB4_2:
+	li	a2, -22
+	sltu	a0, a0, a2
 	ret
 func0000000000000014:                   # @func0000000000000014
 	addi	a2, a2, -1

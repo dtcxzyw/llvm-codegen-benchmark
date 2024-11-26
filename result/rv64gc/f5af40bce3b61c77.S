@@ -1,33 +1,38 @@
 func0000000000000010:                   # @func0000000000000010
-	li	a3, 5
-	li	a2, 1
-	bltu	a1, a3, .LBB0_2
 	li	a2, 5
+	bgeu	a1, a2, .LBB0_2
+	li	a2, 1
 .LBB0_2:                                # %entry
 	addw	a0, a0, a2
 	ret
 func0000000000000011:                   # @func0000000000000011
-	srli	a2, a1, 52
-	li	a1, -1536
-	beqz	a2, .LBB1_2
+	srli	a1, a1, 52
+	beqz	a1, .LBB1_2
 	li	a1, -1022
-.LBB1_2:                                # %entry
+	addw	a0, a0, a1
+	ret
+.LBB1_2:
+	li	a1, -1536
 	addw	a0, a0, a1
 	ret
 func0000000000000023:                   # @func0000000000000023
-	srli	a2, a1, 16
-	li	a1, 4
-	bnez	a2, .LBB2_2
+	srli	a1, a1, 16
+	bnez	a1, .LBB2_2
 	li	a1, 2
-.LBB2_2:                                # %entry
+	addw	a0, a0, a1
+	ret
+.LBB2_2:
+	li	a1, 4
 	addw	a0, a0, a1
 	ret
 func0000000000000005:                   # @func0000000000000005
-	li	a2, 1
 	beqz	a1, .LBB3_2
-	li	a2, 3
-.LBB3_2:                                # %entry
-	addw	a0, a0, a2
+	li	a1, 3
+	addw	a0, a0, a1
+	ret
+.LBB3_2:
+	li	a1, 1
+	addw	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004
 	seqz	a1, a1
@@ -81,12 +86,14 @@ func000000000000001b:                   # @func000000000000001b
 	ret
 func0000000000000028:                   # @func0000000000000028
 	lui	a2, 16
-	addiw	a3, a2, -1
-	li	a2, 11
-	blt	a3, a1, .LBB11_2
-	li	a2, 7
-.LBB11_2:                               # %entry
-	addw	a0, a0, a2
+	addiw	a2, a2, -1
+	blt	a2, a1, .LBB11_2
+	li	a1, 7
+	addw	a0, a0, a1
+	ret
+.LBB11_2:
+	li	a1, 11
+	addw	a0, a0, a1
 	ret
 func0000000000000030:                   # @func0000000000000030
 	lui	a2, 11

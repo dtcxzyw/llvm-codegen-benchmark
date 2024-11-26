@@ -19,11 +19,12 @@ func0000000000000004:                   # @func0000000000000004
 func0000000000000008:                   # @func0000000000000008
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
-	feq.d	a1, fa0, fa5
-	li	a0, 31
-	bnez	a1, .LBB2_2
+	feq.d	a0, fa0, fa5
+	bnez	a0, .LBB2_2
 	li	a0, 27
-.LBB2_2:                                # %entry
+	ret
+.LBB2_2:
+	li	a0, 31
 	ret
 .LCPI3_0:
 	.quad	0x4010000000000000              # double 4
@@ -67,11 +68,12 @@ func000000000000000c:                   # @func000000000000000c
 	slli	a0, a0, 1
 	ret
 func000000000000000e:                   # @func000000000000000e
-	feq.d	a1, fa0, fa0
-	li	a0, 2
-	bnez	a1, .LBB8_2
+	feq.d	a0, fa0, fa0
+	bnez	a0, .LBB8_2
 	li	a0, 4
-.LBB8_2:                                # %entry
+	ret
+.LBB8_2:
+	li	a0, 2
 	ret
 func000000000000000b:                   # @func000000000000000b
 	fmv.d.x	fa5, zero

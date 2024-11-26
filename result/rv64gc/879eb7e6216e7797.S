@@ -33,20 +33,24 @@ func000000000000000f:                   # @func000000000000000f
 	andi	a2, a0, 1
 	li	a0, 94
 	mul	a0, a1, a0
-	li	a1, 7
 	bnez	a2, .LBB2_2
 	li	a1, 9
-.LBB2_2:                                # %entry
+	addw	a0, a0, a1
+	ret
+.LBB2_2:
+	li	a1, 7
 	addw	a0, a0, a1
 	ret
 func0000000000000003:                   # @func0000000000000003
 	andi	a2, a0, 1
 	li	a0, 94
 	mul	a0, a1, a0
-	li	a1, 7
 	bnez	a2, .LBB3_2
 	li	a1, 9
-.LBB3_2:                                # %entry
+	addw	a0, a0, a1
+	ret
+.LBB3_2:
+	li	a1, 7
 	addw	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004

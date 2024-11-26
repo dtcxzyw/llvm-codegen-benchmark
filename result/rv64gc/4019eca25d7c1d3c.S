@@ -1,31 +1,35 @@
 func000000000000001c:                   # @func000000000000001c
-	andi	a3, a1, 1
-	sext.w	a2, a2
+	sext.w	a3, a2
 	li	a4, 3
-	li	a1, 56
-	bne	a2, a4, .LBB0_3
+	andi	a2, a1, 1
+	beq	a3, a4, .LBB0_3
+	li	a1, 20
+	beqz	a2, .LBB0_4
+.LBB0_2:
 	li	a2, 40
-	beqz	a3, .LBB0_4
-.LBB0_2:                                # %entry
 	add	a1, a1, a2
 	addw	a0, a0, a1
 	ret
-.LBB0_3:                                # %entry
-	li	a1, 20
-	li	a2, 40
-	bnez	a3, .LBB0_2
+.LBB0_3:
+	li	a1, 56
+	bnez	a2, .LBB0_2
 .LBB0_4:                                # %entry
 	li	a2, 16
 	add	a1, a1, a2
 	addw	a0, a0, a1
 	ret
 func000000000000004f:                   # @func000000000000004f
-	sext.w	a3, a2
-	li	a4, 8
-	li	a2, 62
-	bltu	a3, a4, .LBB1_2
+	sext.w	a2, a2
+	li	a3, 8
+	bltu	a2, a3, .LBB1_2
 	li	a2, 60
-.LBB1_2:                                # %entry
+	andi	a1, a1, 1
+	or	a1, a1, a2
+	add	a0, a0, a1
+	addiw	a0, a0, 30
+	ret
+.LBB1_2:
+	li	a2, 62
 	andi	a1, a1, 1
 	or	a1, a1, a2
 	add	a0, a0, a1

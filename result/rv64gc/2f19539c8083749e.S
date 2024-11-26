@@ -24,11 +24,13 @@ func0000000000000014:                   # @func0000000000000014
 	sext.w	a2, a2
 	slti	a2, a2, 0
 	xori	a2, a2, 1
-	and	a2, a2, a1
-	li	a1, 12
-	bnez	a2, .LBB3_2
+	and	a1, a1, a2
+	bnez	a1, .LBB3_2
 	li	a1, 8
-.LBB3_2:                                # %entry
+	or	a0, a0, a1
+	ret
+.LBB3_2:
+	li	a1, 12
 	or	a0, a0, a1
 	ret
 func0000000000000015:                   # @func0000000000000015

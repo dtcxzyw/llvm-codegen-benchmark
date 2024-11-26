@@ -31,9 +31,11 @@ func0000000000000005:                   # @func0000000000000005
 	slli	a3, a1, 3
 	subw	a1, a1, a3
 	add	a0, a0, a1
-	li	a1, 8
 	bnez	a2, .LBB1_2
 	li	a1, 1
-.LBB1_2:                                # %entry
+	addw	a0, a0, a1
+	ret
+.LBB1_2:
+	li	a1, 8
 	addw	a0, a0, a1
 	ret

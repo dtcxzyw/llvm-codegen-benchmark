@@ -20,12 +20,13 @@ func00000000000000c1:                   # @func00000000000000c1
 	and	a1, a1, a2
 	seqz	a1, a1
 	snez	a0, a0
-	or	a1, a1, a0
-	li	a0, -74
-	bnez	a1, .LBB1_2
+	or	a0, a0, a1
+	bnez	a0, .LBB1_2
 	lui	a0, 1048569
 	addiw	a0, a0, 1792
-.LBB1_2:                                # %entry
+	ret
+.LBB1_2:
+	li	a0, -74
 	ret
 func00000000000000cc:                   # @func00000000000000cc
 	lui	a2, 2048

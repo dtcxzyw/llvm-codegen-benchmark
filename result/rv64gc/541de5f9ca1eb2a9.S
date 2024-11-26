@@ -8,12 +8,13 @@ func0000000000000034:                   # @func0000000000000034
 	add	a0, a0, a1
 	lui	a1, 16
 	addiw	a1, a1, -32
-	and	a1, a1, a0
-	li	a2, 96
-	li	a0, 2000
-	bltu	a1, a2, .LBB1_2
+	and	a0, a0, a1
+	li	a1, 96
+	bltu	a0, a1, .LBB1_2
 	li	a0, 1900
-.LBB1_2:                                # %entry
+	ret
+.LBB1_2:
+	li	a0, 2000
 	ret
 func0000000000000031:                   # @func0000000000000031
 	add	a0, a0, a1

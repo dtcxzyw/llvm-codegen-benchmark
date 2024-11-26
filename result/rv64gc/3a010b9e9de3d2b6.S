@@ -22,10 +22,12 @@ func000000000000000b:                   # @func000000000000000b
 	addw	a0, a0, a1
 	ret
 func0000000000000009:                   # @func0000000000000009
-	andi	a2, a1, 1024
-	li	a1, -32
-	beqz	a2, .LBB3_2
+	andi	a1, a1, 1024
+	beqz	a1, .LBB3_2
 	li	a1, -40
-.LBB3_2:                                # %entry
+	addw	a0, a0, a1
+	ret
+.LBB3_2:
+	li	a1, -32
 	addw	a0, a0, a1
 	ret

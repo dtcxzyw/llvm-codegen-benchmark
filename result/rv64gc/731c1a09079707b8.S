@@ -21,20 +21,22 @@ func0000000000000005:                   # @func0000000000000005
 	sext.w	a2, a2
 	sltu	a1, a2, a1
 	xori	a1, a1, 1
-	and	a1, a1, a0
-	li	a0, 856
-	bnez	a1, .LBB2_2
+	and	a0, a0, a1
+	bnez	a0, .LBB2_2
 	li	a0, 864
-.LBB2_2:                                # %entry
+	ret
+.LBB2_2:
+	li	a0, 856
 	ret
 func0000000000000001:                   # @func0000000000000001
 	sext.w	a2, a2
 	sext.w	a1, a1
 	xor	a1, a1, a2
 	seqz	a1, a1
-	and	a1, a1, a0
-	li	a0, 16
-	bnez	a1, .LBB3_2
+	and	a0, a0, a1
+	bnez	a0, .LBB3_2
 	li	a0, 24
-.LBB3_2:                                # %entry
+	ret
+.LBB3_2:
+	li	a0, 16
 	ret

@@ -6,11 +6,12 @@ func0000000000000038:                   # @func0000000000000038
 	xor	a1, a1, a2
 	seqz	a1, a1
 	snez	a0, a0
-	or	a1, a1, a0
-	li	a0, 130
-	bnez	a1, .LBB0_2
+	or	a0, a0, a1
+	bnez	a0, .LBB0_2
 	li	a0, 128
-.LBB0_2:                                # %entry
+	ret
+.LBB0_2:
+	li	a0, 130
 	ret
 func0000000000000182:                   # @func0000000000000182
 	sext.w	a0, a0
@@ -38,11 +39,12 @@ func00000000000000d8:                   # @func00000000000000d8
 	sext.w	a1, a1
 	slti	a1, a1, 2
 	snez	a0, a0
-	or	a1, a1, a0
-	li	a0, 1
-	bnez	a1, .LBB3_2
+	or	a0, a0, a1
+	bnez	a0, .LBB3_2
 	li	a0, 9
-.LBB3_2:                                # %entry
+	ret
+.LBB3_2:
+	li	a0, 1
 	ret
 func0000000000000028:                   # @func0000000000000028
 	sext.w	a1, a1
@@ -61,11 +63,12 @@ func0000000000000188:                   # @func0000000000000188
 	sext.w	a1, a1
 	snez	a1, a1
 	sltiu	a0, a0, 4
-	or	a1, a1, a0
-	li	a0, 68
-	bnez	a1, .LBB5_2
+	or	a0, a0, a1
+	bnez	a0, .LBB5_2
 	li	a0, 72
-.LBB5_2:                                # %entry
+	ret
+.LBB5_2:
+	li	a0, 68
 	ret
 func0000000000000088:                   # @func0000000000000088
 	sext.w	a0, a0

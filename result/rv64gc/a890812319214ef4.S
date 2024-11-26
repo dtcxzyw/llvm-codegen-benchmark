@@ -47,32 +47,38 @@ func0000000000000041:                   # @func0000000000000041
 	sltiu	a2, a2, 196
 	not	a2, a2
 	or	a1, a1, a2
-	andi	a2, a1, 1
-	li	a1, 90
-	bnez	a2, .LBB5_2
+	andi	a1, a1, 1
+	bnez	a1, .LBB5_2
 	li	a1, 30
-.LBB5_2:                                # %entry
+	addw	a0, a0, a1
+	ret
+.LBB5_2:
+	li	a1, 90
 	addw	a0, a0, a1
 	ret
 func0000000000000060:                   # @func0000000000000060
 	sext.w	a2, a2
 	snez	a2, a2
 	or	a1, a1, a2
-	andi	a2, a1, 1
-	li	a1, 68
-	bnez	a2, .LBB6_2
+	andi	a1, a1, 1
+	bnez	a1, .LBB6_2
 	li	a1, 72
-.LBB6_2:                                # %entry
+	addw	a0, a0, a1
+	ret
+.LBB6_2:
+	li	a1, 68
 	addw	a0, a0, a1
 	ret
 func0000000000000020:                   # @func0000000000000020
 	sext.w	a2, a2
 	sltiu	a2, a2, 4
 	or	a1, a1, a2
-	andi	a2, a1, 1
-	li	a1, 68
-	bnez	a2, .LBB7_2
+	andi	a1, a1, 1
+	bnez	a1, .LBB7_2
 	li	a1, 72
-.LBB7_2:                                # %entry
+	addw	a0, a0, a1
+	ret
+.LBB7_2:
+	li	a1, 68
 	addw	a0, a0, a1
 	ret

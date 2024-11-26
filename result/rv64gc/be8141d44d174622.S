@@ -5,17 +5,14 @@ func0000000000000002:                   # @func0000000000000002
 	fmv.w.x	fa4, a1
 	fmadd.s	fa4, fa0, fa4, fa5
 	fmv.w.x	fa5, zero
-	flt.s	a2, fa4, fa5
-	andi	a1, a0, 1
-	beqz	a2, .LBB0_3
-	li	a0, 255
-	beqz	a1, .LBB0_4
-.LBB0_2:                                # %entry
-	ret
-.LBB0_3:                                # %entry
-	fmv.s	fa5, fa4
-	li	a0, 255
+	flt.s	a1, fa4, fa5
+	andi	a0, a0, 1
 	bnez	a1, .LBB0_2
-.LBB0_4:                                # %entry
+	fmv.s	fa5, fa4
+.LBB0_2:                                # %entry
+	bnez	a0, .LBB0_4
 	fcvt.w.s	a0, fa5, rtz
+	ret
+.LBB0_4:
+	li	a0, 255
 	ret

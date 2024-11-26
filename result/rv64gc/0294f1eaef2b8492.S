@@ -7,11 +7,13 @@ func0000000000000003:                   # @func0000000000000003
 	or	a0, a0, a1
 	ret
 func0000000000000002:                   # @func0000000000000002
-	andi	a2, a0, 1
+	andi	a0, a0, 1
 	andi	a1, a1, 7
-	li	a0, 4
-	bnez	a2, .LBB1_2
+	bnez	a0, .LBB1_2
 	li	a0, 2
-.LBB1_2:                                # %entry
+	or	a0, a0, a1
+	ret
+.LBB1_2:
+	li	a0, 4
 	or	a0, a0, a1
 	ret

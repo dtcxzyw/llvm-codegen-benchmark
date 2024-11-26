@@ -1,7 +1,6 @@
 func0000000000000002:                   # @func0000000000000002
-	andi	a2, a0, 1
-	li	a0, 6
-	bnez	a2, .LBB0_2
+	andi	a0, a0, 1
+	bnez	a0, .LBB0_2
 	addiw	a1, a1, 8
 	lui	a0, 233017
 	addiw	a0, a0, -455
@@ -9,7 +8,9 @@ func0000000000000002:                   # @func0000000000000002
 	srli	a1, a0, 63
 	srai	a0, a0, 33
 	add	a0, a0, a1
-.LBB0_2:                                # %entry
+	ret
+.LBB0_2:
+	li	a0, 6
 	ret
 func0000000000000000:                   # @func0000000000000000
 	andi	a0, a0, 1

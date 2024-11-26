@@ -11,10 +11,12 @@ func00000000000002a1:                   # @func00000000000002a1
 	slli	a0, a2, 4
 	li	a2, 92
 	add	a0, a0, a1
-	li	a1, 8
 	beq	a3, a2, .LBB1_2
 	li	a1, 12
-.LBB1_2:                                # %entry
+	add	a0, a0, a1
+	ret
+.LBB1_2:
+	li	a1, 8
 	add	a0, a0, a1
 	ret
 func00000000000002a4:                   # @func00000000000002a4
@@ -27,9 +29,11 @@ func00000000000002a4:                   # @func00000000000002a4
 func00000000000000a1:                   # @func00000000000000a1
 	andi	a3, a0, 255
 	add	a0, a1, a2
-	li	a1, 16
 	beqz	a3, .LBB3_2
 	li	a1, 8
-.LBB3_2:                                # %entry
+	add	a0, a0, a1
+	ret
+.LBB3_2:
+	li	a1, 16
 	add	a0, a0, a1
 	ret

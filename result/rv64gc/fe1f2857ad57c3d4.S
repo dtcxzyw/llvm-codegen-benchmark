@@ -12,20 +12,26 @@ func0000000000000005:                   # @func0000000000000005
 	add	a0, a0, a1
 	ret
 func000000000000000f:                   # @func000000000000000f
-	andi	a3, a2, 1
-	li	a2, 72
-	bnez	a3, .LBB2_2
+	andi	a2, a2, 1
+	bnez	a2, .LBB2_2
 	li	a2, 40
-.LBB2_2:                                # %entry
+	mul	a1, a2, a1
+	add	a0, a0, a1
+	ret
+.LBB2_2:
+	li	a2, 72
 	mul	a1, a2, a1
 	add	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c
-	andi	a3, a2, 1
-	li	a2, 72
-	bnez	a3, .LBB3_2
+	andi	a2, a2, 1
+	bnez	a2, .LBB3_2
 	li	a2, 40
-.LBB3_2:                                # %entry
+	mul	a1, a2, a1
+	add	a0, a0, a1
+	ret
+.LBB3_2:
+	li	a2, 72
 	mul	a1, a2, a1
 	add	a0, a0, a1
 	ret

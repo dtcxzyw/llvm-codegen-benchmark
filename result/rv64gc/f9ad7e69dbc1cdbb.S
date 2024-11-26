@@ -4,11 +4,13 @@ func0000000000000052:                   # @func0000000000000052
 	addi	a2, a2, -1
 	seqz	a2, a2
 	sltiu	a1, a1, 12
-	and	a2, a2, a1
-	li	a1, 23
-	bnez	a2, .LBB0_2
+	and	a1, a1, a2
+	bnez	a1, .LBB0_2
 	li	a1, 1
-.LBB0_2:                                # %entry
+	add	a0, a0, a1
+	ret
+.LBB0_2:
+	li	a1, 23
 	add	a0, a0, a1
 	ret
 func0000000000000072:                   # @func0000000000000072

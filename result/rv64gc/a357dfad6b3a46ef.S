@@ -27,30 +27,40 @@ func0000000000000005:                   # @func0000000000000005
 	xori	a0, a0, 1
 	ret
 func0000000000000018:                   # @func0000000000000018
-	andi	a3, a2, 1
-	li	a2, -9
-	bnez	a3, .LBB4_2
+	andi	a2, a2, 1
+	bnez	a2, .LBB4_2
 	li	a2, -12
-.LBB4_2:                                # %entry
+	add	a1, a1, a2
+	sltu	a0, a1, a0
+	ret
+.LBB4_2:
+	li	a2, -9
 	add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
 func0000000000000031:                   # @func0000000000000031
-	andi	a3, a2, 1
-	li	a2, 40
-	bnez	a3, .LBB5_2
+	andi	a2, a2, 1
+	bnez	a2, .LBB5_2
 	li	a2, 64
-.LBB5_2:                                # %entry
+	add	a1, a1, a2
+	xor	a0, a0, a1
+	seqz	a0, a0
+	ret
+.LBB5_2:
+	li	a2, 40
 	add	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000038:                   # @func0000000000000038
-	andi	a3, a2, 1
-	li	a2, 12
-	bnez	a3, .LBB6_2
+	andi	a2, a2, 1
+	bnez	a2, .LBB6_2
 	li	a2, 4
-.LBB6_2:                                # %entry
+	add	a1, a1, a2
+	sltu	a0, a1, a0
+	ret
+.LBB6_2:
+	li	a2, 12
 	add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
@@ -60,30 +70,41 @@ func0000000000000014:                   # @func0000000000000014
 	sltu	a0, a0, a1
 	ret
 func0000000000000009:                   # @func0000000000000009
-	andi	a3, a2, 1
-	li	a2, 12
-	bnez	a3, .LBB8_2
+	andi	a2, a2, 1
+	bnez	a2, .LBB8_2
 	li	a2, 4
-.LBB8_2:                                # %entry
+	add	a1, a1, a2
+	sltu	a0, a0, a1
+	xori	a0, a0, 1
+	ret
+.LBB8_2:
+	li	a2, 12
 	add	a1, a1, a2
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
 	ret
 func0000000000000006:                   # @func0000000000000006
-	andi	a3, a2, 1
-	li	a2, 44
-	bnez	a3, .LBB9_2
+	andi	a2, a2, 1
+	bnez	a2, .LBB9_2
 	li	a2, 84
-.LBB9_2:                                # %entry
+	add	a1, a1, a2
+	slt	a0, a0, a1
+	ret
+.LBB9_2:
+	li	a2, 44
 	add	a1, a1, a2
 	slt	a0, a0, a1
 	ret
 func0000000000000039:                   # @func0000000000000039
-	andi	a3, a2, 1
-	li	a2, 24
-	bnez	a3, .LBB10_2
+	andi	a2, a2, 1
+	bnez	a2, .LBB10_2
 	li	a2, 20
-.LBB10_2:                               # %entry
+	add	a1, a1, a2
+	sltu	a0, a0, a1
+	xori	a0, a0, 1
+	ret
+.LBB10_2:
+	li	a2, 24
 	add	a1, a1, a2
 	sltu	a0, a0, a1
 	xori	a0, a0, 1

@@ -18,9 +18,8 @@ func0000000000000044:                   # @func0000000000000044
 	seqz	a2, a2
 	addi	a2, a2, -1
 	and	a0, a0, a2
-	li	a2, 192
-	bnez	a3, .LBB1_2
-	mv	a2, a1
+	beqz	a3, .LBB1_2
+	li	a1, 192
 .LBB1_2:                                # %entry
-	add	a0, a0, a2
+	add	a0, a0, a1
 	ret

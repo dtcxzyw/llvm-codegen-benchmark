@@ -32,11 +32,12 @@ func0000000000000182:                   # @func0000000000000182
 	snez	a1, a1
 	addi	a0, a0, -18
 	seqz	a0, a0
-	or	a1, a1, a0
-	li	a0, 288
-	bnez	a1, .LBB3_2
+	or	a0, a0, a1
+	bnez	a0, .LBB3_2
 	li	a0, 32
-.LBB3_2:                                # %entry
+	ret
+.LBB3_2:
+	li	a0, 288
 	ret
 func0000000000000118:                   # @func0000000000000118
 	andi	a0, a0, 255

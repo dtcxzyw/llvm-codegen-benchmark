@@ -57,19 +57,23 @@ func0000000000000004:                   # @func0000000000000004
 	addw	a0, a0, a1
 	ret
 func0000000000000021:                   # @func0000000000000021
-	sext.w	a2, a0
-	li	a0, 1
-	beqz	a2, .LBB9_2
+	sext.w	a0, a0
+	beqz	a0, .LBB9_2
 	li	a0, 3
-.LBB9_2:                                # %entry
+	addw	a0, a0, a1
+	ret
+.LBB9_2:
+	li	a0, 1
 	addw	a0, a0, a1
 	ret
 func00000000000000f1:                   # @func00000000000000f1
-	sext.w	a2, a0
-	li	a0, 2
-	beqz	a2, .LBB10_2
+	sext.w	a0, a0
+	beqz	a0, .LBB10_2
 	li	a0, 6
-.LBB10_2:                               # %entry
+	addw	a0, a0, a1
+	ret
+.LBB10_2:
+	li	a0, 2
 	addw	a0, a0, a1
 	ret
 func00000000000000a1:                   # @func00000000000000a1

@@ -14,20 +14,24 @@ func0000000000000064:                   # @func0000000000000064
 	ret
 func0000000000000065:                   # @func0000000000000065
 	addw	a0, a0, a1
-	li	a2, 16
-	li	a1, 42
-	blt	a0, a2, .LBB2_2
+	li	a1, 16
+	blt	a0, a1, .LBB2_2
 	li	a1, 81
-.LBB2_2:                                # %entry
+	addw	a0, a0, a1
+	ret
+.LBB2_2:
+	li	a1, 42
 	addw	a0, a0, a1
 	ret
 func000000000000008f:                   # @func000000000000008f
 	addw	a0, a0, a1
-	li	a2, 49
-	li	a1, 1900
-	bltu	a2, a0, .LBB3_2
+	li	a1, 49
+	bltu	a1, a0, .LBB3_2
 	li	a1, 2000
-.LBB3_2:                                # %entry
+	addw	a0, a0, a1
+	ret
+.LBB3_2:
+	li	a1, 1900
 	addw	a0, a0, a1
 	ret
 func0000000000000060:                   # @func0000000000000060

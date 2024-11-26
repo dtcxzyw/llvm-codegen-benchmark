@@ -43,12 +43,14 @@ func000000000000003c:                   # @func000000000000003c
 	addw	a0, a0, a1
 	ret
 func0000000000000010:                   # @func0000000000000010
-	andi	a3, a1, 1
+	andi	a1, a1, 1
 	slli	a2, a2, 4
 	add	a0, a0, a2
-	li	a1, 169
-	bnez	a3, .LBB5_2
+	bnez	a1, .LBB5_2
 	li	a1, 208
-.LBB5_2:                                # %entry
+	addw	a0, a0, a1
+	ret
+.LBB5_2:
+	li	a1, 169
 	addw	a0, a0, a1
 	ret

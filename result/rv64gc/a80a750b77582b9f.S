@@ -12,10 +12,8 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000004:                   # @func0000000000000004
 	sltiu	a2, a2, 513
 	or	a1, a1, a2
-	andi	a2, a1, 1
-	li	a1, 8
-	bnez	a2, .LBB1_2
-	mv	a1, a0
+	andi	a1, a1, 1
+	beqz	a1, .LBB1_2
+	li	a0, 8
 .LBB1_2:                                # %entry
-	mv	a0, a1
 	ret

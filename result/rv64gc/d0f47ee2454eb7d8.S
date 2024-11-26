@@ -33,29 +33,35 @@ func0000000000000020:                   # @func0000000000000020
 	sllw	a0, a0, a1
 	ret
 func0000000000000028:                   # @func0000000000000028
-	sext.w	a2, a1
-	li	a3, 4
-	li	a1, 3
-	blt	a3, a2, .LBB5_2
+	sext.w	a1, a1
+	li	a2, 4
+	blt	a2, a1, .LBB5_2
 	li	a1, 1
-.LBB5_2:                                # %entry
+	sllw	a0, a0, a1
+	ret
+.LBB5_2:
+	li	a1, 3
 	sllw	a0, a0, a1
 	ret
 func0000000000000006:                   # @func0000000000000006
-	sext.w	a2, a1
-	li	a3, 1
-	li	a1, 14
-	beq	a2, a3, .LBB6_2
+	sext.w	a1, a1
+	li	a2, 1
+	beq	a1, a2, .LBB6_2
 	li	a1, 24
-.LBB6_2:                                # %entry
+	sllw	a0, a0, a1
+	ret
+.LBB6_2:
+	li	a1, 14
 	sllw	a0, a0, a1
 	ret
 func0000000000000023:                   # @func0000000000000023
-	sext.w	a2, a1
-	li	a3, 4
-	li	a1, 3
-	bltu	a3, a2, .LBB7_2
+	sext.w	a1, a1
+	li	a2, 4
+	bltu	a2, a1, .LBB7_2
 	li	a1, 1
-.LBB7_2:                                # %entry
+	sllw	a0, a0, a1
+	ret
+.LBB7_2:
+	li	a1, 3
 	sllw	a0, a0, a1
 	ret

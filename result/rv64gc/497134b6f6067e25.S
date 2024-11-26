@@ -5,11 +5,11 @@ func0000000000000001:                   # @func0000000000000001
 	andi	a0, a0, 20
 	ret
 func0000000000000008:                   # @func0000000000000008
-	mv	a2, a0
-	li	a0, 160
-	bltu	a1, a2, .LBB1_2
+	bltu	a1, a0, .LBB1_2
 	li	a0, 152
-.LBB1_2:                                # %entry
+	ret
+.LBB1_2:
+	li	a0, 160
 	ret
 func0000000000000004:                   # @func0000000000000004
 	sltu	a0, a0, a1

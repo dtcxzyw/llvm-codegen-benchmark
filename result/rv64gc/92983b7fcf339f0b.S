@@ -19,11 +19,13 @@ func0000000000000002:                   # @func0000000000000002
 	ori	a0, a0, 2
 	ret
 func0000000000000009:                   # @func0000000000000009
-	andi	a2, a1, 255
-	li	a3, 64
-	li	a1, 24
-	bltu	a2, a3, .LBB3_2
+	andi	a1, a1, 255
+	li	a2, 64
+	bltu	a1, a2, .LBB3_2
 	li	a1, 16
-.LBB3_2:                                # %entry
+	or	a0, a0, a1
+	ret
+.LBB3_2:
+	li	a1, 24
 	or	a0, a0, a1
 	ret

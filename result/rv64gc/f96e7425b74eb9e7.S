@@ -1,18 +1,19 @@
 func0000000000000013:                   # @func0000000000000013
-	srli	a1, a0, 32
-	li	a0, 32
-	beqz	a1, .LBB0_2
+	srli	a0, a0, 32
+	beqz	a0, .LBB0_2
 	li	a0, 64
-.LBB0_2:                                # %entry
+	ret
+.LBB0_2:
+	li	a0, 32
 	ret
 func0000000000000007:                   # @func0000000000000007
-	mv	a1, a0
-	lui	a0, 64
-	addiw	a2, a0, 256
-	li	a0, 8
-	beq	a1, a2, .LBB1_2
+	lui	a1, 64
+	addiw	a1, a1, 256
+	beq	a0, a1, .LBB1_2
 	li	a0, 16
-.LBB1_2:                                # %entry
+	ret
+.LBB1_2:
+	li	a0, 8
 	ret
 func0000000000000012:                   # @func0000000000000012
 	mv	a1, a0

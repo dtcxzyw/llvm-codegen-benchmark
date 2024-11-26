@@ -34,11 +34,14 @@ func0000000000000035:                   # @func0000000000000035
 	xori	a0, a0, 1
 	ret
 func0000000000000011:                   # @func0000000000000011
-	andi	a2, a1, 1
-	li	a1, 204
-	bnez	a2, .LBB4_2
+	andi	a1, a1, 1
+	bnez	a1, .LBB4_2
 	li	a1, 126
-.LBB4_2:                                # %entry
+	xor	a0, a0, a1
+	seqz	a0, a0
+	ret
+.LBB4_2:
+	li	a1, 204
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

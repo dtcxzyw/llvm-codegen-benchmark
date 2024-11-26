@@ -9,34 +9,42 @@ func0000000000000001:                   # @func0000000000000001
 	addw	a0, a0, a1
 	ret
 func0000000000000003:                   # @func0000000000000003
-	andi	a2, a1, 1
-	li	a1, 12
-	bnez	a2, .LBB2_2
+	andi	a1, a1, 1
+	bnez	a1, .LBB2_2
 	li	a1, 16
-.LBB2_2:                                # %entry
+	addw	a0, a0, a1
+	ret
+.LBB2_2:
+	li	a1, 12
 	addw	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
-	andi	a2, a1, 1
-	li	a1, 8
-	bnez	a2, .LBB3_2
+	andi	a1, a1, 1
+	bnez	a1, .LBB3_2
 	li	a1, 4
-.LBB3_2:                                # %entry
+	addw	a0, a0, a1
+	ret
+.LBB3_2:
+	li	a1, 8
 	addw	a0, a0, a1
 	ret
 func0000000000000009:                   # @func0000000000000009
-	andi	a2, a1, 1
-	li	a1, 11
-	bnez	a2, .LBB4_2
+	andi	a1, a1, 1
+	bnez	a1, .LBB4_2
 	li	a1, 14
-.LBB4_2:                                # %entry
+	addw	a0, a0, a1
+	ret
+.LBB4_2:
+	li	a1, 11
 	addw	a0, a0, a1
 	ret
 func000000000000000b:                   # @func000000000000000b
-	andi	a2, a1, 1
-	li	a1, 9
-	bnez	a2, .LBB5_2
+	andi	a1, a1, 1
+	bnez	a1, .LBB5_2
 	li	a1, 12
-.LBB5_2:                                # %entry
+	addw	a0, a0, a1
+	ret
+.LBB5_2:
+	li	a1, 9
 	addw	a0, a0, a1
 	ret

@@ -5,19 +5,23 @@ func000000000000000e:                   # @func000000000000000e
 	or	a0, a0, a1
 	ret
 func0000000000000022:                   # @func0000000000000022
-	srliw	a2, a1, 16
-	li	a1, 224
-	beqz	a2, .LBB1_2
+	srliw	a1, a1, 16
+	beqz	a1, .LBB1_2
 	li	a1, 128
-.LBB1_2:                                # %entry
+	or	a0, a0, a1
+	ret
+.LBB1_2:
+	li	a1, 224
 	or	a0, a0, a1
 	ret
 func0000000000000026:                   # @func0000000000000026
-	srliw	a2, a1, 11
-	li	a1, 192
-	beqz	a2, .LBB2_2
+	srliw	a1, a1, 11
+	beqz	a1, .LBB2_2
 	li	a1, 128
-.LBB2_2:                                # %entry
+	or	a0, a0, a1
+	ret
+.LBB2_2:
+	li	a1, 192
 	or	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008

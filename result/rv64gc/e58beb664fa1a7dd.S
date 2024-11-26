@@ -7,11 +7,14 @@ func000000000000000c:                   # @func000000000000000c
 	snez	a0, a0
 	ret
 func0000000000000001:                   # @func0000000000000001
-	andi	a2, a1, 1
-	li	a1, 3
-	bnez	a2, .LBB1_2
+	andi	a1, a1, 1
+	bnez	a1, .LBB1_2
 	li	a1, 7
-.LBB1_2:                                # %entry
+	and	a0, a0, a1
+	seqz	a0, a0
+	ret
+.LBB1_2:
+	li	a1, 3
 	and	a0, a0, a1
 	seqz	a0, a0
 	ret

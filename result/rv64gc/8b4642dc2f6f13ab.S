@@ -14,12 +14,12 @@ func0000000000000001:                   # @func0000000000000001
 	slli	a0, a0, 30
 	ret
 func0000000000000034:                   # @func0000000000000034
-	mv	a2, a0
 	addi	a1, a1, 4
-	li	a0, 8
-	bltu	a1, a2, .LBB2_2
+	bltu	a1, a0, .LBB2_2
 	li	a0, 4
-.LBB2_2:                                # %entry
+	ret
+.LBB2_2:
+	li	a0, 8
 	ret
 func0000000000000031:                   # @func0000000000000031
 	addi	a1, a1, 1

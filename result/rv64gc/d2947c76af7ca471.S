@@ -14,43 +14,58 @@ func0000000000000044:                   # @func0000000000000044
 	sltu	a0, a0, a1
 	ret
 func0000000000000071:                   # @func0000000000000071
-	andi	a3, a2, 255
-	li	a4, 1
-	li	a2, 12
-	beq	a3, a4, .LBB2_2
+	andi	a2, a2, 255
+	li	a3, 1
+	beq	a2, a3, .LBB2_2
 	li	a2, 4
-.LBB2_2:                                # %entry
+	add	a1, a1, a2
+	xor	a0, a0, a1
+	seqz	a0, a0
+	ret
+.LBB2_2:
+	li	a2, 12
 	add	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000078:                   # @func0000000000000078
-	andi	a3, a2, 255
-	li	a4, 1
-	li	a2, 12
-	beq	a3, a4, .LBB3_2
+	andi	a2, a2, 255
+	li	a3, 1
+	beq	a2, a3, .LBB3_2
 	li	a2, 4
-.LBB3_2:                                # %entry
+	add	a1, a1, a2
+	sltu	a0, a1, a0
+	ret
+.LBB3_2:
+	li	a2, 12
 	add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
 func0000000000000041:                   # @func0000000000000041
-	andi	a3, a2, 255
-	li	a2, 4
-	beqz	a3, .LBB4_2
+	andi	a2, a2, 255
+	beqz	a2, .LBB4_2
 	li	a2, 12
-.LBB4_2:                                # %entry
+	add	a1, a1, a2
+	xor	a0, a0, a1
+	seqz	a0, a0
+	ret
+.LBB4_2:
+	li	a2, 4
 	add	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000049:                   # @func0000000000000049
-	andi	a3, a2, 255
-	li	a4, 8
-	li	a2, 12
-	beq	a3, a4, .LBB5_2
+	andi	a2, a2, 255
+	li	a3, 8
+	beq	a2, a3, .LBB5_2
 	li	a2, 4
-.LBB5_2:                                # %entry
+	add	a1, a1, a2
+	sltu	a0, a0, a1
+	xori	a0, a0, 1
+	ret
+.LBB5_2:
+	li	a2, 12
 	add	a1, a1, a2
 	sltu	a0, a0, a1
 	xori	a0, a0, 1

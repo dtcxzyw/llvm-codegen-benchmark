@@ -19,11 +19,12 @@ func000000000000008c:                   # @func000000000000008c
 	andi	a1, a1, 15
 	sltiu	a1, a1, 3
 	seqz	a0, a0
-	or	a1, a1, a0
-	li	a0, 16
-	beqz	a1, .LBB2_2
+	or	a0, a0, a1
+	beqz	a0, .LBB2_2
 	li	a0, 4
-.LBB2_2:                                # %entry
+	ret
+.LBB2_2:
+	li	a0, 16
 	ret
 func000000000000001c:                   # @func000000000000001c
 	andi	a0, a0, 255

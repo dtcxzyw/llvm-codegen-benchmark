@@ -26,10 +26,9 @@ func0000000000000053:                   # @func0000000000000053
 	ret
 func0000000000000043:                   # @func0000000000000043
 	sext.w	a2, a0
-	li	a3, 63
-	li	a1, 127
-	bltu	a3, a2, .LBB3_2
 	li	a1, 63
+	bgeu	a1, a2, .LBB3_2
+	li	a1, 127
 .LBB3_2:                                # %entry
 	subw	a0, a1, a0
 	ret

@@ -6,12 +6,15 @@ func0000000000000054:                   # @func0000000000000054
 	sltiu	a0, a0, 255
 	ret
 func000000000000000a:                   # @func000000000000000a
-	andi	a3, a0, 1
+	andi	a0, a0, 1
 	subw	a1, a1, a2
-	li	a0, -32
-	bnez	a3, .LBB1_2
+	bnez	a0, .LBB1_2
 	li	a0, -40
-.LBB1_2:                                # %entry
+	addw	a0, a0, a1
+	sgtz	a0, a0
+	ret
+.LBB1_2:
+	li	a0, -32
 	addw	a0, a0, a1
 	sgtz	a0, a0
 	ret

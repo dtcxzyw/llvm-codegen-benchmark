@@ -16,12 +16,16 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func0000000000000001:                   # @func0000000000000001
 	sext.w	a0, a0
-	andi	a3, a2, 1
+	andi	a2, a2, 1
 	snez	a0, a0
-	li	a2, 1012
-	bnez	a3, .LBB1_2
+	bnez	a2, .LBB1_2
 	li	a2, 1008
-.LBB1_2:                                # %entry
+	or	a1, a1, a2
+	slli	a0, a0, 3
+	or	a0, a0, a1
+	ret
+.LBB1_2:
+	li	a2, 1012
 	or	a1, a1, a2
 	slli	a0, a0, 3
 	or	a0, a0, a1

@@ -1,18 +1,24 @@
 func0000000000000018:                   # @func0000000000000018
-	andi	a2, a1, 2
-	li	a1, 4
-	beqz	a2, .LBB0_2
+	andi	a1, a1, 2
+	beqz	a1, .LBB0_2
 	li	a1, 8
-.LBB0_2:                                # %entry
+	add	a0, a0, a1
+	addi	a0, a0, 1
+	ret
+.LBB0_2:
+	li	a1, 4
 	add	a0, a0, a1
 	addi	a0, a0, 1
 	ret
 func000000000000001a:                   # @func000000000000001a
-	andi	a2, a1, 8
-	li	a1, -120
-	beqz	a2, .LBB1_2
+	andi	a1, a1, 8
+	beqz	a1, .LBB1_2
 	li	a1, -112
-.LBB1_2:                                # %entry
+	add	a0, a0, a1
+	addi	a0, a0, 8
+	ret
+.LBB1_2:
+	li	a1, -120
 	add	a0, a0, a1
 	addi	a0, a0, 8
 	ret

@@ -36,11 +36,15 @@ func0000000000000046:                   # @func0000000000000046
 	slti	a0, a0, 4
 	ret
 func000000000000004a:                   # @func000000000000004a
-	li	a2, -60
 	beqz	a1, .LBB5_2
-	li	a2, -360
-.LBB5_2:                                # %entry
-	addw	a0, a0, a2
+	li	a1, -360
+	addw	a0, a0, a1
+	slti	a0, a0, 0
+	xori	a0, a0, 1
+	ret
+.LBB5_2:
+	li	a1, -60
+	addw	a0, a0, a1
 	slti	a0, a0, 0
 	xori	a0, a0, 1
 	ret

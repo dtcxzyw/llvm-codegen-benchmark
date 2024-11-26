@@ -16,21 +16,28 @@ func0000000000000054:                   # @func0000000000000054
 	sltu	a0, a0, a1
 	ret
 func0000000000000071:                   # @func0000000000000071
-	andi	a2, a1, 1
-	li	a1, 32
-	bnez	a2, .LBB1_2
+	andi	a1, a1, 1
+	bnez	a1, .LBB1_2
 	li	a1, 48
-.LBB1_2:                                # %entry
+	addi	a0, a0, 1
+	xor	a0, a0, a1
+	seqz	a0, a0
+	ret
+.LBB1_2:
+	li	a1, 32
 	addi	a0, a0, 1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000074:                   # @func0000000000000074
-	andi	a2, a1, 1
-	li	a1, 6
-	bnez	a2, .LBB2_2
+	andi	a1, a1, 1
+	bnez	a1, .LBB2_2
 	li	a1, 8
-.LBB2_2:                                # %entry
+	addi	a0, a0, 1
+	sltu	a0, a0, a1
+	ret
+.LBB2_2:
+	li	a1, 6
 	addi	a0, a0, 1
 	sltu	a0, a0, a1
 	ret

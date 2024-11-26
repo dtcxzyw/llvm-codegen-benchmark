@@ -4,18 +4,20 @@ func0000000000000008:                   # @func0000000000000008
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa5, %lo(.LCPI0_0)(a0)
 	fsub.d	fa4, fa0, fa1
-	feq.d	a1, fa4, fa5
-	li	a0, 31
-	bnez	a1, .LBB0_2
+	feq.d	a0, fa4, fa5
+	bnez	a0, .LBB0_2
 	li	a0, 27
-.LBB0_2:                                # %entry
+	ret
+.LBB0_2:
+	li	a0, 31
 	ret
 func0000000000000004:                   # @func0000000000000004
-	flt.d	a1, fa1, fa0
-	li	a0, 11
-	bnez	a1, .LBB1_2
+	flt.d	a0, fa1, fa0
+	bnez	a0, .LBB1_2
 	li	a0, 28
-.LBB1_2:                                # %entry
+	ret
+.LBB1_2:
+	li	a0, 11
 	ret
 func0000000000000002:                   # @func0000000000000002
 	flt.d	a0, fa0, fa1

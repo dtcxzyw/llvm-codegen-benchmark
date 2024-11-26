@@ -5,11 +5,14 @@ func0000000000000011:                   # @func0000000000000011
 	seqz	a0, a0
 	ret
 func0000000000000001:                   # @func0000000000000001
-	andi	a2, a0, 1
-	li	a0, 15
-	bnez	a2, .LBB1_2
+	andi	a0, a0, 1
+	bnez	a0, .LBB1_2
 	li	a0, 63
-.LBB1_2:                                # %entry
+	and	a0, a0, a1
+	seqz	a0, a0
+	ret
+.LBB1_2:
+	li	a0, 15
 	and	a0, a0, a1
 	seqz	a0, a0
 	ret

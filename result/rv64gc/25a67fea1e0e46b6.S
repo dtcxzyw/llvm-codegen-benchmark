@@ -6,11 +6,13 @@ func0000000000000000:                   # @func0000000000000000
 	srli	a0, a0, 32
 	ret
 func0000000000000007:                   # @func0000000000000007
-	andi	a2, a1, 1
-	li	a1, 2
-	bnez	a2, .LBB1_2
+	andi	a1, a1, 1
+	bnez	a1, .LBB1_2
 	li	a1, 12
-.LBB1_2:                                # %entry
+	sllw	a0, a0, a1
+	ret
+.LBB1_2:
+	li	a1, 2
 	sllw	a0, a0, a1
 	ret
 func0000000000000003:                   # @func0000000000000003

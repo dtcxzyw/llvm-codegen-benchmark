@@ -6,12 +6,15 @@ func0000000000000007:                   # @func0000000000000007
 	or	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004
-	andi	a2, a1, 255
-	li	a3, 11
-	li	a1, 192
-	beq	a2, a3, .LBB1_2
+	andi	a1, a1, 255
+	li	a2, 11
+	beq	a1, a2, .LBB1_2
 	li	a1, 208
-.LBB1_2:                                # %entry
+	andi	a0, a0, 255
+	or	a0, a0, a1
+	ret
+.LBB1_2:
+	li	a1, 192
 	andi	a0, a0, 255
 	or	a0, a0, a1
 	ret
@@ -24,11 +27,14 @@ func0000000000000006:                   # @func0000000000000006
 	or	a0, a0, a1
 	ret
 func0000000000000005:                   # @func0000000000000005
-	andi	a2, a1, 255
-	li	a1, 2
-	beqz	a2, .LBB3_2
+	andi	a1, a1, 255
+	beqz	a1, .LBB3_2
 	li	a1, 4
-.LBB3_2:                                # %entry
+	andi	a0, a0, 255
+	or	a0, a0, a1
+	ret
+.LBB3_2:
+	li	a1, 2
 	andi	a0, a0, 255
 	or	a0, a0, a1
 	ret

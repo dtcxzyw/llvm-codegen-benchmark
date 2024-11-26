@@ -9,11 +9,13 @@ func0000000000000023:                   # @func0000000000000023
 func0000000000000003:                   # @func0000000000000003
 	sext.w	a3, a0
 	or	a0, a1, a2
-	li	a2, 4
+	li	a1, 4
 	andi	a0, a0, -25
-	li	a1, 24
-	beq	a3, a2, .LBB1_2
+	beq	a3, a1, .LBB1_2
 	li	a1, 16
-.LBB1_2:                                # %entry
+	or	a0, a0, a1
+	ret
+.LBB1_2:
+	li	a1, 24
 	or	a0, a0, a1
 	ret

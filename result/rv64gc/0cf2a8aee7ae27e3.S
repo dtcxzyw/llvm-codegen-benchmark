@@ -1,10 +1,13 @@
 func000000000000001f:                   # @func000000000000001f
-	andi	a2, a0, 1
+	andi	a0, a0, 1
 	slli	a1, a1, 5
-	li	a0, 2
-	bnez	a2, .LBB0_2
+	bnez	a0, .LBB0_2
 	li	a0, 4
-.LBB0_2:                                # %entry
+	or	a0, a0, a1
+	addiw	a0, a0, 33
+	ret
+.LBB0_2:
+	li	a0, 2
 	or	a0, a0, a1
 	addiw	a0, a0, 33
 	ret

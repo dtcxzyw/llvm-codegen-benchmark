@@ -17,11 +17,15 @@ func000000000000001f:                   # @func000000000000001f
 	addi	a0, a0, 8
 	ret
 func0000000000000013:                   # @func0000000000000013
-	slli	a2, a1, 48
-	li	a1, 24
-	beqz	a2, .LBB2_2
+	slli	a1, a1, 48
+	beqz	a1, .LBB2_2
 	li	a1, 40
-.LBB2_2:                                # %entry
+	add	a0, a0, a1
+	lui	a1, 2
+	add	a0, a0, a1
+	ret
+.LBB2_2:
+	li	a1, 24
 	add	a0, a0, a1
 	lui	a1, 2
 	add	a0, a0, a1

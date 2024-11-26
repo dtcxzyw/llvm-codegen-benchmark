@@ -18,11 +18,13 @@ func0000000000000004:                   # @func0000000000000004
 	addi	a0, a0, 1
 	ret
 func0000000000000005:                   # @func0000000000000005
-	sext.w	a2, a1
-	li	a3, 1853
-	li	a1, 12
-	beq	a2, a3, .LBB3_2
+	sext.w	a1, a1
+	li	a2, 1853
+	beq	a1, a2, .LBB3_2
 	li	a1, 8
-.LBB3_2:                                # %entry
+	sub	a0, a1, a0
+	ret
+.LBB3_2:
+	li	a1, 12
 	sub	a0, a1, a0
 	ret

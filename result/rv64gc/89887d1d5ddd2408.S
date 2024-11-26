@@ -6,12 +6,15 @@ func000000000000029a:                   # @func000000000000029a
 	xori	a0, a0, 1
 	ret
 func0000000000000106:                   # @func0000000000000106
-	sext.w	a2, a1
-	li	a3, 2
-	li	a1, -3
-	bltu	a2, a3, .LBB1_2
+	sext.w	a1, a1
+	li	a2, 2
+	bltu	a1, a2, .LBB1_2
 	li	a1, -6
-.LBB1_2:                                # %entry
+	addw	a0, a0, a1
+	slti	a0, a0, 1
+	ret
+.LBB1_2:
+	li	a1, -3
 	addw	a0, a0, a1
 	slti	a0, a0, 1
 	ret
@@ -40,21 +43,27 @@ func0000000000000301:                   # @func0000000000000301
 	seqz	a0, a0
 	ret
 func0000000000000114:                   # @func0000000000000114
-	sext.w	a2, a1
-	li	a3, 1530
-	li	a1, 3
-	bltu	a2, a3, .LBB5_2
+	sext.w	a1, a1
+	li	a2, 1530
+	bltu	a1, a2, .LBB5_2
 	li	a1, -9
-.LBB5_2:                                # %entry
+	addw	a0, a0, a1
+	sltiu	a0, a0, 3
+	ret
+.LBB5_2:
+	li	a1, 3
 	addw	a0, a0, a1
 	sltiu	a0, a0, 3
 	ret
 func0000000000000044:                   # @func0000000000000044
-	sext.w	a2, a1
-	li	a1, -7
-	beqz	a2, .LBB6_2
+	sext.w	a1, a1
+	beqz	a1, .LBB6_2
 	li	a1, -9
-.LBB6_2:                                # %entry
+	addw	a0, a0, a1
+	sltiu	a0, a0, 7
+	ret
+.LBB6_2:
+	li	a1, -7
 	addw	a0, a0, a1
 	sltiu	a0, a0, 7
 	ret
@@ -77,11 +86,14 @@ func000000000000005a:                   # @func000000000000005a
 	sgtz	a0, a0
 	ret
 func000000000000004a:                   # @func000000000000004a
-	sext.w	a2, a1
-	li	a1, -32
-	beqz	a2, .LBB9_2
+	sext.w	a1, a1
+	beqz	a1, .LBB9_2
 	li	a1, -40
-.LBB9_2:                                # %entry
+	addw	a0, a0, a1
+	sgtz	a0, a0
+	ret
+.LBB9_2:
+	li	a1, -32
 	addw	a0, a0, a1
 	sgtz	a0, a0
 	ret
@@ -117,12 +129,16 @@ func0000000000000071:                   # @func0000000000000071
 	seqz	a0, a0
 	ret
 func0000000000000048:                   # @func0000000000000048
-	sext.w	a2, a1
-	li	a3, 4
-	li	a1, 163
-	beq	a2, a3, .LBB14_2
+	sext.w	a1, a1
+	li	a2, 4
+	beq	a1, a2, .LBB14_2
 	li	a1, 87
-.LBB14_2:                               # %entry
+	addw	a0, a0, a1
+	lui	a1, 64
+	sltu	a0, a1, a0
+	ret
+.LBB14_2:
+	li	a1, 163
 	addw	a0, a0, a1
 	lui	a1, 64
 	sltu	a0, a1, a0

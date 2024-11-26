@@ -1,11 +1,12 @@
 func0000000000000001:                   # @func0000000000000001
 	slli	a0, a0, 48
-	srli	a1, a0, 48
-	li	a2, 5
-	li	a0, 4
-	beq	a1, a2, .LBB0_2
+	srli	a0, a0, 48
+	li	a1, 5
+	beq	a0, a1, .LBB0_2
 	li	a0, 2
-.LBB0_2:                                # %entry
+	ret
+.LBB0_2:
+	li	a0, 4
 	ret
 func0000000000000008:                   # @func0000000000000008
 	slli	a0, a0, 48
@@ -40,9 +41,10 @@ func000000000000000a:                   # @func000000000000000a
 	sub	a0, a1, a0
 	ret
 func000000000000000c:                   # @func000000000000000c
-	slli	a1, a0, 48
-	li	a0, 9
-	beqz	a1, .LBB5_2
+	slli	a0, a0, 48
+	beqz	a0, .LBB5_2
 	li	a0, 5
-.LBB5_2:                                # %entry
+	ret
+.LBB5_2:
+	li	a0, 9
 	ret

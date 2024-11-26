@@ -15,9 +15,10 @@ func0000000000000034:                   # @func0000000000000034
 	xor	a2, a2, a0
 	seqz	a2, a2
 	slt	a0, a1, a0
-	or	a2, a2, a0
-	li	a0, 24
-	bnez	a2, .LBB1_2
+	or	a0, a0, a2
+	bnez	a0, .LBB1_2
 	li	a0, 8
-.LBB1_2:                                # %entry
+	ret
+.LBB1_2:
+	li	a0, 24
 	ret

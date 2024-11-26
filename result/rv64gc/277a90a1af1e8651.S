@@ -22,11 +22,14 @@ func0000000000000003:                   # @func0000000000000003
 	or	a0, a0, a2
 	ret
 func0000000000000002:                   # @func0000000000000002
-	andi	a3, a2, 1
-	li	a2, 12
-	bnez	a3, .LBB2_2
+	andi	a2, a2, 1
+	bnez	a2, .LBB2_2
 	li	a2, 76
-.LBB2_2:                                # %entry
+	or	a0, a0, a1
+	or	a0, a0, a2
+	ret
+.LBB2_2:
+	li	a2, 12
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

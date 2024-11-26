@@ -1,27 +1,25 @@
 func00000000000000ca:                   # @func00000000000000ca
+	andi	a1, a1, 1
 	sext.w	a0, a0
-	andi	a3, a1, 1
-	li	a1, 1
-	bnez	a3, .LBB0_2
-	mv	a1, a2
+	beqz	a1, .LBB0_2
+	li	a2, 1
 .LBB0_2:                                # %entry
-	sext.w	a1, a1
-	xor	a0, a0, a1
+	sext.w	a2, a2
+	xor	a0, a0, a2
 	snez	a0, a0
-	sgtz	a1, a1
+	sgtz	a1, a2
 	and	a0, a0, a1
 	ret
 func000000000000006c:                   # @func000000000000006c
+	andi	a1, a1, 1
 	sext.w	a0, a0
-	andi	a3, a1, 1
-	li	a1, 13
-	bnez	a3, .LBB1_2
-	mv	a1, a2
+	beqz	a1, .LBB1_2
+	li	a2, 13
 .LBB1_2:                                # %entry
-	sext.w	a1, a1
-	sltiu	a2, a1, -1
-	slt	a0, a1, a0
-	and	a0, a0, a2
+	sext.w	a2, a2
+	sltiu	a1, a2, -1
+	slt	a0, a2, a0
+	and	a0, a0, a1
 	ret
 func000000000000006a:                   # @func000000000000006a
 	sext.w	a0, a0

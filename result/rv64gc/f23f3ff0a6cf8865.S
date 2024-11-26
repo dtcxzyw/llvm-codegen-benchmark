@@ -5,18 +5,16 @@ func0000000000000008:                   # @func0000000000000008
 	addi	a1, a1, -2
 	sltu	a1, a1, a2
 	and	a1, a1, a0
-	li	a2, -48
-	beqz	a3, .LBB0_3
-	li	a0, -16
+	bnez	a3, .LBB0_2
+	li	a0, -32
+	bnez	a1, .LBB0_3
+	j	.LBB0_4
+.LBB0_2:
+	li	a0, -48
 	beqz	a1, .LBB0_4
-.LBB0_2:                                # %entry
-	ret
-.LBB0_3:                                # %entry
-	li	a2, -32
+.LBB0_3:
 	li	a0, -16
-	bnez	a1, .LBB0_2
 .LBB0_4:                                # %entry
-	mv	a0, a2
 	ret
 func0000000000000001:                   # @func0000000000000001
 	addi	a2, a2, -2047

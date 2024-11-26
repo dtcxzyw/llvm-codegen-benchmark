@@ -29,12 +29,13 @@ func000000000000001a:                   # @func000000000000001a
 	and	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
-	sub	a1, a0, a1
-	li	a2, 32
-	li	a0, 3
-	bltu	a2, a1, .LBB5_2
+	sub	a0, a0, a1
+	li	a1, 32
+	bltu	a1, a0, .LBB5_2
 	li	a0, 1
-.LBB5_2:                                # %entry
+	ret
+.LBB5_2:
+	li	a0, 3
 	ret
 func0000000000000016:                   # @func0000000000000016
 	slt	a0, a1, a0

@@ -17,12 +17,15 @@ func000000000000001a:                   # @func000000000000001a
 	add	a0, a0, a2
 	ret
 func0000000000000010:                   # @func0000000000000010
-	li	a3, -32
 	beqz	a2, .LBB2_2
-	li	a3, -128
-.LBB2_2:                                # %entry
+	li	a2, -128
 	add	a0, a0, a1
-	add	a0, a0, a3
+	add	a0, a0, a2
+	ret
+.LBB2_2:
+	li	a2, -32
+	add	a0, a0, a1
+	add	a0, a0, a2
 	ret
 func00000000000000c0:                   # @func00000000000000c0
 	snez	a2, a2
@@ -32,32 +35,45 @@ func00000000000000c0:                   # @func00000000000000c0
 	add	a0, a0, a2
 	ret
 func0000000000000040:                   # @func0000000000000040
-	li	a4, 4
-	li	a3, -72
-	bltu	a2, a4, .LBB4_2
-	li	a3, -48
-.LBB4_2:                                # %entry
+	li	a3, 4
+	bltu	a2, a3, .LBB4_2
+	li	a2, -48
 	add	a0, a0, a1
-	add	a0, a0, a3
+	add	a0, a0, a2
+	ret
+.LBB4_2:
+	li	a2, -72
+	add	a0, a0, a1
+	add	a0, a0, a2
 	ret
 func0000000000000012:                   # @func0000000000000012
-	li	a4, 63
-	li	a3, 40
-	beq	a2, a4, .LBB5_2
-	li	a3, 24
-.LBB5_2:                                # %entry
+	li	a3, 63
+	beq	a2, a3, .LBB5_2
+	li	a2, 24
 	slli	a1, a1, 6
 	add	a0, a0, a1
-	add	a0, a0, a3
+	add	a0, a0, a2
+	ret
+.LBB5_2:
+	li	a2, 40
+	slli	a1, a1, 6
+	add	a0, a0, a1
+	add	a0, a0, a2
 	ret
 func0000000000000018:                   # @func0000000000000018
-	li	a3, -24
 	beqz	a2, .LBB6_2
-	li	a3, -12
-.LBB6_2:                                # %entry
-	slli	a2, a1, 2
+	li	a2, -12
+	slli	a3, a1, 2
 	slli	a1, a1, 4
-	sub	a1, a1, a2
-	add	a0, a0, a3
+	sub	a1, a1, a3
+	add	a0, a0, a2
+	add	a0, a0, a1
+	ret
+.LBB6_2:
+	li	a2, -24
+	slli	a3, a1, 2
+	slli	a1, a1, 4
+	sub	a1, a1, a3
+	add	a0, a0, a2
 	add	a0, a0, a1
 	ret

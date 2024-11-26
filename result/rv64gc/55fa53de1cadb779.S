@@ -1,7 +1,6 @@
 func0000000000000011:                   # @func0000000000000011
-	andi	a3, a0, 1
-	li	a0, -7
-	bnez	a3, .LBB0_2
+	andi	a0, a0, 1
+	bnez	a0, .LBB0_2
 	andi	a0, a2, 255
 	or	a0, a0, a1
 	lui	a1, 196384
@@ -11,5 +10,7 @@ func0000000000000011:                   # @func0000000000000011
 	seqz	a0, a0
 	addi	a0, a0, -1
 	andi	a0, a0, -9
-.LBB0_2:                                # %entry
+	ret
+.LBB0_2:
+	li	a0, -7
 	ret

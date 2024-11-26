@@ -1,9 +1,12 @@
 func0000000000000004:                   # @func0000000000000004
-	andi	a3, a2, 64
-	li	a2, 9
-	beqz	a3, .LBB0_2
+	andi	a2, a2, 64
+	beqz	a2, .LBB0_2
 	li	a2, 64
-.LBB0_2:                                # %entry
+	or	a0, a0, a1
+	or	a0, a0, a2
+	ret
+.LBB0_2:
+	li	a2, 9
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

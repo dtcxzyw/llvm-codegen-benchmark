@@ -1,43 +1,40 @@
 func0000000000000001:                   # @func0000000000000001
-	andi	a1, a1, 1
-	andi	a3, a2, 1
-	li	a2, 6
-	beqz	a3, .LBB0_4
-	andi	a3, a0, 255
+	mv	a3, a0
+	andi	a0, a2, 1
+	andi	a2, a1, 1
+	bnez	a0, .LBB0_2
+	li	a0, 2
+	andi	a1, a3, 255
+	bnez	a2, .LBB0_3
+	j	.LBB0_4
+.LBB0_2:
+	li	a0, 6
+	andi	a1, a3, 255
+	beqz	a2, .LBB0_4
+.LBB0_3:
 	li	a0, 7
-	beqz	a1, .LBB0_5
-.LBB0_2:                                # %entry
-	li	a1, 79
-	beq	a3, a1, .LBB0_6
-.LBB0_3:                                # %entry
-	ret
 .LBB0_4:                                # %entry
-	li	a2, 2
-	andi	a3, a0, 255
-	li	a0, 7
-	bnez	a1, .LBB0_2
-.LBB0_5:                                # %entry
-	mv	a0, a2
-	li	a1, 79
-	bne	a3, a1, .LBB0_3
+	li	a2, 79
+	beq	a1, a2, .LBB0_6
+	ret
 .LBB0_6:                                # %entry
 	li	a0, 8
 	ret
 func0000000000000004:                   # @func0000000000000004
-	andi	a3, a0, 255
-	andi	a1, a1, 1
-	li	a0, 4
-	beqz	a1, .LBB1_3
-	li	a1, 3
-	bltu	a3, a1, .LBB1_4
-.LBB1_2:                                # %entry
-	ret
-.LBB1_3:                                # %entry
+	andi	a3, a1, 1
+	andi	a1, a0, 255
+	bnez	a3, .LBB1_2
 	slli	a2, a2, 63
 	srai	a0, a2, 63
 	andi	a0, a0, 3
-	li	a1, 3
-	bgeu	a3, a1, .LBB1_2
-.LBB1_4:                                # %entry
+	li	a2, 3
+	bltu	a1, a2, .LBB1_3
+	j	.LBB1_4
+.LBB1_2:
+	li	a0, 4
+	li	a2, 3
+	bgeu	a1, a2, .LBB1_4
+.LBB1_3:                                # %entry
 	li	a0, 5
+.LBB1_4:                                # %entry
 	ret

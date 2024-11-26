@@ -1,10 +1,14 @@
 func0000000000000044:                   # @func0000000000000044
-	sext.w	a3, a2
-	li	a4, 1530
-	li	a2, 3
-	bltu	a3, a4, .LBB0_2
+	sext.w	a2, a2
+	li	a3, 1530
+	bltu	a2, a3, .LBB0_2
 	li	a2, 247
-.LBB0_2:                                # %entry
+	add	a1, a1, a2
+	andi	a1, a1, 255
+	addw	a0, a0, a1
+	ret
+.LBB0_2:
+	li	a2, 3
 	add	a1, a1, a2
 	andi	a1, a1, 255
 	addw	a0, a0, a1

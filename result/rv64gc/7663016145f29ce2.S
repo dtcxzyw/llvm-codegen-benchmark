@@ -23,12 +23,14 @@ func0000000000000028:                   # @func0000000000000028
 	add	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
-	li	a3, 1530
-	li	a2, 3
-	bltu	a1, a3, .LBB3_2
-	li	a2, -9
-.LBB3_2:                                # %entry
-	add	a0, a0, a2
+	li	a2, 1530
+	bltu	a1, a2, .LBB3_2
+	li	a1, -9
+	add	a0, a0, a1
+	ret
+.LBB3_2:
+	li	a1, 3
+	add	a0, a0, a1
 	ret
 func0000000000000007:                   # @func0000000000000007
 	li	a2, -1
@@ -50,12 +52,14 @@ func0000000000000029:                   # @func0000000000000029
 	add	a0, a0, a1
 	ret
 func0000000000000012:                   # @func0000000000000012
-	li	a3, 2
-	li	a2, 3
-	bltu	a1, a3, .LBB7_2
-	li	a2, 11
-.LBB7_2:                                # %entry
-	add	a0, a0, a2
+	li	a2, 2
+	bltu	a1, a2, .LBB7_2
+	li	a1, 11
+	add	a0, a0, a1
+	ret
+.LBB7_2:
+	li	a1, 3
+	add	a0, a0, a1
 	ret
 func0000000000000005:                   # @func0000000000000005
 	seqz	a1, a1
@@ -86,10 +90,9 @@ func0000000000000031:                   # @func0000000000000031
 	add	a0, a0, a1
 	ret
 func0000000000000019:                   # @func0000000000000019
-	li	a3, 16
-	li	a2, 32
-	blt	a3, a1, .LBB13_2
 	li	a2, 16
+	bge	a2, a1, .LBB13_2
+	li	a2, 32
 .LBB13_2:                               # %entry
 	add	a0, a0, a2
 	ret

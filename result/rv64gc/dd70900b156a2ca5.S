@@ -64,15 +64,15 @@ func0000000000000018:                   # @func0000000000000018
 	slli	a0, a0, 48
 	srli	a1, a0, 48
 	li	a2, 7
-	li	a0, 768
-	bne	a1, a2, .LBB4_3
-	bltu	a2, a1, .LBB4_4
-.LBB4_2:                                # %entry
-	ret
-.LBB4_3:                                # %entry
+	beq	a1, a2, .LBB4_2
 	li	a0, 512
-	bgeu	a2, a1, .LBB4_2
-.LBB4_4:                                # %entry
+	bltu	a2, a1, .LBB4_3
+	j	.LBB4_4
+.LBB4_2:
+	li	a0, 768
+	bgeu	a2, a1, .LBB4_4
+.LBB4_3:                                # %entry
 	li	a0, 3
 	slli	a0, a0, 10
+.LBB4_4:                                # %entry
 	ret

@@ -63,22 +63,21 @@ func0000000000000013:                   # @func0000000000000013
 	or	a0, a0, a2
 	ret
 func0000000000000005:                   # @func0000000000000005
+	andi	a2, a2, 1
 	sext.w	a1, a1
-	andi	a3, a2, 1
-	li	a2, 1040
-	beqz	a3, .LBB6_3
-	or	a0, a0, a2
-	li	a2, 8
-	bnez	a1, .LBB6_4
-.LBB6_2:                                # %entry
-	or	a0, a0, a2
-	ret
-.LBB6_3:                                # %entry
+	bnez	a2, .LBB6_3
 	li	a2, 16
 	or	a0, a0, a2
-	li	a2, 8
+	bnez	a1, .LBB6_4
+.LBB6_2:
+	li	a1, 8
+	or	a0, a0, a1
+	ret
+.LBB6_3:
+	li	a2, 1040
+	or	a0, a0, a2
 	beqz	a1, .LBB6_2
 .LBB6_4:                                # %entry
-	li	a2, 4
-	or	a0, a0, a2
+	li	a1, 4
+	or	a0, a0, a1
 	ret

@@ -1,16 +1,17 @@
 func0000000000000011:                   # @func0000000000000011
-	sext.w	a3, a1
-	sext.w	a2, a2
-	li	a1, 456
-	bnez	a2, .LBB0_3
-	bnez	a3, .LBB0_4
-.LBB0_2:                                # %entry
-	mv	a0, a1
-	ret
-.LBB0_3:                                # %entry
-	li	a1, 1184
+	sext.w	a3, a2
+	sext.w	a2, a1
 	beqz	a3, .LBB0_2
+	li	a1, 1184
+	bnez	a2, .LBB0_3
+	j	.LBB0_4
+.LBB0_2:
+	li	a1, 456
+	beqz	a2, .LBB0_4
+.LBB0_3:                                # %entry
+	mv	a1, a0
 .LBB0_4:                                # %entry
+	mv	a0, a1
 	ret
 func0000000000000014:                   # @func0000000000000014
 	sext.w	a1, a1
@@ -31,33 +32,34 @@ func00000000000000c1:                   # @func00000000000000c1
 .LBB2_2:                                # %entry
 	ret
 func0000000000000016:                   # @func0000000000000016
-	sext.w	a3, a1
-	sext.w	a2, a2
+	sext.w	a3, a2
 	li	a4, 1
+	sext.w	a2, a1
+	beq	a3, a4, .LBB3_2
+	li	a1, 16
+	bgez	a2, .LBB3_3
+	j	.LBB3_4
+.LBB3_2:
 	li	a1, 4
-	bne	a2, a4, .LBB3_3
-	bgez	a3, .LBB3_4
-.LBB3_2:                                # %entry
+	bltz	a2, .LBB3_4
+.LBB3_3:                                # %entry
+	mv	a1, a0
+.LBB3_4:                                # %entry
 	mv	a0, a1
 	ret
-.LBB3_3:                                # %entry
-	li	a1, 16
-	bltz	a3, .LBB3_2
-.LBB3_4:                                # %entry
-	ret
 func000000000000001a:                   # @func000000000000001a
+	sext.w	a2, a2
 	sext.w	a1, a1
-	sext.w	a3, a2
-	li	a2, 83
-	bnez	a3, .LBB4_3
-	bgez	a1, .LBB4_4
-.LBB4_2:                                # %entry
-	ret
-.LBB4_3:                                # %entry
+	beqz	a2, .LBB4_2
 	li	a2, 87
-	bltz	a1, .LBB4_2
-.LBB4_4:                                # %entry
+	bgez	a1, .LBB4_3
+	j	.LBB4_4
+.LBB4_2:
+	li	a2, 83
+	bltz	a1, .LBB4_4
+.LBB4_3:                                # %entry
 	mv	a0, a2
+.LBB4_4:                                # %entry
 	ret
 func00000000000000a1:                   # @func00000000000000a1
 	sext.w	a1, a1

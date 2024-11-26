@@ -5,28 +5,35 @@ func0000000000000009:                   # @func0000000000000009
 	xori	a0, a0, 1
 	ret
 func0000000000000001:                   # @func0000000000000001
-	andi	a2, a1, 1
-	li	a1, 24
-	bnez	a2, .LBB1_2
+	andi	a1, a1, 1
+	bnez	a1, .LBB1_2
 	li	a1, 16
-.LBB1_2:                                # %entry
+	xor	a0, a0, a1
+	seqz	a0, a0
+	ret
+.LBB1_2:
+	li	a1, 24
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
 func0000000000000024:                   # @func0000000000000024
-	andi	a2, a1, 1
-	li	a1, 6
-	bnez	a2, .LBB2_2
+	andi	a1, a1, 1
+	bnez	a1, .LBB2_2
 	li	a1, 2
-.LBB2_2:                                # %entry
+	sltu	a0, a0, a1
+	ret
+.LBB2_2:
+	li	a1, 6
 	sltu	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004
-	andi	a2, a1, 1
-	li	a1, 8
-	bnez	a2, .LBB3_2
+	andi	a1, a1, 1
+	bnez	a1, .LBB3_2
 	li	a1, 2
-.LBB3_2:                                # %entry
+	sltu	a0, a0, a1
+	ret
+.LBB3_2:
+	li	a1, 8
 	sltu	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008

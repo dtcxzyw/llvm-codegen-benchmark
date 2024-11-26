@@ -1,23 +1,19 @@
 func0000000000000009:                   # @func0000000000000009
 	fclass.d	a1, fa0
-	andi	a2, a1, 896
-	li	a1, -22
-	bnez	a2, .LBB0_2
-	mv	a1, a0
+	andi	a1, a1, 896
+	beqz	a1, .LBB0_2
+	li	a0, -22
 .LBB0_2:                                # %entry
-	mv	a0, a1
 	ret
 .LCPI1_0:
 	.quad	0x40d0000000000000              # double 16384
 func0000000000000004:                   # @func0000000000000004
 	lui	a1, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a1)
-	flt.d	a2, fa5, fa0
-	li	a1, 2
-	bnez	a2, .LBB1_2
-	mv	a1, a0
+	flt.d	a1, fa5, fa0
+	beqz	a1, .LBB1_2
+	li	a0, 2
 .LBB1_2:                                # %entry
-	mv	a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
 	fmv.d.x	fa5, zero
@@ -41,12 +37,10 @@ func000000000000000c:                   # @func000000000000000c
 func0000000000000002:                   # @func0000000000000002
 	lui	a1, %hi(.LCPI4_0)
 	fld	fa5, %lo(.LCPI4_0)(a1)
-	flt.d	a2, fa0, fa5
-	li	a1, 2
-	bnez	a2, .LBB4_2
-	mv	a1, a0
+	flt.d	a1, fa0, fa5
+	beqz	a1, .LBB4_2
+	li	a0, 2
 .LBB4_2:                                # %entry
-	mv	a0, a1
 	ret
 func0000000000000003:                   # @func0000000000000003
 	fmv.d.x	fa5, zero
@@ -71,10 +65,8 @@ func000000000000000d:                   # @func000000000000000d
 	ret
 func000000000000000b:                   # @func000000000000000b
 	fmv.d.x	fa5, zero
-	flt.d	a2, fa5, fa0
-	li	a1, 185
-	beqz	a2, .LBB8_2
-	mv	a1, a0
+	flt.d	a1, fa5, fa0
+	bnez	a1, .LBB8_2
+	li	a0, 185
 .LBB8_2:                                # %entry
-	mv	a0, a1
 	ret

@@ -7,11 +7,12 @@ func0000000000000041:                   # @func0000000000000041
 	ret
 func0000000000000061:                   # @func0000000000000061
 	srl	a0, a0, a1
-	andi	a1, a0, 1
-	li	a0, 1
-	beqz	a1, .LBB1_2
+	andi	a0, a0, 1
+	beqz	a0, .LBB1_2
 	li	a0, 4
-.LBB1_2:                                # %entry
+	ret
+.LBB1_2:
+	li	a0, 1
 	ret
 func0000000000000071:                   # @func0000000000000071
 	srl	a0, a0, a1

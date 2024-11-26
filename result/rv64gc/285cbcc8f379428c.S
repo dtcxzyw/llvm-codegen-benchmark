@@ -38,11 +38,13 @@ func0000000000000021:                   # @func0000000000000021
 	addw	a0, a0, a1
 	ret
 func0000000000000022:                   # @func0000000000000022
-	li	a3, 8
 	bltu	a2, a1, .LBB7_2
-	li	a3, 20
-.LBB7_2:                                # %entry
-	addw	a0, a0, a3
+	li	a1, 20
+	addw	a0, a0, a1
+	ret
+.LBB7_2:
+	li	a1, 8
+	addw	a0, a0, a1
 	ret
 func0000000000000005:                   # @func0000000000000005
 	xor	a1, a1, a2
