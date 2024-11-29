@@ -20,10 +20,9 @@ func0000000000000004:                   # @func0000000000000004
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vmv.v.i	v9, -13
 	li	a0, 59
-	vmsltu.vx	v8, v8, a0
-	li	a0, -26
 	vmerge.vim	v9, v9, 0, v0
-	vmv.v.x	v10, a0
-	vmv.v.v	v0, v8
-	vmerge.vvm	v8, v10, v9, v0
+	vmsltu.vx	v0, v8, a0
+	li	a0, -26
+	vmv.v.x	v8, a0
+	vmerge.vvm	v8, v8, v9, v0
 	ret

@@ -3,12 +3,11 @@ func0000000000000021:                   # @func0000000000000021
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vx	v0, v10, a0
 	vmv.v.i	v10, 0
-	vand.vi	v12, v8, 1
-	vmseq.vi	v8, v12, 0
+	vand.vi	v8, v8, 1
 	vmerge.vim	v10, v10, 1, v0
-	vmv.v.i	v12, 2
-	vmv1r.v	v0, v8
-	vmerge.vvm	v8, v12, v10, v0
+	vmseq.vi	v0, v8, 0
+	vmv.v.i	v8, 2
+	vmerge.vvm	v8, v8, v10, v0
 	ret
 func0000000000000181:                   # @func0000000000000181
 	vsetivli	zero, 8, e32, m2, ta, ma

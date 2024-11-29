@@ -7,11 +7,10 @@ func0000000000000001:                   # @func0000000000000001
 	li	a0, 70
 	vmerge.vxm	v12, v12, a0, v0
 	li	a0, 68
-	vmseq.vi	v10, v8, 0
 	vmv1r.v	v0, v11
-	vmerge.vxm	v8, v12, a0, v0
+	vmerge.vxm	v10, v12, a0, v0
 	li	a0, 80
-	vmv.v.x	v12, a0
-	vmv1r.v	v0, v10
-	vmerge.vvm	v8, v12, v8, v0
+	vmseq.vi	v0, v8, 0
+	vmv.v.x	v8, a0
+	vmerge.vvm	v8, v8, v10, v0
 	ret

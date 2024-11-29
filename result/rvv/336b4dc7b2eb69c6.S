@@ -2,12 +2,11 @@ func0000000000000285:                   # @func0000000000000285
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsgt.vi	v0, v12, 0
 	li	a0, 100
-	vmv.v.x	v14, a0
+	vmv.v.x	v12, a0
 	li	a0, -100
-	vmseq.vi	v12, v10, 0
-	vmerge.vxm	v10, v14, a0, v0
-	vmv1r.v	v0, v12
-	vadd.vv	v8, v8, v10, v0.t
+	vmerge.vxm	v12, v12, a0, v0
+	vmseq.vi	v0, v10, 0
+	vadd.vv	v8, v8, v12, v0.t
 	ret
 func00000000000002a9:                   # @func00000000000002a9
 	vsetivli	zero, 8, e32, m2, ta, ma

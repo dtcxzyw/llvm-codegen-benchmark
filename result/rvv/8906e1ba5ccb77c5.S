@@ -4,10 +4,9 @@ func0000000000000011:                   # @func0000000000000011
 	vmseq.vi	v0, v10, 2
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
-	vsll.vi	v14, v10, 4
-	vmseq.vi	v10, v8, 0
+	vsll.vi	v10, v10, 4
 	vmv1r.v	v0, v12
-	vmerge.vim	v8, v14, 4, v0
-	vmv1r.v	v0, v10
-	vmerge.vim	v8, v8, 0, v0
+	vmerge.vim	v10, v10, 4, v0
+	vmseq.vi	v0, v8, 0
+	vmerge.vim	v8, v10, 0, v0
 	ret

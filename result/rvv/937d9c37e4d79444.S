@@ -4,14 +4,15 @@ func0000000000000011:                   # @func0000000000000011
 	vmv.v.i	v10, 0
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vmseq.vx	v0, v8, a0
-	li	a0, 109
-	vmseq.vx	v8, v8, a0
 	li	a0, 9
 	slli	a0, a0, 32
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmerge.vxm	v10, v10, a0, v0
+	li	a0, 109
+	vsetvli	zero, zero, e8, mf4, ta, ma
+	vmseq.vx	v0, v8, a0
 	bseti	a0, zero, 35
-	vmv1r.v	v0, v8
+	vsetvli	zero, zero, e64, m2, ta, ma
 	vmerge.vxm	v8, v10, a0, v0
 	ret
 func0000000000000044:                   # @func0000000000000044

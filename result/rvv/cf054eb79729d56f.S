@@ -4,11 +4,10 @@ func0000000000000011:                   # @func0000000000000011
 	li	a0, 69
 	vmv.v.x	v10, a0
 	li	a0, 79
-	vand.vi	v12, v8, 8
-	vmseq.vi	v8, v12, 0
+	vand.vi	v8, v8, 8
 	vmerge.vxm	v10, v10, a0, v0
+	vmseq.vi	v0, v8, 0
 	li	a0, 78
-	vmv1r.v	v0, v8
 	vmerge.vxm	v8, v10, a0, v0
 	ret
 func00000000000000c1:                   # @func00000000000000c1

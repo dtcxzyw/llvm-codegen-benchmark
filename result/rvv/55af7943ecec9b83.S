@@ -23,13 +23,12 @@ func0000000000000019:                   # @func0000000000000019
 	vor.vx	v8, v8, a0, v0.t
 	ret
 func0000000000000002:                   # @func0000000000000002
+	vmv1r.v	v12, v0
 	li	a0, 1024
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vand.vx	v12, v10, a0
-	vmseq.vi	v10, v12, 0
-	vmv1r.v	v11, v0
-	vmv1r.v	v0, v10
+	vand.vx	v10, v10, a0
+	vmseq.vi	v0, v10, 0
 	vmerge.vim	v8, v8, 0, v0
-	vmv1r.v	v0, v11
+	vmv1r.v	v0, v12
 	vor.vi	v8, v8, 4, v0.t
 	ret

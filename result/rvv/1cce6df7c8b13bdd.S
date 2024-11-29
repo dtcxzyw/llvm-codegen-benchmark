@@ -4,10 +4,9 @@ func0000000000000011:                   # @func0000000000000011
 	li	a0, 1184
 	vmv.v.x	v12, a0
 	li	a0, 64
-	vand.vx	v14, v10, a0
+	vand.vx	v10, v10, a0
 	li	a0, 456
-	vmseq.vi	v10, v14, 0
 	vmerge.vxm	v12, v12, a0, v0
-	vmv1r.v	v0, v10
+	vmseq.vi	v0, v10, 0
 	vmerge.vvm	v8, v8, v12, v0
 	ret

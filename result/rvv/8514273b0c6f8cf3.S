@@ -14,14 +14,13 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmv.v.i	v14, -1
+	vmv.v.i	v12, -1
 	fmv.d.x	fa5, zero
+	vmerge.vim	v12, v12, 1, v0
 	vsetvli	zero, zero, e64, m4, ta, ma
-	vmfeq.vf	v12, v8, fa5
+	vmfeq.vf	v0, v8, fa5
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vmerge.vim	v8, v14, 1, v0
-	vmv1r.v	v0, v12
-	vmerge.vim	v8, v8, 0, v0
+	vmerge.vim	v8, v12, 0, v0
 	ret
 .LCPI2_0:
 	.quad	0x3fe999999999999a              # double 0.80000000000000004

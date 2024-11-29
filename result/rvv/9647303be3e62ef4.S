@@ -5,9 +5,8 @@ func000000000000014a:                   # @func000000000000014a
 	li	a0, -1073
 	vmsltu.vx	v0, v10, a0
 	li	a0, -1086
-	vmsgt.vx	v10, v8, a0
+	vmerge.vim	v10, v12, 0, v0
+	vmsgt.vx	v0, v8, a0
 	li	a0, 53
-	vmerge.vim	v8, v12, 0, v0
-	vmv1r.v	v0, v10
-	vmerge.vxm	v8, v8, a0, v0
+	vmerge.vxm	v8, v10, a0, v0
 	ret

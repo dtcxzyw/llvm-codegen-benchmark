@@ -13,11 +13,10 @@ func00000000000000c7:                   # @func00000000000000c7
 func0000000000000044:                   # @func0000000000000044
 	li	a0, 192
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmseq.vi	v12, v10, 0
 	vmerge.vxm	v8, v8, a0, v0
+	vmseq.vi	v0, v10, 0
 	vadd.vv	v10, v10, v8
 	li	a0, -192
 	vadd.vx	v10, v10, a0
-	vmv1r.v	v0, v12
 	vmerge.vvm	v8, v10, v8, v0
 	ret

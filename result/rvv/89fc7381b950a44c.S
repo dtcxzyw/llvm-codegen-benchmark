@@ -12,13 +12,12 @@ func0000000000000011:                   # @func0000000000000011
 	ret
 func000000000000001c:                   # @func000000000000001c
 	vsetivli	zero, 8, e32, m2, ta, mu
-	vmv.v.i	v12, 0
-	vmseq.vi	v10, v8, -1
-	vmerge.vim	v12, v12, 1, v0
-	vadd.vi	v8, v12, 1
+	vmv.v.i	v10, 0
+	vmerge.vim	v10, v10, 1, v0
+	vmseq.vi	v0, v8, -1
+	vadd.vi	v8, v10, 1
 	li	a0, 33
-	vmv1r.v	v0, v10
-	vadd.vx	v8, v12, a0, v0.t
+	vadd.vx	v8, v10, a0, v0.t
 	ret
 func0000000000000014:                   # @func0000000000000014
 	li	a0, 292

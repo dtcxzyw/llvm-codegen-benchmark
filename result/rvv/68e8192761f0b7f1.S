@@ -52,9 +52,9 @@ func000000000000003c:                   # @func000000000000003c
 func000000000000014a:                   # @func000000000000014a
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsgt.vi	v0, v10, 1
-	vmv.v.i	v12, 0
-	vmsgt.vi	v10, v8, 1
-	vmerge.vim	v8, v12, 14, v0
-	vmv1r.v	v0, v10
-	vor.vi	v8, v8, 9, v0.t
+	vmv.v.i	v10, 0
+	vmerge.vim	v10, v10, 14, v0
+	vmsgt.vi	v0, v8, 1
+	vor.vi	v10, v10, 9, v0.t
+	vmv.v.v	v8, v10
 	ret

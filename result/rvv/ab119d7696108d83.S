@@ -60,13 +60,12 @@ func0000000000000013:                   # @func0000000000000013
 func0000000000000005:                   # @func0000000000000005
 	li	a0, 16
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmv.v.x	v14, a0
+	vmv.v.x	v12, a0
 	li	a0, 1040
-	vmseq.vi	v12, v10, 0
-	vmerge.vxm	v10, v14, a0, v0
-	vmv.v.i	v14, 4
-	vor.vv	v8, v10, v8
-	vmv1r.v	v0, v12
-	vmerge.vim	v10, v14, 8, v0
+	vmerge.vxm	v12, v12, a0, v0
+	vmseq.vi	v0, v10, 0
+	vmv.v.i	v10, 4
+	vor.vv	v8, v12, v8
+	vmerge.vim	v10, v10, 8, v0
 	vor.vv	v8, v10, v8
 	ret
