@@ -1,6 +1,6 @@
 func0000000000000009:                   # @func0000000000000009
-	vmv1r.v	v11, v0
 	vsetivli	zero, 16, e8, m1, ta, ma
+	vmv1r.v	v11, v0
 	vand.vi	v10, v10, 1
 	vmsne.vi	v0, v10, 0
 	li	a0, 64
@@ -11,8 +11,8 @@ func0000000000000009:                   # @func0000000000000009
 	vor.vx	v8, v8, a0, v0.t
 	ret
 func0000000000000008:                   # @func0000000000000008
-	vmv1r.v	v11, v0
 	vsetivli	zero, 16, e8, m1, ta, ma
+	vmv1r.v	v11, v0
 	vand.vi	v10, v10, 1
 	vmsne.vi	v0, v10, 0
 	li	a0, 16
@@ -23,8 +23,8 @@ func0000000000000008:                   # @func0000000000000008
 	vor.vx	v8, v8, a0, v0.t
 	ret
 func0000000000000000:                   # @func0000000000000000
-	vmv1r.v	v11, v0
 	vsetivli	zero, 16, e8, m1, ta, ma
+	vmv1r.v	v11, v0
 	vand.vi	v10, v10, 1
 	vmsne.vi	v0, v10, 0
 	li	a0, 32
@@ -35,8 +35,8 @@ func0000000000000000:                   # @func0000000000000000
 	vor.vx	v8, v8, a0, v0.t
 	ret
 func000000000000000d:                   # @func000000000000000d
-	vmv1r.v	v11, v0
 	vsetivli	zero, 16, e8, m1, ta, ma
+	vmv1r.v	v11, v0
 	vand.vi	v10, v10, 1
 	vmsne.vi	v0, v10, 0
 	lui	a0, 1

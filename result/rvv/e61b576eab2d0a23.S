@@ -11,9 +11,9 @@ func0000000000000001:                   # @func0000000000000001
 	vmandn.mm	v0, v9, v8
 	ret
 func0000000000000034:                   # @func0000000000000034
+	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv1r.v	v9, v0
 	vmv1r.v	v0, v8
-	vsetivli	zero, 8, e32, m2, ta, mu
 	vor.vi	v10, v10, 4, v0.t
 	vmv1r.v	v0, v9
 	vor.vi	v10, v10, 8, v0.t

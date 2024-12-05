@@ -1,7 +1,7 @@
 func0000000000000011:                   # @func0000000000000011
+	vsetivli	zero, 4, e8, mf4, ta, ma
 	vmv1r.v	v10, v0
 	li	a0, -69
-	vsetivli	zero, 4, e8, mf4, ta, ma
 	vmsltu.vx	v0, v9, a0
 	lui	a0, 1048392
 	vsetvli	zero, zero, e32, m1, ta, ma
@@ -16,8 +16,8 @@ func0000000000000011:                   # @func0000000000000011
 	vsext.vf2	v8, v10
 	ret
 func0000000000000005:                   # @func0000000000000005
-	vmv1r.v	v10, v0
 	vsetivli	zero, 4, e8, mf4, ta, ma
+	vmv1r.v	v10, v0
 	vmseq.vi	v0, v9, 6
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vmv.v.i	v9, 1

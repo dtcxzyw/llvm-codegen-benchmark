@@ -1,6 +1,6 @@
 func0000000000000018:                   # @func0000000000000018
-	vmv1r.v	v12, v0
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv1r.v	v12, v0
 	vmseq.vi	v0, v10, 0
 	lui	a0, 262144
 	vmerge.vxm	v10, v10, a0, v0
@@ -8,8 +8,8 @@ func0000000000000018:                   # @func0000000000000018
 	vmand.mm	v0, v13, v12
 	ret
 func0000000000000011:                   # @func0000000000000011
-	vmv1r.v	v12, v0
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv1r.v	v12, v0
 	vmseq.vi	v0, v10, 0
 	li	a0, 64
 	vmerge.vxm	v10, v10, a0, v0
@@ -26,8 +26,8 @@ func0000000000000019:                   # @func0000000000000019
 	vmor.mm	v0, v8, v9
 	ret
 func0000000000000016:                   # @func0000000000000016
-	vmv1r.v	v12, v0
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv1r.v	v12, v0
 	vmseq.vi	v0, v10, 0
 	vmerge.vim	v10, v10, 4, v0
 	vmslt.vv	v13, v10, v8

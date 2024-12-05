@@ -1,6 +1,6 @@
 func0000000000000016:                   # @func0000000000000016
-	vmv1r.v	v12, v0
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv1r.v	v12, v0
 	vmseq.vi	v0, v10, 2
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
@@ -10,10 +10,10 @@ func0000000000000016:                   # @func0000000000000016
 	vmslt.vv	v0, v8, v10
 	ret
 func0000000000000086:                   # @func0000000000000086
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v12, v0
 	lui	a0, 1
 	addi	a0, a0, -1025
-	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgtu.vx	v0, v10, a0
 	li	a0, 1007
 	vmv.v.x	v10, a0
@@ -25,9 +25,9 @@ func0000000000000086:                   # @func0000000000000086
 	vmslt.vv	v0, v8, v10
 	ret
 func0000000000000011:                   # @func0000000000000011
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v12, v0
 	li	a0, 1035
-	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vx	v0, v10, a0
 	vmv.v.i	v10, 0
 	li	a0, 57
@@ -39,8 +39,8 @@ func0000000000000011:                   # @func0000000000000011
 	vmseq.vv	v0, v10, v8
 	ret
 func0000000000000014:                   # @func0000000000000014
-	vmv1r.v	v12, v0
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv1r.v	v12, v0
 	vmseq.vi	v0, v10, 12
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
@@ -49,9 +49,9 @@ func0000000000000014:                   # @func0000000000000014
 	vmandn.mm	v0, v13, v12
 	ret
 func00000000000000c1:                   # @func00000000000000c1
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v12, v0
 	lui	a0, 14
-	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vx	v0, v10, a0
 	vmv.v.i	v10, 3
 	vmerge.vim	v10, v10, 1, v0
@@ -60,9 +60,9 @@ func00000000000000c1:                   # @func00000000000000c1
 	vmseq.vv	v0, v10, v8
 	ret
 func000000000000001c:                   # @func000000000000001c
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v12, v0
 	li	a0, 33
-	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vx	v0, v10, a0
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
@@ -72,8 +72,8 @@ func000000000000001c:                   # @func000000000000001c
 	vmsne.vv	v0, v10, v8
 	ret
 func000000000000001a:                   # @func000000000000001a
-	vmv1r.v	v12, v0
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv1r.v	v12, v0
 	vmseq.vi	v0, v10, 0
 	li	a0, 112
 	vmv.v.x	v10, a0
@@ -85,8 +85,8 @@ func000000000000001a:                   # @func000000000000001a
 	vmslt.vv	v0, v10, v8
 	ret
 func0000000000000018:                   # @func0000000000000018
-	vmv1r.v	v12, v0
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv1r.v	v12, v0
 	vmseq.vi	v0, v10, 2
 	lui	a0, 48
 	addi	a0, a0, -1

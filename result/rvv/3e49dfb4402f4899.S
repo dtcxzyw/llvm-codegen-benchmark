@@ -1,6 +1,6 @@
 func000000000000028a:                   # @func000000000000028a
-	vmv1r.v	v11, v0
 	vsetivli	zero, 4, e32, m1, ta, ma
+	vmv1r.v	v11, v0
 	vmsgt.vi	v0, v10, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.i	v12, -1
@@ -11,9 +11,9 @@ func000000000000028a:                   # @func000000000000028a
 	vmsgt.vi	v0, v8, -1
 	ret
 func0000000000000101:                   # @func0000000000000101
+	vsetivli	zero, 4, e32, m1, ta, ma
 	vmv1r.v	v11, v0
 	bseti	a0, zero, 11
-	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsltu.vx	v0, v10, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.i	v12, 0
@@ -25,8 +25,8 @@ func0000000000000101:                   # @func0000000000000101
 	vmseq.vv	v0, v10, v8
 	ret
 func0000000000000111:                   # @func0000000000000111
-	vmv1r.v	v11, v0
 	vsetivli	zero, 4, e32, m1, ta, ma
+	vmv1r.v	v11, v0
 	vmsleu.vi	v0, v10, 5
 	li	a0, -55
 	vsetvli	zero, zero, e64, m2, ta, ma

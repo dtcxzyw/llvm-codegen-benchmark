@@ -1,7 +1,7 @@
 func0000000000000003:                   # @func0000000000000003
+	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv1r.v	v11, v0
 	vmv1r.v	v0, v10
-	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv.v.i	v12, 0
 	lui	a0, 10
 	vmerge.vim	v12, v12, 1, v0
@@ -14,8 +14,8 @@ func0000000000000003:                   # @func0000000000000003
 	vor.vx	v8, v8, a0, v0.t
 	ret
 func0000000000000002:                   # @func0000000000000002
-	vmv1r.v	v11, v0
 	vsetivli	zero, 8, e32, m2, ta, mu
+	vmv1r.v	v11, v0
 	vmv.v.i	v12, 12
 	vmv1r.v	v0, v10
 	vmerge.vim	v12, v12, 4, v0

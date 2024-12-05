@@ -1,8 +1,8 @@
 func0000000000000085:                   # @func0000000000000085
+	vsetivli	zero, 4, e64, m2, ta, mu
 	vmv1r.v	v12, v0
 	lui	a0, 32
 	addiw	a0, a0, -31
-	vsetivli	zero, 4, e64, m2, ta, mu
 	vmsgtu.vx	v0, v10, a0
 	lui	a0, 983055
 	vmerge.vvm	v8, v10, v8, v0

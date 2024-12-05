@@ -1,6 +1,6 @@
 func0000000000000011:                   # @func0000000000000011
-	vmv1r.v	v10, v0
 	vsetivli	zero, 8, e8, mf2, ta, ma
+	vmv1r.v	v10, v0
 	vmsgtu.vi	v0, v8, 1
 	vsetvli	zero, zero, e32, m2, ta, mu
 	vmv.v.i	v8, 0
@@ -9,8 +9,8 @@ func0000000000000011:                   # @func0000000000000011
 	vor.vi	v8, v8, 4, v0.t
 	ret
 func0000000000000003:                   # @func0000000000000003
-	vmv1r.v	v10, v0
 	vsetivli	zero, 8, e8, mf2, ta, ma
+	vmv1r.v	v10, v0
 	vmseq.vi	v0, v8, 0
 	vsetvli	zero, zero, e32, m2, ta, mu
 	vmv.v.i	v8, 1
@@ -20,8 +20,8 @@ func0000000000000003:                   # @func0000000000000003
 	vor.vi	v8, v8, 2, v0.t
 	ret
 func0000000000000009:                   # @func0000000000000009
-	vmv1r.v	v10, v0
 	vsetivli	zero, 8, e8, mf2, ta, ma
+	vmv1r.v	v10, v0
 	vmsleu.vi	v0, v8, 1
 	vsetvli	zero, zero, e32, m2, ta, mu
 	vmv.v.i	v8, 0

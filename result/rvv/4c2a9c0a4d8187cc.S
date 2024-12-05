@@ -1,6 +1,6 @@
 func0000000000000011:                   # @func0000000000000011
-	vmv1r.v	v10, v0
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv1r.v	v10, v0
 	vmseq.vi	v0, v8, 3
 	vmv.v.i	v12, -1
 	lui	a0, 1
@@ -13,9 +13,9 @@ func0000000000000011:                   # @func0000000000000011
 	vmerge.vim	v8, v10, 7, v0
 	ret
 func0000000000000066:                   # @func0000000000000066
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v10, v0
 	lui	a0, 4096
-	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.i	v12, 8
 	vmslt.vx	v0, v8, a0
 	li	a0, 256
@@ -26,8 +26,8 @@ func0000000000000066:                   # @func0000000000000066
 	vmerge.vim	v8, v10, 2, v0
 	ret
 func0000000000000088:                   # @func0000000000000088
-	vmv1r.v	v10, v0
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv1r.v	v10, v0
 	vmsgtu.vi	v0, v8, 2
 	vmv.v.i	v12, 0
 	li	a0, 16
@@ -39,9 +39,9 @@ func0000000000000088:                   # @func0000000000000088
 	vmerge.vim	v8, v10, 8, v0
 	ret
 func0000000000000044:                   # @func0000000000000044
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v10, v0
 	li	a0, 17
-	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
 	vmv.v.i	v12, 8
 	vmerge.vim	v12, v12, 4, v0
@@ -51,8 +51,8 @@ func0000000000000044:                   # @func0000000000000044
 	vmerge.vim	v8, v10, 1, v0
 	ret
 func00000000000000aa:                   # @func00000000000000aa
-	vmv1r.v	v10, v0
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv1r.v	v10, v0
 	vmsgt.vi	v0, v8, 1
 	lui	a0, 1
 	addi	a1, a0, -2007
@@ -68,8 +68,8 @@ func00000000000000aa:                   # @func00000000000000aa
 	vmerge.vxm	v8, v10, a0, v0
 	ret
 func0000000000000014:                   # @func0000000000000014
-	vmv1r.v	v10, v0
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv1r.v	v10, v0
 	vmseq.vi	v0, v8, 3
 	vmv.v.i	v12, 0
 	li	a0, 19
@@ -81,8 +81,8 @@ func0000000000000014:                   # @func0000000000000014
 	vmerge.vxm	v8, v10, a0, v0
 	ret
 func0000000000000041:                   # @func0000000000000041
-	vmv1r.v	v10, v0
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv1r.v	v10, v0
 	vmsleu.vi	v0, v8, 9
 	lui	a0, 1
 	addi	a1, a0, -782

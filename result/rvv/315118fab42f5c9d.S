@@ -1,8 +1,8 @@
 func0000000000000021:                   # @func0000000000000021
+	vsetivli	zero, 4, e64, m2, ta, mu
 	vmv1r.v	v12, v0
 	lui	a0, 16
 	addiw	a0, a0, -16
-	vsetivli	zero, 4, e64, m2, ta, mu
 	vmsgtu.vx	v0, v10, a0
 	vmv.v.x	v10, a0
 	lui	a0, 1048560

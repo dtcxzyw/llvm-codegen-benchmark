@@ -36,8 +36,8 @@ func0000000000000023:                   # @func0000000000000023
 	vor.vv	v8, v10, v8
 	ret
 func0000000000000005:                   # @func0000000000000005
-	vmv1r.v	v12, v0
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv1r.v	v12, v0
 	vmseq.vi	v0, v10, 6
 	vmv.v.i	v10, 6
 	lui	a0, 131072
@@ -50,8 +50,8 @@ func0000000000000005:                   # @func0000000000000005
 	vor.vv	v8, v10, v8
 	ret
 func0000000000000006:                   # @func0000000000000006
-	vmv1r.v	v12, v0
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv1r.v	v12, v0
 	vmseq.vi	v0, v10, 0
 	vmv.v.i	v10, 4
 	vmerge.vim	v10, v10, 8, v0

@@ -19,8 +19,8 @@ func000000000000000c:                   # @func000000000000000c
 	vfmerge.vfm	v8, v8, fa4, v0
 	ret
 func000000000000000e:                   # @func000000000000000e
-	vmv1r.v	v16, v0
 	vsetivli	zero, 16, e64, m8, ta, ma
+	vmv1r.v	v16, v0
 	vmfeq.vv	v0, v8, v8
 	vmv.v.i	v24, 0
 	vmerge.vvm	v8, v24, v8, v0
@@ -28,9 +28,9 @@ func000000000000000e:                   # @func000000000000000e
 	vmerge.vim	v8, v8, 0, v0
 	ret
 func0000000000000006:                   # @func0000000000000006
+	vsetivli	zero, 16, e64, m8, ta, ma
 	vmv1r.v	v16, v0
 	fli.d	fa5, inf
-	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vf	v17, v8, fa5
 	vmfgt.vf	v18, v8, fa5
 	vmor.mm	v0, v18, v17

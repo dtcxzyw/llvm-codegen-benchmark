@@ -1,8 +1,8 @@
 func0000000000000006:                   # @func0000000000000006
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v11, v0
 	lui	a0, 6
 	addi	a0, a0, 560
-	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v12, a0
 	lui	a0, 4
 	addi	a0, a0, 560

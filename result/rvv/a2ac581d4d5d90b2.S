@@ -1,8 +1,8 @@
 func000000000000001f:                   # @func000000000000001f
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v9, v0
 	vmv1r.v	v0, v8
 	li	a0, 32
-	vsetivli	zero, 8, e32, m2, ta, ma
 	vor.vx	v12, v10, a0
 	vmerge.vvm	v10, v12, v10, v0
 	li	a0, 16
@@ -12,8 +12,8 @@ func000000000000001f:                   # @func000000000000001f
 	vadd.vi	v8, v8, 8
 	ret
 func000000000000001d:                   # @func000000000000001d
-	vmv1r.v	v9, v0
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv1r.v	v9, v0
 	vor.vi	v12, v10, 4
 	vmv1r.v	v0, v8
 	vmerge.vvm	v10, v12, v10, v0

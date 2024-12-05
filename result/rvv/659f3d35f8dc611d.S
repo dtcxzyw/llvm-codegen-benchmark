@@ -1,7 +1,7 @@
 func000000000000000a:                   # @func000000000000000a
+	vsetivli	zero, 4, e32, m1, ta, ma
 	vmv1r.v	v10, v0
 	vmv1r.v	v0, v9
-	vsetivli	zero, 4, e32, m1, ta, ma
 	vmv.v.i	v9, 0
 	vmerge.vim	v11, v9, 1, v0
 	vmv1r.v	v0, v10

@@ -1,6 +1,6 @@
 func00000000000000d1:                   # @func00000000000000d1
-	vmv1r.v	v12, v0
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv1r.v	v12, v0
 	vadd.vi	v14, v8, 1
 	lui	a0, 262144
 	vmsltu.vx	v0, v10, a0
@@ -11,8 +11,8 @@ func00000000000000d1:                   # @func00000000000000d1
 	vadd.vi	v8, v8, -11
 	ret
 func00000000000000d3:                   # @func00000000000000d3
-	vmv1r.v	v12, v0
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv1r.v	v12, v0
 	vadd.vi	v14, v8, 1
 	lui	a0, 262144
 	vmsltu.vx	v0, v10, a0

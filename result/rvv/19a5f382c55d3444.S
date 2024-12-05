@@ -1,8 +1,8 @@
 func000000000000000d:                   # @func000000000000000d
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v10, v0
 	lui	a0, 8
 	addi	a0, a0, 1269
-	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vx	v0, v8, a0
 	vmv.v.i	v8, 0
 	vmerge.vim	v8, v8, 1, v0
@@ -12,8 +12,8 @@ func000000000000000d:                   # @func000000000000000d
 	vor.vi	v8, v8, 4
 	ret
 func0000000000000065:                   # @func0000000000000065
-	vmv1r.v	v10, v0
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv1r.v	v10, v0
 	vmsne.vi	v0, v8, 0
 	vmv.v.i	v8, 0
 	vmerge.vim	v8, v8, 1, v0

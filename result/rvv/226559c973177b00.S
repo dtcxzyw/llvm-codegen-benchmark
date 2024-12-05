@@ -79,8 +79,8 @@ func0000000000000021:                   # @func0000000000000021
 	ret
 func0000000000000004:                   # @func0000000000000004
 	li	a0, 75
-	vmv2r.v	v12, v8
 	vsetivli	zero, 8, e8, mf2, ta, ma
+	vmv2r.v	v12, v8
 	vmseq.vx	v10, v10, a0
 	vsetvli	zero, zero, e32, m2, ta, mu
 	vadd.vi	v12, v8, -2, v0.t

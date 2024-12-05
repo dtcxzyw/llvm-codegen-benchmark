@@ -7,11 +7,11 @@ func0000000000000004:                   # @func0000000000000004
 .LCPI1_0:
 	.word	0x7f7fffff                      # float 3.40282347E+38
 func000000000000000c:                   # @func000000000000000c
+	vsetivli	zero, 16, e32, m4, ta, ma
 	vmv1r.v	v12, v0
 	lui	a0, %hi(.LCPI1_0)
 	flw	fa5, %lo(.LCPI1_0)(a0)
 	fmv.w.x	fa4, zero
-	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfge.vf	v0, v8, fa4
 	vfmv.v.f	v16, fa5
 	vmerge.vvm	v8, v16, v8, v0

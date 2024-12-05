@@ -1,7 +1,7 @@
 func0000000000000003:                   # @func0000000000000003
+	vsetivli	zero, 8, e8, mf2, ta, ma
 	vmv1r.v	v9, v0
 	li	a0, 45
-	vsetivli	zero, 8, e8, mf2, ta, ma
 	vmseq.vx	v0, v8, a0
 	lui	a0, 4096
 	addi	a0, a0, 128

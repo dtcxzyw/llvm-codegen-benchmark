@@ -1,6 +1,6 @@
 func0000000000000002:                   # @func0000000000000002
-	vmv1r.v	v16, v0
 	vsetivli	zero, 16, e32, m4, ta, ma
+	vmv1r.v	v16, v0
 	vfncvt.f.f.w	v20, v8
 	fmv.w.x	fa5, zero
 	vmflt.vf	v0, v20, fa5
@@ -12,8 +12,8 @@ func0000000000000002:                   # @func0000000000000002
 .LCPI1_0:
 	.word	0x3f4ccccd                      # float 0.800000011
 func0000000000000004:                   # @func0000000000000004
-	vmv1r.v	v16, v0
 	vsetivli	zero, 16, e32, m4, ta, ma
+	vmv1r.v	v16, v0
 	vfncvt.f.f.w	v20, v8
 	fli.s	fa5, 1.25
 	lui	a0, %hi(.LCPI1_0)

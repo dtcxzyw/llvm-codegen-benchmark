@@ -23,9 +23,9 @@ func000000000000000a:                   # @func000000000000000a
 	vmerge.vim	v8, v8, 0, v0
 	ret
 func000000000000000c:                   # @func000000000000000c
+	vsetivli	zero, 16, e32, m4, ta, ma
 	vmv1r.v	v12, v0
 	fmv.w.x	fa5, zero
-	vsetivli	zero, 16, e32, m4, ta, ma
 	vmv.v.i	v16, 0
 	vmfge.vf	v0, v8, fa5
 	lui	a0, 274400

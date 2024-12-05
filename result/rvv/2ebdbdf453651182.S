@@ -1,7 +1,7 @@
 func0000000000000004:                   # @func0000000000000004
+	vsetivli	zero, 16, e32, m4, ta, ma
 	vmv1r.v	v16, v0
 	fli.s	fa5, 1.0
-	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfgt.vf	v0, v12, fa5
 	vfmerge.vfm	v12, v12, fa5, v0
 	vmv1r.v	v0, v16

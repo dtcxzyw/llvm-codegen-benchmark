@@ -7,8 +7,8 @@ func0000000000000001:                   # @func0000000000000001
 	vmerge.vim	v8, v8, 0, v0
 	ret
 func0000000000000004:                   # @func0000000000000004
-	vmv1r.v	v12, v0
 	vsetivli	zero, 8, e32, m2, ta, mu
+	vmv1r.v	v12, v0
 	vmsgtu.vi	v0, v10, 2
 	vmv.v.i	v10, 2
 	vand.vi	v10, v8, -2, v0.t

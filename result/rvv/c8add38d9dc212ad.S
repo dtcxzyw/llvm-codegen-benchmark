@@ -21,8 +21,8 @@ func000000000000005c:                   # @func000000000000005c
 	vmor.mm	v0, v16, v25
 	ret
 func0000000000000050:                   # @func0000000000000050
-	vmv1r.v	v24, v0
 	vsetivli	zero, 16, e64, m8, ta, ma
+	vmv1r.v	v24, v0
 	vmflt.vv	v0, v8, v16
 	vmerge.vvm	v8, v16, v8, v0
 	fmv.d.x	fa5, zero
@@ -43,8 +43,8 @@ func0000000000000046:                   # @func0000000000000046
 	vmorn.mm	v0, v25, v16
 	ret
 func000000000000004a:                   # @func000000000000004a
-	vmv1r.v	v24, v0
 	vsetivli	zero, 16, e64, m8, ta, ma
+	vmv1r.v	v24, v0
 	vmflt.vv	v0, v8, v16
 	vmerge.vvm	v8, v16, v8, v0
 	fli.d	fa5, 1.0
@@ -52,8 +52,8 @@ func000000000000004a:                   # @func000000000000004a
 	vmorn.mm	v0, v24, v16
 	ret
 func000000000000005a:                   # @func000000000000005a
-	vmv1r.v	v24, v0
 	vsetivli	zero, 16, e64, m8, ta, ma
+	vmv1r.v	v24, v0
 	vmflt.vv	v0, v16, v8
 	vmerge.vvm	v8, v16, v8, v0
 	fli.d	fa5, 1.0

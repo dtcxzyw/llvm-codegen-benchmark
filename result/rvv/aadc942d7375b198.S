@@ -1,8 +1,8 @@
 func000000000000000c:                   # @func000000000000000c
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v11, v0
 	vmv1r.v	v0, v10
 	li	a0, 16
-	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v12, a0
 	li	a0, 40
 	vmerge.vxm	v12, v12, a0, v0
@@ -15,10 +15,10 @@ func000000000000000c:                   # @func000000000000000c
 	vadd.vv	v8, v10, v8
 	ret
 func000000000000000f:                   # @func000000000000000f
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v11, v0
 	vmv1r.v	v0, v10
 	li	a0, 60
-	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v12, a0
 	li	a0, 62
 	vmerge.vxm	v12, v12, a0, v0

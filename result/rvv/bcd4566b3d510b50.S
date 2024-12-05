@@ -1,6 +1,6 @@
 func0000000000000003:                   # @func0000000000000003
-	vmv1r.v	v10, v0
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv1r.v	v10, v0
 	vmseq.vi	v0, v8, 0
 	li	a0, 65
 	vsetvli	zero, zero, e16, m1, ta, ma
@@ -12,8 +12,8 @@ func0000000000000003:                   # @func0000000000000003
 	vmerge.vvm	v8, v9, v8, v0
 	ret
 func0000000000000002:                   # @func0000000000000002
-	vmv1r.v	v10, v0
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv1r.v	v10, v0
 	vmseq.vi	v0, v8, 0
 	lui	a0, 1048570
 	addi	a1, a0, 320

@@ -1,8 +1,8 @@
 .LCPI0_0:
 	.quad	82351536043346212               # 0x124924924924924
 func000000000000000a:                   # @func000000000000000a
-	vmv1r.v	v9, v0
 	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv1r.v	v9, v0
 	vsra.vi	v10, v10, 4
 	lui	a0, 748983
 	addiw	a0, a0, -585

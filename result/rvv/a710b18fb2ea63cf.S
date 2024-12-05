@@ -1,6 +1,6 @@
 func0000000000000003:                   # @func0000000000000003
-	vmv1r.v	v10, v0
 	vsetivli	zero, 4, e32, m1, ta, ma
+	vmv1r.v	v10, v0
 	vmseq.vi	v0, v8, 4
 	vmv.v.i	v8, 0
 	li	a0, 1109

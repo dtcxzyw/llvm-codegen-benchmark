@@ -1,7 +1,7 @@
 func0000000000000018:                   # @func0000000000000018
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v10, v0
 	li	a0, -176
-	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	li	a0, -128
 	vmsltu.vx	v0, v8, a0
@@ -23,9 +23,9 @@ func0000000000000014:                   # @func0000000000000014
 	vxor.vx	v8, v8, a0
 	ret
 func0000000000000004:                   # @func0000000000000004
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v10, v0
 	li	a0, -18
-	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v8, v8, a0
 	vmsleu.vi	v0, v8, 3
 	vmv.v.i	v8, 0

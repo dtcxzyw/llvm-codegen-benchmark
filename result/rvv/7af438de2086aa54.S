@@ -1,6 +1,6 @@
 func0000000000000047:                   # @func0000000000000047
-	vmv1r.v	v24, v0
 	vsetivli	zero, 16, e64, m8, ta, ma
+	vmv1r.v	v24, v0
 	vmflt.vv	v0, v16, v8
 	vmerge.vvm	v8, v16, v8, v0
 	fmv.d.x	fa5, zero
@@ -8,8 +8,8 @@ func0000000000000047:                   # @func0000000000000047
 	vmand.mm	v0, v16, v24
 	ret
 func0000000000000048:                   # @func0000000000000048
-	vmv1r.v	v24, v0
 	vsetivli	zero, 16, e64, m8, ta, ma
+	vmv1r.v	v24, v0
 	vmflt.vv	v0, v8, v16
 	vmerge.vvm	v8, v16, v8, v0
 	fmv.d.x	fa5, zero
@@ -17,8 +17,8 @@ func0000000000000048:                   # @func0000000000000048
 	vmand.mm	v0, v16, v24
 	ret
 func0000000000000044:                   # @func0000000000000044
-	vmv1r.v	v24, v0
 	vsetivli	zero, 16, e64, m8, ta, ma
+	vmv1r.v	v24, v0
 	vmflt.vv	v0, v16, v8
 	vmerge.vvm	v8, v16, v8, v0
 	fmv.d.x	fa5, zero
@@ -26,8 +26,8 @@ func0000000000000044:                   # @func0000000000000044
 	vmand.mm	v0, v16, v24
 	ret
 func0000000000000042:                   # @func0000000000000042
-	vmv1r.v	v24, v0
 	vsetivli	zero, 16, e64, m8, ta, ma
+	vmv1r.v	v24, v0
 	vmflt.vv	v0, v8, v16
 	vmerge.vvm	v8, v16, v8, v0
 	fmv.d.x	fa5, zero
@@ -35,8 +35,8 @@ func0000000000000042:                   # @func0000000000000042
 	vmand.mm	v0, v16, v24
 	ret
 func000000000000004c:                   # @func000000000000004c
-	vmv1r.v	v24, v0
 	vsetivli	zero, 16, e64, m8, ta, ma
+	vmv1r.v	v24, v0
 	vmflt.vv	v0, v16, v8
 	vmerge.vvm	v8, v16, v8, v0
 	fmv.d.x	fa5, zero
@@ -44,8 +44,8 @@ func000000000000004c:                   # @func000000000000004c
 	vmand.mm	v0, v16, v24
 	ret
 func000000000000004a:                   # @func000000000000004a
-	vmv1r.v	v24, v0
 	vsetivli	zero, 16, e64, m8, ta, ma
+	vmv1r.v	v24, v0
 	vmflt.vv	v0, v8, v16
 	vmerge.vvm	v8, v16, v8, v0
 	fmv.d.x	fa5, zero
@@ -53,8 +53,8 @@ func000000000000004a:                   # @func000000000000004a
 	vmand.mm	v0, v16, v24
 	ret
 func0000000000000022:                   # @func0000000000000022
-	vmv1r.v	v24, v0
 	vsetivli	zero, 16, e64, m8, ta, ma
+	vmv1r.v	v24, v0
 	vmflt.vv	v0, v16, v8
 	vmerge.vvm	v8, v16, v8, v0
 	fmv.d.x	fa5, zero
@@ -62,8 +62,8 @@ func0000000000000022:                   # @func0000000000000022
 	vmand.mm	v0, v16, v24
 	ret
 func0000000000000028:                   # @func0000000000000028
-	vmv1r.v	v24, v0
 	vsetivli	zero, 16, e64, m8, ta, ma
+	vmv1r.v	v24, v0
 	vmflt.vv	v0, v8, v16
 	vmerge.vvm	v8, v16, v8, v0
 	fmv.d.x	fa5, zero
@@ -84,8 +84,8 @@ func0000000000000025:                   # @func0000000000000025
 	vmandn.mm	v0, v25, v16
 	ret
 func00000000000000ca:                   # @func00000000000000ca
-	vmv1r.v	v24, v0
 	vsetivli	zero, 16, e64, m8, ta, ma
+	vmv1r.v	v24, v0
 	vmfle.vv	v0, v16, v8
 	vmerge.vvm	v8, v16, v8, v0
 	fli.d	fa5, 1.0
@@ -93,8 +93,8 @@ func00000000000000ca:                   # @func00000000000000ca
 	vmand.mm	v0, v16, v24
 	ret
 func00000000000000c7:                   # @func00000000000000c7
-	vmv1r.v	v24, v0
 	vsetivli	zero, 16, e64, m8, ta, ma
+	vmv1r.v	v24, v0
 	vmfle.vv	v0, v16, v8
 	vmerge.vvm	v8, v16, v8, v0
 	fmv.d.x	fa5, zero
@@ -102,8 +102,8 @@ func00000000000000c7:                   # @func00000000000000c7
 	vmand.mm	v0, v16, v24
 	ret
 func00000000000000c2:                   # @func00000000000000c2
-	vmv1r.v	v24, v0
 	vsetivli	zero, 16, e64, m8, ta, ma
+	vmv1r.v	v24, v0
 	vmfle.vv	v0, v16, v8
 	vmerge.vvm	v8, v16, v8, v0
 	fli.d	fa5, 1.0

@@ -1,7 +1,7 @@
 func00000000000000c2:                   # @func00000000000000c2
+	vsetivli	zero, 16, e32, m4, ta, ma
 	vmv1r.v	v16, v0
 	fmv.w.x	fa5, zero
-	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfge.vf	v0, v8, fa5
 	vmv.v.i	v20, 0
 	vmerge.vvm	v8, v20, v8, v0
@@ -10,9 +10,9 @@ func00000000000000c2:                   # @func00000000000000c2
 	vmflt.vv	v0, v8, v12
 	ret
 func00000000000000c4:                   # @func00000000000000c4
+	vsetivli	zero, 16, e32, m4, ta, ma
 	vmv1r.v	v16, v0
 	fmv.w.x	fa5, zero
-	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfge.vf	v0, v8, fa5
 	vmv.v.i	v20, 0
 	vmerge.vvm	v8, v20, v8, v0

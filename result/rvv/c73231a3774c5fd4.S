@@ -1,6 +1,6 @@
 func000000000000000a:                   # @func000000000000000a
-	vmv1r.v	v11, v0
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv1r.v	v11, v0
 	vmv.v.i	v12, 0
 	vmv1r.v	v0, v10
 	vmerge.vim	v12, v12, 1, v0
@@ -9,8 +9,8 @@ func000000000000000a:                   # @func000000000000000a
 	vmand.mm	v0, v11, v10
 	ret
 func0000000000000005:                   # @func0000000000000005
-	vmv1r.v	v11, v0
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv1r.v	v11, v0
 	vmv.v.i	v12, 5
 	vmv1r.v	v0, v10
 	vmerge.vim	v12, v12, 1, v0
@@ -18,9 +18,9 @@ func0000000000000005:                   # @func0000000000000005
 	vmand.mm	v0, v11, v10
 	ret
 func0000000000000004:                   # @func0000000000000004
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v11, v0
 	li	a0, 592
-	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v12, a0
 	li	a0, 336
 	vmv1r.v	v0, v10
@@ -29,8 +29,8 @@ func0000000000000004:                   # @func0000000000000004
 	vmand.mm	v0, v11, v10
 	ret
 func0000000000000001:                   # @func0000000000000001
-	vmv1r.v	v11, v0
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv1r.v	v11, v0
 	vmv.v.i	v12, 1
 	vmv1r.v	v0, v10
 	vmerge.vim	v12, v12, 4, v0
@@ -38,8 +38,8 @@ func0000000000000001:                   # @func0000000000000001
 	vmand.mm	v0, v11, v10
 	ret
 func0000000000000006:                   # @func0000000000000006
-	vmv1r.v	v11, v0
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv1r.v	v11, v0
 	vmv.v.i	v12, 15
 	vmv1r.v	v0, v10
 	vmerge.vim	v12, v12, 13, v0
@@ -47,8 +47,8 @@ func0000000000000006:                   # @func0000000000000006
 	vmand.mm	v0, v11, v10
 	ret
 func0000000000000007:                   # @func0000000000000007
-	vmv1r.v	v11, v0
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv1r.v	v11, v0
 	vmv.v.i	v12, 8
 	vmv1r.v	v0, v10
 	vmerge.vim	v12, v12, 12, v0
@@ -56,8 +56,8 @@ func0000000000000007:                   # @func0000000000000007
 	vmand.mm	v0, v11, v10
 	ret
 func000000000000000c:                   # @func000000000000000c
-	vmv1r.v	v11, v0
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv1r.v	v11, v0
 	vmv.v.i	v12, 0
 	vmv1r.v	v0, v10
 	vmerge.vim	v12, v12, -2, v0

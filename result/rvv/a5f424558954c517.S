@@ -1,7 +1,7 @@
 func0000000000000001:                   # @func0000000000000001
+	vsetivli	zero, 4, e32, m1, ta, ma
 	vmv1r.v	v10, v0
 	lui	a0, 1048392
-	vsetivli	zero, 4, e32, m1, ta, ma
 	vmv.v.x	v11, a0
 	li	a0, -29
 	slli	a0, a0, 7

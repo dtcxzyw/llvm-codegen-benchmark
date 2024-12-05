@@ -1,6 +1,6 @@
 func0000000000000022:                   # @func0000000000000022
-	vmv1r.v	v24, v0
 	vsetivli	zero, 16, e64, m8, ta, ma
+	vmv1r.v	v24, v0
 	vmflt.vv	v0, v8, v16
 	vmerge.vvm	v8, v16, v8, v0
 	vmv.v.i	v16, 0
@@ -12,10 +12,10 @@ func0000000000000022:                   # @func0000000000000022
 .LCPI1_0:
 	.quad	0x40dfffc000000000              # double 32767
 func0000000000000044:                   # @func0000000000000044
+	vsetivli	zero, 16, e64, m8, ta, ma
 	vmv1r.v	v24, v0
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a0)
-	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vv	v0, v8, v16
 	vmerge.vvm	v8, v16, v8, v0
 	vfmv.v.f	v16, fa5
@@ -36,10 +36,10 @@ func0000000000000042:                   # @func0000000000000042
 	csrr	a0, vlenb
 	slli	a0, a0, 3
 	sub	sp, sp, a0
+	vsetivli	zero, 16, e64, m8, ta, ma
 	vmv1r.v	v7, v0
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
-	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vv	v0, v16, v8
 	lui	a0, %hi(.LCPI2_1)
 	fld	fa4, %lo(.LCPI2_1)(a0)

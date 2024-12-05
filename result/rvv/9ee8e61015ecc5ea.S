@@ -1,16 +1,16 @@
 func000000000000002c:                   # @func000000000000002c
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v12, v0
 	li	a0, -233
-	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vx	v0, v10, a0
 	vmerge.vvm	v8, v10, v8, v0
 	vmsle.vi	v10, v8, 0
 	vmor.mm	v0, v10, v12
 	ret
 func00000000000000d4:                   # @func00000000000000d4
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v12, v0
 	li	a0, 128
-	vsetivli	zero, 8, e32, m2, ta, ma
 	vmslt.vx	v0, v10, a0
 	vmerge.vvm	v8, v10, v8, v0
 	vmsgt.vx	v10, v8, a0
@@ -27,24 +27,24 @@ func00000000000000c2:                   # @func00000000000000c2
 	vmor.mm	v0, v9, v8
 	ret
 func0000000000000038:                   # @func0000000000000038
-	vmv1r.v	v12, v0
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv1r.v	v12, v0
 	vmseq.vi	v0, v10, -2
 	vmerge.vvm	v8, v10, v8, v0
 	vmsne.vi	v10, v8, -1
 	vmor.mm	v0, v10, v12
 	ret
 func0000000000000030:                   # @func0000000000000030
-	vmv1r.v	v12, v0
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv1r.v	v12, v0
 	vmseq.vi	v0, v10, 0
 	vmerge.vvm	v8, v10, v8, v0
 	vmsgtu.vi	v10, v8, 2
 	vmor.mm	v0, v10, v12
 	ret
 func00000000000000d8:                   # @func00000000000000d8
-	vmv1r.v	v12, v0
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv1r.v	v12, v0
 	vmsle.vi	v0, v10, -1
 	vmerge.vvm	v8, v10, v8, v0
 	li	a0, 32
@@ -52,8 +52,8 @@ func00000000000000d8:                   # @func00000000000000d8
 	vmor.mm	v0, v10, v12
 	ret
 func0000000000000028:                   # @func0000000000000028
-	vmv1r.v	v12, v0
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv1r.v	v12, v0
 	vmseq.vi	v0, v10, 0
 	vmerge.vvm	v8, v10, v8, v0
 	li	a0, 64
@@ -70,16 +70,16 @@ func0000000000000022:                   # @func0000000000000022
 	vmor.mm	v0, v9, v8
 	ret
 func00000000000000cc:                   # @func00000000000000cc
-	vmv1r.v	v12, v0
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv1r.v	v12, v0
 	vmsle.vi	v0, v10, 0
 	vmerge.vvm	v8, v10, v8, v0
 	vmsle.vi	v10, v8, 10
 	vmor.mm	v0, v10, v12
 	ret
 func0000000000000034:                   # @func0000000000000034
-	vmv1r.v	v12, v0
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv1r.v	v12, v0
 	vmseq.vi	v0, v10, 0
 	vmerge.vvm	v8, v10, v8, v0
 	vmsgt.vi	v10, v8, 2

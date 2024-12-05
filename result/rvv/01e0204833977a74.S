@@ -1,6 +1,6 @@
 func0000000000000001:                   # @func0000000000000001
-	vmv1r.v	v9, v0
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv1r.v	v9, v0
 	vmseq.vi	v0, v10, 2
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
@@ -11,9 +11,9 @@ func0000000000000001:                   # @func0000000000000001
 	vmerge.vim	v8, v10, 0, v0
 	ret
 func0000000000000006:                   # @func0000000000000006
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v9, v0
 	lui	a0, 4096
-	vsetivli	zero, 8, e32, m2, ta, ma
 	vmslt.vx	v0, v10, a0
 	vmv.v.i	v10, 8
 	vmerge.vim	v10, v10, 6, v0
@@ -23,8 +23,8 @@ func0000000000000006:                   # @func0000000000000006
 	vmerge.vim	v8, v10, 2, v0
 	ret
 func0000000000000008:                   # @func0000000000000008
-	vmv1r.v	v9, v0
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv1r.v	v9, v0
 	vmsgtu.vi	v0, v10, 2
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
@@ -35,9 +35,9 @@ func0000000000000008:                   # @func0000000000000008
 	vmerge.vim	v8, v10, 8, v0
 	ret
 func0000000000000004:                   # @func0000000000000004
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v9, v0
 	li	a0, 17
-	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsltu.vx	v0, v10, a0
 	vmv.v.i	v10, 8
 	vmerge.vim	v10, v10, 4, v0
@@ -47,8 +47,8 @@ func0000000000000004:                   # @func0000000000000004
 	vmerge.vim	v8, v10, 1, v0
 	ret
 func000000000000000a:                   # @func000000000000000a
-	vmv1r.v	v9, v0
 	vsetivli	zero, 8, e32, m2, ta, ma
+	vmv1r.v	v9, v0
 	vmsgt.vi	v0, v10, 1
 	lui	a0, 1
 	addi	a1, a0, -2007

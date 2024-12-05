@@ -39,10 +39,10 @@ func000000000000002e:                   # @func000000000000002e
 .LCPI3_0:
 	.quad	0x73d658e3ab795204              # double 9.9999999999999992E+249
 func0000000000000032:                   # @func0000000000000032
+	vsetivli	zero, 16, e64, m8, ta, ma
 	vmv1r.v	v24, v0
 	fmv.d.x	fa5, zero
 	lui	a0, %hi(.LCPI3_0)
-	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfge.vf	v25, v16, fa5
 	fld	fa5, %lo(.LCPI3_0)(a0)
 	vmnot.m	v0, v25
@@ -53,10 +53,10 @@ func0000000000000032:                   # @func0000000000000032
 .LCPI4_0:
 	.quad	0x05cd0b15a491eb84              # double 9.9999999999999996E-281
 func0000000000000034:                   # @func0000000000000034
+	vsetivli	zero, 16, e64, m8, ta, ma
 	vmv1r.v	v24, v0
 	fmv.d.x	fa5, zero
 	lui	a0, %hi(.LCPI4_0)
-	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfge.vf	v25, v16, fa5
 	fld	fa5, %lo(.LCPI4_0)(a0)
 	vmnot.m	v0, v25

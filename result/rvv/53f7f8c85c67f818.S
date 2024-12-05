@@ -9,8 +9,8 @@ func000000000000000b:                   # @func000000000000000b
 	vor.vx	v8, v10, a0
 	ret
 func0000000000000003:                   # @func0000000000000003
-	vmv1r.v	v9, v0
 	vsetivli	zero, 8, e8, mf2, ta, ma
+	vmv1r.v	v9, v0
 	vand.vi	v8, v8, 1
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.i	v10, 4

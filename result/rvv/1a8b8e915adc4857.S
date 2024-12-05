@@ -1,7 +1,7 @@
 func0000000000000051:                   # @func0000000000000051
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v12, v0
 	li	a0, -1073
-	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsltu.vx	v0, v8, a0
 	li	a0, -1074
 	vrsub.vx	v8, v10, a0

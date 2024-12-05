@@ -1,7 +1,7 @@
 func000000000000029a:                   # @func000000000000029a
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v12, v0
 	li	a0, 1239
-	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgt.vx	v0, v10, a0
 	li	a0, 107
 	vmv.v.x	v10, a0
@@ -14,9 +14,9 @@ func000000000000029a:                   # @func000000000000029a
 	vmsgt.vi	v0, v8, -1
 	ret
 func0000000000000288:                   # @func0000000000000288
+	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv1r.v	v12, v0
 	li	a0, 79
-	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgt.vx	v0, v10, a0
 	li	a0, -1880
 	vmv.v.x	v10, a0
