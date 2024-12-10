@@ -9,13 +9,14 @@ func000000000000001a:                   # @func000000000000001a
 func0000000000000010:                   # @func0000000000000010
 	slli	a3, a2, 5
 	slli	a2, a2, 7
-	addi	a1, a1, 3
 	sub	a2, a2, a3
-	slli	a3, a1, 3
-	slli	a1, a1, 5
+	slli	a3, a1, 5
+	slli	a1, a1, 3
+	addi	a1, a1, 24
+	addi	a3, a3, 96
 	add	a0, a0, a2
-	sub	a1, a1, a3
-	add	a0, a0, a1
+	sub	a3, a3, a1
+	add	a0, a0, a3
 	ret
 func000000000000007a:                   # @func000000000000007a
 	li	a3, 544
