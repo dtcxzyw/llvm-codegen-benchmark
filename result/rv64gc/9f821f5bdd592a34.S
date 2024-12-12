@@ -22,8 +22,7 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func000000000000000c:                   # @func000000000000000c
 	slli	a1, a1, 48
-	srli	a1, a1, 48
-	slli	a1, a1, 2
+	srli	a1, a1, 46
 	add	a0, a0, a1
 	addi	a0, a0, -4
 	ret

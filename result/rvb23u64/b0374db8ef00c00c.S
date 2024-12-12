@@ -4,8 +4,8 @@ func000000000000000a:                   # @func000000000000000a
 	zext.w	a0, a0
 	ret
 func000000000000000f:                   # @func000000000000000f
-	zext.h	a1, a1
-	slli	a1, a1, 7
+	slli	a1, a1, 48
+	srli	a1, a1, 41
 	or	a0, a0, a1
 	sext.w	a0, a0
 	ret

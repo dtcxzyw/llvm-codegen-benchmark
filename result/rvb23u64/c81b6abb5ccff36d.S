@@ -7,8 +7,7 @@ func000000000000000a:                   # @func000000000000000a
 func000000000000001a:                   # @func000000000000001a
 	addi	a1, a1, -1
 	slli	a1, a1, 47
-	srli	a1, a1, 47
-	slli	a1, a1, 4
+	srli	a1, a1, 43
 	add	a0, a0, a1
 	addi	a0, a0, 8
 	ret

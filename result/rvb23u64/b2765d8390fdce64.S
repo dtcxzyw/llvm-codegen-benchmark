@@ -1,6 +1,6 @@
 func0000000000000035:                   # @func0000000000000035
-	zext.h	a2, a2
-	slli	a2, a2, 8
+	slli	a2, a2, 48
+	srli	a2, a2, 40
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret

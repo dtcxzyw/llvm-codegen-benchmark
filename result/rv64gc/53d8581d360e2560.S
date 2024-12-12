@@ -1,9 +1,8 @@
 func000000000000005a:                   # @func000000000000005a
-	slli	a2, a2, 52
 	slli	a1, a1, 4
-	srli	a2, a2, 52
+	slli	a2, a2, 52
 	add	a0, a0, a1
-	slli	a2, a2, 4
+	srli	a2, a2, 48
 	sub	a0, a0, a2
 	ret
 func000000000000001a:                   # @func000000000000001a

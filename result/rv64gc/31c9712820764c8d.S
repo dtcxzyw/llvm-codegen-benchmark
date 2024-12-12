@@ -36,8 +36,7 @@ func0000000000000088:                   # @func0000000000000088
 	sext.w	a2, a2
 	slli	a0, a0, 48
 	add	a1, a1, a2
-	srli	a0, a0, 48
-	slli	a0, a0, 1
+	srli	a0, a0, 47
 	add	a0, a0, a1
 	addi	a0, a0, 2
 	ret

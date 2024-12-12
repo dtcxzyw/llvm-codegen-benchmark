@@ -10,8 +10,8 @@ func00000000000000e4:                   # @func00000000000000e4
 	sltu	a0, a0, a1
 	ret
 func00000000000000c1:                   # @func00000000000000c1
-	zext.h	a2, a2
-	slli	a2, a2, 4
+	slli	a2, a2, 48
+	srli	a2, a2, 44
 	add	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
